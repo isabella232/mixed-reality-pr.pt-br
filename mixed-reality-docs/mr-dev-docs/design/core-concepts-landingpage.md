@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
 keywords: Realidade mista do Windows, design, padrões de aplicativo, controles, estilo, HoloLens, interação, elementos de UX, comportamentos, blocos de construção
-ms.openlocfilehash: cece64194100e35ea836a23a645079e64332ec32
-ms.sourcegitcommit: ccc7c9ee0bb65e1bc672482592ebfddbba40d7da
+ms.openlocfilehash: cebcb99124ed71ed170210f2de9ce2f24bcb514d
+ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "92113520"
+ms.locfileid: "92138016"
 ---
 # <a name="core-concepts-overview"></a>Visão geral dos conceitos principais
 
@@ -19,10 +19,6 @@ ms.locfileid: "92113520"
 
 
 Antes de mergulhar no design de sua experiência, é útil entender alguns conceitos básicos. Cada tópico abaixo é um fator subjacente que afeta fundamentalmente e contribui para a qualidade da experiência de realidade misturada que você está criando para o usuário. 
-
-
-
-[ ![ Tipos de aplicativos de realidade misturados](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) ** [tipos de aplicativos de realidade misturada](types-of-mixed-reality-apps.md)**
 
 :::row:::
     :::column:::
@@ -50,13 +46,13 @@ Antes de mergulhar no design de sua experiência, é útil entender alguns conce
 
 :::row:::
     :::column:::
-       Mapeamento espacial de [ ![ mapeamento espacial](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
+        Âncoras espaciais das [ ![ âncoras](images/azurespatialanchors.jpg)](spatial-anchors.md) espaciais ** [Spatial anchors](spatial-anchors.md)**
     :::column-end:::
     :::column:::
-       
+        Mapeamento espacial de [ ![ mapeamento espacial](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
-       Âncoras espaciais das [ ![ âncoras](images/azurespatialanchors.jpg)](spatial-anchors.md) espaciais ** [Spatial anchors](spatial-anchors.md)**
+        [ ![ Tipos de aplicativos de realidade misturados](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) ** [tipos de aplicativos de realidade misturada](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 
