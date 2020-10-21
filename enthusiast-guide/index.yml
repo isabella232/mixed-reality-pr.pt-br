@@ -1,0 +1,49 @@
+### YamlMime:Hub
+title: Documentação do VR do Windows Mixed Reality
+summary: Informações para clientes intermediários a avançados sobre como aproveitar ao máximo o Windows Mixed Reality.
+brand: windows
+metadata:
+  title: Documentação do VR do Windows Mixed Reality
+  description: Informações para clientes intermediários a avançados sobre como aproveitar ao máximo o Windows Mixed Reality.
+  services: guidance
+  ms.service: guidance
+  ms.topic: hub-page
+  ms.prod: mixed-reality
+  ms.technology: enthusiast-guide
+  author: mattwojo
+  ms.author: mattwoj
+  ms.openlocfilehash: b791970df40711c298501b2db09cff8ec342de8a
+  ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 10/19/2020
+  ms.locfileid: "92174382"
+highlightedContent:
+  items:
+  - title: Antes de comprar
+    itemType: learn
+    url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+  - title: Introdução
+    itemType: get-started
+    url: before-you-start.md
+  - title: Aprender Realidade Misturada
+    itemType: how-to-guide
+    url: learn-mixed-reality.md
+  - title: Academia do Windows Mixed Reality
+    itemType: video
+    url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+additionalContent:
+  sections:
+  - title: Mais recursos
+    summary: Encontre links para a solução de problemas, a documentação de desenvolvimento e os fóruns.
+    items:
+    - title: Solução de problemas
+      summary: Solução de problemas de A a Z em todas as áreas do Windows Mixed Reality
+      url: installation_errors.md
+    - title: Comentários
+      summary: Veja mais artigos aprofundados sobre o Windows Mixed Reality sobre todos os assuntos, de fazer comentários úteis a como os subsistemas funcionam.
+      url: filing-feedback.md
+    - title: Documentação de desenvolvimento
+      summary: Documentação de desenvolvimento e design
+      url: https://developer.microsoft.com/windows/mixed-reality
+  footer: Encontrou um problema em nosso site? [Queremos saber.](https://forums.hololens.com/categories/using-windows-mixed-reality)
