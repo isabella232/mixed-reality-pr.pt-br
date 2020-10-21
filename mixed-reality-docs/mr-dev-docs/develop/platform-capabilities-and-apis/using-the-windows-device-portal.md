@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portal de Dispositivos do Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862993"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011471"
 ---
 # <a name="using-the-windows-device-portal"></a>Usar o Portal de Dispositivos do Windows
 
@@ -374,3 +374,20 @@ Clique ou toque na região abaixo de **Teclado virtual** para habilitar o envio 
 ## <a name="device-portal-rest-apis"></a>APIs REST do Portal de Dispositivos
 
 Tudo no Portal de Dispositivos foi criado com base em [APIs REST](device-portal-api-reference.md), que você tem a opção de usar para acessar os dados e controlar o dispositivo de maneira programática.
+
+## <a name="troubleshooting"></a>Solução de problemas
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>Como corrigir a mensagem "Tem alguém aí?"
+
+> [!NOTE]
+> Quando você muda do HoloLens 2 para o HoloLens (1ª Geração), as páginas podem ficar vazias se forem usadas no HoloLens 2 antes de serem utilizadas no HoloLens (1ª Geração).
+
+![Mensagem "Tem alguém aí?" na página do Portal de Dispositivos](images/using-windows-portal-img-19.png)
+
+1. Selecione **Redefinir layout** no menu do canto superior esquerdo:
+
+![Selecione "Redefinir layout" no menu do portal de dispositivos](images/using-windows-portal-img-20.png)
+
+2. Clique em **Redefinir layout** no cabeçalho **Redefinir workspace**. A página do portal será atualizada automaticamente e mostrará seu conteúdo.
+
+![Selecionar "Redefinir layout" na página "Redefinir workspace"](images/using-windows-portal-img-21.png)
