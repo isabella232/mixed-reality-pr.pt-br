@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, compatível, compatibilidade, introdução, instalação, PC, requisitos do sistema
 appliesto:
 - Windows 10
-ms.openlocfilehash: c76f670230a4a19b53b7e8f938b13e79bb7c8db7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174445"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293052"
 ---
 # <a name="before-you-start"></a>Antes de começar
 
@@ -52,7 +52,7 @@ Verifique se o computador está conectado à Internet. Você precisará baixar d
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Verifique se você tem um driver gráfico compatível
 
-Seu PC deve ter um driver de gráficos WDDM 2,2 ou posterior para concluir a configuração de realidade misturada. Se ele ainda não tiver um driver gráfico compatível, experimente estas fontes:
+Seu PC deve ter um driver de gráficos WDDM 2,2 ou posterior para concluir a configuração do Windows Mixed Reality. Se ele ainda não tiver um driver gráfico compatível, experimente estas fontes:
 
 * Verifique as atualizações de driver críticas mais recentes usando Windows Update (**iniciar > configurações do Windows > atualização e segurança > verificar**se há atualizações)
 * Verifique as atualizações de driver opcionais mais recentes:
@@ -64,7 +64,7 @@ Seu PC deve ter um driver de gráficos WDDM 2,2 ou posterior para concluir a con
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Verifique se você tem todos os adaptadores necessários
 
-Seu PC compatível com realidade mista do Windows pode não ter o HDMI completo e as portas USB 3,0 necessárias para conectar o headset de imersão. Ou talvez você precise de um adaptador Bluetooth para atender aos requisitos do portal de realidade misturada.  Se esse for o caso, você precisará de adaptadores para conectar seus controladores de headset e de movimento. Você encontrará uma lista de tipos de adaptadores que talvez precise e algumas recomendações sobre modelos de adaptadores específicos [aqui](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Seu PC compatível com realidade mista do Windows pode não ter o HDMI completo e as portas USB 3,0 necessárias para conectar o headset de imersão. Ou talvez você precise de um adaptador Bluetooth para atender aos requisitos do portal de realidade mista do Windows.  Se esse for o caso, você precisará de adaptadores para conectar seus controladores de headset e de movimento. Certifique-se de examinar uma lista de [tipos de adaptadores que podem ser necessários e algumas recomendações sobre modelos de adaptadores específicos](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Verifique se você tem dispositivos de entrada
 
@@ -76,7 +76,7 @@ A menos que você tenha adquirido um Samsung HMD Odyssey, HP reverbo ou HP rever
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Verifique se você tem um espaço grande aberto
 
-Se você quiser se movimentar enquanto usa a realidade mista do Windows, precisará ter um espaço grande aberto.  Durante a instalação, será solicitado que você escolha entre "encaixado e à sua posição" ou "todas as experiências". Escolha "todas as experiências" e configure um limite se você quiser se movimentar.
+Se você quiser se movimentar enquanto usa a realidade mista do Windows, precisará ter um espaço grande aberto.  Durante a instalação, será solicitado que você escolha entre "encaixado e à sua posição" ou "todas as experiências". Escolha "todas as experiências" e configure um limite se você quiser se movimentar. Examine as [diretrizes de integridade, segurança e conforto do headset](wmr-health-safety-comfort.md) para entender os requisitos de espaço.
 
 ### <a name="seated-and-standing-no-boundary"></a>Sentado e em posição (sem limite)
 

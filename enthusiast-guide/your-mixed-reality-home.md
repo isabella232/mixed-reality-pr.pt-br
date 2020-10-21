@@ -3,20 +3,20 @@ title: Sua base de realidade misturada
 description: Como navegar e teleport na página inicial do Windows Mixed Reality, iniciar aplicativos e jogos, personalizar a página inicial e alterar as configurações de Visual, áudio e fala.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade mista, realidade virtual, VR, Sr, Home, navegar, contornar, aplicativos, jogos
-ms.openlocfilehash: f8a525ad0c278517950c06c821d2b7936ec584a7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174285"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293084"
 ---
-# <a name="your-mixed-reality-home"></a>Sua base de realidade misturada
+# <a name="your-windows-mixed-reality-home"></a>Sua página inicial do Windows Mixed Reality
 
-## <a name="what-is-the-mixed-reality-home"></a>O que é a realidade misturada em casa
+## <a name="what-is-the-windows-mixed-reality-home"></a>O que é a página inicial do Windows Mixed Reality
 
 O Windows Mixed Reality é o primeiro sistema operacional espacial. Em vez de usar uma tela plana e uma interface 2D, ela aproveita nossa capacidade de instinctual de navegar por espaço tridimensional. Cada lugar tem uma finalidade, e o conteúdo tem contexto. Assim como seu PC começa na interface da área de trabalho e seu telefone começa com uma tela inicial, a realidade mista do Windows começa na casa mistura de realidade. É um ambiente que você pode navegar e personalizar para fazer o seu próprio. É a tela para os milhares de aplicativos disponíveis no Microsoft Store. Você pode realizar a multitarefa com esses aplicativos, como nunca foi possível antes, em 3D, em que o espaço é quase ilimitado.
 
-## <a name="move-through-the-mixed-reality-home"></a>Percorrer a página inicial da realidade misturada
+## <a name="move-through-the-windows-mixed-reality-home"></a>Vá para a página inicial do Windows Mixed Reality
 
 * **Movimentação física:** Se você configurou o headset com um limite de sala e limpou o espaço disponível para acompanhar com segurança, você pode tomar medidas físicas para mover distâncias curtas para sua casa. Uma etapa no mundo real é aproximadamente uma etapa na experiência virtual.
 * **Teleportamento (usando os controladores de movimento):** Você pode ir rapidamente para um local por meio de teleportabilidade. Usando os controladores de movimento, você pode teleport empurrando o Thumbstick direito ou esquerdo para frente, objetivando a direção que deseja ir e, em seguida, liberando o Thumbstick.
@@ -28,7 +28,7 @@ O Windows Mixed Reality é o primeiro sistema operacional espacial. Em vez de us
 
 ## <a name="launch-an-app"></a>iniciar um aplicativo
 
-1. Na página inicial da realidade misturada, pressione o botão Windows no controlador para iniciar o menu iniciar.
+1. Na página inicial do Windows Mixed Reality, pressione o botão Windows no controlador para iniciar o menu iniciar.
 2. Selecione o aplicativo que você deseja iniciar.
 3. Coloque o aplicativo onde você gostaria de usá-lo e ele será iniciado.
 4. De agora em diante, você pode simplesmente clicar no modelo 3D para iniciar o aplicativo.
@@ -49,11 +49,11 @@ O Windows Mixed Reality é o primeiro sistema operacional espacial. Em vez de us
 2. Iniciar Microsoft Store.
 3. Procure um aplicativo ou jogo desejado e, em seguida, clique em "obter" ou "comprar".
 
-Como alternativa, você pode usar o aplicativo "novo para você" para procurar conteúdo, que aparece como um saco de compras em sua casa misturada de realidade.
+Como alternativa, você pode usar o aplicativo "novo para você" para procurar conteúdo, que aparece como uma bolsa de compras em sua página inicial do Windows Mixed Reality.
 
 ## <a name="what-is-the-new-for-you-app"></a>O que é o aplicativo "novo para você"
 
-Você pode observar que há uma bolsa de Microsoft Store em sua casa misturada de realidade. Clicar nele mostrará aplicativos novos e empolgantes que você pode baixar e/ou comprar.
+Você pode observar que há uma bolsa de Microsoft Store em sua página inicial do Windows Mixed Reality. Clicar nele mostrará aplicativos novos e empolgantes que você pode baixar e/ou comprar.
 
 ## <a name="personalize-my-home"></a>Personalizar minha página inicial
 
@@ -68,12 +68,12 @@ Vá para **configurações > realidade misturada > ambiente > redefinir o** ![ p
 ## <a name="uninstall-windows-mixed-reality"></a>Desinstalar a realidade mista do Windows
 
 1. Desconecte seu headset
-2. Fechar o portal de realidade misturada
+2. Fechar o portal do Windows Mixed Reality
 3. Acesse **configurações > realidade misturada > desinstalar >** ![ painel de configurações do Windows desinstalar para desinstalar realidade misturada](images/1050px-uninstall2.png)
 
 ## <a name="turn-off-the-boundary"></a>Desligar o limite
 
-Vá para Portal de realidade misturada e abra o menu no canto superior esquerdo da tela. Selecione **executar configurar > limite de sala**. Alterne a alternância para desativado. Você deve permanecer encaixado na sua mesa se desativar o limite.
+Vá para o portal do Windows Mixed Reality e abra o menu no canto superior esquerdo da tela. Selecione **executar configurar > limite de sala**. Alterne a alternância para desativado. Você deve permanecer encaixado na sua mesa se desativar o limite.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Som espacial na página inicial do Windows Mixed Reality
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, pré-venda, pesquisa, compra, antes de comprar
 appliesto:
 - Windows 10
-ms.openlocfilehash: 3adaf5e3bef3144d23a57ce8729f3f169ec630f3
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174472"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293041"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -308,8 +308,6 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>A plataforma Windows Mixed Reality dá suporte ao hardware Rift e Naopak?
 
 **Resposta rápida:** A realidade mista do Windows funcionará apenas com headsets/controladores de realidade mista do Windows misto. Veja <https://www.microsoft.com/en-us/store/b/virtualreality>
-
-
 
 ## <a name="motion-controllers"></a>Controladores de movimento
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, tutorial, introdução
 appliesto:
 - Windows 10
-ms.openlocfilehash: 847ed83b4abf39e515359eca43672b3f2708b1c8
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174450"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92292985"
 ---
 # <a name="learn-mixed-reality"></a>Aprender Realidade Misturada
 

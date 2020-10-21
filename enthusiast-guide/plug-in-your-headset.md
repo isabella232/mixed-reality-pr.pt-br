@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, headset, instalação, introdução
 appliesto:
 - Windows 10
-ms.openlocfilehash: 46b40a09c88013515911026cbd03a6fc6d19e1ca
-ms.sourcegitcommit: 2cdc2e38990fff24972d98f9e74f0dabacbffa7d
+ms.openlocfilehash: 16c06e14566671e44b1424447b02493ba1ff1a83
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92153504"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92292976"
 ---
 # <a name="plug-in-your-headset"></a>Conecte seu headset
 
@@ -32,13 +32,14 @@ Identifique a porta de saída de HDMI no computador e conecte o cabo HDMI do hea
 A menos que você tenha comprado um headset Samsung HMD Odyssey, o HP reverbera ou o HP reverbs G2 (que integrou fones de ouvido AKG e um microfone de matriz dupla integrado), você precisará conectar fones de ouvido (preferencialmente com um microfone embutido) que podem ser conectados à tomada de áudio de 3,5 mm de seu headset.
 
 ## <a name="common-issues"></a>Problemas comuns
+
 * Você conectou o cabo HDMI antes de conectar o cabo USB 3,0.  Certifique-se de conectar o cabo USB 3,0 **antes** de conectar-se ao cabo HDMI.
 * Você se conectou a um adaptador Bluetooth ao lado do cabo USB do seu HMD.  Se você estiver usando um adaptador Bluetooth, **não conecte o** cabo USB do headset ao lado desse adaptador, pois a interferência de rádio resultante pode afetar negativamente o desempenho do Bluetooth.
 * Você conectou o cabo HDMI à porta HDMI iGPU em vez da porta dGPU HDMI (para PCs com ambos). Alguns PCs desktop têm uma iGPU (unidade de processamento gráfico) integrada e uma dGPU (unidade de processamento gráfico discreto) e, muitas vezes, as portas iGPU serão desabilitadas. Se o seu PC tiver um dGPU, seu headset precisará ser conectado ao dGPU.  
-* Se o seu computador não tiver uma porta HDMI, talvez seja necessário um adaptador. Veja [a lista completa de adaptadores recomendados aqui](recommended-adapters-for-windows-mixed-reality-capable-pcs.md). 
+* Se o seu computador não tiver uma porta HDMI, talvez seja necessário um adaptador. Veja [a lista completa de adaptadores recomendados aqui](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 * Você está conectando o headset a um dispositivo de superfície. Leia [usando a superfície com o Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Solucionando problemas de conectividade do headset](headset-connectivity.md)
 * [Instalar o Windows Mixed Reality](install-windows-mixed-reality.md)

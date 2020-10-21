@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56238f302074bb4de21acbc0575f4ab913cb84b1
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174433"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293114"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimento no Windows Mixed Reality
 
@@ -42,7 +42,6 @@ A maioria dos headsets vem emparelhada diretamente com o headset, mas alguns hea
 4. Siga as instruções fornecidas na tela.
 
 > [!NOTE]
-
 > * Para controladores que emparelham diretamente com seu PC, você precisará colocá-los no modo de emparelhamento ativando-os e, em seguida, pressionando o botão de emparelhamento dentro do compartimento da bateria até que as luzes comecem a piscar.  
 > * Os controladores de movimento dão suporte apenas a pares em um computador ou PC por vez. Se você precisar usá-los com um headset diferente, precisará passar pelo processo de emparelhamento. Consulte [Configurar a realidade mista do Windows](set-up-windows-mixed-reality.md)
 
