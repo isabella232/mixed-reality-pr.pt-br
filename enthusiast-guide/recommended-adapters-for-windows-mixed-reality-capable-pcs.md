@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, adaptador, dongle, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174404"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434588"
 ---
 # <a name="recommended-adapters"></a>Adaptadores recomendados
 > [!NOTE]
@@ -263,7 +263,7 @@ Essas tabelas o ajudarão a determinar se você precisará de um vídeo ou de ad
 
 Se o headset foi lançado após 2018, os adaptadores não são necessários e os controladores emparelham com o headset.
 
-Os dispositivos fornecidos no 2017 ou anterior precisam de um adaptador para os controladores. Se o seu computador não incluir o Bluetooth para emparelhar [controladores de movimento do Windows Mixed Reality](controllers-in-wmr.md), você poderá usar um adaptador como o adaptador plug-in USB Bluetooth 4,0 de baixa energia micro.
+Os dispositivos fornecidos no 2017 ou anterior precisam de um adaptador para os controladores. Se o seu computador não incluir o Bluetooth para emparelhar [controladores de movimento do Windows Mixed Reality](controllers-in-wmr.md#Pair-motion-controllers), você poderá usar um adaptador como o adaptador plug-in USB Bluetooth 4,0 de baixa energia micro.
 
 > [!NOTE]
 > A Microsoft não fabrica, testa, certifica nem garante a funcionalidade, a confiabilidade ou a qualidade de qualquer adaptador. Para dúvidas, preocupações ou problemas com qualquer adaptador, você deve entrar em contato com o vendedor ou com o fabricante do adaptador.

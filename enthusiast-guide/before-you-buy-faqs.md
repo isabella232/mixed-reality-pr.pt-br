@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, pré-venda, pesquisa, compra, antes de comprar
 appliesto:
 - Windows 10
-ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293041"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434610"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -31,15 +31,11 @@ ms.locfileid: "92293041"
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quais fabricantes estão vendendo dispositivos Windows Mixed Reality?
 
-**Resposta rápida:** Os fones de ouvido e os controladores de animação estão disponíveis atualmente na Acer, na ASUS, na Samsung e na HP. Veja <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Resposta rápida:** Os headsets e os controladores de movimento estão disponíveis atualmente na HP. Consulte <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Onde posso comprar controladores de movimento autônomos?
 
 **Resposta rápida:** Infelizmente, não estamos cientes dos varejistas que vendem controladores de movimento autônomos no momento.
-
-### <a name="what-is-the-price-point"></a>Qual é o ponto de preço?
-
-**Resposta rápida:** O preço do headset e do controlador varia de acordo com o fabricante e o varejista. Consulte <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro> para dispositivos de realidade misturada atualmente para venda da Microsoft.
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Qual é a diferença entre um PC com realidade do Windows Mixed e um ultra PC do Windows Mixed Reality?
 
@@ -47,7 +43,7 @@ ms.locfileid: "92293041"
 
 ### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Por que isso é chamado de "realidade mista" do Windows quando os dispositivos parecem que fornecem uma experiência de "realidade virtual"?
 
-**Resposta rápida:** A realidade misturada refere-se ao espectro completo de computação espacial, da realidade aumentada e dos hologramas à realidade virtual. A plataforma de realidade mista da Microsoft dá suporte à realidade virtual e à realidade aumentada. Atualmente, damos suporte a dois tipos de dispositivo com tecnologia semelhante nesse espectro: o HoloLens (AR) e headsets do Windows Mixed Reality (VR) com controladores de movimento.
+**Resposta rápida:** A realidade misturada refere-se ao espectro completo de computação espacial, da realidade aumentada e dos hologramas à realidade virtual. A plataforma Windows Mixed Reality dá suporte a dispositivos em VR (realidade virtual) e AR (realidade aumentada). Atualmente, damos suporte a dois tipos de dispositivo com tecnologia semelhante nesse espectro: o HoloLens (AR) e headsets do Windows Mixed Reality (VR) com controladores de movimento.
 
 Saiba mais sobre a realidade misturada aqui: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -71,7 +67,7 @@ Para saber mais sobre o acompanhamento interno, você pode ir aqui: <https://doc
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>O controle interno de controladores de movimento pode afetar a reprodução do jogo devido à câmera FOV?
 
- Assim como os headsets, os controladores de movimento do Windows Mixed Reality não exigem nenhuma configuração de sensores de controle externo. Em vez disso, os controladores são acompanhados por sensores no próprio headset. Se o usuário mover os controladores para fora do campo de exibição do headset, na maioria dos casos, o Windows continuará inferindo as posições do controlador e as fornecerá ao aplicativo. Quando o controlador tiver perdido o acompanhamento Visual por tempo suficiente, as posições do controlador serão descartadas para as posições de precisão aproximada. Neste ponto, o sistema bloqueará o corpo do controlador para o usuário, controlando a posição do usuário à medida que eles se movimentam, ao mesmo tempo em que ainda expõe a orientação verdadeira do controlador usando seus sensores de orientação interna. Muitos aplicativos que usam controladores para apontar e ativar elementos da interface do usuário podem operar normalmente em precisão aproximada sem que o usuário perceba. A melhor maneira de ter uma ideia para isso é experimentá-lo por conta própria. Tente visitar uma Microsoft Store perto de você e confira! Enquanto isso, aqui está um vídeo com exemplos de conteúdo de imersão que funciona com os controladores de movimento em vários Estados de controle:
+ Assim como os headsets, os controladores de movimento do Windows Mixed Reality não exigem nenhuma configuração de sensores de controle externo. Em vez disso, os controladores são acompanhados por sensores no próprio headset. Se o usuário mover os controladores para fora do campo de exibição do headset, na maioria dos casos, o Windows continuará inferindo as posições do controlador e as fornecerá ao aplicativo. Quando o controlador tiver perdido o acompanhamento Visual por tempo suficiente, as posições do controlador serão descartadas para as posições de precisão aproximada. Neste ponto, o sistema bloqueará o corpo do controlador para o usuário, controlando a posição do usuário à medida que eles se movimentam, ao mesmo tempo em que ainda expõe a orientação verdadeira do controlador usando seus sensores de orientação interna. Muitos aplicativos que usam controladores para apontar e ativar elementos da interface do usuário podem operar normalmente em precisão aproximada sem que o usuário perceba. A melhor maneira de ter uma ideia para isso é experimentá-lo por conta própria.
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Como a realidade mista do Windows é diferente da Samsung Gear VR?
 
@@ -307,7 +303,7 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>A plataforma Windows Mixed Reality dá suporte ao hardware Rift e Naopak?
 
-**Resposta rápida:** A realidade mista do Windows funcionará apenas com headsets/controladores de realidade mista do Windows misto. Veja <https://www.microsoft.com/en-us/store/b/virtualreality>
+**Resposta rápida:** A realidade mista do Windows funcionará apenas com headsets/controladores de realidade mista do Windows misto. Consulte <https://www.microsoft.com/en-us/store/b/virtualreality>
 
 ## <a name="motion-controllers"></a>Controladores de movimento
 
@@ -315,7 +311,7 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 **Resposta rápida:** Os controladores de movimento do Windows Mixed Reality usam Bluetooth. Dependendo do headset, os controladores de movimento são emparelhados com o rádio Bluetooth no headset (se equipado) ou com a rádio Bluetooth em seu PC.
 
-* Alguns headsets de realidade mista do Windows, incluindo o Acer OJO 500, o Samsung Odyssey + e o HP reverbs, apresentam rádios Bluetooth internos para uso com controladores de movimento. Os controladores de movimento que acompanham esses headsets são emparelhados com o headset da fábrica e não exigem que seu PC tenha um rádio Bluetooth separado.
+* Alguns headsets de realidade misturada do Windows, incluindo os rádios da Acer OJO 500, Samsung Odyssey +, HP reverbs e HP reverbs G2 internos do Bluetooth para uso com os controladores de movimento. Os controladores de movimento que acompanham esses headsets são emparelhados com o headset da fábrica e não exigem que seu PC tenha um rádio Bluetooth separado.
 * Outros headsets de realidade mista do Windows precisarão ser emparelhados com um rádio Bluetooth em seu PC.
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Os controladores de movimento do Windows Mixed Reality são compatíveis entre os fones de ouvido da realidade mista do Windows?
@@ -336,11 +332,11 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>A realidade mista do Windows funcionará com meus controladores Oculus Touch ou com os controladores/headsets Naopak HTC?
 
-**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Consulte <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>A realidade mista do Windows funcionará com meus controladores SteamVR Knuckle?
 
-**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Consulte <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>A realidade do Windows Mixed dará suporte ao meu controlador Xbox One com o adaptador Xbox sem fio?
 

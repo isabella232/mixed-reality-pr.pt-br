@@ -3,12 +3,12 @@ title: Configurar o Windows Mixed Reality
 description: Como configurar seus controladores de movimento, fala e áudio do Windows Mixed Reality e definir o limite da sala para um espaço de reprodução seguro.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, introdução, instalação, controlador de movimento, controlador, fala, áudio, encaixado, posição, limites, drivers gráficos, Microsoft Edge, Chromium
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174461"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434629"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurar o Windows Mixed Reality
 
@@ -86,7 +86,7 @@ Não há etapas adicionais necessárias se você escolher essa opção.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Qual é o tamanho máximo do limite?
 
-O tamanho de limite máximo com suporte no momento na realidade mista do Windows é 18x18ft (5.7 x 5.7 m) ou 13ft (4m) RADIUS do centro.  O tamanho do limite é dependente do ponto de ancoragem e da distância do ponto de ancoragem que você pode mover antes de arriscar a estabilidade do limite.  A realidade mista do Windows foi criada em uma abstração de estágio na plataforma, o estágio sendo o espaço que você movimenta e esse estágio depende de uma única âncora (que quase todos os aplicativos também pressupõem – é assim que Naopak e Oculus funcionam também, pois têm apenas um único sistema de coordenadas).  O motivo pelo qual isso é importante é que, com o acompanhamento interno, à medida que você se afasta de um ponto de ancoragem, o controle do headset é confiável para manter o limite estável.  Onde o limite destina-se a evitar obstáculos físicos, ele se torna cada vez mais um problema do centro que você vai.  Dois fatores entraram na decisão sobre o tamanho máximo do limite; a distância máxima na qual o Windows Mixed Reality headsets pode fornecer a melhor experiência de dimensionamento de sala com um limite e o comprimento do cabo do headset, que para a maioria dos headsets de realidade misturada do Windows é 10ft (3M). 
+O tamanho de limite máximo com suporte no momento na realidade mista do Windows é 18x18ft (5.7 x 5.7 m) ou 13ft (4m) RADIUS do centro.  O tamanho do limite é dependente do ponto de ancoragem e da distância do ponto de ancoragem que você pode mover antes de arriscar a estabilidade do limite.  A realidade mista do Windows foi criada em uma abstração de estágio na plataforma, o estágio sendo o espaço que você movimenta e esse estágio depende de uma única âncora (que quase todos os aplicativos também pressupõem – é assim que Naopak e Oculus funcionam também, pois têm apenas um único sistema de coordenadas).  O motivo pelo qual isso é importante é que, com o acompanhamento interno, à medida que você se afasta de um ponto de ancoragem, o controle do headset é confiável para manter o limite estável.  Onde o limite destina-se a evitar obstáculos físicos, ele se torna cada vez mais um problema do centro que você vai.  Dois fatores entraram na decisão sobre o tamanho máximo do limite; a distância máxima na qual o Windows Mixed Reality headsets pode fornecer a melhor experiência de dimensionamento de sala com um limite e o comprimento do cabo do headset, que para a maioria dos headsets de realidade misturada do Windows é 10ft (3M).
 
 ## <a name="set-up-speech"></a>Configurar a fala
 
@@ -112,7 +112,7 @@ A resolução nativa do headset é mostrada aqui.
 
 Se você conectar um headset com monitores de resolução mais alta (por exemplo, headsets com 4320x2160 exibe) ao seu PC, você verá uma configuração para ajustar a resolução de exibição de realidade misturada.
 
-* Essa configuração fornece a opção para que a pilha de composição da realidade mista do Windows seja processada nativamente (por exemplo, em 4320x2160) ou para que a pilha de composição seja renderizada em uma resolução mais baixa e upscale (por exemplo, render em 2880x1440 e upscale para 4320x2160.
+* Essa configuração fornece a opção para a pilha de composição da realidade misturada do Windows para renderizar nativamente (por exemplo, em 4320x2160) ou para que a pilha de composição seja renderizada em uma resolução mais baixa e upscale (por exemplo, render em 2880x1440 e upscale para 4320x2160).
 * A configuração padrão é renderizar nativamente (por exemplo, a opção **4320 x 2160 (melhor qualidade** ) para fornecer a melhor qualidade visual possível do headset.
 * Se o seu PC não atender aos requisitos mínimos de hardware de gráficos para o headset com exibições de resolução mais alta e/ou se você estiver vendo problemas de desempenho de gráficos, poderá tentar usar a opção de up- **dimensionamento automático (melhor desempenho)** .
 
@@ -131,9 +131,7 @@ Essa configuração avançada substitui a experiência de taxa de atualização 
 * **90Hz**
 
 >[!Note]
->A configuração de taxa de atualização automática para HP reverb G2 é 90Hz
-
-Certos recursos do Windows Mixed Reality, incluindo a visualização do portal de realidade misturada e uma exibição de fone de ouvido maior FOV, estão disponíveis apenas com a experiência do 90Hz.
+>Ao configurar pela primeira vez o fone de ouvido do HP reverberar G2, a experiência será alterada para 90Hz para garantir a melhor experiência.  Se necessário, você pode alterar isso novamente para automático.
 
 ### <a name="input-switching"></a>Alternância de entrada
 
@@ -180,5 +178,5 @@ Entrar na realidade misturada uma segunda vez é tão fácil quanto colocar o fo
 * [Como solucionar problemas de instalação](installation_errors.md)
 * [Solução de problemas de instalação](set-up-questions.md)
 * [Aprender Realidade Misturada](learn-mixed-reality.md)
-* [Como funcionam os controladores de movimento](controllers-in-wmr.md)
+* [Controladores de movimentos](controllers-in-wmr.md)
 * [Como funciona o acompanhamento interno](tracking-system.md)

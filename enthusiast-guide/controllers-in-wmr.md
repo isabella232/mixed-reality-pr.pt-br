@@ -8,29 +8,20 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293114"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434580"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimento no Windows Mixed Reality
 
 Os controladores de movimento são acessórios de hardware que permitem que os usuários executem ações em realidade misturada. Uma vantagem dos controladores de movimento em gestos é que os controladores têm uma posição precisa no espaço, permitindo uma interação refinada com objetos digitais. Para os headsets de imersão de realidade misturada do Windows, os controladores de movimento são a principal maneira que os usuários executarão ações em seu mundo.
+
 Os controladores de movimento de realidade mista do Windows oferecem acompanhamento preciso e responsivo de movimento em seu campo de exibição usando os sensores no headset de imersão, o que significa que não há necessidade de instalar o hardware nas paredes no seu espaço. Esses controladores de movimento oferecerão a mesma facilidade de instalação e portabilidade que os headsets de imersão de realidade misturada do Windows.
 
-A realidade mista do Windows foi projetada para funcionar melhor com os controladores de movimento da realidade misturada, que fornecem interações naturais e precisas, sem a necessidade de instalar o hardware em suas paredes.
-
-Você também pode usar um controlador Xbox, um mouse e um teclado ou uma introdução [usando apenas sua voz](using-speech-in-wmr.md).
-
-**Features**
-
-* Rastreamento óptico
-* Gatilho
-* Botão de captura
-* Thumbstick
-* Touchpad
+Você também pode usar um controlador Xbox, um mouse e um teclado ou contornar [usando apenas sua voz](using-speech-in-wmr.md).
 
 ## <a name="motion-controller-setup"></a>Configuração do controlador de movimento
 
@@ -38,12 +29,12 @@ A maioria dos headsets vem emparelhada diretamente com o headset, mas alguns hea
 
 1. Inicie o **portal de realidade misturada** com o headset conectado.  
 2. No canto inferior esquerdo, selecione **... > configurar controladores**.
-3. Insira 2 baterias AA em cada controlador e coloque seu controlador no modo de emparelhamento (consulte as instruções na seção controladores de movimento de par)
+3. Insira 2 baterias AA em cada controlador e coloque seu controlador no modo de emparelhamento (consulte as instruções na [seção de controladores de movimento de par](controllers-in-wmr.md#Pair-motion-controllers)
 4. Siga as instruções fornecidas na tela.
 
 > [!NOTE]
-> * Para controladores que emparelham diretamente com seu PC, você precisará colocá-los no modo de emparelhamento ativando-os e, em seguida, pressionando o botão de emparelhamento dentro do compartimento da bateria até que as luzes comecem a piscar.  
-> * Os controladores de movimento dão suporte apenas a pares em um computador ou PC por vez. Se você precisar usá-los com um headset diferente, precisará passar pelo processo de emparelhamento. Consulte [Configurar a realidade mista do Windows](set-up-windows-mixed-reality.md)
+> * Para controladores que emparelham diretamente com seu PC, você precisará colocá-los no modo de emparelhamento ativando-os e, em seguida, pressionando o botão de emparelhamento dentro do compartimento da bateria até que as luzes comecem a piscar.
+> * Os controladores de movimento dão suporte apenas a pares em um computador por vez. Se você precisar usá-los com um headset diferente, precisará passar pelo processo de emparelhamento. Consulte [Configurar a realidade mista do Windows](set-up-windows-mixed-reality.md)
 
 [Obter ajuda para se conectar](wmr-setup-faq.md#my-motion-controllers-arent-working)
 
@@ -58,20 +49,29 @@ A maioria dos headsets vem emparelhada diretamente com o headset, mas alguns hea
 
 ## <a name="pair-motion-controllers"></a>Emparelhar controladores de movimento
 
+Se você estiver usando um headset que inclua um controlador Bluetooth integrado, como o Samsung Odyssey + ou HP, os controladores já deverão estar emparelhados. Mas você ainda pode emparelhar seus controladores usando o aplicativo de configuração (ele já deve estar instalado durante a configuração do HMD. Você também pode obtê-lo da Microsoft Store).
+
+### <a name="pair-motion-controllers-to-hmd"></a>Emparelhar controladores de movimento para HMD
+
 Ligue os controladores pressionando o botão Windows por 2 segundos até que os LEDs se acendam.
 
 Remova a tampa da bateria dos controladores e localize o pequeno botão de emparelhamento na borda do controlador. Mantenha esse botão inoperante para emparelhar com seu PC.
+    ![Emparelhamento do controlador de movimento](images/connect_controller.png)
 
-Se você estiver usando o HP reverberar G2 Headset, seus controladores já devem estar emparelhados. Mas você pode emparelhar seus controladores usando o HP reverbs G2 VR configurar aplicativo (ele já deve estar instalado durante a configuração. Você também pode obtê-lo da Microsoft Store). Além disso, você pode emparelhar seu controlador a um PV adicionando outro dispositivo Bluetooth:
+Inicie o **portal de realidade misturada** com o headset conectado.  
+No canto inferior esquerdo, selecione **... > configurar controladores**.
+Siga as instruções na tela.
+
+### <a name="pair-motion-controllers-to-pc"></a>Emparelhar controladores de movimento com o PC
+
+Você pode emparelhar seu controlador a um computador adicionando outro dispositivo Bluetooth.
+
+Ligue os controladores e coloque-os em modo de emparelhamento, conforme descrito acima.
 
 * Navegue até configurações do computador
 * Dispositivo/adicionar Bluetooth ou outro dispositivo.
 
-![Emparelhamento do controlador de movimento](images/connect_controller.png)
-
-Você pode ver uma mensagem no canto inferior direito da tela, pois o firmware em seus controladores é atualizado. Embora isso esteja acontecendo, você pode avançar para a próxima etapa do tutorial, mas não desligue seus controladores.
-
-Depois que a atualização do firmware do controlador estiver concluída, ela será reiniciada e reconectada ao PC host. Os LEDs serão sólidos e brilhantes.
+Quando o emparelhamento for concluído, os LEDs serão sólidos e brilhantes.
 
 ### <a name="common-issues"></a>Problemas comuns
 
@@ -129,8 +129,8 @@ Seu controlador se comunica com o que está fazendo, vibrando e piscando suas lu
 * Se um headset de imersão estiver conectado ao seu computador e o novo firmware do controlador estiver disponível, o firmware será enviado por push para seus controladores de movimento automaticamente na próxima vez que forem ativados.
 * As atualizações de firmware do controlador são indicadas por um padrão de quadrantes de LED de iluminação em um movimento circular e levar de 1-2 minutos. Às vezes, as atualizações de firmware podem levar mais tempo, até 10 minutos, o que pode indicar pouca conectividade Bluetooth ou interferência de rádio.
 * Caso a atualização do firmware seja interrompida (controlador desligado ou a bateria se esgotar), ela será tentada novamente na próxima ativação.
-* Após a conclusão da atualização do firmware, os controladores serão reinicializados e reconectados. 
-* Ambos os controladores devem estar conectados agora. (Verifique o Bluetooth e outros dispositivos para o seguinte): ![Controladores conectados](images/cyk-connected.jpg)
+* Após a conclusão da atualização do firmware, os controladores serão reinicializados e reconectados.
+* Ambos os controladores devem estar conectados agora. Navegue até o portal de realidade misturada para verificar o status dos controladores.
 * Verifique se os controladores funcionam corretamente:
   * Inicie o **portal de realidade misturada** e insira sua página inicial de realidade misturada.
   * Mova seus controladores e verifique o acompanhamento, os botões de teste e verifique se a teleportabilidade funciona. Se não estiverem, confira [a seção solução de problemas do controlador de movimento](motion-controller-problems.md)
@@ -155,4 +155,4 @@ Envie-nos comentários no Hub de comentários usando a categoria "realidade mist
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
 * [Solução de problemas](troubleshooting-windows-mixed-reality.md)
 
-Está tendo problemas com seus controladores de movimento? [Obter ajuda](using-wmr-faq.md#im-having-trouble-with-my-motion-controllers)
+Está tendo problemas com seus controladores de movimento? [Obter ajuda](motion-controller-problems.md)

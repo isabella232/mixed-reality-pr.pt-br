@@ -3,12 +3,12 @@ title: Como funciona o acompanhamento interno
 description: Informações sobre o sistema de controle interno baseado em câmera usado em headsets de realidade mista do Windows.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Inside-Out, dentro do rastreamento, câmera
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174330"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434600"
 ---
 # <a name="inside-out-tracking"></a>Rastreamento interno
 
@@ -72,6 +72,6 @@ O sistema de controle armazena alguns dados de ambiente para que ele possa se le
 
 ## <a name="see-also"></a>Confira também
 * [Solucionando problemas do sistema de controle](tracking.md)
-* [Como funcionam os controladores de movimento](controller-in-wmr.md)
+* [Controladores de movimentos](controller-in-wmr.md)
 * [Sua página inicial do Windows Mixed Reality](your-mixed-reality-home.md)
 * [Usando jogos e aplicativos no Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

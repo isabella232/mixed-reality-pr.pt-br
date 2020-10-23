@@ -3,18 +3,18 @@ title: Sua base de realidade misturada
 description: Como navegar e teleport na página inicial do Windows Mixed Reality, iniciar aplicativos e jogos, personalizar a página inicial e alterar as configurações de Visual, áudio e fala.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade mista, realidade virtual, VR, Sr, Home, navegar, contornar, aplicativos, jogos
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293084"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434622"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Sua página inicial do Windows Mixed Reality
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>O que é a página inicial do Windows Mixed Reality
 
-O Windows Mixed Reality é o primeiro sistema operacional espacial. Em vez de usar uma tela plana e uma interface 2D, ela aproveita nossa capacidade de instinctual de navegar por espaço tridimensional. Cada lugar tem uma finalidade, e o conteúdo tem contexto. Assim como seu PC começa na interface da área de trabalho e seu telefone começa com uma tela inicial, a realidade mista do Windows começa na casa mistura de realidade. É um ambiente que você pode navegar e personalizar para fazer o seu próprio. É a tela para os milhares de aplicativos disponíveis no Microsoft Store. Você pode realizar a multitarefa com esses aplicativos, como nunca foi possível antes, em 3D, em que o espaço é quase ilimitado.
+O Windows Mixed Reality é o primeiro sistema operacional espacial. Em vez de usar uma tela plana e uma interface 2D, ela aproveita nossa capacidade de instinctual de navegar por espaço tridimensional. Cada lugar tem uma finalidade, e o conteúdo tem contexto. Assim como seu PC começa na interface da área de trabalho e seu telefone começa com uma tela inicial, a realidade mista do Windows começa na casa mistura de realidade. É um ambiente que você pode navegar e personalizar para fazer o seu próprio. É a tela para os milhares de aplicativos disponíveis no Microsoft Store ou SteamVR. Você pode realizar a multitarefa com esses aplicativos, como nunca foi possível antes, em 3D, em que o espaço é quase ilimitado.
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>Vá para a página inicial do Windows Mixed Reality
 
@@ -26,7 +26,7 @@ O Windows Mixed Reality é o primeiro sistema operacional espacial. Em vez de us
   * Um recurso útil é chamado de "ajustar ao aplicativo" que permite que você salte para a posição ideal para interagir com as janelas de aplicativo. Basta apontar o arco de teleportação para uma janela e deixar de usar. O sistema irá colocá-lo automaticamente no local ideal para desfrutar do conteúdo dessa janela de destino.
 * **Percorrendo praticamente:** É possível mover-se de maneira contínua ao pressionar o Thumbstick (você deve sentir que ele clique) em seus controladores de movimento ou gamepad e, em seguida, movendo a direção desejada.
 
-## <a name="launch-an-app"></a>iniciar um aplicativo
+## <a name="launch-an-app"></a>Iniciar um aplicativo
 
 1. Na página inicial do Windows Mixed Reality, pressione o botão Windows no controlador para iniciar o menu iniciar.
 2. Selecione o aplicativo que você deseja iniciar.
@@ -73,7 +73,7 @@ Vá para **configurações > realidade misturada > ambiente > redefinir o** ![ p
 
 ## <a name="turn-off-the-boundary"></a>Desligar o limite
 
-Vá para o portal do Windows Mixed Reality e abra o menu no canto superior esquerdo da tela. Selecione **executar configurar > limite de sala**. Alterne a alternância para desativado. Você deve permanecer encaixado na sua mesa se desativar o limite.
+Vá para Portal de realidade misturada e abra o menu no canto superior esquerdo da tela. Selecione **executar configurar > limite de sala**. Alterne a alternância para desativado. Você deve permanecer encaixado na sua mesa se desativar o limite.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Som espacial na página inicial do Windows Mixed Reality
 
