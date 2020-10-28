@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestos, controladores de movimento, Unity, olhar, entrada
-ms.openlocfilehash: 6b132e56e5d60e59fda53b95328580ed861ce75c
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 6c41de0a0b5d2879b2f3a0be90c9456100599d2b
+ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638553"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92886269"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Gestos e controladores de movimento no Unity
 
@@ -68,32 +68,32 @@ Os mapeamentos de ID de botão/eixo para a realidade mista do Windows diferem do
 >[!NOTE]
 >Essas IDs de botão/eixo diferem das IDs que o Unity usa para OpenVR devido a colisões nos mapeamentos usados por gamepads, Oculus Touch e OpenVR.
 
-### <a name="using-hp-reverb-g2-controllers"></a>Usando os controladores de reverbo G2 HP
+<!-- ### Using HP Reverb G2 controllers
 
-Se você estiver usando os controladores HP reverberar G2, consulte a tabela abaixo para obter as IDs de botão e eixo.
+If you're using the HP Reverb G2 controllers, refer to the table below for button and axis IDs.
 
 <table>
 <tr>
-<th rowspan="2"><a href="https://docs.unity3d.com/ScriptReference/XR.CommonUsages.html">Entrada </th><th colspan="2">APIs comuns do Unity</a><br />(Input. getbutton/getaxis) </th><th rowspan="2">API de entrada do HP reverbs G2</a></th>
+<th rowspan="2"><a href="https://docs.unity3d.com/ScriptReference/XR.CommonUsages.html">Input </th><th colspan="2">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2">HP Reverb G2 Input API</a></th>
 </tr><tr>
-<th> À esquerda </th><th> À direita</th>
+<th> Left hand </th><th> Right hand</th>
 </tr><tr>
-<td> Primary2DAxis </td><td> Eixo 1 (X)/eixo 2 (Y) </td><td> Eixo 4 (X)/eixo 5 (Y) </td><td> Thumbstick</td>
+<td> Primary2DAxis </td><td> Axis 1 (X) / Axis 2 (Y) </td><td> Axis 4 (X) / Axis 5(Y) </td><td> Thumbstick</td>
 </tr><tr>
-<td> Gatilho pressionado </td><td> Eixo 9 </td><td> Eixo 10 </td><td> Gatilho de índice</td>
+<td> Trigger pressed </td><td> Axis 9 </td><td> Axis 10 </td><td> Index trigger</td>
 </tr><tr>
-<td> Dimensiona </td><td> 11D do eixo </td><td> Eixo 12 </td><td> Gatilho de alça</td>
+<td> Grip </td><td> Axis 11d </td><td> Axis 12 </td><td> Grip trigger</td>
 </tr><tr>
-<td> PrimaryButton pressionado </td><td> Botão 2 </td><td> Botão 0 </td><td> Botão de menu pressionado</td>
+<td> PrimaryButton pressed </td><td> Button 2 </td><td> Button 0 </td><td> Menu button pressed</td>
 </tr><tr>
-<td> SecondaryButton pressionado </td><td> Botão 3 </td><td> Botão 1 </td><td> Botão A/X</td>
+<td> SecondaryButton pressed </td><td> Button 3 </td><td> Button 1 </td><td> A/X button</td>
 </tr><tr>
-<td> GripButton </td><td> Botão 4 </td><td> Botão 5 </td><td> Gatilho de alça</td>
+<td> GripButton </td><td> Button 4 </td><td> Button 5 </td><td> Grip trigger</td>
 </tr><tr>
-<td> TriggerButton </td><td> Botão 14 </td><td> Botão 15 </td><td> Gatilho de índice</td>
+<td> TriggerButton </td><td> Button 14 </td><td> Button 15 </td><td> Index trigger</td>
 </tr><tr>
 </tr>
-</table>
+</table> -->
 
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Segurar pose vs. ponto de apontar
