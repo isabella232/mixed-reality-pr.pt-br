@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: b9b9d46e2ab71fa90960e403ceac94b95ba01440
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 75d8ade12d5534a1eb86f36bcdd590539a6811b5
+ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293073"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92683172"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Obtenha ajuda com a compatibilidade do PC no Windows Mixed Reality
 
@@ -41,11 +41,11 @@ Placas gráficas integradas fornecerão a melhor experiência de realidade mistu
 
 ### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>Este computador tem uma configuração gráfica híbrida com um link PCIe incompatível
 
-O PCIe significa *interconexão de componentes de periféricos Express*. Essa é a conexão que um computador usa para se comunicar com uma placa gráfica. Sua configuração pode funcionar, mas se você tiver problemas, será necessário alternar para um [computador compatível](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+O PCIe significa *interconexão de componentes de periféricos Express* . Essa é a conexão que um computador usa para se comunicar com uma placa gráfica. Sua configuração pode funcionar, mas se você tiver problemas, será necessário alternar para um [computador compatível](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>O driver gráfico do PC pode não funcionar bem com a realidade mista do Windows
 
-Se você tiver problemas, tente baixar um novo driver de gráficos usando Windows Update (**iniciar > configurações > atualizar & segurança > verificar se há atualizações**) — ou vá para o site fabricante do PC ou fabricante da placa gráfica.
+Se você tiver problemas, tente baixar um novo driver de gráficos usando Windows Update ( **iniciar > configurações > atualizar & segurança > verificar se há atualizações** ) — ou vá para o site fabricante do PC ou fabricante da placa gráfica.
 
 > [!div class="nextstepaction"]
 > [Verificar atualizações](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -63,10 +63,10 @@ Se você tiver problemas ao executar a realidade mista do Windows, tente o segui
 * Conecte seu headset em uma porta USB diferente, se disponível.
 * Se isso não funcionar, desinstale o driver USB atual do PC e reinstale um driver da Microsoft:
 
-1. Selecione **Iniciar**e, em seguida, digite "Gerenciador de dispositivos" na caixa de **pesquisa** .
+1. Selecione **Iniciar** e, em seguida, digite "Gerenciador de dispositivos" na caixa de **pesquisa** .
 2. Selecione **Device Manager** nos resultados.
 3. Expanda a categoria para controladores de barramento serial universal, examine os dispositivos listados e desinstale os drivers incompatíveis.
-    * Se a lista incluir um item de "controlador de host extensível" que não tenha "Microsoft" no final do nome do dispositivo, esse driver não será compatível com a realidade mista do Windows. Você precisará desinstalá-lo. Para desinstalar um driver, clique com o botão direito do mouse no dispositivo na lista e selecione **desinstalar dispositivo**. Marque a caixa de seleção **excluir o software do driver para este dispositivo** e selecione **desinstalar**.
+    * Se a lista incluir um item de "controlador de host extensível" que não tenha "Microsoft" no final do nome do dispositivo, esse driver não será compatível com a realidade mista do Windows. Você precisará desinstalá-lo. Para desinstalar um driver, clique com o botão direito do mouse no dispositivo na lista e selecione **desinstalar dispositivo** . Marque a caixa de seleção **excluir o software do driver para este dispositivo** e selecione **desinstalar** .
     * Se a lista incluir um item de "controlador de host extensível" que inclui "Etron" no nome, esse controlador USB não será compatível com a realidade mista do Windows. Você precisará usar uma porta USB diferente no PC ou adquirir um controlador de host USB 3,0 diferente.
 4. Reinicie o computador.
 5. Retorne para Device Manager e localize o item do controlador de host extensível novamente. Se agora você vir "Microsoft" no final do nome do dispositivo, você está pronto para começar. Caso contrário, repita as etapas de desinstalação para remover quaisquer versões adicionais que não sejam da Microsoft do driver.
@@ -99,7 +99,7 @@ A placa gráfica do computador não é compatível com a realidade mista do Wind
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>O driver gráfico deste computador não funcionará com a realidade mista do Windows
 
-O driver gráfico deste computador não funcionará com a realidade mista do Windows. Tente baixar um novo driver de gráficos usando Windows Update (**iniciar > configurações > atualizar & segurança > verificar se há atualizações**) — ou vá para o site fabricante do PC ou fabricante da placa gráfica. 
+O driver gráfico deste computador não funcionará com a realidade mista do Windows. Tente baixar um novo driver de gráficos usando Windows Update ( **iniciar > configurações > atualizar & segurança > verificar se há atualizações** ) — ou vá para o site fabricante do PC ou fabricante da placa gráfica. 
 
 > [!div class="nextstepaction"]
 > [Verificar atualizações](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -108,7 +108,7 @@ Se isso não funcionar, você precisará adicionar uma [placa gráfica compatív
 
 ### <a name="this-pcs-processor-wont-work-with-windows-mixed-reality"></a>O processador deste computador não funcionará com a realidade mista do Windows
 
-O processador deste computador não Supprot instruções AVX/Popcnt. Para executar a realidade mista do Windows, você precisará substituí-lo por uma [placa gráfica compatível](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ou alternar para um [PC compatível](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+O processador deste computador não dá suporte a instruções AVX/Popcnt. Para executar a realidade mista do Windows, você precisará substituí-lo por uma [placa gráfica compatível](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ou alternar para um [PC compatível](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>Este computador não tem espaço livre em disco suficiente para executar a realidade mista do Windows
 
@@ -142,7 +142,7 @@ Algumas configurações de hardware podem causar problemas de desempenho com a r
 > [!NOTE]
 > Se você vir uma mensagem dizendo "esta configuração de hardware pode funcionar com a realidade mista do Windows, mas ela ainda não foi testada", você poderá encontrar alguns problemas de desempenho ao executar a realidade mista do Windows para sessões longas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
