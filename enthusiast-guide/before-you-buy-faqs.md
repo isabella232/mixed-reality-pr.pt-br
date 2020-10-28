@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, pré-venda, pesquisa, compra, antes de comprar
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434610"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907438"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434610"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Onde posso comprar um PC ou headset com o Windows Mixed Reality Ready?
 
-**Resposta rápida:** Você pode comprar um PC ou fone de ouvido com o Windows Mixed Reality pronto em um varejista local aprovado ou online de uma variedade de varejistas, incluindo o Microsoft Store. Encontre um PC com o Windows Mixed Reality Ready ou headset online: <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Resposta rápida:** Você pode comprar um PC ou fone de ouvido com o Windows Mixed Reality pronto em um varejista local aprovado ou online de uma variedade de varejistas, incluindo o Microsoft Store. Encontre um PC com o Windows Mixed Reality Ready ou headset online: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Onde posso experimentar o Windows Mixed Reality?
 
-**Resposta rápida:** Você pode experimentar a realidade mista do Windows em um [reator da Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) perto de você.  
-* Encontre seu reator local da Microsoft: <https://www.microsoft.com/en-us/store/locations/all-locations>
+**Resposta rápida:** Você pode experimentar a realidade mista do Windows em um [reator da Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) perto de você.
+
 * Localizar eventos de reator da Microsoft no Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quais fabricantes estão vendendo dispositivos Windows Mixed Reality?
 
-**Resposta rápida:** Os headsets e os controladores de movimento estão disponíveis atualmente na HP. Consulte <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Resposta rápida:** Os headsets e os controladores de movimento estão disponíveis atualmente na HP. Veja <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Onde posso comprar controladores de movimento autônomos?
 
@@ -51,7 +51,7 @@ Saiba mais sobre a realidade misturada aqui: <https://docs.microsoft.com/windows
 
 **Resposta rápida:** O controle de fone de ouvido do Windows Mixed Reality está dentro do acompanhamento (câmeras de rastreamento estão no headset) e na instalação de plug-and-Play com o Windows 10.
 
-**Mais detalhes**: a realidade mista do Windows oferece vários recursos, incluindo instalação fácil (sem necessidade de sensores externos para controlar você e seus controladores), sua escolha de headsets para atender aos seus pontos de preço e conforto, headsets que têm resoluções competitivas e, finalmente, uma experiência de usuário exclusiva que apresenta uma interface espacial que permite usar milhares de aplicativos da Microsoft Store.
+**Mais detalhes** : a realidade mista do Windows oferece vários recursos, incluindo instalação fácil (sem necessidade de sensores externos para controlar você e seus controladores), sua escolha de headsets para atender aos seus pontos de preço e conforto, headsets que têm resoluções competitivas e, finalmente, uma experiência de usuário exclusiva que apresenta uma interface espacial que permite usar milhares de aplicativos da Microsoft Store.
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>A realidade misturada significa que as câmeras internas são PassThrough? Você pode experimentar uma realidade aumentada além da realidade virtual?
 
@@ -257,7 +257,7 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Os headsets da realidade misturada têm ajuste de IPD?
 
-**Resposta rápida:** Dependendo do headset, alguns headsets de realidade misturada apresentam ajuste mecânico de IPD. Outros headsets apresentam o ajuste de IPD de software, o que melhora a distorção de imagem e a precisão de profundidade com base no seu IPD. Os usuários podem definir seu IPD personalizado via **configurações > realidade misturada > tela de Headset > de calibragem**.
+**Resposta rápida:** Dependendo do headset, alguns headsets de realidade misturada apresentam ajuste mecânico de IPD. Outros headsets apresentam o ajuste de IPD de software, o que melhora a distorção de imagem e a precisão de profundidade com base no seu IPD. Os usuários podem definir seu IPD personalizado via **configurações > realidade misturada > tela de Headset > de calibragem** .
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Os headsets de realidade misturada têm ajuste de relevo de olho?
 
@@ -303,7 +303,7 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>A plataforma Windows Mixed Reality dá suporte ao hardware Rift e Naopak?
 
-**Resposta rápida:** A realidade mista do Windows funcionará apenas com headsets/controladores de realidade mista do Windows misto. Consulte <https://www.microsoft.com/en-us/store/b/virtualreality>
+**Resposta rápida:** A realidade mista do Windows funcionará apenas com headsets/controladores de realidade mista do Windows misto. Veja <https://www.microsoft.com/en-us/store/b/virtualreality>
 
 ## <a name="motion-controllers"></a>Controladores de movimento
 
@@ -332,11 +332,11 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>A realidade mista do Windows funcionará com meus controladores Oculus Touch ou com os controladores/headsets Naopak HTC?
 
-**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Consulte <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>A realidade mista do Windows funcionará com meus controladores SteamVR Knuckle?
 
-**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Consulte <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>A realidade do Windows Mixed dará suporte ao meu controlador Xbox One com o adaptador Xbox sem fio?
 
