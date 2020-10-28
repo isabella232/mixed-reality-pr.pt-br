@@ -13,6 +13,6 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638493"
 ---
-# <a name="porting-overview"></a><span data-ttu-id="37346-104">Visão geral de portabilidade</span><span class="sxs-lookup"><span data-stu-id="37346-104">Porting overview</span></span>
+# <a name="porting-overview"></a><span data-ttu-id="c834f-104">Visão geral de portabilidade</span><span class="sxs-lookup"><span data-stu-id="c834f-104">Porting overview</span></span>
 
-<span data-ttu-id="37346-105">[//TODO: imagem de cabeçalho necessária]</span><span class="sxs-lookup"><span data-stu-id="37346-105">[//TODO: Need header image]</span></span>
+<span data-ttu-id="c834f-105">[//TODO: imagem de cabeçalho necessária]</span><span class="sxs-lookup"><span data-stu-id="c834f-105">[//TODO: Need header image]</span></span>
