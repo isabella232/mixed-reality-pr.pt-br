@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality OpenXR Ferramentas para Desenvolvedores, DirectX, nativo, aplicativo nativo, mecanismo personalizado, middleware, introdução, 101, extensões de visualização, versão de tempo de execução do OpenXR, status do sistema
-ms.openlocfilehash: 2f176d591a7272bdcccf6d073e0407bc0d159c29
-ms.sourcegitcommit: d063c767117c055dc5d40c2bd5a680728fca95fb
+keywords: OpenXR, Khronos, BasicXRApp, realidade mista do Windows, OpenXR Ferramentas para Desenvolvedores, DirectX, nativo, aplicativo nativo, mecanismo personalizado, middleware, introdução, 101, extensões de visualização, versão de tempo de execução do OpenXR, status do sistema
+ms.openlocfilehash: a641512bf36f2d791c009e6dfa83c1f9bd797547
+ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886864"
+ms.locfileid: "92903162"
 ---
 # <a name="getting-started-with-openxr"></a>Introdução ao OpenXR
 
@@ -33,16 +33,15 @@ Para começar a desenvolver aplicativos OpenXR para headsets de imersão mistura
 
 É isso!  O tempo de execução do Windows Mixed Reality OpenXR é instalado e torna-se ativo automaticamente para todos os usuários do Windows Mixed Reality.  O Microsoft Store mantém o tempo de execução atualizado.
 
-Se você precisar tornar o tempo de execução do Windows Mixed Reality OpenXR ativo novamente, inicie o portal de realidade misturada no menu Iniciar, clique no botão... no canto inferior esquerdo e selecione "configurar OpenXR".  Se esse item de menu estiver ausente, o tempo de execução do OpenXR já estará ativo.<br>
-![Configurando o OpenXR no portal de realidade misturada](images/mixed-reality-portal-set-up-openxr.png)
+Se você precisar tornar o Windows Mixed Reality OpenXR Runtime ativo novamente, inicie o portal de realidade misturada no menu iniciar e clique em "corrigir" na faixa na parte superior da janela.  Se esse botão estiver ausente, o tempo de execução do OpenXR já estará ativo.<br>
 
-## <a name="getting-the-windows-mixed-reality-openxr-developer-tools"></a>Obtendo o OpenXR da realidade mista do Windows Ferramentas para Desenvolvedores
+## <a name="getting-the-openxr-developer-tools-for-windows-mixed-reality"></a>Obtendo o Ferramentas para Desenvolvedores OpenXR para a realidade mista do Windows
 
-Para experimentar o tempo de execução do Windows Mixed Reality OpenXR, você pode instalar o <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">aplicativo OpenXR ferramentas para desenvolvedores de realidade misturada</a>.  Esse aplicativo fornece uma cena de demonstração que exercita vários recursos do OpenXR, juntamente com uma página de status do sistema que fornece informações importantes sobre o tempo de execução ativo e o headset atual.
+Para experimentar o tempo de execução do Windows Mixed Reality OpenXR, você pode instalar o <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">aplicativo OpenXR ferramentas para desenvolvedores for Windows Mixed Reality</a>.  Esse aplicativo fornece uma cena de demonstração que exercita vários recursos do OpenXR, juntamente com uma página de status do sistema que fornece informações importantes sobre o tempo de execução ativo e o headset atual.
 
-Se estiver usando o emulador do HoloLens 2, a maneira mais fácil de instalar a realidade misturada OpenXR Ferramentas para Desenvolvedores está usando o [portal de dispositivo do Windows](../platform-capabilities-and-apis/using-the-windows-device-portal.md), navegando até a página "OpenXR" e clicando no botão "instalar" em "recursos do desenvolvedor". (isso funciona em um dispositivo físico do HoloLens 2 também)
+Se estiver usando o emulador do HoloLens 2, a maneira mais fácil de instalar o OpenXR Ferramentas para Desenvolvedores para a realidade mista do Windows é usar o [portal de dispositivos do Windows](../platform-capabilities-and-apis/using-the-windows-device-portal.md), navegando até a página "OpenXR" e clicando no botão "instalar" em "recursos do desenvolvedor". (isso funciona em um dispositivo físico do HoloLens 2 também)
 
-![Aplicativo OpenXR Ferramentas para Desenvolvedores de realidade misturada](images/mixed-reality-openxr-developer-tools.png)
+![OpenXR Ferramentas para Desenvolvedores para o aplicativo Windows Mixed Reality](images/mixed-reality-openxr-developer-tools.png)
 
 ## <a name="building-a-sample-openxr-app"></a>Criando um aplicativo OpenXR de exemplo
 
@@ -58,8 +57,7 @@ Depois de criar um pacote de aplicativo OpenXR UWP, você pode [implantar esse p
 
 ## <a name="learning-the-openxr-api"></a>Aprendendo a API do OpenXR
 
-Para obter um tour pela API do OpenXR, confira este vídeo de 60 minutos que percorre o código do exemplo de <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> no Visual Studio.  O vídeo mostra como cada um dos principais componentes da API OpenXR pode ser usado em seu próprio mecanismo e também demonstra alguns dos aplicativos criados no OpenXR hoje.
-
+Para obter um tour pela API do OpenXR, confira este vídeo de 60 minutos que percorre o código do exemplo de <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> no Visual Studio.  O vídeo mostra como cada um dos principais componentes da API OpenXR pode ser usado em seu próprio mecanismo e também demonstra alguns dos aplicativos criados no OpenXR hoje:
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
 ## <a name="integrate-the-openxr-loader-into-a-project"></a>Integrar o carregador do OpenXR a um projeto
@@ -87,7 +85,7 @@ Para ver um exemplo da API OpenXR em ação, confira o aplicativo de exemplo <a 
 
 Se você quiser criar o carregador por conta própria, por exemplo, para evitar o carregador extra. DLL, você pode extrair as fontes oficiais do Khronos OpenXR Loader para seu projeto.  Isso dará acesso aos recursos principais do OpenXR 1,0, mais publicados `KHR` `EXT` e `MSFT` extensões.
 
-Para começar aqui, siga as instruções no <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">repositório Khronos OpenXR-SDK no GitHub</a>.  O projeto é configurado para compilar com CMake-se você estiver usando o MSBuild, será necessário copiar para o código em seu próprio projeto.
+Para começar aqui, siga as instruções no <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">repositório Khronos OpenXR-SDK no GitHub</a>.  O projeto é configurado para compilar com CMake-se você estiver usando o MSBuild, você precisará copiar o código em seu próprio projeto.
 
 ## <a name="using-preview-extensions"></a>Usando extensões de visualização
 
@@ -99,13 +97,11 @@ Se você estiver interessado em experimentar as extensões disponíveis `MSFT_pr
 
 Para ativar o suporte de extensão de visualização no seu PC de destino 2 ou computador desktop:
   1. Para verificar se você tem o tempo de execução OpenXR mais recente com todas as [extensões](openxr.md#roadmap) presentes, inicie o aplicativo da **loja** de dentro do dispositivo ou emulador de destino, abra o menu no canto superior direito, clique em **downloads e atualizações** e clique em **obter atualizações** .
-  1. Habilitar o portal de dispositivos do Windows no dispositivo de destino:
-     * Se o dispositivo de destino for um dispositivo de HoloLens 2, [siga estas instruções](../platform-capabilities-and-apis/using-the-windows-device-portal.md) no dispositivo de destino.  Observe que isso requer um headset físico, uma vez que um problema conhecido no emulador do HoloLens 2 impedirá que a interface do usuário na próxima etapa apareça no emulador.
-     * Se o seu dispositivo de destino for um PC desktop com um fone de ouvido de imersão anexado, <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">siga estas instruções</a> no computador desktop de destino.
-  1. Navegue até a guia **OpenXR** no painel esquerdo e habilite **usar o tempo de execução do OpenXR de visualização mais recente** .  Isso habilita o tempo de execução de visualização em seu dispositivo, que tem extensões de visualização ativadas.
-     ![Caixa de seleção tempo de execução do portal do dispositivo OpenXR Preview](images/device-portal-openxr-preview-runtime.png)
-  1. Confirme se a **versão de tempo de execução** mostrada na guia **status do sistema** do [Windows Mixed Reality OpenXR ferramentas para desenvolvedores](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) agora corresponde à versão necessária das extensões de visualização que você planeja experimentar.  Nesse caso, você deve ver a extensão na lista de **extensões** .  Observe que, uma vez que uma extensão estável está disponível, sua extensão de visualização será removida.<br />
-     ![OpenXR de realidade misturada Ferramentas para Desenvolvedores guia status do sistema de aplicativo](images/mixed-reality-openxr-developer-tools-status.png)
+  1. Instale o <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">aplicativo OpenXR ferramentas para desenvolvedores for Windows Mixed Reality</a> da Microsoft Store no dispositivo de destino e execute-o.
+  1. Navegue até a guia **configurações do desenvolvedor** e habilite usar o tempo de execução do OpenXR de **visualização mais recente** .  Isso habilita o tempo de execução de visualização em seu dispositivo, que tem extensões de visualização ativadas.
+     ![Guia de configurações do desenvolvedor do aplicativo OpenXR Ferramentas para Desenvolvedores para Windows Mixed Reality](images/mixed-reality-openxr-developer-tools-settings.png)
+  1. Confirme se a **versão de tempo de execução** mostrada na guia **status do sistema** do [OpenXR ferramentas para desenvolvedores para a realidade mista do Windows](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) agora corresponde à versão necessária das extensões de visualização que você planeja experimentar.  Nesse caso, você deve ver a extensão na lista de **extensões** .  Observe que, uma vez que uma extensão estável está disponível, sua extensão de visualização será removida.<br />
+     ![Guia de status do sistema de aplicativos do OpenXR Ferramentas para Desenvolvedores para Windows Mixed Reality](images/mixed-reality-openxr-developer-tools-status.png)
 
 Consulte o <a href="https://github.com/microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">repositório OpenXR de realidade misturada</a> para obter a documentação dessas extensões de visualização e exemplos de como usá-las.
 
