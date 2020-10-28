@@ -1,0 +1,450 @@
+- name: Introdução ao desenvolvimento de Realidade Misturada
+  href: development.md
+- name: Serviços de nuvem do Azure
+  href: mixed-reality-cloud-services.md
+- name: Instalar as ferramentas
+  href: install-the-tools.md
+- name: Portabilidade de aplicativos
+  items:
+    - name: Preparar seu aplicativo existente para HoloLens 2
+      href: unity/mrtk-porting-guide.md
+    - name: Guia de portabilidade para aplicativos imersivos
+      href: porting-apps/porting-guides.md
+    - name: Atualizar para o SteamVR
+      href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+    - name: Atualizar aplicativos UWP 2D para Realidade Misturada
+      href: porting-apps/building-2d-apps.md
+- name: Unity
+  items:
+    - name: Visão geral do desenvolvimento com o Unity
+      href: unity/unity-development-overview.md
+    - name: Introdução
+      items:
+        - name: Introdução ao Kit de Ferramentas de Realidade Misturada v2
+          href: unity/mrtk-getting-started.md
+        - name: Configurar projeto do Unity para o Windows Mixed Reality
+          href: unity/configure-unity-project.md
+        - name: Preparar seu aplicativo existente para HoloLens 2
+          href: unity/mrtk-porting-guide.md
+    - name: Tutoriais
+      items:
+        - name: Visão geral
+          href: unity/tutorials.md
+        - name: Tutoriais do HoloLens 2
+          items:
+            - name: Tutoriais de introdução
+              items:
+                - name: 1. Introdução
+                  href: unity/tutorials/mr-learning-base-01.md
+                - name: 2. Inicializar o projeto e seu primeiro aplicativo
+                  href: unity/tutorials/mr-learning-base-02.md
+                - name: 3. Configurar perfis do Kit de Ferramentas de Realidade Misturada
+                  href: unity/tutorials/mr-learning-base-03.md
+                - name: 4. Como posicionar objetos na cena
+                  href: unity/tutorials/mr-learning-base-04.md
+                - name: 5. Criar conteúdo dinâmico usando Solucionadores
+                  href: unity/tutorials/mr-learning-base-05.md
+                - name: 6. Como criar interfaces do usuário
+                  href: unity/tutorials/mr-learning-base-06.md
+                - name: 7. Como interagir com objetos 3D
+                  href: unity/tutorials/mr-learning-base-07.md
+                - name: 8. Como usar o acompanhamento ocular
+                  href: unity/tutorials/mr-learning-base-08.md
+                - name: 9. Como usar comandos de voz
+                  href: unity/tutorials/mr-learning-base-09.md
+            - name: Tutoriais de Âncora Espacial do Azure
+              items:
+                - name: 1. Introdução
+                  href: unity/tutorials/mr-learning-asa-01.md
+                - name: 2. Introdução às Âncoras Espaciais do Azure
+                  href: unity/tutorials/mr-learning-asa-02.md
+                - name: '3. Salvar, recuperar e compartilhar Âncoras Espaciais do Azure'
+                  href: unity/tutorials/mr-learning-asa-03.md
+                - name: 4. Exibir os comentários da Âncora Espacial do Azure
+                  href: unity/tutorials/mr-learning-asa-04.md
+                - name: 5. Âncoras Espaciais do Azure para o Android e o iOS
+                  href: unity/tutorials/mr-learning-asa-05.md
+            - name: Tutoriais de recursos multiusuário
+              items:
+                - name: 1. Introdução
+                  href: unity/tutorials/mr-learning-sharing-01.md
+                - name: 2. Configurar o Photon Unity Networking
+                  href: unity/tutorials/mr-learning-sharing-02.md
+                - name: 3. Como conectar vários usuários
+                  href: unity/tutorials/mr-learning-sharing-03.md
+                - name: 4. Compartilhar movimentações de objeto com vários usuários
+                  href: unity/tutorials/mr-learning-sharing-04.md
+                - name: 5. Integrar Âncoras Espaciais do Azure a uma experiência compartilhada
+                  href: unity/tutorials/mr-learning-sharing-05.md
+            - name: Tutoriais de Serviços de Fala do Azure
+              items:
+                - name: 1. Integrar e usar a transcrição e o reconhecimento de fala
+                  href: unity/tutorials/mrlearning-speechsdk-ch1.md
+                - name: 2. Adicionar um modo offline para tradução de fala em texto local
+                  href: unity/tutorials/mrlearning-speechsdk-ch2.md
+                - name: 3. Adicionar o componente de tradução de fala dos Serviços Cognitivos do Azure
+                  href: unity/tutorials/mrlearning-speechsdk-ch3.md
+                - name: 4. Configurar a intenção e o reconhecimento vocal natural
+                  href: unity/tutorials/mrlearning-speechsdk-ch4.md
+            - name: Tutoriais de áudio espacial
+              items:
+                - name: 1. Adicionar áudio espacial em seu projeto
+                  href: unity/tutorials/unity-spatial-audio-ch1.md
+                - name: 2. Espacializar sons de interação de botão
+                  href: unity/tutorials/unity-spatial-audio-ch2.md
+                - name: 3. Espacializar áudio de um vídeo
+                  href: unity/tutorials/unity-spatial-audio-ch3.md
+                - name: 4. Habilitar e desabilitar o áudio espacial em tempo de execução
+                  href: unity/tutorials/unity-spatial-audio-ch4.md
+                - name: 5. Usar o reverb para adicionar distância ao áudio espacial
+                  href: unity/tutorials/unity-spatial-audio-ch5.md
+            - name: Tutoriais dos Serviços de Nuvem do Azure
+              items:
+                - name: 1. Serviços de Nuvem do Azure para HoloLens 2
+                  href: unity/tutorials/mr-learning-azure-01.md
+                - name: 2. Integrar o Armazenamento do Azure
+                  href: unity/tutorials/mr-learning-azure-02.md
+                - name: 3. Integrar a Visão Personalizada do Azure
+                  href: unity/tutorials/mr-learning-azure-03.md
+                - name: 4. Integrar as Âncoras Espaciais do Azure
+                  href: unity/tutorials/mr-learning-azure-04.md
+                - name: 5. Integrar o Serviço de Bot do Azure
+                  href: unity/tutorials/mr-learning-azure-05.md
+            - name: Tutoriais de comunicação remota holográfica para PC
+              items:
+                - name: 1. Introdução à comunicação remota holográfica para PC
+                  href: unity/tutorials/mr-learning-pc-holographic-remoting-01.md
+                - name: 2. Como criar um aplicativo de Comunicação Remota Holográfica para PC
+                  href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
+        - name: Tutoriais do HoloLens (1ª geração) e do headset imersivo
+          items:
+            - name: Noções básicas do MR 100 – Introdução ao Unity
+              href: unity/tutorials/holograms-100.md
+            - name: Noções básicas do MR 101 – Projeto completo com dispositivo
+              href: unity/tutorials/holograms-101.md
+            - name: Noções básicas do MR 101E – Projeto completo com emulador
+              href: unity/tutorials/holograms-101e.md
+            - name: Entrada do MR 210 – Foco
+              href: unity/tutorials/holograms-210.md
+            - name: Entrada do MR 211 – Gesto
+              href: unity/tutorials/holograms-211.md
+            - name: Entrada do MR 212 – Voz
+              href: unity/tutorials/holograms-212.md
+            - name: MR Espacial 220 – Som espacial
+              href: unity/tutorials/holograms-220.md
+            - name: MR Espacial 230 – Mapeamento espacial
+              href: unity/tutorials/holograms-230.md
+            - name: Compartilhamento do MR 240 – Vários dispositivos HoloLens
+              href: unity/tutorials/holograms-240.md
+        - name: Tutoriais de Realidade Misturada e dos Serviços do Azure
+          items:
+            - name: MR e Azure 301 – Tradução de idioma
+              href: unity/tutorials/mr-azure-301.md
+            - name: MR e Azure 302 – Pesquisa Visual Computacional
+              href: unity/tutorials/mr-azure-302.md
+            - name: MR e Azure 302b – Visão Personalizada
+              href: unity/tutorials/mr-azure-302b.md
+            - name: MR e Azure 303 – Reconhecimento em idioma natural
+              href: unity/tutorials/mr-azure-303.md
+            - name: MR e Azure 304 – Reconhecimento facial
+              href: unity/tutorials/mr-azure-304.md
+            - name: MR e Azure 305 – Funções e Armazenamento
+              href: unity/tutorials/mr-azure-305.md
+            - name: MR e Azure 306 – Streaming de vídeo
+              href: unity/tutorials/mr-azure-306.md
+            - name: MR e Azure 307 – Machine learning
+              href: unity/tutorials/mr-azure-307.md
+            - name: MR e Azure 308 – Notificações entre dispositivos
+              href: unity/tutorials/mr-azure-308.md
+            - name: MR e Azure 309 – Application Insights
+              href: unity/tutorials/mr-azure-309.md
+            - name: MR e Azure 310 – Detecção de objetos
+              href: unity/tutorials/mr-azure-310.md
+            - name: MR e Azure 311 – Microsoft Graph
+              href: unity/tutorials/mr-azure-311.md
+            - name: MR e Azure 312 – Integração de bots
+              href: unity/tutorials/mr-azure-312.md
+            - name: MR e Azure 313 – Serviço do Hub IoT
+              href: unity/tutorials/mr-azure-301.md
+    - name: Blocos principais de construção
+      items:
+        - name: MRTK 101 – Como usar o Unity do Kit de Ferramentas de Realidade Misturada para interações básicas
+          href: unity/mrtk-101.md
+        - name: Câmera no Unity
+          href: unity/camera-in-unity.md
+        - name: Sistemas de coordenadas no Unity
+          href: unity/coordinate-systems-in-unity.md
+        - name: Persistência no Unity
+          href: unity/persistence-in-unity.md
+        - name: Foco no Unity
+          href: unity/gaze-in-unity.md
+        - name: Texto no Unity
+          href: unity/text-in-unity.md
+        - name: Gestos e controladores de movimento no Unity
+          href: unity/gestures-and-motion-controllers-in-unity.md
+        - name: Acompanhamento de mãos e olhos no Unity
+          href: unity/hand-eye-in-unit.md
+        - name: Entrada de voz no Unity
+          href: unity/voice-input-in-unity.md
+        - name: Mapeamento espacial no Unity
+          href: unity/spatial-mapping-in-unity.md
+        - name: Som espacial no Unity
+          href: unity/spatial-sound-in-unity.md
+    - name: Funcionalidades de plataforma e APIs
+      items:
+        - name: Experiências compartilhadas no Unity
+          href: unity/shared-experiences-in-unity.md
+        - name: Câmera localizável no Unity
+          href: unity/locatable-camera-in-unity.md
+        - name: Ponto de foco no Unity
+          href: unity/focus-point-in-unity.md
+        - name: Como controlar a perda no Unity
+          href: unity/tracking-loss-in-unity.md
+        - name: Entrada do teclado no Unity
+          href: unity/keyboard-input-in-unity.md
+        - name: Como usar o namespace do Windows com aplicativos Unity para HoloLens
+          href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
+        - name: Objetos nativos de realidade misturada no Unity
+          href: unity/unity-xrdevice-advanced.md
+        - name: Como usar o Vuforia com o Unity
+          href: unity/vuforia-development-overview.md
+    - name: VR imersiva
+      items:
+        - name: Controladores do HP Reverb G2 no Unity
+          href: unity/unity-reverb-g2-controllers.md
+    - name: Aplicativos de exemplo
+      items:
+        - name: Visão geral
+          href: unity/samples.md
+        - name: HoloLens 2
+          items:
+            - name: Surfaces
+              href: null
+            - name: Tabela periódica dos elementos 2.0
+              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+            - name: Galaxy Explorer 2.0
+              href: unity/galaxy-explorer-update.md
+        - name: HoloLens (1ª geração)
+          items:
+            - name: Tabela periódica dos elementos
+              href: unity/periodic-table-of-the-elements.md
+            - name: Galaxy Explorer 1.0
+              href: unity/galaxy-explorer.md
+            - name: Módulo lunar
+              href: unity/lunar-module.md
+    - name: Configurações e depuração
+      items:
+        - name: Depuração gerenciada com o Unity IL2CPP
+          href: unity/managed-debugging-with-unity-il2cpp.md
+        - name: Configurações recomendadas do Unity
+          href: unity/recommended-settings-for-unity.md
+        - name: Modo de reprodução do Unity
+          href: unity/unity-play-mode.md
+    - name: Soluções do Visual Studio
+      items:
+        - name: Como exportar e criar uma solução do Visual Studio do Unity
+          href: unity/exporting-and-building-a-unity-visual-studio-solution.md
+        - name: Melhores práticas para trabalhar com o Unity e o Visual Studio
+          href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+- name: Unreal
+  items:
+    - name: Visão geral do desenvolvimento com o Unreal
+      href: unreal/unreal-development-overview.md
+    - name: Tutoriais
+      items:
+        - name: Criar um aplicativo de xadrez com ferramentas de experiência do usuário do MRTK
+          items:
+            - name: Introdução
+              href: unreal/tutorials/unreal-uxt-ch1.md
+            - name: Inicializar seu projeto
+              href: unreal/tutorials/unreal-uxt-ch2.md
+            - name: Configuração da Realidade Misturada
+              href: unreal/tutorials/unreal-uxt-ch3.md
+            - name: Adicionar interatividade
+              href: unreal/tutorials/unreal-uxt-ch4.md
+            - name: Interface do usuário e funções
+              href: unreal/tutorials/unreal-uxt-ch5.md
+            - name: Empacotar e implantar
+              href: unreal/tutorials/unreal-uxt-ch6.md
+    - name: Blocos principais de construção
+      items:
+        - name: Entrada por foco no Unreal
+          href: unreal/unreal-gaze-input.md
+        - name: Acompanhamento da mão no Unreal
+          href: unreal/unreal-hand-tracking.md
+        - name: Mapeamento espacial no Unreal
+          href: unreal/unreal-spatial-mapping.md
+        - name: Áudio espacial no Unreal
+          href: unreal/unreal-spatial-audio.md
+        - name: Âncoras Espaciais locais no Unreal
+          href: unreal/unreal-spatial-anchors.md
+        - name: Âncoras Espaciais do Azure no Unreal
+          href: unreal/unreal-azure-spatial-anchors.md
+        - name: Entrada de voz no Unreal
+          href: unreal/unreal-voice-input.md
+    - name: Funcionalidades de plataforma e APIs
+      items:
+        - name: Câmera de foto/vídeo do HoloLens no Unreal
+          href: unreal/unreal-hololens-camera.md
+        - name: Códigos QR no Unreal
+          href: unreal/unreal-qr-codes.md
+        - name: WinRT no Unreal
+          href: unreal/unreal-winrt.md
+    - name: VR imersiva
+      items:
+        - name: Controladores do HP Reverb G2 no Unreal
+          href: unreal/unreal-reverb-g2-controllers.md
+    - name: Aplicativos de exemplo
+      items:
+        - name: Visão geral
+          href: unreal/unreal-samples.md
+        - name: Kippy's Escape
+          href: unreal/unreal-kippys-escape.md
+    - name: Implantação e desempenho
+      items:
+        - name: Implantar no dispositivo no Unreal
+          href: unreal/unreal-deploying.md
+        - name: Recomendações de desempenho para o Unreal
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Recomendações de material no Unreal
+          href: unreal/unreal-materials.md
+        - name: Streaming no Unreal
+          href: unreal/unreal-streaming.md
+- name: Web
+  items:
+    - name: Visão geral do desenvolvimento para a Web
+      href: web/javascript-development-overview.md
+    - name: WebXR
+      href: web/webxr-overview.md
+    - name: WebVR
+      href: web/webvr-overview.md
+- name: Nativo
+  items:
+    - name: Visão geral do desenvolvimento nativo
+      href: native/directx-development-overview.md
+    - name: OpenXR
+      items:
+        - name: Visão geral do OpenXR
+          href: native/openxr.md
+        - name: Introdução ao OpenXR
+          href: native/openxr-getting-started.md
+        - name: Práticas recomendadas do OpenXR
+          href: native/openxr-best-practices.md
+        - name: Desempenho do OpenXR
+          href: native/openxr-performance.md
+        - name: Solução de problemas do OpenXR
+          href: native/openxr-troubleshooting.md
+    - name: WinRT (Herdado)
+      items:
+        - name: Introdução
+          items:
+            - name: Criar um projeto holográfico nativo
+              href: native/creating-a-holographic-directx-project.md
+            - name: Como obter um HolographicSpace
+              href: native/getting-a-holographicspace.md
+            - name: Renderização nativa
+              href: native/rendering-in-directx.md
+            - name: Sistemas de coordenadas
+              href: native/coordinate-systems-in-directx.md
+        - name: Blocos principais de construção
+          items:
+            - name: Olhar fixo com cabeça e olhos
+              href: native/gaze-in-directx.md
+            - name: Controladores de mãos e de movimento
+              href: native/hands-and-motion-controllers-in-directx.md
+            - name: Entrada de voz
+              href: native/voice-input-in-directx.md
+            - name: mapeamento espacial
+              href: native/spatial-mapping-in-directx.md
+- name: Funcionalidades de plataforma e APIs
+  items:
+    - name: Blocos principais de construção
+      items:
+        - name: Reconhecimento de cena
+          href: platform-capabilities-and-apis/scene-understanding-sdk.md
+        - name: Âncoras espaciais compartilhadas
+          href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
+        - name: 'Entrada do teclado, mouse e controlador'
+          href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
+        - name: Como usar o XAML com aplicativos DirectX holográficos
+          href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
+        - name: Acompanhamento de código QR
+          href: platform-capabilities-and-apis/qr-code-tracking.md
+    - name: Experiências compartilhadas na Realidade Misturada
+      items:
+        - name: Experiências compartilhadas na Realidade Misturada
+          href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
+        - name: Âncoras Espaciais do Azure
+          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+        - name: Modo de exibição Espectador
+          href: platform-capabilities-and-apis/spectator-view.md
+        - name: WebRTC
+          href: 'https://github.com/microsoft/MixedReality-WebRTC'
+    - name: Câmera e captura
+      items:
+        - name: Câmera localizável
+          href: platform-capabilities-and-apis/locatable-camera.md
+        - name: Captura da Realidade Misturada para desenvolvedores
+          href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
+        - name: Como funciona – Estúdios de Captura de Realidade Misturada
+          href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+    - name: Comunicação remota holográfica
+      items:
+        - name: Player de Comunicação Remota Holográfica
+          href: platform-capabilities-and-apis/holographic-remoting-player.md
+        - name: Como criar um aplicativo remoto de comunicação remota holográfica
+          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+        - name: Como escrever um aplicativo personalizado do Holographic Remoting Player
+          href: platform-capabilities-and-apis/holographic-remoting-create-player.md
+        - name: Canais de dados personalizados de comunicação remota holográfica
+          href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
+        - name: Conexão segura com a comunicação remota holográfica
+          href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
+        - name: Solução de problemas e limitações
+          href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
+        - name: Histórico de versão
+          href: platform-capabilities-and-apis/holographic-remoting-version-history.md
+        - name: Termos de licença de software de comunicação remota holográfica
+          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+        - name: Comunicação remota holográfica para o HoloLens (1ª geração)
+          href: 'https://docs.microsoft.com'
+        - name: Adicionar comunicação remota holográfica
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
+    - name: Teste e qualidade do aplicativo
+      items:
+        - name: Critérios de qualidade do aplicativo
+          href: platform-capabilities-and-apis/app-quality-criteria.md
+        - name: Renderização holográfica
+          href: platform-capabilities-and-apis/rendering.md
+        - name: Renderização de volume
+          href: platform-capabilities-and-apis/volume-rendering.md
+        - name: Estabilidade do holograma
+          href: platform-capabilities-and-apis/hologram-stability.md
+        - name: Como usar o plano de estabilização para reduzir a turbulência holográfica
+          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
+        - name: Noções básicas sobre o desempenho da Realidade Misturada
+          href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
+        - name: Recomendações de desempenho para o Unity
+          href: unity/performance-recommendations-for-unity.md
+        - name: Como usar o Visual Studio para implantação e depuração
+          href: platform-capabilities-and-apis/using-visual-studio.md
+        - name: Como testar seu aplicativo no HoloLens
+          href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
+        - name: Usando o Emulador do HoloLens
+          href: platform-capabilities-and-apis/using-the-hololens-emulator.md
+        - name: Como usar o simulador do Windows Mixed Reality
+          href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
+        - name: Entrada avançada do Emulador do HoloLens e do Simulador de Realidade Misturada
+          href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+        - name: Arquivo do emulador do HoloLens
+          href: platform-capabilities-and-apis/hololens-emulator-archive.md
+        - name: Simulação de percepção
+          href: platform-capabilities-and-apis/perception-simulation.md
+    - name: Ferramentas de pesquisa
+      items:
+        - name: Usar o Portal de Dispositivos do Windows
+          href: platform-capabilities-and-apis/using-the-windows-device-portal.md
+        - name: Referência de API do portal de dispositivos
+          href: platform-capabilities-and-apis/device-portal-api-reference.md
+        - name: Modo de pesquisa do HoloLens
+          href: platform-capabilities-and-apis/research-mode.md

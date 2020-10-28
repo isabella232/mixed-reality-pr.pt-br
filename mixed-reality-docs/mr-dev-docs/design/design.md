@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de software livre, principais conceitos, interação
-ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
-ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058580"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293125"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 
@@ -32,9 +32,9 @@ Assim como em todos os percursos, sua aventura de criação de aplicativos de Re
 
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
-| [Expanda seu processo de design](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Confira em primeira mão os métodos, as informações e a teoria de design coletados de desenvolvedores de Realidade Misturada dentro e fora da Microsoft |
+| [Expanda seu processo de design](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Dê uma olhada em primeira mão no processo de design da Realidade Misturada, coletado de designers dentro e fora da Microsoft |
 | [Tipos de aplicativos de Realidade Misturada](types-of-mixed-reality-apps.md) | Decida onde sua experiência de aplicativo residirá no espectro da Realidade Misturada |
-| [Aplicativo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Aprenda os conceitos básicos do Design de UX de Realidade Misturada experimentando por conta própria e aprofundando-se nos comportamentos de Realidade Misturada e em dicas e recomendações para criar aplicativos HoloLens incríveis |
+| [Aplicativo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Aprenda os conceitos básicos do Design de UX de Realidade Misturada experimentando por conta própria e aprofundando-se nos comportamentos de Realidade Misturada e em dicas e recomendações para criar aplicativos HoloLens incríveis (disponíveis para download na Microsoft Store no HoloLens 2) |
 
 ### <a name="2-core-concepts"></a>2. Conceitos fundamentais
 
@@ -46,7 +46,7 @@ Esteja você desenvolvendo para VR ou RA, existem vários conceitos básicos que
 | --- | --- |
 | [Quadro holográfico](holographic-frame.md) | Entenda como os usuários veem seu conteúdo sobreposto ao mundo real quando usam headsets |
 | [Sistemas de coordenadas](coordinate-systems.md) | Saiba como posicionar hologramas em lugares do mundo que tenham relevância para o usuário, podendo ser a sala física dele ou um realm virtual que você criou |
-| [Mapeamento espacial](spatial-mapping.md) | Ancore objetos no mundo do usuário e aproveite as indicações de profundidade do mundo real |
+| [Mapeamento espacial](spatial-mapping.md) | Ancore objetos no mundo do usuário e aproveite as superfícies físicas do mundo real |
 | [Considerações sobre conforto](comfort.md) | Garanta o conforto e a segurança do usuário criando e apresentando o conteúdo de imersão de uma forma que imite o mundo natural |
 
 ### <a name="3-interaction-design"></a>3. Design de interação
