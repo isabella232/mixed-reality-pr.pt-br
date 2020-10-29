@@ -1,0 +1,12 @@
+- name: Bem-vindo(a) à Realidade Misturada
+  href: index.yml
+- name: Descobrir
+  href: discover/toc.yml
+- name: Design
+  href: design/toc.yml
+- name: Desenvolver
+  href: develop/toc.yml
+- name: Distribuir
+  href: distribute/toc.yml
+- name: Novidades
+  href: whats-new/toc.yml
