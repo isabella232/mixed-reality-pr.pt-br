@@ -8,14 +8,17 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, introdução, instalação, portal de realidade misturada
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e04f29f834b2220f51f1748aa59e4188d8ad38d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675702"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915561"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Instalar o software Windows Mixed Reality
+
+> [!div class="nextstepaction"]
+> [Obter portal de realidade misturada](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
 ## <a name="launch-mixed-reality-portal"></a>Iniciar portal de realidade misturada
 
@@ -87,9 +90,9 @@ Você verá uma mensagem "preparando-se para configurar" na tela com um ícone d
 
 ![Preparando-se para configurar](images/1050px-gettingsetup.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
 * [Solução de problemas de instalação](installation_errors.md)
 * [Solução de problemas de instalação](set-up-questions.md)
-* [Configurar a realidade mista do Windows](set-up-windows-mixed-reality.md)
+* [Configurar o Windows Mixed Reality](set-up-windows-mixed-reality.md)
