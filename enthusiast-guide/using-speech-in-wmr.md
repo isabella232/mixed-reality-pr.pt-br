@@ -1,0 +1,157 @@
+---
+title: Usando a fala no Windows Mixed Reality
+description: Saiba como usar a entrada de fala em seus aplicativos do Windows Mixed Reality.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/16/2020
+ms.topic: article
+keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
+appliesto:
+- Windows 10
+ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91675481"
+---
+# <a name="using-speech-in-windows-mixed-reality"></a><span data-ttu-id="1e28b-104">Usando a fala no Windows Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="1e28b-104">Using Speech in Windows Mixed Reality</span></span>
+
+<span data-ttu-id="1e28b-105">Use sua voz para contornar a realidade mista do Windows mais rápida — faça uma foto rápida, abra um aplicativo, até mesmo teleport sem um controlador.</span><span class="sxs-lookup"><span data-stu-id="1e28b-105">Use your voice to get around Windows Mixed Reality faster—take a quick photo, open an app, even teleport without a controller.</span></span> <span data-ttu-id="1e28b-106">E, para uma maneira fácil de digitar, experimente o modo de ditado no teclado de realidade misturada.</span><span class="sxs-lookup"><span data-stu-id="1e28b-106">And for an easy way to type, try dictation mode on the mixed reality keyboard.</span></span> 
+
+<span data-ttu-id="1e28b-107">Está tendo problemas com a fala?</span><span class="sxs-lookup"><span data-stu-id="1e28b-107">Having trouble with Speech?</span></span> [<span data-ttu-id="1e28b-108">Obter ajuda</span><span class="sxs-lookup"><span data-stu-id="1e28b-108">Get help</span></span>](using-wmr-faq.md#speech-commands-arent-working)
+
+<!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
+
+> [!NOTE]
+> * <span data-ttu-id="1e28b-109">Quando a fala é ativada, a realidade mista do Windows está sempre ouvindo.</span><span class="sxs-lookup"><span data-stu-id="1e28b-109">When Speech is turned on, Windows Mixed Reality is always listening.</span></span> <span data-ttu-id="1e28b-110">Quando você estiver conectado à Internet, enviaremos tudo o que você disser para a nuvem para que os serviços de fala da Microsoft possam reconhecer ainda mais seus comandos.</span><span class="sxs-lookup"><span data-stu-id="1e28b-110">When you’re connected to the Internet, we send everything you say to the cloud so Microsoft speech services can recognize even more of your commands.</span></span>
+> * <span data-ttu-id="1e28b-111">Os comandos de fala não têm suporte em todos os idiomas.</span><span class="sxs-lookup"><span data-stu-id="1e28b-111">Speech commands are not supported in all languages.</span></span> <span data-ttu-id="1e28b-112">Saiba mais</span><span class="sxs-lookup"><span data-stu-id="1e28b-112">Learn more</span></span>
+> * <span data-ttu-id="1e28b-113">Não há suporte para fones de ouvido e alto-falantes Bluetooth no Windows Mixed Reality.</span><span class="sxs-lookup"><span data-stu-id="1e28b-113">Bluetooth headsets and speakers are not supported in Windows Mixed Reality.</span></span>
+
+## <a name="see-it-say-it"></a><span data-ttu-id="1e28b-114">Veja e diga</span><span class="sxs-lookup"><span data-stu-id="1e28b-114">See it, say it</span></span>
+
+<span data-ttu-id="1e28b-115">Na página inicial do Windows Mixed Reality, se você vir uma palavra, geralmente poderá usá-la como um comando de fala.</span><span class="sxs-lookup"><span data-stu-id="1e28b-115">In the Windows Mixed Reality home, if you see a word, you can often use it as a speech command.</span></span> <span data-ttu-id="1e28b-116">Por exemplo, basta dizer o nome de um botão para selecioná-lo.</span><span class="sxs-lookup"><span data-stu-id="1e28b-116">For instance, just say the name of a button to select it.</span></span> <span data-ttu-id="1e28b-117">Se você não vir um nome, aponte seu controlador de movimento no botão (ou, se você estiver usando um gamepad do Xbox, apóie seu olhar) para descobrir o que dizer.</span><span class="sxs-lookup"><span data-stu-id="1e28b-117">If you don’t see a name, point your motion controller at the button (or, if you’re using an Xbox gamepad, rest your gaze on it) to find out what to say.</span></span> 
+
+## <a name="general-speech-commands"></a><span data-ttu-id="1e28b-118">Comandos de fala gerais</span><span class="sxs-lookup"><span data-stu-id="1e28b-118">General speech commands</span></span>
+
+<span data-ttu-id="1e28b-119">Use-os em toda a realidade mista do Windows para se tornar mais rápido.</span><span class="sxs-lookup"><span data-stu-id="1e28b-119">Use these throughout Windows Mixed Reality to get around faster.</span></span> <span data-ttu-id="1e28b-120">Alguns comandos usam o cursor olhar, que você abrirá dizendo "Select".</span><span class="sxs-lookup"><span data-stu-id="1e28b-120">Some commands use the gaze cursor, which you’ll bring up by saying “select.”</span></span>
+
+| <span data-ttu-id="1e28b-121">Para fazer isto</span><span class="sxs-lookup"><span data-stu-id="1e28b-121">To do this</span></span> | <span data-ttu-id="1e28b-122">Digamos que isso</span><span class="sxs-lookup"><span data-stu-id="1e28b-122">Say this</span></span> |
+| --- | --- |
+| <span data-ttu-id="1e28b-123">Selecionar</span><span class="sxs-lookup"><span data-stu-id="1e28b-123">Select</span></span> | <span data-ttu-id="1e28b-124">Diga "Select" para abrir o cursor olhar.</span><span class="sxs-lookup"><span data-stu-id="1e28b-124">Say “select” to bring up the gaze cursor.</span></span> <span data-ttu-id="1e28b-125">Em seguida, transforme a sua cabeça para posicionar o cursor no item que você deseja selecionar e diga "Select" novamente.</span><span class="sxs-lookup"><span data-stu-id="1e28b-125">Then, turn your head to position the cursor on the thing you want to select, and say “select” again.</span></span> |
+| <span data-ttu-id="1e28b-126">Abra o menu Iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-126">Open the Start menu</span></span> | <span data-ttu-id="1e28b-127">Ir para Iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-127">Go to Start</span></span> |
+| <span data-ttu-id="1e28b-128">Deixar um aplicativo de imersão</span><span class="sxs-lookup"><span data-stu-id="1e28b-128">Leave an immersive app</span></span> | <span data-ttu-id="1e28b-129">Diga "ir para o início" para abrir o menu de ações rápidas e, em seguida, dizer "página inicial de realidade misturada".</span><span class="sxs-lookup"><span data-stu-id="1e28b-129">Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home."</span></span> |
+| <span data-ttu-id="1e28b-130">Ativar/desativar lanterna</span><span class="sxs-lookup"><span data-stu-id="1e28b-130">Turn Flashlight on/off</span></span> | <span data-ttu-id="1e28b-131">Diga "ir para o início" para abrir o menu de ações rápidas e, em seguida, dizer "página inicial de realidade misturada".</span><span class="sxs-lookup"><span data-stu-id="1e28b-131">Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home."</span></span> |
+| <span data-ttu-id="1e28b-132">Teleport</span><span class="sxs-lookup"><span data-stu-id="1e28b-132">Teleport</span></span> | <span data-ttu-id="1e28b-133">Transforme seu rumo em direção ao local que você deseja ir e, em seguida, diga "teleport".</span><span class="sxs-lookup"><span data-stu-id="1e28b-133">Turn your head toward the place you want to go, and then say “teleport.”</span></span> <span data-ttu-id="1e28b-134">(Para direcionamento mais preciso, primeiro diga "Select" para abrir o cursor olhar e, em seguida, diga "teleport.")</span><span class="sxs-lookup"><span data-stu-id="1e28b-134">(For more precise targeting, first say “select” to bring up the gaze cursor, then say “teleport.”)</span></span> |
+| <span data-ttu-id="1e28b-135">Virar à esquerda ou à direita</span><span class="sxs-lookup"><span data-stu-id="1e28b-135">Turn to the left or right</span></span> | <span data-ttu-id="1e28b-136">Virar à esquerda/virar à direita</span><span class="sxs-lookup"><span data-stu-id="1e28b-136">Turn left / turn right</span></span> |
+| <span data-ttu-id="1e28b-137">Transforme 180 graus</span><span class="sxs-lookup"><span data-stu-id="1e28b-137">Turn 180 degrees</span></span> | <span data-ttu-id="1e28b-138">Virar</span><span class="sxs-lookup"><span data-stu-id="1e28b-138">Turn around</span></span> |
+| <span data-ttu-id="1e28b-139">Avançar</span><span class="sxs-lookup"><span data-stu-id="1e28b-139">Move forward</span></span> | <span data-ttu-id="1e28b-140">Avançar/avançar para frente</span><span class="sxs-lookup"><span data-stu-id="1e28b-140">Move forward / walk forward</span></span> |
+| <span data-ttu-id="1e28b-141">Fazer backup</span><span class="sxs-lookup"><span data-stu-id="1e28b-141">Back up</span></span> | <span data-ttu-id="1e28b-142">Mover de volta/voltar</span><span class="sxs-lookup"><span data-stu-id="1e28b-142">Move back / walk back</span></span> |
+| <span data-ttu-id="1e28b-143">Mover para a esquerda</span><span class="sxs-lookup"><span data-stu-id="1e28b-143">Move to the left</span></span> | <span data-ttu-id="1e28b-144">Mover para a esquerda/ir para a esquerda</span><span class="sxs-lookup"><span data-stu-id="1e28b-144">Move left / walk left</span></span> |
+| <span data-ttu-id="1e28b-145">Mover para a direita</span><span class="sxs-lookup"><span data-stu-id="1e28b-145">Move to the right</span></span> | <span data-ttu-id="1e28b-146">Mover para direita/ir para a direita</span><span class="sxs-lookup"><span data-stu-id="1e28b-146">Move right / walk right</span></span> |
+
+## <a name="3d-object-commands"></a><span data-ttu-id="1e28b-147">comandos de objeto 3D</span><span class="sxs-lookup"><span data-stu-id="1e28b-147">3D object commands</span></span>
+
+<span data-ttu-id="1e28b-148">Olhar em um objeto 3D, um holograma ou uma janela de aplicativo para usar estes comandos:</span><span class="sxs-lookup"><span data-stu-id="1e28b-148">Gaze at a 3D object, hologram, or app window to use these commands:</span></span>
+
+| <span data-ttu-id="1e28b-149">Para fazer isto</span><span class="sxs-lookup"><span data-stu-id="1e28b-149">To do this</span></span> | <span data-ttu-id="1e28b-150">Digamos que isso</span><span class="sxs-lookup"><span data-stu-id="1e28b-150">Say this</span></span> |
+| --- | --- |
+| <span data-ttu-id="1e28b-151">Torná-lo maior</span><span class="sxs-lookup"><span data-stu-id="1e28b-151">Make it bigger</span></span> | <span data-ttu-id="1e28b-152">Fiquem</span><span class="sxs-lookup"><span data-stu-id="1e28b-152">Bigger</span></span> |
+| <span data-ttu-id="1e28b-153">Torná-lo menor</span><span class="sxs-lookup"><span data-stu-id="1e28b-153">Make it smaller</span></span> | <span data-ttu-id="1e28b-154">Menor</span><span class="sxs-lookup"><span data-stu-id="1e28b-154">Smaller</span></span> |
+| <span data-ttu-id="1e28b-155">Transforme-o em seu rosto</span><span class="sxs-lookup"><span data-stu-id="1e28b-155">Turn it to face you</span></span> | <span data-ttu-id="1e28b-156">Entre em frente</span><span class="sxs-lookup"><span data-stu-id="1e28b-156">Face me</span></span> |
+| <span data-ttu-id="1e28b-157">Prepare-se para a mudança – ele seguirá seu olhar</span><span class="sxs-lookup"><span data-stu-id="1e28b-157">Get it ready to move - it'll follow your gaze</span></span> | <span data-ttu-id="1e28b-158">Mover este</span><span class="sxs-lookup"><span data-stu-id="1e28b-158">Move this</span></span> |
+| <span data-ttu-id="1e28b-159">Coloque-o quando terminar de movê-lo</span><span class="sxs-lookup"><span data-stu-id="1e28b-159">Place it when you're done moving it</span></span> | <span data-ttu-id="1e28b-160">Posicionar</span><span class="sxs-lookup"><span data-stu-id="1e28b-160">Place</span></span> |
+
+## <a name="app-bar-commands"></a><span data-ttu-id="1e28b-161">Comandos da barra de aplicativos</span><span class="sxs-lookup"><span data-stu-id="1e28b-161">App bar commands</span></span>
+
+<span data-ttu-id="1e28b-162">Olhar em uma janela de aplicativo ou em um objeto 3D para usar estes comandos:</span><span class="sxs-lookup"><span data-stu-id="1e28b-162">Gaze at an app window or a 3D object to use these commands:</span></span>
+
+| <span data-ttu-id="1e28b-163">Para fazer isto</span><span class="sxs-lookup"><span data-stu-id="1e28b-163">To do this</span></span> | <span data-ttu-id="1e28b-164">Digamos que isso</span><span class="sxs-lookup"><span data-stu-id="1e28b-164">Say this</span></span> |
+| --- | --- |
+| <span data-ttu-id="1e28b-165">Fechar um aplicativo ou objeto 3D</span><span class="sxs-lookup"><span data-stu-id="1e28b-165">Close an app or 3D object</span></span> | <span data-ttu-id="1e28b-166">Fechar</span><span class="sxs-lookup"><span data-stu-id="1e28b-166">Close</span></span> |
+| <span data-ttu-id="1e28b-167">Ajustar algo (redimensionar ou mover)</span><span class="sxs-lookup"><span data-stu-id="1e28b-167">Adjust something (resize or move)</span></span> | <span data-ttu-id="1e28b-168">Ajustar</span><span class="sxs-lookup"><span data-stu-id="1e28b-168">Adjust</span></span> |
+| <span data-ttu-id="1e28b-169">Parar ajuste</span><span class="sxs-lookup"><span data-stu-id="1e28b-169">Stop adjusting</span></span> | <span data-ttu-id="1e28b-170">Concluído</span><span class="sxs-lookup"><span data-stu-id="1e28b-170">Done</span></span> |
+| <span data-ttu-id="1e28b-171">Ocultar a barra de aplicativos em um objeto 3D</span><span class="sxs-lookup"><span data-stu-id="1e28b-171">Hide the app bar on a 3D object</span></span> | <span data-ttu-id="1e28b-172">Ocultar menu</span><span class="sxs-lookup"><span data-stu-id="1e28b-172">Hide menu</span></span> |
+| <span data-ttu-id="1e28b-173">Mostrar a barra de aplicativos em um objeto 3D</span><span class="sxs-lookup"><span data-stu-id="1e28b-173">Show the app bar on a 3D object</span></span> | <span data-ttu-id="1e28b-174">Mostrar menu</span><span class="sxs-lookup"><span data-stu-id="1e28b-174">Show Menu</span></span> |
+| <span data-ttu-id="1e28b-175">Voltar para a tela ou página anterior em um aplicativo que tenha um botão voltar</span><span class="sxs-lookup"><span data-stu-id="1e28b-175">Go back to the previous screen or page in an app that has a Go back button</span></span>  | <span data-ttu-id="1e28b-176">Voltar</span><span class="sxs-lookup"><span data-stu-id="1e28b-176">Go back</span></span> |
+| <span data-ttu-id="1e28b-177">Use o controlador Xbox como um gamepad, em vez de um controlador de realidade misturada, no aplicativo que você está vendo</span><span class="sxs-lookup"><span data-stu-id="1e28b-177">Use your Xbox controller as a gamepad, rather than as a mixed reality controller, in the app you’re looking at</span></span> | <span data-ttu-id="1e28b-178">Usar como gamepad</span><span class="sxs-lookup"><span data-stu-id="1e28b-178">Use as gamepad</span></span> |
+| <span data-ttu-id="1e28b-179">Usar o controlador Xbox como um controlador de realidade misturada (quando você o estiver usando como um gamepad)</span><span class="sxs-lookup"><span data-stu-id="1e28b-179">Use your Xbox controller as a mixed reality controller (when you’ve been using it as a gamepad)</span></span> | <span data-ttu-id="1e28b-180">Usar com olhar</span><span class="sxs-lookup"><span data-stu-id="1e28b-180">Use with gaze</span></span> |
+
+## <a name="start-menu-commands"></a><span data-ttu-id="1e28b-181">Comandos do menu iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-181">Start menu commands</span></span>
+
+<span data-ttu-id="1e28b-182">Olhar no menu Iniciar para usar estes comandos:</span><span class="sxs-lookup"><span data-stu-id="1e28b-182">Gaze at the Start menu to use these commands:</span></span>
+
+| <span data-ttu-id="1e28b-183">Para fazer isto</span><span class="sxs-lookup"><span data-stu-id="1e28b-183">To do this</span></span> | <span data-ttu-id="1e28b-184">Digamos que isso</span><span class="sxs-lookup"><span data-stu-id="1e28b-184">Say this</span></span> |
+| --- | --- |
+| <span data-ttu-id="1e28b-185">Ir para a lista todos os aplicativos</span><span class="sxs-lookup"><span data-stu-id="1e28b-185">Go to the All Apps list</span></span> | <span data-ttu-id="1e28b-186">Todos os aplicativos</span><span class="sxs-lookup"><span data-stu-id="1e28b-186">All apps</span></span> |
+| <span data-ttu-id="1e28b-187">Mover para cima ou para baixo em iniciar ou em todos os aplicativos</span><span class="sxs-lookup"><span data-stu-id="1e28b-187">Move up or down on Start or All apps</span></span> | <span data-ttu-id="1e28b-188">Page up/Page down</span><span class="sxs-lookup"><span data-stu-id="1e28b-188">Page up/down</span></span> |
+| <span data-ttu-id="1e28b-189">Voltar para o menu iniciar de todos os aplicativos</span><span class="sxs-lookup"><span data-stu-id="1e28b-189">Go back to Start menu from All apps</span></span> | <span data-ttu-id="1e28b-190">Voltar</span><span class="sxs-lookup"><span data-stu-id="1e28b-190">Go back</span></span> |
+| <span data-ttu-id="1e28b-191">Tirar uma foto</span><span class="sxs-lookup"><span data-stu-id="1e28b-191">Take a photo</span></span> | <span data-ttu-id="1e28b-192">Câmera</span><span class="sxs-lookup"><span data-stu-id="1e28b-192">Camera</span></span> |
+| <span data-ttu-id="1e28b-193">Tirar um vídeo</span><span class="sxs-lookup"><span data-stu-id="1e28b-193">Take a video</span></span> | <span data-ttu-id="1e28b-194">Vídeo</span><span class="sxs-lookup"><span data-stu-id="1e28b-194">Video</span></span> |
+| <span data-ttu-id="1e28b-195">Mostrar o modo de exibição de headset no portal de realidade misturada na área de trabalho</span><span class="sxs-lookup"><span data-stu-id="1e28b-195">Show the headset view in Mixed Reality Portal on your desktop</span></span> | <span data-ttu-id="1e28b-196">Versão Prévia</span><span class="sxs-lookup"><span data-stu-id="1e28b-196">Preview</span></span> |
+| <span data-ttu-id="1e28b-197">Abra o controle de volume em iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-197">Open the volume control on Start</span></span> | <span data-ttu-id="1e28b-198">Alterar volume</span><span class="sxs-lookup"><span data-stu-id="1e28b-198">Change volume</span></span> |
+| <span data-ttu-id="1e28b-199">Mudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-199">Mute</span></span> | <span data-ttu-id="1e28b-200">Mudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-200">Mute</span></span> |
+| <span data-ttu-id="1e28b-201">Ativar mudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-201">Unmute</span></span> | <span data-ttu-id="1e28b-202">Ativar mudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-202">Unmute</span></span> |
+| <span data-ttu-id="1e28b-203">Fechar o menu iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-203">Close the Start menu</span></span> | <span data-ttu-id="1e28b-204">Fechar ou cancelar</span><span class="sxs-lookup"><span data-stu-id="1e28b-204">Close or cancel</span></span> |
+
+## <a name="hey-cortana-commands"></a><span data-ttu-id="1e28b-205">Ei comandos da Cortana</span><span class="sxs-lookup"><span data-stu-id="1e28b-205">Hey Cortana commands</span></span>
+
+<span data-ttu-id="1e28b-206">Diga "Ei Cortana" e, em seguida, use um dos seguintes comandos:</span><span class="sxs-lookup"><span data-stu-id="1e28b-206">Say "Hey Cortana,” then use one of the following commands:</span></span>
+
+| <span data-ttu-id="1e28b-207">Para fazer isto</span><span class="sxs-lookup"><span data-stu-id="1e28b-207">To do this</span></span> | <span data-ttu-id="1e28b-208">Digamos que isso</span><span class="sxs-lookup"><span data-stu-id="1e28b-208">Say this</span></span> |
+| --- | --- |
+| <span data-ttu-id="1e28b-209">Descubra o que você pode dizer à Cortana</span><span class="sxs-lookup"><span data-stu-id="1e28b-209">Find out what you can say to Cortana</span></span> | <span data-ttu-id="1e28b-210">O que posso dizer?</span><span class="sxs-lookup"><span data-stu-id="1e28b-210">What can I say?</span></span> |
+| <span data-ttu-id="1e28b-211">Aumentar/diminuir volume</span><span class="sxs-lookup"><span data-stu-id="1e28b-211">Increase/decrease volume</span></span> | <span data-ttu-id="1e28b-212">Ativar/desativar o volume</span><span class="sxs-lookup"><span data-stu-id="1e28b-212">Turn the volume up/down</span></span> |
+| <span data-ttu-id="1e28b-213">Mudo/mudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-213">Mute/unmute</span></span> | <span data-ttu-id="1e28b-214">Mudo/mudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-214">Mute/unmute</span></span> |
+| <span data-ttu-id="1e28b-215">Iniciar um aplicativo</span><span class="sxs-lookup"><span data-stu-id="1e28b-215">Start an app</span></span> | <span data-ttu-id="1e28b-216">Iniciar [nome do aplicativo]</span><span class="sxs-lookup"><span data-stu-id="1e28b-216">Launch [app name]</span></span> |
+| <span data-ttu-id="1e28b-217">Abrir um site no Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="1e28b-217">Open a website in Microsoft Edge</span></span> | <span data-ttu-id="1e28b-218">Abra [nome do site] (por exemplo, "abrir bing.com")</span><span class="sxs-lookup"><span data-stu-id="1e28b-218">Open [website name] (for example, “open bing.com”)</span></span> |
+| <span data-ttu-id="1e28b-219">Tirar uma foto</span><span class="sxs-lookup"><span data-stu-id="1e28b-219">Take a photo</span></span> | <span data-ttu-id="1e28b-220">Tirar imagem</span><span class="sxs-lookup"><span data-stu-id="1e28b-220">Take picture</span></span> |
+| <span data-ttu-id="1e28b-221">Iniciar a gravação de um vídeo</span><span class="sxs-lookup"><span data-stu-id="1e28b-221">Start recording a video</span></span> | <span data-ttu-id="1e28b-222">Iniciar gravação</span><span class="sxs-lookup"><span data-stu-id="1e28b-222">Start recording</span></span> |
+| <span data-ttu-id="1e28b-223">Parar de gravar um vídeo</span><span class="sxs-lookup"><span data-stu-id="1e28b-223">Stop recording a video</span></span> | <span data-ttu-id="1e28b-224">Parar a gravação</span><span class="sxs-lookup"><span data-stu-id="1e28b-224">Stop recording</span></span> |
+| <span data-ttu-id="1e28b-225">Mostrar a hora</span><span class="sxs-lookup"><span data-stu-id="1e28b-225">Show the time</span></span> | <span data-ttu-id="1e28b-226">Que horas são?</span><span class="sxs-lookup"><span data-stu-id="1e28b-226">What time is it?</span></span> |
+| <span data-ttu-id="1e28b-227">Abra o menu Iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-227">Open the Start menu</span></span> | <span data-ttu-id="1e28b-228">Abrir menu iniciar</span><span class="sxs-lookup"><span data-stu-id="1e28b-228">Open Start menu</span></span> |
+| <span data-ttu-id="1e28b-229">Definir um temporizador</span><span class="sxs-lookup"><span data-stu-id="1e28b-229">Set a timer</span></span> | <span data-ttu-id="1e28b-230">Definir um temporizador</span><span class="sxs-lookup"><span data-stu-id="1e28b-230">Set a timer</span></span> |
+| <span data-ttu-id="1e28b-231">Definir um lembrete</span><span class="sxs-lookup"><span data-stu-id="1e28b-231">Set a reminder</span></span> | <span data-ttu-id="1e28b-232">Definir um lembrete</span><span class="sxs-lookup"><span data-stu-id="1e28b-232">Set a reminder</span></span> |
+
+> [!NOTE]
+> * <span data-ttu-id="1e28b-233">A Cortana não está disponível em todas as regiões e idiomas.</span><span class="sxs-lookup"><span data-stu-id="1e28b-233">Cortana is not available in all regions and languages.</span></span> <span data-ttu-id="1e28b-234">[Saiba mais](https://support.microsoft.com/help/4026948).</span><span class="sxs-lookup"><span data-stu-id="1e28b-234">[Learn more](https://support.microsoft.com/help/4026948).</span></span>
+> * <span data-ttu-id="1e28b-235">Se a Cortana não estiver respondendo a "Ei Cortana", selecione **configurações > privacidade > fala** e fazer com que o reconhecimento de fala online esteja ativado.</span><span class="sxs-lookup"><span data-stu-id="1e28b-235">If Cortana isn't responding to "Hey Cortana," select **Settings > Privacy > Speech** and make Online speech recognition is turned on.</span></span>
+> * <span data-ttu-id="1e28b-236">Se você desativar a Cortana, os comandos de voz "Ei Cortana" não estarão disponíveis, mas você ainda poderá usar outros comandos (como "Select" e "teleport")</span><span class="sxs-lookup"><span data-stu-id="1e28b-236">If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use other commands (like "select" and "teleport")</span></span>
+
+## <a name="keyboard-dictation"></a><span data-ttu-id="1e28b-237">Ditado de teclado</span><span class="sxs-lookup"><span data-stu-id="1e28b-237">Keyboard dictation</span></span>
+
+<span data-ttu-id="1e28b-238">Mude para o modo de ditado sempre que o teclado estiver ativo para uma maneira fácil de digitar.</span><span class="sxs-lookup"><span data-stu-id="1e28b-238">Switch to dictation mode any time the keyboard is active for an easy way to type.</span></span> <span data-ttu-id="1e28b-239">Selecione microfone no teclado — ou simplesmente diga "comece a ditar" — para começar.</span><span class="sxs-lookup"><span data-stu-id="1e28b-239">Select microphone  on the keyboard—or just say “start dictating”—to get started.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1e28b-240">O teclado de realidade misturada só está disponível em inglês, mas você pode usar o ditado em qualquer uma das [linguagens de realidade mista do Windows](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)com suporte.</span><span class="sxs-lookup"><span data-stu-id="1e28b-240">The mixed reality keyboard is only available in English, but you can use dictation in any of the supported [Windows Mixed Reality languages](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality).</span></span>
+
+### <a name="keyboard-dictation-commands"></a><span data-ttu-id="1e28b-241">Comandos de ditado de teclado</span><span class="sxs-lookup"><span data-stu-id="1e28b-241">Keyboard dictation commands</span></span> 
+
+| <span data-ttu-id="1e28b-242">Para fazer isto</span><span class="sxs-lookup"><span data-stu-id="1e28b-242">To do this</span></span> | <span data-ttu-id="1e28b-243">Digamos que isso</span><span class="sxs-lookup"><span data-stu-id="1e28b-243">Say this</span></span> |
+| --- | --- |
+| <span data-ttu-id="1e28b-244">Fechar o teclado</span><span class="sxs-lookup"><span data-stu-id="1e28b-244">Close the keyboard</span></span> | <span data-ttu-id="1e28b-245">Fechar</span><span class="sxs-lookup"><span data-stu-id="1e28b-245">Close</span></span> |
+| <span data-ttu-id="1e28b-246">Iniciar ditado</span><span class="sxs-lookup"><span data-stu-id="1e28b-246">Start dictation</span></span> | <span data-ttu-id="1e28b-247">Comece a ditar</span><span class="sxs-lookup"><span data-stu-id="1e28b-247">Start dictating</span></span> |
+| <span data-ttu-id="1e28b-248">Parar ditado</span><span class="sxs-lookup"><span data-stu-id="1e28b-248">Stop dictation</span></span> | <span data-ttu-id="1e28b-249">Parar ditado</span><span class="sxs-lookup"><span data-stu-id="1e28b-249">Stop dictating</span></span> |
+| <span data-ttu-id="1e28b-250">Excluir o que você acabou de ditar</span><span class="sxs-lookup"><span data-stu-id="1e28b-250">Delete what you've just dictated</span></span> | <span data-ttu-id="1e28b-251">Excluir esse</span><span class="sxs-lookup"><span data-stu-id="1e28b-251">Delete that</span></span> |
+| <span data-ttu-id="1e28b-252">Selecione tudo na caixa de ditado</span><span class="sxs-lookup"><span data-stu-id="1e28b-252">Select everything in the dictation box</span></span> | <span data-ttu-id="1e28b-253">Selecionar tudo</span><span class="sxs-lookup"><span data-stu-id="1e28b-253">Select all</span></span> |
+
+### <a name="punctuation"></a><span data-ttu-id="1e28b-254">Pontuação</span><span class="sxs-lookup"><span data-stu-id="1e28b-254">Punctuation</span></span>
+<span data-ttu-id="1e28b-255">Você precisará dizer os nomes da pontuação que deseja usar.</span><span class="sxs-lookup"><span data-stu-id="1e28b-255">You’ll need to say the names of the punctuation you want to use.</span></span> <span data-ttu-id="1e28b-256">Por exemplo, você pode dizer "Ei **vírgula** o que você está até o **ponto de interrogação** ".</span><span class="sxs-lookup"><span data-stu-id="1e28b-256">For instance, you might say "Hey **comma** what are you up to **question mark** ."</span></span>
+
+<span data-ttu-id="1e28b-257">Aqui estão as palavras-chave de pontuação que você pode usar:</span><span class="sxs-lookup"><span data-stu-id="1e28b-257">Here are the punctuation keywords you can use:</span></span>
+
+* <span data-ttu-id="1e28b-258">Período, vírgula, ponto de interrogação, pontos de exclamação/marca de exclamação</span><span class="sxs-lookup"><span data-stu-id="1e28b-258">Period, comma, question mark, exclamation point/exclamation mark</span></span>
+* <span data-ttu-id="1e28b-259">Nova linha/novo parágrafo</span><span class="sxs-lookup"><span data-stu-id="1e28b-259">New line/new paragraph</span></span>
+* <span data-ttu-id="1e28b-260">Ponto e vírgula, dois-pontos</span><span class="sxs-lookup"><span data-stu-id="1e28b-260">Semicolon, colon</span></span>
+* <span data-ttu-id="1e28b-261">Cotações abertas, aspas (s) de fechamento</span><span class="sxs-lookup"><span data-stu-id="1e28b-261">Open quote(s), close quote(s)</span></span>
+* <span data-ttu-id="1e28b-262">Hashtag, Smiley/Smiley, rosto triste, Winky</span><span class="sxs-lookup"><span data-stu-id="1e28b-262">Hashtag, smiley/smiley face, frowny, winky</span></span>
+* <span data-ttu-id="1e28b-263">Dólar, porcentagem</span><span class="sxs-lookup"><span data-stu-id="1e28b-263">Dollar, percent</span></span>
+ 
+<span data-ttu-id="1e28b-264">Às vezes, é útil soletrar itens como endereços de email.</span><span class="sxs-lookup"><span data-stu-id="1e28b-264">Sometimes it's helpful to spell out things like email addresses.</span></span> <span data-ttu-id="1e28b-265">Por exemplo, para ditar example@outlook.com , você diria "e X A M P L E no Outlook dot com".</span><span class="sxs-lookup"><span data-stu-id="1e28b-265">For instance, to dictate example@outlook.com, you'd say "E X A M P L E at outlook dot com."</span></span>
+
+
+<span data-ttu-id="1e28b-266">Para parar de ditar, selecione **concluído** .</span><span class="sxs-lookup"><span data-stu-id="1e28b-266">To stop dictating, select **Done** .</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="1e28b-267">Consulte também</span><span class="sxs-lookup"><span data-stu-id="1e28b-267">See also</span></span>
+* [<span data-ttu-id="1e28b-268">Pergunte à comunidade</span><span class="sxs-lookup"><span data-stu-id="1e28b-268">Ask the community</span></span>](https://answers.microsoft.com)
+* [<span data-ttu-id="1e28b-269">Entre em contato conosco para obter suporte</span><span class="sxs-lookup"><span data-stu-id="1e28b-269">Contact us for support</span></span>](https://support.microsoft.com/contactus/)
