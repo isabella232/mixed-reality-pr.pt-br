@@ -1,24 +1,25 @@
 ---
 title: Outras perguntas
-description: Solução de problemas avançada do Windows Mixed realm que vai além da nossa documentação de suporte padrão do consumidor.
+description: Dicas adicionais de solução de problemas do Windows Mixed realm que vão além da documentação de suporte padrão do consumidor.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Realidade mista do Windows, realidade mista, realidade virtual, VR, MR, solucionar problemas, erros, ajuda, suporte, desinstalar a realidade mista do Windows, idiomas com suporte
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8a035a4d113a0a53f41079709660f65bfa278a0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675525"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044457"
 ---
 # <a name="other-questions"></a>Outras perguntas
 
 ## <a name="my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors"></a>Não há suporte para meu driver de gráficos (estou recebendo erros de falha de driver de gráficos).
 
 Pesquise e execute "dxdiag":
+
 1.  Se o resultado for "processador básico", o driver de gráficos não será instalado. Para corrigir isso:
     * Vá para **Device Manager ação > > verificar se há alterações de hardware** .
     * Use Windows Update para atualizar o driver.
@@ -57,10 +58,10 @@ Observe que você precisará selecionar novamente o monitor para mostrar em cada
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>Meu aplicativo de área de trabalho mostra apenas uma tela preta.
 Se o seu computador tiver uma GPU híbrida Nvidia, o problema poderá ser causado pelo dispositivo NVIDIA executando o runtimebroker.exe na GPU discreta em vez de um integrado. Para corrigir esse problema, siga estas instruções em "[como fazer criar configurações de Optimus para um novo programa?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" para adicionar C:\windows\system32\runtimebroker.exe e forçá-lo a ser executado no processador "gráficos integrados". 
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Meu Wi-Fi fica lento quando estou usando a realidade mista do Windows.
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Minha Wi-Fi fica mais lento quando estou usando a realidade mista do Windows.
 
-Se você estiver usando uma conexão Wi-Fi de 2,4 GHz, seus controladores de movimento poderão retardar o Wi-Fi. Tente uma das seguintes opções:
-* Mude para uma conexão Wi-Fi de 5 GHz, se houver uma disponível. [Saiba mais](https://support.microsoft.com/en-us/help/4000461).
+Se você estiver usando uma conexão de Wi-Fi de 2,4 GHz, seus controladores de movimento poderão retardar o Wi-Fi. Tente uma das seguintes opções:
+* Alterne para uma conexão Wi-Fi de 5 GHz, se houver uma disponível. [Saiba mais](https://support.microsoft.com/en-us/help/4000461).
 * Use um adaptador Bluetooth separado para conectar seus controladores de movimento ao seu computador. Consulte [adaptadores recomendados](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Recebi uma mensagem que disse para conectar e encarregar meu PC. Por quê?
@@ -119,16 +120,16 @@ Para desinstalar o Windows Mixed Reality usando estes comandos:
 2. Na caixa de **pesquisa** , digite "regedit" e, em seguida, selecione "Sim".
 3. Remova estes valores de registro:
    <ul>
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>, em seguida, exclua "FirstRunSucceeded".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic\speechandaudio</b>, em seguida, exclua "PreferDesktopSpeaker" e "PreferDesktopMic".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\ Speech_OneCore &gt; Settings\Holographic</b>, em seguida, exclua "DisableSpeechInput". Observação: os itens do registro no HHKEY_CURRENT_USER devem ser excluídos para cada conta de usuário no computador que usou a realidade mista do Windows.</li> 
-    <li><b>HKEY_LOCAL_MACHINE \software\microsoft\windows\currentversion\perceptionsimulationextensions</b>, em seguida, exclua "DeviceID" e "Mode".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>, em seguida, exclua "OnDeviceLearningCompleted".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, em seguida, exclua "FirstRunSucceeded".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>, em seguida, exclua "PreferDesktopSpeaker" e "PreferDesktopMic".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Settings\Holographic</b>, em seguida, exclua "DisableSpeechInput". Observação: os itens do registro no HHKEY_CURRENT_USER devem ser excluídos para cada conta de usuário no computador que usou a realidade mista do Windows.</li> 
+    <li><b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>, em seguida, exclua "DeviceID" e "Mode".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, em seguida, exclua "OnDeviceLearningCompleted".</li> 
    </ul>
 4. Remova as seguintes chaves do registro: <ul>
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_LOCAL_MACHINE \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\ Speech_OneCore \Settings\HolographicPreferences</b></li><br/></ul>
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. Feche o editor do registro.
 6. Vá para **C:\Users\user name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** e exclua "RoomBounds.json". Repita isso para cada usuário que usou a realidade mista do Windows.
 7. Abra o prompt do administrador CMD e vá para **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors** . Exclua o conteúdo da pasta "HeadTracking data" (mas não a pasta em si).

@@ -1,5 +1,5 @@
 ---
-title: Perguntas frequentes sobre o uso da realidade mista do Windows
+title: Perguntas frequentes sobre o uso do Windows Mixed Reality
 description: Obtenha respostas para perguntas comuns ao trabalhar com a realidade mista do Windows.
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675477"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044445"
 ---
-# <a name="using-windows-mixed-reality-faq"></a>Perguntas frequentes sobre o uso da realidade mista do Windows
+# <a name="using-windows-mixed-reality-faq"></a>Perguntas frequentes sobre o uso do Windows Mixed Reality
 
 Se precisar de ajuda com o uso de um headset de imersão de realidade mista do Windows, confira estes tópicos para obter informações gerais e solução de problemas.
 
@@ -61,7 +61,7 @@ Se os seus controladores de movimento não estiverem funcionando corretamente, n
     * Pronto – os controladores estão todos definidos.
     * Rastreamento perdido – o portal de realidade misturada não pode localizar seus controladores. Mantenha-os na frente do headset e reinicie-os pressionando o botão **Windows** por 4 segundos e, novamente, por 2 segundos.
     * Bateria fraca – Substitua as baterias do controlador.
-* Se estiver usando Wi-Fi, tente conectar seu PC a uma rede Wi-Fi de 5 GHz para reduzir a interferência sem fio. 
+* Se estiver usando Wi-Fi, tente conectar seu PC a uma rede de 5 GHz Wi-Fi para reduzir a interferência sem fio. 
 * Para fones de ouvido mais recentes que emparelham diretamente com os controladores, selecione o **"..."** no **portal de realidade misturada** e escolha **configurar controladores** . Isso levará você ao aplicativo Headset para emparelhar os controladores com o headset.  
 * Para fones de ouvido mais antigos que não têm Bluetooth interno para os controladores emparelharem diretamente:  
     * Selecione Configurações > dispositivos > Bluetooth & outros dispositivos em seu PC e verifique se os controladores estão listados como emparelhados.Se não forem, você precisará emparelhar. 
@@ -95,7 +95,7 @@ Se a base parecer desativada (por exemplo, você parece que está flutuante), se
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Recebi uma mensagem que disse para conectar e encarregar meu PC. Por quê?
 
-Se você estiver usando um laptop, a realidade mista do Windows funcionará melhor quando o PC for totalmente cobrado e conectado. 
+Se você estiver usando um laptop, a realidade mista do Windows funcionará melhor quando o PC for totalmente cobrado e conectado.
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Como fazer desinstalar o Windows Mixed Reality?
 
@@ -106,14 +106,14 @@ Quando você estiver pronto para começar a usar o headset novamente, conecte-o 
 > [!NOTE]
 > Se você vir uma mensagem dizendo "não foi possível concluir a remoção da realidade mista do Windows", isso significa que alguns arquivos, incluindo informações sobre seu ambiente, ainda podem estar no seu computador. Isso pode causar problemas se você decidir reinstalar o Windows Mixed Reality posteriormente.
 > 
-> Para saber como remover manualmente qualquer informação restante do Windows Mixed realm do seu PC, consulte **[Este artigo](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** . 
+> Para saber como remover manualmente qualquer informação restante do Windows Mixed realm do seu PC, consulte **[Este artigo](installation_errors.md)** .
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Meu Wi-Fi fica lento quando estou usando a realidade mista do Windows
 
-Se você estiver usando uma conexão Wi-Fi de 2,4 GHz, seus controladores de movimento poderão retardar o Wi-Fi. Tente uma das seguintes opções:
+Se você estiver usando uma conexão de Wi-Fi de 2,4 GHz, seus controladores de movimento poderão retardar o Wi-Fi. Tente uma das seguintes opções:
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* Mude para uma conexão Wi-Fi de 5 GHz, se houver uma disponível. [Saiba mais](https://support.microsoft.com/help/4000461)
+* Alterne para uma conexão Wi-Fi de 5 GHz, se houver uma disponível. [Saiba mais](https://support.microsoft.com/help/4000461)
 * Use um adaptador Bluetooth separado para conectar seus controladores de movimento ao seu computador. [Consulte adaptadores recomendados](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>O que é a configuração de opções de experiência?
@@ -132,6 +132,6 @@ Quando você coloca em seu headset, a realidade mista do Windows precisa de um p
 
 Ainda precisa de ajuda? Para solução de problemas avançada, confira [Este artigo](troubleshooting-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
