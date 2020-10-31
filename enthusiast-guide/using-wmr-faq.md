@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: 9c31f772baa434a4c14157ae91c97454f1910a3c
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044445"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131820"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Perguntas frequentes sobre o uso do Windows Mixed Reality
 
@@ -40,7 +40,7 @@ O Windows Mixed Reality foi projetado para reproduzir som por meio de um headset
 
 ## <a name="speech-commands-arent-working"></a>Os comandos de fala não estão funcionando
 
-Para usar comandos de fala, as configurações de fala e idioma do seu PC devem ser definidas como uma [região e linguagem de realidade mista do Windows com suporte](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality). Para verificar sua região e idioma do Windows, selecione **configurações > hora & idioma > região & idioma** . Para verificar sua linguagem de fala, selecione **configurações > hora & idioma > fala** .
+Para usar comandos de fala, as configurações de fala e idioma do seu PC devem ser definidas como uma [região e linguagem de realidade mista do Windows com suporte](other-questions.md#what-languages-are-supported-in-windows-mixed-reality). Para verificar sua região e idioma do Windows, selecione **configurações > hora & idioma > região & idioma** . Para verificar sua linguagem de fala, selecione **configurações > hora & idioma > fala** .
 
 Se o headset não tiver um MIC interno, anexe fones de ouvido com um mic ao headset ou ao seu PC. Para que a entrada do MIC seja alternada automaticamente para o headset quando os fones de ouvido estiverem diretamente conectados a ele, selecione **configurações > realidade misturada > áudio e fala** e certifique-se de que **, ao usar meu Headset, mude para o microfone do headset** está ativado.
 

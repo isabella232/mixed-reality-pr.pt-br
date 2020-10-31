@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434580"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132050"
 ---
-# <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimento no Windows Mixed Reality
+# <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimentos no Windows Mixed Reality
 
 Os controladores de movimento são acessórios de hardware que permitem que os usuários executem ações em realidade misturada. Uma vantagem dos controladores de movimento em gestos é que os controladores têm uma posição precisa no espaço, permitindo uma interação refinada com objetos digitais. Para os headsets de imersão de realidade misturada do Windows, os controladores de movimento são a principal maneira que os usuários executarão ações em seu mundo.
 
@@ -28,8 +28,8 @@ Você também pode usar um controlador Xbox, um mouse e um teclado ou contornar 
 A maioria dos headsets vem emparelhada diretamente com o headset, mas alguns headsets iniciais exigem que os controladores de movimento sejam emparelhados em seu PC com o Bluetooth 4,0. Ao conectar o headset de imersão pela primeira vez, você será percorrido a ativação de seus controladores de movimento durante a instalação. Mas se você precisar repairá-los mais tarde, veja como:
 
 1. Inicie o **portal de realidade misturada** com o headset conectado.  
-2. No canto inferior esquerdo, selecione **... > configurar controladores**.
-3. Insira 2 baterias AA em cada controlador e coloque seu controlador no modo de emparelhamento (consulte as instruções na [seção de controladores de movimento de par](controllers-in-wmr.md#Pair-motion-controllers)
+2. No canto inferior esquerdo, selecione **... > configurar controladores** .
+3. Insira 2 baterias AA em cada controlador e coloque seu controlador no modo de emparelhamento (consulte as instruções na [seção de controladores de movimento de par](controllers-in-wmr.md#pair-motion-controllers)
 4. Siga as instruções fornecidas na tela.
 
 > [!NOTE]
@@ -45,7 +45,7 @@ A maioria dos headsets vem emparelhada diretamente com o headset, mas alguns hea
 > 
 > Se você tiver um controlador Xbox com fio, conecte-o ao seu PC.
 > 
-> Alguns jogos e aplicativos usam o controlador Xbox de forma diferente de como são usados na realidade misturada. Para usar o controlador para um jogo ou aplicativo, selecione **usar como gamepad** na barra de aplicativos ou, por exemplo, "usar como Gamepad". Para mudar o controlador para a realidade misturada, selecione **usar como gamepad**, novamente ou, por exemplo, "usar com olhar".  
+> Alguns jogos e aplicativos usam o controlador Xbox de forma diferente de como são usados na realidade misturada. Para usar o controlador para um jogo ou aplicativo, selecione **usar como gamepad** na barra de aplicativos ou, por exemplo, "usar como Gamepad". Para mudar o controlador para a realidade misturada, selecione **usar como gamepad** , novamente ou, por exemplo, "usar com olhar".  
 
 ## <a name="pair-motion-controllers"></a>Emparelhar controladores de movimento
 
@@ -59,7 +59,7 @@ Remova a tampa da bateria dos controladores e localize o pequeno botão de empar
     ![Emparelhamento do controlador de movimento](images/connect_controller.png)
 
 Inicie o **portal de realidade misturada** com o headset conectado.  
-No canto inferior esquerdo, selecione **... > configurar controladores**.
+No canto inferior esquerdo, selecione **... > configurar controladores** .
 Siga as instruções na tela.
 
 ### <a name="pair-motion-controllers-to-pc"></a>Emparelhar controladores de movimento com o PC
@@ -95,8 +95,8 @@ Veja como contornar uma realidade misturada com os controladores de movimento, u
 | --- | --- | --- | --- |
 | Teleport | Pressione o Thumbstick para frente e aponte o controlador para onde você deseja ir. Libere o Thumbstick. | Pressione o Thumbstick esquerdo para frente e, em seguida, procure onde deseja ir. Libere o Thumbstick. | Clique e mantenha o botão direito pressionado e aponte o mouse para onde deseja ir. Solte o botão. |
 | Selecionar | Aponte o controlador e, em seguida, receba o gatilho ou clique no Touchpad. | Olhar no destino e, em seguida, pressione A. | Aponte o mouse e clique com o botão esquerdo. |
-| Abra o menu Iniciar | Pressione o botão **Windows** . | Pressione o botão **Xbox** . | Pressione a **tecla do logotipo do Windows**. |
-| Deixar um aplicativo de imersão | Pressione o botão **Windows** . Em seguida, selecione **início da realidade misturada** no menu ações rápidas. | Pressione o botão **Xbox** . Em seguida, selecione o botão **página inicial da realidade misturada** no menu ações rápidas. | Pressione a **tecla do logotipo do Windows**. Em seguida, selecione o botão **página inicial da realidade misturada** no menu ações rápidas que aparece. |
+| Abra o menu Iniciar | Pressione o botão **Windows** . | Pressione o botão **Xbox** . | Pressione a **tecla do logotipo do Windows** . |
+| Deixar um aplicativo de imersão | Pressione o botão **Windows** . Em seguida, selecione **início da realidade misturada** no menu ações rápidas. | Pressione o botão **Xbox** . Em seguida, selecione o botão **página inicial da realidade misturada** no menu ações rápidas. | Pressione a **tecla do logotipo do Windows** . Em seguida, selecione o botão **página inicial da realidade misturada** no menu ações rápidas que aparece. |
 | Rotate | Mova o Thumbstick para a esquerda ou para a direita. | Mover o direcional direito para a direita ou para a direita. | Não disponível. |
 | Fazer backup | Mover o Thumbstick para trás. | Mover o movimento para a esquerda para trás. | Não disponível. |
 | Walk | Envie o Thumbstick diretamente para baixo e, em seguida, pressione-o na direção que você deseja percorrer. | Pressione o dedo para a esquerda diretamente para baixo e, em seguida, aperte-o na direção que você deseja percorrer. | Não disponível. |
@@ -149,10 +149,12 @@ Seu controlador se comunica com o que está fazendo, vibrando e piscando suas lu
 
 Envie-nos comentários no Hub de comentários usando a categoria "realidade misturada-> entrada".
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-* [Pergunte à comunidade](https://answers.microsoft.com)
-* [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
-* [Solução de problemas](troubleshooting-windows-mixed-reality.md)
+- [Controladores HP no Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Controladores HP em não reais](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Pergunte à comunidade](https://answers.microsoft.com)
+- [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
+- [Solução de problemas](troubleshooting-windows-mixed-reality.md)
 
 Está tendo problemas com seus controladores de movimento? [Obter ajuda](motion-controller-problems.md)

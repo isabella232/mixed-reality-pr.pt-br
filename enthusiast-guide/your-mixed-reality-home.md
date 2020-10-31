@@ -3,12 +3,12 @@ title: Sua base de realidade misturada
 description: Como navegar e teleport na página inicial do Windows Mixed Reality, iniciar aplicativos e jogos, personalizar a página inicial e alterar as configurações de Visual, áudio e fala.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade mista, realidade virtual, VR, Sr, Home, navegar, contornar, aplicativos, jogos
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434622"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132110"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Sua página inicial do Windows Mixed Reality
 
@@ -73,7 +73,7 @@ Vá para **configurações > realidade misturada > ambiente > redefinir o** ![ p
 
 ## <a name="turn-off-the-boundary"></a>Desligar o limite
 
-Vá para Portal de realidade misturada e abra o menu no canto superior esquerdo da tela. Selecione **executar configurar > limite de sala**. Alterne a alternância para desativado. Você deve permanecer encaixado na sua mesa se desativar o limite.
+Vá para Portal de realidade misturada e abra o menu no canto superior esquerdo da tela. Selecione **executar configurar > limite de sala** . Alterne a alternância para desativado. Você deve permanecer encaixado na sua mesa se desativar o limite.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Som espacial na página inicial do Windows Mixed Reality
 
@@ -82,9 +82,9 @@ O Windows Mixed Reality Home inclui uma simulação de som espacial em que o som
 > [!NOTE]
 > Esse recurso está desabilitado em computadores com gráficos integrados devido à carga colocada na GPU.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-* [Solução de problemas da página inicial do Windows Mixed Reality](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [Solução de problemas da página inicial do Windows Mixed Reality](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [Usando jogos e aplicativos no Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Como funciona o acompanhamento interno](tracking-system.md)
 * [Como funcionam os controladores de movimento](controllers-in-wmr.md)

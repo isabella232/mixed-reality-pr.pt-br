@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675481"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131950"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Usando a fala no Windows Mixed Reality
 
@@ -36,7 +36,7 @@ Na página inicial do Windows Mixed Reality, se você vir uma palavra, geralment
 
 Use-os em toda a realidade mista do Windows para se tornar mais rápido. Alguns comandos usam o cursor olhar, que você abrirá dizendo "Select".
 
-| Para fazer isto | Digamos que isso |
+| Para fazer isso | Digamos que isso |
 | --- | --- |
 | Selecionar | Diga "Select" para abrir o cursor olhar. Em seguida, transforme a sua cabeça para posicionar o cursor no item que você deseja selecionar e diga "Select" novamente. |
 | Abra o menu Iniciar | Ir para Iniciar |
@@ -54,7 +54,7 @@ Use-os em toda a realidade mista do Windows para se tornar mais rápido. Alguns 
 
 Olhar em um objeto 3D, um holograma ou uma janela de aplicativo para usar estes comandos:
 
-| Para fazer isto | Digamos que isso |
+| Para fazer isso | Digamos que isso |
 | --- | --- |
 | Torná-lo maior | Fiquem |
 | Torná-lo menor | Menor |
@@ -66,7 +66,7 @@ Olhar em um objeto 3D, um holograma ou uma janela de aplicativo para usar estes 
 
 Olhar em uma janela de aplicativo ou em um objeto 3D para usar estes comandos:
 
-| Para fazer isto | Digamos que isso |
+| Para fazer isso | Digamos que isso |
 | --- | --- |
 | Fechar um aplicativo ou objeto 3D | Fechar |
 | Ajustar algo (redimensionar ou mover) | Ajustar |
@@ -81,7 +81,7 @@ Olhar em uma janela de aplicativo ou em um objeto 3D para usar estes comandos:
 
 Olhar no menu Iniciar para usar estes comandos:
 
-| Para fazer isto | Digamos que isso |
+| Para fazer isso | Digamos que isso |
 | --- | --- |
 | Ir para a lista todos os aplicativos | Todos os aplicativos |
 | Mover para cima ou para baixo em iniciar ou em todos os aplicativos | Page up/Page down |
@@ -90,7 +90,7 @@ Olhar no menu Iniciar para usar estes comandos:
 | Tirar um vídeo | Vídeo |
 | Mostrar o modo de exibição de headset no portal de realidade misturada na área de trabalho | Versão Prévia |
 | Abra o controle de volume em iniciar | Alterar volume |
-| Mudo | Mudo |
+| Mute | Mute |
 | Ativar mudo | Ativar mudo |
 | Fechar o menu iniciar | Fechar ou cancelar |
 
@@ -98,7 +98,7 @@ Olhar no menu Iniciar para usar estes comandos:
 
 Diga "Ei Cortana" e, em seguida, use um dos seguintes comandos:
 
-| Para fazer isto | Digamos que isso |
+| Para fazer isso | Digamos que isso |
 | --- | --- |
 | Descubra o que você pode dizer à Cortana | O que posso dizer? |
 | Aumentar/diminuir volume | Ativar/desativar o volume |
@@ -123,11 +123,11 @@ Diga "Ei Cortana" e, em seguida, use um dos seguintes comandos:
 Mude para o modo de ditado sempre que o teclado estiver ativo para uma maneira fácil de digitar. Selecione microfone no teclado — ou simplesmente diga "comece a ditar" — para começar.
 
 > [!NOTE]
-> O teclado de realidade misturada só está disponível em inglês, mas você pode usar o ditado em qualquer uma das [linguagens de realidade mista do Windows](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)com suporte.
+> O teclado de realidade misturada só está disponível em inglês, mas você pode usar o ditado em qualquer uma das [linguagens de realidade mista do Windows](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)com suporte.
 
-### <a name="keyboard-dictation-commands"></a>Comandos de ditado de teclado 
+### <a name="keyboard-dictation-commands"></a>Comandos de ditado de teclado
 
-| Para fazer isto | Digamos que isso |
+| Para fazer isso | Digamos que isso |
 | --- | --- |
 | Fechar o teclado | Fechar |
 | Iniciar ditado | Comece a ditar |
@@ -136,6 +136,7 @@ Mude para o modo de ditado sempre que o teclado estiver ativo para uma maneira f
 | Selecione tudo na caixa de ditado | Selecionar tudo |
 
 ### <a name="punctuation"></a>Pontuação
+
 Você precisará dizer os nomes da pontuação que deseja usar. Por exemplo, você pode dizer "Ei **vírgula** o que você está até o **ponto de interrogação** ".
 
 Aqui estão as palavras-chave de pontuação que você pode usar:
@@ -146,12 +147,12 @@ Aqui estão as palavras-chave de pontuação que você pode usar:
 * Cotações abertas, aspas (s) de fechamento
 * Hashtag, Smiley/Smiley, rosto triste, Winky
 * Dólar, porcentagem
- 
-Às vezes, é útil soletrar itens como endereços de email. Por exemplo, para ditar example@outlook.com , você diria "e X A M P L E no Outlook dot com".
 
+Às vezes, é útil soletrar itens como endereços de email. Por exemplo, para ditar example@outlook.com , você diria "e X A M P L E no Outlook dot com".
 
 Para parar de ditar, selecione **concluído** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
+
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

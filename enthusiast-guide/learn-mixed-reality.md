@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, tutorial, introdução
 appliesto:
 - Windows 10
-ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292985"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132060"
 ---
 # <a name="learn-mixed-reality"></a>Aprender Realidade Misturada
 
@@ -45,14 +45,14 @@ Para saber mais sobre como entrar em realidade misturada com os controladores de
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Usar comandos de voz e a Cortana dentro da página inicial do Windows Mixed Reality
 
-[Conheça os comandos de voz que você pode usar na página inicial do Windows Mixed Reality](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Conheça os comandos de voz que você pode usar na página inicial do Windows Mixed Reality](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a>Mostrar uma visualização do que estou vendo em meu Headset na tela da minha área de trabalho
 
 Basta pressionar o ícone de **reprodução** na parte inferior do aplicativo portal da realidade misturada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Como solucionar problemas de instalação](installation_errors.md)
-* [Solução de problemas de instalação](set-up-questions.md)
+* [Solução de problemas de instalação](wmr-setup-faq.md)
 * [Sua base de realidade misturada](your-mixed-reality-home.md)
