@@ -26,13 +26,12 @@
 ### [O que é o WebVR?](webvr.md)
 ### [Perguntas frequentes sobre o uso do Windows Mixed Reality](using-wmr-faq.md)
 
-## Perguntas frequentes para solução de problemas
+## Solução de problemas e perguntas frequentes
 ### [Enviar bugs e comentários](filing-feedback.md)
+### [Códigos de erro](error-codes.md)
 ### [Perguntas frequentes gerais](troubleshooting-windows-mixed-reality.md)
 ### [Erros de instalação](installation_errors.md)
-### [Instalação](set-up-questions.md)
 ### [Limites](boundary-questions.md)
-### [Códigos de erro](error-codes.md)
 ### [Conectividade do headset](headset-connectivity.md)
 ### [Exibição do headset](headset-display.md)
 ### [Controladores de movimentos](motion-controller-problems.md)
@@ -42,8 +41,11 @@
 ### [Sistema de acompanhamento](tracking.md)
 ### [WebVR](webvr-questions.md)
 ### [Outras perguntas](other-questions.md)
+### [Perguntas frequentes sobre o HP Reverb G2](reverbG2-faq.md)
 
 ## Recursos
 ### [Integridade do headset imersivo, segurança e conforto](wmr-health-safety-comfort.md)
 ### [Visão geral do software de Realidade Misturada e histórico de versões](mixed-reality-software.md)
 ### [Como funciona o acompanhamento interno](tracking-system.md)
+### [Controladores do HP Reverb G2 no Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Controladores do HP Reverb G2 no Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

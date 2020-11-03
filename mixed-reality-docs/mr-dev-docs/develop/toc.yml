@@ -2,6 +2,8 @@
   href: development.md
 - name: Serviços de nuvem do Azure
   href: mixed-reality-cloud-services.md
+- name: Visão geral do aprendizado de Realidade Misturada
+  href: mr-learning-overview.md
 - name: Instalar as ferramentas
   href: install-the-tools.md
 - name: Portabilidade de aplicativos
