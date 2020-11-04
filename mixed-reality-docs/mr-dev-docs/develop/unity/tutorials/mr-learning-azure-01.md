@@ -1,0 +1,223 @@
+---
+title: Tutoriais de Nuvem do Azure – 1. Serviços de Nuvem do Azure para HoloLens 2
+description: Conclua este curso para aprender a implementar diversos serviços do Azure em um aplicativo do HoloLens 2.
+author: jessemcculloch
+ms.author: jemccull
+ms.date: 07/01/2020
+ms.topic: article
+keywords: azure, mixed reality, unity, tutorial, hololens, hololens 2, azure blob storage, azure table storage, azure spatial anchors, azure bot framework
+ms.localizationpriority: high
+ms.openlocfilehash: 115044aa8fa5f143358b8014442bce26d4f3fec5
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915571"
+---
+# <a name="1-azure-cloud-services-for-hololens-2"></a><span data-ttu-id="7c334-105">1. Serviços de Nuvem do Azure para HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="7c334-105">1. Azure Cloud Services for HoloLens 2</span></span>
+
+## <a name="overview"></a><span data-ttu-id="7c334-106">Visão geral</span><span class="sxs-lookup"><span data-stu-id="7c334-106">Overview</span></span>
+
+<span data-ttu-id="7c334-107">Bem-vindo(a) a esta série de tutoriais voltados para colocar serviços de **Nuvem do Azure** em um aplicativo do **HoloLens 2**.</span><span class="sxs-lookup"><span data-stu-id="7c334-107">Welcome to this series of tutorials focused on bringing **Azure Cloud** services into a **HoloLens 2** application.</span></span> <span data-ttu-id="7c334-108">Nesta série de tutoriais em cinco partes, você aprenderá a integrar vários serviços de **Nuvem do Azure** em um projeto **Unity** para o **HoloLens 2**.</span><span class="sxs-lookup"><span data-stu-id="7c334-108">In this five-part tutorial series, you will learn how to integrate several **Azure Cloud** services into a **Unity** project for **HoloLens 2**.</span></span> <span data-ttu-id="7c334-109">Ao passar em cada capítulo, você adicionará novos serviços de **Nuvem do Azure** para expandir os recursos do aplicativo e a experiência do usuário, aprendendo ao mesmo tempo os conceitos básicos de cada serviço de **Nuvem do Azure**.</span><span class="sxs-lookup"><span data-stu-id="7c334-109">With each consecutive chapter, you will add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7c334-110">Esta série de tutoriais se concentrará no **HoloLens 2** mas, devido à natureza multiplataforma do Unity, a maioria dos seus aprendizados também se aplicará a aplicativos para Desktop e Smartphone.</span><span class="sxs-lookup"><span data-stu-id="7c334-110">This tutorial series will focus on the **HoloLens 2** but due the cross-platform nature of Unity, most of your learnings will also apply for Desktop and Smartphone applications.</span></span>
+
+<span data-ttu-id="7c334-111">Neste primeiro tutorial, você conhecerá as metas da série e de cada serviço de nuvem do Azure que você usará, além de configurar o projeto inicial do Unity.</span><span class="sxs-lookup"><span data-stu-id="7c334-111">In this first tutorial, you'll be introduced to the goals of the series and each Azure Cloud service you'll be using, as well as setting up the initial Unity project.</span></span>
+
+<span data-ttu-id="7c334-112">No segundo tutorial, [Integrar o Armazenamento do Azure](mr-learning-azure-02.md), você começará integrando o Armazenamento do Azure como a solução de persistência para o aplicativo de demonstração.</span><span class="sxs-lookup"><span data-stu-id="7c334-112">In the second tutorial, [Integrating Azure Storage](mr-learning-azure-02.md), you'll start off by integrating Azure Storage as the persistence solution for the demo application.</span></span> <span data-ttu-id="7c334-113">Você também conhecerá as diferenças entre o Armazenamento de Blobs e o Armazenamento de Tabela, preparará os recursos de projeto necessários e configurará a cena.</span><span class="sxs-lookup"><span data-stu-id="7c334-113">You'll also learn the differences between Blob Storage and Table Storage, prepare the needed project resources, setup the scene.</span></span> <span data-ttu-id="7c334-114">Por fim, você aprenderá a verificar as operações de leitura, atualização e exclusão de dados.</span><span class="sxs-lookup"><span data-stu-id="7c334-114">Finally, you'll learn how to verify the read, update, and delete data operations.</span></span>
+
+<span data-ttu-id="7c334-115">Continuando com o terceiro tutorial, [Integração da Visão Personalizada do Azure](mr-learning-azure-03.md), você usará a Visão Personalizada do Azure para treinar e detectar imagens no aplicativo do HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="7c334-115">Continuing with the third tutorial, [Integrating Azure Custom Vision](mr-learning-azure-03.md), you will use Azure Custom Vision to train and detect images in the HoloLens 2 application.</span></span> <span data-ttu-id="7c334-116">O capítulo começa com a configuração de seu próprio recurso de Visão Personalizada do Azure, preparando os componentes da cena e entrando em ação treinando e detectando suas próprias imagens de dentro do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="7c334-116">The chapter starts off with setting up your own Azure Custom Vision resource, preparing the scene components and getting into action by training and detecting your own images from inside the application.</span></span>
+
+<span data-ttu-id="7c334-117">Em seguida, você avançará para o quarto tutorial, [Integração de Âncoras Espaciais do Azure](mr-learning-azure-04.md), com a exploração do serviço Âncoras Espaciais do Azure para salvar e encontrar locais, aprender os principais conceitos, preparar os recursos necessários, configurar a cena e começar a usar o novo recurso no aplicativo.</span><span class="sxs-lookup"><span data-stu-id="7c334-117">Next you advance in the fourth tutorial, [Integrating Azure Spatial Anchors](mr-learning-azure-04.md), with exploring Azure Spatial Anchors service to save and find locations, learn the core concepts, prepare necessary resources, setup the scene and start using the new feature in the application.</span></span>
+
+<span data-ttu-id="7c334-118">Com o quinto tutorial, [Integração do Serviço de Bot do Azure com o LUIS](mr-learning-azure-05.md), você finaliza fornecendo ao aplicativo um novo método de interação do usuário: idioma natural!</span><span class="sxs-lookup"><span data-stu-id="7c334-118">With the fifth tutorial, [Integrating Azure Bot Service with LUIS](mr-learning-azure-05.md), you finalize by giving the application a new method of user interaction: natural language!</span></span> <span data-ttu-id="7c334-119">Esse recurso será realizado usando o Azure Bot Framework junto com o LUIS (Reconhecimento Vocal).</span><span class="sxs-lookup"><span data-stu-id="7c334-119">This feature will be realized by using the Azure Bot Framework together with Language Understanding (LUIS).</span></span> <span data-ttu-id="7c334-120">Este capítulo final ensina os conceitos básicos do Serviço de Bot do Azure e para acelerar o processo, você usará o Bot Framework Composer como uma solução sem código.</span><span class="sxs-lookup"><span data-stu-id="7c334-120">This final chapter teaches you the basics of Azure Bot Service and to speed up the process you will be using the Bot Framework Composer as a zero code solution.</span></span> <span data-ttu-id="7c334-121">Depois que o bot for criado, você o integrará à cena e fará com que ele seja executado com o estágio final do aplicativo do HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="7c334-121">Once the bot is created, you will integrate it into the scene and give it a run with the final stage of the HoloLens 2 application.</span></span>
+
+## <a name="application-goals"></a><span data-ttu-id="7c334-122">Metas do aplicativo</span><span class="sxs-lookup"><span data-stu-id="7c334-122">Application goals</span></span>
+
+<span data-ttu-id="7c334-123">Nesta série de tutoriais, você criará um aplicativo do **HoloLens 2** que poderá detectar objetos em imagens e encontrar seu local espacial.</span><span class="sxs-lookup"><span data-stu-id="7c334-123">In this tutorial series, you will build a **HoloLens 2** application that can detect objects from images and find its spatial location.</span></span> <span data-ttu-id="7c334-124">Para definir um idioma de domínio, essas entidades passarão a ser chamadas de **Objeto Rastreado**.</span><span class="sxs-lookup"><span data-stu-id="7c334-124">To set a domain language, you call such entities from now **Tracked Object**.</span></span>
+<span data-ttu-id="7c334-125">O usuário pode criar um **Objeto Rastreado** para associar um conjunto de imagens por meio da pesquisa visual computacional e/ou de um local espacial.</span><span class="sxs-lookup"><span data-stu-id="7c334-125">The user can create a **Tracked Object** to either or both associate a set of images via computer vision and/or a spatial location.</span></span> <span data-ttu-id="7c334-126">Todos os dados devem ser persistidos na nuvem.</span><span class="sxs-lookup"><span data-stu-id="7c334-126">All data must be persisted into the cloud.</span></span> <span data-ttu-id="7c334-127">Além disso, alguns aspectos do aplicativo serão controlados opcionalmente pelo idioma natural por meio de um bot.</span><span class="sxs-lookup"><span data-stu-id="7c334-127">Furthermore some aspects of the application will be optionally controlled by natural language assisted through a bot.</span></span>
+
+### <a name="features"></a><span data-ttu-id="7c334-128">Recursos</span><span class="sxs-lookup"><span data-stu-id="7c334-128">Features</span></span>
+
+* <span data-ttu-id="7c334-129">Gerenciamento básico de dados e imagens</span><span class="sxs-lookup"><span data-stu-id="7c334-129">Basic managing of data and images</span></span>
+* <span data-ttu-id="7c334-130">Treinamento e detecção de imagem</span><span class="sxs-lookup"><span data-stu-id="7c334-130">Image training and detection</span></span>
+* <span data-ttu-id="7c334-131">Armazenamento de um local espacial e diretrizes para ele</span><span class="sxs-lookup"><span data-stu-id="7c334-131">Storing a spatial location and guidance to it</span></span>
+* <span data-ttu-id="7c334-132">Assistente de bot para usar alguns recursos por meio de linguagem natural</span><span class="sxs-lookup"><span data-stu-id="7c334-132">Bot assistant to use some features via natural language</span></span>
+
+## <a name="azure-cloud-services"></a><span data-ttu-id="7c334-133">Serviços de Nuvem do Azure</span><span class="sxs-lookup"><span data-stu-id="7c334-133">Azure Cloud services</span></span>
+
+<span data-ttu-id="7c334-134">Você usará os seguintes serviços de **Nuvem do Azure** para implementar os recursos acima:</span><span class="sxs-lookup"><span data-stu-id="7c334-134">You'll use the following **Azure Cloud** services to implement the above features:</span></span>
+
+### <a name="azure-storage"></a><span data-ttu-id="7c334-135">Armazenamento do Azure</span><span class="sxs-lookup"><span data-stu-id="7c334-135">Azure Storage</span></span>
+
+<span data-ttu-id="7c334-136">Você usará o [Armazenamento do Azure](https://azure.microsoft.com/services/storage/) para a solução de persistência.</span><span class="sxs-lookup"><span data-stu-id="7c334-136">You will use [Azure Storage](https://azure.microsoft.com/services/storage/) for the persistence solution.</span></span> <span data-ttu-id="7c334-137">Ele permite que você armazene dados em uma tabela e carregue binários grandes, como imagens.</span><span class="sxs-lookup"><span data-stu-id="7c334-137">It allows you to store data on a table and upload large binaries like images.</span></span>
+
+### <a name="azure-custom-vision"></a><span data-ttu-id="7c334-138">Visão Personalizada do Azure</span><span class="sxs-lookup"><span data-stu-id="7c334-138">Azure Custom Vision</span></span>
+
+<span data-ttu-id="7c334-139">Com a [Visão Personalizada do Azure](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (parte dos [Serviços Cognitivos do Azure](https://azure.microsoft.com/services/cognitive-services/)), você pode associar um conjunto de imagens a *Objetos Rastreados* , treinar um modelo de machine learning no conjunto e detectar o *Objeto Rastreado*.</span><span class="sxs-lookup"><span data-stu-id="7c334-139">With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)) you can associate to *Tracked Objects* a set of images, train a machine learning model on the set and detect the *Tracked Object*.</span></span>
+
+### <a name="azure-spatial-anchors"></a><span data-ttu-id="7c334-140">Âncoras Espaciais do Azure</span><span class="sxs-lookup"><span data-stu-id="7c334-140">Azure Spatial Anchors</span></span>
+
+<span data-ttu-id="7c334-141">Para armazenar o local de um *Objeto Rastreado* e fornecer instruções guiadas para encontrá-lo, você usa [Âncoras Espaciais do Azure](https://azure.microsoft.com/services/spatial-anchors/).</span><span class="sxs-lookup"><span data-stu-id="7c334-141">To store a *Tracked Object* location and give a guided directions to find it, you use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).</span></span>
+
+### <a name="azure-bot-service"></a><span data-ttu-id="7c334-142">Serviço de Bot do Azure</span><span class="sxs-lookup"><span data-stu-id="7c334-142">Azure Bot Service</span></span>
+
+<span data-ttu-id="7c334-143">O aplicativo é conduzido principalmente pela interface do usuário tradicional, por isso você usa o [Serviço de Bot do Azure](https://azure.microsoft.com/services/bot-service/) para adicionar alguma personalidade e agir como um novo método de interação.</span><span class="sxs-lookup"><span data-stu-id="7c334-143">The application is mainly driven by traditional UI, so you use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add some personality and act as a new interaction method.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="7c334-144">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7c334-144">Prerequisites</span></span>
+
+>[!TIP]
+><span data-ttu-id="7c334-145">Se você ainda não concluiu a série de [Tutoriais de introdução](mr-learning-base-01.md), recomendamos que você a conclua primeiro.</span><span class="sxs-lookup"><span data-stu-id="7c334-145">If you have not completed the [Getting started tutorials](mr-learning-base-01.md) series yet, it's recommended that you complete those tutorials first.</span></span>
+
+* <span data-ttu-id="7c334-146">Um PC com Windows 10 configurado com as [ferramentas corretas instaladas](../../install-the-tools.md)</span><span class="sxs-lookup"><span data-stu-id="7c334-146">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
+* <span data-ttu-id="7c334-147">SDK do Windows 10 10.0.18362.0 ou posterior</span><span class="sxs-lookup"><span data-stu-id="7c334-147">Windows 10 SDK 10.0.18362.0 or later</span></span>
+* <span data-ttu-id="7c334-148">Alguma habilidade básica de programação em C#</span><span class="sxs-lookup"><span data-stu-id="7c334-148">Some basic C# programming ability</span></span>
+* <span data-ttu-id="7c334-149">Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span><span class="sxs-lookup"><span data-stu-id="7c334-149">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
+* <span data-ttu-id="7c334-150">Uma webcam conectada se você quiser testar no editor do Unity</span><span class="sxs-lookup"><span data-stu-id="7c334-150">A connected webcam if you like to test from Unity editor</span></span>
+* <span data-ttu-id="7c334-151"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019.3.X instalado e o módulo de suporte de Build da Plataforma Universal do Windows adicionado</span><span class="sxs-lookup"><span data-stu-id="7c334-151"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="7c334-152">A versão recomendada do Unity para esta série de tutoriais é o Unity 2019.3.X.</span><span class="sxs-lookup"><span data-stu-id="7c334-152">The recommended Unity version for this tutorial series is Unity 2019.3.X.</span></span> <span data-ttu-id="7c334-153">Ela substitui todos os requisitos de versão do Unity ou as recomendações indicadas nos pré-requisitos vinculados acima.</span><span class="sxs-lookup"><span data-stu-id="7c334-153">This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.</span></span>
+
+## <a name="creating-and-preparing-the-unity-project"></a><span data-ttu-id="7c334-154">Como criar e preparar o projeto do Unity</span><span class="sxs-lookup"><span data-stu-id="7c334-154">Creating and preparing the Unity project</span></span>
+
+<span data-ttu-id="7c334-155">Nesta seção, você criará um projeto do Unity e o deixará pronto para o desenvolvimento do MRTK.</span><span class="sxs-lookup"><span data-stu-id="7c334-155">In this section, you will create a new Unity project and get it ready for MRTK development.</span></span>
+
+<span data-ttu-id="7c334-156">Para isso, primeiro siga [Inicializar seu projeto e o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar seu aplicativo para o dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2), que incluem as seguintes etapas:</span><span class="sxs-lookup"><span data-stu-id="7c334-156">For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:</span></span>
+
+1. <span data-ttu-id="7c334-157">[Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais de Nuvem do Azure*</span><span class="sxs-lookup"><span data-stu-id="7c334-157">[Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *Azure Cloud Tutorials*</span></span>
+2. [<span data-ttu-id="7c334-158">Como alternar a plataforma de build</span><span class="sxs-lookup"><span data-stu-id="7c334-158">Switching the build platform</span></span>](mr-learning-base-02.md#configuring-the-unity-project)
+3. [<span data-ttu-id="7c334-159">Como importar os Recursos Essenciais do TextMeshPro</span><span class="sxs-lookup"><span data-stu-id="7c334-159">Importing the TextMeshPro Essential Resources</span></span>](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [<span data-ttu-id="7c334-160">Como importar o Kit de Ferramentas de Realidade Misturada</span><span class="sxs-lookup"><span data-stu-id="7c334-160">Importing the Mixed Reality Toolkit</span></span>](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [<span data-ttu-id="7c334-161">Como configurar o projeto do Unity</span><span class="sxs-lookup"><span data-stu-id="7c334-161">Configuring the Unity project</span></span>](mr-learning-base-02.md#configuring-the-unity-project)
+6. <span data-ttu-id="7c334-162">[Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *AzureCloudServices*</span><span class="sxs-lookup"><span data-stu-id="7c334-162">[Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureCloudServices*</span></span>
+
+<span data-ttu-id="7c334-163">Então siga as instruções em [Alterar a opção de Exibição de Reconhecimento Espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para alterar o perfil de configuração do MRTK para sua cena para o **DefaultHoloLens2ConfigurationProfile** e alterar as opções de exibição para a malha de reconhecimento espacial para **Oclusão**.</span><span class="sxs-lookup"><span data-stu-id="7c334-163">Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.</span></span>
+
+## <a name="installing-inbuilt-unity-packages"></a><span data-ttu-id="7c334-164">Instalar pacotes internos do Unity</span><span class="sxs-lookup"><span data-stu-id="7c334-164">Installing inbuilt Unity packages</span></span>
+
+<span data-ttu-id="7c334-165">No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a janela Gerenciador de Pacotes e selecione **AR Foundation** e clique no botão **Instalar** para instalar o pacote:</span><span class="sxs-lookup"><span data-stu-id="7c334-165">In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:</span></span>
+
+![Janela do Gerenciador de Pacotes do Unity com o AR Foundation selecionado](images/mr-learning-asa/asa-02-section2-step1-1.png)
+
+> [!NOTE]
+> <span data-ttu-id="7c334-167">Você está instalando o pacote do AR Foundation porque ele é exigido pelo SDK de Âncoras Espaciais do Azure e será importado na próxima seção.</span><span class="sxs-lookup"><span data-stu-id="7c334-167">You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.</span></span>
+
+## <a name="importing-the-tutorial-assets"></a><span data-ttu-id="7c334-168">Como importar os ativos do tutorial</span><span class="sxs-lookup"><span data-stu-id="7c334-168">Importing the tutorial assets</span></span>
+
+<span data-ttu-id="7c334-169">Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados** :</span><span class="sxs-lookup"><span data-stu-id="7c334-169">Download and **import** the following Unity custom packages **in the order they are listed** :</span></span>
+
+* [<span data-ttu-id="7c334-170">AzureSpatialAnchors.unitypackage</span><span class="sxs-lookup"><span data-stu-id="7c334-170">AzureSpatialAnchors.unitypackage</span></span>](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
+* [<span data-ttu-id="7c334-171">AzureStorageForUnity.unitypackage</span><span class="sxs-lookup"><span data-stu-id="7c334-171">AzureStorageForUnity.unitypackage</span></span>](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
+* [<span data-ttu-id="7c334-172">MRTK.Tutorials.AzureCloudServices.unitypackage</span><span class="sxs-lookup"><span data-stu-id="7c334-172">MRTK.Tutorials.AzureCloudServices.unitypackage</span></span>](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
+
+> [!TIP]
+> <span data-ttu-id="7c334-173">Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Importar o Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).</span><span class="sxs-lookup"><span data-stu-id="7c334-173">For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.</span></span>
+
+<span data-ttu-id="7c334-174">Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:</span><span class="sxs-lookup"><span data-stu-id="7c334-174">After you have imported the tutorial assets your Project window should look similar to this:</span></span>
+
+![Janelas Hierarquia, Cena e Projeto do Unity após a importação dos ativos do tutorial](images/mr-learning-azure/tutorial1-section4-step1-1.png)
+
+> [!NOTE]
+> <span data-ttu-id="7c334-176">Se você vir avisos CS0618 sobre 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' e 'WorldAnchor.GetNativeSpatialAnchorPtr()' estarem obsoletos, poderá ignorá-los.</span><span class="sxs-lookup"><span data-stu-id="7c334-176">If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.</span></span>
+
+## <a name="creating-and-preparing-the-scene"></a><span data-ttu-id="7c334-177">Como criar e preparar a cena</span><span class="sxs-lookup"><span data-stu-id="7c334-177">Creating and preparing the scene</span></span>
+<!-- TODO: Consider renaming to 'Preparing the scene' -->
+
+<span data-ttu-id="7c334-178">Nesta seção, você vai preparar a cena adicionando alguns pré-fabricados do tutorial.</span><span class="sxs-lookup"><span data-stu-id="7c334-178">In this section, you will prepare the scene by adding some of the tutorial prefabs.</span></span>
+
+<span data-ttu-id="7c334-179">Na janela do projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureCloudServices** > **Pré-fabricados** > **Gerenciador**.</span><span class="sxs-lookup"><span data-stu-id="7c334-179">In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.</span></span> <span data-ttu-id="7c334-180">Mantendo pressionada a tecla CTRL, clique em **SceneController** , **RootMenu** e **DataManager** para selecionar os três pré-fabricados:</span><span class="sxs-lookup"><span data-stu-id="7c334-180">While holding down the CTRL button, click on **SceneController** , **RootMenu** and **DataManager** to select the three prefabs:</span></span>
+
+![Unity com os pré-fabricados SceneController, RootMenu e DataManager selecionados](images/mr-learning-azure/tutorial1-section5-step1-1.png)
+
+<span data-ttu-id="7c334-182">O **SceneController (prefab)** contém dois scripts: **SceneController (script)** e **UnityDispatcher (script)** .</span><span class="sxs-lookup"><span data-stu-id="7c334-182">The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**.</span></span> <span data-ttu-id="7c334-183">O componente de script **SceneController** contém várias funções de UX e facilita a funcionalidade de captura de fotos e o **UnityDispatcher** é uma classe auxiliar para permitir a execução de ações no thread principal do Unity.</span><span class="sxs-lookup"><span data-stu-id="7c334-183">The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.</span></span>
+
+<span data-ttu-id="7c334-184">O **RootMenu (prefab)** é o pré-fabricado da interface do usuário principal que mantém todas as janelas da interface do usuário conectadas entre si por meio de vários pequenos componentes de script e que controla o fluxo geral de UX do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="7c334-184">The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows that are connected to each other through various small script components and control the general UX flow of the application.</span></span>
+
+<span data-ttu-id="7c334-185">O **DataManager (prefab)** é responsável por conversar com o armazenamento do Azure e será explicado mais detalhadamente no próximo tutorial.</span><span class="sxs-lookup"><span data-stu-id="7c334-185">The **DataManager (prefab)** is responsible for talking to Azure storage and will be explained further in the next tutorial.</span></span>
+
+<span data-ttu-id="7c334-186">Agora, com os três pré-fabricados ainda selecionados, arraste-os para a janela Hierarquia para adicioná-los à cena:</span><span class="sxs-lookup"><span data-stu-id="7c334-186">Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:</span></span>
+
+![Unity com os pré-fabricados SceneController, RootMenu e DataManager recém-adicionados ainda selecionados](images/mr-learning-azure/tutorial1-section5-step1-2.png)
+
+<span data-ttu-id="7c334-188">Para se concentrar nos objetos da cena, clique duas vezes no objeto **RootMenu** e, em seguida, reduzir levemente o zoom de novo:</span><span class="sxs-lookup"><span data-stu-id="7c334-188">To focus in on the objects in the scene, you can double-click on the **RootMenu** object, and then zoom slightly out again:</span></span>
+
+![Unity com o objeto RootMenu selecionado](images/mr-learning-azure/tutorial1-section5-step1-3.png)
+
+> [!TIP]
+> <span data-ttu-id="7c334-190">Se você considerar que ícones grandes em sua cena, por exemplo, os ícones "T" grandes, causam distração, poderá ocultá-los <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">alternando o Gizmos</a> para a posição de desligado.</span><span class="sxs-lookup"><span data-stu-id="7c334-190">If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.</span></span>
+
+## <a name="configuring-the-scene"></a><span data-ttu-id="7c334-191">Configurando a cena</span><span class="sxs-lookup"><span data-stu-id="7c334-191">Configuring the scene</span></span>
+
+<span data-ttu-id="7c334-192">Nesta seção, você conectará *SceneManager* , *DataManager* e *RootMenu* juntos para ter uma cena funcional pronta para o seguinte tutorial, [Integrar o armazenamento do Azure](mr-learning-azure-01.md).</span><span class="sxs-lookup"><span data-stu-id="7c334-192">In this section, you will connect *SceneManager* , *DataManager* and *RootMenu* together to have a working scene to be ready for the following [Integrating Azure storage](mr-learning-azure-01.md) tutorial.</span></span>
+
+### <a name="connect-the-objects"></a><span data-ttu-id="7c334-193">Conectar os objetos</span><span class="sxs-lookup"><span data-stu-id="7c334-193">Connect the objects</span></span>
+
+<span data-ttu-id="7c334-194">Na janela Hierarquia, selecione o objeto **DataManager** :</span><span class="sxs-lookup"><span data-stu-id="7c334-194">In the Hierarchy window, select the **DataManager** object:</span></span>
+
+![Unity com o objeto DataManager selecionado](images/mr-learning-azure/tutorial1-section6-step1-1.png)
+
+<span data-ttu-id="7c334-196">Na janela do Inspetor, localize o componente **DataManager (script)** e você verá um slot vazio no evento **On Data Manager Ready ()** .</span><span class="sxs-lookup"><span data-stu-id="7c334-196">In the Inspector window, locate the **DataManager (Script)** component and you will see an empty slot on the **On Data Manager Ready ()** event.</span></span> <span data-ttu-id="7c334-197">Agora, na janela Hierarquia, arraste o objeto **SceneController** para o evento **On Data Manager Ready ()** .</span><span class="sxs-lookup"><span data-stu-id="7c334-197">Now from the Hierarchy window drag the **SceneController** object into the **On Data Manager Ready ()** event.</span></span>
+
+![Unity com o ouvinte de eventos do DataManager adicionado](images/mr-learning-azure/tutorial1-section6-step1-2.png)
+
+<span data-ttu-id="7c334-199">Você observará que o menu suspenso do evento se tornou ativo; clique no menu suspenso e navegue até **SceneController** e, no submenu, selecione a opção **Init ()** :</span><span class="sxs-lookup"><span data-stu-id="7c334-199">You will notice that the dropdown menu of the event became active, click on the dropdown menu and navigate to **SceneController** and in the sub menu select the **Init ()** option:</span></span>
+
+![Unity com a ação de evento do DataManager adicionada](images/mr-learning-azure/tutorial1-section6-step1-3.png)
+
+<span data-ttu-id="7c334-201">Na janela Hierarquia, selecione o objeto **SceneController** ; então, no Inspetor, você encontrará o componente **SceneController** (script).</span><span class="sxs-lookup"><span data-stu-id="7c334-201">From the Hierarchy window, select the **SceneController** object, there in the Inspector you will find the **SceneController** (script) component.</span></span>
+
+![Unity com a opção SceneController selecionada](images/mr-learning-azure/tutorial1-section6-step1-4.png)
+
+<span data-ttu-id="7c334-203">Você verá que há vários campos não preenchidos; nós vamos alterar isso.</span><span class="sxs-lookup"><span data-stu-id="7c334-203">You will see that there are several unpopulated fields, let's change that.</span></span> <span data-ttu-id="7c334-204">Mova o objeto **DataManager** da Hierarquia para o campo *Gerenciador de Dados* e mova o GameObject **RootMenu** da Hierarquia para o campo *Menu Principal*.</span><span class="sxs-lookup"><span data-stu-id="7c334-204">Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.</span></span>
+
+![Unity com a opção SceneController configurada](images/mr-learning-azure/tutorial1-section6-step1-5.png)
+
+<span data-ttu-id="7c334-206">Agora, sua cena está pronta para os próximos tutoriais.</span><span class="sxs-lookup"><span data-stu-id="7c334-206">Now your scene is ready for the upcoming tutorials.</span></span> <span data-ttu-id="7c334-207">Não se esqueça de salvá-la em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="7c334-207">Don't forget to save it into your project.</span></span>
+
+## <a name="prepare-project-build-pipeline"></a><span data-ttu-id="7c334-208">Preparar pipeline de Build do projeto</span><span class="sxs-lookup"><span data-stu-id="7c334-208">Prepare project build pipeline</span></span>
+
+<span data-ttu-id="7c334-209">Embora o projeto ainda tenha que ser preenchido com conteúdo, você precisa executar alguns preparativos para que o projeto fique pronto para a compilação para o **HoloLens 2**.</span><span class="sxs-lookup"><span data-stu-id="7c334-209">While the project yet has to be filled with content, you have to perform some preparations, so the project is ready for building for **HoloLens 2**.</span></span>
+
+### <a name="1-add-additional-required-capabilities"></a><span data-ttu-id="7c334-210">1. Adicionar funcionalidades adicionais necessárias</span><span class="sxs-lookup"><span data-stu-id="7c334-210">1. Add additional required capabilities</span></span>
+
+<span data-ttu-id="7c334-211">No menu do Unity, selecione **Editar** > **Configurações de Projeto...** para abrir a janela Configurações de Projeto:</span><span class="sxs-lookup"><span data-stu-id="7c334-211">In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:</span></span>
+
+![Abrir Configurações de Projeto do Unity](images/mr-learning-azure/tutorial1-section7-step1-1.png)
+
+<span data-ttu-id="7c334-213">Na janela Configurações do Projeto, selecione **Jogador** e **Configurações de Publicação** :</span><span class="sxs-lookup"><span data-stu-id="7c334-213">In the Project Settings window, select **Player** and then **Publishing Settings** :</span></span>
+
+![Configurações de Publicação do Unity](images/mr-learning-azure/tutorial1-section7-step1-2.png)
+
+<span data-ttu-id="7c334-215">Em **Configurações de Publicação** , role para baixo até a seção **Funcionalidades** e verifique se as funcionalidades **InternetClient** , **Microphone** e **SpatialPerception** , que você habilitou ao criar o projeto no início do tutorial, estão habilitadas.</span><span class="sxs-lookup"><span data-stu-id="7c334-215">In the  **Publishing Settings** , scroll down to the **Capabilities** section and double-check that the **InternetClient** , **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled.</span></span> <span data-ttu-id="7c334-216">Em seguida, habilite as funcionalidades **InternetClientServer** , **PrivateNetworkClientServer** e **Webcam** :</span><span class="sxs-lookup"><span data-stu-id="7c334-216">Then, enable the **InternetClientServer** , **PrivateNetworkClientServer** , and **Webcam** capabilities:</span></span>
+
+![Funcionalidades do Unity](images/mr-learning-azure/tutorial1-section7-step1-3.png)
+
+### <a name="2-deploy-the-app-to-your-hololens-2"></a><span data-ttu-id="7c334-218">2. Implantar o aplicativo em seu HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="7c334-218">2. Deploy the app to your HoloLens 2</span></span>
+
+<span data-ttu-id="7c334-219">Nem todos os recursos que você usará nesta série de tutoriais podem ser executados dentro do editor do Unity; isso significa que você precisa estar familiarizado com a implantação do aplicativo em seu dispositivo do HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="7c334-219">Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="7c334-220">Para se lembrar de como criar e implantar seu projeto do Unity no HoloLens 2, confira as instruções em [Tutoriais de introdução – Criar o aplicativo para seu dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2).</span><span class="sxs-lookup"><span data-stu-id="7c334-220">For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.</span></span>
+
+### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a><span data-ttu-id="7c334-221">3. Execute o aplicativo no seu HoloLens 2 e siga as instruções no aplicativo</span><span class="sxs-lookup"><span data-stu-id="7c334-221">3. Run the app on your HoloLens 2 and follow the in-app instructions</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="7c334-222">Todos os Serviços do Azure usam a Internet, portanto, verifique se o dispositivo está conectado à Internet.</span><span class="sxs-lookup"><span data-stu-id="7c334-222">All Azure Services uses the internet, so make sure your device is connected to the internet.</span></span>
+
+<span data-ttu-id="7c334-223">Quando o aplicativo estiver em execução no dispositivo, aceite o acesso às seguintes funcionalidades solicitadas:</span><span class="sxs-lookup"><span data-stu-id="7c334-223">When the application is running on your device, accept access to the following requested capabilities:</span></span>
+
+* <span data-ttu-id="7c334-224">Microfone</span><span class="sxs-lookup"><span data-stu-id="7c334-224">Microphone</span></span>
+* <span data-ttu-id="7c334-225">Câmera</span><span class="sxs-lookup"><span data-stu-id="7c334-225">Camera</span></span>
+
+<span data-ttu-id="7c334-226">Esses recursos são necessários para serviços como *Chat Bot* e *Visão Personalizada* funcionarem corretamente.</span><span class="sxs-lookup"><span data-stu-id="7c334-226">These capabilities are required for services like *Chat Bot* and *Custom Vision* to function properly.</span></span>
+
+## <a name="congratulations"></a><span data-ttu-id="7c334-227">Parabéns</span><span class="sxs-lookup"><span data-stu-id="7c334-227">Congratulations</span></span>
+
+<span data-ttu-id="7c334-228">Neste tutorial, você foi apresentado à série de tutoriais, aprendeu sobre os recursos que você implementará e como os serviços de **Nuvem do Azure** se unem para dar vida ao seu aplicativo do *HoloLens 2*.</span><span class="sxs-lookup"><span data-stu-id="7c334-228">In this tutorial, you were introduced to the tutorial series, learned about the features you will implement and how **Azure Cloud** services tie in to making your *HoloLens 2* application happen.</span></span> <span data-ttu-id="7c334-229">Você adicionou os componentes necessários ao projeto e preparou a cena para esta série de tutoriais.</span><span class="sxs-lookup"><span data-stu-id="7c334-229">You added the required components into the project and prepared the scene for this tutorial series.</span></span>
+
+<span data-ttu-id="7c334-230">Na próxima lição, você usará o armazenamento do Azure como uma solução de persistência baseada em nuvem para armazenar dados e imagens.</span><span class="sxs-lookup"><span data-stu-id="7c334-230">In the next lesson, you will use Azure storage as a cloud based persistence solution for storing data and images.</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="7c334-231">Próximo tutorial: 2. Integrar o armazenamento do Azure</span><span class="sxs-lookup"><span data-stu-id="7c334-231">Next tutorial: 2. Integrating Azure storage</span></span>](mr-learning-azure-02.md)
