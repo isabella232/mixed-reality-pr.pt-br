@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mapeamento espacial, HoloLens, realidade misturada, reconstrução da superfície, malha
-ms.openlocfilehash: 83c235cb7a5111be2b7e01d6c5864c1d06e9c6dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675594"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340664"
 ---
 # <a name="spatial-mapping"></a>mapeamento espacial
 
@@ -230,7 +230,7 @@ O [desempenho](../develop/platform-capabilities-and-apis/understanding-performan
 
 ## <a name="mesh-processing"></a>Processamento de malha
 
-Um aplicativo pode querer executar [várias operações](spatial-mapping.md#mesh-processing) em malhas de superfície espacial para atender às suas necessidades. Os dados de índice e vértice fornecidos com cada malha de superfície espacial usam o mesmo layout familiar que os [buffers de vértice e de índice](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) usados para renderizar malhas de triângulo em todas as APIs de renderização modernas. No entanto, um fator importante a ser considerado é que os triângulos de mapeamento espacial têm uma **ordem de vento no sentido anti-horário** . Cada triângulo é representado por três índices de vértice no buffer de índice da malha e esses índices identificarão os vértices do triângulo em um pedido no **sentido horário** , quando o triângulo for exibido do lado **frontal** . O lado frontal (ou externo) de malhas de superfície espacial corresponde à medida que você esperaria para o lado frontal (visível) das superfícies do mundo real.
+Um aplicativo pode querer executar [várias operações](spatial-mapping.md#mesh-processing) em malhas de superfície espacial para atender às suas necessidades. Os dados de índice e vértice fornecidos com cada malha de superfície espacial usam o mesmo layout familiar que os [buffers de vértice e de índice](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) usados para renderizar malhas de triângulo em todas as APIs de renderização modernas. No entanto, um fator importante a ser considerado é que os triângulos de mapeamento espacial têm uma **ordem de vento no sentido anti-horário**. Cada triângulo é representado por três índices de vértice no buffer de índice da malha e esses índices identificarão os vértices do triângulo em um pedido no **sentido horário** , quando o triângulo for exibido do lado **frontal** . O lado frontal (ou externo) de malhas de superfície espacial corresponde à medida que você esperaria para o lado frontal (visível) das superfícies do mundo real.
 
 Os aplicativos só devem executar simplificação de malha se a densidade de triângulo mais grosseira fornecida pelo observador de superfície ainda for muito grande: esse trabalho é computacionalmente caro e já está sendo executado pelo tempo de execução para gerar os vários níveis de detalhes fornecidos.
 
@@ -256,9 +256,9 @@ Cada aplicativo que usa o mapeamento espacial deve considerar a possibilidade de
 
 A natureza dessa experiência de verificação pode variar muito dependendo das necessidades de cada aplicativo, mas dois princípios principais devem guiar seu design.
 
-Em primeiro lugar, **a comunicação clara com o usuário é a principal preocupação** . O usuário deve estar sempre atento se os requisitos do aplicativo estão sendo atendidos. Quando eles não estão sendo atendidos, deve ser imediatamente claro para o usuário por que isso é feito e eles devem ser rapidamente administrados para executar a ação apropriada.
+Em primeiro lugar, **a comunicação clara com o usuário é a principal preocupação**. O usuário deve estar sempre atento se os requisitos do aplicativo estão sendo atendidos. Quando eles não estão sendo atendidos, deve ser imediatamente claro para o usuário por que isso é feito e eles devem ser rapidamente administrados para executar a ação apropriada.
 
-Em segundo lugar, **os aplicativos devem tentar um equilíbrio entre a eficiência e a confiabilidade** . Quando é possível fazer isso de forma **confiável** , os aplicativos devem analisar automaticamente os dados de mapeamento espacial para salvar a hora do usuário. Quando não é possível fazer isso de forma confiável, os aplicativos devem permitir que o usuário forneça rapidamente ao aplicativo as informações adicionais necessárias.
+Em segundo lugar, **os aplicativos devem tentar um equilíbrio entre a eficiência e a confiabilidade**. Quando é possível fazer isso de forma **confiável** , os aplicativos devem analisar automaticamente os dados de mapeamento espacial para salvar a hora do usuário. Quando não é possível fazer isso de forma confiável, os aplicativos devem permitir que o usuário forneça rapidamente ao aplicativo as informações adicionais necessárias.
 
 Para ajudar a criar a experiência de verificação correta, considere quais das seguintes possibilidades são aplicáveis ao seu aplicativo:
 
@@ -369,7 +369,14 @@ Aqui estão alguns exemplos de diferentes tipos de processamento de malha que po
 * Para que as malhas de superfície sejam orientadosdas corretamente, cada gameobject precisa estar ativo antes de ser enviado para o SurfaceObserver para que sua malha seja construída. Caso contrário, as malhas serão exibidas no seu espaço, mas giradas em ângulos estranhos.
 * O gameobject que executa o script que se comunica com o SurfaceObserver precisa ser definido para a origem. Caso contrário, todos os GameObjects que você criar e enviar para o SurfaceObserver ter suas malhas construídas terão um deslocamento igual ao deslocamento do objeto do jogo pai. Isso pode fazer com que suas malhas mostrem vários medidores de distância, o que torna muito difícil depurar o que está acontecendo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
+
+Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
+
+> [!div class="nextstepaction"]
+> [Sugerir a escala de um objeto – (escala)](../design/scale.md)
+
+## <a name="see-also"></a>Veja também
 * [Sistemas de coordenadas](coordinate-systems.md)
 * [Mapeamento espacial no DirectX](../develop/native/spatial-mapping-in-directx.md)
 * [Mapeamento espacial no Unity](../develop/unity/spatial-mapping-in-unity.md)

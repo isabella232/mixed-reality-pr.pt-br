@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, realidade misturada do Windows, quadro Holographic, campo de exibição
-ms.openlocfilehash: 516d9255fbc8067f42e17125d41240c9ba49a33b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675764"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340634"
 ---
 # <a name="holographic-frame"></a>Quadro holográfico
 
@@ -21,7 +21,7 @@ Os usuários veem o mundo da realidade misturada por meio de um visor retangular
 
 Geralmente, os designers sentem a necessidade de limitar o escopo de sua experiência com o que o usuário pode ver imediatamente, sacrificando a escala do mundo real para garantir que o usuário veja sua totalidade. Os designers da mesma forma com aplicativos complexos geralmente sobrecarregam o quadro Holographic com o conteúdo, sobrecarregam os usuários com interações difíceis e interfaces congestionadas. Os designers que criam o conteúdo de realidade misturada não precisam limitar sua experiência diretamente na frente do usuário e em sua exibição imediata. Se o mundo físico em todo o usuário for mapeado, todas essas superfícies deverão ser consideradas uma tela potencial para conteúdo digital e interações. O design adequado de interações e conteúdo em uma experiência deve incentivar o usuário a se movimentar em seu espaço, direcionando sua atenção para o conteúdo principal e ajudando a ver todo o potencial da realidade misturada.
 
-Talvez a técnica mais importante para incentivar o movimento e a exploração em um aplicativo seja **permitir que os usuários se ajustem à experiência** . Dê aos usuários um curto período de tempo de "tarefa livre" com o dispositivo. Isso pode ser tão simples quanto colocar um objeto no espaço e permitir que os usuários se movam por volta ou narrando uma introdução à experiência. Esse tempo deve ser livre de qualquer tarefa crítica ou de gestos específicos (como toque de ar), em vez do objetivo de permitir que os usuários acomodem a exibição de conteúdo por meio do dispositivo antes de exigir interatividade ou progredir nos estágios do aplicativo. Se essa for a primeira vez que um usuário tiver o dispositivo, isso é especialmente importante, pois ele se sente confortável ao ver o conteúdo por meio do quadro Holographic e a natureza dos hologramas.
+Talvez a técnica mais importante para incentivar o movimento e a exploração em um aplicativo seja **permitir que os usuários se ajustem à experiência**. Dê aos usuários um curto período de tempo de "tarefa livre" com o dispositivo. Isso pode ser tão simples quanto colocar um objeto no espaço e permitir que os usuários se movam por volta ou narrando uma introdução à experiência. Esse tempo deve ser livre de qualquer tarefa crítica ou de gestos específicos (como toque de ar), em vez do objetivo de permitir que os usuários acomodem a exibição de conteúdo por meio do dispositivo antes de exigir interatividade ou progredir nos estágios do aplicativo. Se essa for a primeira vez que um usuário tiver o dispositivo, isso é especialmente importante, pois ele se sente confortável ao ver o conteúdo por meio do quadro Holographic e a natureza dos hologramas.
 
 ### <a name="large-objects"></a>Objetos grandes
 
@@ -139,9 +139,16 @@ Como uma experiência de imersão, esses usuários foram incentivados a examinar
 
 A representação realista de repercussão proporcionou um poderoso ponto focal, completo com técnicas sutis a serem revisadas para que o usuário se sinta como se estivesse lá, falando com você. À medida que o usuário se move sobre a experiência, a repercussão mudará para você até um limite antes de retornar a um estado neutro se o usuário se movimentar muito além de seu periferia. Se o usuário se parecer totalmente (por exemplo, para examinar algo em outro lugar na cena) e voltar para repercussão, a posição direcional do narrador se concentrará novamente no usuário. Técnicas como essa fornecem uma noção poderosa de imersão e criam um ponto focal dentro do quadro Holographic, reduzindo a movimentação de cabeça excessiva e promovendo o [conforto do usuário](comfort.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
+
+Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
+
+> [!div class="nextstepaction"]
+> [Fazer com que os objetos holográficos pareçam reais – (mapeamento espacial)](../design/spatial-mapping.md)
+
+## <a name="see-also"></a>Veja também
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Conforto](comfort.md)
-* [Escala](scale.md)
+* [Dimensionar](scale.md)
 * [Focar com a cabeça e esperar](gaze-and-dwell.md)
 * [Estabilidade do holograma](../develop/platform-capabilities-and-apis/hologram-stability.md)

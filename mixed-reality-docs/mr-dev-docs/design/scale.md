@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, estilo, design
-ms.openlocfilehash: a9a02d681986df3d73c7990fc975e659e5326981
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675073"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340654"
 ---
 # <a name="scale"></a>Escala
 
@@ -80,7 +80,19 @@ No entanto, isso pode criar alguns artefatos possíveis na experiência:
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
+
+Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no final do excêntrica inicial em fundamentos de realidade misturada. Você pode conferir o que os parceiros do setor estão fazendo com realidade misturada no mundo real: 
+
+> [!div class="nextstepaction"]
+> [Veja como os parceiros do setor estão usando a realidade misturada](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
+
+Ou continue para a jornada de design:
+
+> [!div class="nextstepaction"]
+> [Comece sua jornada de design](../design/design.md)
+
+## <a name="see-also"></a>Veja também
 * [Cor, luz e materiais](../color,-light-and-materials.md)
 * [Tipografia](typography.md)
 * [Projeto de som espacial](spatial-sound-design.md)

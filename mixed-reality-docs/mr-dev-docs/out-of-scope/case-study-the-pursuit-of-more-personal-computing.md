@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, HoloLens, estudo de caso, visão, cenários
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675859"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340674"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>Estudo de caso – a busca de mais computação pessoal
 
@@ -148,7 +148,19 @@ O entretenimento é de muitas maneiras ao enviar os limites de realidade mistura
 
 ## <a name="start-building-today"></a>Comece a criar hoje mesmo
 
-É difícil dizer o que o futuro da realidade misturada se parecerá para os consumidores, mas concentrando-se em problemas exclusivos, passando por um hardware real e **experimentando *hoje* com a interseção entre realidade misturada, voz e ia é fundamental** . A Microsoft está apenas começando a usar a realidade misturada, mas o aprendizado dos sucessos realizados pelas empresas hoje ajudará você a criar as experiências do amanhã.
+É difícil dizer o que o futuro da realidade misturada se parecerá para os consumidores, mas concentrando-se em problemas exclusivos, passando por um hardware real e **experimentando *hoje* com a interseção entre realidade misturada, voz e ia é fundamental**. A Microsoft está apenas começando a usar a realidade misturada, mas o aprendizado dos sucessos realizados pelas empresas hoje ajudará você a criar as experiências do amanhã.
+
+## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
+
+Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
+
+> [!div class="nextstepaction"]
+> [Imersivo, ergonômico, instintivo e livre](https://www.microsoft.com//hololens/hardware)
+
+Ou vá para experiências de núcleo de realidade misturada:
+
+> [!div class="nextstepaction"]
+> [Manter o usuário confortável – (conforto)](../design/comfort.md)
 
 ## <a name="about-the-author"></a>Sobre o autor
 
