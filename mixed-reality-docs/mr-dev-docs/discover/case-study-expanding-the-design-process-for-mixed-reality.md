@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, processo, estudo de caso
-ms.openlocfilehash: ee6bf2ad9f76e25c678458ca00505a95b406bfc6
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293204"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386242"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Pensando diferente para a realidade misturada
 Quando a Microsoft lançou o HoloLens (1º gen) para um público de desenvolvedores ansiosos em 2016, a equipe já havia parceria com o estúdios dentro e fora da Microsoft para criar as experiências de lançamento do dispositivo. Essas equipes aprenderam fazendo e encontrando as oportunidades e os desafios no novo campo de design de realidade misturada.
@@ -127,6 +127,13 @@ As fontes de arte simples e econômicas são fundamentais para fornecer aos memb
 * Entrelaçar
 * Lápis
 * Nitidez
+
+## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
+
+Se você estiver seguindo a [jornada de descoberta](get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
+
+> [!div class="nextstepaction"]
+> [Conforto do usuário](../design/comfort.md)
 
 ## <a name="see-also"></a>Confira também
 * [Estudo de caso – meu primeiro ano na equipe de design do HoloLens](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
