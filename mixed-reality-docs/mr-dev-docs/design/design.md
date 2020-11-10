@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de software livre, principais conceitos, interação
-ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
+ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293125"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94361664"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 
@@ -88,17 +88,17 @@ O trabalho de um designer nunca termina, especialmente quando se aprende a criar
         Saiba como criar experiências interativas com o Unity. Aprenda fazendo, do começo ao fim.
     :::column-end:::    
     :::column:::    
-        [![MRTK (Kit de ferramentas de realidade misturada)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![MRTK (Kit de ferramentas de realidade misturada)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[MRTK (Kit de ferramentas de realidade misturada)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         Com os blocos de construção de interface do usuário e a interação espacial, você pode iniciar o desenvolvimento e o design de realidade misturada com o Unity.   
     :::column-end:::
     :::column:::    
-        [![Laboratórios de Design de Realidade Misturada](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Laboratórios de Design de Realidade Misturada](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Laboratórios de Design de Realidade Misturada](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         Obtenha aplicativos de exemplo que mostram como usar os blocos de construção do MRTK para criar lindas experiências de realidade misturada.
     :::column-end:::        
     :::column:::    
-        [![Maquete da Microsoft](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Maquete da Microsoft](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Maquete da Microsoft](https://www.maquette.ms/)**<br>  
         Design para VR. A Maquete da Microsoft torna a criação de protótipos especiais fácil, rápida e imersiva. 
     :::column-end:::    
@@ -112,22 +112,22 @@ O trabalho de um designer nunca termina, especialmente quando se aprende a criar
 
 :::row:::
     :::column:::
-       [![Noções básicas](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![Noções básicas](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[Noções básicas](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         Entenda melhor o que define a realidade misturada e como ela está sendo usada.
     :::column-end:::
     :::column:::
-        [![Participe de um evento](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![Participe de um evento](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[Participe de um evento](../whats-new/sf-academy-events.md)**<br>
         Consulte o hardware e obtenha um tutorial prático para criar seu primeiro aplicativo HoloLens 2.
     :::column-end:::
     :::column:::
-        [![Instalar as ferramentas](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![Instalar as ferramentas](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[Instalar as ferramentas](../develop/install-the-tools.md)**<br>
         Use a lista de verificação de instalação para obter as ferramentas necessárias para criar aplicativos para HoloLens e realidade misturada.
     :::column-end:::
     :::column:::
-        [![Comece a desenvolver](images/icon-developer.png)](../develop/development.md)<br>
+        [![Comece a desenvolver](images/74-18.png)](../develop/development.md)<br>
         **[Comece a desenvolver](../develop/development.md)**<br>
         Escolha um caminho de desenvolvimento com base no seu nível de habilidade, estilo de trabalho ou interesse na plataforma.
     :::column-end:::
