@@ -22,7 +22,7 @@
       href: unity/unity-development-overview.md
     - name: Introdução
       items:
-        - name: Introdução ao Kit de Ferramentas de Realidade Misturada v2
+        - name: Introdução ao MRTK
           href: unity/mrtk-getting-started.md
         - name: Configurar projeto do Unity para o Windows Mixed Reality
           href: unity/configure-unity-project.md
@@ -170,7 +170,7 @@
               href: unity/tutorials/mr-azure-301.md
     - name: Blocos principais de construção
       items:
-        - name: MRTK 101 – Como usar o Unity do Kit de Ferramentas de Realidade Misturada para interações básicas
+        - name: MRTK 101 – Criando interações básicas usando o Unity do Kit de Ferramentas de Realidade Misturada
           href: unity/mrtk-101.md
         - name: Câmera no Unity
           href: unity/camera-in-unity.md
