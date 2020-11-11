@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049465"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482394"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -73,3 +73,16 @@ Embora muitos jogos funcionem imediatamente com os controladores HP Motion, algu
 - Modelo incorreto exibido: corrigir isso requer uma atualização de jogo. Normalmente, isso não bloqueia nenhum recurso do jogo, mas pode levar à confusão ou até mesmo a artefatos visuais.
 - Dependência do Touchpad ou mais geralmente no layout de entrada do controlador. O SteamVR permite criar associações personalizadas para ajudar a evitar esse tipo de problema:
     - O Windows Mixed Reality for SteamVR inclui associações personalizadas para alguns jogos. Essas associações são usadas automaticamente quando o jogo é iniciado e nenhuma ação do usuário é necessária.
+
+## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>Meus jogos do SteamVR parecem funcionar corretamente com meus controladores HP Motion
+
+Embora os desenvolvedores estejam trabalhando para atualizar seus jogos para compatibilidade com o HP Motion Controller, fornecemos associações de controlador personalizadas para muitos dos jogos mais populares no fluxo. Com o "Windows Mixed realment for SteamVR" totalmente atualizado para a versão 1.2.444, essas associações devem ser selecionadas automaticamente quando o jogo estiver em execução. No entanto, se o jogo não parece registrar suas ações no momento, você pode procurar manualmente por perfis de associação personalizados usando o menu de configurações do SteamVR.
+Para fazer isso
+
+- Abra o menu SteamVR pressionando o botão de menu do controlador de movimento à direita
+- Selecione o ícone "configurações" no canto inferior direito do menu SteamVR
+- Selecione a guia "controladores"
+- Selecione a opção "gerenciar associações de controlador"
+
+A partir daqui, você pode alterar a associação do controlador ativo para "personalizado", que abrirá a opção para experimentar associações de jogos compartilhadas pela Comunidade.
+Se nenhuma associação de jogo personalizada já tiver sido compartilhada para este jogo (ou se você não estiver totalmente satisfeito com as que você tentou), também poderá criar suas próprias associações de jogos personalizadas e até mesmo ajudar o restante da Comunidade, compartilhando-as após algumas sessões de jogo.
