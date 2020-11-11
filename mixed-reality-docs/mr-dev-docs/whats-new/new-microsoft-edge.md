@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Edge, novo, imersão Web, Microsoft Edge, navegador, VR
-ms.openlocfilehash: 0f4ecdd26624e9b1e5b8e151e1ac074ece9c9769
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: Edge, novo, imersão Web, Microsoft Edge, navegador, VR, 360, 360 vídeo, 360 Viewer, webxr, webvr
+ms.openlocfilehash: b20d21a3cd4cc77af86021e2b82555ba9c48478e
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499581"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520773"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Realidade mista do Windows e o novo Microsoft Edge
 
@@ -30,7 +30,7 @@ O novo Microsoft Edge [adota o projeto](https://blogs.windows.com/windowsexperie
 
 Os clientes de headset do Windows Mixed Reality VR que desejam usar o novo Microsoft Edge na realidade misturada devem **atualizar para o Windows 10 versão 1903 ou posterior para o suporte nativo de aplicativos Win32 (como o novo Microsoft Edge)** na página inicial misturada de realidade. Verifique Windows Update ou [Instale manualmente a versão mais recente do Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
 
-Para obter a melhor experiência do Microsoft Edge possível no início da realidade misturada, também recomendamos aguardar **algumas otimizações de realidade misturada do Windows para o novo Microsoft Edge chegando com a atualização cumulativa 2020-01 para o Windows 10 versão 1903 (ou posterior)**, que deve estar disponível no Windows Update no final de Janeiro.
+Para obter a melhor experiência do Microsoft Edge possível no início da realidade misturada, também recomendamos aguardar **algumas otimizações de realidade misturada do Windows para o novo Microsoft Edge chegando com a atualização cumulativa 2020-01 para o Windows 10 versão 1903 (ou posterior)** , que deve estar disponível no Windows Update no final de Janeiro.
 
 >[!IMPORTANT]
 >Se você optar por baixar o novo Microsoft Edge antes de realizar essas atualizações, haverá alguns problemas conhecidos com seu comportamento no Windows Mixed Reality (que pode ser lido abaixo).
@@ -81,6 +81,6 @@ Os monitores virtuais agora serão alocados quando você tentar iniciar um aplic
 ### <a name="additional-known-issues"></a>Problemas conhecidos adicionais
 
 -   Os sites abertos no Windows Mixed Realm serão perdidos quando o portal da realidade misturada for fechado, embora as janelas do Microsoft Edge permaneçam onde foram colocadas na casa misturada da realidade.
-- As experiências de WebXR, incluindo a extensão do visualizador 360, podem não ser iniciadas corretamente em PCs com uma configuração de GPU híbrida. Você pode contornar esse problema selecionando sua GPU dedicada como a GPU padrão em seu software de placa gráfica.
+- As experiências de WebXR, incluindo a extensão do visualizador 360, podem não ser iniciadas corretamente em PCs com uma configuração de GPU híbrida. Talvez você possa contornar esse problema habilitando um recurso de visualização no novo Microsoft Edge. Navegue até `edge://flags` , pesquise "várias GPU" e habilite o sinalizador chamado **WEBXR multi GPU support**.
 -   O áudio do Microsoft Edge Windows não está espacial.
--   **Corrigido na extensão do visualizador 360 versão 2.3.8**: abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão **expandir** ao lado de "extensões".
+-   **Corrigido na extensão do visualizador 360 versão 2.3.8** : abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão **expandir** ao lado de "extensões".

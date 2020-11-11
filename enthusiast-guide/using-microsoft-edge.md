@@ -3,15 +3,15 @@ title: Usando o Microsoft Edge no Windows Mixed Reality
 description: Prepare-se para o novo Microsoft Edge no Windows Mixed Reality. Inclui alterações esperadas, atualizações a serem verificadas e problemas conhecidos.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 08/04/2020
+ms.date: 11/11/2020
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, página inicial, navegar, contornar, aplicativos, jogos, Microsoft Edge, Chromium, borda
-ms.openlocfilehash: 40f5f57883c5d8ad1a03076411a077deb9979c71
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, página inicial, navegar, contornar, aplicativos, jogos, Microsoft Edge, Chromium, Edge, 360, 360 vídeo, 360 Viewer
+ms.openlocfilehash: 0498a48136718c19848fa79638ea771051345528
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499561"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520763"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Realidade mista do Windows e o novo Microsoft Edge
 
@@ -77,6 +77,6 @@ Os monitores virtuais agora serão alocados quando você tentar iniciar um aplic
 ### <a name="additional-known-issues"></a>Problemas conhecidos adicionais
 
 -   Os sites abertos no Windows Mixed Realm serão perdidos quando o portal da realidade misturada for fechado, embora as janelas do Microsoft Edge permaneçam onde foram colocadas na casa misturada da realidade.
-- As experiências de WebXR, incluindo a extensão do visualizador 360, podem não ser iniciadas corretamente em PCs com uma configuração de GPU híbrida. Você pode contornar esse problema selecionando sua GPU dedicada como a GPU padrão em seu software de placa gráfica.
+- As experiências de WebXR, incluindo a extensão do visualizador 360, podem não ser iniciadas corretamente em PCs com uma configuração de GPU híbrida. Talvez você possa contornar esse problema habilitando um recurso de visualização no novo Microsoft Edge. Navegue até `edge://flags` , pesquise "várias GPU" e habilite o sinalizador chamado **WEBXR multi GPU support**.
 -   O áudio do Microsoft Edge Windows não está espacial.
--   **Corrigido na extensão do visualizador 360 versão 2.3.8**: abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão **expandir** ao lado de "extensões".
+-   **Corrigido na extensão do visualizador 360 versão 2.3.8** : abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão **expandir** ao lado de "extensões".
