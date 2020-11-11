@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
+ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482394"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94498281"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -68,11 +68,7 @@ Há alguns motivos pelos quais o sistema não pode renderizar na resolução nat
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>Por que meus modelos do meu HP Motion Controller não aparecem corretamente em um jogo
 
-Embora muitos jogos funcionem imediatamente com os controladores HP Motion, alguns jogos têm dependências de recursos de controladores existentes e, portanto, podem ter alguns problemas:
-
-- Modelo incorreto exibido: corrigir isso requer uma atualização de jogo. Normalmente, isso não bloqueia nenhum recurso do jogo, mas pode levar à confusão ou até mesmo a artefatos visuais.
-- Dependência do Touchpad ou mais geralmente no layout de entrada do controlador. O SteamVR permite criar associações personalizadas para ajudar a evitar esse tipo de problema:
-    - O Windows Mixed Reality for SteamVR inclui associações personalizadas para alguns jogos. Essas associações são usadas automaticamente quando o jogo é iniciado e nenhuma ação do usuário é necessária.
+Embora a maioria dos jogos não exiba os controladores ou use os modelos instalados pelo driver, alguns jogos usam suas próprias versões dos modelos de controlador, para personalizá-los ou para exibir a ajuda contextual para as entradas disponíveis. Normalmente, isso não bloqueia nenhum recurso dos jogos, mas pode levar à confusão ou até mesmo a artefatos visuais. Isso só pode ser corrigido com uma atualização do próprio jogo.
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>Meus jogos do SteamVR parecem funcionar corretamente com meus controladores HP Motion
 
