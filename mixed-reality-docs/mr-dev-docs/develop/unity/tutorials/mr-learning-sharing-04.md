@@ -1,18 +1,18 @@
 ---
 title: Tutoriais de recursos multiusuário – 4. Compartilhar movimentações de objeto com vários usuários
-description: Conclua este curso para aprender a implementar experiências compartilhadas de vários usuários em um aplicativo do HoloLens 2.
+description: Conclua este curso para aprender a compartilhar movimentos de objetos com vários usuários em um aplicativo do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696035"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353414"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Compartilhar movimentações de objeto com vários usuários
 
@@ -29,31 +29,31 @@ Nesta seção, você vai preparar a cena adicionando o pré-fabricado do tutoria
 
 Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Pré-fabricados** e arraste o pré-fabricado **TableAnchor** sobre o objeto **SharedPlayground** na janela Hierarquia para adicioná-lo à cena como um filho do objeto SharedPlayground:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![Unity com o pré-fabricado TableAnchor recém-adicionado selecionado](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Como configurar o PUN para criar uma instância dos objetos
 
 Nesta seção, você vai configurar o projeto para usar a experiência do Explorador do Rover criada durante os [Tutoriais de introdução](mr-learning-base-01.md) e definir onde ele será instanciado.
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Recursos** .
+Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Recursos**.
 
-Na janela Hierarquia, expanda o objeto **NetworkLobby** e selecione o objeto filho **NetworkRoom** . Em seguida, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:
+Na janela Hierarquia, expanda o objeto **NetworkLobby** e selecione o objeto filho **NetworkRoom**. Em seguida, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:
 
 * Para o campo **Pré-fabricado do Rover Explorer** , atribua o pré-fabricado **RoverExplorer_Complete_Variant** da pasta Recursos
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![Unity com o componente Sala do Photon parcialmente configurado](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
 Com o objeto filho **NetworkRoom** ainda selecionado, na janela Hierarquia, expanda o objeto **TableAnchor** e, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:
 
 * No campo **Localização do Explorador do Rover** , atribua o objeto filho TableAnchor > **Table** por meio da janela Hierarquia
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![Unity com o componente Sala do Photon configurado](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
 ## <a name="trying-the-experience-with-shared-object-movement"></a>Como testar a experiência com a movimentação de objetos compartilhados
 
 Se você criar e implantar agora o projeto do Unity no HoloLens e, no Unity, selecionar o botão Reproduzir para entrar no Modo de jogo enquanto o aplicativo estiver em execução no HoloLens, verá o objeto se mover no Unity ao mover o objeto no HoloLens:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![Animação mostrando o Unity com os objetos em rede](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## <a name="congratulations"></a>Parabéns
 

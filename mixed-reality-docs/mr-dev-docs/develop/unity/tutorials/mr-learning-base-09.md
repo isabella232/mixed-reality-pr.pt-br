@@ -1,18 +1,18 @@
 ---
 title: Tutoriais de introdução – 9. Usando comandos de fala
-description: Saiba como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar um aplicativo de realidade misturada.
+description: Este curso mostra como usar comandos de fala com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d9ddf3d234b68dfe4ce3ab5c9272566479edd71d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695584"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353504"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 

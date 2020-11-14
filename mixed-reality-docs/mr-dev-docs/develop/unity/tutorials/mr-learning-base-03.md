@@ -1,18 +1,18 @@
 ---
 title: Tutoriais de introdução – 3. Como configurar os perfis do MRTK
-description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar um aplicativo de realidade misturada.
+description: Este curso mostra como configurar os perfis do MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 028da6e0dd920e90cb353c22d22ab985de56bb81
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 15fa4285fd6dd60aac9ba3869430649db5b40f91
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695356"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353254"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Como configurar os perfis do MRTK
 
@@ -20,7 +20,11 @@ ms.locfileid: "91695356"
 
 Neste tutorial, você aprenderá a personalizar e configurar os perfis do MRTK.
 
+Os <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html" target="_blank">perfis do MRTK</a> são uma árvore de perfis aninhados que compõem as informações de configuração sobre como os sistemas e os recursos do MRTK devem ser inicializados. O perfil de nível superior, o Perfil de Configuração, contém perfis aninhados para cada um dos principais sistemas básicos. Cada perfil aninhado foi projetado para configurar o comportamento do respectivo sistema correspondente.
+
 Este exemplo específico mostrará como ocultar a malha de reconhecimento espacial alterando as configurações do Observador de Malha Espacial. No entanto, você pode seguir esses mesmos princípios para personalizar qualquer configuração ou valor nos perfis do MRTK.
+
+Como você experimentou quando implantou seu projeto no HoloLens 2 durante o [tutorial anterior](mr-learning-base-02.md#congratulations), a malha de <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">Reconhecimento Espacial</a> é uma coleção de malhas que representa a geometria do ambiente. É uma visualização útil de ser vista inicialmente, mas em geral, é desativada para evitar a distração visual e o impacto adicional de desempenho da presença dela.
 
 ## <a name="objectives"></a>Objetivos
 
@@ -47,19 +51,19 @@ As principais etapas que você seguirá para ocultar a malha de reconhecimento e
 
 Na janela Hierarquia, selecione o objeto **MixedRealityToolkit** , então, na janela Inspetor, altere o Perfil de Configuração do **MixedRealityToolkit** para o **DefaultHoloLens2ConfigurationProfile** :
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-1.png)
+![Componente MixedRealityToolkit do Unity com DefaultHoloLens2ConfigurationProfile selecionado](images/mr-learning-base/base-03-section1-step1-1.png)
 
 Com o objeto **MixedRealityToolkit** ainda selecionado, na janela Inspetor, clique no botão **Copiar e Personalizar** para abrir a janela Clonar Perfil:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-2.png)
+![Botão Copiar e Personalizar do componente MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step1-2.png)
 
 Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_HoloLens2ConfigurationProfile_ e clique no botão **Clonar** para criar uma cópia editável do **DefaultHololens2ConfigurationProfile** :
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-3.png)
+![Janela pop-up Perfil de Configuração do clone de MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step1-3.png)
 
 Agora, o Perfil de Configuração recém-criado é atribuído como o Perfil de Configuração para sua cena:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step1-4.png)
+![Componente MixedRealityToolkit do Unity com o HoloLens2ConfigurationProfile personalizado recém-criado aplicado](images/mr-learning-base/base-03-section1-step1-4.png)
 
 No menu do Unity, selecione **Arquivo** > **Salvar** para salvar sua cena.
 
@@ -70,41 +74,44 @@ No menu do Unity, selecione **Arquivo** > **Salvar** para salvar sua cena.
 
 Na janela Hierarquia, selecione o objeto **MixedRealityToolkit** , então, na janela Inspetor, selecione a guia **Reconhecimento Espacial** e marque a caixa de seleção **Habilitar o Sistema de Reconhecimento Espacial** :
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step2-1.png)
+![Componente MixedRealityToolkit do Unity com o Sistema de Reconhecimento Espacial habilitado](images/mr-learning-base/base-03-section1-step2-1.png)
+
+> [!NOTE]
+> Para projetos futuros, se o seu aplicativo não precisa responder ao ambiente nem interagir com ele, recomendamos manter o reconhecimento espacial desativado para reduzir o custo de desempenho.
 
 ### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Clonar o perfil do Sistema de Reconhecimento Espacial padrão
 
 Na guia **Reconhecimento Espacial** , clique no botão **Clonar** para abrir a janela Clonar Perfil:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step3-1.png)
+![Componente MixedRealityToolkit do Unity com a guia Reconhecimento Espacial selecionada](images/mr-learning-base/base-03-section1-step3-1.png)
 
 Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ , e clique no botão **Clonar** para criar uma cópia editável do **DefaultMixedRealitySpatialAwarenessSystemProfile** :
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step3-2.png)
+![Janela pop-up Perfil do Sistema de Reconhecimento Espacial do clone de MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step3-2.png)
 
 O Perfil do Sistema de Reconhecimento Espacial recém-criado agora é atribuído automaticamente ao seu Perfil de Configuração:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step3-3.png)
+![Componente MixedRealityToolkit do Unity com o MixedRealitySpatialAwarenessSystemProfile personalizado recém-criado aplicado](images/mr-learning-base/base-03-section1-step3-3.png)
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Clonar o Perfil de Observador de Malha de Reconhecimento Espacial padrão
 
 Com a guia **Reconhecimento Espacial** ainda selecionada, expanda a seção **Observador de Malha Espacial do Windows Mixed Reality** e clique no botão **Clonar** para abrir a janela Clonar Perfil:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step4-1.png)
+![Componente MixedRealityToolkit do Unity com a seção Observador de Malha Espacial do Windows Mixed Reality expandida](images/mr-learning-base/base-03-section1-step4-1.png)
 
 Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ e clique no botão **Clonar** para criar uma cópia editável do **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** :
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step4-2.png)
+![Janela pop-up Perfil de Observador da Malha Espacial do clone MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step4-2.png)
 
 O Perfil de Observador de Malha de Reconhecimento Espacial recém-criado agora é automaticamente atribuído ao seu Perfil do Sistema de Reconhecimento Espacial:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step4-3.png)
+![Componente MixedRealityToolkit do Unity com o MixedRealitySpatialAwarenessMeshObserverProfile personalizado recém-criado aplicado](images/mr-learning-base/base-03-section1-step4-3.png)
 
 ### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Altere a visibilidade da malha de reconhecimento espacial
 
 Em **Configurações do Observador de Malha Espacial** , altere a **Opção de Exibição** para **Oclusão** para tornar a malha de mapeamento espacial invisível, mas ainda funcional:
 
-![mr-learning-base](images/mr-learning-base/base-03-section1-step5-1.png)
+![Componente MixedRealityToolkit do Unity com a Opção de Exibição de Observador de Malha Espacial definida como Oclusão](images/mr-learning-base/base-03-section1-step5-1.png)
 
 > [!NOTE]
 > Embora a malha de mapeamento espacial não esteja visível, ela ainda está presente e funcional. Por exemplo, os hologramas por trás da malha de mapeamento espacial, como um holograma por trás de uma parede física, não estarão visíveis.

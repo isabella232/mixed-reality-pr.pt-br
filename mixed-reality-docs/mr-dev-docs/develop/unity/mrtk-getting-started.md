@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, teste, Kit de Ferramentas de Realidade Misturada, MRTK versão 2, MRTK, ferramentas, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: c374939b4b3af28cabc1ee338c1c0d4d14ec17fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4513185573003510e5a7cae97ecce4cb5d2552e0
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695978"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386202"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>Introdução ao MRTK para Unity
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
@@ -26,10 +26,11 @@ O MRTK para Unity é um kit de desenvolvimento de software livre multiplataforma
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
 
-Confira a [documentação do MRTK no GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) para explorar mais.
+Confira a [documentação do MRTK no GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) para explorar mais. Para começar, siga as etapas descritas na página [Guia de instalação](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html).
+
 
 ## <a name="new-with-mrtk-v2"></a>Novidades com o MRTK v2
-Queremos enfatizar nosso compromisso com estas ferramentas de plataforma.  Na verdade, aproveitamos o MRTK versão 2 para desenvolver nossas experiências de caixa de entrada, como o OOBE (experiência de configuração) e nosso aplicativo de Aprendizado de Realidade Misturada.  Você também pode esperar ver as novas funcionalidades do HoloLens 2 apresentadas pela primeira vez por meio do MRTK, pois acreditamos que é a melhor maneira de realizar o desenvolvimento em nossa plataforma. 
+Queremos enfatizar nosso compromisso com estas ferramentas de plataforma.  Na verdade, aproveitamos o MRTK versão 2 para desenvolver nossas experiências de caixa de entrada, como a OOBE (configuração inicial pelo usuário) e nosso aplicativo Dicas sobre Realidade Misturada. Você também pode esperar ver as novas funcionalidades do HoloLens 2 apresentadas pela primeira vez por meio do MRTK, pois acreditamos que é a melhor maneira de realizar o desenvolvimento em nossa plataforma. 
 
 ### <a name="modular"></a>Modular
 Nós o criamos de uma maneira modular, de modo que não seja necessário inserir todas as partes do kit de ferramentas no projeto.  Na verdade, há alguns benefícios nessa abordagem.  Ela reduz o tamanho do projeto e facilita o gerenciamento dele.  Além disso, como o kit foi criado com objetos programáveis e é orientado por interface, também é possível substituir os componentes incluídos pelos seus próprios, a fim de dar suporte a outros serviços, sistemas e plataformas.
@@ -41,7 +42,7 @@ Falando em outras plataformas, ele tem suporte multiplataforma.  E embora isso n
 Trabalhando com plataformas móveis, nós o construímos com o desempenho em mente.  Isso é extremamente importante, e queríamos garantir que as ferramentas não trabalharão contra você.
 
 ## <a name="see-also"></a>Veja também
-* [Guia de introdução ao MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [Página inicial da documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Instalar as ferramentas](../install-the-tools.md)
-* [Portabilidade do HTK/MRTK para o MRTK versão 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK – Guia de instalação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK – Página inicial da documentação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [Portabilidade do HoloToolkit/MRTK para o MRTK versão 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

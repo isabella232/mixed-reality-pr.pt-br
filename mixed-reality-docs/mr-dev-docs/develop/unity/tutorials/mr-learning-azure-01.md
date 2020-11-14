@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, mixed reality, unity, tutorial, hololens, hololens 2, azure blob storage, azure table storage, azure spatial anchors, azure bot framework
 ms.localizationpriority: high
-ms.openlocfilehash: 115044aa8fa5f143358b8014442bce26d4f3fec5
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915571"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416972"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Serviços de Nuvem do Azure para HoloLens 2
 
@@ -75,10 +75,10 @@ O aplicativo é conduzido principalmente pela interface do usuário tradicional,
 * Alguma habilidade básica de programação em C#
 * Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * Uma webcam conectada se você quiser testar no editor do Unity
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019.3.X instalado e o módulo de suporte de Build da Plataforma Universal do Windows adicionado
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
 
 > [!CAUTION]
-> A versão recomendada do Unity para esta série de tutoriais é o Unity 2019.3.X. Ela substitui todos os requisitos de versão do Unity ou as recomendações indicadas nos pré-requisitos vinculados acima.
+> A versão recomendada do Unity para esta série de tutoriais é o Unity 2019 LTS. Ela substitui todos os requisitos de versão do Unity ou as recomendações indicadas nos pré-requisitos vinculados acima.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Como criar e preparar o projeto do Unity
 

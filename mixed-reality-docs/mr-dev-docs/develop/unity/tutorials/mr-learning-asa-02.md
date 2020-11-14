@@ -1,18 +1,18 @@
 ---
 title: Tutoriais de Âncoras Espaciais do Azure – 2. Introdução às Âncoras Espaciais do Azure
-description: Conclua este curso para saber como implementar as Âncoras Espaciais do Azure em um aplicativo de realidade misturada.
+description: Conclua este curso para aprender a usar as Âncoras Espaciais do Azure para ancorar objetos em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: e5553df4256e0535d5becb94f22b9ce8eac228dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695441"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353444"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introdução às Âncoras Espaciais do Azure
 
@@ -41,13 +41,13 @@ Para isso, primeiro siga [Como inicializar o seu projeto e implantar o primeiro 
 Em seguida, siga as instruções em [Alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para:
 
 1. Alterar o **perfil de configuração do MRTK** para **DefaultHoloLens2ConfigurationProfile**
-1. Alterar as **opções de exibição da malha de reconhecimento espacial** para **Oclusão** .
+1. Alterar as **opções de exibição da malha de reconhecimento espacial** para **Oclusão**.
 
 ## <a name="installing-inbuilt-unity-packages"></a>Instalar pacotes internos do Unity
 
 No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a janela Gerenciador de Pacotes e selecione **AR Foundation** e clique no botão **Instalar** para instalar o pacote:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
+![Janela Gerenciador de Pacotes do Unity com o AR Foundation selecionado](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
 > Você está instalando o pacote do AR Foundation porque ele é exigido pelo SDK de Âncoras Espaciais do Azure e será importado na próxima seção.
@@ -62,7 +62,7 @@ Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em q
 
 Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
+![Janelas Hierarquia, Cena e Projeto do Unity após a importação dos ativos do tutorial](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
 > [!NOTE]
 > Se você vir avisos CS0618 sobre 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' estar obsoleto, poderá ignorá-los.
@@ -81,7 +81,7 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureSpati
 * Pré-fabricados **Instructions**
 * Pré-fabricados **ParentAnchor**
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
+![Unity com os pré-fabricados recém-adicionados selecionados](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
 > [!TIP]
 > Se você considerar que ícones grandes na sua cena, por exemplo, os ícones "T" grandes, causam distração, poderá ocultá-los <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">alternando o Utensílio</a> para a posição de desligado, conforme mostrado na imagem acima.
@@ -95,14 +95,14 @@ Na janela Hierarquia, expanda o objeto **ButtonParent** e selecione o primeiro o
 * Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
 * Na lista suspensa **Sem Função** , selecione **AnchorModuleScript** > **StartAzureSession ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
+![Unity com o evento OnClick do botão StartAzureSession configurado](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **StopAzureSession** , em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
 * Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
 * Na lista suspensa **Sem Função** , selecione **AnchorModuleScript** > **StopAzureSession ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
+![Unity com o evento OnClick do botão StopAzureSession configurado](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **CreateAzureAnchor** , em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
@@ -110,7 +110,7 @@ Na janela Hierarquia, selecione o próximo botão denominado **CreateAzureAnchor
 * Na lista suspensa **Sem Função** , selecione **AnchorModuleScript** > **CreateAzureAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 * Atribua o objeto **ParentAnchor** ao campo vazio **Nenhum (Objeto de Jogo)** para torná-lo o argumento para a função CreateAzureAnchor ()
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
+![Unity com o evento OnClick do botão CreateAzureAnchor configurado](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **RemoveLocalAnchor** , em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
@@ -118,21 +118,21 @@ Na janela Hierarquia, selecione o próximo botão denominado **RemoveLocalAnchor
 * Na lista suspensa **Sem Função** , selecione **AnchorModuleScript** > **RemoveLocalAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 * Atribua o objeto **ParentAnchor** ao campo vazio **Nenhum (Objeto de Jogo)** para torná-lo o argumento para a função RemoveLocalAnchor ()
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
+![Unity com o evento OnClick do botão RemoveLocalAnchor configurado](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **FindAzureAnchor** , em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
 * Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
 * Na lista suspensa **Sem Função** , selecione **AnchorModuleScript** > **FindAzureAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-5.png)
+![Unity com o evento OnClick do botão FindAzureAnchor configurado](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **DeleteAzureAnchor** , em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **DeleteAzureAnchor** ao campo **Nenhum (Objeto)**
 * Na lista suspensa **Sem Função** , selecione **AnchorModuleScript** > **DeleteAzureAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-6.png)
+![Unity com o evento OnClick do botão DeleteAzureAnchor configurado](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>Como conectar a cena ao recurso do Azure
 
@@ -141,7 +141,7 @@ Na janela Hierarquia, selecione o objeto **ParentAnchor** e, na janela Inspetor,
 * No campo **ID da Conta das Âncoras Espaciais** , cole a **ID da Conta** da sua conta das Âncoras Espaciais do Azure
 * No campo **Chave de Conta das Âncoras Espaciais** , cole a **Chave de Acesso** primária ou secundária da sua conta das Âncoras Espaciais do Azure
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-1.png)
+![Unity com o Gerenciador de Âncora Espacial configurado](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
 ## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>Experimentando os comportamentos básicos das Âncoras Espaciais do Azure
 
@@ -163,7 +163,7 @@ Quando o aplicativo for executado no seu dispositivo, siga as instruções na te
 1. Excluir a Âncora do Azure
 1. Interromper a sessão do Azure
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
+![Unity com o objeto Instructions selecionado](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 > [!CAUTION]
 > As Âncoras Espaciais do Azure usam a Internet para salvar e carregar os dados de âncora para garantir que o dispositivo esteja conectado à Internet.
@@ -177,15 +177,15 @@ Na janela Hierarquia, selecione o objeto **ParentAnchor** e, na janela Inspetor,
 * Altere a **Escala X** para 1,1
 * Altere a **Escala Z** para 1,1
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-1.png)
+![Unity com o objeto ParentAnchor selecionado, posicionado e escalado](images/mr-learning-asa/asa-02-section8-step1-1.png)
 
 Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingStarted** > **Pré-fabricados** > **Rover** e, em seguida, clique e arraste o pré-fabricado **RoverExplorer_Complete** na janela Hierarquia para adicioná-lo à cena:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-2.png)
+![Unity com o pré-fabricado RoverExplorer_Complete recém-adicionado](images/mr-learning-asa/asa-02-section8-step1-2.png)
 
 Com o objeto RocketLauncher_Complete recém-adicionado ainda selecionado na janela Hierarquia, arraste-o sobre o objeto **ParentAnchor** para torná-lo um filho do objeto ParentAnchor:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-3.png)
+![Unity com o objeto RoverExplorer_Complete definido como filho de ParentAnchor](images/mr-learning-asa/asa-02-section8-step1-3.png)
 
 Se agora você recompilar o projeto e implantar o aplicativo no seu dispositivo, você poderá reposicionar toda a experiência do Explorador do Rover movendo o cubo redimensionado.
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr,
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293071"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573210"
 ---
 # <a name="start-your-vr-journey"></a>Comece seu percurso de VR
 
@@ -41,7 +41,7 @@ Depois de ter o dispositivo, você precisará configurá-lo e configurá-lo corr
 
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
-| [Configurar o Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Familiarize-se com seus controladores, limites de sala, entrada de fala e Microsoft Edge no seu novo dispositivo VR |
+| [Configurar o Windows Mixed Reality](set-up-windows-mixed-reality.md) | Familiarize-se com seus controladores, limites de sala, entrada de fala e Microsoft Edge no seu novo dispositivo VR |
 | [Perguntas frequentes sobre a instalação do Windows Mixed Reality](wmr-setup-faq.md) | Obtenha respostas e solucione problemas de ajuda com problemas conhecidos ao configurar a realidade mista do Windows |
 | [Diretrizes de integridade, segurança e conforto](wmr-health-safety-comfort.md) | Recomendações para se manter seguro ao usar a realidade mista do Windows antes de usar o headset  |
 
@@ -58,7 +58,7 @@ Há uma variedade de recursos e serviços disponíveis por meio de realidade mis
 | [Usando controladores](controllers-in-wmr.md) | Configurar, compreender e usar seus controladores de movimento |
 | [Usar a entrada de fala](using-speech-in-wmr.md) | Familiarize-se com uma variedade de comandos de voz que podem interagir com objetos 3D, a barra de aplicativos, o menu iniciar e a Cortana |
 | [Jogos, 360 de vídeo e aplicativos](using-games-and-apps-in-windows-mixed-reality.md) | Comece com seu primeiro jogo de imersão, tablets de armazenamento 2D, aplicativos de área de trabalho e experiências de WebVR |
-| [Usando SteamVR](using-steamvr-with-windows-mixed-reality.md) | Conecte seu dispositivo e jogue jogos SteamVR e saiba mais sobre o programa Windows Insider |
+| [Usar o SteamVR](using-steamvr-with-windows-mixed-reality.md) | Conecte seu dispositivo e jogue jogos SteamVR e saiba mais sobre o programa Windows Insider |
 | [Usar o Microsoft Edge](using-microsoft-edge.md) | Instalar a versão mais recente do Microsoft Edge em seu dispositivo de imersão |
 | [Usando WebVR](webvr.md) | Obtenha a configuração para experimentar o VR em seu ambiente de navegador |
 

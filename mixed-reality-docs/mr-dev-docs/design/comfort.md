@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade misturada, design, conforto, HoloLens 2, HoloLens (1ª geração)
-ms.openlocfilehash: 6528dca71a1e0cd92b621cab8b1b7ba547fcb71e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695550"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340644"
 ---
 # <a name="comfort"></a>Conforto
 
@@ -40,17 +40,17 @@ Os capacetes do HoloLens são fixados a uma distância óptica de aproximadament
 
 ### <a name="best-practices-for-hololens-1st-gen-and-hololens-2"></a>Melhores práticas do HoloLens (1ª geração) e do HoloLens 2
 
-Para obter o máximo de conforto, **a zona ideal para posicionamento do holograma é entre 1,25 m e 5 m** . Em todos os casos, os designers devem tentar estruturar cenas de conteúdo para encorajar os usuários a interagir a um 1 m de distância ou mais do conteúdo (por exemplo, ajuste o [tamanho do conteúdo e os parâmetros de posicionamento padrão](gaze-and-commit.md)). 
+Para obter o máximo de conforto, **a zona ideal para posicionamento do holograma é entre 1,25 m e 5 m**. Em todos os casos, os designers devem tentar estruturar cenas de conteúdo para encorajar os usuários a interagir a um 1 m de distância ou mais do conteúdo (por exemplo, ajuste o [tamanho do conteúdo e os parâmetros de posicionamento padrão](gaze-and-commit.md)). 
 
 Embora o conteúdo possa ocasionalmente precisar ser visto a uma distância inferior a 1 m, recomendamos que você nunca apresente hologramas a uma distância inferior a 40 cm. Portanto, recomendamos começar a **esmaecer o conteúdo a 40 cm e colocar um plano de recorte de renderização a 30 cm** para evitar objetos mais próximos.
 
-É mais provável que os objetos que se movem em profundidade produzam desconforto, devido ao conflito entre vergência e acomodação, em comparação com os objetos fixos. Da mesma forma, exigir que os usuários alternem rapidamente entre o foco próximo e o foco distante (por exemplo, devido a um holograma pop-up que exija uma interação direta) pode causar desconforto e fadiga visuais. Portanto, **é necessário tomar cuidado extra para minimizar a frequência com que os usuários: veem o conteúdo que está se movendo em profundidade; ou alternam rapidamente o foco entre os hologramas próximos e distantes** . 
+É mais provável que os objetos que se movem em profundidade produzam desconforto, devido ao conflito entre vergência e acomodação, em comparação com os objetos fixos. Da mesma forma, exigir que os usuários alternem rapidamente entre o foco próximo e o foco distante (por exemplo, devido a um holograma pop-up que exija uma interação direta) pode causar desconforto e fadiga visuais. Portanto, **é necessário tomar cuidado extra para minimizar a frequência com que os usuários: veem o conteúdo que está se movendo em profundidade; ou alternam rapidamente o foco entre os hologramas próximos e distantes**. 
 
 ### <a name="additional-considerations-for-hololens-2-and-near-interaction-distances"></a>Considerações adicionais sobre o HoloLens 2 e distâncias de interação próxima
 
-Ao criar um conteúdo para interação direta (próxima) no HoloLens 2, ou **em qualquer aplicativo no qual o conteúdo precise ser posicionado a uma distância inferior a 1 m, é necessário tomar cuidado extra para garantir o conforto do usuário** . As chances de desconforto devido ao conflito entre vergência e acomodação aumentam exponencialmente com a redução da distância de visualização. Além disso, os usuários podem sentir um aumento do desfoque ao ver um conteúdo em distâncias de interação próxima; portanto, recomendamos testar o conteúdo renderizado na zona de posicionamento ideal de holograma, bem como em uma distância mais curta (a menos de 1,0 m até o plano de recorte) para verificar se ele permanece nítido e confortável para visualização. 
+Ao criar um conteúdo para interação direta (próxima) no HoloLens 2, ou **em qualquer aplicativo no qual o conteúdo precise ser posicionado a uma distância inferior a 1 m, é necessário tomar cuidado extra para garantir o conforto do usuário**. As chances de desconforto devido ao conflito entre vergência e acomodação aumentam exponencialmente com a redução da distância de visualização. Além disso, os usuários podem sentir um aumento do desfoque ao ver um conteúdo em distâncias de interação próxima; portanto, recomendamos testar o conteúdo renderizado na zona de posicionamento ideal de holograma, bem como em uma distância mais curta (a menos de 1,0 m até o plano de recorte) para verificar se ele permanece nítido e confortável para visualização. 
 
-**Recomendamos criar um “orçamento de profundidade” para aplicativos com base no tempo em que um usuário deverá ver o conteúdo que está próximo (a menos de 1,0 m) e que se move em profundidade** . Um exemplo é evitar colocar o usuário nessas situações mais de 25% do tempo. Se o orçamento de profundidade for excedido, recomendaremos um teste de usuário cuidadoso para garantir que ela continue sendo uma experiência confortável. 
+**Recomendamos criar um “orçamento de profundidade” para aplicativos com base no tempo em que um usuário deverá ver o conteúdo que está próximo (a menos de 1,0 m) e que se move em profundidade**. Um exemplo é evitar colocar o usuário nessas situações mais de 25% do tempo. Se o orçamento de profundidade for excedido, recomendaremos um teste de usuário cuidadoso para garantir que ela continue sendo uma experiência confortável. 
 
 Em geral, também recomendamos um teste cuidadoso para garantir que todos os requisitos de interação (por exemplo, velocidade de movimento, acessibilidade etc.) em distâncias de interação próxima continuem sendo confortáveis para os usuários. 
 
@@ -100,7 +100,7 @@ Há uma variedade de ferramentas que podem ser usadas para submeter a taxa de qu
 
 ## <a name="self-motion-and-user-locomotion"></a>Automovimento e locomoção do usuário
 
-A única limitação é o tamanho do espaço físico; caso você deseje permitir que os usuários se movimentem em uma distância maior no ambiente virtual do que é possível nas salas reais, uma forma de movimento puramente virtual precisará ser implementada. No entanto, um movimento virtual sustentado que não corresponde ao movimento físico e real do usuário pode, muitas vezes, induzir o enjoo de movimento. Esse resultado é devido às *indicações visuais* para o automovimento do *mundo virtual* em conflito com as [indicações vestibulares](https://en.wikipedia.org/wiki/Vestibular_system) para o automovimento proveniente do *mundo real* .
+A única limitação é o tamanho do espaço físico; caso você deseje permitir que os usuários se movimentem em uma distância maior no ambiente virtual do que é possível nas salas reais, uma forma de movimento puramente virtual precisará ser implementada. No entanto, um movimento virtual sustentado que não corresponde ao movimento físico e real do usuário pode, muitas vezes, induzir o enjoo de movimento. Esse resultado é devido às *indicações visuais* para o automovimento do *mundo virtual* em conflito com as [indicações vestibulares](https://en.wikipedia.org/wiki/Vestibular_system) para o automovimento proveniente do *mundo real*.
 
 A boa notícia é que há dicas para implementar a locomoção do usuário que podem ajudar a evitar o problema:
 * Sempre coloque o usuário no controle dos movimentos que ele faz; o automovimento inesperado particularmente gera problemas
@@ -162,6 +162,13 @@ O ângulo de foco ideal (repouso) é considerado entre 10-20 graus abaixo do hor
 ## <a name="arm-positions"></a>Posições do braço
 
 A fadiga muscular pode se acumular quando é esperado que os usuários mantenham uma mão levantada durante toda uma experiência. Também pode ser cansativo exigir que o usuário faça gestos de fechar e abrir os dedos indicador e polegar repetidamente por longas durações. Portanto, recomendamos que as experiências evitem a exigência de uma entrada de gesto constante e repetida. Essa meta pode ser alcançada incorporando pequenos intervalos ou oferecendo uma combinação de entrada de gesto e fala para interagir com o aplicativo.
+
+## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
+
+Se estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você estará no meio da exploração dos fundamentos da Realidade Misturada. Desse ponto, você poderá prosseguir para o próximo tópico básico: 
+
+> [!div class="nextstepaction"]
+> [Como o usuário vê o mundo – (quadro holográfico)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Veja também
 * [Foco](gaze-and-commit.md)

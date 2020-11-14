@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
-ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638583"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340684"
 ---
 # <a name="unreal-development-overview"></a>Visão geral do desenvolvimento com o Unreal
 
@@ -45,7 +45,7 @@ Ao final desta seção, você terá uma compreensão básica do Kit de Ferrament
 
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
-| [Instale as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale o pacote mais recente do Unity e configure seu projeto para realidade misturada |
+| [Instale as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale a última versão do Unreal Engine e configure seu projeto para realidade misturada |
 | [Série de tutoriais do HoloLens 2](tutorials/unreal-uxt-ch1.md) | Aprofunde-se nos tutoriais do MRTK de nível principiante para hardware do HoloLens 2 |
 
 ### <a name="2-core-building-blocks"></a>2. Blocos principais de construção

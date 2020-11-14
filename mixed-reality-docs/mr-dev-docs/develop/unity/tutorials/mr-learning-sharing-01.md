@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de recursos multiusuário – 1. Introdução
+title: Tutoriais de recursos multiusuário – 1. Introdução aos Tutoriais de funcionalidades de vários usuários
 description: Conclua este curso para aprender a implementar experiências compartilhadas de vários usuários em um aplicativo do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 179ed341ffc2e34b94da887dd4c52d33bec6834e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0a94bd7c939315f8c407b1f238c124e6c0c6a964
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696036"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353404"
 ---
-# <a name="1-introduction"></a>1. Introdução
+# <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Introdução aos Tutoriais de funcionalidades de vários usuários
 
 ## <a name="overview"></a>Visão geral
 

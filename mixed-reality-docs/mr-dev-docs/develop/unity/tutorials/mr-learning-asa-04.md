@@ -1,18 +1,18 @@
 ---
 title: Tutoriais de Âncoras Espaciais do Azure – 4. Exibir comentários de Âncoras Espaciais do Azure
-description: Conclua este curso para saber como implementar as Âncoras Espaciais do Azure em um aplicativo de realidade misturada.
+description: Conclua este curso para aprender a exibir comentários por meio das Âncoras Espaciais do Azure em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695434"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353334"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Exibir comentários das Âncoras Espaciais do Azure
 
@@ -25,9 +25,9 @@ Neste tutorial, você aprenderá a fornecer comentários sobre a descoberta de �
 
 ## <a name="setting-up-asa-feedback-panel"></a>Configurar o painel de comentários do ASA
 
-Na janela Hierarquia, clique com o botão direito do mouse no objeto **Instruções** > **TextContent** . Selecione **Objeto 3D** > **Text – TextMeshPro** para criar um objeto de texto TextMeshPro como um filho do objeto Instruções > TextContent:
+Na janela Hierarquia, clique com o botão direito do mouse no objeto **Instruções** > **TextContent**. Selecione **Objeto 3D** > **Text – TextMeshPro** para criar um objeto de texto TextMeshPro como um filho do objeto Instruções > TextContent:
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![Unity com o objeto TextMeshPro recém-criado selecionado](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > Para facilitar o trabalho com sua cena, defina a <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Visibilidade da Cena</a> para o objeto ParentAnchor como off clicando no ícone de olho à esquerda do objeto. Isso oculta o objeto na janela Cena sem alterar a visibilidade no jogo.
@@ -44,13 +44,13 @@ Em seguida, escolha as propriedades da fonte para que o texto caiba bem na área
 * Altere o **Tamanho da Fonte** do componente de texto – TextMeshPro para 0,17.
 * Altere o **Alinhamento** do componente de texto – TextMeshPro para Centro e Meio.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![Unity com o objeto Feedback configurado](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 Na janela Hierarquia, selecione o objeto **Comentários** e, em seguida, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Script de Comentários de Âncora (Script)** e configure-o da seguinte maneira:
 
 * Atribua o objeto **Comentários** ao campo **Texto do Comentário** do componente **Script de Comentário da Âncora (Script)** .
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![Unity com o componente Script de Comentários da Âncora configurado](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>Parabéns
 

@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498281"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573200"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -36,13 +36,15 @@ Há algumas coisas que você pode tentar se sentir que a exibição parece um po
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>Estou recebendo um erro de 7-14 "algo errado" ao conectar meu Headset
 
+O 7-14 algo deu errado significa que alguns dos componentes USB2 necessários não foram encontrados.  Devido ao cabo extra para o HP, o caractere de reverberação de caracteres USB são mais apertados.  Isso significa que uma porta em seu computador pode funcionar de forma mais confiável do que outra.
+
 Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas:
 
-- Verifique se você tem os drivers mais recentes instalados.
-- Tente conectar o cabo a uma porta USB-3,0 diferente.
-- Use o C USB para um adaptador incluído para testar portas diferentes.
-
-Tente conectar o cabo em um hub USB diferente.  
+- Verifique se você tem os drivers mais recentes instalados para o headset e o controlador USB.
+- Verifique se você está usando um driver USB da Microsoft. Deve haver uma "Microsoft" no nome do dispositivo "controlador de host extensível".
+- Tente conectar o cabo a uma porta USB-3,0 diferente em seu computador. (Experimente o tipo USB-C e as portas Type-A)
+- Use o USB C incluído em um adaptador incluído para testar portas diferentes.
+- Tente conectar o headset por meio de um hub USB ao seu computador.
 
 > [!NOTE]
 > A HP recomenda o uso de controladores USB integrados à placa-mãe com dispositivos reverbo G2.

@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, hololens 2, visão personalizada do azure, serviços cognitivos do azure
 ms.localizationpriority: high
-ms.openlocfilehash: baf5ddb805e6bff6fd41d2fb7cc8ea64b55944e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695407"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353264"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrar a Visão Personalizada do Azure
 
-Neste tutorial, você aprenderá a usar a **Visão Personalizada do Azure** . Você carregará um conjunto de fotos para associá-lo a um *Objeto Rastreado* , carregá-lo no serviço de **Visão Personalizada** e iniciar o processo de treinamento. Em seguida, você usará o serviço para detectar o *Objeto Rastreado* capturando fotos do feed da webcam.
+Neste tutorial, você aprenderá a usar a **Visão Personalizada do Azure**. Você carregará um conjunto de fotos para associá-lo a um *Objeto Rastreado* , carregá-lo no serviço de **Visão Personalizada** e iniciar o processo de treinamento. Em seguida, você usará o serviço para detectar o *Objeto Rastreado* capturando fotos do feed da webcam.
 
 ## <a name="objectives"></a>Objetivos
 
@@ -26,7 +26,7 @@ Neste tutorial, você aprenderá a usar a **Visão Personalizada do Azure** . Vo
 
 ## <a name="understanding-azure-custom-vision"></a>Compreender a Visão Personalizada do Azure
 
-A **Visão Personalizada do Azure** faz parte da família de **Serviços Cognitivos** e é usada para treinar classificadores de imagem. O classificador de imagens é um serviço de IA que usa o modelo treinado para aplicar marcas correspondentes. Esse recurso de classificação será usado pelo nosso aplicativo para detectar *Objetos Rastreados* .
+A **Visão Personalizada do Azure** faz parte da família de **Serviços Cognitivos** e é usada para treinar classificadores de imagem. O classificador de imagens é um serviço de IA que usa o modelo treinado para aplicar marcas correspondentes. Esse recurso de classificação será usado pelo nosso aplicativo para detectar *Objetos Rastreados*.
 
 Saiba mais sobre a [Visão Personalizada do Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
 
@@ -34,20 +34,20 @@ Saiba mais sobre a [Visão Personalizada do Azure](https://docs.microsoft.com/az
 
 Para começar, crie um projeto de visão personalizada. A maneira mais rápida é usando o portal da Web.
 
-Siga este [tutorial de início rápido](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) para configurar a sua conta e o projeto até a seção *Carregar e marcar imagens* .
+Siga este [tutorial de início rápido](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) para configurar a sua conta e o projeto até a seção *Carregar e marcar imagens*.
 
 > [!WARNING]
 > Para treinar um modelo, você precisa ter pelo menos duas marcas e cinco imagens por marca. Para usar esse aplicativo, você deve criar pelo menos uma marca com cinco imagens, para que o processo de treinamento não falhe posteriormente.
 
 ## <a name="preparing-the-scene"></a>Preparando a cena
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureCloudServices** > **Pré-fabricados** > **Gerenciador** .
+Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureCloudServices** > **Pré-fabricados** > **Gerenciador**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
+![Unity com a janela Projeto mostrando o caminho para o pré-fabricado ObjectDetectionManager](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 Em seguida, arraste o pré-fabricado **ObjectDetectionManager** para a Hierarquia de cena.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
+![Unity com os campos de configuração do componente de script de ObjectDetectionManager mostrados no Inspetor](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Na janela Hierarquia, localize o objeto **ObjectDetectionManager** e selecione-o.
 O pré-fabricado **ObjectDetectionManager** contém o componente **ObjectDetectionManager (script)** e, como você pode ver na janela Inspetor, ele depende de várias configurações.
@@ -66,15 +66,15 @@ No painel da [visão personalizada](https://www.customvision.ai/projects), abra 
 
 Agora, com o **ObjectDetectionManager (script)** configurado corretamente, localize o objeto **SceneController** na sua Hierarquia de cena e selecione-o.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
+![Unity com os campos de configuração do componente de script de SceneController mostrados no Inspetor](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 Veja se o campo *Gerenciador de Detecção de Objetos* no componente **SceneController** está vazio, arraste o **ObjectDetectionManager** da Hierarquia para esse campo e salve a cena.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
+![Unity com o componente de script de SceneController configurado](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## <a name="take-and-upload-images"></a>Criar e carregar imagens
 
-Execute a cena, clique em **Definir Objeto** e digite o nome de um dos **Objetos Rastreados** que você criou na [lição anterior](mr-learning-azure-02.md). Agora, clique no botão **Pesquisa Visual Computacional** que está na parte inferior do **Cartão do Objeto** .
+Execute a cena, clique em **Definir Objeto** e digite o nome de um dos **Objetos Rastreados** que você criou na [lição anterior](mr-learning-azure-02.md). Agora, clique no botão **Pesquisa Visual Computacional** que está na parte inferior do **Cartão do Objeto**.
 
 Uma nova janela será aberta, na qual você precisará tirar seis fotos para treinar o modelo de reconhecimento de imagem. Clique no botão **Câmera** e execute um AirTap ao examinar o objeto que você deseja rastrear. Faça isso seis vezes.
 
@@ -88,7 +88,7 @@ Quando tiver imagens suficientes, clique no botão **Treinar** para iniciar o pr
 
 ## <a name="detect-objects"></a>Detectar objetos
 
-Agora você pode testar o modelo treinado, executar o aplicativo e, no *menu principal* clicar em **Pesquisar Objeto** e digitar o nome do **Objeto Rastreado** em questão. O **Cartão de Objeto** aparecerá; clique no botão **Visão Personalizada** . A partir daqui, o **ObjectDetectionManager** começará a fazer capturas de imagem em segundo plano da câmera e o progresso será indicado no menu. Aponte a câmera para o objeto usado para treinar o modelo e você verá que, após um curto período, ele detectará o objeto.
+Agora você pode testar o modelo treinado, executar o aplicativo e, no *menu principal* clicar em **Pesquisar Objeto** e digitar o nome do **Objeto Rastreado** em questão. O **Cartão de Objeto** aparecerá; clique no botão **Visão Personalizada**. A partir daqui, o **ObjectDetectionManager** começará a fazer capturas de imagem em segundo plano da câmera e o progresso será indicado no menu. Aponte a câmera para o objeto usado para treinar o modelo e você verá que, após um curto período, ele detectará o objeto.
 
 ## <a name="congratulations"></a>Parabéns
 

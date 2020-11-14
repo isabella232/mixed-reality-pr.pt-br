@@ -1,5 +1,5 @@
 ---
-title: MRTK 101 – Como usar a o Mixed Reality Toolkit Unity para interações básicas (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)
+title: MRTK 101 – Como usar o Kit de Ferramentas de Realidade Misturada do Unity para interações espaciais comuns (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)
 description: Como usar a o Mixed Reality Toolkit Unity para interações básicas (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)
 author: cre8ivepark
 ms.author: dongpark
@@ -7,15 +7,14 @@ ms.date: 08/27/2019
 ms.topic: article
 keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, design, sample app, controls
 ms.localizationpriority: high
-ms.openlocfilehash: bd0b3104d48ce3fbd836e7294ab5b816a486847a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d10de5c9f16e0caa289d5110647b4c45a8a8fcf9
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695615"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386257"
 ---
-# <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-basic-interactions-hololens-2-hololens-windows-mixed-reality-openvr"></a>MRTK 101: Como usar a o Mixed Reality Toolkit Unity para interações básicas (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)
-
+# <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101: Como usar o Kit de Ferramentas de Realidade Misturada do Unity para interações espaciais
 ![MRTK](images/MRTK101/MRTK101Cover.png)
 
 Saiba mais sobre como usar o MRTK para obter alguns dos padrões comuns de interação mais amplamente usados em realidade misturada.
@@ -31,7 +30,12 @@ Saiba mais sobre como usar o MRTK para obter alguns dos padrões comuns de inter
 - Como fazer um objeto seguir você?
 - Como fazer um objeto olhar para você?
 
-## <a name="how-to-simulate-input-interactions-in-unityeditor"></a>Como simular as interações de entrada no editor do Unity?
+> [!NOTE]
+> Este artigo foi atualizado para refletir as alterações na [versão do MRTK v2.5.1](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.5.1)
+
+Todo o conteúdo desta página pode ser testado no editor do Unity com a simulação de entrada do MRTK. Caso ainda não tenha feito isso, siga o [Guia de Instalação do MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) para instalar a última versão do MRTK.
+
+## <a name="how-to-simulate-input-interactions-in-unity-editor"></a>Como simular as interações de entrada no editor do Unity?
 O MRTK é compatível com a simulação de entrada no editor. Basta executar sua cena clicando no botão reproduzir do Unity. Use essas chaves para simular a entrada.
 Pressione as teclas W, A, S, D para mover a câmera.
 Mantenha o botão direito do mouse pressionado e mova o mouse para examinar.
@@ -40,55 +44,55 @@ Para exibir as mãos simuladas, pressione a barra de Espaço (à direita) ou a t
 - [Saiba mais sobre a Simulação de Entrada na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html)
 
 
-## <a name="how-to-grab-and-move-anobject"></a>Como pegar e mover um objeto?
-Para tornar um objeto captável, atribua estes dois scripts: ManipulationHandler.cs e NearInteractionGrabbable.cs (para captura direta com entrada de acompanhamento de mão articulada) ManipulationHandler é compatível com interações próximas e distantes. Você pode pegar e mover um objeto com a entrada de acompanhamento de mão articulada do HoloLens 2 (próximo), raio da mão (distante), feixe do controlador de movimento (distante), cursor de olhar do HoloLens e toque no ar (distante).
+## <a name="how-to-grab-and-move-an-object"></a>Como pegar e mover um objeto?
+Para tornar um objeto captável, atribua estes dois scripts: **ObjectManipulator.cs** e **NearInteractionGrabbable.cs** (para captura direta com entrada de acompanhamento de mão articulada): ObjectManipulator dá suporte a interações próximas e distantes. Você pode pegar e mover um objeto com a entrada de acompanhamento de mão articulada do HoloLens 2 (próximo), raio da mão (distante), feixe do controlador de movimento (distante), cursor de olhar do HoloLens e toque no ar (distante).
 
-<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
+<br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
-<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object for grab and move" width="800" src="images/MRTK101/MRTK_GrabMove.gif">
+<br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object for grab and move" width="800" src="images/MRTK101/MRTK_GrabMove.gif">
 
 
-## <a name="how-to-resize-anobject"></a>Como redimensionar um objeto?
-O ManipulationHandler.cs é compatível com escala/rotação de duas mãos. Isso funciona com vários tipos de entrada, como entrada de mão articulada do HoloLens 2, entrada de olhar + gesto do HoloLens 1 e entrada do controlador de movimento do headset imersivo do Windows Mixed Reality.
+## <a name="how-to-resize-an-object"></a>Como redimensionar um objeto?
+**ObjectManipulator.cs** dá suporte à escala/rotação de duas mãos. Isso funciona com vários tipos de entrada, como entrada de mão articulada do HoloLens 2, entrada de olhar + gesto do HoloLens 1 e entrada do controlador de movimento do headset imersivo do Windows Mixed Reality.
 
-- [Saiba mais sobre o Manipulador de Manipulação na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html)
+- [Saiba mais sobre o Object Manipulator na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 
-<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object for manipulation" width="800" src="images/MRTK101/MRTK_ManipulationHandler.gif">
+<br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object for manipulation" width="800" src="images/MRTK101/MRTK_ManipulationHandler.gif">
 
 ## <a name="how-to-move-or-rotate-an-object-with-precision"></a>Como mover ou girar um objeto com precisão?
-Atribua BoundingBox.cs a um objeto para usar a Caixa Delimitadora que é a interface para dimensionar e girar um objeto. Por padrão, ele mostra as alças e os fios azuis no estilo HoloLens 1. Para usar as alças animadas com base em proximidades no estilo HoloLens 2, você precisa atribuir pré-fabricados e materiais. Veja a [documentação da Caixa Delimitadora](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) e a cena BoundingBoxExamples.unity para obter os detalhes de configuração.
+Atribua **BoundsControl.cs** a um objeto para usar a Caixa Delimitadora que é a interface para dimensionar e girar um objeto. Por padrão, ele mostra as alças e os fios azuis no estilo HoloLens 1. Para usar as alças animadas com base em proximidades no estilo HoloLens 2, você precisa atribuir pré-fabricados e materiais. 
 
-<img alt="BoundingBox.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_BoundingBox.png">
+<br/><img alt="BoundsControl.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_BoundingBox.png">
 
-<img alt="BoundingBox.cs assigned to an object gif" width="800" src="images/MRTK101/MRTK_BoundingBox.gif">
+<br/><img alt="BoundsControl.cs assigned to an object gif" width="800" src="images/MRTK101/MRTK_BoundingBox.gif">
+
+- [Saiba mais sobre o Controle de Limites na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)
 
 
-- [Saiba mais sobre a Caixa Delimitadora na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+## <a name="how-to-make-an-object-respond-to-input-events"></a>Como fazer um objeto responder a eventos de entrada?
+Atribua **PointerHandler.cs** a um objeto. No inspetor, você poderá usar os eventos OnPointerDown(), OnPointerUp(), OnPointerClicked() e OnPointerDragged(). Para usar esses eventos em um script, implemente **IMixedRealityPointerHandler**.
 
-## <a name="how-to-make-an-object-respond-to-inputevents"></a>Como fazer um objeto responder a eventos de entrada?
-Atribua PointerHandler.cs a um objeto. No Inspetor, você poderá usar os eventos OnPointerDown(), OnPointerUp(), OnPointerClicked(), OnPointerDragged(). Para usar esses eventos em um script, implemente IMixedRealityPointerHandler.
-
-<img alt="PointerHandler.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_PointerHandler.png">
+<br/><img alt="PointerHandler.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_PointerHandler.png">
 
 - [Saiba mais sobre o Sistema de Entrada na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
 
 ## <a name="how-to-add-visual-feedback"></a>Como adicionar comentários visuais?
-Atribua Interactable.cs a um objeto. No inspetor, crie um tema. Usando perfis de tema de interação, você pode adicionar facilmente comentários visuais a todos os estados de interação de entrada disponíveis.
+Atribua **Interactable.cs** a um objeto. No inspetor, adicione um objeto de destino e crie um tema. Usando perfis de tema de interação, você pode adicionar facilmente comentários visuais a todos os estados de interação de entrada disponíveis.
 
-<img alt="Image of PointerHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_Interactable.png">
+<br/><img alt="Image of PointerHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_Interactable.png">
 
-<img alt="Interactable gif" width="800" src="images/MRTK101/MRTK_Interactable.gif">
+<br/><img alt="Interactable gif" width="800" src="images/MRTK101/MRTK_Interactable.gif">
 
 
 O item passível de interação fornece vários tipos de temas, incluindo o tema do sombreador, que permite controlar as propriedades do sombreador por estado de interação.
 
 - [Saiba mais sobre o item passível de interação na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 
-Outro bloco de construção importante para comentários visuais é o Sombreador Padrão MRTK. Com o sombreador Padrão MRTK, você pode adicionar facilmente efeitos de comentários visuais, como luz de foco e luz de proximidade. Como o sombreador Padrão MRTK executa significativamente menos cálculos do que o sombreador Padrão Unity, você pode criar uma experiência de alto desempenho.
+Outro bloco de construção importante para comentários visuais é o **Sombreador Padrão do MRTK**. Com o sombreador Padrão MRTK, você pode adicionar facilmente efeitos de comentários visuais, como luz de foco e luz de proximidade. Como o sombreador Padrão MRTK executa significativamente menos cálculos do que o sombreador Padrão Unity, você pode criar uma experiência de alto desempenho.
 
 Crie um material e selecione o sombreador "Mixed Reality Toolkit > Padrão". Ou você pode escolher um dos materiais existentes que usam o Sombreador Padrão MRTK.
 
-<img alt="MRTK Standard Shader image 1" width="400" src="images/MRTK101/MRTK_Shader0.png">
+<br/><img alt="MRTK Standard Shader image 1" width="400" src="images/MRTK101/MRTK_Shader0.png">
 <br/><br/>
 <img alt="MRTK Standard Shader image 2" width="800" src="images/MRTK101/MRTK_Shader1.png">
 
@@ -98,37 +102,37 @@ Crie um material e selecione o sombreador "Mixed Reality Toolkit > Padrão". Ou 
 - [Saiba mais sobre o Sombreador Padrão MRTK na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
 
 ## <a name="how-to-add-audio-feedback"></a>Como adicionar comentários de áudio?
-Adicionar a AudioSource a um objeto. Em seguida, nos scripts que expõem eventos de entrada (por exemplo, Interactable.cs ou PointerHandler.cs), atribua o objeto ao evento e selecione AudioSource.PlayOneShot(). Você pode usar seus clipes de áudio ou escolher um dos ativos de áudio do MRTK.
+Adicione **AudioSource** a um objeto. Em seguida, nos scripts que expõem eventos de entrada (por exemplo, Interactable.cs ou PointerHandler.cs), atribua o objeto com AudioSource ao evento e selecione **AudioSource.PlayOneShot()** . Você pode usar seus clipes de áudio ou escolher um dos ativos de áudio do MRTK.
 
-<img alt="Audio Source assigned to an object. AudioSource.PlayOneShot configured in the Interactable's OnPress() and OnRelease() events." width="800" src="images/MRTK101/MRTK_Audio.png">
+<br/><img alt="Audio Source assigned to an object. AudioSource.PlayOneShot configured in the Interactable's OnPress() and OnRelease() events." width="800" src="images/MRTK101/MRTK_Audio.png">
 
-## <a name="how-to-use-hololens-2-style-buttonprefabs"></a>Como usar pré-fabricados do botão no estilo HoloLens 2?
-O MRTK fornece vários tipos de botões no estilo shell (SO) do HoloLens 2. Ele fornece feedbacks visuais sofisticados, como luz de proximidade, caixa de compactação e um efeito de ondulação na superfície do botão.
+## <a name="how-to-use-hololens-2-style-button-prefabs"></a>Como usar pré-fabricados do botão no estilo HoloLens 2?
+O MRTK fornece vários tipos de botões no estilo shell (sistema operacional) do HoloLens 2. Ele fornece comentários visuais sofisticados, como luz de proximidade, caixa de compactação e um efeito de ondulação na superfície do botão para aprimorar a confiança do usuário.
 
-<img alt="Interactable button" width="800" src="images/MRTK101/MRTK_Button.gif">
+<br/><img alt="Interactable button" width="800" src="images/MRTK101/MRTK_Button.gif">
 
-Basta arrastar e soltar um dos pré-fabricados de botão pressionável estilo HoloLens 2 em sua cena. O pré-fabricado usa Interactable.cs, que é apresentado acima. Você pode usar eventos expostos, como OnClick(), em ações de gatilho de interação.
+Basta arrastar e soltar um dos **pré-fabricados de botão pressionável de estilo HoloLens 2** na sua cena. O pré-fabricado usa Interactable.cs, que é apresentado acima. Você pode usar eventos expostos, como OnClick(), em ações de gatilho de interação.
 
-<img alt="HoloLens 2 Button Prefab" width="800" src="images/MRTK101/MRTK_Button.png">
+<br/><img alt="HoloLens 2 Button Prefab" width="800" src="images/MRTK101/MRTK_Button.png">
 
 - [Saiba mais sobre os pré-fabricados de Botão na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
 
-## <a name="how-to-make-an-object-followyou"></a>Como fazer um objeto seguir você?
-Atribua o script RadialView.cs a um objeto. Ele faz parte da série de scripts do Solucionador que permite alcançar vários tipos de posicionamento de objeto no espaço 3D. O SolverHandler.cs será adicionado automaticamente.
+## <a name="how-to-make-an-object-follow-you"></a>Como fazer um objeto seguir você?
+Atribua o script **RadialView.cs** ou **Follow.cs** a um objeto. Ele faz parte da série de scripts do Solucionador que permite alcançar vários tipos de posicionamento de objeto no espaço 3D. O **SolverHandler.cs** será adicionado automaticamente.
 Veja abaixo um exemplo de configuração do RadialView para obter a marca "acompanhamento lento" ao longo do comportamento, assim como o menu Iniciar no shell do HoloLens. Você pode especificar a distância mínima/máxima e os graus de exibição mínimo/máximo. O exemplo a seguir mostra o posicionamento do objeto entre o intervalo de 0,4 m e 0,8 m dentro de 15°. Ajuste os valores de Tempo de Lerp para tornar a atualização posicional mais rápida ou mais lenta.
 
-<img alt="MRTK Standard Shader for solver" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
+<br/><img alt="MRTK Standard Shader for solver" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
 
-<img alt="Interactable radial solver" width="800" src="images/MRTK101/MRTK_RadialViewSolver.gif">
+<br/><img alt="Interactable radial solver" width="800" src="images/MRTK101/MRTK_RadialViewSolver.gif">
 
 - [Saiba mais sobre Solucionadores na documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
-## <a name="how-to-make-an-object-faceyou"></a>Como fazer um objeto olhar para você?
-Atribua o script Billboard.cs a um objeto. Ele sempre vai olhar para você, independentemente da sua posição. Você pode especificar a opção de eixo dinâmico.
+## <a name="how-to-make-an-object-face-you"></a>Como fazer um objeto olhar para você?
+Atribua o script **Billboard.cs** a um objeto. Ele sempre vai olhar para você, independentemente da sua posição. Você pode especificar a opção de eixo dinâmico.
 
-<img alt="Image of Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
+<br/><img alt="Image of Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
 
-<img alt="Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.gif">
+<br/><img alt="Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.gif">
 
 
 Pronto para criar experiências incríveis para realidade misturada? Visite as páginas abaixo e saiba mais sobre MRTK e realidade misturada.
@@ -157,8 +161,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
 ## <a name="see-also"></a>Confira também
-
+* [Guia de Instalação do MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [Mixed Reality Toolkit-Unity (MRTK) – GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-* [Portal de documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [Introdução ao MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
+* [Portal de documentação do MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Diretrizes de portabilidade do HoloToolkit para o MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, HoloLens, hologramas, design, interação
-ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386232"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631464"
 ---
 # <a name="what-is-a-hologram"></a>O que é um holograma?
 
@@ -128,11 +128,8 @@ Os hologramas também podem ser obstruídodos por objetos do mundo real. Por exe
 
 ## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
 
-Se você estiver seguindo a [jornada de descoberta](get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
+Se estiver seguindo a [jornada de descoberta](get-started-with-mr.md) que apresentamos, você estará no meio da exploração dos fundamentos da Realidade Misturada. Desse ponto, você poderá prosseguir para o próximo tópico básico: 
 
 > [!div class="nextstepaction"]
 > [Expanda seu processo de design](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="see-also"></a>Confira também
-* [Som espacial](../design/spatial-sound.md)
-* [Cor, luz e materiais](../color,-light-and-materials.md)

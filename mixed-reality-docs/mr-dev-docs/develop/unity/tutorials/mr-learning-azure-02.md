@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage
 ms.localizationpriority: high
-ms.openlocfilehash: d405ecc9f863e77271d4c16f820fc6ee00e55b1b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695413"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353324"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrar o armazenamento do Azure
 
@@ -26,7 +26,7 @@ Neste tutorial, você aprenderá a salvar dados de entidade no armazenamento de 
 
 ## <a name="understanding-azure-storage"></a>Noções básicas sobre o armazenamento do Azure
 
-O **armazenamento do Azure** é uma solução de armazenamento da Microsoft na nuvem que pode abranger vários cenários e requisitos. Ele é massivamente escalonável e facilmente acessível pelos desenvolvedores. Todos os serviços podem ser consumidos no âmbito de **Conta de armazenamento do Azure** . Para nosso caso de uso, usaremos o *Armazenamento de Tabelas* e o *Armazenamento de Blobs* .
+O **armazenamento do Azure** é uma solução de armazenamento da Microsoft na nuvem que pode abranger vários cenários e requisitos. Ele é massivamente escalonável e facilmente acessível pelos desenvolvedores. Todos os serviços podem ser consumidos no âmbito de **Conta de armazenamento do Azure**. Para nosso caso de uso, usaremos o *Armazenamento de Tabelas* e o *Armazenamento de Blobs*.
 
 Saiba mais sobre os [serviços de armazenamento do Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
@@ -34,7 +34,7 @@ Saiba mais sobre os [serviços de armazenamento do Azure](https://docs.microsoft
 
 Esses serviços nos permitem armazenar dados em NoSQL; neste projeto, usaremos o serviço para armazenar informações sobre o *Objeto Rastreado* como: nome, descrição, ID de âncora espacial e muito mais.
 
-No contexto do aplicativo de demonstração, você precisa de duas tabelas, uma para armazenar informações sobre o projeto com informações sobre o estado dos modelos treinados – saiba mais sobre isso no tutorial ( [Integrar a Visão Personalizada do Azure](mr-learning-azure-03.md)) – e uma segunda tabela para armazenar informações sobre *Objetos Rastreados* .
+No contexto do aplicativo de demonstração, você precisa de duas tabelas, uma para armazenar informações sobre o projeto com informações sobre o estado dos modelos treinados – saiba mais sobre isso no tutorial ( [Integrar a Visão Personalizada do Azure](mr-learning-azure-03.md)) – e uma segunda tabela para armazenar informações sobre *Objetos Rastreados*.
 
 Saiba mais sobre [Armazenamento de Tabelas do Azure](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
@@ -57,7 +57,6 @@ Embora você possa ver e verificar todas as alterações de dados na interface d
 
 > [!TIP]
 > Para testar dentro do editor do Unity, você pode usar um emulador local:
-
 > * no Windows 10, use o [Emulador de armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * no MacOS/Linux, use a [Imagem do Docker Azurite](https://hub.docker.com/_/microsoft-azure-storage-azurite) para o Docker
 
@@ -65,7 +64,7 @@ Embora você possa ver e verificar todas as alterações de dados na interface d
 
 Na janela Hierarquia, localize o objeto **DataManager** e selecione-o.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![Unity com os campos de configuração do componente de script de DataManager mostrados no Inspetor](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 Na janela Inspetor, você verá que o componente **DataManager (script)** é o local em que todas as configurações relacionadas ao **armazenamento do Azure** são mantidas. Todas as configurações relevantes já estão definidas, você só precisa substituir o campo *Cadeia de Conexão* , por aquele que pode ser recuperado no portal do Azure. Se você estiver usando uma solução de emulador de armazenamento local do Azure, mantenha a *Cadeia de Conexão* já fornecida.
 
@@ -73,15 +72,15 @@ O **DataManager (script)** é responsável por se comunicar com o **Armazenament
 
 ## <a name="writing-and-reading-data-from-azure-table-storage"></a>Gravando e lendo dados no armazenamento de Tabela do Azure
 
-Com tudo preparado, é hora de criar um *Objeto Rastreado* .
+Com tudo preparado, é hora de criar um *Objeto Rastreado*.
 
-Abra o aplicativo no seu HoloLens, clique em **Definir Objeto** e você verá como o objeto *EnterObjectName* se tornará ativo na hierarquia. Nesse menu, clique na *barra de pesquisa* e digite o nome que você deseja dar ao *Objeto Rastreado* . Depois de fornecer um nome, clique no botão **Definir objeto** . Isso criará o *Objeto Rastreado* no armazenamento de Tabela do Azure e você verá agora o **Cartão de Objeto** .
+Abra o aplicativo no seu HoloLens, clique em **Definir Objeto** e você verá como o objeto *EnterObjectName* se tornará ativo na hierarquia. Nesse menu, clique na *barra de pesquisa* e digite o nome que você deseja dar ao *Objeto Rastreado*. Depois de fornecer um nome, clique no botão **Definir objeto**. Isso criará o *Objeto Rastreado* no armazenamento de Tabela do Azure e você verá agora o **Cartão de Objeto**.
 
 Este **Cartão de Objeto** é uma representação de interface do usuário do *Objeto Rastreado* e terá uma função importante várias vezes nesta série de tutoriais.
 
 Agora, clique na *caixa de texto* de descrição e digite "Car"; depois, clique no botão **Salvar** para salvar as alterações. Interrompa o aplicativo e execute-o novamente.
 
-Agora, clique em **Pesquisar Objeto** e digite na *barra de pesquisa* o nome que você usou ao criar o *Objeto Rastreado* . Você verá que o **Cartão de Objeto** com todos os dados será recuperado do **armazenamento de Tabela do Azure** .
+Agora, clique em **Pesquisar Objeto** e digite na *barra de pesquisa* o nome que você usou ao criar o *Objeto Rastreado*. Você verá que o **Cartão de Objeto** com todos os dados será recuperado do **armazenamento de Tabela do Azure**.
 
 Sinta-se à vontade para fechar o **Cartão de Objeto** e criar novos *Objetos Rastreados* e editar seus dados.
 
@@ -90,20 +89,20 @@ Sinta-se à vontade para fechar o **Cartão de Objeto** e criar novos *Objetos R
 
 ## <a name="uploading-and-download-image-from-azure-blob-storage"></a>Carregar e baixar a imagem no Armazenamento de blobs do Azure
 
-Nesta seção, você usará o armazenamento de blobs do Azure para carregar e baixar imagens que serão usadas como miniaturas para *Objetos Rastreados* .
+Nesta seção, você usará o armazenamento de blobs do Azure para carregar e baixar imagens que serão usadas como miniaturas para *Objetos Rastreados*.
 
 > [!NOTE]
 > Neste tutorial, o aplicativo vai tirar fotos para carregar imagens no Armazenamento de blobs. Se você estiver executando isso localmente no editor do Unity, tenha uma webcam conectada ao seu computador.
 
-Abra o aplicativo no seu HoloLens, clique em **Definir Objeto** e digite o nome "Car" na *barra de pesquisa* . Agora você verá o **Cartão de Objeto** ; clique no botão **Câmera** e será instruído a fazer um AirTap para tirar uma foto. Depois de tirar uma foto, você verá uma mensagem informando sobre o carregamento ativo e, depois de um tempo, a imagem aparecerá no local em que o espaço reservado estava antes.
+Abra o aplicativo no seu HoloLens, clique em **Definir Objeto** e digite o nome "Car" na *barra de pesquisa*. Agora você verá o **Cartão de Objeto** ; clique no botão **Câmera** e será instruído a fazer um AirTap para tirar uma foto. Depois de tirar uma foto, você verá uma mensagem informando sobre o carregamento ativo e, depois de um tempo, a imagem aparecerá no local em que o espaço reservado estava antes.
 
 Agora, execute novamente o aplicativo e pesquise o *Objeto Rastreado* ; a imagem carregada anteriormente deverá aparecer como miniatura.
 
 ## <a name="deleting-image-from-azure-blob-storage"></a>Excluir imagem do Armazenamento de blobs do Azure
 
-Na seção anterior, você carregou novas imagens no Armazenamento de blobs do Azure; nesta seção, você excluirá uma miniatura de imagem dos *Objetos Rastreados* .
+Na seção anterior, você carregou novas imagens no Armazenamento de blobs do Azure; nesta seção, você excluirá uma miniatura de imagem dos *Objetos Rastreados*.
 
-Abra o aplicativo no seu HoloLens, clique em **Definir Objeto** e digite o nome "Car" na *barra de pesquisa* . Agora verá o **Cartão de Objeto** com a imagem em miniatura; clique no botão **Excluir** . Você observará que a imagem em miniatura será substituída pela imagem do espaço reservado.
+Abra o aplicativo no seu HoloLens, clique em **Definir Objeto** e digite o nome "Car" na *barra de pesquisa*. Agora verá o **Cartão de Objeto** com a imagem em miniatura; clique no botão **Excluir**. Você observará que a imagem em miniatura será substituída pela imagem do espaço reservado.
 
 Agora, execute novamente o aplicativo e pesquise o *Objeto Controlado* da miniatura excluída anteriormente. Você só verá a imagem do espaço reservado.
 
@@ -111,7 +110,7 @@ Agora, execute novamente o aplicativo e pesquise o *Objeto Controlado* da miniat
 
 Neste tutorial, você aprendeu como os serviços de armazenamento do Azure podem ser usados para persistir dados não estruturados, como em nosso caso **Objetos Rastreados** e binários na forma de imagens em miniatura para o aplicativo de demonstração do **HoloLens 2** na nuvem.
 
-No próximo tutorial, você aprenderá a usar a Visão Personalizada do Azure para detectar imagens associadas a um *Objeto Rastreado* .
+No próximo tutorial, você aprenderá a usar a Visão Personalizada do Azure para detectar imagens associadas a um *Objeto Rastreado*.
 
 > [!div class="nextstepaction"]
 > [Próximo tutorial: 3. Integrar a Visão Personalizada do Azure](mr-learning-azure-03.md)

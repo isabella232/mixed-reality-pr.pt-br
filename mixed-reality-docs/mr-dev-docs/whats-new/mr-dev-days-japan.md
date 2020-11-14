@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
-ms.translationtype: MT
+ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549109"
+ms.locfileid: "94573280"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Realidade misturada em dias do Japão
 
@@ -48,18 +48,17 @@ Em breve
 |12:50pm-1:13h|**Interrupção**||||
 |1:13h-1:25pm|*Sessão 3* Visão geral do desenvolvimento do HoloLens 2|Madoka Chiyoda|JA|200|
 |1: às 16h30-1:55PM|*Sessão 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon Park|JA|300|
-|2:13h-2:20pm|*Sessão 5* Introdução ao mecanismo 2 e inreal do HoloLens (MRTK-inreal)|Cameron Micka|PT-BR|300|
+|2:13h-2:25pm|*Sessão 5* Introdução ao mecanismo 2 e inreal do HoloLens (MRTK-inreal)|Cameron Micka|PT-BR|300|
 |2: às 16h30-2:55PM|*Sessão 6* Design de aplicativo MR (prática recomendada para a criação da interface do usuário/UX para o aplicativo HL2)|Daniel Escudero|PT-BR|300|
-|2:55PM-3:17h15|**Interrupção**||||
-|3:17h15-3:13:40|*Sessão 7* Âncoras de objeto do Azure|TBD|PT-BR|300|
-|3:17:45 às-4:19:10|*Sessão 8* Renderização remota do Azure|Atsushi Suzuki|JA|300|
-|4:17h15-4:13:40|*Sessão 9* Âncoras espaciais do Azure|TBD|PT-BR|300|
-<!--|4:17:45 às-5:19:10|*Sessão 10* Unity + PiXYZ|(Unity Japão)|JA|200|-->
-|4:17:45 às-5:19:10|*Sessão 10* TBD|TBD|JA|200|
-|5:17h15-5:13:40|*Sessão 11* Aprofundamento do Azure Kinects, estudo de caso|Shinji Chiba|JA|400|
-|5:17:45 às-6:13h|Fechamento|Madoka Chiyoda|JA|NA|
+|2:55PM-3:19:10|**Interrupção**||||
+|3:19:10-3:35pm|*Sessão 7* Âncoras de objeto do Azure|TBD|PT-BR|300|
+|3:13:40-4:05pm|*Sessão 8* Renderização remota do Azure|Atsushi Suzuki|JA|300|
+|4:19:10-4:35pm|*Sessão 9* Âncoras espaciais do Azure|TBD|PT-BR|300|
+|4:13:40-5:05pm|*Sessão 10* TBD|TBD|JA|200|
+|5:19:10-5:35pm|*Sessão 11* Aprofundamento do Azure Kinects, estudo de caso|Shinji Chiba|JA|400|
+|5:35pm-5:50pm|Fechamento|Madoka Chiyoda|JA|NA|
 
-#### <a name="contributors-english-subtitle-reviewers"></a>Colaboradores (revisores de subtítulo em inglês)
+#### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Colaboradores (revisores técnicos para as legendas)
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 

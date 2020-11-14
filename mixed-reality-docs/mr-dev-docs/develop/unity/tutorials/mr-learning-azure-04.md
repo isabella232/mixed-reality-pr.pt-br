@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695378"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353244"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrar as Âncoras Espaciais do Azure
 
-Neste tutorial, você aprenderá a usar as **Âncoras Espaciais do Azure** . Você armazenará o local de um **Objeto Rastreado** como uma Âncora Espacial do Azure. Quando você consultar a âncora, uma seta será exibida para guiar você em direção ao local.
+Neste tutorial, você aprenderá a usar as **Âncoras Espaciais do Azure**. Você armazenará o local de um **Objeto Rastreado** como uma Âncora Espacial do Azure. Quando você consultar a âncora, uma seta será exibida para guiar você em direção ao local.
 
 ## <a name="objectives"></a>Objetivos
 
@@ -41,17 +41,17 @@ Nesta seção, você aprenderá a configurar a cena e a fazer as alterações ne
 
 Na janela Projeto, navegue até **Ativos > MRTK.Tutorials.AzureCloudServices > Pré-fabricados > Gerenciador**
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity com o pré-fabricado AnchorManager selecionado](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 Na pasta **Gerenciador** , arraste e solte o pré-fabricadp **Gerenciador de Âncora** na Hierarquia de cena.
 
 Selecione o GameObject **Gerenciador de Âncora** na Hierarquia e, na seção Inspetor, você encontrará o **Gerenciador de Âncora Espacial** (Script). Localize a ID da conta e o campo de chave e adicione as credenciais que você criou no pré-requisito no estágio anterior.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![Unity com o pré-fabricado AnchorManager recém-adicionado ainda selecionado](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
-Agora, localize o objeto **Controlador de Cena** na Hierarquia de cena e selecione-o. Você verá o Inspetor do **Controlador de Cena** .
+Agora, localize o objeto **Controlador de Cena** na Hierarquia de cena e selecione-o. Você verá o Inspetor do **Controlador de Cena**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![Unity com o componente de script de SceneController configurado](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 Você observará que o campo do **Gerenciador de Âncora** no componente **Controlador de Cena** está vazio; arraste o **Gerenciador de Âncora** da Hierarquia e solte-o na cena desse campo e salve a cena.
 
@@ -86,7 +86,7 @@ Depois de salvar com êxito o local de âncora, agora você pode encontrar o loc
 
 Depois de clicar em **Pesquisar Objeto** , uma nova janela será exibida, na qual você deverá dar o nome do objeto que deseja pesquisar.
 
-Insira o nome do objeto e clique em **Pesquisar Objeto** . Se o objeto foi salvo anteriormente e for encontrado no banco de dados, você obterá o cartão de objeto com todos os detalhes do objeto que você salvou anteriormente.
+Insira o nome do objeto e clique em **Pesquisar Objeto**. Se o objeto foi salvo anteriormente e for encontrado no banco de dados, você obterá o cartão de objeto com todos os detalhes do objeto que você salvou anteriormente.
 
 Agora você pode clicar em **Mostrar Local** para localizar o objeto. Ao clicar em **Mostrar Local** , o sistema consultará o endereço do objeto no armazenamento em nuvem.
 

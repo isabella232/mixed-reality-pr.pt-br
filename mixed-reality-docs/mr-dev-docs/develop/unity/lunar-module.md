@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, aplicativos de exemplo, design, HoloLens
-ms.openlocfilehash: 4ab408d23ca932e73c0939f8a5cdc48184666f78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675237"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573250"
 ---
 # <a name="lunar-module"></a>Módulo lunar
 
@@ -19,6 +19,11 @@ ms.locfileid: "91675237"
 >Este artigo discute um exemplo exploratório que criamos nos laboratórios de [design de realidade misturada](https://github.com/Microsoft/MRDesignLabs_Unity), um lugar onde compartilhamos nossas aprendeções e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e códigos relacionados ao design irão evoluir à medida que fizermos novas descobertas.
 
 O [módulo lunar](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. Com este projeto, você pode aprender a estender os gestos de base do HoloLens com o acompanhamento de duas mãos e a entrada do controlador Xbox, criar objetos reativos para o mapeamento de superfície e o plano, localizando e implementando sistemas de menu simples. Todos os componentes do projeto estão disponíveis para uso em suas próprias experiências de aplicativo de realidade misturada.
+
+## <a name="demo-video"></a>Vídeo de demonstração 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+Registrado com o HoloLens 2 usando a captura de realidade misturada
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Reconsiderando experiências clássicas para a realidade mista do Windows
 
@@ -38,7 +43,7 @@ Por que Atari e tantas outras empresas de jogos decidem reconsiderar a entrada?
 
 Um criança percorrendo um intrigada será naturalmente o mais novo computador flashiest. Mas o lunar Lander apresenta um mecânico de entrada romance que me esgotou da sua escala.
 
-O lander lunar usa dois botões para girar o envio para a esquerda e para a direita e uma **alavanca de Thrustmaster** para controlar a quantidade de Thrustmaster que o navio produz. Essa alavanca dá aos usuários um determinado nível de astúcia que um joystick regular não pode fornecer. Também é um componente comum às ferramentas cockpit de aviação modernas. Atari queria lander lunar para aprofundar o usuário na sensação de que eles estavam na verdade, realizando um piloto de um módulo lunar. Esse conceito é conhecido como **tactile imersão** .
+O lander lunar usa dois botões para girar o envio para a esquerda e para a direita e uma **alavanca de Thrustmaster** para controlar a quantidade de Thrustmaster que o navio produz. Essa alavanca dá aos usuários um determinado nível de astúcia que um joystick regular não pode fornecer. Também é um componente comum às ferramentas cockpit de aviação modernas. Atari queria lander lunar para aprofundar o usuário na sensação de que eles estavam na verdade, realizando um piloto de um módulo lunar. Esse conceito é conhecido como **tactile imersão**.
 
 TACTILE imersão é a experiência de comentários de sensor de execução de ações de redundante. Nesse caso, a ação repetitiva de ajustar a alavanca de limitação e a rotação que nossos olhos veem e nossos ouvidos ouvem, ajuda a conectar o jogador ao ato de pouso de uma entrega na superfície da lua. Esse conceito pode ser vinculado ao conceito de psicológica de "Flow". Onde um usuário é totalmente absorvido em uma tarefa que tem a combinação certa de desafio e recompensa, ou ainda mais simplesmente, eles estão "na zona".
 
@@ -62,7 +67,7 @@ Exigir que o usuário Aprenda o esquema de entrada, controle a remessa e faça c
 
 A entrada base do HoloLens tem apenas dois gestos – [toque e flor](../../design/gaze-and-commit.md#composite-gestures). Os usuários não precisam lembrar nuances contextuais ou uma lista lavanderia de gestos específicos que tornam a interface da plataforma versátil e fácil de aprender. Embora o sistema possa expor apenas esses dois gestos, o HoloLens como um dispositivo é capaz de rastrear duas mãos ao mesmo tempo. Nosso ode para lunar Lander é um [aplicativo de imersão](../../design/app-model.md) que significa que temos a capacidade de estender o conjunto base de gestos para aproveitar duas mãos e adicionar nossa própria agradavelmente tactile significa para a navegação de módulo lunar.
 
-Voltando ao esquema de controle original, **precisávamos resolver para Thrustmaster e Rotation** . A limitação é a rotação no novo contexto adiciona um eixo adicional (tecnicamente, dois, mas o eixo Y é menos importante para a aterrissagem). Os dois movimentos de envio distintos naturalmente se prestam para serem mapeados para cada mão:
+Voltando ao esquema de controle original, **precisávamos resolver para Thrustmaster e Rotation**. A limitação é a rotação no novo contexto adiciona um eixo adicional (tecnicamente, dois, mas o eixo Y é menos importante para a aterrissagem). Os dois movimentos de envio distintos naturalmente se prestam para serem mapeados para cada mão:
 
 ![Gesto de tocar e arrastar para girar Lander em todos os três eixos](images/module-handdrag.gif)<br>
 *Gesto de tocar e arrastar para girar Lander em todos os três eixos*
@@ -73,7 +78,7 @@ A alavanca no computador original de alta prioridade mapeada para uma escala de 
 
 **Rotação**
 
-Isso é um pouco mais complicado. Ter os botões "girar" de Holographic para tocar para uma experiência terrível. Não há um controle físico para aproveitar, portanto, o comportamento deve vir da manipulação de um objeto que representa o Lander ou com o próprio Lander. Nós reunimos um método usando TAP-and-arraste, que permite que um usuário "empurre e empurre" com eficiência na direção que desejam que ele tenha uma face. Sempre que um usuário toca e se mantém, o ponto no espaço em que o gesto foi iniciado se torna a origem para rotação. Arrastar da origem converte o Delta da tradução do lado (X, Y, Z) e o aplica ao Delta dos valores de rotação do Lander. Ou, mais simplesmente, *arrastando para a esquerda <-> direito, < > para baixo, encaminhar <-> de volta em espaços gira a remessa de acordo* .
+Isso é um pouco mais complicado. Ter os botões "girar" de Holographic para tocar para uma experiência terrível. Não há um controle físico para aproveitar, portanto, o comportamento deve vir da manipulação de um objeto que representa o Lander ou com o próprio Lander. Nós reunimos um método usando TAP-and-arraste, que permite que um usuário "empurre e empurre" com eficiência na direção que desejam que ele tenha uma face. Sempre que um usuário toca e se mantém, o ponto no espaço em que o gesto foi iniciado se torna a origem para rotação. Arrastar da origem converte o Delta da tradução do lado (X, Y, Z) e o aplica ao Delta dos valores de rotação do Lander. Ou, mais simplesmente, *arrastando para a esquerda <-> direito, < > para baixo, encaminhar <-> de volta em espaços gira a remessa de acordo*.
 
 Como o HoloLens pode acompanhar duas mãos, a rotação pode ser atribuída à mão à direita enquanto o ThrustMaster é controlado pela esquerda. Astúcia é o fator determinante para o sucesso neste jogo. A *sensação* dessas interações é a prioridade mais alta absoluta. Especialmente no contexto de tactile imersão. Um envio que reage muito rapidamente seria desnecessariamente difícil de ser direcionado, enquanto um pouco lento exigiria que o usuário "Envie por push e puxe" na entrega por um longo período de tempo estranho.
 
@@ -81,12 +86,12 @@ Como o HoloLens pode acompanhar duas mãos, a rotação pode ser atribuída à m
 
 Enquanto os gestos de mão no HoloLens fornecem um método romance de controle refinado, ainda há uma certa falta de comentários de tactile "verdadeiro" que você obtém de controles analógicos. Conectar um controlador de jogo do Xbox permite voltar essa sensação de física, aproveitando os pentes de controle para manter o controle refinado.
 
-Há várias maneiras de aplicar o esquema de controle relativamente direto ao controlador Xbox. Como estamos tentando permanecer o mais próximo possível da configuração original, o **Thrustmaster** mapeia melhor para o botão disparador. Esses botões são controles analógicos, o que significa que eles têm mais do que Estados simples *e desligados* , eles realmente respondem ao grau de pressão colocados neles. Isso nos dá um constructo semelhante à **alavanca de Thrustmaster** . Ao contrário do jogo original e do gesto de mão, esse controle recortará a Thrustmaster do navio quando um usuário parar de colocar a pressão no gatilho. Ele ainda dá ao usuário o mesmo grau de astúcia que o jogo de Altova original.
+Há várias maneiras de aplicar o esquema de controle relativamente direto ao controlador Xbox. Como estamos tentando permanecer o mais próximo possível da configuração original, o **Thrustmaster** mapeia melhor para o botão disparador. Esses botões são controles analógicos, o que significa que eles têm mais do que Estados simples *e desligados* , eles realmente respondem ao grau de pressão colocados neles. Isso nos dá um constructo semelhante à **alavanca de Thrustmaster**. Ao contrário do jogo original e do gesto de mão, esse controle recortará a Thrustmaster do navio quando um usuário parar de colocar a pressão no gatilho. Ele ainda dá ao usuário o mesmo grau de astúcia que o jogo de Altova original.
 
 ![Thumbstick à esquerda é mapeada para guinada e roll, a Thumbstick direita é mapeada para pitch e roll](images/thumbsticksidebyside.gif)<br>
 *O Thumbstick esquerdo é mapeado para guinada e roll; o Thumbstick direito é mapeado para pitch e roll*
 
-O Thumbsticks duplo se presta naturalmente ao controle da rotação de remessa. Infelizmente, há 3 eixos nos quais a remessa pode girar e duas Thumbsticks que dão suporte a dois eixos. Essa incompatibilidade significa que um Thumbstick controla um eixo; ou há uma sobreposição de eixos para o Thumbsticks. A solução anterior acabou de se sentir "quebrada", já que Thumbsticks de forma inerente mesclar seus valores X e Y locais. A última solução exigiu algum teste para descobrir quais eixos redundantes se sentem mais naturais. O exemplo final usa a *guinada* e *roll* (eixos Y e x) para o Thumbstick esquerdo, e *pitch* e *roll* (eixos Z e x) para a Thumbstick direita. Isso parecia que a *rolagem* mais natural parece ser bem emparelhada com *desvio* e *inclinação* . Como uma observação adicional, o uso de Thumbsticks para *roll* também ocorre para dobrar o valor de rotação; é muito divertido ter os loops Lander.
+O Thumbsticks duplo se presta naturalmente ao controle da rotação de remessa. Infelizmente, há 3 eixos nos quais a remessa pode girar e duas Thumbsticks que dão suporte a dois eixos. Essa incompatibilidade significa que um Thumbstick controla um eixo; ou há uma sobreposição de eixos para o Thumbsticks. A solução anterior acabou de se sentir "quebrada", já que Thumbsticks de forma inerente mesclar seus valores X e Y locais. A última solução exigiu algum teste para descobrir quais eixos redundantes se sentem mais naturais. O exemplo final usa a *guinada* e *roll* (eixos Y e x) para o Thumbstick esquerdo, e *pitch* e *roll* (eixos Z e x) para a Thumbstick direita. Isso parecia que a *rolagem* mais natural parece ser bem emparelhada com *desvio* e *inclinação*. Como uma observação adicional, o uso de Thumbsticks para *roll* também ocorre para dobrar o valor de rotação; é muito divertido ter os loops Lander.
 
 Este aplicativo de exemplo demonstra como o reconhecimento espacial e tactile imersão podem alterar significativamente uma experiência graças às modalidades de entrada extensível da realidade mista do Windows. Embora o lunar Lander possa estar perto de 40 anos de idade, os conceitos expostos com esse pequeno octógono-com-pernas residirão sempre. Ao imaginar o futuro, por que não examinar o passado?
 
@@ -104,6 +109,7 @@ Você pode encontrar scripts e pré-fabricados para o aplicativo de exemplo de m
 </table>
 
 ## <a name="see-also"></a>Consulte também
-* [Controladores de movimentos](../../design/motion-controllers.md)
-* [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)
-* [Tipos de aplicativos de realidade misturada](../../design/types-of-mixed-reality-apps.md)
+* [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

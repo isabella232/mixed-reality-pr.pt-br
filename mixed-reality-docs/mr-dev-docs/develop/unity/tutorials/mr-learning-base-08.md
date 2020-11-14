@@ -1,18 +1,18 @@
 ---
 title: Tutoriais de introdução – 8. Como usar o acompanhamento de olho
-description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar um aplicativo de realidade misturada.
+description: Este curso mostra como usar o acompanhamento com os olhos com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: a87b613ca47eb0ed6695a55c8e5afe0f24de5937
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695606"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353494"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
 
@@ -32,7 +32,7 @@ Neste tutorial, você aprenderá a habilitar o acompanhamento de olho para o Hol
 
 No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitários > **Configurar Projeto do Unity** para abrir a janela **Configurador de Projeto do MRTK** e, em seguida, na seção **Recursos da UWP** , verifique se a opção **Habilitar Funcionalidade de Entrada de Foco de Olho** está esmaecida:
 
-![mr-learning-base](images/mr-learning-base/base-08-section1-step1-1.png)
+![Janela Configurador de Projeto do MRTK no Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
 > A funcionalidade de Entrada de Foco deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
@@ -46,7 +46,7 @@ Na janela Hierarquia, selecione o objeto **MixedRealityToolkit** e, na janela In
 * Clone o **DefaultMixedRealityPointerProfile** e dê a ele um nome adequado, por exemplo, _GettingStarted_MixedRealityPointerProfile_
 * Localize a seção **Configurações de Foco** e marque a caixa de seleção **Acompanhamento de Olho Está Habilitado**
 
-![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
+![Componente MixedRealityToolkit do Unity com os perfis recém-criados aplicados e o acompanhamento com os olhos habilitado](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
 > Para lembrar como clonar perfis de MRTK, consulte as instruções em [Configurando os perfis do MRTK](mr-learning-base-03.md).
@@ -59,20 +59,20 @@ Na janela hierarquia, selecione o objeto **MixedRealityToolkit** e, em seguida, 
 * Clone o **DefaultMixedRealityInputSimulationProfile** e dê a ele um nome adequado, por exemplo, _GettingStarted_MixedRealityInputSimulationProfile_
 * Localize a seção **Simulação de Olho** e marque a caixa de seleção **Simular Posição do Olho**
 
-![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
+![Componente MixedRealityToolkit do Unity com o perfil recém-criado aplicado e a simulação de olho habilitada](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>Como adicionar acompanhamento de olho a objetos
 
 Na janela Hierarquia, expanda o objeto RoverExplorer > **Botões** e, para cada um dos três objetos de botão filho, expanda e selecione o objeto SeeItSayItLabel > **TextMeshPro** :
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity com o objeto TextMeshPro selecionado](images/mr-learning-base/base-08-section4-step1-1.png)
 
 Com os três objetos TextMeshPro ainda selecionados, na janela Inspetor, use o botão **Adicionar Componente** para adicionar os seguintes componentes a todos os objetos selecionados:
 
 * Componente **Colisor de Caixa**
 * Componente **EyeTrackingTarget**
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
+![Unity com o objeto TextMeshPro selecionado e os componentes adicionados](images/mr-learning-base/base-08-section4-step1-2.png)
 
 Na janela Hierarquia, selecione o objeto **Dicas** > SeeItSayItLabel > **TextMeshPro** e configure o componente **EyeTrackingTarget** da seguinte maneira:
 
@@ -87,13 +87,13 @@ Na janela Hierarquia, selecione o objeto **Dicas** > SeeItSayItLabel > **TextMes
   * Na lista suspensa **Sem Função** , selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
   * Defina o argumento como **0,04** para redefinir o tamanho da fonte de volta para 0,04
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
+![Unity com o objeto Hints TextMeshPro selecionado e o componente EyeTrackingTarget configurado](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Repita** esta etapa para o objeto **Explodir** > SeeItSayItLabel > **TextMeshPro** e o objeto **Redefinir** > SeeItSayItLabel > **TextMeshPro** .
+**Repita** esta etapa para o objeto **Explodir** > SeeItSayItLabel > **TextMeshPro** e o objeto **Redefinir** > SeeItSayItLabel > **TextMeshPro**.
 
 Se agora você entrar no modo de Jogo e pressionar e manter o botão direito do mouse enquanto move o mouse até que o foco atinja um dos rótulos, verá o tamanho da fonte aumentar em 50% e ser redefinido de volta ao seu tamanho original ao desviar o olhar:
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
+![Modo de exibição dividida do Modo de reprodução do Unity com o foco sobre o rótulo do botão Detalhar do destino de acompanhamento com os olhos](images/mr-learning-base/base-08-section4-step1-4.png)
 
 ## <a name="congratulations"></a>Parabéns
 
