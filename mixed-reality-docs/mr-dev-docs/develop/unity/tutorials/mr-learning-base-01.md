@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de introdução – 1. Introdução
+title: Tutoriais de introdução – 1. Introdução aos Tutoriais de introdução
 description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar um aplicativo de realidade misturada do zero.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,51 +7,51 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695354"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416894"
 ---
-# <a name="1-introduction"></a><span data-ttu-id="6c4fa-105">1. Introdução</span><span class="sxs-lookup"><span data-stu-id="6c4fa-105">1. Introduction</span></span>
+# <a name="1-introduction-to-the-getting-started-tutorials"></a><span data-ttu-id="fe72d-105">1. Introdução aos Tutoriais de introdução</span><span class="sxs-lookup"><span data-stu-id="fe72d-105">1. Introduction to the Getting started tutorials</span></span>
 
-## <a name="overview"></a><span data-ttu-id="6c4fa-106">Visão geral</span><span class="sxs-lookup"><span data-stu-id="6c4fa-106">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="fe72d-106">Visão geral</span><span class="sxs-lookup"><span data-stu-id="fe72d-106">Overview</span></span>
 
-<span data-ttu-id="6c4fa-107">Bem-vindo(a) à série de tutoriais d Introdução!</span><span class="sxs-lookup"><span data-stu-id="6c4fa-107">Welcome to the Getting Started tutorial series!</span></span> <span data-ttu-id="6c4fa-108">No decorrer destes tutoriais, você aprenderá sobre o MRTK (Kit de ferramentas de realidade misturada) e alguns dos recursos que ele tem a oferecer.</span><span class="sxs-lookup"><span data-stu-id="6c4fa-108">Over the course of these tutorials, you'll learn about the Mixed Reality Toolkit (MRTK) and some of the features it has to offer.</span></span> <span data-ttu-id="6c4fa-109">Você também criará uma experiência de realidade misturada na qual o usuário pode explorar um holograma modelado conforme o Mars Rover da NASA.</span><span class="sxs-lookup"><span data-stu-id="6c4fa-109">You'll also build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover.</span></span> <span data-ttu-id="6c4fa-110">Ao final desta série, você terá uma noção do MRTK e como ele pode acelerar seu processo de desenvolvimento.</span><span class="sxs-lookup"><span data-stu-id="6c4fa-110">By the end of this series, you'll have a firm grasp of MRTK and how it can speed up your development process.</span></span>
+<span data-ttu-id="fe72d-107">Bem-vindo(a) à série de tutoriais d Introdução!</span><span class="sxs-lookup"><span data-stu-id="fe72d-107">Welcome to the Getting Started tutorial series!</span></span> <span data-ttu-id="fe72d-108">No decorrer destes tutoriais, você aprenderá sobre o MRTK (Kit de ferramentas de realidade misturada) e alguns dos recursos que ele tem a oferecer.</span><span class="sxs-lookup"><span data-stu-id="fe72d-108">Over the course of these tutorials, you'll learn about the Mixed Reality Toolkit (MRTK) and some of the features it has to offer.</span></span> <span data-ttu-id="fe72d-109">Você também criará uma experiência de realidade misturada na qual o usuário pode explorar um holograma modelado conforme o Mars Rover da NASA.</span><span class="sxs-lookup"><span data-stu-id="fe72d-109">You'll also build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover.</span></span> <span data-ttu-id="fe72d-110">Ao final desta série, você terá uma noção do MRTK e como ele pode acelerar seu processo de desenvolvimento.</span><span class="sxs-lookup"><span data-stu-id="fe72d-110">By the end of this series, you'll have a firm grasp of MRTK and how it can speed up your development process.</span></span>
 
-<span data-ttu-id="6c4fa-111">Os tutoriais desta série foram concebidos de modo sequencial, portanto, siga-os na ordem correta:</span><span class="sxs-lookup"><span data-stu-id="6c4fa-111">Tutorials in this series are meant to be sequential, so please go through them in the correct order:</span></span>
+<span data-ttu-id="fe72d-111">Os tutoriais desta série foram concebidos de modo sequencial, portanto, siga-os na ordem correta:</span><span class="sxs-lookup"><span data-stu-id="fe72d-111">Tutorials in this series are meant to be sequential, so please go through them in the correct order:</span></span>
 
-1. <span data-ttu-id="6c4fa-112">[Introdução](mr-learning-base-01.md) (Você já está aqui)</span><span class="sxs-lookup"><span data-stu-id="6c4fa-112">[Introduction](mr-learning-base-01.md) (You're already here)</span></span>
-2. [<span data-ttu-id="6c4fa-113">Como inicializar o seu projeto e implantar o primeiro aplicativo</span><span class="sxs-lookup"><span data-stu-id="6c4fa-113">Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
-3. [<span data-ttu-id="6c4fa-114">Como configurar os perfis do MRTK</span><span class="sxs-lookup"><span data-stu-id="6c4fa-114">Configuring the MRTK profiles</span></span>](mr-learning-base-03.md)
-4. [<span data-ttu-id="6c4fa-115">Como posicionar objetos na cena</span><span class="sxs-lookup"><span data-stu-id="6c4fa-115">Positioning objects in the scene</span></span>](mr-learning-base-04.md)
-5. [<span data-ttu-id="6c4fa-116">Criar conteúdo dinâmico usando Solucionadores</span><span class="sxs-lookup"><span data-stu-id="6c4fa-116">Creating dynamic content using Solvers</span></span>](mr-learning-base-05.md)
-6. [<span data-ttu-id="6c4fa-117">Como criar interfaces do usuário</span><span class="sxs-lookup"><span data-stu-id="6c4fa-117">Creating user interfaces</span></span>](mr-learning-base-06.md)
-7. [<span data-ttu-id="6c4fa-118">Como interagir com objetos 3D</span><span class="sxs-lookup"><span data-stu-id="6c4fa-118">Interacting with 3D objects</span></span>](mr-learning-base-07.md)
-8. [<span data-ttu-id="6c4fa-119">Como usar o acompanhamento de olho</span><span class="sxs-lookup"><span data-stu-id="6c4fa-119">Using eye-tracking</span></span>](mr-learning-base-08.md)
-9. [<span data-ttu-id="6c4fa-120">Como usar comandos de voz</span><span class="sxs-lookup"><span data-stu-id="6c4fa-120">Using voice commands</span></span>](mr-learning-base-09.md)
+1. <span data-ttu-id="fe72d-112">[Introdução](mr-learning-base-01.md) (Você já está aqui)</span><span class="sxs-lookup"><span data-stu-id="fe72d-112">[Introduction](mr-learning-base-01.md) (You're already here)</span></span>
+2. [<span data-ttu-id="fe72d-113">Como inicializar o seu projeto e implantar o primeiro aplicativo</span><span class="sxs-lookup"><span data-stu-id="fe72d-113">Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
+3. [<span data-ttu-id="fe72d-114">Como configurar os perfis do MRTK</span><span class="sxs-lookup"><span data-stu-id="fe72d-114">Configuring the MRTK profiles</span></span>](mr-learning-base-03.md)
+4. [<span data-ttu-id="fe72d-115">Como posicionar objetos na cena</span><span class="sxs-lookup"><span data-stu-id="fe72d-115">Positioning objects in the scene</span></span>](mr-learning-base-04.md)
+5. [<span data-ttu-id="fe72d-116">Criar conteúdo dinâmico usando Solucionadores</span><span class="sxs-lookup"><span data-stu-id="fe72d-116">Creating dynamic content using Solvers</span></span>](mr-learning-base-05.md)
+6. [<span data-ttu-id="fe72d-117">Como criar interfaces do usuário</span><span class="sxs-lookup"><span data-stu-id="fe72d-117">Creating user interfaces</span></span>](mr-learning-base-06.md)
+7. [<span data-ttu-id="fe72d-118">Como interagir com objetos 3D</span><span class="sxs-lookup"><span data-stu-id="fe72d-118">Interacting with 3D objects</span></span>](mr-learning-base-07.md)
+8. [<span data-ttu-id="fe72d-119">Como usar o acompanhamento de olho</span><span class="sxs-lookup"><span data-stu-id="fe72d-119">Using eye-tracking</span></span>](mr-learning-base-08.md)
+9. [<span data-ttu-id="fe72d-120">Como usar comandos de voz</span><span class="sxs-lookup"><span data-stu-id="fe72d-120">Using voice commands</span></span>](mr-learning-base-09.md)
 
-## <a name="objectives"></a><span data-ttu-id="6c4fa-121">Objetivos</span><span class="sxs-lookup"><span data-stu-id="6c4fa-121">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="fe72d-121">Objetivos</span><span class="sxs-lookup"><span data-stu-id="fe72d-121">Objectives</span></span>
 
-* <span data-ttu-id="6c4fa-122">Saiba como configurar o Unity para MRTK</span><span class="sxs-lookup"><span data-stu-id="6c4fa-122">Learn how to configure Unity for MRTK</span></span>
-* <span data-ttu-id="6c4fa-123">Saiba como criar e implantar em seu dispositivo</span><span class="sxs-lookup"><span data-stu-id="6c4fa-123">Learn how to build and deploy to your device</span></span>
-* <span data-ttu-id="6c4fa-124">Saiba como usar alguns dos principais recursos do MRTK</span><span class="sxs-lookup"><span data-stu-id="6c4fa-124">Learn how to use some of MRTK's key features</span></span>
-* <span data-ttu-id="6c4fa-125">Criar uma experiência de realidade misturada completa</span><span class="sxs-lookup"><span data-stu-id="6c4fa-125">Create a complete mixed reality experience</span></span>
+* <span data-ttu-id="fe72d-122">Saiba como configurar o Unity para MRTK</span><span class="sxs-lookup"><span data-stu-id="fe72d-122">Learn how to configure Unity for MRTK</span></span>
+* <span data-ttu-id="fe72d-123">Saiba como criar e implantar em seu dispositivo</span><span class="sxs-lookup"><span data-stu-id="fe72d-123">Learn how to build and deploy to your device</span></span>
+* <span data-ttu-id="fe72d-124">Saiba como usar alguns dos principais recursos do MRTK</span><span class="sxs-lookup"><span data-stu-id="fe72d-124">Learn how to use some of MRTK's key features</span></span>
+* <span data-ttu-id="fe72d-125">Criar uma experiência de realidade misturada completa</span><span class="sxs-lookup"><span data-stu-id="fe72d-125">Create a complete mixed reality experience</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6c4fa-126">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6c4fa-126">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fe72d-126">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="fe72d-126">Prerequisites</span></span>
 
-* <span data-ttu-id="6c4fa-127">Um PC com Windows 10 configurado com as [ferramentas corretas instaladas](../../install-the-tools.md)</span><span class="sxs-lookup"><span data-stu-id="6c4fa-127">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
-* <span data-ttu-id="6c4fa-128">[SDK do Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 ou posterior</span><span class="sxs-lookup"><span data-stu-id="6c4fa-128">[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later</span></span>
-* <span data-ttu-id="6c4fa-129">Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span><span class="sxs-lookup"><span data-stu-id="6c4fa-129">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
-* <span data-ttu-id="6c4fa-130"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019.3.15 instalado e o módulo de suporte de Build da Plataforma Universal do Windows adicionado</span><span class="sxs-lookup"><span data-stu-id="6c4fa-130"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added</span></span>
-
-> [!CAUTION]
-> <span data-ttu-id="6c4fa-131">A versão recomendada do MRTK para esta série de tutoriais é a MRTK 2.4.0.</span><span class="sxs-lookup"><span data-stu-id="6c4fa-131">The recommended MRTK version for this tutorial series is MRTK 2.4.0.</span></span>
+* <span data-ttu-id="fe72d-127">Um PC com Windows 10 configurado com as [ferramentas corretas instaladas](../../install-the-tools.md)</span><span class="sxs-lookup"><span data-stu-id="fe72d-127">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)</span></span>
+* <span data-ttu-id="fe72d-128">[SDK do Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 ou posterior</span><span class="sxs-lookup"><span data-stu-id="fe72d-128">[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later</span></span>
+* <span data-ttu-id="fe72d-129">Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span><span class="sxs-lookup"><span data-stu-id="fe72d-129">A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)</span></span>
+* <span data-ttu-id="fe72d-130"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado</span><span class="sxs-lookup"><span data-stu-id="fe72d-130"><a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="6c4fa-132">A versão recomendada do Unity para esta série de tutoriais é o Unity 2019.3.15.</span><span class="sxs-lookup"><span data-stu-id="6c4fa-132">The recommended Unity version for this tutorial series is Unity 2019.3.15.</span></span> <span data-ttu-id="6c4fa-133">Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.</span><span class="sxs-lookup"><span data-stu-id="6c4fa-133">This supersedes any Unity version requirements stated in the prerequisites linked above.</span></span>
+> <span data-ttu-id="fe72d-131">A versão recomendada do MRTK para esta série de tutoriais é a MRTK 2.4.0.</span><span class="sxs-lookup"><span data-stu-id="fe72d-131">The recommended MRTK version for this tutorial series is MRTK 2.4.0.</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="fe72d-132">A versão recomendada do Unity para esta série de tutoriais é o Unity 2019 LTS.</span><span class="sxs-lookup"><span data-stu-id="fe72d-132">The recommended Unity version for this tutorial series is Unity 2019 LTS.</span></span> <span data-ttu-id="fe72d-133">Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.</span><span class="sxs-lookup"><span data-stu-id="fe72d-133">This supersedes any Unity version requirements stated in the prerequisites linked above.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="6c4fa-134">Próximo tutorial: 2. Como inicializar o seu projeto e implantar o primeiro aplicativo</span><span class="sxs-lookup"><span data-stu-id="6c4fa-134">Next Tutorial: 2. Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
+> [<span data-ttu-id="fe72d-134">Próximo tutorial: 2. Como inicializar o seu projeto e implantar o primeiro aplicativo</span><span class="sxs-lookup"><span data-stu-id="fe72d-134">Next Tutorial: 2. Initializing your project and deploying your first application</span></span>](mr-learning-base-02.md)
 

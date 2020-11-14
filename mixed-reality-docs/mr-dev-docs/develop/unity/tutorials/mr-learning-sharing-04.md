@@ -1,63 +1,63 @@
 ---
 title: Tutoriais de recursos multiusuário – 4. Compartilhar movimentações de objeto com vários usuários
-description: Conclua este curso para aprender a implementar experiências compartilhadas de vários usuários em um aplicativo do HoloLens 2.
+description: Conclua este curso para aprender a compartilhar movimentos de objetos com vários usuários em um aplicativo do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696035"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353414"
 ---
-# <a name="4-sharing-object-movements-with-multiple-users"></a><span data-ttu-id="b3090-105">4. Compartilhar movimentações de objeto com vários usuários</span><span class="sxs-lookup"><span data-stu-id="b3090-105">4. Sharing object movements with multiple users</span></span>
+# <a name="4-sharing-object-movements-with-multiple-users"></a><span data-ttu-id="cd6cc-105">4. Compartilhar movimentações de objeto com vários usuários</span><span class="sxs-lookup"><span data-stu-id="cd6cc-105">4. Sharing object movements with multiple users</span></span>
 
-<span data-ttu-id="b3090-106">Neste tutorial, você aprenderá a compartilhar os movimentos de objetos, de modo que todos os participantes de uma experiência compartilhada possam colaborar e exibir as interações uns dos outros.</span><span class="sxs-lookup"><span data-stu-id="b3090-106">In this tutorial, you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each other's interactions.</span></span>
+<span data-ttu-id="cd6cc-106">Neste tutorial, você aprenderá a compartilhar os movimentos de objetos, de modo que todos os participantes de uma experiência compartilhada possam colaborar e exibir as interações uns dos outros.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-106">In this tutorial, you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each other's interactions.</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="b3090-107">Objetivos</span><span class="sxs-lookup"><span data-stu-id="b3090-107">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="cd6cc-107">Objetivos</span><span class="sxs-lookup"><span data-stu-id="cd6cc-107">Objectives</span></span>
 
-* <span data-ttu-id="b3090-108">Configurar o projeto para compartilhar os movimentos de objetos</span><span class="sxs-lookup"><span data-stu-id="b3090-108">Configure your project to share the movements of objects</span></span>
-* <span data-ttu-id="b3090-109">Saber como criar um aplicativo básico de colaboração de vários usuários</span><span class="sxs-lookup"><span data-stu-id="b3090-109">Learn how to build a basic multi-user collaborative app</span></span>
+* <span data-ttu-id="cd6cc-108">Configurar o projeto para compartilhar os movimentos de objetos</span><span class="sxs-lookup"><span data-stu-id="cd6cc-108">Configure your project to share the movements of objects</span></span>
+* <span data-ttu-id="cd6cc-109">Saber como criar um aplicativo básico de colaboração de vários usuários</span><span class="sxs-lookup"><span data-stu-id="cd6cc-109">Learn how to build a basic multi-user collaborative app</span></span>
 
-## <a name="preparing-the-scene"></a><span data-ttu-id="b3090-110">Preparando a cena</span><span class="sxs-lookup"><span data-stu-id="b3090-110">Preparing the scene</span></span>
+## <a name="preparing-the-scene"></a><span data-ttu-id="cd6cc-110">Preparando a cena</span><span class="sxs-lookup"><span data-stu-id="cd6cc-110">Preparing the scene</span></span>
 
-<span data-ttu-id="b3090-111">Nesta seção, você vai preparar a cena adicionando o pré-fabricado do tutorial.</span><span class="sxs-lookup"><span data-stu-id="b3090-111">In this section, you will prepare the scene by adding the tutorial prefab.</span></span>
+<span data-ttu-id="cd6cc-111">Nesta seção, você vai preparar a cena adicionando o pré-fabricado do tutorial.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-111">In this section, you will prepare the scene by adding the tutorial prefab.</span></span>
 
-<span data-ttu-id="b3090-112">Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Pré-fabricados** e arraste o pré-fabricado **TableAnchor** sobre o objeto **SharedPlayground** na janela Hierarquia para adicioná-lo à cena como um filho do objeto SharedPlayground:</span><span class="sxs-lookup"><span data-stu-id="b3090-112">In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **TableAnchor** prefab onto the **SharedPlayground** object in the Hierarchy window to add it to your scene as a child of the SharedPlayground object:</span></span>
+<span data-ttu-id="cd6cc-112">Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Pré-fabricados** e arraste o pré-fabricado **TableAnchor** sobre o objeto **SharedPlayground** na janela Hierarquia para adicioná-lo à cena como um filho do objeto SharedPlayground:</span><span class="sxs-lookup"><span data-stu-id="cd6cc-112">In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **TableAnchor** prefab onto the **SharedPlayground** object in the Hierarchy window to add it to your scene as a child of the SharedPlayground object:</span></span>
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![Unity com o pré-fabricado TableAnchor recém-adicionado selecionado](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
-## <a name="configuring-pun-to-instantiate-the-objects"></a><span data-ttu-id="b3090-114">Como configurar o PUN para criar uma instância dos objetos</span><span class="sxs-lookup"><span data-stu-id="b3090-114">Configuring PUN to instantiate the objects</span></span>
+## <a name="configuring-pun-to-instantiate-the-objects"></a><span data-ttu-id="cd6cc-114">Como configurar o PUN para criar uma instância dos objetos</span><span class="sxs-lookup"><span data-stu-id="cd6cc-114">Configuring PUN to instantiate the objects</span></span>
 
-<span data-ttu-id="b3090-115">Nesta seção, você vai configurar o projeto para usar a experiência do Explorador do Rover criada durante os [Tutoriais de introdução](mr-learning-base-01.md) e definir onde ele será instanciado.</span><span class="sxs-lookup"><span data-stu-id="b3090-115">In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](mr-learning-base-01.md) and define where it will be instantiated.</span></span>
+<span data-ttu-id="cd6cc-115">Nesta seção, você vai configurar o projeto para usar a experiência do Explorador do Rover criada durante os [Tutoriais de introdução](mr-learning-base-01.md) e definir onde ele será instanciado.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-115">In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](mr-learning-base-01.md) and define where it will be instantiated.</span></span>
 
-<span data-ttu-id="b3090-116">Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Recursos** .</span><span class="sxs-lookup"><span data-stu-id="b3090-116">In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.</span></span>
+<span data-ttu-id="cd6cc-116">Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Recursos**.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-116">In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.</span></span>
 
-<span data-ttu-id="b3090-117">Na janela Hierarquia, expanda o objeto **NetworkLobby** e selecione o objeto filho **NetworkRoom** . Em seguida, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="b3090-117">In the Hierarchy window, expand the **NetworkLobby** object and select the **NetworkRoom** child object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:</span></span>
+<span data-ttu-id="cd6cc-117">Na janela Hierarquia, expanda o objeto **NetworkLobby** e selecione o objeto filho **NetworkRoom**. Em seguida, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="cd6cc-117">In the Hierarchy window, expand the **NetworkLobby** object and select the **NetworkRoom** child object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:</span></span>
 
-* <span data-ttu-id="b3090-118">Para o campo **Pré-fabricado do Rover Explorer** , atribua o pré-fabricado **RoverExplorer_Complete_Variant** da pasta Recursos</span><span class="sxs-lookup"><span data-stu-id="b3090-118">To the **Rover Explorer Prefab** field, assign the **RoverExplorer_Complete_Variant** prefab from the Resources folder</span></span>
+* <span data-ttu-id="cd6cc-118">Para o campo **Pré-fabricado do Rover Explorer** , atribua o pré-fabricado **RoverExplorer_Complete_Variant** da pasta Recursos</span><span class="sxs-lookup"><span data-stu-id="cd6cc-118">To the **Rover Explorer Prefab** field, assign the **RoverExplorer_Complete_Variant** prefab from the Resources folder</span></span>
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![Unity com o componente Sala do Photon parcialmente configurado](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
-<span data-ttu-id="b3090-120">Com o objeto filho **NetworkRoom** ainda selecionado, na janela Hierarquia, expanda o objeto **TableAnchor** e, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="b3090-120">With the **NetworkRoom** child object still selected, in the Hierarchy window, expand the **TableAnchor** object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:</span></span>
+<span data-ttu-id="cd6cc-120">Com o objeto filho **NetworkRoom** ainda selecionado, na janela Hierarquia, expanda o objeto **TableAnchor** e, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="cd6cc-120">With the **NetworkRoom** child object still selected, in the Hierarchy window, expand the **TableAnchor** object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:</span></span>
 
-* <span data-ttu-id="b3090-121">No campo **Localização do Explorador do Rover** , atribua o objeto filho TableAnchor > **Table** por meio da janela Hierarquia</span><span class="sxs-lookup"><span data-stu-id="b3090-121">To the **Rover Explorer Location** field, assign the TableAnchor > **Table** child object from the Hierarchy window</span></span>
+* <span data-ttu-id="cd6cc-121">No campo **Localização do Explorador do Rover** , atribua o objeto filho TableAnchor > **Table** por meio da janela Hierarquia</span><span class="sxs-lookup"><span data-stu-id="cd6cc-121">To the **Rover Explorer Location** field, assign the TableAnchor > **Table** child object from the Hierarchy window</span></span>
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![Unity com o componente Sala do Photon configurado](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
-## <a name="trying-the-experience-with-shared-object-movement"></a><span data-ttu-id="b3090-123">Como testar a experiência com a movimentação de objetos compartilhados</span><span class="sxs-lookup"><span data-stu-id="b3090-123">Trying the experience with shared object movement</span></span>
+## <a name="trying-the-experience-with-shared-object-movement"></a><span data-ttu-id="cd6cc-123">Como testar a experiência com a movimentação de objetos compartilhados</span><span class="sxs-lookup"><span data-stu-id="cd6cc-123">Trying the experience with shared object movement</span></span>
 
-<span data-ttu-id="b3090-124">Se você criar e implantar agora o projeto do Unity no HoloLens e, no Unity, selecionar o botão Reproduzir para entrar no Modo de jogo enquanto o aplicativo estiver em execução no HoloLens, verá o objeto se mover no Unity ao mover o objeto no HoloLens:</span><span class="sxs-lookup"><span data-stu-id="b3090-124">If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the app is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:</span></span>
+<span data-ttu-id="cd6cc-124">Se você criar e implantar agora o projeto do Unity no HoloLens e, no Unity, selecionar o botão Reproduzir para entrar no Modo de jogo enquanto o aplicativo estiver em execução no HoloLens, verá o objeto se mover no Unity ao mover o objeto no HoloLens:</span><span class="sxs-lookup"><span data-stu-id="cd6cc-124">If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the app is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:</span></span>
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![Animação mostrando o Unity com os objetos em rede](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
-## <a name="congratulations"></a><span data-ttu-id="b3090-126">Parabéns</span><span class="sxs-lookup"><span data-stu-id="b3090-126">Congratulations</span></span>
+## <a name="congratulations"></a><span data-ttu-id="cd6cc-126">Parabéns</span><span class="sxs-lookup"><span data-stu-id="cd6cc-126">Congratulations</span></span>
 
-<span data-ttu-id="b3090-127">Você configurou com êxito o projeto para sincronizar os movimentos do objeto para que os usuários possam ver os objetos se moverem quando os outros usuários os moverem.</span><span class="sxs-lookup"><span data-stu-id="b3090-127">You have successfully configured your project to synchronize object movements so users can see the objects move when other users move them.</span></span> <span data-ttu-id="b3090-128">No próximo tutorial, você implementará a funcionalidade para alinhar a experiência no mundo físico.</span><span class="sxs-lookup"><span data-stu-id="b3090-128">In the next tutorial, you will implement functionality to align the experience in the physical world.</span></span> <span data-ttu-id="b3090-129">Isso garantirá que os usuários vejam uns aos outros na sua localização física real e, portanto, os objetos aparecerão na mesma posição física e rotação para todos os usuários.</span><span class="sxs-lookup"><span data-stu-id="b3090-129">This will ensure the users see each other in their actual physical location, and so the objects appear in the same physical position and rotation for all users.</span></span>
+<span data-ttu-id="cd6cc-127">Você configurou com êxito o projeto para sincronizar os movimentos do objeto para que os usuários possam ver os objetos se moverem quando os outros usuários os moverem.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-127">You have successfully configured your project to synchronize object movements so users can see the objects move when other users move them.</span></span> <span data-ttu-id="cd6cc-128">No próximo tutorial, você implementará a funcionalidade para alinhar a experiência no mundo físico.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-128">In the next tutorial, you will implement functionality to align the experience in the physical world.</span></span> <span data-ttu-id="cd6cc-129">Isso garantirá que os usuários vejam uns aos outros na sua localização física real e, portanto, os objetos aparecerão na mesma posição física e rotação para todos os usuários.</span><span class="sxs-lookup"><span data-stu-id="cd6cc-129">This will ensure the users see each other in their actual physical location, and so the objects appear in the same physical position and rotation for all users.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="b3090-130">Próximo tutorial: 5. Integrar âncoras espaciais do Azure a uma experiência compartilhada</span><span class="sxs-lookup"><span data-stu-id="b3090-130">Next Tutorial: 5. Integrating Azure Spatial Anchors into a shared experience</span></span>](mr-learning-sharing-05.md)
+> [<span data-ttu-id="cd6cc-130">Próximo tutorial: 5. Integrar âncoras espaciais do Azure a uma experiência compartilhada</span><span class="sxs-lookup"><span data-stu-id="cd6cc-130">Next Tutorial: 5. Integrating Azure Spatial Anchors into a shared experience</span></span>](mr-learning-sharing-05.md)
