@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR, compatibilidade
-ms.openlocfilehash: 4a1439bed8743396cba13fa4d65debc62487ab46
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: SteamVR, compatibilidade, portabilidade, 1ª Gen do HoloLens, headset de realidade misturada, headset da realidade do Windows, fone de ouvido, migração, Windows 10, fluxo, controladores de movimento, haptics
+ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638502"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677655"
 ---
 # <a name="updating-your-steamvr-application"></a>Atualizando seu aplicativo SteamVR
 Incentivamos os desenvolvedores a testar e otimizar suas experiências de SteamVR para serem executadas em headsets de realidade mista do Windows. Esta documentação aborda os aprimoramentos comuns que os desenvolvedores podem fazer para garantir que sua experiência seja muito boa no Windows Mixed Reality.
@@ -29,10 +29,10 @@ Para começar a testar seu jogo ou aplicativo no Windows Mixed Reality, siga pri
 ## <a name="controls"></a>Controles
 
 Ao criar ou ajustar seu layout de controle, tenha em mente o seguinte conjunto de comandos reservados:
-1. Ao clicar na **esquerda e à direita, a Thumbstick analógica** é reservada para o **painel de fluxo** .
+1. Ao clicar na **esquerda e à direita, a Thumbstick analógica** é reservada para o **painel de fluxo**.
 
 > [!NOTE]
-> Se você estiver usando um controlador de reverbo G2 HP, clicar no botão de menu à direita será reservado para o **painel de fluxo** .
+> Se você estiver usando um controlador de reverbo G2 HP, clicar no botão de menu à direita será reservado para o **painel de fluxo**.
 
 2. O **botão Windows** sempre retornará os usuários para a página inicial do Windows Mixed Reality.
 

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, configurações, realidade misturada
-ms.openlocfilehash: 0e0f8649525c84bdc479dbcee92f737e877a60ca
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+keywords: Unity, configurações, realidade misturada, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, desempenho, configurações de qualidade, configurações de iluminação, buffer de profundidade, XR, perda de rastreamento
+ms.openlocfilehash: b560e75043cbf4a3cb93837938fdb65324cb16bb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240753"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677365"
 ---
 # <a name="recommended-settings-for-unity"></a>Configurações recomendadas do Unity
 
@@ -27,7 +27,7 @@ No Unity 2019 LTS +, o nível de qualidade do projeto pode ser definido indo par
 
 ### <a name="lighting-settings"></a>Configurações de iluminação
 
-De forma semelhante às configurações de cena de qualidade, é importante definir as configurações de iluminação ideais para seu aplicativo de realidade misturada. No Unity, a configuração de iluminação que geralmente terá o maior impacto no desempenho em sua cena é a **iluminação global em tempo real**. Isso pode ser desativado com a ativação de **janela**  >  **Rendering**  >  **configurações de iluminação**em  >  **tempo real**para iluminação global.
+De forma semelhante às configurações de cena de qualidade, é importante definir as configurações de iluminação ideais para seu aplicativo de realidade misturada. No Unity, a configuração de iluminação que geralmente terá o maior impacto no desempenho em sua cena é a **iluminação global em tempo real**. Isso pode ser desativado com a ativação de **janela**  >  **Rendering**  >  **configurações de iluminação** em  >  **tempo real** para iluminação global.
 
 Há outra configuração de iluminação, **inclusas global iluminação**. Essa configuração pode fornecer resultados de desempenho e visualmente surpreendentes em headsets de imersão, mas geralmente não é aplicável para o desenvolvimento de HoloLens. **Inclusas global Illumniation** só é calculado para Gameobjects estáticos que geralmente não são encontrados em cenas de HoloLens devido à natureza de um ambiente desconhecido e em constante alteração.
 
@@ -62,7 +62,7 @@ Para obter uma melhor estabilidade de holograma da percepção do usuário, é r
 Como habilitar esse recurso no seu projeto do Unity
 
 1) Abra **Configurações de XR do Player** (acesse **Editar** > **Configurações do Projeto** > **Player** > **Configurações de XR**)
-2) Marque a caixa de seleção para **habilitar o compartilhamento de buffer de profundidade** em SDKs da **realidade virtual**  >  **Windows misto** expansão de realidade (a caixa de seleção**com suporte da realidade virtual** deve estar marcada)
+2) Marque a caixa de seleção para **habilitar o compartilhamento de buffer de profundidade** em SDKs da **realidade virtual**  >  **Windows misto** expansão de realidade (a caixa de seleção **com suporte da realidade virtual** deve estar marcada)
 
 Além disso, é recomendável selecionar **profundidade de 16 bits** na configuração de **formato de profundidade** neste painel, especialmente para o desenvolvimento de HoloLens. A seleção de 16 bits em comparação a 24 bits reduzirá significativamente os requisitos de largura de banda, pois menos dados precisarão ser movidos/processados.
 
@@ -106,7 +106,7 @@ O HoloLens tem uma CPU e uma GPU de classe móvel, o que significa que os aplica
 
 Para alternar a tela inicial do Holographic:
 
-1) Ir para **Edit**a página Editar configurações do  >  **projeto**  >  **Player**
+1) Ir para **Edit** a página Editar configurações do  >  **projeto**  >  **Player**
 2) Clique na guia **Windows Store** e abra a seção **imagem de abertura**
 3) Aplique a imagem desejada na propriedade **imagem de abertura do Windows Holographic > Holographic** .
     - Alternar a opção **Mostrar tela inicial do Unity** habilitará ou desabilitará a tela inicial com marca do Unity. Se você não tiver uma licença do Unity pro, a tela inicial da marca do Unity será sempre exibida.
@@ -129,7 +129,7 @@ Se ocorrer uma perda de controle, o comportamento padrão do Unity será parar d
 
 Para personalizar a imagem perdida de rastreamento:
 
-1) Ir para **Edit**a página Editar configurações do  >  **projeto**  >  **Player**
+1) Ir para **Edit** a página Editar configurações do  >  **projeto**  >  **Player**
 2) Clique na guia **Windows Store** e abra a seção **imagem de abertura**
 3) Aplique a imagem desejada na propriedade de **imagem de perda de > do Windows Holographic de rastreamento** .
 
@@ -139,7 +139,7 @@ Alguns aplicativos podem não exigir acompanhamento (por exemplo, [aplicativos s
 
 Para recusar o comportamento de pausa automática:
 
-1) Ir para a página **Editar**o  >  **Project Settings**  >  **Player** de configurações do projeto
+1) Ir para a página **Editar** o  >  **Project Settings**  >  **Player** de configurações do projeto
 2) Clique na guia **Windows Store** e abra a seção **imagem de abertura**
 3) Modifique a caixa de seleção **> do Windows Holographic na pausa de controle de perda e mostrar imagem** .
 
@@ -153,7 +153,7 @@ Para que um aplicativo aproveite determinadas funcionalidades, ele deve declarar
 
 Os recursos podem ser habilitados para um aplicativo de realidade misturada:
 
-1) Ir para **Edit**a página Editar configurações do  >  **projeto**  >  **Player**
+1) Ir para **Edit** a página Editar configurações do  >  **projeto**  >  **Player**
 2) Clique na guia **Windows Store** , abra a seção **configurações de publicação** e procure a lista de **recursos**
 
 Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos Holographic são:
@@ -167,7 +167,7 @@ Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos
 |  Microfone  |  VideoCapture (ao capturar áudio), DictationRecognizer, GrammarRecognizer e KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (e para usar o criador de perfil do Unity) |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Visão geral do desenvolvimento do Unity](unity-development-overview.md)
 * [Noções básicas sobre o desempenho da Realidade Misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

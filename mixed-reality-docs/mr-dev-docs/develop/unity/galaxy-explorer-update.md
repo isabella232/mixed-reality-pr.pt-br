@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: Gerenciador do Galaxy, estudo de caso, projeto, exemplo
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gerenciador do Galaxy, estudo de caso, projeto, exemplo, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, exemplos de aplicativos, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675745"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677625"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>A criação do Galaxy Explorer para o HoloLens 2
 
@@ -96,7 +96,7 @@ Pensamos nos comentários visuais e de áudio que os usuários seriam fornecidos
 ![Visual capacidades no planetas](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Adicionando capacidades para forçar captura
- 
+ 
 Depois que tínhamos o mecanismo básico de captura de força com áudio e Visual capacidades, examinamos como tornar a seleção de planetas mais amigável para o usuário. Havia dois aspectos principais a serem abordados: como o sistema solar é uma interface de movimentação 3D, há uma complexidade adicional para que os usuários aprendam a direcionar objetos de forma consistente. Isso foi composto pelo fato de que o raio da mão é muito rápido na seleção de um objeto, fazendo com que os planetas se movam para o usuário incrivelmente rapidamente.
 
 Abordamos isso com uma solução em três pinos. A primeira era bastante intuitiva: retardar o processo de seleção para que os planetas abordem o usuário em um ritmo mais natural. Depois que a velocidade foi ajustada, tivemos que revisitar o áudio e o Visual capacidades, adicionando comentários adicionais de áudio como o planeta rastreado para o usuário.
@@ -151,7 +151,7 @@ Agora que a composição visual de Júpiter foi definida, precisávamos garantir
 Os fluxos de rotação individualmente forneciam uma boa impressão Visual, mas não têm mais detalhes quando observados no intervalo de fechamento.
 
 A parte mais atraente foi o grande ponto vermelho da Júpiter, portanto, criamos um conjunto de malhas e texturas especificamente para mostrá-la.
- 
+ 
 Usamos um mecanismo semelhante ao da faixa de Júpiter: um conjunto de partes de rotação foi composto sobre um do outro, enquanto também está sendo agrupado em sua ' camada mestra ' para garantir que eles permaneçam em posição, não importa a velocidade com que o REST se move.
 
 Quando as malhas foram configuradas e, em vigor, camadas diferentes do Storm Vortex foram aplicadas e cada disco era então animado individualmente, as partes centrais se movimentam mais rapidamente, com o REST progressivamente diminuindo à medida que se movem para cima.
@@ -202,4 +202,4 @@ Não em destaque: Tim Gerken (Tech Lead) e Oscar Salandin (Visual Designer).
 
 ### <a name="mixed-reality-studios"></a>Realidade misturada ESTÚDIOS
 
-As equipes do Microsoft Mixed Reality Studio – localizadas nas Américas, Europa e Ásia-Pacífico – são especialistas em design de experiência do usuário, computação Holographic, tecnologias de AR/VR e desenvolvimento 3D; incluindo a criação de ativos 3D, DirectX, Unity e inreal. Ajudamos a prever futuros, projetar, criar e fornecer soluções, permitindo que os clientes criem um impacto mensurável em toda a organização. O estúdios trabalha em conjunto com mais de 22.000 profissionais de serviços da Microsoft para integração de aplicativos empresariais, adoção, operações e suporte.
+As equipes do Microsoft Mixed Reality Studio – localizadas nas Américas, Europa e Asia-Pacific-são especialistas em design de experiência do usuário, computação Holographic, tecnologias de AR/VR e desenvolvimento 3D; incluindo a criação de ativos 3D, DirectX, Unity e inreal. Ajudamos a prever futuros, projetar, criar e fornecer soluções, permitindo que os clientes criem um impacto mensurável em toda a organização. O estúdios trabalha em conjunto com mais de 22.000 profissionais de serviços da Microsoft para integração de aplicativos empresariais, adoção, operações e suporte.

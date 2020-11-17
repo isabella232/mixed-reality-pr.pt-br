@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: implantar, Unity, Visual Studio, HoloLens, HoloLens 2, headset de imersão
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: implantar, Unity, Visual Studio, HoloLens, HoloLens 2, headset de imersão, práticas recomendadas, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, UWP, Ferramentas do Visual Studio, SDK do Windows
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674895"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678841"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Melhores práticas para trabalhar com o Unity e o Visual Studio
 
@@ -55,9 +55,9 @@ As soluções UWP do Visual Studio com check-in no controle do código-fonte pod
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>Usar ativos de formato de texto para uma comparação fácil de alterações de conteúdo
 
-O armazenamento de ativos em formato de texto facilita a revisão de diferenciações de alteração de conteúdo no Visual Studio. Você pode habilitar isso em "Editar configurações de projeto > editor de >" alterando o modo de **serialização de ativos** para **forçar o texto** . No entanto, mesclar alterações de arquivo de ativo de texto é propenso a erros e não recomendado, portanto, considere habilitar check-outs binários exclusivos no sistema de controle do código-fonte.
+O armazenamento de ativos em formato de texto facilita a revisão de diferenciações de alteração de conteúdo no Visual Studio. Você pode habilitar isso em "Editar configurações de projeto > editor de >" alterando o modo de **serialização de ativos** para **forçar o texto**. No entanto, mesclar alterações de arquivo de ativo de texto é propenso a erros e não recomendado, portanto, considere habilitar check-outs binários exclusivos no sistema de controle do código-fonte.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Ferramentas do Visual Studio para Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [Otimizando os tempos de compilação para IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*UnityScriptAnalyzer* Extensão do Visual Studio](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

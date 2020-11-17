@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, WinRT, realidade do Windows Mixed, API, passo a passos
-ms.openlocfilehash: 80f950d7571a936e93eb08490ad83dbb34a50b3a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, WinRT, realidade mista do Windows, API, passo a passos, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, APIs de realidade misturada
+ms.openlocfilehash: fb8d63a44a05f639becd96fc9198c57dd10aaafd
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675896"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679675"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>APIs do WinRT com Unity para HoloLens
 
@@ -64,6 +64,6 @@ public class WinRTAPI : MonoBehaviour {
 
 Quando você clica duas vezes em um script no editor do Unity, ele inicia o script por padrão em um projeto do editor. As APIs do WinRT parecerão desconhecidas, pois o projeto do Visual Studio não faz referência à Windows Runtime. Além disso, a diretiva de **ENABLE_WINMD_SUPPORT** será indefinida e qualquer *#if* código encapsulado será ignorado até que você compile seu projeto em uma solução UWP do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Como exportar e criar uma solução do Visual Studio do Unity](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Windows Runtime Unity de suporte](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)

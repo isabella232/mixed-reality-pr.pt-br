@@ -1,17 +1,17 @@
 ---
-title: Entrada MR 211-gesto
+title: Entrada do MR 211 – Gesto
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de gesto.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, gesto
-ms.openlocfilehash: 0d3057cb1751a3bc429ed1ccf520b451110f64b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, gesto, HoloLens, Academia de realidade misturada, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
+ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675677"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678285"
 ---
 # <a name="mr-input-211-gesture"></a>Entrada do MR 211: Gesto
 
@@ -64,14 +64,14 @@ Neste curso, Vamos revisitar o **Explorador de modelos** de projeto do Unity, qu
 
 ### <a name="errata-and-notes"></a>Errata e observações
 
-* "Habilitar Apenas Meu Código" precisa ser desabilitado ( *desmarcado* ) no Visual Studio em ferramentas->opções->depuração para acessar os pontos de interrupção no código.
+* "Habilitar Apenas Meu Código" precisa ser desabilitado (*desmarcado*) no Visual Studio em ferramentas->opções->depuração para acessar os pontos de interrupção no código.
 
 ## <a name="chapter-0---unity-setup"></a>Capítulo 0-configuração do Unity
 
 ### <a name="instructions"></a>Instruções
 
 1. Inicie o Unity.
-2. Selecione **Abrir** .
+2. Selecione **Abrir**.
 3. Navegue até a pasta de **gestos** que você cancelou anteriormente.
 4. Localize e selecione a pasta **iniciando** o / **Gerenciador de modelos** .
 5. Clique no botão **Selecionar pasta** .
@@ -80,11 +80,11 @@ Neste curso, Vamos revisitar o **Explorador de modelos** de projeto do Unity, qu
 
 ### <a name="building"></a>Construção
 
-1. No Unity, selecione **arquivo > configurações de Build** .
-2. Se **cenas/ModelExplorer** não estiver listado em **cenas em compilação** , clique em **Adicionar cenas abertas** para adicionar a cena.
-3. Se você estiver desenvolvendo especificamente para o HoloLens, defina o **dispositivo de destino** para o **hololens** . Caso contrário, deixe em **qualquer dispositivo** .
+1. No Unity, selecione **arquivo > configurações de Build**.
+2. Se **cenas/ModelExplorer** não estiver listado em **cenas em compilação**, clique em **Adicionar cenas abertas** para adicionar a cena.
+3. Se você estiver desenvolvendo especificamente para o HoloLens, defina o **dispositivo de destino** para o **hololens**. Caso contrário, deixe em **qualquer dispositivo**.
 4. Verifique se **tipo de compilação** está definido como **D3D** e se o **SDK** está definido para o **mais recente instalado** (que deve ser o SDK 16299 ou mais recente).
-5. Clique em **Compilar** .
+5. Clique em **Compilar**.
 6. Crie uma **nova pasta** chamada "app".
 7. Clique uma vez na pasta do **aplicativo** .
 8. Pressione **Selecionar pasta** e o Unity começará a compilar o projeto para o Visual Studio.
@@ -92,21 +92,21 @@ Neste curso, Vamos revisitar o **Explorador de modelos** de projeto do Unity, qu
 Quando o Unity for concluído, uma janela Explorador de arquivos será exibida.
 
 1. Abra a pasta do **aplicativo** .
-2. Abra a **solução ModelExplorer do Visual Studio** .
+2. Abra a **solução ModelExplorer do Visual Studio**.
 
 Se estiver implantando no HoloLens:
 
-1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x86** .
-2. Clique na seta suspensa ao lado do botão computador local e selecione **computador remoto** .
-3. Insira **o endereço IP do dispositivo de HoloLens** e defina o modo de autenticação como **Universal (protocolo não criptografado)** . Clique em **Selecionar** . Se você não souber o endereço IP do dispositivo, examine **configurações > rede & Internet > opções avançadas** .
-4. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** . Se esta for a primeira vez que você está implantando em seu dispositivo, será necessário [emparelhar com o Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
-5. Quando o aplicativo tiver sido implantado, ignore o **Fitbox** com um **gesto de seleção** .
+1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x86**.
+2. Clique na seta suspensa ao lado do botão computador local e selecione **computador remoto**.
+3. Insira **o endereço IP do dispositivo de HoloLens** e defina o modo de autenticação como **Universal (protocolo não criptografado)**. Clique em **Selecionar**. Se você não souber o endereço IP do dispositivo, examine **configurações > rede & Internet > opções avançadas**.
+4. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**. Se esta for a primeira vez que você está implantando em seu dispositivo, será necessário [emparelhar com o Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+5. Quando o aplicativo tiver sido implantado, ignore o **Fitbox** com um **gesto de seleção**.
 
 Se estiver implantando em um headset de imersão:
 
-1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x64** .
-2. Verifique se o destino de implantação está definido como **computador local** .
-3. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** .
+1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x64**.
+2. Verifique se o destino de implantação está definido como **computador local**.
+3. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**.
 4. Quando o aplicativo tiver sido implantado, ignore o **Fitbox** puxando o gatilho em um controlador de movimento.
 
 >[!NOTE]
@@ -139,8 +139,8 @@ Em seguida, atualizaremos nosso cursor da [entrada do sr 210](holograms-210.md) 
 
 1. No painel **hierarquia** , selecione o objeto de **cursor** e exclua-o.
 2. No painel **projeto** , pesquise **CursorWithFeedback** e arraste-o para o painel **hierarquia** .
-3. Clique em **InputManager** no painel **hierarquia** e arraste o objeto **CursorWithFeedback** da **hierarquia** para o campo de **cursor** do **SimpleSinglePointerSelector** do InputManager, na parte inferior do **Inspetor** .
-4. Clique em **CursorWithFeedback** na **hierarquia** .
+3. Clique em **InputManager** no painel **hierarquia** e arraste o objeto **CursorWithFeedback** da **hierarquia** para o campo de **cursor** do **SimpleSinglePointerSelector** do InputManager, na parte inferior do **Inspetor**.
+4. Clique em **CursorWithFeedback** na **hierarquia**.
 5. No painel **Inspetor** , expanda **dados de estado do cursor** no script de **cursor do objeto** .
 
 Os **dados de estado do cursor** funcionam da seguinte maneira:
@@ -153,9 +153,9 @@ Os **dados de estado do cursor** funcionam da seguinte maneira:
 
 * No Unity, use **as configurações de Build de > de arquivo** para recompilar o aplicativo.
 * Abra a pasta do **aplicativo** .
-* Se ainda não estiver aberto, abra a **solução ModelExplorer Visual Studio** .
+* Se ainda não estiver aberto, abra a **solução ModelExplorer Visual Studio**.
   * (Se você já criou/implantou esse projeto no Visual Studio durante a instalação, poderá abrir essa instância do VS e clicar em ' recarregar tudo ' quando solicitado).
-* No Visual Studio, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** .
+* No Visual Studio, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**.
 * Depois que o aplicativo for implantado no HoloLens, ignore o fitbox usando o gesto de toque do ar.
 * Mova sua mão para a exibição e aponte o dedo para o céu até o início do controle.
 * Mova sua mão para a esquerda, para a direita, para cima e para baixo.
@@ -174,13 +174,13 @@ Os **dados de estado do cursor** funcionam da seguinte maneira:
 
 Para usar gestos de navegação em nosso aplicativo, vamos editar **GestureAction.cs** para girar objetos quando ocorrer o gesto de navegação. Além disso, adicionaremos comentários ao cursor para exibir quando a navegação estiver disponível.
 
-1. No painel **hierarquia** , expanda **CursorWithFeedback** .
+1. No painel **hierarquia** , expanda **CursorWithFeedback**.
 2. Na pasta **hologramas** , localize o ativo **ScrollFeedback** .
-3. Arraste e solte o **ScrollFeedback** pré-fabricado no **CursorWithFeedback** gameobject na **hierarquia** .
-4. Clique em **CursorWithFeedback** .
+3. Arraste e solte o **ScrollFeedback** pré-fabricado no **CursorWithFeedback** gameobject na **hierarquia**.
+4. Clique em **CursorWithFeedback**.
 5. No painel **Inspetor** , clique no botão **Adicionar componente** .
-6. No menu, digite na caixa de pesquisa **CursorFeedback** . Selecione o resultado da pesquisa.
-7. Arraste e solte o objeto **ScrollFeedback** da **hierarquia** na propriedade de **objeto de jogo scroll detected Game** no componente de **comentários do cursor** no **Inspetor** .
+6. No menu, digite na caixa de pesquisa **CursorFeedback**. Selecione o resultado da pesquisa.
+7. Arraste e solte o objeto **ScrollFeedback** da **hierarquia** na propriedade de **objeto de jogo scroll detected Game** no componente de **comentários do cursor** no **Inspetor**.
 8. No painel **hierarquia** , selecione o objeto **AstroMan** .
 9. No painel **Inspetor** , clique no botão **Adicionar componente** .
 10. No menu, digite a **ação de gesto** de caixa de pesquisa. Selecione o resultado da pesquisa.
@@ -343,34 +343,34 @@ Você observará que os outros eventos de navegação já estão preenchidos com
 
 GestureManager.cs e AstronautManager.cs nos permitirão fazer o seguinte:
 
-1. Use a palavra-chave de fala " **move Astronaut** " para habilitar gestos de **manipulação** e " **girar Astronaut** " para desabilitá-los.
-2. Alterne para responder ao **reconhecedor de gestos de manipulação** .
+1. Use a palavra-chave de fala "**move Astronaut**" para habilitar gestos de **manipulação** e "**girar Astronaut**" para desabilitá-los.
+2. Alterne para responder ao **reconhecedor de gestos de manipulação**.
 
 Vamos começar.
 
-1. No painel **hierarquia** , crie um novo gameobject vazio. Nomeie-o como " **AstronautManager** ".
+1. No painel **hierarquia** , crie um novo gameobject vazio. Nomeie-o como "**AstronautManager**".
 2. No painel **Inspetor** , clique no botão **Adicionar componente** .
-3. No menu, digite na caixa de pesquisa **Astronaut Manager** . Selecione o resultado da pesquisa.
+3. No menu, digite na caixa de pesquisa **Astronaut Manager**. Selecione o resultado da pesquisa.
 4. No painel **Inspetor** , clique no botão **Adicionar componente** .
-5. No menu, digite a caixa de pesquisa **fonte de entrada de fala** . Selecione o resultado da pesquisa.
+5. No menu, digite a caixa de pesquisa **fonte de entrada de fala**. Selecione o resultado da pesquisa.
 
 Agora, vamos adicionar os comandos de fala necessários para controlar o estado de interação do Astronaut.
 
-1. Expanda a seção **palavras-chave** no **Inspetor** .
+1. Expanda a seção **palavras-chave** no **Inspetor**.
 2. Clique no **+** lado direito para adicionar uma nova palavra-chave.
-3. Digite a palavra-chave como **mover Astronaut** . Fique à vontade para adicionar um atalho de chave, se desejado.
+3. Digite a palavra-chave como **mover Astronaut**. Fique à vontade para adicionar um atalho de chave, se desejado.
 4. Clique no **+** lado direito para adicionar uma nova palavra-chave.
-5. Digite a palavra-chave como **girar Astronaut** . Fique à vontade para adicionar um atalho de chave, se desejado.
-6. O código de manipulador correspondente pode ser encontrado em **GestureAction.cs** , no manipulador **ISpeechHandler. OnSpeechKeywordRecognized** .
+5. Digite a palavra-chave como **girar Astronaut**. Fique à vontade para adicionar um atalho de chave, se desejado.
+6. O código de manipulador correspondente pode ser encontrado em **GestureAction.cs**, no manipulador **ISpeechHandler. OnSpeechKeywordRecognized** .
 
 ![Como configurar a fonte de entrada de fala para o capítulo 4](images/holograms211-speech.png)
 
 Em seguida, vamos configurar os comentários de manipulação no cursor.
 
 1. Na pasta **hologramas** do painel **projeto** , localize o ativo **PathingFeedback** .
-2. Arraste e solte o **PathingFeedback** pré-fabricado no objeto **CursorWithFeedback** na **hierarquia** .
-3. No painel **hierarquia** , clique em **CursorWithFeedback** .
-4. Arraste e solte o objeto **PathingFeedback** da **hierarquia** para a propriedade **demarcar objeto de jogo detectado** no componente de **comentários do cursor** no **Inspetor** .
+2. Arraste e solte o **PathingFeedback** pré-fabricado no objeto **CursorWithFeedback** na **hierarquia**.
+3. No painel **hierarquia** , clique em **CursorWithFeedback**.
+4. Arraste e solte o objeto **PathingFeedback** da **hierarquia** para a propriedade **demarcar objeto de jogo detectado** no componente de **comentários do cursor** no **Inspetor**.
 
 Agora, precisamos adicionar código a **GestureAction.cs** para habilitar o seguinte:
 
@@ -510,25 +510,25 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 Nesta seção, realizaremos as seguintes tarefas:
 
-1. Adicione uma nova palavra-chave " **Expand Model** " para expandir o modelo Astronaut.
-2. Adicione uma nova palavra-chave " **Redefinir modelo** " para retornar o modelo ao seu formulário original.
+1. Adicione uma nova palavra-chave "**Expand Model**" para expandir o modelo Astronaut.
+2. Adicione uma nova palavra-chave "**Redefinir modelo**" para retornar o modelo ao seu formulário original.
 
 Vamos fazer isso adicionando mais duas palavras-chave à fonte de entrada de fala do capítulo anterior. Também demonstraremos outra maneira de lidar com eventos de reconhecimento.
 
-1. Clique em voltar em **AstronautManager** no **Inspetor** e expanda a seção **palavras-chave** no **Inspetor** .
+1. Clique em voltar em **AstronautManager** no **Inspetor** e expanda a seção **palavras-chave** no **Inspetor**.
 2. Clique no **+** lado direito para adicionar uma nova palavra-chave.
-3. Digite a palavra-chave como **modelo de expansão** . Fique à vontade para adicionar um atalho de chave, se desejado.
+3. Digite a palavra-chave como **modelo de expansão**. Fique à vontade para adicionar um atalho de chave, se desejado.
 4. Clique no **+** lado direito para adicionar uma nova palavra-chave.
-5. Digite a palavra-chave como **modelo de redefinição** . Fique à vontade para adicionar um atalho de chave, se desejado.
+5. Digite a palavra-chave como **modelo de redefinição**. Fique à vontade para adicionar um atalho de chave, se desejado.
 6. No painel **Inspetor** , clique no botão **Adicionar componente** .
 7. No menu, digite o manipulador de entrada de **fala** da caixa de pesquisa. Selecione o resultado da pesquisa.
-8. Verifique **se o ouvinte global** , pois queremos que esses comandos funcionem independentemente do gameobject que estamos concentrando.
+8. Verifique **se o ouvinte global**, pois queremos que esses comandos funcionem independentemente do gameobject que estamos concentrando.
 9. Clique no **+** botão e selecione **expandir modelo** na lista suspensa de palavras-chave.
 10. Clique em **+** em resposta e arraste o **AstronautManager** da **hierarquia** para o campo **nenhum (objeto)** .
-11. Agora, clique no menu suspenso **sem função** , selecione **AstronautManager** e **ExpandModelCommand** .
+11. Agora, clique no menu suspenso **sem função** , selecione **AstronautManager** e **ExpandModelCommand**.
 12. Clique no botão do manipulador de entrada de fala **+** e selecione **Redefinir modelo** na lista suspensa de palavras-chave.
 13. Clique em **+** em resposta e arraste o **AstronautManager** da **hierarquia** para o campo **nenhum (objeto)** .
-14. Agora, clique no menu suspenso **sem função** , selecione **AstronautManager** e **ResetModelCommand** .
+14. Agora, clique no menu suspenso **sem função** , selecione **AstronautManager** e **ResetModelCommand**.
 
 ![Como configurar a fonte de entrada e o manipulador de fala para o capítulo 5](images/holograms211-speechhandler.png)
 
@@ -543,7 +543,7 @@ Vamos fazer isso adicionando mais duas palavras-chave à fonte de entrada de fal
 
 ## <a name="the-end"></a>Fim
 
-Parabéns! Agora você concluiu o **Sr Input 211: gesto** .
+Parabéns! Agora você concluiu o **Sr Input 211: gesto**.
 
 * Você sabe como detectar e responder a eventos de rastreamento, navegação e manipulação à mão.
 * Você entende a diferença entre gestos de navegação e manipulação.

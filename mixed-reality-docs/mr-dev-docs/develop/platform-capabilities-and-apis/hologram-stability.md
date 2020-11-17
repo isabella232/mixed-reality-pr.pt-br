@@ -5,15 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: hologramas, estabilidade, hololens
+keywords: hologramas, estabilidade, hololens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, taxa de quadros, renderização, Reprojeção, separação de cores
 appliesto:
 - HoloLens
-ms.openlocfilehash: 21a9f7cff655ff35d32e3ca701219d4a1e41a0e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675009"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679595"
 ---
 # <a name="hologram-stability"></a>Estabilidade do holograma
 
@@ -32,7 +32,7 @@ A terminologia a seguir pode ajudá-lo quando você estiver identificando proble
 * **Continente.** Os usuários veem a descompasso, uma vez que um holograma parece deixar de onde ele foi colocado originalmente. A descompasso acontece quando os hologramas são colocados longe das [âncoras espaciais](../../design/spatial-anchors.md), particularmente em partes do ambiente que não estão totalmente mapeadas. A criação de hologramas perto de âncoras espaciais reduz a probabilidade de descompasso.
 * **Jumpize.** Quando um holograma "aparece" ou "salta" para fora de seu local ocasionalmente. A jumpização pode ocorrer conforme o controle ajusta os hologramas para que correspondam à compreensão atualizada do seu ambiente.
 * **Nadam.** Quando um holograma aparenta ser o Sway correspondente ao movimento do cabeçalho do usuário. Nada acontece quando o aplicativo não implementou totalmente a [Reprojeção](hologram-stability.md#reprojection)e, se o HoloLens não for [calibrado](../../calibration.md) para o usuário atual. O usuário pode executar novamente o aplicativo de [calibragem](../../calibration.md) para corrigir o problema. Os desenvolvedores podem atualizar o plano de estabilização para melhorar ainda mais a estabilidade.
-* **Separação de cores.** Os monitores no HoloLens são exibições sequenciais de cores, que canais de cores flash de vermelho-verde-azul-verde a 60 Hz (campos de cor individuais são mostrados às 240 Hz). Sempre que um usuário rastreia um holograma de movimento com seus olhos, as bordas à esquerda e à direita do holograma são separadas em suas cores constituintes, produzindo um efeito arco-íris. O grau de separação depende da velocidade do holograma. Em alguns casos raros, mover os cabeçotes rapidamente enquanto examina um holograma estacionário também pode resultar em um efeito de arco-íris, que é chamado de *[separação de cores](hologram-stability.md#color-separation)* .
+* **Separação de cores.** Os monitores no HoloLens são exibições sequenciais de cores, que canais de cores flash de vermelho-verde-azul-verde a 60 Hz (campos de cor individuais são mostrados às 240 Hz). Sempre que um usuário rastreia um holograma de movimento com seus olhos, as bordas à esquerda e à direita do holograma são separadas em suas cores constituintes, produzindo um efeito arco-íris. O grau de separação depende da velocidade do holograma. Em alguns casos raros, mover os cabeçotes rapidamente enquanto examina um holograma estacionário também pode resultar em um efeito de arco-íris, que é chamado de *[separação de cores](hologram-stability.md#color-separation)*.
 
 ## <a name="frame-rate"></a>Taxa de quadros
 
@@ -91,7 +91,7 @@ Há quatro tipos principais de Reprojeção
 * **Nenhum:** Se o aplicativo não faz nada, a Reprojeção do planar é usada com o plano de estabilização fixo em 2 metros na direção do olhar da cabeça do usuário, normalmente produzindo resultados de subpadrão.
 
 Os aplicativos precisam executar ações específicas para habilitar os diferentes tipos de Reprojeção
-* **Reprojeção de profundidade:** O aplicativo envia seu buffer de profundidade ao sistema para cada quadro renderizado.  No Unity, a Reprojeção de profundidade é feita com a opção de **buffer de profundidade compartilhada** no painel de **configurações de realidade mista do Windows** em **XR plugin Management** .  Aplicativos DirectX chamam CommitDirect3D11DepthBuffer.  O aplicativo não deve chamar SetFocusPoint.
+* **Reprojeção de profundidade:** O aplicativo envia seu buffer de profundidade ao sistema para cada quadro renderizado.  No Unity, a Reprojeção de profundidade é feita com a opção de **buffer de profundidade compartilhada** no painel de **configurações de realidade mista do Windows** em **XR plugin Management**.  Aplicativos DirectX chamam CommitDirect3D11DepthBuffer.  O aplicativo não deve chamar SetFocusPoint.
 * **Reprojeção do planar:** Em todos os quadros, os aplicativos informam ao sistema o local de um plano a ser estabilizado.  Os aplicativos do Unity chamam SetFocusPointForFrame e devem ter o **buffer de profundidade compartilhado** desabilitado.  Os aplicativos DirectX chamam SetFocusPoint e não devem chamar CommitDirect3D11DepthBuffer.
 * **Reprojeção automática de planar:** Para habilitar o, o aplicativo precisa enviar seu buffer de profundidade ao sistema como faria para a Reprojeção de profundidade.  No HoloLens 2, o aplicativo precisa SetFocusPoint com um ponto de 0, 0 para cada quadro.  Para o HoloLens geração 1, o aplicativo não deve chamar SetFocusPoint.
 
@@ -99,7 +99,7 @@ Os aplicativos precisam executar ações específicas para habilitar os diferent
 
 Tipo de estabilização |    Headsets de imersão |    Geração de HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojeção de profundidade |    Recomendadas |   N/D |   Recomendadas<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
+Reprojeção de profundidade |    Recomendado |   N/D |   Recomendado<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
 Reprojeção automática de planar | N/D |   Padrão recomendado |   Recomendado se a Reprojeção de profundidade não fornecer os melhores resultados<br/><br/>Os aplicativos do Unity são recomendados para usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior.  As versões anteriores do Unity funcionarão com resultados de Reprojeção ligeiramente degradados.
 Reprojeção do planar |   Não recomendado |   Recomendado se o planar automático não fornecer os melhores resultados | Use se nenhuma das opções de profundidade fornecer os resultados desejados    
 
@@ -183,7 +183,7 @@ Embora seja difícil evitar completamente a separação de cores, há várias t�
 
 Como antes, a renderização em 60 FPS e a definição do plano de estabilização são as técnicas mais importantes para a estabilidade do holograma. Se for voltada para separação de cores perceptível, primeiro verifique se a taxa de quadros atende às expectativas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Cor, luz e materiais](../../color,-light-and-materials.md)
 * [Interações instinctuais](../../design/interaction-fundamentals.md)

@@ -1,19 +1,19 @@
 ---
-title: Recomendações de material em não reais
+title: Recomendações de material no Unreal
 description: Visão geral dos materiais no mecanismo inreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, desenvolvimento, materiais, documentação, guias, recursos, hologramas, desenvolvimento de jogos
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, desenvolvimento, materiais, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675206"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678935"
 ---
-# <a name="material-recommendations-in-unreal"></a>Recomendações de material em não reais
+# <a name="material-recommendations-in-unreal"></a>Recomendações de material no Unreal
 
 Os materiais podem fazer ou interromper o desempenho em um mecanismo inreal. Esta página atua como um início rápido sobre as configurações básicas que você deve usar para obter o melhor desempenho.
 
@@ -73,7 +73,7 @@ Ao criar parâmetros, prefira usar "parâmetros estáticos" sempre que possível
 
 Ao criar instâncias de material, a preferência deve ser dada à **constante da instância material** sobre a instância de material dinâmica. **Constante de instância de material** é um material de instância que calcula apenas uma vez, antes do tempo de execução.
 
-A instância de material criada por meio do navegador de conteúdo ( **clique com o botão direito do mouse > criar instância de material** ) é uma constante de instância de material. A instância de material dinâmica é criada por meio de código. Você pode encontrar mais detalhes sobre as instâncias de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
+A instância de material criada por meio do navegador de conteúdo (**clique com o botão direito do mouse > criar instância de material**) é uma constante de instância de material. A instância de material dinâmica é criada por meio de código. Você pode encontrar mais detalhes sobre as instâncias de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
 ![Criando instâncias de material em um não real](images/unreal-materials-img-08.png)
 
@@ -88,7 +88,7 @@ Você pode obter uma ideia rápida da complexidade relativa do seu sombreador po
 
 ![Complexidade de material em não real](images/unreal-materials-img-10.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Materiais móveis](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [Modos de exibição](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 * [Instâncias de material](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

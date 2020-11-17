@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar no dispositivo, PC, documentação
+keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5c029e91bb33192b02dd32aca224a23fc4b5289d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675202"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678945"
 ---
 # <a name="the-making-of-kippys-escape"></a>A criação do escape do Kippy
 

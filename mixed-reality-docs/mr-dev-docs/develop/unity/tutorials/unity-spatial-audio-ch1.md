@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial
-ms.openlocfilehash: 9ddfd1644a20ac063551b8140f9f8950ae172196
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer
+ms.openlocfilehash: fc657eb22034c1c3fd31aadedfe7b8ea7bb8447d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676548"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679705"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Adicionando áudio espacial ao seu projeto do Unity
 
@@ -51,7 +51,7 @@ Em seguida, localize e instale o pacote do **Windows Mixed Reality** :
 
 ## <a name="install-mrtk-and-microsoft-spatializer"></a>Instalar o MRTK e o Microsoft Spatializer
 Usando o NuGet para Unity, instale os plug-ins MRTK e Microsoft Spatializer:
-1. Na barra de menus do Unity, clique em **NuGet-> gerenciar pacotes NuGet** .
+1. Na barra de menus do Unity, clique em **NuGet-> gerenciar pacotes NuGet**.
 
 ![Gerenciar pacotes NuGet](images/spatial-audio/manage-nuget-packages.png)
 
@@ -67,14 +67,14 @@ O [pacote NuGet do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/D
 
 ## <a name="set-up-mrtk-in-your-project"></a>Configurar o MRTK em seu projeto
 
-1. Abra a janela configurações de Build acessando **arquivo-> configurações de Build** .
+1. Abra a janela configurações de Build acessando **arquivo-> configurações de Build**.
 
-2. Selecione o _plataforma universal do Windows_ e clique em **alternar plataforma** .
+2. Selecione o _plataforma universal do Windows_ e clique em **alternar plataforma**.
 
 3. Clique em **configurações do Player** na **janela criar** para abrir as propriedades **das configurações do Player** no painel **Inspetor** .
-    * Em **configurações de XR** , marque a caixa de seleção **suporte à realidade virtual**
-    * Em **configurações de XR** , altere o **modo de renderização de estéreo** para **passagem única com instância** .
-    * Em **configurações de publicação** , marque a caixa de seleção **percepção espacial** na seção **recursos**
+    * Em **configurações de XR**, marque a caixa de seleção **suporte à realidade virtual**
+    * Em **configurações de XR**, altere o **modo de renderização de estéreo** para **passagem única com instância**.
+    * Em **configurações de publicação**, marque a caixa de seleção **percepção espacial** na seção **recursos**
 
 4. Na barra de menus, clique em **Kit de ferramentas de realidade misturada-> adicionar à cena e configurar..** para adicionar MRTK à sua cena.
 
@@ -86,7 +86,7 @@ Habilite o plug-in **Microsoft Spatializer** . Abra o **editar > configurações
 ![Configurações do projeto mostrando o plug-in spatializer](images/spatial-audio/project-settings.png)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>Habilitar áudio espacial em sua estação de trabalho
-Em versões de área de trabalho do Windows, o áudio espacial é desabilitado por padrão. Habilite-o clicando com o botão direito do mouse no ícone de volume na barra de tarefas. Para obter a melhor representação do que você ouvirá no HoloLens 2, escolha **som espacial-> Windows Sonic para fones de ouvido** .
+Em versões de área de trabalho do Windows, o áudio espacial é desabilitado por padrão. Habilite-o clicando com o botão direito do mouse no ícone de volume na barra de tarefas. Para obter a melhor representação do que você ouvirá no HoloLens 2, escolha **som espacial-> Windows Sonic para fones de ouvido**.
 
 ![Configurações de áudio espacial da área de trabalho](images/spatial-audio/desktop-audio-settings.png)
 

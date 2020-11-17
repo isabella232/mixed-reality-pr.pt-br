@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial
-ms.openlocfilehash: cd684944bdd618dcf435ef91566d6d4f18aa87a3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, importação de vídeo, player de vídeo
+ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676529"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679715"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Espacializar áudio de um vídeo
 Neste terceiro capítulo do módulo de áudio espacial dos tutoriais do HoloLens 2 Unity, você irá:
@@ -35,12 +35,12 @@ Após esses ajustes, o painel de **Inspetor** do arquivo de vídeo terá a segui
 
 ![Painel de propriedades de vídeo](images/spatial-audio/video-property-pane.png)
 
-Em seguida, adicione um objeto **player de vídeo** à **hierarquia** clicando com o botão direito do mouse no painel **hierarquia** e escolhendo **vídeo-> player de vídeo** :
+Em seguida, adicione um objeto **player de vídeo** à **hierarquia** clicando com o botão direito do mouse no painel **hierarquia** e escolhendo **vídeo-> player de vídeo**:
 
 ![Player de vídeo na hierarquia](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Reproduzir vídeo em um Quadrangle
-O objeto **player de vídeo** precisa de um objeto de jogo texturizado no qual renderizar o vídeo. Primeiro, adicione um **Quad** à sua **hierarquia** clicando com o botão direito do mouse no painel **hierarquia** e escolhendo **objeto 3D-> Quad** :
+O objeto **player de vídeo** precisa de um objeto de jogo texturizado no qual renderizar o vídeo. Primeiro, adicione um **Quad** à sua **hierarquia** clicando com o botão direito do mouse no painel **hierarquia** e escolhendo **objeto 3D-> Quad**:
 
 ![Adicionar quádruplo à hierarquia](images/spatial-audio/add-quad-to-hierarchy.png)
 
@@ -48,17 +48,17 @@ Para garantir que o **Quad** apareça na frente do usuário quando o aplicativo 
 
 ![Transformação quádrupla](images/spatial-audio/quad-transform.png)
 
-Para Texturizar o **Quad** com vídeo, crie uma nova **textura de renderização** . No painel **projeto** , clique com o botão direito do mouse e escolha **criar-> renderizar textura** :
+Para Texturizar o **Quad** com vídeo, crie uma nova **textura de renderização**. No painel **projeto** , clique com o botão direito do mouse e escolha **criar-> renderizar textura**:
 
 ![Criar textura de renderização](images/spatial-audio/create-render-texture.png)
 
-No painel **Inspetor** da **textura renderizar** , defina a propriedade **tamanho** para corresponder à resolução nativa do vídeo de 1280x720. Em seguida, para garantir um bom desempenho de renderização no HoloLens 2, defina a propriedade **buffer de profundidade** com **pelo menos 16 bits de profundidade** . Após essas configurações, o painel de **Inspetor** para a **textura de renderização** terá a seguinte aparência:
+No painel **Inspetor** da **textura renderizar**, defina a propriedade **tamanho** para corresponder à resolução nativa do vídeo de 1280x720. Em seguida, para garantir um bom desempenho de renderização no HoloLens 2, defina a propriedade **buffer de profundidade** com **pelo menos 16 bits de profundidade**. Após essas configurações, o painel de **Inspetor** para a **textura de renderização** terá a seguinte aparência:
 
 ![Renderizar Propriedades de textura](images/spatial-audio/render-texture-properties.png)
 
-Em seguida, use sua nova **textura de renderização** como a textura para o **Quad** :
+Em seguida, use sua nova **textura de renderização** como a textura para o **Quad**:
 1. Arraste a **textura renderizar** do painel **projeto** para o **Quad** na **hierarquia**
-2. Para garantir um bom desempenho no HoloLens 2, no painel do **Inspetor** para o **Quad** , selecione o **sombreador standard do kit de ferramentas da realidade misturada** .
+2. Para garantir um bom desempenho no HoloLens 2, no painel do **Inspetor** para o **Quad**, selecione o **sombreador standard do kit de ferramentas da realidade misturada**.
 
 Com essas configurações, o componente de **textura** no painel de **Inspetor** para o **Quad** terá a seguinte aparência:
 
@@ -74,11 +74,11 @@ O painel **Inspetor** do **player de vídeo** terá a seguinte aparência:
 ![Propriedades do player de vídeo](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>Esespacialr o áudio do vídeo
-No painel de **Inspetor** para o **Quad** , crie uma **fonte de áudio** para a qual você encaminhará o áudio do vídeo:
+No painel de **Inspetor** para o **Quad**, crie uma **fonte de áudio** para a qual você encaminhará o áudio do vídeo:
 * Clique em **Adicionar componente** na parte inferior do painel
 * Adicionar uma **fonte de áudio**
 
-Em seguida, na **fonte de áudio** :
+Em seguida, na **fonte de áudio**:
 * Definir **saída** para o mixer
 * Marque a caixa **espacialize**
 * Mover o controle deslizante de **mistura espacial** para 1 (3D)
@@ -87,7 +87,7 @@ Após essas alterações, o componente **fonte de áudio** no painel **Inspetor*
 
 ![Inspetor de fonte de áudio quádruplo](images/spatial-audio/quad-audio-source-inspector.png)
 
-Para definir o **player de vídeo** para rotear seu áudio para a **fonte de áudio** no **Quad** , abra o painel do **Inspetor** para o **player de vídeo** e:
+Para definir o **player de vídeo** para rotear seu áudio para a **fonte de áudio** no **Quad**, abra o painel do **Inspetor** para o **player de vídeo** e:
 * Definir o **modo de saída de áudio** como ' fonte de áudio '
 * Definir a propriedade **fonte de áudio** para o quad
 

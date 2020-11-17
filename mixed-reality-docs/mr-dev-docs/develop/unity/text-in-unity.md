@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, design, controles, fonte, tipografia, interface do usuário, UX
-ms.openlocfilehash: 21409115ed1e9aa9103e1e77ea4aacc0881e1262
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, design, controles, fonte, tipografia, IU, UX, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676590"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677355"
 ---
 # <a name="text-in-unity"></a>Texto no Unity
 
@@ -100,12 +100,12 @@ O material de fonte padrão do Unity não oferece suporte a oclusão. Por isso, 
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode prosseguir para o próximo bloco de construção:
+Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Entrada de voz](voice-input-in-unity.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Experiências compartilhadas](shared-experiences-in-unity.md)
@@ -113,6 +113,6 @@ Ou vá para recursos e APIs da plataforma de realidade misturada:
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Pré-fabricado de texto no MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Tipografia](../../design/typography.md)

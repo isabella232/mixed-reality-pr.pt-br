@@ -1,17 +1,17 @@
 ---
-title: Entrada MR 210-olhar
+title: Entrada do MR 210 – Foco
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de olhar.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, olhar
-ms.openlocfilehash: b513d304e78d51b447f0bbba4990fb7df0556707
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, olhar, HoloLens, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
+ms.openlocfilehash: 2cbbdba0a74ab94c6a291cbe6af1cd1ae9020fe4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675682"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677245"
 ---
 # <a name="mr-input-210-gaze"></a>Entrada do MR 210: Focar
 
@@ -77,21 +77,21 @@ Temos um Astronaut amigável aqui para ajudá-lo a aprender os conceitos de olha
 ### <a name="instructions"></a>Instruções
 
 1. Inicie o Unity.
-2. Selecione **Novo Projeto** .
-3. Nomeie o projeto **ModelExplorer** .
+2. Selecione **Novo Projeto**.
+3. Nomeie o projeto **ModelExplorer**.
 4. Insira o local como a pasta **olhar** que você cancelou anteriormente.
-5. Verifique se o projeto está definido como **3D** .
-6. Clique em **criar projeto** .
+5. Verifique se o projeto está definido como **3D**.
+6. Clique em **criar projeto**.
 
 ### <a name="unity-settings-for-hololens"></a>Configurações de Unity para o HoloLens
 
 Precisamos deixar que o Unity saiba que o aplicativo que estamos tentando exportar deve criar uma [exibição imersiva](../../../design/app-views.md) em vez de uma exibição 2D. Fazemos isso adicionando o HoloLens como um dispositivo de realidade virtual.
 
-1. Vá para **Editar configurações de projeto > > Player** .
+1. Vá para **Editar configurações de projeto > > Player**.
 2. No **painel Inspetor** para configurações do Player, selecione o ícone **Windows Store** .
-3. Expanda o grupo **Configurações de XR** .
-4. Na seção **Renderização** , marque a caixa de seleção **Realidade Virtual Compatível** para adicionar uma nova lista de **SDKs de Realidade Virtual** .
-5. Verifique se **Windows Mixed Reality** aparece na lista. Caso contrário, selecione o **+** botão na parte inferior da lista e escolha **Windows Holographic** .
+3. Expanda o grupo **Configurações de XR**.
+4. Na seção **Renderização**, marque a caixa de seleção **Realidade Virtual Compatível** para adicionar uma nova lista de **SDKs de Realidade Virtual**.
+5. Verifique se **Windows Mixed Reality** aparece na lista. Caso contrário, selecione o **+** botão na parte inferior da lista e escolha **Windows Holographic**.
 
 Em seguida, precisamos definir nosso back-end de script para .NET.
 
@@ -101,71 +101,71 @@ Em seguida, precisamos definir nosso back-end de script para .NET.
 
 Por fim, atualizaremos nossas configurações de qualidade para obter um desempenho rápido no HoloLens.
 
-1. Vá para **Editar configurações de projeto > > qualidade** .
+1. Vá para **Editar configurações de projeto > > qualidade**.
 2. Clique na seta apontando para baixo na linha **padrão** no ícone Windows Store.
-3. Selecione **muito baixo** para **aplicativos da Windows Store** .
+3. Selecione **muito baixo** para **aplicativos da Windows Store**.
 
 ### <a name="import-project-assets"></a>Importar ativos de projeto
 
 1. Clique com o botão direito do mouse na pasta **ativos** no painel **projeto** .
-2. Clique em **Importar pacote > pacote personalizado** .
-3. Navegue até os arquivos de projeto que você baixou e clique em **ModelExplorer. unitypackage** .
-4. Clique em **Abrir** .
+2. Clique em **Importar pacote > pacote personalizado**.
+3. Navegue até os arquivos de projeto que você baixou e clique em **ModelExplorer. unitypackage**.
+4. Clique em **Abrir**.
 5. Depois que o pacote for carregado, clique no botão **importar** .
 
 ### <a name="setup-the-scene"></a>Configurar a cena
 
-1. Na hierarquia, exclua a **câmera principal** .
+1. Na hierarquia, exclua a **câmera principal**.
 2. Na pasta **HoloToolkit** , abra a pasta de **entrada** e, em seguida, abra a pasta **pré-fabricados** .
-3. Arraste e solte o **MixedRealityCameraParent** pré-fabricado da pasta **pré-fabricados** para a **hierarquia** .
-4. Clique com o botão direito do mouse na **luz direcional** na hierarquia e selecione **excluir** .
-5. Na pasta **hologramas** , arraste e solte os seguintes ativos na raiz da **hierarquia** :
+3. Arraste e solte o **MixedRealityCameraParent** pré-fabricado da pasta **pré-fabricados** para a **hierarquia**.
+4. Clique com o botão direito do mouse na **luz direcional** na hierarquia e selecione **excluir**.
+5. Na pasta **hologramas** , arraste e solte os seguintes ativos na raiz da **hierarquia**:
     * **AstroMan**
     * **Luzes**
     * **SpaceAudioSource**
     * **SpaceBackground**
 6. Inicie o **modo de reprodução** ▶ para exibir o Astronaut.
-7. Clique em **modo de reprodução** ▶ novamente para **parar** .
-8. Na pasta **hologramas** , localize o ativo **Fitbox** e arraste-o para a raiz da **hierarquia** .
+7. Clique em **modo de reprodução** ▶ novamente para **parar**.
+8. Na pasta **hologramas** , localize o ativo **Fitbox** e arraste-o para a raiz da **hierarquia**.
 9. Selecione o **Fitbox** no painel **hierarquia** .
 10. Arraste a coleção **AstroMan** da **hierarquia** para a propriedade de **coleção de holograma** do Fitbox no painel de **Inspetor** .
 
 ### <a name="save-the-project"></a>Salvar o projeto
 
-1. Salve a nova cena: **arquivo > salvar cena como** .
-2. Clique em **nova pasta** e nomeie a pasta **cenas** .
-3. Nomeie o arquivo como " **ModelExplorer** " e salve-o na pasta de **cenas** .
+1. Salve a nova cena: **arquivo > salvar cena como**.
+2. Clique em **nova pasta** e nomeie a pasta **cenas**.
+3. Nomeie o arquivo como "**ModelExplorer**" e salve-o na pasta de **cenas** .
 
 ### <a name="build-the-project"></a>Compilar o projeto
 
-1. No Unity, selecione **arquivo > configurações de Build** .
+1. No Unity, selecione **arquivo > configurações de Build**.
 2. Clique em **Adicionar abrir cenas** para adicionar a cena.
-3. Selecione **plataforma universal do Windows** na lista **plataforma** e clique em **alternar plataforma** .
-4. Se você estiver desenvolvendo especificamente para o HoloLens, defina o **dispositivo de destino** para o **hololens** . Caso contrário, deixe em **qualquer dispositivo** .
+3. Selecione **plataforma universal do Windows** na lista **plataforma** e clique em **alternar plataforma**.
+4. Se você estiver desenvolvendo especificamente para o HoloLens, defina o **dispositivo de destino** para o **hololens**. Caso contrário, deixe em **qualquer dispositivo**.
 5. Verifique se **tipo de compilação** está definido como **D3D** e se o **SDK** está definido para o **mais recente instalado** (que deve ser o SDK 16299 ou mais recente).
-6. Clique em **Compilar** .
+6. Clique em **Compilar**.
 7. Crie uma **nova pasta** chamada "app".
 8. Clique uma vez na pasta do **aplicativo** .
-9. Pressione **Selecionar pasta** .
+9. Pressione **Selecionar pasta**.
 
 Quando o Unity for concluído, uma janela Explorador de arquivos será exibida.
 
 1. Abra a pasta do **aplicativo** .
-2. Abra a **solução ModelExplorer do Visual Studio** .
+2. Abra a **solução ModelExplorer do Visual Studio**.
 
 Se estiver implantando no HoloLens:
 
-1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x86** .
-2. Clique na seta suspensa ao lado do botão computador local e selecione **computador remoto** .
-3. Insira **o endereço IP do dispositivo de HoloLens** e defina o modo de autenticação como **Universal (protocolo não criptografado)** . Clique em **Selecionar** . Se você não souber o endereço IP do dispositivo, examine **configurações > rede & Internet > opções avançadas** .
-4. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** . Se esta for a primeira vez que você está implantando em seu dispositivo, será necessário [emparelhar com o Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
-5. Quando o aplicativo tiver sido implantado, ignore o **Fitbox** com um **gesto de seleção** .
+1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x86**.
+2. Clique na seta suspensa ao lado do botão computador local e selecione **computador remoto**.
+3. Insira **o endereço IP do dispositivo de HoloLens** e defina o modo de autenticação como **Universal (protocolo não criptografado)**. Clique em **Selecionar**. Se você não souber o endereço IP do dispositivo, examine **configurações > rede & Internet > opções avançadas**.
+4. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**. Se esta for a primeira vez que você está implantando em seu dispositivo, será necessário [emparelhar com o Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+5. Quando o aplicativo tiver sido implantado, ignore o **Fitbox** com um **gesto de seleção**.
 
 Se estiver implantando em um headset de imersão:
 
-1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x64** .
-2. Verifique se o destino de implantação está definido como **computador local** .
-3. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** .
+1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x64**.
+2. Verifique se o destino de implantação está definido como **computador local**.
+3. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**.
 4. Quando o aplicativo tiver sido implantado, ignore o **Fitbox** puxando o gatilho em um controlador de movimento.
 
 ## <a name="chapter-2---cursor-and-target-feedback"></a>Capítulo 2-comentários de cursor e destino
@@ -187,27 +187,27 @@ Vamos basear nosso trabalho em alguns princípios de design de cursor, ou seja:
 ### <a name="instructions"></a>Instruções
 
 1. Na pasta **HoloToolkit\Input\Prefabs** , localize o ativo **InputManager** .
-2. Arraste e solte o **InputManager** na **hierarquia** .
+2. Arraste e solte o **InputManager** na **hierarquia**.
 3. Na pasta **HoloToolkit\Input\Prefabs** , localize o ativo de **cursor** .
-4. Arraste e solte o **cursor** na **hierarquia** .
-5. Selecione o objeto **InputManager** na **hierarquia** .
-6. Arraste o objeto **cursor** da **hierarquia** para o campo de **cursor** do **SimpleSinglePointerSelector** da InputManager, na parte inferior do **Inspetor** .
+4. Arraste e solte o **cursor** na **hierarquia**.
+5. Selecione o objeto **InputManager** na **hierarquia**.
+6. Arraste o objeto **cursor** da **hierarquia** para o campo de **cursor** do **SimpleSinglePointerSelector** da InputManager, na parte inferior do **Inspetor**.
 
 ![Configuração do seletor de ponteiro único simples](images/holograms210-ssps.png)
 
 ### <a name="build-and-deploy"></a>Compilar e implantar
 
-1. Recompile o aplicativo do **arquivo > configurações de Build** .
-2. Abra a **pasta do aplicativo** .
-3. Abra a **solução ModelExplorer do Visual Studio** .
-4. Clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** .
+1. Recompile o aplicativo do **arquivo > configurações de Build**.
+2. Abra a **pasta do aplicativo**.
+3. Abra a **solução ModelExplorer do Visual Studio**.
+4. Clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**.
 5. Observe como o cursor é desenhado e como ele muda de aparência se estiver tocando em um holograma.
 
 ### <a name="instructions"></a>Instruções
 
 1. No painel **hierarquia** , expanda o objeto **AstroMan** -> **GEO_G** -> **Back_Center** .
 2. Clique duas vezes em **Interactible.cs** para abri-lo no Visual Studio.
-3. Remova os comentários das linhas nos retornos de chamada **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** em **Interactible.cs** . Eles são chamados pelo InputManager do kit de ferramentas da realidade misturada quando o foco (por olhar ou por controlador apontando) entra e sai do colisor do Jogoobject específico.
+3. Remova os comentários das linhas nos retornos de chamada **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** em **Interactible.cs**. Eles são chamados pelo InputManager do kit de ferramentas da realidade misturada quando o foco (por olhar ou por controlador apontando) entra e sai do colisor do Jogoobject específico.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -253,7 +253,7 @@ void IFocusable.OnFocusExit()
 1. No painel **hierarquia** , selecione o objeto **InputManager** .
 2. No painel **Inspetor** , localize o script de **estabilizador olhar** . Clique para abrir no Visual Studio, se você quiser dar uma olhada.
     * Esse script itera sobre exemplos de dados do Raycast e ajuda a estabilizar o olhar do usuário para direcionamento de precisão.
-3. No **Inspetor** , você pode editar o valor das **amostras de estabilidade armazenadas** . Esse valor representa o número de amostras que o estabilizador itera para calcular o valor estabilizado.
+3. No **Inspetor**, você pode editar o valor das **amostras de estabilidade armazenadas** . Esse valor representa o número de amostras que o estabilizador itera para calcular o valor estabilizado.
 
 ## <a name="chapter-4---directional-indicator"></a>Capítulo 4 – Indicador direcional
 
@@ -274,11 +274,11 @@ Vamos usar o arquivo **DirectionIndicator.cs** , que:
 Vamos começar.
 
 1. Clique no objeto **AstroMan** no painel **hierarquia** e **clique na seta** para expandi-lo.
-2. No painel **hierarquia** , selecione o objeto **DirectionalIndicator** em **AstroMan** .
+2. No painel **hierarquia** , selecione o objeto **DirectionalIndicator** em **AstroMan**.
 3. No painel **Inspetor** , clique no botão **Adicionar componente** .
 4. No menu, digite o **indicador de direção** da caixa de pesquisa. Selecione o resultado da pesquisa.
-5. No painel **hierarquia** , arraste e solte o objeto **cursor** na propriedade **cursor** no **Inspetor** .
-6. No painel **projeto** , na pasta **hologramas** , arraste e solte o ativo **DirectionalIndicator** para a propriedade **Indicador direcional** no **Inspetor** .
+5. No painel **hierarquia** , arraste e solte o objeto **cursor** na propriedade **cursor** no **Inspetor**.
+6. No painel **projeto** , na pasta **hologramas** , arraste e solte o ativo **DirectionalIndicator** para a propriedade **Indicador direcional** no **Inspetor**.
 7. Crie e implante o aplicativo.
 8. Observe como o objeto indicador direcional ajuda a localizar o Astronaut.
 
@@ -295,18 +295,18 @@ Usaremos o arquivo **Billboard.cs** para manter um gameobject orientado para que
 1. No painel **hierarquia** , selecione o objeto **AstroMan** .
 2. No painel **Inspetor** , clique no botão **Adicionar componente** .
 3. No menu, digite o **mural** da caixa de pesquisa. Selecione o resultado da pesquisa.
-4. No **Inspetor** , defina o **eixo dinâmico** como **Y** .
+4. No **Inspetor** , defina o **eixo dinâmico** como **Y**.
 5. Experimente! Crie e implante o aplicativo como antes.
 6. Veja como o objeto do mural o rostos não importa como você altera o ponto de vista.
 7. Exclua o script do **AstroMan** por enquanto.
 
-## <a name="chapter-6---tag-along"></a>Capítulo 6-marcar como
+## <a name="chapter-6---tag-along"></a>Capítulo 6-Tag-Along
 
 >[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 ### <a name="objectives"></a>Objetivos
 
-* Use a marca – junto com nossos hologramas nos seguem pela sala.
+* Use Tag-Along para que nossos hologramas acompanhem a sala.
 
 À medida que trabalharmos com esse problema, iremos ser guiado pelas seguintes restrições de design:
 
@@ -320,11 +320,11 @@ Um objeto de marca-ao mesmo nunca deixa totalmente a exibição do usuário. Voc
 
 Vamos usar o arquivo **SimpleTagalong.cs** , que:
 
-1. Determine se o objeto de marca está dentro dos limites da câmera.
-2. Se não estiver dentro da exibição frustum, posicione a marca-junto com parcialmente dentro da exibição frustum.
-3. Caso contrário, posicione a marca-junto com uma distância padrão do usuário.
+1. Determine se o objeto de Tag-Along está dentro dos limites da câmera.
+2. Se não estiver dentro da exibição frustum, posicione a Tag-Along parcialmente dentro da exibição frustum.
+3. Caso contrário, posicione o Tag-Along para uma distância padrão do usuário.
 
-Para fazer isso, primeiro devemos alterar o script **Interactible.cs** para chamar o **TagalongAction** .
+Para fazer isso, primeiro devemos alterar o script **Interactible.cs** para chamar o **TagalongAction**.
 
 1. Edite **Interactible.cs** concluindo o código exercício 6. a (removendo as linhas de comentário 84 a 87).
 
@@ -341,11 +341,11 @@ O script **InteractibleAction.cs** , emparelhado com **Interactible.cs** , execu
 
 * Na pasta **scripts** , clique em ativo **TagalongAction.cs** para abrir no Visual Studio.
 * Conclua o exercício de codificação ou altere-o para:
-  * Na parte superior da **hierarquia** , no tipo de barra de pesquisa **ChestButton_Center** e selecione o resultado.
+  * Na parte superior da **hierarquia**, no tipo de barra de pesquisa **ChestButton_Center** e selecione o resultado.
   * No painel **Inspetor** , clique no botão **Adicionar componente** .
   * No menu, digite a **ação que** da caixa de pesquisa. Selecione o resultado da pesquisa.
   * Na pasta **hologramas** , localize o ativo **que** .
-  * Selecione o objeto **ChestButton_Center** na **hierarquia** . Arraste e solte o objeto **que** do painel **projeto** para o **Inspetor** na propriedade **objeto para que** .
+  * Selecione o objeto **ChestButton_Center** na **hierarquia**. Arraste e solte o objeto **que** do painel **projeto** para o **Inspetor** na propriedade **objeto para que** .
   * Arraste o objeto de **ação que** do **Inspetor** para o campo de **ação Interactible** no script **Interactible** .
 * Clique duas vezes no script **TagalongAction** para abri-lo no Visual Studio.
 
@@ -355,9 +355,9 @@ Precisamos adicionar o seguinte:
 
 * Adicione funcionalidade à função performaaction no script TagalongAction (Herdado de InteractibleAction).
 * Adicione a mensagem ao objeto gazed e defina o eixo dinâmico como XY.
-* Em seguida, adicione uma marca simples-junto ao objeto.
+* Em seguida, adicione Tag-Along simples ao objeto.
 
-Aqui está nossa solução, de **TagalongAction.cs** :
+Aqui está nossa solução, de **TagalongAction.cs**:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

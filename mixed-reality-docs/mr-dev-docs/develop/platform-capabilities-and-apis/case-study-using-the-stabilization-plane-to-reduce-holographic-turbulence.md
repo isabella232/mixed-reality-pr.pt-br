@@ -5,13 +5,13 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, hologramas, estabilização, estudo de caso
-ms.openlocfilehash: 4eb61cb37ef087dc5fbeb6b4ef6ca1c507719205
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, hologramas, estabilização, estudo de caso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675018"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679605"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Estudo de caso-usando o plano de estabilização para reduzir Holographic turbulência
 
@@ -97,7 +97,7 @@ Vá para o seu direito mais uma vez até ver uma nova configuração de pontos. 
 </tr>
 </table>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Noções básicas do MR 100: introdução ao Unity](../unity/tutorials/holograms-100.md)
 * [Ponto de foco no Unity](../unity/focus-point-in-unity.md)
 * [Estabilidade do holograma](hologram-stability.md)

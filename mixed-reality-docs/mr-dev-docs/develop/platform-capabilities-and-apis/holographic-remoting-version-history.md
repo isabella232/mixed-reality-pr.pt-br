@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, comunicação remota e comunicação remota Holographic
-ms.openlocfilehash: 844a5dc36b480791296f17db067cd71ece307a2b
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+keywords: HoloLens, comunicação remota, Holographic de comunicação remota, histórico de versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011432"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677845"
 ---
 # <a name="holographic-remoting-version-history"></a>Histórico de versões de comunicação remota do Holographic
 

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Realidade mista do Windows, acompanhamento manual, inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, desenvolvimento de jogos
-ms.openlocfilehash: 5bc120f802c2160282befd1ce6cb8025be21cbaa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, acompanhamento manual, inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
+ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674855"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679205"
 ---
 # <a name="hand-tracking-in-unreal"></a>Acompanhamento da mão no Unreal
 
@@ -68,7 +68,7 @@ Você pode encontrar os valores numéricos para cada caso de enum na tabela [Win
  
 ### <a name="supporting-hand-tracking"></a>Acompanhamento de suporte à mão
 
-Você pode usar o rastreamento manual em plantas adicionando **suporte ao rastreamento** à mão **> realidade mista do Windows** :
+Você pode usar o rastreamento manual em plantas adicionando **suporte ao rastreamento** à mão **> realidade mista do Windows**:
 
 ![Controle à mão BP](images/unreal/hand-tracking-bp.png)
 
@@ -115,7 +115,7 @@ Depois de habilitar a origem e abrir um ativo de animação, expanda a seção *
 
 ![Animação de link ao vivo](images/unreal/live-link-animation.png)
  
-A hierarquia de animação da mão é a mesma do `EWMRHandKeypoint` . A animação pode ser redirecionada usando **WindowsMixedRealityHandTrackingLiveLinkRemapAsset** :
+A hierarquia de animação da mão é a mesma do `EWMRHandKeypoint` . A animação pode ser redirecionada usando **WindowsMixedRealityHandTrackingLiveLinkRemapAsset**:
 
 ![Animação de link ao vivo 2](images/unreal/live-link-animation2.png)
  
@@ -128,7 +128,7 @@ Ele também pode ser subclasse no editor:
 ![Malha à mão](images/unreal/hand-mesh.png)
 
 Antes de poder acessar os dados da malha, você precisará:
-- Selecione o ativo do **ARSessionConfig** , expanda as configurações do **ar->** configurações de mapeamento do mundo e marque **gerar dados de malha da geometria rastreada** . 
+- Selecione o ativo do **ARSessionConfig** , expanda as configurações do **ar->** configurações de mapeamento do mundo e marque **gerar dados de malha da geometria rastreada**. 
 
 Abaixo estão os parâmetros de malha padrão:
 
@@ -196,14 +196,14 @@ Você pode usar um raio de mão como um dispositivo apontador em C++ e plantas, 
 
 É importante mencionar que, como os resultados de todas as funções alteram todos os quadros, todos eles se tornaram chamáveis. Para obter mais informações sobre funções puras e impuras ou que podem ser chamadas, consulte o GUID do usuário do Blueprint em [funções](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
 
-Para usar raios de mão em plantas, pesquise qualquer uma das ações em **HMD de realidade mista do Windows** :
+Para usar raios de mão em plantas, pesquise qualquer uma das ações em **HMD de realidade mista do Windows**:
 
 ![Raios-mão BP](images/unreal/hand-rays-bp.png)
  
 Para acessá-los em C++, inclua na `WindowsMixedRealityFunctionLibrary.h` parte superior do seu arquivo de código de chamada.
 
 ### <a name="enum"></a>Enumeração
-Você também tem acesso a casos de entrada em **EHMDInputControllerButtons** , que podem ser usados em plantas:
+Você também tem acesso a casos de entrada em **EHMDInputControllerButtons**, que podem ser usados em plantas:
 
 ![Botões do controlador de entrada](images/unreal/input-controller-buttons.png)
 
@@ -407,14 +407,14 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento inreal que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode prosseguir para o próximo bloco de construção: 
+Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unreal, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção: 
 
 > [!div class="nextstepaction"]
 > [Âncoras Espaciais locais](unreal-spatial-anchors.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Câmera do HoloLens](unreal-hololens-camera.md)
 
-Você sempre pode voltar para os [pontos de verificação de desenvolvimento inreais](unreal-development-overview.md#2-core-building-blocks) a qualquer momento.
+Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#2-core-building-blocks) a qualquer momento.

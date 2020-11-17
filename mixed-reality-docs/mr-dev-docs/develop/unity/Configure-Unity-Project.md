@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto
-ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho
+ms.openlocfilehash: cd7e6c5681c717c37368393a605998a2ab8e4175
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386212"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677665"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Configurar um novo projeto do Unity para a realidade mista do Windows 
 
@@ -78,7 +78,7 @@ O HoloLens tem uma GPU de classe móvel. Se seu aplicativo estiver direcionando 
 Com a **realidade virtual suportada** marcada, o componente da [câmera do Unity](camera-in-unity.md) lida com o [controle de cabeçalho e a renderização de estereoscópico](../platform-capabilities-and-apis/rendering.md). Isso significa que não há necessidade de substituir o objeto da câmera principal por uma câmera personalizada.
 
 Se seu aplicativo estiver direcionando para o HoloLens especificamente, você precisará alterar algumas configurações para otimizar para as exibições transparentes do dispositivo. Essas configurações permitem que o conteúdo do Holographic seja mostrado ao mundo físico:
-1. Na **hierarquia** , selecione a **câmera principal**
+1. Na **hierarquia**, selecione a **câmera principal**
 2. No painel de **inspetores** , defina a **posição** de transformação como **0, 0,** portanto, o local da cabeça do usuário começa na origem do Unity World.
 3. Alterar **sinalizadores claros** para **cor sólida**.
 4. Altere a cor do **plano de fundo** para **RGBA 0, 0, 0, 0**. O preto é renderizado como transparente no HoloLens.
@@ -90,8 +90,8 @@ Se seu aplicativo estiver direcionando para o HoloLens especificamente, você pr
 > [!IMPORTANT]
 > Se você excluir e criar uma nova câmera, verifique se a nova câmera está marcada como **MainCamera**.
 
-## <a name="see-also"></a>Confira também
-* [MRTK – guia de instalação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK-página inicial da documentação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+## <a name="see-also"></a>Veja também
+* [MRTK – Guia de instalação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK – Página inicial da documentação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Instalar as ferramentas](../install-the-tools.md)
 * [Visão geral do desenvolvimento do Unity](unity-development-overview.md)

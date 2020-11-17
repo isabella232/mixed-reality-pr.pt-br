@@ -5,18 +5,18 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, comunicação remota e comunicação remota Holographic
-ms.openlocfilehash: 7b2a0166fd7d239222f9742e0f5f2f6dfd3a7ffb
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, NuGet
+ms.openlocfilehash: 8494387b99352866632b46a98a449d173395b85d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683182"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677935"
 ---
 # <a name="writing-a-holographic-remoting-remote-app"></a>Como criar um aplicativo remoto de comunicação remota holográfica
 
 >[!IMPORTANT]
->Este documento descreve a criação de um aplicativo remoto para o HoloLens 2. Os aplicativos remotos para o **HoloLens (1º gen)** devem usar o pacote NuGet versão **1. x** . x. Isso significa que os aplicativos remotos escritos para o HoloLens 2 não são compatíveis com o HoloLens 1 e vice-versa. A documentação do HoloLens 1 pode ser encontrada [aqui](add-holographic-remoting.md).
+>Este documento descreve a criação de um aplicativo remoto para o HoloLens 2. Os aplicativos remotos para o **HoloLens (1º gen)** devem usar o pacote NuGet versão **1. x**. x. Isso significa que os aplicativos remotos escritos para o HoloLens 2 não são compatíveis com o HoloLens 1 e vice-versa. A documentação do HoloLens 1 pode ser encontrada [aqui](add-holographic-remoting.md).
 
 Ao criar um aplicativo remoto de comunicação remota do Holographic, o conteúdo remoto que é processado em um computador remoto pode ser transmitido para o HoloLens 2. Este artigo descreve como isso pode ser feito. Todo o código nesta página e projetos de trabalho podem ser encontrados no [repositório GitHub de exemplos de comunicação remota do Holographic](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
@@ -39,8 +39,8 @@ As etapas a seguir são necessárias para adicionar o pacote NuGet a um projeto 
 1. Abra o projeto no Visual Studio.
 2. Clique com o botão direito do mouse no nó do projeto e selecione **gerenciar pacotes NuGet...**
 3. No painel que aparece, clique em **procurar** e procure "comunicação remota do Holographic".
-4. Selecione **Microsoft. Holographic. Remoting** , certifique-se de selecionar a versão **2. x. x** mais recente e clique em **instalar** .
-5. Se a caixa de diálogo **Visualizar** for exibida, clique em **OK** .
+4. Selecione **Microsoft. Holographic. Remoting**, certifique-se de selecionar a versão **2. x. x** mais recente e clique em **instalar**.
+5. Se a caixa de diálogo **Visualizar** for exibida, clique em **OK**.
 6. A próxima caixa de diálogo exibida é o contrato de licença. Clique em **aceito** para aceitar o contrato de licença.
 
 >[!NOTE]
@@ -89,7 +89,7 @@ A conexão pode ser feita de duas maneiras.
 1) O aplicativo remoto se conecta ao Player em execução no dispositivo.
 2) O Player em execução no dispositivo se conecta ao aplicativo remoto.
 
-Para estabelecer uma conexão do aplicativo remoto para o HoloLens 2, chame o ```Connect``` método no contexto remoto especificando o nome do host e a porta. A porta usada pelo Holographic Remoting Player é **8265** .
+Para estabelecer uma conexão do aplicativo remoto para o HoloLens 2, chame o ```Connect``` método no contexto remoto especificando o nome do host e a porta. A porta usada pelo Holographic Remoting Player é **8265**.
 
 ```cpp
 try

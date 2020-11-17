@@ -1,19 +1,19 @@
 ---
-title: Como atualizar aplicativos UWP 2D para realidade misturada
+title: Atualizando aplicativos UWP 2D para realidade misturada
 description: Este artigo descreve a atualização de seu aplicativo de Plataforma Universal do Windows 2D existente para ser executado em headsets do HoloLens e do Windows Mixed realm de imersão.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: aplicativo 2D, UWP, aplicativo simples, HoloLens, headset de imersão, modelo de aplicativo, botão voltar, barra de aplicativos, DPI, resolução, escala
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: aplicativo 2D, UWP, aplicativo simples, HoloLens, headsets de imersão, modelo de aplicativo, botão voltar, barra de aplicativos, DPI, resolução, escala, portabilidade, 1ª gen de HoloLens, HoloLens 2, headset de realidade misturada, fone de ouvido com realidade misturada do Windows, migração, Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674929"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677795"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Como atualizar aplicativos UWP 2D para realidade misturada
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Atualizando aplicativos UWP 2D para realidade misturada
 
 A realidade mista do Windows permite que um usuário veja hologramas como se eles estivessem em seu lugar, em seu mundo físico ou digital. Em seu núcleo, tanto o HoloLens quanto os PCs desktop nos quais você anexa acessórios de headsets de imersão são dispositivos Windows 10; Isso significa que você é capaz de executar quase todos os aplicativos de Plataforma Universal do Windows (UWP) na loja como aplicativos 2D.
 
@@ -69,16 +69,16 @@ Agora, vamos ir para seu manifesto AppX para garantir que seu aplicativo UWP do 
   ```
 * Guarde!
 
-Se você não usar o Visual Studio para seu ambiente de desenvolvimento, poderá abrir **AppXManifest.xml** no editor de texto de sua escolha para garantir que você esteja direcionando para o **Windows. universal** *TargetDeviceFamily* .
+Se você não usar o Visual Studio para seu ambiente de desenvolvimento, poderá abrir **AppXManifest.xml** no editor de texto de sua escolha para garantir que você esteja direcionando para o **Windows. universal** *TargetDeviceFamily*.
 
 ### <a name="run-in-the-hololens-emulator"></a>Executar no emulador do HoloLens
 
 Agora que seu aplicativo UWP tem como alvo "Windows. universal", vamos compilar seu aplicativo e executá-lo no [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
-* Verifique se você [instalou o Emulador do HoloLens](../install-the-tools.md).
+* Verifique se você [instalou o Emulador do HoloLens](../install-the-tools.md) .
 * No Visual Studio, selecione a configuração de compilação **x86** para seu aplicativo
 
   ![Configuração de build x86 no Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* Selecione **emulador do HoloLens** no menu suspenso destino de implantação
+* Selecione **Emulador do HoloLens** no menu suspenso do destino de implantação
 
   ![Emulador do HoloLens na lista de destino de implantação](images/deployemulator-500px.png)<br>
 * Selecione **depurar > iniciar a depuração** para implantar seu aplicativo e iniciar a depuração.
@@ -98,7 +98,7 @@ Para chegar à parte inferior do que pode estar fazendo com que seu aplicativo U
 ### <a name="running-your-uwp-app-in-the-debugger"></a>Executando seu aplicativo UWP no depurador
 
 Essas etapas o orientarão na depuração do seu aplicativo UWP usando o depurador do Visual Studio.
-* Se você ainda não tiver feito isso, abra sua solução no Visual Studio. Altere o destino para o **emulador do HoloLens** e a configuração de Build para **x86** .
+* Se você ainda não tiver feito isso, abra sua solução no Visual Studio. Altere o destino para o **emulador do HoloLens** e a configuração de Build para **x86**.
 * Selecione **depurar > iniciar a depuração** para implantar seu aplicativo e iniciar a depuração.
 * Coloque o aplicativo no mundo com o mouse, o teclado ou o controlador Xbox.
 * O Visual Studio agora deve quebrar em algum lugar no código do aplicativo.
@@ -116,7 +116,7 @@ Agora que seu aplicativo UWP está em execução em headsets de imersão e/ou Ho
 
 ![Do design responsivo](images/scale-500px.png)
 
-O Windows 10 move todo o Design Visual de pixels de tela reais para **pixels efetivos** . Isso significa que os desenvolvedores projetam suas interfaces de usuário seguindo as diretrizes de interface humana do Windows 10 para pixels efetivos, e o dimensionamento do Windows garante que os pixels efetivos sejam o tamanho certo para usabilidade em dispositivos, resoluções, DPI, etc. Veja essa [excelente leitura no MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) para saber mais, bem como esta [apresentação de Build](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
+O Windows 10 move todo o Design Visual de pixels de tela reais para **pixels efetivos**. Isso significa que os desenvolvedores projetam suas interfaces de usuário seguindo as diretrizes de interface humana do Windows 10 para pixels efetivos, e o dimensionamento do Windows garante que os pixels efetivos sejam o tamanho certo para usabilidade em dispositivos, resoluções, DPI, etc. Veja essa [excelente leitura no MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) para saber mais, bem como esta [apresentação de Build](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
 
 Mesmo com a capacidade exclusiva de posicionar aplicativos em seu mundo em uma variedade de distâncias, as distâncias de exibição do tipo TV são recomendadas para produzir a melhor legibilidade e interação com o olhar/gesto. Por isso, um Slate virtual na página inicial da realidade misturada exibirá sua exibição de UWP plana em:
 
@@ -147,7 +147,7 @@ exibições 2D são decoradas com uma barra de aplicativo acima do seu conteúdo
 
 **Título:** exibe o *DisplayName* do bloco associado à instância do aplicativo
 
-**Botão voltar:** gera o evento *[requested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* quando pressionado. A visibilidade do botão voltar é controlada por *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* .
+**Botão voltar:** gera o evento *[requested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* quando pressionado. A visibilidade do botão voltar é controlada por *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
 
 ![Interface do usuário da barra de aplicativos na exibição de aplicativo 2D](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *Interface do usuário da barra de aplicativos na exibição de aplicativo 2D*
@@ -175,7 +175,7 @@ A [entrada de voz](../../design/voice-input.md) é uma parte crítica da experi�
 
 Quando seu aplicativo estiver em execução, empacote seu aplicativo para [enviá-lo ao Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Modelo de aplicativo](../../design/app-model.md)
 * [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)
 * [Controladores de movimentos](../../design/motion-controllers.md)

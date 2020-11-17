@@ -7,12 +7,12 @@ ms.date: 09/07/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, começar, noções básicas, unity, visual studio, kit de ferramentas
-ms.openlocfilehash: fe949d7a61eb49098351d49f9fe9f7c1fd5699c8
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: 8e123ec9de117b3c1c5959f2719481ae8094a9e6
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001460"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482404"
 ---
 # <a name="install-the-tools"></a>Instalar as ferramentas
 
@@ -42,3 +42,4 @@ Não tem um dispositivo de realidade misturada? Você pode instalar o [emulador 
 Agora que você tem o Windows 10, o Visual Studio e o SDK do Windows 10 prontos para uso, vamos escolher um mecanismo para a criação.
 
 [!INCLUDE[](includes/tools-overview.md)]
+

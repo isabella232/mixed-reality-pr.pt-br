@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: foto, vídeo, hololens, câmera, Unity, localizável
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: foto, vídeo, hololens, câmera, Unity, localizável, PVC, câmera de vídeo fotográfico, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, webcam, captura de foto, captura de vídeo
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957796"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678595"
 ---
 # <a name="locatable-camera-in-unity"></a>Câmera localizável no Unity
 
@@ -128,7 +128,7 @@ Ao capturar dados para um Texture2D, o processo é extremamente semelhante à ca
 
 Siga o processo de configuração acima.
 
-No *OnPhotoModeStarted* , Capture um quadro na memória.
+No *OnPhotoModeStarted*, Capture um quadro na memória.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Namespace:** *UnityEngine. XR. WSA. webcam*<br>
 **Tipo:** *VideoCapture*
 
-O *VideoCapture* funciona de forma semelhante à do *Capture* . As duas únicas diferenças são que você deve especificar um valor de quadros por segundo (FPS) e só pode salvar diretamente no disco como um arquivo. mp4. As etapas para usar o *VideoCapture* são as seguintes:
+O *VideoCapture* funciona de forma semelhante à do *Capture*. As duas únicas diferenças são que você deve especificar um valor de quadros por segundo (FPS) e só pode salvar diretamente no disco como um arquivo. mp4. As etapas para usar o *VideoCapture* são as seguintes:
 1. Criar um objeto *VideoCapture*
 2. Crie um objeto *cameraparameters* com as configurações desejadas
 3. Iniciar o modo de vídeo via *StartVideoModeAsync*

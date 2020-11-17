@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: Realidade mista do Windows, hologramas, comunicação remota Holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, solução de problemas, ajuda
-ms.openlocfilehash: 593b242326b83d4596d22a7e1a39ef18c26bc67a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, hologramas, comunicação remota Holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, solução de problemas, ajuda, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
+ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674982"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679575"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Solução de problemas de comunicação remota do Holographic
 

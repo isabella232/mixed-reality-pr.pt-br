@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: teclado, entrada, Unity, touchscreenkeyboard
-ms.openlocfilehash: 806051a4ea429a058b271a55d7f5fc41503e346b
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: teclado, entrada, Unity, touchscreenkeyboard, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293146"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677415"
 ---
 # <a name="keyboard-input-in-unity"></a>Entrada do teclado no Unity
 
 **Namespace:** *UnityEngine*<br>
- **Tipo**: * [TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
+ **Tipo**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
 Embora o HoloLens dê suporte a muitas formas de entrada, incluindo teclados Bluetooth, a maioria dos aplicativos não pode pressupor que todos os usuários terão um Keyboard físico disponível. Se seu aplicativo exigir entrada de texto, alguma forma de teclado na tela deverá ser fornecida.
 
@@ -48,7 +48,7 @@ Há seis exibições de teclado diferentes disponíveis:
 
 O teclado do sistema do HoloLens está disponível somente para aplicativos do Unity que são exportados com o "tipo de compilação UWP" definido como "XAML". Há compensações que você faz quando escolhe "XAML" como o "tipo de compilação UWP" sobre "D3D". Se você não estiver familiarizado com essas compensações, talvez queira explorar uma [solução de entrada alternativa](#alternative-keyboard-options) para o teclado do sistema.
 1. Abra o menu **arquivo** e selecione **configurações de compilação...**
-2. Verifique se **a plataforma** está definida como **Windows Store**, se o **SDK** está definido como **Universal 10**e defina o **tipo de compilação UWP** como **XAML**.
+2. Verifique se **a plataforma** está definida como **Windows Store**, se o **SDK** está definido como **Universal 10** e defina o **tipo de compilação UWP** como **XAML**.
 3. Na caixa de diálogo **configurações de compilação** , clique no botão **configurações do Player...**
 4. Selecione a guia **configurações da Windows Store**
 5. Expanda o grupo **outras configurações**

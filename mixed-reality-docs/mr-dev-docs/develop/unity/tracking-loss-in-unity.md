@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, perda de controle, imagem de perda de rastreamento
-ms.openlocfilehash: 5aa17def844735088bcee6137a7b76a586107e44
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, perda de controle, imagem de perda de rastreamento, sondagem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
+ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674864"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678415"
 ---
 # <a name="tracking-loss-in-unity"></a>Como controlar a perda no Unity
 
@@ -30,7 +30,7 @@ Para tratar manualmente a perda de rastreamento, você precisa ir para **Editar*
 **Namespace:** *UnityEngine. XR. WSA*<br>
 **Tipo:** *worldmanager*
 
-* O World Manager expõe um evento para detectar o controle perdido/obtido ( *worldmanager. OnPositionalLocatorStateChanged* ) e uma propriedade para consultar o estado atual ( *worldmanager. State* )
+* O World Manager expõe um evento para detectar o controle perdido/obtido (*worldmanager. OnPositionalLocatorStateChanged*) e uma propriedade para consultar o estado atual (*worldmanager. State*)
 * Quando o estado de acompanhamento não estiver ativo, a câmera não parecerá traduzir no mundo virtual mesmo que o usuário se traduz. Isso significa que os objetos não corresponderão mais a qualquer local físico e todos serão exibidos no corpo bloqueado.
 
 Ao lidar com alterações de controle por conta própria, você precisa sondar a propriedade de estado em cada quadro ou manipular o evento *OnPositionalLocatorStateChanged* .
@@ -81,5 +81,5 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Lidando com a perda de controle no DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

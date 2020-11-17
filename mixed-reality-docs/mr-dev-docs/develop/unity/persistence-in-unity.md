@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, persistência, Unity
-ms.openlocfilehash: bb1a9b0544f9325a60c86c7424b7b451b6b4335b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, persistência, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676602"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678525"
 ---
 # <a name="persistence-in-unity"></a>Persistência no Unity
 
@@ -109,12 +109,12 @@ Quando estiver em execução com as âncoras espaciais do Azure, você poderá <
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada. A partir daqui, você pode prosseguir para o próximo bloco de construção:
+Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada. De lá, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Mapeamento espacial](spatial-mapping-in-unity.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Experiências compartilhadas](shared-experiences-in-unity.md)

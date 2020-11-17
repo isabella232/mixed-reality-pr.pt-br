@@ -5,13 +5,13 @@ author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
-keywords: Unity, realidade misturada, nativa, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr
-ms.openlocfilehash: 36a26bbc16c6b854cd2fa5f36b063b9014a28d97
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, realidade misturada, nativa, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: a64deb46db82e6d0401a803e45dcbbd854476745
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675899"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679925"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Objetos nativos de realidade misturada no Unity
 

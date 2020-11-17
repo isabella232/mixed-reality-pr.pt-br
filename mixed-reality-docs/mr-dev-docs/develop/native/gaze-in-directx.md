@@ -5,18 +5,18 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: olho-olhar, cabeça olhar, controle de cabeça, acompanhamento ocular, DirectX, entrada, hologramas
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: olho-olhar, cabeça olhar, controle de cabeça, controle ocular, DirectX, entrada, hologramas, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675037"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678075"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Cabeça-olhar e olho-olhar entrada no DirectX
 
 > [!NOTE]
-> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)** .
+> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.
 
 No Windows Mixed Reality, os olhos e a entrada olhar de cabeça são usados para determinar o que o usuário está olhando. Isso pode ser usado para direcionar modelos de entrada primários, como [Head-olhar e commit](../../design/gaze-and-commit.md), e também para fornecer contexto para tipos de interações. Há dois tipos de vetores olhar disponíveis por meio da API: Head-olhar e olho-olhar.  Ambos são fornecidos como um raio de três dimensões com uma origem e uma direção. Os aplicativos podem então raycastr em suas cenas ou no mundo real e determinar o que o usuário está direcionando.
 
@@ -84,7 +84,7 @@ Ele usa a mesma API [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Win
 2. Habilite a funcionalidade de "entrada olhar" no manifesto do pacote.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Solicitando acesso à entrada de olhar de olho
-Quando seu aplicativo estiver sendo inicializado, chame [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) para solicitar acesso ao controle ocular. O sistema solicitará o usuário se necessário e retornará [GazeInputAccessStatus:: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) depois que o acesso tiver sido concedido. Essa é uma chamada assíncrona, portanto, requer um pouco de gerenciamento extra. O exemplo a seguir gira um std:: thread desanexado para aguardar o resultado, que ele armazena em uma variável de membro chamada *m_isEyeTrackingEnabled* .
+Quando seu aplicativo estiver sendo inicializado, chame [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) para solicitar acesso ao controle ocular. O sistema solicitará o usuário se necessário e retornará [GazeInputAccessStatus:: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) depois que o acesso tiver sido concedido. Essa é uma chamada assíncrona, portanto, requer um pouco de gerenciamento extra. O exemplo a seguir gira um std:: thread desanexado para aguardar o resultado, que ele armazena em uma variável de membro chamada *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -134,7 +134,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 
 ### <a name="declaring-the-gaze-input-capability"></a>Declarando o recurso de *entrada olhar*
 
-Clique duas vezes no arquivo appxmanifest em *Gerenciador de soluções* .  Em seguida, navegue até a seção de *recursos* e verifique o recurso de *entrada olhar* . 
+Clique duas vezes no arquivo appxmanifest em *Gerenciador de soluções*.  Em seguida, navegue até a seção de *recursos* e verifique o recurso de *entrada olhar* . 
 
 ![Funcionalidade de entrada do olhar](images/gaze-input-capability.png)
 
@@ -177,9 +177,9 @@ if (pointerPose)
 Conforme mencionado em nossos [documentos de design de acompanhamento de olho](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available), ambos os designers, bem como os desenvolvedores, devem estar cientes de que pode haver instâncias nas quais os dados de acompanhamento de olho podem não estar disponíveis para seu aplicativo.
 Há vários motivos para isso, desde que um usuário não esteja sendo calibrado, o usuário que negou o acesso do aplicativo aos seus dados de controle de olho ou simplesmente as interferências temporárias (como manchas no visor do HoloLens ou cabelo occluding os olhos do usuário). Embora algumas das APIs já tenham sido mencionadas neste documento, a seguir, fornecemos um resumo de como detectar que o acompanhamento de olho está disponível como uma referência rápida: 
 
-* Verifique se o sistema dá suporte a acompanhamento de olho. Chame o seguinte *método* : [Windows. percepção. Peoples. EyesPose. IsSupported ()](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* Verifique se o sistema dá suporte a acompanhamento de olho. Chame o seguinte *método*: [Windows. percepção. Peoples. EyesPose. IsSupported ()](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* Verifique se o usuário está calibrado. Chame a seguinte *Propriedade* : [Windows. percepção. People. EyesPose. IsCalibrationValid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid) 
+* Verifique se o usuário está calibrado. Chame a seguinte *Propriedade*: [Windows. percepção. People. EyesPose. IsCalibrationValid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid) 
 
 * Verifique se o usuário recebeu a permissão do seu aplicativo para usar seus dados de acompanhamento de olho: recupere o _' GazeInputAccessStatus '_ atual. Um exemplo de como fazer isso é explicado em [solicitando acesso à entrada olhar](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).   
 
@@ -205,7 +205,7 @@ Os desenvolvedores devem certificar-se de fornecer suporte adequado para usuári
 
 <br>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Calibragem](../../calibration.md)
 * [Sistemas de coordenadas no DirectX](coordinate-systems-in-directx.md)
 * [Olho-olhar no HoloLens 2](../../design/eye-tracking.md)

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: olho-olhar, cabeça olhar, Unity, holograma, realidade misturada
-ms.openlocfilehash: 8c1a6cb0847cd0e6e776c6d4e1f7c1efdc126279
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: olho-olhar, cabeça-olhar, Unity, holograma, realidade misturada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675246"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677505"
 ---
 # <a name="head-gaze-in-unity"></a>Cabeça-olhar no Unity
 
@@ -58,19 +58,19 @@ Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.gi
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode prosseguir para o próximo bloco de construção:
+Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Gestos e controladores de movimentos](gestures-and-motion-controllers-in-unity.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Experiências compartilhadas](shared-experiences-in-unity.md)
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Câmera](camera-in-unity.md)
 * [Cursores](../../design/cursors.md)
 * [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)

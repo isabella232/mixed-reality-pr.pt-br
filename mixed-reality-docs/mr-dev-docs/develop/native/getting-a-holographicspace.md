@@ -5,18 +5,18 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrada espacial, renderização, Cadeia de permuta, quadro Holographic, loop de atualização, loop de jogo, quadro de referência, locatability, código de exemplo, passo a passos
-ms.openlocfilehash: d96362e7d5795449b608196e52bce55d0f16625b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrada espacial, renderização, Cadeia de troca, quadro de Holographic, loop de atualização, loop de jogo, quadro de referência, locatability, código de exemplo, passo a passos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
+ms.openlocfilehash: fa2c64901a7c4a09710a472509441d54a9e3a383
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675550"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679635"
 ---
 # <a name="getting-a-holographicspace"></a>Como obter um HolographicSpace
 
 > [!NOTE]
-> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)** .
+> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.
 
 A classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> é o seu portal no mundo Holographic. Ele controla a renderização de imersão, fornece dados de câmera e fornece acesso a APIs de raciocínio espacial. Você criará um para o <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> do seu aplicativo UWP ou o HWND do seu aplicativo Win32.
 
@@ -114,20 +114,20 @@ m_cameraAddedToken = m_holographicSpace.CameraAdded(
 
 Seu aplicativo também precisa responder a eventos do **CameraRemoved** liberando recursos que foram criados para essa câmera.
 
-De **DeviceResources:: SetHolographicSpace** :
+De **DeviceResources:: SetHolographicSpace**:
 
 ```cpp
 m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
     std::bind(&AppMain::OnCameraRemoved, this, _1, _2));
 ```
 
-Os manipuladores de eventos devem concluir algum trabalho para manter a renderização de Holographic fluindo sem problemas, e para que seu aplicativo seja capaz de renderizar. Leia o código e os comentários para obter os detalhes: você pode procurar **OnCameraAdded** e **OnCameraRemoved** em sua classe principal para entender como o mapa de **m_cameraResources** é tratado pelo **DeviceResources** .
+Os manipuladores de eventos devem concluir algum trabalho para manter a renderização de Holographic fluindo sem problemas, e para que seu aplicativo seja capaz de renderizar. Leia o código e os comentários para obter os detalhes: você pode procurar **OnCameraAdded** e **OnCameraRemoved** em sua classe principal para entender como o mapa de **m_cameraResources** é tratado pelo **DeviceResources**.
 
 No momento, estamos concentrados no AppMain e na configuração que ele faz para permitir que seu aplicativo saiba sobre câmeras Holographic. Com isso em mente, é importante anotar os dois requisitos a seguir:
 
 1. Para o manipulador de eventos **CameraAdded** , o aplicativo pode trabalhar de forma assíncrona para concluir a criação de recursos e o carregamento de ativos para a nova câmera Holographic. Os aplicativos que levam mais de um quadro para concluir esse trabalho devem solicitar um adiamento e concluir o adiamento após o carregamento de forma assíncrona; uma [tarefa ppl](https://docs.microsoft.com/cpp/parallel/concrt/parallel-patterns-library-ppl) pode ser usada para fazer trabalhos assíncronos. Seu aplicativo deve garantir que esteja pronto para renderizar para essa câmera imediatamente quando ele sair do manipulador de eventos ou quando concluir o adiamento. A saída do manipulador de eventos ou a conclusão do adiamento diz ao sistema que seu aplicativo agora está pronto para receber quadros Holographic com essa câmera incluída.
 
-2. Quando o aplicativo recebe um evento **CameraRemoved** , ele deve liberar todas as referências para o buffer de fundo e sair da função imediatamente. Isso inclui exibições de destino de renderização e qualquer outro recurso que possa conter uma referência para o [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). O aplicativo também deve garantir que o buffer de fundo não esteja anexado como um destino de renderização, conforme mostrado em **CameraResources:: ReleaseResourcesForBackBuffer** . Para ajudar a acelerar as coisas, seu aplicativo pode liberar o buffer de fundo e, em seguida, iniciar uma tarefa para concluir de forma assíncrona qualquer outro trabalho que seja necessário para desmontar essa câmera. O modelo de aplicativo Holographic inclui uma tarefa PPL que você pode usar para essa finalidade.
+2. Quando o aplicativo recebe um evento **CameraRemoved** , ele deve liberar todas as referências para o buffer de fundo e sair da função imediatamente. Isso inclui exibições de destino de renderização e qualquer outro recurso que possa conter uma referência para o [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). O aplicativo também deve garantir que o buffer de fundo não esteja anexado como um destino de renderização, conforme mostrado em **CameraResources:: ReleaseResourcesForBackBuffer**. Para ajudar a acelerar as coisas, seu aplicativo pode liberar o buffer de fundo e, em seguida, iniciar uma tarefa para concluir de forma assíncrona qualquer outro trabalho que seja necessário para desmontar essa câmera. O modelo de aplicativo Holographic inclui uma tarefa PPL que você pode usar para essa finalidade.
 
 >[!NOTE]
 >Se você quiser determinar quando uma câmera adicionada ou removida aparece no quadro, use as propriedades **HolographicFrame** [AddedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) e [RemovedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
@@ -142,7 +142,7 @@ Quadros de referência estacionários são projetados para estabilizar posiçõe
 
 O localizador espacial representa o dispositivo Windows Mixed Reality e rastreia o movimento do dispositivo e fornece sistemas de coordenadas que podem ser compreendidos em relação à sua localização.
 
-De **AppMain:: OnHolographicDisplayIsAvailableChanged** :
+De **AppMain:: OnHolographicDisplayIsAvailableChanged**:
 
 ```cpp
 spatialLocator = SpatialLocator::GetDefault();
@@ -150,7 +150,7 @@ spatialLocator = SpatialLocator::GetDefault();
 
 Crie o quadro de referência estacionário uma vez quando o aplicativo for iniciado. Isso é análogo à definição de um sistema de coordenadas mundiais, com a origem colocada na posição do dispositivo quando o aplicativo é iniciado. Este quadro de referência não se move com o dispositivo.
 
-De **AppMain:: SetHolographicSpace** :
+De **AppMain:: SetHolographicSpace**:
 
 ```cpp
 m_stationaryReferenceFrame =
@@ -175,6 +175,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 Em seguida, use esse evento para determinar quando os hologramas não podem ser renderizados como estáticos para o mundo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Como renderizar no DirectX](rendering-in-directx.md)
 * [Sistemas de coordenadas no DirectX](coordinate-systems-in-directx.md)

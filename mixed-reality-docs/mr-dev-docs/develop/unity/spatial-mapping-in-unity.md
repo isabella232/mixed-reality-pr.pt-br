@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676599"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677395"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapeamento espacial no Unity
 
@@ -64,7 +64,7 @@ O mapeamento espacial também requer um MaxVersionTested de pelo menos 10.0.1058
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Introdução aos componentes de mapeamento espacial interno do Unity
 
-O Unity oferece 2 componentes para adicionar facilmente o mapeamento espacial ao seu aplicativo, o **renderizador de mapeamento espacial** e o **Colisor de mapeamento espacial** .
+O Unity oferece 2 componentes para adicionar facilmente o mapeamento espacial ao seu aplicativo, o **renderizador de mapeamento espacial** e o **Colisor de mapeamento espacial**.
 
 ### <a name="spatial-mapping-renderer"></a>Renderizador de mapeamento espacial
 
@@ -84,13 +84,13 @@ Você pode adicionar ambos os componentes ao seu aplicativo se desejar visualiza
 
 Para usar esses dois componentes em seu aplicativo do Unity:
 1. Selecione um gameobject no centro da área na qual você gostaria de detectar malhas de superfície espacial.
-2. Na janela Inspetor, **adicione** o processador de  >  **XR**  >  **mapeamento espacial** do componente XR   ou o **renderizador de mapeamento espacial** .
+2. Na janela Inspetor, **adicione** o processador de  >  **XR**  >  **mapeamento espacial** do componente XR ou o **renderizador de mapeamento espacial**.
 
 Você pode encontrar mais detalhes sobre como usar esses componentes no site de <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">documentação do Unity</a>.
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Indo além dos componentes internos de mapeamento espacial
 
-Esses componentes o tornam fácil de arrastar e soltar para começar a usar o mapeamento espacial. Quando quiser ir além, há dois caminhos principais a serem explorados:
+Esses componentes o tornam fácil de arrastar e soltar para começar a usar o mapeamento espacial.  Quando quiser ir além, há dois caminhos principais a serem explorados:
 * Para fazer seu próprio processamento de malha de nível inferior, consulte a seção abaixo sobre a API de script de mapeamento espacial de baixo nível.
 * Para fazer uma análise de malha de nível superior, consulte a seção abaixo sobre a biblioteca SpatialUnderstanding em <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -99,7 +99,7 @@ Esses componentes o tornam fácil de arrastar e soltar para começar a usar o ma
 Se você precisar de mais controle do que obter do renderizador de mapeamento espacial e dos componentes do colisor de mapeamento espacial, poderá usar as APIs de script de mapeamento espacial de nível baixo.
 
 **Namespace:** *UnityEngine. XR. WSA*<br>
-**Tipos** : *SurfaceObserver* , *SurfaceChange* , *SurfaceData* , *surfaceid*
+**Tipos**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *surfaceid*
 
 Veja a seguir uma descrição do fluxo sugerido para um aplicativo que usa as APIs de mapeamento espacial.
 
@@ -226,7 +226,7 @@ Todo o código-fonte está incluído, permitindo personalizá-lo às suas necess
 
 ### <a name="understanding-modules"></a>Noções básicas sobre módulos
 
-Há três interfaces primárias expostas pelo módulo: topologia para consultas espaciais e de superfície simples, forma de detecção de objeto e o resolvedor de posicionamento de objetos para o posicionamento baseado em restrição de conjuntos de objetos. Cada um deles é descrito abaixo. Além das três interfaces de módulo principais, uma interface de conversão Ray pode ser usada para recuperar tipos de superfície marcada e uma malha Watertight Playspace personalizada pode ser copiada.
+Há três interfaces primárias expostas pelo módulo: topologia para consultas espaciais e de superfície simples, forma de detecção de objeto e o resolvedor de posicionamento de objetos para o posicionamento baseado em restrição de conjuntos de objetos. Veja a descrição das duas maneiras abaixo. Além das três interfaces de módulo principais, uma interface de conversão Ray pode ser usada para recuperar tipos de superfície marcada e uma malha Watertight Playspace personalizada pode ser copiada.
 
 ### <a name="ray-casting"></a>Conversão de Ray
 
@@ -479,19 +479,19 @@ Para obter mais informações sobre como usar o mapeamento espacial com o kit de
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode prosseguir para o próximo bloco de construção: 
+Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção: 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Experiências compartilhadas](shared-experiences-in-unity.md)
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Sistemas de coordenadas](../../design/coordinate-systems.md)
 * [Sistemas de coordenadas no Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

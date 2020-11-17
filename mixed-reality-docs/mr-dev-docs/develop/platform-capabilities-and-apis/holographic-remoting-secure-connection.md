@@ -5,13 +5,13 @@ author: markkeinz
 ms.author: makei
 ms.date: 10/29/2020
 ms.topic: article
-keywords: HoloLens, comunicação remota e comunicação remota Holographic
-ms.openlocfilehash: fcacac76e65fa884433afca9f568c5c0211dd570
-ms.sourcegitcommit: 979967d6841d8fa64cf1d6cf3ae532b736ed3bd1
+keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, segurança, autenticação, servidor para cliente
+ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102295"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679585"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Habilitando a segurança de conexão para comunicação remota do Holographic
 

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial
-ms.openlocfilehash: cb9bfb03da864c78784c288f4d7c4190461cd838
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer
+ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293169"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678201"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>Habilitando e desabilitando a espacial em tempo de execução
 

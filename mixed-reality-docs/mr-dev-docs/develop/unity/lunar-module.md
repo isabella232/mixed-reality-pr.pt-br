@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, aplicativos de exemplo, design, HoloLens
-ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Realidade mista do Windows, aplicativos de exemplo, design, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, aplicativos de amostra, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573250"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677457"
 ---
 # <a name="lunar-module"></a>Módulo lunar
 
@@ -108,7 +108,7 @@ Você pode encontrar scripts e pré-fabricados para o aplicativo de exemplo de m
 </tr>
 </table>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

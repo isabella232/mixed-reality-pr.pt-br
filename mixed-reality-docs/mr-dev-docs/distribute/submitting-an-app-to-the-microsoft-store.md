@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos do sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631474"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678785"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Como enviar um aplicativo para a Microsoft Store
 
@@ -67,7 +67,7 @@ Você será solicitado a definir o destino e a versão mínima do Windows ao cri
 
 ### <a name="specifying-target-device-families"></a>Especificando famílias de dispositivos de destino
 
-Os aplicativos de realidade mista do Windows (para os [headsets](../discover/immersive-headset-hardware-details.md)de [HoloLens](../hololens-hardware-details.md) e de imersão) fazem parte do plataforma universal do Windows, portanto, qualquer pacote de aplicativo com um CAB de família de dispositivos **Windows. universal** [target](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) é executado em computadores com o HoloLens ou Windows 10 com headsets de imersão. Se você não especificar uma família de dispositivos de destino em seu manifesto de aplicativo, você poderá abrir seu aplicativo inadvertidamente em dispositivos Windows 10 indesejados. Siga as etapas abaixo para especificar a família de dispositivos do Windows 10 pretendida e, em seguida, [Verifique se as famílias de dispositivos corretas estão definidas quando você carrega o pacote do aplicativo no Partner Center para envio de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Os aplicativos de realidade mista do Windows (para os [headsets](../discover/immersive-headset-hardware-details.md)de [HoloLens](../hololens-hardware-details.md) e de imersão) fazem parte do plataforma universal do Windows, portanto, qualquer pacote de aplicativo com uma família de dispositivos **Windows. universal** [target](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) pode ser executado em computadores com o HoloLens ou Windows 10 com headsets de imersão. Se você não especificar uma família de dispositivos de destino em seu manifesto de aplicativo, você poderá abrir seu aplicativo inadvertidamente em dispositivos Windows 10 indesejados. Siga as etapas abaixo para especificar a família de dispositivos do Windows 10 pretendida e, em seguida, [Verifique se as famílias de dispositivos corretas estão definidas quando você carrega o pacote do aplicativo no Partner Center para envio de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Para definir esse campo no Visual Studio, clique com o botão direito do mouse em **Package. appxmanifest** e selecione **Exibir código** e localize o campo **nome do TargetDeviceFamily** . Por padrão, ele deve ser semelhante à seguinte entrada:
 
@@ -77,7 +77,7 @@ Os aplicativos de realidade mista do Windows (para os [headsets](../discover/imm
 </Dependencies>
 ```
 
-* Se você estiver criando um aplicativo do **hololens** , poderá verificar se ele está instalado apenas no HoloLens definindo a família do dispositivo de destino como **Windows. Holographic** : 
+* Se você estiver criando um aplicativo do **hololens** , poderá verificar se ele está instalado apenas no HoloLens definindo a família do dispositivo de destino como **Windows. Holographic**: 
 
 ```
 <Dependencies>
@@ -93,7 +93,7 @@ Os aplicativos de realidade mista do Windows (para os [headsets](../discover/imm
 </Dependencies>
 ```
 
-* Se seu aplicativo for criado para **headsets de imersão de realidade mista do Windows** , você poderá verificar se ele está instalado apenas em computadores Windows 10 com a atualização dos criadores de outono do Windows 10 (necessário para a realidade mista do Windows) definindo a família do dispositivo de destino como **Windows. desktop** com uma **MinVersion** de 10.0.16299.0:
+* Se seu aplicativo for criado para **headsets de imersão de realidade mista do Windows**, você poderá verificar se ele está instalado apenas em computadores Windows 10 com a atualização dos criadores de outono do Windows 10 (necessário para a realidade mista do Windows) definindo a família do dispositivo de destino como **Windows. desktop** com uma **MinVersion** de 10.0.16299.0:
 
 ```
 <Dependencies>
@@ -101,7 +101,7 @@ Os aplicativos de realidade mista do Windows (para os [headsets](../discover/imm
 </Dependencies>
 ```
 
-* Por fim, se o seu aplicativo pretende executar tanto no **HoloLens** quanto em **headsets de imersão de realidade mista do Windows** , você pode verificar se o aplicativo está disponível apenas para essas duas famílias de dispositivos e garantir simultaneamente que cada destino tenha a versão mínima correta do Windows, incluindo uma linha para cada família de dispositivos de destino com sua respectiva MinVersion:
+* Por fim, se o seu aplicativo pretende executar tanto no **HoloLens** quanto em **headsets de imersão de realidade mista do Windows**, você pode verificar se o aplicativo está disponível apenas para essas duas famílias de dispositivos e garantir simultaneamente que cada destino tenha a versão mínima correta do Windows, incluindo uma linha para cada família de dispositivos de destino com sua respectiva MinVersion:
 
 ```
 <Dependencies>
@@ -263,7 +263,7 @@ Adicionar "realidade mista do Windows" aos termos de pesquisa
 
 Em muitos casos, seus consumidores terão se limitado a nenhuma experiência com a realidade virtual antes de comprar um headset de imersão de realidade mista do Windows. Eles podem não saber o que esperar de jogos intensos ou estar familiarizados com seu próprio limite de conforto em experiências de imersão. Muitos clientes também podem experimentar um headset de imersão de realidade misturada do Windows em computadores que não são crachás como [PCs com realidade do Windows Mixed](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). Devido a essas considerações, é altamente recomendável que você considere a possibilidade de oferecer uma [avaliação gratuita](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) para seu aplicativo de realidade mista ou jogo pago.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [O que é Realidade Misturada?](../discover/mixed-reality.md)
 * [Visão geral do desenvolvimento](../develop/development.md)
 * [Modos de exibição do aplicativo](../design/app-views.md)

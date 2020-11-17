@@ -5,13 +5,13 @@ author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: critérios de qualidade do aplicativo, realidade misturada, aplicativo de realidade misturada
-ms.openlocfilehash: 96d446e1f6f5649f842d674ea4692d619894cc32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: critérios de qualidade de aplicativo, realidade mista, aplicativo de realidade misturada, headset de realidade mista, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675019"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677985"
 ---
 # <a name="app-quality-criteria"></a>Critérios de qualidade do aplicativo
 

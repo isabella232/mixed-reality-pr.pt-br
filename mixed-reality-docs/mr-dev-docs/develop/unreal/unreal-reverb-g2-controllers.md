@@ -5,13 +5,13 @@ author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
-keywords: Inreal, mecanismo 4, UE4, reverberação, reverbal G2, HP reverbs G2, realidade misturada, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos
-ms.openlocfilehash: c9d3ea3a8dd52ed0712f9df5c1a789121a68fd35
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Inreal, mecanismo 4, UE4, reverberação, reverbo G2, HP reverbs G2, realidade misturada, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638605"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678925"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Controladores de reverbo do HP G2 em um não real 
 

@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Gerenciador do Galaxy, estudo de caso, projeto, exemplo
-ms.openlocfilehash: 3d3995bb7e43f49423901a92ce7ec1e7b31f8f4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gerenciador do Galaxy, estudo de caso, projeto, exemplo, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, exemplos de aplicativos, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675910"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678615"
 ---
 # <a name="galaxy-explorer"></a>Gerenciador do Galaxy
 
@@ -104,6 +104,6 @@ Tivemos um testador em tempo integral – Lena – que testou nossas compilaçõ
 
 Fazemos parte de um estúdio maior na Microsoft (imagine equipe em desenvolvimento sem jogos). Também havia várias outras pessoas envolvidas – chamamos sobre os talentos de nosso diretor de arte, engenharia de áudio e liderança de estúdio com frequência em todo o projeto, mas essas pessoas eram recursos compartilhados com outros projetos que a equipe mais ampla tem.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Estudo de caso-criando um Galaxy em realidade misturada](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Repositório GitHub do Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer)

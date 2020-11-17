@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar no dispositivo, PC, documentação
+keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679115"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Implantar no dispositivo no Unreal
 
@@ -30,11 +30,11 @@ As duas opções exigem que você configure seu HoloLens para usar o [portal do 
 
 ![Opções de menu suspenso de inicialização](images/unreal/launch-dropdown.png)
 
-2. Abra o **Device Manager** . Observe que seu HoloLens não aparecerá automaticamente na lista de dispositivos.
+2. Abra o **Device Manager**. Observe que seu HoloLens não aparecerá automaticamente na lista de dispositivos.
 
 3. Expanda a seção **Adicionar um dispositivo não listado** .
 
-4. Selecione **HoloLens** como sua **plataforma** .
+4. Selecione **HoloLens** como sua **plataforma**.
 
 5. Insira o endereço IP e as informações de porta dos dispositivos separados por dois-pontos como o identificador do dispositivo. Por exemplo, "127.0.0.1:10080" (quando conectado via USB). Use as credenciais de nome de usuário e senha do portal do dispositivo.
 
@@ -59,4 +59,4 @@ Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento
 > [!div class="nextstepaction"]
 > [Serviços avançados](unreal-development-overview.md#5-adding-services)
 
-Você sempre pode voltar para os [pontos de verificação de desenvolvimento inreais](unreal-development-overview.md#4-deploying-to-a-device) a qualquer momento.
+Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#4-deploying-to-a-device) a qualquer momento.

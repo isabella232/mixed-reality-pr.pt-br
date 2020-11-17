@@ -5,13 +5,13 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: porta, portabilidade, Unity, middleware, mecanismo, UWP, Win32
-ms.openlocfilehash: 9822976ab7dac9ae7567e5f38ca44ceee646d098
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: porta, Unity, não real, middleware, mecanismo, UWP, Win32, portabilidade, 1º de HoloLens, headset de realidade misturada, headset de realidade mista do Windows, migração, Windows 10, mapeamento de entrada,
+ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638534"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677725"
 ---
 # <a name="porting-guides"></a>Guias de portabilidade
 
@@ -23,7 +23,7 @@ Em um alto nível, as etapas a seguir estão envolvidas na portabilidade de cont
 1. **Verifique se o PC está executando a atualização dos criadores de outono do Windows 10 (16299).** Não é mais recomendável receber compilações prévias do anel do insider skip ahead, pois essas compilações não serão as mais estáveis para o desenvolvimento de realidade misturada.
 2. **Atualize para a versão mais recente do seu mecanismo de gráficos ou jogos.** Os mecanismos de jogo precisarão dar suporte à versão 10.0.15063.0 do SDK do Windows 10 (lançado em abril de 2017) ou superior.
 3. **Atualize qualquer middleware, plug-ins ou componentes.** Se seu aplicativo contiver qualquer componente, é uma boa ideia atualizar para a versão mais recente.
-4. **Remova dependências em SDKs duplicados** . Dependendo de qual dispositivo o seu conteúdo foi direcionado, você precisará remover ou compilar condicionalmente esse SDK (por exemplo, SteamVR) para que você possa direcionar as APIs do Windows em vez disso.
+4. **Remova dependências em SDKs duplicados**. Dependendo de qual dispositivo o seu conteúdo foi direcionado, você precisará remover ou compilar condicionalmente esse SDK (por exemplo, SteamVR) para que você possa direcionar as APIs do Windows em vez disso.
 5. **Trabalhe com problemas de compilação.** Neste ponto, o exercício de portabilidade é específico para seu aplicativo, seu mecanismo e as dependências de componente que você tem.
 
 ## <a name="common-porting-steps"></a>Etapas de portabilidade comuns

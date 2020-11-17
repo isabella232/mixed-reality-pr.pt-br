@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Entrada de voz, KeywordRecognizer, GrammarRecognizer, microfone, ditado, voz
-ms.openlocfilehash: b6930b35046e32beb1a4ca9f9ca29996487fcf4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Entrada de voz, KeywordRecognizer, GrammarRecognizer, microfone, ditado, voz, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675895"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679885"
 ---
 # <a name="voice-input-in-unity"></a>Entrada de voz no Unity
 
@@ -41,7 +41,7 @@ Para permitir que seu aplicativo Ouça frases específicas faladas pelo usuário
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
 **Namespace:** *UnityEngine. Windows. Speech*<br>
-**Tipos:** *KeywordRecognizer* , *PhraseRecognizedEventArgs* , *SpeechError* , *SpeechSystemStatus*
+**Tipos:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 Precisaremos de algumas instruções de uso para salvar alguns pressionamentos de tecla:
 
@@ -103,7 +103,7 @@ keywordRecognizer.Start();
 ### <a name="grammarrecognizer"></a>GrammarRecognizer
 
 **Namespace:** *UnityEngine. Windows. Speech*<br>
-**Tipos** : *GrammarRecognizer* , *PhraseRecognizedEventArgs* , *SpeechError* , *SpeechSystemStatus*
+**Tipos**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 O GrammarRecognizer será usado se você estiver especificando a gramática de reconhecimento usando o SRGS. Isso pode ser útil se seu aplicativo tiver mais do que apenas algumas palavras-chave, se você quiser reconhecer frases mais complexas ou se quiser ativar e desativar facilmente conjuntos de comandos. Consulte: [criar gramáticas usando o XML SRGS](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) para informações de formato de arquivo.
 
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>Ditado
 
 **Namespace:** *UnityEngine. Windows. Speech*<br>
-**Tipos** : *DictationRecognizer* , *SpeechError* , *SpeechSystemStatus*
+**Tipos**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
 Use o DictationRecognizer para converter a fala do usuário em texto. O DictationRecognizer expõe a funcionalidade de [ditado](../../design/voice-input.md#dictation) e dá suporte ao registro e à escuta de eventos de hipótese e de expressão concluídas, para que você possa fornecer comentários ao seu usuário enquanto eles falam e depois. Métodos Start () e Stop () respectivamente habilitam e desabilitam o reconhecimento de ditado. Depois de feito com o reconhecedor, ele deve ser descartado usando o método Dispose () para liberar os recursos que ele usa. Ele liberará esses recursos automaticamente durante a coleta de lixo com um custo de desempenho adicional se eles não forem lançados antes disso.
 

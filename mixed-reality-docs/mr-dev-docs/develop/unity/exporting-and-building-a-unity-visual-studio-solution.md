@@ -5,17 +5,17 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, Visual Studio, exportar, compilar, implantar
-ms.openlocfilehash: cfaf812020020e614ef59dbfc15de7bd0d9bc7e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, Visual Studio, exportar, compilar, implantar, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, UWP, implantação
+ms.openlocfilehash: 29415fa7d561cab1aec5f0c2c9344fa24b0e8293
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675543"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677555"
 ---
 # <a name="exporting-and-building-a-unity-visual-studio-solution"></a>Como exportar e criar uma solução do Visual Studio do Unity
 
-Se você não pretende usar o teclado do sistema em seu aplicativo, nossa recomendação é usar o *D3D* , pois seu aplicativo usará um pouco menos de memória e terá um tempo de inicialização ligeiramente mais rápido. Se você estiver usando a API TouchScreenKeyboard em seu projeto para usar o teclado do sistema, será necessário exportar como *XAML* .
+Se você não pretende usar o teclado do sistema em seu aplicativo, nossa recomendação é usar o *D3D* , pois seu aplicativo usará um pouco menos de memória e terá um tempo de inicialização ligeiramente mais rápido. Se você estiver usando a API TouchScreenKeyboard em seu projeto para usar o teclado do sistema, será necessário exportar como *XAML*.
 
 ## <a name="how-to-export-from-unity"></a>Como exportar do Unity
 
@@ -26,9 +26,9 @@ Se você não pretende usar o teclado do sistema em seu aplicativo, nossa recome
 2. Clique em **Adicionar abrir cenas** para adicionar sua cena à compilação.
 3. Na caixa de diálogo **configurações de compilação** , escolha as seguintes opções para exportar para o HoloLens:
    * **Plataforma:** *plataforma universal do Windows* e certifique-se de selecionar **alternar plataforma** para sua seleção entrar em vigor.
-   * **SDK:** *Universal 10* .
-   * **Tipo de compilação UWP:** *D3D* .
-4. **Opcional** : **projetos do Unity C#:** marcado.
+   * **SDK:** *Universal 10*.
+   * **Tipo de compilação UWP:** *D3D*.
+4. **Opcional**: **projetos do Unity C#:** marcado.
 
 >[!NOTE]
 >Marcar essa caixa permite que você:
@@ -37,12 +37,12 @@ Se você não pretende usar o teclado do sistema em seu aplicativo, nossa recome
 
 5. Na janela **configurações de compilação...** , abra **as configurações do Player...**
 6. Selecione as **configurações para plataforma universal do Windows** guia.
-7. Expanda o grupo **Configurações de XR** .
+7. Expanda o grupo **Configurações de XR**.
 8. Na seção **configurações de XR** , marque a caixa de seleção **suporte à realidade virtual** para adicionar uma nova lista de **dispositivos de realidade virtual** e confirme se **"realidade mista do Windows"** está listado como um dispositivo com suporte.
 9. Retorne para a caixa de diálogo **configurações de compilação** .
-10. Selecione **Compilar** .
+10. Selecione **Compilar**.
 11. Na caixa de diálogo do Windows Explorer que aparece, crie uma nova pasta para manter a saída de Build do Unity. Em geral, nomeamos a pasta "app".
-12. Selecione a pasta recém-criada e clique em **Selecionar pasta** .
+12. Selecione a pasta recém-criada e clique em **Selecionar pasta**.
 13. Depois de concluir a compilação do Unity, uma janela do Windows Explorer será aberta para o diretório raiz do projeto. Navegue até a pasta recém-criada.
 14. Abra o arquivo de solução do Visual Studio gerado localizado dentro dessa pasta.
 

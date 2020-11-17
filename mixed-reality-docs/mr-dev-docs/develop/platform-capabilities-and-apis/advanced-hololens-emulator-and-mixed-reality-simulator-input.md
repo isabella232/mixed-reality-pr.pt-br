@@ -5,13 +5,13 @@ author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
-keywords: HoloLens, emulador, simulação, realidade misturada do Windows
-ms.openlocfilehash: 7a9bcfe8534c97d1ac9d9f67ba3e76dff941e7b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, emulador, simulação, realidade mista do Windows, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675020"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679615"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrada avançada do Emulador do HoloLens e do Simulador de Realidade Misturada
 
@@ -22,29 +22,29 @@ A maioria dos usuários do emulador só precisará usar os controles de entrada 
 Para começar a controlar a entrada virtual para o emulador do HoloLens e o simulador de realidade do Windows Mixed, você deve primeiro entender alguns conceitos.
 
 O movimento se refere ao controle e à alteração da posição e da orientação de algo na cena. Para um objeto controlável direcionado, o movimento é controlado com rotação e conversão (movimento) em três eixos.
-* **Guinada** : virada para a esquerda ou para a direita.
-* **Pitch** : Ative ou diminua.
-* **Roll** : distribuição lado a lado.
-* **X** : mover para a esquerda ou para a direita.
-* **Y** : mover para cima ou para baixo.
-* **Z** : avançar ou retroceder.
+* **Guinada**: virada para a esquerda ou para a direita.
+* **Pitch**: Ative ou diminua.
+* **Roll**: distribuição lado a lado.
+* **X**: mover para a esquerda ou para a direita.
+* **Y**: mover para cima ou para baixo.
+* **Z**: avançar ou retroceder.
 
 As entradas do controlador de gesto e movimento são mapeadas de acordo com o modo como os dispositivos físicos:
-* **Ação** : simula a ação de pressionar o dedo indicador para o polegar ou extrair o botão de ação em um controlador. Por exemplo, a entrada da ação pode ser usada para simular o gesto de toque de ar, para rolar pelo conteúdo e para pressionar e manter pressionado.
-* **[Bloom](../../design/system-gesture.md#bloom)/Estado gesto ou Home** : o gesto de cair/sistema do HoloLens ou o botão página inicial de um controlador é usado para retornar ao shell e executar ações do sistema.
+* **Ação**: simula a ação de pressionar o dedo indicador para o polegar ou extrair o botão de ação em um controlador. Por exemplo, a entrada da ação pode ser usada para simular o gesto de toque de ar, para rolar pelo conteúdo e para pressionar e manter pressionado.
+* **[Bloom](../../design/system-gesture.md#bloom)/Estado gesto ou Home**: o gesto de cair/sistema do HoloLens ou o botão página inicial de um controlador é usado para retornar ao shell e executar ações do sistema.
 
 As mãos têm uma representação rica no HoloLens 2.  Além de serem controlados/não rastreados, e utilizáveis para a condução de gestos, as mãos agora têm um modelo de esqueleto articulado que se ajusta a eles e expostos ao desenvolvedor.  Isso apresenta 26 pontos rastreados em cada mão.  
-* **Conjunto** : uma das vinte posições controladas para uma determinada mão controlada. Isso terá um ponto é o espaço 3D associado a ele.
-* **Pose** : uma coleção completa de todas as junções em uma mão controlada. Neste momento, esta é uma coleção de 26 junções. 
+* **Conjunto**: uma das vinte posições controladas para uma determinada mão controlada. Isso terá um ponto é o espaço 3D associado a ele.
+* **Pose**: uma coleção completa de todas as junções em uma mão controlada. Neste momento, esta é uma coleção de 26 junções. 
 
 Neste momento, não expõemos o controle direto de cada posição conjunta individualmente por meio da interface do usuário do emulador, embora você possa defini-las por meio da API de simulação. Em vez disso, temos um conjunto de representações úteis que o emulador permite alternar entre.
 
 Você também pode controlar o estado da entrada simulada do sensor:
-* **Redefinir** : isso retornará todos os sensores simulados aos seus valores padrão.  Começando com o emulador do HoloLens 2, uma redefinição pode ter como escopo uma ou ambas as mãos ao envolver as mãos desejadas usando as chaves (s) modificadores apropriadas (es) ou os botões (Alt e/ou direita, ou o amortecedor esquerdo e/ou direito no gamepad).
-* **Acompanhamento** : percorre os modos de controle posicional. Isso inclui:
-  * **Padrão** : o sistema operacional escolhe o melhor modo de controle com base nas solicitações feitas do sistema.
-   * **Orientação** : força o controle somente de orientação, independentemente das solicitações feitas do sistema.
-   * **Posicional** : força o controle posicional, independentemente das solicitações feitas do sistema.
+* **Redefinir**: isso retornará todos os sensores simulados aos seus valores padrão.  Começando com o emulador do HoloLens 2, uma redefinição pode ter como escopo uma ou ambas as mãos ao envolver as mãos desejadas usando as chaves (s) modificadores apropriadas (es) ou os botões (Alt e/ou direita, ou o amortecedor esquerdo e/ou direito no gamepad).
+* **Acompanhamento**: percorre os modos de controle posicional. Isso inclui:
+  * **Padrão**: o sistema operacional escolhe o melhor modo de controle com base nas solicitações feitas do sistema.
+   * **Orientação**: força o controle somente de orientação, independentemente das solicitações feitas do sistema.
+   * **Posicional**: força o controle posicional, independentemente das solicitações feitas do sistema.
 
 ## <a name="types-of-input"></a>Tipos de entrada
 

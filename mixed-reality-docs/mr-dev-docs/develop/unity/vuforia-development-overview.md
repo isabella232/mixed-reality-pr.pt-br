@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, marcadores, coordenadas, quadro de referência, acompanhamento
-ms.openlocfilehash: 270588bb317b0c083500dfaaca80c075a35410b9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Vuforia, marcadores, coordenadas, quadro de referência, acompanhamento, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, Unity, HoloLens, controle de dispositivo, modo de desempenho, portal do desenvolvedor do Vuforia
+ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675661"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679665"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Usando o mecanismo do Vuforia com o Unity
 
@@ -46,7 +46,7 @@ Desenvolver um aplicativo de mecanismo Vuforia para o HoloLens é fundamentalmen
 1.  Baixe o [exemplo do mecanismo Vuforia para o HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) do repositório de ativos do Unity
 2.  Aplicar as [opções recomendadas do mecanismo Unity para energia e desempenho](performance-recommendations-for-unity.md)
 3.  Adicione os bastidores de exemplo em **cenas** no **Build.**
-4.  Em **configurações de compilação** , mude a plataforma de Build para **UWP** clicando no botão **Adicionar cenas abertas** .
+4.  Em **configurações de compilação**, mude a plataforma de Build para **UWP** clicando no botão **Adicionar cenas abertas** .
 ![imagem](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
 5.  Clique no botão **configurações do Player** .  
    * Selecione o ícone **UWP** e expanda a seção **configurações de XR** .
@@ -58,7 +58,7 @@ Desenvolver um aplicativo de mecanismo Vuforia para o HoloLens é fundamentalmen
 6.  Expanda a seção **configurações de publicação** .
    * Em **recursos** , verifique se **cliente de Internet, webcam, microfone** e **SpatialPerception** estão selecionados.
    * **Observação: SpatialPerception** só deverá ser selecionado se você pretender usar a API de observador de superfície.
-   * Em **famílias de dispositivos com suporte** , verifique se **Holographic** está selecionado. 
+   * Em **famílias de dispositivos com suporte**, verifique se **Holographic** está selecionado. 
 7.  Expanda a seção **resolução e apresentação** .
    * Desabilite **executar em segundo plano** para que o mecanismo do Vuforia Pause quando o aplicativo for colocado em segundo plano e possa acessar a câmera novamente quando o aplicativo for retomado. 
    * Na lista suspensa **orientação padrão** , verifique se a caixa **paisagem à esquerda** está selecionada.

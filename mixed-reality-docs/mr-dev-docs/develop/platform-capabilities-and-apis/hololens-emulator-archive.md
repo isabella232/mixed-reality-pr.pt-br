@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 11/10/2020
 ms.topic: article
-keywords: HoloLens, emulador, compilações, versões
-ms.openlocfilehash: c80017fcad1d79080b0782cc6c580d788c229748
-ms.sourcegitcommit: c300518d76e5723a46729bc02d65bcb5293cf2b1
+keywords: HoloLens, emulador, compilações, versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, arquivo morto
+ms.openlocfilehash: e6030328a85525851fa8f4f5129f4544a3136b68
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94447062"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679555"
 ---
 # <a name="hololens-2-emulator-archive"></a>Arquivo de emulador do HoloLens 2
 

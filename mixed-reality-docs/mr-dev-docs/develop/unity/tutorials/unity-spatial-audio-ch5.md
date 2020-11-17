@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial
-ms.openlocfilehash: abe78417dc231e6228d1942e03418ba699bc0938
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, mixer de áudio, reverbo SFX
+ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676501"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679695"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Usar o reverb para adicionar distância ao áudio espacial
 
@@ -21,19 +21,19 @@ Nos capítulos anteriores, adicionamos a espacialização a sons para dar a eles
 * Controle a distância percebida do som usando a distância do ouvinte para o holograma
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Adicionar um grupo de mixers e um efeito de reverberação
-No [capítulo 2](unity-spatial-audio-ch2.md), adicionamos um mixer. O mixer inclui um **grupo** por padrão chamado **Master** . Como só desejamos aplicar um efeito de reverberação a alguns sons, vamos adicionar um segundo **grupo** para esses sons. Para adicionar um **grupo** , clique com o botão direito do mouse no grupo **mestre** no **mixer de áudio** e escolha **Adicionar grupo filho** :
+No [capítulo 2](unity-spatial-audio-ch2.md), adicionamos um mixer. O mixer inclui um **grupo** por padrão chamado **Master**. Como só desejamos aplicar um efeito de reverberação a alguns sons, vamos adicionar um segundo **grupo** para esses sons. Para adicionar um **grupo**, clique com o botão direito do mouse no grupo **mestre** no **mixer de áudio** e escolha **Adicionar grupo filho**:
 
 ![Adicionar grupo filho](images/spatial-audio/add-child-group.png)
 
 Neste exemplo, nomeamos o novo grupo "efeito de sala".
 
-Cada **grupo** tem seu próprio conjunto de efeitos. Adicione um efeito de reverberação ao novo grupo clicando em **Adicionar...** no novo grupo e escolhendo o **reverberar de SFX** :
+Cada **grupo** tem seu próprio conjunto de efeitos. Adicione um efeito de reverberação ao novo grupo clicando em **Adicionar...** no novo grupo e escolhendo o **reverberar de SFX**:
 
 ![Adicionar reverbo SFX](images/spatial-audio/add-sfx-reverb.png)
 
-Na terminologia de áudio, o áudio unreverberated original é chamado de _caminho seco_ , e o áudio após a filtragem com o filtro de reverberação é chamado de _caminho úmida_ . Ambos os caminhos são enviados para a saída de áudio, e seus pontos fortes relativos nessa mistura são chamados de _mistura úmida/seca_ . A mistura úmida/seca afeta fortemente a sensação de distância.
+Na terminologia de áudio, o áudio unreverberated original é chamado de _caminho seco_, e o áudio após a filtragem com o filtro de reverberação é chamado de _caminho úmida_. Ambos os caminhos são enviados para a saída de áudio, e seus pontos fortes relativos nessa mistura são chamados de _mistura úmida/seca_. A mistura úmida/seca afeta fortemente a sensação de distância.
 
-O **inverbo SFX** inclui controles para ajustar a mistura úmida/seca dentro do efeito. Como o plug-in **Spatializer da Microsoft** trata o caminho seco, usaremos o único **verbo SFX** somente para o caminho úmida. No painel **Inspetor** de seu **reverbo SFX** :
+O **inverbo SFX** inclui controles para ajustar a mistura úmida/seca dentro do efeito. Como o plug-in **Spatializer da Microsoft** trata o caminho seco, usaremos o único **verbo SFX** somente para o caminho úmida. No painel **Inspetor** de seu **reverbo SFX**:
 * Definir a propriedade de nível seco para a configuração mais baixa (-10000 mB)
 * Definir a propriedade Room como a configuração mais alta (0 mB)
 
@@ -50,7 +50,7 @@ Há duas etapas para habilitar o reverberador em uma fonte de áudio:
 
 Nas etapas a seguir, vamos ajustar nosso script para controlar o roteamento de áudio e anexar um script de controle fornecido com o plug-in do **Microsoft Spatializer** para alimentar dados no reverberador.
 
-No painel **Inspetor** para o **Quad** , clique em **Adicionar componente** e adicione o script de **nível de envio de efeito Room** :
+No painel **Inspetor** para o **Quad**, clique em **Adicionar componente** e adicione o script de **nível de envio de efeito Room** :
 
 ![Adicionar script de nível de envio](images/spatial-audio/add-send-level-script.png)
 
@@ -117,7 +117,7 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Remover os comentários dessas linhas adiciona duas propriedades ao painel de **Inspetor** para o script. Para defini-las, no painel **Inspetor** do componente **espacial on off** do **Quad** :
+Remover os comentários dessas linhas adiciona duas propriedades ao painel de **Inspetor** para o script. Para defini-las, no painel **Inspetor** do componente **espacial on off** do **Quad**:
 * Defina a propriedade **grupo de efeitos da sala** como o novo grupo do mixer de efeito Room
 * Definir a propriedade do **grupo mestre** como o grupo do mixer mestre
 

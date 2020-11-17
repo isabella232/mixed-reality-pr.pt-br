@@ -1,17 +1,17 @@
 ---
-title: MR espacial 220-som espacial
+title: MR Espacial 220 – Som espacial
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de som espaciais.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, som espacial
-ms.openlocfilehash: 1da57024fbc069fcfc7d522175cf6d542304414a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, som espacial, HoloLens, Academia de realidade mista, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
+ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676329"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678365"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR Espacial 220: som espacial
 
@@ -58,7 +58,7 @@ O [som espacial](../../../design/spatial-sound.md) traz a vida para os holograma
 
 ### <a name="errata-and-notes"></a>Errata e observações
 
-* "Habilitar Apenas Meu Código" precisa ser desabilitado ( *desmarcado* ) no Visual Studio em ferramentas->opções->depuração para acessar os pontos de interrupção no código.
+* "Habilitar Apenas Meu Código" precisa ser desabilitado (*desmarcado*) no Visual Studio em ferramentas->opções->depuração para acessar os pontos de interrupção no código.
 
 ## <a name="chapter-1---unity-setup"></a>Capítulo 1 – configuração do Unity
 
@@ -70,52 +70,52 @@ O [som espacial](../../../design/spatial-sound.md) traz a vida para os holograma
 ### <a name="instructions"></a>Instruções
 
 * Inicie o Unity.
-* Selecione **Abrir** .
+* Selecione **Abrir**.
 * Navegue até sua área de trabalho e localize a pasta que você cancelou anteriormente.
 * Clique na pasta **Starting\Decibel** e pressione o botão **Selecionar pasta** .
 * Aguarde até que o projeto seja carregado no Unity.
-* No painel **projeto** , abra **Scenes\Decibel.Unity** .
-* No painel **hierarquia** , expanda **hologramacollection** e selecione **P0LY** .
+* No painel **projeto** , abra **Scenes\Decibel.Unity**.
+* No painel **hierarquia** , expanda **hologramacollection** e selecione **P0LY**.
 * No Inspetor, expanda o **áudio** e observe que não há nenhuma caixa de seleção **espacial** .
 
 Por padrão, o Unity não carrega um plug-in spatializer. As etapas a seguir habilitarão o som espacial no projeto.
 
-* No menu superior do Unity, vá para **editar > configurações do projeto > áudio** .
-* Localize a lista suspensa **plug-in do Spatializer** e selecione **MS HRTF Spatializer** .
-* No painel **hierarquia** , selecione **hologramacollection > P0LY** .
+* No menu superior do Unity, vá para **editar > configurações do projeto > áudio**.
+* Localize a lista suspensa **plug-in do Spatializer** e selecione **MS HRTF Spatializer**.
+* No painel **hierarquia** , selecione **hologramacollection > P0LY**.
 * No painel **Inspetor** , localize o componente **fonte de áudio** .
 * Marque a caixa de seleção **espacialize** .
 * Arraste o controle deslizante de **mistura espacial** para **3D** ou digite **1** na caixa de edição.
 
 Agora, criaremos o projeto no Unity e configuraremos a solução no Visual Studio.
 
-1. No Unity, selecione **arquivo > configurações de Build** .
+1. No Unity, selecione **arquivo > configurações de Build**.
 2. Clique em **Adicionar abrir cenas** para adicionar a cena.
-3. Selecione **plataforma universal do Windows** na lista **plataforma** e clique em **alternar plataforma** .
-4. Se você estiver desenvolvendo especificamente para o HoloLens, defina o **dispositivo de destino** para o **hololens** . Caso contrário, deixe em **qualquer dispositivo** .
+3. Selecione **plataforma universal do Windows** na lista **plataforma** e clique em **alternar plataforma**.
+4. Se você estiver desenvolvendo especificamente para o HoloLens, defina o **dispositivo de destino** para o **hololens**. Caso contrário, deixe em **qualquer dispositivo**.
 5. Verifique se **tipo de compilação** está definido como **D3D** e se o **SDK** está definido para o **mais recente instalado** (que deve ser o SDK 16299 ou mais recente).
-6. Clique em **Compilar** .
+6. Clique em **Compilar**.
 7. Crie uma **nova pasta** chamada "app".
 8. Clique uma vez na pasta do **aplicativo** .
-9. Pressione **Selecionar pasta** .
+9. Pressione **Selecionar pasta**.
 
 Quando o Unity for concluído, uma janela Explorador de arquivos será exibida.
 
 1. Abra a pasta do **aplicativo** .
-2. Abra a **solução de Decibéi Visual Studio** .
+2. Abra a **solução de Decibéi Visual Studio**.
 
 Se estiver implantando no HoloLens:
 
-1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x86** .
-2. Clique na seta suspensa ao lado do botão computador local e selecione **computador remoto** .
-3. Insira **o endereço IP do dispositivo de HoloLens** e defina o modo de autenticação como **Universal (protocolo não criptografado)** . Clique em **Selecionar** . Se você não souber o endereço IP do dispositivo, examine **configurações > rede & Internet > opções avançadas** .
-4. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** . Se esta for a primeira vez que você está implantando em seu dispositivo, será necessário [emparelhar com o Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x86**.
+2. Clique na seta suspensa ao lado do botão computador local e selecione **computador remoto**.
+3. Insira **o endereço IP do dispositivo de HoloLens** e defina o modo de autenticação como **Universal (protocolo não criptografado)**. Clique em **Selecionar**. Se você não souber o endereço IP do dispositivo, examine **configurações > rede & Internet > opções avançadas**.
+4. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**. Se esta for a primeira vez que você está implantando em seu dispositivo, será necessário [emparelhar com o Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
 Se estiver implantando em um headset de imersão:
 
-1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x64** .
-2. Verifique se o destino de implantação está definido como **computador local** .
-3. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5** .
+1. Usando a barra de ferramentas superior no Visual Studio, altere o destino de debug para **Release** e de ARM para **x64**.
+2. Verifique se o destino de implantação está definido como **computador local**.
+3. Na barra de menus superior, clique em **depurar-> iniciar sem Depurar** ou pressione **Ctrl + F5**.
 
 ## <a name="chapter-2---spatial-sound-and-interaction"></a>Capítulo 2-som espacial e interação
 
@@ -138,14 +138,14 @@ O local apropriado para o som vai depender do holograma. Por exemplo, se o holog
 
 As instruções a seguir anexarão um som espacial a um holograma.
 
-* No painel **hierarquia** , expanda **hologramacollection** e selecione **P0LY** .
-* No painel **Inspetor** , na mensagem de **áudio** , clique no círculo ao lado de **AudioClip** e selecione **polifocalizar** no pop-up.
+* No painel **hierarquia** , expanda **hologramacollection** e selecione **P0LY**.
+* No painel **Inspetor** , na mensagem de **áudio**, clique no círculo ao lado de **AudioClip** e selecione **polifocalizar** no pop-up.
 * Clique no círculo ao lado de **saída** e selecione **SoundEffects** no pop-up.
 
 O projeto Decibéi usa um componente **AudioMixer** do Unity para habilitar o ajuste dos níveis de som para grupos de sons. Ao agrupar sons dessa forma, o volume geral pode ser ajustado mantendo o volume relativo de cada som.
 
-* Em **áudio** , expanda **configurações de som 3D** .
-* Defina o **nível de Doppler** como **0** .
+* Em **áudio**, expanda **configurações de som 3D**.
+* Defina o **nível de Doppler** como **0**.
 
 Definir o nível de Doppler como zero desabilita as alterações em pitch causadas pelo Motion (do holograma ou do usuário). Um exemplo clássico de Doppler é um carro com movimentação rápida. À medida que o carro se aproxima de um ouvinte estacionário, a inclinação do motor aumenta. Quando ele passa o ouvinte, a densidade diminui com distância.
 
@@ -163,10 +163,10 @@ Um exemplo de expectativas aprendidas é que os pássaros geralmente estão acim
 
 As instruções a seguir permitem que P0LY sejam ocultadas para trás, para que você possa usar o som para localizar o holograma.
 
-* No painel **hierarquia** , selecione **gerentes** .
-* No painel **Inspetor** , encontre o **manipulador de entrada de fala** .
-* Em **manipulador de entrada de fala** , expanda **ir ocultar** .
-* Altere **nenhuma função** para **GoHide** .
+* No painel **hierarquia** , selecione **gerentes**.
+* No painel **Inspetor** , encontre o **manipulador de entrada de fala**.
+* Em **manipulador de entrada de fala**, expanda **ir ocultar**.
+* Altere **nenhuma função** para **GoHide**.
 
 ![Palavra-chave: ir ocultar](images/gohide.png)
 
@@ -180,24 +180,24 @@ As instruções a seguir permitem que P0LY sejam ocultadas para trás, para que 
 
 #### <a name="instructions"></a>Instruções
 
-* No painel **hierarquia** , expanda **hologramacollection** .
-* Expanda **EnergyHub** e selecione **base** .
-* No painel **Inspetor** , clique em **Adicionar componente** e adicionar **manipulador de som de gesto** .
-* Em **manipulador de som de gesto** , clique no círculo próximo ao **clipe de navegação** e ao clipe de navegação **atualizado** e selecione **RotateClick** do pop-up para ambos.
+* No painel **hierarquia** , expanda **hologramacollection**.
+* Expanda **EnergyHub** e selecione **base**.
+* No painel **Inspetor** , clique em **Adicionar componente** e adicionar **manipulador de som de gesto**.
+* Em **manipulador de som de gesto**, clique no círculo próximo ao **clipe de navegação** e ao clipe de navegação **atualizado** e selecione **RotateClick** do pop-up para ambos.
 * Clique duas vezes em "GestureSoundHandler" para carregar no Visual Studio.
 
 O manipulador de som de gesto executa as seguintes tarefas:
 
-* Criar e configurar um **áudio** .
+* Criar e configurar um **áudio**.
 * Coloque a **audioname** no local do **gameobject** apropriado.
 * Reproduz o **AudioClip** associado ao gesto.
 
 #### <a name="build-and-deploy"></a>Compilar e implantar
 
-1. No Unity, selecione **arquivo > configurações de Build** .
-2. Clique em **Compilar** .
+1. No Unity, selecione **arquivo > configurações de Build**.
+2. Clique em **Compilar**.
 3. Clique uma vez na pasta do **aplicativo** .
-4. Pressione **Selecionar pasta** .
+4. Pressione **Selecionar pasta**.
 
 Verifique se a barra de ferramentas diz "versão", "x86" ou "x64" e "dispositivo remoto". Caso contrário, essa é a instância de codificação do Visual Studio. Talvez seja necessário reabrir a solução na pasta do aplicativo.
 
@@ -230,16 +230,16 @@ Por exemplo, definir uma xícara em uma tabela deve fazer um som mais silencioso
 
 #### <a name="instructions"></a>Instruções
 
-* No painel **hierarquia** , expanda **hologramacollection** .
-* Expanda **EnergyHub** , selecione **base** .
-* No painel **Inspetor** , clique em **Adicionar componente** e adicione **tocar para inserir com som e ação** .
-* Em **toque para posicionar com som e ação** :
-  * Verifique o **pai ao tocar** .
-  * Defina **som de posicionamento** como **local** .
-  * Defina **som de retirada** para **retirada** .
-  * Pressione a + no canto inferior direito em ambos **na ação de retirada** e **na ação de posicionamento** . Arraste EnergyHub da cena para os campos **nenhum (objeto)** .
-    * Em **ação de retirada** , clique em **sem função**  ->  **EnergyHubBase**  ->  **ResetAnimation** .
-    * Em **ação de posicionamento** , clique em **sem função**  ->  **EnergyHubBase**  ->  **OnSelect** .
+* No painel **hierarquia** , expanda **hologramacollection**.
+* Expanda **EnergyHub**, selecione **base**.
+* No painel **Inspetor** , clique em **Adicionar componente** e adicione **tocar para inserir com som e ação**.
+* Em **toque para posicionar com som e ação**:
+  * Verifique o **pai ao tocar**.
+  * Defina **som de posicionamento** como **local**.
+  * Defina **som de retirada** para **retirada**.
+  * Pressione a + no canto inferior direito em ambos **na ação de retirada** e **na ação de posicionamento**. Arraste EnergyHub da cena para os campos **nenhum (objeto)** .
+    * Em **ação de retirada**, clique em **sem função**  ->  **EnergyHubBase**  ->  **ResetAnimation**.
+    * Em **ação de posicionamento**, clique em **sem função**  ->  **EnergyHubBase**  ->  **OnSelect**.
 
 ![Toque para posicionar com som e ação](images/holograms220-taptoplace.png)
 
@@ -253,12 +253,12 @@ Um exemplo clássico é uma sala de concerto. Quando um ouvinte está fora do Ha
 
 #### <a name="instructions"></a>Instruções
 
-* No painel **hierarquia** , expanda **hologramacollection** e selecione **P0LY** .
-* No painel **Inspetor** , clique em **Adicionar componente** e adicionar **emissor de áudio** .
+* No painel **hierarquia** , expanda **hologramacollection** e selecione **P0LY**.
+* No painel **Inspetor** , clique em **Adicionar componente** e adicionar **emissor de áudio**.
 
 A classe emissor de áudio fornece os seguintes recursos:
 
-* Restaura todas as alterações no volume de **audioname** .
+* Restaura todas as alterações no volume de **audioname**.
 * Executa uma **física. RaycastNonAlloc** da posição do usuário na direção do **gameobject** ao qual o **AudioEmitter** está anexado.
 
 O método RaycastNonAlloc é usado como uma otimização de desempenho para limitar as alocações, bem como o número de resultados retornados.
@@ -268,44 +268,44 @@ O método RaycastNonAlloc é usado como uma otimização de desempenho para limi
 
 Observe que as atualizações do AudioEmitter em escalas de tempo humano, em oposição a por quadro. Isso é feito porque as pessoas geralmente não se movem com rapidez suficiente para que o efeito precise ser atualizado com mais frequência do que cada trimestre ou metade de um segundo. Os hologramas que teleport rapidamente de um local para outro podem quebrar a ilusão.
 
-* No painel **hierarquia** , expanda **hologramacollection** .
-* Expanda **EnergyHub** e selecione **BlobOutside** .
-* No painel **Inspetor** , clique em **Adicionar componente** e adicione **áudio Occluder** .
-* Em **áudio Occluder** , defina a **frequência de corte** como **1500** .
+* No painel **hierarquia** , expanda **hologramacollection**.
+* Expanda **EnergyHub** e selecione **BlobOutside**.
+* No painel **Inspetor** , clique em **Adicionar componente** e adicione **áudio Occluder**.
+* Em **áudio Occluder**, defina a **frequência de corte** como **1500**.
 
 Essa configuração limita as frequências de áudio para 1500 Hz e abaixo.
 
-* Defina **passagem de volume** para **0,9** .
+* Defina **passagem de volume** para **0,9**.
 
 Essa configuração reduz o volume do áudio para 90% do seu nível atual.
 
 O áudio Occluder implementa IAudioInfluencer para:
 
-* Aplique um efeito de oclusão usando um **AudioLowPassFilter** que é anexado ao **áudio** , gerenciado, comprar o **AudioEmitter** .
+* Aplique um efeito de oclusão usando um **AudioLowPassFilter** que é anexado ao **áudio** , gerenciado, comprar o **AudioEmitter**.
 * Aplica a atenuação de volume à Audioname.
 * Desabilita o efeito definindo uma frequência de corte neutra e desabilitando o filtro.
 
 A frequência usada como neutra é 22 kHz (22000 Hz). Essa frequência foi escolhida porque está acima da frequência máxima nominal que pode ser ouvida pelo Ear humano, isso não faz nenhum impacto discernido no som.
 
-* No painel **hierarquia** , selecione **SpatialMapping** .
-* No painel **Inspetor** , clique em **Adicionar componente** e adicione **áudio Occluder** .
-* Em **áudio Occluder** , defina a **frequência de corte** como **750** .
+* No painel **hierarquia** , selecione **SpatialMapping**.
+* No painel **Inspetor** , clique em **Adicionar componente** e adicione **áudio Occluder**.
+* Em **áudio Occluder**, defina a **frequência de corte** como **750**.
 
-Quando vários occluders estão no caminho entre o usuário e o **AudioEmitter** , a frequência mais baixa é aplicada ao filtro.
+Quando vários occluders estão no caminho entre o usuário e o **AudioEmitter**, a frequência mais baixa é aplicada ao filtro.
 
-* Defina **passagem de volume** para **0,75** .
+* Defina **passagem de volume** para **0,75**.
 
-Quando vários occluders estão no caminho entre o usuário e o **AudioEmitter** , a passagem do volume é aplicada de aditivo.
+Quando vários occluders estão no caminho entre o usuário e o **AudioEmitter**, a passagem do volume é aplicada de aditivo.
 
-* No painel **hierarquia** , selecione **gerentes** .
-* No painel **Inspetor** , expanda **manipulador de entrada de fala** .
-* Em **manipulador de entrada de fala** , expanda ir para o **encargo** .
-* Altere **nenhuma função** para **GoCharge** .
+* No painel **hierarquia** , selecione **gerentes**.
+* No painel **Inspetor** , expanda **manipulador de entrada de fala**.
+* Em **manipulador de entrada de fala**, expanda ir para o **encargo**.
+* Altere **nenhuma função** para **GoCharge**.
 
 ![Palavra-chave: ir para a carga](images/gocharge.png)
 
-* Expanda **aqui** .
-* Altere **nenhuma função** para **ComeBack** .
+* Expanda **aqui**.
+* Altere **nenhuma função** para **ComeBack**.
 
 ![Palavra-chave: Venha aqui](images/comehere.png)
 
@@ -328,7 +328,7 @@ Observe que o som oclusão é removido quando o P0LY sai do hub de energia. Se v
 #### <a name="key-concepts"></a>Conceitos Principais
 
 * O tamanho do espaço fornece filas subliminal que contribuem para a localização de som.
-* Os modelos de sala são definidos por **áudio** .
+* Os modelos de sala são definidos por **áudio**.
 * O [MixedRealityToolkit para Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece código para definir o modelo de sala.
 * Para experiências de realidade misturada, selecione o modelo de sala que melhor se adapta ao espaço do mundo real.
 
@@ -437,57 +437,57 @@ No Unity, você pode marcar um arquivo de áudio para streaming nas configuraç�
 
 #### <a name="instructions"></a>Instruções
 
-* No painel **hierarquia** , expanda **hologramacollection** e selecione **Underworld** .
-* Expanda **Underworld** e selecione **voicename** .
-* No painel **Inspetor** , clique em **Adicionar componente** e adicionar **efeito de voz do usuário** .
+* No painel **hierarquia** , expanda **hologramacollection** e selecione **Underworld**.
+* Expanda **Underworld** e selecione **voicename**.
+* No painel **Inspetor** , clique em **Adicionar componente** e adicionar **efeito de voz do usuário**.
 
-Um componente de **aúdio** será adicionado à **voiceprovider** .
+Um componente de **aúdio** será adicionado à **voiceprovider**.
 
-* Em **áudio** , defina **saída** para **UserVoice (mixer)** .
+* Em **áudio**, defina **saída** para **UserVoice (mixer)**.
 * Marque a caixa de seleção **espacialize** .
 * Arraste o controle deslizante de **mistura espacial** para **3D** ou digite **1** na caixa de edição.
-* Expanda **configurações de som 3D** .
-* Defina o **nível de Doppler** como **0** .
-* Em **efeito de voz do usuário** , defina **objeto pai** como o **Underworld** da cena.
-* Defina a **distância máxima** como **1** .
+* Expanda **configurações de som 3D**.
+* Defina o **nível de Doppler** como **0**.
+* Em **efeito de voz do usuário**, defina **objeto pai** como o **Underworld** da cena.
+* Defina a **distância máxima** como **1**.
 
 Definir a **distância máxima** informa o **efeito de voz do usuário** como fechar o usuário deve ser ao objeto pai antes de o efeito ser habilitado.
 
-* Em **efeito de voz do usuário** , expanda **parâmetros Chorus** .
-* Defina **profundidade** como **0,1** .
-* Defina **tocar 1 volume** , **toque em 2 volume** e **toque em 3 volume** para **0,8** .
-* Defina o **volume de som original** como **0,5** .
+* Em **efeito de voz do usuário**, expanda **parâmetros Chorus**.
+* Defina **profundidade** como **0,1**.
+* Defina **tocar 1 volume**, **toque em 2 volume** e **toque em 3 volume** para **0,8**.
+* Defina o **volume de som original** como **0,5**.
 
 As configurações anteriores configuram os parâmetros do Unity **AudioChorusFilter** usado para adicionar riqueza à voz do usuário.
 
-* Em **efeito de voz do usuário** , expanda **parâmetros de eco** .
+* Em **efeito de voz do usuário**, expanda **parâmetros de eco**.
 * Definir **atraso** como **300**
-* Defina a **taxa de decaimento** como **0,2** .
-* Defina o **volume de som original** como **0** .
+* Defina a **taxa de decaimento** como **0,2**.
+* Defina o **volume de som original** como **0**.
 
 As configurações anteriores configuram os parâmetros do Unity **AudioEchoFilter** usado para fazer com que a voz do usuário seja ecoada.
 
 O script de efeito de voz do usuário é responsável por:
 
 * Medindo a distância entre o usuário e o **gameobject** ao qual o script está anexado.
-* Determinando se o usuário está voltado para o **gameobject** .
+* Determinando se o usuário está voltado para o **gameobject**.
 
 O usuário deve estar voltado para o gameobject, independentemente da distância, para que o efeito seja habilitado.
 
-* Aplicando e configurando um **AudioChorusFilter** e um **AudioEchoFilter** para a **audioname** .
+* Aplicando e configurando um **AudioChorusFilter** e um **AudioEchoFilter** para a **audioname**.
 * Desabilitando o efeito, desabilitando os filtros.
 
 O efeito de voz do usuário usa o componente seletor de fluxo do MIC, do [MixedRealityToolkit para o Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity), para selecionar o fluxo de voz de alta qualidade e roteá-lo no sistema de áudio do Unity.
 
-* No painel **hierarquia** , selecione **gerentes** .
-* No painel **Inspetor** , expanda **manipulador de entrada de fala** .
-* Em **manipulador de entrada de fala** , expanda **Mostrar Underworld** .
-* Altere **nenhuma função** para **UnderworldBase. OnEnable** .
+* No painel **hierarquia** , selecione **gerentes**.
+* No painel **Inspetor** , expanda **manipulador de entrada de fala**.
+* Em **manipulador de entrada de fala**, expanda **Mostrar Underworld**.
+* Altere **nenhuma função** para **UnderworldBase. OnEnable**.
 
 ![Palavra-chave: show Underworld](images/showunderworld.png)
 
-* Expanda **ocultar Underworld** .
-* Altere **nenhuma função** para **UnderworldBase. ondisable** .
+* Expanda **ocultar Underworld**.
+* Altere **nenhuma função** para **UnderworldBase. ondisable**.
 
 ![Palavra-chave: Ocultar Underworld](images/hideunderworld.png)
 
@@ -497,7 +497,7 @@ O efeito de voz do usuário usa o componente seletor de fluxo do MIC, do [MixedR
 
 Após a implantação do aplicativo:
 
-* Face de uma superfície (parede, piso, tabela) e diga *"mostrar Underworld"* .
+* Face de uma superfície (parede, piso, tabela) e diga *"mostrar Underworld"*.
 
 O Underworld será mostrado e todos os outros hologramas serão ocultados. Se você não vir o Underworld, verifique se está enfrentando uma superfície do mundo real.
 
@@ -512,6 +512,6 @@ O Underworld ficará oculto e os hologramas ocultos anteriormente serão exibido
 
 ## <a name="the-end"></a>Fim
 
-Parabéns! Agora você concluiu o **Sr spatial 220: som espacial** .
+Parabéns! Agora você concluiu o **Sr spatial 220: som espacial**.
 
 Ouça o mundo e dê vida às suas experiências com o som!

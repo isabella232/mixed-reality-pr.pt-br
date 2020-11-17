@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417831"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631514"
 ---
 # <a name="get-started-with-mixed-reality"></a>Introdução à Realidade Misturada
 
@@ -143,11 +143,6 @@ Se estiver curioso para ver como o hardware e os diferentes serviços da Realida
 
 <br>
 
-
 >[!IMPORTANT]
 >Todos os materiais de desenvolvimento de realidade misturada são fornecidos neste site somente para referência. Seu aplicativo, seu uso e seu efeito sobre os usuários finais é de sua responsabilidade exclusiva como o desenvolvedor do aplicativo, incluindo a garantia de que o aplicativo não causará desconforto, lesão ou nenhum outro dano ao usuário final, incluindo avisos e isenções de responsabilidade apropriados. É necessário sempre seguir as etapas apropriadas no desenvolvimento e na publicação do seu aplicativo para garantir que ele seja seguro e atenda a todas as obrigações do [Contrato de Desenvolvedor de Aplicativos com a Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
 
-## <a name="see-also"></a>Confira também
-* [Detalhes de hardware do headset imersivo](immersive-headset-hardware-details.md)
-* [Recursos da comunidade](community.md)
-* [Guia do entusiasta de VR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

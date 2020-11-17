@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, portal de dispositivos Windows, API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, portal de dispositivos Windows, API, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675012"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677965"
 ---
 # <a name="device-portal-api-reference"></a>Referência de API do portal de dispositivos
 
@@ -159,7 +159,7 @@ Parâmetros
 
 Obter o estágio térmico do dispositivo (0 normal, 1 quente, 2 crítico)
 
-## <a name="map-manager"></a>Gerenciador de mapa
+## <a name="map-manager"></a>Gerenciador de Mapas
 
 **/api/holographic/mapmanager/mapFiles (GET)**
 
@@ -297,7 +297,7 @@ Exemplo:
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-### <a name="other"></a>Outros
+### <a name="other"></a>Outro
 
 **/API/Holographic/mapmanager/resetmapandanchorsandsrdb (POST)**
 
@@ -355,7 +355,7 @@ Define as configurações padrão de captura de realidade misturada.  Algumas de
 
 Obtém o estado da captura de realidade misturada no portal do dispositivo Windows.
 
-***Resposta***
+**_Resposta_* _
 
 A resposta contém uma propriedade JSON que indica se o portal do dispositivo Windows está gravando vídeo ou não.
 
@@ -363,7 +363,7 @@ A resposta contém uma propriedade JSON que indica se o portal do dispositivo Wi
 {"IsRecording" : boolean}
 ```
 
-**/API/Holographic/MRC/Thumbnail (GET)**
+_ */API/Holographic/MRC/Thumbnail (Get)**
 
 Obtém a imagem em miniatura do arquivo especificado.
 
@@ -693,6 +693,6 @@ Parâmetros
 Retornar dados
 * Em Iniciar, retorna o status da sessão WPR.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Como usar o Portal de Dispositivos do Windows](using-the-windows-device-portal.md)
 * [Referência da API principal do portal do dispositivo (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

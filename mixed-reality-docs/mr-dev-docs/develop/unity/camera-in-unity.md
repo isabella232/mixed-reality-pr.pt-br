@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic renderização, Holographic, imersão, ponto de foco, buffer de profundidade, somente orientação, posicional, opaco, transparente, clipe
-ms.openlocfilehash: 7e606232f626c64407ced75481deb3055326f760
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic Rendering, Holographic, imersão, ponto de foco, buffer de profundidade, somente orientação, posicional, opaco, transparente, clipe, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674878"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677615"
 ---
 # <a name="camera-in-unity"></a>Câmera no Unity
 
@@ -28,7 +28,7 @@ No entanto, para otimizar totalmente a qualidade visual e a [estabilidade do hol
 
 As configurações padrão no componente câmera do Unity são para aplicativos 3D tradicionais que precisam de um plano de fundo Skybox, pois não têm um mundo real.
 
-* Ao executar em um **[headset de imersão](../../discover/immersive-headset-hardware-details.md)** , você está renderizando tudo o que o usuário vê e, portanto, provavelmente desejará manter o Skybox.
+* Ao executar em um **[headset de imersão](../../discover/immersive-headset-hardware-details.md)**, você está renderizando tudo o que o usuário vê e, portanto, provavelmente desejará manter o Skybox.
 * No entanto, ao executar em um **Headset Holographic** como o [HoloLens](../../hololens-hardware-details.md), o mundo real deve aparecer atrás de tudo que a câmera renderiza. Para fazer isso, defina o plano de fundo da câmera como transparente (no HoloLens, o preto é renderizado como transparente) em vez de uma textura Skybox:
     1. Selecione a câmera principal no painel hierarquia
     2. No painel Inspetor, localize o componente câmera e altere a lista suspensa limpar sinalizadores de Skybox para cor sólida
@@ -81,7 +81,7 @@ Compartilhar o buffer de profundidade do seu aplicativo para o Windows cada quad
 
 Para definir se seu aplicativo de Unity fornecerá um buffer de profundidade para o Windows:
 
-1. Vá para **Editar**  >  **configurações do projeto**  >  **Player**  >  **plataforma universal do Windows guia**  >  **configurações do XR** .
+1. Vá para **Editar**  >  **configurações do projeto**  >  **Player**  >  **plataforma universal do Windows guia**  >  **configurações do XR**.
 2. Expanda o item **Windows Mixed Reality SDK** .
 3. Marque ou desmarque a caixa de seleção **Habilitar compartilhamento de buffer de profundidade** .  Isso será verificado por padrão em novos projetos criados, pois esse recurso foi adicionado ao Unity e será desmarcado por padrão para projetos mais antigos que foram atualizados.
 
@@ -93,19 +93,19 @@ Siga o guia [passo a passo](https://microsoft.github.io/MixedRealityToolkit-Unit
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode prosseguir para o próximo bloco de construção:
+Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Foco](gaze-in-unity.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Experiências compartilhadas](shared-experiences-in-unity.md)
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Estabilidade do holograma](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit principal. pré-fabricado](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

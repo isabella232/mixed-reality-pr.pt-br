@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala em posição, em escala de pé, escala de sala, escala mundial, 360 graus, encaixado, posicionado, sala, mundo, escala, posição, orientação, Unity, âncora, âncora espacial, âncora mundial, bloqueado mundialmente, bloqueio de corpo, bloqueio de corpo, perda de rastreamento, locatability, limites, recentralizar
-ms.openlocfilehash: 59fae57f3ca5048f4027ed96fca03255683c1fe3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala assentada, escala em posição, espaço em escala, escala mundial, 360 graus, encaixada, posicionada, sala, mundo, escala, posição, orientação, Unity, âncora, âncora espacial, ancoragem mundial, trancada mundial, bloqueio mundial, fone de ouvido, bloqueio de corpo, perda de controle, locatability, limites, recentralizar, realidade misturada, headset do Windows, headset de realidade virtual
+ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674868"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678675"
 ---
 # <a name="coordinate-systems-in-unity"></a>Sistemas de coordenadas no Unity
 
@@ -24,7 +24,7 @@ Sua primeira etapa na criação de uma experiência de realidade mista no Unity 
 **Namespace:** *UnityEngine. XR*<br>
 **Tipo:** *XRDevice*
 
-Para criar uma experiência **somente de orientação** ou **de escala colocada** , você deve definir o Unity para o tipo de espaço de rastreamento estacionário. Isso define o sistema de coordenadas mundiais do Unity para acompanhar o [quadro estacionário de referência](../../design/coordinate-systems.md#spatial-coordinate-systems). No modo de rastreamento estacionário, o conteúdo colocado no editor apenas na frente do local padrão da câmera (Forward is-Z) aparecerá na frente do usuário quando o aplicativo for iniciado.
+Para criar uma experiência **somente de orientação** ou **de escala colocada**, você deve definir o Unity para o tipo de espaço de rastreamento estacionário. Isso define o sistema de coordenadas mundiais do Unity para acompanhar o [quadro estacionário de referência](../../design/coordinate-systems.md#spatial-coordinate-systems). No modo de rastreamento estacionário, o conteúdo colocado no editor apenas na frente do local padrão da câmera (Forward is-Z) aparecerá na frente do usuário quando o aplicativo for iniciado.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -39,7 +39,7 @@ Para uma **experiência pura somente de orientação** , como um visualizador de
 InputTracking.disablePositionalTracking = true;
 ```
 
-Para uma **experiência em escala** , para permitir que o usuário recentralize a origem encaixada novamente, você pode chamar a [XR. Método InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
+Para uma **experiência em escala**, para permitir que o usuário recentralize a origem encaixada novamente, você pode chamar a [XR. Método InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
 
 ```cs
 InputTracking.Recenter();
@@ -50,7 +50,7 @@ InputTracking.Recenter();
 **Namespace:** *UnityEngine. XR*<br>
 **Tipo:** *XRDevice*
 
-Para uma experiência **de escala de** colocação ou de escala de **espaço** , você precisará colocar o conteúdo em relação ao andar. Você se deparar com o andar do usuário usando o **[estágio espacial](../../design/coordinate-systems.md#spatial-coordinate-systems)** , que representa a origem definida do nível de chão do usuário e o limite de sala opcional, configurado durante a primeira execução.
+Para uma experiência **de escala de** colocação ou de escala de **espaço**, você precisará colocar o conteúdo em relação ao andar. Você se deparar com o andar do usuário usando o **[estágio espacial](../../design/coordinate-systems.md#spatial-coordinate-systems)**, que representa a origem definida do nível de chão do usuário e o limite de sala opcional, configurado durante a primeira execução.
 
 Para garantir que o Unity esteja operando com seu sistema de coordenadas mundiais no nível do andar, você pode definir o Unity para o tipo de espaço de rastreamento RoomScale e garantir que o conjunto tenha sucesso:
 
@@ -170,12 +170,12 @@ Quando estiver em execução com as âncoras espaciais do Azure, você poderá <
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada. A partir daqui, você pode prosseguir para o próximo bloco de construção:
+Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada. De lá, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Foco](gaze-in-unity.md)
 
-Ou vá para recursos e APIs da plataforma de realidade misturada:
+Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
 > [!div class="nextstepaction"]
 > [Experiências compartilhadas](shared-experiences-in-unity.md)
