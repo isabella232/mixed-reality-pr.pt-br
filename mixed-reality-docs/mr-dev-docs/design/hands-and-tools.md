@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: Realidade mista, mãos, controladores de movimento, interação, design
-ms.openlocfilehash: 8b2ed6127708204d0c4a537c56b2225ff26e0d0f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, mãos, controladores de movimento, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675792"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702152"
 ---
 # <a name="hands-and-motion-controllers"></a>Controladores de mãos e de movimento
 ## <a name="scenarios"></a>Cenários
@@ -42,7 +42,7 @@ Alguns cenários específicos podem ser:
         Essa modalidade permite que os usuários interajam com os hologramas em uma distância. Ele permite que os usuários façam o melhor uso de arredores. Os usuários podem posicionar os hologramas em qualquer lugar e ainda acessá-los de qualquer distância. Os modelos mentales e gestos para controlar e manipular os hologramas 2D e 3D são altamente sincronizados com aqueles de manipulação direta.
     :::column-end:::
     :::column:::
-       [![Controladores de movimento](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
+       [![Controladores de movimentos](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
        ### <a name="motion-controllersbr"></a>[Controladores de movimentos](motion-controllers.md)<br>
        Os controladores de movimento são ferramentas que estendem os recursos físicos do usuário, fornecendo interações precisas em uma grande variedade de distâncias ao usar uma ou ambas as mãos. Esses acessórios de hardware fornecem atalhos para muitas interações usadas com frequência e fornecem comentários de Surefooted, tactile para uma variedade de ações. Atualmente, os controladores de movimento só estão disponíveis para cenários de WMR (realidade mista do Windows). 
     :::column-end:::

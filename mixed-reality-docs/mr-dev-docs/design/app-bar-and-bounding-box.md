@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Realidade mista do Windows, barra de aplicativos, caixa delimitadora
-ms.openlocfilehash: 381efae8c831fda2152eb96cf762bf4f94c34c57
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, barra de aplicativos, caixa delimitadora, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista
+ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675406"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703052"
 ---
 # <a name="bounding-box-and-app-bar"></a>Caixa delimitadora e barra de aplicativos
 ![O limite é a interface padrão para a manipulação de objetos em realidade misturada.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -103,7 +103,7 @@ A barra de aplicativos é um menu de nível de objeto que contém uma série de 
 ---
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

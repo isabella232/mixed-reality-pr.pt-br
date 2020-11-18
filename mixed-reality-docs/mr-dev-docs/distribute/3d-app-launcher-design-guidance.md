@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, iniciador de aplicativos 3D, headset de imersão, cubo ao vivo
-ms.openlocfilehash: 884d05b8b8ef7e15f5c65a411cf500b0d4dc598c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, design, iniciador de aplicativos 3D, headset de imersão, cubo ao vivo, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, UWP, Win32, iluminação, cor
+ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675708"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703472"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>Diretrizes de design do inicializador de aplicativos 3D
 
@@ -176,7 +176,7 @@ O formato final do seu iniciador de aplicativo 3D será um arquivo. glb, que é 
   * Evite a iluminação inclusas nas texturas
   * Use um dos pacotes de criação de material do PBR para obter os mapas corretos gerados para nosso sombreador
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Crie modelos 3D para uso na página inicial misturada de realidade](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos UWP)](implementing-3d-app-launchers.md)

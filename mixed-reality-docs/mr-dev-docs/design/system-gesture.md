@@ -5,13 +5,13 @@ author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Realidade misturada, gestos, interação, design
-ms.openlocfilehash: 909472abfec34f75a2f5fa810f87003978cc6a5e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, gestos, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada, flor
+ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675578"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703262"
 ---
 # <a name="start-gesture"></a>Iniciar gesto
 
@@ -97,7 +97,7 @@ No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual que 
 > 1. Você deve atualizar para a atualização de novembro de 2019 (Build 18363,1039) ou posterior.
 > 1. Seus olhos devem ser calibrados no dispositivo para que o acompanhamento de olho funcione corretamente. Se você não vir pontos de an-órbita em volta do ícone iniciar quando olhar para ele, seus olhos não serão calibrados no dispositivo.
 
-Você também pode executar o gesto de início com apenas uma mão. Para fazer isso, mantenha sua mão com seu Palm e veja o **ícone iniciar** no pulso interno. **Enquanto mantém seu olho no ícone** , aperte seu polegar e indexe o dedo em conjunto.<br>
+Você também pode executar o gesto de início com apenas uma mão. Para fazer isso, mantenha sua mão com seu Palm e veja o **ícone iniciar** no pulso interno. **Enquanto mantém seu olho no ícone**, aperte seu polegar e indexe o dedo em conjunto.<br>
 :::row:::
     :::column:::
         ![Botão do punho pronto](images/wrist-button-ready.png)<br>
@@ -113,7 +113,7 @@ Você também pode executar o gesto de início com apenas uma mão. Para fazer i
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Olho-olhar](eye-tracking.md)

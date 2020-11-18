@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: mão, menu, botão, acesso rápido, layout
-ms.openlocfilehash: f7bf8ab2fb54e6a939bd538a0a0ba756c5efb916
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: mão, menu, botão, acesso rápido, layout, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675801"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702292"
 ---
 # <a name="hand-menu"></a>Menu lateral
 
@@ -117,7 +117,7 @@ Abaixo estão dois posicionamentos recomendados com base em nossas explorações
 ---
 
 ## <a name="menu-positions-that-are-not-recommended"></a>Posições de menu que não são recomendadas
-Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os locais de menu a seguir **não são recomendados** , encontre os contras de cada estudo abaixo:
+Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os locais de menu a seguir **não são recomendados**, encontre os contras de cada estudo abaixo:
 
 
 :::row:::
@@ -183,7 +183,7 @@ Você pode experimentar exemplos de menu à mão no HoloLens 2 com exemplos de M
 ---
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: Realidade misturada, mãos gratuitas, olhar, direcionamento olhar, interação, design
-ms.openlocfilehash: 47e2bd8fef52a36601d58f321def9c066db259e5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, mãos gratuitas, olhar, direcionamento de olhar, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, entrada de voz, usabilidade
+ms.openlocfilehash: 7f4d3a0ec8d2e7435f54164006a8bd122b1ebcba
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675790"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702132"
 ---
 # <a name="hands-free"></a>Mãos livres
 
@@ -93,7 +93,7 @@ O usuário entende...
 * Exemplo: as interações de voz são melhores com legendas que precisam ser ativadas
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Acompanhamento ocular no HoloLens 2](eye-tracking.md)
 * [Focar e confirmar](gaze-and-commit.md)
 * [Focar e esperar](gaze-and-dwell.md)

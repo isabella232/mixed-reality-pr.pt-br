@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Compreensão da cena, mapeamento espacial, realidade do Windows Mixed, Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Compreensão da cena, mapeamento espacial, realidade mista do Windows, Unity, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, oclusão, SDK
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675069"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703362"
 ---
 # <a name="scene-understanding"></a>Reconhecimento de cena
 
@@ -35,7 +35,7 @@ Se você não tiver um dispositivo e desejar acessar cenas de exemplo para exper
 
 [Cenas de exemplo de compreensão de cena](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
 
-### <a name="sdk"></a>SDK
+### <a name="sdk"></a>.
 
 Se você estiver procurando detalhes específicos sobre como desenvolver para compreensão da cena ou detalhes sobre como o entendimento da cena funciona e como desenvolvê-lo, consulte a documentação [visão geral do SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) .
 

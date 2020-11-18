@@ -5,13 +5,13 @@ author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, HoloLens, HoloTour, som espacial, estudo de caso
-ms.openlocfilehash: 6cf2d18661924276f1ea75efb88e29acd4709f37
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, HoloLens, HoloTour, som espacial, estudo de caso, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, áudio
+ms.openlocfilehash: 31e38f6f5ce309bba11515ab09303593af0a328b
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675358"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702832"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>Estudo de caso: design de som espacial para HoloTour
 
@@ -65,7 +65,7 @@ Há algumas maneiras adicionais de destacar a direcionalidade e melhorar o imers
 * **Emissor de spline:** Esses emissores se movem em espaço 3D em relação à posição visual do objeto ao qual estão anexados. Um exemplo é o treinamento no Machu Picchu, no qual usamos um emissor de spline para dar uma noção distinta de direcionalidade e movimento.
 * **Música e SFX:** Determinados aspectos de HoloTour que representam uma abordagem mais estilizada ou Cinematic usam efeitos de música e som para reforçar o impacto emocional. Na batalha de Gladiator no final do Tour de Roma, por exemplo, efeitos especiais como whooshes e Stingers ajudam a reforçar o efeito dos rótulos que aparecem nos bastidores.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Som espacial](spatial-sound.md)
 * [Projeto de som espacial](spatial-sound-design.md)
 * [Som espacial no Unity](../develop/unity/spatial-sound-in-unity.md)

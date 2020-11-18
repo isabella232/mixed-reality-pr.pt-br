@@ -5,15 +5,15 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D, modelo, lugar em casa, lugar, mundo, modelagem, realidade misturada, página inicial, Web, aplicativo
-ms.openlocfilehash: 4ea720fd9fc404d4730733b6b65df13acdf1a51a
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, modelo, lugar em casa, lugar, mundo, modelagem, realidade misturada, página inicial, Web, aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781570"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703182"
 ---
-# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Habilitar o posicionamento de modelos 3D no início da realidade misturada
+# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Habilitar o posicionamento de modelos 3D na página inicial da realidade misturada
 
 > [!NOTE]
 > Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). As versões mais antigas do Windows não são compatíveis com esse recurso.
@@ -88,10 +88,10 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 
 ## <a name="considerations-for-immersive-vr-headsets"></a>Considerações sobre headsets de imersão (VR)
 
-* Para headsets de imersão (VR), o portal de realidade misturada não precisa estar em execução antes de invocar o *protocolo adicionar modelo* . Nesse caso, o *protocolo adicionar modelo* iniciará o portal de realidade misturada e posicionará o objeto diretamente, no qual o headset está olhando quando você chegar na casa misturada da realidade. 
+* Para headsets de imersão (VR), o portal de realidade misturada não precisa estar em execução antes de invocar o *protocolo adicionar modelo*. Nesse caso, o *protocolo adicionar modelo* iniciará o portal de realidade misturada e posicionará o objeto diretamente, no qual o headset está olhando quando você chegar na casa misturada da realidade. 
 * Ao invocar o *protocolo adicionar modelo* da área de trabalho com o portal da realidade misturada já em execução, verifique se o headset está "ativo". Caso contrário, o posicionamento não terá sucesso. 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Criando modelos 3D para uso na página inicial do Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Como navegar na página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

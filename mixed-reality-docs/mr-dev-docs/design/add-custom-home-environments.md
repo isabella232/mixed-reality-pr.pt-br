@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Home, ambientes personalizados, lugares, Cliff House, skyloft, usuário, criar
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Home, ambientes personalizados, lugares, Cliff House, skyloft, usuário, criar, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781523"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703012"
 ---
 # <a name="design-your-own-immersive-environments"></a>Projete seus próprios ambientes de imersão
 
@@ -53,11 +53,11 @@ Criamos um ambiente de exemplo que mostra algumas das possibilidades criativas d
 2. Execute o arquivo de **Fantasy_Island.exe** que você acabou de baixar.
 
     > [!NOTE]
-    > Ao tentar executar um arquivo. exe baixado da Web (como este), você pode encontrar um pop-up "protegido pelo Windows". Para executar Fantasy_Island.exe a partir desse pop-up, selecione **mais informações** e, em seguida, **executar mesmo assim** . Essa configuração de segurança destina-se a protegê-lo de baixar arquivos que talvez você não queira confiar, portanto, escolha apenas essa opção ao confiar na origem do arquivo.
+    > Ao tentar executar um arquivo. exe baixado da Web (como este), você pode encontrar um pop-up "protegido pelo Windows". Para executar Fantasy_Island.exe a partir desse pop-up, selecione **mais informações** e, em seguida, **executar mesmo assim**. Essa configuração de segurança destina-se a protegê-lo de baixar arquivos que talvez você não queira confiar, portanto, escolha apenas essa opção ao confiar na origem do arquivo.
 
 3. Abra o **Explorador de arquivos** e navegue até a pasta ambientes colando o seguinte na barra de endereços: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` .
 4. Copie o ambiente de exemplo que você baixou para essa pasta.
-5. Reinicie o **portal de realidade misturada** . Isso atualizará a lista de ambientes no seletor de locais.
+5. Reinicie o **portal de realidade misturada**. Isso atualizará a lista de ambientes no seletor de locais.
 6. Coloque seu headset. Quando estiver em casa, abra o **menu iniciar** usando o botão do Windows seu controlador.
 7. Selecione o ícone **locais** acima da lista de aplicativos fixados para escolher um ambiente doméstico.
 8. Você encontrará o ambiente da ilha de fantasia que baixou na lista de locais. Selecione **ilha de fantasia** para entrar no seu novo ambiente doméstico personalizado!
@@ -96,7 +96,7 @@ Para facilitar esse processo, criamos o conversor de [ativos do Windows Mixed Re
 
 Atualmente, o conversor dá suporte a vários sinalizadores para ajustar o comportamento exato das otimizações. Recomendamos a execução com os seguintes sinalizadores para obter os melhores resultados:
 
-Sinalizador|Valor (es) recomendado (s)|Descrição
+Sinalizador|Valor (es) recomendado (s)|Description
 ---|---|---
 -Max-Texture-size|1024 ou 2048| Ajuste isso para melhorar a qualidade das texturas, o padrão é 512x512. Observe que um valor maior afetará significativamente o tamanho do arquivo do ambiente, portanto, mantenha o limite de 256 MB em mente
 -min-versão|1803|Há suporte para ambientes personalizados apenas em versões do Windows >= 1803. Esse sinalizador removerá texturas de versões mais antigas e reduzirá o tamanho do arquivo do ativo final
@@ -149,6 +149,6 @@ O local de geração padrão está localizado em 0, 0, 0 no ambiente. Atualmente
 
 Quando você cria seu ambiente personalizado, ele usará uma simulação de renderização acústica que não corresponde ao espaço físico que você criou. O som pode vir de direções erradas e pode parecer muffled. 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Conversor de ativos da realidade mista do Windows (no GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
 

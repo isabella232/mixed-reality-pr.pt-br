@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar
-ms.openlocfilehash: 57b90142fc47b72030f9b767370fd84a5c7d5b14
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, design, interações
+ms.openlocfilehash: 59dded6ca23b9adc075dc02d642ce7761f93bcfb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675342"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702542"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interação baseada em olhar no HoloLens 2
 
@@ -70,7 +70,7 @@ Com muita potência, vem muito de responsabilidade.
 Embora os olhos olhar possam ser usados para criar experiências de usuário satisfatórias que fazem você sentir como um Superhero, também é importante saber o que não é bom para se considerar adequadamente. O a seguir discute alguns *desafios* a serem considerados e como solucioná-los ao trabalhar com a entrada de olhar de olho: 
 
 - **Seu olho-olhar é "Always on"** No momento em que você abre suas tampas de olho, seus olhos começam a fixatingr sobre as coisas no ambiente. Reagir a todas as aparências que você fizer e emitir ações acidentalmente, porque você examinou algo por muito tempo, resultaria em uma experiência que não satisfaça.
-Portanto, é recomendável combinar olhars de olho com um *comando de voz* , um *gesto de mão* , um clique de *botão* ou uma pesquisa estendida para disparar a seleção de um destino (para obter mais informações, consulte [olhar de olho e confirmação](gaze-and-commit-eyes.md)).
+Portanto, é recomendável combinar olhars de olho com um *comando de voz*, um *gesto de mão*, um clique de *botão* ou uma pesquisa estendida para disparar a seleção de um destino (para obter mais informações, consulte [olhar de olho e confirmação](gaze-and-commit-eyes.md)).
 Essa solução também permite um modo no qual o usuário pode procurar livremente sem ser sobrecarregado por disparar involuntariamente algo. Esse problema também deve ser considerado ao criar comentários sobre Visual e auditoria ao examinar um destino.
 Tente não sobrecarregar o usuário com efeitos pop-out imediatos ou sons de foco. A sutileza é fundamental. Discutiremos algumas práticas recomendadas para isso mais adiante, ao falar sobre [recomendações de design](eye-gaze-interaction.md#design-recommendations).
 
@@ -82,7 +82,7 @@ Tente não sobrecarregar o usuário com efeitos pop-out imediatos ou sons de foc
 Essa é uma sensação que você pode invocar em seus usuários ao forçá-los a selecionar destinos que são muito pequenos em seu aplicativo usando o direcionamento de olho.
 Para o design, visando criar uma experiência agradável e confortável para seus usuários, recomendamos que os alvos tenham um ângulo visual de, pelo menos, 2°, preferencialmente maior.
 
-- **Olhos irregulares – movimentos olhars** Nossos olhos realizam movimentos rápidos do fixação da para o fixação da. Se você examinar os caminhos de exame dos movimentos oculares registrados, poderá ver que eles parecem irregulares. Seus olhos se movem rapidamente e em saltos ESPONTANEOS em comparação com os *olhar* ou os *movimentos de mão* .  
+- **Olhos irregulares – movimentos olhars** Nossos olhos realizam movimentos rápidos do fixação da para o fixação da. Se você examinar os caminhos de exame dos movimentos oculares registrados, poderá ver que eles parecem irregulares. Seus olhos se movem rapidamente e em saltos ESPONTANEOS em comparação com os *olhar* ou os *movimentos de mão*.  
 
 - **Confiabilidade de rastreamento:** A precisão do controle de olho pode diminuir um pouco a luz de alteração à medida que seus olhos se ajustam às novas condições.
 Embora isso não deva afetar necessariamente o design do aplicativo, uma vez que a precisão deve estar dentro da limitação de 2 °, pode ser necessário que o usuário calibre novamente. 
@@ -117,7 +117,7 @@ No caso de um cursor, isso pode resultar em um efeito de "cursor fleeing" devido
 Esta página forneceu uma boa visão geral para ajudá-lo a começar a entender os olhos olhar como uma entrada na realidade misturada. Para começar a desenvolver, confira nossas informações sobre [olhar no Unity](https://aka.ms/mrtk-eyes) e [olhar de olho no DirectX](../develop/native/gaze-in-directx.md).
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Conforto](comfort.md)
 * [Olho-olhar no DirectX](../develop/native/gaze-in-directx.md)
 * [Olho-olhar no Unity (Kit de ferramentas de realidade misturada)](https://aka.ms/mrtk-eyes)

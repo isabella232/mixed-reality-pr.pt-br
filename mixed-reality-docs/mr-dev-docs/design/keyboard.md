@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realidade misturada, controles, interação, interface do usuário, UX
-ms.openlocfilehash: 9558cd607d7b696851660f495de7965348f571e1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, teclado, MRTK, kit de ferramentas da realidade misturada
+ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675108"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703142"
 ---
 # <a name="keyboard"></a>Teclado
 
@@ -39,7 +39,7 @@ Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento
 > [!div class="nextstepaction"]
 > [Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

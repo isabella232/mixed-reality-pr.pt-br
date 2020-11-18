@@ -5,17 +5,17 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, acompanhamento de cabeça, acompanhamento de cabeçalho
-ms.openlocfilehash: 887d1a30a974bdd643889959a1fee55e96d7b16a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, controle de cabeça, acompanhamento de cabeçalho, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista
+ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675829"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702402"
 ---
 # <a name="gaze-and-commit"></a>Focar e confirmar
 
-_Olhar e commit_ é um modelo de entrada fundamental que está fortemente relacionado com a maneira como estamos interagindo com nossos computadores usando o mouse: _Point & clique_ .
+_Olhar e commit_ é um modelo de entrada fundamental que está fortemente relacionado com a maneira como estamos interagindo com nossos computadores usando o mouse: _Point & clique_.
 Nesta página, apresentamos dois tipos de entrada olhar (cabeça e olho-olhar) e tipos diferentes de ações de confirmação. 
 _Olhar e commit_ são considerados um modelo de entrada distante com manipulação indireta.
 Isso significa que ele é melhor usado para interagir com conteúdo Holographic que está fora do alcance.
@@ -133,7 +133,7 @@ Se você usar Head-olhar ou olho-olhar para seu modelo de entrada de olhar e con
 ---
 
 ## <a name="commit"></a>Commit
-Depois de falar sobre diferentes maneiras de _olhar_ em um alvo, vamos falar um pouco mais sobre a parte de _confirmação_ em _olhar e commit_ .
+Depois de falar sobre diferentes maneiras de _olhar_ em um alvo, vamos falar um pouco mais sobre a parte de _confirmação_ em _olhar e commit_.
 Depois de direcionar um objeto ou elemento de interface do usuário, o usuário pode interagir ou clicar nele usando uma entrada secundária. Isso é conhecido como a etapa de confirmação do modelo de entrada. 
 
 Os seguintes métodos de confirmação são compatíveis:
@@ -290,7 +290,7 @@ Há três coisas que você deve considerar:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Interação ocular](eye-gaze-interaction.md)
 * [Acompanhamento ocular no HoloLens 2](eye-tracking.md)
 * [Focar e esperar](gaze-and-dwell.md)

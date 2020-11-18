@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, estilo, design
-ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Realidade mista do Windows, estilo, design, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, escala, hologramas
+ms.openlocfilehash: e82211b0bee2214df7542d3129f95ea207f4b0e3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340654"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703372"
 ---
 # <a name="scale"></a>Escala
 
@@ -79,18 +79,6 @@ No entanto, isso pode criar alguns artefatos possíveis na experiência:
 <br>
 
 ---
-
-## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
-
-Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no final do excêntrica inicial em fundamentos de realidade misturada. Você pode conferir o que os parceiros do setor estão fazendo com realidade misturada no mundo real: 
-
-> [!div class="nextstepaction"]
-> [Veja como os parceiros do setor estão usando a realidade misturada](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
-
-Ou continue para a jornada de design:
-
-> [!div class="nextstepaction"]
-> [Comece sua jornada de design](../design/design.md)
 
 ## <a name="see-also"></a>Veja também
 * [Cor, luz e materiais](../color,-light-and-materials.md)

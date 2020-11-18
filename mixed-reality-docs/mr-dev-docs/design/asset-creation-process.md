@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: ativo, criação, processo, orçamento, polígonos, texturas, sombreadores, desempenho
-ms.openlocfilehash: 56be236086a6947549af6199dc3d01ba7c555375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: ativo, criação, processo, orçamento, polígonos, texturas, sombreadores, desempenho, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, ativos
+ms.openlocfilehash: 0c6f592dd813c06613801510ad8c8a936ad0de65
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675363"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702872"
 ---
 # <a name="asset-creation-process"></a>Processo de criação do ativo
 
@@ -77,7 +77,7 @@ Vamos começar com as maneiras de obter ativos para seu projeto:
 ### <a name="creating-assets"></a>Criando ativos
 
 **Ferramentas de criação**<br>
-Primeiro, você pode criar seus próprios ativos de várias maneiras diferentes. os artistas 3D usam vários aplicativos e ferramentas para criar modelos que consistem em **malhas** , **texturas** e **materiais** . Isso é salvo em um formato de arquivo que pode ser importado ou usado pelo mecanismo de gráficos usado pelo aplicativo, como **. FBX** ou **. OBJ** . Qualquer ferramenta que gera um modelo que o mecanismo gráfico escolhido suporta funcionará no **HoloLens** . Entre artistas 3D, muitos optam por usar o [Maya do Autodesk, que é capaz de usar o HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) para transformar a maneira como os ativos são criados. Se você quiser obter algo em rápido, também poderá usar o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) que vem com o Windows para exportar. OBJ para uso em seu aplicativo.
+Primeiro, você pode criar seus próprios ativos de várias maneiras diferentes. os artistas 3D usam vários aplicativos e ferramentas para criar modelos que consistem em **malhas**, **texturas** e **materiais**. Isso é salvo em um formato de arquivo que pode ser importado ou usado pelo mecanismo de gráficos usado pelo aplicativo, como **. FBX** ou **. OBJ**. Qualquer ferramenta que gera um modelo que o mecanismo gráfico escolhido suporta funcionará no **HoloLens**. Entre artistas 3D, muitos optam por usar o [Maya do Autodesk, que é capaz de usar o HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) para transformar a maneira como os ativos são criados. Se você quiser obter algo em rápido, também poderá usar o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) que vem com o Windows para exportar. OBJ para uso em seu aplicativo.
 
 **Captura de objeto**<br>
 Também há a opção de capturar objetos em 3D. Capturar objetos inanimados em 3D e editá-los com o software de criação de conteúdo digital é cada vez mais popular com o aumento da impressão 3D. Usando o sensor **Kinect 2** e o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) , você pode usar o recurso de captura para criar ativos de objetos do mundo real. Esse também é um [conjunto de ferramentas](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) para fazer o mesmo com o **Photogrammetry** processando várias imagens para unir e malhas e texturas.

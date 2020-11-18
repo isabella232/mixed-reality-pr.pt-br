@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, processo, estudo de caso
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Realidade mista do Windows, design, processo, estudo de caso, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, o que é realidade virtual, o que é a realidade aumentada, bodystorming, storyboards, comentários
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702202"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Pensando diferente para a realidade misturada
 Quando a Microsoft lançou o HoloLens (1º gen) para um público de desenvolvedores ansiosos em 2016, a equipe já havia parceria com o estúdios dentro e fora da Microsoft para criar as experiências de lançamento do dispositivo. Essas equipes aprenderam fazendo e encontrando as oportunidades e os desafios no novo campo de design de realidade misturada.

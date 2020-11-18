@@ -1,25 +1,25 @@
 ---
-title: Olhar e a pesquisa
+title: Focar e esperar
 description: Visão geral do olhar e do modelo de entrada de duração
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Realidade misturada, olhar, pesquisa, interação, design, acompanhamento de olho, acompanhamento de cabeçalho
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, olhar, pesquisa, interação, design, controle de cabeça, acompanhamento de cabeçalho, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675814"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702192"
 ---
-# <a name="gaze-and-dwell"></a>Olhar e a pesquisa
+# <a name="gaze-and-dwell"></a>Focar e esperar
 
 Quando as mãos estão ocupadas com ferramentas e peças, os gestos podem ser entediantes ou impossíveis.
 Os comandos de voz também podem não ser confiáveis em determinados contextos, por exemplo, sob condições excessivamente alta.
 A olhar e a pesquisa oferecem um mecanismo familiar e fácil de dominar para as cabeças de trabalho e as mãos gratuitas no HoloLens.
 Além disso, o olhar e a pesquisa são um ótimo fallback que é independente da interferência de ruído ou restrições de silêncio no ambiente operacional.
-Distinguimos duas variantes de _olhar e de duração_ : [Head-olhar e de pesquisa](gaze-and-dwell-head.md) e [olho-olhar e a pesquisa](gaze-and-dwell-eyes.md).
+Distinguimos duas variantes de _olhar e de duração_: [Head-olhar e de pesquisa](gaze-and-dwell-head.md) e [olho-olhar e a pesquisa](gaze-and-dwell-eyes.md).
 
 ## <a name="scenarios"></a>Cenários
 
@@ -63,7 +63,7 @@ A olhar e a pesquisa permitem que a pessoa que usa o HoloLens Navegue com confia
 
 ---
 
- ## <a name="see-also"></a>Consulte também
+ ## <a name="see-also"></a>Veja também
 * [Interação ocular](eye-gaze-interaction.md)
 * [Acompanhamento ocular no HoloLens 2](eye-tracking.md)
 * [Focar e confirmar](gaze-and-commit.md)

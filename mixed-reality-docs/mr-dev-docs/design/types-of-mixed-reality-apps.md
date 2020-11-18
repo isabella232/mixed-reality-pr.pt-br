@@ -5,13 +5,13 @@ author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, padrões de aplicativo
-ms.openlocfilehash: 5d2fa3a5d83f878009f4574c3468719c9af17014
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, design, padrões de aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens
+ms.openlocfilehash: 17ae6b2ec8d9c67d2b6f0114535fc25c1cb487b2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675568"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703212"
 ---
 # <a name="types-of-mixed-reality-apps"></a>Tipos de aplicativos de realidade misturada
 

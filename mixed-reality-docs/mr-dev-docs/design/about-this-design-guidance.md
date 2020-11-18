@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, introdução, orientação
-ms.openlocfilehash: 114a3808d57b2bd78044ce743d568bd5effe25bb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, design, introdução, orientação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, UX, recursos
+ms.openlocfilehash: 88e6b5866201a6ef116710b2b7b7c6af3a6ea5d3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675392"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703072"
 ---
 # <a name="about-this-design-guidance"></a>Sobre a diretriz deste projeto
 

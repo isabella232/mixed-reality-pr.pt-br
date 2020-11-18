@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: hakons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, HoloLens, RoboRaid, som espacial
-ms.openlocfilehash: 1482c914d261cae698a1460873b217b0683cd16b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HoloLens, RoboRaid, som espacial, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, CPU
+ms.openlocfilehash: ceb914c613d1b9558336c3775aa0f90e9bcffa65
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675356"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702802"
 ---
 # <a name="case-study---using-spatial-sound-in-roboraid"></a>Estudo de caso-usando som espacial em RoboRaid
 
@@ -85,6 +85,6 @@ Você pode experimentar isso usando os ativos de áudio abaixo:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Som espacial](spatial-sound.md)
 * [RoboRaid para Microsoft HoloLens](https://www.microsoft.com/p/roboraid/9nblggh5fv3j)

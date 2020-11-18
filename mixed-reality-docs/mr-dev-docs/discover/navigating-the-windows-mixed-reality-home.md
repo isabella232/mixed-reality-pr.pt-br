@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Shell, so, plataforma, Cliff House, casa, casa, ambiente, iniciar, menu Iniciar, menu início, Pins, aplicativo, iniciar aplicativos, colocar aplicativos, teleport, mover, navegar
-ms.openlocfilehash: 1f2ec91edca100e9253a6c8e65f4b3f9d2b2feeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Shell, so, plataforma, Cliff House, casa, casa, ambiente, iniciar, menu Iniciar, menu início, Pins, aplicativo, iniciar aplicativos, colocar aplicativos, teleport, mover, navegar, headset de realidade misturada, headset de realidade virtual, o que é realidade virtual
+ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675978"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703442"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Como navegar na página inicial do Windows Mixed Reality
 
@@ -48,11 +48,11 @@ Os aplicativos também podem ser iniciados por meio de uma API de aplicativo par
 
 ## <a name="moving-and-adjusting-apps"></a>Movendo e ajustando aplicativos
 
-Selecione **ajustar** na barra de aplicativos para revelar os controles que movem, dimensionam e giram o conteúdo da realidade misturada. Quando tiver terminado, selecione **concluído** .
+Selecione **ajustar** na barra de aplicativos para revelar os controles que movem, dimensionam e giram o conteúdo da realidade misturada. Quando tiver terminado, selecione **concluído**.
 
 ![O Slate da loja no modo de ajuste (quadro azul). Observe que a barra de aplicativos (superior) foi alterada para incluir os botões ' Concluído ' e ' remover '.](images/adjust-500px.png)
 
-Aplicativos diferentes podem ter opções adicionais na barra de aplicativos. Por exemplo, o Microsoft Edge tem opções de *rolagem* , *arrastar* e *zoom* . 
+Aplicativos diferentes podem ter opções adicionais na barra de aplicativos. Por exemplo, o Microsoft Edge tem opções de *rolagem*, *arrastar* e *zoom* . 
 
 ![Barra de aplicativos para aplicativos 2D em execução no HoloLens](images/holobar-500px.png)
 
@@ -60,9 +60,9 @@ O botão **voltar** navega de volta para as telas exibidas anteriormente no apli
 
 ## <a name="getting-around-your-home"></a>Entrando em casa
 
-Com o **HoloLens** , você passa por espaço físico para se mover em casa.
+Com o **HoloLens**, você passa por espaço físico para se mover em casa.
 
-Com **headsets de imersão** , você pode, de maneira semelhante, se familiarizar em seu Playspace para se mover em uma área semelhante no mundo virtual. Para mover-se por longas distâncias, você pode usar o Thumbstick em seu controlador para praticamente "andar" ou pode usar a *teleportação* para saltar imediatamente as distâncias mais longas.
+Com **headsets de imersão**, você pode, de maneira semelhante, se familiarizar em seu Playspace para se mover em uma área semelhante no mundo virtual. Para mover-se por longas distâncias, você pode usar o Thumbstick em seu controlador para praticamente "andar" ou pode usar a *teleportação* para saltar imediatamente as distâncias mais longas.
 
 ![Teleportação na página inicial do Windows Mixed Reality](images/teleportation-500px.png)
 
@@ -134,7 +134,7 @@ O Windows Mixed Reality tem vários aplicativos internos, como:
 * **Área de trabalho** (headsets de imersão) para exibir seu monitor de área de trabalho enquanto estiver em um headset de imersão
 * **Explorador de arquivos** Acessar arquivos e pastas localizados em seu dispositivo
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Modos de exibição do aplicativo](../design/app-views.md)
 * [Controladores de movimentos](../design/motion-controllers.md)
 * [Acessórios de hardware](hardware-accessories.md)

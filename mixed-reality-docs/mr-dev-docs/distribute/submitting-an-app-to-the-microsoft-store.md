@@ -5,13 +5,13 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, HoloLens, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos do sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising
-ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+keywords: Microsoft Store, HoloLens, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos do sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising, fone de ouvido misto, headset de realidade misturada do Windows, headset da realidade virtual
+ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678785"
+ms.locfileid: "94703112"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Como enviar um aplicativo para a Microsoft Store
 

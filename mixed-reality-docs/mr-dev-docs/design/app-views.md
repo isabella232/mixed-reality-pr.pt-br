@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: exibição de imersão, exibição 2D, Slate, aplicativo
-ms.openlocfilehash: e625eca3adb7cd4a9dcd1f971917f008d5daa7d2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: exibição de imersão, exibição 2D, Slate, aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: 1380c32dc89e472428c86be30b2fce82a946f3cc
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675362"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702912"
 ---
 # <a name="app-views"></a>Modos de exibição do aplicativo
 
-Os aplicativos do Windows podem conter dois tipos de exibições, **exibições de imersão** e **exibições 2D** . Os aplicativos podem alternar entre suas várias exibições de imersão e exibições 2D, mostrando suas exibições 2D em um monitor como uma janela ou um headset como um Slate. Os aplicativos que têm pelo menos uma exibição de imersão são categorizados como **aplicativos de realidade misturada** . Aplicativos que nunca têm uma exibição imersiva são **aplicativos 2D** .
+Os aplicativos do Windows podem conter dois tipos de exibições, **exibições de imersão** e **exibições 2D**. Os aplicativos podem alternar entre suas várias exibições de imersão e exibições 2D, mostrando suas exibições 2D em um monitor como uma janela ou um headset como um Slate. Os aplicativos que têm pelo menos uma exibição de imersão são categorizados como **aplicativos de realidade misturada**. Aplicativos que nunca têm uma exibição imersiva são **aplicativos 2D**.
 
 ## <a name="immersive-views"></a>Exibições de imersão
 
@@ -43,7 +43,7 @@ Um uso importante das exibições 2D é mostrar um formulário de entrada de tex
 
 Observe que, em um computador desktop, um aplicativo pode ter exibições 2D no monitor da área de trabalho e em um headset conectado. Por exemplo, você pode procurar o Edge no monitor de sua área de trabalho usando sua exibição 2D principal para encontrar um vídeo de 360 graus. Quando você reproduzir esse vídeo, o Edge iniciará uma exibição de imersão secundária dentro do headset para exibir o conteúdo de vídeo imersiva.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Modelo de aplicativo](app-model.md)
 * [Como atualizar aplicativos UWP 2D para realidade misturada](../develop/porting-apps/building-2d-apps.md)

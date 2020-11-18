@@ -5,20 +5,20 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, HoloLens, hologramas, design, interação
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Realidade mista do Windows, HoloLens, hologramas, design, interação, headset de realidade misturada, headset da realidade mista do Windows, o que é a realidade aumentada
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631464"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702242"
 ---
 # <a name="what-is-a-hologram"></a>O que é um holograma?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-O HoloLens permite criar **hologramas** , objetos compostos de luz e som que aparecem no mundo, assim como se fossem objetos reais. Os hologramas respondem aos seus [olhar](../design/gaze-and-commit.md), [gestos](../design/gaze-and-commit.md#composite-gestures) e [comandos de voz](../design/voice-input.md)e podem interagir com [superfícies reais](../design/spatial-mapping.md) em todo o mundo. Com os hologramas, você pode criar objetos digitais que fazem parte do seu mundo.
+O HoloLens permite criar **hologramas**, objetos compostos de luz e som que aparecem no mundo, assim como se fossem objetos reais. Os hologramas respondem aos seus [olhar](../design/gaze-and-commit.md), [gestos](../design/gaze-and-commit.md#composite-gestures) e [comandos de voz](../design/voice-input.md)e podem interagir com [superfícies reais](../design/spatial-mapping.md) em todo o mundo. Com os hologramas, você pode criar objetos digitais que fazem parte do seu mundo.
 
 <br>
 

@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, logotipo, ícone, modelagem, iniciador, iniciador 3D, bloco, cubo ao vivo, link profundo, secondarytile, bloco secundário, UWP
-ms.openlocfilehash: 22f2a6eebdd379b7d7959f9708bb55bb7de6b85e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D, logotipo, ícone, modelagem, iniciador, iniciador 3D, bloco, cubo ao vivo, link profundo, secondarytile, bloco secundário, UWP, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, XML, caixa delimitadora, Unity
+ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675282"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703192"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementar inicializadores de aplicativos 3D (aplicativos UWP)
 
@@ -202,7 +202,7 @@ No momento, as notificações de bloco não dão suporte ao envio de uma atualiz
 
 Para obter mais informações sobre os outros recursos e atributos de blocos e como eles são usados para blocos 2D, consulte a [documentação de blocos para aplicativos UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Exemplo de modelo de realidade misturada](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) que contém um iniciador de aplicativo 3D.
 * [Diretrizes de projeto do inicializador de aplicativos 3D](3d-app-launcher-design-guidance.md)

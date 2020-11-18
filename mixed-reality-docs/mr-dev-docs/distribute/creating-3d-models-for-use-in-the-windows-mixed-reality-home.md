@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D, modelagem, diretrizes de modelagem, requisitos de ativos, diretrizes de criação, iniciador, iniciador 3D, textura, materiais, complexidade, triângulos, malha, polígonos, semicontagem, limites
-ms.openlocfilehash: 606726b9c205ccdf3eacafca96b2bd9ccae43e82
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, modelagem, diretrizes de modelagem, requisitos de ativos, diretrizes de criação, iniciador, iniciador 3D, textura, materiais, complexidade, triângulos, malha, polígonos, policontagem, limites, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
+ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781555"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703462"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Criar modelos 3D para uso em casa
 
@@ -277,7 +277,7 @@ Há suporte apenas para um único atributo de vértice UV.
 * [Especificação de extensões de empacotamento de textura da realidade misturada do HoloLens](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Especificação de extensões glTF do Microsoft DDS Textures](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Implementar inicializadores de aplicativos 3D (aplicativos UWP)](implementing-3d-app-launchers.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos Win32)](implementing-3d-app-launchers-win32.md)

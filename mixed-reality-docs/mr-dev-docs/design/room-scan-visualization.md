@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, padrões de aplicativo, design, HoloLens, verificação de sala, mapeamento espacial, malha
-ms.openlocfilehash: 25de181bbb2dedaba9e4917f51cc80bac77cc5f1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, padrões de aplicativo, design, HoloLens, verificação de sala, mapeamento espacial, malha, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual, HoloLens
+ms.openlocfilehash: f912ddcff5ef1d14468cec1e63c8153ae6460476
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675077"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703352"
 ---
 # <a name="room-scan-visualization"></a>Visualização de varredura do ambiente
 

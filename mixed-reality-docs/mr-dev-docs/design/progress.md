@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, controles, interface do usuário, UX
-ms.openlocfilehash: 751a8fe9a196f894ac0ef9e3dcca64dec1c97498
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, design, controles, interface do usuário, UX, indicador de progresso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
+ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675085"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703382"
 ---
 # <a name="progress-indicator"></a>Indicador de progresso
 
@@ -27,7 +27,7 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 
 ## <a name="types-of-progress"></a>Tipo de progresso
 
-É importante fornecer as informações do usuário sobre o que está acontecendo. Em realidade misturada, os usuários podem ser facilmente distraídosdos por ambientes físicos ou objetos se seu aplicativo não fornecer bons comentários visuais. Para situações que levam alguns segundos, como quando os dados estão sendo carregados ou uma cena está atualizando, é recomendável mostrar um indicador visual. Há duas opções para mostrar ao usuário que uma operação está em andamento – uma **barra de progresso** ou um **anel de progresso** .
+É importante fornecer as informações do usuário sobre o que está acontecendo. Em realidade misturada, os usuários podem ser facilmente distraídosdos por ambientes físicos ou objetos se seu aplicativo não fornecer bons comentários visuais. Para situações que levam alguns segundos, como quando os dados estão sendo carregados ou uma cena está atualizando, é recomendável mostrar um indicador visual. Há duas opções para mostrar ao usuário que uma operação está em andamento – uma **barra de progresso** ou um **anel de progresso**.
 
 :::row:::
     :::column:::
@@ -98,7 +98,7 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

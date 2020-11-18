@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, calibragem
-ms.openlocfilehash: 20e76188c6b64776d818f340f6aca0a725454dd8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, calibragem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, intenção, ações
+ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675341"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702582"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Acompanhamento ocular no HoloLens 2
 
@@ -63,7 +63,7 @@ Para saber mais sobre a calibração e sobre como garantir uma experiência tran
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Dados de acompanhamento de olho disponíveis
-Antes de entrar em detalhes sobre os casos de uso específicos para a entrada olhar, queremos destacar rapidamente os recursos fornecidos pela [API de acompanhamento ocular](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) do HoloLens 2. Os desenvolvedores obtêm acesso a um único olhar Ray (olhar e direção) a aproximadamente _30 fps (30 Hz)_ .
+Antes de entrar em detalhes sobre os casos de uso específicos para a entrada olhar, queremos destacar rapidamente os recursos fornecidos pela [API de acompanhamento ocular](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) do HoloLens 2. Os desenvolvedores obtêm acesso a um único olhar Ray (olhar e direção) a aproximadamente _30 fps (30 Hz)_.
 Para obter informações mais detalhadas sobre como acessar dados de controle de olho, consulte nossos guias de desenvolvedor para usar os [olhos olhar no DirectX](../develop/native/gaze-in-directx.md) e [olho-olhar no Unity](https://aka.ms/mrtk-eyes).
 
 O olho previsto-olhar é aproximadamente de 1,5 graus no ângulo visual em torno do destino real (consulte a ilustração abaixo). À medida que pequenas imprecisãos são esperadas, os desenvolvedores devem planejar uma margem em relação a esse valor de limite inferior (por exemplo, os graus de 2,0-3.0 podem resultar em uma experiência muito mais confortável). Discutiremos como abordar a seleção de destinos pequenos em mais detalhes abaixo. Para que o acompanhamento ocular funcione com precisão, cada usuário deve passar por uma calibração de usuário de acompanhamento ocular. 
@@ -79,9 +79,9 @@ Observe que esses casos de uso ainda não fazem parte da experiência de shell H
 Você pode experimentar alguns deles no kit de [ferramentas de realidade misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), que fornece vários exemplos interessantes e eficientes para usar o acompanhamento de olho, como seleções de destino com suporte rápido e sem esforço, bem como percorrer automaticamente o texto com base no que o usuário observa. 
 
 ### <a name="user-intent"></a>Intenção do usuário    
-As informações sobre onde e o que um usuário observa fornecem um **contexto poderoso para outras entradas** , como voz, mãos e controladores.
+As informações sobre onde e o que um usuário observa fornecem um **contexto poderoso para outras entradas**, como voz, mãos e controladores.
 Isso pode ser usado para várias tarefas.
-Por exemplo, isso pode variar desde o **direcionamento** rápido e sem esforço na cena simplesmente observando um holograma e dizendo *"Select"* (também Confira [olhar e commit](gaze-and-commit.md)) ou *"Put this..."* e, em seguida, procurando onde o usuário deseja colocar o holograma e dizer *"... lá "* . Exemplos para esse caso podem ser encontrados em [Kit de Ferramentas de Realidade Misturada – Seleção de alvo com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Kit de Ferramentas de Realidade Misturada – Posicionamento de alvo com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+Por exemplo, isso pode variar desde o **direcionamento** rápido e sem esforço na cena simplesmente observando um holograma e dizendo *"Select"* (também Confira [olhar e commit](gaze-and-commit.md)) ou *"Put this..."* e, em seguida, procurando onde o usuário deseja colocar o holograma e dizer *"... lá "*. Exemplos para esse caso podem ser encontrados em [Kit de Ferramentas de Realidade Misturada – Seleção de alvo com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Kit de Ferramentas de Realidade Misturada – Posicionamento de alvo com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
 
 Além disso, um exemplo de intenção de usuário pode incluir o uso de informações sobre o que os usuários examinam para aprimorar o envolvimento com os agentes virtuais e os hologramas interativos. Por exemplo, os agentes virtuais podem adaptar as opções disponíveis e seu comportamento, com base no conteúdo exibido atualmente. 
 
@@ -155,7 +155,7 @@ Novamente, é recomendável comunicar claramente isso com o usuário que talvez 
 Essa página espero que você tenha uma boa visão geral para começar a entender a função de acompanhamento de olho e a entrada olhar para o HoloLens 2. Para começar a desenvolver, confira nossas informações sobre a função de [olhar para interagir com hologramas](eye-gaze-interaction.md), [olhar de olho no Unity](https://aka.ms/mrtk-eyes) e [nos olhos-olhar no DirectX](../develop/native/gaze-in-directx.md).
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Calibragem](../calibration.md)
 * [Conforto](comfort.md)
 * [Interação com base no foco com o olhar](eye-gaze-interaction.md)

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Realidade mista do Windows, design, estilo, fonte, tipografia, interface do usuário, UX
-ms.openlocfilehash: 59c7796998ac01fcbb5c9dc418da6454c8c74d12
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, design, estilo, fonte, tipografia, interface do usuário, UX, texto, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens
+ms.openlocfilehash: c0e3b23c52925b6fe64dccc7087613e8cd49e851
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675560"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703242"
 ---
 # <a name="typography"></a>Tipografia
 
@@ -45,7 +45,7 @@ Evite usar mais de duas famílias de fontes diferentes em um único contexto. Is
 
 Evite usar pesos de fontes leves ou semilight para tamanhos de tipo em 42pt, uma vez que traços verticais finos irão vibrar e degradar a legibilidade. Fontes modernas com espessura de traço suficiente funcionam bem. Por exemplo, Helvetica e Arial são muito legíveis no HoloLens usando pesos regulares ou em negrito.
 
-### <a name="color"></a>Cor
+### <a name="color"></a>Color
 
 No HoloLens, como os hologramas são construídos com um sistema leve aditivo, o texto em branco é altamente legível. Você pode encontrar exemplos de texto em branco no menu iniciar e na barra de aplicativos. Embora o texto em branco funcione bem sem uma chapa de apoio no HoloLens, um plano de fundo físico complexo poderia dificultar a leitura do tipo. Para melhorar o foco do usuário e minimizar a distração de um plano de fundo físico, é recomendável usar o texto em branco em uma chapa de apoio escuro ou colorido.
 
@@ -129,6 +129,6 @@ Segoe UI (a fonte padrão do Windows) funciona bem na maioria dos casos. No enta
 ---
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Texto no Unity](../develop/unity/text-in-unity.md)
 * [Cor, luz e materiais](../color,-light-and-materials.md)

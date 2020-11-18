@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: Realidade Misturada, focar, esperar, interação, design
-ms.openlocfilehash: 825623b00107eec400b4df926c8980c92b065902
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, olhar, pesquisa, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, UX, diretrizes, exibição de lista
+ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675822"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702312"
 ---
 # <a name="head-gaze-and-dwell"></a>Focar com a cabeça e esperar
 
@@ -179,7 +179,7 @@ Botões de alternância exigem uma lógica sutil para funcionarem corretamente. 
 
 ---
  
- ## <a name="see-also"></a>Consulte também
+ ## <a name="see-also"></a>Veja também
 * [Focar e confirmar](gaze-and-commit.md)
 * [Mãos – Manipulação direta](direct-manipulation.md)
 * [Mãos – Gestos](gaze-and-commit.md#composite-gestures)

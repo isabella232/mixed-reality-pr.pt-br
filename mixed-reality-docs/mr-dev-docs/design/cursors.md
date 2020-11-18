@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (1º gen), HoloLens 2, realidade misturada, cursores, direcionamento, olhar, gestos
-ms.openlocfilehash: 6fb5f335e192ce7664eab0099dc5d6aa6ed2420d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens (1º gen), HoloLens 2, realidade misturada, cursores, direcionamento, olhar, gestos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, raios, entrada
+ms.openlocfilehash: db895c7aad177d7ddd2eb371392812b1d7e4d039
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675598"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702642"
 ---
 # <a name="cursors"></a>Cursores
 
@@ -21,7 +21,7 @@ Um cursor ou indicador de seu vetor de direcionamento atual, fornece comentário
 
 Os comentários fornecidos pelo cursor oferecem aos usuários a capacidade de prever como o sistema responderá, usará esse sinal como comentários para comunicar melhor sua intenção ao dispositivo e, por fim, ser mais confiante em relação às suas interações.
 
-Há três tipos de cursores: **Finger, Ray** e **Head-olhar** . Esses cursores de apontação funcionam com modalidades de entrada diferentes nos headsets HoloLens, HoloLens 2 e imersiva. Abaixo está a orientação sobre qual tipo de cursor usar para cada tipo de headset e modelo de interação. No MRTK (Kit de ferramentas de realidade misturada), criamos módulos de cursores do tipo "arrastar e soltar" para ajudá-lo a criar a experiência correta.
+Há três tipos de cursores: **Finger, Ray** e **Head-olhar**. Esses cursores de apontação funcionam com modalidades de entrada diferentes nos headsets HoloLens, HoloLens 2 e imersiva. Abaixo está a orientação sobre qual tipo de cursor usar para cada tipo de headset e modelo de interação. No MRTK (Kit de ferramentas de realidade misturada), criamos módulos de cursores do tipo "arrastar e soltar" para ajudá-lo a criar a experiência correta.
 
 
 ## <a name="device-support"></a>Suporte a dispositivos
@@ -166,6 +166,6 @@ Por padrão, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) forn
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Gestos](gaze-and-commit.md#composite-gestures)
 * [Focar com a cabeça e confirmar](gaze-and-commit.md)

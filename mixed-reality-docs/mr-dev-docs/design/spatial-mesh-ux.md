@@ -4,13 +4,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D
-ms.openlocfilehash: 2c811edc14fbcc7c917fe9fa724f1cab23179a96
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675592"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703292"
 ---
 # <a name="spatial-mesh"></a>Malha espacial
 
@@ -26,11 +26,11 @@ Como é importante permitir que o usuário se concentre e interaja com o conteú
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Visualização de malha espacial no MRTK (Kit de ferramentas de realidade mista) para Unity
 O MRTK fornece vários materiais para a visualização de malha espacial.
 
-- **MRTK_Wireframe. esteira, MRTK_Wireframe. passe-partout** : material de malha espacial estática padrão que mostra os contornos de malha sem animação. Esse material é útil para fins de depuração, pois mostra as geometrias de malha espacial inteiras. No entanto, não é recomendável para produção.
+- **MRTK_Wireframe. esteira, MRTK_Wireframe. passe-partout**: material de malha espacial estática padrão que mostra os contornos de malha sem animação. Esse material é útil para fins de depuração, pois mostra as geometrias de malha espacial inteiras. No entanto, não é recomendável para produção.
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- **MRTK_SurfaceReconstruction. passe-partout** : esse material oferece um efeito de pulso animado na malha espacial. Você pode usar esse material para visualizar o ambiente em um momento específico da sua experiência ou na entrada do toque do usuário. Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.
+- **MRTK_SurfaceReconstruction. passe-partout**: esse material oferece um efeito de pulso animado na malha espacial. Você pode usar esse material para visualizar o ambiente em um momento específico da sua experiência ou na entrada do toque do usuário. Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 * Consulte [reconhecimento espacial MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) e [sombreador MRTK-Pulse](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) para obter mais detalhes.
@@ -39,7 +39,7 @@ O MRTK fornece vários materiais para a visualização de malha espacial.
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

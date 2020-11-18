@@ -5,13 +5,13 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, cor, luz, materiais
-ms.openlocfilehash: 76237b1b08df98850a4989987ed608dae29b6b5c
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Realidade mista do Windows, design, cor, luz, materiais, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
+ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683212"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702782"
 ---
 # <a name="color-light-and-materials"></a>Cor, luz e materiais
 ![Cor, luz e materiais](images/RemoteRendering.jpg)

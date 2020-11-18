@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Realidade misturada, controles, interação, interface do usuário, UX
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, controles, interação, indicações, interface do usuário, UX, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, áudio
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675124"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703222"
 ---
 # <a name="interactable-object"></a>Objeto interativo
 
@@ -67,7 +67,7 @@ Para todos os objetos que o usuário pode interagir com olhar, Hand Ray e Ray Co
 
 Você pode usar técnicas como realce ou dimensionamento para fornecer indicações visuais para o estado de entrada do usuário. Em realidade misturada, você pode encontrar os exemplos de visualização de diferentes Estados de entrada no menu iniciar e com os botões da barra de aplicativos. 
 
-Veja como esses Estados se parecem em um **botão de Holographic** :
+Veja como esses Estados se parecem em um **botão de Holographic**:
 
 :::row:::
     :::column:::
@@ -93,12 +93,12 @@ Veja como esses Estados se parecem em um **botão de Holographic** :
 O HoloLens 2 dá suporte à entrada de controle de mão articulada que permite interagir com objetos. Sem comentários haptics e percepção de profundidade perfeita, às vezes pode ser difícil dizer de quanto longe sua mão é de um objeto ou se você está tocando. É importante fornecer indicações visuais suficientes para comunicar o estado do objeto e, em particular, o estado de suas mãos em relação a esse objeto.
 
 Use comentários visuais para comunicar o seguinte:
-* **Padrão (observação)** : estado ocioso padrão do objeto.
-* **Focalizar** : quando uma mão está perto de um holograma, alterar elementos visuais para se comunicar que essa mão está direcionando o holograma. 
-* **Distância e ponto de interação** : à medida que a mão se aproxima de um holograma, o design de comentários para comunicar o ponto de interação projetado, bem como a distância do objeto que o dedo é
-* **Contato começa** : alterar visuais (claro, cor) para comunicar que um toque ocorreu
-* **Segure** : alterar visuais (Light, Color) quando o objeto for Segure
-* **Contatos termina** : alterar visuais (claro, cor) quando o toque terminar
+* **Padrão (observação)**: estado ocioso padrão do objeto.
+* **Focalizar**: quando uma mão está perto de um holograma, alterar elementos visuais para se comunicar que essa mão está direcionando o holograma. 
+* **Distância e ponto de interação**: à medida que a mão se aproxima de um holograma, o design de comentários para comunicar o ponto de interação projetado, bem como a distância do objeto que o dedo é
+* **Contato começa**: alterar visuais (claro, cor) para comunicar que um toque ocorreu
+* **Segure**: alterar visuais (Light, Color) quando o objeto for Segure
+* **Contatos termina**: alterar visuais (claro, cor) quando o toque terminar
 
 <br>
 
@@ -189,10 +189,10 @@ Um [botão no HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/
 ### <a name="audio-cues"></a>Indicações de áudio
 
 Para interações diretas, os comentários de áudio adequados podem melhorar drasticamente a experiência do usuário. Use comentários de áudio para comunicar o seguinte:
-* **Contato começa** : Tocar som quando o toque começar
-* **Contatos termina** : Tocar som no ponto de toque
-* **Captura começa** : reproduzir som quando a captura começar
-* **Captações de captura** : Tocar som quando a captura terminar
+* **Contato começa**: Tocar som quando o toque começar
+* **Contatos termina**: Tocar som no ponto de toque
+* **Captura começa**: reproduzir som quando a captura começar
+* **Captações de captura**: Tocar som quando a captura terminar
 
 <br>
 
@@ -263,7 +263,7 @@ Ao criar botões para interação direta, recomendamos um tamanho mínimo maior 
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objeto de interação no MRTK (Kit de ferramentas de realidade misturada) para Unity
 
-No **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , você pode usar o script de forma a [**interagir**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) para fazer com que os objetos respondam a vários tipos de Estados de interação de entrada. Ele dá suporte a vários tipos de temas que permitem definir estados visuais controlando Propriedades de objeto, como cor, tamanho, material e sombreador.
+No **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode usar o script de forma a [**interagir**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) para fazer com que os objetos respondam a vários tipos de Estados de interação de entrada. Ele dá suporte a vários tipos de temas que permitem definir estados visuais controlando Propriedades de objeto, como cor, tamanho, material e sombreador.
 
 * [Interagir](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Botão](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
@@ -278,7 +278,7 @@ O sombreador padrão de MixedRealityToolkit fornece várias opções, como a **l
 ---
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

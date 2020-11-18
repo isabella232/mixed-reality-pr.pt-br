@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade misturada do Windows, mensagem de contorno
-ms.openlocfilehash: 266fb314ae4fccdc25e94b20d04262666be5a1b6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, mensagem de contorno, marca, com a realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
+ms.openlocfilehash: 1f40e1b180eccd8b79da43a07f969375d5135508
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675360"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702882"
 ---
 # <a name="billboarding-and-tag-along"></a>Mural e tag-along
 
@@ -57,7 +57,7 @@ O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scr
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

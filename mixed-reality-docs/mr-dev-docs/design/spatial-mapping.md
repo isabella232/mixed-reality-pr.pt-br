@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mapeamento espacial, HoloLens, realidade misturada, reconstrução da superfície, malha
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: mapeamento espacial, HoloLens, realidade mista, reconstrução de superfície, malha, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, compreensão da cena, malha mundial, oclusão, física, navegação, observador de superfície, renderização, processamento de malha
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340664"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703312"
 ---
 # <a name="spatial-mapping"></a>mapeamento espacial
 
@@ -93,7 +93,7 @@ Uma limitação importante aqui é que, quando um aplicativo infere distância d
 
 Os aplicativos também podem usar a forma e a direção das superfícies para orientar o posicionamento do holograma. Uma cadeira Holographic não deve penetrar em paredes e deve ficar com o andar, mesmo se for um pouco desigual. Esse tipo de funcionalidade provavelmente dependeria do uso de colisões de física em vez de apenas raycasts, mas preocupações semelhantes serão aplicadas. Se o holograma que está sendo posicionado tiver muitos polígonos pequenos que se destinam, como os lados de uma cadeira, pode fazer sentido expandir a representação física desses polígonos para algo mais largo e suave, de forma que seja mais capaz de deslizar por superfícies espaciais sem realce em captura.
 
-Em seu extremo, a entrada do usuário pode ser simplificada de maneira totalmente e as superfícies espaciais podem ser usadas para executar o posicionamento totalmente automático do holograma. Por exemplo, o aplicativo poderia fazer um interruptor de Holographic em algum lugar na parede para que o usuário pressione. A mesma limitação sobre previsibilidade se aplica duplamente; Se o usuário espera o controle sobre o posicionamento do holograma, mas o aplicativo nem sempre coloca os hologramas onde eles esperam (se a opção de luz aparecer em algum lugar que o usuário não consegue alcançar), essa será uma experiência frustrante. Na verdade, pode ser pior executar o posicionamento automático que exige a correção do usuário, em vez de exigir que o usuário sempre execute o mesmo posicionamento; como *espera* -se um posicionamento automático bem-sucedido, a correção manual parece ser um fardo!
+Em seu extremo, a entrada do usuário pode ser simplificada de maneira totalmente e as superfícies espaciais podem ser usadas para executar o posicionamento totalmente automático do holograma. Por exemplo, o aplicativo poderia fazer um interruptor de Holographic em algum lugar na parede para que o usuário pressione. A mesma limitação sobre previsibilidade se aplica duplamente; Se o usuário espera o controle sobre o posicionamento do holograma, mas o aplicativo nem sempre coloca os hologramas onde eles esperam (se a opção de luz aparecer em algum lugar que o usuário não consegue alcançar), essa será uma experiência frustrante. Na verdade, pode ser pior executar o posicionamento automático que exige a correção do usuário, em vez de exigir que o usuário sempre execute o mesmo posicionamento; como *espera*-se um posicionamento automático bem-sucedido, a correção manual parece ser um fardo!
 
 Observe também que a capacidade de um aplicativo de usar superfícies espaciais para posicionamento depende muito da experiência de [verificação](spatial-mapping.md#the-environment-scanning-experience)do aplicativo. Se uma superfície não tiver sido verificada, ela não poderá ser usada para posicionamento. Cabe ao aplicativo ficar claro para o usuário, para que eles possam ajudar a examinar novas superfícies ou selecionar um novo local.
 
@@ -258,7 +258,7 @@ A natureza dessa experiência de verificação pode variar muito dependendo das 
 
 Em primeiro lugar, **a comunicação clara com o usuário é a principal preocupação**. O usuário deve estar sempre atento se os requisitos do aplicativo estão sendo atendidos. Quando eles não estão sendo atendidos, deve ser imediatamente claro para o usuário por que isso é feito e eles devem ser rapidamente administrados para executar a ação apropriada.
 
-Em segundo lugar, **os aplicativos devem tentar um equilíbrio entre a eficiência e a confiabilidade**. Quando é possível fazer isso de forma **confiável** , os aplicativos devem analisar automaticamente os dados de mapeamento espacial para salvar a hora do usuário. Quando não é possível fazer isso de forma confiável, os aplicativos devem permitir que o usuário forneça rapidamente ao aplicativo as informações adicionais necessárias.
+Em segundo lugar, **os aplicativos devem tentar um equilíbrio entre a eficiência e a confiabilidade**. Quando é possível fazer isso de forma **confiável**, os aplicativos devem analisar automaticamente os dados de mapeamento espacial para salvar a hora do usuário. Quando não é possível fazer isso de forma confiável, os aplicativos devem permitir que o usuário forneça rapidamente ao aplicativo as informações adicionais necessárias.
 
 Para ajudar a criar a experiência de verificação correta, considere quais das seguintes possibilidades são aplicáveis ao seu aplicativo:
 
@@ -368,13 +368,6 @@ Aqui estão alguns exemplos de diferentes tipos de processamento de malha que po
 ## <a name="troubleshooting"></a>Solução de problemas
 * Para que as malhas de superfície sejam orientadosdas corretamente, cada gameobject precisa estar ativo antes de ser enviado para o SurfaceObserver para que sua malha seja construída. Caso contrário, as malhas serão exibidas no seu espaço, mas giradas em ângulos estranhos.
 * O gameobject que executa o script que se comunica com o SurfaceObserver precisa ser definido para a origem. Caso contrário, todos os GameObjects que você criar e enviar para o SurfaceObserver ter suas malhas construídas terão um deslocamento igual ao deslocamento do objeto do jogo pai. Isso pode fazer com que suas malhas mostrem vários medidores de distância, o que torna muito difícil depurar o que está acontecendo.
-
-## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
-
-Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
-
-> [!div class="nextstepaction"]
-> [Sugerir a escala de um objeto – (escala)](../design/scale.md)
 
 ## <a name="see-also"></a>Veja também
 * [Sistemas de coordenadas](coordinate-systems.md)

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: Design de UX, UX de realidade misturada, UX, padrões de aplicativo, controles, estilo, HoloLens, interação, interação espacial, IU espacial, elementos de UX, comportamentos, blocos de construção, tipografia, cor
-ms.openlocfilehash: c070d05f40cb3bf0376809fd684a05fd74f86fd5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Design de UX, UX de realidade misturada, UX, padrões de aplicativo, controles, estilo, HoloLens, interação, interação espacial, interface do usuário espacial, elementos de UX, comportamentos, blocos de construção, tipografia, cor, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675372"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703132"
 ---
 # <a name="ux-elements-overview"></a>Visão geral dos elementos de UX
 ## <a name="foundational-elements"></a>Elementos fundamentais

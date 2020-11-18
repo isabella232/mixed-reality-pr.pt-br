@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Realidade mista do Windows, som espacial, design, estilo
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade mista do Windows, som espacial, design, estilo, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, gestos, interações, atenuação
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675591"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703273"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>Como usar o som em aplicativos de realidade mista
 
@@ -68,7 +68,7 @@ As interações de voz geralmente têm elementos visuais sutis. Use sons para re
 
 * Use um tom de som positivo para *confirmações* de comando de voz. Os tons crescentes e os principais intervalos musicais entram em vigor.
 * Use um tom de som menor e menos positivo para *falhas* de comando de voz. Evite sons negativos. Em vez disso, use um som mais percussive, neutro para comunicar que o aplicativo está se movendo da interação.
-* Se seu aplicativo tiver uma palavra de ativação, use um tom curto e AdaBoost quando o dispositivo *começar a escutar* . Use um som de loop sutil enquanto o aplicativo *estiver* ouvindo.
+* Se seu aplicativo tiver uma palavra de ativação, use um tom curto e AdaBoost quando o dispositivo *começar a escutar*. Use um som de loop sutil enquanto o aplicativo *estiver* ouvindo.
 
 ### <a name="notifications"></a>Notificações
 As notificações comunicam as alterações de estado do aplicativo e outros eventos que não são iniciados pelo usuário, como conclusões de processo, mensagens e chamadas telefônicas.
@@ -99,7 +99,7 @@ A espacialização vem com algum custo de CPU. Muitos aplicativos têm no máxim
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Quando e como aplicar atenuação baseada em distância
 No mundo físico, os sons mais distantes são mais silenciosos. O mecanismo de áudio pode modelar essa atenuação com base na distância de origem. Use a atenuação baseada em distância ao comunicar informações relevantes.
 
-As distâncias para *indicadores visuais* , *hologramas animados* e outros sons informativos geralmente são relevantes para o usuário. Use atenuação baseada em distância para fornecer indicações intuitivas.
+As distâncias para *indicadores visuais*, *hologramas animados* e outros sons informativos geralmente são relevantes para o usuário. Use atenuação baseada em distância para fornecer indicações intuitivas.
 
 Ajuste a curva de atenuação de cada fonte para se ajustar ao tamanho dos espaços do mundo de realidade misturada. A curva padrão do mecanismo de áudio geralmente é destinada a espaços muito grandes (até metade de Kilometer).
 

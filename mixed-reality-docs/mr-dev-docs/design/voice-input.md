@@ -5,13 +5,13 @@ author: hak0n
 ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
-keywords: ggv, voz, Cortana, fala, entrada
-ms.openlocfilehash: 206fd1b304d1b0f376ec1d45a6d5ba852b0bc4f2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: ggv, voz, Cortana, fala, entrada, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista, olhar
+ms.openlocfilehash: f4f81383f942961857b088b05c4e8cac07ab7dfe
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675557"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703202"
 ---
 # <a name="voice-input"></a>Entrada de voz
 
@@ -19,13 +19,13 @@ ms.locfileid: "91675557"
 
 A voz é uma das principais formas de entrada no HoloLens. Ele permite que você comando diretamente um holograma sem precisar usar [gestos de mão](gaze-and-commit.md#composite-gestures). A entrada de voz pode ser uma maneira natural de comunicar sua intenção. A voz é especialmente boa na passagem de interfaces complexas, pois permite que os usuários recortem os menus aninhados com um único comando.
 
-A entrada de voz é alimentada pelo [mesmo mecanismo](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) que dá suporte à fala em todos os outros _aplicativos universais do Windows_ . No HoloLens, o reconhecimento de fala sempre funcionará na linguagem de exibição do Windows configurada em configurações. 
+A entrada de voz é alimentada pelo [mesmo mecanismo](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) que dá suporte à fala em todos os outros _aplicativos universais do Windows_. No HoloLens, o reconhecimento de fala sempre funcionará na linguagem de exibição do Windows configurada em configurações. 
 
 <br>
 
 ## <a name="voice-and-gaze"></a>Voz e olhar
 
-Ao usar comandos de voz, o olhar normalmente é usado como o mecanismo de direcionamento, seja com um cursor ("Select") ou para canalizar implicitamente o comando para um aplicativo que você está vendo. Para isso, talvez nem seja necessário mostrar qualquer cursor olhar _("vê-lo, digamos")_ . É claro que alguns comandos de voz não exigem um destino, como "ir para iniciar" ou "Ei Cortana".
+Ao usar comandos de voz, o olhar normalmente é usado como o mecanismo de direcionamento, seja com um cursor ("Select") ou para canalizar implicitamente o comando para um aplicativo que você está vendo. Para isso, talvez nem seja necessário mostrar qualquer cursor olhar _("vê-lo, digamos")_. É claro que alguns comandos de voz não exigem um destino, como "ir para iniciar" ou "Ei Cortana".
 
 <br>
 
@@ -159,8 +159,8 @@ Há vários comandos de voz que você pode dizer enquanto nuvens em um holograma
 * Maior | Aprimorou
 * Menor
 
-No HoloLens 2, você também pode criar interações mais naturais em combinação com olhar, que implicitamente fornece informações contextuais sobre o que você está referindo. Por exemplo, você poderia simplesmente olhar para um holograma e dizer "colocar _isso_ " e, em seguida, examinar onde deseja colocá-lo e dizer " _aqui_ ".
-Ou você pode examinar uma parte Holographic em um computador complexo e dizer: "Dê-me mais informações sobre _isso_ ".
+No HoloLens 2, você também pode criar interações mais naturais em combinação com olhar, que implicitamente fornece informações contextuais sobre o que você está referindo. Por exemplo, você poderia simplesmente olhar para um holograma e dizer "colocar _isso_" e, em seguida, examinar onde deseja colocá-lo e dizer " _aqui_".
+Ou você pode examinar uma parte Holographic em um computador complexo e dizer: "Dê-me mais informações sobre _isso_".
 
 
 
@@ -202,7 +202,7 @@ A seguir, algumas práticas que auxiliarão em um reconhecimento de fala perfeit
 
 ### <a name="advantages-of-voice-input"></a>Vantagens da entrada de voz
 
-A entrada de voz é uma maneira natural de comunicarmos nossas intenções. A voz é especialmente boa em **atravessamentos** de interface porque pode ajudar os usuários a percorrer várias etapas de uma interface (um usuário pode dizer "voltar" ao olhar para uma página da Web, em vez de ter que ir para cima e pressionar o botão voltar no aplicativo). Esse pequeno tempo de salvamento tem um **efeito emocional** poderoso sobre a percepção do usuário da experiência e dá uma pequena quantia superpotência. O uso da voz também é um método de entrada conveniente quando nossos braços estão ocupados ou quando estamos **executando várias tarefas ao mesmo tempo** . Em dispositivos em que é difícil digitar um teclado, o **ditado de voz** pode ser uma maneira alternativa eficiente de inserir texto. Por fim, em alguns casos, quando o **intervalo de precisão** para olhar e gesto é limitado, a voz pode ajudar a desambiguar a intenção do usuário. 
+A entrada de voz é uma maneira natural de comunicarmos nossas intenções. A voz é especialmente boa em **atravessamentos** de interface porque pode ajudar os usuários a percorrer várias etapas de uma interface (um usuário pode dizer "voltar" ao olhar para uma página da Web, em vez de ter que ir para cima e pressionar o botão voltar no aplicativo). Esse pequeno tempo de salvamento tem um **efeito emocional** poderoso sobre a percepção do usuário da experiência e dá uma pequena quantia superpotência. O uso da voz também é um método de entrada conveniente quando nossos braços estão ocupados ou quando estamos **executando várias tarefas ao mesmo tempo**. Em dispositivos em que é difícil digitar um teclado, o **ditado de voz** pode ser uma maneira alternativa eficiente de inserir texto. Por fim, em alguns casos, quando o **intervalo de precisão** para olhar e gesto é limitado, a voz pode ajudar a desambiguar a intenção do usuário. 
 
 **Como o uso da voz pode beneficiar o usuário?**
 * Reduz o tempo - deve tornar o objetivo final mais eficiente.
@@ -237,7 +237,7 @@ Um desafio associado a um grande conjunto de comandos de voz é como ensiná-los
 
 ### <a name="voice-feedback-states"></a>Estados de retorno de voz
 
-Quando a voz é aplicada corretamente, o usuário sabe **o que pode dizer e obtém um retorno claro** , e o sistema **o ouve corretamente** . Esses dois sinais fazem o usuário se sentir seguro para usar a Voz como uma entrada primária. A seguir, um diagrama mostrando o que acontece com o cursor quando a entrada de voz é reconhecida e como ele comunica isso ao usuário.
+Quando a voz é aplicada corretamente, o usuário sabe **o que pode dizer e obtém um retorno claro**, e o sistema **o ouve corretamente**. Esses dois sinais fazem o usuário se sentir seguro para usar a Voz como uma entrada primária. A seguir, um diagrama mostrando o que acontece com o cursor quando a entrada de voz é reconhecida e como ele comunica isso ao usuário.
 
 
 :::row:::
@@ -299,14 +299,14 @@ Para o Windows Mixed Reality Developer Edition versão 2017, a lógica de gerenc
 ---
 
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrada de voz em MRTK (Kit de ferramentas de realidade misturada) para Unity
-Com o **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , você pode atribuir facilmente o comando de voz em qualquer objeto. Use o **perfil de entrada de fala** do MRTK para definir suas palavras-chave. Ao atribuir o script **SpeechInputHandler** , você pode fazer com que qualquer objeto responda às palavras-chave definidas no perfil de entrada de fala. O SpeechInputHandler também fornece um rótulo de confirmação de fala para melhorar a confiança do usuário.
+Com o **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode atribuir facilmente o comando de voz em qualquer objeto. Use o **perfil de entrada de fala** do MRTK para definir suas palavras-chave. Ao atribuir o script **SpeechInputHandler** , você pode fazer com que qualquer objeto responda às palavras-chave definidas no perfil de entrada de fala. O SpeechInputHandler também fornece um rótulo de confirmação de fala para melhorar a confiança do usuário.
 
 * [MRTK-comando de voz](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
 
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Focar e confirmar](gaze-and-commit.md)
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Entrada de voz no DirectX](../develop/native/voice-input-in-directx.md)

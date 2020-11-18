@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: som espacial, som surround, áudio 3D, som 3D, áudio espacial
-ms.openlocfilehash: fb3517307dccd7e41c39c012c69f1e1d141fa218
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: som espacial, som surround, áudio 3D, som 3D, áudio espacial, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, estudos de caso, acústica
+ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675583"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703252"
 ---
 # <a name="audio-in-mixed-reality"></a>Áudio em realidade misturada
 O áudio é uma parte essencial do design e da produtividade na realidade misturada. O som pode:
@@ -92,7 +92,7 @@ O suporte para o Windows ' HRTFs está disponível para os seguintes mecanismos 
 * Um [plug-in do mecanismo de áudio WWise](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
 ## <a name="acoustics"></a>Acústica
-O áudio espacial é maior que a direção. Outras dimensões incluem oclusão, obstrução, reverberação, portal e modelagem de origem. Coletivamente, essas dimensões são chamadas de *acústicas* . Sem acústicas, os sons espaciais não têm distância percebida.
+O áudio espacial é maior que a direção. Outras dimensões incluem oclusão, obstrução, reverberação, portal e modelagem de origem. Coletivamente, essas dimensões são chamadas de *acústicas*. Sem acústicas, os sons espaciais não têm distância percebida.
 
 Os tratamentos acústicos variam de simples a muito complexo. Você pode usar um simples reverbo com suporte em qualquer mecanismo de áudio para enviar sons espaciais para o ambiente do ouvinte. Sistemas acústicos como [acústicas de projetos](https://aka.ms/acoustics)  fornecem tratamento acústico mais rico e mais atraente. Os acústicos de projeto podem modelar o efeito de paredes, portas e outras geometrias de cena em um som. É uma opção eficaz para casos em que a geometria de cena relevante é conhecida no momento do desenvolvimento.
 

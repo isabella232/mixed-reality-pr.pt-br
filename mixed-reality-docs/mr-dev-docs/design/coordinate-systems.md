@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, em escala recolocada, em escala, em escala de espaço, em escala mundial, em 360 graus, encaixado, posicionado, sala, mundo, escala, posição, orientação, fixo, anexado, estágio, âncora, âncora espacial, bloqueio mundial, bloqueando o corpo, proteção espacial de nuvem, limites, persistência, compartilhamento, perda de
-ms.openlocfilehash: bf7641d13302620a32aac260332c3be694ea324b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala em posição, escala de espaço, escala de quarto, escala mundial, 360 graus, encaixado, posicionado, sala, mundo, escala, posição, orientação, fixo, anexado, estágio, âncora, âncora espacial, mundialmente bloqueado, bloqueio mundial, corpo-bloqueado, bloqueio de corpo, limites, persistência, compartilhamento, perda de rastreamento, âncora espacial de nuvem, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual Realm, HoloLens, MRTK
+ms.openlocfilehash: afffffae5d23309b2ab9124b9f74b7818fd4adf6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675610"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702532"
 ---
 # <a name="coordinate-systems"></a>Sistemas de coordenadas
 
-Em seu núcleo, os aplicativos de realidade misturada colocam os [hologramas](../discover/hologram.md) em seu mundo que parecem e são semelhantes a objetos reais. Isso envolve o posicionamento preciso e a orientação desses hologramas em lugares do mundo que são significativos para o usuário, seja o mundo de sua sala física ou um realm que você criou. Ao se deparar com a posição e a orientação de seus hologramas, ou qualquer outra geometria como as [posições](hands-and-tools.md) [olhar](gaze-and-commit.md) Ray ou Hand, o Windows fornece vários sistemas de coordenadas do mundo real em que a geometria pode ser expressa, conhecida como **sistemas de coordenadas espaciais** .
+Em seu núcleo, os aplicativos de realidade misturada colocam os [hologramas](../discover/hologram.md) em seu mundo que parecem e são semelhantes a objetos reais. Isso envolve o posicionamento preciso e a orientação desses hologramas em lugares do mundo que são significativos para o usuário, seja o mundo de sua sala física ou um realm que você criou. Ao se deparar com a posição e a orientação de seus hologramas, ou qualquer outra geometria como as [posições](hands-and-tools.md) [olhar](gaze-and-commit.md) Ray ou Hand, o Windows fornece vários sistemas de coordenadas do mundo real em que a geometria pode ser expressa, conhecida como **sistemas de coordenadas espaciais**.
 
 <br>
 
@@ -92,11 +92,11 @@ Esses dimensionamentos de experiência seguem um modelo de "aninhamento de bobbl
 
 | acompanhamento de 6DOF | Definido pelo piso | acompanhamento de 360 ° | Limites definidos | Âncoras espaciais | Experiência máxima | 
 |----------|----------|----------|----------|----------|----------|
-|  Não |  - |  - |  - |  - |  **Somente orientação** | 
+|  No |  - |  - |  - |  - |  **Somente orientação** | 
 |  **Sim** |  Não |  - |  - |  - |  **Sentados** | 
 |  **Sim** |  **Sim** |  Não |  - |  - |  **Avançar** | 
 |  **Sim** |  **Sim** |  **Sim** |  Não |  - |  **Pé-360 °** | 
-|  **Sim** |  **Sim** |  **Sim** |  **Sim** |  Não |  **Espaço** | 
+|  **Sim** |  **Sim** |  **Sim** |  **Sim** |  Não |  **Sala** | 
 |  **Sim** |  **Sim** |  **Sim** |  **Sim** |  **Sim** |  **Países** | 
 
 Observe que o conjunto de teste de referência ainda não tem suporte no HoloLens. Um aplicativo de escala de sala no HoloLens atualmente precisa usar o [mapeamento espacial](spatial-mapping.md) ou a [compreensão da cena](scene-understanding.md) para localizar o piso e as paredes do usuário.
@@ -105,7 +105,7 @@ Observe que o conjunto de teste de referência ainda não tem suporte no HoloLen
 
 Todos os aplicativos gráficos 3D usam [sistemas de coordenadas cartesianas](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) para ponderar sobre as posições e orientações dos objetos nos mundos virtuais que eles renderizam. Tais sistemas de coordenadas estabelecem 3 eixos perpendiculares ao longo do qual posicionar objetos: um eixo X, Y e Z.
 
-Em [realidade misturada](../discover/mixed-reality.md), seus aplicativos serão um motivo para os sistemas de coordenadas física e virtual. O Windows chama um sistema de coordenadas que tem significado real no mundo físico um **sistema de coordenadas espaciais** .
+Em [realidade misturada](../discover/mixed-reality.md), seus aplicativos serão um motivo para os sistemas de coordenadas física e virtual. O Windows chama um sistema de coordenadas que tem significado real no mundo físico um **sistema de coordenadas espaciais**.
 
 Os sistemas de coordenadas espaciais expressam seus valores de coordenadas em metros. Isso significa que os objetos colocados 2 unidades separadas no eixo X, Y ou Z aparecerão 2 metros uns dos outros quando renderizados em realidade misturada. Isso permite que você processe objetos e ambientes com facilidade em escala do mundo real.
 
@@ -115,9 +115,9 @@ Em ambos os tipos de sistemas de coordenadas, o eixo X positivo aponta para a di
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Criando uma experiência somente de orientação ou de escala assentada
 
-A chave para a [renderização](../develop/platform-capabilities-and-apis/rendering.md) de Holographic é alterar a exibição do aplicativo de seus hologramas cada quadro à medida que o usuário se movimenta, para corresponder ao seu movimento de cabeça previsto. Você pode criar **experiências em escala** em conjunto que respeitam as alterações na posição de cabeçalho e na orientação da cabeça do usuário usando um **quadro estacionário de referência** .
+A chave para a [renderização](../develop/platform-capabilities-and-apis/rendering.md) de Holographic é alterar a exibição do aplicativo de seus hologramas cada quadro à medida que o usuário se movimenta, para corresponder ao seu movimento de cabeça previsto. Você pode criar **experiências em escala** em conjunto que respeitam as alterações na posição de cabeçalho e na orientação da cabeça do usuário usando um **quadro estacionário de referência**.
 
-Alguns conteúdos devem ignorar as atualizações de posição de cabeçalho, permanecendo fixo em um título e distância escolhidos do usuário em todos os momentos. O exemplo principal é o vídeo de 360 graus: como o vídeo é capturado de uma perspectiva fixa única, ele arruinaria a ilusão da posição da exibição para se mover em relação ao conteúdo, mesmo que a orientação da exibição deva mudar conforme o usuário for examinado. Você pode criar essas **experiências somente de orientação** usando um **quadro de referência anexado** .
+Alguns conteúdos devem ignorar as atualizações de posição de cabeçalho, permanecendo fixo em um título e distância escolhidos do usuário em todos os momentos. O exemplo principal é o vídeo de 360 graus: como o vídeo é capturado de uma perspectiva fixa única, ele arruinaria a ilusão da posição da exibição para se mover em relação ao conteúdo, mesmo que a orientação da exibição deva mudar conforme o usuário for examinado. Você pode criar essas **experiências somente de orientação** usando um **quadro de referência anexado**.
 
 ### <a name="stationary-frame-of-reference"></a>Quadro estacionário de referência
 
@@ -137,17 +137,17 @@ Quando o headset não consegue descobrir onde ele está no mundo, um quadro de r
 
 ## <a name="building-a-standing-scale-or-room-scale-experience"></a>Criando uma experiência em escala ou em escala de sala
 
-Para ir além da escala em um headset de imersão e criar uma **experiência de escala em posição** , você pode usar o **quadro de referência de estágio** .
+Para ir além da escala em um headset de imersão e criar uma **experiência de escala em posição**, você pode usar o **quadro de referência de estágio**.
 
-Para fornecer uma **experiência em escala de sala** , permitindo que os usuários percorram o limite de 5 medidores predefinidos, você também pode verificar **limites de estágio** .
+Para fornecer uma **experiência em escala de sala**, permitindo que os usuários percorram o limite de 5 medidores predefinidos, você também pode verificar **limites de estágio** .
 
 ### <a name="stage-frame-of-reference"></a>Quadro de referência de estágio
 
-Ao configurar pela primeira vez um headset de imersão, o usuário define um **estágio** , que representa a sala em que haverá realidade misturada. O estágio define minimamente uma **origem de estágio** , um sistema de coordenadas espaciais centralizado na posição de piso escolhida do usuário e orientação de encaminhamento onde pretendem usar o dispositivo. Ao colocar o conteúdo neste estágio sistema de coordenadas no plano Y = 0, você pode garantir que os hologramas pareçam confortavelmente no chão quando o usuário estiver em pé, fornecendo aos usuários uma **experiência de escala em pé** .
+Ao configurar pela primeira vez um headset de imersão, o usuário define um **estágio**, que representa a sala em que haverá realidade misturada. O estágio define minimamente uma **origem de estágio**, um sistema de coordenadas espaciais centralizado na posição de piso escolhida do usuário e orientação de encaminhamento onde pretendem usar o dispositivo. Ao colocar o conteúdo neste estágio sistema de coordenadas no plano Y = 0, você pode garantir que os hologramas pareçam confortavelmente no chão quando o usuário estiver em pé, fornecendo aos usuários uma **experiência de escala em pé**.
 
 ### <a name="stage-bounds"></a>Limites de estágio
 
-O usuário também pode definir, opcionalmente, **limites de estágio** , uma área dentro da sala que foi limpa de mobília, onde pretendem se mover em realidade misturada. Nesse caso, o aplicativo pode criar uma **experiência de escala de sala** , usando esses limites para garantir que os hologramas sempre sejam colocados onde o usuário possa contatá-los.
+O usuário também pode definir, opcionalmente, **limites de estágio**, uma área dentro da sala que foi limpa de mobília, onde pretendem se mover em realidade misturada. Nesse caso, o aplicativo pode criar uma **experiência de escala de sala**, usando esses limites para garantir que os hologramas sempre sejam colocados onde o usuário possa contatá-los.
 
 Como o quadro de referência de estágio fornece um único sistema de coordenadas fixos no qual posicionar o conteúdo relativo, é o caminho mais fácil para portar aplicativos de escala em estado e de colocação em pé desenvolvidos para a realidade virtual headsets. No entanto, assim como acontece com essas plataformas de VR, um único sistema de coordenadas só pode estabilizar conteúdo em cerca de um diâmetro de 5 metros (16 pés), antes que os efeitos de braço de alavanca façam com que o conteúdo longe do centro mude notavelmente à medida que o sistema se ajusta. Para ir além de 5 metros, são necessárias âncoras espaciais.
 
@@ -227,7 +227,7 @@ Seu aplicativo deve informar ao usuário como obter o controle posicional de vol
 
 Às vezes, uma casa ou outro espaço pode ter duas áreas idênticas. Por exemplo, duas salas de conferência idênticas, duas áreas de canto idênticas, dois grandes pôsteres idênticos que abrangem o campo de exibição do dispositivo. Nesses cenários, o dispositivo pode, às vezes, ficar confuso entre as partes idênticas e marcá-las como a mesma em sua representação interna. Isso pode fazer com que os hologramas de algumas áreas apareçam em outros locais. O dispositivo pode começar a perder o controle com frequência, pois sua representação interna do ambiente foi corrompida. Nesse caso, é aconselhável redefinir a compreensão ambiental do sistema. Observe que a redefinição do mapa leva à perda de todos os posicionamentos de âncora espaciais. Isso fará com que o fone de ouvido acompanhe bem nas áreas exclusivas do ambiente. No entanto, o problema pode ocorrer novamente se o dispositivo ficar confuso entre as áreas idênticas novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Apresentação do GDC 2017 em sistemas de coordenadas espaciais e renderização Holographic](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
 * [Sistemas de coordenadas no Unity](../develop/unity/coordinate-systems-in-unity.md)
 * [Sistemas de coordenadas no DirectX](../develop/native/coordinate-systems-in-directx.md)

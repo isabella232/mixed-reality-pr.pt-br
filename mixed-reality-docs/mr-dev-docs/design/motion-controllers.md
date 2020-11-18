@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: controladores de 6DOF, controladores de movimento
-ms.openlocfilehash: 74ea6c8879d5deb1271e9a2169cae013b03bab5b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: controladores de 6DOF, controladores de movimento, headset de realidade mista, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, rolagem, alça, estado
+ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675101"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703152"
 ---
 # <a name="motion-controllers"></a>Controladores de movimento
 
@@ -73,7 +73,7 @@ Os controladores de movimento de realidade mista do Windows oferecem acompanhame
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-**Será necessário:**
+**Serão necessários:**
 * Um conjunto de dois controladores de movimento.
 * Quatro baterias AA.
 * Um PC capaz de Bluetooth 4,0.
@@ -104,7 +104,7 @@ Os controladores de movimento podem ser acoplados ao computador host usando as c
     :::column-end:::
 :::row-end:::
    
-8. Você verá o controlador aparecer nas configurações de Bluetooth na **categoria "mouse, teclado, & Pen"** como **conectado** . Neste ponto, você pode obter uma atualização de firmware – consulte a [próxima seção](motion-controllers.md#updating-controller-firmware).
+8. Você verá o controlador aparecer nas configurações de Bluetooth na **categoria "mouse, teclado, & Pen"** como **conectado**. Neste ponto, você pode obter uma atualização de firmware – consulte a [próxima seção](motion-controllers.md#updating-controller-firmware).
 9. Reconecte a tampa da bateria.
 10. Repita as etapas de 1-9 para o segundo controlador.
 
@@ -146,9 +146,9 @@ Se os controladores estiverem desativados após o emparelhamento, seu status ser
 
 ## <a name="gazing-and-pointing"></a>Nuvens e apontando
 
-O Windows Mixed Reality dá suporte a dois modelos principais para interação; **olhar e commit** e Begin e **Commit** :
-* Com **olhar e commit** , os usuários direcionam um objeto com seus [olhar](gaze-and-commit.md) e, em seguida, selecionam objetos com toques de ar à mão, um gamepad, um selecionador ou sua voz.
-* Com o **ponto e a confirmação** , um usuário pode direcionar um controlador de movimento com capacidade para apontar no objeto de destino e, em seguida, selecionar objetos com o gatilho do controlador.
+O Windows Mixed Reality dá suporte a dois modelos principais para interação; **olhar e commit** e Begin e **Commit**:
+* Com **olhar e commit**, os usuários direcionam um objeto com seus [olhar](gaze-and-commit.md) e, em seguida, selecionam objetos com toques de ar à mão, um gamepad, um selecionador ou sua voz.
+* Com o **ponto e a confirmação**, um usuário pode direcionar um controlador de movimento com capacidade para apontar no objeto de destino e, em seguida, selecionar objetos com o gatilho do controlador.
 
 Os aplicativos que dão suporte ao uso de controladores de movimento também devem habilitar as interações controladas por olhar sempre que possível, para dar aos usuários uma opção de quais dispositivos de entrada eles usam.
 
@@ -162,25 +162,25 @@ Para gerenciar tal rebobinação que pode ocorrer quando os usuários puxam o ga
 
 O Windows Mixed Reality dá suporte a controladores de movimento em uma variedade de fatores forma, sendo que o design de cada controlador difere em sua relação entre a posição da mão do usuário e a direção natural "encaminhar" que os aplicativos devem usar para apontar ao renderizar o controlador.
 
-Para representar melhor esses controladores, há dois tipos de poses que você pode investigar para cada fonte de interação; a pose de **alça** e a **pose do ponteiro** .
+Para representar melhor esses controladores, há dois tipos de poses que você pode investigar para cada fonte de interação; a pose de **alça** e a **pose do ponteiro**.
 
 ### <a name="grip-pose"></a>Segurar pose
 
 A **alça de pose** representa o local da palma de uma mão detectada por um HoloLens ou o Palm que está segurando um controlador de movimento.
 
-Em headsets de imersão, a alça de fixação é mais bem usada para renderizar **a mão do usuário** ou **um objeto mantido na mão do usuário** , como uma gumes ou uma arma. A pose de alça também é usada ao visualizar um controlador de movimento, pois o **modelo renderizado** fornecido pelo Windows para um controlador de movimento usa a alça de pose como sua origem e o centro de rotação.
+Em headsets de imersão, a alça de fixação é mais bem usada para renderizar **a mão do usuário** ou **um objeto mantido na mão do usuário**, como uma gumes ou uma arma. A pose de alça também é usada ao visualizar um controlador de movimento, pois o **modelo renderizado** fornecido pelo Windows para um controlador de movimento usa a alça de pose como sua origem e o centro de rotação.
 
 A pose de alça é definida especificamente da seguinte maneira:
-* A **posição de alça** : o Palm centróide ao manter o controlador naturalmente, ajustado para a esquerda ou para a direita para centralizar a posição dentro da alça. No controlador de movimento de realidade mista do Windows, essa posição geralmente se alinha com o botão compreender.
-* O **eixo direito da orientação de alça** : quando você abre completamente a mão para formar uma pose plana de 5 dedos, o raio normal para o Palm (para frente do Palm esquerdo, para trás do Palm direito)
-* O **eixo de encaminhamento da orientação de alça** : quando você fecha a sua mão parcialmente (como se você mantiver o controlador), o raio que aponta para "encaminhar" por meio do tubo formado por seus dedos não-thumbs.
-* O **eixo superior da orientação de alça** : o eixo superior implícito pelas definições direita e avançar.
+* A **posição de alça**: o Palm centróide ao manter o controlador naturalmente, ajustado para a esquerda ou para a direita para centralizar a posição dentro da alça. No controlador de movimento de realidade mista do Windows, essa posição geralmente se alinha com o botão compreender.
+* O **eixo direito da orientação de alça**: quando você abre completamente a mão para formar uma pose plana de 5 dedos, o raio normal para o Palm (para frente do Palm esquerdo, para trás do Palm direito)
+* O **eixo de encaminhamento da orientação de alça**: quando você fecha a sua mão parcialmente (como se você mantiver o controlador), o raio que aponta para "encaminhar" por meio do tubo formado por seus dedos não-thumbs.
+* O **eixo superior da orientação de alça**: o eixo superior implícito pelas definições direita e avançar.
 
 ### <a name="pointer-pose"></a>Pose de ponteiro
 
 A **pose do ponteiro** representa a ponta do controlador que está apontando para frente.
 
-A pose de ponteiro fornecida pelo sistema é mais bem usada para Raycast quando você está **renderizando o próprio modelo de controlador** . Se você estiver renderizando algum outro objeto virtual no lugar do controlador, como uma arma virtual, você deve apontar com um raio mais natural para esse objeto virtual, como um Ray que viaja ao longo do cilindro do modelo de pressão definido pelo aplicativo. Como os usuários podem ver o objeto virtual e não o controlador físico, apontar com o objeto virtual provavelmente será mais natural para aqueles que usam seu aplicativo.
+A pose de ponteiro fornecida pelo sistema é mais bem usada para Raycast quando você está **renderizando o próprio modelo de controlador**. Se você estiver renderizando algum outro objeto virtual no lugar do controlador, como uma arma virtual, você deve apontar com um raio mais natural para esse objeto virtual, como um Ray que viaja ao longo do cilindro do modelo de pressão definido pelo aplicativo. Como os usuários podem ver o objeto virtual e não o controlador físico, apontar com o objeto virtual provavelmente será mais natural para aqueles que usam seu aplicativo.
 
 ## <a name="controller-tracking-state"></a>Estado de controle do controlador
 
@@ -203,11 +203,11 @@ Os aplicativos que desejam tratar as posições de forma diferente com base no e
 <tr>
 <th> Estado de acompanhamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Alta precisão</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Alta precisão</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> verdadeiro</td>
 </tr><tr>
-<td> <b>Alta precisão (com risco de perda)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Alta precisão (com risco de perda)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> verdadeiro</td>
 </tr><tr>
-<td> <b>Precisão aproximada</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Precisão aproximada</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: green; color: white"> verdadeiro</td>
 </tr><tr>
 <td> <b>Sem posição</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: orange"> false</td>
 </tr>
@@ -223,7 +223,7 @@ Esses Estados de acompanhamento do controlador de movimento são definidos da se
 
 ## <a name="interactions-low-level-spatial-input"></a>Interações: entrada espacial de nível baixo
 
-As interações principais entre os controladores de mãos e de movimento são **Select** , **menu** , **Segure** , **Touchpad** , **Thumbstick** e **Home** .
+As interações principais entre os controladores de mãos e de movimento são **Select**, **menu**, **Segure**, **Touchpad**, **Thumbstick** e **Home**.
 * **Select** é a principal interação para ativar um holograma, que consiste em uma prensa seguida por uma versão. Para os controladores de movimento, você executa uma operação SELECT usando o gatilho do controlador. Outras maneiras de executar uma seleção são falando sobre o [comando de voz](voice-input.md) "Select". A mesma interação SELECT pode ser usada em qualquer aplicativo. Considere Select como o equivalente a um clique do mouse; uma ação universal que você aprende uma vez e, em seguida, se aplica em todos os seus aplicativos.
 * O **menu** é a interação secundária para atuar em um objeto, usado para efetuar pull de um menu de contexto ou executar alguma outra ação secundária. Com os controladores de movimento, você pode executar uma ação de menu usando o botão de *menu* do controlador. (ou seja, o botão com o ícone de "menu" de "p")
 * **Segure** é como os usuários podem agir diretamente em objetos à sua disposição para manipulá-los. Com os controladores de movimento, você pode fazer uma ação compreender apertando seu punho. Um controlador de movimento pode detectar um entendimento com um botão de captura, um gatilho de Palm ou outro sensor.
@@ -233,13 +233,13 @@ As interações principais entre os controladores de mãos e de movimento são *
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>Gestos compostos: entrada espacial de alto nível
 
-Os [gestos à mão](gaze-and-commit.md#composite-gestures) e os controladores de movimento podem ser acompanhados ao longo do tempo para detectar um conjunto comum de **[gestos compostos](gaze-and-commit.md#composite-gestures)** de alto nível. Isso permite que seu aplicativo detecte gestos de **toque** , **retenção** , **manipulação** e **navegação** de alto nível, se os usuários acabarem usando mãos ou controladores.
+Os [gestos à mão](gaze-and-commit.md#composite-gestures) e os controladores de movimento podem ser acompanhados ao longo do tempo para detectar um conjunto comum de **[gestos compostos](gaze-and-commit.md#composite-gestures)** de alto nível. Isso permite que seu aplicativo detecte gestos de **toque**, **retenção**, **manipulação** e **navegação** de alto nível, se os usuários acabarem usando mãos ou controladores.
 
 ## <a name="rendering-the-motion-controller-model"></a>Renderizando o modelo do controlador de movimento
 
 **modelos de controlador 3D** O Windows disponibiliza para aplicativos um modelo renderizado de cada controlador de movimento atualmente ativo no sistema. Ao fazer com que seu aplicativo carregue e articule dinamicamente esses modelos de controlador fornecidos pelo sistema em tempo de execução, você pode garantir que seu aplicativo seja compatível com todos os designs futuros do controlador.
 
-Esses modelos processáveis devem ser renderizados na **pose de alça** do controlador, pois a origem do modelo é alinhada com esse ponto no mundo físico. Se você estiver renderizando modelos de controlador, você pode querer Raycast em sua cena na **pose do ponteiro** , que representa o raio ao longo do qual os usuários serão naturalmente informados, considerando o design físico do controlador.
+Esses modelos processáveis devem ser renderizados na **pose de alça** do controlador, pois a origem do modelo é alinhada com esse ponto no mundo físico. Se você estiver renderizando modelos de controlador, você pode querer Raycast em sua cena na **pose do ponteiro**, que representa o raio ao longo do qual os usuários serão naturalmente informados, considerando o design físico do controlador.
 
 Para obter mais informações sobre como carregar modelos de controlador dinamicamente no Unity, consulte a seção [renderizando o modelo de controlador de movimento no Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
@@ -277,7 +277,7 @@ Consulte [solução de problemas do controlador de movimento](https://docs.micro
 
 [Envie-nos comentários](../give-us-feedback.md) no Hub de comentários usando a categoria "realidade misturada-> entrada".
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Gestos e controladores de movimento no Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Controladores de mãos e emovimento no DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gestos](gaze-and-commit.md#composite-gestures)

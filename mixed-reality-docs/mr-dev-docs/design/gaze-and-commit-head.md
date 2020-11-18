@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Realidade Misturada, foco, direcionamento do foco, interação, design
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, destino, foco, suavização
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675338"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702382"
 ---
 # <a name="head-gaze-and-commit"></a>Foco com a cabeça e confirmação
 _Head-olhar e commit_ é um caso especial do modelo de entrada [olhar e commit](gaze-and-commit.md) que envolve o direcionamento de um objeto com a direção da sua cabeça apontando para a frente (direção da cabeça) e, em seguida, agindo com uma entrada secundária, como o toque de ar do gesto de mão ou o comando de voz "Select". 
@@ -80,7 +80,7 @@ Esse mecanismo pode ser considerado como uma versão mais comum dos algoritmos d
 Ao determinar a quais elementos interativos próximos dar foco, a adesão do foco fornece uma tendência para o elemento que está atualmente focado. Isso ajuda a reduzir os comportamentos incorretos de alternância de foco ao flutuar em um ponto médio entre dois elementos com ruído natural.
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Interação ocular](eye-gaze-interaction.md)
 * [Focar e esperar](gaze-and-dwell.md)
 * [Mãos – Manipulação direta](direct-manipulation.md)

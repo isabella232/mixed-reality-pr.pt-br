@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, mãos de ajuda
-ms.openlocfilehash: 10e5f3b025e4346d7c4075c2de7252c9ab217c93
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
+ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683242"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702342"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 ![Exemplo: à mão](images/HandCoach/MRTK_handCoach.jpg)<br>
@@ -84,7 +84,7 @@ Não espere que os usuários possam ouvir um conjunto de instruções por meio d
 
 ## <a name="can-i-create-my-own"></a>Posso criar o meu próprio?
 
-Sim. Incentivamos você a criar seu próprio gesto exclusivo para seu jogo e contribuir de volta para a Comunidade!
+Sim! Incentivamos você a criar seu próprio gesto exclusivo para seu jogo e contribuir de volta para a Comunidade!
 Fornecemos um arquivo Maya de um rigged Hand que pode ser usado para seu aplicativo que pode ser baixado aqui: <a href="files/HandCoach_MRTK.zip"> baixar HandCoach_MRTK.zip </a>
 
 ![Exemplo de mãos animadas no Maya](images/HandCoach/MayaSelect_Gif.gif)<br>

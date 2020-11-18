@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema de coordenadas, sistema de coordenadas espaciais, dimensionamento do mundo, mundo, escala, posição, orientação, âncora, âncora espacial, bloqueado pelo mundo, bloqueio de mundo, persistência, compartilhamento
-ms.openlocfilehash: a1108aceb91ec80d20b4cac043477ee92527035b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: sistema de coordenadas, sistema de coordenadas espaciais, escala mundial, mundo, escala, posição, orientação, âncora, âncora espacial, trancada mundial, bloqueio mundial, persistência, compartilhamento, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens
+ms.openlocfilehash: 92694023a3c7c7266b0f5d927180df20692b9d45
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675060"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703302"
 ---
 # <a name="spatial-anchors"></a>Âncoras espaciais
 
@@ -71,7 +71,7 @@ Isso é especialmente importante para âncoras locais que você tenha mantido no
 
 Nas âncoras espaciais de nuvem, o armazenamento pode ser dimensionado conforme seu cenário exigir. Você pode armazenar quantas âncoras de nuvem forem necessárias, liberando-as somente quando souber que os usuários não precisarão localizar os hologramas nessa âncora novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Sistemas de coordenadas](coordinate-systems.md)
 * [Experiências compartilhadas em realidade misturada](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>

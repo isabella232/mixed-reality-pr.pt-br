@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: instruções, acessórios, Bluetooth, BT, controlador, gamepad, clico, Xbox
-ms.openlocfilehash: 7f51264a3914d028c9a027d70d5aa1999582110a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: instruções, acessórios, Bluetooth, BT, controlador, gamepad, clico, Xbox, hardware, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual e controlador de movimento
+ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676667"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702002"
 ---
 # <a name="hardware-accessories"></a>Acessórios de hardware
 
@@ -19,7 +19,7 @@ Os dispositivos Windows Mixed Reality dão suporte a acessórios. Você pode usa
 
 Para obter informações sobre como usar os acessórios Bluetooth com o HoloLens, consulte [conectar-se a dispositivos Bluetooth e USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).
 
-Os headsets de imersão de realidade mista do Windows exigem acessórios para entrada além de [olhar](../design/gaze-and-commit.md) e [voz](../design/voice-input.md). Os acessórios com suporte incluem **teclado e mouse** , **gamepad** e **[controladores de movimento](../design/motion-controllers.md)** .
+Os headsets de imersão de realidade mista do Windows exigem acessórios para entrada além de [olhar](../design/gaze-and-commit.md) e [voz](../design/voice-input.md). Os acessórios com suporte incluem **teclado e mouse**, **gamepad** e **[controladores de movimento](../design/motion-controllers.md)**.
 
 ## <a name="pairing-bluetooth-accessories"></a>Emparelhamento de acessórios Bluetooth
 
