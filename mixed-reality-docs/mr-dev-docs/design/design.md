@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de software livre, principais conceitos, interação
-ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: 19a83a132cca08573f1066a2f7b87bd383ca79f4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361664"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573270"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 
@@ -35,7 +35,7 @@ Assim como em todos os percursos, sua aventura de criação de aplicativos de Re
 | [Expanda seu processo de design](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Dê uma olhada em primeira mão no processo de design da Realidade Misturada, coletado de designers dentro e fora da Microsoft |
 | [Tipos de aplicativos de Realidade Misturada](types-of-mixed-reality-apps.md) | Decida onde sua experiência de aplicativo residirá no espectro da Realidade Misturada |
 | [Aplicativo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Aprenda os conceitos básicos do Design de UX de Realidade Misturada experimentando por conta própria e aprofundando-se nos comportamentos de Realidade Misturada e em dicas e recomendações para criar aplicativos HoloLens incríveis (disponíveis para download na Microsoft Store no HoloLens 2) |
-
+| [Hub de exemplos do MRTK](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experimente interações espaciais comuns e blocos de construção de UX para Realidade Misturada (disponível para download na Microsoft Store no HoloLens 2) |
 ### <a name="2-core-concepts"></a>2. Conceitos fundamentais
 
 Esteja você desenvolvendo para VR ou RA, existem vários conceitos básicos que se aplicam ao design de experiências de imersão fluidas. Compreender o ponto de vista dos usuários, posicionar objetos e garantir que todos estejam confortáveis e seguros são suas principais prioridades nesta fase do percurso. Ao final desta seção, você terá uma base sólida para realizar o design de interação.

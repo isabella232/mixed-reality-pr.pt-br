@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ad8f4a5ea9bda7915731f879da96cf7e007c58fb
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92755872"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482405"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -13,7 +13,7 @@ ms.locfileid: "92755872"
 ### <a name="1-download-the-latest-version"></a>1. Baixar a última versão
 
 Recomendamos usar o fluxo [LTS (Suporte de Longo Prazo) do Unity](https://unity3d.com/unity/qa/lts-releases), pois ele é a melhor versão para iniciar projetos. Atualize para a última revisão para obter as correções estáveis mais recentes.
-* A recomendação atual é usar o **Unity 2019** , que é o build LTS necessário para o MRTK v2 abaixo.
+* A recomendação atual é usar o **Unity 2019**, que é o build LTS necessário para o MRTK v2 abaixo.
 * Caso você precise usar outra versão do Unity por motivos específicos, o Unity dá suporte a instalações lado a lado de versões diferentes.
 
 ### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2. Importar o MRTK (Kit de Ferramentas de Realidade Misturada)
@@ -48,11 +48,31 @@ O SDK do Windows 10 funciona melhor no sistema operacional Windows 10. Esse SDK 
 
 #### <a name="for-hololens-development"></a>Desenvolvimento para o HoloLens
 
-Ao configurar seu computador para o desenvolvimento para o HoloLens, verifique se ele atende aos requisitos de sistema do <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> e o <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Se você pretende usar o [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md), verifique se o computador também atende aos [requisitos do sistema do emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements).
+Ao configurar seu computador para o desenvolvimento para o HoloLens, verifique se ele atende aos requisitos de sistema do <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> e o <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Se desejar executar seu aplicativo em um dispositivo HoloLens, você precisará seguir as [instruções de instalação do Portal de Dispositivos do Windows](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal). Se você pretende usar o [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md), verifique se o computador também atende aos [requisitos do sistema do emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements).
 
 Para começar a usar o emulador do HoloLens, veja [Usando o emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
 
 Se você planeja desenvolver para headsets imersivos (VR) do HoloLens e do Windows Mixed Reality, use as recomendações e requisitos de sistema descritos na próxima seção.
+
+#### <a name="hololens-troubleshooting"></a>Solução de problemas do HoloLens
+
+##### <a name="setting-developer-mode-is-grayed-out"></a>A configuração Modo de Desenvolvedor está esmaecida
+
+Se você estiver com problemas para habilitar o Modo de Desenvolvedor no dispositivo, talvez você não seja o [proprietário do dispositivo](https://docs.microsoft.com/hololens/security-adminless-os). No modo de vários usuários, a pessoa que usa o dispositivo pela primeira vez é o proprietário do dispositivo; os usuários subsequentes não terão as permissões necessárias para habilitar o Modo de Desenvolvedor nem outras alterações de configuração. No entanto, há uma exceção em que o primeiro usuário poderá não ser o proprietário do dispositivo: em um ambiente de Autopilot, que é detalhado na [documentação de segurança do HoloLens](https://docs.microsoft.com/hololens/security-adminless-os#device-owner).
+
+Entre as soluções possíveis estão:
+
+* Fazer com que o proprietário do dispositivo ative o Modo de Desenvolvedor antes de passar o dispositivo para outros usuários ou desenvolvedores
+* Sugerir que o administrador de TI/MDM habilite a [política ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) do CSP para o dispositivo específico ou para um grupo de dispositivos do desenvolvedor. 
+    * Essa política pode ser definida por [Pacotes de provisionamento](https://docs.microsoft.com/hololens/hololens-provisioning) ou via [MDM para dispositivos HoloLens](https://docs.microsoft.com/hololens/hololens-mdm-configure)
+* Usar o [ARC (Complemento de Recuperação Avançada)](https://docs.microsoft.com/hololens/hololens-recovery)
+
+> [!NOTE]
+> Saiba mais sobre o gerenciamento de dispositivos na visão geral do **[gerenciamento de dispositivos HoloLens](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** .
+
+##### <a name="i-cant-deploy-over-usb"></a>Não consigo implantar via USB
+
+Se não for possível implantar um aplicativo diretamente por USB, verifique se você atendeu a todos os requisitos de instalação listados acima e siga nosso [tutorial passo a passo](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 #### <a name="immersive-vr-headset-requirements"></a>Requisitos do headset imersivo (VR)
 
@@ -60,7 +80,7 @@ Se você planeja desenvolver para headsets imersivos (VR) do HoloLens e do Windo
 >As orientações a seguir são as especificações atuais mínimas e recomendadas para seu *computador de desenvolvimento* para headset imersivo (VR) e são atualizadas regularmente.
 
 >[!WARNING]
->Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor* , que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
+>Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor*, que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
 
 Se você estiver usando um headset **Reverb G2** baixe o plug-in **Microsoft-Valve OpenXR** (Tarefa pendente: // link necessário).
 
@@ -145,9 +165,29 @@ O SDK do Windows 10 funciona melhor no sistema operacional Windows 10. Esse SDK 
 
 #### <a name="for-hololens-development"></a>Desenvolvimento para o HoloLens
 
-Ao configurar seu computador para o desenvolvimento no HoloLens, verifique se você atende aos requisitos do sistema do [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) e do <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Se você pretende usar o [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md), verifique se o computador também atende aos [requisitos do sistema do emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements).
+Ao configurar seu computador para o desenvolvimento no HoloLens, verifique se você atende aos requisitos do sistema do [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) e do <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Se desejar executar seu aplicativo em um dispositivo HoloLens, você precisará seguir as [instruções de instalação do Portal de Dispositivos do Windows](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal). Se você pretende usar o [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md), verifique se o computador também atende aos [requisitos do sistema do emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements).
 
 Se você planeja desenvolver para headsets imersivos (VR) do HoloLens e do Windows Mixed Reality, use as recomendações e requisitos de sistema descritos na próxima seção.
+
+#### <a name="hololens-troubleshooting"></a>Solução de problemas do HoloLens
+
+##### <a name="setting-developer-mode-is-grayed-out"></a>A configuração Modo de Desenvolvedor está esmaecida
+
+Se você estiver com problemas para habilitar o Modo de Desenvolvedor no dispositivo, talvez você não seja o [proprietário do dispositivo](https://docs.microsoft.com/hololens/security-adminless-os). No modo de vários usuários, a pessoa que usa o dispositivo pela primeira vez é o proprietário do dispositivo; os usuários subsequentes não terão as permissões necessárias para habilitar o Modo de Desenvolvedor nem outras alterações de configuração. No entanto, há uma exceção em que o primeiro usuário poderá não ser o proprietário do dispositivo: em um ambiente de Autopilot, que é detalhado na [documentação de segurança do HoloLens](https://docs.microsoft.com/hololens/security-adminless-os#device-owner).
+
+Entre as soluções possíveis estão:
+
+* Fazer com que o proprietário do dispositivo ative o Modo de Desenvolvedor antes de passar o dispositivo para outros usuários ou desenvolvedores
+* Sugerir que o administrador de TI/MDM habilite a [política ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) do CSP para o dispositivo específico ou para um grupo de dispositivos do desenvolvedor. 
+    * Essa política pode ser definida por [Pacotes de provisionamento](https://docs.microsoft.com/hololens/hololens-provisioning) ou via [MDM para dispositivos HoloLens](https://docs.microsoft.com/hololens/hololens-mdm-configure)
+* Usar o [ARC (Complemento de Recuperação Avançada)](https://docs.microsoft.com/hololens/hololens-recovery)
+
+> [!NOTE]
+> Saiba mais sobre o gerenciamento de dispositivos na visão geral do **[gerenciamento de dispositivos HoloLens](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** .
+
+##### <a name="i-cant-deploy-over-usb"></a>Não consigo implantar via USB
+
+Se não for possível implantar um aplicativo diretamente por USB, verifique se você atendeu a todos os requisitos de instalação listados acima e siga nosso [tutorial passo a passo](../unreal/tutorials/unreal-uxt-ch6.md).
 
 #### <a name="immersive-vr-headset-requirements"></a>Requisitos do headset imersivo (VR)
 
@@ -155,7 +195,7 @@ Se você planeja desenvolver para headsets imersivos (VR) do HoloLens e do Windo
 >As orientações a seguir são as especificações atuais mínimas e recomendadas para seu *computador de desenvolvimento* para headset imersivo (VR) e são atualizadas regularmente.
 
 >[!WARNING]
->Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor* , que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
+>Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor*, que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
 
 Se você estiver usando um headset **Reverb G2** baixe o plug-in **Microsoft-Valve OpenXR** (Tarefa pendente: // link necessário).
 
@@ -215,12 +255,28 @@ O SDK do Windows 10 funciona melhor no sistema operacional Windows 10. Esse SDK 
 
 #### <a name="for-hololens-development"></a>Desenvolvimento para o HoloLens
 
-Ao configurar seu computador para o desenvolvimento no HoloLens, verifique se você atende aos requisitos do sistema do <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Se você pretende usar o [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md), verifique se o computador também atende aos [requisitos do sistema do emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements).
+Ao configurar seu computador para o desenvolvimento no HoloLens, verifique se você atende aos requisitos do sistema do <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Se desejar executar seu aplicativo em um dispositivo HoloLens, você precisará seguir as [instruções de instalação do Portal de Dispositivos do Windows](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal). Se você pretende usar o [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md), verifique se o computador também atende aos [requisitos do sistema do emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements).
 
 Se você planeja desenvolver para headsets imersivos (VR) do HoloLens e do Windows Mixed Reality, use as recomendações e requisitos de sistema descritos na próxima seção.
 
 > [!NOTE]
 > Desenvolva e implante seus aplicativos para o HoloLens, os headsets imersivos de VR ou ambos. Verifique se você atende aos requisitos abaixo, dependendo das suas necessidades.
+
+#### <a name="hololens-troubleshooting"></a>Solução de problemas do HoloLens
+
+##### <a name="setting-developer-mode-is-grayed-out"></a>A configuração Modo de Desenvolvedor está esmaecida
+
+Se você estiver com problemas para habilitar o Modo de Desenvolvedor no dispositivo, talvez você não seja o [proprietário do dispositivo](https://docs.microsoft.com/hololens/security-adminless-os). No modo de vários usuários, a pessoa que usa o dispositivo pela primeira vez é o proprietário do dispositivo; os usuários subsequentes não terão as permissões necessárias para habilitar o Modo de Desenvolvedor nem outras alterações de configuração. No entanto, há uma exceção em que o primeiro usuário poderá não ser o proprietário do dispositivo: em um ambiente de Autopilot, que é detalhado na [documentação de segurança do HoloLens](https://docs.microsoft.com/hololens/security-adminless-os#device-owner).
+
+Entre as soluções possíveis estão:
+
+* Fazer com que o proprietário do dispositivo ative o Modo de Desenvolvedor antes de passar o dispositivo para outros usuários ou desenvolvedores
+* Sugerir que o administrador de TI/MDM habilite a [política ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) do CSP para o dispositivo específico ou para um grupo de dispositivos do desenvolvedor. 
+    * Essa política pode ser definida por [Pacotes de provisionamento](https://docs.microsoft.com/hololens/hololens-provisioning) ou via [MDM para dispositivos HoloLens](https://docs.microsoft.com/hololens/hololens-mdm-configure)
+* Usar o [ARC (Complemento de Recuperação Avançada)](https://docs.microsoft.com/hololens/hololens-recovery)
+
+> [!NOTE]
+> Saiba mais sobre o gerenciamento de dispositivos na visão geral do **[gerenciamento de dispositivos HoloLens](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** .
 
 #### <a name="immersive-vr-headset-requirements"></a>Requisitos do headset imersivo (VR)
 
@@ -228,7 +284,7 @@ Se você planeja desenvolver para headsets imersivos (VR) do HoloLens e do Windo
 >As orientações a seguir são as especificações atuais mínimas e recomendadas para seu *computador de desenvolvimento* para headset imersivo (VR) e são atualizadas regularmente.
 
 >[!WARNING]
->Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor* , que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
+>Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor*, que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
 
 Se seu computador de desenvolvimento de headset imersivo não tiver portas HDMI e/ou USB 3.0 padrão, você precisará de [adaptadores](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) para conectar o headset.
 

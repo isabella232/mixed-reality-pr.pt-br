@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, performance, optimization, settings, documentation
-ms.openlocfilehash: 64c8cdf4900234a4486cf9b575671321a8430160
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 21bd3ee9fb7db23eab9365e41adfd0033aa0046e
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695178"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549119"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Recomendações de desempenho para o Unreal
 
@@ -21,10 +21,10 @@ ms.locfileid: "91695178"
 Este artigo se baseia na discussão descrita em [recomendações de desempenho para realidade misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md), mas se concentra em recursos específicos do Unreal Engine. Você é incentivado a detectar os gargalos do aplicativo, analisar e criar o perfil de aplicativos de realidade misturada e correções de desempenho gerais antes de continuar.
 
 ## <a name="recommended-unreal-project-settings"></a>Configurações recomendadas de projetos do Unreal
-Você pode encontrar cada uma das configurações a seguir em **Editar > Configurações do Projeto** .
+Você pode encontrar cada uma das configurações a seguir em **Editar > Configurações do Projeto**.
 
 1. Como usar o renderizador de VR para dispositivos móveis:
-    * Role até a seção **Projeto** , selecione **Hardware de Destino** e defina a plataforma de destino como **Celular/Tablet**
+    * Role até a seção **Projeto**, selecione **Hardware de Destino** e defina a plataforma de destino como **Celular/Tablet**
 
 ![Configuração de destino para dispositivos móveis](images/unreal/performance-recommendations-img-01.png)
 
@@ -34,30 +34,34 @@ Você pode encontrar cada uma das configurações a seguir em **Editar > Configu
 
 ![Renderização de encaminhamento](images/unreal/performance-recommendations-img-04.png)
 
-3. Como desabilitar a aplicação de neblina de vértice: 
+3. Uso da exibição múltipla em dispositivos móveis:
+    * Role a página até a seção **Mecanismo**, selecione **Renderização**, expanda a seção **VR** e habilite **Estéreo Instanciado** e **Exibição Múltipla em Dispositivos Móveis**. O HDR móvel deve estar desmarcado.
+
+![Configurações de renderização de VR](images/unreal/performance-recommendations-img-03.png)
+
+4. Verifique se **Padrão** ou **D3D12** é o **RHI Padrão** quando você usar o OpenXR.
+    * A seleção de **D3D11** terá um impacto negativo no desempenho devido à plataforma que executa uma passagem de renderização adicional. O **D3D12** deve oferecer aprimoramentos de desempenho de renderização além de evitar a passagem de renderização adicional.
+
+![RHI Padrão](images/unreal/performance-recommendations-img-09.png)
+
+5. Como desabilitar a aplicação de neblina de vértice: 
     * a aplicação de neblina de vértice se aplica a cálculos de neblina em cada vértice em um polígono e interpola os resultados na face do polígono. Se o jogo não usar neblina, você deverá escolher essa configuração para desabilitar a neblina a fim de aumentar o desempenho do sombreamento.
 
 ![Opções de aplicação de neblina do vértice](images/unreal/performance-recommendations-img-05.png)
 
-4. Desabilitando a remoção por oclusão:
-    * Role até a seção **Mecanismo** , selecione **Renderização** , expanda a seção **Remoção** e desmarque **Remoção por Oclusão** .
-        + Se você precisa usar a remoção por oclusão em uma cena detalhada que está sendo renderizada, recomendamos habilitar o **Suporte a Remoção por Oclusão de Software** em **Mecanismo > Renderização** . Isso permite que o Unreal faça o trabalho na CPU e evite consultas de oclusão de GPU, que têm mau desempenho no HoloLens 2.
+6. Desabilitando a remoção por oclusão:
+    * Role até a seção **Mecanismo**, selecione **Renderização**, expanda a seção **Remoção** e desmarque **Remoção por Oclusão**.
+        + Se você precisa usar a remoção por oclusão em uma cena detalhada que está sendo renderizada, recomendamos habilitar o **Suporte a Remoção por Oclusão de Software** em **Mecanismo > Renderização**. Isso permite que o Unreal faça o trabalho na CPU e evite consultas de oclusão de GPU, que têm mau desempenho no HoloLens 2.
     * A remoção da oclusão na GPU em dispositivos móveis é lenta. Em geral, convém que a GPU se preocupe principalmente com a renderização. Se você achar que a oclusão ajudará o desempenho, tente habilitar a oclusão do software. Observe que a habilitação da oclusão do software poderá piorar o desempenho se você já estiver vinculado à CPU por um grande número de chamadas de desenho.
 
 ![Desabilitar a remoção de oclusão](images/unreal/performance-recommendations-img-02.png)
 
-    
-5. Como desabilitar o estêncil de profundidade:
+7. Desabilitando a passagem personalizada do estêncil de profundidade:
     * esse recurso requer uma passagem extra, o que significa que ele é lento. A translucência também é lenta no Unreal. Você pode encontrar mais informações na [documentação do Unreal](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html).
 
 ![Estêncil de profundidade](images/unreal/performance-recommendations-img-06.png)
 
-6. Uso da exibição múltipla em dispositivos móveis:
-    * Role a página até a seção **Mecanismo** , selecione **Renderização** , expanda a seção **VR** e habilite **Estéreo Instanciado** e **Exibição Múltipla em Dispositivos Móveis** . O HDR móvel deve estar desmarcado.
-
-![Configurações de renderização de VR](images/unreal/performance-recommendations-img-03.png)
-
-7. Como reduzir os mapas de sombra em cascata: 
+8. Como reduzir os mapas de sombra em cascata: 
     * a redução do número de mapas de sombra vai aprimorar o desempenho. Em geral, isso deve ser definido como 1, a menos que haja uma perda de qualidade visível. 
 
 ![Mapas de sombra em cascata](images/unreal/performance-recommendations-img-07.png)

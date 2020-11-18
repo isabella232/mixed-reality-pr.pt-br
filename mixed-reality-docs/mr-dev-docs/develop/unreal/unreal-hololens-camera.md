@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, camera, PV camera, MRC
-ms.openlocfilehash: e66583d46d64361621303e36a5fbcc209300f5d8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695173"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573230"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Câmera de foto/vídeo do HoloLens no Unreal
 
 ## <a name="overview"></a>Visão geral
 
-O HoloLens tem uma câmera de foto/vídeo (PV) que é usada para a MRC (captura de realidade misturada) e pode também ser usada por um aplicativo para acessar elementos visuais do mundo real.
+O HoloLens tem uma câmera de foto/vídeo (PV) que é usada para a MRC (captura de realidade misturada) e pode também ser usada por um aplicativo para acessar elementos visuais do mundo real. 
+
+> [!IMPORTANT]
+> A câmera PV não é compatível com a Comunicação Remota Holográfica, mas é possível usar uma webcam anexada ao seu PC para simular a funcionalidade da câmera PV do HoloLens.
 
 ## <a name="render-from-the-pv-camera-for-mrc"></a>Renderizar da câmera de PV para MRC
 
@@ -44,7 +47,7 @@ Em seguida, o Unreal lidará com as solicitações da MRC para renderizar da per
 ## <a name="using-the-pv-camera"></a>Usando a câmera de PV
 
 A textura de webcam pode ser recuperada no jogo em runtime, mas precisa ser habilitada no menu **Editar > Configurações de Projeto** do editor:
-1. Acesse **Plataformas > HoloLens > Funcionalidades** e marque **Webcam** .
+1. Acesse **Plataformas > HoloLens > Funcionalidades** e marque **Webcam**.
     * Use a função **StartCameraCapture** para usar a webcam em runtime e a função **StopCameraCapture** para interromper a gravação.
 
 ![Iniciar/interromper câmera](images/unreal-camera-startstop.PNG)
@@ -52,13 +55,13 @@ A textura de webcam pode ser recuperada no jogo em runtime, mas precisa ser habi
 ## <a name="rendering-an-image"></a>Renderização de uma imagem
 Para renderizar a imagem da câmera:
 1. Crie uma instância de material dinâmico com base em um material no projeto, nomeado **PVCamMat** na captura de tela abaixo.  
-2. Defina a instância de material dinâmico para uma variável de **Referência de Objeto Dinâmico da Instância de Material** .  
+2. Defina a instância de material dinâmico para uma variável de **Referência de Objeto Dinâmico da Instância de Material**.  
 3. Defina o material do objeto na cena que renderizará o feed da câmera para essa nova instância de material dinâmico.
     * Inicie um temporizador que será usado para associar a imagem da câmera ao material.
 
 ![Renderização da câmera](images/unreal-camera-render.PNG)
 
-4. Crie uma função para esse temporizador (neste caso, **MaterialTimer** ) e chame **GetARCameraImage** para obter a textura da webcam.  
+4. Crie uma função para esse temporizador (neste caso, **MaterialTimer**) e chame **GetARCameraImage** para obter a textura da webcam.  
 5. Se a textura for válida, defina um parâmetro de textura no sombreador para a imagem.  Caso contrário, inicie o temporizador de material novamente.
 
 ![Textura da câmera da webcam](images/unreal-camera-texture.PNG)
