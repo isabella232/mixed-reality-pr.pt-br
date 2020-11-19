@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
-ms.translationtype: HT
+ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
+ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573280"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94897351"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Realidade misturada em dias do Japão
 
@@ -27,9 +27,13 @@ Estamos ansiosos para que você se junte a nós no dia de desenvolvimento da rea
 
 **Registro-gratuito**
 
+**Idioma principal-japonês**
+
 ## <a name="registration"></a>Registro
 
-Em breve
+[Registro-agora aberto](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+
+Estamos muito empolgados em abrir o registro para a realidade misturada em dias de desenvolvimento no Japão.  O evento é gratuito e está sendo mantido online no Microsoft Teams Live Events.  Solicitamos que os participantes se registrem para que possamos enviar atualizações de email à medida que o evento fique mais próximo e para que você possa participar dos elementos interativos do evento.
 
 ## <a name="schedule---subject-to-change"></a>Agenda-assunto para alteração
 
@@ -49,7 +53,7 @@ Em breve
 |1:13h-1:25pm|*Sessão 3* Visão geral do desenvolvimento do HoloLens 2|Madoka Chiyoda|JA|200|
 |1: às 16h30-1:55PM|*Sessão 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon Park|JA|300|
 |2:13h-2:25pm|*Sessão 5* Introdução ao mecanismo 2 e inreal do HoloLens (MRTK-inreal)|Cameron Micka|PT-BR|300|
-|2: às 16h30-2:55PM|*Sessão 6* Design de aplicativo MR (prática recomendada para a criação da interface do usuário/UX para o aplicativo HL2)|Daniel Escudero|PT-BR|300|
+|2: às 16h30-2:55PM|*Sessão 6* Criando o aplicativo "criando hologramas". Vamos nos aprofundar em recursos, desafios e outros aprendizados divertidos que descobrimos ao criar esse novo aplicativo HoloLens 2.|Daniel Escudero|PT-BR|300|
 |2:55PM-3:19:10|**Interrupção**||||
 |3:19:10-3:35pm|*Sessão 7* Âncoras de objeto do Azure|TBD|PT-BR|300|
 |3:13:40-4:05pm|*Sessão 8* Renderização remota do Azure|Atsushi Suzuki|JA|300|
