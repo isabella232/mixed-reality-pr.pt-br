@@ -1,19 +1,19 @@
 ---
-title: Realidade misturada em dias do Japão
+title: Mixed Reality Dev Days Japão
 description: Página de evento para realidade misturada dias do Japão
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
-ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
+ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94897351"
+ms.locfileid: "94933261"
 ---
-# <a name="mixed-reality-dev-days-japan"></a>Realidade misturada em dias do Japão
+# <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japão
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysJapanBanner.png)
 
@@ -55,10 +55,10 @@ Estamos muito empolgados em abrir o registro para a realidade misturada em dias 
 |2:13h-2:25pm|*Sessão 5* Introdução ao mecanismo 2 e inreal do HoloLens (MRTK-inreal)|Cameron Micka|PT-BR|300|
 |2: às 16h30-2:55PM|*Sessão 6* Criando o aplicativo "criando hologramas". Vamos nos aprofundar em recursos, desafios e outros aprendizados divertidos que descobrimos ao criar esse novo aplicativo HoloLens 2.|Daniel Escudero|PT-BR|300|
 |2:55PM-3:19:10|**Interrupção**||||
-|3:19:10-3:35pm|*Sessão 7* Âncoras de objeto do Azure|TBD|PT-BR|300|
+|3:19:10-3:35pm|*Sessão 7* Âncoras de objeto do Azure|Jesse McCulloch|PT-BR|300|
 |3:13:40-4:05pm|*Sessão 8* Renderização remota do Azure|Atsushi Suzuki|JA|300|
-|4:19:10-4:35pm|*Sessão 9* Âncoras espaciais do Azure|TBD|PT-BR|300|
-|4:13:40-5:05pm|*Sessão 10* TBD|TBD|JA|200|
+|4:19:10-4:35pm|*Sessão 9* Âncoras espaciais do Azure|TBD|JA|300|
+|4:13:40-5:05pm|*Sessão 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |5:19:10-5:35pm|*Sessão 11* Aprofundamento do Azure Kinects, estudo de caso|Shinji Chiba|JA|400|
 |5:35pm-5:50pm|Fechamento|Madoka Chiyoda|JA|NA|
 
