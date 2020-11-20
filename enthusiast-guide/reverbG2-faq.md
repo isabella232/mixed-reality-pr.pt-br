@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573200"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002961"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -43,7 +43,7 @@ Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas
 - Verifique se você tem os drivers mais recentes instalados para o headset e o controlador USB.
 - Verifique se você está usando um driver USB da Microsoft. Deve haver uma "Microsoft" no nome do dispositivo "controlador de host extensível".
 - Tente conectar o cabo a uma porta USB-3,0 diferente em seu computador. (Experimente o tipo USB-C e as portas Type-A)
-- Use o USB C incluído em um adaptador incluído para testar portas diferentes.
+- Use o USB C incluído em um adaptador para testar portas diferentes.
 - Tente conectar o headset por meio de um hub USB ao seu computador.
 
 > [!NOTE]
