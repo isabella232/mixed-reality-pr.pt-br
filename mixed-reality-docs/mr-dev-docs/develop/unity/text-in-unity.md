@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, controles, fonte, tipografia, IU, UX, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 04b62cd0989042856dbd15d467d042f67df69931
+ms.sourcegitcommit: 5d6dbbb94e60cf10786d0fbbaf4239a1541e9e29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677355"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95008129"
 ---
 # <a name="text-in-unity"></a>Texto no Unity
 
@@ -93,7 +93,7 @@ Com base nesses fatores de dimensionamento, criamos [texto pré-fabricados com o
 
 ### <a name="shader-with-occlusion-support"></a>Sombreador com suporte a oclusão
 
-O material de fonte padrão do Unity não oferece suporte a oclusão. Por isso, você verá o texto por trás dos objetos por padrão. Incluímos um [sombreador simples que dá suporte ao oclusão](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader). A imagem abaixo mostra o texto com material de fonte padrão (esquerda) e o texto com oclusão apropriado (direita).
+O material de fonte padrão do Unity não oferece suporte a oclusão. Por isso, você verá o texto por trás dos objetos por padrão. Incluímos um [sombreador simples que dá suporte ao oclusão](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). A imagem abaixo mostra o texto com material de fonte padrão (esquerda) e o texto com oclusão apropriado (direita).
 
 ![Sombreador com suporte a oclusão](images/hug-text-07-1000px.png)<br>
 *Sombreador com suporte a oclusão*
@@ -113,6 +113,6 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Pré-fabricado de texto no MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Tipografia](../../design/typography.md)
