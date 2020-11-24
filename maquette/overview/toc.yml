@@ -1,0 +1,8 @@
+- name: Sobre o Maquette
+  href: about.md
+- name: Instalação
+  href: installation.md
+- name: Visão geral de programação
+  href: programming-overview.md
+- name: Idioma principal
+  href: core-language.md
