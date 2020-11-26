@@ -7,13 +7,13 @@ ms.author: v-haferr
 ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem
-ms.openlocfilehash: ae79da3d5bdf85bc27312044409c1f9c9aa5f031
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem, Azure, remote rendering, âncoras espaciais, serviços cognitivos, cognição, unity, machine learning, tradução de fala, pesquisa visual computacional, Microsoft Graph
+ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695200"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679685"
 ---
 # <a name="azure-cloud-services"></a>Serviços de nuvem do Azure
 
@@ -46,9 +46,9 @@ Como um bônus adicional, o ARR não restringe o tipo de interface do usuário q
 As Âncoras Espaciais do Azure, ou ASA, são um serviço multiplataforma que permite criar aplicativos de realidade misturada com reconhecimento espacial. Com as Âncoras Espaciais do Azure, você pode mapear, persistir e compartilhar conteúdo holográfico entre vários dispositivos em escala do mundo real. 
 
 As ASA são uma solução exclusivamente personalizada para casos de uso comuns na Realidade Misturada, incluindo:
-* **Orientação** : duas ou mais âncoras espaciais podem ser conectadas para criar uma lista de tarefas ou pontos de interesse com os quais um usuário precisa interagir.
-* **Experiências de vários usuários** : os usuários podem passar movimentos para frente e para trás interagindo com objetos no mesmo espaço virtual.
-* **Persistência de conteúdo virtual no mundo real** : os usuários podem inserir objetos virtuais no mundo real que são visíveis por outros dispositivos com suporte.
+* **Orientação**: duas ou mais âncoras espaciais podem ser conectadas para criar uma lista de tarefas ou pontos de interesse com os quais um usuário precisa interagir.
+* **Experiências de vários usuários**: os usuários podem passar movimentos para frente e para trás interagindo com objetos no mesmo espaço virtual.
+* **Persistência de conteúdo virtual no mundo real**: os usuários podem inserir objetos virtuais no mundo real que são visíveis por outros dispositivos com suporte.
 
 ![Exemplo de Âncoras Espaciais do Azure](images/persistence.gif)
 
