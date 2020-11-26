@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores
 ms.localizationpriority: high
-ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353524"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679295"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Criar conteúdo dinâmico usando Solucionadores
 
@@ -28,7 +28,7 @@ Neste tutorial, você vai explorar maneiras de posicionar hologramas dinamicamen
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Localização dos Solucionadores no MRTK
 
- Os Solucionadores do MRTK estão localizados na pasta MRTK SDK. Para ver os Solucionadores disponíveis em seu projeto, na janela Projeto, navegue até **Ativos** > **MRTK** > **SDK** > **Recursos** > **Utilitários** > **Solucionadores** :
+ Os Solucionadores do MRTK estão localizados na pasta MRTK SDK. Para ver os Solucionadores disponíveis em seu projeto, na janela Projeto, navegue até **Ativos** > **MRTK** > **SDK** > **Recursos** > **Utilitários** > **Solucionadores**:
 
 ![Janela Projeto do Unity com a pasta Solucionadores selecionada](images/mr-learning-base/base-05-section1-step1-1.png)
 
@@ -39,14 +39,14 @@ Neste tutorial, examinaremos a implementação do Solucionador de Indicador Dire
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Como usar o Solucionador de Indicador Direcional para direcionar o usuário a objetos
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingStarted** > **Pré-Fabricados** , clique e arraste o pré-fabricado **Divisa** para a janela Hierarquia e defina sua **Posição** de Transformação como X = 0, Y = 0, Z = 2 para posicioná-lo perto do objeto RoverExplorer:
+Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingStarted** > **Pré-Fabricados**, clique e arraste o pré-fabricado **Divisa** para a janela Hierarquia e defina sua **Posição** de Transformação como X = 0, Y = 0, Z = 2 para posicioná-lo perto do objeto RoverExplorer:
 
 ![Unity com o pré-fabricado Divisa recém-adicionado selecionado](images/mr-learning-base/base-05-section2-step1-1.png)
 
 > [!TIP]
 > Se você descobrir que a câmera ou quaisquer outros ícones em sua cena estão ocultando os objetos ou causando distração, poderá ocultá-los <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">alternando o Gizmos</a> para a posição Desligado, conforme mostra a imagem acima. Para saber mais sobre o menu Gizmos e como você pode usá-lo para otimizar a exibição de cena, consulte a documentação do <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> do Unity.
 
-Renomeie o **Indicador** do objeto de Divisa recém-adicionado e, em seguida, na janela do Inspetor, use o botão **Adicionar Componente** para adicionar o componente **DirectionalIndicator** :
+Renomeie o **Indicador** do objeto de Divisa recém-adicionado e, em seguida, na janela do Inspetor, use o botão **Adicionar Componente** para adicionar o componente **DirectionalIndicator**:
 
 ![Unity com o componente do solucionador DirectionalIndicator adicionado](images/mr-learning-base/base-05-section2-step1-2.png)
 
@@ -85,7 +85,7 @@ Na janela hierarquia, selecione o objeto RoverExplorer > **RoverAssembly** e, na
 
 * Verifique se o **Tipo de Destino Rastreado** do componente **SolverHandler** está definido como **Cabeça**
 * Marque a caixa de seleção **Manter Orientação Vertical**
-* No menu suspenso **Superfícies Magnéticas** > **Elemento 0** , desmarque todas as opções que esperam **Reconhecimento Espacial**
+* No menu suspenso **Superfícies Magnéticas** > **Elemento 0**, desmarque todas as opções que esperam **Reconhecimento Espacial**
 
 ![Unity com o componente do solucionador TapToPlace adicionado e configurado](images/mr-learning-base/base-05-section3-step1-1.png)
 
@@ -104,20 +104,20 @@ Com o objeto RoverAssembly ainda selecionado na janela Hierarquia, na janela Ins
 Configure o evento da seguinte maneira:
 
 * Atribua o objeto **RoverAssembly** como um ouvinte para o evento On Placing Started () arrastando-o da janela Hierarquia para o campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **TapToPlace** > **float SurfaceNormalOffset** para atualizar o valor da propriedade SurfaceNormalOffset quando o evento é disparado
+* Na lista suspensa **Sem Função**, selecione **TapToPlace** > **float SurfaceNormalOffset** para atualizar o valor da propriedade SurfaceNormalOffset quando o evento é disparado
 * Verifique se o argumento está definido como **0**
 
 ![Unity com o evento TapToPlace OnPlacingStarted configurado](images/mr-learning-base/base-05-section3-step1-3.png)
 
-Na janela Hierarquia, clique com o botão direito do mouse em um ponto vazio e selecione **Objeto 3D** > **Cubo** , para criar um objeto temporário que representa o aterramento e configure o componente **Transformação** da seguinte maneira:
+Na janela Hierarquia, clique com o botão direito do mouse em um ponto vazio e selecione **Objeto 3D** > **Cubo**, para criar um objeto temporário que representa o aterramento e configure o componente **Transformação** da seguinte maneira:
 
-* **Posição** : X = 0, Y = -1,65, Z = 6
-* **Rotação** : X = 0, Y = 0, Z = 0
-* **Escala** : X = 10, Y = 0,2, Z = 10
+* **Posição**: X = 0, Y = -1,65, Z = 6
+* **Rotação**: X = 0, Y = 0, Z = 0
+* **Escala**: X = 10, Y = 0,2, Z = 10
 
 ![Unity com o objeto de cubo de chão temporário adicionado e posicionado](images/mr-learning-base/base-05-section3-step1-4.png)
 
-Com o Cubo temporário ainda selecionado na janela Hierarquia, na janela Inspetor, use a lista suspensa **Camadas** para alterar a configuração de camada do cubo apenas para incluir a camada **Conscientização Espacial** :
+Com o Cubo temporário ainda selecionado na janela Hierarquia, na janela Inspetor, use a lista suspensa **Camadas** para alterar a configuração de camada do cubo apenas para incluir a camada **Conscientização Espacial**:
 
 ![Unity com a Camada de objeto de cubo de chão temporário definida como Reconhecimento Espacial](images/mr-learning-base/base-05-section3-step1-5.png)
 

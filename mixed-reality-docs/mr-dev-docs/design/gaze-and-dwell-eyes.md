@@ -6,19 +6,19 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Acompanhamento Ocular, Realidade Misturada, Entrada, Foco com o Olhar, Focalização com os Olhos, HoloLens 2, Seleção Ocular, Esperar
-ms.openlocfilehash: b7c2b22c24336813231e7e5ea4742f03b9d78004
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Acompanhamento do Olhar, Realidade Misturada, Entrada, Foco do Olhar, Direcionamento de Foco, HoloLens 2, Seleção baseada no Olhar, Permanência, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, design
+ms.openlocfilehash: 2d17b93b09b204e6ebb94a51bcc709ee043b5018
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695598"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702302"
 ---
 # <a name="eye-gaze-and-dwell"></a>Focar com o olhar e esperar
 
 O modelo de interação de _"focar com o olhar e esperar"_ é um caso especial do modelo de interação de [focar com o olhar e esperar](gaze-and-commit.md):
 1. Basta olhar para um alvo e 
-2. Para confirmar sua intenção de selecionar o alvo, realize uma entrada secundária explícita: _Basta continuar olhando o alvo que você gostaria de selecionar_ .
+2. Para confirmar sua intenção de selecionar o alvo, realize uma entrada secundária explícita: _Basta continuar olhando o alvo que você gostaria de selecionar_.
 
 ## <a name="advantages-of-the-eye-gaze-and-dwell-interaction-model"></a>Vantagens do modelo de interação “focar com o olhar e esperar” 
 Quando as mãos já estiverem ocupadas com uma tarefa ou segurando ferramentas, usá-las para interagir com hologramas talvez não seja uma opção.
@@ -32,7 +32,7 @@ Se o tempo de espera for curto demais: O usuário poderá se sentir sobrecarrega
 
 ## <a name="design-recommendations"></a>Recomendações sobre design
 É recomendável usar uma abordagem de dois estados para comentários de espera:
-1. *Atraso inicial* : quando o usuário começa a olhar um alvo, nada deve acontecer imediatamente, pois isso pode resultar em uma experiência de usuário desagradável e desanimadora. Em vez disso, inicie um temporizador para detectar se o usuário está encarando intencionalmente o alvo ou apenas passando os olhos por ele.
+1. *Atraso inicial*: quando o usuário começa a olhar um alvo, nada deve acontecer imediatamente, pois isso pode resultar em uma experiência de usuário desagradável e desanimadora. Em vez disso, inicie um temporizador para detectar se o usuário está encarando intencionalmente o alvo ou apenas passando os olhos por ele.
 Recomendamos um tempo inicial de 150 a 250 ms em uma determinada proximidade (o que significa que o usuário está fitando um grande alvo em vez de passando os olhos por ele).  
 2. *Iniciar comentários de espera:* depois de verificar se o usuário está olhando intencionalmente o alvo, comece a mostrar os comentários de espera para informar o usuário de que a ativação da espera está sendo iniciada. 
 3. *Comentários contínuos:* embora o usuário continue olhando o alvo, mostre um indicador de progresso contínuo para que ele saiba que precisa continuar olhando. Especificamente para a entrada com foco de olhar, recomendamos _atrair a atenção visual do usuário_ começando com um círculo ou uma esfera maior que se contrai para uma versão menor. Mostrar um indicador para o estado final (círculo pequeno) ajudará a se comunicar com o usuário quando a espera for concluída. Uma ilustração de exemplo é mostrada abaixo. 

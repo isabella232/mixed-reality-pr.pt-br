@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 717bd1a259c8e21058023a7c45c3ee34783fec4a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353414"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679225"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Compartilhar movimentações de objeto com vários usuários
 
@@ -39,13 +39,13 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserC
 
 Na janela Hierarquia, expanda o objeto **NetworkLobby** e selecione o objeto filho **NetworkRoom**. Em seguida, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:
 
-* Para o campo **Pré-fabricado do Rover Explorer** , atribua o pré-fabricado **RoverExplorer_Complete_Variant** da pasta Recursos
+* Para o campo **Pré-fabricado do Rover Explorer**, atribua o pré-fabricado **RoverExplorer_Complete_Variant** da pasta Recursos
 
 ![Unity com o componente Sala do Photon parcialmente configurado](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
 Com o objeto filho **NetworkRoom** ainda selecionado, na janela Hierarquia, expanda o objeto **TableAnchor** e, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:
 
-* No campo **Localização do Explorador do Rover** , atribua o objeto filho TableAnchor > **Table** por meio da janela Hierarquia
+* No campo **Localização do Explorador do Rover**, atribua o objeto filho TableAnchor > **Table** por meio da janela Hierarquia
 
 ![Unity com o componente Sala do Photon configurado](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 

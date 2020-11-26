@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a7fa1bdaa72d341eaa49ac70dfa926d8f9bbad7a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696139"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679725"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2. Como usar o reconhecimento de fala para executar comandos
 
@@ -26,19 +26,19 @@ Neste tutorial, você adicionará a capacidade de executar comandos usando o rec
 
 Na janela Hierarquia, selecione o objeto **Lunarcom** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Reconhecedor de Palavra de Despertar do Lunarcom (Script)** ao objeto Lunarcom e configure-o da seguinte maneira:
 
-* No campo **Palavra de Despertar** , insira uma frase adequada, por exemplo, _Ativar o terminal_ .
-* No campo **Palavra de Ignorar** , insira uma frase adequada, por exemplo, _Ignorar o terminal_ .
+* No campo **Palavra de Despertar**, insira uma frase adequada, por exemplo, _Ativar o terminal_.
+* No campo **Palavra de Ignorar**, insira uma frase adequada, por exemplo, _Ignorar o terminal_.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > O componente Reconhecedor de Palavra de Despertar do Lunarcom (Script) não faz parte do MRTK. Ele foi fornecido com os ativos deste tutorial.
 
-Se agora você inserir o modo de jogo, como no tutorial anterior, o painel do terminal será habilitado por padrão, mas você poderá desabilitá-lo dizendo a Palavra de Ignorar, **Ignorar terminal** :
+Se agora você inserir o modo de jogo, como no tutorial anterior, o painel do terminal será habilitado por padrão, mas você poderá desabilitá-lo dizendo a Palavra de Ignorar, **Ignorar terminal**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-E habilitá-la novamente dizendo a Palavra de Despertar, **Ativar terminal** :
+E habilitá-la novamente dizendo a Palavra de Despertar, **Ativar terminal**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 

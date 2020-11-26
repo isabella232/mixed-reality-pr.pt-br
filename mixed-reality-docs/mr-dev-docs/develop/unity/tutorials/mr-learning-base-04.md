@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores, coleção de objetos de grade
 ms.localizationpriority: high
-ms.openlocfilehash: 849de7c50adc8ff1da5262ad46fae50cce48e953
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353214"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679305"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Como posicionar objetos na cena
 
@@ -47,15 +47,15 @@ Na janela Hierarquia, clique com o botão direito do mouse em um ponto vazio e s
 > [!TIP]
 > Para exibir a janela Cena e Jogo lado a lado como mostra a imagem acima, arraste a janela Jogo para o lado direito da janela Cena. Para saber mais sobre como personalizar o seu workspace, você pode consultar a documentação <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Como personalizar o seu workspace</a> do Unity.
 
-Clique com o botão direito do mouse no objeto recém-criado, selecione **Renomear** e altere o nome para **RoverExplorer** :
+Clique com o botão direito do mouse no objeto recém-criado, selecione **Renomear** e altere o nome para **RoverExplorer**:
 
 ![Menu pop-up contextual Renomear do Unity](images/mr-learning-base/base-04-section2-step1-2.png)
 
 Com o objeto RoverExplorer ainda selecionado, na janela Inspetor, configure o componente **Transformar** da seguinte maneira:
 
-* **Posição** : X = 0, Y = -0,6, Z = 2
-* **Rotação** : X = 0, Y = 0, Z = 0
-* **Escala** : X = 1, Y = 1, Z = 1
+* **Posição**: X = 0, Y = -0,6, Z = 2
+* **Rotação**: X = 0, Y = 0, Z = 0
+* **Escala**: X = 1, Y = 1, Z = 1
 
 ![Unity com o objeto RoverExplorer selecionado e posicionado](images/mr-learning-base/base-04-section2-step1-3.png)
 
@@ -64,7 +64,7 @@ Com o objeto RoverExplorer ainda selecionado, na janela Inspetor, configure o co
 
 ## <a name="adding-the-tutorial-prefabs"></a>Como adicionar os pré-fabricados do tutorial
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingStarted** > **Pré-fabricados** :
+Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingStarted** > **Pré-fabricados**:
 
 ![Janela Projeto do Unity com a pasta Pré-fabricados selecionada](images/mr-learning-base/base-04-section3-step1-1.png)
 
@@ -73,9 +73,9 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingSta
 
 Na janela Projeto, clique e arraste o pré-fabricado **Tabela** no objeto **RoverExplorer** para torná-la um filho do objeto RoverExplorer e, na janela Inspetor, configure o componente **Transformar** da seguinte maneira:
 
-* **Posição** : X = 0, Y = -0,005, Z = 0
-* **Rotação** : X = 0, Y = 0, Z = 0
-* **Escala** : X = 1,2, Y = 0,01, Z = 1,2
+* **Posição**: X = 0, Y = -0,005, Z = 0
+* **Rotação**: X = 0, Y = 0, Z = 0
+* **Escala**: X = 1,2, Y = 0,01, Z = 1,2
 
 ![Unity com o pré-fabricado Tabela recém-adicionado selecionado e posicionado](images/mr-learning-base/base-04-section3-step1-2.png)
 
@@ -84,9 +84,9 @@ Na janela Projeto, clique e arraste o pré-fabricado **Tabela** no objeto **Rove
 
 Na janela Projeto, clique e arraste o pré-fabricado **RoverAssembly** para o objeto **RoverExplorer** para torná-lo um filho do objeto RoverExplorer e, em seguida, na janela Inspetor, configure o componente **Transformar** da seguinte maneira:
 
-* **Posição** : X = -0,1, Y = 0, Z = 0
-* **Rotação** : X = 0, Y = -135, Z = 0
-* **Escala** : X = 1, Y = 1, Z = 1
+* **Posição**: X = -0,1, Y = 0, Z = 0
+* **Rotação**: X = 0, Y = -135, Z = 0
+* **Escala**: X = 1, Y = 1, Z = 1
 
 ![Unity com o pré-fabricado RoverAssembly recém-adicionado selecionado e posicionado](images/mr-learning-base/base-04-section3-step1-3.png)
 
@@ -94,9 +94,9 @@ Na janela Projeto, clique e arraste o pré-fabricado **RoverAssembly** para o ob
 
 Na janela Hierarquia, clique com o botão direito do mouse no objeto **RoverExplorer** e selecione **Criar Vazio** para adicionar um objeto vazio como um filho do RoverExplorer, nomeie o objeto **RoverParts** e configure o componente **Transformar** da seguinte maneira:
 
-* **Posição** : X = 0, Y = 0,06, Z = 0
-* **Rotação** : X = 0, Y = 90, Z = 0
-* **Escala** : X = 1, Y = 1, Z = 1
+* **Posição**: X = 0, Y = 0,06, Z = 0
+* **Rotação**: X = 0, Y = 90, Z = 0
+* **Escala**: X = 1, Y = 1, Z = 1
 
 ![Unity com o objeto RoverParts recém-criado selecionado e posicionado](images/mr-learning-base/base-04-section4-step1-1.png)
 
@@ -118,7 +118,7 @@ Para facilitar o trabalho com a sua cena, na janela Hierarquia, clique no ícone
 > [!TIP]
 > Para saber mais sobre os controles de Visibilidade da Cena e como usá-los para otimizar o fluxo de trabalho e a exibição de cena, você pode consultar a documentação <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Visibilidade da Cena</a> do Unity.
 
-Na janela Hierarquia, limpe os nomes dos objetos filho RoverParts substituindo o **(1)** acrescentado por **_Part** :
+Na janela Hierarquia, limpe os nomes dos objetos filho RoverParts substituindo o **(1)** acrescentado por **_Part**:
 
 ![Unity com o nome de peças duplicadas limpo](images/mr-learning-base/base-04-section4-step1-5.png)
 
@@ -128,10 +128,10 @@ Na janela Hierarquia, selecione o objeto **RoverParts** e, em seguida, na janela
 
 Configure os valores de componente **GridObjectCollection** da seguinte maneira:
 
-* **Tipo de Classificação** : Alfabético
-* **Layout** : Horizontal
-* **Largura da Célula** : 0,25
-* **Distância do pai** : 0,38
+* **Tipo de Classificação**: Alfabético
+* **Layout**: Horizontal
+* **Largura da Célula**: 0,25
+* **Distância do pai**: 0,38
 
 ![Unity com o componente GridObjectCollection configurado](images/mr-learning-base/base-04-section4-step1-7.png)
 

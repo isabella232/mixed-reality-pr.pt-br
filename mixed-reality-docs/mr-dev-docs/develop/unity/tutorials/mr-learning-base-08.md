@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353494"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679745"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
 
@@ -30,7 +30,7 @@ Neste tutorial, você aprenderá a habilitar o acompanhamento de olho para o Hol
 
 ## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>Como garantir que a funcionalidade de Entrada de Foco de Olho esteja habilitada
 
-No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitários > **Configurar Projeto do Unity** para abrir a janela **Configurador de Projeto do MRTK** e, em seguida, na seção **Recursos da UWP** , verifique se a opção **Habilitar Funcionalidade de Entrada de Foco de Olho** está esmaecida:
+No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitários > **Configurar Projeto do Unity** para abrir a janela **Configurador de Projeto do MRTK** e, em seguida, na seção **Recursos da UWP**, verifique se a opção **Habilitar Funcionalidade de Entrada de Foco de Olho** está esmaecida:
 
 ![Janela Configurador de Projeto do MRTK no Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
@@ -63,7 +63,7 @@ Na janela hierarquia, selecione o objeto **MixedRealityToolkit** e, em seguida, 
 
 ## <a name="adding-eye-tracking-to-objects"></a>Como adicionar acompanhamento de olho a objetos
 
-Na janela Hierarquia, expanda o objeto RoverExplorer > **Botões** e, para cada um dos três objetos de botão filho, expanda e selecione o objeto SeeItSayItLabel > **TextMeshPro** :
+Na janela Hierarquia, expanda o objeto RoverExplorer > **Botões** e, para cada um dos três objetos de botão filho, expanda e selecione o objeto SeeItSayItLabel > **TextMeshPro**:
 
 ![Unity com o objeto TextMeshPro selecionado](images/mr-learning-base/base-08-section4-step1-1.png)
 
@@ -79,12 +79,12 @@ Na janela Hierarquia, selecione o objeto **Dicas** > SeeItSayItLabel > **TextMes
 * Na seção de evento **On Look At Start ()**
   * Clique no ícone pequeno **+** para adicionar outro evento
   * Atribua o objeto em si, ou seja, o mesmo objeto **TextMeshPro** ao campo **Nenhum (Objeto)**
-  * Na lista suspensa **Sem Função** , selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
+  * Na lista suspensa **Sem Função**, selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
   * Defina o argumento como **0,06** para aumentar o tamanho da fonte atual de 0,04 em 50%
 * Na seção de evento **On Look Away ()**
   * Clique no ícone pequeno **+** para adicionar outro evento
   * Atribua o objeto em si, ou seja, o mesmo objeto **TextMeshPro** ao campo **Nenhum (Objeto)**
-  * Na lista suspensa **Sem Função** , selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
+  * Na lista suspensa **Sem Função**, selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
   * Defina o argumento como **0,04** para redefinir o tamanho da fonte de volta para 0,04
 
 ![Unity com o objeto Hints TextMeshPro selecionado e o componente EyeTrackingTarget configurado](images/mr-learning-base/base-08-section4-step1-3.png)

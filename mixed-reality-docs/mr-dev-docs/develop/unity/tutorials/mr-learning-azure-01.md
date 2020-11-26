@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: azure, mixed reality, unity, tutorial, hololens, hololens 2, azure blob storage, azure table storage, azure spatial anchors, azure bot framework
+keywords: azure, realidade misturada, unity, tutorial, hololens, hololens 2, armazenamento de blobs do azure, armazenamento de tabelas do azure, âncoras espaciais do azure, azure bot framework, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416972"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679415"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Serviços de Nuvem do Azure para HoloLens 2
 
@@ -55,7 +55,7 @@ Você usará o [Armazenamento do Azure](https://azure.microsoft.com/services/sto
 
 ### <a name="azure-custom-vision"></a>Visão Personalizada do Azure
 
-Com a [Visão Personalizada do Azure](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (parte dos [Serviços Cognitivos do Azure](https://azure.microsoft.com/services/cognitive-services/)), você pode associar um conjunto de imagens a *Objetos Rastreados* , treinar um modelo de machine learning no conjunto e detectar o *Objeto Rastreado*.
+Com a [Visão Personalizada do Azure](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (parte dos [Serviços Cognitivos do Azure](https://azure.microsoft.com/services/cognitive-services/)), você pode associar um conjunto de imagens a *Objetos Rastreados*, treinar um modelo de machine learning no conjunto e detectar o *Objeto Rastreado*.
 
 ### <a name="azure-spatial-anchors"></a>Âncoras Espaciais do Azure
 
@@ -106,7 +106,7 @@ No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a
 
 ## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
 
-Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados** :
+Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
@@ -127,7 +127,7 @@ Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelh
 
 Nesta seção, você vai preparar a cena adicionando alguns pré-fabricados do tutorial.
 
-Na janela do projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureCloudServices** > **Pré-fabricados** > **Gerenciador**. Mantendo pressionada a tecla CTRL, clique em **SceneController** , **RootMenu** e **DataManager** para selecionar os três pré-fabricados:
+Na janela do projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureCloudServices** > **Pré-fabricados** > **Gerenciador**. Mantendo pressionada a tecla CTRL, clique em **SceneController**, **RootMenu** e **DataManager** para selecionar os três pré-fabricados:
 
 ![Unity com os pré-fabricados SceneController, RootMenu e DataManager selecionados](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
@@ -150,11 +150,11 @@ Para se concentrar nos objetos da cena, clique duas vezes no objeto **RootMenu**
 
 ## <a name="configuring-the-scene"></a>Configurando a cena
 
-Nesta seção, você conectará *SceneManager* , *DataManager* e *RootMenu* juntos para ter uma cena funcional pronta para o seguinte tutorial, [Integrar o armazenamento do Azure](mr-learning-azure-01.md).
+Nesta seção, você conectará *SceneManager*, *DataManager* e *RootMenu* juntos para ter uma cena funcional pronta para o seguinte tutorial, [Integrar o armazenamento do Azure](mr-learning-azure-01.md).
 
 ### <a name="connect-the-objects"></a>Conectar os objetos
 
-Na janela Hierarquia, selecione o objeto **DataManager** :
+Na janela Hierarquia, selecione o objeto **DataManager**:
 
 ![Unity com o objeto DataManager selecionado](images/mr-learning-azure/tutorial1-section6-step1-1.png)
 
@@ -166,7 +166,7 @@ Você observará que o menu suspenso do evento se tornou ativo; clique no menu s
 
 ![Unity com a ação de evento do DataManager adicionada](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
-Na janela Hierarquia, selecione o objeto **SceneController** ; então, no Inspetor, você encontrará o componente **SceneController** (script).
+Na janela Hierarquia, selecione o objeto **SceneController**; então, no Inspetor, você encontrará o componente **SceneController** (script).
 
 ![Unity com a opção SceneController selecionada](images/mr-learning-azure/tutorial1-section6-step1-4.png)
 
@@ -186,11 +186,11 @@ No menu do Unity, selecione **Editar** > **Configurações de Projeto...** para 
 
 ![Abrir Configurações de Projeto do Unity](images/mr-learning-azure/tutorial1-section7-step1-1.png)
 
-Na janela Configurações do Projeto, selecione **Jogador** e **Configurações de Publicação** :
+Na janela Configurações do Projeto, selecione **Jogador** e **Configurações de Publicação**:
 
 ![Configurações de Publicação do Unity](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
-Em **Configurações de Publicação** , role para baixo até a seção **Funcionalidades** e verifique se as funcionalidades **InternetClient** , **Microphone** e **SpatialPerception** , que você habilitou ao criar o projeto no início do tutorial, estão habilitadas. Em seguida, habilite as funcionalidades **InternetClientServer** , **PrivateNetworkClientServer** e **Webcam** :
+Em **Configurações de Publicação**, role para baixo até a seção **Funcionalidades** e verifique se as funcionalidades **InternetClient**, **Microphone** e **SpatialPerception**, que você habilitou ao criar o projeto no início do tutorial, estão habilitadas. Em seguida, habilite as funcionalidades **InternetClientServer**, **PrivateNetworkClientServer** e **Webcam**:
 
 ![Funcionalidades do Unity](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, hololens 2, Azure spatial anchors
+keywords: realidade misturada, unity, tutorial, hololens 2, âncoras espaciais do Azure, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353244"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679335"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrar as Âncoras Espaciais do Azure
 
@@ -43,7 +43,7 @@ Na janela Projeto, navegue até **Ativos > MRTK.Tutorials.AzureCloudServices > P
 
 ![Unity com o pré-fabricado AnchorManager selecionado](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
-Na pasta **Gerenciador** , arraste e solte o pré-fabricadp **Gerenciador de Âncora** na Hierarquia de cena.
+Na pasta **Gerenciador**, arraste e solte o pré-fabricadp **Gerenciador de Âncora** na Hierarquia de cena.
 
 Selecione o GameObject **Gerenciador de Âncora** na Hierarquia e, na seção Inspetor, você encontrará o **Gerenciador de Âncora Espacial** (Script). Localize a ID da conta e o campo de chave e adicione as credenciais que você criou no pré-requisito no estágio anterior.
 
@@ -74,9 +74,9 @@ Forneça o **nome** do objeto que você deseja salvar e clique em **Definir Obje
 
 Para salvar o local, clique em **Salvar Local**
 
-Você verá um **ponteiro de âncora** que poderá mover e posicionar no local que deseja salvar. Depois disso, você verá um pop-up de confirmação. Se você quiser confirmar e salvar o local, clique em **Sim** ; caso contrário, altere o local clicando em **Não** e selecionando o local novamente.
+Você verá um **ponteiro de âncora** que poderá mover e posicionar no local que deseja salvar. Depois disso, você verá um pop-up de confirmação. Se você quiser confirmar e salvar o local, clique em **Sim**; caso contrário, altere o local clicando em **Não** e selecionando o local novamente.
 
-Depois de confirmar o local clicando em **Sim** , o local e a ID da Âncora serão salvos no armazenamento em nuvem do Azure. Depois de salvar, você verá a **Marca de objeto** na âncora com o nome do objeto.
+Depois de confirmar o local clicando em **Sim**, o local e a ID da Âncora serão salvos no armazenamento em nuvem do Azure. Depois de salvar, você verá a **Marca de objeto** na âncora com o nome do objeto.
 
 Agora o local do objeto foi salvo com êxito.
 
@@ -84,11 +84,11 @@ Agora o local do objeto foi salvo com êxito.
 
 Depois de salvar com êxito o local de âncora, agora você pode encontrar o local da âncora selecionando **Pesquisar Objeto** no menu principal.
 
-Depois de clicar em **Pesquisar Objeto** , uma nova janela será exibida, na qual você deverá dar o nome do objeto que deseja pesquisar.
+Depois de clicar em **Pesquisar Objeto**, uma nova janela será exibida, na qual você deverá dar o nome do objeto que deseja pesquisar.
 
 Insira o nome do objeto e clique em **Pesquisar Objeto**. Se o objeto foi salvo anteriormente e for encontrado no banco de dados, você obterá o cartão de objeto com todos os detalhes do objeto que você salvou anteriormente.
 
-Agora você pode clicar em **Mostrar Local** para localizar o objeto. Ao clicar em **Mostrar Local** , o sistema consultará o endereço do objeto no armazenamento em nuvem.
+Agora você pode clicar em **Mostrar Local** para localizar o objeto. Ao clicar em **Mostrar Local**, o sistema consultará o endereço do objeto no armazenamento em nuvem.
 
 Depois de recuperar o local com êxito, uma **seta** vai direcioná-lo para o local do objeto. Siga a marca de seta até encontrar o local do objeto.
 

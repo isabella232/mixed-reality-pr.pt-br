@@ -5,14 +5,14 @@ author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
-keywords: Realidade Misturada, holográfico, RA, VR, MR, XR, realidade aumentada, realidade virtual, explicação
+keywords: Realidade Misturada, holográfico, AR, VR, MR, XR, realidade aumentada, realidade virtual, explicação, estudo de caso, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada
 ms.localizationpriority: high
-ms.openlocfilehash: 44914decd9530a11d11127b43af527d995f6c252
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: 5f4e41c04206eb5ca1a0d2e0dac914a1b3b1052d
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631484"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703122"
 ---
 # <a name="what-is-mixed-reality"></a>O que é Realidade Misturada?
 

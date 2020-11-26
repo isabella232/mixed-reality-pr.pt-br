@@ -6,19 +6,19 @@ ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Realidade misturada, interação, design, HoloLens, mãos, à distância, apontar e confirmar
-ms.openlocfilehash: 5baf625127b1c1757bb6ae82473adcb8329746cd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realidade Misturada, interação, design, HoloLens, mãos, longe, apontar e confirmar, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, raios de mão, manipulação de objeto, MRTK, Kit de Ferramentas de Realidade Misturada, DoF
+ms.openlocfilehash: 91befcec2d9b020c58d3ed02fd181122ce715936
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695218"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703452"
 ---
 # <a name="point-and-commit-with-hands"></a>Apontar e confirmar com as mãos
 
 ![Cursores](images/UX_Hero_HandRay.jpg)
 
-Apontar e confirmar com as mãos é um modelo de entrada que permite aos usuários focalizar, selecionar e manipular objetos 3D e conteúdo 2D que estão fora do alcance. Essa técnica de interação "à distância" é exclusiva da realidade misturada e não é uma forma natural de interação humana com o mundo real. Por exemplo, no filme de super-heróis *X-Men* , o personagem [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) é capaz de manipular um objeto à distância com suas mãos. Isso não é algo que os humanos podem fazer na realidade. No HoloLens (RA) e na MR (Realidade Misturada), nós equipamos os usuários com esse poder mágico, quebrando a restrição física do mundo real para não somente permitir uma experiência divertida com o conteúdo holográfico, como também tornar as interações do usuário mais eficazes e eficientes.
+Apontar e confirmar com as mãos é um modelo de entrada que permite aos usuários focalizar, selecionar e manipular objetos 3D e conteúdo 2D que estão fora do alcance. Essa técnica de interação "à distância" é exclusiva da realidade misturada e não é uma forma natural de interação humana com o mundo real. Por exemplo, no filme de super-heróis *X-Men*, o personagem [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) é capaz de manipular um objeto à distância com suas mãos. Isso não é algo que os humanos podem fazer na realidade. No HoloLens (RA) e na MR (Realidade Misturada), nós equipamos os usuários com esse poder mágico, quebrando a restrição física do mundo real para não somente permitir uma experiência divertida com o conteúdo holográfico, como também tornar as interações do usuário mais eficazes e eficientes.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -60,12 +60,12 @@ Esse comando gestual básico é disparado usando o polegar e o dedo indicador pa
     :::column:::
         ![apontar com raios de mão](images/hand-rays-pointing.jpg)<br>
         **Estado de apontar**<br>
-        Ao *apontar* , o raio é mostrado como uma linha tracejada e o cursor assume a forma de uma rosca.
+        Ao *apontar*, o raio é mostrado como uma linha tracejada e o cursor assume a forma de uma rosca.
     :::column-end:::
     :::column:::
         ![confirmar com raios de mão](images/hand-rays-commit.jpg)<br>
         **Estado de confirmação**<br>
-        Ao *confirmar* , o raio se transforma em uma linha sólida e o cursor se reduz a um ponto.
+        Ao *confirmar*, o raio se transforma em uma linha sólida e o cursor se reduz a um ponto.
     :::column-end:::
 :::row-end:::
 

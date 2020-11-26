@@ -7,15 +7,15 @@ ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
-ms.openlocfilehash: cd0fcd0f2247582582f008c3c1131e893d89a3de
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, MRTK, Kit de Ferramentas de Realidade Misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
+ms.openlocfilehash: f33e66b0077f9b1f1255ee8da564ac588d1e02b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573190"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677255"
 ---
-# <a name="sample-apps"></a>Exemplos de aplicativos
+# <a name="sample-apps"></a>Aplicativos de exemplo
 
 <br/><img src="https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif" width="100%" _alt="Sample apps">
 

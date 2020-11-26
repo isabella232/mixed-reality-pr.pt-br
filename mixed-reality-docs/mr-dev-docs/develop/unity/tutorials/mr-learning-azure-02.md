@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage
+keywords: realidade misturada, unity, tutorial, hololens, hololens 2, armazenamento do azure, serviços de nuvem do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 64e4aaadf13c03272a4fc9c552a7e4b31e82fdbb
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
+ms.openlocfilehash: f13014757c4a3d6f9a6f3ffd53ef6aaf19334e2f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549099"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679365"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrar o armazenamento do Azure
 

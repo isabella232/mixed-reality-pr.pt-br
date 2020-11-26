@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679245"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 
@@ -27,7 +27,7 @@ Neste tutorial, você aprenderá a criar comandos de fala e a controlá-los glob
 
 ## <a name="ensuring-the-microphone-capability-is-enabled"></a>Garantir que a funcionalidade do Microfone esteja habilitada
 
-No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitários > **Configurar Projeto do Unity** para abrir a janela **Configurador de Projeto do MRTK** e, em seguida, na seção **Recursos da UWP** , verifique se a opção **Habilitar Funcionalidade do Microfone** está esmaecida:
+No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitários > **Configurar Projeto do Unity** para abrir a janela **Configurador de Projeto do MRTK** e, em seguida, na seção **Recursos da UWP**, verifique se a opção **Habilitar Funcionalidade do Microfone** está esmaecida:
 
 ![Habilitar a funcionalidade de microfone](images/mr-learning-base/base-09-section1-step1-1.png)
 
@@ -47,7 +47,7 @@ Na janela Hierarquia, selecione o objeto **MixedRealityToolkit** e, na janela In
 > [!TIP]
 > Para lembrar como clonar perfis de MRTK, consulte as instruções em [Configurando os perfis do MRTK](mr-learning-base-03.md).
 
-Na seção Fala > **Comandos de Fala** , clique no botão **+ Adicionar um Novo Comando de Fala** quatro vezes para adicionar quatro novos comandos de fala à lista de comandos de fala existentes e, em seguida, nos campos **Palavra-Chave** digite as seguintes frases:
+Na seção Fala > **Comandos de Fala**, clique no botão **+ Adicionar um Novo Comando de Fala** quatro vezes para adicionar quatro novos comandos de fala à lista de comandos de fala existentes e, em seguida, nos campos **Palavra-Chave** digite as seguintes frases:
 
 * Habilitar Indicador
 * Habilitar Toque para Posicionar
@@ -70,7 +70,7 @@ Na janela Hierarquia, clique com o botão direito do mouse em um ponto vazio e s
 Nomeie o objeto como **SpeechInputHandler_Global** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **SpeechInputHandler** e configure-o da seguinte maneira:
 
 * **Desmarque** a caixa de seleção **Foco É Necessário** para que os usuários não precisem examinar o objeto com o componente SpeechInputHandler para disparar o comando de fala
-* Na janela Projeto, atribua o pré-fabricado **SpeechConfirmation Tooltip** ao campo **Speech Confirmation Tooltip Prefab** , para que esse pré-fabricado seja exibido quando um comando de fala for reconhecido
+* Na janela Projeto, atribua o pré-fabricado **SpeechConfirmation Tooltip** ao campo **Speech Confirmation Tooltip Prefab**, para que esse pré-fabricado seja exibido quando um comando de fala for reconhecido
 
 ![Como configurar o componente de manipulador de entrada de fala](images/mr-learning-base/base-09-section3-step1-2.png)
 
@@ -80,38 +80,38 @@ No componente SpeechInputHandler, clique no ícone de pequeno **+** três vezes 
 
 Expanda **Elemento 0** e configure-o da seguinte maneira:
 
-* No campo **Palavra-chave** , digite **Habilitar Indicador** para fazer referência ao comando de fala Habilitar Indicador criado na seção anterior
+* No campo **Palavra-chave**, digite **Habilitar Indicador** para fazer referência ao comando de fala Habilitar Indicador criado na seção anterior
 * Clique no ícone pequeno **+** para adicionar um evento
 * Na janela Hierarquia, atribua o objeto **Indicador** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **GameObject** > **SetActive (bool)** para definir essa função como a ação a ser executada quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **GameObject** > **SetActive (bool)** para definir essa função como a ação a ser executada quando o evento for disparado
 * Verifique se a caixa de seleção de argumento está **marcada**
 
 ![Configurar o elemento de palavra-chave 0](images/mr-learning-base/base-09-section3-step1-4.png)
 
 Expanda **Elemento 1** e configure-o da seguinte maneira:
 
-* No campo **Palavra-chave** , digite **Habilitar Caixa Delimitadora** para fazer referência ao comando de fala Habilitar Caixa Delimitadora criado na seção anterior
+* No campo **Palavra-chave**, digite **Habilitar Caixa Delimitadora** para fazer referência ao comando de fala Habilitar Caixa Delimitadora criado na seção anterior
 * Clique no ícone pequeno **+** para adicionar um evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **BoundingBox** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção de argumento está **marcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **ObjectManipulator** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **ObjectManipulator** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção de argumento está **marcada**
 
 ![Configurar o elemento de palavra-chave 1](images/mr-learning-base/base-09-section3-step1-5.png)
 
 Expanda **Elemento 2** e configure-o da seguinte maneira:
 
-* No campo **Palavra-chave** , digite **Desabilitar Caixa Delimitadora** para fazer referência ao comando de fala Desabilitar Caixa Delimitadora criado na seção anterior
+* No campo **Palavra-chave**, digite **Desabilitar Caixa Delimitadora** para fazer referência ao comando de fala Desabilitar Caixa Delimitadora criado na seção anterior
 * Clique no ícone pequeno **+** para adicionar um evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **BoundingBox** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **ObjectManipulator** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **ObjectManipulator** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 
 ![Configurar o elemento de palavra-chave 2](images/mr-learning-base/base-09-section3-step1-6.png)
@@ -119,16 +119,16 @@ Expanda **Elemento 2** e configure-o da seguinte maneira:
 Na janela hierarquia, selecione o objeto RoverExplorer > **RoverAssembly** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **SpeechInputHandler** e configure-o da seguinte maneira:
 
 * Verifique se a caixa de seleção **Foco É Necessário** está **marcada** para que os usuários precisem examinar o objeto com o componente SpeechInputHandler, ou seja, o RoverAssembly, para disparar o comando de fala
-* Na janela Projeto, atribua o pré-fabricado **SpeechConfirmation Tooltip** ao campo **Speech Confirmation Tooltip Prefab** , para que esse pré-fabricado seja exibido quando um comando de fala for reconhecido
+* Na janela Projeto, atribua o pré-fabricado **SpeechConfirmation Tooltip** ao campo **Speech Confirmation Tooltip Prefab**, para que esse pré-fabricado seja exibido quando um comando de fala for reconhecido
 
 ![Adicionar o manipulador de entrada de fala ao Rover Assembly](images/mr-learning-base/base-09-section3-step1-7.png)
 
 No componente SpeechInputHandler, clique no ícone pequeno **+** para adicionar um elemento de palavra-chave. Expanda o elemento recém-criado e configure-o da seguinte maneira:
 
-* No campo **Palavra-chave** , digite **Habilitar Toque para Posicionar** para fazer referência ao comando de fala Habilitar Toque para Posicionar criado na seção anterior
+* No campo **Palavra-chave**, digite **Habilitar Toque para Posicionar** para fazer referência ao comando de fala Habilitar Toque para Posicionar criado na seção anterior
 * Clique no ícone pequeno **+** para adicionar um evento
 * Na janela Hierarquia, atribua o objeto em si, ou seja, o mesmo objeto **RoverAssembly** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **TapToPlace** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **TapToPlace** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção de argumento está **marcada**
 
 ![Configurar o manipulador de entrada de fala no Rover Assembly](images/mr-learning-base/base-09-section3-step1-8.png)

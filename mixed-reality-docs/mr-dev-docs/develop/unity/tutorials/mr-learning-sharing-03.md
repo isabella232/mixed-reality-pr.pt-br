@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 5ebb3ffd66422a5e38bc62ada0f040e00f52671d
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: c16182fe2363b4682a25d70715f5ee8cb65d5886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353464"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679755"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Como conectar vários usuários
 
@@ -51,7 +51,7 @@ Na janela Hierarquia, clique com o botão direito do mouse em uma área vazia e 
 
 ![Unity com o objeto PhotonUser recém-criado selecionado](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
 
-Na janela Hierarquia, selecione o objeto **PhotonUser** , então, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Usuário do Photon (Script)** ao objeto PhotonUser:
+Na janela Hierarquia, selecione o objeto **PhotonUser**, então, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Usuário do Photon (Script)** ao objeto PhotonUser:
 
 ![Unity com o componente Usuário do Photon adicionado](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
 
@@ -63,7 +63,7 @@ Na janela Inspetor, use o botão **Adicionar Componente** para adicionar o compo
 
 Na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Exibição do Photon (Script)** ao objeto PhotonUser e configure-o da seguinte maneira:
 
-* Ao campo **Componentes Observados** , atribua o componente **Sincronização de Rede Genérica (Script)**
+* Ao campo **Componentes Observados**, atribua o componente **Sincronização de Rede Genérica (Script)**
 
 ![Unity com o componente Exibição do Photon adicionado e configurado](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
@@ -75,13 +75,13 @@ Em seguida, na janela Hierarquia, clique com o botão direito do mouse no objeto
 
 * Verifique se a **Posição** da transformação está definida como X = 0, Y = 0 e Z = 0
 * Altere a **Escala** da transformação para um tamanho adequado, por exemplo, X = 0,15, Y = 0,15 e Z = 0,15
-* Para o campo MeshRenderer > Materiais > **Elemento 0** , atribua o material **MRTK_Standard_White**
+* Para o campo MeshRenderer > Materiais > **Elemento 0**, atribua o material **MRTK_Standard_White**
 
 ![Unity com a esfera de avatar recém-criada e configurada](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### <a name="3-create-the-prefab"></a>3. Criar o pré-fabricado
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Recursos** :
+Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Recursos**:
 
 ![Janela Projeto do Unity com a pasta Recursos selecionada](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
@@ -101,7 +101,7 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserC
 
 Na janela Hierarquia, expanda o objeto **NetworkLobby** e selecione o objeto filho **NetworkRoom**. Em seguida, na janela Inspetor, localize o componente **Sala do Photon (Script)** e configure-o da seguinte maneira:
 
-* Ao campo **Pré-fabricado do Usuário do Photon** , atribua o pré-fabricado **PhotonUser** da pasta Recursos
+* Ao campo **Pré-fabricado do Usuário do Photon**, atribua o pré-fabricado **PhotonUser** da pasta Recursos
 
 ![Unity com o componente Sala do Photon parcialmente configurado](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 

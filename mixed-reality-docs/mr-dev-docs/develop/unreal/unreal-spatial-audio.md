@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
-ms.openlocfilehash: 9b953cd0ea9aab92b2306da63a948b470363d0e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, áudio espacial
+ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696121"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679795"
 ---
 # <a name="spatial-audio-in-unreal"></a>Áudio espacial no Unreal
 
@@ -27,7 +27,7 @@ O processamento de som espacial de alta qualidade é complexo e, portanto, o Hol
 A primeira etapa para adicionar som espacial ao seu projeto é instalar o plug-in do Microsoft Spatial Sound, que pode ser encontrado com as seguintes etapas:
 
 1. Clicando em **Editar > Plug-ins** e procurando **MicrosoftSpatialSound** na caixa de pesquisa.
-2. Marcando a caixa de seleção **Habilitado** no plug-in **MicrosoftSpatialSound** .
+2. Marcando a caixa de seleção **Habilitado** no plug-in **MicrosoftSpatialSound**.
 3. Reiniciando o editor do Unreal selecionando **Reiniciar Agora** na página de plug-ins.
 
 > [!NOTE]
@@ -40,12 +40,12 @@ Depois que o editor for reiniciado, o projeto estará pronto.
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>Como configurar o plug-in de espacialização para a plataforma HoloLens 2
 A configuração do plug-in de espacialização é feita de acordo com a plataforma.  Habilite o plug-in do Microsoft Spatial Sound para o HoloLens 2:
-1. Selecionando **Editar > Configurações do Projeto** , rolando a página até **Plataformas** e clicando em **HoloLens** .
-2. Expandindo as propriedades de **Áudio** e definindo o campo **Plug-in de Espacialização** como **Microsoft Spatial Sound** .
+1. Selecionando **Editar > Configurações do Projeto**, rolando a página até **Plataformas** e clicando em **HoloLens**.
+2. Expandindo as propriedades de **Áudio** e definindo o campo **Plug-in de Espacialização** como **Microsoft Spatial Sound**.
 
 ![Plug-in de espacialização para a plataforma HoloLens](images/unreal-spatial-audio-img-02.png)
 
-Se você pretende visualizar seu aplicativo no editor do Unreal em um computador desktop, repita as etapas acima para a plataforma **Windows** :
+Se você pretende visualizar seu aplicativo no editor do Unreal em um computador desktop, repita as etapas acima para a plataforma **Windows**:
 
 ![Plug-in de espacialização para a plataforma Windows](images/unreal-spatial-audio-img-05.png)
 
@@ -61,23 +61,23 @@ O áudio espacial está desabilitado por padrão nas versões de área de trabal
 
 ## <a name="creating-attenuation-objects"></a>Como criar objetos de Atenuação
 Depois de instalar e configurar os plug-ins necessários:
-1. Procure um ator de **Som Ambiente** na janela **Posicionar Atores** e arraste-o para a janela **Cena** .
+1. Procure um ator de **Som Ambiente** na janela **Posicionar Atores** e arraste-o para a janela **Cena**.
 
 ![Como adicionar o ator de som ambiente](images/unreal-spatial-audio-img-07.png)
 
 2. Torne o ator de **Som Ambiente** um filho de um elemento visual na cena.
     * Um ator de Som Ambiente não tem nenhuma representação visual por padrão; portanto, você só ouvirá um som da posição dele na cena. A anexação dele a um elemento visual permite que você veja e mova o ator como qualquer outro ativo.
 
-3.  Clique com o botão direito do mouse no **Navegador de Conteúdo** e selecione **Criar Ativo Avançado -> Sons -> Atenuação de Som** :
+3.  Clique com o botão direito do mouse no **Navegador de Conteúdo** e selecione **Criar Ativo Avançado -> Sons -> Atenuação de Som**:
 
 ![Como criar um ativo de atenuação de som](images/unreal-spatial-audio-img-06.png)
 
 4. Clique com o botão direito do mouse no ativo de **Atenuação de Som** na janela **Navegador de Conteúdo** e selecione a opção **Editar** para abrir a janela Propriedades.
-    * Alterne o **Método de Espacialização** para **Binaural** .
+    * Alterne o **Método de Espacialização** para **Binaural**.
 
 ![Definir o método de espacialização](images/unreal-spatial-audio-img-03.png)
 
-5. Selecione o ator de **Som Ambiente** e role a página para baixo até a seção **Atenuação** no painel **Detalhes** .
+5. Selecione o ator de **Som Ambiente** e role a página para baixo até a seção **Atenuação** no painel **Detalhes**.
     * Defina a propriedade de **Configurações de Atenuação** como o ativo de **Atenuação de Som** criado.
 
 ![Definir a configuração de atenuação](images/unreal-spatial-audio-img-08.png)

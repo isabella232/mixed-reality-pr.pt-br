@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens, hololens 2, serviço de bot do Azure, luis, idioma natural, bot de conversa
+keywords: realidade misturada, unity, tutorial, hololens, hololens 2, serviço de bot do Azure, luis, linguagem natural, bot de conversa, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 417b534223427b491d900ad767d9fd797698ac71
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915551"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679355"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrar o Serviço de Bot do Azure
 
@@ -44,11 +44,11 @@ A meta do bot é ter as capacidades de informar quantos *Objetos Rastreados* sã
 
 ### <a name="a-quick-look-into-tracked-objects-azure-function"></a>Uma visão rápida da Função do Azure de Objetos Rastreados
 
-Você está prestes a começar a criar o bot, porém, para torná-lo útil, você precisa fornecer a ele um recurso do qual ele pode efetuar pull de dados. Como o *Bot* poderá contar a quantidade de **Objetos Rastreados** , localizar objetos específicos pelo nome e informar detalhes, você usará uma função simples do Azure que tem acesso ao **armazenamento de Tabelas do Azure**.
+Você está prestes a começar a criar o bot, porém, para torná-lo útil, você precisa fornecer a ele um recurso do qual ele pode efetuar pull de dados. Como o *Bot* poderá contar a quantidade de **Objetos Rastreados**, localizar objetos específicos pelo nome e informar detalhes, você usará uma função simples do Azure que tem acesso ao **armazenamento de Tabelas do Azure**.
 
 Baixe o projeto da Função do Azure de Objetos Rastreados: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip) e o extraia para o disco rígido.
 
-Esta função do Azure tem duas ações, **Contar** e **Localizar** , que podem ser invocadas por meio de chamadas básicas *HTTP* *GET*. Você pode inspecionar o código no **Visual Studio**.
+Esta função do Azure tem duas ações, **Contar** e **Localizar**, que podem ser invocadas por meio de chamadas básicas *HTTP* *GET*. Você pode inspecionar o código no **Visual Studio**.
 
 Saiba mais sobre [Funções do Azure](https://docs.microsoft.com/azure/azure-functions/functions-overview).
 
@@ -57,7 +57,7 @@ As função **Contar** consulta do **Armazenamento de tabela** todos os **Tracke
 Você pode implantar essa **Função do Azure** diretamente do **Visual Studio**.
 Encontre aqui todas as informações sobre a [implantação de Função do Azure](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true).
 
-Depois de concluir a implantação, no **portal do Azure** , abra o recurso correspondente e clique em **Configuração** , que está na seção *Configurações*. Em **Configurações do Aplicativo** , forneça a *Cadeia de conexão* para o **Armazenamento do Azure** em que os **Objetos Rastreados** são armazenados. Clique em **Configuração de Novo Aplicativo** e use para nome: **AzureStorageConnectionString** e, para Valor, forneça a *Cadeia de conexão* correta. Depois disso, clique em **Salvar** e a **Função do Azure** estará pronta para atender ao *Bot* que será criado em seguida.
+Depois de concluir a implantação, no **portal do Azure**, abra o recurso correspondente e clique em **Configuração**, que está na seção *Configurações*. Em **Configurações do Aplicativo**, forneça a *Cadeia de conexão* para o **Armazenamento do Azure** em que os **Objetos Rastreados** são armazenados. Clique em **Configuração de Novo Aplicativo** e use para nome: **AzureStorageConnectionString** e, para Valor, forneça a *Cadeia de conexão* correta. Depois disso, clique em **Salvar** e a **Função do Azure** estará pronta para atender ao *Bot* que será criado em seguida.
 
 ### <a name="creating-a-conversation-bot"></a>Como criar um bot de conversa
 
@@ -124,7 +124,7 @@ No painel de diálogo, clique em **AskingForCount** e localize a ação *Enviar 
 
 ![Configuração do ponto de extremidade do gatilho da caixa de diálogo AskingForCount do projeto TrackedObjectsBot](images/mr-learning-azure/tutorial5-section5-step1-1.png)
 
-Por fim, procure o gatilho **FindEntity** e localize a ação *Enviar uma solicitação HTTP* ; no campo **URL** , altere a URL para o ponto de extremidade da função **Localizar**.
+Por fim, procure o gatilho **FindEntity** e localize a ação *Enviar uma solicitação HTTP*; no campo **URL**, altere a URL para o ponto de extremidade da função **Localizar**.
 
 ![Configuração do ponto de extremidade do gatilho da caixa de diálogo FindEntity do projeto TrackedObjectsBot](images/mr-learning-azure/tutorial5-section5-step1-2.png)
 
@@ -180,7 +180,7 @@ Ele deverá informar a quantidade e encerrar a conversa.
 
 #### <a name="asking-about-a-tracked-object"></a>Como perguntar sobre um objeto acompanhado
 
-Agora, execute o aplicativo novamente e, desta vez, peça **encontre um objeto rastreado para mim** , o bot perguntará o nome, e você deverá responder com "carro" ou o nome de outro *Objeto Rastreado* que você saiba que existe no banco de dados. O bot informará detalhes como a descrição e se há uma âncora espacial atribuída.
+Agora, execute o aplicativo novamente e, desta vez, peça **encontre um objeto rastreado para mim**, o bot perguntará o nome, e você deverá responder com "carro" ou o nome de outro *Objeto Rastreado* que você saiba que existe no banco de dados. O bot informará detalhes como a descrição e se há uma âncora espacial atribuída.
 
 > [!TIP]
 > Experimente pedir **Objetos Rastreados** que não existam e ouça como o bot responde.
@@ -192,4 +192,4 @@ Neste tutorial, você aprendeu como o Azure Bot Framework pode ser usado para in
 ## <a name="conclusion"></a>Conclusão
 
 No decorrer desta série de tutoriais, você viu como os **Serviços de Nuvem do Azure** trouxeram recursos novos e empolgantes para seu aplicativo.
-Agora você pode armazenar dados e imagens na nuvem com **Armazenamento do Azure** , usar a **Visão Personalizada do Azure** para associar imagens e treinar um modelo, trazer objetos para um contexto local com **Âncoras Espaciais do Azure** e implementar o **Azure Bot Framework desenvolvido com LUIS** para adicionar um bot de conversa para um padrão de interação novo e natural.
+Agora você pode armazenar dados e imagens na nuvem com **Armazenamento do Azure**, usar a **Visão Personalizada do Azure** para associar imagens e treinar um modelo, trazer objetos para um contexto local com **Âncoras Espaciais do Azure** e implementar o **Azure Bot Framework desenvolvido com LUIS** para adicionar um bot de conversa para um padrão de interação novo e natural.

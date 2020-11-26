@@ -5,14 +5,14 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 08/27/2019
 ms.topic: article
-keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, design, sample app, controls
+keywords: HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, Windows Mixed Reality, design, aplicativo de exemplo, controles, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
 ms.localizationpriority: high
-ms.openlocfilehash: d10de5c9f16e0caa289d5110647b4c45a8a8fcf9
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386257"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677526"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101: Como usar o Kit de Ferramentas de Realidade Misturada do Unity para interações espaciais
 ![MRTK](images/MRTK101/MRTK101Cover.png)

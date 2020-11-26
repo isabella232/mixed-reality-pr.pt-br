@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial mapping
-ms.openlocfilehash: 8e49878cf37945c8e317b1098f48014b57d18551
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, mapeamento espacial, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
+ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695600"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678805"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mapeamento espacial no Unreal
 
@@ -24,14 +24,14 @@ No documento [Mapeamento espacial](../../design/spatial-mapping.md), você pode 
 ## <a name="enabling-spatial-mapping"></a>Como habilitar o mapeamento espacial
 
 Para habilitar o mapeamento espacial no HoloLens:
-- Abra **Editar > Configurações do Projeto** e role para baixo até a seção **Plataformas** .    
-    + Selecione **HoloLens** e marque **Percepção Espacial** .
+- Abra **Editar > Configurações do Projeto** e role para baixo até a seção **Plataformas**.    
+    + Selecione **HoloLens** e marque **Percepção Espacial**.
 
 Para aceitar o mapeamento espacial e depurar o **MRMesh** em um jogo do HoloLens:
-1. Abra o **ARSessionConfig** e expanda a seção **ARSettings > Mapeamento do Mundo** . 
+1. Abra o **ARSessionConfig** e expanda a seção **ARSettings > Mapeamento do Mundo**. 
 
-2. Verifique **Gerar Dados de Malha de Geometria Rastreada** , que diz ao plug-in do HoloLens para iniciar a obtenção assíncrona de dados de mapeamento espacial e exibi-los no Unreal por meio do **MRMesh** . 
-3. Marque **Renderizar Dados de Malha em Grade de Linhas** para mostrar um contorno de grade de linhas branco de todos os triângulos no **MRMesh** . 
+2. Verifique **Gerar Dados de Malha de Geometria Rastreada**, que diz ao plug-in do HoloLens para iniciar a obtenção assíncrona de dados de mapeamento espacial e exibi-los no Unreal por meio do **MRMesh**. 
+3. Marque **Renderizar Dados de Malha em Grade de Linhas** para mostrar um contorno de grade de linhas branco de todos os triângulos no **MRMesh**. 
 
 ![Armazenamento de âncoras espaciais pronto](images/unreal-spatialmapping-arsettings.PNG)
 
@@ -39,7 +39,7 @@ Para aceitar o mapeamento espacial e depurar o **MRMesh** em um jogo do HoloLens
 ## <a name="spatial-mapping-at-runtime"></a>Mapeamento espacial em runtime
 Você pode modificar os seguintes parâmetros para atualizar o comportamento do runtime de mapeamento espacial:
 
-- Abra **Editar > Configurações de Projeto** , role para baixo até a seção **Plataformas** e selecione **HoloLens > Mapeamento Espacial** : 
+- Abra **Editar > Configurações de Projeto**, role para baixo até a seção **Plataformas** e selecione **HoloLens > Mapeamento Espacial**: 
 
 ![Configurações do projeto de âncoras espaciais](images/unreal-spatialmapping-projectsettings.PNG)
 
@@ -53,7 +53,7 @@ Para obter acesso ao **MRMesh** em runtime:
 
 ![AR Trackable Notify de âncoras espaciais](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Selecione o componente **ARTrackableNotify** e expanda a seção **Eventos** no painel **Detalhes** . 
+2. Selecione o componente **ARTrackableNotify** e expanda a seção **Eventos** no painel **Detalhes**. 
     - Clique no botão **+** nos eventos que você deseja monitorar. 
 
 ![Eventos de âncoras espaciais](images/unreal-spatialmapping-events.PNG)
@@ -67,12 +67,12 @@ Você pode alterar o material da malha no Gráfico de Eventos do Blueprint ou no
 No C++, você pode assinar o delegado `OnTrackableAdded` para obter a `ARTrackedGeometry` assim que ela estiver disponível, conforme mostrado no código abaixo. 
 
 > [!IMPORTANT]
-> O arquivo build.cs do projeto **PRECISA** ter **AugmentedReality** na lista **PublicDependencyModuleNames** .
-> - Isso inclui **ARBlueprintLibrary.h** e **MRMeshComponent.h** , o que permite a você inspecionar o componente **MRMesh** do **UARTrackedGeometry** . 
+> O arquivo build.cs do projeto **PRECISA** ter **AugmentedReality** na lista **PublicDependencyModuleNames**.
+> - Isso inclui **ARBlueprintLibrary.h** e **MRMeshComponent.h**, o que permite a você inspecionar o componente **MRMesh** do **UARTrackedGeometry**. 
 
 ![Código de exemplo de âncoras espaciais em C++](images/unreal-spatialmapping-examplecode.PNG)
 
-O mapeamento espacial não é o único tipo de dados que é exibido por meio de **ARTrackedGeometries** . Você pode verificar que o `EARObjectClassification` é `World`, o que significa que isso é a geometria de mapeamento espacial. 
+O mapeamento espacial não é o único tipo de dados que é exibido por meio de **ARTrackedGeometries**. Você pode verificar que o `EARObjectClassification` é `World`, o que significa que isso é a geometria de mapeamento espacial. 
 
 Há delegados semelhantes para eventos atualizados e removidos: 
 - `AddOnTrackableUpdatedDelegate_Handle` 

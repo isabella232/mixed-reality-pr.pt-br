@@ -6,16 +6,16 @@ ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, streaming, computador, comunicação remota de aplicativo holográfico, Holographic Remoting Player, documentação
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, streaming, PC, comunicação remota do aplicativo holográfico, player de comunicação remota holográfica, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 9c60168b409a10a815313b1254a979244763b9e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5a001088208106176ae771c2bc684674e6ce37a8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696083"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679775"
 ---
 # <a name="streaming-in-unreal"></a>Streaming no Unreal
 
@@ -75,7 +75,7 @@ Encontre instruções detalhadas em [Streaming do editor do Unreal](tutorials/un
 No Unreal 4.25.1 em diante, você pode transmitir seu aplicativo para um dispositivo HoloLens 2 de um executável empacotado do Windows seguindo as etapas abaixo: 
 
 1. Acesse **Arquivo > Projeto de Pacote > Windows** no menu do editor. 
-    * Escolha uma localização para salvar o pacote e clique em **Selecionar Pasta** .
+    * Escolha uma localização para salvar o pacote e clique em **Selecionar Pasta**.
 
 2. Depois que o pacote terminar de ser compilado, abra o **Holographic Remoting Player** no HoloLens 2 e anote o endereço IP. 
 3. Deixe o **Holographic Remoting Player** aberto e use o prompt de linha de comando para: 

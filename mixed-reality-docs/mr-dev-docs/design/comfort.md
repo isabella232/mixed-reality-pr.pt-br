@@ -6,13 +6,13 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Realidade misturada, design, conforto, HoloLens 2, HoloLens (1ª geração)
-ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Realidade Misturada, design, conforto, HoloLens 2, HoloLens (1ª geração), headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, locomoção
+ms.openlocfilehash: f4edc048086e933a451290a8ca9f19f588797963
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340644"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702652"
 ---
 # <a name="comfort"></a>Conforto
 
@@ -162,13 +162,6 @@ O ângulo de foco ideal (repouso) é considerado entre 10-20 graus abaixo do hor
 ## <a name="arm-positions"></a>Posições do braço
 
 A fadiga muscular pode se acumular quando é esperado que os usuários mantenham uma mão levantada durante toda uma experiência. Também pode ser cansativo exigir que o usuário faça gestos de fechar e abrir os dedos indicador e polegar repetidamente por longas durações. Portanto, recomendamos que as experiências evitem a exigência de uma entrada de gesto constante e repetida. Essa meta pode ser alcançada incorporando pequenos intervalos ou oferecendo uma combinação de entrada de gesto e fala para interagir com o aplicativo.
-
-## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
-
-Se estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você estará no meio da exploração dos fundamentos da Realidade Misturada. Desse ponto, você poderá prosseguir para o próximo tópico básico: 
-
-> [!div class="nextstepaction"]
-> [Como o usuário vê o mundo – (quadro holográfico)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Veja também
 * [Foco](gaze-and-commit.md)

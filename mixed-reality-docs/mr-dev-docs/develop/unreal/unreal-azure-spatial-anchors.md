@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, mixed reality, development, features, new project, emulator, documentation, guides, holograms, game development
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, desenvolvimento do azure, âncoras espaciais, realidade misturada, desenvolvimento, recursos, novo projeto, emulador, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695653"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679865"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Âncoras Espaciais do Azure no Unreal
 
@@ -47,7 +47,7 @@ Confira a documentação [Autenticação das Âncoras Espaciais do Azure](https:
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Como adicionar plug-ins das Âncoras Espaciais do Azure
 
 Habilite os plug-ins das Âncoras Espaciais do Azure no editor do Unreal:
-1. Clicando em **Editar > Plug-ins** e procurando **AzureSpatialAnchors** e **AzureSpatialAnchorsForWMR** .
+1. Clicando em **Editar > Plug-ins** e procurando **AzureSpatialAnchors** e **AzureSpatialAnchorsForWMR**.
 2. Marque a caixa de seleção **Habilitado** nos dois plug-ins para permitir o acesso às bibliotecas de blueprints das Âncoras Espaciais do Azure no seu aplicativo.
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-01.png)
@@ -69,7 +69,7 @@ Inicie uma sessão das Âncoras Espaciais do Azure:
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-03.png)
 
-3. Configure a sessão das Âncoras Espaciais do Azure para fornecer a **ID da Conta** e a **Chave de Conta** .
+3. Configure a sessão das Âncoras Espaciais do Azure para fornecer a **ID da Conta** e a **Chave de Conta**.
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-04.png)
 
@@ -127,12 +127,12 @@ Depois de definir os parâmetros de âncora, declare a âncora como pronta para 
 
 ## <a name="saving-an-anchor"></a>Como salvar uma âncora
 
-Depois de configurar a Âncora Espacial do Azure com os parâmetros, chame a função **Salvar Âncora de Nuvem** . A função Salvar âncora de Nuvem declara a âncora para o serviço Âncoras Espaciais do Azure. Quando a chamada a Salvar Âncora de Nuvem for realizada com sucesso, a Âncora Espacial do Azure estará disponível para outros usuários do serviço Âncora Espacial do Azure.  
+Depois de configurar a Âncora Espacial do Azure com os parâmetros, chame a função **Salvar Âncora de Nuvem**. A função Salvar âncora de Nuvem declara a âncora para o serviço Âncoras Espaciais do Azure. Quando a chamada a Salvar Âncora de Nuvem for realizada com sucesso, a Âncora Espacial do Azure estará disponível para outros usuários do serviço Âncora Espacial do Azure.  
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-15.png)
 
 > [!NOTE]
-> A função Salvar Âncora de Nuvem é assíncrona e só pode ser chamada em um evento de thread de jogo, como **EventTick** . Talvez a função Salvar Âncora de Nuvem não seja exibida como uma função de blueprint disponível nas funções de blueprint personalizadas. No entanto, ela deve estar disponível no editor de blueprint do Grafo de Eventos do Peão.
+> A função Salvar Âncora de Nuvem é assíncrona e só pode ser chamada em um evento de thread de jogo, como **EventTick**. Talvez a função Salvar Âncora de Nuvem não seja exibida como uma função de blueprint disponível nas funções de blueprint personalizadas. No entanto, ela deve estar disponível no editor de blueprint do Grafo de Eventos do Peão.
 
 No exemplo abaixo, a Âncora Espacial do Azure é armazenada em um conjunto durante um retorno de chamada de evento de entrada. Em seguida, a âncora é salva no EventTick. Para salvar uma Âncora Espacial do Azure, podem ser necessárias várias tentativas dependendo do volume de dados espaciais criado pela sessão das Âncoras Espaciais do Azure. Por esse motivo, é uma boa ideia verificar se a chamada de salvamento foi bem-sucedida.
 
@@ -144,7 +144,7 @@ Depois que a âncora for salva, use a transformação de Marcadores de AR como u
 
 ## <a name="deleting-an-anchor"></a>Como excluir uma âncora
 
-Exclua âncoras do serviço Âncora Espacial do Azure chamando **Excluir Âncora de Nuvem** .
+Exclua âncoras do serviço Âncora Espacial do Azure chamando **Excluir Âncora de Nuvem**.
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-17.png)
 
@@ -172,18 +172,18 @@ Além de criar Âncoras Espaciais do Azure, você pode detectar âncoras criadas
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-19.png)
 
-3. Assine o **Delegado Localizado de ASAAnchor** para o componente **AzureSpatialAnchorsEvent** .
+3. Assine o **Delegado Localizado de ASAAnchor** para o componente **AzureSpatialAnchorsEvent**.
     * O delegado permite que o aplicativo saiba quando são localizadas novas âncoras associadas à conta das Âncoras Espaciais do Azure.
-    * Com o retorno de chamada do evento, as Âncoras Espaciais do Azure criadas pelos colegas que usam a sessão das Âncoras Espaciais do Azure não terão Marcadores de AR criados por padrão. Para criar um Marcador de AR para a Âncora Espacial do Azure detectada, os desenvolvedores podem chamar a função **Criar Marcador de RA em Torno da Âncora Espacial de Nuvem do Azure** .
+    * Com o retorno de chamada do evento, as Âncoras Espaciais do Azure criadas pelos colegas que usam a sessão das Âncoras Espaciais do Azure não terão Marcadores de AR criados por padrão. Para criar um Marcador de AR para a Âncora Espacial do Azure detectada, os desenvolvedores podem chamar a função **Criar Marcador de RA em Torno da Âncora Espacial de Nuvem do Azure**.
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-20.png)
 
-Para localizar Âncoras Espaciais do Azure criadas pelos pares usando o serviço Âncora Espacial do Azure, o aplicativo precisará criar um **Observador das Âncoras Espaciais do Azure** :
+Para localizar Âncoras Espaciais do Azure criadas pelos pares usando o serviço Âncora Espacial do Azure, o aplicativo precisará criar um **Observador das Âncoras Espaciais do Azure**:
 1. Verifique se uma sessão das Âncoras Espaciais do Azure está em execução.
-2. Crie um **AzureSpatialAnchorsLocateCriteria** .
+2. Crie um **AzureSpatialAnchorsLocateCriteria**.
     * Você pode especificar vários parâmetros de localização, como distância do usuário ou distância de outra âncora.
-3. Declare o identificador desejado da Âncora Espacial do Azure em **AzureSpatialAnchorsLocateCriteria** .
-4. Chame **Criar Observador** .
+3. Declare o identificador desejado da Âncora Espacial do Azure em **AzureSpatialAnchorsLocateCriteria**.
+4. Chame **Criar Observador**.
 
 ![Plug-ins das Âncoras Espaciais](images/asa-unreal/unreal-spatial-anchors-img-21.png)
 

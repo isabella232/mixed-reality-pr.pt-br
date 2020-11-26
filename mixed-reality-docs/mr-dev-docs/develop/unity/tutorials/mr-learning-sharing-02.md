@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353474"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679255"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurar o Photon Unity Networking
 
@@ -46,11 +46,11 @@ Em seguida, siga as instruções em [Alterar a opção de exibição de reconhec
 
 ## <a name="enabling-additional-capabilities"></a>Como habilitar funcionalidades adicionais
 
-No menu do Unity, selecione **Editar** > **Configurações de projeto...** para abrir a janela Configurações do Player, então localize a seção **Player** >  **Configurações de Publicação** :
+No menu do Unity, selecione **Editar** > **Configurações de projeto...** para abrir a janela Configurações do Player, então localize a seção **Player** >  **Configurações de Publicação**:
 
 ![Configurações de Player do Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-Em **Configurações de publicação** , role para baixo até a seção **Funcionalidades** e verifique novamente se as funcionalidades **InternetClient** , **Microfone** , **SpatialPerception** e **GazeInput** , que você habilitou durante a etapa [Como configurar o projeto Unity](mr-learning-base-02.md#configuring-the-unity-project) acima estão habilitadas.
+Em **Configurações de publicação**, role para baixo até a seção **Funcionalidades** e verifique novamente se as funcionalidades **InternetClient**, **Microfone**, **SpatialPerception** e **GazeInput**, que você habilitou durante a etapa [Como configurar o projeto Unity](mr-learning-base-02.md#configuring-the-unity-project) acima estão habilitadas.
 
 Em seguida, habilite as seguintes funcionalidades adicionais:
 
@@ -70,7 +70,7 @@ No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a
 
 ## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
 
-Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados** :
+Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (versão 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -111,7 +111,7 @@ Navegue até o <a href="https://dashboard.photonengine.com/account/signin" targe
 
 ![Página de logon do Photon](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
-Depois que estiver conectado, clique no botão **Criar um Aplicativo** :
+Depois que estiver conectado, clique no botão **Criar um Aplicativo**:
 
 ![Página inicial do painel do Photon](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
 
@@ -140,7 +140,7 @@ No painel do Photon, clique no campo **ID do Aplicativo** para revelar a ID do a
 
 No menu do Unity, selecione **Janela** > **Photon Unity Networking** > **Assistente do PUN** para abrir a janela do Assistente do PUN, clique no botão **Projeto de Instalação** para abrir o menu Instalação do PUN e configure-o da seguinte maneira:
 
-* No campo **ID do Aplicativo ou Email** , cole a ID do aplicativo PUN copiado na etapa anterior
+* No campo **ID do Aplicativo ou Email**, cole a ID do aplicativo PUN copiado na etapa anterior
 
 Em seguida, clique no botão **Projeto de Instalação** para aplicar a ID do aplicativo:
 

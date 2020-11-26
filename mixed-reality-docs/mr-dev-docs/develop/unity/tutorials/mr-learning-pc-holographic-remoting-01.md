@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, comunicação remota holográfica do PC, dicas de ferramenta, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416992"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679765"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introdução à Comunicação Remota Holográfica para PC
 
@@ -131,11 +131,11 @@ Para cada um dos botões restantes, conclua o processo descrito acima para atrib
 
 Agora, os botões estão configurados para demonstrar a funcionalidade de recorte e troca de modelos. É hora de adicionar modelos 3D e os objetos de recorte ao script.
 
-Fornecemos seis modelos 3D diferentes para demonstração. Expanda o * *_ModelParentobject_* _ para expor esses modelos 3D.
+Fornecemos seis modelos 3D diferentes para demonstração. Expanda o **_ModelParentobject_* _ para expor esses modelos 3D.
 
 Com o objeto ButtonParent ainda selecionado na janela Hierarquia, na janela Inspetor, localize o componente _ *Exibir Controle de Botão (Script)* * e expanda a variável **Modelos**.
 
-No campo **Tamanho** , insira o número de modelos 3D que você gostaria de ter em sua cena. Neste caso, seriam seis. Ele criará campos para adicionar modelos 3D.
+No campo **Tamanho**, insira o número de modelos 3D que você gostaria de ter em sua cena. Neste caso, seriam seis. Ele criará campos para adicionar modelos 3D.
 
 ![Unity com os campos do componente de script de ViewButtonControl](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
 
@@ -157,7 +157,7 @@ Nesta seção, você adicionará o renderizador de objetos filho do objeto MarsC
 
 Na janela Hierarquia, expanda o objeto **ClippingObjects** para expor os três objetos de recorte diferentes que você usará neste projeto.
 
-Para configurar o objeto **ClippingSphere** , clique nele e, na janela Inspetor, localize o componente **Esfera de Corte (Script)** . Insira o número de renderizadores no campo tamanho que você precisa adicionar para seu modelo 3D. Nesse caso, adicione 10 para objetos filho MarsCuriosityRover. Ele criará campos para adicionar renderizadores, arrastar e soltar objetos de modelo filho do objeto MarsCuriosityRover nesses campos.
+Para configurar o objeto **ClippingSphere**, clique nele e, na janela Inspetor, localize o componente **Esfera de Corte (Script)** . Insira o número de renderizadores no campo tamanho que você precisa adicionar para seu modelo 3D. Nesse caso, adicione 10 para objetos filho MarsCuriosityRover. Ele criará campos para adicionar renderizadores, arrastar e soltar objetos de modelo filho do objeto MarsCuriosityRover nesses campos.
 
 ![Unity com os campos do componente de script de ClippingSphere configurados](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
@@ -171,7 +171,7 @@ Nesta seção, você vai explorar como habilitar o Acompanhamento Ocular em seu 
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identificar objetos de destino e dicas de ferramenta associadas
 
-Na janela Hierarquia, selecione o objeto ModelParent. Expanda o **_MarsCuriosity -> Rover_ *_ para encontrar cinco partes principais do MarsCuriosityRover: _* POI-Camera** , **POI-Wheels** , **POI-Antena** , **POI-Spectrometer** e **POI-RUHF Antenna**.
+Na janela Hierarquia, selecione o objeto ModelParent. Expanda o **_MarsCuriosity -> Rover_ *_ para encontrar cinco partes principais do MarsCuriosityRover: _* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer** e **POI-RUHF Antenna**.
 
 * Observe cinco objetos de dica de ferramentas correspondentes associados a partes MarsCuriosityRover na janela Hierarquia.
 * Você vai configurar esses objetos para realçar a experiência ao examinar as partes MarsCuriosityRover.
@@ -180,14 +180,14 @@ Na janela Hierarquia, selecione o objeto ModelParent. Expanda o **_MarsCuriosity
 
 ### <a name="2-implement-while-looking-at-target-----on-look-away--events"></a>2. Implementar ao examinar os eventos At Target () e On Look Away ()
 
-Na janela Hierarquia, selecione o objeto * **POI-Camera** _. Na janela Inspetor, localize o componente _ *Destino de Acompanhamento com os Olhos (Script)* * e configure os eventos **While Looking At Target ()**  & **On Look Away ()** da seguinte maneira:
+Na janela Hierarquia, selecione o objeto ***POI-Camera** _. Na janela Inspetor, localize o componente _ *Destino de Acompanhamento com os Olhos (Script)* * e configure os eventos **While Looking At Target ()**  & **On Look Away ()** da seguinte maneira:
 
 * Para o campo **Nenhum (Objeto)** , atribua o objeto **POI-Camera ToolTip**
 * Na lista suspensa **Nenhuma Função** do evento **While Looking At Target ()** , selecione **GameObject** > **SetActive (bool).** Marque a **Caixa de Seleção** abaixo dela para realçar a dica de ferramenta como a ação que é disparada quando você examina o objeto de destino.
 
 ![Unity com a configuração de evento EyeTrackingTarget WhileLookingAtTarget em andamento](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
-* Siga o mesmo processo e clique no menu suspenso **Nenhuma Função** do ouvinte de eventos **On Look Away ()** . Em seguida, selecione **GameObject** > **SetActive (bool** ) e deixe a **Caixa de Seleção** vazia para ocultar a dica de ferramenta como a ação disparada quando você olhar para longe do objeto de destino.
+* Siga o mesmo processo e clique no menu suspenso **Nenhuma Função** do ouvinte de eventos **On Look Away ()** . Em seguida, selecione **GameObject** > **SetActive (bool**) e deixe a **Caixa de Seleção** vazia para ocultar a dica de ferramenta como a ação disparada quando você olhar para longe do objeto de destino.
 
 ![Unity com o evento EyeTrackingTarget OnLookAway configurado](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 

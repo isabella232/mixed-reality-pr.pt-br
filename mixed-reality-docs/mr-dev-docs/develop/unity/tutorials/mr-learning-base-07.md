@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, caixas delimitadoras
 ms.localizationpriority: high
-ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353514"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679265"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Como interagir com objetos 3D
 
@@ -34,20 +34,20 @@ As principais etapas que você seguirá para conseguir isso são:
 3. Configurar o componente Object Manipulator (Script)
 
 > [!NOTE]
-> Para poder **manipular um objeto** , o objeto deve ter os seguintes componentes:
+> Para poder **manipular um objeto**, o objeto deve ter os seguintes componentes:
 >
-> * Componente **Colisor** , por exemplo, um Colisor de Caixa
+> * Componente **Colisor**, por exemplo, um Colisor de Caixa
 > * Componente **Object Manipulator (Script)**
 >
-> Para poder **manipular** e **capturar um objeto com as mãos acompanhadas** , o objeto deve ter os seguintes componentes:
+> Para poder **manipular** e **capturar um objeto com as mãos acompanhadas**, o objeto deve ter os seguintes componentes:
 >
-> * Componente **Colisor** , por exemplo, um Colisor de Caixa
+> * Componente **Colisor**, por exemplo, um Colisor de Caixa
 > * Componente **Object Manipulator (Script)**
 > * Componente **NearInteractionGrabbable**
 
 Além disso, você vai configurar o Rover Explorer para poder colocar as peças no Rover e montá-lo completamente.
 
-Na janela Hierarquia, expanda o objeto RoverExplorer > **RoverParts** e selecione todos os seus objetos filho peças do Rover e o objeto **RoverAssembly** ; em seguida, na janela Inspetor, use o botão **Adicionar Componente** para adicionar os seguintes componentes a todos os objetos selecionados:
+Na janela Hierarquia, expanda o objeto RoverExplorer > **RoverParts** e selecione todos os seus objetos filho peças do Rover e o objeto **RoverAssembly**; em seguida, na janela Inspetor, use o botão **Adicionar Componente** para adicionar os seguintes componentes a todos os objetos selecionados:
 
 * Componente **Object Manipulator (Script)**
 * Componente **NearInteractionGrabbable**
@@ -66,7 +66,7 @@ Na janela Hierarquia, expanda o objeto RoverExplorer > **RoverParts** e selecion
 
 Com todos os objetos de peças do Rover e o objeto RoverAssembly ainda selecionados, na janela Inspetor, configure o componente **Object Manipulator (Script)** da seguinte maneira:
 
-* Na lista suspensa **Tipo de Manipulação de Duas Mãos** , desmarque a Escala, deixando somente **Mover** e **Girar** habilitados
+* Na lista suspensa **Tipo de Manipulação de Duas Mãos**, desmarque a Escala, deixando somente **Mover** e **Girar** habilitados
 
 ![Unity com Tipo de Manipulação de Duas Mãos configurado](images/mr-learning-base/base-07-section1-step1-2.png)
 
@@ -77,7 +77,7 @@ Na janela Projeto, navegue até a pasta **Assets** > **MRTK** > **SDK** > **Stan
 
 ![Janela Projeto do Unity com a pasta Áudio selecionada](images/mr-learning-base/base-07-section1-step1-3.png)
 
-Na janela Hierarquia, selecione novamente todos os **objetos de peças do Rover** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Audio Sources** , configurando-o da seguinte maneira:
+Na janela Hierarquia, selecione novamente todos os **objetos de peças do Rover** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Audio Sources**, configurando-o da seguinte maneira:
 
 * Atribua o clipe de áudio **MRTK_Scale_Start** ao campo **AudioClip**
 * Desmarque a caixa de seleção **Reproduzir ao Ativar**
@@ -93,16 +93,16 @@ Na janela Hierarquia, expanda o objeto RoverAssembly > RoverModel_PlacementHints
 
 **Repita** esta etapa para cada um dos objetos de peças do Rover restantes e o objeto RoverAssembly para configurar o componente **Part Assembly Controller (Script)** da seguinte maneira:
 
-* Para o **Generator_Part** , atribua o objeto **Generator_PlacementHint** ao campo **Location To Place**
-* Para o **Lights_Part** , atribua o objeto **Lights_PlacementHint** ao campo **Location To Place**
-* Para o **UHFAntenna_Part** , atribua o objeto **UHFAntenna_PlacementHint** ao campo **Location To Place**
-* Para o **Spectrometer_Part** , atribua o objeto **Spectrometer_PlacementHint** ao campo **Location To Place**
-* Para o **RoverAssembly** , atribua o objeto em si, ou seja, o mesmo objeto **RoverAssembly** , para o campo **Location To Place**
+* Para o **Generator_Part**, atribua o objeto **Generator_PlacementHint** ao campo **Location To Place**
+* Para o **Lights_Part**, atribua o objeto **Lights_PlacementHint** ao campo **Location To Place**
+* Para o **UHFAntenna_Part**, atribua o objeto **UHFAntenna_PlacementHint** ao campo **Location To Place**
+* Para o **Spectrometer_Part**, atribua o objeto **Spectrometer_PlacementHint** ao campo **Location To Place**
+* Para o **RoverAssembly**, atribua o objeto em si, ou seja, o mesmo objeto **RoverAssembly**, para o campo **Location To Place**
 
 Na janela Hierarquia, selecione o botão RoverExplorer > Botões > **Redefinir** e, na janela Inspetor, configure o evento **OnClick ()** interativo da seguinte maneira:
 
 * Atribua o objeto **RoverAssembly** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **PartAssemblyController** > **ResetPlacement ()** para definir essa função como a ação a ser executada quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **PartAssemblyController** > **ResetPlacement ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
 ![Unity com o evento OnClick do objeto de botão Redefinir configurado](images/mr-learning-base/base-07-section1-step1-6.png)
 
@@ -133,15 +133,15 @@ Em seguida, **desmarque** a caixa de seleção próxima dos dois componentes par
 > [!NOTE]
 > O componente BoundingBox adicionará automaticamente o componente NearInteractionGrabbable em runtime. Portanto, não precisamos adicionar esse componente para pegar os objetos delimitados com as mãos controladas.
 
-Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar os quatro botões e renomeie o terceiro botão para **BoundingBox_Enable** ; em seguida, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
+Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar os quatro botões e renomeie o terceiro botão para **BoundingBox_Enable**; em seguida, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
 
 * Altere o **Texto do Rótulo Principal** para **Habilitado**
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **BoundingBox** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **marcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **ObjectManipulator** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **ObjectManipulator** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **marcada**
 * Deixe o **Ícone** como o ícone de "cubo com caixa delimitadora"
 
@@ -151,11 +151,11 @@ Renomeie o quarto e último botão como **BoundingBox_Disable** e, na janela Ins
 
 * Altere o **Texto do Rótulo Principal** para **Desabilitado**
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **BoundingBox** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função** , selecione **ObjectManipulator** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **ObjectManipulator** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 * Altere o **Ícone** para o ícone de "cubo com caixa delimitadora"
 

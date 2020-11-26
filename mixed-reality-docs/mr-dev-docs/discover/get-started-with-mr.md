@@ -6,13 +6,13 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
+ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631514"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702262"
 ---
 # <a name="get-started-with-mixed-reality"></a>Introdução à Realidade Misturada
 

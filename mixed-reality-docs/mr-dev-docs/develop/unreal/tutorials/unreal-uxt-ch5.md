@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696168"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679835"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Como adicionar um botão e redefinir locais de peças
 
@@ -30,13 +30,13 @@ No tutorial anterior, você adicionou Atores de Interação à Mão aos componen
 ## <a name="creating-a-reset-function"></a>Criar uma função de redefinição
 Sua primeira tarefa é criar um blueprint de função que redefina uma peça de xadrez para a posição original dela na cena. 
 
-1.  Abra **WhiteKing** , clique no ícone **+** ao lado da seção **Funções** no **Meu Blueprint** e nomeie-o como **Redefinir Localização** . 
+1.  Abra **WhiteKing**, clique no ícone **+** ao lado da seção **Funções** no **Meu Blueprint** e nomeie-o como **Redefinir Localização**. 
 
-2.  Arraste e solte a execução de **Redefinir Localização** na grade do Blueprint para criar um nó **SetActorRelativeTransform** . 
+2.  Arraste e solte a execução de **Redefinir Localização** na grade do Blueprint para criar um nó **SetActorRelativeTransform**. 
     * Essa função define a transformação (localização, rotação e escala) de um ator em relação ao seu pai. Você usará essa função para redefinir a posição do rei no tabuleiro, mesmo que o tabuleiro tenha sido movido de sua posição original. 
     
-3. Clique com o botão direito do mouse no Grafo de Eventos, selecione **Transformar** e altere a **Localização** dele para **X = -26** , **Y = 4** e **Z = 0** .
-    * Conecte o **Valor Retornado** dele ao marcador **Nova Transformação Relativa** em **SetActorRelativeTransform** . 
+3. Clique com o botão direito do mouse no Grafo de Eventos, selecione **Transformar** e altere a **Localização** dele para **X = -26**, **Y = 4** e **Z = 0**.
+    * Conecte o **Valor Retornado** dele ao marcador **Nova Transformação Relativa** em **SetActorRelativeTransform**. 
 
 ![Função Reset Location](images/unreal-uxt/5-function.PNG)
 
@@ -47,7 +47,7 @@ Escolha **Compilar** e **Salvar** o projeto antes de voltar à Janela principal.
 Agora que a função está configurada corretamente, a próxima tarefa é criar um botão que a dispare quando tocado. 
 
 
-1.  Clique em **Adicionar Novo > Classe de Blueprint** , expanda a seção **Todas as Classes** e pesquise por **BP_ButtonHoloLens2** . 
+1.  Clique em **Adicionar Novo > Classe de Blueprint**, expanda a seção **Todas as Classes** e pesquise por **BP_ButtonHoloLens2**. 
     * Nomeie-o como **ResetButton** e clique duas vezes para abrir o Blueprint
 
 > [!NOTE]
@@ -55,7 +55,7 @@ Agora que a função está configurada corretamente, a próxima tarefa é criar 
 
 ![Subclasse do novo Blueprint do botão de estilo do HoloLens 2](images/unreal-uxt/5-subclass.PNG)
 
-2. No painel **Componentes** , selecione **ResetButton(self)** . No painel **Detalhes** , navegue até a seção **Botão** . Altere o padrão **Botão de Rótulo** para "Redefinir". Expanda a seção **Pincel do Ícone do Botão** e pressione o botão **Abrir o Icon Brush Editor** . 
+2. No painel **Componentes**, selecione **ResetButton(self)** . No painel **Detalhes**, navegue até a seção **Botão**. Altere o padrão **Botão de Rótulo** para "Redefinir". Expanda a seção **Pincel do Ícone do Botão** e pressione o botão **Abrir o Icon Brush Editor**. 
 
 ![Definir o rótulo e o ícone no botão](images/unreal-uxt/5-buttonconfig.PNG)
 
@@ -65,27 +65,27 @@ Isso abrirá o Icon Brush Editor, um utilitário fornecido pelo plug-in de Ferra
 
 Há várias outras configurações que você pode ajustar para configurar seu botão. Para saber mais sobre o componente UXT Pressable Button, confira a [documentação](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html).
 
-3. Clique em **UxtPressableButton (Herdado)** no painel **Componentes** e role o painel **Detalhes** para baixo até a seção **Eventos** . 
+3. Clique em **UxtPressableButton (Herdado)** no painel **Componentes** e role o painel **Detalhes** para baixo até a seção **Eventos**. 
     * Clique no botão **+** verde próximo de **On Button Pressed** para adicionar um evento Grafo de Eventos, que será chamado quando o botão for pressionado. 
     
-Deste ponto em diante, será conveniente que você chame a função **Redefinir Localização** do **WhiteKing** , que precisa de uma referência para o Ator **WhiteKing** no Nível. 
+Deste ponto em diante, será conveniente que você chame a função **Redefinir Localização** do **WhiteKing**, que precisa de uma referência para o Ator **WhiteKing** no Nível. 
 
-4.  No painel **Meu Blueprint** , navegue até a seção **Variáveis** , clique no botão **+** e nomeie a variável **WhiteKing** . 
-    * No painel **Detalhes** , selecione a lista suspensa ao lado de **Tipo de Variável** , pesquise **WhiteKing** e selecione **Referência de Objeto** . 
-    * Marque a caixa ao lado de **Instância Editável** . Isso permitirá que a variável seja definida no Nível Principal. 
+4.  No painel **Meu Blueprint**, navegue até a seção **Variáveis**, clique no botão **+** e nomeie a variável **WhiteKing**. 
+    * No painel **Detalhes**, selecione a lista suspensa ao lado de **Tipo de Variável**, pesquise **WhiteKing** e selecione **Referência de Objeto**. 
+    * Marque a caixa ao lado de **Instância Editável**. Isso permitirá que a variável seja definida no Nível Principal. 
 
 ![Criar uma variável](images/unreal-uxt/5-var.PNG)
 
-5.  Arraste a variável WhiteKing de **Meu Blueprint > Variáveis** até o Grafo de Eventos do Botão Redefinir e escolha **Obter WhiteKing** . 
+5.  Arraste a variável WhiteKing de **Meu Blueprint > Variáveis** até o Grafo de Eventos do Botão Redefinir e escolha **Obter WhiteKing**. 
 
 ## <a name="firing-the-function"></a>Como disparar a função
 Tudo o que resta fazer é disparar oficialmente a função de redefinição quando o botão for pressionado.
 
-1.  Arraste o pino da saída WhiteKing e solte para posicionar um novo nó. Selecione a função **Reset Location** . Por fim, arraste o pino de execução de saída de **On Button Pressed** até o pino de execução de entrada em **Reset Location** . **Compile** e **Salve** o Blueprint ResetButton e, em seguida, retorne à Janela principal. 
+1.  Arraste o pino da saída WhiteKing e solte para posicionar um novo nó. Selecione a função **Reset Location**. Por fim, arraste o pino de execução de saída de **On Button Pressed** até o pino de execução de entrada em **Reset Location**. **Compile** e **Salve** o Blueprint ResetButton e, em seguida, retorne à Janela principal. 
 
 ![Chamar função Reset Location de On Button Pressed](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  Arraste **ResetButton** até o visor e defina a localização dele como **X = 50** , **Y = -25** e **Z = 10** . Defina a rotação como **Z = 180** . Em **Padrão** , defina o valor da variável **WhiteKing** como **WhiteKing** .
+2.  Arraste **ResetButton** até o visor e defina a localização dele como **X = 50**, **Y = -25** e **Z = 10**. Defina a rotação como **Z = 180**. Em **Padrão**, defina o valor da variável **WhiteKing** como **WhiteKing**.
 
 ![Definir a variável](images/unreal-uxt/5-buttonlevel.PNG)
 

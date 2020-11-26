@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens
+keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353424"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678245"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. Integrar Âncoras Espaciais do Azure a uma experiência compartilhada
 
@@ -37,21 +37,21 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserC
 
 Nesta seção, você vai configurar uma série de eventos de botão que demonstram os conceitos básicos de como as Âncoras Espaciais do Azure podem ser usadas para obter o alinhamento espacial em uma experiência compartilhada.
 
-Na janela Hierarquia, expanda o objeto **Button** e selecione o primeiro objeto de botão filho chamado **StartAzureSession** :
+Na janela Hierarquia, expanda o objeto **Button** e selecione o primeiro objeto de botão filho chamado **StartAzureSession**:
 
 ![Unity com o objeto de botão StartAzureSession selecionado](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 Na janela Inspetor, localize o componente **Interativo (Script)** e configure o evento **OnClick ()** da seguinte maneira:
 
 * Ao campo **Nenhum (Objeto)** , atribua o objeto **TableAnchor**
-* No menu suspenso **Nenhuma Função** , selecione a função **AnchorModuleScript** > **StartAzureSession ()**
+* No menu suspenso **Nenhuma Função**, selecione a função **AnchorModuleScript** > **StartAzureSession ()**
 
 ![Unity com o evento OnClick do botão StartAzureSession configurado](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 Na janela Hierarquia, selecione o segundo objeto de botão filho chamado **CreateAzureAnchor**. Em seguida, na janela Inspetor, localize o componente **Interativo (Script)** e configure o evento **OnClick ()** da seguinte maneira:
 
 * Ao campo **Nenhum (Objeto)** , atribua o objeto **TableAnchor**
-* No menu suspenso **Nenhuma Função** , selecione a função **AnchorModuleScript** > **CreateAzureAnchor ()**
+* No menu suspenso **Nenhuma Função**, selecione a função **AnchorModuleScript** > **CreateAzureAnchor ()**
 * Ao novo campo **Nenhum (Objeto de Jogo)** exibido, atribua o objeto **TableAnchor**
 
 ![Unity com o evento OnClick do botão CreateAzureAnchor configurado](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
@@ -59,14 +59,14 @@ Na janela Hierarquia, selecione o segundo objeto de botão filho chamado **Creat
 Na janela Hierarquia, selecione o terceiro objeto de botão filho chamado **ShareAzureAnchor**. Em seguida, na janela Inspetor, localize o componente **Interativo (Script)** e configure o evento **OnClick ()** da seguinte maneira:
 
 * Ao campo **Nenhum (Objeto)** , atribua o objeto **TableAnchor**
-* No menu suspenso **Nenhuma Função** , selecione a função **SharingModuleScript** > **ShareAzureAnchor ()**
+* No menu suspenso **Nenhuma Função**, selecione a função **SharingModuleScript** > **ShareAzureAnchor ()**
 
 ![Unity com o evento OnClick do botão ShareAzureAnchor configurado](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 Na janela Hierarquia, selecione o quarto objeto de botão filho chamado **GetAzureAnchor**. Em seguida, na janela Inspetor, localize o componente **Interativo (Script)** e configure o evento **OnClick ()** da seguinte maneira:
 
 * Ao campo **Nenhum (Objeto)** , atribua o objeto **TableAnchor**
-* No menu suspenso **Nenhuma Função** , selecione a função **SharingModuleScript** > **GetAzureAnchor ()**
+* No menu suspenso **Nenhuma Função**, selecione a função **SharingModuleScript** > **GetAzureAnchor ()**
 
 ![Unity com o evento OnClick do botão GetAzureAnchor configurado](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
@@ -76,8 +76,8 @@ Na janela Hierarquia, expanda o objeto **SharedPlayground** e selecione o objeto
 
 Na janela Inspetor, localize o componente **Gerenciador de Âncora Espacial (Script)** e configure a seção **Credenciais** com as credenciais da conta das Âncoras Espaciais do Azure criada como parte dos [Pré-requisitos](mr-learning-sharing-01.md#prerequisites) desta série de tutoriais:
 
-* No campo **ID da Conta das Âncoras Espaciais** , cole a **ID da Conta** da sua conta das Âncoras Espaciais do Azure
-* No campo **Chave de Conta das Âncoras Espaciais** , cole a **Chave de Acesso** primária ou secundária da sua conta das Âncoras Espaciais do Azure
+* No campo **ID da Conta das Âncoras Espaciais**, cole a **ID da Conta** da sua conta das Âncoras Espaciais do Azure
+* No campo **Chave de Conta das Âncoras Espaciais**, cole a **Chave de Acesso** primária ou secundária da sua conta das Âncoras Espaciais do Azure
 
 ![Unity com o Gerenciador de Âncora Espacial configurado](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
 
@@ -86,11 +86,11 @@ Na janela Inspetor, localize o componente **Gerenciador de Âncora Espacial (Scr
 
 Na janela Hierarquia, selecione o objeto **TableAnchor** e, em seguida, na janela Inspetor, localize o componente **Módulo de Âncora (Script)** e configure-o da seguinte maneira:
 
-* No campo **PIN de Compartilhamento Público** , altere alguns dígitos para que o PIN se torne exclusivo ao seu projeto
+* No campo **PIN de Compartilhamento Público**, altere alguns dígitos para que o PIN se torne exclusivo ao seu projeto
 
 ![Unity com o Script de Módulo de Âncora configurado](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
-Com o objeto **TableAnchor** ainda selecionado, na janela Inspetor, verifique se todos os componentes de script estão **habilitados** :
+Com o objeto **TableAnchor** ainda selecionado, na janela Inspetor, verifique se todos os componentes de script estão **habilitados**:
 
 * Marque a caixa de seleção ao lado dos componentes **Gerenciador de Âncora Espacial (Script)** para habilitá-los
 * Marque a caixa de seleção ao lado dos componentes **Script do Módulo de Âncora (Script)** para habilitá-los

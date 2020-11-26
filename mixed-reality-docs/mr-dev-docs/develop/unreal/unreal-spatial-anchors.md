@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial anchors
-ms.openlocfilehash: d223c451cbbf0fb4e2cc1392394d2fe771ec8069
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, âncoras espaciais, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
+ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696134"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678825"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Âncoras Espaciais locais no Unreal
 
@@ -41,7 +41,7 @@ Passo a passo detalhado:
 3. Adicione o ator ao **ARPin** e salve o marcador no repositório de âncoras do HoloLens.  
     * O nome da âncora que você escolhe, que neste exemplo é o carimbo de data/hora atual, precisa ser exclusivo. 
 
-4. Se a âncora for salva com êxito no repositório de âncoras, você poderá inspecioná-la no portal do dispositivo do HoloLens em **Sistema > Gerenciador de mapas > Arquivos de Âncora Salvos no Dispositivo** . 
+4. Se a âncora for salva com êxito no repositório de âncoras, você poderá inspecioná-la no portal do dispositivo do HoloLens em **Sistema > Gerenciador de mapas > Arquivos de Âncora Salvos no Dispositivo**. 
 
 ## <a name="loading-anchors"></a>Como carregar âncoras
 
@@ -60,7 +60,7 @@ A ID da âncora também é consultada para que atores diferentes possam ser gera
 
 ## <a name="removing-anchors"></a>Como remover âncoras 
 
-Quando você terminar de usar uma âncora, poderá limpar âncoras individuais ou o repositório de âncoras inteiro com os componentes **Remover ARPin do Repositório WMRAnchor** e **Remover Todos os ARPins do Repositório WMRAnchor** .
+Quando você terminar de usar uma âncora, poderá limpar âncoras individuais ou o repositório de âncoras inteiro com os componentes **Remover ARPin do Repositório WMRAnchor** e **Remover Todos os ARPins do Repositório WMRAnchor**.
 
 ![Remover âncoras espaciais](images/unreal-spatialanchors-remove.PNG)
 
