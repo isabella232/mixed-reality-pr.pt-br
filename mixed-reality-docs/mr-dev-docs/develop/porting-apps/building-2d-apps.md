@@ -1,19 +1,19 @@
 ---
-title: Atualizando aplicativos UWP 2D para realidade misturada
+title: Atualizando aplicativos UWP 2D para a realidade mista do Windows
 description: Este artigo descreve a atualização de seu aplicativo de Plataforma Universal do Windows 2D existente para ser executado em headsets do HoloLens e do Windows Mixed realm de imersão.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: aplicativo 2D, UWP, aplicativo simples, HoloLens, headsets de imersão, modelo de aplicativo, botão voltar, barra de aplicativos, DPI, resolução, escala, portabilidade, 1ª gen de HoloLens, HoloLens 2, headset de realidade misturada, fone de ouvido com realidade misturada do Windows, migração, Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677795"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443631"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Atualizando aplicativos UWP 2D para realidade misturada
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Atualizando aplicativos UWP 2D para a realidade mista do Windows
 
 A realidade mista do Windows permite que um usuário veja hologramas como se eles estivessem em seu lugar, em seu mundo físico ou digital. Em seu núcleo, tanto o HoloLens quanto os PCs desktop nos quais você anexa acessórios de headsets de imersão são dispositivos Windows 10; Isso significa que você é capaz de executar quase todos os aplicativos de Plataforma Universal do Windows (UWP) na loja como aplicativos 2D.
 
@@ -175,7 +175,7 @@ A [entrada de voz](../../design/voice-input.md) é uma parte crítica da experi�
 
 Quando seu aplicativo estiver em execução, empacote seu aplicativo para [enviá-lo ao Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Modelo de aplicativo](../../design/app-model.md)
 * [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)
 * [Controladores de movimentos](../../design/motion-controllers.md)

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941852"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443491"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japão
 
@@ -95,13 +95,13 @@ Se, por alguma razão, você não conseguir fazer logon nas equipes, verifique o
 
 ### <a name="code-of-conduct"></a>Código de conduta 
 
-*A *_missão da Microsoft é capacitar cada pessoa e todas as organizações do planeta a alcançarem mais. Isso inclui todos os eventos e coletas da Microsoft, inclusive em plataformas digitais, em que buscamos criar uma experiência obedientes, amigável, divertida e inclusiva para todos os participantes._* _  
+A missão da Microsoft é capacitar cada pessoa e organização no planeta a conquistar cada vez mais. Isso inclui todos os eventos e coletas da Microsoft, inclusive em plataformas digitais, em que buscamos criar uma experiência obedientes, amigável, divertida e inclusiva para todos os participantes.
 
-_*_Esperamos que todos os participantes de eventos digitais descobertom os princípios desse código de conduta, que abrange o principal evento digital e todas as atividades relacionadas. Não toleramos o comportamento, as mensagens, as imagens ou as interrupções de qualquer participante de terceiros, em qualquer forma, em qualquer aspecto do programa, incluindo atividades sociais e de negócios, independentemente do local. A Microsoft não tolerará assédio ou discriminação com base em idade, ancestrais, cor, identidade de sexo ou expressão, origem nacional, deficiência física ou mental, Religion, orientação sexual ou qualquer outra característica protegida por leis locais aplicáveis, regulamentos e Ordinances._*_  
+Esperamos que todos os participantes de eventos digitais descobertom os princípios desse código de conduta, que abrange o principal evento digital e todas as atividades relacionadas. Não toleramos o comportamento, as mensagens, as imagens ou as interrupções de qualquer participante de terceiros, em qualquer forma, em qualquer aspecto do programa, incluindo atividades sociais e de negócios, independentemente do local. A Microsoft não tolerará assédio ou discriminação com base em idade, ancestrais, cor, identidade de sexo ou expressão, origem nacional, deficiência física ou mental, Religion, orientação sexual ou qualquer outra característica protegida por leis locais aplicáveis, regulamentos e Ordinances.  
 
-_*_A fotografia, o vídeo ou a gravação de conteúdo da sessão ou de apresentações em qualquer formato compartilhado em canais sociais é proibido. Incentivamos todos para auxiliar na criação de um ambiente seguro e de boas-vindas. Relate quaisquer preocupações, inassédios sobre o comportamento, a suspeita ou a atividade de interrupção para a empresa de condução da linha direta (1-877-320-MSFT ou [buscond@microsoft.com](mailto:buscond@microsoft.com) ). A Microsoft se reserva o direito de recusar Admittance ou de remover qualquer pessoa da realidade misturada de dias a qualquer momento a seu critério exclusivo._*_  
+A fotografia, o vídeo ou a gravação de conteúdo da sessão ou de apresentações em qualquer formato compartilhado em canais sociais é proibido. Incentivamos todos para auxiliar na criação de um ambiente seguro e de boas-vindas. Relate quaisquer preocupações, inassédios sobre o comportamento, a suspeita ou a atividade de interrupção para a empresa de condução da linha direta (1-877-320-MSFT ou [buscond@microsoft.com](mailto:buscond@microsoft.com) ). A Microsoft se reserva o direito de recusar Admittance ou de remover qualquer pessoa da realidade misturada de dias a qualquer momento a seu critério exclusivo. 
 
-_ *_Recomendamos que todos se comportem com responsabilidade no ambiente de AltspaceVR de imersão como você faria em qualquer evento presencial. Respeite outros espaços de usuários e não bloqueie a exibição de outros participantes do estágio ao participar do evento.  Lembre-se de que, como qualquer evento presencial, qualquer coisa que você disser possa ser ouvido por outros usuários no evento, se você precisar ter uma conversa privada, recomendamos que você leve isso para outro espaço dentro de AltspaceVR, como sua página inicial do AltspaceVR_**
+Incentivamos todas as pessoas a se comportarem com responsabilidade no ambiente de imersão AltspaceVR como você faria em qualquer evento presencial. Respeite outros espaços de usuários e não bloqueie a exibição de outros participantes do estágio ao participar do evento.  Lembre-se de que, como qualquer evento presencial, qualquer coisa que você disser possa ser ouvido por outros usuários no evento, se você precisar ter uma conversa privada, recomendamos que você leve isso para outro espaço dentro de AltspaceVR, como sua página inicial do AltspaceVR.
 
 
 

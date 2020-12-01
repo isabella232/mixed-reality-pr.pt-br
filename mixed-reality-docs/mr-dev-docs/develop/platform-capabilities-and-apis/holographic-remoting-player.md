@@ -3,20 +3,20 @@ title: Player de Comunicação Remota Holográfica
 description: O Holographic Remoting Player é um aplicativo complementar que se conecta a aplicativos de PC e jogos que dão suporte à comunicação remota do Holographic. O Holographicing Remoting transmite o conteúdo do Holographic de um PC para o Microsoft HoloLens em tempo real, usando uma conexão Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, diagnóstico, desempenho
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677925"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443619"
 ---
 # <a name="holographic-remoting-player"></a>Player de Comunicação Remota Holográfica
 
 >[!IMPORTANT]
->A comunicação remota do Holographic para o HoloLens 2 é uma alteração de versão principal. [Os aplicativos remotos para o **hololens (1ª gen)**](add-holographic-remoting.md) devem usar o pacote NuGet versão **1. x.** x e [os aplicativos remotos para o **HoloLens 2**](holographic-remoting-create-host.md) devem usar **2. x. x**. Isso significa que os aplicativos remotos escritos para o HoloLens 2 não são compatíveis com o HoloLens (1º gen) e vice-versa.
+>A comunicação remota do Holographic para o HoloLens 2 é uma alteração de versão principal. [Os aplicativos remotos para o **hololens (1ª gen)**](add-holographic-remoting.md) devem usar o pacote NuGet versão **1. x.** x e [os aplicativos remotos para o **HoloLens 2**](holographic-remoting-create-remote-wmr.md) devem usar **2. x. x**. Isso significa que os aplicativos remotos escritos para o HoloLens 2 não são compatíveis com o HoloLens (1º gen) e vice-versa.
 
 O [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) é um aplicativo complementar que se conecta a aplicativos de PC e jogos que dão suporte à comunicação remota do Holographic. O Holographicing Remoting transmite o conteúdo do Holographic de um PC para o Microsoft HoloLens em tempo real, usando uma conexão Wi-Fi.
 
@@ -26,6 +26,9 @@ O player de comunicação remota do Holographic está disponível para o HoloLen
 
 >[!TIP]
 >A partir da versão [2.2.0](holographic-remoting-version-history.md#v2.2.0) , o Holographic Remoting Player também está disponível para computadores Windows que executam [realidade mista do Windows](../../discover/navigating-the-windows-mixed-reality-home.md).
+
+>[!TIP]
+>A partir da versão [2.4.0](holographic-remoting-version-history.md#v2.4.0) , os aplicativos remotos usando a [API OpenXR](../native/openxr.md) podem ser criados. Para começar a fazer check-out, [escreva um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md).
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Conectando-se ao Player de comunicação remota do Holographic
 
@@ -44,7 +47,7 @@ A qualidade e o desempenho da sua experiência variam com base em três fatores:
 * **Hardware do seu PC** -seu PC precisa ser capaz de executar e codificar sua experiência com o holographic em 60 quadros por segundo. Para uma placa gráfica, geralmente recomendamos um GeForce GTX 970 ou o AMD Radeon R9 290 ou superior. Novamente, sua experiência específica pode exigir um cartão maior ou menor.
 * **Sua conexão de Wi-Fi** -sua experiência com o Holographic é transmitida por Wi-Fi. Use uma rede rápida com baixo congestionamento para maximizar a qualidade. Usar um computador conectado por um cabo Ethernet, em vez de Wi-Fi, também pode melhorar a qualidade.
 
-## <a name="diagnostics"></a>Diagnósticos
+## <a name="diagnostics"></a>Diagnóstico
 
 Para medir a qualidade de sua conexão, diga **"habilitar o diagnóstico"** enquanto estiver na tela principal do Holographic Remoting Player. Quando os diagnósticos estão habilitados, no **HoloLens (1º gen)** , o aplicativo mostrará:
 
@@ -78,6 +81,7 @@ Na tela principal, você pode dizer **"desabilitar o diagnóstico"** para desati
 
 ## <a name="see-also"></a>Consulte Também
 * [HoloLens (1º gen): Adicionar comunicação remota do Holographic](add-holographic-remoting.md)
-* [HoloLens 2: escrevendo um aplicativo remoto de comunicação remota do Holographic](holographic-remoting-create-host.md)
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs do Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Termos de licença de software de comunicação remota holográfica](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
