@@ -1,19 +1,19 @@
 ---
-title: Atualizando seu aplicativo SteamVR
+title: Atualizando aplicativos SteamVR para a realidade mista do Windows
 description: Práticas recomendadas para atualizar seu aplicativo SteamVR para maximizar o compatibilidade com headsets de realidade mista do Windows.
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR, compatibilidade, portabilidade, 1ª Gen do HoloLens, headset de realidade misturada, headset da realidade do Windows, fone de ouvido, migração, Windows 10, fluxo, controladores de movimento, haptics
-ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4565f041db83574a51d9327d37780f5ef216dc9c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677655"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443439"
 ---
-# <a name="updating-your-steamvr-application"></a>Atualizando seu aplicativo SteamVR
+# <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Atualizando aplicativos SteamVR para a realidade mista do Windows
 Incentivamos os desenvolvedores a testar e otimizar suas experiências de SteamVR para serem executadas em headsets de realidade mista do Windows. Esta documentação aborda os aprimoramentos comuns que os desenvolvedores podem fazer para garantir que sua experiência seja muito boa no Windows Mixed Reality.
 
 ## <a name="initial-setup-instructions"></a>Instruções de instalação inicial
@@ -52,7 +52,7 @@ Os controladores de movimento do Windows Mixed Reality usam um motor haptics pad
 
 ## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>Iniciando aplicativos SteamVR no menu Iniciar do Windows Mixed Reality
 
-Para experiências de VR distribuídas por meio do vapor, [atualizamos a realidade mista do Windows para SteamVR beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) junto com os vôos do [Windows Insider](https://insider.windows.com) RS5 mais recentes para que os títulos de SteamVR agora apareçam no menu Iniciar da realidade do Windows Mixed na lista "todos os aplicativos" automaticamente. Com essas versões de software instaladas, os clientes agora podem iniciar títulos de SteamVR diretamente de dentro do Windows Mixed Reality Home sem remover seus headsets.
+Para experiências de VR distribuídas por meio do vapor, atualizamos a [realidade mista do Windows para SteamVR](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) junto com as versões mais recentes do [Windows](https://insider.windows.com) para que os títulos de SteamVR agora apareçam no menu Iniciar da realidade misturada do Windows na lista "todos os aplicativos" automaticamente.
 
 ## <a name="windows-mixed-reality-logo"></a>Logotipo do Windows Mixed Reality
 

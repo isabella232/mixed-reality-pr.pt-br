@@ -3,15 +3,15 @@ title: Canais de dados personalizados de comunicação remota holográfica
 description: Os canais de dados personalizados podem ser usados para enviar dados do usuário pela conexão remota Holographic já estabelecida.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, canais de dados
-ms.openlocfilehash: bbbf0e1dd48e1e6872243b2ea562b0729d53ebae
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677905"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443447"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canais de dados personalizados de comunicação remota holográfica
 
@@ -114,7 +114,8 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Consulte Também
-* [Como criar um aplicativo remoto de comunicação remota holográfica](holographic-remoting-create-host.md)
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs do Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
 * [Termos de licença de software de comunicação remota holográfica](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

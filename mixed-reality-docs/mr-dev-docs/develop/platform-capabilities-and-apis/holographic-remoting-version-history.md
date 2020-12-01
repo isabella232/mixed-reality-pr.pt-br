@@ -3,20 +3,24 @@ title: Histórico de versões de comunicação remota do Holographic
 description: Histórico de versão da comunicação remota do Holographic no HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicação remota, Holographic de comunicação remota, histórico de versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677845"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443470"
 ---
 # <a name="holographic-remoting-version-history"></a>Histórico de versões de comunicação remota do Holographic
 
 > [!IMPORTANT]
 > Estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
+
+## <a name="version-240-december-1-2020"></a>Versão 2.4.0 (1º de dezembro de 2020) <a name="v2.4.0"></a>
+* A comunicação remota do Holographic agora dá suporte à gravação de aplicativos remotos usando a [API do OpenXR](../native/openxr.md). Para começar a fazer check-out, [escreva um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md).
+* Correções de bugs e melhorias de estabilidade.
 
 ## <a name="version-231-october-10-2020"></a>Versão 2.3.1 (10 de outubro de 2020) <a name="v2.3.1"></a>
 * Regressão fixa com previsão de pose remota que causou a tremulação Visual.
@@ -102,8 +106,9 @@ ms.locfileid: "94677845"
 * Primeira versão pública da comunicação remota do Holographic para o HoloLens 2.
 
 ## <a name="see-also"></a>Consulte Também
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs do Windows Mixed Realiy](holographic-remoting-create-remote-wmr.md)
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
-* [Escrevendo um aplicativo de host de comunicação remota do Holographic](holographic-remoting-create-host.md)
 * [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
 * [Termos de licença de software de comunicação remota holográfica](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
