@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443680"
+ms.locfileid: "96476500"
 ---
 # <a name="project-settings"></a>[Configurações do projeto](#tab/project)
 
@@ -94,7 +94,8 @@ O algoritmo se baseia em um blog por Daniel Smilkov: [retângulo maior em um pol
 ### <a name="8-work-through-your-input-model"></a>8. trabalhar com seu modelo de entrada
 
 Cada jogo ou aplicativo direcionado a um HMD existente terá um conjunto de entradas que ele manipula, tipos de entradas que ele precisa para a experiência e APIs específicas que ele chama para obter essas entradas. Investimos na tentativa de torná-lo tão simples e direto possível de aproveitar as informações disponíveis no Windows Mixed Reality.
-1. Leia o **Guia de porta de entrada para o Unity** na guia adjacente para obter detalhes sobre como a realidade mista do Windows expõe a entrada e como isso é mapeado para o que seu aplicativo pode fazer hoje.
+
+Leia o [Guia de porta de entrada para o Unity](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) na guia adjacente para obter detalhes sobre como a realidade mista do Windows expõe a entrada e como isso é mapeado para o que seu aplicativo pode fazer hoje.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. testes e ajustes de desempenho
 
