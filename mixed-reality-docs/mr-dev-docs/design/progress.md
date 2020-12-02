@@ -6,39 +6,39 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, controles, interface do usuário, UX, indicador de progresso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703382"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96470508"
 ---
-# <a name="progress-indicator"></a><span data-ttu-id="32291-104">Indicador de progresso</span><span class="sxs-lookup"><span data-stu-id="32291-104">Progress indicator</span></span>
+# <a name="progress-indicator"></a><span data-ttu-id="a350e-104">Indicador de progresso</span><span class="sxs-lookup"><span data-stu-id="a350e-104">Progress indicator</span></span>
 
 <br>
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-<span data-ttu-id="32291-105">Um controle de progresso oferece feedback ao usuário que uma operação de execução longa está em andamento.</span><span class="sxs-lookup"><span data-stu-id="32291-105">A progress control provides feedback to the user that a long-running operation is underway.</span></span> <span data-ttu-id="32291-106">Isso pode significar que o usuário não pode interagir com o aplicativo quando o indicador de progresso está visível e também pode indicar a duração do tempo de espera, dependendo do indicador usado.</span><span class="sxs-lookup"><span data-stu-id="32291-106">It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.</span></span>
+<span data-ttu-id="a350e-105">Um controle de progresso oferece feedback ao usuário que uma operação de execução longa está em andamento.</span><span class="sxs-lookup"><span data-stu-id="a350e-105">A progress control provides feedback to the user that a long-running operation is underway.</span></span> <span data-ttu-id="a350e-106">Isso pode significar que o usuário não pode interagir com o aplicativo quando o indicador de progresso está visível e também pode indicar a duração do tempo de espera, dependendo do indicador usado.</span><span class="sxs-lookup"><span data-stu-id="a350e-106">It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.</span></span>
 
 <br>
 
 ---
 
-## <a name="types-of-progress"></a><span data-ttu-id="32291-107">Tipo de progresso</span><span class="sxs-lookup"><span data-stu-id="32291-107">Types of progress</span></span>
+## <a name="types-of-progress"></a><span data-ttu-id="a350e-107">Tipo de progresso</span><span class="sxs-lookup"><span data-stu-id="a350e-107">Types of progress</span></span>
 
-<span data-ttu-id="32291-108">É importante fornecer as informações do usuário sobre o que está acontecendo.</span><span class="sxs-lookup"><span data-stu-id="32291-108">It is important to provide the user information about what is happening.</span></span> <span data-ttu-id="32291-109">Em realidade misturada, os usuários podem ser facilmente distraídosdos por ambientes físicos ou objetos se seu aplicativo não fornecer bons comentários visuais.</span><span class="sxs-lookup"><span data-stu-id="32291-109">In mixed reality users can be easily distracted by physical environment or objects if your app does not gives good visual feedback.</span></span> <span data-ttu-id="32291-110">Para situações que levam alguns segundos, como quando os dados estão sendo carregados ou uma cena está atualizando, é recomendável mostrar um indicador visual.</span><span class="sxs-lookup"><span data-stu-id="32291-110">For situations that take a few seconds, such when data is loading or a scene is updating, it is good idea to show a visual indicator.</span></span> <span data-ttu-id="32291-111">Há duas opções para mostrar ao usuário que uma operação está em andamento – uma **barra de progresso** ou um **anel de progresso**.</span><span class="sxs-lookup"><span data-stu-id="32291-111">There are two options to show the user that an operation is underway – a **Progress bar** or a **Progress ring**.</span></span>
+<span data-ttu-id="a350e-108">É importante fornecer as informações do usuário sobre o que está acontecendo.</span><span class="sxs-lookup"><span data-stu-id="a350e-108">It is important to provide the user information about what is happening.</span></span> <span data-ttu-id="a350e-109">Em realidade misturada, os usuários podem ser facilmente distraídosdos por ambientes físicos ou objetos se seu aplicativo não fornecer bons comentários visuais.</span><span class="sxs-lookup"><span data-stu-id="a350e-109">In mixed reality users can be easily distracted by physical environment or objects if your app does not gives good visual feedback.</span></span> <span data-ttu-id="a350e-110">Para situações que levam alguns segundos, como quando os dados estão sendo carregados ou uma cena está atualizando, é recomendável mostrar um indicador visual.</span><span class="sxs-lookup"><span data-stu-id="a350e-110">For situations that take a few seconds, such when data is loading or a scene is updating, it is good idea to show a visual indicator.</span></span> <span data-ttu-id="a350e-111">Há duas opções para mostrar ao usuário que uma operação está em andamento – uma **barra de progresso** ou um **anel de progresso**.</span><span class="sxs-lookup"><span data-stu-id="a350e-111">There are two options to show the user that an operation is underway – a **Progress bar** or a **Progress ring**.</span></span>
 
 :::row:::
     :::column:::
-        ### <a name="progress-barbr"></a><span data-ttu-id="32291-112">Barra de progresso</span><span class="sxs-lookup"><span data-stu-id="32291-112">Progress bar</span></span><br>
-        <span data-ttu-id="32291-113">Uma barra de progresso mostra a porcentagem concluída de uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="32291-113">A Progress bar shows the percentage completed of a task.</span></span> <span data-ttu-id="32291-114">Ele deve ser usado durante uma operação cuja duração é conhecida (desterminada), mas o progresso não deve bloquear a interação do usuário com o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="32291-114">It should be used during an operation whose duration is known (determinate), but it's progress should not block the user's interaction with the app.</span></span><br>
+        ### <a name="progress-barbr"></a><span data-ttu-id="a350e-112">Barra de progresso</span><span class="sxs-lookup"><span data-stu-id="a350e-112">Progress bar</span></span><br>
+        <span data-ttu-id="a350e-113">Uma barra de progresso mostra a porcentagem concluída de uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="a350e-113">A Progress bar shows the percentage completed of a task.</span></span> <span data-ttu-id="a350e-114">Ele deve ser usado durante uma operação cuja duração é conhecida (desterminada), mas o progresso não deve bloquear a interação do usuário com o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a350e-114">It should be used during an operation whose duration is known (determinate), but it's progress should not block the user's interaction with the app.</span></span><br>
         <br>
-        <span data-ttu-id="32291-115">*Imagem: exemplo de barra de progresso no HoloLens*</span><span class="sxs-lookup"><span data-stu-id="32291-115">*Image: Progress bar example in HoloLens*</span></span>
+        <span data-ttu-id="a350e-115">*Imagem: exemplo de barra de progresso no HoloLens*</span><span class="sxs-lookup"><span data-stu-id="a350e-115">*Image: Progress bar example in HoloLens*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="32291-116">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="32291-116">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="32291-117">![Exemplo de barra de progresso no HoloLens](images/640px-progressbar.jpg)</span><span class="sxs-lookup"><span data-stu-id="32291-117">![Progress bar example in HoloLens](images/640px-progressbar.jpg)</span></span><br>
+        <span data-ttu-id="a350e-116">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="a350e-116">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="a350e-117">![Exemplo de barra de progresso no HoloLens](images/640px-progressbar.jpg)</span><span class="sxs-lookup"><span data-stu-id="a350e-117">![Progress bar example in HoloLens](images/640px-progressbar.jpg)</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -48,14 +48,14 @@ ms.locfileid: "94703382"
 
 :::row:::
     :::column:::
-        ### <a name="progress-ringbr"></a><span data-ttu-id="32291-118">Anel de progresso</span><span class="sxs-lookup"><span data-stu-id="32291-118">Progress ring</span></span><br>
-        <span data-ttu-id="32291-119">Um anel de progresso tem apenas um estado indeterminado e deve ser usado quando qualquer interação adicional do usuário é bloqueada até que a operação seja concluída.</span><span class="sxs-lookup"><span data-stu-id="32291-119">A Progress ring only has an indeterminate state, and should be used when any further user interaction is blocked until the operation has completed.</span></span><br>
+        ### <a name="progress-ringbr"></a><span data-ttu-id="a350e-118">Anel de progresso</span><span class="sxs-lookup"><span data-stu-id="a350e-118">Progress ring</span></span><br>
+        <span data-ttu-id="a350e-119">Um anel de progresso tem apenas um estado indeterminado e deve ser usado quando qualquer interação adicional do usuário é bloqueada até que a operação seja concluída.</span><span class="sxs-lookup"><span data-stu-id="a350e-119">A Progress ring only has an indeterminate state, and should be used when any further user interaction is blocked until the operation has completed.</span></span><br>
         <br>
-        <span data-ttu-id="32291-120">*Imagem: exemplo de anel de andamento no HoloLens*</span><span class="sxs-lookup"><span data-stu-id="32291-120">*Image: Progress ring example in HoloLens*</span></span>
+        <span data-ttu-id="a350e-120">*Imagem: exemplo de anel de andamento no HoloLens*</span><span class="sxs-lookup"><span data-stu-id="a350e-120">*Image: Progress ring example in HoloLens*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="32291-121">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="32291-121">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="32291-122">![Exemplo de anel de andamento no HoloLens](images/640px-progressring.jpg)</span><span class="sxs-lookup"><span data-stu-id="32291-122">![Progress ring example in HoloLens](images/640px-progressring.jpg)</span></span><br>
+        <span data-ttu-id="a350e-121">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="a350e-121">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="a350e-122">![Exemplo de anel de andamento no HoloLens](images/640px-progressring.jpg)</span><span class="sxs-lookup"><span data-stu-id="a350e-122">![Progress ring example in HoloLens](images/640px-progressring.jpg)</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -65,14 +65,14 @@ ms.locfileid: "94703382"
 
 :::row:::
     :::column:::
-        ### <a name="progress-with-a-custom-objectbr"></a><span data-ttu-id="32291-123">Progresso com um objeto personalizado</span><span class="sxs-lookup"><span data-stu-id="32291-123">Progress with a custom object</span></span><br>
-        <span data-ttu-id="32291-124">Você pode adicionar à identidade da marca e personalidade do seu aplicativo Personalizando o controle de progresso com seus próprios objetos 2D/3D personalizados.</span><span class="sxs-lookup"><span data-stu-id="32291-124">You can add to your app's personality and brand identity by customizing the Progress control with your own custom 2D/3D objects.</span></span><br>
+        ### <a name="progress-with-a-custom-objectbr"></a><span data-ttu-id="a350e-123">Progresso com um objeto personalizado</span><span class="sxs-lookup"><span data-stu-id="a350e-123">Progress with a custom object</span></span><br>
+        <span data-ttu-id="a350e-124">Você pode adicionar à identidade da marca e personalidade do seu aplicativo Personalizando o controle de progresso com seus próprios objetos 2D/3D personalizados.</span><span class="sxs-lookup"><span data-stu-id="a350e-124">You can add to your app's personality and brand identity by customizing the Progress control with your own custom 2D/3D objects.</span></span><br>
         <br>
-        <span data-ttu-id="32291-125">*Imagem: progresso com o exemplo de malha personalizada no HoloLens*</span><span class="sxs-lookup"><span data-stu-id="32291-125">*Image: Progress with custom mesh example in HoloLens*</span></span>
+        <span data-ttu-id="a350e-125">*Imagem: progresso com o exemplo de malha personalizada no HoloLens*</span><span class="sxs-lookup"><span data-stu-id="a350e-125">*Image: Progress with custom mesh example in HoloLens*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="32291-126">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="32291-126">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="32291-127">![Progresso com o exemplo de malha personalizada no HoloLens](images/640px-progresscustom.jpg)</span><span class="sxs-lookup"><span data-stu-id="32291-127">![Progress with custom mesh example in HoloLens](images/640px-progresscustom.jpg)</span></span><br>
+        <span data-ttu-id="a350e-126">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="a350e-126">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="a350e-127">![Progresso com o exemplo de malha personalizada no HoloLens](images/640px-progresscustom.jpg)</span><span class="sxs-lookup"><span data-stu-id="a350e-127">![Progress with custom mesh example in HoloLens](images/640px-progresscustom.jpg)</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -80,41 +80,41 @@ ms.locfileid: "94703382"
 
 ---
 
-## <a name="best-practices"></a><span data-ttu-id="32291-128">Práticas recomendadas</span><span class="sxs-lookup"><span data-stu-id="32291-128">Best practices</span></span>
-* <span data-ttu-id="32291-129">Associe rigidamente a [mensagem ou a marca](billboarding-and-tag-along.md) à exibição do progresso, uma vez que o usuário pode mover facilmente o cabeçalho para o espaço vazio e perder o contexto.</span><span class="sxs-lookup"><span data-stu-id="32291-129">Tightly couple [billboarding or tag-along](billboarding-and-tag-along.md) to the display of Progress since the user can easily move their head into empty space and lose context.</span></span> <span data-ttu-id="32291-130">Seu aplicativo pode parecer que ele falhou se o usuário não conseguir ver nada.</span><span class="sxs-lookup"><span data-stu-id="32291-130">Your app might look like it has crashed if the user is unable to see anything.</span></span> <span data-ttu-id="32291-131">A cobrança e a marcação são criadas no pré-fabricado de progresso.</span><span class="sxs-lookup"><span data-stu-id="32291-131">Billboarding and tag-along is built into the Progress prefab.</span></span>
-* <span data-ttu-id="32291-132">É sempre bom fornecer informações de status sobre o que está acontecendo com o usuário.</span><span class="sxs-lookup"><span data-stu-id="32291-132">It's always good to provide status information about what is happening to the user.</span></span> <span data-ttu-id="32291-133">O progresso pré-fabricado fornece vários estilos visuais, incluindo o progresso padrão do Windows do tipo de toque para fornecer o status.</span><span class="sxs-lookup"><span data-stu-id="32291-133">The Progress prefab provides various visual styles including the Windows standard ring-type progress for providing status.</span></span> <span data-ttu-id="32291-134">Você também pode usar uma malha personalizada com uma animação se quiser que o estilo do seu progresso se alinhe à marca do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="32291-134">You can also use a custom mesh with an animation if you want the style of your progress to align to your app’s brand.</span></span>
+## <a name="best-practices"></a><span data-ttu-id="a350e-128">Práticas recomendadas</span><span class="sxs-lookup"><span data-stu-id="a350e-128">Best practices</span></span>
+* <span data-ttu-id="a350e-129">Associe rigidamente a [mensagem ou a marca](billboarding-and-tag-along.md) à exibição do progresso, uma vez que o usuário pode mover facilmente o cabeçalho para o espaço vazio e perder o contexto.</span><span class="sxs-lookup"><span data-stu-id="a350e-129">Tightly couple [billboarding or tag-along](billboarding-and-tag-along.md) to the display of Progress since the user can easily move their head into empty space and lose context.</span></span> <span data-ttu-id="a350e-130">Seu aplicativo pode parecer que ele falhou se o usuário não conseguir ver nada.</span><span class="sxs-lookup"><span data-stu-id="a350e-130">Your app might look like it has crashed if the user is unable to see anything.</span></span> <span data-ttu-id="a350e-131">A cobrança e a marcação são criadas no pré-fabricado de progresso.</span><span class="sxs-lookup"><span data-stu-id="a350e-131">Billboarding and tag-along is built into the Progress prefab.</span></span>
+* <span data-ttu-id="a350e-132">É sempre bom fornecer informações de status sobre o que está acontecendo com o usuário.</span><span class="sxs-lookup"><span data-stu-id="a350e-132">It's always good to provide status information about what is happening to the user.</span></span> <span data-ttu-id="a350e-133">O progresso pré-fabricado fornece vários estilos visuais, incluindo o progresso padrão do Windows do tipo de toque para fornecer o status.</span><span class="sxs-lookup"><span data-stu-id="a350e-133">The Progress prefab provides various visual styles including the Windows standard ring-type progress for providing status.</span></span> <span data-ttu-id="a350e-134">Você também pode usar uma malha personalizada com uma animação se quiser que o estilo do seu progresso se alinhe à marca do seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a350e-134">You can also use a custom mesh with an animation if you want the style of your progress to align to your app’s brand.</span></span>
 
 <br>
 
 ---
 
-## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="32291-135">Indicador de progresso em MRTK (Kit de ferramentas de realidade misturada) para Unity</span><span class="sxs-lookup"><span data-stu-id="32291-135">Progress indicator in MRTK (Mixed Reality Toolkit) for Unity</span></span>
+## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="a350e-135">Indicador de progresso em MRTK (Kit de ferramentas de realidade misturada) para Unity</span><span class="sxs-lookup"><span data-stu-id="a350e-135">Progress indicator in MRTK (Mixed Reality Toolkit) for Unity</span></span>
 
-* [<span data-ttu-id="32291-136">MRTK pré-fabricados indicador de progresso</span><span class="sxs-lookup"><span data-stu-id="32291-136">MRTK - Progress indicator prefabs</span></span>](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/ProgressIndicators)
-* [<span data-ttu-id="32291-137">Serviço de transição MRTK-Scene</span><span class="sxs-lookup"><span data-stu-id="32291-137">MRTK - Scene transition service</span></span>](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
+* [<span data-ttu-id="a350e-136">MRTK pré-fabricados indicador de progresso</span><span class="sxs-lookup"><span data-stu-id="a350e-136">MRTK - Progress indicator prefabs</span></span>](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
+* [<span data-ttu-id="a350e-137">Serviço de transição MRTK-Scene</span><span class="sxs-lookup"><span data-stu-id="a350e-137">MRTK - Scene transition service</span></span>](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
 
 
 <br>
 
 ---
 
-## <a name="see-also"></a><span data-ttu-id="32291-138">Veja também</span><span class="sxs-lookup"><span data-stu-id="32291-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a350e-138">Confira também</span><span class="sxs-lookup"><span data-stu-id="a350e-138">See also</span></span>
 
-* [<span data-ttu-id="32291-139">Cursores</span><span class="sxs-lookup"><span data-stu-id="32291-139">Cursors</span></span>](cursors.md)
-* [<span data-ttu-id="32291-140">Raio de mão</span><span class="sxs-lookup"><span data-stu-id="32291-140">Hand ray</span></span>](point-and-commit.md)
-* [<span data-ttu-id="32291-141">Botão</span><span class="sxs-lookup"><span data-stu-id="32291-141">Button</span></span>](button.md)
-* [<span data-ttu-id="32291-142">Objeto interativo</span><span class="sxs-lookup"><span data-stu-id="32291-142">Interactable object</span></span>](interactable-object.md)
-* [<span data-ttu-id="32291-143">Caixa delimitadora e barra de aplicativos</span><span class="sxs-lookup"><span data-stu-id="32291-143">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
-* [<span data-ttu-id="32291-144">Manipulação</span><span class="sxs-lookup"><span data-stu-id="32291-144">Manipulation</span></span>](direct-manipulation.md)
-* [<span data-ttu-id="32291-145">Menu lateral</span><span class="sxs-lookup"><span data-stu-id="32291-145">Hand menu</span></span>](hand-menu.md)
-* [<span data-ttu-id="32291-146">Menu próximo</span><span class="sxs-lookup"><span data-stu-id="32291-146">Near menu</span></span>](near-menu.md)
-* [<span data-ttu-id="32291-147">Coleção de objetos</span><span class="sxs-lookup"><span data-stu-id="32291-147">Object collection</span></span>](object-collection.md)
-* [<span data-ttu-id="32291-148">Comando de voz</span><span class="sxs-lookup"><span data-stu-id="32291-148">Voice command</span></span>](voice-input.md)
-* [<span data-ttu-id="32291-149">Teclado</span><span class="sxs-lookup"><span data-stu-id="32291-149">Keyboard</span></span>](keyboard.md)
-* [<span data-ttu-id="32291-150">Dica de ferramenta</span><span class="sxs-lookup"><span data-stu-id="32291-150">Tooltip</span></span>](tooltip.md)
-* [<span data-ttu-id="32291-151">Slate</span><span class="sxs-lookup"><span data-stu-id="32291-151">Slate</span></span>](slate.md)
-* [<span data-ttu-id="32291-152">Controle deslizante</span><span class="sxs-lookup"><span data-stu-id="32291-152">Slider</span></span>](slider.md)
-* [<span data-ttu-id="32291-153">Sombreador</span><span class="sxs-lookup"><span data-stu-id="32291-153">Shader</span></span>](shader.md)
-* [<span data-ttu-id="32291-154">Mural e tag-along</span><span class="sxs-lookup"><span data-stu-id="32291-154">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
-* [<span data-ttu-id="32291-155">Exibindo o progresso</span><span class="sxs-lookup"><span data-stu-id="32291-155">Displaying progress</span></span>](progress.md)
-* [<span data-ttu-id="32291-156">Magnetismo de superfície</span><span class="sxs-lookup"><span data-stu-id="32291-156">Surface magnetism</span></span>](surface-magnetism.md)
+* [<span data-ttu-id="a350e-139">Cursores</span><span class="sxs-lookup"><span data-stu-id="a350e-139">Cursors</span></span>](cursors.md)
+* [<span data-ttu-id="a350e-140">Raio de mão</span><span class="sxs-lookup"><span data-stu-id="a350e-140">Hand ray</span></span>](point-and-commit.md)
+* [<span data-ttu-id="a350e-141">Botão</span><span class="sxs-lookup"><span data-stu-id="a350e-141">Button</span></span>](button.md)
+* [<span data-ttu-id="a350e-142">Objeto interativo</span><span class="sxs-lookup"><span data-stu-id="a350e-142">Interactable object</span></span>](interactable-object.md)
+* [<span data-ttu-id="a350e-143">Caixa delimitadora e barra de aplicativos</span><span class="sxs-lookup"><span data-stu-id="a350e-143">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
+* [<span data-ttu-id="a350e-144">Manipulação</span><span class="sxs-lookup"><span data-stu-id="a350e-144">Manipulation</span></span>](direct-manipulation.md)
+* [<span data-ttu-id="a350e-145">Menu lateral</span><span class="sxs-lookup"><span data-stu-id="a350e-145">Hand menu</span></span>](hand-menu.md)
+* [<span data-ttu-id="a350e-146">Menu próximo</span><span class="sxs-lookup"><span data-stu-id="a350e-146">Near menu</span></span>](near-menu.md)
+* [<span data-ttu-id="a350e-147">Coleção de objetos</span><span class="sxs-lookup"><span data-stu-id="a350e-147">Object collection</span></span>](object-collection.md)
+* [<span data-ttu-id="a350e-148">Comando de voz</span><span class="sxs-lookup"><span data-stu-id="a350e-148">Voice command</span></span>](voice-input.md)
+* [<span data-ttu-id="a350e-149">Teclado</span><span class="sxs-lookup"><span data-stu-id="a350e-149">Keyboard</span></span>](keyboard.md)
+* [<span data-ttu-id="a350e-150">Dica de ferramenta</span><span class="sxs-lookup"><span data-stu-id="a350e-150">Tooltip</span></span>](tooltip.md)
+* [<span data-ttu-id="a350e-151">Slate</span><span class="sxs-lookup"><span data-stu-id="a350e-151">Slate</span></span>](slate.md)
+* [<span data-ttu-id="a350e-152">Controle deslizante</span><span class="sxs-lookup"><span data-stu-id="a350e-152">Slider</span></span>](slider.md)
+* [<span data-ttu-id="a350e-153">Sombreador</span><span class="sxs-lookup"><span data-stu-id="a350e-153">Shader</span></span>](shader.md)
+* [<span data-ttu-id="a350e-154">Mural e tag-along</span><span class="sxs-lookup"><span data-stu-id="a350e-154">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
+* [<span data-ttu-id="a350e-155">Exibindo o progresso</span><span class="sxs-lookup"><span data-stu-id="a350e-155">Displaying progress</span></span>](progress.md)
+* [<span data-ttu-id="a350e-156">Magnetismo de superfície</span><span class="sxs-lookup"><span data-stu-id="a350e-156">Surface magnetism</span></span>](surface-magnetism.md)
