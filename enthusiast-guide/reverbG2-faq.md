@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
+ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002961"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501704"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -53,6 +53,10 @@ Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas
 ## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a>Estou recebendo um erro de 13-14 "algo errado" quando meu PC reinicia da hibernação (S4)
 
 Às vezes, durante o processo de retomada, a placa de vídeo não pode estabelecer uma conexão, portanto, desconectar o tipo USB C do seu PC e conectá-lo novamente pode ajudar a estabelecer uma conexão.
+
+## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>O meu joystick do controlador HP Motion às vezes vai para um lado
+
+Esse problema é corrigido com a remoção completa do joystick até que ele clique e seja movido livremente.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>O portal de realidade misturada diz "não é possível executar a realidade misturada neste headset", mas isso funcionou bem com meu Headset WMR anterior
 
