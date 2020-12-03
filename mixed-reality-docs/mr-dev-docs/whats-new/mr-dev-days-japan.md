@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
+ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443491"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538713"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japão
 
@@ -42,7 +42,7 @@ Estamos muito empolgados em abrir o registro para a realidade misturada em dias 
 
 
 ### <a name="december-16th"></a>16 de dezembro
-|**Hora**|**Título da sessão**|**Palestrante**|**Idioma**|**Level**|
+|**Hora**|**Título da sessão**|**Palestrante**|**Linguagem**|**Level**|
 |---------|---------|---------|---------|---------|
 |10:10:00-10:50AM|Apresentação de abertura|TBD|JA/EN|N/D|
 |10:50AM-11:10:00|**Interrupção**||||
@@ -57,7 +57,7 @@ Estamos muito empolgados em abrir o registro para a realidade misturada em dias 
 |2:55PM-3:19:10|**Interrupção**||||
 |3:19:10-3:35pm|*Sessão 7* Âncoras de objeto do Azure|Jesse McCulloch|PT-BR|300|
 |3:13:40-4:05pm|*Sessão 8* Renderização remota do Azure|Atsushi Suzuki|JA|300|
-|4:19:10-4:35pm|*Sessão 9* Âncoras espaciais do Azure|TBD|JA|300|
+|4:19:10-4:35pm|*Sessão 9* Alinhando o holograma e o mundo real por meio de âncoras espaciais do Azure|Yingguang Mei|PT-BR|300|
 |4:13:40-5:05pm|*Sessão 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |5:19:10-5:35pm|*Sessão 11* Aprofundamento do Azure Kinects, estudo de caso|Shinji Chiba|JA|400|
 |5:35pm-5:50pm|Fechamento|Madoka Chiyoda|JA|NA|
