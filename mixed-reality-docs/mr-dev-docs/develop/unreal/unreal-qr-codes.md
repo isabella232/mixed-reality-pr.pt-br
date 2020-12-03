@@ -7,16 +7,14 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, códigos qr, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 68edfdd0dd77b1d00ceeb9c50202abd5d94b95f3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678885"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354394"
 ---
 # <a name="qr-codes-in-unreal"></a>Códigos QR no Unreal
-
-## <a name="overview"></a>Visão geral
 
 O HoloLens 2 pode ver códigos QR no espaço de mundo usando a webcam, que os renderiza como hologramas usando um sistema de coordenadas na posição de cada código no mundo real.  Além de códigos QR individuais, o HoloLens 2 também pode renderizar hologramas em vários dispositivos no mesmo local para criar uma experiência compartilhada. Verifique se você está seguindo as melhores práticas para adicionar códigos QR aos aplicativos:
 
@@ -26,23 +24,25 @@ O HoloLens 2 pode ver códigos QR no espaço de mundo usando a webcam, que os re
 
 Preste atenção especial às [considerações sobre o ambiente](../../environment-considerations-for-hololens.md) quando os códigos QR estiverem sendo posicionados em seu aplicativo. Você pode encontrar mais informações sobre cada um desses tópicos e instruções sobre como baixar o pacote NuGet necessário no documento principal [rastreamento de código QR](../platform-capabilities-and-apis/qr-code-tracking.md).
 
+> [!CAUTION]
+> Os códigos QR são os únicos tipos de imagens que podem ser controlados pelo HoloLens para uso imediato. Não há suporte ao módulo **UARTrackedImage** do Unreal no HoloLens. Se precisar controlar imagens personalizadas, acesse a [webcam](unreal-hololens-camera.md) do dispositivo e processe imagens usando uma biblioteca de reconhecimento de imagem de terceiros. 
+
 ## <a name="enabling-qr-detection"></a>Como habilitar a detecção de QR
 Como o HoloLens 2 precisa usar a webcam para ver os códigos QR, você precisará habilitá-la nas configurações do projeto:
 - Abra **Editar > Configurações do Projeto**, role até a seção **Plataformas** e clique em **HoloLens**.
     + Expanda a seção **Funcionalidades** e marque **Webcam**.  
+- Você também precisará aceitar o controle de código QR [adicionando um ativo ARSessionConfig](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
-Você também precisará aceitar o controle de código QR [adicionando um ativo ARSessionConfig](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
+[!INCLUDE[](includes/tabs-qr-codes.md)]
 
-Logo antes do uso, habilite manualmente o rastreamento chamando `UHoloLensARFunctionLibrary::StartCameraCapture()`. Depois de encerrar o rastreamento do código QR, desabilite-o com `UHoloLensARFunctionLibrary::StopCameraCapture()` para salvar os recursos do dispositivo.
-
-## <a name="setting-up-a-tracked-image"></a>Configurar uma imagem rastreada
+## <a name="setting-up-a-tracked-qr-code"></a>Como configurar um código QR controlado
 
 Os códigos QR são exibidos por meio do sistema de geometria controlado pelo RA do Unreal como uma imagem rastreada. Para fazer isso funcionar, você precisará:
-1. Criar um Blueprint e adicionar um componente **ARTrackableNotify** a ele.
+1. Criar um Blueprint Actor e adicionar um componente **ARTrackableNotify**:
 
 ![AR Trackable Notify de QR](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Selecione **ARTrackableNotify** e expanda a seção **Eventos** no painel **Detalhes**.
+2. Selecionar **ARTrackableNotify** e expandir a seção **Eventos** no painel **Detalhes**:
 
 ![Eventos de QR](images/unreal-spatialmapping-events.PNG)
 
@@ -51,7 +51,7 @@ Os códigos QR são exibidos por meio do sistema de geometria controlado pelo RA
 
 ![Adicionar nó a Ao Adicionar Geometria Rastreada](images/unreal-qr-codes-tracked-geometry.png)
 
-## <a name="using-a-tracked-image"></a>Como usar uma imagem rastreada
+## <a name="using-a-tracked-qr-code"></a>Como usar um código QR controlado
 O Grafo de Eventos na imagem a seguir mostra o evento **OnUpdateTrackedImage** que está sendo usado para processar um ponto no centro de um código QR e imprimir os dados desse código.
 
 ![Exemplo de renderização de QR](images/unreal-qr-render.PNG)
