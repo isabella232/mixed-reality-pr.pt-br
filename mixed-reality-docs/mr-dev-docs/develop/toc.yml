@@ -8,13 +8,15 @@
   href: install-the-tools.md
 - name: Portabilidade de aplicativos
   items:
-    - name: Preparar seu aplicativo existente para HoloLens 2
-      href: unity/mrtk-porting-guide.md
-    - name: Guia de portabilidade para aplicativos imersivos
+    - name: Visão geral de portabilidade
+      href: porting-apps/porting-overview.md
+    - name: Portabilidade dos aplicativos HoloLens (1ª geração) para o HoloLens 2
+      href: porting-apps/porting-hl1-hl2.md
+    - name: Portabilidade dos aplicativos de VR para o Windows Mixed Reality
       href: porting-apps/porting-guides.md
-    - name: Atualizar para o SteamVR
+    - name: Como atualizar aplicativos SteamVR para o Windows Mixed Reality
       href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-    - name: Atualizar aplicativos UWP 2D para Realidade Misturada
+    - name: Como atualizar aplicativos UWP 2D para o Windows Mixed Reality
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
@@ -26,8 +28,6 @@
           href: unity/mrtk-getting-started.md
         - name: Configurar projeto do Unity para o Windows Mixed Reality
           href: unity/configure-unity-project.md
-        - name: Preparar seu aplicativo existente para HoloLens 2
-          href: unity/mrtk-porting-guide.md
     - name: Tutoriais
       items:
         - name: Visão geral
@@ -399,7 +399,11 @@
         - name: Player de Comunicação Remota Holográfica
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Como criar um aplicativo remoto de comunicação remota holográfica
-          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+          items:
+            - name: API do HolographicSpace
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
+            - name: API do OpenXR
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
         - name: Como escrever um aplicativo personalizado do Holographic Remoting Player
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
         - name: Canais de dados personalizados de comunicação remota holográfica
