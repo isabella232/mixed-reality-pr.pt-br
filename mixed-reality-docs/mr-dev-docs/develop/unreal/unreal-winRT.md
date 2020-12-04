@@ -1,17 +1,17 @@
 ---
 title: WinRT no Unreal
 description: Visão geral do plug-in de áudio espacial do Unreal Engine.
-author: fieldsJacksonG
+author: hferrone
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Inreal, não real Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade mista, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, WinRT, DLL
-ms.openlocfilehash: 722add1601013d206ffface84d3a53cf3a9d89f9
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: ff0b235a45bf0e04b82e610384a290e8fc3a7525
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354435"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578591"
 ---
 # <a name="winrt-in-unreal"></a>WinRT no Unreal
 

@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos do sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising, fone de ouvido misto, headset de realidade misturada do Windows, headset da realidade virtual
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703112"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578895"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Como enviar um aplicativo para a Microsoft Store
+
+> [!IMPORTANT]
+> Se você estiver enviando um aplicativo inreal, certifique-se de seguir as **[instruções de publicação aqui](../develop/unreal/unreal-publishing-to-store.md)** antes de continuar.
 
 Tanto o [HoloLens](../hololens-hardware-details.md) quanto o PC com Windows 10 que ligam o [headset de imersão](../discover/immersive-headset-hardware-details.md) executam plataforma universal do Windows aplicativos. Se você estiver enviando um aplicativo que dá suporte a HoloLens, PC ou ambos, o envio de aplicativos passará pelo [Partner Center](https://partner.microsoft.com/dashboard).
 
@@ -202,7 +205,7 @@ Se você selecionou "PC" acima, convém definir a "configuração de realidade m
 Na página **[Propriedades](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)** do processo de envio do aplicativo, você encontrará várias opções relacionadas à realidade misturada na seção **[requisitos do sistema](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties#system-requirements)** .
 
 ![Requisitos do sistema](images/system-reqs-800px.png)<br>
-Requisitos do sistema
+Requisitos de sistema
 
 Nesta seção, você identificará o hardware mínimo (necessário) e o hardware recomendado (opcional) para seu aplicativo de realidade misturada.
 
@@ -263,7 +266,7 @@ Adicionar "realidade mista do Windows" aos termos de pesquisa
 
 Em muitos casos, seus consumidores terão se limitado a nenhuma experiência com a realidade virtual antes de comprar um headset de imersão de realidade mista do Windows. Eles podem não saber o que esperar de jogos intensos ou estar familiarizados com seu próprio limite de conforto em experiências de imersão. Muitos clientes também podem experimentar um headset de imersão de realidade misturada do Windows em computadores que não são crachás como [PCs com realidade do Windows Mixed](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). Devido a essas considerações, é altamente recomendável que você considere a possibilidade de oferecer uma [avaliação gratuita](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) para seu aplicativo de realidade mista ou jogo pago.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [O que é Realidade Misturada?](../discover/mixed-reality.md)
 * [Visão geral do desenvolvimento](../develop/development.md)
 * [Modos de exibição do aplicativo](../design/app-views.md)

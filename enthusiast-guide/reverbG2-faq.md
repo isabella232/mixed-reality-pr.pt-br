@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501704"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578611"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -57,6 +57,10 @@ Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>O meu joystick do controlador HP Motion às vezes vai para um lado
 
 Esse problema é corrigido com a remoção completa do joystick até que ele clique e seja movido livremente.
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Outros Estados que estou muito alto ou que meu áudio esteja recortando enquanto estou usando o microfone com alguns aplicativos
+
+Os níveis de volume de entrada são automaticamente definidos como 100% quando o microfone do HP reverbs G2 é reconhecido pela primeira vez por um computador Windows. Devido aos microfones de alta qualidade do G2's do verbo, a sensibilidade de entrada é muito maior do que as configurações padrão do Windows 10 esperadas. É recomendável definir o nível de entrada do microfone G2 de reverberação a partir de 50% e escalar verticalmente a partir daí. Uma configuração ideal é específica para o usuário, especialmente ao usar aplicativos que não têm uma configuração de microfone de "" obter automaticamente ". Exemplos de aplicativos que têm "conquista automática" são o Skype, o zoom, as equipes e o Cisco WebEx, mas nem todos os aplicativos sociais ou de difusão de VR têm esse recurso.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>O portal de realidade misturada diz "não é possível executar a realidade misturada neste headset", mas isso funcionou bem com meu Headset WMR anterior
 

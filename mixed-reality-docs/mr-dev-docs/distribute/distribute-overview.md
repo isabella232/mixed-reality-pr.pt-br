@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
 keywords: HoloLens, realidade misturada, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos de sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising
-ms.openlocfilehash: f52109792e174a0b0fbdd9738539b5fc88f190a1
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443521"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578875"
 ---
 # <a name="distributing-your-apps"></a>Distribuindo seus aplicativos
 
@@ -81,7 +81,7 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Implantação personalizada do Win32</strong></a> (somente realidade mista do Windows-Veja abaixo)</td>
+    <td><a href="#additional-scenarios"><strong>Implantação personalizada do Win32</strong></a> (não disponível para dispositivos do HoloLens-Veja abaixo)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
