@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ef33e037d6ab6a69059c1452b71a428fe51836b9
+ms.sourcegitcommit: d56e7dd6c917ddc4ead0792ebff21891921174b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679115"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96564016"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Implantar no dispositivo no Unreal
 
@@ -59,4 +59,4 @@ Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento
 > [!div class="nextstepaction"]
 > [Serviços avançados](unreal-development-overview.md#5-adding-services)
 
-Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#4-deploying-to-a-device) a qualquer momento.
+Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#4-streaming-and-deploying-to-a-device) a qualquer momento.
