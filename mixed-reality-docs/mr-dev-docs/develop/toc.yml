@@ -308,6 +308,8 @@
       items:
         - name: Implantar no dispositivo no Unreal
           href: unreal/unreal-deploying.md
+        - name: Publicar na Microsoft Store
+          href: unreal/unreal-publishing-to-store.md
         - name: Como atualizar projetos no Unreal
           href: unreal/unreal-porting.md
         - name: Recomendações de desempenho para o Unreal
