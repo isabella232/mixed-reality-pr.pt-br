@@ -1,6 +1,6 @@
 - name: Introdução ao desenvolvimento de Realidade Misturada
   href: development.md
-- name: Serviços de nuvem do Azure
+- name: Visão geral dos serviços de nuvem da realidade misturada do Azure
   href: mixed-reality-cloud-services.md
 - name: Visão geral do aprendizado de Realidade Misturada
   href: mr-learning-overview.md
