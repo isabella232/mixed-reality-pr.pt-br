@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Inreal, mecanismo 4, UE4, reverberação, reverbo G2, HP reverbs G2, realidade misturada, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678925"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609587"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Controladores de reverbo do HP G2 em um não real 
 
@@ -28,7 +28,7 @@ Se nenhuma associação de controlador existir no jogo para o controlador HP Mix
 
 ![Remapeando associações existentes quando não existe nenhuma associação de controlador](images/reverb-g2-img-04.png)
 
-Os eventos ainda serão disparados, mas se o jogo precisar usar associações específicas de controlador, como o botão de menu à direita, o perfil de interação de realidade mista da HP deverá ser usado.  Várias associações de controlador podem ser especificadas por ação para dar melhor suporte a dispositivos diferentes.
+Os eventos ainda serão acionados, mas se o jogo precisar usar associações específicas do controlador, como o botão de menu à direita, o perfil de interação da realidade mista HP deverá ser usado.  Várias associações de controlador podem ser especificadas por ação para dar melhor suporte a dispositivos diferentes.
    
 ![Usando associações de vários controladores](images/reverb-g2-img-05.png)
 
@@ -44,7 +44,7 @@ O controlador do HP reverberar G2 também tem uma alça analógica, que pode ser
 
 ## <a name="adding-input-events"></a>Adicionando eventos de entrada
 
-Clique com o botão direito do mouse em um plano gráfico e pesquise os novos nomes de ação do sistema de entrada para adicionar eventos para essas ações.  Aqui, o plano gráfico está respondendo aos eventos com uma cadeia de caracteres de impressão gerando o botão atual e o estado do eixo.
+Clique com o botão direito do mouse em um plano gráfico e procure os novos nomes de ação do sistema de entrada para adicionar eventos para essas ações.  Aqui, o plano gráfico está respondendo aos eventos com uma cadeia de caracteres de impressão gerando o botão atual e o estado do eixo.
 
 ![Plano gráfico respondendo a eventos e gerando o estado atual do botão e do eixo](images/reverb-g2-img-06.png)
 
@@ -52,7 +52,7 @@ Clique com o botão direito do mouse em um plano gráfico e pesquise os novos no
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Entrada SteamVR](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
 * [Usando o SteamVR com o Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Câmera do Player não real](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

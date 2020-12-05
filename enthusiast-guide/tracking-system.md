@@ -3,14 +3,14 @@ title: Como funciona o acompanhamento interno
 description: Informações sobre o sistema de controle interno baseado em câmera usado em headsets de realidade mista do Windows.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Inside-Out, dentro do rastreamento, câmera
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434600"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609727"
 ---
-# <a name="inside-out-tracking"></a>Rastreamento interno
+# <a name="inside-out-tracking"></a>Acompanhamento interno
 
 ## <a name="how-does-inside-out-tracking-work"></a>Como funciona o acompanhamento interno?
 
@@ -30,7 +30,7 @@ Há duas preocupações a serem abordadas para garantir que o controle funcione 
 
 ## <a name="how-much-light-is-enough-light"></a>Qual é a quantidade de luz suficiente?
 
-Uma boa regra geral é que se você puder se movimentar confortavelmente no ambiente sem ficar muito escuro e se puder observar os recursos de outras pessoas se sentirem de toda a sala, o sistema de controle provavelmente terá uma luz suficiente.
+Uma boa regra geral é que se você puder se movimentar confortavelmente no ambiente sem ficar muito escuro e se puder observar os recursos de outras pessoas se sentirem de toda a sala, o sistema de controle provavelmente terá uma luz suficiente. Tenha em mente que há algo muito claro: se você estiver olhando para o sol, as câmeras poderão ficar saturadas e não poderão ser acompanhadas de forma confiável. 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>Qual é a quantidade recomendada de recursos ambientais?
 
@@ -42,7 +42,7 @@ O dispositivo foi projetado para dar suporte ao movimento que excede o que norma
 
 ## <a name="where-will-tracking-not-work"></a>Onde o rastreamento não funcionará?
 
-O acompanhamento não funcionará em uma sala escura, em que as câmeras não poderão ver recursos suficientes devido à baixa luz. O controle geralmente não funcionará bem (ou, às vezes, funcionará) ao mover veículos como aviões, barramentos, trens, carros ou elevadors.
+O acompanhamento não funcionará em uma sala escura, em que as câmeras não poderão ver recursos suficientes devido à baixa luz. O controle geralmente não funcionará bem (ou, às vezes, funcionará) ao mover veículos como aviões, barramentos, trens, carros ou elevadors. O rastreamento também pode falhar em situações em que há muita luz ou uma grande diferença clara. Por exemplo, se houver um fluxo direto de luz solar em uma sala, as câmeras poderão reduzir a exposição para reduzir a saturação e não poderão ver os recursos naturais normais. É recomendável que você se depara com uma iluminação relativamente uniforme e, se você tiver que semicerrarr ou encontrar coisas inseguramente brilhantes, o sistema de controle pode não fazer muito bem. 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>Qual é a diferença entre 3DOF e 6DOF?
 
@@ -72,6 +72,6 @@ O sistema de controle armazena alguns dados de ambiente para que ele possa se le
 
 ## <a name="see-also"></a>Confira também
 * [Solucionando problemas do sistema de controle](tracking.md)
-* [Controladores de movimentos](controller-in-wmr.md)
+* [Controladores de movimentos](controllers-in-wmr.md)
 * [Sua página inicial do Windows Mixed Reality](your-mixed-reality-home.md)
 * [Usando jogos e aplicativos no Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

@@ -6,24 +6,24 @@ ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, desenvolvimento, materiais, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678935"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609567"
 ---
 # <a name="material-recommendations-in-unreal"></a>Recomendações de material no Unreal
 
-Os materiais podem fazer ou interromper o desempenho em um mecanismo inreal. Esta página atua como um início rápido sobre as configurações básicas que você deve usar para obter o melhor desempenho.
+Os materiais que você usa podem afetar diretamente o quão bem seus projetos são executados em um mecanismo inreal. Esta página atua como um início rápido para as configurações básicas que você deve usar para obter o melhor desempenho de seus aplicativos de realidade misturada.
 
 ## <a name="using-customizeduvs"></a>Usando CustomizedUVs
 
-Se você precisar fornecer um lado de UVs em seu material, deverá usar CustomizedUVs em vez de modificar a UV do nó de textura diretamente. CustomizedUVs permite que a manipulação UV aconteça nos sombreadores de vértice em vez de sombreador de pixel. 
+Se você precisar fornecer uma disposição UV em seu material, use CustomizedUVs em vez de modificar a UV do nó de textura diretamente. CustomizedUVs permitem que você manipule UVs nos sombreadores de vértice em vez do sombreador de pixel.
 
 ![Configurações de material em inreal](images/unreal-materials-img-01c.png)
 
-Você pode encontrar mais detalhes sobre materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) e exemplos de práticas recomendadas nas capturas de tela abaixo:
+Você pode encontrar detalhes materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) e nos exemplos de práticas recomendadas nas capturas de tela abaixo:
 
 [ ![ Configurações de material recomendadas em ](images/unreal-materials-img-01.png) configuração de ](images/unreal-materials-img-01.png#lightbox) 
  *material recomendado* inreal
@@ -33,7 +33,7 @@ Você pode encontrar mais detalhes sobre materiais na [documentação do mecanis
 
 ## <a name="changing-blend-mode"></a>Alterando o modo de mesclagem
 
-Você deve definir o modo de mesclagem como opaco, a menos que haja um motivo forte para fazer o contrário. Os materiais mascarados e translúcidas são lentos. Você pode encontrar mais detalhes sobre materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+É recomendável definir o modo de mesclagem como opaco, a menos que haja um motivo forte para fazer o contrário. Os materiais mascarados e translúcidas são lentos. Você pode encontrar mais detalhes sobre materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
 ![Alterando o modo de mesclagem](images/unreal-materials-img-02.jpg)
 
@@ -57,7 +57,7 @@ Indica que o material translúcida não deve ser afetado por flor ou DOF. Como a
 
 ## <a name="optional-settings"></a>Configurações opcionais
 
-As configurações a seguir podem melhorar o desempenho, mas observe que elas desabilitam determinados recursos. Use essas configurações somente se você tiver certeza de que não precisa dos recursos em questão.
+As configurações a seguir podem melhorar o desempenho, mas observe que elas desabilitam determinados recursos. Use essas configurações somente se tiver certeza de que não precisa dos recursos em questão.
 
 ![Configurações de material opcionais em inreal](images/unreal-materials-img-06.jpg)
 
@@ -65,13 +65,13 @@ Se seu material não exigir reflexo ou brilho, a definição dessa opção pode 
 
 ## <a name="best-practices"></a>Práticas recomendadas
 
-As opções a seguir não são "configurações", assim como as práticas recomendadas relacionadas aos materiais.
+As seguintes não são "configurações", assim como as práticas recomendadas relacionadas aos materiais.
 
-Ao criar parâmetros, prefira usar "parâmetros estáticos" sempre que possível. Opções estáticas podem ser usadas para remover uma ramificação inteira de um material sem custo de tempo de execução. As instâncias podem ter valores diferentes, tornando possível ter uma configuração de sombreador de modelo sem perda de desempenho. No entanto, a desvantagem é que isso cria muitas permutações que causarão muita recompilação de sombreador. Tente minimizar o número de parâmetros estáticos no material e o número de permutações desses parâmetros estáticos que são realmente usados. Você pode encontrar mais detalhes sobre como renderizar os parâmetros de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
+Ao criar parâmetros, prefira usar "parâmetros estáticos" sempre que possível. Opções estáticas podem ser usadas para remover uma ramificação inteira de um material sem custo de tempo de execução. As instâncias podem ter valores diferentes, tornando possível ter um sombreado modelo configurado sem perda de desempenho. A desvantagem é que várias permutações são criadas e causarão a recompilação do sombreador. Tente minimizar o número de parâmetros estáticos no material e o número de permutações desses parâmetros estáticos que são usados. Você pode encontrar mais detalhes sobre como renderizar os parâmetros de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
 
 ![Práticas recomendadas para configurações de material](images/unreal-materials-img-07.jpg)
 
-Ao criar instâncias de material, a preferência deve ser dada à **constante da instância material** sobre a instância de material dinâmica. **Constante de instância de material** é um material de instância que calcula apenas uma vez, antes do tempo de execução.
+Ao criar instâncias de material, a preferência deve ser dada à **constante da instância material** sobre a instância de material dinâmica. **Constante de instância de material** é um material de instância que calcula apenas uma vez antes do tempo de execução.
 
 A instância de material criada por meio do navegador de conteúdo (**clique com o botão direito do mouse > criar instância de material**) é uma constante de instância de material. A instância de material dinâmica é criada por meio de código. Você pode encontrar mais detalhes sobre as instâncias de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
@@ -88,7 +88,7 @@ Você pode obter uma ideia rápida da complexidade relativa do seu sombreador po
 
 ![Complexidade de material em não real](images/unreal-materials-img-10.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Materiais móveis](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [Modos de exibição](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 * [Instâncias de material](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

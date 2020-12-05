@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Inreal, não real Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade mista, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, WinRT, DLL
-ms.openlocfilehash: ff0b235a45bf0e04b82e610384a290e8fc3a7525
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: f9001f3a9e36eb5d8553545f38cf10411bafd64b
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578591"
+ms.locfileid: "96609398"
 ---
 # <a name="winrt-in-unreal"></a>WinRT no Unreal
 
@@ -21,7 +21,7 @@ Ao longo do desenvolvimento do seu HoloLens, talvez seja necessário escrever um
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unreal que apresentamos, você está no meio da exploração de funcionalidades e APIs da plataforma de Realidade Misturada. A partir daqui, você pode prosseguir para qualquer [tópico](unreal-development-overview.md#3-platform-capabilities-and-apis) ou ir diretamente para a implantação de seu aplicativo em um dispositivo ou emulador.
+Se você estiver seguindo a jornada de desenvolvimento inreal que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada. A partir daqui, você pode continuar com qualquer [tópico](unreal-development-overview.md#3-platform-capabilities-and-apis) ou ir diretamente para a implantação de seu aplicativo em um dispositivo ou emulador.
 
 > [!div class="nextstepaction"]
 > [Como fazer a implantação no dispositivo](unreal-deploying.md)

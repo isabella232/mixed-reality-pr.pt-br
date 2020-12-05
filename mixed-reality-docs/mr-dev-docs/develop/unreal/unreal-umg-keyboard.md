@@ -1,21 +1,21 @@
 ---
-title: UMG e Keyboard não reais
+title: UMG e teclado no Unreal
 description: Saiba como usar gráficos de movimento inrealistas para criar um sistema de interface do usuário fora dos widgets.
 author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, HoloLens 2, controle de olho, entrada de olhar, tela de montagem de cabeça, mecanismo inreal, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, widgets, interface do usuário, UMG, gráficos de movimento inreal, mecanismo inreal, UE, UE4
-ms.openlocfilehash: 9f22a5f7a13732727b6b122d385aad7e708a1343
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355251"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609757"
 ---
-# <a name="umg-and-keyboard-in-unreal"></a>UMG e Keyboard não reais
+# <a name="umg-and-keyboard-in-unreal"></a>UMG e teclado no Unreal
 
-O UMG (elementos gráficos de movimento inreal) é um sistema de interface do usuário interno do mecanismo não real, usado para criar interfaces como menus e caixas de texto. Interfaces de usuário criadas com UMG consistem em widgets. Este guia mostrará como criar um novo widget, adicioná-lo ao espaço mundial e habilitar a interação com esse widget em realidade misturada, usando o teclado do sistema como um exemplo. Você pode aprender mais sobre o UMG na [documentação](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)oficial do mecanismo inreal. 
+O UMG (elementos gráficos de movimento inreal) é um sistema de interface do usuário interno do mecanismo não real, usado para criar interfaces como menus e caixas de texto. Interfaces de usuário criadas com UMG consistem em widgets. Nós o orientaremos na criação de um novo widget, no acréscimo ao espaço mundial e na habilitação da interação usando o teclado do sistema como um exemplo. Você pode aprender mais sobre o UMG na [documentação](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)oficial do mecanismo inreal. 
 
 ## <a name="create-a-new-widget"></a>Criar um novo widget
 
@@ -27,7 +27,7 @@ O UMG (elementos gráficos de movimento inreal) é um sistema de interface do us
 
 ![Captura de tela da janela de hierarquia com componente de widget de texto realçado e expandido](images/unreal-umg-img-02.png)
 
-- Selecione um widget na janela hierarquia ou designer e modifique os parâmetros no painel de detalhes.  Nesse caso, adicionamos um "texto de dica" padrão e uma cor de tonalidade quando o cursor está focalizando a caixa de texto para fornecer comentários com os quais o widget está pronto para ser interagindo.  Uma caixa de texto exibirá um teclado virtual no HoloLens quando ele estiver interagindo com:
+- Selecione um widget na janela hierarquia ou designer e modifique os parâmetros no painel de detalhes.  Nesse caso, adicionamos um "texto de dica" padrão e uma cor de tonalidade que aparece quando você passa o mouse sobre a caixa de texto.  Uma caixa de texto exibirá um teclado virtual no HoloLens quando ele estiver interagindo com:
 
 ![Captura de tela de parâmetros modificados na janela hierarquia](images/unreal-umg-img-03.png)
 
@@ -57,11 +57,14 @@ Os widgets do UMG normalmente recebem a entrada de um mouse.  No HoloLens ou VR,
 
 ![Captura de tela de um novo ator com um componente de interação do widget realçado](images/unreal-umg-img-08.png)
 
-- No painel de detalhes do componente de interação do widget, defina a distância de interação com a distância desejada, defina a **origem da interação** como **personalizada** e para desenvolvimento, defina **Mostrar depuração** como **verdadeiro**:
+- No painel de detalhes do componente de interação do widget:
+    - Defina a distância de interação com o valor de distância desejado
+    - Definir a **origem da interação** como **personalizada**
+    - Para desenvolvimento, defina **Mostrar depuração** como **true**:
 
 ![Captura de tela da interação do widget e das propriedades do componente de depuração](images/unreal-umg-img-09.png)
 
-O padrão para a origem da interação é "mundo", que deve enviar raycasts com base na posição mundial do componente de interação do widget, mas no AR e na VR isso não parece ser o caso.  Habilitar a "mostrar depuração" e adicionar um tom de foco aos widgets enquanto o desenvolvimento é importante para a sanidade verifica se o componente de interação do widget está fazendo o que você espera.  A solução alternativa é usar uma fonte personalizada e definir o Raycast no grafo de eventos a partir do raio da mão.  
+O padrão para a origem da interação é "mundo", que deve enviar raycasts com base na posição mundial do componente de interação do widget. No AR e VR, esse não é o caso.  Habilitar a "mostrar depuração" e adicionar um tom de foco aos widgets é importante para verificar se o componente de interação do widget está fazendo o que você espera.  A solução alternativa é usar uma fonte personalizada e definir o Raycast no grafo de eventos a partir do raio da mão.  
 
 Aqui, estamos chamando isso a partir do tique do evento:
 

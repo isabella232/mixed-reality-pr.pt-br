@@ -6,22 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realidade mista do Windows, acompanhamento manual, inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
-ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4c66e2353c1e881c05541fd0fe9eafa553ea5c23
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679205"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609707"
 ---
 # <a name="hand-tracking-in-unreal"></a>Acompanhamento da mão no Unreal
 
-## <a name="overview"></a>Visão geral
-
-O sistema de acompanhamento manual usa Palms e dedos de uma pessoa como entrada. Você pode obter a posição e a rotação de cada dedo, todo o Palm e gestos de mão para usar em seu código. 
+O sistema de acompanhamento manual usa Palms e dedos de uma pessoa como entrada. Dados na posição e na rotação de cada dedo, todo o Palm e gestos de mão estão disponíveis. 
 
 ## <a name="hand-pose"></a>Pose de mão
 
-A pose de mão permite que você acompanhe as mãos e os dedos do usuário ativo e use-os como entrada, que pode ser acessado por meio de plantas e do C++. Você pode encontrar mais detalhes técnicos na API inreal do [Windows. percepção. People. HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) . A API inreal envia os dados como um sistema de coordenadas, com tiques sincronizados com o mecanismo inreal.
+A pose de mão permite que você acompanhe e use as mãos e os dedos de seus usuários como entrada. Você pode acessar dados de rastreamento em plantas e em C++. Você pode encontrar mais detalhes técnicos na API inreal do [Windows. percepção. People. HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) . A API inreal envia os dados como um sistema de coordenadas, com tiques sincronizados com o mecanismo inreal.
 
 ### <a name="understanding-the-bone-hierarchy"></a>Compreendendo a hierarquia do Bone
 
@@ -85,6 +83,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::SupportsHandTrackin
 ```
 
 ### <a name="getting-hand-tracking"></a>Obtendo controle à mão
+
 Você pode usar **GetHandJointTransform** para retornar dados espaciais da mão. Os dados são atualizados a cada quadro, mas se você estiver dentro de um quadro, os valores retornados serão armazenados em cache. Não é recomendável ter muita lógica nessa função por motivos de desempenho. 
 
 ![Obter transformação conjunta de entrega](images/unreal/get-hand-joint-transform.png)
@@ -94,24 +93,25 @@ C++:
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransform(EControllerHand Hand, EWMRHandKeypoint Keypoint, FTransform& OutTransform, float& OutRadius)
 ```
 
-Divisão de parâmetro de função:
+Aqui está uma análise dos parâmetros de função do GetHandJointTransform:
 
-* **Mão** – um é o lado esquerdo ou direito do usuário
+* A **mão** – pode ser os usuários à esquerda ou à direita.
 * **Ponto de extremidade** – o Bone da mão. 
 * **Transformação** – coordenadas e orientação da base do Bone. Você pode solicitar a base do próximo Bone para obter os dados de transformação para o final de um Bone. Um Bone de dica especial dá ao fim do distal. 
 * **RADIUS** — raio da base do Bone.
 * **Valor de retorno** — true se o Bone for rastreado neste quadro, false se o Bone não for acompanhado.
 
 ## <a name="hand-live-link-animation"></a>Animação do link ao vivo à mão
+
 As poses de mão são expostas à animação usando o [plug-in de vínculo dinâmico](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html).
 
 Se a realidade mista do Windows e os plug-ins do Live link estiverem habilitados: 
 1. Selecione **janela > link ao vivo** para abrir a janela do editor de link dinâmico. 
-2. Clique em **origem** e habilite a **fonte de acompanhamento do Windows Mixed Reality**
+2. Selecionar **origem** e habilitar a **fonte de acompanhamento do Windows Mixed Reality**
 
 ![Origem do link dinâmico](images/unreal/live-link-source.png)
  
-Depois de habilitar a origem e abrir um ativo de animação, expanda a seção **animação** na guia **cena de visualização** também para ver as opções adicionais (os detalhes estão na documentação de link dinâmico do inreal-como o plug-in está em beta, o processo pode ser alterado posteriormente).
+Depois de habilitar a origem e abrir um ativo de animação, expanda a seção **animação** na guia **Visualizar cena** também para ver as opções adicionais.
 
 ![Animação de link ao vivo](images/unreal/live-link-animation.png)
  
@@ -194,7 +194,8 @@ Para trabalhar com malhas à mão em plantas:
 
 Você pode usar um raio de mão como um dispositivo apontador em C++ e plantas, que expõem a API [Windows. UI. Input. Spatial. SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) .
 
-É importante mencionar que, como os resultados de todas as funções alteram todos os quadros, todos eles se tornaram chamáveis. Para obter mais informações sobre funções puras e impuras ou que podem ser chamadas, consulte o GUID do usuário do Blueprint em [funções](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
+> [!IMPORTANT]
+> Como todos os resultados da função alteram todos os quadros, todos eles se tornaram chamáveis. Para obter mais informações sobre funções puras e impuras ou que podem ser chamadas, consulte o GUID do usuário do Blueprint em [funções](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
 
 Para usar raios de mão em plantas, pesquise qualquer uma das ações em **HMD de realidade mista do Windows**:
 
@@ -203,6 +204,7 @@ Para usar raios de mão em plantas, pesquise qualquer uma das ações em **HMD d
 Para acessá-los em C++, inclua na `WindowsMixedRealityFunctionLibrary.h` parte superior do seu arquivo de código de chamada.
 
 ### <a name="enum"></a>Enumeração
+
 Você também tem acesso a casos de entrada em **EHMDInputControllerButtons**, que podem ser usados em plantas:
 
 ![Botões do controlador de entrada](images/unreal/input-controller-buttons.png)
@@ -218,10 +220,11 @@ enum class EHMDInputControllerButtons : uint8
 ```
 
 Abaixo está uma análise dos dois casos de enumeração aplicáveis:
+
 * **Select** -o evento de seleção disparado pelo usuário. 
-    * O evento pode ser disparado no HoloLens 2 por Air-TAP, olhar e Commit ou dizendo "Select" com a [entrada de voz](unreal-voice-input.md) habilitada. 
+    * Disparado no HoloLens 2 por Air-TAP, olhar e Commit ou dizendo "Select" com [entrada de voz](unreal-voice-input.md) habilitada. 
 * **Segure** -evento de Segure disparado pelo usuário. 
-    * Esse evento pode ser disparado no HoloLens 2 fechando os dedos do usuário em um holograma. 
+    * Disparado no HoloLens 2 fechando os dedos do usuário em um holograma. 
 
 Você pode acessar o status de acompanhamento da malha do seu lado em C++ por meio da `EHMDTrackingStatus` Enumeração mostrada abaixo:
 
@@ -235,18 +238,21 @@ enum class EHMDTrackingStatus : uint8
 ```
 
 Abaixo está uma análise dos dois casos de enumeração aplicáveis:
+
 * Não **rastreado** – a mão não está visível
 * **Acompanhado** – a mão é totalmente controlada
 
 ### <a name="struct"></a>Estrutura
+
 A estrutura PointerPoseInfo pode fornecer informações sobre os seguintes dados de mão:
+
 * **Origem** – origem da mão
 * **Direção** – direção da mão
 * **Up** – vetor de cima à mão
 * **Orientação** – o quaternion de orientação 
 * **Status de rastreamento** – status de acompanhamento atual
 
-Você pode acessá-lo por meio de plantas, conforme mostrado abaixo:
+Você pode acessar a estrutura PointerPoseInfo por meio de plantas, conforme mostrado abaixo:
 
 ![Ponteiro de pose de informações BP](images/unreal/pointer-pose-info-bp.png)
 
@@ -324,7 +330,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 ## <a name="gestures"></a>Gestos
 
-O Hololens 2 pode rastrear gestos espaciais, o que significa que você pode capturar esses gestos como entrada. Você pode encontrar mais detalhes sobre gestos são o documento de [uso básico do HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
+O HoloLens 2 rastreia gestos espaciais, o que significa que você pode capturar esses gestos como entrada. Você pode encontrar mais detalhes sobre gestos são o documento de [uso básico do HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
 
 Você pode encontrar a função Blueprint na **entrada espacial de realidade mista do Windows** e a função C++ adicionando o `WindowsMixedRealitySpatialInputFunctionLibrary.h` arquivo de código de chamada.
 
@@ -407,7 +413,7 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unreal, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção: 
+Se você estiver seguindo a jornada de desenvolvimento inreal que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção: 
 
 > [!div class="nextstepaction"]
 > [Âncoras Espaciais locais](unreal-spatial-anchors.md)
