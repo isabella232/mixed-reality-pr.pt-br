@@ -3,15 +3,15 @@ title: Guia de portabilidade de entrada para Unity
 description: Saiba como lidar com a entrada para a realidade mista do Windows no Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/9/2020
 ms.topic: article
 keywords: entrada, Unity, portabilidade
-ms.openlocfilehash: 4ad4b66b8238b3d00142fd14161113c6b912641c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 053918ec62f83c74655b0d4bb09a2b45b62bfc53
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91674905"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925878"
 ---
 # <a name="input-porting-guide-for-unity"></a>Guia de portabilidade de entrada para Unity
 
@@ -35,20 +35,20 @@ O Windows Mixed Reality dá suporte a controladores de movimento em uma variedad
 
 Para representar melhor esses controladores, há dois tipos de poses que você pode investigar para cada fonte de interação:
 
-* A **alça de fixação** , que representa o local da palma de uma mão detectada por um HoloLens ou o Palm que possui um controlador de movimento.
-    * Em headsets de imersão, essa pose é melhor usada para renderizar **a mão do usuário** ou **um objeto mantido na mão do usuário** , como uma gumes ou uma arma.
-    * A **posição de alça** : o Palm centróide ao manter o controlador naturalmente, ajustado para a esquerda ou para a direita para centralizar a posição dentro da alça.
-    * O **eixo direito da orientação de alça** : quando você abre completamente a mão para formar uma pose plana de 5 dedos, o raio normal para o Palm (para frente do Palm esquerdo, para trás do Palm direito)
-    * O **eixo de encaminhamento da orientação de alça** : quando você fecha a sua mão parcialmente (como se você mantiver o controlador), o raio que aponta para "encaminhar" por meio do tubo formado por seus dedos não-thumbs.
-    * O **eixo superior da orientação de alça** : o eixo superior implícito pelas definições direita e avançar.
-    * Você pode acessar a alça de pose por meio da API de entrada entre fornecedores do Unity ( **[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation** ) ou por meio da API específica do Windows ( **SourceState. SourcePose. TryGetPosition/Rotation** , solicitando a pose de alça).
-* A **pose do ponteiro** , representando a ponta do controlador apontando para frente.
+* A **alça de fixação**, que representa o local da palma de uma mão detectada por um HoloLens ou o Palm que possui um controlador de movimento.
+    * Em headsets de imersão, essa pose é melhor usada para renderizar **a mão do usuário** ou **um objeto mantido na mão do usuário**, como uma gumes ou uma arma.
+    * A **posição de alça**: o Palm centróide ao manter o controlador naturalmente, ajustado para a esquerda ou para a direita para centralizar a posição dentro da alça.
+    * O **eixo direito da orientação de alça**: quando você abre completamente a mão para formar uma pose plana de 5 dedos, o raio normal para o Palm (para frente do Palm esquerdo, para trás do Palm direito)
+    * O **eixo de encaminhamento da orientação de alça**: quando você fecha a sua mão parcialmente (como se você mantiver o controlador), o raio que aponta para "encaminhar" por meio do tubo formado por seus dedos não-thumbs.
+    * O **eixo superior da orientação de alça**: o eixo superior implícito pelas definições direita e avançar.
+    * Você pode acessar a alça de pose por meio da API de entrada entre fornecedores do Unity (**[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation**) ou por meio da API específica do Windows (**SourceState. SourcePose. TryGetPosition/Rotation**, solicitando a pose de alça).
+* A **pose do ponteiro**, representando a ponta do controlador apontando para frente.
     * Essa pose é mais bem usada para Raycast ao apontar para a **interface do usuário** quando você está renderizando o próprio modelo do controlador.
-    * Atualmente, a pose do ponteiro está disponível somente por meio da API específica do Windows ( **SourceState. sourcePose. TryGetPosition/Rotation** , solicitando a pose do ponteiro).
+    * Atualmente, a pose do ponteiro está disponível somente por meio da API específica do Windows (**SourceState. sourcePose. TryGetPosition/Rotation**, solicitando a pose do ponteiro).
 
 Essas coordenadas de pose são todas expressas nas coordenadas do mundo do Unity.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Controladores de movimento]().. /.. /design/motion-controllers.md)
 * [Gestos e controladores de movimento no Unity](../unity/gestures-and-motion-controllers-in-unity.md)
 * [UnityEngine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)

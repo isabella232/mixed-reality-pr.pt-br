@@ -1,19 +1,19 @@
 ---
-title: Portando aplicativos VR para a realidade mista do Windows
+title: Portabilidade dos aplicativos de VR para o Windows Mixed Reality
 description: Uma explicação passo a passo explicando como portar um aplicativo de imersão existente para a realidade mista do Windows.
 author: JBrentJ
 ms.author: alexturn
-ms.date: 07/07/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: porta, Unity, não real, middleware, mecanismo, UWP, Win32, portabilidade, 1º de HoloLens, headset de realidade misturada, headset de realidade mista do Windows, migração, Windows 10, mapeamento de entrada,
-ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443674"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925946"
 ---
-# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portando aplicativos VR para a realidade mista do Windows
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portabilidade dos aplicativos de VR para o Windows Mixed Reality
 
 O Windows 10 inclui suporte direto para headsets de imersão e Holographic. Se você tiver criado conteúdo para outros dispositivos, como o Oculus Rift ou o HTC Naopak, eles têm dependências em bibliotecas que existem acima da API de plataforma do sistema operacional. A disponibilização de aplicativos existentes do Win32 Unity VR para a realidade mista do Windows envolve o redirecionamento do uso de SDKs de VR específicos do fornecedor para as APIs VR entre fornecedores do Unity.
 
