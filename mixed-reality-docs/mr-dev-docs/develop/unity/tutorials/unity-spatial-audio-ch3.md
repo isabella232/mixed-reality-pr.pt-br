@@ -2,16 +2,16 @@
 title: Tutoriais de áudio espacial-3. Espacializar áudio de um vídeo
 description: Importar um ativo de vídeo para seu projeto do Unity e espacialar o áudio do vídeo.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, importação de vídeo, player de vídeo
-ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679715"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002621"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Espacializar áudio de um vídeo
 Neste terceiro capítulo do módulo de áudio espacial dos tutoriais do HoloLens 2 Unity, você irá:

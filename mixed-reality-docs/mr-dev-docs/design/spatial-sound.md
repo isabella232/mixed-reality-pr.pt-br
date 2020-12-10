@@ -2,16 +2,16 @@
 title: Áudio em realidade misturada
 description: O áudio em realidade misturada pode aumentar a confiança do usuário em interações de interface de usuário e aprofundar os usuários na experiência.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: som espacial, som surround, áudio 3D, som 3D, áudio espacial, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, estudos de caso, acústica
-ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2fe40f1b271e7ae775c333951286e87c5196c20b
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703252"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002491"
 ---
 # <a name="audio-in-mixed-reality"></a>Áudio em realidade misturada
 O áudio é uma parte essencial do design e da produtividade na realidade misturada. O som pode:
