@@ -6,8 +6,6 @@
   items:
     - name: Visão geral dos serviços de nuvem da realidade misturada do Azure
       href: mixed-reality-cloud-services.md
-    - name: Visão geral do aprendizado de Realidade Misturada
-      href: mr-learning-overview.md
     - name: Exemplos e aplicativos de recursos
       href: features-and-samples.md
 - name: Portabilidade de aplicativos
@@ -254,6 +252,8 @@
   items:
     - name: Visão geral do desenvolvimento com o Unreal
       href: unreal/unreal-development-overview.md
+    - name: Como atualizar projetos no Unreal
+      href: unreal/unreal-porting.md
     - name: Tutoriais
       items:
         - name: Criar um aplicativo de xadrez com ferramentas de experiência do usuário do MRTK
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: Publicar na Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Como atualizar projetos no Unreal
-          href: unreal/unreal-porting.md
         - name: Recomendações de desempenho para o Unreal
           href: unreal/performance-recommendations-for-unreal.md
         - name: Recomendações de material no Unreal
