@@ -1,23 +1,23 @@
 ---
 title: Como usar o Vuforia com o Unity
-description: Aproveite o Vuforia para criar aplicativos de realidade mista do Windows no Unity.
+description: Use o Vuforia para criar aplicativos do Windows Mixed Reality no Unity.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia, marcadores, coordenadas, quadro de referência, acompanhamento, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, Unity, HoloLens, controle de dispositivo, modo de desempenho, portal do desenvolvedor do Vuforia
-ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ecacf4036bfab38eb90782a194c445a83ca623ba
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679665"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010557"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Usando o mecanismo do Vuforia com o Unity
 
 O Vuforia Engine traz um recurso importante para o HoloLens – o poder de conectar experiências do AR a imagens e objetos específicos no ambiente. Você pode usar essa capacidade para sobrepor instruções passo a passo guiadas sobre máquinas para a empresa industrial ou adicionar recursos e experiências digitais a um produto ou jogo físico.
 
-Para obter maior flexibilidade ao desenvolver experiências de AR, o Vuforia Engine oferece uma ampla gama de recursos e destinos. Um dos nossos mais novos recursos, Vuforia Model targets, é um recurso importante para usos comerciais e industriais. Os destinos de modelo permitem que os aplicativos reconheçam objetos físicos, como computadores, automóveis ou brinquedos, e os acompanham com base em um modelo CAD ou 3D digital. Para usos industriais, esse recurso pode fornecer operadores de assembly e técnicos de serviço com instruções de trabalho AR e diretrizes de procedimento na fábrica ou fora do campo.
+O Vuforia Engine oferece uma ampla gama de recursos e destinos para tornar o processo de desenvolvimento de AR mais flexível. Um dos nossos mais novos recursos, Vuforia Model targets, é um recurso importante para usos comerciais e industriais. Os destinos de modelo permitem que os aplicativos reconheçam objetos físicos, como computadores, automóveis ou brinquedos, e os acompanham com base em um modelo CAD ou 3D digital. Para usos industriais, esse recurso pode fornecer operadores de assembly e técnicos de serviço com instruções de trabalho AR e diretrizes de procedimento na fábrica ou fora do campo.
 
 Os aplicativos do mecanismo Vuforia existentes criados para telefones e tablets podem ser facilmente configurados no Unity para serem executados no HoloLens. Você pode até mesmo usar o mecanismo de Vuforia para levar seu novo aplicativo de HoloLens para tablets do Windows 10, como o Surface pro e o livro de superfície.
 
@@ -32,9 +32,9 @@ Adicione o pacote do mecanismo Vuforia conforme descrito [aqui.](https://library
 
 ## <a name="getting-started-with-vuforia-engine"></a>Introdução ao mecanismo do Vuforia
 
-O melhor ponto de partida para aprender sobre como usar o mecanismo Vuforia com o HoloLens é com o [exemplo de hololens do mecanismo Vuforia](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (disponível no repositório de ativos do Unity). O exemplo fornece um projeto completo do HoloLens, incluindo cenas pré-configuradas que podem ser implantadas em um HoloLens.
+O melhor ponto de partida para aprender sobre o Vuforia Engine e o HoloLens é o [exemplo de hololens do mecanismo Vuforia](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (disponível no repositório de ativos do Unity). O exemplo fornece um projeto completo do HoloLens, incluindo cenas pré-configuradas que podem ser implantadas em um HoloLens.
 
-As cenas mostram como usar destinos de imagem Vuforia para reconhecer uma imagem e aumentá-la com conteúdo digital em uma experiência de HoloLens. O exemplo de Hololens do mecanismo Vuforia também inclui uma cena que mostra o uso de destinos de modelo e VuMarks no HoloLens. Você pode facilmente substituir seu próprio conteúdo nos bastidores para experimentar a criação de aplicativos do HoloLens que usam o mecanismo Vuforia.
+As cenas mostram como usar destinos de imagem Vuforia para reconhecer uma imagem e aumentá-la com conteúdo digital em uma experiência de HoloLens. O exemplo de HoloLens do mecanismo Vuforia também inclui uma cena que mostra o uso de destinos de modelo e VuMarks no HoloLens. Você pode facilmente substituir seu próprio conteúdo nos bastidores para experimentar a criação de aplicativos do HoloLens que usam o mecanismo Vuforia.
 
 
 
@@ -48,7 +48,7 @@ Desenvolver um aplicativo de mecanismo Vuforia para o HoloLens é fundamentalmen
 3.  Adicione os bastidores de exemplo em **cenas** no **Build.**
 4.  Em **configurações de compilação**, mude a plataforma de Build para **UWP** clicando no botão **Adicionar cenas abertas** .
 ![imagem](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.  Clique no botão **configurações do Player** .  
+5.  Selecione o botão **configurações do Player** .  
    * Selecione o ícone **UWP** e expanda a seção **configurações de XR** .
    * Verifique se a **realidade virtual com suporte** está habilitada.    
    * Em **SDKs de realidade virtual** , verifique se:
@@ -87,13 +87,12 @@ Como o processo é manipulado automaticamente, ele não requer nenhuma programa�
 
 Os destinos que são detectados, mas que não estão mais na exibição, são relatados como EXTENDED_TRACKED. Nesses casos, o script DefaultTrackableEventHandler usado em todos os destinos continua a renderizar o conteúdo de aumento. O desenvolvedor pode controlar esse comportamento implementando um script de manipulador de eventos rastreável personalizado.
 
-
 ## <a name="performance-mode-with-vuforia-engine"></a>Modo de desempenho com mecanismo Vuforia 
 
-É possível que o mecanismo Vuforia gerencie o desempenho no HoloLens para realizar experiências de AR e reduzir a carga de trabalho na CPU. O mecanismo Vuforia oferece três modos que podem ser selecionados: padrão, para otimizar a velocidade e para otimizar a qualidade. 
+É possível que o mecanismo Vuforia gerencie o desempenho no HoloLens para estender as experiências de AR e reduzir a carga de trabalho na CPU. O mecanismo Vuforia oferece três modos que podem ser selecionados: padrão, para otimizar a velocidade e para otimizar a qualidade. 
 
-*   MODE_OPTIMIZE_SPEED permite minimizar a carga de trabalho no dispositivo do HoloLens e é ótimo para estender as experiências do AR. É recomendável para situações em que o aplicativo está acompanhando objetos/destinos estáticos.
-*   MODE_DEFAULT é o modo normal que pode ser usado na maioria dos cenários.
+*   MODE_OPTIMIZE_SPEED permite minimizar a carga de trabalho no dispositivo do HoloLens e é ótimo para estender as experiências do AR. Recomendamos situações em que o aplicativo esteja acompanhando objetos/destinos estáticos.
+*   MODE_DEFAULT é o modo normal, que pode ser usado na maioria dos cenários.
 *   MODE_OPTIMIZE_QUALITY é melhor para controlar destinos móveis ou destinos de modelo que você espera que sejam coletados.
 
 **Definindo o modo**
@@ -112,4 +111,4 @@ Para alterar o modo de desempenho no Unity, navegue até configuração do Vufor
 * [Documentação do Vuforia: como instalar a extensão do Vuforia Unity](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Documentação do Vuforia: trabalhando com o exemplo de HoloLens no Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
 * [Documentação do Vuforia: rastreamento de dispositivo em Vuforia](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Documentação do Vuforia: taxa de quadros e desempenho Optomization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Documentação do Vuforia: taxa de quadros e otimização de desempenho](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)

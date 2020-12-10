@@ -1,24 +1,24 @@
 ---
 title: Tabela periódica dos elementos
-description: A tabela periódica dos elementos é um aplicativo de exemplo de software livre dos laboratórios de design da realidade misturada da Microsoft, em que você pode aprender a criar uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma coleção de objetos.
+description: A tabela periódica dos elementos é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. Saiba como criar uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma coleção de objetos.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, aplicativo de exemplo, controles, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677675"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010177"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tabela periódica dos elementos
 
 >[!NOTE]
 >Este artigo discute um exemplo exploratório que criamos nos laboratórios de [design de realidade misturada](https://github.com/Microsoft/MRDesignLabs_Unity), um lugar onde compartilhamos nossas aprendeções e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e códigos relacionados ao design irão evoluir à medida que fizermos novas descobertas.
 
-[A tabela periódica dos elementos](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. Com esse projeto, você pode aprender a formatar uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma **[coleção de objetos](../../design/object-collection.md)**. Saiba também como criar objetos que respondam às entradas padrão do HoloLens. Você pode usar os componentes deste projeto para criar sua própria experiência de aplicativo de realidade misturada.
+[A tabela periódica dos elementos](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. Saiba como dispor uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma **[coleção de objetos](../../design/object-collection.md)**. Saiba também como criar objetos que respondam às entradas padrão do HoloLens. Você pode usar os componentes deste projeto para criar sua própria experiência de aplicativo de realidade misturada.
 
 ![Tabela de período do aplicativo de elementos](images/640px-periodictable-hero.jpg)
 
@@ -31,9 +31,9 @@ Registrado com o HoloLens 2 usando a captura de realidade misturada
 
 A tabela periódica dos elementos visualiza os elementos químicos e cada uma de suas propriedades em um espaço 3D. Ele incorpora as interações básicas de HoloLens, como olhar e toque de ar. Os usuários podem aprender sobre os elementos com modelos 3D animados. Eles podem entender visualmente o Shell de um dos elementos do seu núcleo, que é composto de protoneladas e neutrons.
 
-## <a name="background"></a>Tela de fundo
+## <a name="background"></a>Segundo plano
 
-Depois de ter experimentado o HoloLens pela primeira vez, um aplicativo de tabela periódico foi uma ideia que eu sabia que queria experimentar em realidade misturada. Como cada elemento tem muitos pontos de dados que são exibidos com texto, pensei que seria um ótimo assunto para explorar a composição tipográfica em um espaço 3D. Ser capaz de visualizar o modelo de sem interesse do elemento foi outra parte interessante deste projeto.
+Depois de ter experimentado o HoloLens pela primeira vez, sabia que queria experimentar um aplicativo de tabela periódico em realidade misturada. Como cada elemento tem muitos pontos de dados que são exibidos com texto, pensei que seria um ótimo assunto para explorar a composição tipográfica em um espaço 3D. Dar aos usuários a chance de visualizar o modelo de sem interspersão do elemento era outra parte interessante deste projeto.
 
 ## <a name="design"></a>Design
 
@@ -55,13 +55,13 @@ O usuário pode alterar o tipo de superfície por ar tocando nos botões na part
 
 ### <a name="interactable-object-button"></a>Objeto interagir (botão)
 
-O [objeto de interação](../../design/interactable-object.md) é um objeto que pode responder às entradas básicas do HoloLens. Ele é fornecido como um pré-fabricado/script que você pode aplicar facilmente a qualquer objeto. Por exemplo, você pode fazer com que uma xícara de café em sua cena interaja e responda a entradas como olhar, toque de ar, navegação e gestos de manipulação. [Saiba mais](../../design/interactable-object.md)
+O [objeto de interação](../../design/interactable-object.md) é um objeto, que pode responder às entradas básicas do HoloLens. Ele é fornecido como um pré-fabricado/script, que você pode aplicar facilmente a qualquer objeto. Por exemplo, você pode fazer com que uma xícara de café em sua cena interaja e responda a entradas como olhar, toque de ar, navegação e gestos de manipulação. [Saiba mais](../../design/interactable-object.md)
 
 ![objeto nteractable](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Coleção de objetos
 
-A [coleção de objetos](../../design/object-collection.md) é um objeto que ajuda você a dispor vários objetos em várias formas. Ele dá suporte a plano, cilindro, esfera e dispersão. Você pode configurar propriedades adicionais, como RADIUS, número de linhas e espaçamento. [Saiba mais](../../design/object-collection.md)
+A [coleção de objetos](../../design/object-collection.md) é um objeto, que ajuda você a dispor vários objetos em várias formas. Ele dá suporte a plano, cilindro, esfera e dispersão. Você pode configurar propriedades adicionais, como RADIUS, número de linhas e espaçamento. [Saiba mais](../../design/object-collection.md)
 
 ![Coleção de objetos](images/640px-periodictable-collections.jpg)
 
@@ -87,7 +87,7 @@ Leia a história sobre como a tabela periódica do aplicativo de elementos foi a
 </tr>
 </table>
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)

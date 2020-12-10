@@ -6,18 +6,22 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic Rendering, Holographic, imersão, ponto de foco, buffer de profundidade, somente orientação, posicional, opaco, transparente, clipe, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677615"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010427"
 ---
 # <a name="camera-in-unity"></a>Câmera no Unity
 
-Quando você gasta um headset de realidade misturada, ele se torna o centro do seu Holographic World. O componente da [câmera](https://docs.unity3d.com/Manual/class-Camera.html) do Unity manipulará automaticamente a renderização de estereoscópico e seguirá o movimento e a rotação da cabeça quando o seu projeto tiver "realidade virtual com suporte" selecionada com "realidade mista do Windows" como o dispositivo (na seção outras configurações das configurações do Windows Store Player). Isso pode estar listado como "Windows Holographic" em versões mais antigas do Unity.
+Quando você gasta um headset de realidade misturada, ele se torna o centro do seu Holographic World. O componente da [câmera](https://docs.unity3d.com/Manual/class-Camera.html) do Unity manipulará automaticamente a renderização de estereoscópico e seguirá a rotação e o movimento da cabeça. No entanto, para otimizar totalmente a qualidade visual e a [estabilidade do holograma](../platform-capabilities-and-apis/hologram-stability.md), você deve definir as configurações de câmera descritas abaixo.
 
-No entanto, para otimizar totalmente a qualidade visual e a [estabilidade do holograma](../platform-capabilities-and-apis/hologram-stability.md), você deve definir as configurações de câmera descritas abaixo.
+## <a name="setup"></a>Instalação
+
+1. Ir para **outra** seção de configurações das **configurações do Windows Store Player**
+2. Escolha a **realidade mista do Windows** como o dispositivo, que pode ser listado como **Holographic do Windows** em versões mais antigas do Unity
+3. Selecione a **realidade virtual com suporte**
 
 >[!NOTE]
 >Essas configurações precisam ser aplicadas à câmera em cada cena do seu aplicativo.
@@ -26,10 +30,10 @@ No entanto, para otimizar totalmente a qualidade visual e a [estabilidade do hol
 
 ## <a name="holographic-vs-immersive-headsets"></a>Headsets de Holographic vs. imersiva
 
-As configurações padrão no componente câmera do Unity são para aplicativos 3D tradicionais que precisam de um plano de fundo Skybox, pois não têm um mundo real.
+As configurações padrão no componente câmera do Unity são para aplicativos 3D tradicionais, que precisam de um plano de fundo Skybox, pois não têm um mundo real.
 
 * Ao executar em um **[headset de imersão](../../discover/immersive-headset-hardware-details.md)**, você está renderizando tudo o que o usuário vê e, portanto, provavelmente desejará manter o Skybox.
-* No entanto, ao executar em um **Headset Holographic** como o [HoloLens](../../hololens-hardware-details.md), o mundo real deve aparecer atrás de tudo que a câmera renderiza. Para fazer isso, defina o plano de fundo da câmera como transparente (no HoloLens, o preto é renderizado como transparente) em vez de uma textura Skybox:
+* No entanto, ao executar em um **Headset Holographic** como o [HoloLens](../../hololens-hardware-details.md), o mundo real deve aparecer atrás de tudo que a câmera renderiza. Defina o plano de fundo da câmera como transparente (no HoloLens, o preto é renderizado como transparente) em vez de uma textura Skybox:
     1. Selecione a câmera principal no painel hierarquia
     2. No painel Inspetor, localize o componente câmera e altere a lista suspensa limpar sinalizadores de Skybox para cor sólida
     3. Selecione o seletor de cor do plano de fundo e altere os valores de RGBA para (0, 0, 0, 0)
@@ -51,11 +55,11 @@ Será mais fácil definir o layout do seu aplicativo se você imaginar a posiç�
 O processamento de conteúdo muito próximo ao usuário pode ser desconfortável em realidade misturada. Você pode ajustar os [planos de corte próximo e longe](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) no componente da câmera.
 
 1. Selecione a câmera principal no painel hierarquia
-2. No painel Inspetor, localize os planos de recorte do componente da câmera e altere a caixa de texto próximo de 0,3 para. 85. O conteúdo renderizado ainda mais próximo pode levar ao usuário discomfort e deve ser evitado de acordo com as [diretrizes de distância de renderização](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
+2. No painel Inspetor, localize os planos de recorte do componente da câmera e altere a caixa de texto próximo de 0,3 para 0,85. O conteúdo renderizado ainda mais próximo pode levar ao usuário discomfort e deve ser evitado de acordo com as [diretrizes de distância de renderização](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
 
 ## <a name="multiple-cameras"></a>Várias câmeras
 
-Quando há vários componentes de câmera na cena, o Unity sabe qual câmera usar para a renderização estereoscópico e o rastreamento de cabeçalho verificando qual gameobject tem a marca MainCamera.
+Quando há vários componentes de câmera na cena, o Unity sabe qual câmera usar para a renderização estereoscópico e o controle de cabeçalho com base em qual gameobject tem a marca MainCamera.
 
 ## <a name="recentering-a-seated-experience"></a>Recentralizando uma experiência em estação
 
@@ -67,33 +71,33 @@ Os headsets de HoloLens e de imersão reprojetarão cada quadro que seu aplicati
 
 Por padrão:
 
-* Os **headsets de imersão** executarão a Reprojeção posicional, ajustando os hologramas para uma previsão incorreta na posição e na orientação, se o aplicativo fornecer um buffer de profundidade para um determinado quadro.  Se um buffer de profundidade não for fornecido, o sistema só corrigirá as informações incorretas na orientação.
-* **Holographic headsets** como HoloLens executarão a Reprojeção posicional se o aplicativo fornece seu buffer de profundidade ou não.  A Reprojeção posicional é possível sem buffers de profundidade no HoloLens, pois a renderização costuma ser esparsa com um plano de fundo estável fornecido pelo mundo real.
+* **Headsets de imersão** cuidarão da Reprojeção posicional se o aplicativo fornecer um buffer de profundidade para um determinado quadro. Os headsets de imersão também ajustarão os hologramas para uma previsão incorreta na posição e na orientação. Se um buffer de profundidade não for fornecido, o sistema corrigirá apenas as previsões incorretas na orientação.
+* **Holographic headsets** como o HoloLens cuidarão da Reprojeção posicional se o aplicativo fornece seu buffer de profundidade ou não.  A Reprojeção posicional é possível sem buffers de profundidade no HoloLens, pois a renderização costuma ser esparsa com um plano de fundo estável fornecido pelo mundo real.
 
-Se você souber que está criando uma [experiência somente de orientação](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) com conteúdo com bloqueio de corpo rígido (por exemplo, conteúdo de vídeo de 360 graus), poderá definir explicitamente o modo de Reprojeção como somente orientação definindo [HolographicSettings. reprojemode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) como [HolographicReprojectionMode. OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
+Se você souber que está criando uma [experiência somente de orientação](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) com conteúdo com bloqueio de corpo rígido (por exemplo, conteúdo de vídeo de 360 graus), poderá definir explicitamente o modo de Reprojeção como orientação apenas definindo [HolographicSettings. reprojemode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) como [HolographicReprojectionMode. OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
 
 ## <a name="sharing-your-depth-buffers-with-windows"></a>Compartilhando buffers de profundidade com o Windows
 
 Compartilhar o buffer de profundidade do seu aplicativo para o Windows cada quadro dará ao seu aplicativo um dos dois aumentos na estabilidade do holograma, com base no tipo de headset que você está renderizando:
 
-* Os **headsets de imersão** podem executar a Reprojeção posicional quando um buffer de profundidade é fornecido, ajustando os hologramas para uma previsão incorreta na posição e na orientação.
+* Os **headsets de imersão** podem cuidar da Reprojeção posicional quando um buffer de profundidade é fornecido, ajustando os hologramas para uma previsão incorreta na posição e na orientação.
 * Os **headsets Holographic** têm alguns métodos diferentes. O HoloLens 1 selecionará automaticamente um [ponto de foco](focus-point-in-unity.md) quando um buffer de profundidade for fornecido, otimizando a estabilidade do holograma ao longo do plano que intercepta a maior parte do conteúdo. O HoloLens 2 irá estabilizar o conteúdo usando [LSR de profundidade (consulte comentários)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 Para definir se seu aplicativo de Unity fornecerá um buffer de profundidade para o Windows:
 
 1. Vá para **Editar**  >  **configurações do projeto**  >  **Player**  >  **plataforma universal do Windows guia**  >  **configurações do XR**.
 2. Expanda o item **Windows Mixed Reality SDK** .
-3. Marque ou desmarque a caixa de seleção **Habilitar compartilhamento de buffer de profundidade** .  Isso será verificado por padrão em novos projetos criados, pois esse recurso foi adicionado ao Unity e será desmarcado por padrão para projetos mais antigos que foram atualizados.
+3. Marque ou desmarque a caixa de seleção **Habilitar compartilhamento de buffer de profundidade** .  Habilitar o compartilhamento de buffer de profundidade é verificado por padrão em novos projetos, pois esse recurso foi adicionado ao Unity e será desmarcado por padrão para projetos mais antigos que foram atualizados.
 
-Fornecer um buffer de profundidade para o Windows pode melhorar a qualidade visual desde que o Windows possa mapear com precisão os valores de profundidade por pixel normalizados em seu buffer de profundidade de volta para distâncias em metros, usando os planos próximos e distantes que você definiu no Unity na câmera principal.  Se a renderização passar a lidar com valores de profundidade de maneiras típicas, geralmente você deve estar bom aqui, embora o processamento translúcida passe na gravação para o buffer de profundidade durante a exibição para pixels de cor existentes pode confundir a Reprojeção.  Se você souber que os seus passos de renderização deixarão muitos dos seus pixels de profundidade final com valores de profundidade imprecisos, você provavelmente obterá uma melhor qualidade visual desmarcando "Habilitar compartilhamento de buffer de profundidade". # # próximo ponto de verificação de desenvolvimento
+Um buffer de profundidade pode melhorar a qualidade visual desde que o Windows possa mapear com precisão os valores de profundidade por pixel normalizados no buffer de profundidade de volta para distâncias em metros, usando os planos próximos e distantes que você definiu no Unity na câmera principal.  Se a renderização passar a lidar com valores de profundidade de maneiras típicas, geralmente você deve estar bom aqui, embora o processamento translúcida passe na gravação para o buffer de profundidade durante a exibição para pixels de cor existentes pode confundir a Reprojeção.  Se você souber que os seus passos de renderização deixarão muitos dos seus pixels de profundidade final com valores de profundidade imprecisos, você provavelmente obterá uma melhor qualidade visual desmarcando "Habilitar compartilhamento de buffer de profundidade".
 
-## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit-v2"></a>Configuração automática de cena e câmera com o kit de ferramentas de realidade misturada v2
+## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Configuração automática de cena e câmera com o kit de ferramentas de realidade misturada 
 
-Siga o guia [passo a passo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) para adicionar o kit de ferramentas de realidade misturada v2 ao seu projeto do Unity e ele configurará seu projeto automaticamente. Você também pode configurar manualmente o projeto sem MRTK com o guia na seção abaixo.
+Siga o guia [passo a passo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) para adicionar o kit de ferramentas de realidade misturada ao seu projeto do Unity e ele configurará seu projeto automaticamente. Você também pode configurar manualmente o projeto sem MRTK com o guia na seção abaixo.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Foco](gaze-in-unity.md)
@@ -105,7 +109,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Estabilidade do holograma](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit principal. pré-fabricado](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

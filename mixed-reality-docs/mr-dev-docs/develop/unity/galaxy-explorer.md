@@ -6,18 +6,19 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gerenciador do Galaxy, estudo de caso, projeto, exemplo, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, exemplos de aplicativos, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678615"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010297"
 ---
 # <a name="galaxy-explorer"></a>Gerenciador do Galaxy
 
 **Você compartilhou suas ideias. Estamos compartilhando o código.**
 
-O projeto Gerenciador do Galaxy está pronto. Vocês compartilharam suas ideias com a comunidade, escolheram um aplicativo, viram uma equipe compilá-lo e agora podem obter o código-fonte. Se você tiver um dispositivo, o projeto do Galaxy Explorer também estará disponível para download na Windows Store para Microsoft HoloLens.
+O projeto Gerenciador do Galaxy está pronto. Você compartilhou suas ideias com a Comunidade, escolheu um aplicativo, observou uma equipe e agora pode obter o código-fonte. Se você tiver um dispositivo, o projeto do Galaxy Explorer estará disponível para download na Windows Store para Microsoft HoloLens.
+
 >[!TIP]
 >[Obter o código](https://github.com/Microsoft/GalaxyExplorer) no github
 
@@ -92,7 +93,7 @@ Você pode encontrar ainda mais ideias e lições do desenvolvimento do Galaxy E
 ![Equipe de desenvolvimento do Galaxy Explorer](images/syiteampic.jpg)<br>
 *Equipe de desenvolvimento do Galaxy Explorer*
 
-Aprendemos que a criação da equipe certa é um dos investimentos mais importantes que poderíamos fazer. Decidimos organizar de forma semelhante a um estúdio de jogos para aqueles que você conhece com esse modelo de desenvolvimento. Optamos por ter onze membros da equipe principal para controlar o escopo, pois tivemos um período de tempo fixo (crie algo interessante antes de criar em 30 de março de 2016).
+Aprendemos que a criação da equipe certa é um dos investimentos mais importantes que poderíamos fazer e decidimos organizar de forma semelhante a um estúdio de jogos para aqueles que você conhece com esse modelo de desenvolvimento. Optamos por ter 11 membros principais da equipe para controlar o escopo, pois tínhamos um período de tempo fixo (crie algo interessante antes de criar em 30 de março de 2016).
 
 Para este projeto, começamos com um produtor, Jessica que conduziu o planejamento, revisando o progresso e mantendo as coisas em execução dia a dia. Ela é aquela com cabelo rosa. Tínhamos um diretor de design (Jon) e um designer sênior (Peter). Eles mantinham a visão criativa do Galaxy Explorer. Jon é o que está em óculos na linha frontal e Peter é o segundo da direita na parte posterior.
 
@@ -100,10 +101,10 @@ Tivemos três desenvolvedores – BJ (entre Jon e Jessica), Mike (segunda linha 
 
 Começamos com quatro artistas em tempo integral – um artista de conceito (Jedd, segundo da esquerda para trás), um modelador (Andy, terceiro da direita na parte posterior), um artista técnico (Alex (a maioria das pessoas)) e um Animator (Steve (mais à esquerda). Cada uma delas também faz mais do que isso – mas essas são suas responsabilidades principais.
 
-Tivemos um testador em tempo integral – Lena – que testou nossas compilações todos os dias, configuro nossas análises de Build e revisamos os recursos à medida que eles ficam online. Todos testaram constantemente no entanto, como estávamos sempre olhando para nossas compilações. A Lena é a um dos mais poissores de couro.
+Tivemos um testador de tempo integral – Lena – que testou nossas compilações todos os dias, configuro nossas análises de Build e revisamos os recursos à medida que eles ficam online. Todos testaram constantemente no entanto, como estávamos sempre olhando para nossas compilações. A Lena é a um dos mais poissores de couro.
 
 Fazemos parte de um estúdio maior na Microsoft (imagine equipe em desenvolvimento sem jogos). Também havia várias outras pessoas envolvidas – chamamos sobre os talentos de nosso diretor de arte, engenharia de áudio e liderança de estúdio com frequência em todo o projeto, mas essas pessoas eram recursos compartilhados com outros projetos que a equipe mais ampla tem.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Estudo de caso-criando um Galaxy em realidade misturada](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Repositório GitHub do Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer)

@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: foto, vídeo, hololens, câmera, Unity, localizável, PVC, câmera de vídeo fotográfico, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, webcam, captura de foto, captura de vídeo
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678595"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010097"
 ---
 # <a name="locatable-camera-in-unity"></a>Câmera localizável no Unity
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678595"
 
 A capacidade de "WebCam" deve ser declarada para que um aplicativo use a [câmera](../platform-capabilities-and-apis/locatable-camera.md).
 1. No editor do Unity, vá para as configurações do Player navegando até a página "Editar configurações do projeto > > Player"
-2. Clique na guia "Windows Store"
+2. Selecione a guia "Windows Store"
 3. Na seção "configurações de publicação > recursos", verifique os recursos de **webcam** e de **microfone**
 
-Apenas uma única operação pode ocorrer com a câmera de cada vez. Para determinar qual modo (foto, vídeo ou nenhum) a câmera está no momento, você pode verificar UnityEngine. XR. WSA. WebCam. Mode.
+Apenas uma única operação pode ocorrer com a câmera de cada vez. Você pode verificar com o modo em que a câmera está no momento com UnityEngine. XR. WSA. WebCam. Mode. Os modos disponíveis são foto, vídeo ou nenhum.
 
 ## <a name="photo-capture"></a>Captura de fotos
 
@@ -33,13 +33,13 @@ O tipo de *captura* de imagem permite que você faça ainda fotografias com a c�
 1. Criar um objeto do *Pocapture*
 2. Crie um objeto *cameraparameters* com as configurações desejadas
 3. Iniciar o modo de foto via *StartPhotoModeAsync*
-4. Tirar a foto desejada
+4. Tire a foto que você deseja
     * adicional Interagir com essa imagem
 5. Parar o modo de foto e limpar os recursos
 
 ### <a name="common-set-up-for-photocapture"></a>Configuração comum para o Capture
 
-Para todos os três usos, comece com as mesmas primeiras 3 etapas acima
+Para todos os três usos, comece com as mesmas três primeiras etapas acima
 
 Comece criando um objeto do *Pocapture*
 
@@ -124,9 +124,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>Capturar uma foto para um Texture2D
 
-Ao capturar dados para um Texture2D, o processo é extremamente semelhante à captura para o disco.
+Ao capturar dados para um Texture2D, o processo é semelhante à captura para o disco.
 
-Siga o processo de configuração acima.
+Siga o processo de instalação acima.
 
 No *OnPhotoModeStarted*, Capture um quadro na memória.
 
@@ -167,7 +167,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 Para interagir com os bytes brutos de um quadro na memória, siga as mesmas etapas de configuração descritas acima e *OnPhotoModeStarted* como em capturando uma foto para um Texture2D. A diferença está em *OnCapturedPhotoToMemory* , em que você pode obter os bytes brutos e interagir com eles.
 
-Neste exemplo, você criará uma *lista <Color>* que pode ser processada ou aplicada a uma textura por meio de *setPixels ()*
+Neste exemplo, você criará uma *lista <Color>* para ser processada ou aplicada a uma textura por meio de *setPixels ()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Namespace:** *UnityEngine. XR. WSA. webcam*<br>
 **Tipo:** *VideoCapture*
 
-O *VideoCapture* funciona de forma semelhante à do *Capture*. As duas únicas diferenças são que você deve especificar um valor de quadros por segundo (FPS) e só pode salvar diretamente no disco como um arquivo. mp4. As etapas para usar o *VideoCapture* são as seguintes:
+O *VideoCapture* funciona de forma semelhante ao *Capture*. As duas únicas diferenças são que você deve especificar um valor de quadros por segundo (FPS) e só pode salvar diretamente no disco como um arquivo. mp4. As etapas para usar o *VideoCapture* são as seguintes:
 1. Criar um objeto *VideoCapture*
 2. Crie um objeto *cameraparameters* com as configurações desejadas
 3. Iniciar o modo de vídeo via *StartVideoModeAsync*
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-Em um ponto posterior, você desejará parar a gravação. Isso pode acontecer de uma entrada de temporizador ou de usuário, por exemplo.
+Em um ponto posterior, você desejará parar a gravação usando uma entrada de temporizador ou de usuário, por exemplo.
 
 ```cs
 // The user has indicated to stop recording
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada. Daí, você pode prosseguir para o próximo tópico:
+Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada. A partir daqui, você pode continuar para o próximo tópico:
 
 > [!div class="nextstepaction"]
 > [Ponto de foco](focus-point-in-unity.md)

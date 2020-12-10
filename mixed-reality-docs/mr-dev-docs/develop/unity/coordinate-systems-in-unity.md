@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala assentada, escala em posição, espaço em escala, escala mundial, 360 graus, encaixada, posicionada, sala, mundo, escala, posição, orientação, Unity, âncora, âncora espacial, ancoragem mundial, trancada mundial, bloqueio mundial, fone de ouvido, bloqueio de corpo, perda de controle, locatability, limites, recentralizar, realidade misturada, headset do Windows, headset de realidade virtual
-ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678675"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010277"
 ---
 # <a name="coordinate-systems-in-unity"></a>Sistemas de coordenadas no Unity
 
@@ -24,7 +24,7 @@ Sua primeira etapa na criação de uma experiência de realidade mista no Unity 
 **Namespace:** *UnityEngine. XR*<br>
 **Tipo:** *XRDevice*
 
-Para criar uma experiência **somente de orientação** ou **de escala colocada**, você deve definir o Unity para o tipo de espaço de rastreamento estacionário. Isso define o sistema de coordenadas mundiais do Unity para acompanhar o [quadro estacionário de referência](../../design/coordinate-systems.md#spatial-coordinate-systems). No modo de rastreamento estacionário, o conteúdo colocado no editor apenas na frente do local padrão da câmera (Forward is-Z) aparecerá na frente do usuário quando o aplicativo for iniciado.
+Para criar uma experiência **somente de orientação** ou **de escala assentada**, você precisa definir o Unity para o tipo de espaço de rastreamento estacionário. O espaço de acompanhamento fixo define o sistema de coordenadas mundiais do Unity para acompanhar o [quadro de referência](../../design/coordinate-systems.md#spatial-coordinate-systems). No modo de rastreamento estacionário, o conteúdo colocado no editor apenas na frente do local padrão da câmera (Forward is-Z) aparecerá na frente do usuário quando o aplicativo for iniciado.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -52,7 +52,7 @@ InputTracking.Recenter();
 
 Para uma experiência **de escala de** colocação ou de escala de **espaço**, você precisará colocar o conteúdo em relação ao andar. Você se deparar com o andar do usuário usando o **[estágio espacial](../../design/coordinate-systems.md#spatial-coordinate-systems)**, que representa a origem definida do nível de chão do usuário e o limite de sala opcional, configurado durante a primeira execução.
 
-Para garantir que o Unity esteja operando com seu sistema de coordenadas mundiais no nível do andar, você pode definir o Unity para o tipo de espaço de rastreamento RoomScale e garantir que o conjunto tenha sucesso:
+Para garantir que o Unity esteja operando com seu sistema de coordenadas mundiais no nível de piso, você pode definir e testar se o Unity está usando o tipo de espaço de rastreamento RoomScale:
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -65,16 +65,17 @@ else
 }
 ```
 * Se SetTrackingSpaceType retornar true, o Unity alternará com êxito seu sistema de coordenadas mundiaI para acompanhar o [quadro de referência de estágio](../../design/coordinate-systems.md#spatial-coordinate-systems).
-* Se SetTrackingSpaceType retornar false, o Unity não poderá alternar para o quadro de referência de estágio, provavelmente porque o usuário não configurou até mesmo um andar em seu ambiente. Isso não é comum, mas pode acontecer se o estágio foi configurado em uma sala diferente e o dispositivo foi movido para o espaço atual sem que o usuário configure um novo estágio.
+* Se SetTrackingSpaceType retornar false, o Unity não poderá alternar para o quadro de referência de estágio, provavelmente porque o usuário não configurou um andar em seu ambiente. Embora um valor falso de retorno não seja comum, isso pode acontecer se o estágio estiver configurado em uma sala diferente e o dispositivo for movido para o espaço atual sem que o usuário configure um novo estágio.
 
-Depois que o aplicativo definir o tipo de espaço de acompanhamento RoomScale com êxito, o conteúdo colocado no plano y = 0 aparecerá no chão. A origem em (0, 0) será o local específico no andar em que o usuário se baseou durante a configuração da sala, com-Z representando a direção de encaminhamento que ele estava enfrentando durante a instalação.
+Depois que o aplicativo definir o tipo de espaço de acompanhamento RoomScale com êxito, o conteúdo colocado no plano y = 0 aparecerá no chão. A origem em 0, 0, será o local específico no andar em que o usuário se deparava durante a configuração da sala, com-Z representando a direção de encaminhamento que ele estava enfrentando durante a instalação.
 
 **Namespace:** *UnityEngine. experimental. XR*<br>
 **Tipo:** *limite*
 
-No código de script, você pode chamar o método TryGetGeometry em você é o tipo UnityEngine. experimental. XR. limite para obter um polígono de limite, especificando um tipo de limite de TrackedArea. Se o usuário definiu um limite (você obtém uma lista de vértices), sabe que é seguro fornecer uma **experiência de escala de sala** ao usuário, onde eles podem percorrer a cena que você criar.
+No código de script, você pode chamar o método TryGetGeometry no tipo UnityEngine. experimental. XR. limite para obter um polígono de limite, especificando um tipo de limite de TrackedArea. Se o usuário definiu um limite (você obtém uma lista de vértices), é seguro fornecer uma **experiência de escala de sala** ao usuário, na qual eles podem percorrer a cena que você criar.
 
-Observe que o sistema renderizará automaticamente o limite quando o usuário o aproximar. Seu aplicativo não precisa usar este polígono para renderizar o limite em si. No entanto, você pode optar por definir o layout de seus objetos de cena usando esse polígono de limite, para garantir que o usuário possa alcançar fisicamente esses objetos sem teleportação:
+> [!NOTE]
+> O sistema irá renderizar automaticamente o limite quando o usuário o aproximar. Seu aplicativo não precisa usar este polígono para renderizar o limite em si. No entanto, você pode optar por definir o layout de seus objetos de cena usando esse polígono de limite, para garantir que o usuário possa alcançar fisicamente esses objetos sem teleportação:
 
 ```cs
 var vertices = new List<Vector3>();
@@ -89,7 +90,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **Namespace:** *UnityEngine. XR. WSA*<br>
 **Tipo:** *WorldAnchor*
 
-Para experiências reais em grande **escala** sobre o HoloLens que permitem aos usuários percorrer mais de 5 metros, você precisará de novas técnicas além das usadas para experiências em escala de sala. Uma técnica importante que você usará é criar uma [âncora espacial](../../design/coordinate-systems.md#spatial-anchors) para bloquear um cluster de hologramas precisamente no mundo físico, independentemente de quanto o usuário está em roaming e, em seguida, [encontrar esses hologramas novamente em sessões posteriores](../../design/coordinate-systems.md#spatial-anchor-persistence).
+Para experiências reais em grande **escala** sobre o HoloLens que permitem aos usuários percorrer mais de 5 metros, você precisará de novas técnicas além das usadas para experiências em escala de sala. Uma técnica importante que você usará é criar uma [âncora espacial](../../design/coordinate-systems.md#spatial-anchors) para bloquear um cluster de hologramas precisamente no mundo físico, não importa o quanto o usuário está em roaming e, em seguida, [encontrar esses hologramas novamente em sessões posteriores](../../design/coordinate-systems.md#spatial-anchor-persistence).
 
 No Unity, você cria uma âncora espacial adicionando o componente **WorldAnchor** Unity a um gameobject.
 
@@ -101,7 +102,7 @@ Para adicionar uma âncora mundial, chame addComponent <WorldAnchor> () no objet
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-É isso! Este objeto de jogo agora será ancorado ao seu local atual no mundo físico – você pode ver que suas coordenadas do Unity World se ajustam um pouco ao longo do tempo para garantir que o alinhamento físico. Use a [persistência](persistence-in-unity.md) para localizar esse local ancorado novamente em uma sessão de aplicativo futura.
+Pronto! Este objeto de jogo agora será ancorado ao seu local atual no mundo físico – você pode ver que suas coordenadas do Unity World se ajustam um pouco ao longo do tempo para garantir que o alinhamento físico. Use a [persistência](persistence-in-unity.md) para localizar esse local ancorado novamente em uma sessão de aplicativo futura.
 
 ### <a name="removing-a-world-anchor"></a>Removendo uma âncora mundial
 
@@ -132,7 +133,7 @@ WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 
 ### <a name="handling-locatability-changes"></a>Manipulando alterações de Locatability
 
-Um WorldAnchor pode não ser localizável no mundo físico em um ponto no tempo. Se isso ocorrer, o Unity não estará atualizando a transformação do objeto ancorado. Isso também pode ser alterado enquanto um aplicativo está em execução. A falha ao manipular a alteração em locatability fará com que o objeto não apareça no local físico correto do mundo.
+Um WorldAnchor pode não ser localizável no mundo físico em um ponto no tempo. Se isso ocorrer, o Unity não atualizará a transformação do objeto ancorado. Isso também pode ser alterado enquanto um aplicativo está em execução. A falha ao manipular a alteração em locatability fará com que o objeto não apareça no local físico correto do mundo.
 
 Para ser notificado sobre as alterações de locatability:
 1. Assinar o evento onrastreiechanged
@@ -154,7 +155,7 @@ private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
 }
 ```
 
-Às vezes, as âncoras estão localizadas imediatamente. Nesse caso, essa propriedade islocalizada da âncora será definida como true quando addComponent <WorldAnchor> () retornar. Como resultado, o evento onrastreiechanged não será disparado. Um padrão limpo seria chamar o manipulador oncontrolchanged com o estado inicial IsDeleted depois de anexar uma âncora.
+Às vezes, as âncoras estão localizadas imediatamente. Nesse caso, essa propriedade islocalizada da âncora será definida como true quando addComponent <WorldAnchor> () retornar. Como resultado, o evento onrastreiochanged não será disparado. Um padrão limpo seria chamar o manipulador oncontrolchanged com o estado inicial IsDeleted depois de anexar uma âncora.
 
 ```cs
 Anchor_OnTrackingChanged(anchor, anchor.isLocated);
@@ -162,7 +163,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>Compartilhando âncoras entre dispositivos
 
-Você pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem durável de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos de HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
+Use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem durável a partir de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
 
 Para começar a criar experiências compartilhadas no Unity, experimente os guias de início rápido dos separadores <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">espaciais do Azure</a>de 5 minutos.
 
@@ -170,7 +171,7 @@ Quando estiver em execução com as âncoras espaciais do Azure, você poderá <
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada. De lá, você pode prosseguir para o próximo bloco de construção:
+Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada. A partir daqui, você pode continuar para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Foco](gaze-in-unity.md)

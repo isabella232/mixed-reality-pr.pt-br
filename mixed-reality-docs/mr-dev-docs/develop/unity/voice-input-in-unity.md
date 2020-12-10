@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Entrada de voz, KeywordRecognizer, GrammarRecognizer, microfone, ditado, voz, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679885"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010567"
 ---
 # <a name="voice-input-in-unity"></a>Entrada de voz no Unity
 
@@ -27,9 +27,9 @@ Com o KeywordRecognizer (um dos dois tipos de PhraseRecognizers), seu aplicativo
 
 ## <a name="enabling-the-capability-for-voice"></a>Habilitando o recurso de voz
 
-A capacidade do **microfone** deve ser declarada para que um aplicativo aproveite a entrada de voz.
+A capacidade do **microfone** deve ser declarada para um aplicativo usar entrada de voz.
 1. No editor do Unity, vá para as configurações do Player navegando até "Editar configurações do projeto > > Player"
-2. Clique na guia "Windows Store"
+2. Selecione na guia "Windows Store"
 3. Na seção "configurações de publicação > recursos", verifique a capacidade do **microfone**
 
 ## <a name="phrase-recognition"></a>Reconhecimento de frases
@@ -58,7 +58,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-Agora, adicione uma palavra-chave ao dicionário (por exemplo, dentro de um método Start ()). Estamos adicionando a palavra-chave "Activate" neste exemplo:
+Agora, adicione uma palavra-chave ao dicionário, por exemplo, em um método Start (). Estamos adicionando a palavra-chave "Activate" neste exemplo:
 
 ```
 //Create keywords for keyword recognizer
@@ -147,7 +147,7 @@ grammarRecognizer.Start();
 **Namespace:** *UnityEngine. Windows. Speech*<br>
 **Tipos**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
-Use o DictationRecognizer para converter a fala do usuário em texto. O DictationRecognizer expõe a funcionalidade de [ditado](../../design/voice-input.md#dictation) e dá suporte ao registro e à escuta de eventos de hipótese e de expressão concluídas, para que você possa fornecer comentários ao seu usuário enquanto eles falam e depois. Métodos Start () e Stop () respectivamente habilitam e desabilitam o reconhecimento de ditado. Depois de feito com o reconhecedor, ele deve ser descartado usando o método Dispose () para liberar os recursos que ele usa. Ele liberará esses recursos automaticamente durante a coleta de lixo com um custo de desempenho adicional se eles não forem lançados antes disso.
+Use o DictationRecognizer para converter a fala do usuário em texto. O DictationRecognizer expõe a funcionalidade de [ditado](../../design/voice-input.md#dictation) e dá suporte ao registro e à escuta de eventos de hipótese e de expressão concluídas, para que você possa fornecer comentários ao seu usuário enquanto eles falam e depois. Métodos Start () e Stop () respectivamente habilitam e desabilitam o reconhecimento de ditado. Depois de feito com o reconhecedor, ele deve ser descartado usando o método Dispose () para liberar os recursos que ele usa. Ele liberará esses recursos automaticamente durante a coleta de lixo com um custo de desempenho adicional se eles não forem liberados antes disso.
 
 Há apenas algumas etapas necessárias para começar a usar o ditado:
 1. Criar um novo DictationRecognizer
@@ -156,9 +156,9 @@ Há apenas algumas etapas necessárias para começar a usar o ditado:
 
 ### <a name="enabling-the-capability-for-dictation"></a>Habilitando o recurso de ditado
 
-O recurso "cliente da Internet", além do recurso de "microfone" mencionado acima, deve ser declarado para que um aplicativo aproveite o ditado.
+O recurso "cliente da Internet", junto com o recurso "microfone" mencionado acima, deve ser declarado para que um aplicativo aproveite o ditado.
 1. No editor do Unity, vá para as configurações do Player navegando para a página "Editar configurações do projeto > > Player"
-2. Clique na guia "Windows Store"
+2. Selecione na guia "Windows Store"
 3. Na seção "configurações de publicação > recursos", verifique o recurso **internetclient**
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
@@ -269,10 +269,10 @@ dictationRecognizer.Dispose();
 
 **Dicas**
 * Métodos Start () e Stop () respectivamente habilitam e desabilitam o reconhecimento de ditado.
-* Depois de feito com o reconhecedor, ele deve ser descartado usando o método Dispose () para liberar os recursos que ele usa. Ele liberará esses recursos automaticamente durante a coleta de lixo com um custo de desempenho adicional se eles não forem lançados antes disso.
+* Depois de feito com o reconhecedor, ele deve ser descartado usando o método Dispose () para liberar os recursos que ele usa. Ele liberará esses recursos automaticamente durante a coleta de lixo com um custo de desempenho adicional se eles não forem liberados antes disso.
 * Os tempos limite ocorrem após um determinado período de tempo. Você pode verificar esses tempos limite no evento DictationComplete. Há dois tempos limite a serem cientes:
-   1. Se o reconhecedor for iniciado e não ouvir nenhum áudio pelos primeiros cinco segundos, ele atingirá o tempo limite.
-   2. Se o reconhecedor tiver dado um resultado, mas, em seguida, ouvir silêncio por vinte segundos, ele atingirá o tempo limite.
+   1. Se o reconhecedor for iniciado e não ouvir áudio pelos primeiros cinco segundos, ele atingirá o tempo limite.
+   2. Se o reconhecedor tiver dado um resultado, mas, em seguida, ouve silêncio por 20 segundos, ele atingirá o tempo limite.
 
 ## <a name="using-both-phrase-recognition-and-dictation"></a>Usando o reconhecimento de frase e o ditado
 
@@ -292,7 +292,7 @@ Você também pode apenas iniciar um KeywordRecognizer, que reiniciará o Phrase
 
 ## <a name="using-the-microphone-helper"></a>Usando o auxiliar de microfone
 
-O kit de ferramentas de realidade misturada no GitHub contém uma classe auxiliar de microfone para indicar aos desenvolvedores se há um microfone utilizável no sistema. Um uso para ele é onde você desejaria verificar se há microfone no sistema antes de mostrar qualquer dica de interação de fala no aplicativo.
+O kit de ferramentas de realidade misturada no GitHub contém uma classe auxiliar de microfone para indicar aos desenvolvedores se há um microfone utilizável no sistema. Um uso para é onde você desejaria verificar se há microfone no sistema antes de mostrar qualquer dica de interação de fala no aplicativo.
 
 O script auxiliar de microfone pode ser encontrado na [pasta de entrada/scripts/utilitários](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). O repositório GitHub também contém um [pequeno exemplo](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrando como usar o auxiliar.
 

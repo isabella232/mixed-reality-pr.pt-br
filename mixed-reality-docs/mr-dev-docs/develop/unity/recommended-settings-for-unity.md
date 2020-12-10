@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, configurações, realidade misturada, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, desempenho, configurações de qualidade, configurações de iluminação, buffer de profundidade, XR, perda de rastreamento
-ms.openlocfilehash: b560e75043cbf4a3cb93837938fdb65324cb16bb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677365"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010107"
 ---
 # <a name="recommended-settings-for-unity"></a>Configurações recomendadas do Unity
 
@@ -21,24 +21,24 @@ O Unity fornece um conjunto de opções padrão que geralmente são o caso médi
 
 ### <a name="low-quality-settings"></a>Configurações de baixa qualidade
 
-É importante modificar as configurações de **qualidade do Unity** para o seu ambiente para **muito baixo**. Isso ajudará a garantir que seu aplicativo esteja executando o forma definitiva na taxa de quadros apropriada. Isso é extremamente significativo para o desenvolvimento de HoloLens. Para o desenvolvimento de headsets de imersão, dependendo das especificações do desktop capacitando a experiência VR, ainda é possível obter uma taxa de quadros sem os parâmetros de qualidade mais baixos.
+É importante modificar as configurações de **qualidade do Unity** para **muito baixa** , de modo que seu aplicativo seja executado e tenha bom desempenho na taxa de quadros apropriada, especialmente para o desenvolvimento do HoloLens. Para o desenvolvimento de headsets de imersão, dependendo das especificações do desktop capacitando a experiência VR, ainda é possível obter uma taxa de quadros sem os parâmetros de qualidade mais baixos.
 
-No Unity 2019 LTS +, o nível de qualidade do projeto pode ser definido indo para **Editar**  >  **configurações do projeto**  >  **qualidade** e definindo o **padrão** clicando na seta para baixo para o nível de qualidade **muito baixo** .
+No Unity 2019 LTS +, você pode definir o nível de qualidade do projeto acessando **Editar**  >  **configurações do projeto**  >  **qualidade** e definindo o **padrão** clicando na seta para baixo para o * * nível de baixa qualidade.
 
 ### <a name="lighting-settings"></a>Configurações de iluminação
 
-De forma semelhante às configurações de cena de qualidade, é importante definir as configurações de iluminação ideais para seu aplicativo de realidade misturada. No Unity, a configuração de iluminação que geralmente terá o maior impacto no desempenho em sua cena é a **iluminação global em tempo real**. Isso pode ser desativado com a ativação de **janela**  >  **Rendering**  >  **configurações de iluminação** em  >  **tempo real** para iluminação global.
+De forma semelhante às configurações de cena de qualidade, é importante definir as configurações de iluminação ideais para seu aplicativo de realidade misturada. No Unity, a configuração de iluminação que geralmente terá o maior impacto no desempenho em sua cena é a **iluminação global em tempo real**. Você pode desativar a iluminação global acessando **janela**  >  configurações de iluminação de **renderização** em  >    >  **tempo real**.
 
-Há outra configuração de iluminação, **inclusas global iluminação**. Essa configuração pode fornecer resultados de desempenho e visualmente surpreendentes em headsets de imersão, mas geralmente não é aplicável para o desenvolvimento de HoloLens. **Inclusas global Illumniation** só é calculado para Gameobjects estáticos que geralmente não são encontrados em cenas de HoloLens devido à natureza de um ambiente desconhecido e em constante alteração.
+Há outra configuração de iluminação, **inclusas global iluminação**. Essa configuração pode fornecer resultados de desempenho e visualmente surpreendentes em headsets de imersão, mas não é aplicável para o desenvolvimento de HoloLens. A **iluminação global inclusas** é calculada apenas para Gameobjects estáticos, que não são encontrados em cenas de HoloLens devido à natureza de um ambiente desconhecido e em alteração.
 
-Leia a [iluminação global do Unity](https://docs.unity3d.com/Manual/GIIntro.html) para obter mais informações. 
+Leia [iluminação global do Unity](https://docs.unity3d.com/Manual/GIIntro.html) para obter mais informações. 
 
 >[!NOTE]
 > A **iluminação global em tempo real** é definida **por cena** e, portanto, os desenvolvedores devem salvar essa propriedade para cada cena do Unity em seu projeto.
 
 ### <a name="single-pass-instancing-rendering-path"></a>Caminho de renderização de instância única de passagem
 
-Em aplicativos de realidade misturada, a cena é renderizada duas vezes, uma vez para cada olho para o usuário. Em comparação com o desenvolvimento 3D tradicional, isso efetivamente dobra a quantidade de trabalho que precisa ser computada. Portanto, é importante selecionar o caminho de renderização mais eficiente no Unity para economizar tanto na CPU quanto no tempo da GPU. A renderização de passagem única em instância otimiza o pipeline de renderização do Unity para aplicativos de realidade misturada e, portanto, é recomendável habilitar essa configuração por padrão para cada projeto.
+Em aplicativos de realidade misturada, a cena é renderizada duas vezes, uma vez para cada olho para o usuário. Em comparação com o desenvolvimento 3D tradicional, isso efetivamente dobra a quantidade de trabalho que precisa ser computada. É importante selecionar o caminho de renderização mais eficiente no Unity para economizar em tempo de CPU e GPU. A renderização de passagem única em instância otimiza o pipeline de renderização do Unity para aplicativos de realidade misturada e é recomendável habilitar essa configuração por padrão para cada projeto.
 
 Como habilitar esse recurso no seu projeto do Unity
 
@@ -57,7 +57,7 @@ Leia os artigos a seguir do Unity para obter mais detalhes com essa abordagem de
 
 ### <a name="enable-depth-buffer-sharing"></a>Habilitar compartilhamento de buffer de profundidade
 
-Para obter uma melhor estabilidade de holograma da percepção do usuário, é recomendável habilitar a propriedade de **compartilhamento de buffer de profundidade** no Unity. Ao ativar essa ação, o Unity compartilhará o mapa de profundidade produzido por seu aplicativo com a plataforma Windows Mixed Reality. A plataforma então será capaz de otimizar melhor a estabilidade do holograma especificamente para sua cena para qualquer determinado quadro que esteja sendo renderizado pelo seu aplicativo.
+Para obter uma melhor estabilidade de holograma da percepção do usuário, é recomendável habilitar a propriedade de **compartilhamento de buffer de profundidade** no Unity. Ao ativar essa ação, o Unity compartilhará o mapa de profundidade produzido por seu aplicativo com a plataforma Windows Mixed Reality. Em seguida, a plataforma pode otimizar melhor a estabilidade do holograma especificamente para sua cena para qualquer determinado quadro que esteja sendo renderizado pelo seu aplicativo.
 
 Como habilitar esse recurso no seu projeto do Unity
 
@@ -66,7 +66,7 @@ Como habilitar esse recurso no seu projeto do Unity
 
 Além disso, é recomendável selecionar **profundidade de 16 bits** na configuração de **formato de profundidade** neste painel, especialmente para o desenvolvimento de HoloLens. A seleção de 16 bits em comparação a 24 bits reduzirá significativamente os requisitos de largura de banda, pois menos dados precisarão ser movidos/processados.
 
-Para que a plataforma Windows Mixed Reality Otimize a estabilidade do holograma, ela depende do buffer de profundidade para ser preciso e corresponder a qualquer holograma renderizado na tela. Portanto, com o compartilhamento de buffer de profundidade ativado, é importante ao renderizar a cor, para também renderizar a profundidade. No Unity, a maioria dos materiais opacos ou TransparentCutouts renderizará profundidade por padrão, mas os objetos de texto e transparente geralmente não renderizarão a profundidade, embora isso seja dependente de sombreador, etc.
+Para que a plataforma Windows Mixed Reality Otimize a estabilidade do holograma, ela depende do buffer de profundidade para ser preciso e corresponder a qualquer holograma renderizado na tela. Portanto, com o compartilhamento de buffer de profundidade ativado, é importante ao renderizar a cor, para também renderizar a profundidade. No Unity, a maioria dos materiais opacos ou TransparentCutouts renderizará profundidade por padrão, mas os objetos de texto e Transparent não renderizarão a profundidade, embora isso seja dependente de sombreador, etc.
 
 Se estiver usando o [sombreador standard do kit de ferramentas do reality](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md), para renderizar a profundidade para objetos transparentes:
 
@@ -83,15 +83,15 @@ Se estiver usando o [sombreador standard do kit de ferramentas do reality](https
 
 ### <a name="building-for-il2cpp"></a>Compilando para IL2CPP
 
-O Unity preteriu o suporte para o back-end de script do .NET e, portanto, recomenda que os desenvolvedores utilizem o **IL2CPP** para suas compilações do Visual Studio UWP. Embora isso traga várias vantagens, a criação de sua solução do Visual Studio a partir do Unity para **IL2CPP** pode ser significativamente mais lenta do que o antigo método .net. Portanto, é altamente recomendável seguir as práticas recomendadas para a criação de **IL2CPP** para economizar em tempo de iteração de desenvolvimento.
+O Unity preteriu o suporte para o back-end de script do .NET e, portanto, recomenda que os desenvolvedores utilizem o **IL2CPP** para suas compilações do Visual Studio UWP. Embora isso traga várias vantagens, a criação de sua solução do Visual Studio a partir do Unity para **IL2CPP** pode ser mais lenta do que o antigo método .net. Portanto, é altamente recomendável seguir as práticas recomendadas para a criação de **IL2CPP** para economizar em tempo de iteração de desenvolvimento.
 
 1) Aproveite a criação incremental criando seu projeto no mesmo diretório a cada vez, reutilizando os arquivos predefinidos ali
 2) Desabilitar verificações de software antimalware para seu projeto & criar pastas
    - Abra o **vírus & proteção contra ameaças** em seu aplicativo de configurações do Windows 10
    - Selecione **gerenciar configurações** em **vírus & ameaças proteção configurações**
    - Selecione **Adicionar ou remover exclusões** na seção **exclusões**
-   - Clique em **Adicionar uma exclusão** e selecione a pasta que contém o código do projeto de Unity e as saídas de compilação
-3) Utilizar um SSD para compilação
+   - Selecione **Adicionar uma exclusão** e selecione a pasta que contém o código do projeto de Unity e as saídas de compilação
+3) Usar um SSD para compilação
 
 Leia [otimizando os tempos de compilação para IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) para obter mais informações.
 
@@ -106,11 +106,11 @@ O HoloLens tem uma CPU e uma GPU de classe móvel, o que significa que os aplica
 
 Para alternar a tela inicial do Holographic:
 
-1) Ir para **Edit** a página Editar configurações do  >  **projeto**  >  **Player**
-2) Clique na guia **Windows Store** e abra a seção **imagem de abertura**
-3) Aplique a imagem desejada na propriedade **imagem de abertura do Windows Holographic > Holographic** .
+1) Ir para a página Editar configurações do  >  **projeto**  >  
+2) Selecione a guia **Windows Store** e abra a seção **imagem de abertura**
+3) Aplique a imagem na propriedade de **imagem de abertura do Windows Holographic > Holographic** .
     - Alternar a opção **Mostrar tela inicial do Unity** habilitará ou desabilitará a tela inicial com marca do Unity. Se você não tiver uma licença do Unity pro, a tela inicial da marca do Unity será sempre exibida.
-    - Se uma **imagem de abertura do Holographic** for aplicada, ela sempre será exibida, independentemente de a caixa de seleção Mostrar tela inicial do Unity estar habilitada ou desabilitada. A especificação de uma imagem de abertura Holographic personalizada só está disponível para desenvolvedores com licença do Unity pro.
+    - Se uma **imagem de abertura do Holographic** for aplicada, ela sempre será exibida se a caixa de seleção Mostrar tela inicial do Unity estiver habilitada ou desabilitada. A especificação de uma imagem de abertura Holographic personalizada só está disponível para desenvolvedores com licença do Unity pro.
 
 |  Mostrar tela inicial do Unity  |  Imagem de abertura do Holographic  |  Comportamento |
 |----------|----------|----------|
@@ -129,18 +129,18 @@ Se ocorrer uma perda de controle, o comportamento padrão do Unity será parar d
 
 Para personalizar a imagem perdida de rastreamento:
 
-1) Ir para **Edit** a página Editar configurações do  >  **projeto**  >  **Player**
-2) Clique na guia **Windows Store** e abra a seção **imagem de abertura**
-3) Aplique a imagem desejada na propriedade de **imagem de perda de > do Windows Holographic de rastreamento** .
+1) Ir para a página Editar configurações do  >  **projeto**  >  
+2) Selecione na guia **Windows Store** e abra a seção **imagem de abertura**
+3) Aplique a imagem na propriedade de **imagem de perda de > de controle do Windows Holographic** .
 
 #### <a name="opt-out-of-automatic-pause"></a>Recusa de pausa automática
 
-Alguns aplicativos podem não exigir acompanhamento (por exemplo, [aplicativos somente de orientação](coordinate-systems-in-unity.md) , como visualizadores de vídeo de 360 graus) ou talvez precisem continuar o processamento ininterrupto enquanto o rastreamento é perdido. Nesses casos, os aplicativos podem recusar a perda padrão de comportamento de controle. Os desenvolvedores que escolhem isso são responsáveis por ocultar/desabilitar todos os objetos que não são renderizados corretamente em um cenário de perda de rastreamento. Na maioria dos casos, o único conteúdo que é recomendado para ser renderizado nesse caso é o conteúdo de corpo bloqueado, centralizado em toda a câmera principal.
+Alguns aplicativos podem não exigir acompanhamento (por exemplo, [aplicativos somente de orientação](coordinate-systems-in-unity.md) , como visualizadores de vídeo de 360 graus) ou talvez precisem continuar o processamento ininterrupto enquanto o rastreamento é perdido. Você pode recusar a perda padrão de comportamento de controle, mas é responsável por ocultar/desabilitar qualquer objeto, o que não será renderizado corretamente em um cenário de perda de rastreamento. Na maioria dos casos, o único conteúdo que é recomendado para ser renderizado nesse caso é o conteúdo de corpo bloqueado, centralizado em toda a câmera principal.
 
 Para recusar o comportamento de pausa automática:
 
-1) Ir para a página **Editar** o  >  **Project Settings**  >  **Player** de configurações do projeto
-2) Clique na guia **Windows Store** e abra a seção **imagem de abertura**
+1) Ir para a página **Editar** o  >    >  **Player** de configurações do projeto
+2) Selecione a guia **Windows Store** e abra a seção **imagem de abertura**
 3) Modifique a caixa de seleção **> do Windows Holographic na pausa de controle de perda e mostrar imagem** .
 
 #### <a name="tracking-loss-events"></a>Rastreando eventos de perda
@@ -149,12 +149,12 @@ Para definir o comportamento personalizado quando o rastreamento é perdido, man
 
 ### <a name="capabilities"></a>Funcionalidades
 
-Para que um aplicativo aproveite determinadas funcionalidades, ele deve declarar os recursos apropriados em seu manifesto. As declarações de manifesto podem ser feitas no Unity para que elas sejam incluídas em todas as exportações de projeto subsequentes.
+Para que um aplicativo aproveite determinadas funcionalidades, ele deve declarar os recursos apropriados em seu manifesto. As declarações de manifesto podem ser feitas no Unity para que elas sejam incluídas em todas as exportações futuras do projeto.
 
 Os recursos podem ser habilitados para um aplicativo de realidade misturada:
 
-1) Ir para **Edit** a página Editar configurações do  >  **projeto**  >  **Player**
-2) Clique na guia **Windows Store** , abra a seção **configurações de publicação** e procure a lista de **recursos**
+1) Ir para a página Editar configurações do  >  **projeto**  >  
+2) Selecione a guia **Windows Store** , abra a seção **configurações de publicação** e procure a lista de **recursos**
 
 Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos Holographic são:
 <br>
@@ -167,7 +167,7 @@ Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos
 |  Microfone  |  VideoCapture (ao capturar áudio), DictationRecognizer, GrammarRecognizer e KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (e para usar o criador de perfil do Unity) |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Visão geral do desenvolvimento do Unity](unity-development-overview.md)
 * [Noções básicas sobre o desempenho da Realidade Misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

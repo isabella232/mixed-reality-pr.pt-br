@@ -6,24 +6,22 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: olho-olhar, cabeça-olhar, Unity, holograma, realidade misturada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677505"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010357"
 ---
 # <a name="head-gaze-in-unity"></a>Cabeça-olhar no Unity
 
-[Olhar](../../design/gaze-and-commit.md) é uma maneira primária para os usuários direcionarem os [hologramas](../../discover/hologram.md) que seu aplicativo cria em [realidade misturada](../../discover/mixed-reality.md).
-
+[Olhar](../../design/gaze-and-commit.md) é a principal maneira para os usuários direcionarem os [hologramas](../../discover/hologram.md) que seu aplicativo cria em [realidade misturada](../../discover/mixed-reality.md).
 
 ## <a name="implementing-head-gaze"></a>Implementando o Head-olhar
 
-Conceitualmente, o [Head-olhar](../../design/gaze-and-commit.md) é implementado projetando um raio a partir da cabeça do usuário onde o headset está, na direção de encaminhamento que estão enfrentando e determinando o que o raio colide com.
-No Unity, a posição e a direção da cabeça do usuário são expostas por meio da [câmera](camera-in-unity.md)principal do Unity, especificamente [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
+Conceitualmente, você determina o [Head-olhar](../../design/gaze-and-commit.md) projetando um Ray forward do headset do usuário para ver o que ele atinge. No Unity, a posição e a direção da cabeça do usuário são expostas por meio da [câmera](camera-in-unity.md), especificamente [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-Chamar o [física. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) resulta em uma estrutura [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) que contém informações sobre a colisão, incluindo o ponto 3D em que ocorreu a colisão e o outro gameobject com o cabeçalho-olhar Ray colisado.
+Chamar [física. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) fornece a você um [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) que contém informações sobre a colisão, incluindo o ponto de colisão 3D e o outro gameobject com o cabeçalho Head-olhar Ray.
 
 ### <a name="example-implement-head-gaze"></a>Exemplo: implementar Head-olhar
 
@@ -47,18 +45,18 @@ void Update()
 
 ### <a name="best-practices"></a>Práticas recomendadas
 
-Embora o exemplo acima demonstre como fazer um único Raycast em um loop de atualização para localizar o destino dos pontos de partida do usuário em, é recomendável fazer isso em um único objeto Gerenciando Head-olhar em vez de fazer isso em qualquer objeto que esteja potencialmente interessado no objeto sendo gazed. Isso permite que seu aplicativo salve o processamento fazendo apenas uma cabeça-olhar Raycast cada quadro.
+Enquanto o exemplo acima dispara um único Raycast do loop de atualização para localizar o destino dos pontos de partida do usuário em, recomendamos usar um único objeto para gerenciar todos os processos olhar. A combinação da lógica Head-olhar economizará a capacidade de processamento precioso do aplicativo e limitará seu raycasting a um por quadro.
 
 ## <a name="visualizing-head-gaze"></a>Visualizando a cabeça-olhar
 
-Assim como no desktop em que você usa um ponteiro do mouse para direcionar e interagir com o conteúdo, você deve implementar um [cursor](../../design/cursors.md) que represente o olhar do usuário. Isso dá ao usuário confiança no que eles estão prestes a interagir.
+Assim como com um ponteiro do mouse em um computador, você deve implementar um [cursor](../../design/cursors.md) que represente o olhar do usuário. Saber qual conteúdo um usuário está direcionando aumenta a confiança no que eles estão prestes a interagir.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a>Head-olhar no kit de ferramentas da realidade misturada v2
-Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) no MRTK v2.
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-olhar no kit de ferramentas da realidade misturada 
+Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) no MRTK.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity, você está no meio da exploração dos principais blocos de construção do MRTK. De lá, você pode prosseguir para o próximo bloco de construção:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Gestos e controladores de movimentos](gestures-and-motion-controllers-in-unity.md)
@@ -70,7 +68,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Câmera](camera-in-unity.md)
 * [Cursores](../../design/cursors.md)
 * [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)

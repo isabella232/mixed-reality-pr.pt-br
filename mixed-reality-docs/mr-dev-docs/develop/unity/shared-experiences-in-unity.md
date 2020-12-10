@@ -6,34 +6,34 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Compartilhamento, ancoragem, WorldAnchor, Sr Sharing 250, WorldAnchorTransferBatch, SpatialPerception, Azure, âncoras espaciais do Azure, ASA, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual
-ms.openlocfilehash: c9f432a2ef26e28a2329f9fd191f680a4148ca7e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678455"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010086"
 ---
 # <a name="shared-experiences-in-unity"></a>Experiências compartilhadas no Unity
 
-Uma experiência compartilhada é aquela em que vários usuários, cada um com seu próprio dispositivo de HoloLens, iOS ou Android, exibem e interagem coletivamente com o mesmo holograma que é posicionado em um ponto fixo no espaço. Isso é feito por meio do compartilhamento de âncora espacial.
+Uma experiência compartilhada permite que vários usuários, cada um com seu próprio dispositivo de HoloLens, iOS ou Android, exibam e interajam coletivamente com o mesmo holograma. Os hologramas são posicionados em um ponto fixo no espaço por meio do compartilhamento de âncora espacial.
 
 ## <a name="azure-spatial-anchors"></a>Âncoras Espaciais do Azure
 
-Você pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar âncoras espaciais duráveis com suporte de nuvem, que seu aplicativo pode localizar em vários dispositivos HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
+As <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a>criam âncoras espaciais duráveis com suporte de nuvem, que seu aplicativo pode localizar em vários dispositivos HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico. 
 
-Você também pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Âncoras Espaciais do Azure</a> para persistência assíncrona de holograma em dispositivos HoloLens, iOS e Android.  Ao compartilhar uma âncora espacial em nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que os dispositivos não estejam presentes ao mesmo tempo.
+Você também pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para a persistência de holograma assíncrona em dispositivos de HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
 
 Para começar a criar experiências compartilhadas no Unity, experimente os guias de início rápido dos separadores <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">espaciais do Azure</a>de 5 minutos.
 
-Quando estiver em execução com as âncoras espaciais do Azure, você poderá <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">criar e localizar âncoras no Unity</a>.
+Depois que as âncoras espaciais do Azure estiverem configuradas, você poderá <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">criar e localizar âncoras no Unity</a>.
 
 ## <a name="local-anchor-transfers"></a>Transferências de âncora local
 
-Em situações em que você não pode usar âncoras espaciais do Azure, as [transferências de âncora local](../../out-of-scope/local-anchor-transfers-in-unity.md) permitem que um dispositivo de hololens exporte uma âncora a ser importada por um segundo dispositivo hololens.  Observe que essa abordagem fornece uma recall de ancoragem menos robusta do que as âncoras espaciais do Azure, e os dispositivos iOS e Android não são compatíveis com essa abordagem.
+Em situações em que você não pode usar âncoras espaciais do Azure, as [transferências de âncora local](../../out-of-scope/local-anchor-transfers-in-unity.md) permitem que um dispositivo de HoloLens exporte uma âncora para que um segundo HoloLens possa importá-lo.  Essa abordagem não tem suporte em dispositivos iOS e Android e fornece uma recall de ancoragem menos robusta do que as âncoras espaciais do Azure.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada. Daí, você pode prosseguir para o próximo tópico:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada. A partir daqui, você pode continuar para a próxima seção:
 
 > [!div class="nextstepaction"]
 > [Câmera localizável](locatable-camera-in-unity.md)
@@ -45,7 +45,7 @@ Ou vá diretamente para a implantação de seu aplicativo em um dispositivo ou e
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#3-platform-capabilities-and-apis) a qualquer momento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Experiências compartilhadas em realidade misturada](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">SDK de âncoras espaciais do Azure para Unity</a>
