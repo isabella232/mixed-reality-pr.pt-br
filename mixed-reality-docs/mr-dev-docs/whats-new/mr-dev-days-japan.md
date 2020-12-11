@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
-ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
+ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
+ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "97104200"
+ms.locfileid: "97111878"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japão
 
@@ -44,7 +44,7 @@ Estamos muito empolgados em abrir o registro para a realidade misturada em dias 
 ### <a name="december-16th"></a>16 de dezembro
 |**Hora**|**Título da sessão**|**Palestrante**|**Idioma**|**Level**|
 |---------|---------|---------|---------|---------|
-|10:10:00-10:50AM|Apresentação de abertura|Madoka Chiyoda, Alex Kipman, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
+|10:10:00-10:50AM|Apresentação de abertura|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
 |10:50AM-11:10:00|**Interrupção (10min)**||||
 |11:10:00-11:25am|*Sessão 1* Introdução à realidade misturada|Atsushi Suzuki|JA|100|
 |11: às 9h30-11:55am|*Sessão 2* Impulso de negócios de realidade misturada|Tetsu Muranaka|JA|200|
