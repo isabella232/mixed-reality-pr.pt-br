@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
 appliesto:
 - Windows 10
-ms.openlocfilehash: 76a913ae5890c908dda4e25d5b5c21554fdae7f0
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 0dd2ef30252189d006bfaf5702c47dce72f2798d
+ms.sourcegitcommit: d8db38647cf45f05b9445ceaf057d4cd01721ee6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011426"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091300"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Visão geral do software de Realidade Misturada e histórico de versões
 
@@ -42,7 +42,7 @@ Gerenciando o headset do Windows Mixed Reality:
 
 O **Windows 10 pode 2020 atualização (v2004)** inclui novos recursos para fones de ouvido do Windows Mixed Reality (VR), como a capacidade de iniciar aplicativos Win32 na página inicial misturada de realidade. O HoloLens (1º gen) está em manutenção a longo prazo (LTS), com atualizações de serviço a serem liberadas mensalmente.
 
-Para atualizar para a versão mais recente em headsets do PC para Windows Mixed Reality (VR), abra o aplicativo **configurações** , acesse **Atualizar & segurança**e, em seguida, selecione o botão **verificar atualizações** . Em um PC com Windows 10, você também pode instalar manualmente a **atualização do Windows 10 pode 2020** usando a [ferramenta de criação de mídia do Windows](https://www.microsoft.com/software-download/windows10).
+Para atualizar para a versão mais recente em headsets do PC para Windows Mixed Reality (VR), abra o aplicativo **configurações** , acesse **Atualizar & segurança** e, em seguida, selecione o botão **verificar atualizações** . Em um PC com Windows 10, você também pode instalar manualmente a **atualização do Windows 10 pode 2020** usando a [ferramenta de criação de mídia do Windows](https://www.microsoft.com/software-download/windows10).
 
 **Versão mais recente para área de trabalho**: Windows 10 v2004 (10.0.19041.264)
 
@@ -100,6 +100,7 @@ Esse driver é baixado e instalado automaticamente por meio de Windows Update, m
 
    | Versão          | Data de lançamento          | Principais alterações                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10 de dezembro de 2020  | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Novo firmware do controlador para o controlador HP para resolver um problema em que alguns controladores têm gatilhos que não funcionam.</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8 de outubro de 2020  | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Suporte oficial para o HP reverberate G2, HP Omnicept e o novo controlador HP.</li><li>Correções de exibição secundárias para HP reverbera e Samsung Odyssey + headsets. (Requer a [compilação do sistema operacional 19041,546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) ou superior ou o Builds do [sistema operacional 18362,1110 e 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) ou superior).</li><li>Melhorias nas transições de estado de energia do computador da suspensão para reduzir os erros do SWW 1-4.</li><li>Melhorias de confiabilidade e correções do Windows Mixed Reality headset.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7 de maio de 2020      | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Melhorias de confiabilidade e correções do Windows Mixed Reality headset.</li></ul>  |
 
