@@ -7,20 +7,18 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, áudio espacial
-ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679795"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609537"
 ---
 # <a name="spatial-audio-in-unreal"></a>Áudio espacial no Unreal
 
-## <a name="overview"></a>Visão geral
+Ao contrário da visão, os seres humanos ouvem o som ao redor em 360 graus. O som espacial emula o modo como a audição humana funciona, fornecendo as indicações necessárias para identificar localizações de som no espaço do mundo. Ao adicionar o som espacial aos seus aplicativos de realidade misturada, você está aprimorando o nível de imersão experimentado pelos usuários.  
 
-Ao contrário da visão, os seres humanos ouvem o som ao redor em 360 graus. O som espacial emula o modo como a audição humana funciona, fornecendo as indicações necessárias para identificar localizações de som no espaço do mundo. Ao adicionar som espacial aos seus aplicativos de realidade misturada, você está aprimorando o nível de imersão experimentado pelos usuários.  
-
-O processamento de som espacial de alta qualidade é complexo e, portanto, o HoloLens 2 é fornecido com um hardware dedicado para processar esses objetos de som.  Para acessar esse suporte de processamento de hardware, instale o plug-in **MicrosoftSpatialSound** no seu projeto do Unreal. Este artigo descreverá a instalação e a configuração desse plug-in e indicará recursos mais aprofundados para o uso de som espacial no Unreal Engine.
+O processamento de som espacial de alta qualidade é complexo e, portanto, o HoloLens 2 é fornecido com um hardware dedicado para processar esses objetos de som.  Para acessar esse suporte de processamento de hardware, instale o plug-in **MicrosoftSpatialSound** no seu projeto do Unreal. Este artigo descreverá a instalação e a configuração do plug-in e indicará recursos mais aprofundados.
 
 ## <a name="installing-the-microsoft-spatial-sound-plugin"></a>Como instalar o plug-in do Microsoft Spatial Sound
 
@@ -39,8 +37,9 @@ Depois que o editor for reiniciado, o projeto estará pronto.
 
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>Como configurar o plug-in de espacialização para a plataforma HoloLens 2
+
 A configuração do plug-in de espacialização é feita de acordo com a plataforma.  Habilite o plug-in do Microsoft Spatial Sound para o HoloLens 2:
-1. Selecionando **Editar > Configurações do Projeto**, rolando a página até **Plataformas** e clicando em **HoloLens**.
+1. Selecionando **Editar > Configurações de Projeto**, rolando o painel até **Plataformas e clicando em **HoloLens**.
 2. Expandindo as propriedades de **Áudio** e definindo o campo **Plug-in de Espacialização** como **Microsoft Spatial Sound**.
 
 ![Plug-in de espacialização para a plataforma HoloLens](images/unreal-spatial-audio-img-02.png)
@@ -50,6 +49,7 @@ Se você pretende visualizar seu aplicativo no editor do Unreal em um computador
 ![Plug-in de espacialização para a plataforma Windows](images/unreal-spatial-audio-img-05.png)
 
 ## <a name="enabling-spatial-audio-on-your-workstation"></a>Como habilitar o áudio espacial na sua estação de trabalho
+
 O áudio espacial está desabilitado por padrão nas versões de área de trabalho do Windows. Habilite-o:
 * Clicando com o botão direito do mouse no ícone de **volume** na barra de tarefas.
     + Escolha **Som espacial -> Windows Sonic para Fones de Ouvido** para obter a melhor representação do que você ouvirá no HoloLens 2.
@@ -60,6 +60,7 @@ O áudio espacial está desabilitado por padrão nas versões de área de trabal
 >Essa configuração só é necessária se você planeja testar seu projeto no editor do Unreal.
 
 ## <a name="creating-attenuation-objects"></a>Como criar objetos de Atenuação
+
 Depois de instalar e configurar os plug-ins necessários:
 1. Procure um ator de **Som Ambiente** na janela **Posicionar Atores** e arraste-o para a janela **Cena**.
 
@@ -82,7 +83,8 @@ Depois de instalar e configurar os plug-ins necessários:
 
 ![Definir a configuração de atenuação](images/unreal-spatial-audio-img-08.png)
 
-6. Defina o **Ativo de Som** que deseja anexar ao ator de Som Ambiente atualizando a propriedade **Som** do ator de Som Ambiente para especificar o arquivo de SoundAsset a ser usado.
+6. Defina o **Ativo de Som** que deseja anexar ao ator de Som Ambiente:
+    * Atualize a propriedade **Som** do ator de Som Ambiente para especificar o arquivo SoundAsset a ser usado.
 
 ![Definir o ativo de som](images/unreal-spatial-audio-img-09.png)
 
@@ -91,10 +93,11 @@ Depois de instalar e configurar os plug-ins necessários:
 
 ![Novo ativo de atenuação de som](images/unreal-spatial-audio-img-10.png)
 
-Quando tudo isso estiver configurado, o som ambiente poderá ser espacializado por meio do suporte de descarregamento de hardware dedicado no HoloLens 2.
+Quando o ativo de som estiver configurado, o som ambiente poderá ser espacializado por meio do suporte de descarregamento de hardware dedicado do HoloLens 2.
 
 ## <a name="configuring-objects-for-spatialization"></a>Como configurar objetos para espacialização
-Trabalhar com áudio espacial significa que você é responsável pelo gerenciamento de como o som se comporta em um ambiente virtual. Seu foco principal é a criação de objetos de som que parecem soar mais alto quando o usuário está próximo e mais baixo quando o usuário está distante. Isso é conhecido como atenuação de som, fazendo com que os sons pareçam como se estivessem posicionados em uma localização fixa.
+
+Trabalhar com áudio espacial significa que você é responsável pelo gerenciamento de como o som se comporta em um ambiente virtual. Seu foco principal é a criação de objetos de som que parecem soar mais alto quando o usuário está próximo e mais baixo quando o usuário está distante. Isso é conhecido como atenuação de som, fazendo com que os sons pareçam como se estivessem posicionados em um local fixo.
 
 Todos os objetos de atenuação são fornecidos com as configurações modificáveis de:
 * Distância
@@ -108,7 +111,7 @@ O artigo [Atenuação de som no Unreal](https://docs.unrealengine.com/Engine/Aud
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você está seguindo o percurso de pontos de verificação de desenvolvimento do Unreal, está no meio da exploração dos principais blocos de construção do MRTK. A partir daí, você pode prosseguir para o próximo bloco de construção:
+Se está seguindo o percurso de desenvolvimento do Unreal que estabelecemos, você está no meio da exploração dos principais blocos de construção do MRTK. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Entrada de voz](unreal-voice-input.md)

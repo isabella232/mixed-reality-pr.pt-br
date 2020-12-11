@@ -7,18 +7,16 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, performance, optimization, settings, documentation
-ms.openlocfilehash: 21bd3ee9fb7db23eab9365e41adfd0033aa0046e
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
+ms.openlocfilehash: 295f5c3653d02e9ab7ab4cd51dba57cafb5b291f
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549119"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609617"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Recomendações de desempenho para o Unreal
 
-## <a name="overview"></a>Visão geral
-
-Este artigo se baseia na discussão descrita em [recomendações de desempenho para realidade misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md), mas se concentra em recursos específicos do Unreal Engine. Você é incentivado a detectar os gargalos do aplicativo, analisar e criar o perfil de aplicativos de realidade misturada e correções de desempenho gerais antes de continuar.
+O Unreal Engine traz vários recursos que podem aumentar o desempenho de um aplicativo, tudo isso com base na discussão descrita em [Recomendações de desempenho para realidade misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Você é incentivado a detectar os gargalos do aplicativo, analisar e criar o perfil de aplicativos de realidade misturada e correções de desempenho gerais antes de continuar.
 
 ## <a name="recommended-unreal-project-settings"></a>Configurações recomendadas de projetos do Unreal
 Você pode encontrar cada uma das configurações a seguir em **Editar > Configurações do Projeto**.
@@ -29,7 +27,7 @@ Você pode encontrar cada uma das configurações a seguir em **Editar > Configu
 ![Configuração de destino para dispositivos móveis](images/unreal/performance-recommendations-img-01.png)
 
 2. Como usar o Renderizador de Encaminhamento: 
-    * Esse recurso é muito melhor para a Realidade Misturada do que o pipeline de renderização Adiado padrão. Isso ocorre principalmente devido ao número de recursos que podem ser desativados individualmente. 
+    * O Renderizador de Encaminhamento é muito melhor para a Realidade Misturada do que o pipeline de renderização Adiado padrão devido ao número de recursos que podem ser desabilitados individualmente. 
     * Você pode encontrar mais informações na [documentação do Unreal](https://docs.unrealengine.com/Platforms/VR/DevelopVR/VRPerformance/index.html).
 
 ![Renderização de encaminhamento](images/unreal/performance-recommendations-img-04.png)
@@ -45,24 +43,27 @@ Você pode encontrar cada uma das configurações a seguir em **Editar > Configu
 ![RHI Padrão](images/unreal/performance-recommendations-img-09.png)
 
 5. Como desabilitar a aplicação de neblina de vértice: 
-    * a aplicação de neblina de vértice se aplica a cálculos de neblina em cada vértice em um polígono e interpola os resultados na face do polígono. Se o jogo não usar neblina, você deverá escolher essa configuração para desabilitar a neblina a fim de aumentar o desempenho do sombreamento.
+    * a aplicação de neblina de vértice se aplica a cálculos de neblina em cada vértice em um polígono e interpola os resultados na face do polígono. Se o jogo não usar a neblina, recomendamos desabilitar a Neblina de Vértice para aumentar o desempenho do sombreamento.
 
 ![Opções de aplicação de neblina do vértice](images/unreal/performance-recommendations-img-05.png)
 
 6. Desabilitando a remoção por oclusão:
     * Role até a seção **Mecanismo**, selecione **Renderização**, expanda a seção **Remoção** e desmarque **Remoção por Oclusão**.
-        + Se você precisa usar a remoção por oclusão em uma cena detalhada que está sendo renderizada, recomendamos habilitar o **Suporte a Remoção por Oclusão de Software** em **Mecanismo > Renderização**. Isso permite que o Unreal faça o trabalho na CPU e evite consultas de oclusão de GPU, que têm mau desempenho no HoloLens 2.
-    * A remoção da oclusão na GPU em dispositivos móveis é lenta. Em geral, convém que a GPU se preocupe principalmente com a renderização. Se você achar que a oclusão ajudará o desempenho, tente habilitar a oclusão do software. Observe que a habilitação da oclusão do software poderá piorar o desempenho se você já estiver vinculado à CPU por um grande número de chamadas de desenho.
+        + Se você precisa usar a remoção por oclusão em uma cena detalhada que está sendo renderizada, recomendamos habilitar o **Suporte a Remoção por Oclusão de Software** em **Mecanismo > Renderização**. O Unreal fará o trabalho na CPU e evitará consultas de oclusão de GPU, que têm um desempenho insatisfatório no HoloLens 2.
+    * A remoção da oclusão na GPU em dispositivos móveis é lenta. Em geral, convém que a GPU se preocupe principalmente com a renderização. Se você achar que a oclusão ajudará o desempenho, tente habilitar a oclusão do software. 
+
+> [!NOTE]
+> A habilitação da oclusão do software pode piorar o desempenho se você já está vinculado à CPU por um grande número de chamadas de desenho.
 
 ![Desabilitar a remoção de oclusão](images/unreal/performance-recommendations-img-02.png)
 
 7. Desabilitando a passagem personalizada do estêncil de profundidade:
-    * esse recurso requer uma passagem extra, o que significa que ele é lento. A translucência também é lenta no Unreal. Você pode encontrar mais informações na [documentação do Unreal](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html).
+    * A desabilitação do Estêncil de Profundidade Personalizada exige uma passagem extra, o que significa que ele é lento. A translucência também é lenta no Unreal. Você pode encontrar mais informações na [documentação do Unreal](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html).
 
 ![Estêncil de profundidade](images/unreal/performance-recommendations-img-06.png)
 
 8. Como reduzir os mapas de sombra em cascata: 
-    * a redução do número de mapas de sombra vai aprimorar o desempenho. Em geral, isso deve ser definido como 1, a menos que haja uma perda de qualidade visível. 
+    * a redução do número de mapas de sombra vai aprimorar o desempenho. Em geral, você deve definir a propriedade como 1, a menos que haja uma perda de qualidade visível. 
 
 ![Mapas de sombra em cascata](images/unreal/performance-recommendations-img-07.png)
 
@@ -72,7 +73,7 @@ Você pode encontrar cada uma das configurações a seguir em **Editar > Configu
 > As configurações a seguir podem aprimorar o desempenho, mas à custa de desabilitar determinados recursos. Use essas configurações somente se tiver certeza de que não precisa dos recursos em questão.
 
 1. Redução da Permuta do Sombreador Móvel
-    * Se as luzes não forem movidas independentemente da câmera, você poderá definir esse valor com segurança como 0. O principal benefício é que ele permitirá que o Unreal remova várias permutações de sombreador, acelerando a compilação do sombreador.
+    * Se as luzes não forem movidas independentemente da câmera, você poderá definir o valor da propriedade com segurança como 0. O principal benefício é que ele permitirá que o Unreal remova várias permutações de sombreador, acelerando a compilação do sombreador.
 
 ![Redução da permuta do sombreador móvel](images/unreal/performance-recommendations-img-08.png)
 

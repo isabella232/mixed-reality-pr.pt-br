@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: gráficos, cpu, gpu, renderização, coleta de lixo, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695296"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761768"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recomendações de desempenho para o Unity
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **Cuidado com a conversão boxing**
 
-    A [conversão boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) é um conceito fundamental do runtime e da linguagem C#. É o processo de encapsular variáveis de tipo de valor, como char, int, bool etc., em variáveis de tipo de referência. Quando é feita a conversão boxing de uma variável de tipo de valor, ela é encapsulada dentro de um System.Object que é armazenado no heap gerenciado. Assim, a memória é alocada e, por fim, quando descartada, precisa ser processada pelo coletor de lixo. Essas alocações e essas desalocações geram um custo de desempenho e, em muitos cenários, são desnecessárias ou podem ser substituídas com facilidade por uma alternativa menos cara.
+    A [conversão boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) é um conceito fundamental do runtime e da linguagem C#. É o processo de encapsular variáveis de tipo de valor, como `char`, `int`, `bool` etc., em variáveis de tipo de referência. Quando é feita a conversão boxing de uma variável de tipo de valor, ela é encapsulada dentro de um `System.Object` que é armazenado no heap gerenciado. Assim, a memória é alocada e, por fim, quando descartada, precisa ser processada pelo coletor de lixo. Essas alocações e essas desalocações geram um custo de desempenho e, em muitos cenários, são desnecessárias ou podem ser substituídas com facilidade por uma alternativa menos cara.
 
-    Uma das formas mais comuns de conversão boxing no desenvolvimento é o uso de [tipos de valor que permitem valor nulo](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). É comum querer poder retornar nulo para um tipo de valor em uma função, especialmente quando a operação pode falhar ao tentar obter o valor. O possível problema dessa abordagem é que a alocação agora ocorre no heap e, consequentemente, precisa ser coletada como lixo mais tarde.
+    Para evitar a conversão boxing, verifique se as variáveis, as propriedades e os campos nos quais você armazena tipos numéricos e structs (incluindo `Nullable<T>`) são fortemente tipados como tipos específicos, como `int`, `float?` ou `MyStruct`, em vez de usar um objeto.  Se colocar esses objetos em uma lista, lembre-se de usar uma lista fortemente tipada, como `List<int>`, em vez de `List<object>` ou `ArrayList`.
 
     **Exemplo de conversão boxing em C#**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **Exemplo de conversão boxing problemática por meio de tipos de valor que permitem valor nulo**
-
-    Esse código demonstra uma classe de partícula fictícia que pode ser criada em um projeto do Unity. Uma chamada a `TryGetSpeed()` causará a alocação de objeto no heap, que precisará ser coletado como lixo posteriormente. Esse exemplo é particularmente problemático, pois pode haver mais de mil ou muito mais partículas em uma cena, cada uma sendo solicitada pela velocidade atual. Assim, milhares de objetos serão alocados e, consequentemente, desalocados a cada quadro, o que reduzirá muito o desempenho. A reescrita da função para retornar um valor negativo, como -1, a fim de indicar uma falha evitará esse problema e manterá a memória na pilha.
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>Repetição de caminhos de código
@@ -229,7 +214,7 @@ O Unity conta com um ótimo artigo que fornece uma visão geral e se aprofunda n
 A renderização com uma instância de passagem única no Unity permite que as chamadas de desenho para cada olho sejam reduzidas a uma chamada de desenho com instância. Devido à coerência de cache entre duas chamadas de desenho, também há alguma melhoria de desempenho na GPU.
 
 Como habilitar esse recurso no seu projeto do Unity
-1)  Abra **Configurações de XR do Player** (acesse **Editar** > **Configurações do Projeto** > **Player** > **Configurações de XR** )
+1)  Abra **Configurações de XR do Player** (acesse **Editar** > **Configurações do Projeto** > **Player** > **Configurações de XR**)
 2) Selecione **Instância de Passagem Única** no menu suspenso **Método de Renderização de Estéreo** (a caixa de seleção **Realidade Virtual Compatível** precisa estar marcada)
 
 Leia os artigos a seguir do Unity para obter detalhes dessa abordagem de renderização.
@@ -249,7 +234,7 @@ Leia *Envio em lote estático* em [Envio em lote de chamadas de desenho no Unity
 
 #### <a name="dynamic-batching"></a>Envio em lote dinâmico
 
-Como é problemático marcar objetos como *Estáticos* para o desenvolvimento no HoloLens, o envio em lote dinâmico pode ser uma ótima ferramenta para compensar esse recurso. É claro que isso também pode ser útil em headsets imersivos. No entanto, o envio em lote dinâmico no Unity pode ser difícil de ser habilitado, porque os GameObjects precisam **a) compartilhar o material** e **b) atender a uma lista longa de outros critérios** .
+Como é problemático marcar objetos como *Estáticos* para o desenvolvimento no HoloLens, o envio em lote dinâmico pode ser uma ótima ferramenta para compensar esse recurso. É claro que isso também pode ser útil em headsets imersivos. No entanto, o envio em lote dinâmico no Unity pode ser difícil de ser habilitado, porque os GameObjects precisam **a) compartilhar o material** e **b) atender a uma lista longa de outros critérios**.
 
 Leia *Envio em lote dinâmico* em [Envio em lote de chamadas de desenho no Unity](https://docs.unity3d.com/Manual/DrawCallBatching.html) para obter a lista completa. Normalmente, os GameObjects se tornam inválidos para serem enviados em lote dinamicamente, porque os dados de malha associados não podem ter mais de 300 vértices.
 
@@ -268,7 +253,7 @@ Saiba mais sobre [como otimizar a renderização de gráficos no Unity](https://
 
 ### <a name="optimize-depth-buffer-sharing"></a>Otimizar o compartilhamento de buffer de profundidade
 
-Geralmente, é recomendável habilitar o **Compartilhamento de buffer de profundidade** nas **Configurações de XR do Player** para otimizar a [estabilidade do holograma](../platform-capabilities-and-apis/Hologram-stability.md). No entanto, ao habilitar a reprojeção de etapa tardia baseada em profundidade com essa configuração, é recomendável selecionar o **formato de profundidade de 16 bits** em vez do **formato de profundidade de 24 bits** . Os buffers de profundidade de 16 bits reduzem drasticamente a largura de banda (e, portanto, a energia) associada ao tráfego do buffer de profundidade. Isso pode ser um grande ganho na redução de energia e na melhoria do desempenho. No entanto, há dois resultados negativos possíveis com o uso do *formato de profundidade de 16 bits* .
+Geralmente, é recomendável habilitar o **Compartilhamento de buffer de profundidade** nas **Configurações de XR do Player** para otimizar a [estabilidade do holograma](../platform-capabilities-and-apis/Hologram-stability.md). No entanto, ao habilitar a reprojeção de etapa tardia baseada em profundidade com essa configuração, é recomendável selecionar o **formato de profundidade de 16 bits** em vez do **formato de profundidade de 24 bits**. Os buffers de profundidade de 16 bits reduzem drasticamente a largura de banda (e, portanto, a energia) associada ao tráfego do buffer de profundidade. Isso pode ser um grande ganho na redução de energia e na melhoria do desempenho. No entanto, há dois resultados negativos possíveis com o uso do *formato de profundidade de 16 bits*.
 
 **Luta z**
 
@@ -284,11 +269,11 @@ As técnicas que operam na tela inteira podem ser bastante custosas, já que a o
 
 ### <a name="optimal-lighting-settings"></a>Configurações de iluminação ideais
 
-A [Iluminação Global em Tempo Real](https://docs.unity3d.com/Manual/GIIntro.html) do Unity pode fornecer resultados visuais excepcionais, mas envolve cálculos de iluminação bastante custosos. É recomendável desabilitar a Iluminação Global em Tempo Real em cada arquivo de cena do Unity por meio de **Janela** > **Renderização** > **Configurações de Iluminação** > Desmarcar **Iluminação Global em Tempo Real** .
+A [Iluminação Global em Tempo Real](https://docs.unity3d.com/Manual/GIIntro.html) do Unity pode fornecer resultados visuais excepcionais, mas envolve cálculos de iluminação bastante custosos. É recomendável desabilitar a Iluminação Global em Tempo Real em cada arquivo de cena do Unity por meio de **Janela** > **Renderização** > **Configurações de Iluminação** > Desmarcar **Iluminação Global em Tempo Real**.
 
 Além disso, é recomendável desabilitar toda a conversão de sombra, pois ela também adiciona passagens de GPU custosas a uma cena do Unity. As sombras podem ser desabilitadas conforme a luz, mas também podem ser controladas de maneira holística por meio das configurações de Qualidade.
 
-**Editar** > **Configurações do Projeto** e, em seguida, selecione a categoria **Qualidade** > selecione **Baixa Qualidade** para a plataforma UWP. Também é possível definir apenas a propriedade **Shadows** como **Desabilitar Sombras** .
+**Editar** > **Configurações do Projeto** e, em seguida, selecione a categoria **Qualidade** > selecione **Baixa Qualidade** para a plataforma UWP. Também é possível definir apenas a propriedade **Shadows** como **Desabilitar Sombras**.
 
 Recomendamos usar a iluminação integrada com seus modelos no Unity.
 
@@ -334,7 +319,7 @@ Use o *Pré-carregamento de sombreador* e outros truques para otimizar o [tempo 
 
 ### <a name="limit-overdraw"></a>Limitar a sobreposição
 
-No Unity, é possível exibir sobreposições para a cena alternando o [**menu do modo de desenho**](https://docs.unity3d.com/Manual/ViewModes.html) no canto superior esquerdo da **Exibição de cena** e selecionando **Sobreposição** .
+No Unity, é possível exibir sobreposições para a cena alternando o [**menu do modo de desenho**](https://docs.unity3d.com/Manual/ViewModes.html) no canto superior esquerdo da **Exibição de cena** e selecionando **Sobreposição**.
 
 Em geral, a sobreposição pode ser atenuada com a remoção de objetos antecipadamente ao envio para a GPU. O Unity fornece detalhes sobre como implementar a [Remoção de Oclusão](https://docs.unity3d.com/Manual/OcclusionCulling.html) para o mecanismo.
 

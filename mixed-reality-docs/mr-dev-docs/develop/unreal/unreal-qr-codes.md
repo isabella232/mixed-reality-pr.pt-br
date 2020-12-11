@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, códigos qr, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 7e39e1d822f0aa623a83678beef24f2c98a18944
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354394"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609637"
 ---
 # <a name="qr-codes-in-unreal"></a>Códigos QR no Unreal
 
-O HoloLens 2 pode ver códigos QR no espaço de mundo usando a webcam, que os renderiza como hologramas usando um sistema de coordenadas na posição de cada código no mundo real.  Além de códigos QR individuais, o HoloLens 2 também pode renderizar hologramas em vários dispositivos no mesmo local para criar uma experiência compartilhada. Verifique se você está seguindo as melhores práticas para adicionar códigos QR aos aplicativos:
+O HoloLens 2 pode ver códigos QR no espaço de mundo usando a webcam, que os renderiza como hologramas na posição de cada código no mundo real. O HoloLens 2 também pode renderizar os hologramas em vários dispositivos na mesma localização para criar uma experiência compartilhada. Verifique se você está seguindo as melhores práticas para adicionar códigos QR aos aplicativos:
 
 - Zonas silenciosas
 - Iluminação e pano de fundo
@@ -29,11 +29,11 @@ Preste atenção especial às [considerações sobre o ambiente](../../environme
 
 ## <a name="enabling-qr-detection"></a>Como habilitar a detecção de QR
 Como o HoloLens 2 precisa usar a webcam para ver os códigos QR, você precisará habilitá-la nas configurações do projeto:
-- Abra **Editar > Configurações do Projeto**, role até a seção **Plataformas** e clique em **HoloLens**.
+- Abra **Editar > Configurações de Projeto**, role o painel até a seção **Plataformas** e selecione **HoloLens**.
     + Expanda a seção **Funcionalidades** e marque **Webcam**.  
 - Você também precisará aceitar o controle de código QR [adicionando um ativo ARSessionConfig](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
-[!INCLUDE[](includes/tabs-qr-codes.md)]
+[!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
 ## <a name="setting-up-a-tracked-qr-code"></a>Como configurar um código QR controlado
 
@@ -54,7 +54,7 @@ Os códigos QR são exibidos por meio do sistema de geometria controlado pelo RA
 ## <a name="using-a-tracked-qr-code"></a>Como usar um código QR controlado
 O Grafo de Eventos na imagem a seguir mostra o evento **OnUpdateTrackedImage** que está sendo usado para processar um ponto no centro de um código QR e imprimir os dados desse código.
 
-![Exemplo de renderização de QR](images/unreal-qr-render.PNG)
+[!INCLUDE[](includes/tabs-qr-codes-2.md)]
 
 Isto é o que está acontecendo:
 1. Primeiro, a imagem rastreada é convertida em um **ARTrackedQRCode** para verificar se a imagem atualizada atual é um código QR.  
@@ -68,7 +68,7 @@ Todo código QR tem uma ID GUID exclusiva, que pode ser encontrada:
 
 ![GUID de QR](images/unreal-qr-guid.PNG)
 
-Há muita coisa acontecendo nos bastidores envolvendo códigos QR, portanto, esse não é o fim da linha. Não deixe de conferir os links a seguir para obter mais detalhes sobre o que está acontecendo nos bastidores.
+Há muita coisa acontecendo nos bastidores envolvendo os códigos QR. Portanto, esse não é o final da estrada. Não deixe de conferir os links a seguir para obter mais detalhes sobre o que está acontecendo nos bastidores.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

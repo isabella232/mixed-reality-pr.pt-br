@@ -2,25 +2,25 @@
 title: Como atualizar projetos no Unreal
 description: Visão geral das etapas de atualização da versão e APIs preteridas em projetos do Unreal.
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, documentação, guias, recursos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, portabilidade, atualização
-ms.openlocfilehash: efad783ee199ed42c7355917a180855b3ec4f11b
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355624"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609657"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Como atualizar projetos no Unreal
 
-Quando você fizer a atualização para uma nova versão do Unreal, as funções preteridas serão exibidas como avisos durante o build do blueprint ou do empacotamento do projeto.  As funções são preteridas quando uma nova função é adicionada e deve ser usada no lugar delas. 
+Quando você fizer a atualização para uma nova versão do Unreal, as funções preteridas serão exibidas como avisos durante o build de blueprints ou o empacotamento do projeto.  As funções são preteridas quando uma nova função é adicionada e deve ser usada no lugar delas. 
 
 ## <a name="426-upgrades"></a>Atualizações da versão 4.26
  
-Na versão 4.26, todas as plataformas de RA e VR foram refatoradas para adicionar interfaces comuns e manter a plataforma de código do aplicativo independente.  Devido a esse refatoramento, os projetos do HoloLens atualizados para a versão 4.26 podem exibir mais avisos do que o normal.  A atualização para as novas APIs é recomendada, de modo que o projeto possa ser portado com facilidade para outras plataformas.
+Na versão 4.26, todas as plataformas de RA e VR foram refatoradas para adicionar interfaces comuns e manter o código de aplicativo independente de plataforma, de modo que você possa ver mais avisos do que o normal.  A atualização para as novas APIs é recomendada, de modo que o projeto possa ser portado com facilidade para outras plataformas.
 
 As mensagens de aviso mostrarão a função preterida e indicarão a função que deverá ser usada no lugar dela.  Todas as funções preteridas continuarão funcionando nesta versão, mas podem não funcionar em versões futuras.  As funções preteridas também deixarão de ser listadas durante a pesquisa de funções em um blueprint.
 
@@ -49,4 +49,4 @@ As mensagens de aviso mostrarão a função preterida e indicarão a função qu
 | GetVersionString | ![Blueprint da função Obter Cadeia de Caracteres da Versão](images/unreal-porting-img-16.png) |
 | IsTrackingAvailable | ![Blueprint da propriedade IsTrackingAvailable](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Use o sistema de ações de entrada do Unreal. |
-| SetFocusPointForFrame | Removida da versão 4.26.  Anteriormente, era usada para reprojeção na comunicação remota, que agora dá suporte à reprojeção de profundidade. |
+| SetFocusPointForFrame | Removida da versão 4.26.  Anteriormente usado para reprojeção na comunicação remota, que agora dá suporte à reprojeção de profundidade. |

@@ -7,18 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, âncoras espaciais, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354457"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609627"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Âncoras Espaciais locais no Unreal
 
-## <a name="overview"></a>Visão geral
-
-As âncoras espaciais são usadas para salvar os hologramas no espaço do mundo real entre as sessões do aplicativo. Elas são exibidas por meio do Unreal como **ARPin** s e são salvas no repositório de âncoras do HoloLens, que é carregado em sessões futuras. As âncoras locais são ideais como fallback quando não há nenhuma conectividade com a Internet.
+As âncoras espaciais salvam hologramas no espaço do mundo real entre as sessões do aplicativo como **ARPin** s. Depois de salvos no repositório de âncoras do HoloLens, os ARPins podem ser carregados em sessões futuras e são uma opção de fallback ideal quando não há conectividade com a Internet.
 
 > [!NOTE]
 > As funções de âncora do UE 4.25 estão obsoletas na versão 4.26 e devem ser substituídas por outras mais recentes. 
@@ -28,13 +26,13 @@ As âncoras espaciais são usadas para salvar os hologramas no espaço do mundo 
 
 ## <a name="checking-the-anchor-store"></a>Como verificar o repositório de âncoras
 
-Antes de salvar ou carregar âncoras, você precisa verificar se o repositório de âncoras está pronto.  A tentativa de chamar qualquer uma das funções de âncora do HoloLens antes que o repositório de âncora esteja pronto não terá sucesso.  
+Antes de salvar ou carregar âncoras, você precisa verificar se o repositório de âncoras está pronto.  A chamada de uma das funções de âncora do HoloLens antes que o repositório de âncoras esteja pronto não terá êxito.  
 
 [!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## <a name="saving-anchors"></a>Como salvar âncoras
 
-Quando o aplicativo tem um componente que precisa ser fixado no mundo, ele pode ser salvo no repositório de âncoras com a seguinte sequência: 
+Quando o aplicativo tem um componente que você precisa fixar no mundo, ele pode ser salvo no repositório de âncoras com a seguinte sequência: 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
@@ -44,7 +42,7 @@ Passo a passo detalhado:
 3. Adicione o ator ao **ARPin** e salve o marcador no repositório de âncoras do HoloLens.  
     * O nome da âncora que você escolhe, que neste exemplo é o carimbo de data/hora atual, precisa ser exclusivo. 
 
-4. Se a âncora for salva com êxito no repositório de âncoras, você poderá inspecioná-la no portal do dispositivo do HoloLens em **Sistema > Gerenciador de mapas > Arquivos de Âncora Salvos no Dispositivo**. 
+4. Se a âncora for salva com êxito no repositório de âncoras, você poderá vê-la no portal do dispositivo do HoloLens em **Sistema > Gerenciador de mapas > Arquivos de Âncora Salvos no Dispositivo**. 
 
 ## <a name="loading-anchors"></a>Como carregar âncoras
 
@@ -63,7 +61,7 @@ A ID da âncora também é consultada para que atores diferentes possam ser gera
 
 ## <a name="removing-anchors"></a>Como remover âncoras 
 
-Quando você terminar de usar uma âncora, poderá limpar âncoras individuais ou o repositório de âncoras inteiro com os componentes **Remover ARPin do Repositório WMRAnchor** e **Remover Todos os ARPins do Repositório WMRAnchor**.
+Quando terminar de usar uma âncora, limpe âncoras individuais ou o repositório de âncoras inteiro com os componentes **Remover ARPin do Repositório WMRAnchor** e **Remover Todos os ARPins do Repositório WMRAnchor**.
 
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
@@ -72,7 +70,7 @@ Quando você terminar de usar uma âncora, poderá limpar âncoras individuais o
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unreal, você está no meio da exploração dos principais blocos de construção do MRTK. A partir daí, você pode prosseguir para o próximo bloco de construção: 
+Se está seguindo o percurso de desenvolvimento do Unreal que estabelecemos, você está no meio da exploração dos principais blocos de construção do MRTK. Deste ponto, você pode prosseguir para o próximo bloco de construção: 
 
 > [!div class="nextstepaction"]
 > [Âncoras Espaciais do Azure](unreal-azure-spatial-anchors.md)

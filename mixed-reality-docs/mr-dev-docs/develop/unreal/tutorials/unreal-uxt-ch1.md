@@ -1,34 +1,34 @@
 ---
 title: 1. Introdução
-description: Parte 1 de 6 em uma série de tutoriais para criar um aplicativo de xadrez simples usando o Unreal Engine 4 e o plug-in Ferramentas de UX do Kit de Ferramentas de Realidade Misturada
+description: Parte 1 de 6 de uma série de tutoriais para criação de um aplicativo de xadrez usando o Unreal Engine 4 e o plug-in Ferramentas de Experiência de Usuário do Kit de Ferramentas de Realidade Misturada
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: aa6d90bebbbfc10b108b97d05931a9926118ba7c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 465215efd953c0acb9f2d80a2905ee06963c5f8c
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679855"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609717"
 ---
 # <a name="1-getting-started"></a>1. Introdução
 
-Seja você alguém pouco familiarizado com a realidade misturada ou um profissional experiente, esse é o lugar para iniciar seu percurso com o [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) e o [Unreal Engine](https://www.unrealengine.com/en-US/). Esta série de tutoriais fornecerá um guia passo a passo sobre como criar um aplicativo de xadrez interativo com o [plug-in de Ferramentas de UX](https://github.com/microsoft/MixedReality-UXTools-Unreal), parte do [Kit de Ferramentas de Realidade Misturada para o Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). O plug-in ajudará você a adicionar recursos comuns de UX a seus projetos pelo uso de código, blueprints e exemplos. 
+Se você está começando a usar a realidade misturada agora ou já é um profissional experiente, você está no lugar certo para iniciar seu percurso do [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) e do [Unreal Engine](https://www.unrealengine.com/en-US/). Esta série de tutoriais fornecerá um guia passo a passo sobre como criar um aplicativo de xadrez interativo com o [plug-in de Ferramentas de Experiência de Usuário](https://github.com/microsoft/MixedReality-UXTools-Unreal), parte do [Kit de Ferramentas de Realidade Misturada para Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). O plug-in ajudará você a adicionar recursos comuns de UX a seus projetos pelo uso de código, blueprints e exemplos. 
 
 ![Encerrar cena no visor](images/unreal-uxt/5-endscene.PNG)
 
-Ao final da série, você terá experiência prática em:
+Ao final da série, você terá experiência em:
 * Criar um projeto
 * Configurar a realidade misturada
 * Trabalhar com a entrada do usuário
 * Adicionar botões
 * Jogar em um emulador ou dispositivo
 
-
 ## <a name="prerequisites"></a>Pré-requisitos
+
 Verifique se você instalou o seguinte antes de começar:
 * Windows 10 1809 ou posterior
 * SDK do Windows 10 10.0.18362.0 ou posterior
@@ -37,7 +37,8 @@ Verifique se você instalou o seguinte antes de começar:
 * Visual Studio 2019 com as cargas de trabalho abaixo
 
 ### <a name="installing-visual-studio-2019"></a>Instalação do Visual Studio 2019
-Há algumas etapas para garantir que você tenha todos os pacotes do Visual Studio necessários:
+
+Primeiro, verifique a configuração com todos os pacotes do Visual Studio necessários:
 1. Instale a versão mais recente do [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 2. Instale as seguintes [cargas de trabalho](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
     * Desenvolvimento para desktop com C++

@@ -1,34 +1,35 @@
 ---
 title: 2. Inicializar o projeto e seu primeiro aplicativo
-description: Parte 2 de 6 em uma série de tutoriais para criar um aplicativo de xadrez simples usando o Unreal Engine 4 e o plug-in Ferramentas de UX do Kit de Ferramentas de Realidade Misturada
+description: Parte 2 de 6 de uma série de tutoriais para criação de um aplicativo de xadrez usando o Unreal Engine 4 e o plug-in Ferramentas de Experiência de Usuário do Kit de Ferramentas de Realidade Misturada
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 869b947d23c3fbd1e561cef2c3ec41322fefd6a2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 464df846d0fc6e1bd22ee3862adcdf110c377728
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679905"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609647"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Inicializar o projeto e seu primeiro aplicativo
 
-## <a name="overview"></a>Visão geral
+No primeiro tutorial, você começará com um projeto do Unreal e habilitará o plug-in do HoloLens, criará e iluminará um nível e adicionará peças de xadrez. Você usará nossos ativos predefinidos para todos os objetos e materiais 3D. Portanto, não se preocupe em modelar nada por conta própria. No final deste tutorial, você terá uma tela em branco que está pronta para a realidade misturada.
 
-Neste primeiro tutorial, você começará com um novo aplicativo do Unreal para o HoloLens 2. Isso incluirá adicionar o plug-in do HoloLens, criar e iluminar um nível e populá-lo com um jogo de tabuleiro e uma peça de xadrez. Você usará ativos pré-criados para a peça de xadrez 3D e materiais de objeto, então não será necessário fazer a modelagem de nada do zero. No final deste tutorial, você terá uma tela em branco que está pronta para a realidade misturada.
-
-Antes de continuar, verifique se você atende a todos os pré-requisitos da página [Introdução](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1).
+> [!IMPORTANT]
+> Verifique se você atende a todos os pré-requisitos da página [Introdução](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1).
 
 ## <a name="objectives"></a>Objetivos
+
 * Como configurar um projeto do Unreal para desenvolvimento no HoloLens
 * Como importar ativos e configurar um cenário
 * Como criar Atores e eventos em nível de script com blueprints
 
 ## <a name="creating-a-new-unreal-project"></a>Como criar um projeto do Unreal
-A primeira coisa que você precisa é de um projeto com o qual trabalhar. Se esta é a primeira vez que você empacota um aplicativo do Unreal para o HoloLens, [baixe os arquivos de suporte](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal) do Epic Launcher.
+
+A primeira coisa que você precisa é de um projeto com o qual trabalhar. Se você é um desenvolvedor novo do Unreal, [baixe os arquivos de suporte](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal) do Epic Launcher.
 
 1. Iniciar Unreal Engine
 
@@ -50,7 +51,8 @@ A primeira coisa que você precisa é de um projeto com o qual trabalhar. Se est
 O projeto deve ser aberto automaticamente no editor Unreal, o que significa que você está pronto para a próxima seção.
 
 ## <a name="enabling-required-plugins"></a>Como habilitar os plugins necessários
-Antes de começar a adicionar objetos à cena, você precisará habilitar dois plug-ins.
+
+Habilite dois plug-ins para começar a adicionar objetos à cena.
 
 1. Abra **Editar > Plug-ins** e selecione **Realidade Aumentada** na lista de opções internas. 
     * Role para baixo até **HoloLens** e marque **Habilitado**. 
@@ -65,29 +67,29 @@ Antes de começar a adicionar objetos à cena, você precisará habilitar dois p
 > [!NOTE]
 > Os dois plug-ins são necessários para o desenvolvimento no HoloLens 2.
 
-Com isso feito, o nível vazio estará pronto para ter companhia.
+Com os plug-ins habilitados, seu nível vazio está pronto para a empresa.
 
 ## <a name="creating-a-level"></a>Criar um nível
-A sua próxima tarefa é criar uma configuração de jogador simples com um ponto de partida e um cubo para referência e escala.
+Sua próxima tarefa será criar uma configuração de jogador com um ponto de partida e um cubo para referência e escala.
 
 1. Selecione **Arquivo > Novo Nível** e escolha **Nível Vazio**. A cena padrão no visor agora deve estar vazia.
 
 2. Selecione **Básico** na guia **Modos** e arraste **PlayerStart** para a cena. 
-    * Defina **Localização** como **X = 0**, **Y = 0** e **Z = 0** na guia **Detalhes**. Isso define a localização do usuário no centro da cena quando o aplicativo é iniciado.
+    * Defina **Localização** como **X = 0**, **Y = 0** e **Z = 0** na guia **Detalhes** para definir o usuário no centro da cena quando o aplicativo for iniciado.
 
 ![Visor com PlayerStart](images/unreal-uxt/2-playerstart.PNG)
 
 3. Arraste um **Cubo** da guia **Básico** para a cena. 
-    * Defina **Localização** como **X = 50**, **Y = 0** e **Z = 0**. Isso posiciona o cubo a 50 cm do jogador na hora de início. 
+    * Defina **Localização** como **X = 50**, **Y = 0** e **Z = 0**. para posicionar o cubo a 50 cm do jogador na hora de início. 
     * Altere **Escala** para **X = 0,2**, **Y = 0,2** e **Z = 0,2** para diminuir o cubo. 
 
-Você não poderá ver o cubo, a menos que adicione uma luz à sua cena, que é sua última tarefa antes de testar a cena em questão.
+Você não poderá ver o cubo, a menos que adicione uma luz à cena, que será a sua última tarefa antes de testar a cena em questão.
 
 4. Alterne para a guia **Luzes** no painel **Modos** e arraste uma **Luz Direcional** até a cena. Posicione a luz acima **PlayerStart** para que você possa vê-la.
 
 ![Visor com luz adicionada](images/unreal-uxt/2-light.PNG)
 
-5. Vá para **Arquivo > Salvar Atual**, nomeie seu nível **Principal** e clique em **Salvar**. 
+5. Acesse **Arquivo > Salvar Atual**, nomeie o nível **Principal** e selecione **Salvar**. 
 
 Com a cena preparada, pressione **Jogar** na barra de ferramentas para ver o cubo em ação! Quando tiver terminado de admirar seu trabalho, pressione **Esc** para interromper o aplicativo.
 
@@ -100,16 +102,16 @@ A cena está parecendo um tanto vazia no momento, mas você corrigirá isso impo
 
 1. Baixe e descompacte a pasta de ativos do [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/blob/master/ChessApp/ChessAssets.7z) usando o [7-zip](https://www.7-zip.org/).
 
-2. Clique em **Adicionar Novo > Nova Pasta** do **Navegador de Conteúdo** e nomeie-o como **ChessAssets**. 
-    * Clique duas vezes na nova pasta: é nela que você importará os ativos 3D.
+2. Selecione **Adicionar Novo > Nova Pasta** no **Navegador de Conteúdo** e nomeie-o **ChessAssets**. 
+    * Clique duas vezes na nova pasta, em que você importará os ativos 3D.
 
 ![Mostrar ou ocultar o painel de fontes](images/unreal-uxt/2-showhidesources.PNG)
 
-3. Clique em **Importar** do **Navegador de Conteúdo**, selecione todos os itens na pasta de ativos descompactados e clique em **Abrir**. 
-    * Essa pasta contém as malhas de objetos 3D para o tabuleiro de xadrez e as peças no formato FBX, bem como os mapas de textura no formato TGA que você usará para os materiais.  
+3. Selecione **Importar** no **Navegador de Conteúdo**, escolha todos os itens da pasta de ativos descompactados e clique em **Abrir**. 
+    * Os ativos incluem as malhas de objetos 3D para o tabuleiro de xadrez e as peças no formato FBX, bem como os mapas de textura no formato TGA que você usará para os materiais.  
 
 4. Quando a janela Opções de Importação do FBX for exibida, expanda a seção **Material** e altere **Método de Importação de Material** para **Não Criar o Material**.
-    * Clique em **Importar Tudo**.
+    * Selecione **Importar Tudo**.
 
 ![Opções em Importar FBX](images/unreal-uxt/2-nocreatemat.PNG)
 
@@ -117,7 +119,7 @@ Isso é tudo o que você precisa fazer com relação aos ativos. Seu próximo co
 
 ## <a name="adding-blueprints"></a>Como adicionar blueprints
 
-1. Clique em **Adicionar Novo > Nova Pasta** no **Navegador de Conteúdo** e nomeie-o como **Blueprints**. 
+1. Selecione **Adicionar Novo > Nova Pasta** no **Navegador de Conteúdo** e nomeie-o **Blueprints**. 
 
 > [!NOTE]
 > Se você não está familiarizado com [blueprints](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html), saiba que eles são ativos especiais que fornecem uma interface baseada em nó para criação de tipos de Atores e eventos de nível de script. 
@@ -138,7 +140,7 @@ Os objetos que você criou são no padrão cinza, o que não os deixa com uma ap
 
 1. Clique duas vezes em **Painel** para abrir o editor de blueprints. 
 
-2. Clique em **Adicionar Componente > Cena** no painel **Componentes** e nomeie-o como **Root**. Observe que **Root** aparece como um filho de **DefaultSceneRoot** na captura de tela abaixo:
+2. Selecione **Adicionar Componente > Cena** no painel **Componentes** e nomeie-o **Root**. Observe que **Root** aparece como um filho de **DefaultSceneRoot** na captura de tela abaixo:
 
 ![Como substituir a raiz no blueprint](images/unreal-uxt/2-root-blueprint.PNG)
 
@@ -148,15 +150,15 @@ Os objetos que você criou são no padrão cinza, o que não os deixa com uma ap
 ![Substituindo a raiz](images/unreal-uxt/2-root.PNG)
 
 
-4. Clique em **Adicionar Componente > Malha Estática** no painel **Componentes** e nomeie-o como **SM_Board**. Ele será exibido como um objeto filho em **Root**.
+4. Selecione **Adicionar Componente > Malha Estática** no painel **Componentes** e nomeie-o **SM_Board**. Ele será exibido como um objeto filho em **Root**.
 
 ![Adicionando uma malha estática](images/unreal-uxt/2-sm-board.PNG)
 
-4. Clique em **SM_Board**, role para baixo até a seção **Malha Estática** do painel **Detalhes** e selecione **ChessBoard** na lista suspensa. 
+4. Selecione **SM_Board**, role o painel para baixo até a seção **Malha Estática** do painel **Detalhes** e selecione **ChessBoard** na lista suspensa. 
 
 ![A malha do tabuleiro no visor](images/unreal-uxt/2-sm-board-view.PNG)
 
-5.  Ainda no painel **Detalhes**, expanda a seção **Materiais** e clique em **Criar Ativo > Material** na lista suspensa. 
+5.  Ainda no painel **Detalhes**, expanda a seção **Materiais** e selecione **Criar Ativo > Material** na lista suspensa. 
     * Nomeie o material **M_ChessBoard** e salve-o na pasta **ChessAssets**. 
 
 ![Criar um material](images/unreal-uxt/2-newmat.PNG)
@@ -171,7 +173,7 @@ Os objetos que você criou são no padrão cinza, o que não os deixa com uma ap
 
 ![Definir a cor base](images/unreal-uxt/2-boardalbedomat.PNG)
 
-8.  Repita a etapa anterior quatro mais vezes para criar mais quatro nós **Exemplo de Textura** com as seguintes configurações:
+8.  Repita a etapa anterior mais quatro vezes para criar mais quatro nós **Exemplo de Textura** com as seguintes configurações:
     * Defina **Textura** como **ChessBoard_AO** e vincule o **RGB** ao marcador **Oclusão Ambiente**.
     * Defina **Textura** como **ChessBoard_Metal** e vincule o **RGB** ao marcador **Metálico**. 
     * Defina **Textura** como **ChessBoard_Normal** e vincule o **RGB** ao marcador **Normal**.
@@ -192,13 +194,13 @@ Se você retornar ao blueprint **Tabuleiro**, verá que o material que acabou de
 2.  Clique com o botão direito do mouse em **Cubo > Editar > Excluir** e arraste **Tabuleiro** do **Navegador de Conteúdo** para o visor. 
     * Defina **Localização** como **X = 80**, **Y = 0** e **Z = -20**. 
 
-3.  Clique no botão **Jogar** para exibir o novo tabuleiro no nível. Pressione **ESC** para retornar ao editor. 
+3.  Selecione o botão **Jogar** para ver o novo tabuleiro no nível. Pressione **ESC** para retornar ao editor. 
 
 Agora você seguirá as mesmas etapas para criar uma peça de xadrez, do mesmo modo que você fez com o tabuleiro:
 
-1. Acesse a pasta **Blueprints**, clique com o botão direito do mouse e selecione **Classe de Blueprint**, depois escolha **Ator**. Nomeie esse ator como **WhiteKing**.
+1. Acesse a pasta **Blueprints**, clique com o botão direito do mouse, selecione **Classe de Blueprint** e escolha **Ator**. Nomeie esse ator como **WhiteKing**.
 
-2. Clique duas vezes em **WhiteKing** para abri-lo no Editor do Blueprint, clique em **Adicionar Componente > Cena** e nomeie-o como **Root**. 
+2. Clique duas vezes em **WhiteKing** para abri-lo no Editor do Blueprint, selecione **Adicionar Componente > Cena** e nomeie-o **Root**. 
     * Arraste e solte **Root** em **DefaultSceneRoot** para substituí-lo. 
 
 3. Clique em **Adicionar Componente > Malha Estática** e nomeie-o como **SM_King**. 
@@ -227,6 +229,6 @@ Você está quase lá, falta apenas adicionar a nova peça de xadrez à cena:
 
 3.  No painel **Detalhes**, em **Transformar**, defina a **Localização** de **WhiteKing** como **X = -26**, **Y = 4** e **Z = 0**.
 
-Tudo concluído! Clique em **Jogar** para ver o nível preenchido em ação e pressione **Esc** quando estiver pronto para sair. Este tutorial abordou muito conteúdo sobre a criação de um projeto simples, mas seu projeto está pronto para passar para a próxima parte da série: configuração para a realidade misturada. 
+Tudo concluído! Selecione **Jogar** para ver o nível preenchido em ação e clique em **ESC** quando estiver pronto para sair. Você viu muito conteúdo apenas criando um projeto simples, mas agora está pronto para passar para a próxima parte da série: configuração para a realidade misturada. 
 
 [Próxima seção: 3. Configurar seu projeto para a realidade misturada](unreal-uxt-ch3.md)

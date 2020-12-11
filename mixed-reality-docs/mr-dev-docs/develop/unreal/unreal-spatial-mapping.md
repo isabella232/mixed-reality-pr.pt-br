@@ -2,21 +2,21 @@
 title: Mapeamento espacial no Unreal
 description: Guia para usar o mapeamento espacial no Unreal
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, mapeamento espacial, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354364"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609417"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mapeamento espacial no Unreal
 
-O mapeamento espacial torna possível posicionar objetos em superfícies no mundo físico, mostrando o mundo em todo o HoloLens, o que torna os hologramas mais reais para o usuário. O mapeamento espacial também ancora objetos no mundo do usuário, tirando proveito de indicações de profundidade do mundo real. Isso ajuda a convencer o usuário de que esses hologramas estão na verdade no espaço dele; hologramas que flutuam no espaço ou se movem com o usuário não parecem tão reais. Sempre que possível, convém que você posicione os itens a fim de obter um maior conforto.
+O mapeamento espacial permite que você coloque objetos em superfícies físicas no mundo real. Quando o mundo em torno do HoloLens é mapeado, os hologramas parecem mais reais para o usuário. O mapeamento espacial também ancora objetos no mundo do usuário aproveitando as indicações de profundidade, ajudando a convencê-los de que esses hologramas estão realmente no espaço. Os hologramas que flutuam no espaço ou que se movem com o usuário não parecerão reais. Portanto, o ideal é sempre posicionar os itens visando o conforto, quando possível.
 
 No documento [Mapeamento espacial](../../design/spatial-mapping.md), você pode encontrar mais informações sobre posicionamento, oclusão, renderização e qualidade do mapeamento espacial, além de outras informações.
 
@@ -40,13 +40,13 @@ Para aceitar o mapeamento espacial e depurar o **MRMesh** em um jogo do HoloLens
 ## <a name="spatial-mapping-at-runtime"></a>Mapeamento espacial em runtime
 Você pode modificar os seguintes parâmetros para atualizar o comportamento do runtime de mapeamento espacial:
 
-- Abra **Editar > Configurações de Projeto**, role para baixo até a seção **Plataformas** e selecione **HoloLens > Mapeamento Espacial**: 
+- Abra **Editar > Configurações de Projeto**, role o painel para baixo até a seção **Plataformas** e selecione **HoloLens > Mapeamento Espacial**: 
 
 ![Configurações do projeto de âncoras espaciais](images/unreal-spatialmapping-projectsettings.PNG)
 
 - A opção **Máximo de Triângulos por Metro Cúbico** atualiza a densidade dos triângulos na malha de mapeamento espacial.  
 - A opção **Tamanho do Volume de Malha Espacial** é o tamanho do cubo em volta do jogador para renderizar e atualizar os dados de mapeamento espacial.  
-    + Se for previsto que o ambiente do runtime do aplicativo será grande, esse valor precisará ser grande para corresponder ao espaço do mundo real.  Por outro lado, se o aplicativo precisar apenas posicionar hologramas nas superfícies imediatamente próximas do usuário, esse campo poderá ser menor. À medida que o usuário se movimenta pelo mundo, o volume de mapeamento espacial se moverá com ele. 
+    + Se for previsto que o ambiente do runtime do aplicativo será grande, esse valor precisará ser grande para corresponder ao espaço do mundo real. O valor poderá ser menor se o aplicativo só precisar posicionar os hologramas nas superfícies imediatamente próximas do usuário. À medida que o usuário se movimenta pelo mundo, o volume de mapeamento espacial se moverá com ele. 
 
 ## <a name="working-with-mrmesh"></a>Como trabalhar com o MRMesh
 
@@ -62,7 +62,7 @@ Para obter acesso ao **MRMesh** em runtime:
 ![AR Trackable Notify de âncoras espaciais](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. Selecione o componente **ARTrackableNotify** e expanda a seção **Eventos** no painel **Detalhes**. 
-    - Clique no botão **+** nos eventos que você deseja monitorar. 
+    - Selecione o botão **+** nos eventos que deseja monitorar. 
 
 ![Eventos de âncoras espaciais](images/unreal-spatialmapping-events.PNG)
 

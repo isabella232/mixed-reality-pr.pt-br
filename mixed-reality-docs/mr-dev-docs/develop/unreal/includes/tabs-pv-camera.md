@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354565"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609598"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,11 +13,11 @@ ms.locfileid: "96354565"
 > [!NOTE]
 > Isso requer o **Unreal Engine 4.25** ou posterior.
 
-O sistema e os gravadores personalizados de MRC criam capturas de realidade misturada combinando a câmera de PV com hologramas renderizados pelo aplicativo de imersão.
+O sistema e os gravadores personalizados de MRC criam capturas de realidade misturada combinando a Câmera de PV com os hologramas renderizados pelo aplicativo.
 
-Por padrão, a captura de realidade misturada usa a saída holográfica do olho direito. Se um aplicativo de imersão optar por [renderizar da câmera de PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), isso será usado em vez do padrão citado acima. Isso melhora o mapeamento entre o mundo real e os hologramas no vídeo do MRC.
+Por padrão, a captura de realidade misturada usa a saída holográfica do olho direito. Se um aplicativo imersivo optar por [fazer a renderização da Câmera de PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), isso será usado. A renderização da Câmera de PV aprimora o mapeamento entre o mundo real e os hologramas no vídeo da MRC.
 
-Para aceitar a renderização da câmera de PV:
+Para aceitar a renderização por meio da Câmera de PV:
 
 1. Chamar **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**
     * Use os valores de **Tamanho X** e **Tamanho Y** para definir as dimensões do vídeo.
@@ -51,7 +51,7 @@ Para renderizar a imagem da câmera:
 
 ![Textura da câmera da webcam](../images/unreal-camera-texture.PNG)
 
-5. Verifique se o material tem um parâmetro correspondente ao nome em **SetTextureParameterValue** que esteja associado a uma entrada de cor. Sem isso, a imagem da câmera não pode ser exibida corretamente.
+5. Verifique se o material tem um parâmetro que corresponda ao nome em **SetTextureParameterValue** que esteja associado a uma entrada de cor. Sem o parâmetro, a imagem da câmera não pode ser exibida corretamente.
 
 ![Textura da câmera](../images/unreal-camera-material.PNG)
 
@@ -73,7 +73,7 @@ Para renderizar a imagem da câmera:
 
 ## <a name="rendering-the-pv-camera-feed"></a>Como renderizar o feed da câmera PV
 
-- No blueprint CamCapture, ligue a câmera PV:
+- No blueprint CamCapture, ligue a Câmera de PV:
 
 ![Blueprint da função Alternar ARCapture com a câmera PV ligada](../images/unreal-pvc-img-04.png)
 
@@ -91,13 +91,13 @@ Para renderizar a imagem da câmera:
 
 ## <a name="find-camera-positions-in-world-space"></a>Localizar posições da câmera no espaço de mundo
 
-A câmera do HoloLens 2 é deslocada verticalmente começando no acompanhamento de cabeça do dispositivo.  Para considerar isso, existem algumas funções para localizar a câmera no espaço de mundo.
+A câmera do HoloLens 2 é deslocada verticalmente começando no acompanhamento de cabeça do dispositivo.  Existem algumas funções para localizar a câmera no espaço de mundo para levar em conta o deslocamento.
 
-A função GetPVCameraToWorldTransform obtém a transformação no espaço de mundo da PVCamera.  Isso será posicionado na lente da câmera:
+A função GetPVCameraToWorldTransform obtém a transformação no espaço de mundo da Câmera de PV e será posicionada na lente da câmera:
 
 ![Blueprint da função Obter Transformação da PVCamera para o Mundo](../images/unreal-pvc-img-08.png)
 
-A função GetWorldSpaceRayFromCameraPoint converte um raio da lente da câmera na cena em um espaço de mundo do Unreal para localizar o que está em um pixel específico no quadro da câmera:
+A função GetWorldSpaceRayFromCameraPoint converte um raio da lente da câmera na cena em um espaço de mundo do Unreal para localizar o conteúdo de um pixel no quadro da câmera:
 
 ![Blueprint da função Obter Raio do Espaço de Mundo do Ponto da Câmera](../images/unreal-pvc-img-09.png)
 
