@@ -3,16 +3,16 @@ title: Comece a projetar e a criar protótipos
 description: Se estiver pronto para criar algo, aprenda os conceitos básicos de que você precisa para começar a projetar e a criar protótipos.
 author: grbury
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, principais conceitos, interação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: 3c28991fa35052a8b5cf5a071899ec14f2fec226
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702712"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926010"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 

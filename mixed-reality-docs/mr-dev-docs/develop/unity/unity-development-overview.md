@@ -3,16 +3,16 @@ title: Visão geral do desenvolvimento com o Unity
 description: Introdução à criação de aplicativos de realidade misturada no Unity.
 author: thetuvix
 ms.author: kurtie
-ms.date: 08/04/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679895"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926033"
 ---
 # <a name="unity-development-overview"></a>Visão geral do desenvolvimento com o Unity
 

@@ -3,16 +3,16 @@ title: Códigos QR no Unreal
 description: Um guia para usar códigos QR no Unreal
 author: hferrone
 ms.author: v-hferrone
-ms.date: 06/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, códigos qr, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 7e39e1d822f0aa623a83678beef24f2c98a18944
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 72f08c22b8dcab5e13de2baae817b3496ada1a60
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609637"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926077"
 ---
 # <a name="qr-codes-in-unreal"></a>Códigos QR no Unreal
 
