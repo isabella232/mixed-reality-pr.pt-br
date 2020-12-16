@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Modo de pesquisa, CV, RS4, pesquisa Visual computacional, Research, HoloLens, HoloLens 2
-ms.openlocfilehash: 327ee932dce99a2559e406630611dcc3c69a0002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6c40ac814a5dacfdbb942aec8200f46157bea161
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675311"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530087"
 ---
 # <a name="hololens-research-mode"></a>Modo de pesquisa do HoloLens
 
-O modo de pesquisa foi introduzido no HoloLens de primeira geração para dar acesso aos principais sensores no dispositivo, especificamente para aplicativos de pesquisa que não se destinam à implantação.  O modo de pesquisa para o HoloLens 2 retém os recursos do HoloLens 1, adicionando acesso a fluxos adicionais:
+O modo de pesquisa foi introduzido nos dispositivos HoloLens (1º gen) para dar acesso aos principais sensores, especificamente para aplicativos de pesquisa que não se destinam à implantação.  O modo de pesquisa para o HoloLens 2 mantém os recursos do HoloLens 1, mas adiciona acesso aos seguintes fluxos:
 
 * **Câmeras de acompanhamento de ambiente leve visíveis** – câmeras em escala cinza usadas pelo sistema para rastreamento de cabeçalho e criação de mapa.
 * **Câmera de profundidade** – opera em dois modos:  
@@ -40,11 +40,11 @@ Se você estiver usando um HoloLens 2, também terá acesso às entradas adicion
 
 O modo de pesquisa foi projetado para pesquisadores acadêmicos e industriais que exploram novas ideias nos campos de Pesquisa Visual Computacional e robótica.  Ele não se destina a aplicativos implantados em ambientes corporativos ou disponíveis por meio do Microsoft Store ou de outros canais de distribuição.
 
-Além disso, a Microsoft não fornece garantias de que o modo de pesquisa ou funcionalidade equivalente terá suporte em atualizações futuras de hardware ou sistema operacional. No entanto, isso não deve impedir que você o use para desenvolver e testar novas ideias!
+Além disso, a Microsoft não fornece garantias de que o modo de pesquisa ou funcionalidade equivalente terá suporte em atualizações futuras de hardware ou sistema operacional. No entanto, não deixe que o impeça de usá-lo para desenvolver e testar novas ideias!
 
 ## <a name="security-and-performance"></a>Segurança e desempenho
 
-Lembre-se de que habilitar o modo de pesquisa usa mais energia da bateria do que usar o HoloLens 2 em condições normais. Isso é verdadeiro mesmo que o aplicativo que usa os recursos do modo de pesquisa não esteja em execução.  Habilitar esse modo também pode reduzir a segurança geral do seu dispositivo, pois os aplicativos podem indevidamente os dados do sensor.  Você pode encontrar mais informações sobre a segurança do dispositivo nas [perguntas frequentes sobre segurança do HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).  
+Habilitar o modo de pesquisa usa mais energia da bateria do que usar o HoloLens 2 em condições normais, mesmo que o aplicativo que usa os recursos do modo de pesquisa não esteja em execução.  Habilitar esse modo também pode reduzir a segurança geral do seu dispositivo, pois os aplicativos podem indevidamente os dados do sensor.  Você pode encontrar mais informações sobre a segurança do dispositivo nas [perguntas frequentes sobre segurança do HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).  
 
 ## <a name="device-support"></a>Suporte a dispositivos
 <table>
@@ -84,18 +84,18 @@ Lembre-se de que habilitar o modo de pesquisa usa mais energia da bateria do que
     </tr>
 </table>
 
-## <a name="enabling-research-mode-hololens-1st-gen-and-hololens-2"></a>Habilitando o modo de pesquisa (primeiro a partir do HoloLens e do HoloLens 2)
+## <a name="enabling-research-mode-hololens-first-gen-and-hololens-2"></a>Habilitando o modo de pesquisa (primeiro HoloLens Gen e HoloLens 2)
 
 O modo de pesquisa é uma extensão do modo de desenvolvedor. Antes de iniciar, os recursos do desenvolvedor do dispositivo precisam ser habilitados para acessar as configurações do modo de pesquisa: 
 
-* Abra o **menu iniciar > configurações** e selecione **atualizações** .
-* Selecione **para desenvolvedores** e habilite o **modo de desenvolvedor** .
-* Role para baixo e habilite o **Portal de Dispositivos** .
+* Abra o **menu iniciar > configurações** e selecione **atualizações**.
+* Selecione **para desenvolvedores** e habilite o **modo de desenvolvedor**.
+* Role para baixo e habilite o **Portal de Dispositivos**.
 
 Depois que os recursos do desenvolvedor estiverem habilitados, [Conecte-se ao portal do dispositivo](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) para habilitar os recursos do modo de pesquisa:
 
-* Vá para o **sistema > modo de pesquisa** no **portal do dispositivo** .
-* Selecione **permitir acesso ao fluxo do sensor** .
+* Vá para o **sistema > modo de pesquisa** no **portal do dispositivo**.
+* Selecione **permitir acesso ao fluxo do sensor**.
 * Reinicie o dispositivo a partir do item de menu de **energia** na parte superior da página.
 
 Depois de reiniciar o dispositivo, os aplicativos carregados por meio do portal do **dispositivo** poderão acessar os fluxos do modo de pesquisa.
@@ -108,21 +108,21 @@ Depois de reiniciar o dispositivo, os aplicativos carregados por meio do portal 
 
 ### <a name="using-sensor-data-in-your-apps"></a>Usando dados de sensor em seus aplicativos
 
-Os aplicativos podem acessar os dados de fluxo do sensor da mesma maneira que os fluxos de foto e câmera de vídeo são acessados por meio de [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197). 
+Os aplicativos podem acessar os dados de fluxo do sensor da mesma maneira que [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) acessa fluxos de foto e de câmera de vídeo. 
 
 Todas as APIs que funcionam para o desenvolvimento do HoloLens também estão disponíveis no modo de pesquisa. Em particular, o aplicativo sabe precisamente onde o HoloLens está no espaço 6DoF em cada tempo de captura do quadro do sensor.
 
-Você pode encontrar aplicativos de exemplo para acessar os vários fluxos do modo de pesquisa, usando os [intrínsecos e as extrínsecos](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), e gravando fluxos no respectivo modo de pesquisa repositórios:
-* [HoloLens (1ª geração)](https://github.com/Microsoft/HoloLensForCV)
+Temos aplicativos de exemplo mostrando acesso de fluxo do modo de pesquisa, usando [intrínsecos e extrínsecos](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), e gravando fluxos:
+* [HoloLens (primeira gen)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
 ## <a name="support"></a>Suporte
 
-Para o HoloLens (1º gen), use o Issue [Tracker](https://github.com/Microsoft/HololensForCV/issues) no repositório HoloLensForCV para postar comentários e acompanhar problemas conhecidos.
+Para o HoloLens (primeira gen), use o Issue [Tracker](https://github.com/Microsoft/HololensForCV/issues) no repositório HoloLensForCV para postar comentários e acompanhar problemas conhecidos.
 
 Para o HoloLens 2, use o Issue [Tracker](https://github.com/microsoft/HoloLens2ForCV/issues) no repositório HoloLens2ForCV para postar comentários e acompanhar problemas conhecidos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
 * [Repositório GitHub HoloLensForCV](https://github.com/Microsoft/HoloLensForCV)

@@ -6,12 +6,12 @@ ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, emulador, simulação, realidade mista do Windows, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679615"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530460"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrada avançada do Emulador do HoloLens e do Simulador de Realidade Misturada
 
@@ -29,28 +29,28 @@ O movimento se refere ao controle e à alteração da posição e da orientaçã
 * **Y**: mover para cima ou para baixo.
 * **Z**: avançar ou retroceder.
 
-As entradas do controlador de gesto e movimento são mapeadas de acordo com o modo como os dispositivos físicos:
+As entradas do controlador de gesto e movimento são mapeadas de acordo com os dispositivos físicos:
 * **Ação**: simula a ação de pressionar o dedo indicador para o polegar ou extrair o botão de ação em um controlador. Por exemplo, a entrada da ação pode ser usada para simular o gesto de toque de ar, para rolar pelo conteúdo e para pressionar e manter pressionado.
-* **[Bloom](../../design/system-gesture.md#bloom)/Estado gesto ou Home**: o gesto de cair/sistema do HoloLens ou o botão página inicial de um controlador é usado para retornar ao shell e executar ações do sistema.
+* **[](../../design/system-gesture.md#bloom)/Estado gesto ou Home**: o gesto de cair/sistema do HoloLens ou o botão página inicial de um controlador é usado para retornar ao shell e disparar ações do sistema.
 
-As mãos têm uma representação rica no HoloLens 2.  Além de serem controlados/não rastreados, e utilizáveis para a condução de gestos, as mãos agora têm um modelo de esqueleto articulado que se ajusta a eles e expostos ao desenvolvedor.  Isso apresenta 26 pontos rastreados em cada mão.  
-* **Conjunto**: uma das vinte posições controladas para uma determinada mão controlada. Isso terá um ponto é o espaço 3D associado a ele.
-* **Pose**: uma coleção completa de todas as junções em uma mão controlada. Neste momento, esta é uma coleção de 26 junções. 
+As mãos têm uma representação rica no HoloLens 2.  Além de ser acompanhado/não acompanhado e utilizável para gestos de condução, as mãos agora têm um modelo de esqueleto articulado que se ajusta a eles e expostos ao desenvolvedor.  O modelo de esqueleto tem 26 pontos rastreados em cada mão.  
+* **Conjunto**: uma das 20 posições rastreadas para um determinado controle acompanhado com um ponto associado no espaço 3D.
+* **Pose**: uma coleção completa de todas as junções em uma mão controlada, 26 junções em todos. 
 
-Neste momento, não expõemos o controle direto de cada posição conjunta individualmente por meio da interface do usuário do emulador, embora você possa defini-las por meio da API de simulação. Em vez disso, temos um conjunto de representações úteis que o emulador permite alternar entre.
+Atualmente, não expõemos o controle direto de posições conjuntas individuais por meio do emulador, mas você pode defini-las por meio da API de simulação. Temos um conjunto de representações úteis que o emulador permite que você alterne entre.
 
 Você também pode controlar o estado da entrada simulada do sensor:
-* **Redefinir**: isso retornará todos os sensores simulados aos seus valores padrão.  Começando com o emulador do HoloLens 2, uma redefinição pode ter como escopo uma ou ambas as mãos ao envolver as mãos desejadas usando as chaves (s) modificadores apropriadas (es) ou os botões (Alt e/ou direita, ou o amortecedor esquerdo e/ou direito no gamepad).
-* **Acompanhamento**: percorre os modos de controle posicional. Isso inclui:
+* **Redefinir**: retorna todos os sensores simulados para seus valores padrão.  A partir do emulador do HoloLens 2, uma redefinição pode ser definida como escopo para uma ou ambas as mãos. Envolva as mãos desejadas usando as chaves (s) modificadores ou botão (s) (Alt e/ou direita, ou o amortecedor esquerdo e/ou direito no gamepad).
+* **Acompanhamento**: percorre os modos de controle posicional, incluindo:
   * **Padrão**: o sistema operacional escolhe o melhor modo de controle com base nas solicitações feitas do sistema.
-   * **Orientação**: força o controle somente de orientação, independentemente das solicitações feitas do sistema.
-   * **Posicional**: força o controle posicional, independentemente das solicitações feitas do sistema.
+   * **Orientação**: força o controle somente de orientação, independentemente das solicitações do sistema.
+   * **Posicional**: força o controle posicional, não importa as solicitações do sistema.
 
 ## <a name="types-of-input"></a>Tipos de entrada
 
-A tabela a seguir mostra como cada tipo de entrada é mapeada para o teclado, o mouse e o controlador Xbox. Cada tipo tem um mapeamento diferente, dependendo do modo de controle de entrada; mais informações sobre modos de controle de entrada são fornecidas posteriormente neste documento.
+A tabela a seguir mostra como cada tipo de entrada é mapeada para o teclado, o mouse e o controlador Xbox. Cada tipo tem um mapeamento diferente, dependendo do modo de controle de entrada. Você pode encontrar mais informações sobre modos de controle de entrada mais adiante neste documento.
 
-| Entrada |  Teclado |  Mouse |  Controlador Xbox | 
+| Entrada |  Keyboard |  Mouse |  Controlador Xbox | 
 |----------|----------|----------|----------|
 |  Yaw |  Setas à esquerda/direita |  Arrastar para a esquerda/direita |  Direita Thumbstick esquerda/direita | 
 |  Densidade |  Setas para cima/para baixo |  Arrastar para cima/para baixo |  Thumbstick direita/para baixo | 
@@ -79,7 +79,7 @@ Observação: os botões do controlador podem ser direcionados a um único lado/
 
 ## <a name="targeting"></a>Configurando destinos 
 
-Alguns dos conceitos de entrada acima têm por conta própria.  A ação, a flor/sistema, a redefinição e o acompanhamento são conceitos completos, não são necessários e não são afetados pelo, quaisquer modificadores adicionais para direcionamento.  No entanto, os conceitos restantes podem ser aplicados a um de vários destinos. Apresentamos maneiras de especificar a qual destino pretendido seu comando deve ser aplicado.  Em todos os casos, é possível especificar por meio da interface do usuário ou por meio de pressionamentos de teclado, que objeto deve ser direcionado.  Em alguns casos, também é possível especificar com o controlador Xbox diretamente. 
+Alguns dos conceitos de entrada acima têm por conta própria.  A ação, a flor/sistema, a redefinição e o acompanhamento são conceitos completos, não são necessários e não são afetados por nenhum modificador adicional para direcionamento.  Os conceitos restantes podem ser aplicados a um de vários destinos. Apresentamos maneiras de especificar a qual destino pretendido seu comando deve ser aplicado.  Em todos os casos, é possível especificar por meio da interface do usuário ou por meio de pressionamentos de teclado, que objeto deve ser direcionado.  Em alguns casos, também é possível especificar com o controlador Xbox diretamente. 
 
 A tabela a seguir descreve as opções de direcionamento e a maneira de ativar cada uma delas.
 
@@ -87,8 +87,8 @@ A tabela a seguir descreve as opções de direcionamento e a maneira de ativar c
 |----------|----------|----------|----------|
 | Corpo | (padrão) | (padrão) | (padrão) |
 | Head | Manter H | (Não disponível) | (Não disponível) |
-| À esquerda/controlador | Pressionar o botão Alt esquerdo | Botão manter à esquerda | Anotação à esquerda | 
-| À direita/controlador | Manter botão Alt direito | Botão manter à direita | Anotação à direita |
+| À esquerda/controlador | Pressionar o botão Alt esquerdo | Botão manter à esquerda | Left-Hand pino | 
+| À direita/controlador | Manter botão Alt direito | Botão manter à direita | Right-Hand pino |
 | Mal | Reter Y | (Não disponível) | Pino de olhos |
   
 A tabela a seguir mostra como cada modificador de destino mapeia cada um dos conceitos de entrada de movimento principal
@@ -134,7 +134,8 @@ O seguinte conjunto de controles é sugerido para uso do dia a dia:
 
 Ao usar um headset de imersão de realidade mista do Windows com o emulador do HoloLens 2, a movimentação e a rotação são mapeadas automaticamente para movimento e rotação do headset.  A posição e a orientação do controlador de movimento são mapeadas automaticamente para a posição e orientação da mão no emulador.  A tabela a seguir lista as ações adicionais disponíveis ao usar um controlador de movimento.
 
-Observe que, ao usar um headset, os controles teclado padrão, mouse e gamepad são ignorados automaticamente.
+> [!NOTE]
+> Ao usar um headset, os controles teclado padrão, mouse e gamepad são ignorados automaticamente.
 
 |  Operação |  Ação |  Observações | 
 |----------|----------|----------|
@@ -150,7 +151,7 @@ Observe que, ao usar um headset, os controles teclado padrão, mouse e gamepad s
 
 ## <a name="perception-simulation-control-panel-keyboard-shortcuts"></a>Atalhos de teclado do painel de controle da simulação de percepção
 
-Os atalhos de teclado a seguir estão disponíveis para acessar o painel de controle de simulação de percepção e habilitar ou desabilitar dispositivos de entrada de PC para uso com simulação.
+Você pode acessar o painel de controle de simulação de percepção e habilitar ou desabilitar dispositivos de entrada do PC com os seguintes atalhos de teclado.
 
 | Operação | Atalho | Descrição/observações |
 |-----------|----------|-------------|

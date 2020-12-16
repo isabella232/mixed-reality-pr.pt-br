@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, teclado, mouse, Game Controller, Xbox Controller, HoloLens, desktop, passo a passos, código de exemplo
-ms.openlocfilehash: 47d5ac7c7517d607d29d004497f62ac0755c3051
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675329"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530045"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Teclado, mouse e entrada do controlador no DirectX
 
 > [!NOTE]
-> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](../native/openxr-getting-started.md)** .
+> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](../native/openxr-getting-started.md)**.
 
 Teclados, mouses e controladores de jogos podem ser formas úteis de entrada para dispositivos Windows Mixed Reality. Os teclados e os mouses Bluetooth têm suporte no HoloLens, para uso com a depuração do aplicativo ou como uma forma alternativa de entrada. A realidade mista do Windows também dá suporte a headsets de imersão conectadas a PCs – onde os mouses, teclados e controladores de jogos têm sido historicamente a norma.
 
@@ -51,7 +51,7 @@ De AppView. cpp:
 ```
 
 ### <a name="virtual-keyboard-input"></a>Entrada de teclado virtual
-Para headsets de área de trabalho de imersão, você também pode dar suporte a teclados virtuais renderizados pelo Windows sobre sua exibição de imersão. Para dar suporte a isso, seu aplicativo pode implementar o **CoreTextEditContext** . Isso permite que o Windows entenda o estado de suas próprias caixas de texto renderizadas pelo aplicativo, de modo que o teclado virtual possa contribuir corretamente para o texto lá.
+Para headsets de área de trabalho de imersão, você pode dar suporte a teclados virtuais renderizados pelo Windows sobre sua exibição de imersão implementando **CoreTextEditContext**. Isso permite que o Windows entenda o estado de suas próprias caixas de texto renderizadas pelo aplicativo, de modo que o teclado virtual possa contribuir corretamente para o texto lá.
 
 Para obter mais informações sobre como implementar o suporte a CoreTextEditContext, consulte o [exemplo CoreTextEditContext](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
 
@@ -59,7 +59,8 @@ Para obter mais informações sobre como implementar o suporte a CoreTextEditCon
 
 Você também pode usar a entrada do mouse, novamente por meio dos manipuladores de eventos de entrada UWP CoreWindow. Aqui está como modificar o modelo de aplicativo Holographic do Windows para dar suporte a cliques do mouse da mesma maneira que os gestos pressionados. Depois de fazer essa modificação, um clique do mouse ao usar um dispositivo de headset de imersão reposicionará o cubo.
 
-Observe que os aplicativos UWP também podem obter dados XY brutos para o mouse usando a API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
+> [!NOTE]
+> Os aplicativos UWP também podem obter dados XY brutos para o mouse usando a API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
 
 Comece declarando um novo manipulador OnPointerPressed em AppView. h:
 
@@ -128,13 +129,13 @@ SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInp
    m_pointerPressed = false;
 ```
 
-Recompile e reimplante. Você deve observar que o clique do mouse agora reposicionará o cubo no headset de imersão ou no HoloLens com o mouse Bluetooth anexado.
+Recompile e reimplante. Observe que o clique do mouse agora reposicionará o cubo no headset de imersão ou no HoloLens com o mouse Bluetooth anexado.
 
 ### <a name="game-controller-support"></a>Suporte ao controlador de jogos
 
 Os controladores de jogo podem ser uma maneira divertida e conveniente de permitir que o usuário controle uma experiência de realidade do Windows Mixed realm.
 
-A primeira etapa para adicionar suporte a controladores de jogos ao modelo de aplicativo Holographic do Windows é adicionar as seguintes declarações de membro privado à classe de cabeçalho para o arquivo principal:
+ Adicione as seguintes declarações de membro privado à classe de cabeçalho para o arquivo principal:
 
 ```
 // Recognize gamepads that are plugged in after the app starts.
@@ -265,8 +266,8 @@ Há algumas diferenças importantes em como esse código pode ser usado no Micro
 * Você não pode contar com o teclado ou a entrada do mouse para estar presente. Toda a funcionalidade do seu aplicativo deve funcionar com olhar, gesto e entrada de fala.
 * Quando um teclado Bluetooth é anexado, pode ser útil habilitar a entrada de teclado para qualquer texto que seu aplicativo possa solicitar. Isso pode ser um excelente suplemento para ditado, por exemplo.
 * Quando se trata de criar seu aplicativo, não confie (por exemplo) WASD e controles de aparência do mouse para seu jogo. O HoloLens foi projetado para que o usuário percorra a sala. Nesse caso, o usuário controla a câmera diretamente. Uma interface para orientar a câmera em todo o espaço com os controles mover/procurar não fornecerá a mesma experiência.
-* A entrada de teclado pode ser uma maneira excelente de controlar os aspectos de depuração do seu aplicativo ou do seu mecanismo de jogo, especialmente, uma vez que o usuário não será solicitado a usar o teclado. Conectar-se a ele é o mesmo que você está acostumado a, com APIs de evento CoreWindow. Nesse cenário, você pode optar por implementar uma maneira de configurar seu aplicativo para rotear eventos de teclado para um modo de "somente entrada de depuração" durante as sessões de depuração.
+* A entrada de teclado é uma maneira excelente de controlar seu aplicativo ou a depuração do mecanismo de jogos, especialmente porque o usuário não precisará usar o teclado. Conectar-se a ele é o mesmo que você está acostumado a, com APIs de evento CoreWindow. Nesse cenário, você pode optar por implementar uma maneira de configurar seu aplicativo para rotear eventos de teclado para um modo de "somente entrada de depuração" durante as sessões de depuração.
 * Controladores Bluetooth também funcionam.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Acessórios de hardware](../../discover/hardware-accessories.md)

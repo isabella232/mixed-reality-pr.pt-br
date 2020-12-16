@@ -6,22 +6,22 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, entretenimento baseado na localização, VR de los, de los, de imersão, QR, QR Code, hololens2
-ms.openlocfilehash: e7b1f04b51cb1011cd0d66c27fe6a8bff3aafb79
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530007"
 ---
 # <a name="qr-code-tracking"></a>Acompanhamento de código QR
 
-O HoloLens 2 pode detectar códigos QR no ambiente em todo o headset, estabelecendo um sistema de coordenadas na localização do mundo real de cada código.
+O HoloLens 2 pode detectar códigos QR no ambiente em torno do headset, estabelecendo um sistema de coordenadas na localização do mundo real de cada código.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
 <table>
 <tr>
-<th>Recurso</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1ª geração)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Recurso</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (primeira gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> Detecção de código QR</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -31,11 +31,13 @@ O HoloLens 2 pode detectar códigos QR no ambiente em todo o headset, estabelece
 >O controle de código QR com alto-se com o Windows Mixed Realm headsets em computadores desktop tem suporte no Windows 10 versão 2004 e superior. Use a API Microsoft. MixedReality. QRCodeWatcher. IsSupported () para determinar se o recurso tem suporte no dispositivo atual.
 
 ## <a name="getting-the-qr-package"></a>Obtendo o pacote QR
+
 Você pode baixar o pacote NuGet para detecção de código QR [aqui](https://nuget.org/Packages/Microsoft.MixedReality.QR).
 
 ## <a name="detecting-qr-codes"></a>Detectando códigos QR
 
 ### <a name="adding-the-webcam-capability"></a>Adicionando o recurso de webcam
+
 Você precisará adicionar a capacidade `webcam` ao seu manifesto para detectar códigos QR. Esse recurso é necessário, pois os dados dentro de códigos detectados no ambiente do usuário podem conter informações confidenciais.
 
 A permissão pode ser solicitada chamando `QRCodeWatcher.RequestAccessAsync()` :
@@ -56,9 +58,7 @@ Embora a detecção de código QR exija o `webcam` recurso, a detecção ocorre 
 
 ### <a name="detecting-qr-codes-in-unity"></a>Detectando códigos QR no Unity
 
-Você pode usar a API de detecção de código QR no Unity sem usar uma dependência no MRTK. Para fazer isso, você deve instalar o pacote NuGet usando o [NuGet para Unity](https://github.com/GlitchEnzo/NuGetForUnity).
-
-Há um aplicativo do Unity de exemplo que exibe um quadrado Holographic sobre códigos QR, juntamente com os dados associados, como GUID, tamanho físico, carimbo de data/hora e dados decodificados. Esse aplicativo pode ser localizado em https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes .
+Você pode usar a API de detecção de código QR no Unity sem importar o MRTK instalando o pacote NuGet usando o [NuGet para Unity](https://github.com/GlitchEnzo/NuGetForUnity). Se você quiser ter uma ideia de como funciona, baixe o aplicativo do [Unity de exemplo](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes). O aplicativo de exemplo tem exemplos para exibir um Holographic quadrado sobre códigos QR e dados associados, como GUID, tamanho físico, carimbo de data/hora e dados decodificados.
 
 ### <a name="detecting-qr-codes-in-c"></a>Detectando códigos QR em C++
 
@@ -122,13 +122,15 @@ private:
 
 ## <a name="getting-the-coordinate-system-for-a-qr-code"></a>Obtendo o sistema de coordenadas para um código QR
 
-Cada código QR detectado expõe um [sistema de coordenadas espaciais](../../design/coordinate-systems.md) alinhado com o código QR no canto superior esquerdo do quadrado de detecção rápida na parte superior esquerda, conforme mostrado abaixo.  Ao usar o SDK QR diretamente, o eixo Z está apontando para o papel (não mostrado)-quando convertido em coordenadas do Unity, o eixo Z aponta para fora do papel e é canhoto.
-
-Um SpatialCoordinateSystem de código QR é alinhado conforme mostrado. Esse sistema de coordenadas pode ser obtido na plataforma chamando <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> e passando o SpatialGraphNodeId do código.
+Cada código QR detectado expõe um [sistema de coordenadas espaciais](../../design/coordinate-systems.md) alinhado com o código QR no canto superior esquerdo do quadrado de detecção rápida na parte superior esquerda:  
 
 ![Sistema de coordenadas de código QR](images/Qr-coordinatesystem.png) 
 
-Para um objeto QRCode, o código C++ a seguir mostra como criar um retângulo e colocá-lo usando o sistema de coordenadas do código QR:
+Ao usar o SDK QR diretamente, o eixo Z está apontando para o papel (não mostrado)-quando convertido em coordenadas do Unity, o eixo Z aponta para fora do papel e é canhoto.
+
+Um SpatialCoordinateSystem de código QR é alinhado conforme mostrado. Você pode obter o sistema de coordenadas da plataforma chamando <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> e passando o SpatialGraphNodeId do código.
+
+O código C++ abaixo mostra como criar um retângulo e colocá-lo usando o sistema de coordenadas do código QR:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -193,23 +195,23 @@ A [especificação QR](https://www.qrcode.com/en/howto/code.html) contém mais i
 ### <a name="lighting-and-backdrop"></a>Iluminação e pano de fundo
 A qualidade de detecção de código QR é suscetível à iluminação e ao pano de fundo variadas. 
 
-Em uma cena com iluminação particularmente brilhante, imprima um código preto em um plano de fundo cinza. Caso contrário, imprima um código QR preto em um plano de fundo branco.
+Em uma cena com iluminação brilhante, imprima um código preto em um plano de fundo cinza. Caso contrário, imprima um código QR preto em um plano de fundo branco.
 
-Se o pano de fundo para o código for particularmente escuro, experimente um preto no código cinza se a taxa de detecção for baixa. Se o pano de fundo for relativamente claro, um código regular deverá funcionar bem.
+Se o pano de fundo para o código for escuro, experimente um preto no código cinza se a taxa de detecção for baixa. Se o pano de fundo for relativamente claro, um código regular deverá funcionar bem.
 
 ### <a name="size-of-qr-codes"></a>Tamanho dos códigos QR
 Os dispositivos Windows Mixed Reality não funcionam com códigos QR com lados menores que 5 cm cada.
 
-Para códigos QR entre os lados de comprimento de 5 e 10 cm, você deve estar bastante perto de detectar o código. Também levará mais tempo para detectar códigos nesse tamanho. 
+Para códigos QR entre lados de comprimento de 5 cm e 10 cm, você deve estar bastante perto de detectar o código. Também levará mais tempo para detectar códigos nesse tamanho. 
 
 O tempo exato para detectar códigos depende não apenas do tamanho dos códigos QR, mas o quanto você está longe do código. Avançar para o código ajudará a deslocar os problemas com o tamanho.
 
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Distância e posição angular do código QR
-As câmeras de rastreamento só podem detectar um determinado nível de detalhe. Para códigos realmente pequenos – < 10cm ao longo dos lados – você deve estar bastante perto. Para um código QR da versão 1 variando de 10 a 25 cm de largura, a distância mínima de detecção varia de 0,15 metros a 0,5 metros. 
+As câmeras de rastreamento só podem detectar um determinado nível de detalhe. Para códigos pequenos – < 10 cm ao longo dos lados-você deve estar bem próximo. Para um código QR da versão 1 variando de 10 cm a 25 cm de largura, a distância mínima de detecção varia de 0,15 metros a 0,5 metros. 
 
 A distância de detecção para o tamanho aumenta linearmente. 
 
-A detecção QR funciona com um intervalo de ângulos + = 45deg. Isso é para garantir que tenhamos a resolução adequada para detectar o código.
+A detecção QR funciona com um intervalo de ângulos + = 45 graus para garantir que tenhamos a resolução adequada para detectar o código.
 
 ### <a name="qr-codes-with-logos"></a>Códigos QR com logotipos
 Códigos QR com logotipos não foram testados e não têm suporte no momento.
@@ -456,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Sistemas de coordenadas](../../design/coordinate-systems.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Âncoras Espaciais do Azure</a>

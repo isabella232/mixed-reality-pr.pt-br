@@ -6,19 +6,19 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, vídeo, captura, câmera
-ms.openlocfilehash: 6e42bd904b842bac160ece346d9b0df13cf3eaa3
-ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
+ms.openlocfilehash: e9819995806784c512acee6ada10d0be56051fca
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92138026"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530131"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Captura de realidade misturada para desenvolvedores
 
 > [!NOTE]
 > Confira [renderizar da câmera VP](#render-from-the-pv-camera-opt-in) abaixo para obter orientação sobre um novo recurso da MRC para o HoloLens 2.
 
-Como um usuário poderia pegar uma foto ou vídeo da MRC ( [captura de realidade misturada](../../mixed-reality-capture.md) ) a qualquer momento, há algumas coisas que você deve ter em mente ao desenvolver seu aplicativo. Isso inclui as práticas recomendadas para a qualidade visual da MRC e a resposta a alterações do sistema enquanto os MRCs estão sendo capturados.
+Você pode fazer uma foto ou vídeo da MRC ( [captura de realidade mista](../../mixed-reality-capture.md) ) a qualquer momento, mas há algumas coisas a serem lembradas ao desenvolver seu aplicativo. Isso inclui as práticas recomendadas para a qualidade visual da MRC e a resposta a alterações do sistema enquanto os MRCs estão sendo capturados.
 
 Os desenvolvedores também podem integrar diretamente a captura e a inserção da realidade misturada em seus aplicativos.
 
@@ -26,7 +26,7 @@ A MRC no HoloLens (primeira geração) dá suporte a vídeos e fotos de até 720
 
 ## <a name="the-importance-of-quality-mrc"></a>A importância da qualidade da MRC
 
-A realidade misturada fotos capturadas e vídeos é provavelmente a primeira exposição que um usuário terá de seu aplicativo. Seja como capturas de tela de realidade misturadas na sua página de Microsoft Store ou de outros usuários que compartilham MRCs em redes sociais. Você pode usar a MRC para demonstrar seu aplicativo, instruir os usuários, incentivar os usuários a compartilharem suas interações do mundo misto e para a solução de problemas e pesquisa de usuários.
+Quer sejam capturas de tela de realidade misturadas na sua página de Microsoft Store ou outros usuários que compartilham conteúdo de captura em redes sociais, a mídia de captura da realidade misturada costuma ser a primeira exposição dos usuários ao seu aplicativo. Você pode usar a MRC para demonstrar seu aplicativo, instruir os usuários, incentivar os usuários a compartilharem suas interações do mundo misto e para a solução de problemas e pesquisa de usuários.
 
 ## <a name="how-mrc-impacts-your-app"></a>Como a MRC impacta seu aplicativo
 
@@ -38,20 +38,20 @@ Por padrão, um aplicativo não precisa fazer nada para permitir que os usuário
 
 Por padrão, a captura de realidade mista combina a saída de Holographic do olho direito com a câmera de foto/vídeo (VP). Essas duas fontes são combinadas usando o ponto de foco definido pelo aplicativo de imersão em execução no momento.
 
-Isso significa que os hologramas fora do plano de foco também não serão alinhados (devido à distância física entre a câmera PV e a exibição correta).
+Isso significa que os hologramas fora do plano de foco não serão alinhados devido à distância física entre a câmera VP e a exibição correta.
 
 #### <a name="set-the-focus-point"></a>Definir o ponto de foco
 
 Aplicativos de imersão (no HoloLens) devem definir o [ponto de foco](../unity/focus-point-in-unity.md) de onde deseja que seu plano de estabilização seja. Isso garante o melhor alinhamento no headset e na captura de realidade misturada.
 
-Se um ponto de foco não estiver definido, o plano de estabilização usará como padrão dois medidores.
+Se um ponto de foco não estiver definido, o plano de estabilização usará como padrão 2 metros.
 
 #### <a name="render-from-the-pv-camera-opt-in"></a>Renderizar da câmera PV (aceitar)
 
 O HoloLens 2 adiciona a capacidade de um aplicativo de imersão **renderizar da câmera VP** enquanto a captura de realidade misturada está em execução. Para garantir que o aplicativo dê suporte à renderização adicional corretamente, o aplicativo precisa aceitar essa funcionalidade.
 
 A renderização da câmera PV oferece as seguintes melhorias em relação à experiência padrão da MRC:
-* O alinhamento do holograma ao ambiente físico e às mãos (para interações próximas) deve ser preciso em todas as distâncias, em vez de ter um deslocamento em distâncias que não seja o ponto de foco, como você pode ver na MRC padrão.
+* O alinhamento do holograma ao seu ambiente físico e as mãos para interações próximas devem ser precisos em todas as distâncias. Evite ter um deslocamento em distâncias diferentes do ponto de foco como você pode ver na MRC padrão.
 * O olho certo no headset não será comprometido, pois ele não será usado para renderizar os hologramas da saída da MRC.
 
 Há três etapas para habilitar a renderização da câmera PV:
@@ -75,7 +75,7 @@ if (view != null)
 
 Quando o aplicativo tem consentimento para renderizar da câmera PV e a captura de realidade misturada começa:
 1. O evento CameraAdded de HolographicSpace será acionado. Esse evento pode ser adiado se o aplicativo não puder lidar com a câmera no momento.
-2. Depois que o evento for concluído (e não houver adiamentos pendentes), o HolographicCamera será exibido na lista de AddedCameras do próximo HolographicFrame.
+2. Depois que o evento for concluído sem adiamentos pendentes, o HolographicCamera será exibido na lista de AddedCameras do próximo HolographicFrame.
 
 Quando a captura de realidade mista é interrompida (ou se o aplicativo desabilita a configuração de exibição enquanto a captura da realidade misturada está em execução): o HolographicCamera será exibido na lista RemovedCameras do próximo HolographicFrame e o evento CameraRemoved do HolographicSpace será acionado.
 
@@ -84,9 +84,9 @@ Uma propriedade [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.g
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>Habilitar o PhotoVideoCamera HolographicViewConfiguration no Unity
 
 > [!NOTE]
-> Isso requer o **Unity 2018.4.13 F1**, o **Unity 2019.3.0 F1**ou mais recente.
+> Isso requer o **Unity 2018.4.13 F1**, o **Unity 2019.3.0 F1** ou mais recente.
 
-Para aceitar a renderização da câmera PV, ao usar o [Kit de ferramentas de realidade misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), habilite o provedor de [configurações de câmera do reality do Windows](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) e verifique a configuração **renderizar da câmera PV** .
+Para aceitar a renderização da câmera PV ao usar o kit de [ferramentas da realidade misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), habilite o provedor de [configurações da câmera do Windows Mixed Reality](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) e verifique o **processamento da câmera PV**.
 
 Se você não estiver usando o kit de ferramentas de realidade misturada, poderá usar um componente para [aceitar manualmente](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) , conforme descrito acima, para DirectX.
 
@@ -99,7 +99,7 @@ Isso é feito para você automaticamente pelo Unity.
 > [!NOTE]
 > Isso requer o **Unreal Engine 4.25** ou posterior.
 
-Para aceitar a renderização da câmera de PV:
+Para aceitar a renderização por meio da Câmera de PV:
 
 1. Chamar **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**
     * Use os valores de **Tamanho X** e **Tamanho Y** para definir as dimensões do vídeo.
@@ -114,7 +114,7 @@ Isso é feito para você automaticamente por não real.
 
 Execute uma captura de realidade misturada e verifique o alinhamento incomum, o conteúdo ausente ou os problemas de desempenho. Atualize os sombreadores e o código conforme apropriado.
 
-Se houver certas cenas que não dão suporte à renderização em uma câmera adicional, você poderá desabilitar o HolographicViewConfiguration do PhotoVideoCamera durante eles.
+Se houver certas cenas que não dão suporte à renderização em uma câmera adicional, você poderá desabilitar o HolographicViewConfiguration do PhotoVideoCamera.
 
 ### <a name="disabling-mrc-in-your-app"></a>Desabilitando a MRC em seu aplicativo
 
@@ -144,13 +144,13 @@ A classe [AppCapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.A
 
 ### <a name="best-practices-hololens-specific"></a>Práticas recomendadas (específicas do HoloLens)
 
-Espera-se que a MRC funcione sem trabalho adicional dos desenvolvedores, mas há algumas coisas que você deve conhecer para fornecer a melhor experiência de captura de realidade misturada de seu aplicativo.
+Espera-se que a MRC funcione sem esforço de desenvolvimento adicional, mas há algumas coisas a serem consideradas ao fornecer a melhor experiência de captura de realidade misturada.
 
 **A MRC usa o canal alfa do holograma para misturar com as imagens da [câmera](locatable-camera.md)**
 
-A etapa mais importante é garantir que seu aplicativo esteja apagando para preto transparente em vez de limpá-lo em preto opaco. No Unity, isso é feito por padrão com o MixedRealityToolkit, mas se você estiver desenvolvendo em não Unity, talvez seja necessário fazer uma alteração de uma linha.
+A etapa mais importante é garantir que seu aplicativo esteja apagando para preto transparente em vez de limpá-lo em preto opaco. No Unity, isso é feito por padrão com o MixedRealityToolkit. Se você estiver desenvolvendo em não Unity, talvez seja necessário fazer uma alteração de uma linha.
 
-Aqui estão alguns dos artefatos que você poderá ver na MRC se seu aplicativo não estiver sendo desmarcado para preto transparente:
+Aqui estão alguns dos artefatos que você poderá ver na MRC se seu aplicativo não estiver apagando para preto transparente:
 
 **Falhas de exemplo**: bordas pretas em todo o conteúdo (falha ao apagar para preto transparente)
 
@@ -165,7 +165,7 @@ Aqui estão alguns dos artefatos que você poderá ver na MRC se seu aplicativo 
 </tr>
 </table>
 
-**Falhas de exemplo**: toda a cena em segundo plano do holograma aparece em preto. A definição de um valor alfa de segundo plano de 1 resulta em um plano de fundo preto
+**Falhas de exemplo**: toda a cena em segundo plano do holograma aparece em preto. A definição de um valor alfa de segundo plano de um resulta em um plano de fundo preto
 
 ![A definição de um valor alfa de segundo plano de 1 resulta em um plano de fundo preto](images/clearopaqueblack-300px.png)
 
@@ -176,7 +176,7 @@ Aqui estão alguns dos artefatos que você poderá ver na MRC se seu aplicativo 
 **Solução**:
 * Altere qualquer conteúdo que esteja aparecendo como preto opaco para ter um valor alfa igual a 0.
 * Verifique se o aplicativo está apagando para preto transparente.
-* O Unity usa como padrão limpar automaticamente o MixedRealityToolkit, mas se for um aplicativo não-Unity, você deverá modificar a cor usada com ID3D11DeiceContext:: ClearRenderTargetView (). Você deseja garantir que fique claro para preto transparente (0, 0, 0, 0) em vez de preto opaco (0, 0, 0, 1).
+* O Unity usa como padrão limpar automaticamente com o MixedRealityToolkit, mas se for um aplicativo que não seja do Unity, você deverá modificar a cor usada com ID3D11DeiceContext:: ClearRenderTargetView (). Você deseja garantir que fique claro para preto transparente (0, 0, 0, 0) em vez de preto opaco (0, 0, 0, 1).
 
 Agora você pode ajustar os valores Alfa de seus ativos, se desejar, mas normalmente não precisa. Na maioria das vezes, o MRCs parecerá bom para uso. A MRC pressupõe uma alfa multiplicada previamente. Os valores Alfa afetarão apenas a captura da MRC.
 
@@ -184,8 +184,8 @@ Agora você pode ajustar os valores Alfa de seus ativos, se desejar, mas normalm
 
 O seguinte se aplica ao HoloLens (primeira geração) e ao HoloLens 2, a menos que indicado de outra forma:
 
-* O sistema limitará o aplicativo para a renderização 30Hz. Isso cria algum espaço para que a MRC seja executada para que o aplicativo não precise manter uma reserva de orçamento constante e também corresponda à taxa de quadros de registro de vídeo da MRC de 30fps
-* O conteúdo de holograma no olho certo do dispositivo pode parecer "Sparkle" ao gravar/transmitir a MRC: o texto pode ser mais difícil de ler e as bordas do holograma podem parecer mais Jaggy (aceitar a 3ª câmera renderizar no **HoloLens 2** evita esse comprometimento)
+* O sistema limitará o processamento do aplicativo a 30 Hz. Isso cria algum espaço para a MRC ser executado para que o aplicativo não precise manter uma reserva de orçamento constante e também corresponda à taxa de quadros de gravação de vídeo da MRC de 30 fps
+* O conteúdo de holograma no olho certo do dispositivo pode parecer "Sparkle" ao gravar/transmitir a MRC: o texto pode ser mais difícil de ler e as bordas do holograma podem parecer mais Jaggy (optar pelo terceiro processamento da câmera no **HoloLens 2** evita esse comprometimento)
 * Os vídeos e fotos da MRC respeitarão o [ponto de foco](../unity/focus-point-in-unity.md) do aplicativo se o aplicativo o tiver habilitado, o que ajudará a garantir que os hologramas sejam posicionados com precisão. Para vídeos, o ponto de foco é suavizado, de modo que os hologramas podem parecer descompassos mais lentamente se a profundidade do ponto de foco muda significativamente. Os hologramas que estão em diferentes profundidades do ponto de foco podem parecer deslocamento do mundo real (Veja o exemplo abaixo, em que ponto de foco está definido em 2 metros, mas o holograma está posicionado em 1 metro).
 
 ![Os hologramas a 2 metros serão exibidos perfeitamente registrados no mundo. Os hologramas em distâncias próximas ou distantes podem ser um deslocamento ligeiramente.](images/hologramaccuracydistancemrc-1000px.png)
@@ -198,11 +198,11 @@ Seu aplicativo de realidade misturada pode iniciar a captura de vídeo ou foto d
 
 Os desenvolvedores podem usar a *[API da interface do usuário de captura de câmera](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* para obter uma foto ou vídeo de realidade misturada do usuário com apenas algumas linhas de código.
 
-Essa API inicia a interface do usuário da câmera da MRC interna, da qual o usuário pode tirar uma foto ou um vídeo, e retorna a captura resultante para seu aplicativo.  Se você quiser criar sua própria interface do usuário da câmera ou precisar de acesso de nível inferior ao fluxo de captura, poderá criar um gravador de captura de realidade misturada personalizado.
+Essa API inicia a interface do usuário da câmera da MRC interna, na qual os usuários podem tirar uma foto ou um vídeo e retornar a captura resultante para seu aplicativo. Você pode criar um gravador de captura de realidade mista personalizada se precisar adicionar sua própria interface do usuário da câmera ou acesso de nível inferior para capturar fluxos.
 
 ### <a name="creating-a-custom-mrc-recorder"></a>Criando um gravador da MRC personalizado
 
-Embora o usuário sempre possa disparar uma foto ou vídeo usando o serviço de captura de MRC do sistema, um aplicativo pode querer criar um aplicativo de câmera personalizado, mas incluir hologramas no fluxo da câmera, assim como a MRC. Isso permite que o aplicativo inicie capturas em nome do usuário, crie uma interface de usuário de gravação personalizada ou personalize as configurações da MRC para citar alguns exemplos.
+Embora o usuário sempre possa disparar uma foto ou vídeo usando o serviço de captura de MRC do sistema, um aplicativo pode querer criar um aplicativo de câmera personalizado que inclua hologramas no fluxo da câmera, assim como a MRC. Isso permite que o aplicativo inicie capturas de entrada do usuário, crie uma interface de usuário de gravação personalizada ou personalize as configurações da MRC para citar alguns exemplos.
 
 **HoloStudio adiciona uma câmera da MRC personalizada usando efeitos da MRC**
 
@@ -214,7 +214,7 @@ Outros aplicativos podem fazer isso usando as [APIs de captura de mídia do Wind
 
 Os aplicativos têm duas opções para adicionar o efeito:
 * A API mais antiga: [Windows. Media. Capture. MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* A nova API recomendada pela Microsoft (retorna um objeto, possibilitando a manipulação de propriedades dinâmicas): [Windows. Media. Capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. Capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) que exige que o aplicativo Crie sua própria implementação de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) e [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Consulte o exemplo de [efeito](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app) da MRC para obter o exemplo de uso.
+* A nova API recomendada pela Microsoft (retorna um objeto, possibilitando a manipulação de propriedades dinâmicas): [Windows. Media. Capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. Capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) que exige que o aplicativo Crie sua própria implementação de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) e [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Consulte o exemplo da MRC [efeito, por exemplo, uso.
 
 >[!NOTE]
 > O namespace Windows. Media. MixedRealityCapture não será reconhecido pelo Visual Studio, mas as cadeias de caracteres ainda são válidas.
@@ -258,9 +258,9 @@ Há certas limitações em relação a vários aplicativos que acessam a MRC ao 
 
 #### <a name="photovideo-camera-access"></a>Acesso à câmera de foto/vídeo
 
-A câmera de foto/vídeo é limitada ao número de processos que podem acessá-lo ao mesmo tempo. Enquanto um processo estiver gravando vídeo ou tirando uma foto, qualquer outro processo falhará ao adquirir a câmera de foto/vídeo. (isso se aplica a captura de realidade mista e captura de foto/vídeo padrão)
+A câmera de foto/vídeo é limitada ao número de processos que podem acessá-lo ao mesmo tempo. Enquanto um processo estiver gravando vídeo ou tirando uma foto, qualquer outro processo não conseguirá adquirir a câmera de foto/vídeo. (isso se aplica a captura de realidade mista e captura de foto/vídeo padrão)
 
-Com o HoloLens 2, um aplicativo pode usar a propriedade ' [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) de MediaCaptureInitializationSettings para indicar que deseja executar SharedReadOnly se não precisar de controle exclusivo sobre a câmera de foto/vídeo. Isso significa que a resolução e a taxa de quadros da captura serão limitadas a quais outros aplicativos configuraram a câmera para fornecer.
+Com o HoloLens 2, um aplicativo pode usar a propriedade MediaCaptureInitializationSettings [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) para indicar que desejam executar SharedReadOnly se não precisarem de controle exclusivo sobre a câmera de foto/vídeo. A resolução e a taxa de quadros da captura serão limitadas a quais outros aplicativos configuraram a câmera para fornecer.
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>Acesso interno à câmera de fotos/vídeo da MRC
 

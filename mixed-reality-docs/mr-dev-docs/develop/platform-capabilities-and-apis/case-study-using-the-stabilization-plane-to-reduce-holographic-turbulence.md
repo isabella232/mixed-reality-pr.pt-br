@@ -6,28 +6,28 @@ ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, estabilização, estudo de caso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679605"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530441"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Estudo de caso-usando o plano de estabilização para reduzir Holographic turbulência
 
-Trabalhar com hologramas pode ser complicado. O fato de que você pode se movimentar em seu espaço e ver seus hologramas de todos os ângulos diferentes fornece um nível de imersão que você não pode obter com uma tela de computador normal. Manter esses hologramas em vigor e parecer realista é um feito pelo hardware do Microsoft HoloLens e pelo design inteligente de aplicativos Holographic.
+Trabalhar com holograma geralmente é complicado. A movimentação de um espaço e a análise de hologramas de todos os ângulos diferentes fornece um nível de imersão que não está disponível em uma tela normal do computador. Manter esses hologramas em vigor e parecer realista é um feito pelo hardware do Microsoft HoloLens e pelo design inteligente de aplicativos Holographic.
 
 ## <a name="the-tech"></a>O Tech
 
-Para fazer com que os hologramas pareçam estar realmente compartilhando o espaço com você, eles devem ser renderizados corretamente, sem a separação de cores. Isso é obtido, em parte, por tecnologia interna ao hardware do HoloLens, que mantém os hologramas ancorados no que chamamos de um [plano de estabilização](hologram-stability.md#reprojection).
+Para fazer com que os hologramas pareçam estar realmente compartilhando o espaço com você, eles devem ser renderizados corretamente sem a separação de cores. Isso é conseguido, em parte, por tecnologia interna ao hardware do HoloLens, que mantém os hologramas ancorados no que chamamos de um [plano de estabilização](hologram-stability.md#reprojection).
 
-Um plano é definido por um ponto e um normal, mas como sempre queremos que o plano fique à câmera, estamos realmente preocupados com a definição do ponto do plano. Podemos informar ao HoloLens que aponta para concentrar seu processamento para manter tudo ancorado e estável, mas como definir esse ponto de foco é específico do aplicativo e pode fazer ou interromper seu aplicativo dependendo do conteúdo.
+Um plano é definido por um ponto e um normal. Como sempre queremos que o plano se face da câmera, estamos preocupados com a definição do ponto do plano. Podemos informar ao HoloLens em que ponto concentrar seu processamento para manter tudo ancorado e estável. No entanto, definir esse ponto de foco é específico do aplicativo e pode fazer ou interromper seu aplicativo dependendo do conteúdo.
 
-Resumindo, os hologramas funcionam melhor quando o plano de estabilização é aplicado corretamente, mas o que isso realmente significa depende do tipo de aplicativo que você está criando. Vamos dar uma olhada em como alguns dos aplicativos disponíveis atualmente para o HoloLens resolvem esse problema.
+Os hologramas funcionam melhor quando o plano de estabilização é aplicado corretamente, mas o que isso realmente significa depende do tipo de aplicativo que você está criando. Vamos dar uma olhada em como alguns dos aplicativos disponíveis atualmente para o HoloLens resolvem esse problema.
 
 ## <a name="behind-the-scenes"></a>Nos bastidores
 
-Ao desenvolver os aplicativos a seguir, observamos que, quando não usamos o plano, os objetos seriam sways quando nossa cabeça mudou e veremos a separação de cores com movimentos de cabeça ou de holograma rápidos. No decorrer do período de desenvolvimento, aprendemos por meio de avaliação e erro como melhor usar o plano de estabilização e como projetar nossos aplicativos em relação aos problemas que ele não pode corrigir.
+Ao desenvolver os aplicativos a seguir, percebemos que, quando não usamos o plano, os objetos seriam Sway quando nossa cabeça mudou. Também veremos a separação de cores com movimentos de cabeçalho rápido ou holograma. Acabamos aprendendo com a avaliação e o erro como usar melhor o plano de estabilização e projetar nossos aplicativos em relação aos problemas que ele não consegue corrigir.
 
 ### <a name="galaxy-explorer-stationary-content-3d-interactivity"></a>Galaxy Explorer: conteúdo de carta, interatividade 3D
 
@@ -47,25 +47,25 @@ No HoloStudio, você passa a maior parte do seu tempo olhando para o mesmo model
 
 No HoloTour e no visualizador 3D, você está examinando um objeto animado solitários ou um filme com efeitos 3D adicionados sobre ele. A estabilização nesses aplicativos é definida como o que você está exibindo no momento.
 
-O HoloTour também impede que você se afaste muito do mundo virtual, fazendo com que ele se mova com você em vez de permanecer em um local fixo. Isso garante que você não ficará muito longe de outros hologramas para que os problemas de estabilidade sejam deslizados.
+O HoloTour também impede que você se movimente muito longe do mundo virtual, fazendo com que ele se mova com você em vez de permanecer em um local fixo. Isso garante que você não ficará muito longe de outros hologramas para que os problemas de estabilidade sejam deslizados.
 
 ![Neste exemplo de HoloTour, o plano de estabilização seria definido como este filme de Pantheon de Hadrian.](images/holotour-stabilization-plane-500px.jpg)
 
 ### <a name="roboraid-dynamic-content-and-environmental-interactions"></a>RoboRaid: conteúdo dinâmico e interações ambientais
 
-Definir o plano de estabilização em RoboRaid é surpreendentemente simples, apesar de ser o aplicativo que exige o movimento mais repentino. O plano é direcionado para se adequar às paredes ou aos objetos ao redor e flutuar em uma distância fixa na frente de você quando estiver longe de fazê-lo.
+Definir o plano de estabilização em RoboRaid é surpreendentemente simples, apesar de ser o aplicativo que exige o movimento mais repentino. O plano é direcionado para se adequar às paredes ou aos objetos ao redor e flutuar em uma distância fixa na frente de você quando estiver longe o suficiente.
 
-O RoboRaid foi projetado com o plano de estabilização em mente. O reticle, que move o máximo, já que ele é bloqueado, evita isso usando apenas vermelho e azul, o que minimiza qualquer sangramento de cor. Ele também contém uma pequena profundidade entre as partes, minimizando qualquer sangramento de cor que poderia ocorrer mascarando-a com um efeito de da Parallax já esperado. Os robôs não se movem muito rapidamente e só viajam a pequenas distâncias em intervalos regulares. Eles tendem a ficar cerca de 2 metros na frente, onde a estabilização é definida por padrão.
+O RoboRaid foi projetado com o plano de estabilização em mente. O reticle, que move o máximo, já que ele é bloqueado, evita isso usando apenas vermelho e azul, o que minimiza qualquer sangramento de cor. Ele também contém uma pequena profundidade entre as partes, minimizando qualquer sangramento de cor que poderia ocorrer mascarando-a com um efeito de da Parallax já esperado. Os robôs não se movem rapidamente e só viajam a pequenas distâncias em intervalos regulares. Eles tendem a ficar cerca de 2 metros na frente, onde a estabilização é definida por padrão.
 
 ### <a name="fragments-and-young-conker-dynamic-content-with-environmental-interaction"></a>Fragmentos e jovens Conker: conteúdo dinâmico com interação ambiental
 
-Escrito pelo Asobo Studio em C++, fragmentos e jovens Conker usam uma abordagem diferente para definir o plano de estabilização. Os pontos de interesse (POI) são definidos no código e ordenados em termos de prioridade. Em inglês, temos conteúdo em jogo, como o modelo Conker em jovens Conker, menus, Reticle de mira e logotipos. O em diante é interseccionado pelo olhar do usuário e o plano é definido como o centro do objeto com a prioridade mais alta. Se nenhuma interseção ocorrer, o plano será definido como a distância padrão.
+Escrito pelo Asobo Studio em C++, fragmentos e jovens Conker usam uma abordagem diferente para definir o plano de estabilização. Os pontos de interesse (POI) são definidos no código e ordenados por prioridade. Em inglês, temos conteúdo em jogo, como o modelo Conker em jovens Conker, menus, Reticle de mira e logotipos. O em diante é interseccionado pelo olhar do usuário e o plano é definido como o centro do objeto com a prioridade mais alta. Se nenhuma interseção ocorrer, o plano será definido como a distância padrão.
 
 Fragmentos e jovens de Conker também criam um design para você se afastar muito dos hologramas, pausando o aplicativo se você se mover para fora do que foi previamente examinado como seu espaço de reprodução. Dessa forma, eles mantêm você dentro dos limites encontrados para fornecer a experiência mais estável.
 
 ## <a name="do-it-yourself"></a>Faça você mesmo
 
-Se você tiver um HoloLens e quiser brincar com os conceitos neste artigo, poderá baixar uma cena de teste e experimentar os exercícios abaixo. Ele usa a API Gizmo interna do Unity e deve ajudá-lo a visualizar onde seu plano está sendo definido. Esse código também foi usado para capturar as capturas de tela nesse estudo de caso.
+Se você tiver um HoloLens e quiser brincar com os conceitos deste artigo, poderá baixar uma cena de teste para experimentar os exercícios a seguir. A cena de teste usa a API Gizmo interna do Unity para ajudá-lo a visualizar onde seu plano está sendo definido. O código também foi usado para capturar as capturas de tela nesse estudo de caso.
 1. Sincronize a versão mais recente do [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
 2. Abra a cena [HoloToolkit-examples/Utilities/cenas/StabilizationPlaneSetting. Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) .
 3. Crie e configure o projeto gerado.
@@ -86,7 +86,7 @@ Vá para o seu direito mais uma vez até ver uma nova configuração de pontos. 
 **Dicas**
 * Mantenha a lógica de configuração do plano simples. Como vimos, você não precisa de algoritmos de configuração de plano complexos para fazer uma experiência de imersão. O plano de estabilização é apenas uma peça do quebra-cabeça.
 * Quando possível, sempre mova o plano entre destinos sem problemas. A troca instantânea de destinos distantes pode interromper visualmente a cena.
-* Considere ter uma opção em sua lógica de configuração de plano para bloquear em um destino muito específico. Dessa forma, você pode ter o plano bloqueado em um objeto, como uma tela de logotipo ou de título, se necessário.
+* Considere ter uma opção em sua lógica de configuração de plano para bloquear em um destino específico. Dessa forma, você pode ter o plano bloqueado em um objeto, como uma tela de logotipo ou de título, se necessário.
 
 ## <a name="about-the-author"></a>Sobre o autor
 

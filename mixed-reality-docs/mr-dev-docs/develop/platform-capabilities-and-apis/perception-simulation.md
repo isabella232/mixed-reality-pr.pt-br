@@ -6,43 +6,43 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens, simulação, teste
-ms.openlocfilehash: d4cd9497f9adcea03ece222f09124ce593ea73cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675323"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530393"
 ---
 # <a name="perception-simulation"></a>Simulação de percepção
 
-Deseja criar um teste automatizado para seu aplicativo? Você deseja que seus testes vão além dos testes de unidade de nível de componente e realmente exercitam seu aplicativo de ponta a ponta? A simulação de percepção é o que você está procurando. A biblioteca de simulação de percepção envia dados de entrada humanos e mundiais para seu aplicativo para que você possa automatizar seus testes. Por exemplo, você pode simular a entrada de uma aparência humana para uma posição específica e repetível e, em seguida, executar um gesto ou usar um controlador de movimento.
+Deseja criar um teste automatizado para seu aplicativo? Você deseja que seus testes vão além dos testes de unidade de nível de componente e realmente exercitam seu aplicativo de ponta a ponta? A simulação de percepção é o que você está procurando. A biblioteca de simulação de percepção envia dados de entrada humanos e mundiais para seu aplicativo para que você possa automatizar seus testes. Por exemplo, você pode simular a entrada de uma aparência humana para uma posição específica e repetível e, em seguida, usar um controlador de gesto ou movimento.
 
-A simulação de percepção pode enviar uma entrada simulada como esta para um HoloLens físico, o emulador do HoloLens (1º gen), o emulador do HoloLens 2 ou um PC com o portal de realidade misturada instalado. A simulação de percepção ignora os sensores ao vivo em um dispositivo de realidade misturada e envia a entrada simulada para aplicativos em execução no dispositivo. Os aplicativos recebem esses eventos de entrada por meio das mesmas APIs que sempre usam e não conseguem dizer a diferença entre a execução com sensores reais versus a execução com a simulação de percepção. A simulação de percepção é a mesma tecnologia usada pelos emuladores do HoloLens para enviar a entrada simulada para a máquina virtual do HoloLens.
+A simulação de percepção pode enviar uma entrada simulada como esta para um HoloLens físico, o emulador do HoloLens (primeira gen), o emulador do HoloLens 2 ou um PC com o portal de realidade misturada instalado. A simulação de percepção ignora os sensores ao vivo em um dispositivo de realidade misturada e envia a entrada simulada para aplicativos em execução no dispositivo. Os aplicativos recebem esses eventos de entrada por meio das mesmas APIs que sempre usam e não conseguem dizer a diferença entre a execução com sensores reais versus a simulação de percepção. A simulação de percepção é a mesma tecnologia usada pelos emuladores do HoloLens para enviar a entrada simulada para a máquina virtual do HoloLens.
 
-Para começar a usar a simulação em seu código, comece criando um objeto IPerceptionSimulationManager. A partir desse objeto, você pode emitir comandos para controlar as propriedades de um "humano" simulado, incluindo posição de cabeçalho, posição mão e gestos, e você pode habilitar e manipular controladores de movimento.
+Para começar a usar a simulação em seu código, comece criando um objeto IPerceptionSimulationManager. A partir desse objeto, você pode emitir comandos para controlar as propriedades de um "humano" simulado, incluindo a posição da cabeça, a posição da mão e os gestos. Você também pode habilitar e manipular os controladores de movimento.
 
 ## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>Configurando um projeto do Visual Studio para simulação de percepção
-1. [Instale o emulador do HoloLens](../install-the-tools.md) no seu computador de desenvolvimento. O emulador inclui as bibliotecas que serão usadas para a simulação de percepção.
+1. [Instale o emulador do HoloLens](../install-the-tools.md) no seu computador de desenvolvimento. O emulador inclui as bibliotecas que você usa para a simulação de percepção.
 2. Crie um novo projeto de desktop do Visual Studio C# (um projeto de console funciona muito bem para começar).
 3. Adicione os seguintes binários ao seu projeto como referências (projeto->referência ao suplemento de >...). Você pode encontrá-los em% ProgramFiles (x86)% \ Microsoft XDE \\ (versão), como **% ProgramFiles (x86)% \ Microsoft XDE \\ 10.0.18362.0** para o emulador do HoloLens 2.  (Observação: embora os binários façam parte do emulador do HoloLens 2, eles também funcionam para a realidade mista do Windows na área de trabalho.) um. Wrapper de C# gerenciado por PerceptionSimulationManager.Interop.dll para simulação de percepção.
     b. PerceptionSimulationRest.dll-Library para configurar um canal de comunicação de soquete da Web para o HoloLens ou o emulador.
     c. SimulationStream.Interop.dll-tipos compartilhados para simulação.
-4. Adicione o PerceptionSimulationManager.dll binário de implementação ao seu projeto a. Primeiro, adicione-o como um binário ao projeto (projeto->adicionar >item existente...). Salve-o como um link para que ele não o copie para a pasta de origem do projeto. ![Adicione PerceptionSimulationManager.dll ao projeto como um link ](images/saveaslink.png) b. Em seguida, certifique-se de que ele seja copiado para a pasta de saída na compilação. Isso está na folha de propriedades do binário. ![Marque PerceptionSimulationManager.dll para copiar para o diretório de saída](images/copyalways.png)
+4. Adicione o PerceptionSimulationManager.dll binário de implementação ao seu projeto a. Primeiro, adicione-o como um binário ao projeto (projeto->adicionar >item existente...). Salve-o como um link para que ele não o copie para a pasta de origem do projeto. ![Adicione PerceptionSimulationManager.dll ao projeto como um link ](images/saveaslink.png) b. Em seguida, verifique se ele é copiado para a pasta de saída na compilação. Isso está na folha de propriedades do binário. ![Marque PerceptionSimulationManager.dll para copiar para o diretório de saída](images/copyalways.png)
 5. Defina sua plataforma de solução ativa como x64.  (Use o Configuration Manager para criar uma entrada de plataforma para x64 se ainda não existir uma.)
 
 ## <a name="creating-an-iperceptionsimulation-manager-object"></a>Criando um objeto do Gerenciador de IPerceptionSimulation
 
 Para controlar a simulação, você emitirá atualizações para objetos recuperados de um objeto IPerceptionSimulationManager. A primeira etapa é obter esse objeto e conectá-lo ao seu dispositivo de destino ou emulador. Você pode obter o endereço IP do emulador clicando no botão portal do dispositivo na barra de [ferramentas](using-the-hololens-emulator.md)
 
-![Abrir o ícone do portal do dispositivo ](images/emulator-deviceportal.png) **abra o portal do dispositivo** : Abra o portal do dispositivo do Windows para o sistema operacional do HoloLens no emulador.  Para a realidade mista do Windows, isso pode ser recuperado no aplicativo configurações em "atualizar & segurança" e, em seguida, "para desenvolvedores" na seção "conectar usando:" em "habilitar o portal do dispositivo".  Lembre-se de anotar o endereço IP e a porta.
+![Abrir o ícone do portal do dispositivo ](images/emulator-deviceportal.png) **abra o portal do dispositivo**: Abra o portal do dispositivo do Windows para o sistema operacional do HoloLens no emulador.  Para a realidade mista do Windows, isso pode ser recuperado no aplicativo configurações em "atualizar & segurança" e, em seguida, "para desenvolvedores" na seção "conectar usando:" em "habilitar o portal do dispositivo".  Lembre-se de anotar o endereço IP e a porta.
 
 Primeiro, você chamará RestSimulationStreamSink. Create para obter um objeto RestSimulationStreamSink. Esse é o dispositivo ou emulador de destino que você controlará em uma conexão http. Seus comandos serão passados e manipulados pelo portal do [dispositivo Windows](using-the-windows-device-portal.md) em execução no dispositivo ou emulador. Os quatro parâmetros necessários para criar um objeto são:
 * URI Uri-endereço IP do dispositivo de destino (por exemplo, " https://123.123.123.123 " ou " https://123.123.123.123:50080 ")
-* System .net. NetworkCredential credenciais-nome de usuário/senha para se conectar ao [portal de dispositivo do Windows](using-the-windows-device-portal.md) no dispositivo ou emulador de destino. Se você estiver se conectando ao emulador por meio de seu endereço local (por exemplo, *168...* *) no mesmo PC, todas as credenciais serão aceitas.
+* System .net. NetworkCredential credenciais-nome de usuário/senha para se conectar ao [portal de dispositivo do Windows](using-the-windows-device-portal.md) no dispositivo ou emulador de destino. Se você estiver se conectando ao emulador por meio de seu endereço local (por exemplo,*168...* *) no mesmo PC, todas as credenciais serão aceitas.
 * bool normal-true para prioridade normal, false para baixa prioridade. Em geral, você desejará definir isso como *verdadeiro* para cenários de teste, o que permite que seu teste assuma o controle.  O emulador e a simulação de realidade mista do Windows usam conexões de baixa prioridade.  Se o teste também usar uma conexão de baixa prioridade, a conexão estabelecida mais recentemente estará no controle.
 * System. Threading. CancellationToken token-token para cancelar a operação assíncrona.
 
-Em segundo lugar, você criará o IPerceptionSimulationManager. Esse é o objeto que você usa para controlar a simulação. Observe que isso também deve ser feito em um método assíncrono.
+Em segundo lugar, você criará o IPerceptionSimulationManager. Esse é o objeto que você usa para controlar a simulação. Isso também deve ser feito em um método assíncrono.
 
 ## <a name="control-the-simulated-human"></a>Controlar o humano simulado
 
@@ -241,11 +241,11 @@ As instâncias com suporte são:
 * 1 = o controlador de 6 DOF à esquerda
 * 2 = o controlador de 6 DOF à direita
 
-O código de saída do processo indicará êxito (um valor de retorno zero) ou falha (um valor de retorno diferente de zero).  Ao usar a ação ' q ' para consultar se um controlador está ou não instalado, o valor de retorno será zero (0) se o controlador ainda não estiver instalado ou um (1) se o controlador estiver instalado.
+O código de saída do processo indicará êxito (um valor de retorno zero) ou falha (um valor de retorno diferente de zero).  Ao usar a ação ' q ' para consultar se um controlador está instalado, o valor de retorno será zero (0) se o controlador ainda não estiver instalado ou um (1) se o controlador estiver instalado.
 
 Ao remover um controlador na atualização do Windows 10 de outubro de 2018 ou anterior, defina seu status como off por meio da API primeiro e, em seguida, chame a ferramenta PerceptionSimulationDevice.
 
-Observe que essa ferramenta deve ser executada como administrador.
+Essa ferramenta deve ser executada como administrador.
 
 
 
@@ -453,7 +453,7 @@ public enum SimulatedHandJointTrackingAccuracy
 
 **Microsoft. PerceptionSimulation. SimulatedHandJointTrackingAccuracy. indisponível**
 
-A junção não é rastreada.
+A junção não é acompanhada.
 
 **Microsoft. PerceptionSimulation. SimulatedHandJointTrackingAccuracy. aproximado**
 
@@ -531,7 +531,7 @@ A gravação atingiu o final.
 
 ### <a name="microsoftperceptionsimulationvector3"></a>Microsoft. PerceptionSimulation. Vector3
 
-Descreve um vetor de 3 componentes, que pode descrever um ponto ou um vetor no espaço 3D.
+Descreve um vetor de três componentes, que pode descrever um ponto ou um vetor no espaço 3D.
 
 ```
 public struct Vector3
@@ -566,7 +566,7 @@ Parâmetros
 
 ### <a name="microsoftperceptionsimulationrotation3"></a>Microsoft. PerceptionSimulation. Rotation3
 
-Descreve uma rotação de 3 componentes.
+Descreve uma rotação de três componentes.
 
 ```
 public struct Rotation3
@@ -694,7 +694,7 @@ O valor de IPD relatado pelo sistema para fins de renderização de estéreo.
 
 **Microsoft. PerceptionSimulation. SimulatedDisplayConfiguration. ApplyEyeTransforms**
 
-Se os valores fornecidos para as transformações de olho esquerdo e direito devem ser considerados válidos e aplicados ao sistema em execução.
+Se os valores fornecidos para transformações de olho esquerdo e direito devem ser considerados válidos e aplicados ao sistema em execução.
 
 **Microsoft. PerceptionSimulation. SimulatedDisplayConfiguration. ApplyIpd**
 
@@ -728,7 +728,7 @@ Redefine a simulação para seu estado padrão.
 
 ### <a name="microsoftperceptionsimulationisimulateddevice"></a>Microsoft. PerceptionSimulation. ISimulatedDevice
 
-Interface que descreve o dispositivo que interpreta o mundo simulado e o humano simulado
+Interface que descreve o dispositivo, que interpreta o mundo simulado e o humano simulado
 
 ```
 public interface ISimulatedDevice
@@ -837,7 +837,7 @@ public interface ISimulatedHuman
     float Height { get; set; }
     ISimulatedHand LeftHand { get; }
     ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }
+    ISimulatedHead Head { get; }s
     void Move(Vector3 translation);
     void Rotate(float radians);
 }
@@ -1219,7 +1219,7 @@ Pausa a reprodução em seu local atual. Se a gravação for interrompida, a cha
 
 **Microsoft. PerceptionSimulation. ISimulationRecording. Seek (System. UInt64)**
 
-Procura a gravação no tempo especificado (em intervalos de 100 nanossegundos desde o início) e pausa nesse local. Se o tempo estiver além do fim da gravação, ele será pausado no último quadro.
+Procura a gravação no tempo especificado (em intervalos de 100 a nanossegundos desde o início) e pausa nesse local. Se o tempo estiver além do fim da gravação, ele será pausado no último quadro.
 
 Parâmetros
 * tiques-o tempo para o qual buscar.
@@ -1272,7 +1272,7 @@ O gerente criado.
 
 **Microsoft. PerceptionSimulation. PerceptionSimulationManager. CreatePerceptionSimulationRecording (System. String)**
 
-Crie um coletor que armazena todos os pacotes recebidos em um arquivo no caminho especificado.
+Crie um coletor, que armazena todos os pacotes recebidos em um arquivo no caminho especificado.
 
 Parâmetros
 * caminho-o caminho do arquivo a ser criado.
@@ -1300,7 +1300,7 @@ Carregar uma gravação do arquivo especificado.
 Parâmetros
 * caminho-o caminho do arquivo a ser carregado.
 * Factory-uma fábrica usada pela gravação para criar um ISimulationStreamSink quando necessário.
-* retorno de chamada-um retorno de chamada que recebe atualizações que recebem o status da gravação.
+* retorno de chamada-um retorno de chamada, que recebe atualizações que retratam o status da gravação.
 
 Valor retornado
 
@@ -1332,35 +1332,35 @@ Um valor de sentinela usado para indicar nenhum tipo de dados de fluxo.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. Head**
 
-Fluxo de dados em relação à posição e à orientação do cabeçalho.
+Fluxo de dados para a posição e a orientação do cabeçalho.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. hands**
 
-Fluxo de dados em relação à posição e aos gestos de mãos.
+Fluxo de dados para a posição e gestos de mãos.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. SpatialMapping**
 
-Fluxo de dados referente ao mapeamento espacial do ambiente.
+Fluxo de dados para o mapeamento espacial do ambiente.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. Calibration**
 
-Fluxo de dados referente à calibragem do dispositivo. Os pacotes de calibragem são aceitos apenas por um sistema no modo remoto.
+Fluxo de dados para a calibragem do dispositivo. Os pacotes de calibragem são aceitos apenas por um sistema no modo remoto.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. Environment**
 
-Fluxo de dados em relação ao ambiente do dispositivo.
+Fluxo de dados para o ambiente do dispositivo.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. SixDofControllers**
 
-Fluxo de dados em relação aos controladores de movimento.
+Fluxo de dados para controladores de movimento.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. eyess**
 
-Fluxo de dados em relação aos olhos do humano simulado.
+Fluxo de dados com os olhos do humano simulado.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. DisplayConfiguration**
 
-Fluxo de dados em relação à configuração de exibição do dispositivo.
+Fluxo de dados com a configuração de exibição do dispositivo.
 
 **Microsoft. PerceptionSimulation. StreamDataTypes. All**
 

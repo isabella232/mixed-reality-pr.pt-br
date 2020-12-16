@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: critérios de qualidade de aplicativo, realidade mista, aplicativo de realidade misturada, headset de realidade mista, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530285"
 ---
 # <a name="app-quality-criteria"></a>Critérios de qualidade do aplicativo
 
@@ -25,7 +25,7 @@ Este documento descreve os principais fatores que afetam a qualidade dos aplicat
 
 ## <a name="frame-rate"></a>Taxa de quadros
 
-A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto do usuário. A taxa de quadros abaixo dos destinos recomendados pode fazer com que os hologramas pareçam tremulação, afetando negativamente a believability da experiência e potencialmente causando fadiga de olho. A taxa de quadros de destino para sua experiência em headsets de imersão de realidade mista do Windows será de 60Hz ou 90Hz, dependendo de quais computadores compatíveis com o Windows Mixed Reality você deseja dar suporte. Para o HoloLens, a taxa de quadros de destino é 60.
+A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto do usuário. A taxa de quadros abaixo dos destinos recomendados pode fazer com que os hologramas pareçam tremulação, afetando negativamente a believability da experiência e potencialmente causando fadiga de olho. A taxa de quadros de destino para sua experiência em headsets de imersão de realidade mista do Windows é de 60 Hz ou 90 Hz, dependendo de quais PCs compatíveis com a realidade mista do Windows você está dando suporte. Para o HoloLens, a taxa de quadros de destino é de 60 Hz.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -51,7 +51,7 @@ A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto
 
 |  Melhor  |  Corresponde |  Falha |
 --- | --- | ---
-| O aplicativo atende consistentemente a meta de quadros por segundo (FPS) para o dispositivo de destino: 60fps no HoloLens; 90fps em ultra PCs; e 60fps nos PCs de base. | O aplicativo tem quedas de quadros intermitentes que não impedem a experiência principal; ou FPS é consistentemente menor do que a meta desejada, mas não impede a experiência do aplicativo. | O aplicativo está apresentando uma queda na taxa de quadros em média a cada dez segundos ou menos. |
+| O aplicativo atende consistentemente a meta de quadros por segundo (FPS) para o dispositivo de destino: 60 fps no HoloLens; 90 fps em ultra PCs; e 60 fps em computadores de base. | O aplicativo tem quedas de quadros intermitentes que não impedem a experiência principal, ou FPS é consistentemente menor do que a meta desejada, mas não impede a experiência do aplicativo. | O aplicativo está apresentando uma queda na taxa de quadros em média a cada 10 segundos ou menos. |
 
 ### <a name="how-to-measure"></a>Como medir
 
@@ -75,8 +75,8 @@ A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [MRToolkit, exibição do contador de FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [MRToolkit, sombreadores](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [Kit de ferramentas de realidade misturada, exibição do contador de FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [Kit de ferramentas de realidade misturada, sombreadores](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### <a name="external-references"></a>Referências externas
 
@@ -114,13 +114,13 @@ Os hologramas estáveis aumentarão a usabilidade e a believability de seu aplic
 
 |  Melhor  |  Corresponde |  Falha |
 --- | --- | ---
-|  Os hologramas parecem consistentemente estáveis. | Conteúdo secundário exibe movimento inesperado; ou o movimento inesperado não impede a experiência geral do aplicativo. | O conteúdo principal no quadro exibe movimento inesperado. |
+|  Os hologramas parecem consistentemente estáveis. | Conteúdo secundário mostra movimento inesperado; ou o movimento inesperado não impede a experiência geral do aplicativo. | O conteúdo primário no quadro mostra movimento inesperado. |
 
 ### <a name="how-to-measure"></a>Como medir
 
 Ao desgastar o dispositivo e exibir a experiência:
 
-* Mova seu cabeçalho do lado a lado, se os hologramas mostrarem movimento inesperado, a taxa de quadros baixa ou o alinhamento impróprio do plano de estabilidade para o plano focal é a causa provável.
+* Mova seu cabeçalho de lado a lado. Se os hologramas mostrarem o movimento inesperado, a taxa de quadros baixa ou o alinhamento impróprio do plano de estabilidade para o plano focal será a causa provável.
 * Mova-se para os hologramas e o ambiente, procure comportamentos como, por exemplo, nada e salto. Esse tipo de movimento é provavelmente causado pelo dispositivo não rastreando o ambiente ou pela distância para a âncora espacial.
 * Se houver grandes ou vários hologramas no quadro, observe o comportamento do holograma em várias profundidades ao mover sua posição de cabeçalho de lado a lado, se shakiness parecer que isso é provavelmente causado pelo plano de estabilização.
 
@@ -129,7 +129,7 @@ Ao desgastar o dispositivo e exibir a experiência:
 * Adicione um contador de taxa de quadros no início do trabalho de desenvolvimento.
 * Use o plano de estabilização.
 * Sempre renderizar hologramas ancorados dentro de 3 metros de sua âncora.
-* Verifique se o ambiente está configurado para o acompanhamento adequado.
+* Verifique se o ambiente está configurado para acompanhamento adequado.
 * Projete sua experiência para evitar hologramas em vários níveis de profundidade focal dentro do quadro.
 
 ### <a name="resources"></a>Recursos
@@ -176,7 +176,7 @@ Os desalinhamentos de hologramas com objetos físicos (se a intenção de serem 
 
 |  Melhor  |  Corresponde |  Falha |
 --- | --- | ---
-| Os hologramas se alinham à superfície normalmente no intervalo de centímetros para polegadas. Se for necessário mais precisão, o aplicativo deverá fornecer um meio eficiente de colaboração na especificação do aplicativo desejado. | NA | Os hologramas aparecem desalinhados com o objeto de destino físico, dividindo o plano de superfície ou aparecendo flutuando para fora da superfície. Se a precisão for necessária, os hologramas devem atender à especificação de proximidade do cenário. | 
+| Os hologramas se alinham à superfície normalmente no intervalo de centímetros para polegadas. Se você precisar de mais precisão, o aplicativo deverá fornecer um meio eficiente de colaboração na especificação do aplicativo. | NA | Os hologramas aparecem desalinhados com o objeto de destino físico, dividindo o plano de superfície ou aparecendo flutuando para fora da superfície. Se a precisão for necessária, os hologramas devem atender à especificação de proximidade do cenário. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
@@ -213,7 +213,7 @@ Os desalinhamentos de hologramas com objetos físicos (se a intenção de serem 
 
 ## <a name="viewing-zone-of-comfort"></a>Exibindo a zona de conforto
 
-Os desenvolvedores de aplicativos controlam onde os olhos dos usuários convergem colocando o conteúdo e os hologramas em várias profundidades. Os usuários com o HoloLens serão sempre acomodados a 2,0 m para manter uma imagem clara porque as exibições do HoloLens são corrigidas a uma distância óptica de aproximadamente 2,0 m para longe do usuário. A profundidade de conteúdo inadequado pode levar ao Visual discomfort ou fadiga.
+Os desenvolvedores de aplicativos controlam onde os olhos dos usuários convergem colocando o conteúdo e os hologramas em várias profundidades. Os usuários com o HoloLens serão sempre acomodados a 2,0 m para manter uma imagem clara porque as exibições do HoloLens são corrigidas a uma distância óptica de aproximadamente 2,0 m para fora do usuário. A profundidade de conteúdo inadequado pode levar ao Visual discomfort ou fadiga.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -240,26 +240,26 @@ Os desenvolvedores de aplicativos controlam onde os olhos dos usuários converge
 <table>
 <tr>
 <td> Melhor </td><td><ul>
-<li>Coloque o conteúdo em 2m.</li><li>Quando os hologramas não podem ser colocados em 2m e os conflitos entre a convergência e a acomodação não podem ser evitados, a zona ideal para o posicionamento do holograma é entre 1,25 m e 5 min.</li><li>Em todos os casos, os designers devem estruturar o conteúdo para incentivar os usuários a interagir de 1 + m (por exemplo, ajustar o tamanho do conteúdo e os parâmetros de posicionamento padrão).</li><li>A menos que não seja especificamente exigido pelo cenário, um plano de recorte deve ser implementado com FadeOut a partir de 1m.</li><li>Nos casos em que a observação mais próxima de um holograma sem movimento é necessária, o conteúdo não deve ser mais próximo de 50cm.</li>
+<li>Coloque o conteúdo em 2 m.</li><li>Quando os hologramas não podem ser colocados em 2 m e os conflitos entre a convergência e a acomodação não podem ser evitados, a zona ideal para o posicionamento do holograma é entre 1,25 m e 5 m.</li><li>Em todos os casos, os designers devem estruturar o conteúdo para incentivar os usuários a interagir de 1 + m (por exemplo, ajustar o tamanho do conteúdo e os parâmetros de posicionamento padrão).</li><li>A menos que não seja exigido pelo cenário, um plano de recorte deve ser implementado com fade out a partir de 1 m.</li><li>Nos casos em que a observação mais próxima de um holograma não-movimento é necessária, o conteúdo não deve ficar mais próximo que 50 cm.</li>
 </ul></td>
 </tr><tr>
 <td> Corresponde</td><td> O conteúdo está dentro das diretrizes de visualização e movimentação, mas uso inadequado ou não uso do plano de recorte.</td>
 </tr><tr>
-<td> Falha </td><td> O conteúdo é apresentado muito próximo (normalmente &lt; 1,25 m ou &lt; 50cm para hologramas estáticos que exigem uma observação mais detalhada.)</td>
+<td> Falha </td><td> O conteúdo é apresentado muito próximo (geralmente &lt; , 1,25 m ou &lt; 50 cm para hologramas estáticos que exigem uma observação mais detalhada.)</td>
 </tr>
 </table>
 
 ### <a name="how-to-measure"></a>Como medir
 
-* O conteúdo normalmente deve ser de 2m, mas não mais de 1,25 ou mais do que 5 min.
-* Com poucas exceções, a distância de renderização de recorte de HoloLens deve ser definida como. 85CM com esmaecimento de conteúdo a partir de 1m. Aborde o conteúdo e observe o efeito do plano de recorte.
-* O conteúdo estacionário não deve estar mais próximo do que 50cm.
+* O conteúdo deve ser normalmente de 2 m, mas não mais que 1,25 ou superior a 5 m.
+* Com poucas exceções, a distância de renderização de recorte de HoloLens deve ser definida como 85CM com fade out do conteúdo começando em 1 m. Aborde o conteúdo e observe o efeito do plano de recorte.
+* O conteúdo estacionário não deve ficar mais próximo que 50 cm.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Crie conteúdo para a distância de exibição ideal de 2m.
-* Defina a distância de renderização de recorte como 85cm com esmaecimento de conteúdo a partir de 1m.
-* Para hologramas estáticos que precisam de exibição mais próxima, o plano de recorte não deve ser mais próximo que 30cm e FadeOut deve iniciar pelo menos 10cm fora do plano de recorte.
+* Crie conteúdo para a distância de exibição ideal de 2 m.
+* Defina a distância de renderização de recorte como 85 cm com fade out do conteúdo começando em 1 m.
+* Para hologramas estáticos que precisam de exibição mais próxima, o plano de recorte não deve ter mais de 30 cm e desaparecer deve iniciar pelo menos 10 cm fora do plano de recorte.
 
 ### <a name="resources"></a>Recursos
 
@@ -313,7 +313,7 @@ Independentemente da exibição da zona de problemas de conforto, as demandas pe
 
 ## <a name="use-of-spatial-sound"></a>Uso de som espacial
 
-No Windows Mixed Reality, o mecanismo de áudio fornece o componente auricular da experiência de realidade misturada por meio da simulação de som 3D usando a direção, a distância e as simulações ambientais. O uso de som espacial em um aplicativo permite que os desenvolvedores coloquem os sons de forma convincente em um espaço 3 dimensional (esfera) em todo o usuário. Esses sons parecerão como se estivessem vindo de objetos físicos reais ou de hologramas de realidade misturada no ambiente do usuário. O som espacial é uma ferramenta poderosa para imersão, acessibilidade e design de UX em aplicativos de realidade misturada.
+No Windows Mixed Reality, o mecanismo de áudio fornece o componente auricular da experiência de realidade misturada por meio da simulação de som 3D usando a direção, a distância e as simulações ambientais. O uso de som espacial em um aplicativo permite que os desenvolvedores coloquem os sons de forma convincente em um espaço tridimensional (esfera) em todo o usuário. Esses sons parecerão como se estivessem vindo de objetos físicos reais ou de hologramas de realidade misturada no ambiente do usuário. O som espacial é uma ferramenta poderosa para imersão, acessibilidade e design de UX em aplicativos de realidade misturada.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -367,7 +367,7 @@ No Windows Mixed Reality, o mecanismo de áudio fornece o componente auricular d
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [MRToolkit, áudio espacial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
+* [Kit de ferramentas de realidade misturada – áudio espacial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## <a name="focus-on-holographic-frame-fov-boundaries"></a>Foco nos limites do quadro Holographic (FOV)
 
@@ -402,7 +402,7 @@ Experiências de usuário bem projetadas podem criar e manter um contexto útil 
 ### <a name="how-to-measure"></a>Como medir
 
 * O contexto de um holograma (grande) é perdido ou não compreendido devido a ser recortado nos limites.
-* É difícil encontrar o local dos hologramas devido à falta de diretores de atenção ou conteúdo que se movem rapidamente para dentro e para fora do quadro do Holographic.
+* É difícil encontrar locais de hologramas devido à falta de diretores de atenção ou conteúdo que se movem rapidamente para dentro e para fora do quadro Holographic.
 * O cenário requer um movimento regular e repetitivo para cima e para baixo para ver totalmente um holograma, resultando em fadiga de pescoço.
 
 ### <a name="recommendations"></a>Recomendações
@@ -486,7 +486,7 @@ Os hologramas devem reagir à posição do usuário praticamente da mesma maneir
 
 ## <a name="input-interaction-clarity"></a>Clareza da interação de entrada
 
-A clareza da interação de entrada é essencial para a usabilidade de um aplicativo e inclui consistência de entrada, capacidade de detecção, descoberta de métodos de interação. O usuário deve ser capaz de usar interações comuns em toda a plataforma sem reaprender. Se o aplicativo tiver uma entrada personalizada, ele deverá ser claramente comunicado e demonstrado.
+A clareza da interação de entrada é essencial para a usabilidade de um aplicativo e inclui consistência de entrada, capacidade de detecção, descoberta de métodos de interação. O usuário pode usar interações comuns em toda a plataforma sem reaprender. Se o aplicativo tiver uma entrada personalizada, ele deverá ser claramente comunicado e demonstrado.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 

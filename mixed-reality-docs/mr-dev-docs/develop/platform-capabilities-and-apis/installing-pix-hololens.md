@@ -1,19 +1,19 @@
 ---
-title: Instalando o PIX para o HoloLens 2
+title: Como instalar o PIX para o HoloLens 2
 description: Saiba como instalar o PIX para dispositivos do HoloLens 2.
 author: hferrone
 ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, captura, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 4554600414784b2644006e6e891f16f8ce3a79f5
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615298"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530447"
 ---
-# <a name="installing-pix-for-hololens-2"></a>Instalando o PIX para o HoloLens 2
+# <a name="installing-pix-for-hololens-2"></a>Como instalar o PIX para o HoloLens 2
 
 O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depuração de desempenho para aplicativos DirectX 12 no Windows. 
 
@@ -21,7 +21,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 
 1. Obtenha a [versão]( https://devblogs.microsoft.com/pix/download) mais recente do PIX do seu PC host e conecte o seu HoloLens 2 ao seu PC por meio de um cabo USB.
 
-2. Se o seu HoloLens 2 estiver em um [Build do Windows Insider](https://insider.windows.com) ou tiver uma configuração que interrompa o PIX,  [atualize novamente seu dispositivo](https://docs.microsoft.com/hololens/hololens-recovery) para apagar todos os dados.
+2. Se o seu HoloLens 2 estiver em um [Build do Windows Insider](https://insider.windows.com) ou tiver uma configuração que interrompa o PIX,  [repisque seu dispositivo](https://docs.microsoft.com/hololens/hololens-recovery) para apagar todos os dados.
 
 3. Habilitar o **modo de desenvolvedor** e o portal do **dispositivo**:
 
@@ -33,7 +33,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 
 ![Captura de tela da janela de configurações aberta no HoloLens com o botão de atualização e segurança realçado](images/pix-img-02.jpg)
 
-* Clique **para desenvolvedores**:
+* Selecione **para desenvolvedores**:
 
 ![Captura de tela da janela segurança e atualizações abrir com o botão desenvolvedores realçado](images/pix-img-03.jpg)
 
@@ -60,7 +60,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 
 * Selecione **as configurações** do Shell
 * Selecione **Atualizar segurança &**
-* Clique **para desenvolvedores** e pressione emparelhar em **descoberta de dispositivo** 
+* Selecione **para desenvolvedores** e pressione o par em **descoberta de dispositivo** 
 
 ![Captura de tela da janela para desenvolvedores abrir em configurações com descoberta de dispositivo realçada](images/pix-img-08.jpg)
 
@@ -72,7 +72,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 
 ## <a name="launching-pix"></a>Iniciando o PIX
 
-Primeiro, use o portal do dispositivo para verificar se o aplicativo não está em execução no HoloLens 2. Em seguida, inicie o PIX, conecte-se ao seu dispositivo e clique em **página inicial**:
+Primeiro, use o portal do dispositivo para verificar se o aplicativo não está em execução no HoloLens 2. Em seguida, inicie o PIX, conecte-se ao seu dispositivo e selecione **início**:
 
 ![Captura de tela da página inicial do aplicativo PIX](images/pix-img-10.png)
 
@@ -80,18 +80,18 @@ Primeiro, use o portal do dispositivo para verificar se o aplicativo não está 
 
 ![Captura de tela do menu do lado esquerdo do aplicativo PIX com o botão conectar realçado](images/pix-img-11.png)
 
-2. Na guia **computador** , clique em **Adicionar** e insira as seguintes credenciais:
+2. Na guia **computador** , selecione **Adicionar** e insira as seguintes credenciais:
     * Alias: até o critério do usuário
     * Nome do host ou endereço IP: 127.0.0.1
 
-3. Clique em **conectar** na parte inferior direita da guia **computador** :
+3. Selecione **conectar** no canto inferior direito da guia **computador** :
 
 ![Captura de tela da janela de conexão de aplicativo do PIX com alias, nome do host, endereço IP e botão Adicionar realçado](images/pix-img-12.png)
 
 > [!NOTE]
 > A primeira conexão é sempre mais lenta porque os binários estão sendo copiados.
 
-4. Quando o PIX tiver se conectado ao HoloLens 2, localize seu aplicativo na seção **selecionar processo de destino** na guia Iniciar UWP e clique em **Iniciar**:
+4. Quando o PIX tiver se conectado ao HoloLens 2, localize seu aplicativo na seção **selecionar processo de destino** na guia Iniciar UWP e selecione **Iniciar**:
 
 ![Captura de tela do aplicativo PIX com a janela Selecionar processo de destino e o botão iniciar realçado](images/pix-img-13.png)
 
@@ -114,5 +114,5 @@ Primeiro, use o portal do dispositivo para verificar se o aplicativo não está 
 
 O PIX agora está pronto para uso!
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Home Page do PIX](https://devblogs.microsoft.com/pix)
