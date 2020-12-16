@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
-ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
+ms.openlocfilehash: bd51220e030af1e9c60a66eb43ea6985b95cd43f
+ms.sourcegitcommit: 16524778ece416e002f52c9ceae354e1122bcc74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97580542"
+ms.locfileid: "97582410"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japão
 
@@ -29,11 +29,11 @@ Estamos ansiosos para que você se junte a nós no dia de desenvolvimento da rea
 
 **Idioma principal-japonês**
 
-## <a name="registration"></a>Registro
+## <a name="session-recordings"></a>Gravações de sessão
 
-[Assista agora-eventos ao vivo do Microsoft Teams](https://aka.ms/MRDDJPLive)
+[Assista a todos os vídeos-playlist do YouTube](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-É recomendável assistir no aplicativo Teams PC e você também pode participar do aplicativo móvel Teams ou no seu navegador de desktop. Se, por alguma razão, você não conseguir fazer logon no Teams, consulte o [YouTube Live](https://youtu.be/zxZu1uHjyo4). No entanto, não será possível participar do QA com os alto-falantes.
+Obrigado por ingressar na realidade misturada em dias de desenvolvimento no Japão. Todos os vídeos são arquivados em nosso canal do YouTube. Aguardando para vê-lo novamente!
 
 ## <a name="schedule---subject-to-change"></a>Agenda-assunto para alteração
 
@@ -45,22 +45,22 @@ Estamos ansiosos para que você se junte a nós no dia de desenvolvimento da rea
 
 |**Hora**|**Título da sessão**|**Palestrante**|**Idioma**|**Level**|
 |---------|---------|---------|---------|---------|
-|11:10:00-11:50AM|Apresentação de abertura|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
+|11:10:00-11:50AM|[Apresentação de introdução com boas-vindas especiais da Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
 |11:50AM-12:13h|**Interrupção (10min)**||||
-|12:13h-12:25pm|*Sessão 1* Introdução à realidade misturada|Atsushi Suzuki|JA|100|
-|12: às 16h30-12:55PM|*Sessão 2* Impulso de negócios de realidade misturada|Tetsu Muranaka|JA|200|
-|1:13h-1:50pm|*Sessão de almoço* Painel: discussão interativa sem interatividade, p e r, MRTK + Oculus Quest 2|Madoka Chiyoda + MVPs da Microsoft|JA|200|
+|12:13h-12:25pm|*Sessão 1* [introdução à realidade misturada](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
+|12: às 16h30-12:55PM|*Sessão 2* [mistura de negócios de realidade mista](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
+|1:13h-1:50pm|*Sessão de almoço* Painel: discussão gratuita interativa, p e r, MRTK + Oculus Quest 2 * Update mais tarde|Madoka Chiyoda + MVPs da Microsoft|JA|200|
 |1:50pm-2:13h|**Interrupção (10min)**||||
-|2:13h-2:25pm|*Sessão 3* Visão geral do desenvolvimento do HoloLens 2|Madoka Chiyoda|JA|200|
-|2: às 16h30-2:55PM|*Sessão 4* Componentes do MRTK UX v 2.5.0|Yoon Park|JA|300|
-|3:13h-3:25pm|*Sessão 5* Introdução ao mecanismo 2 e inreal do HoloLens (MRTK-inreal)|Cameron Micka|PT-BR|300|
-|3: às 16h30-3:55PM|*Sessão 6* Criando hologramas de design|Daniel Escudero|PT-BR|300|
+|2:13h-2:25pm| [Visão geral da sessão 3 do desenvolvimento do HoloLens 2](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|2: às 16h30-2:55PM|*Sessão 4* [MRTK UX Components v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
+|3:13h-3:25pm|*Sessão 5* [introdução ao MRTK do HoloLens 2 e ao mecanismo inreal (não real)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|PT-BR|300|
+|3: às 16h30-3:55PM|*Sessão 6* criando [hologramas de design](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|PT-BR|300|
 |3:55PM-4:17h15|**Interrupção (20min)**||||
-|4:17h15-4:13:40|*Sessão 7* Âncoras de objeto do Azure|Jesse McCulloch|PT-BR|300|
-|4:17:45 às-5:19:10|*Sessão 8* Renderização remota do Azure|Atsushi Suzuki|JA|300|
-|5:17h15-5:13:40|*Sessão 9* Alinhando o holograma e o mundo real por meio de âncoras espaciais do Azure|Yingguang Mei|PT-BR|300|
-|5:17:45 às-6:19:10|*Sessão 10* Unity + PiXYZ|Shinobu Takahashi (Unity Technologies Japão)|JA|200|
-|6:17h15-6:13:40|*Sessão 11* Aprofundamento do Azure Kinects, estudo de caso|Shinji Chiba|JA|400|
+|4:17h15-4:13:40|*Sessão 7* [âncoras de objeto do Azure](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|PT-BR|300|
+|4:17:45 às-5:19:10|*Sessão 8* [renderização remota do Azure](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
+|5:17h15-5:13:40|*Sessão 9* [alinhando o holograma e o mundo real por meio de âncoras espaciais do Azure](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|PT-BR|300|
+|5:17:45 às-6:19:10|*Sessão 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity Technologies Japão)|JA|200|
+|6:17h15-6:13:40|*Sessão 11* [Azure Kinect DK aprofundada, estudo de caso](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
 |6:17:45 às-7:13h|Fechamento|Madoka Chiyoda|JA|N/D|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Colaboradores (revisores técnicos para as legendas)
