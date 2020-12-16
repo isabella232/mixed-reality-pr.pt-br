@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realidade misturada, conferência, Summit, desenvolvedor, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
-ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
+ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
+ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97111878"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97564251"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japão
 
@@ -31,9 +31,9 @@ Estamos ansiosos para que você se junte a nós no dia de desenvolvimento da rea
 
 ## <a name="registration"></a>Registro
 
-[Registro-agora aberto](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[Assista agora-eventos ao vivo do Microsoft Teams](https://aka.ms/MRDDJPLive)
 
-Estamos muito empolgados em abrir o registro para a realidade misturada em dias de desenvolvimento no Japão.  O evento é gratuito e está sendo mantido online no Microsoft Teams Live Events.  Solicitamos que os participantes se registrem para que possamos enviar atualizações de email à medida que o evento fique mais próximo e para que você possa participar dos elementos interativos do evento.
+É recomendável assistir no aplicativo Teams PC e você também pode participar do aplicativo móvel Teams ou no seu navegador de desktop. Se, por alguma razão, você não conseguir fazer logon no Teams, consulte o [YouTube Live](https://youtu.be/zxZu1uHjyo4). No entanto, não será possível participar do QA com os alto-falantes.
 
 ## <a name="schedule---subject-to-change"></a>Agenda-assunto para alteração
 
