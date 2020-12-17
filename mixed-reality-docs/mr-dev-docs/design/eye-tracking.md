@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, calibragem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, intenção, ações
-ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53a44fab72d3a15df3cf5929c6ddda4fec06af71
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702582"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612860"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Acompanhamento ocular no HoloLens 2
 
@@ -133,7 +133,7 @@ Isso pode ser devido a diferentes motivos dos quais as mais comuns são listadas
 * O usuário tem óculos exclusivo ou alguma condição de olho que ainda não dá suporte ao sistema.    
 * Fatores externos que impedem o acompanhamento de olho confiável, como manchas no visor ou óculos do HoloLens, luz de sol direta intensa e occlusions devido ao cabelo na frente dos olhos.   
 
-Portanto, os desenvolvedores devem garantir que haja suporte de fallback apropriado para esses usuários. Na página [controle de olho no DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) , explicamos as APIs necessárias para detectar se os dados de acompanhamento de olho estão disponíveis. 
+Portanto, os desenvolvedores devem garantir que haja suporte de fallback apropriado para esses usuários. Na página [controle de olho no DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) , explicamos as APIs necessárias para detectar se os dados de acompanhamento de olho estão disponíveis. 
 
 Embora alguns usuários possam ter decidido a revogar o acesso aos seus dados de controle de olho e estão ok com a compensação de uma experiência de usuário inferior à privacidade de não fornecer acesso aos seus dados de controle de olho, em alguns casos isso pode não ser intencional.  
 Portanto, se seu aplicativo usar o acompanhamento de olho, e essa for uma parte importante da experiência, recomendamos que você se comunique claramente com o usuário.     
@@ -155,7 +155,7 @@ Novamente, é recomendável comunicar claramente isso com o usuário que talvez 
 Essa página espero que você tenha uma boa visão geral para começar a entender a função de acompanhamento de olho e a entrada olhar para o HoloLens 2. Para começar a desenvolver, confira nossas informações sobre a função de [olhar para interagir com hologramas](eye-gaze-interaction.md), [olhar de olho no Unity](https://aka.ms/mrtk-eyes) e [nos olhos-olhar no DirectX](../develop/native/gaze-in-directx.md).
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Calibragem](../calibration.md)
 * [Conforto](comfort.md)
 * [Interação com base no foco com o olhar](eye-gaze-interaction.md)

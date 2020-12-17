@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, aplicativo Holographic, novo aplicativo, aplicativo UWP, aplicativo de modelo, hologramas, novo projeto, passo a passos, download, código de exemplo, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 08adbf6a4148e0e1d3b808d993011a7407fbf086
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f377ca5b8af08beb53c878e1ebf665b8074853f6
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678125"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613080"
 ---
 # <a name="creating-a-holographic-directx-project"></a>Como criar um projeto holográfico do DirectX
 
@@ -20,12 +20,12 @@ ms.locfileid: "94678125"
 
 Um aplicativo Holographic que você cria para um HoloLens será um <a href="https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide" target="_blank">aplicativo plataforma universal do Windows (UWP)</a>.  Se estiver direcionando headsets de área de trabalho mista do Windows, você pode criar um aplicativo UWP ou um aplicativo Win32.
 
-O modelo de aplicativo do DirectX 11 Holographic UWP é muito parecido com o modelo de aplicativo do DirectX 11 UWP; Ele inclui um loop de programa (ou "loop de jogo"), uma classe **DeviceResources** para gerenciar o dispositivo e o contexto do Direct3D e uma classe de processador de conteúdo simplificada. Ele também tem um <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, assim como qualquer outro aplicativo UWP.
+O modelo de aplicativo do DirectX 11 Holographic UWP é muito parecido com o modelo de aplicativo UWP DirectX 11. O modelo inclui um loop de programa, uma classe **DeviceResources** para gerenciar o dispositivo e o contexto do Direct3D e uma classe de processador de conteúdo simplificada. Ele também tem um <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, assim como qualquer outro aplicativo UWP.
 
-O aplicativo de realidade misturada, no entanto, tem alguns recursos adicionais que não estão presentes em um aplicativo de UWP do Direct3D típico. O modelo de aplicativo do Windows Mixed Reality é capaz de:
+O aplicativo de realidade misturada, no entanto, tem alguns recursos adicionais que não estão presentes em um aplicativo de UWP do Direct3D típico. O modelo de aplicativo do Windows Mixed Reality pode:
 * Manipule recursos do dispositivo Direct3D associados a câmeras holographics.
-* Recupere buffers de back de câmera do sistema ou (no caso de Direct3D12) crie recursos de buffer de back Holographic e gerencie tempos de vida de recursos.
-* Manipule a entrada do [olhar](../../design/gaze-and-commit.md) e reconheça um [gesto](../../design/gaze-and-commit.md#composite-gestures)simples.
+* Recupere buffers de fundo da câmera do sistema. No caso do Direct3D12, crie recursos de buffer de back Holographic e gerencie tempos de vida de recursos.
+* Manipule a entrada do [olhar](../../design/gaze-and-commit.md) e reconheça um [gesto](../../design/gaze-and-commit.md#composite-gestures).
 * Vá para o modo de renderização estéreo de tela inteira.
 
 ## <a name="how-do-i-get-started"></a>Como começar?
@@ -36,7 +36,7 @@ Agora você está pronto para criar seu aplicativo de realidade mista do Windows
 
 ## <a name="creating-a-uwp-project"></a>Criar um projeto UWP
 
-Depois que as [ferramentas forem instaladas](../install-the-tools.md) , você poderá criar um projeto Holographic DirectX UWP.
+Após a instalação das ferramentas,] (.. /install-the-tools.md) você pode criar um projeto Holographic DirectX UWP.
 
 Para criar um novo projeto no Visual Studio 2019:
 1. Inicie o **Visual Studio**.
@@ -47,9 +47,9 @@ Para criar um novo projeto no Visual Studio 2019:
    *Modelo de projeto de aplicativo Holographic DirectX 11 C++/WinRT UWP no Visual Studio 2019*
    >[!IMPORTANT]
    >Certifique-se de que o nome do modelo de projeto inclui "(C++/WinRT)".  Caso contrário, você tem uma versão mais antiga dos modelos de projeto do Holographic instalados.  Para obter os modelos de projeto mais recentes, [Instale-os](../install-the-tools.md) como uma extensão para o Visual Studio 2019.
-5. Clique em **Avançar**.
-5. Preencha as caixas de texto **nome do projeto** e **local** e clique ou toque em **criar**. O projeto de aplicativo Holographic é criado.
-6. Para o desenvolvimento direcionado apenas para o HoloLens 2, verifique se a **versão de destino** e a **versão mínima** estão definidas como **Windows 10, versão 1903**.  Se você também estiver visando headsets de HoloLens (1ª gen) ou desktop Windows Mixed realness, poderá definir a **versão mínima** para o **Windows 10, a versão 1809** , embora isso exija algumas <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">verificações adaptáveis de versão</a> em seu código ao usar os novos recursos do HoloLens 2.
+5. Selecione **Avançar**.
+5. Preencha as caixas de texto **nome do projeto** e **local** e selecione ou toque em **criar**. O projeto de aplicativo Holographic é criado.
+6. Para o desenvolvimento direcionado apenas para o HoloLens 2, verifique se a **versão de destino** e a **versão mínima** estão definidas como **Windows 10, versão 1903**.  Se você também estiver visando headsets de HoloLens (1ª gen) ou área de trabalho mista do Windows do desktop, poderá definir a **versão mínima** para o **Windows 10, versão 1809**. Isso exigirá algumas <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">verificações adaptáveis de versão</a> em seu código ao usar os novos recursos do HoloLens 2.
    ![Captura de tela da configuração do Windows 10, versão 1903 como o destino e as versões mínimas](images/new-uwp-project.png)<br>
    *Configurando o **Windows 10, versão 1903** como o destino e as versões mínimas*
    >[!IMPORTANT]
@@ -64,16 +64,16 @@ Para criar um novo projeto no Visual Studio 2017:
    *Modelo de projeto de aplicativo Holographic DirectX 11 C++/WinRT UWP no Visual Studio 2017*
    >[!IMPORTANT]
    >Certifique-se de que o nome do modelo de projeto inclui "(C++/WinRT)".  Caso contrário, você tem uma versão mais antiga dos modelos de projeto do Holographic instalados.  Para obter os modelos de projeto mais recentes, [Instale-os](../install-the-tools.md) como uma extensão para o Visual Studio 2017.
-5. Preencha as caixas de texto **nome** e **local** e clique ou toque em **OK**. O projeto de aplicativo Holographic é criado.
-6. Para o desenvolvimento direcionado apenas para o HoloLens 2, verifique se a **versão de destino** e a **versão mínima** estão definidas como **Windows 10, versão 1903**.  Se você também estiver visando headsets de HoloLens (1ª gen) ou desktop Windows Mixed realness, poderá definir a **versão mínima** para o **Windows 10, a versão 1809** , embora isso exija algumas <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">verificações adaptáveis de versão</a> em seu código ao usar os novos recursos do HoloLens 2.
+5. Preencha as caixas de texto **nome** e **local** e selecione ou toque em **OK**. O projeto de aplicativo Holographic é criado.
+6. Para o desenvolvimento direcionado apenas para o HoloLens 2, verifique se a **versão de destino** e a **versão mínima** estão definidas como **Windows 10, versão 1903**.  Se você também estiver visando headsets de HoloLens (1ª gen) ou área de trabalho mista do Windows do desktop, poderá definir a **versão mínima** para o **Windows 10, versão 1809**. Isso exigirá algumas <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">verificações adaptáveis de versão</a> em seu código ao usar os novos recursos do HoloLens 2.
    ![Captura de tela da configuração do Windows 10, versão 1903 como o destino e as versões mínimas](images/new-uwp-project.png)<br>
    *Configurando o **Windows 10, versão 1903** como o destino e as versões mínimas*
    >[!IMPORTANT]
    >Se você não vir o **Windows 10, versão 1903** como uma opção, você não tem o SDK do Windows 10 mais recente instalado.  Para que essa opção seja exibida, <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">Instale a versão 10.0.18362.0 ou posterior do SDK do Windows 10</a>.
 
-O modelo gera um projeto usando <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">c++/WinRT</a>, uma projeção de linguagem c++ 17 das APIs de Windows Runtime que dá suporte a qualquer compilador c++ 17 compatível com padrões.  O projeto mostra como criar um cubo protegido por mundo que é colocado em dois medidores do usuário. O usuário pode [tocar em ar](../../design/gaze-and-commit.md#composite-gestures) ou pressionar um botão no controlador para colocar o cubo em uma posição diferente especificada pelo [olhar](../../design/gaze-and-commit.md)do usuário. Você pode modificar este projeto para criar qualquer aplicativo de realidade misturada.
+O modelo gera um projeto usando <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">c++/WinRT</a>, uma projeção de linguagem c++ 17 das APIs de Windows Runtime que dá suporte a qualquer compilador c++ 17 compatível com padrões.  O projeto mostra como criar um cubo protegido por mundo que é colocado 2 metros do usuário. O usuário pode [tocar em ar](../../design/gaze-and-commit.md#composite-gestures) ou pressionar um botão no controlador para colocar o cubo em uma posição diferente especificada pelo [olhar](../../design/gaze-and-commit.md)do usuário. Você pode modificar este projeto para criar qualquer aplicativo de realidade misturada.
 
-Como alternativa, você pode criar um novo projeto usando o modelo de projeto Holographic do **Visual C#** , que se baseia em SharpDX.  Se o seu projeto do Holographic C# não foi iniciado no modelo de aplicativo Holographic do Windows, você precisará copiar o arquivo MS. fxcompile. targets de um projeto de modelo C# do Windows Mixed Reality e importá-lo em seu arquivo. csproj para compilar os arquivos HLSL que você adicionar ao seu projeto. Um modelo do Direct3D 12 também é fornecido na extensão de modelos de aplicativos do Windows Mixed Reality para o Visual Studio.
+Você também pode criar um novo projeto usando o modelo de projeto Holographic do **Visual C#** , que se baseia em SharpDX.  Se o seu projeto do Holographic C# não foi iniciado no modelo de aplicativo Holographic do Windows, você precisará copiar o arquivo MS. fxcompile. targets de um projeto de modelo C# do Windows Mixed Reality e importá-lo em seu arquivo. csproj para compilar os arquivos HLSL que você adicionar ao seu projeto. Um modelo do Direct3D 12 também é fornecido na extensão de modelos de aplicativos do Windows Mixed Reality para o Visual Studio.
 
 Examine [usando o Visual Studio para implantar e depurar](../platform-capabilities-and-apis/using-visual-studio.md) para obter informações sobre como criar e implantar o exemplo em seu HOLOLENS, PC com dispositivo de imersão anexado ou um emulador.
 
@@ -101,7 +101,7 @@ A partir desse ponto, a classe AppView lida com a interação com eventos de ent
 
 A maneira mais fácil de começar a criar um projeto Holographic do Win32 é adaptar o <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/BasicHologram" target="_blank">exemplo do Win32 *BasicHologram*</a>.
 
-Este exemplo de Win32 usa <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">c++/WinRT</a>, uma projeção de linguagem c++ 17 das APIs de Windows Runtime que dá suporte a qualquer compilador c++ 17 compatível com padrões.  O projeto mostra como criar um cubo protegido por mundo que é colocado em dois medidores do usuário. O usuário pode pressionar um botão no controlador para colocar o cubo em uma posição diferente especificada pelo [olhar](../../design/gaze-and-commit.md)do usuário. Você pode modificar este projeto para criar qualquer aplicativo de realidade misturada.
+Este exemplo de Win32 usa <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">c++/WinRT</a>, uma projeção de linguagem c++ 17 das APIs de Windows Runtime que dá suporte a qualquer compilador c++ 17 compatível com padrões.  O projeto mostra como criar um cubo protegido por mundo que é colocado 2 metros do usuário. O usuário pode pressionar um botão no controlador para colocar o cubo em uma posição diferente especificada pelo [olhar](../../design/gaze-and-commit.md)do usuário. Você pode modificar este projeto para criar qualquer aplicativo de realidade misturada.
 
 ### <a name="win32-app-entry-point"></a>Ponto de entrada do aplicativo Win32
 
@@ -143,7 +143,7 @@ Desse ponto em diante, a classe AppMain lida com a interação com as mensagens 
 
 ## <a name="render-holographic-content"></a>Renderizar conteúdo Holographic
 
-A pasta de **conteúdo** do projeto contém classes para renderizar hologramas no [espaço Holographic](getting-a-holographicspace.md). O holograma padrão no modelo é um cubo de rotação que é colocado em dois medidores longe do usuário. O desenho desse cubo é implementado em **SpinningCubeRenderer. cpp**, que tem estes métodos principais:
+A pasta de **conteúdo** do projeto contém classes para renderizar hologramas no [espaço Holographic](getting-a-holographicspace.md). O holograma padrão no modelo é um cubo de rotação que é colocado 2 metros de distância do usuário. O desenho desse cubo é implementado em **SpinningCubeRenderer. cpp**, que tem estes métodos principais:
 
 |  Método  |  Explicação | 
 |----------|----------|
@@ -165,7 +165,7 @@ A subpasta **shaders** contém quatro implementações de sombreador padrão:
 
 Observação: o modelo de aplicativo do Direct3D 12 também inclui `ViewInstancingVertexShader.hlsl` . Essa variante usa recursos opcionais do D3D12 para renderizar imagens estéreo com mais eficiência.
 
-Os sombreadores são compilados quando o projeto é compilado e são carregados no método **SpinningCubeRenderer:: CreateDeviceDependentResources** .
+Os sombreadores são compilados quando o projeto é compilado e carregados no método **SpinningCubeRenderer:: CreateDeviceDependentResources** .
 
 ## <a name="interact-with-your-holograms"></a>Interaja com os hologramas
 
@@ -181,7 +181,7 @@ O método **render** em `AppMain.cpp` usa o <a href="https://docs.microsoft.com/
 
 O modelo de aplicativo de realidade mista do Windows agora dá suporte à compilação com o sinalizador de mitigação Spectre habilitado (/Qspectre). Certifique-se de instalar a versão Spectre das bibliotecas de tempo de execução do Microsoft Visual C++ (MSVC) antes de compilar uma configuração com a mitigação Spectre habilitada. Para instalar as bibliotecas de C++ Spectre, inicie o Instalador do Visual Studio e selecione **Modificar**. Navegue até **componentes individuais** e pesquise por "Spectre". Selecione as caixas correspondentes às plataformas de destino e à versão MSVC para a qual você precisa compilar o código Spectre mitigado e clique em **Modificar** para iniciar a instalação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Como obter um HolographicSpace](getting-a-holographicspace.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [Como renderizar no DirectX](rendering-in-directx.md)

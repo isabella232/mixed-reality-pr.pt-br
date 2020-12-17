@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Walkthrough, comando de voz, frase, reconhecimento, fala, DirectX, plataforma, Cortana, realidade do Windows Mixed
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675022"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613100"
 ---
 # <a name="voice-input-in-directx"></a>Entrada de voz no DirectX
 
 > [!NOTE]
-> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)** .
+> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.
 
 Este artigo explica como implementar [comandos de voz](../../design/voice-input.md) , além de reconhecimento de frase e frases pequenas em um aplicativo do DirectX para a realidade mista do Windows.
 
@@ -29,7 +29,7 @@ Esta seção descreve como usar o reconhecimento de fala contínuo para habilita
 
 Primeiro, crie uma nova instância do *Windows:: Media:: SpeechRecognition:: SpeechRecognizer* .
 
-De *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState* :
+De *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-O manipulador de eventos *OnResultGenerated* recebe dados de evento em uma instância [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Se a confiança for maior que o limite que você definiu, seu aplicativo deverá observar que o evento ocorreu. Salve os dados do evento para que você possa usá-los em um loop de atualização subsequente.
+O manipulador de eventos *OnResultGenerated* recebe dados de evento em uma instância [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Se a confiança for maior que o limite definido, seu aplicativo deverá observar que o evento ocorreu. Salve os dados do evento para que você possa usá-los em um loop de atualização posterior.
 
-De *HolographicVoiceInputSampleMain. cpp* :
+De *HolographicVoiceInputSampleMain. cpp*:
 
 ```
 // Change the cube color, if we get a valid result.
@@ -112,7 +112,7 @@ De *HolographicVoiceInputSampleMain. cpp* :
 
 Em nosso código de exemplo, alteramos a cor do cubo de holograma girando de acordo com o comando do usuário.
 
-De *HolographicVoiceInputSampleMain:: Update* :
+De *HolographicVoiceInputSampleMain:: Update*:
 
 ```
 // Check for new speech input since the last frame.
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 Os exemplos de fala do Holographic usam a síntese de fala para fornecer instruções audíveis ao usuário. Esta seção mostra como criar um exemplo de voz sintetizada e reproduzi-lo novamente por meio das APIs de áudio do HRTF.
 
-Você deve fornecer seus próprios prompts de fala ao solicitar entrada de frase. Os prompts também podem ajudar a indicar quando os comandos de fala podem ser falados para um cenário de reconhecimento contínuo. O exemplo a seguir demonstra como usar um sintetizador de fala para fazer isso. Você também pode usar um clipe de voz previamente gravado, uma interface do usuário visual ou outro indicador do que dizer, por exemplo, em cenários em que o prompt não é dinâmico.
+É recomendável fornecer seus próprios prompts de fala ao solicitar entrada de frase. Os prompts também podem ajudar a indicar quando os comandos de fala podem ser falados para um cenário de reconhecimento contínuo. O exemplo a seguir demonstra como usar um sintetizador de fala para fazer isso. Você também pode usar um clipe de voz previamente gravado, uma interface do usuário visual ou outro indicador do que dizer, por exemplo, em cenários em que o prompt não é dinâmico.
 
 Primeiro, crie o objeto SpeechSynthesizer.
 
@@ -430,6 +430,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Design do aplicativo de fala](https://msdn.microsoft.com/library/dn596121.aspx)
 * [Exemplo de SpeechRecognitionAndSynthesis](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

@@ -1,21 +1,21 @@
 ---
-title: Atualizando aplicativos UWP 2D para a realidade mista do Windows
+title: Como atualizar aplicativos UWP 2D para o Windows Mixed Reality
 description: Este artigo descreve a atualização de seu aplicativo de Plataforma Universal do Windows 2D existente para ser executado em headsets do HoloLens e do Windows Mixed realm de imersão.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: aplicativo 2D, UWP, aplicativo simples, HoloLens, headsets de imersão, modelo de aplicativo, botão voltar, barra de aplicativos, DPI, resolução, escala, portabilidade, 1ª gen de HoloLens, HoloLens 2, headset de realidade misturada, fone de ouvido com realidade misturada do Windows, migração, Windows 10
-ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: b2df0b0a7cb598fead09016c528bd6a81c6ea238
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443631"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612960"
 ---
-# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Atualizando aplicativos UWP 2D para a realidade mista do Windows
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Como atualizar aplicativos UWP 2D para o Windows Mixed Reality
 
-A realidade mista do Windows permite que um usuário veja hologramas como se eles estivessem em seu lugar, em seu mundo físico ou digital. Em seu núcleo, tanto o HoloLens quanto os PCs desktop nos quais você anexa acessórios de headsets de imersão são dispositivos Windows 10; Isso significa que você é capaz de executar quase todos os aplicativos de Plataforma Universal do Windows (UWP) na loja como aplicativos 2D.
+A realidade mista do Windows permite que os usuários vejam os hologramas como se estivessem no mundo inteiro e físico. Em seu núcleo, tanto o HoloLens quanto os PCs desktop nos quais você anexa acessórios de headsets de imersão são dispositivos Windows 10. Você é capaz de executar quase todos os aplicativos de Plataforma Universal do Windows (UWP) na loja como aplicativos 2D.
 
 ## <a name="creating-a-2d-uwp-app-for-mixed-reality"></a>Criando um aplicativo UWP 2D para realidade misturada
 
@@ -23,13 +23,13 @@ A primeira etapa para colocar um aplicativo 2D em headsets de realidade misturad
 
 ### <a name="building-a-new-2d-uwp-app"></a>Criando um novo aplicativo UWP 2D
 
-Para criar um novo aplicativo 2D para realidade misturada, você simplesmente cria um aplicativo de Plataforma Universal do Windows padrão 2D (UWP). Nenhuma outra alteração de aplicativo é necessária para que esse aplicativo seja executado como um Slate em realidade misturada.
+Para criar um novo aplicativo 2D para realidade misturada, você cria um aplicativo padrão de Plataforma Universal do Windows 2D (UWP). Nenhuma outra alteração de aplicativo é necessária para que esse aplicativo seja executado como um Slate em realidade misturada.
 
 Para começar a criar um aplicativo UWP 2D, confira o artigo [criar seu primeiro aplicativo](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) .
 
 ### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>Trazendo um aplicativo de armazenamento 2D existente para UWP
 
-Se você já tiver um aplicativo do Windows 2D na loja, primeiro deverá garantir que ele esteja direcionando para o Windows 10 Plataforma Universal do Windows (UWP). Aqui estão todos os pontos iniciais potenciais que você pode ter com seu aplicativo da loja hoje:
+Se você já tiver um aplicativo do Windows 2D na loja, verifique se ele está direcionando para o Windows 10 Plataforma Universal do Windows (UWP). Aqui estão todos os pontos iniciais potenciais que você pode ter com seu aplicativo da loja hoje:
 <br>
 
 |  Ponto inicial  |  Destino da plataforma de manifesto AppX  |  Como tornar este universal? | 
@@ -39,13 +39,13 @@ Se você já tiver um aplicativo do Windows 2D na loja, primeiro deverá garanti
 |  Windows Store 8  |  8 manifesto AppX que não inclui o destino da plataforma  |  [Migre seu aplicativo para o Plataforma Universal do Windows](https://msdn.microsoft.com/library/mt148501.aspx) | 
 |  Windows Store 8,1 universal  |  Manifesto AppX 8,1 que não inclui o destino de plataforma  |  [Migre seu aplicativo para o Plataforma Universal do Windows](https://msdn.microsoft.com/library/mt148501.aspx) | 
 
-Se você tiver um aplicativo de Unity 2D criado hoje como um aplicativo Win32 (o destino de compilação "PC, Mac & Linux autônomo"), poderá direcionar a realidade mista alternando o Unity para o destino de compilação "Plataforma Universal do Windows".
+Se você tiver um aplicativo Unity 2D criado hoje como um aplicativo Win32 no **PC, o Mac &** o destino de Build autônomo do Linux, mude para o destino de build de **plataforma universal do Windows** para realidade misturada.
 
 Falaremos sobre maneiras pelas quais você pode restringir seu aplicativo especificamente para o HoloLens usando a família de dispositivos Windows. Holographic [abaixo](#publish-and-maintain-your-universal-app).
 
 ### <a name="run-your-2d-app-in-a-windows-mixed-reality-immersive-headset"></a>Executar seu aplicativo 2D em um headset de imersão de realidade mista do Windows
 
-Se você tiver implantado seu aplicativo 2D no computador desktop em que está desenvolvendo e o tentou no monitor, já estará pronto para experimentá-lo em um headset de área de trabalho imersiva!
+Se você implantou seu aplicativo 2D em um computador desktop e o experimentou no monitor, você está pronto para experimentá-lo em um headset de área de trabalho imersiva!
 
 Basta ir para o menu iniciar dentro do headset de realidade misturada e iniciar o aplicativo a partir daí. O Shell da área de trabalho e o Shell Holographic compartilham o mesmo conjunto de aplicativos UWP e, portanto, o aplicativo já deve estar presente depois que você tiver implantado a partir do Visual Studio.
 
@@ -53,7 +53,7 @@ Basta ir para o menu iniciar dentro do headset de realidade misturada e iniciar 
 
 Parabéns! Seu aplicativo agora está usando o Windows 10 Plataforma Universal do Windows (UWP).
 
-Seu aplicativo agora é capaz de ser executado em dispositivos do Windows de hoje, como desktop, móvel, Xbox, headsets de imersão de realidade mista do Windows e HoloLens, bem como dispositivos Windows futuros. No entanto, para realmente direcionar todos esses dispositivos, você precisará garantir que seu aplicativo esteja direcionado para a família de dispositivos Windows. universal.
+Seu aplicativo agora é capaz de ser executado em dispositivos do Windows de hoje, como desktop, móvel, Xbox, headsets de imersão de realidade mista do Windows, HoloLens e dispositivos Windows futuros. No entanto, para realmente direcionar todos esses dispositivos, você precisará garantir que seu aplicativo esteja direcionando as janelas. Família de dispositivos universais.
 
 ### <a name="change-your-device-family-to-windowsuniversal"></a>Altere a família de dispositivos para Windows. universal
 
@@ -61,7 +61,7 @@ Agora, vamos ir para seu manifesto AppX para garantir que seu aplicativo UWP do 
 * Abra o arquivo de solução do aplicativo com o **Visual Studio** e navegue até o manifesto do pacote do aplicativo
 * Clique com o botão direito do mouse no arquivo **Package. appxmanifest** em sua solução e vá para **Exibir código**<br>
   ![Package. appxmanifest em Gerenciador de Soluções](images/openappxmanifest-500px.png)<br>
-* Verifique se a plataforma de destino é Windows. universal na seção de dependências
+* Verifique se a plataforma de destino é o Windows. Universal na seção de dependências
   ```
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
@@ -74,7 +74,7 @@ Se você não usar o Visual Studio para seu ambiente de desenvolvimento, poderá
 ### <a name="run-in-the-hololens-emulator"></a>Executar no emulador do HoloLens
 
 Agora que seu aplicativo UWP tem como alvo "Windows. universal", vamos compilar seu aplicativo e executá-lo no [emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
-* Verifique se você [instalou o Emulador do HoloLens](../install-the-tools.md) .
+* Verifique se você está [instalando o emulador do HoloLens](../install-the-tools.md).
 * No Visual Studio, selecione a configuração de compilação **x86** para seu aplicativo
 
   ![Configuração de build x86 no Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
@@ -83,7 +83,7 @@ Agora que seu aplicativo UWP tem como alvo "Windows. universal", vamos compilar 
   ![Emulador do HoloLens na lista de destino de implantação](images/deployemulator-500px.png)<br>
 * Selecione **depurar > iniciar a depuração** para implantar seu aplicativo e iniciar a depuração.
 * O emulador iniciará e executará seu aplicativo.
-* Com um teclado, mouse e/ou um controlador Xbox, coloque seu aplicativo no mundo para iniciá-lo.
+* Com um teclado, mouse e um controlador Xbox, coloque seu aplicativo no mundo para iniciá-lo.
 
   ![Emulador do HoloLens carregado com um exemplo de UWP](images/hololensemulatorwithuwpsample-800px.png)<br>
 
@@ -93,7 +93,7 @@ Neste ponto, pode acontecer uma de duas coisas:
 1. Seu aplicativo mostrará seu Splash e começará a ser executado depois que ele for colocado no emulador! Maravilha!
 2. Ou depois de ver uma animação de carregamento para um holograma 2D, o carregamento será interrompido e você verá apenas seu aplicativo na tela inicial. Isso significa que algo deu errado e levará mais investigação para entender como dar vida ao seu aplicativo em realidade misturada.
 
-Para chegar à parte inferior do que pode estar fazendo com que seu aplicativo UWP não inicie no HoloLens, você precisará Depurar.
+Você precisará Depurar para chegar à raiz de possíveis problemas que estão interrompendo seu aplicativo UWP de iniciar no HoloLens.
 
 ### <a name="running-your-uwp-app-in-the-debugger"></a>Executando seu aplicativo UWP no depurador
 
@@ -108,7 +108,7 @@ Essas etapas o orientarão na depuração do seu aplicativo UWP usando o depurad
 
 ## <a name="update-your-ui"></a>Atualizar sua interface do usuário
 
-Agora que seu aplicativo UWP está em execução em headsets de imersão e/ou HoloLens como um holograma de 2D, vamos garantir que ele parece lindo. Estas são algumas coisas que você deve considerar:
+Agora que seu aplicativo UWP está em execução em headsets de imersão e HoloLens como um holograma em 2D, vamos garantir que ele parecerá lindo. Estas são algumas coisas que você deve considerar:
 * A realidade mista do Windows executará todos os aplicativos 2D em uma resolução fixa e um DPI equivalente a 853x480 pixels efetivos. Considere se seu design precisa ser refinado nessa escala e examine as diretrizes de design abaixo para melhorar sua experiência em headsets de HoloLens e de imersão.
 * A realidade mista do Windows [não dá suporte](../../design/app-model.md) a blocos dinâmicos 2D. Se sua funcionalidade principal estiver mostrando informações em um bloco dinâmico, considere mover essas informações de volta para seu aplicativo ou explorar os [iniciadores de aplicativos 3D](../../distribute/3d-app-launcher-design-guidance.md).
 
@@ -116,7 +116,7 @@ Agora que seu aplicativo UWP está em execução em headsets de imersão e/ou Ho
 
 ![Do design responsivo](images/scale-500px.png)
 
-O Windows 10 move todo o Design Visual de pixels de tela reais para **pixels efetivos**. Isso significa que os desenvolvedores projetam suas interfaces de usuário seguindo as diretrizes de interface humana do Windows 10 para pixels efetivos, e o dimensionamento do Windows garante que os pixels efetivos sejam o tamanho certo para usabilidade em dispositivos, resoluções, DPI, etc. Veja essa [excelente leitura no MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) para saber mais, bem como esta [apresentação de Build](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
+O Windows 10 move todo o Design Visual de pixels de tela reais para **pixels efetivos**. Isso significa que os desenvolvedores projetam suas interfaces de usuário seguindo as diretrizes de interface humana do Windows 10 para pixels efetivos, e o dimensionamento do Windows garante que esses pixels efetivos sejam o tamanho certo para usabilidade em dispositivos, resoluções, DPI e assim por diante. Veja essa [excelente leitura no MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) e nesta [apresentação de Build](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) para obter mais informações.
 
 Mesmo com a capacidade exclusiva de posicionar aplicativos em seu mundo em uma variedade de distâncias, as distâncias de exibição do tipo TV são recomendadas para produzir a melhor legibilidade e interação com o olhar/gesto. Por isso, um Slate virtual na página inicial da realidade misturada exibirá sua exibição de UWP plana em:
 
@@ -131,7 +131,7 @@ Essa resolução tem várias vantagens:
 
 **Coincide**
 * Siga as [diretrizes de interface humana do Windows 10 (HIG)](https://dev.windows.com/design) para estilos, tamanhos de fonte e tamanhos de botão. O HoloLens fará o trabalho para garantir que seu aplicativo terá padrões de aplicativo compatíveis, tamanhos de texto legíveis e dimensionamento de destino apropriado.
-* Certifique-se de que sua interface do usuário segue as práticas recomendadas para o [design responsivo](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) para ter a melhor resolução de HOLOLEN e DPI exclusivas.
+* Certifique-se de que sua interface do usuário segue as práticas recomendadas para o [design responsivo](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) para ter uma aparência melhor na resolução exclusiva do HOLOLENS e DPI
 * Use as recomendações de tema de cores "Light" do Windows.
 
 **Não:**
@@ -162,7 +162,7 @@ O HoloLens usa sensores de profundidade avançada para ver o mundo e ver os usu�
 
 Com os headsets da área de trabalho, os usuários podem usar os controladores de movimento para apontar para os aplicativos e tomar medidas. Eles também podem usar um gamepad, direcionando objetos com seus olhar.
 
-O Windows cuida de toda essa complexidade para aplicativos UWP, traduzindo sua entrada de controlador [olhar](../../design/gaze-and-commit.md), gestos, voz e movimento para [eventos de ponteiro](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) que abstraim o mecanismo de entrada. Por exemplo, um usuário pode ter feito um toque de ar com sua mão ou ter recebido o gatilho SELECT em um controlador de movimento, mas os aplicativos 2D não precisam saber de onde veio a entrada – eles simplesmente veem um Press Touch 2D, como se fosse em uma tela touch.
+O Windows cuida de toda essa complexidade para aplicativos UWP, traduzindo sua entrada de controlador de [olhar](../../design/gaze-and-commit.md), gestos, voz e movimento para [eventos de ponteiro](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) que abstraim o mecanismo de entrada. Por exemplo, um usuário pode ter feito um toque de ar com sua mão ou ter recebido o gatilho SELECT em um controlador de movimento, mas os aplicativos 2D não precisam saber de onde veio a entrada – eles simplesmente veem um Press Touch 2D, como se fosse em uma tela touch.
 
 Aqui estão os conceitos/cenários de alto nível que você deve entender para entrada ao trazer seu aplicativo UWP para o HoloLens:
 * O [olhar](../../design/gaze-and-commit.md) se transforma em eventos em foco, o que pode disparar inesperadamente menus, submenus ou outros elementos da interface do usuário para pop-up apenas por nuvens em todo o seu aplicativo.
