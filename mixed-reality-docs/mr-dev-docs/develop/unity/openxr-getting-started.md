@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: adb678d168d86dc2376ac46caa690e5db036099c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 05adee2d88bc90dcfb5cf8b780212c7622aff786
+ms.sourcegitcommit: ce4975f584bb62075bcb66349237b77081fb982b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622891"
+ms.locfileid: "97644913"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Usando o plug-in OpenXR de realidade misturada para o Unity
 
@@ -29,7 +29,7 @@ A partir da versão 2020,2 do Unity, o pacote de plugin OpenXR de realidade mist
 
 ## <a name="installing-the-mixed-reality-openxr-plugin"></a>Instalando o plug-in OpenXR de realidade misturada
 
-Antes de usar o plug-in OpenXR de realidade misturada, você precisa instalar os pacotes de gerenciamento de plug-in do **OpenXR** e do plug **-in** do Unity:
+Seu projeto precisa instalar o plug-in **OpenXR** e pacotes de **Gerenciamento de plugin XR** antes de usar o plug-in OpenXR da realidade mista. Se você já os instalou, ótimo! Caso contrário, a instalação do plug-in OpenXR de realidade misturada os instalará automaticamente como dependências:
 
 1. No editor do Unity, navegue até **Editar configurações do projeto > > Gerenciador de pacotes**
 2. Expanda a seção **registros no escopo** , insira as informações a seguir e selecione **salvar**:   
