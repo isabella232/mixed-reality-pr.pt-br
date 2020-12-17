@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609487"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010537"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Como empacotar e implantar no dispositivo ou emulador
 
@@ -49,6 +49,7 @@ Quando estiver conectado, clique na seta suspensa à direita do botão **Jogar**
 1.  Acesse **Editar > Configurações do Projeto**.
     * Em **Projeto > Descrição > Sobre > Nome do Projeto**, adicione um nome de projeto.
     * Adicione **CN=NomeDaSuaEmpresa** em **Projeto > Descrição > Editor > Nome Diferenciado da Empresa**.
+    * Selecione **Iniciar em VR** em **Projeto > Descrição > Configurações**.
 
 > [!IMPORTANT]
 > Se você deixar um desses campos em branco, isso resultará em um erro quando você tentar e gerar um novo certificado na etapa 3.
@@ -56,7 +57,10 @@ Quando estiver conectado, clique na seta suspensa à direita do botão **Jogar**
 > [!IMPORTANT]
 > O nome do editor precisa estar no [Formato de Nomes Diferenciados LADPv3](https://www.ietf.org/rfc/rfc2253.txt). Um nome malformado do editor gera o erro "Chave de assinatura não encontrada. Não foi possível assinar o aplicativo digitalmente." durante o empacotamento.
 
-![Configurações do projeto – descrição](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> Se você não selecionar "Iniciar em VR", o aplicativo tentará iniciar em um slate
+
+![Configurações do projeto – descrição](images/unreal-uxt/6-cn-new.PNG)
 
 2.  Habilite **Compilar para Emulação no HoloLens** e/ou **Compilar para Dispositivo do HoloLens** em **Plataformas > HoloLens**.
 

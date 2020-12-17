@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portal de Dispositivos do Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011471"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102913"
 ---
 # <a name="using-the-windows-device-portal"></a>Usar o Portal de Dispositivos do Windows
 
@@ -117,6 +117,38 @@ Cada HoloLens gera um certificado autoassinado exclusivo para sua conexão SSL. 
 >[!NOTE]
 > Esse certificado só será confiável para o dispositivo e o usuário precisará passar pelo processo novamente se o dispositivo for atualizado.
 
+## <a name="sideloading-applications"></a>Aplicativos de sideload
+
+### <a name="installing-a-certificate"></a>Instalar um certificado
+
+1. No Portal de Dispositivos do Windows, navegue até a página **Gerenciador de aplicativos**
+2. Na seção Implantar aplicativos, selecione **Instalar Certificado**
+3. Em Selecionar o arquivo do certificado (.cer) usado para assinar um pacote do aplicativo, selecione Escolher Arquivo e navegue até o certificado associado ao pacote do aplicativo do qual você deseja fazer o sideload
+4. Clique em **Instalar** para iniciar a instalação
+
+![Captura de tela da página Gerenciador de aplicativos aberta no Portal de Dispositivos do Windows](images/sideloading-1.png)
+
+### <a name="installing-an-app"></a>Instalar um aplicativo
+
+> [!NOTE]
+> Para que um aplicativo seja instalado com êxito pelo Portal de Dispositivos, ele deve ser assinado por um certificado. Esse certificado deve ser instalado no dispositivo antes de tentar instalar o aplicativo. Para instruções, veja a [seção anterior](#installing-a-certificate).
+
+1. Quando tiver [criado um pacote do aplicativo do Visual Studio](using-visual-studio.md), você poderá instalá-lo remotamente em seu dispositivo usando os arquivos gerados:
+
+![Captura de tela do conteúdo do arquivo do pacote do aplicativo](images/sideloading-2.png)
+
+2. No Portal de Dispositivos do Windows, navegue até a página **Gerenciador de aplicativos**
+3. Na seção **Implantar aplicativos**, selecione **Armazenamento Local**
+4. Em Selecionar o pacote do aplicativo, selecione Escolher Arquivo e navegue até o pacote do aplicativo do qual você deseja fazer o sideload
+5. Marque as respectivas caixas se desejar instalar pacotes opcionais ou de estrutura junto com a instalação do aplicativo e selecione **Próximo**:
+
+![Captura de tela da página Gerenciador de aplicativos aberta no Portal de Dispositivos do Windows com a guia Armazenamento Local em destaque](images/sideloading-3.png)
+
+6. Selecione **Instalar** para iniciar a instalação
+ 
+![Captura de tela da página Gerenciador de aplicativos aberta no Portal de Dispositivos do Windows com a instalação concluída](images/sideloading-4.png) 
+
+Depois que a instalação for concluída, volte para a página **Todos os aplicativos** no HoloLens e inicie o aplicativo recém-instalado.
 
 ## <a name="device-portal-pages"></a>Páginas do Device Portal
 

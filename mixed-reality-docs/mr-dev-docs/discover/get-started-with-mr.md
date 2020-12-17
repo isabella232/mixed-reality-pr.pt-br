@@ -3,16 +3,16 @@ title: Introdução à Realidade Misturada
 description: Para ajudar alguém novo na realidade misturada a saber o que ela é e entender suas funcionalidades.
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702262"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926053"
 ---
 # <a name="get-started-with-mixed-reality"></a>Introdução à Realidade Misturada
 
@@ -60,6 +60,7 @@ Antes de se aprofundar no design ou no desenvolvimento de aplicativos, você pre
 | --- | --- |
 | [A realidade misturada é um espectro](../discover/mixed-reality.md) | A realidade misturada combina o físico com o digital, a próxima evolução em interações entre humanos, computadores e ambientes |
 | [O que é um holograma?](../discover/hologram.md) | O HoloLens permite criar hologramas, que são objetos compostos de luz e som que aparecem no mundo ao seu redor, como se fossem objetos reais. Os hologramas respondem ao foco, aos gestos e aos comandos de voz, podendo interagir com superfícies do mundo real ao seu redor |
+| [Visão geral do aprendizado de Realidade Misturada](mr-learning-overview.md#general-modules) | Experimente nosso módulo de Realidade Misturada no Microsoft Learn |
 | [Expanda seu processo de design](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expanda suas perspectivas de design com raciocínio espacial, bodystorming e ações ao criar suas experiências imersivas  |
 
 <br>

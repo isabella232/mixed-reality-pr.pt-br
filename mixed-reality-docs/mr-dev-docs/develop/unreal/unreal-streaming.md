@@ -3,19 +3,19 @@ title: Streaming no Unreal
 description: Um guia de streaming no Unreal para o HoloLens 2
 author: sw5813
 ms.author: suwu
-ms.date: 7/10/2020
+ms.date: 12/7/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, streaming, PC, comunicação remota do aplicativo holográfico, player de comunicação remota holográfica, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 9cbde33ce7238d704d4b24b4afbed9d8306d4e4d
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 3638f07753355061f251bb2d6fa47233872d5b90
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609327"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855874"
 ---
 # <a name="streaming-in-unreal"></a>Streaming no Unreal
 
@@ -33,6 +33,14 @@ Durante o streaming, você tem acesso a quase todas as mesmas funcionalidades do
 > [!NOTE]
 > * A qualidade de streaming é altamente dependente da força da rede Wi-Fi.
 > * Todos os recursos são habilitados automaticamente para o player de comunicação remota holográfica. Se você encontrar uma funcionalidade que exija permissão de usuário (por exemplo, acompanhamento de olho) para funcionar por streaming, mas não durante a execução no dispositivo, verifique se você habilitou os recursos adequados nas configurações do seu projeto.
+
+### <a name="streaming-limitations"></a>Limitações de streaming
+
+As malhas de mão, a câmera do HoloLens e o teclado do sistema não estão disponíveis por streaming. Observe que a entrada de fala para aplicativos transmitidos por streaming pode ser adquirida por meio do microfone do computador em que você está fazendo streaming.
+
+#### <a name="openxr"></a>OpenXR
+
+O Unreal 4.26 em execução no OpenXR é compatível com streaming para as versões 2.4.0 e posteriores do Player de Comunicação Remota Holográfica. O streaming do OpenXR na versão 2.4.0 não é compatível com o mapeamento espacial e âncoras espaciais. 
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -79,12 +87,18 @@ No Unreal 4.25.1 em diante, você pode transmitir seu aplicativo para um disposi
 2. Depois que o pacote terminar de ser compilado, abra o **Holographic Remoting Player** no HoloLens 2 e anote o endereço IP. 
 3. Deixe o **Holographic Remoting Player** aberto e use o prompt de linha de comando para: 
     * Executar cd no diretório local em que você salvou o pacote.
-    * Digite o seguinte comando: ```<App Name>.exe -vr -HoloLensRemoting=<IP Address>```
+    * Digite o seguinte comando: `<App Name>.exe -vr -HoloLensRemoting=<IP Address>`
 
 > [!NOTE]
 > O nome do aplicativo nas configurações do projeto deverá ser usado automaticamente para criar o pacote do Windows. Se ele for diferente por algum motivo, use o nome do executável do Windows no prompt de comando.
 
 Pressione ENTER e veja seu aplicativo começar a ser transmitido.
+
+### <a name="command-line-options"></a>Opções de linha de comando
+
+Outras opções de linha de comando para streaming em cada plataforma no Unreal Engine 4.26+ podem ser encontradas na tabela abaixo. 
+
+[!INCLUDE[](includes/tabs-streaming-args.md)]
 
 ## <a name="see-also"></a>Veja também
 

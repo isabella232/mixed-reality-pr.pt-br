@@ -8,22 +8,22 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, unity, unreal, HoloLens, âncoras espaciais do Azure, serviços de fala do Azure
-ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677275"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010457"
 ---
-# <a name="tutorials"></a>Tutoriais 
+# <a name="tutorials"></a>Tutoriais
 
 ![Usuário do HoloLens 2](images/08_Tutorials.png)
 
-Atualmente, todos os tutoriais e aplicativos de exemplo são baseados no Unity ou no Unreal. À medida que desenvolvermos conteúdo para outros mecanismos e outras plataformas, você os encontrará sob o título relevante no sumário.
+Atualmente, todos os tutoriais e aplicativos de exemplo são baseados no Unity ou no Unreal. À medida que desenvolvermos conteúdo para outros mecanismos e outras plataformas, você os encontrará sob o título relevante no Sumário.
 
 ## <a name="hololens-2"></a>HoloLens 2 
 
-Os tutoriais do HoloLens 2 foram projetados para ajudar os desenvolvedores a aprender técnicas e melhores práticas para o desenvolvimento de aplicativos de realidade misturada. Os tutoriais do Unity se baseiam no [MRTK 2.0 (Kit de Ferramentas de Realidade Misturada 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity) e o tutorial Unreal é baseado nas [Ferramentas de UX para Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
+Os tutoriais do HoloLens 2 foram elaborados para ensinar técnicas e melhores práticas para o desenvolvimento de aplicativos de realidade misturada. Os tutoriais do Unity se baseiam no [MRTK 2.0 (Kit de Ferramentas de Realidade Misturada 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity) e o tutorial Unreal é baseado nas [Ferramentas de UX para Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 * Tutoriais de introdução
     * Unity – [1 de 9 Introdução](tutorials/mr-learning-base-01.md)
@@ -217,7 +217,7 @@ Esses tutoriais autônomos são ótimos para aprender a implementar diferentes s
                                           </div>
                                           <div class="cardText">
                                               <h3>MR e Azure 305: funções e armazenamento</h3>
-                                              <p>Neste curso, você aprenderá a criar e usar o Azure Functions, bem como a armazenar dados no Armazenamento do Azure, em um aplicativo de realidade misturada.</p>
+                                              <p>Neste curso, você aprenderá a criar e usar o Azure Functions, bem como armazenar dados no Armazenamento do Azure em um aplicativo de realidade misturada.</p>
                                           </div>
                                       </div>
                                   </div>
