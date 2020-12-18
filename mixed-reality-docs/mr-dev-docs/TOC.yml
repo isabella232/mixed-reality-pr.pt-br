@@ -8,5 +8,7 @@
   href: develop/toc.yml
 - name: Distribuir
   href: distribute/toc.yml
+- name: Guia de contribuição
+  href: contributing.md
 - name: Novidades
   href: whats-new/toc.yml
