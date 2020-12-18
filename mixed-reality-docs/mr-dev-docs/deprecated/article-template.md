@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: nenhum
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717429"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676129"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Título (seja o mais específico possível, use os termos humanos) 
 
@@ -52,7 +52,7 @@ ms.locfileid: "91717429"
 
 Uma seção pode conter um ou todos os itens a seguir:  
 
-*   Sobre
+*   Explicações
 *   Considerações
 *   Regras gerais 
 *   Métodos de uso 
@@ -65,7 +65,7 @@ Convenções editoriais:
 *   Não tente ser engraçado.
 *   Escreva usando a grafia e as convenções en-US (Estados Unidos Inglês).
 *   **Usar maiúsculas e minúsculas para títulos, títulos de seção e... Bem, tudo.** Nas frases, as únicas palavras que devem ser colocadas em maiúsculas são os substantivos próprios (assim como você aprendeu na escola da gramática). Nomes de marca (por exemplo, Microsoft HoloLens) são nomes próprios. Nomes de recursos (por exemplo, mapeamento espacial) não são substantivos próprios, a menos que sejam marcadas.
-*   Não escreva links do formulário "para obter mais informações, acesse [aqui](../whats-new/contributing.md)". Em vez disso, coloque os links de forma [contextual](../whats-new/contributing.md) sem direcionar o leitor para ir para outro lugar.
+*   Não escreva links do formulário "para obter mais informações, acesse [aqui](../contributing.md)". Em vez disso, coloque os links de forma [contextual](../contributing.md) sem direcionar o leitor para ir para outro lugar.
 *   Esta documentação é a fonte de verdade. As informações devem ser precisas e atuais.
 
 <br>
@@ -233,7 +233,7 @@ Defina iframe para largura = "940" altura = "530".
 
 ---
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Nome do artigo 1 relacionado](../design/design.md)
 * [Nome do artigo 2 relacionado](../design/design.md)
