@@ -17,7 +17,5 @@
   href: release-notes-may-2020.md
 - name: Recursos da comunidade
   href: ../discover/community.md
-- name: Como colaborar com esta documentação
-  href: contributing.md
 - name: Implantar o HoloLens em escala
   href: 'https://docs.microsoft.com/hololens/'
