@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: dd84ba86af0b86b29510c4c317ad0a14fabc296b
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
+ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676180"
+ms.locfileid: "97691315"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contribuindo para a documentação do desenvolvedor de realidade misturada
 
@@ -48,12 +48,12 @@ Use o seguinte fluxo de trabalho para fazer atualizações em *um artigo existen
    ![Edite um artigo.](images/editpage.png)
 3. Edite o conteúdo do artigo de acordo com as ["Noções básicas sobre redução"](#markdown-basics).
 4. Atualize os metadados na parte superior de cada artigo:
-   * Título: título da página que aparece na guia do navegador quando o artigo está sendo exibido. Os títulos de página são usados para SEO e indexação, portanto, não altere o título, a menos que seja necessário (embora isso seja menos crítico antes que a documentação fique pública).
-   * Descrição: escreva uma breve descrição do conteúdo do artigo, que aumenta a SEO e a descoberta.
-   * Autor: se você for o proprietário principal da página, adicione seu alias do GitHub aqui.
-   * MS. Author: se você for o proprietário principal da página, adicione seu alias da Microsoft aqui (você não precisa @microsoft.com , apenas o alias).
-   * MS. Date: Atualize a data se você estiver adicionando conteúdo principal à página, mas não para correções como esclarecimento, formatação, gramática ou ortografia.
-   * Palavras-chave: o Word ajuda na SEO (otimização do mecanismo de pesquisa). Adicione palavras-chave, separadas por uma vírgula e um espaço, que são específicos do seu artigo, mas sem pontuação após a última palavra-chave em sua lista. Você não precisa adicionar palavras-chave globais que se aplicam a todos os artigos, pois elas são gerenciadas em outro lugar. 
+   * **título**: título da página que aparece na guia do navegador quando o artigo está sendo exibido. Os títulos de página são usados para SEO e indexação, portanto, não altere o título, a menos que seja necessário (embora isso seja menos crítico antes que a documentação fique pública).
+   * **Descrição**: escreva uma breve descrição do conteúdo do artigo, que aumenta a SEO e a descoberta.
+   * **autor**: se você for o proprietário principal da página, adicione seu alias do GitHub aqui.
+   * **MS. Author**: se você for o proprietário principal da página, adicione seu alias da Microsoft aqui (você não precisa @microsoft.com , apenas o alias).
+   * **MS. Date**: Atualize a data se você estiver adicionando conteúdo principal à página, mas não para correções como esclarecimento, formatação, gramática ou ortografia.
+   * **palavras-** chave: o Word ajuda na SEO (otimização do mecanismo de pesquisa). Adicione palavras-chave, separadas por uma vírgula e um espaço, que são específicos do seu artigo, mas sem pontuação após a última palavra-chave em sua lista. Você não precisa adicionar palavras-chave globais que se aplicam a todos os artigos, pois elas são gerenciadas em outro lugar. 
 5. Depois de concluir as edições do artigo, role para baixo e selecione **propor alteração de arquivo**.
 6. Na página seguinte, selecione **criar solicitação de pull** para mesclar seu Branch criado automaticamente em ' mestre '.
 7. Repita as etapas acima para o próximo artigo que você deseja editar.
