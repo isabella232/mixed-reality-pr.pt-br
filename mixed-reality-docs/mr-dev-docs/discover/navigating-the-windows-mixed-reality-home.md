@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, so, plataforma, Cliff House, casa, casa, ambiente, iniciar, menu Iniciar, menu início, Pins, aplicativo, iniciar aplicativos, colocar aplicativos, teleport, mover, navegar, headset de realidade misturada, headset de realidade virtual, o que é realidade virtual
-ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703442"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757684"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Como navegar na página inicial do Windows Mixed Reality
 
-Assim como a experiência do PC com o Windows começa com a área de trabalho, a realidade misturada do Windows começa com a casa. O Windows Mixed Reality Home aproveita nossa capacidade de inato de entender e navegar por locais 3D. Com o HoloLens, sua página inicial é seu espaço físico. Com headsets de imersão, sua casa é um local virtual.
+Assim como a experiência do PC com o Windows começa com a área de trabalho, a realidade misturada do Windows começa com a casa. A página inicial do Windows Mixed Reality usa nossa capacidade de inato de entender e navegar por locais 3D. Com o HoloLens, sua casa é seu espaço físico, mas com headsets de imersão, sua casa é um local virtual.
 
 Sua casa também é onde você usará o menu Iniciar para abrir e colocar aplicativos e conteúdo. Você pode preencher sua casa com conteúdo misto de realidade e multitarefas usando vários aplicativos ao mesmo tempo. As coisas que você coloca em casa ficam lá, mesmo se você reiniciar o dispositivo.
 
@@ -52,17 +52,17 @@ Selecione **ajustar** na barra de aplicativos para revelar os controles que move
 
 ![O Slate da loja no modo de ajuste (quadro azul). Observe que a barra de aplicativos (superior) foi alterada para incluir os botões ' Concluído ' e ' remover '.](images/adjust-500px.png)
 
-Aplicativos diferentes podem ter opções adicionais na barra de aplicativos. Por exemplo, o Microsoft Edge tem opções de *rolagem*, *arrastar* e *zoom* . 
+Aplicativos diferentes podem ter outras opções na barra de aplicativos. Por exemplo, o Microsoft Edge tem opções de *rolagem*, *arrastar* e *zoom* . 
 
 ![Barra de aplicativos para aplicativos 2D em execução no HoloLens](images/holobar-500px.png)
 
-O botão **voltar** navega de volta para as telas exibidas anteriormente no aplicativo. Ele será interrompido quando você chegar ao início das experiências que foram mostradas no aplicativo e não navegará para outros aplicativos.
+O botão **voltar** navega de volta para as telas exibidas anteriormente no aplicativo. Ele será interrompido quando você alcançar o início das experiências mostradas no aplicativo e não navegará para outros aplicativos.
 
 ## <a name="getting-around-your-home"></a>Entrando em casa
 
 Com o **HoloLens**, você passa por espaço físico para se mover em casa.
 
-Com **headsets de imersão**, você pode, de maneira semelhante, se familiarizar em seu Playspace para se mover em uma área semelhante no mundo virtual. Para mover-se por longas distâncias, você pode usar o Thumbstick em seu controlador para praticamente "andar" ou pode usar a *teleportação* para saltar imediatamente as distâncias mais longas.
+Com **headsets de imersão**, você pode se familiarizar em seu Playspace para se mover em uma área semelhante no mundo virtual. Para mover-se entre distâncias mais longas, use o Thumbstick em seu controlador para praticamente "andar" ou use a *teleportação* para saltar imediatamente as distâncias mais longas.
 
 ![Teleportação na página inicial do Windows Mixed Reality](images/teleportation-500px.png)
 
@@ -83,11 +83,11 @@ Com **headsets de imersão**, você pode, de maneira semelhante, se familiarizar
 
 ## <a name="immersive-headset-input-support"></a>Suporte de entrada de headset de imersão
 
-Os [headsets de imersão de realidade mista do Windows](immersive-headset-hardware-details.md) dão suporte a vários tipos de entrada para navegar na página inicial do Windows Mixed Reality. O HoloLens não oferece suporte a entradas de acessório para navegação, pois você acompanha fisicamente e vê seu ambiente. No entanto, o HoloLens [oferece suporte a entradas](hardware-accessories.md) para interagir com aplicativos.
+Os [headsets de imersão de realidade mista do Windows](immersive-headset-hardware-details.md) dão suporte a vários tipos de entrada para navegar na página inicial do Windows Mixed Reality. O HoloLens não dá suporte a entradas de acessório para navegação, pois você acompanha fisicamente e vê seu ambiente. No entanto, o HoloLens [oferece suporte a entradas](hardware-accessories.md) para interagir com aplicativos.
 
 ### <a name="motion-controllers"></a>Controladores de movimento
 
-A melhor experiência de realidade mista do Windows será com os [controladores de movimento](../design/motion-controllers.md) do Windows Mixed Reality que dão suporte ao acompanhamento de 6 graus de liberdade usando apenas os sensores em seu headset-nenhuma câmera ou marcador externo é necessário!
+A melhor experiência de realidade mista do Windows será com os [controladores de movimento](../design/motion-controllers.md) de realidade mista do Windows que dão suporte ao acompanhamento de seis graus de liberdade usando apenas os sensores em seu headset-nenhuma câmera ou marcador externo é necessário!
 
 Comandos de navegação em breve.
 
@@ -97,7 +97,7 @@ Comandos de navegação em breve.
   * Toque em Thumbstick à esquerda, à direita ou voltar para mover para a esquerda, para a direita ou de volta em pequenos incrementos.
   * Clique no botão esquerdo Thumbstick e mantenha pressionado e, em seguida, mova o Thumbstick para a direção que você deseja [praticamente "andar".](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Toque na **Thumbstick direita** ou à direita para girar a direção que você está enfrentando em 45 graus.
-* Pressionar o **botão a executa** uma seleção e age como o gesto de [toque do ar](../design/gaze-and-commit.md#composite-gestures) .
+* Pressionar o **botão a** seleciona e atua como o gesto de [toque do ar](../design/gaze-and-commit.md#composite-gestures) .
 * Pressionar o botão **guia** abre o [menu iniciar](navigating-the-windows-mixed-reality-home.md#start-menu) e atua como o gesto de [cair](../design/system-gesture.md#bloom) .
 * Pressionar os **gatilhos esquerdo e direito** permite ampliar e reduzir um aplicativo de área de trabalho 2D com o qual você está interagindo em casa.
 
@@ -106,14 +106,14 @@ Comandos de navegação em breve.
 **Observação:** Use a **tecla Windows + Y** para alternar o mouse entre controlar a área de trabalho do computador e a página inicial do Windows Mixed Reality.
 
 Na página inicial do Windows Mixed Reality:
-* Pressionar o botão **esquerdo** do mouse executa uma seleção e age como o gesto de [toque do ar](../design/gaze-and-commit.md#composite-gestures) .
+* Pressionar o botão **esquerdo** do mouse seleciona e atua como o gesto de [toque do ar](../design/gaze-and-commit.md#composite-gestures) .
 * Manter o botão **direito** do mouse abre o reticle de [teleportação](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) .
 * Pressionar a tecla **Windows** no teclado abre o [menu iniciar](navigating-the-windows-mixed-reality-home.md#start-menu) e age como o gesto de [cair](../design/system-gesture.md#bloom) .
 * Quando [nuvens](../design/gaze-and-commit.md) em um aplicativo de área de trabalho 2D, você pode **clicar** para selecionar, clicar com o **botão direito do mouse** para exibir menus de contexto e usar a **roda de rolagem** para rolar (assim como na área de trabalho do seu PC).
 
 ## <a name="cortana"></a>Cortana
 
-O [Cortana](../design/voice-input.md#hey-cortana) é o seu assistente pessoal no Windows Mixed Reality, assim como no PC e no telefone. O HoloLens tem um microfone interno, mas os headsets de imersão podem exigir hardware adicional. Use a Cortana para abrir aplicativos, reinicie o dispositivo, verifique as coisas online e muito mais. Os desenvolvedores também podem optar por [integrar o Cortana](https://dev.windows.com/cortana) em suas experiências.
+O [Cortana](../design/voice-input.md#hey-cortana) é o seu assistente pessoal no Windows Mixed Reality, assim como no PC e no telefone. O HoloLens tem um microfone interno, mas os headsets de imersão podem exigir hardware extra. Use a Cortana para abrir aplicativos, reiniciar o dispositivo, pesquisar coisas online e muito mais. Os desenvolvedores também podem optar por [integrar o Cortana](https://dev.windows.com/cortana) em suas experiências.
 
 Você também pode usar comandos de voz para colocar em sua casa. Por exemplo, aponte para um botão (usando [olhar](../design/gaze-and-commit.md) ou um controlador, dependendo do dispositivo) e diga "Select". Outros comandos de voz incluem "ir para a casa", "maior", "menor", "fechar" e "entrar em frente".
 
@@ -134,7 +134,7 @@ O Windows Mixed Reality tem vários aplicativos internos, como:
 * **Área de trabalho** (headsets de imersão) para exibir seu monitor de área de trabalho enquanto estiver em um headset de imersão
 * **Explorador de arquivos** Acessar arquivos e pastas localizados em seu dispositivo
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 * [Modos de exibição do aplicativo](../design/app-views.md)
 * [Controladores de movimentos](../design/motion-controllers.md)
 * [Acessórios de hardware](hardware-accessories.md)

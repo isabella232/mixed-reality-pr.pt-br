@@ -1,6 +1,6 @@
 ---
 title: Aprender Realidade Misturada
-description: Descreve como executar o aplicativo Learn Mixed Reality, que ensina a usar e navegar na realidade mista do Windows.
+description: Descreve como executar o aplicativo Learn Mixed Reality e como navegar na realidade mista do Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, tutorial, introdução
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132060"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726047"
 ---
 # <a name="learn-mixed-reality"></a>Aprender Realidade Misturada
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>Executando a experiência de aprendizado pela primeira vez
 
-Depois de concluir a instalação, o aplicativo do portal de realidade misturada deve iniciar uma experiência de imersão em seu HMD chamado **Learn Mixed Reality** , que ensina a usar a realidade mista do Windows. Olhar na gem na tela de carregamento para começar. Você deve ouvir a voz da Cortana em seu headset fornecendo instruções sobre o que fazer em seguida.
+Depois de concluir a instalação, o aplicativo do portal da realidade mista deve iniciar uma experiência de imersão em seu HMD chamado **Learn Mixed Reality**. Essa experiência de imersão ensinará como usar a realidade mista do Windows. Olhar na gem na tela de carregamento para começar. Você deve ouvir a voz da Cortana em seu headset fornecendo instruções sobre o que fazer em seguida.
 
 ![Aprender Realidade Misturada](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>Executar novamente a experiência de aprendizagem
+## <a name="rerun-the-learning-experience"></a>Executar novamente a experiência de aprendizagem
 
-Aprenda a realidade misturada é um aplicativo. O aplicativo pode ser iniciado no menu iniciar dentro do [seu início da realidade misturada](your-mixed-reality-home.md) a qualquer momento. Usando seus controladores de movimento ou teclado:
+Aprenda a realidade misturada é um aplicativo. O aplicativo pode ser iniciado no menu iniciar no [seu início da realidade misturada](your-mixed-reality-home.md) a qualquer momento. Usando seus controladores de movimento ou teclado:
 
 ### <a name="use-your-motion-controllers"></a>Usar seus controladores de movimento
 
@@ -51,7 +51,7 @@ Para saber mais sobre como entrar em realidade misturada com os controladores de
 
 Basta pressionar o ícone de **reprodução** na parte inferior do aplicativo portal da realidade misturada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Como solucionar problemas de instalação](installation_errors.md)
 * [Solução de problemas de instalação](wmr-setup-faq.md)

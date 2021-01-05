@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482405"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717490"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -81,8 +81,6 @@ Se não for possível implantar um aplicativo diretamente por USB, verifique se 
 
 >[!WARNING]
 >Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor*, que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
-
-Se você estiver usando um headset **Reverb G2** baixe o plug-in **Microsoft-Valve OpenXR** (Tarefa pendente: // link necessário).
 
 Se seu computador de desenvolvimento de headset imersivo não tiver portas HDMI e/ou USB 3.0 padrão, você precisará de [adaptadores](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) para conectar o headset.
 
@@ -196,8 +194,6 @@ Se não for possível implantar um aplicativo diretamente por USB, verifique se 
 
 >[!WARNING]
 >Não confunda essas informações com as [diretrizes de compatibilidade mínima de hardware do computador](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), que descreve as *especificações do computador do consumidor*, que é o alvo do seu jogo ou aplicativo de headset imersivo (VR).
-
-Se você estiver usando um headset **Reverb G2** baixe o plug-in **Microsoft-Valve OpenXR** (Tarefa pendente: // link necessário).
 
 Se seu computador de desenvolvimento de headset imersivo não tiver portas HDMI e/ou USB 3.0 padrão, você precisará de [adaptadores](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) para conectar o headset.
 

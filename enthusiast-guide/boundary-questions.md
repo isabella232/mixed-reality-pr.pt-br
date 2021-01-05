@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, solução de problemas, erros, ajuda, suporte, limite
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9ddf9c7f7c5f36567e6968f619dabead9107731d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 8dba6ebb5f74b229cea4ea2d5e1ac0a5e70a3f57
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174392"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725277"
 ---
 # <a name="boundary-faqs"></a>Perguntas frequentes sobre limite
 
@@ -21,7 +21,7 @@ ms.locfileid: "92174392"
 
 Um limite define a área que você pode percorrer enquanto estiver aproveitando o headset da realidade mista do Windows. É importante criar um limite para ajudá-lo a evitar os obstáculos que você não pode ver enquanto estiver em headset. O limite é semelhante a um esboço branco dentro da realidade misturada e aparece quando você chega perto dele. Quando você vê isso, reduza os movimentos e evite cruzar o limite ou estendê-los para além dele.
 
-A área dentro do limite deve ser gratuita de mobília, acessórios de luz com baixa interrupções, ventiladores de teto, etc., para que você não se aprofunde nem vá para nada. [Saiba mais sobre integridade e segurança no Windows Mixed Reality](wmr-health-safety-comfort.md).
+A área dentro do limite deve ser livre de mobília, acessórios de luz de baixa interrupções, ventiladores de teto e assim por diante, para que você não se aprofunde nem percorrendo nada. [Saiba mais sobre integridade e segurança no Windows Mixed Reality](wmr-health-safety-comfort.md).
 
 ## <a name="how-do-i-create-a-boundary"></a>Como fazer criar um limite?
 
@@ -31,15 +31,15 @@ Quando você configura o headset pela primeira vez, o aplicativo de instalação
 2. Abra o "menu".
 3. Selecione "configurar limite de sala" para criar um novo limite.
 
-Se outra pessoa usar o headset, verifique se ele entendeu o limite e como usá-lo. Se você mover o headset para um novo local, precisará configurar um novo limite que funcione para esse espaço.
+Se outra pessoa usar o headset, verifique se ele entendeu o limite e como usá-lo. Se você mover o headset para um novo local, precisará configurar um novo limite para o espaço.
 
 ## <a name="i-get-an-error-message-when-i-try-to-create-a-boundary"></a>Recebo uma mensagem de erro quando tento criar um limite
 
 * Não fique muito perto de uma parede ou de outra obstrução ao criar um limite.
 * Certifique-se de manter o headset na altura de estou e rosto o computador enquanto rastreia o limite.
 * Verifique se o sensor não está bloqueado e se há luz suficiente.
-* O espaço que você está rastreando deve ser maior do que três metros quadrados.
-* O espaço não deve ser muito grande ou muito complicado. Fique à medida de uma forma geométrica simples sem muita variação e folheia.
+* O espaço que você está rastreando deve ser maior que 3 metros quadrados.
+* O espaço não deve ser muito grande ou muito complicado. Fique em uma forma geométrica simples com torceções e ativações.
 * Não entre em seu próprio caminho enquanto estiver rastreando.
 * Se você ficar preso em um canto, comece novamente.
 
@@ -49,7 +49,7 @@ Isso significa que o sistema de controle não conseguiu reconhecer seu ambiente.
 Se você já usou o dispositivo neste ambiente e configurou um limite:
 
 * Verifique se a sala tem luz suficiente.
-* Verifique se você gastou o dispositivo e procurou a sala. O dispositivo deve observar seu ambiente para saber onde ele está. Ele não encontrará seus limites se estiver sentado em uma mesa ou escrivaninha.
+* Verifique se você gastou o dispositivo e procurou a sala. O dispositivo deve observar seu ambiente para saber onde ele está. Ele não encontrará seus limites se estiver sentado em uma mesa.
 * Desconecte o dispositivo, feche a realidade mista do Windows e conecte-o novamente.
 * Se algo no ambiente tiver sido alterado, o dispositivo poderá não reconhecê-lo mais. Configure um novo limite.
 
@@ -61,7 +61,7 @@ O dispositivo está demorando muito para localizar os limites. Você pode ignora
 
 ## <a name="i-often-see-a-message-saying-ive-lost-my-bounds"></a>Eu sempre vejo uma mensagem dizendo "Eu perdi meus limites"
 
-O sistema de controle está tendo um controle de tempo rígido e identificando seu ambiente. Nesse estado, o dispositivo não pode mais exibir seus limites e os comutadores do headset para 3DOF para evitar que você se aprofunde no mundo real até localizar os limites novamente. Para corrigir isso:
+O sistema de controle está tendo um controle de tempo rígido e identificando seu ambiente. Nesse estado, o dispositivo não pode mais exibir seus limites. O headset muda para 3DOF para evitar que você se aprofunde nas coisas do mundo real até localizar seus limites novamente. Tente as seguintes etapas para corrigir o problema:
 
 1. Certifique-se de que a sala tenha luz suficiente.
 2. Execute a instalação novamente se você redecorau ou remodelou a sala recentemente.
@@ -75,7 +75,7 @@ A realidade mista do Windows pode ter problemas para identificar o limite existe
 
 ## <a name="a-message-says-lost-tracking-or-we-dont-have-a-boundary-for-this-space"></a>Uma mensagem diz "controle perdido" ou "não temos um limite para este espaço"
 
-Você deve criar um novo limite. Para fazer isso:
+Crie um novo limite:
 
 1. Selecione **iniciar > portal de realidade misturada**.
 2. Abra o "menu".
@@ -83,7 +83,7 @@ Você deve criar um novo limite. Para fazer isso:
 
 ## <a name="the-boundary-is-always-visible-how-can-i-make-it-go-away"></a>O limite é sempre visível. Como posso fazê-lo desaparecer?
 
-O limite aparece quando você está perto dele. Se seu limite incluir seções que tenham uma forma estreita ou irregular, você poderá acabar ficando perto dela e fazendo com que ela apareça, com mais frequência do que você gostaria. Para corrigir isso, tente criar o limite novamente usando uma forma maior e mais regular. Para fazer isso:
+O limite aparece quando você está perto dele. Se o seu limite incluir seções com uma forma estreita ou irregular, você poderá acabar ficando perto dela. O limite pode parecer com mais frequência do que o desejado. Tente criar o limite novamente usando uma forma maior e mais regular para corrigir o problema:
 
 1. Selecione **iniciar > portal de realidade misturada**.
 2. Abra o "menu".
@@ -97,13 +97,13 @@ O limite aparece quando você está perto dele. Se seu limite incluir seções q
 
 ## <a name="how-do-i-choose-between-seated-and-standing-and-all-experiences"></a>Como fazer escolher entre "sentado e em pé" e "todas as experiências"?
 
-Se você escolher "colocado e posicionado" durante a configuração do headset ou posterior, você usará o headset sem um limite. Isso significa que você precisará permanecer em um ponto ao usar o headset, para que você possa evitar obstáculos físicos e ultrapassar os riscos. Você pode se sentar ou se repousar, mas não poderá se movimentar. Tenha em mente que os obstáculos podem ser uma sobrecarga, bem como em seu lugar.
+Se você escolher "colocado e posicionado" durante a configuração do headset ou posterior, você usará o headset sem um limite. Você precisará manter-se em um ponto ao usar o headset para evitar obstáculos físicos e ultrapassar os riscos. Você pode sentar ou se repousar, mas não pode se movimentar. Tenha em mente que obstáculos podem ser uma sobrecarga e em seu lugar.
 
-Alguns aplicativos podem ser projetados para funcionar com um limite, portanto, você não poderá usá-los ou talvez não tenham a mesma experiência, se você usá-los sem um limite.
+Alguns aplicativos podem ser projetados para funcionar com um limite. Eles podem não funcionar ou fornecer a mesma experiência se você usá-los sem um limite.
 
-Se você escolher "todas as experiências", configurará um limite e poderá usar aplicativos e experiências que funcionam com um limite, bem como aqueles que não exigem um.
+Se você escolher "todas as experiências", configurará um limite e poderá usar aplicativos e experiências que funcionam com e sem um limite.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

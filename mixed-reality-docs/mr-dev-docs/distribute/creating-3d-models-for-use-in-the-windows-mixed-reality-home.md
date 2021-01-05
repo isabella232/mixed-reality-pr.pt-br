@@ -6,32 +6,33 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modelagem, diretrizes de modelagem, requisitos de ativos, diretrizes de criação, iniciador, iniciador 3D, textura, materiais, complexidade, triângulos, malha, polígonos, policontagem, limites, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443662"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757775"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Criar modelos 3D para uso em casa
 
-O [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md) é o ponto de partida onde os usuários vão antes de iniciar os aplicativos. Você pode projetar seu aplicativo para os headsets de realidade mista do Windows para aproveitar um [modelo 3D como um inicializador de aplicativo](implementing-3d-app-launchers.md) e permitir que [links de 3D Deep sejam colocados na página inicial do Windows Mixed Realm](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles) de dentro de seu aplicativo. Este artigo descreve as diretrizes para a criação de modelos 3D compatíveis com a página inicial do Windows Mixed Reality.
+O [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md) é o ponto de partida onde os usuários vão antes de iniciar os aplicativos. Ao projetar seu aplicativo para os headsets de realidade mista do Windows, use um [modelo 3D como um inicializador de aplicativo](implementing-3d-app-launchers.md) e coloque [links em 3D no início da realidade mista do Windows](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles). Este artigo descreve as diretrizes para a criação de modelos 3D compatíveis com a página inicial do Windows Mixed Reality.
 
 ## <a name="asset-requirements-overview"></a>Visão geral dos requisitos de ativo
+
 Ao criar modelos 3D para a realidade mista do Windows, há alguns requisitos que todos os ativos devem atender: 
 1. [Exportando](#exporting-models) -os ativos devem ser entregues no formato de arquivo. glb (glTF binário)
 2. [Modelagem](#modeling-guidelines) -os ativos devem ser inferiores a 10.000 triângulos, não têm mais de 64 nós e 32 submalhas por LOD
 3. Os [materiais](#material-guidelines) -texturas não podem ser maiores que 4096 x 4096 e o menor mapa MIP não deve ser maior que 4 em qualquer uma das dimensões
-4. [Animação](#animation-guidelines) -as animações não podem ter mais de 20 minutos a 30 FPS (36.000 quadros chave) e devem conter <= 8192 vértices de destino de Morph
-5. [Otimizando](#optimizations) -os ativos devem ser otimizados usando o [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). Isso é **necessário nas versões do sistema operacional windows <= 1709** e recomendado nas versões do sistema operacional Windows >= 1803
+4. [Animação](#animation-guidelines) -as animações não podem ter mais de 20 minutos em 30 FPS (36.000 quadros-chave) e devem conter <= 8192 de destino de Morph
+5. [Otimizando](#optimizations) -os ativos devem ser otimizados usando o [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). *Necessário nas versões do sistema operacional windows <= 1709** e recomendado nas versões do sistema operacional Windows >= 1803
 
-O restante deste artigo inclui uma visão geral detalhada desses requisitos, bem como diretrizes adicionais para garantir que seus modelos funcionem bem com a página inicial do Windows Mixed Reality. 
+O restante deste artigo inclui uma visão geral detalhada desses requisitos e diretrizes adicionais para garantir que seus modelos funcionem bem com a página inicial do Windows Mixed Reality. 
 
 ## <a name="detailed-guidance"></a>Diretrizes detalhadas
 
 ### <a name="exporting-models"></a>Exportando modelos
 
-A Home real do Windows Mixed espera que os ativos 3D sejam entregues usando o formato de arquivo. glb com imagens inseridas e dados binários. Glb é a versão binária do formato glTF, que é um padrão aberto isento de royalties para entrega de ativos 3D mantido pelo grupo Khronos. À medida que o glTF evolui como um padrão do setor para conteúdo interoperável 3D, portanto, o suporte da Microsoft para o formato entre aplicativos e experiências do Windows. Se você não tiver criado um ativo glTF antes de encontrar uma [lista de exportadores e conversores com suporte](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) na página GitHub do grupo de trabalho do glTF.  
+A Home real do Windows Mixed espera que os ativos 3D sejam entregues usando o formato de arquivo. glb com imagens inseridas e dados binários. Glb é a versão binária do formato glTF, que é um padrão aberto isento de royalties para entrega de ativos 3D mantido pelo grupo Khronos. À medida que o glTF evolui como um padrão do setor para conteúdo 3D interoperável, o suporte da Microsoft é para o formato entre aplicativos e experiências do Windows. Se você não tiver criado um ativo glTF antes de encontrar uma [lista de exportadores e conversores com suporte](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) na página GitHub do grupo de trabalho do glTF.  
 
 ### <a name="modeling-guidelines"></a>Diretrizes de modelagem
 
@@ -40,15 +41,15 @@ O Windows espera que os ativos sejam gerados usando as diretrizes de modelagem a
 2. O ativo deve enfrentar "encaminhar" em direção ao eixo Z positivo.
 3. Todos os ativos devem ser criados no plano de chão na origem da cena (0, 0, 0)
 4. As unidades de trabalho devem ser definidas como medidores e ativos para que os ativos possam ser criados em escala mundial
-5. Todas as malhas não precisam ser combinadas, mas recomendadas se você estiver direcionando dispositivos com restrição de recursos
-6. Todas as malhas devem compartilhar 1 material, com apenas 1 conjunto de texturas sendo usado para todo o ativo
+5. Todas as malhas não precisam ser combinadas, mas é recomendável se você estiver direcionando dispositivos com restrição de recursos
+6. Todas as malhas devem compartilhar um material, com apenas um conjunto de textura usado para todo o ativo
 7. UVs deve ser disposta em uma organização quadrada no espaço de 0-1. Evite texturas de divisão, embora elas sejam permitidas.
 8. Não há suporte para UVs
-9. Não há suporte para materiais duplos de lado
+9. Não há suporte para materiais de dois lados
 
 ### <a name="triangle-counts-and-levels-of-detail-lods"></a>Contagens de triângulos e níveis de detalhes (LODs)
 
-A página inicial do Windows Mixed Reality não oferece suporte a modelos com mais de 10.000 triângulos. É recomendável que você triangulaia suas malhas antes de exportar para garantir que elas não excedam essa contagem. O Windows MR também dá suporte a LODs (níveis adicionais de geometria de detalhes) para garantir uma experiência de alto desempenho e de alta qualidade. [O WindowsMRAssetConverter o](https://github.com/Microsoft/glTF-Toolkit/releases) ajudará a combinar 3 versões do seu modelo em um único modelo. glb. O Windows determina qual LOD será exibido com base na quantidade de espaço de tela que o modelo está ocupando. Há suporte apenas para três níveis de LOD com as seguintes contagens de triângulo recomendadas:
+O Windows Mixed Reality Home não dá suporte a modelos com mais de 10.000 triângulos. É recomendável triangular suas malhas antes de exportar para garantir que elas não excedam essa contagem. O Windows MR também dá suporte a LODs (níveis adicionais de geometria de detalhes) para garantir uma experiência de alto desempenho e de alta qualidade. [O WindowsMRAssetConverter o](https://github.com/Microsoft/glTF-Toolkit/releases) ajudará a combinar 3 versões do seu modelo em um único modelo. glb. O Windows determina qual LOD será exibido com base na quantidade de espaço de tela que o modelo está ocupando. Há suporte apenas para três níveis de LOD com as seguintes contagens de triângulo recomendadas:
 <br>
 
 |  Nível de LOD  |  Contagem de triângulos recomendada  |  Contagem de triângulo máxima | 
@@ -58,7 +59,8 @@ A página inicial do Windows Mixed Reality não oferece suporte a modelos com ma
 |  LOD 2 |  2\.500  |  10.000 | 
 
 ### <a name="node-counts-and-submesh-limits"></a>Contagens de nós e limites de submalha
-A página inicial do Windows Mixed Reality não oferece suporte a modelos com mais de 64 nós ou 32 submalhas por LOD. Os nós são um conceito na [especificação glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) que definem os objetos na cena. As submalhas são definidas na matriz de [primitivos](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) na malha no objeto. 
+
+O Windows Mixed Reality Home não dá suporte a modelos com mais de 64 nós ou 32 submalhas por LOD. Os nós são um conceito na [especificação glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) que definem os objetos na cena. As submalhas são definidas na matriz de [primitivos](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) na malha no objeto. 
 
 |  Recurso |  Descrição  |  Máximo com suporte | Documentação |
 |------|------|------|------|
@@ -67,7 +69,7 @@ A página inicial do Windows Mixed Reality não oferece suporte a modelos com ma
 
 ## <a name="material-guidelines"></a>Diretrizes do material
 
-As texturas devem ser preparadas usando um fluxo de trabalho de commãos de metal de PBR Comece criando um conjunto completo de texturas, incluindo albedo, normal, oclusão, metal e áspero. O Windows Mixed Reality dá suporte a texturas com resoluções até 4096x4096, mas recomendamos que você crie em 512x512. Além disso, as texturas devem ser criadas em resoluções em múltiplos de 4, pois esse é um requisito para o formato de compactação aplicado às texturas nas etapas de exportação descritas abaixo. Finalmente, ao gerar mapas MIP ou uma textura, o MIP mais baixo deve ser um máximo de 4x4.
+As texturas devem ser preparadas usando um fluxo de trabalho de commãos de metal de PBR Comece criando um conjunto completo de texturas, incluindo albedo, normal, oclusão, metal e áspero. O Windows Mixed Reality dá suporte a texturas com resoluções até 4096x4096, mas é recomendável que você crie em 512x512. As texturas devem ser criadas em resoluções em múltiplos de 4. Esse é um requisito para o formato de compactação aplicado às texturas nas etapas de exportação descritas abaixo. Ao gerar mapas MIP ou uma textura, o MIP mais baixo deve ser um máximo de 4x4.
 <br>
 
 |  Tamanho de textura recomendado  |  Tamanho máximo da textura | MIP mais baixo
@@ -84,11 +86,11 @@ Mapa normal de espaço tangente
 
 ### <a name="roughness-map"></a>Mapa de irregularidade
 
-Descreve a microsuperfície do objeto. O White 1,0 é um esboço preto 0,0 é suave. Esse mapa dá ao ativo o maior caractere, pois ele realmente descreve a superfície, por exemplo, arranhões, impressões digitais, manchas, sujeira, etc.
+Descreve a microsuperfície do objeto. O White 1,0 é um esboço preto 0,0 é suave. Esse mapa dá ao ativo o maior caractere, pois ele realmente descreve a superfície. Por exemplo, arranhões, impressões digitais, manchas, sujeira e assim por diante.
 
 ### <a name="ambient-occlusion-map"></a>Mapa de oclusão de ambiente
 
-Mapa de escala de valor que representa áreas de luz obstruído que bloqueiam reflexos
+Mapa de escala de valor mostrando áreas de obstruído Light, que bloqueia reflexões
 
 ### <a name="metallic-map"></a>Mapa metálico
 
@@ -164,7 +166,7 @@ Ao compactar as texturas DDS, espera-se a seguinte compressão em cada mapa:
 
 ### <a name="adding-mesh-lods"></a>Adicionando LODs de malha
 
-O Windows MR usa o nó Geometry LODs para renderizar modelos 3D em diferentes níveis de detalhes, dependendo da cobertura da tela. Embora esse recurso não seja necessário tecnicamente, é altamente recomendável para todos os ativos. Atualmente, o Windows dá suporte a três níveis de detalhes. O LOD padrão é 0, que representa a qualidade mais alta. Outros LODs são numerados em sequência, por exemplo, 1, 2 e ficam progressivamente inferiores em qualidade. O [conversor de ativos de realidade do Windows Mixed](https://github.com/Microsoft/glTF-Toolkit/releases) dá suporte à geração de ativos que atendem a essa especificação de Lod, aceitando vários modelos de glTF e mesclando-os em um único ativo com níveis LOD válidos. A tabela a seguir descreve a ordem LOD esperada e os destinos do triângulo:
+O Windows MR usa o nó Geometry LODs para renderizar modelos 3D em diferentes níveis de detalhes, dependendo da cobertura na tela. Embora esse recurso não seja necessário tecnicamente, ele é recomendado para todos os ativos. Atualmente, o Windows dá suporte a três níveis de detalhes. O LOD padrão é 0, que representa a qualidade mais alta. Outros LODs são numerados em sequência, por exemplo, 1, 2 e ficam progressivos mais baixos em qualidade. O [conversor de ativos de realidade do Windows Mixed](https://github.com/Microsoft/glTF-Toolkit/releases) dá suporte à geração de ativos que atendem a essa especificação de Lod, aceitando vários modelos de glTF e mesclando-os em um único ativo com níveis LOD válidos. A tabela a seguir descreve a ordem LOD esperada e os destinos do triângulo:
 <br>
 
 |  Nível de LOD  |  Contagem de triângulos recomendada  |  Contagem de triângulo máxima | 
@@ -173,7 +175,7 @@ O Windows MR usa o nó Geometry LODs para renderizar modelos 3D em diferentes n�
 |  LOD 1 |  5\.000  |  10.000 | 
 |  LOD 2 |  2\.500  |  10.000 | 
 
-Ao usar LODs, sempre especifique 3 níveis de LOD. O LODs ausente fará com que o modelo não seja renderizado inesperadamente, pois o sistema LOD muda para o nível de LOD ausente. o glTF 2,0 atualmente não dá suporte a LODs como parte da especificação principal. LODs deve, portanto, ser definido usando a [extensão MSFT_LOD](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
+Ao usar LODs, sempre especifique 3 níveis de LOD. O LODs ausente fará com que o modelo não seja renderizado inesperadamente, pois o sistema LOD muda para o nível de LOD ausente. no momento, o glTF 2,0 não dá suporte a LODs como parte da especificação principal. LODs deve ser definido usando a [extensão MSFT_LOD](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
 
 ### <a name="screen-coverage"></a>Cobertura de tela
 
@@ -182,7 +184,7 @@ LODs são exibidos no Windows Mixed Reality com base em um sistema controlado pe
 
 |  Nível de LOD  |  Intervalo recomendado  |  Intervalo padrão | 
 |-------|-------|-------|
-|  LOD 0  |  100%-50% |  .5 | 
+|  LOD 0  |  100%-50% |  0,5 | 
 |  LOD 1 |  Menos de 50%-20%  |  0,2 | 
 |  LOD 2 |  Menos de 20% a 1%  |  0,01 | 
 |  LOD 4  |  Menos de 1%  |  - | 
@@ -190,22 +192,25 @@ LODs são exibidos no Windows Mixed Reality com base em um sistema controlado pe
 ## <a name="animation-guidelines"></a>Diretrizes de animação
 
 > [!NOTE]
-> Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Em versões mais antigas do Windows, essas animações não serão reproduzidas, no entanto, elas ainda serão carregadas se forem criadas de acordo com as diretrizes neste artigo.  
+> Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Em versões mais antigas do Windows, essas animações não são reproduzidas, no entanto, elas ainda serão carregadas se forem criadas de acordo com as diretrizes neste artigo.  
 
-A página de realidade misturada dá suporte a objetos glTF animados em headsets de HoloLens e de imersão (VR). Se você quiser disparar animações em seu modelo, precisará usar a extensão de mapa de animação no formato glTF. Essa extensão permite disparar animações no modelo glTF com base na presença dos usuários no mundo, por exemplo, disparar uma animação quando o usuário estiver próximo ao objeto ou enquanto estiver olhando para ele. Se você glTF objeto tem animações, mas não define gatilhos, as animações não serão reproduzidas. A seção a seguir descreve um fluxo de trabalho para adicionar esses gatilhos a qualquer objeto glTF animado.
+A página de realidade misturada dá suporte a objetos glTF animados em headsets de HoloLens e de imersão (VR). Se você quiser disparar animações em seu modelo, precisará usar a extensão de mapa de animação no formato glTF. Essa extensão permite disparar animações no modelo glTF com base na presença do usuário no mundo, por exemplo, disparar uma animação quando o usuário estiver próximo ao objeto ou enquanto estiver olhando para ele. Se você glTF objeto tem animações, mas não define gatilhos, as animações não serão reproduzidas. A seção a seguir descreve um fluxo de trabalho para adicionar esses gatilhos a qualquer objeto glTF animado.
 
 ### <a name="tools"></a>Ferramentas
+
 Primeiro, baixe as ferramentas a seguir se você ainda não as tiver. Essas ferramentas facilitarão a abertura de qualquer modelo glTF, a visualização, a realização de alterações e o salvamento de back como glTF ou. glb:
 1. [Visual Studio Code](https://code.visualstudio.com/)
 2. [Ferramentas de glTF para Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 
 ### <a name="opening-and-previewing-the-model"></a>Abrindo e visualizando o modelo
-Comece abrindo o modelo glTF no VSCode arrastando o arquivo. glTF para a janela do editor. Observe que, se você tiver um. glb em vez de um arquivo. glTF, poderá importá-lo no VSCode usando o complemento de ferramentas do glTF que você baixou. Acesse "Exibir-> paleta de comandos" e comece digitando "glTF" na paleta de comandos e selecione "glTF: Import from glb", que exibirá um seletor de arquivos para você importar um. glb com. 
 
-Depois de abrir o modelo do glTF, você deverá ver o JSON na janela do editor. Observe que você também pode visualizar o modelo em um visualizador 3D ao vivo usando o clicando com o botão direito do mouse no nome do arquivo e selecionando o atalho de comando "glTF: Preview 3D Model" no menu do clique com o botão direito do mouse. 
+Comece abrindo o modelo glTF no VSCode arrastando o arquivo. glTF para a janela do editor. Se você tiver um. glb em vez de um arquivo. glTF, poderá importá-lo no VSCode usando o complemento de ferramentas do glTF que você baixou. Acesse "Exibir-> paleta de comandos" e comece digitando "glTF" na paleta de comandos e selecione "glTF: Import from glb", que exibirá um seletor de arquivos para você importar um. glb com. 
+
+Depois de abrir o modelo glTF, você deverá ver o JSON na janela do editor. Você também pode visualizar o modelo em um visualizador 3D ao vivo usando o clicando com o botão direito do mouse no nome do arquivo e selecionando o atalho do comando "glTF: Visualizar 3D Model" no menu do clique com o botão direito do mouse. 
 
 ### <a name="adding-the-triggers"></a>Adicionando os gatilhos
+
 Os gatilhos de animação são adicionados ao modelo glTF JSON usando a extensão de mapa de animação. A extensão de mapa de animação está documentada publicamente [aqui no GitHub](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) (Observação: esta é uma extensão de rascunho). Para adicionar a extensão ao modelo, basta rolar até o final do arquivo glTF no editor e adicionar o bloco "extensionsUsed" e "Extensions" ao arquivo, caso ainda não existam. Na seção "extensionsUsed", você adicionará uma referência à extensão "EXT_animation_map" e no bloco "Extensions", você adicionará seus mapeamentos às animações no modelo.
 
 Conforme observado [na especificação](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) , você define o que dispara a animação usando a cadeia de caracteres "semântica" em uma lista de "animações", que é uma matriz de índices de animação. No exemplo abaixo, especificamos a animação a ser reproduzida enquanto o usuário está nuvens no objeto:
@@ -233,10 +238,12 @@ A semântica de gatilhos de animação a seguir tem suporte na página inicial d
 * "Apontando": em loop enquanto um usuário está apontando para um objeto
 
 ### <a name="saving-and-exporting"></a>Salvando e exportando
-Depois de fazer as alterações no modelo glTF, você poderá salvá-las diretamente como glTF ou clicar com o botão direito do mouse no nome do arquivo no editor e selecionar "glTF: exportar para GLB (arquivo binário)" para exportar um. glb. 
+
+Depois de fazer as alterações no modelo glTF, você poderá salvá-lo diretamente como glTF. Você também pode clicar com o botão direito do mouse no nome do arquivo no editor e selecionar "glTF: exportar para GLB (arquivo binário)" para exportar um. glb. 
 
 ### <a name="restrictions"></a>Restrições
-As animações não podem ter mais de 20 minutos e não podem conter mais de 36.000 quadros-chave (20 minutos a 30 FPS). Além disso, ao usar animações baseadas em destino Morph não exceda 8192 vértices de destino de Morph ou menos. Exceder essas contagens fará com que o ativo animado não seja suportado na página inicial do Windows Mixed Reality. 
+
+As animações não podem ter mais de 20 minutos e não podem conter mais de 36.000 quadros-chave (20 minutos a 30 FPS). Além disso, ao usar animações baseadas em destino morph, não exceda 8192 vértices de destino de metamorfose ou menos. Exceder essas contagens fará com que o ativo animado não seja suportado na página inicial do Windows Mixed Reality. 
 
 |Recurso|Máximo|
 |-----|-----|
@@ -245,6 +252,7 @@ As animações não podem ter mais de 20 minutos e não podem conter mais de 36.
 |Vértices de destino de Morph|8192|
 
 ## <a name="gltf-implementation-notes"></a>notas de implementação do glTF
+
 O Windows Sr não dá suporte à inversão de geometria usando escalas negativas. A geometria com escalas negativas provavelmente resultará em artefatos visuais.
 
 O ativo glTF deve apontar para a cena padrão usando o atributo Scene a ser renderizado pelo Windows Sr. Além disso, o carregador do Windows Sr glTF antes da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requer** acessadores:
@@ -271,7 +279,8 @@ O Windows Sr não dá suporte a linhas e pontos de modo primitivo.
 
 Há suporte apenas para um único atributo de vértice UV.
 
-## <a name="additional-resources"></a>Recursos adicionais
+## <a name="more-resources"></a>Mais recursos
+
 * [exportadores e conversores glTF](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [Kit de ferramentas glTF](https://github.com/Microsoft/glTF-Toolkit)
 * [Especificação do glTF 2,0](https://github.com/KhronosGroup/glTF/blob/master/README.md)
@@ -280,7 +289,7 @@ Há suporte apenas para um único atributo de vértice UV.
 * [Especificação de extensões de empacotamento de textura da realidade misturada do HoloLens](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Especificação de extensões glTF do Microsoft DDS Textures](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Implementar inicializadores de aplicativos 3D (aplicativos UWP)](implementing-3d-app-launchers.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos Win32)](implementing-3d-app-launchers-win32.md)

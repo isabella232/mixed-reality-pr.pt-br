@@ -1,60 +1,11 @@
 ---
-ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609598"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718121"
 ---
-# <a name="425"></a>[4.25](#tab/425)
-
-## <a name="render-from-the-pv-camera-for-mrc"></a>Renderizar da câmera de PV para MRC
-
-> [!NOTE]
-> Isso requer o **Unreal Engine 4.25** ou posterior.
-
-O sistema e os gravadores personalizados de MRC criam capturas de realidade misturada combinando a Câmera de PV com os hologramas renderizados pelo aplicativo.
-
-Por padrão, a captura de realidade misturada usa a saída holográfica do olho direito. Se um aplicativo imersivo optar por [fazer a renderização da Câmera de PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), isso será usado. A renderização da Câmera de PV aprimora o mapeamento entre o mundo real e os hologramas no vídeo da MRC.
-
-Para aceitar a renderização por meio da Câmera de PV:
-
-1. Chamar **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**
-    * Use os valores de **Tamanho X** e **Tamanho Y** para definir as dimensões do vídeo.
-
-![Terceira câmera](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
-
-Em seguida, o Unreal lidará com as solicitações da MRC para renderizar da perspectiva da câmera de PV.
-
-> [!NOTE]
-> Somente quando a [Captura de Realidade Misturada](../../../mixed-reality-capture.md) for disparada, o aplicativo será solicitado a renderizar partindo da perspectiva da câmera de foto/vídeo.
-
-## <a name="using-the-pv-camera"></a>Usando a câmera de PV
-
-A textura de webcam pode ser recuperada no jogo em runtime, mas precisa ser habilitada no menu **Editar > Configurações de Projeto** do editor:
-1. Acesse **Plataformas > HoloLens > Funcionalidades** e marque **Webcam**.
-    * Use a função **StartCameraCapture** para usar a webcam em runtime e a função **StopCameraCapture** para interromper a gravação.
-
-![Iniciar/interromper câmera](../images/unreal-camera-startstop.PNG)
-
-## <a name="rendering-an-image"></a>Renderização de uma imagem
-Para renderizar a imagem da câmera:
-1. Crie uma instância de material dinâmico com base em um material no projeto, nomeado **PVCamMat** na captura de tela abaixo.  
-2. Defina a instância de material dinâmico para uma variável de **Referência de Objeto Dinâmico da Instância de Material**.  
-3. Defina o material do objeto na cena que renderizará o feed da câmera para essa nova instância de material dinâmico.
-    * Inicie um temporizador que será usado para associar a imagem da câmera ao material.
-
-![Renderização da câmera](../images/unreal-camera-render.PNG)
-
-4. Crie uma função para esse temporizador (neste caso, **MaterialTimer**) e chame **GetARCameraImage** para obter a textura da webcam.  
-5. Se a textura for válida, defina um parâmetro de textura no sombreador para a imagem.  Caso contrário, inicie o temporizador de material novamente.
-
-![Textura da câmera da webcam](../images/unreal-camera-texture.PNG)
-
-5. Verifique se o material tem um parâmetro que corresponda ao nome em **SetTextureParameterValue** que esteja associado a uma entrada de cor. Sem o parâmetro, a imagem da câmera não pode ser exibida corretamente.
-
-![Textura da câmera](../images/unreal-camera-material.PNG)
-
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>Configuração do feed da câmera PV
@@ -221,4 +172,53 @@ void ACamCapture::Tick(float DeltaTime)
     }
 }
 ```
+
+# <a name="425"></a>[4.25](#tab/425)
+
+## <a name="render-from-the-pv-camera-for-mrc"></a>Renderizar da câmera de PV para MRC
+
+> [!NOTE]
+> Isso requer o **Unreal Engine 4.25** ou posterior.
+
+O sistema e os gravadores personalizados de MRC criam capturas de realidade misturada combinando a Câmera de PV com os hologramas renderizados pelo aplicativo.
+
+Por padrão, a captura de realidade misturada usa a saída holográfica do olho direito. Se um aplicativo imersivo optar por [fazer a renderização da Câmera de PV](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), isso será usado. A renderização da Câmera de PV aprimora o mapeamento entre o mundo real e os hologramas no vídeo da MRC.
+
+Para aceitar a renderização por meio da Câmera de PV:
+
+1. Chamar **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**
+    * Use os valores de **Tamanho X** e **Tamanho Y** para definir as dimensões do vídeo.
+
+![Terceira câmera](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
+
+Em seguida, o Unreal lidará com as solicitações da MRC para renderizar da perspectiva da câmera de PV.
+
+> [!NOTE]
+> Somente quando a [Captura de Realidade Misturada](../../../mixed-reality-capture.md) for disparada, o aplicativo será solicitado a renderizar partindo da perspectiva da câmera de foto/vídeo.
+
+## <a name="using-the-pv-camera"></a>Usando a câmera de PV
+
+A textura de webcam pode ser recuperada no jogo em runtime, mas precisa ser habilitada no menu **Editar > Configurações de Projeto** do editor:
+1. Acesse **Plataformas > HoloLens > Funcionalidades** e marque **Webcam**.
+    * Use a função **StartCameraCapture** para usar a webcam em runtime e a função **StopCameraCapture** para interromper a gravação.
+
+![Iniciar/interromper câmera](../images/unreal-camera-startstop.PNG)
+
+## <a name="rendering-an-image"></a>Renderização de uma imagem
+Para renderizar a imagem da câmera:
+1. Crie uma instância de material dinâmico com base em um material no projeto, nomeado **PVCamMat** na captura de tela abaixo.  
+2. Defina a instância de material dinâmico para uma variável de **Referência de Objeto Dinâmico da Instância de Material**.  
+3. Defina o material do objeto na cena que renderizará o feed da câmera para essa nova instância de material dinâmico.
+    * Inicie um temporizador que será usado para associar a imagem da câmera ao material.
+
+![Renderização da câmera](../images/unreal-camera-render.PNG)
+
+4. Crie uma função para esse temporizador (neste caso, **MaterialTimer**) e chame **GetARCameraImage** para obter a textura da webcam.  
+5. Se a textura for válida, defina um parâmetro de textura no sombreador para a imagem.  Caso contrário, inicie o temporizador de material novamente.
+
+![Textura da câmera da webcam](../images/unreal-camera-texture.PNG)
+
+5. Verifique se o material tem um parâmetro que corresponda ao nome em **SetTextureParameterValue** que esteja associado a uma entrada de cor. Sem o parâmetro, a imagem da câmera não pode ser exibida corretamente.
+
+![Textura da câmera](../images/unreal-camera-material.PNG)
 

@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131950"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725767"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Usando a fala no Windows Mixed Reality
 
-Use sua voz para contornar a realidade mista do Windows mais rápida — faça uma foto rápida, abra um aplicativo, até mesmo teleport sem um controlador. E, para uma maneira fácil de digitar, experimente o modo de ditado no teclado de realidade misturada. 
+Você pode usar sua voz para contornar a realidade mista do Windows mais rápida. Fazer uma foto rápida, abrir um aplicativo, até mesmo a teleportabilidade sem um controlador é uma palavra ausente. Para uma maneira fácil de digitar, experimente o modo de ditado no teclado de realidade misturada. 
 
 Está tendo problemas com a fala? [Obter ajuda](using-wmr-faq.md#speech-commands-arent-working)
 
@@ -30,11 +30,11 @@ Está tendo problemas com a fala? [Obter ajuda](using-wmr-faq.md#speech-commands
 
 ## <a name="see-it-say-it"></a>Veja e diga
 
-Na página inicial do Windows Mixed Reality, se você vir uma palavra, geralmente poderá usá-la como um comando de fala. Por exemplo, basta dizer o nome de um botão para selecioná-lo. Se você não vir um nome, aponte seu controlador de movimento no botão (ou, se você estiver usando um gamepad do Xbox, apóie seu olhar) para descobrir o que dizer. 
+Na página inicial do Windows Mixed Reality, se você vir uma palavra, geralmente poderá usá-la como um comando de fala. Por exemplo, basta dizer o nome de um botão para selecioná-lo. Se você não vir um nome, aponte seu controlador de movimento no botão para descobrir o que dizer. Para gamepads do Xbox, coloque seu olhar no botão.
 
 ## <a name="general-speech-commands"></a>Comandos de fala gerais
 
-Use-os em toda a realidade mista do Windows para se tornar mais rápido. Alguns comandos usam o cursor olhar, que você abrirá dizendo "Select".
+Use os seguintes comandos de fala em toda a realidade mista do Windows para obter mais rapidez. Alguns comandos usam o cursor olhar, que você abrirá dizendo "Select".
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
@@ -59,7 +59,7 @@ Olhar em um objeto 3D, um holograma ou uma janela de aplicativo para usar estes 
 | Torná-lo maior | Fiquem |
 | Torná-lo menor | Menor |
 | Transforme-o em seu rosto | Entre em frente |
-| Prepare-se para a mudança – ele seguirá seu olhar | Mover este |
+| Prepare-se para o movimento-ele seguirá seu olhar | Mover este |
 | Coloque-o quando terminar de movê-lo | Posicionar |
 
 ## <a name="app-bar-commands"></a>Comandos da barra de aplicativos
@@ -68,7 +68,7 @@ Olhar em uma janela de aplicativo ou em um objeto 3D para usar estes comandos:
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
-| Fechar um aplicativo ou objeto 3D | Fechar |
+| Fechar um aplicativo ou objeto 3D | Feche |
 | Ajustar algo (redimensionar ou mover) | Ajustar |
 | Parar ajuste | Concluído |
 | Ocultar a barra de aplicativos em um objeto 3D | Ocultar menu |
@@ -129,15 +129,15 @@ Mude para o modo de ditado sempre que o teclado estiver ativo para uma maneira f
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
-| Fechar o teclado | Fechar |
+| Fechar o teclado | Feche |
 | Iniciar ditado | Comece a ditar |
 | Parar ditado | Parar ditado |
-| Excluir o que você acabou de ditar | Excluir esse |
+| Excluir o que você ditau | Excluir esse |
 | Selecione tudo na caixa de ditado | Selecionar tudo |
 
 ### <a name="punctuation"></a>Pontuação
 
-Você precisará dizer os nomes da pontuação que deseja usar. Por exemplo, você pode dizer "Ei **vírgula** o que você está até o **ponto de interrogação** ".
+Você precisará dizer os nomes da pontuação que deseja usar. Por exemplo, você pode dizer "Ei **vírgula** o que você está até o **ponto de interrogação**".
 
 Aqui estão as palavras-chave de pontuação que você pode usar:
 
@@ -148,11 +148,11 @@ Aqui estão as palavras-chave de pontuação que você pode usar:
 * Hashtag, Smiley/Smiley, rosto triste, Winky
 * Dólar, porcentagem
 
-Às vezes, é útil soletrar itens como endereços de email. Por exemplo, para ditar example@outlook.com , você diria "e X A M P L E no Outlook dot com".
+Às vezes, é útil soletrar itens como endereços de email. Por exemplo, para ditar example@outlook.com , você diria "e X A M P L E no Outlook dot-com".
 
-Para parar de ditar, selecione **concluído** .
+Para parar de ditar, selecione **concluído**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

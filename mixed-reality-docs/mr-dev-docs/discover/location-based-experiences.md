@@ -6,18 +6,18 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: realidade misturada, VR, LBE, local, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, hardware, HoloLens, multi-player, serviços de nuvem, Azure
-ms.openlocfilehash: b082153d3d32b2ecee1eb4430cab008819d50ba3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 323981d49c99f5cb175b71645851496bfa1f268c
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702092"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757824"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Entretenimento baseado na localização com realidade do Windows Mixed
 
-Nos últimos anos, testemunhamos uma quantidade incrível de crescimento e inovação na categoria de entretenimento baseada na localização. Os locais tradicionais, como os parques de tema e os teatros, começaram a oferecer experiências de imersão e de vários jogadores como experiências complementares a corridas e instalações existentes. Novos operadores e locais estão trazendo experiências exclusivas de vários sensorials e vários jogadores a um preço atraente para as massas. Todas essas experiências estão empurrando o envelope para saber o que é possível com realidade misturada.
+Nos últimos anos, vimos uma quantidade incrível de crescimento e inovação na categoria de entretenimento baseada na localização. Os locais tradicionais, como os parques de tema e os cinemas, começaram a oferecer experiências de imersão e de vários jogadores como experiências complementares a corridas e instalações existentes. Novos operadores e locais estão trazendo experiências exclusivas de vários sensorials e vários jogadores a um preço atraente para as massas. Todas essas experiências estão empurrando o envelope para saber o que é possível com realidade misturada.
 
-Este documento é um guia para começar a usar a realidade mista do Windows na categoria entretenimento baseado na localização. As diretrizes abaixo também podem ser aplicáveis a experiências baseadas em local além de entretenimento, como treinamento, design de produto ou outros casos de uso.
+Este documento é um guia para começar a usar a realidade mista do Windows na categoria entretenimento baseado na localização. As diretrizes abaixo também podem ser aplicáveis a experiências baseadas em local além de entretenimento, como treinamento, design de produto e outros casos de uso.
 
 ## <a name="engineering-faq"></a>Perguntas frequentes sobre Engenharia
 
@@ -27,7 +27,7 @@ Este documento é um guia para começar a usar a realidade mista do Windows na c
 
 R: a Microsoft e seus parceiros OEM oferecem um portfólio atraente de dispositivos para sua escolha, dependendo de suas necessidades.  
 
-Se as experiências que você está fornecendo aos seus clientes exigem headsets de realidade virtual, os seguintes headsets no mercado da HP, Samsung e Acer são uma ótima opção. Cada headset tem seus próprios atributos diferenciados. Mais detalhes sobre cada um deles.
+Se as experiências que você está fornecendo aos seus clientes exigirem um headset de realidade virtual, os headsets no mercado da HP, Samsung e Acer serão uma ótima opção. Cada headset tem seus próprios atributos diferenciados. Mais detalhes sobre cada um deles.
 
 Reverbo da HP: [detalhes](https://hp.com/go/Reverbpro)
 
@@ -35,11 +35,11 @@ Samsung Odyssey +: [detalhes](https://www.samsung.com/us/computing/hmd/windows-m
 
 Acer: [detalhes](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
 
-Se o seu local for especializado em experiências de realidade mistas ou incrementais que exigem o uso de um headset, você poderá adquirir o Microsoft HoloLens 2 (agora aberto para interesse de ordem anterior).  
+Se seu local for especialista em experiências mistas ou incrementadas de realidade com fones de ouvido, confira o Microsoft HoloLens 2.  
 
 HoloLens 2: [interesse de pré-ordem](https://www.microsoft.com//hololens/buy)
 
-Se você estiver experimentando experiências que exigem visão avançada da computação, fala e controle de corpo, você pode encontrar o Azure Kinect DK para atender às suas necessidades.  
+Se você estiver experimentando experiências que usam visão avançada de computadores, fala e acompanhamento de corpo, o Azure Kinect DK é uma boa opção.  
 
 Kinect do Azure: [detalhes](https://azure.microsoft.com//services/kinect-dk/)
 
@@ -56,25 +56,25 @@ A HP acabou de lançar seu HP VR mochila G2, o PC de portátil mais poderoso do 
 >[!NOTE]
 >Este recurso requer a versão 2000.19061.1011.0 ou superior.  
 
-Você pode achar que precisa de mais personalização do portal de realidade misturada do que normalmente está disponível por meio do aplicativo para implantar aplicativos em quiosques ou experiências personalizadas. A atualização mais recente de julho do portal de realidade misturada dá suporte a várias configurações avançadas que podem ser por meio de um arquivo de configuração para fazer o seguinte:  
+Você pode achar que precisa de mais personalização do portal de realidade misturada do que normalmente está disponível por meio do aplicativo para implantar aplicativos em quiosques ou experiências personalizadas. A atualização mais recente de julho do portal de realidade misturada dá suporte a várias configurações avançadas, que podem ser definidas por meio de um arquivo de configuração:  
 
-Permitir verificações do sistema com falha – normalmente, o processo de instalação verifica a compatibilidade do computador com o Windows Mixed Reality antes de concluir a instalação. Ignorar isso pode causar problemas ao tentar executar a realidade mista do Windows se houver problemas de compatibilidade.  
+Permitir verificações do sistema com falha – normalmente, o processo de instalação verifica a compatibilidade do computador com o Windows Mixed Reality antes de concluir a instalação. Ignorar verificações de compatibilidade pode causar problemas ao tentar executar a realidade mista do Windows se houver problemas de compatibilidade.  
 
 Ignorar aplicativo complementar do dispositivo – o DCA fornece etapas de configuração específicas do headset fornecidas pelo fabricante e permite a atualização do firmware do headset.  
 
-Ignorar a configuração da sala – em vez de ser solicitado a criar um limite de sala, você pode prosseguir diretamente para o headset no modo encaixado/em pé.  
+Ignorar a configuração da sala – em vez de ser solicitado a criar um limite de sala, você pode continuar diretamente no headset no modo encaixado/em pé.  
 
 Ignorar a instalação de aplicativos da loja-a instalação normal instala vários aplicativos da loja, incluindo o visualizador 3D e o complemento do Visualizador do Edge 360. Isso ignorará a instalação desses aplicativos, mas você poderá estar sem a funcionalidade do dispositivo.  
 
 Mostrar visualização em tela inteira – o portal de realidade misturada padrão mostrará a visualização do headset em tela inteira no PC desktop enquanto o headset está em uso.  
 
-Ocultar novo no painel lateral – isso impede que o novo painel para você seja expandido no lançamento do portal de realidade misturada.  
+Ocultar novo no painel lateral – impede que o novo do seu painel seja expandido no lançamento do portal de realidade misturada.  
 
 #### <a name="how-to-configure"></a>Como configurar:  
 
 Para definir qualquer uma dessas configurações, você precisa criar um arquivo chamado _UserConfig.jsneste_ diretório: _$env: localappdata\packages\ Microsoft.MixedReality.Portal_8wekyb3d8bbwe \localstate \\_
 
-Para a maioria dos usuários, isso se parece com _C:\Users \<username> \Appdata\local\packages\ Microsoft.mixedreality.portal_8wekyb3d8bbwe \localstate \\_
+Para a maioria dos usuários, isso terá a seguinte aparência: _C:\Users \<username> \Appdata\local\packages\ Microsoft.mixedreality.portal_8wekyb3d8bbwe \localstate \\_
 
 O arquivo JSON deve ter o conteúdo abaixo com "true" definido para qualquer uma das configurações acima que você deseja habilitar:  
 
@@ -105,11 +105,11 @@ Conforme discutido no documento acima, a Playspace de coordenadas únicas razoá
 Mais detalhes sobre como otimizar o conteúdo para diferentes tamanhos de espaço podem ser lidos [aqui](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems).
  
 
-**P: meu espaço é muito grande e estou executando erros quando tento configurar uma experiência de navegação com limites. O que devo fazer para configurar minha experiência de grande roaming de alta disponibilidade?**
+**P: meu espaço é muito grande e estou executando erros quando tento configurar uma experiência de navegação com limites. O que devo fazer para configurar minha grande experiência de roaming livre funcionar?**
 
-R: para configurar um espaço maior que ~ 18x18ft, você não poderá usar a experiência de limite fornecida pelo sistema.  Os sistemas de limite se baseiam no aproveitamento de uma única "âncora" de coordenada fixa, que pode se tornar instável quando um usuário estiver muito longe da âncora do estágio central. 
+R: para configurar um espaço maior que ~ 18x18ft, você não pode usar a experiência de limite fornecida pelo sistema.  Os sistemas de limite dependem de uma única coordenada fixa "Anchor", que pode se tornar instável quando um usuário estiver muito longe da âncora do estágio central. 
 
-Em vez disso, você pode configurar o modo "encaixado", que não exibirá o limite ou configurará um limite de estágio ou Playspace.  Em seguida, você precisará configurar várias âncoras espaciais dentro do aplicativo para fazer referência a áreas de limite físicas. 
+Você pode configurar o modo "conectado", que não exibirá o limite ou configurará um limite de estágio ou Playspace.  Você precisará configurar várias âncoras espaciais dentro do aplicativo para fazer referência a áreas de limite físicas. 
 
 O desenvolvedor do aplicativo é responsável por exibir as proteções necessárias para que os usuários não colidem com os arredores físicos.  Elas podem ser paredes digitais dentro da experiência ou um Visual personalizado de limite de jogo. 
 
@@ -123,8 +123,8 @@ R: a origem do Playspace é determinada pela experiência de configuração da s
 
 **P: Estou implantando uma experiência de vários jogadores em meu local. Isso tem suporte no Windows Mixed Reality?**
 
-R: se você optar pelas compilações do Windows 20H1 ou posteriores (por meio de nosso [programa Insider](https://docs.microsoft.com/windows-insider/at-home/get-started)), poderá acessar uma nova interface para compartilhamento de mapa. Essa nova funcionalidade está disponível por meio da interface do [Gerenciador de mapa](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) do portal do dispositivo do Windows. Para usar essa ferramenta, siga as etapas abaixo:
-* Certifique-se de que você tenha optado pelo 20H1 ou posterior (a partir de setembro de 2019 isso significa usar nosso programa Insider)
+R: se você optar pela compilação do Windows 20H1 ou posterior por meio de nosso programa Insider, poderá acessar uma nova interface para compartilhamento de mapa. Essa nova funcionalidade está disponível por meio da interface do [Gerenciador de mapa](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) do portal do dispositivo do Windows. Para usar essa ferramenta, siga as etapas abaixo:
+* Certifique-se de que você tenha optado pelo 20H1 ou posterior-após setembro de 2019, isso significa usar nosso programa Insider
 * Habilitar o portal de dispositivos do Windows (WDP) usando estas [instruções](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop)
 * Conecte um HMD de realidade mista do Windows que você deseja baixar um mapa existente ou importar um novo mapa
 * Navegue até o WDP no navegador de sua escolha usando a URL fornecida na tela Configurações.
@@ -136,7 +136,6 @@ R: se você optar pelas compilações do Windows 20H1 ou posteriores (por meio d
 > [!NOTE] 
 > Anteriormente, era possível usar a ferramenta de empacotador de dados espaciais, no entanto, essa ferramenta foi originalmente lançada como sem suporte e agora é oficialmente preterida e não funciona mais em 20H1. Em vez disso, use a ferramenta [Gerenciador de mapa](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) da caixa de entrada, conforme descrito acima. 
 
-  
 ### <a name="tracking"></a>CONTROLE alterações
 
 P: como funciona a tecnologia de rastreamento em headsets de realidade mista do Windows?  
@@ -153,9 +152,9 @@ Para configurar melhor o ambiente para acompanhar o sucesso, você pode ler as p
 
 R: as práticas a seguir podem ajudar com a obtenção de um volume de controle mais confiável:  
 
-Fornecer uma variedade de recursos na sala que se sobrepõem a várias posições ajudará o sistema de controle a obter um bloqueio sólido. Imagine a interlinhagem de pintura aleatória e a hachura, em vez de usar linhas de estilo de delimitação sólida. 
+Fornecer recursos diferentes na sala que se sobrepõem a várias posições ajudará o sistema de controle a obter um bloqueio sólido. Imagine a interlinhagem de pintura aleatória e a hachura, em vez de usar linhas de estilo de delimitação sólida. 
 
-Minimize o intervalo dinâmico de iluminação em sua área sempre que possível. As câmeras de rastreamento em nossa realidade misturada HMDs não são HDR e têm AGC (lucro automático) e o AEC (exposição automática) em ordem para lidar com iluminaçãos diferentes. Dependendo da distribuição da luz da superfície, os padrões e o contraste, AGC ou AEC podem concluir que você está em um quarto de branco ou preto que pode desbotar seus recursos que podem estar na "cor" oposta. Se você estiver tentando pegar uma imagem interior na frente de uma janela exterior com um plano de fundo brilhante e ajustar a exposição para que possa ver os detalhes fora, tudo no interior será doexposto e preto. Ou, se definido para dentro, tudo o que está fora agora estará superexposto e todos os brancos.  
+Minimize o intervalo dinâmico de iluminação em sua área sempre que possível. As câmeras de acompanhamento em nossa realidade misturada HMDs não são HDR e têm AGC (lucro automático) e o AEC (exposição automática) vai lidar com iluminação diferente. Dependendo da distribuição da luz da superfície, padrões e contraste, o AGC ou o AEC pode concluir que você está em um quarto de branco ou preto, o que pode desbotar seus recursos que podem estar na "cor" oposta. Se você estiver tentando pegar uma imagem interior na frente de uma janela exterior com um plano de fundo brilhante e ajustar a exposição para que possa ver os detalhes fora, tudo no interior será doexposto e preto. Ou, se definido para dentro, tudo o que está fora agora estará superexposto e todos os brancos.  
 
 Destaques em uma sala (até mesmo sobrecarga) que estão na exibição se as câmeras de acompanhamento às vezes podem ser culpadas, o que confundi o AEC/AGC das câmeras de acompanhamento. A iluminação plana/difusa ajuda.  
 
@@ -167,7 +166,7 @@ R: o gerenciamento remoto e local com base no Azure podem ajudar sua empresa a s
 
 Gerenciamento de & de implantação de dispositivo remoto 
 
-Análise no local em tempo real 
+Análise no local Real-Time 
 
 LBE cheia de adaptação inteligente 
 
@@ -193,14 +192,14 @@ R: a realidade mista do Windows para SteamVR permite que os usuários executem e
 
 ### <a name="support-and-community"></a>Suporte e comunidade  
 
-Abaixo estão alguns recursos úteis para envolver especialistas em nossa equipe, obter suporte para solução de problemas e contribuir para a comunidade de desenvolvimento de realidade misturada mais ampla.  
+Temos alguns recursos úteis para ajudá-lo a se envolver com especialistas do assunto em nossa equipe, obter suporte para solução de problemas e contribuir com a comunidade de desenvolvimento de realidade misturada mais ampla.  
 
-Se você tiver problemas com recursos lançados publicamente, registre um bug usando o Hub de comentários. para obter diretrizes, consulte esta [página](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback).
+Se você tiver problemas com recursos lançados publicamente, execute um bug usando o Hub de comentários. para obter diretrizes, consulte esta [página](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback).
 
-Para obter ajuda adicional sobre solução de problemas com o WMR, entre em contato com nossa equipe de suporte ao cliente ao arquivar uma [solicitação de suporte](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782).
+Para obter outras ajuda de solução de problemas com o WMR, solucione uma [solicitação de suporte](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) com nossa equipe de suporte ao cliente.
 
-Junte-se ao nosso canal de margem de atraso HoloDevelopers para envolver os desenvolvedores que trabalham em realidade misturada e especialistas no assunto da equipe: [aka.ms/holodevelopers](https://aka.ms/holodevelopers)
+Junte-se ao nosso canal de margem de atraso HoloDevelopers para envolver os desenvolvedores de realidade misturada e especialistas no assunto: [aka.ms/holodevelopers](https://aka.ms/holodevelopers)
 
-Twitter: Siga nossa equipe de relações de desenvolvedor da realidade misturada para notícias, eventos e atualizações @MxdRealityDev 
+Twitter: Siga nossa equipe de relações de desenvolvedor de realidade misturada para notícias, eventos e atualizações @MxdRealityDev 
 
 Se você estiver em ou em volta de San Francisco, sempre haverá algo acontecendo no reator da Microsoft. Você pode ver nosso calendário de eventos [aqui](https://developer.microsoft.com//reactor/Location/San%20Francisco).

@@ -6,20 +6,20 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: notas de versão, versão, Windows 10, Build, 19h1, so, maio de 2019
-ms.openlocfilehash: f5645baa726c68e6da5be949e90515da41d159cb
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783903"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725917"
 ---
 # <a name="release-notes---may-2019"></a>Notas de versão – maio de 2019
 
-A **atualização do Windows 10 de maio de 2019** (também conhecida como 19H1) inclui novos recursos para fones de ouvido do Windows Mixed Reality (VR), como a capacidade de iniciar aplicativos Win32 na página inicial de realidade misturada. O HoloLens (1º gen) está em manutenção a longo prazo (LTS), com atualizações de serviço a serem liberadas mensalmente.
+A **atualização do Windows 10 de maio de 2019** (também conhecida como 19H1) inclui novos recursos para fones de ouvido do Windows Mixed Reality (VR), como a capacidade de iniciar aplicativos Win32 na página inicial de realidade misturada. O HoloLens (1º gen) está em manutenção a longo prazo (LTS), com atualizações de serviço liberadas mensalmente.
 
 Para atualizar para a versão mais recente em headsets do PC para Windows Mixed Reality (VR), abra o aplicativo **configurações** , acesse **Atualizar & segurança** e, em seguida, selecione o botão **verificar atualizações** . Em um PC com Windows 10, você também pode instalar manualmente a atualização do Windows 10 pode 2019 usando a [ferramenta de criação de mídia do Windows](https://www.microsoft.com/software-download/windows10).
 
-**Versão mais recente do desktop:** Atualização de 2019 de maio do Windows 10 ( **10.0.18362.116** )<br>
+**Versão mais recente do desktop:** Atualização de 2019 de maio do Windows 10 (**10.0.18362.116**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Novos recursos para os headsets de imersão de realidade mista do Windows
 
@@ -37,10 +37,10 @@ Para iniciar um aplicativo Win32 no Windows Mixed Reality, abra o painel Pins po
 
 ![Pin_Panel Win32](images/mr-win32-slates-pinspanel.png)
 
-#### <a name="please-help-us-improve"></a>Ajude-nos a melhorar!
+#### <a name="help-us-improve"></a>Ajude-nos a melhorar!
 Estamos continuamente procurando melhorar a compatibilidade.  Se você achar que seu aplicativo Win32 clássico favorito não está se comportando corretamente durante a realidade mista do Windows, envie comentários por meio de nosso [Hub de comentários](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
-## <a name="hololens-1st-gen-long-term-servicing"></a>Serviço de longo prazo do HoloLens (1ª gen)
+## <a name="hololens-1st-gen-long-term-servicing"></a>Serviço de Long-Term do HoloLens (1ª gen)
 
 O HoloLens (1º gen) está inserindo o estado de manutenção em longo prazo (LTS). As atualizações futuras se concentrarão em correções de problemas e de segurança, mantendo, ao mesmo tempo, a paridade de recursos com a [versão de outubro de 2018 do Windows](release-notes-october-2018.md) para o HoloLens (também conhecido como RS5). 
 
@@ -65,7 +65,7 @@ Use o [aplicativo de Hub de comentários em seu PC com Windows 10](https://docs.
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 * [Suporte a headsets de imersão (link externo)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Suporte ao HoloLens (link externo)](https://support.microsoft.com/products/hololens)
 * [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

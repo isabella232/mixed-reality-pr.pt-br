@@ -3,12 +3,12 @@ title: Configurar o Windows Mixed Reality
 description: Como configurar seus controladores de movimento, fala e áudio do Windows Mixed Reality e definir o limite da sala para um espaço de reprodução seguro.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, introdução, instalação, controlador de movimento, controlador, fala, áudio, encaixado, posição, limites, drivers gráficos, Microsoft Edge, Chromium
-ms.openlocfilehash: 693c55a7375dd2cb1b4a6f880fca31ba8d50c7f9
-ms.sourcegitcommit: b90697776b7027ed7eb8dd49a72d52740a16d12d
+ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843124"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725937"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurar o Windows Mixed Reality
 
@@ -42,7 +42,7 @@ Se o seu headset tiver um rádio interno, os controladores que acompanham o head
 
 Se você tiver um headset sem um rádio interno, precisará configurar seus controladores de movimento emparelhando-os com o seu PC. A maioria dos headsets fabricados depois de 2018 tem rádio interno.
 
-Se você estiver planejando apenas usar um gamepad ou teclado e mouse do Xbox, não será necessário emparelhar seus controladores.  Se você já planeja usar controladores, provavelmente deve emparelhar.
+Você não precisa emparelhar seus controladores se estiver planejando apenas usar um gamepad ou teclado ou mouse do Xbox.  Se você planeja usar controladores, deve emparelhar-os.
 
 **Observação**: os controladores de movimento do Windows Mixed Reality requerem o Bluetooth 4,0. Se seu computador não tiver um Bluetooth interno, você precisará conectar um adaptador USB Bluetooth que dá suporte a Bluetooth 4,0 para habilitar seus controladores de movimento. Você não precisa de um adaptador Bluetooth para usar o rádio interno em seu headset.
 
@@ -56,7 +56,7 @@ Escolha uma escala de sala ou experiência de escala de escrivaninha:
 
 **Opção 1: me configurar para todas as experiências (também conhecida como escala de espaço)** permitirá que você percorra a sala e seja a experiência de realidade misturada mais imersiva. É recomendável que você apague pelo menos cinco pés x sete pés (1,5 metros x 2 metros) de espaço para realidade misturada.
 
-**Opção 2: me configurar para a experiência encaixada e em pé (também conhecida como escala de escrivaninha)** funcionará em sua mesa. É uma boa opção se o seu espaço não for grande. Isso também significa que você usará o headset sem um limite. Você precisará permanecer em um só lugar, pois não terá nenhum limite para ajudá-lo a evitar obstáculos físicos. Além disso, alguns aplicativos e jogos são projetados para serem usados com um limite, portanto, eles podem não funcionar conforme o esperado.
+**Opção 2: me configurar para a experiência encaixada e em pé (também conhecida como escala de escrivaninha)** funcionará em sua mesa. É uma boa opção se o seu espaço não for grande. Isso também significa que você usará o headset sem um limite. Você precisará permanecer em um só lugar, pois não terá nenhum limite para ajudá-lo a evitar obstáculos físicos. Alguns aplicativos e jogos não são projetados para serem uma experiência de limite, portanto, eles podem não funcionar conforme o esperado.
 
 ![Escolher uma instalação](images/1050px-chooseasetup.png)
 
@@ -90,7 +90,7 @@ Não há etapas adicionais necessárias se você escolher essa opção.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Qual é o tamanho máximo do limite?
 
-O tamanho máximo de limite com suporte na realidade mista do Windows é um raio 18x18ft (5.7 x 5.7 m) ou 13 pés (4 m) do centro.  O tamanho do limite depende do ponto de ancoragem e da distância do ponto de ancoragem que você pode mover antes de arriscar a estabilidade do limite.  A realidade mista do Windows foi criada em uma abstração de estágio na plataforma, o estágio sendo o espaço que você movimenta. Esse estágio depende de uma única âncora, que quase todos os aplicativos pressupõem: é assim que Naopak e Oculus funcionam também, pois têm apenas um único sistema de coordenadas.  Isso é importante porque com o acompanhamento interno, à medida que você se afasta de um ponto de ancoragem, o controle do headset é confiável para manter o limite estável.  Onde o limite destina-se a evitar obstáculos físicos, ele se torna cada vez mais um problema do centro que você vai.  Dois fatores entraram na decisão sobre o tamanho máximo do limite; a distância máxima na qual o Windows Mixed Reality headsets pode fornecer a melhor experiência em escala de sala com um limite e o comprimento do cabo do headset, que para a maioria dos headsets de realidade misturada do Windows é 10 pés (3 m).
+O tamanho máximo de limite com suporte na realidade mista do Windows é um raio 18x18ft (5.7 x 5.7 m) ou 13 pés (4 m) do centro. O tamanho do limite depende do ponto de ancoragem e da distância do ponto de ancoragem que você pode mover antes de arriscar a estabilidade do limite.  A realidade mista do Windows foi criada em uma abstração de estágio, o estágio sendo o espaço que você movimenta. Esse estágio depende de uma única âncora, que quase todos os aplicativos também presumem – é como Naopak e Oculus funcionam também com seu único sistema de coordenadas.  Isso é importante porque com o acompanhamento interno, à medida que você se afasta de um ponto de ancoragem, o controle do headset é confiável para manter o limite estável.  Onde o limite destina-se a evitar obstáculos físicos, ele se torna mais um problema do centro que você vai.  Dois fatores entraram na decisão sobre o tamanho máximo do limite. A distância máxima na qual o Windows Mixed Reality headsets pode fornecer a melhor experiência em escala de sala com um limite e o comprimento do cabo do headset, que para a maioria dos headsets de realidade misturada do Windows são 10 pés (3 m).
 
 ## <a name="set-up-speech"></a>Configurar a fala
 
@@ -100,7 +100,7 @@ Você pode habilitar comandos da Cortana em realidade misturada, o que permite u
 
 ## <a name="set-up-your-audio-headset"></a>Configurar o headset de áudio
 
-A menos que você tenha comprado um Odyssey do Samsung HMD com fones de ouvido AKG integrados e matriz dupla de microfone, você precisa obter um headset de áudio com microfone e fones de ouvido e conectá-lo à tomada de áudio de 3,5-mm de headset. A tomada de áudio de 3,5-mm para o headset é-dependendo do modelo do headset – localizado na parte inferior do visor do headset ou no final de um cabo de áudio curto anexado ao visor do headset.
+A menos que você tenha comprado um Odyssey do Samsung HMD com fones de ouvido AKG integrados e matriz dupla de microfone, você precisa obter um headset de áudio com microfone e fones de ouvido e conectá-lo à tomada de áudio de 3,5-mm de headset. A tomada de áudio de 3,5-mm para o headset está localizada na parte inferior do visor do headset ou no final de um cabo de áudio curto anexado ao visor do headset, dependendo do modelo do headset.
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Ajustando as configurações de exibição do headset
 
@@ -118,7 +118,9 @@ Se você conectar um headset com exibições de resolução mais alta ao seu PC,
 
 * Essa configuração fornece a opção para a pilha de composição da realidade misturada do Windows para renderizar nativamente (por exemplo, em 4320x2160) ou para que a pilha de composição seja renderizada em uma resolução mais baixa e upscale (por exemplo, render em 2880x1440 e upscale para 4320x2160).
 * A configuração padrão é renderizar nativamente (por exemplo, a opção **4320 x 2160 (melhor qualidade** ) para fornecer a melhor qualidade visual possível do headset.
-* Se o seu computador não atender aos requisitos mínimos de hardware de gráficos para o fone de ouvido com monitores de resolução mais alta ou se você estiver vendo problemas de desempenho de gráficos, tente usar a opção de up- **dimensionamento automático (melhor desempenho)** .
+* Use a opção **redimensionamento automático (melhor desempenho)** se:
+    * Seu PC não atende aos requisitos mínimos de hardware de gráficos para o headset com monitores de resolução mais alta
+    * Você está vendo problemas de desempenho de gráficos
 
 Essa configuração está disponível no Windows 10, versão 1903 ou mais recente.
 
@@ -175,7 +177,7 @@ Para usar o novo Microsoft Edge baseado em Chromium no Windows Mixed Reality Hom
 
 Entrar na realidade misturada uma segunda vez é tão fácil quanto colocar o fone de ouvido de volta enquanto está conectado ao seu PC. Você também pode iniciar o aplicativo do portal da realidade misturada manualmente abrindo-o no menu iniciar. A entrada e o áudio serão roteados automaticamente para o headset quando você o colocar, ou você poderá dispará-lo manualmente pressionando o **Windows + Y** no teclado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

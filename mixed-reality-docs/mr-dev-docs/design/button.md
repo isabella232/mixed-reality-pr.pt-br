@@ -1,65 +1,64 @@
 ---
 title: Botão
-description: Um botão dá ao usuário uma forma de acionar uma ação imediata. É um dos componentes mais fundamentais da realidade misturada.
+description: Saiba como disparar uma ação imediata com botões, que é um dos componentes fundamentais da realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, botão
-ms.openlocfilehash: c5e52bef8604ba4874b7f4b055107ec0db6b3683
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702852"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847590"
 ---
 # <a name="button"></a>Botão
 
 ![Botão](images/UX_Hero_Button.jpg)
 
-Um botão dá ao usuário uma forma de acionar uma ação imediata. É um dos componentes mais fundamentais da realidade misturada. No HoloLens 2, um botão tem muitas indicações visuais e capacidades para aumentar a confiança da interação do usuário. 
-
+Um botão permite que os usuários disparem ações imediatas em uma experiência de realidade misturada. No HoloLens 2, os botões têm indicações visuais e capacidades que ajudam a aumentar a confiança de interação com os usuários. 
 
 :::row:::
     :::column:::
-       ![Mover](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![Botão com efeito de luz de proximidade mostrado](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **Luz de proximidade**<br>
     :::column-end:::
     :::column:::
-       ![Girar](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![Botão selecionado com o efeito de realce de foco mostrado](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **Realce de foco**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![Mover](images/UX_Button_Affordance_Compression.jpg)<br>
+       ![Botão sendo pressionado com o efeito de compartimento de compactação mostrado](images/UX_Button_Affordance_Compression.jpg)<br>
        **Compactando o compartimento**<br>
     :::column-end:::
     :::column:::
-       ![Girar](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![Botão sendo pressionado com efeito de pulso de gatilho mostrado](images/UX_Button_Affordance_Pulse.jpg)<br>
         **Pulso no gatilho**<br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
-
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Botão no MRTK (Kit de ferramentas de realidade misturada) para Unity
-O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece vários tipos de pré-fabricados de botão. Você pode encontrar botões de estilo de Shell para o HoloLens 2 e o HoloLens (1ª gen), bem como exemplos personalizados. O botão do HoloLens 2 pré-fabricado contém muitos capacidades detalhados que ajudam a melhorar a confiança do usuário. Ele inclui o realce baseado em proximidade, a compactação do compartimento frontal e um efeito de pulso no gatilho.
+O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece vários tipos de botão pré-fabricados, incluindo botões de estilo de Shell para o hololens 2 e o hololens (1ª gen). O botão do HoloLens 2 pré-fabricado contém vários capacidades detalhados que ajudam a melhorar a confiança do usuário:
 
-* [MRTK-botão](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* Realce baseado em proximidade
+* Compactando o front-end
+* Efeito de pulso no gatilho.
 
-
+* Confira o [botão MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) para obter mais instruções e exemplos personalizados.
 
 <br>
 
 ---
 
-
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

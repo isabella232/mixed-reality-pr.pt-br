@@ -6,16 +6,16 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, iniciador de aplicativos 3D, headset de imersão, cubo ao vivo, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, UWP, Win32, iluminação, cor
-ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703472"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757724"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>Diretrizes de design do inicializador de aplicativos 3D
 
-Quando você coloca em um headset do Windows Mixed Reality (VR), entra na casa do Windows Mixed Reality, é visualizado como uma casa em uma Cliff cercada por montanhas e água (embora você possa [escolher outros ambientes e até mesmo criar o seu próprio](../design/add-custom-home-environments.md)). No espaço desta página inicial, um usuário é livre para organizar e organizar os objetos 3D e os aplicativos que eles se preocupam de qualquer forma que desejarem. Um **iniciador de aplicativo 3D** é um objeto "físico" na casa de realidade misturada do usuário que pode selecionar para iniciar um aplicativo.
+Quando você coloca em um fone de ouvido (VR) de realidade mista do Windows, entra na página inicial do Windows Mixed Reality. A página inicial é visualizada como uma casa em uma Cliff cercada por montanhas e água, mas você pode [escolher outros ambientes e até mesmo criar seus próprios](../design/add-custom-home-environments.md). No espaço da Home, um usuário é livre para organizar e organizar os objetos 3D e os aplicativos que eles se preocupam de qualquer forma que desejarem. Um **iniciador de aplicativo 3D** é um objeto "físico" na casa de realidade misturada do usuário que pode selecionar para iniciar um aplicativo.
 
 ![Exemplo: inicializador de aplicativo 3D de pássaro flutuante](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Exemplo de inicializador de aplicativo 3D de pássaro flutuante (aplicativo fictício)*
@@ -56,7 +56,7 @@ O inicializador de aplicativos deve se parecer com um objeto que uma pessoa esta
 
 ### <a name="recognizable"></a>Reconhecível
 
-Seu iniciador de aplicativo 3D deve expressar instantaneamente "a marca do aplicativo" para as pessoas que a veem. Se você tiver um caractere de estrela ou um objeto especialmente identificável em seu aplicativo, é recomendável usá-lo como uma grande parte do design. Em um mundo de realidade misturada, um objeto desenhará mais interesse dos usuários do que apenas um logotipo. Os objetos reconhecíveis comunicam a marca de forma rápida e clara.
+Seu iniciador de aplicativo 3D deve expressar instantaneamente "a marca do aplicativo" para as pessoas que a veem. Se você tiver um caractere de estrela ou um objeto especialmente identificável em seu aplicativo, é recomendável usá-lo como uma parte significativa do design. Em um mundo de realidade misturada, um objeto desenhará mais interesse dos usuários do que apenas um logotipo. Os objetos reconhecíveis comunicam a marca de forma rápida e clara.
 
 ### <a name="volumetric"></a>Volumétricos
 
@@ -82,11 +82,11 @@ Seu aplicativo merece mais do que apenas colocar seu logotipo em um plano plano 
 
 ## <a name="tips-for-good-3d-models"></a>Dicas para bons modelos 3D
 
-* Ao planejar dimensões para seu inicializador de aplicativo, retenha para aproximadamente um cubo 30cm. Portanto, uma proporção de tamanho de 1:1:1.
+* Ao planejar dimensões para seu inicializador de aplicativo, tenha em seguida um cubo de 30 cm. Portanto, uma proporção de tamanho de 1:1:1.
 * Os modelos devem estar abaixo de 10.000 polígonos. [Saiba mais sobre contagens de triângulos e níveis de detalhes (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * Teste em um headset de imersão.
 * Crie detalhes na geometria do modelo quando possível – não confie em texturas para obter detalhes.
-* Crie uma geometria de "água justa" fechada. Não há buracos que não são modelados no.
+* Crie uma geometria de "água justa" fechada. Não há buracos que não sejam modelados.
 * Use materiais naturais em seu objeto. Imagine criá-lo no mundo real.
 * Certifique-se de que seu modelo Leia bem em diferentes distâncias e tamanhos.
 * Quando seu modelo estiver pronto para começar, leia as [diretrizes de exportação de ativos](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#asset-requirements-overview).
@@ -105,9 +105,9 @@ Seu aplicativo merece mais do que apenas colocar seu logotipo em um plano plano 
 
 ## <a name="how-to-handle-type"></a>Como tratar o tipo
 
-* Recomendamos que seu tipo seja composto por cerca de 1/3 de seu iniciador de aplicativo (ou mais). O tipo é o principal coisa que dá às pessoas uma ideia de que seu iniciador é, na verdade, um iniciador, portanto, é bom se ele é bastante substancial.
+* Recomendamos que seu tipo ocupe cerca de 1/3 de seu iniciador de aplicativo (ou mais). O tipo é o principal coisa que dá às pessoas uma ideia de que seu iniciador é, na verdade, um iniciador, portanto, é bom se for substancial.
 * Evite fazer o tipo superlargo – tente mantê-lo dentro dos limites das dimensões principais de iniciadores de aplicativo (mais ou menos).
-* O tipo flat pode funcionar, mas lembre-se de que pode ser difícil de exibir alguns ângulos e em determinados ambientes. Você pode considerar colocá-lo em um objeto sólido ou fazer um pano por trás dele para ajudar com isso.
+* O tipo flat pode funcionar, mas pode ser difícil de Exibir de determinados ângulos e em determinados ambientes. Você pode considerar colocá-lo em um objeto sólido ou fazer um pano por trás dele para ajudar com isso.
 * A adição de dimensão ao seu tipo é agradável em 3D. Sombreamento dos lados do tipo uma cor diferente e mais escura pode ajudar na legibilidade.
 
 :::row:::
@@ -144,7 +144,7 @@ As cores de tipo que causam problemas incluem:
 
 ## <a name="lighting"></a>Iluminação
 
-A iluminação para seu inicializador de aplicativos vem do ambiente de casa da Cliff. Certifique-se de testar seu iniciador em vários lugares em toda a casa para que ele fique bom na luz e nas sombras. A boa notícia é que, se você seguiu as outras diretrizes de design deste documento, o iniciador deve estar em uma forma muito boa para a maior parte da luz na casa Cliff.
+A iluminação para seu inicializador de aplicativos vem do ambiente de casa da Cliff. Certifique-se de testar seu iniciador em vários lugares em toda a casa para que ele fique bom na luz e nas sombras. A boa notícia é que, se você seguiu as outras diretrizes de design deste documento, o iniciador deve estar em bom formato para a maior parte da luz na casa Cliff.
 
 Bons lugares para testar como o iniciador analisa as várias luzes no ambiente são o estúdio, a sala de mídia, em qualquer lugar fora e na Patio de fundo (a área concreta com o gramado). Outro bom teste é colocá-lo na metade e na metade da sombra e ver como ele se parece.
 
@@ -168,7 +168,7 @@ O formato final do seu iniciador de aplicativo 3D será um arquivo. glb, que é 
 
 ### <a name="best-practices"></a>Práticas recomendadas
 
-* Se o objeto iniciador do aplicativo foi criado para o PBR, deve ser bem simples convertê-lo para o ambiente de casa Cliff.
+* Se o objeto iniciador do aplicativo foi criado para PBR, deve ser simples convertê-lo para o ambiente Cliff House.
 * Nosso sombreador está esperando um fluxo de trabalho de metal/áspero – o sombreador do PBR inreal é um fax próximo.
 * Ao exportar suas texturas, mantenha os [tamanhos de textura recomendados](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) em mente.
 * Certifique-se de criar seus objetos para iluminação em tempo real – isso significa:
@@ -176,7 +176,7 @@ O formato final do seu iniciador de aplicativo 3D será um arquivo. glb, que é 
   * Evite a iluminação inclusas nas texturas
   * Use um dos pacotes de criação de material do PBR para obter os mapas corretos gerados para nosso sombreador
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Crie modelos 3D para uso na página inicial misturada de realidade](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos UWP)](implementing-3d-app-launchers.md)

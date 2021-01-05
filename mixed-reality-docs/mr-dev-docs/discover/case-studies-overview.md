@@ -1,26 +1,26 @@
 ---
 title: Visão geral do estudo de caso
-description: Histórias, aprendizados e experiências que a equipe de realidade misturada encontrou e jotted ao longo do caminho.
+description: Histórias, aprendizado e experiências que a equipe de realidade mista encontrou e jotted ao longo do caminho.
 author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Realidade mista do Windows, HoloLens, estudo de caso, visão, cenários, estudos de caso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703482"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757644"
 ---
 # <a name="case-study-gallery"></a>Galeria de estudos de caso
 
-Histórias, aprendizados e experiências que a equipe de realidade misturada encontrou e jotted ao longo do caminho.
+Histórias, aprendizado e experiências que a equipe de realidade mista encontrou e jotted ao longo do caminho.
 
 :::row:::
     :::column:::
        [ ![ 3 a interface do usuário do HoloStudio e o design de interação aprendem](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio da interface do usuário e de design de interação](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio foi um dos primeiros aplicativos para o HoloLens. Por isso, tivemos que criar novas práticas recomendadas para a interface do usuário 3D e o design de interação. Fizemos isso por vários testes de usuário, protótipos e avaliação e erro.<br>
+        HoloStudio foi um dos primeiros aplicativos para o HoloLens. Por isso, tivemos que criar novas práticas recomendadas para a interface do usuário 3D e o design de interação. Fizemos isso por meio de testes de usuário, protótipos e avaliação e erro.<br>
         *Julho de 2016*
     :::column-end:::
     :::column:::
@@ -30,7 +30,7 @@ Histórias, aprendizados e experiências que a equipe de realidade misturada enc
     :::column-end:::
     :::column:::
        [ ![ Criando uma experiência de imersão em fragmentos](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) , **[criando uma experiência de imersão em fragmentos](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Os fragmentos são uma inatividade de crime interativo para o Microsoft HoloLens, em que você segue as pistas para resolver um mistério que ocorre em seu espaço do mundo real.<br>
+        Os fragmentos são uma inatividade de crime interativo para o Microsoft HoloLens, onde você segue as pistas para resolver um mistério que ocorre no espaço do mundo real.<br>
         *Agosto de 2016*
     :::column-end:::
 :::row-end:::
@@ -104,7 +104,7 @@ O HoloTour para Microsoft HoloLens fornece Tours pessoais 3D de imersão de loca
         *Agosto de 2016*
     :::column-end:::
     :::column:::
-       [ ![ Capturando e criando conteúdo para HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[capturando e criando conteúdo para HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
+       [ ![ Capturando e criando conteúdo para Machu Pichu HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[capturando e criando conteúdo para HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
         O HoloTour fornece Tours pessoais 3D de imersão de locais de icônico em todo o mundo. Como descobrimos, criar um processamento 3D realmente real de um local conhecido faz uma mistura de wizardry criativa e tecnológica.<br>
         *Agosto de 2016*
     :::column-end:::
@@ -140,7 +140,7 @@ Leia nossos pensamentos de alto nível e entenda os princípios que seguimos.
 :::row:::
     :::column:::
        [ ![ Representar seres humanos em realidade misturada](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) **[que representa seres humanos em realidade misturada](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
-        Que tipo de oportunidades surge quando não podemos criar apenas elementos fantásticos, mas utilizam as capturas mais realistas de ambientes, objetos e pessoas na realidade misturada?<br>
+        Que tipo de oportunidades surge quando não podemos criar elementos fantásticos, mas usar as capturas mais realísticas de ambientes, objetos e pessoas na realidade misturada?<br>
          *Novembro de 2017*
     :::column-end:::
     :::column:::
@@ -158,7 +158,7 @@ Leia nossos pensamentos de alto nível e entenda os princípios que seguimos.
 :::row:::
     :::column:::
        [ ![ Processo-previsão do AfterNow, criação de protótipos, construção](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md) de **[processo de AfterNow, criação de protótipos, construção](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
-        Em AfterNow, trabalhamos com você para transformar suas ideias e aspirações em produtos concretos e totalmente operacionais e experiências prontas para o mercado. Mas antes de escrevermos uma única linha de código, criamos um plano gráfico por meio de um processo chamado previsão.<br>
+        Em AfterNow, trabalhamos com você para transformar suas ideias e aspirações em produtos concretos, totalmente operacionais e experiências prontas para o mercado. Mas antes de escrevermos uma única linha de código, criamos um plano gráfico por meio de um processo chamado previsão.<br>
         *Abril de 2017*
     :::column-end:::
     :::column:::

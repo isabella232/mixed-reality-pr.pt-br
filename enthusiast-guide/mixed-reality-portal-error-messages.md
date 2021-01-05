@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, portal de realidade misturada
 appliesto:
 - Windows 10
-ms.openlocfilehash: 11fa60b16a350d794a08db6a5f6120d88259c9ac
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2beb063afb3aea5f44be116e6cb906312447dbd8
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675538"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726037"
 ---
 # <a name="mixed-reality-portal-error-messages"></a>Mensagens de erro do portal de realidade misturada
 
@@ -29,12 +29,12 @@ Se isso não funcionar, verifique se o seu PC reconhece o headset:
 2. Digite "Gerenciador de dispositivos" na caixa de pesquisa e selecione-o na lista. 
 3. Expanda "dispositivos de realidade misturada" e veja se o headset está listado. 
 
-Se não estiver listado, tente o seguinte:
+Se não estiver listado:
 1. Conecte o headset em portas diferentes no computador, se disponível.
 2. Verifique as atualizações de software mais recentes do Windows Update.
 3. Desinstalar e reinstalar o Windows Mixed Reality:
     1. Desconecte ambos os cabos de headset do seu PC.
-    2. Selecione **configurações > realidade misturada > desinstalar** .
+    2. Selecione **configurações > realidade misturada > desinstalar**.
     3. Selecione **configurações > dispositivos > Bluetooth & outros dispositivos** para desemparelhar seus controladores de movimento. Selecione cada controlador e, em seguida, selecione "remover dispositivo".
     4. Conecte seu headset ao seu PC para reinstalar a realidade mista do Windows.
     
@@ -44,8 +44,8 @@ Conecte seu headset a uma porta USB diferente (e verifique se é um SuperSpeed U
 
 ## <a name="im-getting-a-check-your-display-cable-error-message"></a>Estou recebendo uma mensagem de erro "Verifique seu cabo de vídeo".
 
-Experimente o seguinte:
+Use as etapas a seguir para solucionar o problema:
 * Conecte seu headset a um DisplayPort 1,2 ou posterior, ou HDMI 1,4 ou posterior. Verifique se a porta corresponde à placa gráfica mais avançada em seu computador.
-* Se você estiver usando um adaptador, verifique se ele é compatível com 4K.
+* Se você estiver usando um adaptador, certifique-se de que seu 4K é compatível.
 * Tente usar uma porta HDMI diferente.
 * Se você tiver um monitor externo conectado a uma porta HDMI, tente conectá-lo em um DisplayPort em vez disso e use a porta HDMI para o headset.

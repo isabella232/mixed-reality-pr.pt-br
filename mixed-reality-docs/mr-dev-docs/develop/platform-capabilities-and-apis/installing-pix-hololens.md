@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, captura, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530447"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822919"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Como instalar o PIX para o HoloLens 2
 
@@ -25,7 +25,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 
 3. Habilitar o **modo de desenvolvedor** e o portal do **dispositivo**:
 
-* Abra **as configurações** do Shell:
+* Abra **as configurações** do início da realidade misturada:
 
 ![Captura de tela do menu do HoloLens com o botão Configurações realçado](images/pix-img-01.jpg)
 
@@ -114,5 +114,5 @@ Primeiro, use o portal do dispositivo para verificar se o aplicativo não está 
 
 O PIX agora está pronto para uso!
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 * [Home Page do PIX](https://devblogs.microsoft.com/pix)

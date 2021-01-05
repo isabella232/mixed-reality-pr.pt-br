@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos do sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising, fone de ouvido misto, headset de realidade misturada do Windows, headset da realidade virtual
-ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578895"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757834"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Como enviar um aplicativo para a Microsoft Store
 
@@ -47,7 +47,7 @@ Os seguintes ativos de imagem são necessários para as ferramentas de criação
 |  Logotipo da Store |  75x75 (escala de 150%)  |  PNG  |  Partner Center, aplicativo de relatório, escrever uma revisão, minha biblioteca | 
 |  Splash Screen |  930x450 (escala de 150%)  |  PNG  |  inicializador de aplicativo 2D (Slate) | 
 
-Se você estiver desenvolvendo para o HoloLens, há ativos adicionais recomendados que você pode aproveitar:
+Se você estiver desenvolvendo para o HoloLens, há outros ativos recomendados que você pode aproveitar:
 
 | Ativos recomendados | Escala recomendada | Onde o ativo é exibido? | 
 |----------|----------|----------|
@@ -70,7 +70,7 @@ Você será solicitado a definir o destino e a versão mínima do Windows ao cri
 
 ### <a name="specifying-target-device-families"></a>Especificando famílias de dispositivos de destino
 
-Os aplicativos de realidade mista do Windows (para os [headsets](../discover/immersive-headset-hardware-details.md)de [HoloLens](../hololens-hardware-details.md) e de imersão) fazem parte do plataforma universal do Windows, portanto, qualquer pacote de aplicativo com uma família de dispositivos **Windows. universal** [target](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) pode ser executado em computadores com o HoloLens ou Windows 10 com headsets de imersão. Se você não especificar uma família de dispositivos de destino em seu manifesto de aplicativo, você poderá abrir seu aplicativo inadvertidamente em dispositivos Windows 10 indesejados. Siga as etapas abaixo para especificar a família de dispositivos do Windows 10 pretendida e, em seguida, [Verifique se as famílias de dispositivos corretas estão definidas quando você carrega o pacote do aplicativo no Partner Center para envio de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Os aplicativos de realidade mista do Windows (para os [headsets](../discover/immersive-headset-hardware-details.md)de [HoloLens](../hololens-hardware-details.md) e de imersão) fazem parte do plataforma universal do Windows, portanto, qualquer pacote de aplicativo com uma família de dispositivos **Windows. universal** [target](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) pode ser executado em computadores com o HoloLens ou Windows 10 com headsets de imersão. Se você não especificar uma família de dispositivos de destino em seu manifesto de aplicativo, você poderá abrir seu aplicativo inadvertidamente em dispositivos Windows 10 indesejados. Siga as etapas abaixo para especificar a família de dispositivos do Windows 10 pretendida e, em seguida, [Verifique se você definiu as famílias de dispositivos corretas ao carregar seu pacote de aplicativo no Partner Center para envio de Microsoft Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Para definir esse campo no Visual Studio, clique com o botão direito do mouse em **Package. appxmanifest** e selecione **Exibir código** e localize o campo **nome do TargetDeviceFamily** . Por padrão, ele deve ser semelhante à seguinte entrada:
 
@@ -172,7 +172,7 @@ A plataforma universal do Windows permite que você crie um único aplicativo qu
 
 Se você estiver enviando um aplicativo de realidade misturada baseado em um projeto do Unity, consulte este [vídeo](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) primeiro.
 
-Em geral, o envio de um aplicativo de realidade mista do Windows que funciona em headsets de HoloLens e/ou de imersão é como enviar qualquer aplicativo UWP para o Microsoft Store. Depois de [criar seu aplicativo reservando seu nome](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name), siga a lista de [verificação de envio do UWP](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+Em geral, o envio de um aplicativo de realidade mista do Windows que funciona em headsets de HoloLens ou de imersão é como enviar qualquer aplicativo UWP para o Microsoft Store. Depois de [criar seu aplicativo reservando seu nome](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name), siga a lista de [verificação de envio do UWP](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
 
 Uma das primeiras coisas que você fará é [selecionar uma categoria e uma subcategoria](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) para sua experiência de realidade mista. É importante que você **escolha a categoria mais precisa para seu aplicativo**. As categorias ajudam a proteger seu aplicativo nas categorias de armazenamento corretas e a garantir que ele apareça usando consultas de pesquisa relevantes. **Listar seu título VR como um jogo não resultará em melhor exposição para seu aplicativo** e poderá impedi-lo de aparecer em categorias que estão mais ajustadas e menos lotadas.
 
@@ -192,7 +192,7 @@ Declarações de produto da realidade misturada
 Primeiro, você precisa identificar os tipos de dispositivo para os quais seu aplicativo oferece uma experiência de realidade mista. Identificar tipos de dispositivo garante que seu aplicativo esteja incluído em coleções de realidade mista do Windows na loja.
 
 Ao lado de "esta experiência foi projetada para a realidade mista do Windows em:"
-* Marque a caixa **PC** se seu aplicativo oferecer uma experiência VR quando um headset de imersão estiver conectado ao PC do usuário. É recomendável marcar essa caixa se seu aplicativo estiver definido para ser executado exclusivamente em um headset de imersão ou se for um jogo de PC padrão ou um aplicativo que ofereça um modo de realidade misturada e/ou conteúdo de bônus quando um headset estiver conectado.
+* Marque a caixa **PC** se seu aplicativo oferecer uma experiência VR quando um headset de imersão estiver conectado ao PC do usuário. É recomendável marcar essa caixa se seu aplicativo estiver definido para ser executado exclusivamente em um headset de imersão ou se for um jogo de PC padrão ou um aplicativo que ofereça um modo de realidade misturada ou conteúdo de bônus quando um headset estiver conectado.
 * Marque a caixa **HoloLens** somente se seu aplicativo oferecer uma experiência Holographic quando for executado no HoloLens.
 * Marque **ambas as** caixas se seu aplicativo oferecer uma experiência de realidade mista em ambos os tipos de dispositivo.
 
@@ -205,13 +205,13 @@ Se você selecionou "PC" acima, convém definir a "configuração de realidade m
 Na página **[Propriedades](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)** do processo de envio do aplicativo, você encontrará várias opções relacionadas à realidade misturada na seção **[requisitos do sistema](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties#system-requirements)** .
 
 ![Requisitos do sistema](images/system-reqs-800px.png)<br>
-Requisitos de sistema
+Requisitos do sistema
 
 Nesta seção, você identificará o hardware mínimo (necessário) e o hardware recomendado (opcional) para seu aplicativo de realidade misturada.
 
 **Hardware de entrada:**
 
-Use as caixas de seleção para informar aos clientes potenciais se seu aplicativo dá suporte a **microfone** para [entrada de voz](../design/voice-input.md)), **[controlador Xbox ou gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)** e/ou **[controladores de movimento do Windows Mixed Reality](../design/motion-controllers.md)**. Essas informações serão apresentadas na página de detalhes do produto do aplicativo na loja e ajudarão seu aplicativo a ser incluído nas coleções de jogos/aplicativos apropriadas. Por exemplo, pode haver uma coleção para todos os jogos que dão suporte a controladores de movimento.
+Use as caixas de seleção para informar aos clientes potenciais se seu aplicativo dá suporte a **microfone** para [entrada de voz](../design/voice-input.md)), **[controlador Xbox ou gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)** ou **[controladores de movimento do Windows Mixed Reality](../design/motion-controllers.md)**. Essas informações serão apresentadas na página de detalhes do produto do aplicativo na loja e ajudarão seu aplicativo a ser incluído nas coleções de jogos/aplicativos apropriadas. Por exemplo, pode haver uma coleção para todos os jogos que dão suporte a controladores de movimento.
 
 Tenha em consideração a seleção de caixas de seleção para "hardware mínimo" ou "hardware recomendado" para tipos de entrada. 
 
@@ -266,8 +266,8 @@ Adicionar "realidade mista do Windows" aos termos de pesquisa
 
 Em muitos casos, seus consumidores terão se limitado a nenhuma experiência com a realidade virtual antes de comprar um headset de imersão de realidade mista do Windows. Eles podem não saber o que esperar de jogos intensos ou estar familiarizados com seu próprio limite de conforto em experiências de imersão. Muitos clientes também podem experimentar um headset de imersão de realidade misturada do Windows em computadores que não são crachás como [PCs com realidade do Windows Mixed](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). Devido a essas considerações, é altamente recomendável que você considere a possibilidade de oferecer uma [avaliação gratuita](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) para seu aplicativo de realidade mista ou jogo pago.
 
-## <a name="see-also"></a>Confira também
-* [O que é Realidade Misturada?](../discover/mixed-reality.md)
+## <a name="see-also"></a>Consulte também
+* [O que é realidade misturada?](../discover/mixed-reality.md)
 * [Visão geral do desenvolvimento](../develop/development.md)
 * [Modos de exibição do aplicativo](../design/app-views.md)
 * [Entendendo o desempenho da realidade misturada](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

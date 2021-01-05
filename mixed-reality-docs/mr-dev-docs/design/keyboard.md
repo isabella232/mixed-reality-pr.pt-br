@@ -6,19 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, teclado, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703142"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847277"
 ---
 # <a name="keyboard"></a>Teclado
 
 ![Teclado](images/UX_Hero_Keyboard.jpg)
 
-Seu aplicativo de realidade misturada pode invocar o teclado do sistema a qualquer momento. Observe que o teclado do sistema se comportará de acordo com os recursos da plataforma de destino, por exemplo, o teclado no HoloLens 2 dá suporte a interações diretas, enquanto o teclado no HoloLens (1ª gen) dá suporte à entrada de gesto olhar e Air-Tap.
-
+Seu aplicativo de realidade misturada pode invocar o teclado do sistema a qualquer momento, que se comporta de acordo com os recursos da plataforma de destino. Por exemplo, o teclado no HoloLens 2 dá suporte a interações diretas, enquanto que o HoloLens (1ª gen) oferece suporte a olhar e toques de ar.
 
 <br>
 
@@ -34,12 +33,12 @@ Seu aplicativo de realidade misturada pode invocar o teclado do sistema a qualqu
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, sua próxima tarefa é implantar seu aplicativo em um dispositivo ou emulador. 
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, sua próxima tarefa é implantar seu aplicativo em um dispositivo ou emulador. 
 
 > [!div class="nextstepaction"]
 > [Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

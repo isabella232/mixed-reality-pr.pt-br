@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Realidade misturada, olhar, pesquisa, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, UX, diretrizes, exibição de lista
-ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702312"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847371"
 ---
 # <a name="head-gaze-and-dwell"></a>Focar com a cabeça e esperar
 
@@ -19,7 +19,7 @@ Quando as mãos estão ocupadas com ferramentas e peças, os gestos podem ser en
 
 ## <a name="scenarios"></a>Cenários
 
-A olhar e a pesquisa são Excel em cenários nos quais as mãos de uma pessoa estão ocupadas com outras tarefas, e a voz não é 100% confiável ou está disponível devido a restrições ambientais ou sociais. Um bom exemplo é uma pessoa que usa o HoloLens para sobrepor informações de referência ao realizar reparos no motor de um carro. Suas mãos estão ocupadas com ferramentas ou para apoiar o corpo conforme acessa o compartimento do motor. O ambiente da garagem é barulhento, com estrondos e zumbidos constantes de ferramentas, o que dificulta os comandos de voz. O Head-olhar e a pesquisa permitem que a pessoa que usa o HoloLens Navegue com confiança no material de referência sem interromper o fluxo de trabalho. 
+O Head-olhar e a pesquisa são ótimos em cenários nos quais as mãos de uma pessoa estão ocupadas com outras tarefas. O recurso também é útil quando a voz não é 100% confiável ou está disponível devido a restrições de ambiente ou sociais. Um bom exemplo é uma pessoa que usa o HoloLens para sobrepor informações de referência ao realizar reparos no motor de um carro. Suas mãos estão ocupadas com ferramentas ou para apoiar o corpo conforme acessa o compartimento do motor. O ambiente da garagem é barulhento, com estrondos e zumbidos constantes de ferramentas, o que dificulta os comandos de voz. O Head-olhar e a pesquisa permitem que a pessoa que usa o HoloLens Navegue com confiança no material de referência sem interromper o fluxo de trabalho. 
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -49,7 +49,7 @@ A olhar e a pesquisa são Excel em cenários nos quais as mãos de uma pessoa es
 
 **Evitar "Mirar como uma arma"**
 
-A ação de focar com a cabeça e esperar exige que o retorno visual seja intuitivo, mas seu excesso pode induzir a ansiedade. Os retornos devem ajudar um usuário a saber o que está sendo focalizando, mas não selecionar automaticamente se essa não for sua intenção. Ler textos, ícones e rótulos exige consideração adicional para dar tempo para a pessoa absorver as informações antes de selecionar.
+A ação de focar com a cabeça e esperar exige que o retorno visual seja intuitivo, mas seu excesso pode induzir a ansiedade. Os comentários devem ajudar um usuário a saber o que eles estão direcionando, mas não selecioná-lo em sua intenção. Ao ler texto, ícones e rótulos, você precisa fornecer ao usuário tempo para absorver as informações antes de selecionar.
     
 **Buscar a velocidade ideal**
     
@@ -57,37 +57,38 @@ As interações de espera podem ter tempos diferentes com base no impacto na nav
     
 **Acabar com o efeito ioiô**
 
-O efeito ioiô é um padrão desconfortável de movimentação da cabeça que pode surgir quando o posicionamento do conteúdo e dos controles de focar com a cabeça e esperar força as pessoas a olharem para cima e para baixo repetidamente. Por exemplo, uma barra de navegação de lista com o botão de olhar e de duração na parte inferior induzi um loop de-Look to acessation, look up in Results, olhe Down to acessation, etc. Esse padrão resultante é desconfortável e deve ser evitado colocando-se controles de navegação em um local centralizado que requer menos suporte. O posicionamento dos botões de espera próximo aos seus efeitos é importante para o conforto.
-
+O efeito de Yo-Yo é um padrão de movimento de cabeça desconfortável que ocorre quando os controles de colocação de conteúdo e de cabeçalho/olhar de pesquisa forçam as pessoas a Pesquisar e reduzir repetidamente. Por exemplo, uma barra de navegação de lista com o botão de olhar e de duração na parte inferior induzi um loop de-Olhe para a pesquisa, pesquisa em resultados, olha para a pesquisa e assim por diante. O padrão resultante é desconfortável, portanto, é recomendável colocar controles de navegação em um local centralizado que exija menos suporte. O posicionamento de botões de pesquisa com base em seus efeitos se torna importante para o conforto.
+s
 <br>
 
 ---
 
-
 ## <a name="ux-guidelines-and-best-practices"></a>Diretrizes e práticas recomendadas para a experiência do usuário
 
 ### <a name="target-sizes"></a>Tamanhos do alvo
-  Para ser facilmente acessível, os destinos de olhar e de duração de pesquisa precisam ser grandes o suficiente para examinar de maneira confortável e manter um rumo estável no destino pelo tempo prescrito. Recomendamos um tamanho mínimo de destino de 2 graus para alcançar a experiência mais confortável. 
+
+Para ser facilmente acessível, os destinos de olhar e de pesquisa precisam ser grandes o suficiente para examinar confortavelmente e manter uma cabeça estável no destino pelo tempo prescrito. Recomendamos um tamanho mínimo de destino de 2 graus para alcançar a experiência mais confortável. 
 
 ### <a name="visual-feedback"></a>Feedback visual
 
 Ao usar um preenchimento radial para representar o tempo de espera, comece do centro do botão. Uma resposta consistente é menos confusa que diferentes direções em botões diferentes. 
 
-  * Essa regra não precisa ser seguida para interações direcionais (por exemplo, navegação para cima/para baixo/para a esquerda/para a direita etc.). Por exemplo, os Guias do Microsoft Dynamics 365 fazem uma exceção a essa regra nos botões AVANÇAR/VOLTAR, que são preenchidos da esquerda para a direita.
-  * Considere a possibilidade de inverter o preenchimento radial, de fora para dentro, em cenários que exigem a ativação/desativação de um botão de alternância, por exemplo. A sensação inversa de apertar um botão é um padrão visual adequado para manter. 
+  * Essa regra pode ser quebrada no entanto para interações direcionais (por exemplo, NAV up/down/esquerda/direita e assim por diante). Por exemplo, os Guias do Microsoft Dynamics 365 fazem uma exceção a essa regra nos botões AVANÇAR/VOLTAR, que são preenchidos da esquerda para a direita.
+  * Considere inverter o preenchimento radial de fora, para cenários como alternar para fora de um botão. A sensação inversa de apertar um botão é um padrão visual adequado para manter. 
 
 ### <a name="progressive-disclosure"></a>Divulgação progressiva
 
-A divulgação progressiva significa mostrar apenas a quantidade de detalhes relevante em cada estágio de uma interação. Para a espera, isso significa que o alvo é revelado no realce (por exemplo, em um controle de lista).
+A divulgação progressiva significa mostrar apenas a quantidade de detalhes relevante em cada estágio de uma interação. Para a pesquisa, isso significa que o destino de pesquisa é revelado no realce (por exemplo, em um controle de lista).
 
  ### <a name="oversized-targets"></a>Alvos muito grandes
+
 A região de espera pode ser maior do que o ícone inativo para facilitar o uso, como o botão Voltar nos Guias do Microsoft Dynamics 365.
 
 ### <a name="prevent-flickering-with-delayed-feedback"></a>Evite a cintilação usando retornos atrasados
-Aplique um pequeno atraso antes de iniciar o retorno visual para evitar cintilação ao passar sobre um alvo de espera.
-* Para botões interagir com frequência, mantenha o atraso muito curto para que o aplicativo se sinta reativo.
-* Para botões que são interagindo com pouca frequência, um atraso mais longo pode ser apropriado para evitar que a interface se sinta twitchy.
 
+Aplique um pequeno atraso antes de iniciar o retorno visual para evitar cintilação ao passar sobre um alvo de espera.
+* Para botões interagir com frequência, mantenha o atraso curto para que o aplicativo se sinta reativo.
+* Para botões que são interagindo com pouca frequência, um atraso mais longo pode ser apropriado para evitar que a interface se sinta twitchy.
 
 <br>
 
@@ -118,7 +119,8 @@ Aplique um pequeno atraso antes de iniciar o retorno visual para evitar cintila�
 
 
 ### <a name="low-frequency-buttons"></a>Botões de baixa frequência
-Botões de baixa frequência são botões que não são regularmente usados no aplicativo. Um bom exemplo é um botão para acessar o menu de configurações ou um botão para limpar toda a tarefa.
+
+Os botões de baixa frequência são botões que não são interagindo com o mais regular em todo o aplicativo. Um bom exemplo é um botão para acessar o menu de configurações ou um botão para limpar toda a tarefa.
 
 * Tente manter esses botões longe dos caminhos de ações frequentes de focar com a cabeça para evitar ativação acidental. 
 
@@ -130,7 +132,7 @@ Botões de baixa frequência são botões que não são regularmente usados no a
 
 :::row:::
     :::column:::
-        Quando uma ação tem um impacto significativo, como cobrar dinheiro, excluir uma tarefa ou iniciar um processo longo, é útil confirmar se a pessoa teve a intenção de selecionar o botão.<br>
+        Quando uma ação tem um impacto significativo, como cobrar dinheiro, excluir trabalho ou iniciar um longo processo, é útil confirmar que uma pessoa pretendia selecionar um botão.<br>
         <br>
         **Recomendações**<br>
   * Mostre o realce de seleção no botão principal.
@@ -149,7 +151,8 @@ Botões de baixa frequência são botões que não são regularmente usados no a
 ---
 
 ### <a name="toggle-buttons"></a>Botões de alternância
-Botões de alternância exigem uma lógica sutil para funcionarem corretamente. Quando uma pessoa olha fixo para um botão de alternância e o ativa, ela precisa sair do botão e retornar para reiniciar a lógica de espera. É importante que os botões de alternância tenham estados ativo e inativo claros. 
+
+Botões de alternância exigem uma lógica sutil para funcionarem corretamente. Quando uma pessoa faz uma pesquisa em um botão de alternância e a ativa, ela precisa sair do botão e retornar para reiniciar a lógica de duração. É importante que os botões de alternância tenham um estado claro ativo versus inativo. 
 
 <br>
 
@@ -159,7 +162,7 @@ Botões de alternância exigem uma lógica sutil para funcionarem corretamente. 
 
 :::row:::
     :::column:::
-        As exibições de lista apresentam um desafio específico para a entrada de olhar e de duração da pesquisa. As pessoas devem poder verificar o conteúdo sem sentirem que precisam tomar cuidado com os alvos de espera.<br>
+        As exibições de lista apresentam um desafio específico para a entrada de olhar e de duração da pesquisa. As pessoas podem digitalizar o conteúdo sem se sentir que precisam tiptoer os destinos de pesquisa.<br>
         <br>
 **Recomendações**<br>
   * Tenha toda a linha realçada quando Head-gazed, mas não inicia a pesquisa, a menos que Head-olhar esteja no destino de duração específico.
@@ -179,7 +182,8 @@ Botões de alternância exigem uma lógica sutil para funcionarem corretamente. 
 
 ---
  
- ## <a name="see-also"></a>Veja também
+ ## <a name="see-also"></a>Consulte também
+
 * [Focar e confirmar](gaze-and-commit.md)
 * [Mãos – Manipulação direta](direct-manipulation.md)
 * [Mãos – Gestos](gaze-and-commit.md#composite-gestures)

@@ -6,16 +6,18 @@ ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
 keywords: Realidade misturada, mãos, controladores de movimento, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1dffdd5f3471993dfdb5e504e4c5b87ec0bfef7d
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702152"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847319"
 ---
 # <a name="hands-and-motion-controllers"></a>Controladores de mãos e de movimento
+
 ## <a name="scenarios"></a>Cenários
-Se você optar por adotar esse modelo de interação depois de ler a [visão geral da interação](interaction-fundamentals.md), significa que você está desenvolvendo um aplicativo que exige que os usuários usem duas mãos para interagir com o Holographic World. Seu aplicativo vai atingir o objetivo de remover o limite entre virtual e físico.
+
+Depois de ler a [visão geral da interação](interaction-fundamentals.md), você escolhe o modelo de interação do controlador de mão e de movimento. Isso significa que você está desenvolvendo um aplicativo que exige que os usuários usem duas mãos para interagir com o mundo Holographic. Seu aplicativo vai atingir o objetivo de remover o limite entre virtual e físico.
 
 Alguns cenários específicos podem ser:
 * Fornecimento de telas virtuais 2D a profissionais da informação, com funcionalidades de UI (interface do usuário) para exibir e controlar o conteúdo
@@ -34,7 +36,7 @@ Alguns cenários específicos podem ser:
     :::column:::
        [![Manipulação direta com as mãos](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
        ### <a name="direct-manipulation-with-handsbr"></a>[Manipulação direta com as mãos](direct-manipulation.md)<br>
-       Essa é uma modalidade que aproveita o poder das mãos, com as quais os usuários são capazes de tocar e manipular os hologramas diretamente. Aproveitando as experiências diárias de vida e fornecendo uma capacidades Visual adequada, os usuários podem usar a mesma maneira de manipular objetos reais para interagir com os virtuais.
+       A modalidade aplica a potência das mãos que os usuários podem usar para tocar e manipular hologramas. Usando experiências diárias de vida e fornecendo capacidades visuais adequados, os usuários podem usar a mesma maneira de manipular objetos reais para interagir com os virtuais.
     :::column-end:::
     :::column:::
        [![Apontar e confirmar com as mãos](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
@@ -42,9 +44,9 @@ Alguns cenários específicos podem ser:
         Essa modalidade permite que os usuários interajam com os hologramas em uma distância. Ele permite que os usuários façam o melhor uso de arredores. Os usuários podem posicionar os hologramas em qualquer lugar e ainda acessá-los de qualquer distância. Os modelos mentales e gestos para controlar e manipular os hologramas 2D e 3D são altamente sincronizados com aqueles de manipulação direta.
     :::column-end:::
     :::column:::
-       [![Controladores de movimentos](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
+       [![Controladores de movimento](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
        ### <a name="motion-controllersbr"></a>[Controladores de movimentos](motion-controllers.md)<br>
-       Os controladores de movimento são ferramentas que estendem os recursos físicos do usuário, fornecendo interações precisas em uma grande variedade de distâncias ao usar uma ou ambas as mãos. Esses acessórios de hardware fornecem atalhos para muitas interações usadas com frequência e fornecem comentários de Surefooted, tactile para uma variedade de ações. Atualmente, os controladores de movimento só estão disponíveis para cenários de WMR (realidade mista do Windows). 
+       Os controladores de movimento estendem os recursos físicos do usuário com interações precisas em um intervalo de distâncias durante o uso de uma ou de ambas as mãos. Esses acessórios de hardware fornecem atalhos para muitas interações usadas com frequência e fornecem comentários tactiles e com rodapé para várias ações. Atualmente, os controladores de movimento só estão disponíveis para cenários de WMR (realidade mista do Windows). 
     :::column-end:::
 :::row-end:::
 

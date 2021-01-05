@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logotipo, ícone, modelagem, iniciador, iniciador 3D, bloco, cubo ao vivo, link profundo, secondarytile, bloco secundário, UWP, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, XML, caixa delimitadora, Unity
-ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703192"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757487"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementar inicializadores de aplicativos 3D (aplicativos UWP)
 
 > [!NOTE]
 > Esse recurso foi adicionado como parte da RS3 (atualização para criadores de outono do 2017) para headsets de imersão e tem suporte do HoloLens com a atualização do Windows 10 de abril de 2018. Verifique se seu aplicativo está direcionando para uma versão do SDK do Windows maior ou igual a 10.0.16299 em headsets de imersão e 10.0.17125 no HoloLens. Você pode encontrar as SDK do Windows mais recentes [aqui](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-O [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md) é o ponto de partida onde os usuários vão antes de iniciar os aplicativos. Ao criar um aplicativo UWP para a realidade mista do Windows, por padrão, os aplicativos são iniciados como slates 2D com o logotipo do aplicativo. Ao desenvolver experiências para a realidade mista do Windows, um iniciador 3D pode, opcionalmente, ser definido para substituir o inicializador 2D padrão para seu aplicativo. Em geral, os iniciadores 3D são recomendados para iniciar aplicativos de imersão que levam os usuários da casa do Windows Mixed Realm, enquanto o inicializador 2D padrão é preferencial quando o aplicativo é ativado no local. Você também pode criar um [link de 3D Deep (secondaryTile)](#3d-deep-links-secondarytiles) como um iniciador 3D para o conteúdo em um aplicativo UWP 2D.
+O [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md) é o ponto de partida onde os usuários vão antes de iniciar os aplicativos. Ao criar um aplicativo UWP para a realidade mista do Windows, por padrão, os aplicativos são iniciados como slates 2D com o logotipo do aplicativo. Ao desenvolver experiências para a realidade mista do Windows, um iniciador 3D pode, opcionalmente, ser definido para substituir o inicializador 2D padrão para seu aplicativo. Em geral, os iniciadores 3D são recomendados para iniciar aplicativos de imersão que levam os usuários da casa do Windows Mixed Reality. O inicializador 2D padrão é preferencial quando o aplicativo é ativado no local. Você também pode criar um [link de 3D Deep (secondaryTile)](#3d-deep-links-secondarytiles) como um iniciador 3D para o conteúdo em um aplicativo UWP 2D.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -72,7 +72,7 @@ Em seguida, especifique o "MixedRealityModel" no bloco padrão para seu aplicati
 </Applications>
 ```
 
-Os elementos MixedRealityModel aceitam um caminho de arquivo que aponta para um ativo 3D armazenado em seu pacote de aplicativo. Atualmente, apenas modelos 3D entregues usando o formato de arquivo. glb e criados em relação às [instruções de criação de ativos 3D da realidade do Windows Mixed](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) têm suporte. Os ativos devem ser armazenados no pacote do aplicativo e a animação não tem suporte no momento. Se o parâmetro "Path" for deixado em branco, o Windows mostrará o Tablet 2D em vez do iniciador 3D. **Observação:** o ativo. glb deve ser marcado como "conteúdo" em suas configurações de compilação antes de compilar e executar seu aplicativo.
+O elemento MixedRealityModel aceita um caminho de arquivo que aponta para um ativo 3D armazenado em seu pacote de aplicativo. Atualmente, apenas modelos 3D entregues usando o formato de arquivo. glb e criados em relação às [instruções de criação de ativos 3D da realidade do Windows Mixed](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) têm suporte. Os ativos devem ser armazenados no pacote do aplicativo e a animação não tem suporte no momento. Se o parâmetro "Path" for deixado em branco, o Windows mostrará o Tablet 2D em vez do iniciador 3D. **Observação:** o ativo. glb deve ser marcado como "conteúdo" em suas configurações de compilação antes de compilar e executar seu aplicativo.
 
 
 ![Selecione o. glb no Gerenciador de soluções e use a seção Propriedades para marcá-lo como "conteúdo" nas configurações de compilação](images/buildsetting-content-300px.png)<br>
@@ -80,7 +80,7 @@ Os elementos MixedRealityModel aceitam um caminho de arquivo que aponta para um 
 
 ### <a name="bounding-box"></a>Caixa delimitadora
 
-Uma caixa delimitadora pode ser usada para adicionar opcionalmente uma região de buffer adicional ao objeto. A caixa delimitadora é especificada usando um ponto central e extensões que indicam a distância do centro da caixa delimitadora às suas bordas ao longo de cada eixo. As unidades da caixa delimitadora podem ser mapeadas para 1 unidade = 1 medidor. Se uma caixa delimitadora não for fornecida, uma será ajustada automaticamente para a malha do objeto. Se a caixa delimitadora fornecida for menor do que o modelo, ela será redimensionada para se ajustar à malha.
+Uma caixa delimitadora pode ser usada para adicionar opcionalmente uma região extra do buffer ao objeto. A caixa delimitadora é especificada usando um ponto central e extensões, que indicam a distância do centro da caixa delimitadora às suas bordas ao longo de cada eixo. As unidades da caixa delimitadora podem ser mapeadas para 1 unidade = 1 medidor. Se uma caixa delimitadora não for fornecida, uma será ajustada automaticamente à malha do objeto. Se a caixa delimitadora fornecida for menor que o modelo, ela será redimensionada para se ajustar à malha.
 
 O suporte para o atributo da caixa delimitadora será fornecido com a atualização RS4 do Windows como uma propriedade no elemento MixedRealityModel. Para definir uma caixa delimitadora primeiro na parte superior do manifesto do aplicativo, adicione o esquema uap6 e inclua-o como namespaces ignoráveis:
 
@@ -157,7 +157,7 @@ await tile.RequestCreateAsync();
 
 ### <a name="bounding-box"></a>Caixa delimitadora
 
-Uma caixa delimitadora pode ser usada para adicionar uma região de buffer adicional em volta do objeto. A caixa delimitadora é especificada usando um ponto central e extensões que indicam a distância do centro da caixa delimitadora às suas bordas ao longo de cada eixo. As unidades da caixa delimitadora podem ser mapeadas para 1 unidade = 1 medidor. Se uma caixa delimitadora não for fornecida, uma será ajustada automaticamente para a malha do objeto. Se a caixa delimitadora fornecida for menor do que o modelo, ela será redimensionada para se ajustar à malha.
+Uma caixa delimitadora pode ser usada para adicionar uma região extra do buffer ao objeto. A caixa delimitadora é especificada usando um ponto central e extensões, que indicam a distância do centro da caixa delimitadora às suas bordas ao longo de cada eixo. As unidades da caixa delimitadora podem ser mapeadas para 1 unidade = 1 medidor. Se uma caixa delimitadora não for fornecida, uma será ajustada automaticamente à malha do objeto. Se a caixa delimitadora fornecida for menor que o modelo, ela será redimensionada para se ajustar à malha.
 
 ### <a name="activation-behavior"></a>Comportamento de ativação
 
@@ -166,7 +166,7 @@ Uma caixa delimitadora pode ser usada para adicionar uma região de buffer adici
 
 Você pode definir o comportamento de ativação para um secondaryTile 3D para controlar como ele reage quando um usuário o seleciona. Isso pode ser usado para posicionar objetos 3D na casa misturada da realidade, que são puramente informativas ou decorativas. Há suporte para os seguintes tipos de comportamento de ativação:
 1. Padrão: quando um usuário seleciona o secondaryTile 3D, o aplicativo é ativado
-2. Nenhum: quando os usuários selecionam o 3D secondaryTile, nada acontece e o aplicativo não é ativado.
+2. Nenhum: quando o usuário seleciona o 3D secondaryTile, nada acontece e o aplicativo não é ativado.
 
 ### <a name="obtaining-and-updating-an-existing-secondarytile"></a>Obtendo e atualizando um "secondaryTile" existente
 
@@ -195,14 +195,15 @@ os links de 3D Deep (secondaryTiles) só podem ser criados enquanto a exibição
 
 ## <a name="tile-notifications"></a>Notificações de bloco
 
-No momento, as notificações de bloco não dão suporte ao envio de uma atualização com um ativo 3D. Isso significa que os desenvolvedores não poderão fazer o seguinte
+Notificações de bloco atualmente não dão suporte ao envio de uma atualização com um ativo 3D. Isso significa que os desenvolvedores não podem fazer o seguinte:
+
 * Notificações por Push
 * Sondagem periódica
 * Notificações agendadas
 
-Para obter mais informações sobre os outros recursos e atributos de blocos e como eles são usados para blocos 2D, consulte a [documentação de blocos para aplicativos UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+Para obter mais informações sobre os outros recursos e atributos de blocos e como eles são usados para blocos 2D, consulte a [documentação blocos para aplicativos UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Exemplo de modelo de realidade misturada](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) que contém um iniciador de aplicativo 3D.
 * [Diretrizes de projeto do inicializador de aplicativos 3D](3d-app-launcher-design-guidance.md)

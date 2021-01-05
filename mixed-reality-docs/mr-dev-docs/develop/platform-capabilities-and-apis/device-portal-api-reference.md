@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, portal de dispositivos Windows, API, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
+ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677965"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97804424"
 ---
 # <a name="device-portal-api-reference"></a>Referência de API do portal de dispositivos
 
@@ -389,6 +389,9 @@ Interrompe a gravação atual da realidade misturada
 
 ## <a name="mixed-reality-streaming"></a>Streaming de realidade misturada
 
+> [!CAUTION]
+> Devido ao isolamento de auto-retorno, você não pode se conectar ao streaming de realidade misturada de dentro de um aplicativo em um dispositivo.
+
 O HoloLens dá suporte à visualização dinâmica de realidade misturada por meio do download em partes de um MP4 fragmentado.
 
 Fluxos de realidade misturada compartilham o mesmo conjunto de parâmetros para controlar o que é capturado:
@@ -693,6 +696,6 @@ Parâmetros
 Retornar dados
 * Em Iniciar, retorna o status da sessão WPR.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 * [Como usar o Portal de Dispositivos do Windows](using-the-windows-device-portal.md)
 * [Referência da API principal do portal do dispositivo (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

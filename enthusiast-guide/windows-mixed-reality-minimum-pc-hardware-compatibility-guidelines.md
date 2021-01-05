@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, ultra, compatível, compatibilidade, requisitos do sistema, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: e21d2d18edbf2c94d156f14fa8c2598822a8bc7a
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174363"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725657"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Diretrizes mínimas de compatibilidade de hardware do PC do Windows Mixed Reality
 
@@ -26,13 +26,13 @@ Com o Windows Mixed Reality ultra, você obtém alguns recursos e recursos adici
 * Visuais mais nítidos e uma taxa de atualização mais alta (90 quadros por segundo).
 * Mais aplicativos e experiências, incluindo os jogos com uso intensivo de gráficos.
 * Uma janela ' ' espelho ' ' na área de trabalho que mostra o que você vê em realidade misturada.
-* Registre e compartilhe vídeos (bem como fotos) de suas experiências de realidade misturada.
+* Registre e compartilhe vídeos e fotos de suas experiências de realidade misturada.
 
 ## <a name="minimum-pc-hardware-guidelines"></a>Diretrizes mínimas de hardware para PC
 
-Para obter a melhor experiência com a realidade mista do Windows, comece com um novo [PC pronto para a realidade mista do Windows](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) ou um PC compatível com a realidade mista do Windows que pode fornecer ultra experiências do Windows Mixed Reality. O Windows Mixed Reality ultra fornece elementos visuais mais nítidos em taxas de atualização mais altas, mais aplicativos e experiências, incluindo a maioria dos jogos com uso intensivo de gráficos, espelhamento de sua experiência de realidade mista do Windows em sua área de trabalho e a capacidade de registrar e compartilhar (foto e vídeo) suas experiências com outras pessoas. 
+Para obter a melhor experiência com a realidade mista do Windows, comece com um novo [PC pronto para a realidade mista do Windows](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) ou um PC compatível com a realidade mista do Windows que pode fornecer ultra experiências do Windows Mixed Reality. A realidade mista do Windows oferece visuais mais nítidos a taxas de atualização mais altas, mais experiências de aplicativos, incluindo os jogos com uso intensivo de gráficos, espelhamento de sua experiência de realidade mista do Windows em sua área de trabalho e a capacidade de registrar e compartilhar (foto e vídeo) suas experiências com outras pessoas. 
 
-Para ver se seu computador pode executar o Windows Mixed Reality, examine as diretrizes de hardware abaixo e execute o [aplicativo de portal de realidade misturada](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M).
+Veja se seu computador pode executar a realidade mista do Windows examinando as diretrizes de hardware abaixo e executando o [aplicativo de portal de realidade misturada](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M).
 
 Lembre-se de que seu desempenho irá variar dependendo da configuração exata. Você também precisará certificar-se de que seu PC tem as [portas certas](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) para o headset de imersão de realidade mista do Windows que você está usando.
 
@@ -48,7 +48,7 @@ O portal de realidade misturada é a melhor maneira de garantir que seu PC estej
 
 Depois de executar o aplicativo, você receberá uma das seguintes mensagens:
 * **Você está pronto para começar.** Seu PC tem o que é necessário para executar a realidade mista do Windows.
-* **Dá suporte a alguns recursos.** Este computador pode ser capaz de executar a realidade mista do Windows, mas alguns recursos podem ser limitados.
+* **Dá suporte a alguns recursos.** Este computador pode executar a realidade mista do Windows, mas alguns recursos podem ser limitados.
 * **Não é possível executar a realidade misturada.** Este computador não atende aos requisitos mínimos necessários para executar a realidade mista do Windows.
 
 Em seguida, você obterá uma análise do seu PC em relação ao hardware, aos drivers e ao sistema operacional necessários.
@@ -60,9 +60,9 @@ Em seguida, você obterá uma análise do seu PC em relação ao hardware, aos d
 </tr><tr>
 <td> <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /></td><td style="vertical-align: middle">Seu PC passa o item necessário.</td>
 </tr><tr>
-<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td style="vertical-align: middle">Pode haver problemas com seu PC para o requisito fornecido. Se você encontrar problemas, talvez seja necessário solucionar problemas ou atualizar seu computador.</td>
+<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td style="vertical-align: middle">Pode haver problemas com seu PC para o requisito fornecido. Se você tiver problemas, talvez seja necessário solucionar problemas ou atualizar seu PC.</td>
 </tr><tr>
-<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td style="vertical-align: middle">Seu PC não atende aos requisitos do item especificado.</td>
+<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td style="vertical-align: middle">Seu computador não atende aos requisitos do item especificado.</td>
 </tr>
 </table>
 
@@ -73,7 +73,7 @@ Em seguida, você obterá uma análise do seu PC em relação ao hardware, aos d
 > Atualizaremos, fazendo adições e podem ser revisando essas diretrizes de compatibilidade de PCs com a realidade mista do Windows. Consulte regularmente para obter as diretrizes e os requisitos mais recentes.
 
 **Especificações compatíveis com o HP reverbs**<br>
-Devido à resolução mais alta, os seguintes requisitos se aplicam às linhas de produtos HP reverbs G1 & G2 para garantir o ideal 90Hz, experiência de resolução completa: 
+Devido à resolução mais alta, os seguintes requisitos se aplicam às linhas de produtos HP reverbs G1 & G2 para garantir o ideal de 90 Hz, experiência de resolução completa: 
 
 <ul>
 <li> Intel Core i5, i7, Intel xenônio E3-1240 V5, equivalente ou melhor. AMD Ryzen 5 equivalente ou melhor. </li>
@@ -85,7 +85,7 @@ Devido à resolução mais alta, os seguintes requisitos se aplicam às linhas d
 </ul>
 
 **Todos os outros headsets compatíveis com WMR** <br>
-Para todos os outros HMD, consulte os seguintes requisitos: 
+Para todos os outros HMDs, consulte os seguintes requisitos: 
 
 <table>
 <tr>
@@ -99,8 +99,8 @@ Para todos os outros HMD, consulte os seguintes requisitos:
     <td style="vertical-align: middle; text-align: center;">Intel Core i5 7200u (7ª geração móvel), dual-core com a tecnologia Intel Hyper-Threading habilitada (ou melhor) <br>AMD Ryzen 5 1400 de 3,4 GHz (Desktop), Quad-Core (ou melhor)</td>
 </tr><tr>
     <td style="vertical-align: middle">RAM</td>
-    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 (ou melhor)</td>
-    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 dual channel (ou melhor)</td>
+    <td style="vertical-align: middle; text-align: center;">8 GB de DDR3 (ou melhor)</td>
+    <td style="vertical-align: middle; text-align: center;">canal duplo DDR3 de 8 GB (ou melhor)</td>
 </tr><tr>
     <td style="vertical-align: middle">Espaço livre em disco</td>
     <td colspan="3" style="vertical-align: middle; text-align: center;">Pelo menos 10 GB</td>
@@ -120,7 +120,7 @@ Para todos os outros HMD, consulte os seguintes requisitos:
         <li>GPU discreta de NVIDIA 965M</li>
         <li>AMD Radeon RX 460/560</li>
         </ul>
-        <b>Observação:</b> Não há suporte para GPUs da Intel mais antigas, como gráficos de HD 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx e 6xxx.
+        <b>Observação:</b> Não há suporte para GPUs Intel mais antigas, como gráficos de HD 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx e 6xxx.
     </td>
 </tr><tr>
     <td style="vertical-align: middle">Driver de gráficos</td>
@@ -153,7 +153,7 @@ Para todos os outros HMD, consulte os seguintes requisitos:
 
 
 **Informações adicionais:**
-* Laptops maiores (com telas de pelo menos 15 ") têm melhor desempenho.
+* Laptops maiores com telas de, pelo menos, 15 "fazem o melhor.
 * Para obter a melhor experiência, recomendamos um processador Intel® Core de 8 gen™ ou 7ª Gen Intel® Core™ i5.
 * As configurações de gráficos híbridos são compatíveis apenas com o Windows Mixed Reality ultra. O adaptador gráfico discreto em qualquer configuração híbrida deve atender a todos os requisitos listados nas diretrizes de realidade mista do Windows para adaptadores de gráficos discretos.
 * Se você tiver uma placa gráfica discreta que deve executar o Windows Mixed Reality ultra, mas estiver padronizando para uma taxa de atualização de 60 Hz (60 quadros por segundo), use um DisplayPort de tamanho completo para adaptador HDMI 2,0 para conectar seu headset e habilitar uma taxa de atualização de 90 Hz.
@@ -164,10 +164,10 @@ Para todos os outros HMD, consulte os seguintes requisitos:
 
 ## <a name="windows-mixed-reality-and-surface"></a>Superfície e realidade do Windows Mixed
 
-Para a melhor experiência de realidade mista do Windows em um dispositivo de superfície, recomendamos o SurfaceBook 2 (15 ") configurado com o NVIDIA GeForce GTX 1060 e 16 GB de RAM.  Essa configuração dá suporte a todos os recursos do Windows Mixed Reality @ 90Hz e foi testada e com notificação para o Windows Mixed Reality ultra.  O livro de superfície 2 (13 "), o Surface Studio, o Surface laptop e o Surface pro (2017) oferecerão suporte a alguns recursos de realidade mista do Windows quando configurados com uma CPU Intel Core i5 (ou melhor) e pelo menos 8 GB de RAM.
+Para a melhor experiência de realidade mista do Windows em um dispositivo de superfície, recomendamos o SurfaceBook 2 (15 ") configurado com o NVIDIA GeForce GTX 1060 GB e 16 GB de RAM.  Essa configuração dá suporte a todos os recursos do Windows Mixed Reality @ 90 Hz e foi testada e com notificação para o Windows Mixed Reality ultra.  O livro de superfície 2 (13 "), o Surface Studio, o Surface laptop e o Surface pro (2017) oferecerão suporte a alguns recursos de realidade mista do Windows quando configurados com uma CPU Intel Core i5 (ou melhor) e pelo menos 8 GB de RAM.
 
 **Requisitos:**
-* Produtos de superfície exigem atualizações de driver para serem compatíveis com a realidade mista do Windows. Esses drivers podem ser instalados em sua superfície acessando **configurações > atualização e segurança > verificar**se há atualizações.
+* Produtos de superfície exigem atualizações de driver para serem compatíveis com a realidade mista do Windows. Esses drivers podem ser instalados em sua superfície acessando **configurações > atualização e segurança > verificar** se há atualizações.
 * Produtos de superfície exigem um [adaptador](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) da porta de vídeo (Mini DisplayPort ou USB-C, dependendo do PC de superfície) até o HDMI 2,0 para headsets de realidade misturada do Windows. A versão mais recente da superfície Mini-DisplayPort ao adaptador HDMI AV é compatível com o HDMI 2,0 (a versão mais antiga não é). Da mesma forma, o <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">adaptador de superfície USB-C para HDMI</a> também é compatível com HDMI 2,0.
 
 >[!WARNING]
@@ -204,9 +204,9 @@ Mais informações sobre a compatibilidade de superfície com a realidade mista 
         <td style="vertical-align: middle"> Livro de superfície 2 (15 &quot; ) </td><td style="vertical-align: middle"> Completo </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1060/16 GB de RAM </td>
         <td>
             <ul>
-                <li><b>Recomendado</b>: para a melhor experiência de realidade mista do Windows em um dispositivo de superfície, recomendamos o SurfaceBook 2 15 "configurado com o NVIDIA GeForce GTX 1060 e 16 GB de RAM.  Essa configuração é testada e crachá como o Windows Mixed Reality ultra, portanto, dará suporte a todos os recursos do Windows Mixed Reality e permitirá que você aproveite a mais ampla matriz de aplicativos e jogos compatíveis.</li>
-                <li>A GPU discreta NVIDIA GeForce GTX 1060 fornecerá uma experiência do Windows Mixed Reality ultra @ 90Hz</li><br/>                <li>Para obter o melhor desempenho, use os drivers gráficos NVIDIA lançados especificamente para o livro de superfície 2. Drivers mais recentes podem estar disponíveis no site do NVIDIA&#39;s, mas não são testados.</li><br/>                <li>Requer <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">a superfície USB-C para o adaptador HDMI</a> (outros adaptadores podem funcionar, mas não são testados)</li>
-                <li><b>Observação no encaixe de superfície</b>: o uso do encaixe de superfície com o livro de superfície 2 não é oficialmente suportado com a realidade mista do Windows, devido às limitações da fonte de alimentação do Dock Station.</li><br/>                <li><b>Observação sobre o Windows 10 versão 1803</b>: se você&#39;executando novamente o Windows 10 versão 1803, certifique-se de&#39;novamente o Build do sistema operacional 17134,137 ou mais recente (instalado pelo KB4284848) para garantir que você tenha as correções de desempenho mais recentes. Para obter mais informações, consulte as notas de versão do <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
+                <li><b>Recomendado</b>: para a melhor experiência de realidade mista do Windows em um dispositivo de superfície, recomendamos o SurfaceBook 2 15 "configurado com o NVIDIA GeForce GTX 1060 GB e 16 GB de RAM.  Essa configuração é testada e crachá como o Windows Mixed Reality ultra, portanto, dará suporte a todos os recursos do Windows Mixed Reality e permitirá que você aproveite a mais ampla matriz de aplicativos e jogos compatíveis.</li>
+                <li>A GPU discreta NVIDIA GeForce GTX 1060 fornecerá uma experiência com o Windows Mixed Reality ultra @ 90-Hz</li><br/>                <li>Para obter o melhor desempenho, use os drivers gráficos NVIDIA lançados para o livro de superfície 2. Drivers mais recentes podem estar disponíveis no site do NVIDIA&#39;s, mas não são testados.</li><br/>                <li>Requer <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">a superfície USB-C para o adaptador HDMI</a> (outros adaptadores podem funcionar, mas não são testados)</li>
+                <li><b>Observação no encaixe de superfície</b>: o uso de encaixe de superfície com o livro de superfície 2 não é oficialmente suportado com a realidade mista do Windows, devido às limitações da fonte de alimentação do Dock Station.</li><br/>                <li><b>Observação sobre o Windows 10 versão 1803</b>: se você&#39;executando novamente o Windows 10 versão 1803, certifique-se de&#39;novamente o Build do sistema operacional 17134,137 ou mais recente (instalado pelo KB4284848) para garantir que você tenha as correções de desempenho mais recentes. Para obter mais informações, consulte as notas de versão do <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
             </ul>
         </td>
     </tr>
@@ -215,10 +215,10 @@ Mais informações sobre a compatibilidade de superfície com a realidade mista 
         <td>
             <ul>
                 <li><b>Observação</b>: o livro de superfície 2 (13 ") não é crachá para a realidade mista do Windows, mas dará suporte a alguns recursos do Windows Mixed Reality, permitindo que você use um número limitado de aplicativos e jogos compatíveis.  O desempenho dependerá de sua configuração.</li>
-                <li>As configurações com uma GPU integrada do Intel Core i5/Intel HD Graphics 620 fornecerão uma experiência Windows Mixed Reality @ 60Hz</li>
-                <li>As configurações com uma GPU discreta Intel Core i7/NVIDIA GeForce GTX 1050 fornecerão uma experiência do Windows Mixed Reality @ 90Hz</li>                       <li>Para obter o melhor desempenho, use os drivers gráficos NVIDIA lançados especificamente para o livro de superfície 2. Drivers mais recentes podem estar disponíveis no site do NVIDIA&#39;s, mas não são testados.</li>
+                <li>As configurações com uma GPU integrada Intel Core i5/Intel HD Graphics 620 fornecerão uma experiência mista do Windows de 60 a Hz</li>
+                <li>As configurações com uma GPU discreta do Intel Core i7/NVIDIA GeForce GTX 1050 fornecerão uma experiência Windows Mixed Realm a 90 Hz</li>                       <li>Para obter o melhor desempenho, use os drivers gráficos NVIDIA lançados para o livro de superfície 2. Drivers mais recentes podem estar disponíveis no site do NVIDIA&#39;s, mas não são testados.</li>
                 <li>Requer <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">a superfície USB-C para o adaptador HDMI</a> (outros adaptadores podem funcionar, mas não são testados)</li>
-                <li><b>Observação no encaixe de superfície</b>: o uso do encaixe de superfície com o livro de superfície 2 não é oficialmente suportado com a realidade mista do Windows, devido às limitações da fonte de alimentação do Dock Station.</li>
+                <li><b>Observação no encaixe de superfície</b>: o uso de encaixe de superfície com o livro de superfície 2 não é oficialmente suportado com a realidade mista do Windows, devido às limitações da fonte de alimentação do Dock Station.</li>
                 <li><b>Observação sobre o Windows 10 versão 1803</b>: se você&#39;executando novamente o Windows 10 versão 1803, certifique-se de&#39;novamente o Build do sistema operacional 17134,137 ou mais recente (instalado pelo KB4284848) para garantir que você tenha as correções de desempenho mais recentes. Para obter mais informações, consulte as notas de versão do <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
             </ul>
         </td>
@@ -227,9 +227,9 @@ Mais informações sobre a compatibilidade de superfície com a realidade mista 
         <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Parcial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 GB de RAM </td>
         <td>
             <ul>
-                <li><b>Observação</b>: o estúdio do Surface Studio não é crachá para a realidade mista do Windows, mas dará suporte a alguns recursos do Windows Mixed Reality, permitindo que você use um número limitado de aplicativos e jogos compatíveis.  O desempenho dependerá de sua configuração.</li>
-                <li>As configurações com NVIDIA GeForce GTX 965m fornecerão uma experiência Windows Mixed Reality @ 60Hz.</li>
-                <li>As configurações com NVIDIA GeForce GTX 980m fornecerão uma experiência do Windows Mixed Reality @ 90Hz.</li>
+                <li><b>Observação</b>: o Surface Studio não é crachá para a realidade mista do Windows, mas dará suporte a alguns recursos do Windows Mixed Reality, permitindo que você use um número limitado de aplicativos e jogos compatíveis.  O desempenho dependerá de sua configuração.</li>
+                <li>As configurações com NVIDIA GeForce GTX 965 m fornecerão uma experiência de realidade mista do Windows @ 60 Hz.</li>
+                <li>As configurações com NVIDIA GeForce GTX 980 m fornecerão uma experiência de realidade mista do Windows @ 90 Hz.</li>
                 <li>Mini DisplayPort da superfície para adaptador HDMI 2,0 (outros adaptadores podem funcionar, mas não são testados)</li>
                 <li>O headset da realidade mista do Windows deve estar conectado à porta USB com o símbolo "+"</li>
             </ul>
@@ -239,10 +239,10 @@ Mais informações sobre a compatibilidade de superfície com a realidade mista 
         <td style="vertical-align: middle"> Surface pro (2017) </td><td style="vertical-align: middle"> Parcial </td><td style="vertical-align: middle"> Intel Core i7/Intel® íris™ mais gráficos 640/16 GB de RAM </td>
         <td>
             <ul>
-                <li><b>Observação</b>: o Surface Pro (2017) não é cobrado pela realidade mista do Windows, mas dará suporte a alguns recursos de realidade mista do Windows, permitindo que você use um número limitado de aplicativos e jogos compatíveis.  O desempenho dependerá de sua configuração.</li>
+                <li><b>Observação</b>: o Surface Pro (2017) não é crachá para a realidade mista do Windows, mas dará suporte a alguns recursos de realidade mista do Windows, permitindo que você use um número limitado de aplicativos e jogos compatíveis.  O desempenho dependerá de sua configuração.</li>
                 <li><b>Não há suporte para</b> as configurações com uma GPU integrada Intel Core m3/Intel HD Graphics 615</li>
-                <li>As configurações com uma GPU integrada do Intel Core i5/Intel HD Graphics 620 fornecerão uma experiência Windows Mixed Reality @ 60Hz</li>
-                <li>As configurações com um Intel Core i7/Intel® íris™ Plus Graphics 640 GPU integrada fornecerão uma experiência Windows Mixed Realm a 60 60Hz</li><br/><li>Requer o Mini DisplayPort da superfície para o adaptador HDMI 2,0 (outros adaptadores podem funcionar, mas não são testados)</li>
+                <li>As configurações com uma GPU integrada Intel Core i5/Intel HD Graphics 620 fornecerão uma experiência mista do Windows de 60 a Hz</li>
+                <li>As configurações com um Intel Core i7/Intel® íris™ Plus Graphics 640 GPU integrada fornecerão uma experiência Windows Mixed realm de 60 a Hz</li><br/><li>Requer o Mini DisplayPort da superfície para o adaptador HDMI 2,0 (outros adaptadores podem funcionar, mas não são testados)</li>
                 <li>Requer o <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">controle deslizante de desempenho</a> definido como "melhor desempenho" durante o uso</li>
             </ul>
         </td>
@@ -252,15 +252,15 @@ Mais informações sobre a compatibilidade de superfície com a realidade mista 
             <ul>
                 <li><b>Observação</b>: o laptop da superfície não é crachá para a realidade mista do Windows, mas dará suporte a alguns recursos do Windows Mixed Reality, permitindo que você use um número limitado de aplicativos e jogos compatíveis.  O desempenho dependerá de sua configuração.</li>
                 <li><b>Não há suporte para</b> as configurações com uma GPU integrada Intel Core m3/Intel HD Graphics 615</li>
-                <li>As configurações com uma GPU integrada do Intel Core i5/Intel HD Graphics 620 fornecerão uma experiência Windows Mixed Reality @ 60Hz</li>
-                <li>As configurações com um Intel Core i7/Intel® íris™ Plus Graphics 640 GPU integrada fornecerão uma experiência Windows Mixed Realm a 60 60Hz</li><br/><li>Requer o Mini DisplayPort da superfície para o adaptador HDMI 2,0 (outros adaptadores podem funcionar, mas não são testados)</li>
+                <li>As configurações com uma GPU integrada Intel Core i5/Intel HD Graphics 620 fornecerão uma experiência mista do Windows de 60 a Hz</li>
+                <li>As configurações com um Intel Core i7/Intel® íris™ Plus Graphics 640 GPU integrada fornecerão uma experiência Windows Mixed realm de 60 a Hz</li><br/><li>Requer o Mini DisplayPort da superfície para o adaptador HDMI 2,0 (outros adaptadores podem funcionar, mas não são testados)</li>
                 <li>Requer o <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">controle deslizante de desempenho</a> definido como "melhor desempenho" durante o uso</li>
             </ul>
         </td>
     </tr>
 </table>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
 * [Adaptadores recomendados para PCs com capacidade do Windows Mixed Reality](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

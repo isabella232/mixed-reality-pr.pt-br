@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, realidade misturada, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos de sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034577"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757624"
 ---
 # <a name="distributing-your-apps"></a>Distribuindo seus aplicativos
 
 ![Lancher de aplicativo 3D de pássaro flutuante na página inicial do WMR](images/distribute-hero-image.png)
 
-Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mais importante, e às vezes criteriosa, faz parte de qualquer esforço de desenvolvimento. Simplificamos o processo em um conjunto de recursos listados abaixo, todos eles dependem do cenário de distribuição e implantação mais adequado para você ou sua equipe.
+Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mais importante, e às vezes criteriosa, faz parte de qualquer esforço de desenvolvimento. Simplificamos o processo em um conjunto de recursos, que dependem do cenário de distribuição e implantação mais adequado para você ou sua equipe.
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -40,7 +40,7 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
 </colgroup>
 <tr>
     <td><strong>Cenário</strong></td>
-    <td><strong>Instalação do dispositivo local</strong></td>
+    <td><strong>Instalações de dispositivo local</strong></td>
     <td><strong>Compartilhar com qualquer pessoa</strong></td>
     <td><strong>Compartilhar com uma organização</strong></td>
 </tr>
@@ -81,7 +81,7 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Implantação personalizada do Win32</strong></a> (não disponível para dispositivos do HoloLens-Veja abaixo)</td>
+    <td><a href="#other-scenarios"><strong>Implantação personalizada do Win32</strong></a> (não disponível para dispositivos do HoloLens-Veja abaixo)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,14 +91,14 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
 > [!IMPORTANT]
 > O instalador do aplicativo não está disponível no momento para dispositivos gerenciados ou dispositivos HoloLens (1º gen).
 
-## <a name="additional-scenarios"></a>Cenários adicionais
+## <a name="other-scenarios"></a>Outros cenários
 
-* Para a implantação de aplicativos Win32, incluindo o fluxo e o jogo pass, você pode produzir um Win32. Arquivo EXE usando o destino de Build do PC autônomo do Unity e envie seus aplicativos normalmente para a plataforma escolhida. 
+* Você pode produzir um Win32. Arquivo EXE usando o destino de Build do PC autônomo do Unity para a implantação do aplicativo Win32, incluindo o fluxo e o jogo pass. Quando você tiver o. EXE, você pode enviar seus aplicativos normalmente para a plataforma escolhida. 
 
 * Se você precisar instalar um aplicativo do HoloLens 2 enquanto estiver offline, consulte as instruções [offline seguras do hololens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) ou instale o aplicativo por meio de um pacote de provisionamento sem habilitar o modo de desenvolvedor.
 
 * Você também pode implantar compilações em seu dispositivo e compartilhá-las com outros desenvolvedores que têm o modo de desenvolvedor habilitado [Implantando e Depurando com o Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou [instalando um pacote de aplicativos com o portal do dispositivo](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 * [Localizando, instalando e desinstalando aplicativos do Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 

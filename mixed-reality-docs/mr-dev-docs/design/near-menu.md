@@ -6,20 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, menu, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 215147f0ded0c9594ddf075c1464ab04d031f2a9
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703392"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847262"
 ---
 # <a name="near-menu"></a>Menu próximo
 
 ![Menu próximo](images/UX_Hero_NearMenu.jpg)
 
-Um menu próximo é uma coleção de botões em um painel que segue o [comportamento de marca](billboarding-and-tag-along.md#what-is-a-tag-along). Ele permanece em um determinado intervalo de distância e ângulo para permitir que você interaja com o conteúdo. Você pode usar o botão fixar ou pegar e colocar o menu para torná-lo bloqueado pelo mundo e desabilitar o comportamento de marca. Isso permite que você se concentre no conteúdo de destino sem ser incomodado pelo menu flutuante.
-
-Você pode reabilitar a marca, ao pressionar o botão fixar e fazer com que o menu seja seguido novamente.
+Um menu próximo é uma coleção de botões em um painel que seguem os usuários com [comportamento de marca](billboarding-and-tag-along.md#what-is-a-tag-along). O painel permanece dentro de um intervalo de distância e ângulo definido, o que permite aos usuários interagir de forma confortável com o conteúdo. Se você precisar bloquear ou desabilitar o comportamento de marcação do painel, use o botão fixar ou pegue e coloque o menu. Fixar o painel permite que os usuários se concentrem no conteúdo de destino sem nenhuma distração. Você pode reabilitar o comportamento da marcação a qualquer momento pressionando o botão de fixação para fazer com que o menu siga o usuário novamente.
 
 <br>
 
@@ -30,13 +28,11 @@ O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece vá
 
 * [MRTK-menu próximo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
 
-
 <br>
 
 ---
 
-
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

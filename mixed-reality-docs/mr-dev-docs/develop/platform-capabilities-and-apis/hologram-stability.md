@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologramas, estabilidade, hololens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, taxa de quadros, renderização, Reprojeção, separação de cores
 appliesto:
 - HoloLens
-ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
+ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530430"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808827"
 ---
 # <a name="hologram-stability"></a>Estabilidade do holograma
 
@@ -91,13 +91,13 @@ Há quatro tipos principais de Reprojeção
 Os aplicativos precisam executar ações específicas para habilitar os diferentes tipos de Reprojeção
 * **Reprojeção de profundidade:** O aplicativo envia seu buffer de profundidade ao sistema para cada quadro renderizado.  No Unity, a Reprojeção de profundidade é feita com a opção de **buffer de profundidade compartilhada** no painel de **configurações de realidade mista do Windows** em **XR plugin Management**.  Aplicativos DirectX chamam CommitDirect3D11DepthBuffer.  O aplicativo não deve chamar SetFocusPoint.
 * **Reprojeção do planar:** Em todos os quadros, os aplicativos informam ao sistema o local de um plano a ser estabilizado.  Os aplicativos do Unity chamam SetFocusPointForFrame e devem ter o **buffer de profundidade compartilhado** desabilitado.  Os aplicativos DirectX chamam SetFocusPoint e não devem chamar CommitDirect3D11DepthBuffer.
-* **Reprojeção automática de planar:** Para habilitar o, o aplicativo precisa enviar seu buffer de profundidade ao sistema como faria para a Reprojeção de profundidade.  No HoloLens 2, o aplicativo precisa SetFocusPoint com um ponto de 0, 0 para cada quadro.  Para o HoloLens geração 1, o aplicativo não deve chamar SetFocusPoint.
+* **Reprojeção automática de planar:** Para habilitar o, o aplicativo precisa enviar seu buffer de profundidade ao sistema como faria para a Reprojeção de profundidade. Os aplicativos que usam o MRTK (Kit de ferramentas de realidade misturada) podem configurar o [provedor de configurações da câmera](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) para usar a Reprojeção do autoplanar. Aplicativos nativos devem definir o `DepthReprojectionMode` no [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) para `AutoPlanar` cada quadro. Para o HoloLens geração 1, o aplicativo não deve chamar SetFocusPoint.
 
 ### <a name="choosing-reprojection-technique"></a>Escolhendo a técnica de Reprojeção
 
 Tipo de estabilização |    Headsets imersivos |    Geração de HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojeção de profundidade |    Recomendadas |   N/D |   Recomendadas<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
+Reprojeção de profundidade |    Recomendado |   N/D |   Recomendado<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
 Reprojeção automática de planar | N/D |   Padrão recomendado |   Recomendado se a Reprojeção de profundidade não fornecer os melhores resultados<br/><br/>Os aplicativos do Unity são recomendados para usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior.  As versões anteriores do Unity funcionarão com resultados de Reprojeção ligeiramente degradados.
 Reprojeção do planar |   Não recomendado |   Recomendado se o planar automático não fornecer os melhores resultados | Use se nenhuma das opções de profundidade fornecer os resultados desejados    
 
@@ -181,7 +181,7 @@ Embora seja difícil evitar completamente a separação de cores, há várias t�
 
 Como antes, a renderização em 60 FPS e a definição do plano de estabilização são as técnicas mais importantes para a estabilidade do holograma. Se for voltada para separação de cores perceptível, primeiro verifique se a taxa de quadros atende às expectativas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 * [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Cor, luz e materiais](../../color,-light-and-materials.md)
 * [Interações instinctuais](../../design/interaction-fundamentals.md)

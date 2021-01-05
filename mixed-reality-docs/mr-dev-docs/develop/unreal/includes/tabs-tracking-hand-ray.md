@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002641"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717422"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+Para obter os dados para os raios de mão, você deve usar a função obter dados do controlador de movimento da seção anterior. A estrutura retornada contém dois parâmetros que você pode usar para criar uma **posição** de raio e a **rotação** do AIM. Esses parâmetros formam um raio direcionado pelo cotovelo. Você deve levá-los e encontrar um holograma sendo apontado.
+
+Abaixo está um exemplo de como determinar se um raio de lado atinge um widget e como definir um resultado de ocorrência personalizada:
+
+![Plano gráfico da função obter dados do controlador de movimento](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Para usar raios de mão em plantas, pesquise qualquer uma das ações em **HMD de realidade mista do Windows**:
@@ -138,10 +146,3 @@ C++:
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-Para obter os dados para os raios de mão, você deve usar a função obter dados do controlador de movimento da seção anterior. A estrutura retornada contém dois parâmetros que você pode usar para criar uma **posição** de raio e a **rotação** do AIM. Esses parâmetros formam um raio direcionado pelo cotovelo. Você deve levá-los e encontrar um holograma sendo apontado.
-
-Abaixo está um exemplo de como determinar se um raio de lado atinge um widget e como definir um resultado de ocorrência personalizada:
-
-![Plano gráfico da função obter dados do controlador de movimento](../images/unreal-hand-tracking-img-04.png) 

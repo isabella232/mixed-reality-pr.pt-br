@@ -6,27 +6,27 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: ativo, criação, processo, orçamento, polígonos, texturas, sombreadores, desempenho, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, ativos
-ms.openlocfilehash: 0c6f592dd813c06613801510ad8c8a936ad0de65
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702872"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847555"
 ---
 # <a name="asset-creation-process"></a>Processo de criação do ativo
 
-O Windows Mixed Reality se baseia em décadas de investimento que a Microsoft fez no DirectX. Isso significa que toda a experiência e os desenvolvedores de habilidades com a criação de gráficos 3D continuam a ser valiosos com o HoloLens.
+O Windows Mixed Reality se baseia em décadas de investimento que a Microsoft fez no DirectX. Toda a experiência e os desenvolvedores de habilidades com a criação de gráficos 3D continuam a ser valiosos com o HoloLens.
 
-Os ativos que você cria para um projeto vêm em muitas formas e formulários. Eles podem ser compostos por uma série de texturas/imagens, áudio, vídeo, modelos 3D e animações. Não podemos começar a abordar todas as ferramentas disponíveis para criar os diferentes tipos de ativos usados em um projeto. Para este artigo, vamos nos concentrar nos métodos de criação de ativos 3D.
+Os ativos que você cria para um projeto vêm em muitas formas e formulários. Eles podem ser compostos por uma série de texturas/imagens, áudio, vídeo, modelos 3D e animações. Não podemos começar a abordar todas as ferramentas disponíveis para criar os diferentes tipos de ativos usados em um projeto. Neste artigo, nos concentraremos nos métodos de criação de ativos 3D.
 
 ![Conceito, criação, integração e fluxo de iteração](images/concept-creation-integration-iteration-flow-640px.jpg)<br>
-*Conceito, criação, integração e fluxo de iteração*
+*O conceito, a criação, a integração e o fluxo de iteração*
 
 ## <a name="things-to-consider"></a>Itens a serem considerados
 
-Ao examinar a experiência que você está tentando criar, imagine-a como um **orçamento** que você pode gastar para tentar criar a melhor experiência. Não há necessariamente limites rígidos no número de **polígonos** ou **tipos de uso de materiais** em seus ativos, mas mais um conjunto orçado de compensações.
+Ao examinar a experiência, você está tentando criar, imagine-a como um **orçamento** que pode ser gasto para tentar criar a melhor experiência. Não há necessariamente nenhum limite rígido no número de **polígonos** ou **tipos de material** que você pode usar em seus ativos. Considere isso mais como um conjunto orçado de compensações.
 
-Veja abaixo um orçamento de exemplo para sua experiência. O desempenho geralmente não é um ponto único de falha, mas morte de mil recortes por si.
+Veja abaixo um orçamento de exemplo para sua experiência. O desempenho não é um ponto único de falha, mas a morte de mil cortes.
 <br>
 
 <table style="float:right; margin-left: 10px;">
@@ -60,11 +60,11 @@ Veja abaixo um orçamento de exemplo para sua experiência. O desempenho geralme
 
 **Complexidade dos ativos**
 * Quantos triângulos/polígonos?
-* Quão complexo é o sombreador? Ao usar o kit de ferramentas de realidade mista, é recomendável usar o [sombreador standard do kit de ferramentas da realidade misturada](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) para reduzir a complexidade do sombreador.
+* Quão complexo é o sombreador? Ao usar o kit de ferramentas de realidade misturada, é recomendável usar o [sombreador standard do kit de ferramentas do reality](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) para reduzir a complexidade do sombreador.
 
 Os desenvolvedores e os artistas precisam considerar os recursos do dispositivo e o mecanismo de gráficos. O Microsoft HoloLens tem todo o cálculo e os gráficos incorporados ao dispositivo. Ele compartilha os recursos que os desenvolvedores encontraria em uma plataforma móvel.
 
-O processo de criação para ativos é o mesmo, independentemente de você estar visando uma experiência para um [dispositivo Holographic ou um dispositivo de imersão](../discover/mixed-reality.md#the-mixed-reality-spectrum). A coisa principal a ser observada é a funcionalidade do dispositivo, conforme mencionado acima, bem como a escala, já que você pode ver o mundo real em realidade misturada, você desejará manter a escala correta com base na experiência.
+O processo de criação de ativos é o mesmo se sua experiência tiver como alvo um [dispositivo Holographic ou um dispositivo de imersão](../discover/mixed-reality.md#the-mixed-reality-spectrum). A coisa principal a ser observada é a capacidade e a escala do dispositivo. Você pode ver o mundo real em realidade misturada, portanto, convém manter a escala correta com base na experiência.
 
 ## <a name="authoring-assets"></a>Criando ativos
 
@@ -77,23 +77,23 @@ Vamos começar com as maneiras de obter ativos para seu projeto:
 ### <a name="creating-assets"></a>Criando ativos
 
 **Ferramentas de criação**<br>
-Primeiro, você pode criar seus próprios ativos de várias maneiras diferentes. os artistas 3D usam vários aplicativos e ferramentas para criar modelos que consistem em **malhas**, **texturas** e **materiais**. Isso é salvo em um formato de arquivo que pode ser importado ou usado pelo mecanismo de gráficos usado pelo aplicativo, como **. FBX** ou **. OBJ**. Qualquer ferramenta que gera um modelo que o mecanismo gráfico escolhido suporta funcionará no **HoloLens**. Entre artistas 3D, muitos optam por usar o [Maya do Autodesk, que é capaz de usar o HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) para transformar a maneira como os ativos são criados. Se você quiser obter algo em rápido, também poderá usar o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) que vem com o Windows para exportar. OBJ para uso em seu aplicativo.
+Primeiro, você pode criar seus próprios ativos de várias maneiras diferentes. os artistas 3D usam vários aplicativos e ferramentas para criar modelos, que consistem em **malhas**, **texturas** e **materiais**. Isso é salvo em um formato de arquivo que pode ser importado ou usado pelo mecanismo de gráficos usado pelo aplicativo, como **. FBX** ou **. OBJ**. Qualquer ferramenta que gera um modelo que o mecanismo gráfico escolhido suporta funcionará no **HoloLens**. Entre artistas 3D, muitos optam por usar o [Maya do Autodesk porque ele pode usar o HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) para transformar a maneira como os ativos são criados. Se você quiser obter algo em rápido, também poderá usar o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) que vem com o Windows para exportar. OBJ para uso em seu aplicativo.
 
 **Captura de objeto**<br>
-Também há a opção de capturar objetos em 3D. Capturar objetos inanimados em 3D e editá-los com o software de criação de conteúdo digital é cada vez mais popular com o aumento da impressão 3D. Usando o sensor **Kinect 2** e o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) , você pode usar o recurso de captura para criar ativos de objetos do mundo real. Esse também é um [conjunto de ferramentas](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) para fazer o mesmo com o **Photogrammetry** processando várias imagens para unir e malhas e texturas.
+Também há a opção de capturar objetos em 3D. Capturar objetos inanimados em 3D e editá-los com o software de criação de conteúdo digital é cada vez mais popular com o aumento da impressão 3D. Usando o sensor **Kinect 2** e o [Construtor 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) , você pode usar o recurso de captura para criar ativos de objetos do mundo real. Esse também é um [conjunto de ferramentas](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) para fazer o mesmo com **Photogrammetry** processando várias imagens para unir e malhar e texturas.
 
 ### <a name="purchasing-assets"></a>Comprando ativos
 
 Outra opção excelente é comprar ativos para sua experiência. Há uma infinidade de ativos disponíveis por meio de serviços como o [repositório de ativos de Unity](https://www.assetstore.unity3d.com/) ou o [TurboSquid](https://www.turbosquid.com/) entre outros.
 
-Ao comprar ativos de um terceiro, você sempre deseja verificar o seguinte:
+Ao comprar ativos de terceiros, você sempre deseja verificar as seguintes propriedades:
 * **O que é o número de polylines?**
   * Ele se encaixa em seu orçamento?
 * **Há níveis de detalhes (LODs) para o modelo?**
-  * O nível de detalhe de um modelo permite que você dimensione os detalhes de um modelo para o desempenho.
+  * Um nível de detalhe dos modelos permite que você dimensione os detalhes de um modelo para o desempenho.
 * **O arquivo de origem está disponível?**
-  * Geralmente não está incluído no [repositório de ativos do Unity](https://www.assetstore.unity3d.com/) , mas sempre incluído com serviços como [TurboSquid](https://www.turbosquid.com/).
-  * Sem o arquivo de origem, você não poderá modificar o ativo.
+  * Não incluído no [repositório de ativos do Unity](https://www.assetstore.unity3d.com/) , mas sempre incluído com serviços como [TurboSquid](https://www.turbosquid.com/).
+  * Sem o arquivo de origem, você não pode modificar o ativo.
   * Verifique se o arquivo de origem fornecido pode ser importado por suas ferramentas 3D.
 * **Saiba o que você está obtendo**
   * As animações são fornecidas?
@@ -103,7 +103,7 @@ Ao comprar ativos de um terceiro, você sempre deseja verificar o seguinte:
 
 Em alguns casos, você receberá ativos existentes que foram originalmente criados para outros dispositivos e aplicativos diferentes. Na maioria dos casos, esses ativos podem ser convertidos em formatos compatíveis com o mecanismo de gráficos que seu aplicativo está usando.
 
-Ao portar ativos para uso em seu aplicativo do HoloLens, você deverá fazer o seguinte:
+Ao portar ativos para uso em seu aplicativo do HoloLens, você deverá fazer as seguintes perguntas:
 * **Você pode importar diretamente ou precisa ser convertido em outro formato?** Verifique o formato que você está importando com o mecanismo de gráficos que você está usando.
 * **Se a conversão em um formato compatível for algo perdido?** Às vezes, os detalhes podem ser perdidos ou a importação pode causar artefatos que precisam ser limpos em uma ferramenta de criação 3D.
 * **Qual é a contagem de triângulos/polígonos para o ativo?** Com base no orçamento para seu aplicativo, você pode usar [Simplygon](https://www.simplygon.com/) ou ferramentas semelhantes para DECIMATE (de forma manual ou reduzir a contagem de Polyline) o ativo original para se ajustar ao seu orçamento de aplicativos.
@@ -123,4 +123,4 @@ Outra opção para projetos maiores que exigem mais ativos do que sua equipe est
 * **Entender os custos**
   * Qual é a política de terceirização para solicitações de alteração?
 
-A terceirização pode funcionar muito bem com base na linha do tempo de seus projetos, mas requer mais supervisão para garantir que você obtenha os ativos certos de que precisa na primeira vez.
+A terceirização pode funcionar bem com base na linha do tempo de seus projetos, mas requer mais supervisão para garantir que você obtenha os ativos certos de que precisa na primeira vez.

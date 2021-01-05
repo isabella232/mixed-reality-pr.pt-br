@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 55baf3f076b8cf0f815f899658b3bbe61292e267
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578611"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725897"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -28,15 +28,15 @@ A HP recomenda:
 
 Há algumas coisas que você pode tentar se sentir que a exibição parece um pouco desfoque:
 
-- Verifique se o headset está em sua cabeça corretamente para que seus olhos estejam centralizados com relação às lentes.
-- Tente ajustar o IPD (distância interpupillary). Observe que o reverberador de reverbo usa um IPD de hardware. Para alterá-lo, procure ajuste de IPD no headset.
-- Se precisar de óculos ou contatos, eles ainda serão necessários.
-- Verifique suas lentes se elas precisam ser limpas (somente tecido microfiber – sem fluids).
-- Devido ao design avançado do headset, pode haver algumas fantasmas de imagem secundária nos primeiros minutos ao iniciar o dispositivo enquanto estiver frio até que os LCDs tenham a oportunidade de fazer o aquecimento.
+- Verifique se o headset está em sua cabeça corretamente com seus olhos centralizados nas lentes.
+- Tente ajustar o IPD (distância interpupillary). O verbo de reverberação usa um IPD de hardware. Para alterá-lo, procure ajuste de IPD no headset.
+- Se precisar de óculos ou contatos, você precisará usá-los ao usar o dispositivo.
+- Verifique se suas lentes estão limpas (somente microfiber tecido – sem fluids).
+- Devido ao design avançado de headset, pode haver algumas fantasmas de imagem secundária nos primeiros minutos ao iniciar o dispositivo enquanto estiver frio até que os LCDs tenham a oportunidade de fazer o aquecimento.
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>Estou recebendo um erro de 7-14 "algo errado" ao conectar meu Headset
 
-O 7-14 algo deu errado significa que alguns dos componentes USB2 necessários não foram encontrados.  Devido ao cabo extra para o HP, o caractere de reverberação de caracteres USB são mais apertados.  Isso significa que uma porta em seu computador pode funcionar de forma mais confiável do que outra.
+O 7-14 algo deu errado significa que alguns dos componentes USB2 necessários não foram encontrados.  Por causa do cabo extra para o HP reverberate G2, algumas das tolerâncias para os sinais USB são mais rígidas.  Isso significa que uma porta em seu computador pode funcionar de forma mais confiável do que outra.
 
 Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas:
 
@@ -58,7 +58,7 @@ Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas
 
 Esse problema é corrigido com a remoção completa do joystick até que ele clique e seja movido livremente.
 
-## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Outros Estados que estou muito alto ou que meu áudio esteja recortando enquanto estou usando o microfone com alguns aplicativos
+## <a name="others-state-i-am-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Outros Estados me tenho alto ou que meu áudio está recortando enquanto estou usando o microfone com alguns aplicativos
 
 Os níveis de volume de entrada são automaticamente definidos como 100% quando o microfone do HP reverbs G2 é reconhecido pela primeira vez por um computador Windows. Devido aos microfones de alta qualidade do G2's do verbo, a sensibilidade de entrada é muito maior do que as configurações padrão do Windows 10 esperadas. É recomendável definir o nível de entrada do microfone G2 de reverberação a partir de 50% e escalar verticalmente a partir daí. Uma configuração ideal é específica para o usuário, especialmente ao usar aplicativos que não têm uma configuração de microfone de "" obter automaticamente ". Exemplos de aplicativos que têm "conquista automática" são o Skype, o zoom, as equipes e o Cisco WebEx, mas nem todos os aplicativos sociais ou de difusão de VR têm esse recurso.
 
@@ -68,12 +68,12 @@ Isso pode acontecer porque seu HP reverbo G2 requer um PC mais potente para gara
 
 ## <a name="it-looks-like-my-left-display-is-stretched-and-the-right-display-is-off-centered-and-half-black"></a>Parece que minha exibição à esquerda é ampliada e a exibição à direita está descentralizada e meia preta
 
-Isso pode acontecer quando o headset não está em execução na resolução nativa. Devido à natureza das exibições de alta resolução no HP reverbs G2 HMD, nem todos os sistemas poderão renderizar a resolução nativa. Há uma correção em um futuro Windows Update que resolverá o problema de renderização quando o headset não estiver na resolução nativa.
+Isso pode acontecer quando o headset não está em execução na resolução nativa. Devido à natureza das exibições de alta resolução no HP reverbs G2 HMD, nem todos os sistemas podem renderizar a resolução nativa. Há uma correção em um futuro Windows Update que resolverá o problema de renderização quando o headset não estiver na resolução nativa.
 
-Há alguns motivos pelos quais o sistema não pode renderizar na resolução nativa:
+Há alguns motivos pelos quais o sistema não é capaz de renderizar na resolução nativa:
 
 - O DisplayPort no sistema pode não ser compatível com 1,3 ou pode não dar suporte a todas as quatro pistas.
-- Se você estiver usando um adaptador, talvez ele não seja compatível com HBR3, ou talvez não dê suporte a todas as 4 pistas.
+- Se você estiver usando um adaptador, talvez ele não seja compatível com HBR3, ou talvez não dê suporte a todas as quatro pistas.
 - Se o seu sistema tiver uma GPU híbrida, isso pode estar limitando a largura de banda disponível para o DisplayPort.
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>Por que meus modelos do meu HP Motion Controller não aparecem corretamente em um jogo
@@ -91,4 +91,4 @@ Para fazer isso
 - Selecione a opção "gerenciar associações de controlador"
 
 A partir daqui, você pode alterar a associação do controlador ativo para "personalizado", que abrirá a opção para experimentar associações de jogos compartilhadas pela Comunidade.
-Se nenhuma associação de jogo personalizada já tiver sido compartilhada para este jogo (ou se você não estiver totalmente satisfeito com as que você tentou), também poderá criar suas próprias associações de jogos personalizadas e até mesmo ajudar o restante da Comunidade, compartilhando-as após algumas sessões de jogo.
+Se nenhuma associação de jogo personalizada tiver sido compartilhada para este jogo ainda (ou se você não estiver totalmente satisfeito com as que você tentou), também poderá criar suas próprias associações de jogos personalizadas e até mesmo ajudar o restante da Comunidade, compartilhando-as após algumas sessões de jogo.
