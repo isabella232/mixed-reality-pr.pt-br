@@ -5,20 +5,28 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691315"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865411"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contribuindo para a documentação do desenvolvedor de realidade misturada
 
 Bem-vindo ao [repositório público para documentação do desenvolvedor de realidade misturada](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Todos os artigos que você criar ou editar neste repositório **estarão visíveis para o público.** 
 
-Os documentos de realidade misturada agora estão na plataforma docs.microsoft.com, que usa a redução de tipo de GitHub com recursos de Markdig. O conteúdo editado neste repositório é formatado em páginas estilizadas que aparecem em https://docs.microsoft.com/windows/mixed-reality . Se você quiser contribuir com a documentação de entusiastas de HoloLens ou VR, visite seus respectivos repositórios [hololens](https://github.com/MicrosoftDocs/Hololens) e [VR](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) .
+Os documentos de realidade misturada agora estão na plataforma docs.microsoft.com, que usa a redução de tipo de GitHub com recursos de Markdig. O conteúdo editado neste repositório é formatado em páginas estilizadas que aparecem em https://docs.microsoft.com/windows/mixed-reality . 
 
 Esta página aborda as etapas e diretrizes básicas de contribuição e links para noções básicas de redução. Agradecemos a sua contribuição.
+
+## <a name="available-repos"></a>Repositórios disponíveis
+
+| Nome do repositório | URL |
+| --- | --- |
+| Realidade Misturada | [MicrosoftDocs/misto – realidade](https://docs.microsoft.com/windows/mixed-reality) |
+| Guia dos entusiastas do VR | [MicrosoftDocs/misto-realidade/entusiasta-guia](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
 ## <a name="before-you-start"></a>Antes de começar
 

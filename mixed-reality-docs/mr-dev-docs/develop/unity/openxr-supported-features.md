@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: 1cbe9dd1ffb493bcc9da76e70dec9720f2d10340
-ms.sourcegitcommit: 4bbf2f802117a9a3788b2b0e3b0a2f58e187f6ea
+ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
+ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97665346"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97880580"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Recursos com suporte da realidade misturada OpenXR no Unity
 
@@ -31,32 +31,32 @@ Atualmente, há suporte para os seguintes recursos:
 * Localizando a câmera de foto/vídeo (PV) no HoloLens 2.
 * A realidade misturada é a captura usando o processamento de 3ª vista por meio da câmera VP.
 * Dá suporte à ["reprodução" para o HoloLens 2 com o aplicativo de comunicação remota do Holographic](#holographic-remoting-in-unity-editor-play-mode), permitindo que os desenvolvedores depurem scripts sem compilar e implantar no dispositivo.
-* Compatível com MRTK Unity 2.5.2 por meio do pacote do adaptador MRTK OpenXR. <missing link>
+* Compatível com o MRTK Unity 2.5.2 e mais recente por meio do suporte do provedor MRTK OpenXR. [Consulte a documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) para começar.
 * Compatível com o Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou posterior
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Holographic comunicação remota no modo de reprodução do editor do Unity
 
 Criar um projeto de Unity do UWP no projeto do Visual Studio e, em seguida, compactá-lo e implantá-lo em um dispositivo HoloLens 2 pode levar algum tempo. Uma solução é habilitar a comunicação remota do editor do Holographic, que permite que você depure seu script C# usando o modo "Play" diretamente em um dispositivo de HoloLens 2 em sua rede. Esse cenário evita a sobrecarga de criar e implantar um pacote UWP para um dispositivo remoto.
 
-1. Primeiro, você precisa [instalar o aplicativo de player de comunicação remota do Holographic](https://www.microsoft.com/store/productId/9NBLGGH4SV40) do repositório no seu HoloLens 2  
+1. Primeiro, você precisa [instalar o aplicativo de player de comunicação remota do Holographic](https://www.microsoft.com/store/productId/9NBLGGH4SV40) do repositório no seu HoloLens 2
 2. Execute o aplicativo de player de comunicação remota do Holographic no HoloLens 2 e você verá o número de versão e o endereço IP para se conectar
     * Você precisará do v 2.4 ou posterior para trabalhar com o plug-in OpenXR
 
-![Captura de tela do player de comunicação remota do Holographic em execução no HoloLens](images/openxr-features-img-01.png)
+    ![Captura de tela do player de comunicação remota do Holographic em execução no HoloLens](images/openxr-features-img-01.png)
 
 3. Abra **configurações do projeto de > de edição**, navegue até **Gerenciamento de plug-in de XR** e marque a caixa conjunto de recursos do **Windows Mixed Realm** :
 
-![Captura de tela do painel configurações do projeto aberta no editor do Unity com o gerenciamento de plug-in do XR realçado](images/openxr-features-img-02.png)
+    ![Captura de tela do painel configurações do projeto aberta no editor do Unity com o gerenciamento de plug-in do XR realçado](images/openxr-features-img-02.png)
 
 4. Expanda a seção **recursos** em **OpenXR** e selecione **Mostrar tudo**
 5. Marque a caixa de seleção **comunicação remota do editor de Holographic** e insira o endereço IP obtido do aplicativo de comunicação remota do Holographic:
 
-![Captura de tela do painel de configurações do projeto aberto no editor do Unity com recursos realçados](images/openxr-features-img-03.png)
+    ![Captura de tela do painel de configurações do projeto aberto no editor do Unity com recursos realçados](images/openxr-features-img-03.png)
 
 Agora você pode clicar no botão "reproduzir" para reproduzir seu aplicativo do Unity no aplicativo de comunicação remota do Holographic em seu HoloLens. Você também pode [anexar o Visual Studio ao Unity](https://docs.microsoft.com/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) para depurar scripts C# no modo de reprodução.
 
 > [!NOTE]
-> A partir da versão 0.1.0 a comunicação remota Holographic, o tempo de execução não dá suporte ao recurso de ancoragem e as funcionalidades de ARAnchorManager não funcionarão por meio de comunicação remota.  Esse recurso estará disponível em versões futuras.
+> A partir da versão 0.1.0, o tempo de execução de comunicação remota do Holographic não dá suporte a âncoras, e as funcionalidades de ARAnchorManager não funcionarão por meio de comunicação remota.  Esse recurso estará disponível em versões futuras.
 
 ## <a name="anchors-and-anchor-persistence"></a>Âncoras e persistência de ancoragem
 
@@ -79,11 +79,11 @@ public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
     public void Clear();
 
     // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
-    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the 
+    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the
     // ARAnchor will have when it is instantiated.
     public TrackableId LoadAnchor(string name);
 
-    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if 
+    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
     // the storage is successful, false otherwise.
     public bool TryPersistAnchor(string name, TrackableId trackableId);
 
@@ -100,10 +100,10 @@ public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem an
 ```
 
 Para usar esse método de extensão, acesse-o de um subsistema de ARAnchorManager da seguinte maneira:
- 
+
 ``` cs
-ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>(); 
-XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync(); 
+ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
+XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
 Para ver um exemplo completo de persistência/descontinuação de âncoras, confira o exemplo âncoras-> ancoras Games e o script AnchorsSample.cs na [cena de exemplo do plugin OpenXR de realidade misturada](openxr-getting-started.md#hololens-2-samples):
@@ -114,10 +114,10 @@ Para ver um exemplo completo de persistência/descontinuação de âncoras, conf
 
 ## <a name="motion-controller-and-hand-interactions"></a>Controlador de movimento e interações de mão
 
-Para aprender as noções básicas sobre interações de realidade misturada no Unity, visite o [manual do Unity para entrada do Unity XR](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). Esta documentação do Unity aborda os mapeamentos de entradas específicas do controlador para **InputFeatureUsage** s mais generalizadas, como as entradas de XR disponíveis podem ser identificadas e categorizadas, como ler dados dessas entradas e muito mais. 
- 
-O plug-in Mixed Reality OpenXR fornece perfis de interação de entrada adicionais, mapeados para os **InputFeatureUsage** padrão, conforme detalhado abaixo: 
- 
+Para aprender as noções básicas sobre interações de realidade misturada no Unity, visite o [manual do Unity para entrada do Unity XR](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). Esta documentação do Unity aborda os mapeamentos de entradas específicas do controlador para **InputFeatureUsage** s mais generalizadas, como as entradas de XR disponíveis podem ser identificadas e categorizadas, como ler dados dessas entradas e muito mais.
+
+O plug-in Mixed Reality OpenXR fornece perfis de interação de entrada adicionais, mapeados para os **InputFeatureUsage** padrão, conforme detalhado abaixo:
+
 | InputFeatureUsage | Controlador do HP reverbo G2 (OpenXR) | Mão do HoloLens (OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | Botões | |
@@ -132,9 +132,10 @@ O plug-in Mixed Reality OpenXR fornece perfis de interação de entrada adiciona
 
 ### <a name="aim-and-grip-poses"></a>As poses AIM e segure
 
-Você tem acesso a dois conjuntos de poses por meio de interações de entrada OpenXR: 
+Você tem acesso a dois conjuntos de poses por meio de interações de entrada OpenXR:
+
 * A alça representa a renderização de objetos à mão
-* O objetivo se destaca no mundo. 
+* O objetivo se destaca no mundo.
 
 Mais informações sobre esse design e as diferenças entre as duas poses podem ser encontradas na [especificação OpenXR-subcaminhos de entrada](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input).
 
@@ -148,7 +149,7 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 ### <a name="haptics"></a>Haptics
 
-Para obter informações sobre como usar o haptics no sistema de entrada XR da Unity, a documentação pode ser encontrada no [manual do Unity para o Unity XR Input-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics). 
+Para obter informações sobre como usar o haptics no sistema de entrada XR da Unity, a documentação pode ser encontrada no [manual do Unity para o Unity XR Input-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
 
 ## <a name="whats-coming-soon"></a>O que virá em breve
 
@@ -160,7 +161,7 @@ Os seguintes problemas e recursos ausentes são conhecidos com o plug-in OpenXR 
 * O suporte a **âncoras espaciais do Azure** estará disponível em uma versão futura.
 * **ARM64** é a única plataforma com suporte para aplicativos do HoloLens 2. A plataforma **ARM** estará disponível em uma versão futura.
 
-## <a name="troubleshooting"></a>Solução de problemas 
+## <a name="troubleshooting"></a>Solução de problemas
 
-Quando você suspende e retoma um aplicativo do Unity no HoloLens 2, o aplicativo não pode retomar corretamente, o que leva a 4 pontos girando na exibição do HoloLens. 
+Quando você suspende e retoma um aplicativo do Unity no HoloLens 2, o aplicativo não pode retomar corretamente, o que leva a 4 pontos girando na exibição do HoloLens.
 * Defina o **modo de envio de profundidade** como **nenhum** nas configurações do projeto OpenXR como uma solução alternativa

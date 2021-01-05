@@ -1,45 +1,47 @@
 ---
 title: Visualização de malha espacial
+description: Saiba mais sobre como os dispositivos entendem ambientes físicos usando malhas espaciais.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703292"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848193"
 ---
 # <a name="spatial-mesh"></a>Malha espacial
 
 ![Malha espacial](images/MRTK_PulseShader_SpatialMesh.gif)
 
-Por meio da visualização de malha espacial, o usuário pode aprender como um dispositivo percebe e entende o ambiente físico. Além de fornecer o contexto espacial, a visualização da malha espacial adequada pode criar uma experiência interessantes e mágico.  
+Os usuários aprendem como um dispositivo percebe e compreende o ambiente físico por meio da visualização de malha espacial. A visualização de malha espacial adequada pode criar uma experiência de interessantes e mágico enquanto fornece o contexto espacial.  
 
 ## <a name="design-guideline"></a>Diretriz de design
-Como é importante permitir que o usuário se concentre e interaja com o conteúdo, a visualização contínua e repetida da malha espacial em segundo plano poderia ser uma distração. É recomendável Visualizar o ambiente com moderação, seja apenas uma vez na inicialização inicial ou quando o usuário mostrar uma intenção clara de ver a malha ambiental por direcionamento e espaço de toque. Você pode observar esse comportamento no Shell do HoloLens.
+
+É importante permitir que o usuário se concentre e interaja com o conteúdo. A visualização contínua da malha espacial em segundo plano pode ser uma distração. É recomendável Visualizar o ambiente com moderação, seja apenas uma vez na inicialização inicial ou quando o usuário mostrar claramente que deseja ver a malha ambiental por direcionamento e espaço de toque. Você pode observar esse comportamento no portal de realidade misturada.
 <br>
 
-
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Visualização de malha espacial no MRTK (Kit de ferramentas de realidade mista) para Unity
+
 O MRTK fornece vários materiais para a visualização de malha espacial.
 
-- **MRTK_Wireframe. esteira, MRTK_Wireframe. passe-partout**: material de malha espacial estática padrão que mostra os contornos de malha sem animação. Esse material é útil para fins de depuração, pois mostra as geometrias de malha espacial inteiras. No entanto, não é recomendável para produção.
+- **MRTK_Wireframe. esteira, MRTK_Wireframe. passe-partout**: material de malha espacial estática padrão, que mostra os contornos de malha sem animação. Esse material é útil para fins de depuração, pois mostra as geometrias de malha espacial inteiras. No entanto, não é recomendável para produção.
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- **MRTK_SurfaceReconstruction. passe-partout**: esse material oferece um efeito de pulso animado na malha espacial. Você pode usar esse material para visualizar o ambiente em um momento específico da sua experiência ou na entrada do toque do usuário. Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.
+- **MRTK_SurfaceReconstruction. passe-partout**: esse material oferece um efeito de pulso animado na malha espacial. Você pode usar esse material para visualizar o ambiente em um momento específico ou na entrada aérea do usuário. Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* Consulte [reconhecimento espacial MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) e [sombreador MRTK-Pulse](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) para obter mais detalhes.
+* Para obter mais informações, consulte [reconhecimento espacial do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) e [sombreador MRTK-Pulse](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html).
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

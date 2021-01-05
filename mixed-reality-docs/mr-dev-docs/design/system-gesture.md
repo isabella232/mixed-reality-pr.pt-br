@@ -6,16 +6,16 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Realidade misturada, gestos, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada, flor
-ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703262"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848164"
 ---
 # <a name="start-gesture"></a>Iniciar gesto
 
-O gesto de início é um gesto de mão usado para invocar o menu iniciar. É o equivalente a pressionar a tecla Windows no teclado, o botão Xbox em um controlador Xbox ou o botão Windows no controlador de movimento de headsets de imersão. É importante entender quais gestos são reservados para o sistema em cada dispositivo de realidade misturada para evitar conflitos ao projetar suas interações.
+O gesto de início é um gesto de mão usado para invocar o menu iniciar. É o equivalente a pressionar a tecla Windows em teclados, o botão Xbox em controladores Xbox ou o botão Windows em controladores de movimento de headsets de imersão. Preste atenção especial aos gestos do sistema reservado em cada dispositivo de realidade misturada para evitar conflitos quando estiver criando interações.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -53,7 +53,8 @@ O gesto de início é um gesto de mão usado para invocar o menu iniciar. É o e
 </table>
 
 ## <a name="bloom"></a>Bloom
-Para abrir o menu iniciar no HoloLens (1º gen), projetamos "flor", que é um gesto simbólico imitando Blossom de flor. É distintivo para a interação Surefooted, fácil de executar e rápida de se recuperar. Para fazer o gesto de cair no HoloLens (1º gen), mantenha sua mão em dia com seu Palm para cima e, em seguida, abra sua mão distribuindo os dedos.
+
+Projetamos "cair" para abrir o menu iniciar no HoloLens (1º gen), que é um gesto simbólico imitando um Blossom de flor. É distintivo para uma interação com o pé, fácil de usar e rápida de se lembrar. Para usar o gesto, mantenha a mão com seu Palm up e mãos, em seguida, abra sua mão distribuindo os dedos.
 
 :::row:::
     :::column:::
@@ -71,7 +72,8 @@ Para abrir o menu iniciar no HoloLens (1º gen), projetamos "flor", que é um ge
 ---
 
 ## <a name="start-gesture"></a>Iniciar gesto
-No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual que permite interações mais instinctuals que não exigem ensino adicional. Ao mostrar os usuários o botão no pulso, eles podem acessá-lo intuitivamente e pressioná-lo com a outra mão.
+
+No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual, que é mais instinctual para os usuários. Ao mostrar os usuários o botão no pulso, eles podem acessá-lo intuitivamente e pressioná-lo com a outra mão.
 
 :::row:::
     :::column:::
@@ -88,7 +90,6 @@ No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual que 
 
 ---
 
-
 ## <a name="one-handed-start-gesture"></a>Gesto de início de uma mão
 
 > [!IMPORTANT]
@@ -97,7 +98,7 @@ No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual que 
 > 1. Você deve atualizar para a atualização de novembro de 2019 (Build 18363,1039) ou posterior.
 > 1. Seus olhos devem ser calibrados no dispositivo para que o acompanhamento de olho funcione corretamente. Se você não vir pontos de an-órbita em volta do ícone iniciar quando olhar para ele, seus olhos não serão calibrados no dispositivo.
 
-Você também pode executar o gesto de início com apenas uma mão. Para fazer isso, mantenha sua mão com seu Palm e veja o **ícone iniciar** no pulso interno. **Enquanto mantém seu olho no ícone**, aperte seu polegar e indexe o dedo em conjunto.<br>
+Você também pode usar o gesto de início com apenas uma mão. Mantenha sua mão em frente com seu Palm e veja o **ícone iniciar** no pulso interno. **Enquanto mantém seu olho no ícone**, aperte seu polegar e indexe o dedo em conjunto.<br>
 :::row:::
     :::column:::
         ![Botão do punho pronto](images/wrist-button-ready.png)<br>
@@ -113,7 +114,7 @@ Você também pode executar o gesto de início com apenas uma mão. Para fazer i
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Olho-olhar](eye-tracking.md)

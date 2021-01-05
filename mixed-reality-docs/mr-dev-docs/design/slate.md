@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, Slate, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 85aa91793da9022080c95775bbfd1e4775ea05d8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703323"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848219"
 ---
 # <a name="slate"></a>Slate
 
 ![Slate](images/UX_Hero_Slate.jpg)
 
-Um Slate é um controle de estilo de janela fina para exibir o conteúdo 2D. Por exemplo, você pode usá-lo para exibir texto sem formatação, imagens ou documentos. Ele oferece uma barra de título que poderia ser capturada com botões para ' seguir minha (marca) ' e fechar a funcionalidade. O conteúdo dentro de um Slate pode ser rolado por meio da [manipulação direta](direct-manipulation.md#2d-slate-interaction) , assim como uma tela de toque física. Você pode usar olhar, toque e gesto de arrastar ou um ponteiro do controlador de movimento também.
+Um Slate é um controle de estilo de janela fina para exibir conteúdo 2D, como texto sem formatação, imagens ou documentos. Um Slate oferece uma barra de título que poderia ser captada com botões para "siga-em frente)" e fechar a funcionalidade. O conteúdo dentro de um Slate pode ser rolado por meio da [manipulação direta](direct-manipulation.md#2d-slate-interaction) , assim como uma tela de toque física. Você pode usar o olhar, o toque do Air e o gesto de arrastar ou um ponteiro do controlador de movimento também.
 
 <br>
 
@@ -31,7 +31,7 @@ Um Slate é um controle de estilo de janela fina para exibir o conteúdo 2D. Por
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

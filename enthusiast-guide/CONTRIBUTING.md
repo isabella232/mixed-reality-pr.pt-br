@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691469"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865431"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Contribuindo para o guia de entusiastas da realidade misturada
 
@@ -167,7 +167,7 @@ Ao editar no GitHub por meio de um navegador da Web, você pode selecionar a gui
 >[!NOTE]
 >A visualização de suas alterações no review.docs.microsoft.com só está disponível para funcionários da Microsoft
 
-Funcionários da Microsoft: depois que suas contribuições tiverem sido mescladas no Branch ' mestre ', você poderá examinar o conteúdo antes que ele seja público em https://review.docs.microsoft.com/windows/mixed-reality?branch=master . Localize seu artigo usando o Sumário na coluna esquerda.
+Funcionários da Microsoft: depois que suas contribuições tiverem sido mescladas no Branch ' mestre ', você poderá examinar o conteúdo antes que ele seja público em https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master . Localize seu artigo usando o Sumário na coluna esquerda.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Editando no navegador versus editando com um cliente de desktop
 

@@ -1,17 +1,17 @@
 ---
 title: Menu lateral
-description: Os menus à mão permitem que os usuários tragam rapidamente a interface do usuário conectada à mão para funções usadas com frequência. Essas são nossas práticas recomendadas e recomendações para menus à mão.
+description: Os menus à mão permitem que os usuários tragam rapidamente a interface do usuário conectada à mão para funções usadas com frequência.
 author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
 keywords: mão, menu, botão, acesso rápido, layout, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 77df5974f54323310a696ed6630fbdde0b0faeb0
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702292"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847797"
 ---
 # <a name="hand-menu"></a>Menu lateral
 
@@ -25,15 +25,15 @@ Você encontrará nossas práticas recomendadas para trabalhar com menus à mão
 
 <br>
 
-
 ---
 
 ## <a name="best-practices"></a>Práticas recomendadas
+
 **Manter o número de botões pequenos** 
 
-Devido à distância de proximidade entre um menu protegido por mão e os olhos, e também a tendência do usuário de se concentrar em uma área Visual relativamente pequena a qualquer momento (o cone de atenção da visão é de aproximadamente 10 graus), recomendamos manter o número de botões pequenos. Com base em nossa exploração, uma coluna com três botões funciona bem mantendo todo o conteúdo dentro do campo de exibição (FOV) mesmo quando um usuário move suas mãos para o centro do FOV. 
+Por causa da distância de proximidade entre um menu de mão e os olhos, e a tendência de os usuários se concentrarem em uma área Visual relativamente pequena a qualquer momento (o cone de atenção da visão é de aproximadamente 10 graus), recomendamos manter o número de botões pequenos. Com base em nossa exploração, uma coluna com três botões funciona bem mantendo todo o conteúdo dentro do campo de exibição (FOV) mesmo quando um usuário move suas mãos para o centro do FOV. 
 
-**Utilizar menu à mão para ação rápida** 
+**Usar menu à mão para ação rápida** 
 
 Elevar um ARM e manter a posição pode facilmente causar fadiga ARM. Use um método protegido por mão para o menu que requer uma pequena interação. Se o seu menu for complexo e exigir tempos de interação estendidos, considere usar o World-Locked ou o corpo bloqueado em vez disso. 
 
@@ -43,7 +43,7 @@ Os menus devem ser contratados em direção ao colado oposto e ao meio do cabeç
 
 **Considere dar suporte a uma operação única ou viva-mão**
 
-Não presuma que as mãos do usuário estejam sempre disponíveis. Considere uma ampla gama de contextos quando um ou ambos os Hands não estiverem disponíveis e certifique-se de que suas contas de design para essas situações. Para dar suporte a um menu de mão única, você pode tentar fazer a transição do posicionamento do menu de bloqueio manual para mundo bloqueado quando a mão é invertida (vai para o Palm). Para cenários sem intervenção, considere usar um comando de voz para invocar o menu à mão.
+Não presuma que as mãos do usuário estejam sempre disponíveis. Considere uma ampla gama de contextos quando uma ou ambas as mãos não estiverem disponíveis e certifique-se de que suas contas de design para essas situações. Para dar suporte a um menu de mão única, você pode tentar fazer a transição do posicionamento do menu de bloqueio manual para mundo bloqueado quando a mão é invertida (vai para o Palm). Para cenários sem intervenção, considere usar um comando de voz para invocar o menu à mão.
 
 **Evite adicionar botões próximos ao pulso (botão início do sistema)**
 
@@ -52,10 +52,11 @@ Se os botões do menu à mão forem colocados muito perto do botão página inic
 <br>
 
 ## <a name="hand-menu-with-large-and-complex-ui-controls"></a>Menu à mão com controles de interface do usuário grandes e complexos
+
 <img src="images/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 É recomendável limitar o número de botões ou controles de interface do usuário em menus anexados à mão. Isso ocorre porque a interação estendida com um grande número de elementos da interface do usuário pode causar fadiga ARM. Se sua experiência exigir um menu grande, forneça uma maneira fácil para o usuário para o mundo bloquear o menu. Uma técnica que recomendamos é bloquear, em seguida, o menu quando a mão cai ou sai do usuário. Uma segunda técnica é permitir que o usuário pegue diretamente o menu por outro lado. Quando o usuário libera o menu, o menu deve ser bloqueado pelo mundo. Dessa forma, um usuário pode interagir com vários elementos de interface de usuário confortavelmente e com confiança em um longo período de tempo. 
 
-Quando o menu estiver bloqueado pelo mundo, certifique-se de fornecer uma maneira de mover o menu e fechar o menu quando ele não for mais necessário. Torne o menu móvel fornecendo identificadores nos lados ou no início do menu. Adicione um botão fechar para permitir que o menu seja fechado. Permita que o menu seja anexado novamente à mão quando o usuário se conectar ao usuário. Também é recomendável exigir que os usuários gazesm à sua mão para evitar ativações falsas (veja abaixo).
+Quando o menu estiver bloqueado pelo mundo, certifique-se de fornecer uma maneira de mover o menu e fechar o menu quando ele não for mais necessário. Torne o menu móvel fornecendo identificadores nos lados ou no início do menu. Adicione um botão fechar para permitir que o menu seja fechado. Permita que o menu seja reanexado à mão quando o usuário se conectar ao usuário. Também é recomendável exigir que os usuários olharm à sua mão para evitar ativações falsas (veja abaixo).
 
 **Menu grande que mostra um problema de usabilidade**
 
@@ -69,10 +70,9 @@ Quando o menu estiver bloqueado pelo mundo, certifique-se de fornecer uma maneir
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAf]
 
-
 ## <a name="how-to-prevent-false-activation"></a>Como evitar a ativação falsa
 
-Se você usar apenas o Palm-up como um evento para disparar o menu à mão, ele poderá parecer acidentalmente quando você não precisar dele (falso-positivo), pois as pessoas movem suas mãos de forma intencional (para a manipulação de comunicação e objeto) e não intencionalmente. Para reduzir as ativações falsas, adicione uma etapa adicional além do evento de Palm para invocar o menu à mão (como dedos totalmente abertos ou o usuário intencionalmente nuvens em sua mão).
+Se você usar apenas o Palm-up como um evento para disparar o menu à mão, ele poderá parecer acidentalmente quando você não precisar dele (falso-positivo), pois as pessoas movem suas mãos de forma intencional (para a manipulação de comunicação e objeto) e não intencionalmente. Para reduzir as ativações falsas, adicione uma etapa extra além do evento de Palm para invocar o menu à mão (como dedos totalmente abertos ou o usuário intencionalmente nuvens em sua mão).
 
 **Exigir Palm simples**
 
@@ -80,7 +80,7 @@ Ao exigir uma mão aberta simples, você pode evitar a ativação falsa que pode
 
 **Exigir olhar**
 
-Ao exigir que o usuário olhar a sua mão (com os olhos olhar ou Head olhar), ele impede as ativações falsas devido ao usuário precisar direcionar intencionalmente sua atenção para a mão como uma etapa de ativação secundária (com um limite de distância ajustável usado para permitir o conforto do usuário).  
+Ao exigir que o usuário olhar a sua mão (com os olhos olhar ou Head olhar), ele impede as ativações falsas devido ao usuário ter que direcionar sua atenção à mão como uma etapa de ativação secundária (com um limite de distância ajustável usado para permitir o conforto do usuário).  
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Asn4]
 
@@ -92,33 +92,30 @@ Na anatomia humana, o ulnar núcleo é um núcleo que é executado próximo ao B
 
 Abaixo estão dois posicionamentos recomendados com base em nossas explorações:
 
-
 :::row:::
     :::column:::
-        ![Local do ulnar](images/UlnarSideHandMenu.gif)<br>
+        ![Local do ulnar no Palm](images/UlnarSideHandMenu.gif)<br>
         **A. ulnar dentro do Palm**<br>
         Essa posição é confiável porque as mãos não se sobrepõem. Isso é essencial para a detecção e o acompanhamento precisos.
     :::column-end:::
     :::column:::
-        ![Local do ulnar](images/UlnarAboveHandMenu.gif)<br>
+        ![Local da ulnar na parte superior à mão](images/UlnarAboveHandMenu.gif)<br>
         **B. ulnar acima da mão**<br>
-        Esse local é confortável para os usuários porque eles não precisam aumentar seu braço para interagir com o menu à mão. É recomendável colocar os menus **13cm** acima do Palm e alinhar os botões dentro do Palm ulnar. [Leia mais sobre o tamanho do botão ideal](interactable-object.md)<br>
+        Esse local é confortável para os usuários porque eles não precisam aumentar seu braço para interagir com o menu à mão. Recomendamos colocar os menus **13 cm** acima do Palm e alinhar os botões dentro do Palm ulnar. [Leia mais sobre o tamanho do botão ideal](interactable-object.md)<br>
         <br>
         Por motivos técnicos, recomendamos esse local com uma implementação necessária: o desenvolvedor precisará congelar o menu quando a mão oposta do usuário ficar próxima de interagir com ele. Isso evitará a tremulação de mãos sobrepostas e também permite um direcionamento mais rápido dos botões.<br>
         <br>
-        As câmeras do HoloLens 2 identificam as mãos com precisão quando são separadas umas das outras. Qualquer mão sobreposta pode fazer com que os menus à mão se afastem do local de ancoragem.<br>
+        As câmeras do HoloLens 2 identificam as mãos com precisão quando estão separadas umas das outras. Qualquer mão sobreposta pode fazer com que os menus à mão se afastem do local de ancoragem.<br>
     :::column-end:::
 :::row-end:::
-
-
 
 <br>
 
 ---
 
-## <a name="menu-positions-that-are-not-recommended"></a>Posições de menu que não são recomendadas
-Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os locais de menu a seguir **não são recomendados**, encontre os contras de cada estudo abaixo:
+## <a name="menu-positions-that-arent-recommended"></a>Posições de menu que não são recomendadas
 
+Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os locais de menu a seguir **não são recomendados**, encontre os contras de cada estudo abaixo:
 
 :::row:::
     :::column:::
@@ -130,7 +127,7 @@ Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os loc
     :::column:::
         ![Acima dos dedos](images/AboveFingers.gif)<br>
         **Acima dos dedos**<br>
-        fadiga de 1 mão devido à falta de mão por muito tempo<br>
+        fadiga de 1 mão devido à suspensão por muito tempo<br>
         problemas de acompanhamento de duas mãos no índice e nos dedos centrais
     :::column-end:::
 :::row-end:::
@@ -148,7 +145,7 @@ Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os loc
         ![Topo ](images/TopFingerTip.gif) **superior** da ponta<br>
         problemas de acompanhamento de uma mão<br>
         fadiga de duas mãos da manutenção da postura normal<br>
-        3-problemas ao pressionar os botões com outros dedos por acidente devido ao espaço limitado entre os dedos
+        3-problemas ao pressionar botões com outros dedos por acidente devido a um espaço limitado entre dedos
     :::column-end:::
 :::row-end:::
 
@@ -170,6 +167,7 @@ Fizemos a pesquisa de usuários com diferentes layouts e locais de menus, os loc
 ---
 
 ## <a name="hand-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Menu de mão no MRTK (Kit de ferramentas de realidade misturada) para Unity
+
 O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e exemplos de cenas para o menu da mão. O script do resolvedor HandConstraintPalmUp permite que você anexe qualquer objeto às mãos com várias opções configuráveis. Os exemplos de menu do MRTK incluem opções úteis, como o requisito simples de Palm e olhar para impedir a ativação falsa.
 
 * [Documentações de menus à mão](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
@@ -182,8 +180,7 @@ Você pode experimentar exemplos de menu à mão no HoloLens 2 com exemplos de M
 
 ---
 
-
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

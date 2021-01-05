@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Realidade mista do Windows, barra de aplicativos, caixa delimitadora, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista
-ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703052"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847654"
 ---
 # <a name="bounding-box-and-app-bar"></a>Caixa delimitadora e barra de aplicativos
 ![O limite é a interface padrão para a manipulação de objetos em realidade misturada.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,12 +19,12 @@ ms.locfileid: "94703052"
 
 ## <a name="what-is-the-bounding-box"></a>O que é a caixa delimitadora?
 
-O limite é a interface padrão para a manipulação de objetos em realidade misturada. Ele fornece ao usuário uma economia de que o objeto está ajustável no momento. No HoloLens 2, a caixa delimitadora funciona com a manipulação direta e responde à proximidade finger's do usuário. Ele mostra os comentários visuais para ajudar o usuário a perceber a distância do objeto.
+O limite é a interface padrão para a manipulação de objetos em realidade misturada. Esse recurso fornece ao usuário uma indicação visual de que o objeto está ajustável no momento. No HoloLens 2, a caixa delimitadora funciona com a manipulação direta e responde à proximidade finger's do usuário. Ele mostra os comentários visuais para ajudar o usuário a perceber a distância do objeto.
 
 :::row:::
     :::column:::
         ### <a name="scaling-an-objectbr"></a>Dimensionando um objeto<br>
-        Os cantos da caixa delimitadora informam ao usuário que o objeto pode ser dimensionado. Os identificadores seguem um padrão amplamente compreendido para ajustar a escala. Essa contratação Visual mostra aos usuários a área total do objeto – mesmo se ele não estiver visível fora de um modo de ajuste. Isso é especialmente importante porque, se não existisse, um objeto encaixado em outro objeto ou superfície pode parecer funcionar como se houvesse espaço em volta dele que não deveria estar lá.<br>
+        Os cantos da caixa delimitadora informam ao usuário que o objeto pode ser dimensionado. Os identificadores seguem um padrão amplamente compreendido para ajustar a escala. Esta indicação visual mostra aos usuários a área total do objeto – mesmo se ele não estiver visível fora de um modo de ajuste. Sem esse recurso, um objeto encaixado em outro objeto ou superfície pode parecer se comportando como havia espaço em si que não deveria estar lá.<br>
         <br>
         *Loop de vídeo: dimensionando um objeto por meio da caixa delimitadora*
     :::column-end:::
@@ -54,7 +54,7 @@ O limite é a interface padrão para a manipulação de objetos em realidade mis
 :::row:::
     :::column:::
         ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Comentário visual sobre a proximidade no HoloLens 2<br>
-        No HoloLens 2, há uma indicação visual adicional que pode ajudar a percepção de profundidade do usuário. Um anel próximo a ele é exibido e escala verticalmente conforme o alcance fica mais próximo do objeto. O anel, eventualmente, convergi em um ponto quando o estado pressionado é atingido. Essa unificação Visual ajuda o usuário a entender a distância deles do objeto.<br>
+        No HoloLens 2, há uma indicação visual extra, que pode ajudar a percepção de profundidade do usuário. Um anel próximo a ele é exibido e escala verticalmente conforme o alcance fica mais próximo do objeto. O anel, eventualmente, convergi em um ponto quando o estado pressionado é atingido. Essa unificação Visual ajuda o usuário a entender a distância deles do objeto.<br>
         <br>
         *Loop de vídeo: exemplo de comentários visuais com base na proximidade a uma caixa delimitadora*
     :::column-end:::
@@ -74,12 +74,12 @@ O limite é a interface padrão para a manipulação de objetos em realidade mis
 
 ## <a name="what-is-the-app-bar"></a>O que é a barra de aplicativos?
 
-A barra de aplicativos é um menu de nível de objeto que contém uma série de botões exibidos na borda inferior dos limites de um holograma. Esse padrão geralmente é usado para fornecer aos usuários a capacidade de remover e ajustar os hologramas. A barra de aplicativos foi projetada principalmente como uma maneira de gerenciar objetos posicionados no ambiente de um usuário. Junto com a caixa delimitadora, um usuário tem controle total sobre onde e como os objetos são orientados em realidade misturada.
+A barra de aplicativos é um menu de nível de objeto, que contém uma série de botões exibidos na borda inferior dos limites de um holograma. Esse padrão é comumente usado para permitir que os usuários removam e ajustem os hologramas. A barra de aplicativos foi projetada principalmente como uma maneira de gerenciar objetos posicionados no ambiente de um usuário. Junto com a caixa delimitadora, um usuário tem controle total sobre onde e como os objetos são orientados em realidade misturada.
 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>A barra de aplicativos segue o usuário<br>
-        Como esse padrão é usado com objetos que são protegidos pelo mundo, à medida que um usuário se move pelo objeto, a barra de aplicativos sempre será exibida no lado dos objetos mais próximo do usuário. Embora isso não seja o mural, ele efetivamente obtém o mesmo resultado; impedir que a posição de um usuário occlude ou bloqueie a funcionalidade que, de outra forma, estaria disponível em um local diferente em seu ambiente. <br>
+        Como esse padrão é usado com objetos que são protegidos pelo mundo, à medida que um usuário se move pelo objeto, a barra de aplicativos sempre será exibida no lado dos objetos mais próximo do usuário. Embora não seja tecnicamente, esse recurso atinge efetivamente o mesmo resultado. Impedir que a posição de um usuário occlude ou bloqueie a funcionalidade que, de outra forma, estaria disponível em um local diferente em seu ambiente. <br>
         <br>
         *Loop de vídeo: percorrendo um holograma, a barra de aplicativos segue*
     :::column-end:::
@@ -93,7 +93,7 @@ A barra de aplicativos é um menu de nível de objeto que contém uma série de 
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Caixa delimitadora no MRTK (Kit de ferramentas de realidade misturada) para Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e pré-fabricados para a caixa delimitadora e a barra de aplicativos. Você pode adicionar uma caixa delimitadora simplesmente atribuindo o script BoundingBox.cs em qualquer objeto.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e pré-fabricados para a caixa delimitadora e a barra de aplicativos. Você pode adicionar uma caixa delimitadora atribuindo o script BoundingBox.cs em qualquer objeto.
 
 * [MRTK-caixa delimitadora](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
 
@@ -103,7 +103,7 @@ A barra de aplicativos é um menu de nível de objeto que contém uma série de 
 ---
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

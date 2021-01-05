@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem, Azure, remote rendering, âncoras espaciais, serviços cognitivos, cognição, unity, machine learning, tradução de fala, pesquisa visual computacional, Microsoft Graph
-ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925926"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865401"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Visão geral dos serviços de nuvem da realidade misturada do Azure
 
@@ -28,7 +28,7 @@ Serviços de nuvem de Realidade Misturada como **Azure Remote Rendering** e **Â
 ### <a name="azure-remote-rendering"></a>Azure Remote Rendering
 O ARR, Azure Remote Rendering, é um serviço que permite renderizar modelos 3D altamente complexos quase em tempo real e transmiti-los para um dispositivo. No momento, o ARR está em versão prévia pública e pode ser adicionado aos seus projetos C++ do Unity ou do Native direcionados ao HoloLens 2 ou ao computador desktop Windows.
 
-![ Imagem do Remote Rendering](../design/images/RemoteRendering.jpg)
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 O ARR é um componente essencial de qualquer aplicativo de Realidade Misturada executado em um dispositivo não conectado, pois tem menos capacidade computacional de renderização. Use a seguinte comparação de modelo de mecanismo lado a lado como exemplo: o modelo de alta fidelidade à esquerda tem mais de 18 milhões triângulos, enquanto o modelo reduzido à direita tem apenas cerca de 200 mil. Em cenários em que todos os detalhes são importantes – gerenciamento de plantas industriais, análise de design para ativos como motores de caminhão, planejamento pré-operatório para cirurgia e muito mais –, a visualização 3D dá vida a esses detalhes. É isso que ajuda os designers, engenheiros, médicos e estudantes a entender melhor as informações complexas e fazer a chamada correta. Mas essa simplificação pode resultar em uma perda de detalhes importantes que é necessária nas principais decisões de negócios e de design.
 

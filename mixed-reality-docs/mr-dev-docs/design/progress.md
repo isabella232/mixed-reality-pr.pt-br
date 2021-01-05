@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, controles, interface do usuário, UX, indicador de progresso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470508"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848285"
 ---
 # <a name="progress-indicator"></a>Indicador de progresso
 
@@ -19,7 +19,7 @@ ms.locfileid: "96470508"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-Um controle de progresso oferece feedback ao usuário que uma operação de execução longa está em andamento. Isso pode significar que o usuário não pode interagir com o aplicativo quando o indicador de progresso está visível e também pode indicar a duração do tempo de espera, dependendo do indicador usado.
+Um controle de progresso fornece comentários de que uma operação de longa execução está em andamento. Quando um indicador de progresso é visível, os usuários podem ver o tempo de espera e não podem interagir com o aplicativo.
 
 <br>
 
@@ -27,12 +27,12 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 
 ## <a name="types-of-progress"></a>Tipo de progresso
 
-É importante fornecer as informações do usuário sobre o que está acontecendo. Em realidade misturada, os usuários podem ser facilmente distraídosdos por ambientes físicos ou objetos se seu aplicativo não fornecer bons comentários visuais. Para situações que levam alguns segundos, como quando os dados estão sendo carregados ou uma cena está atualizando, é recomendável mostrar um indicador visual. Há duas opções para mostrar ao usuário que uma operação está em andamento – uma **barra de progresso** ou um **anel de progresso**.
+É importante fornecer as informações do usuário sobre o que está acontecendo. Em realidade misturada, os usuários podem ser facilmente distraídos pelo ambiente físico ou pelos objetos se seu aplicativo não tiver bons comentários visuais. Para situações que levam alguns segundos, como quando os dados estão sendo carregados ou uma cena está atualizando, é uma boa ideia mostrar um indicador visual. Há duas opções para mostrar ao usuário que uma operação está em andamento – uma **barra de progresso** ou um **anel de progresso**.
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>Barra de progresso<br>
-        Uma barra de progresso mostra a porcentagem concluída de uma tarefa. Ele deve ser usado durante uma operação cuja duração é conhecida (desterminada), mas o progresso não deve bloquear a interação do usuário com o aplicativo.<br>
+        Uma barra de progresso mostra a porcentagem concluída de uma tarefa. Ele deve ser usado durante uma operação cuja duração é conhecida (desterminada), mas seu progresso não deve bloquear a interação do usuário com o aplicativo.<br>
         <br>
         *Imagem: exemplo de barra de progresso no HoloLens*
     :::column-end:::
@@ -49,13 +49,13 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>Anel de progresso<br>
-        Um anel de progresso tem apenas um estado indeterminado e deve ser usado quando qualquer interação adicional do usuário é bloqueada até que a operação seja concluída.<br>
+        Um anel de progresso tem apenas um estado indeterminado e deve ser usado quando a interação do usuário é bloqueada até que a operação seja concluída.<br>
         <br>
         *Imagem: exemplo de anel de andamento no HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Exemplo de anel de andamento no HoloLens](images/640px-progressring.jpg)<br>
+       ![Exemplo de anel de andamento no dispositivo HoloLens](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -98,7 +98,7 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 
 ---
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)
