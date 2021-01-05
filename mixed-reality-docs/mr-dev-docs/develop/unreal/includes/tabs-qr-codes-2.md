@@ -1,15 +1,16 @@
 ---
-ms.openlocfilehash: 8a04f1995ca939307ea5c571798a0c90990165e5
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4a421ae8523e11beed66bcfdca6f64f5b980e2dd
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443688"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717825"
 ---
-# <a name="425"></a>[<span data-ttu-id="a387d-101">4.25</span><span class="sxs-lookup"><span data-stu-id="a387d-101">4.25</span></span>](#tab/425)
+# <a name="426"></a>[<span data-ttu-id="02ee9-101">4.26</span><span class="sxs-lookup"><span data-stu-id="02ee9-101">4.26</span></span>](#tab/426)
+
+![Exemplo de renderização de QR para a versão 4.26](../images/qr-codes-img-02.png)
+
+# <a name="425"></a>[<span data-ttu-id="02ee9-103">4.25</span><span class="sxs-lookup"><span data-stu-id="02ee9-103">4.25</span></span>](#tab/425)
 
 ![Exemplo de renderização de QR para a versão 4.25](../images/unreal-qr-render.PNG)
 
-# <a name="426"></a>[<span data-ttu-id="a387d-103">4.26</span><span class="sxs-lookup"><span data-stu-id="a387d-103">4.26</span></span>](#tab/426)
-
-![Exemplo de renderização de QR para a versão 4.26](../images/qr-codes-img-02.png)
