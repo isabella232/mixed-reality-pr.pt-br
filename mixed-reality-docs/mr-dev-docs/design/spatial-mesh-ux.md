@@ -1,61 +1,63 @@
 ---
 title: Visualização de malha espacial
+description: Saiba mais sobre como os dispositivos entendem ambientes físicos usando malhas espaciais.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703292"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848193"
 ---
-# <a name="spatial-mesh"></a><span data-ttu-id="300b0-103">Malha espacial</span><span class="sxs-lookup"><span data-stu-id="300b0-103">Spatial mesh</span></span>
+# <a name="spatial-mesh"></a><span data-ttu-id="2a0f9-104">Malha espacial</span><span class="sxs-lookup"><span data-stu-id="2a0f9-104">Spatial mesh</span></span>
 
 ![Malha espacial](images/MRTK_PulseShader_SpatialMesh.gif)
 
-<span data-ttu-id="300b0-105">Por meio da visualização de malha espacial, o usuário pode aprender como um dispositivo percebe e entende o ambiente físico.</span><span class="sxs-lookup"><span data-stu-id="300b0-105">Through the spatial mesh visualization, the user can learn how a device perceives and understands the physical environment.</span></span> <span data-ttu-id="300b0-106">Além de fornecer o contexto espacial, a visualização da malha espacial adequada pode criar uma experiência interessantes e mágico.</span><span class="sxs-lookup"><span data-stu-id="300b0-106">In addition to providing spatial context, proper spatial mesh visualization can create a delightful and magical experience.</span></span>  
+<span data-ttu-id="2a0f9-106">Os usuários aprendem como um dispositivo percebe e compreende o ambiente físico por meio da visualização de malha espacial.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-106">Users learn how a device perceives and understands the physical environment through spatial mesh visualization.</span></span> <span data-ttu-id="2a0f9-107">A visualização de malha espacial adequada pode criar uma experiência de interessantes e mágico enquanto fornece o contexto espacial.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-107">Proper spatial mesh visualization can create a delightful and magical experience while providing spatial context.</span></span>  
 
-## <a name="design-guideline"></a><span data-ttu-id="300b0-107">Diretriz de design</span><span class="sxs-lookup"><span data-stu-id="300b0-107">Design guideline</span></span>
-<span data-ttu-id="300b0-108">Como é importante permitir que o usuário se concentre e interaja com o conteúdo, a visualização contínua e repetida da malha espacial em segundo plano poderia ser uma distração.</span><span class="sxs-lookup"><span data-stu-id="300b0-108">Since it's important to allow the user to focus and interact with content, continuous and repeated visualization of the spatial mesh in the background could be distracting.</span></span> <span data-ttu-id="300b0-109">É recomendável Visualizar o ambiente com moderação, seja apenas uma vez na inicialização inicial ou quando o usuário mostrar uma intenção clara de ver a malha ambiental por direcionamento e espaço de toque.</span><span class="sxs-lookup"><span data-stu-id="300b0-109">It is recommended to visualize the environment sparingly, either only once in the initial launch or when the user shows clear intention to see the environmental mesh by targeting and air-tapping space.</span></span> <span data-ttu-id="300b0-110">Você pode observar esse comportamento no Shell do HoloLens.</span><span class="sxs-lookup"><span data-stu-id="300b0-110">You can observe this behavior in the HoloLens shell.</span></span>
+## <a name="design-guideline"></a><span data-ttu-id="2a0f9-108">Diretriz de design</span><span class="sxs-lookup"><span data-stu-id="2a0f9-108">Design guideline</span></span>
+
+<span data-ttu-id="2a0f9-109">É importante permitir que o usuário se concentre e interaja com o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-109">It's important to allow the user to focus and interact with content.</span></span> <span data-ttu-id="2a0f9-110">A visualização contínua da malha espacial em segundo plano pode ser uma distração.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-110">Continuous visualization of the spatial mesh in the background can be distracting.</span></span> <span data-ttu-id="2a0f9-111">É recomendável Visualizar o ambiente com moderação, seja apenas uma vez na inicialização inicial ou quando o usuário mostrar claramente que deseja ver a malha ambiental por direcionamento e espaço de toque.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-111">We recommend visualizing the environment sparingly, either only once in the initial launch or when the user clearly shows they want to see the environmental mesh by targeting and air-tapping space.</span></span> <span data-ttu-id="2a0f9-112">Você pode observar esse comportamento no portal de realidade misturada.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-112">You can observe this behavior in the Mixed Reality Portal.</span></span>
 <br>
 
+## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="2a0f9-113">Visualização de malha espacial no MRTK (Kit de ferramentas de realidade mista) para Unity</span><span class="sxs-lookup"><span data-stu-id="2a0f9-113">Spatial mesh visualization in MRTK (Mixed Reality Toolkit) for Unity</span></span>
 
-## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="300b0-111">Visualização de malha espacial no MRTK (Kit de ferramentas de realidade mista) para Unity</span><span class="sxs-lookup"><span data-stu-id="300b0-111">Spatial mesh visualization in MRTK (Mixed Reality Toolkit) for Unity</span></span>
-<span data-ttu-id="300b0-112">O MRTK fornece vários materiais para a visualização de malha espacial.</span><span class="sxs-lookup"><span data-stu-id="300b0-112">MRTK provides several materials for the spatial mesh visualization.</span></span>
+<span data-ttu-id="2a0f9-114">O MRTK fornece vários materiais para a visualização de malha espacial.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-114">MRTK provides several materials for the spatial mesh visualization.</span></span>
 
-- <span data-ttu-id="300b0-113">**MRTK_Wireframe. esteira, MRTK_Wireframe. passe-partout**: material de malha espacial estática padrão que mostra os contornos de malha sem animação.</span><span class="sxs-lookup"><span data-stu-id="300b0-113">**MRTK_Wireframe.mat, MRTK_Wireframe.mat**: Default static spatial mesh material which shows the mesh outlines without animation.</span></span> <span data-ttu-id="300b0-114">Esse material é útil para fins de depuração, pois mostra as geometrias de malha espacial inteiras.</span><span class="sxs-lookup"><span data-stu-id="300b0-114">This material is useful for debugging purposes since it shows the entire spatial mesh geometries.</span></span> <span data-ttu-id="300b0-115">No entanto, não é recomendável para produção.</span><span class="sxs-lookup"><span data-stu-id="300b0-115">However, it is not recommended for production.</span></span>
+- <span data-ttu-id="2a0f9-115">**MRTK_Wireframe. esteira, MRTK_Wireframe. passe-partout**: material de malha espacial estática padrão, que mostra os contornos de malha sem animação.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-115">**MRTK_Wireframe.mat, MRTK_Wireframe.mat**: Default static spatial mesh material, which shows the mesh outlines without animation.</span></span> <span data-ttu-id="2a0f9-116">Esse material é útil para fins de depuração, pois mostra as geometrias de malha espacial inteiras.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-116">This material is useful for debugging purposes since it shows the entire spatial mesh geometries.</span></span> <span data-ttu-id="2a0f9-117">No entanto, não é recomendável para produção.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-117">However, it isn't recommended for production.</span></span>
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- <span data-ttu-id="300b0-116">**MRTK_SurfaceReconstruction. passe-partout**: esse material oferece um efeito de pulso animado na malha espacial.</span><span class="sxs-lookup"><span data-stu-id="300b0-116">**MRTK_SurfaceReconstruction.mat**: This material gives you an animated pulse effect on the spatial mesh.</span></span> <span data-ttu-id="300b0-117">Você pode usar esse material para visualizar o ambiente em um momento específico da sua experiência ou na entrada do toque do usuário.</span><span class="sxs-lookup"><span data-stu-id="300b0-117">You can use this material to visualize the environment at a specific moment of your experience or on the user's air-tap input.</span></span> <span data-ttu-id="300b0-118">Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.</span><span class="sxs-lookup"><span data-stu-id="300b0-118">See **PulseShaderExamples.unity** scene for the examples.</span></span>
+- <span data-ttu-id="2a0f9-118">**MRTK_SurfaceReconstruction. passe-partout**: esse material oferece um efeito de pulso animado na malha espacial.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-118">**MRTK_SurfaceReconstruction.mat**: This material gives you an animated pulse effect on the spatial mesh.</span></span> <span data-ttu-id="2a0f9-119">Você pode usar esse material para visualizar o ambiente em um momento específico ou na entrada aérea do usuário.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-119">You can use this material to visualize the environment at a specific moment or on the user's air-tap input.</span></span> <span data-ttu-id="2a0f9-120">Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.</span><span class="sxs-lookup"><span data-stu-id="2a0f9-120">See **PulseShaderExamples.unity** scene for the examples.</span></span>
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* <span data-ttu-id="300b0-119">Consulte [reconhecimento espacial MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) e [sombreador MRTK-Pulse](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) para obter mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="300b0-119">Please see [MRTK - Spatial Awareness](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) and [MRTK - Pulse Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) for more details.</span></span>
+* <span data-ttu-id="2a0f9-121">Para obter mais informações, consulte [reconhecimento espacial do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) e [sombreador MRTK-Pulse](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html).</span><span class="sxs-lookup"><span data-stu-id="2a0f9-121">For more information, see [MRTK - Spatial Awareness](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) and [MRTK - Pulse Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html).</span></span>
 
 <br>
 
 ---
 
-## <a name="see-also"></a><span data-ttu-id="300b0-120">Veja também</span><span class="sxs-lookup"><span data-stu-id="300b0-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2a0f9-122">Consulte também</span><span class="sxs-lookup"><span data-stu-id="2a0f9-122">See also</span></span>
 
-* [<span data-ttu-id="300b0-121">Cursores</span><span class="sxs-lookup"><span data-stu-id="300b0-121">Cursors</span></span>](cursors.md)
-* [<span data-ttu-id="300b0-122">Raio de mão</span><span class="sxs-lookup"><span data-stu-id="300b0-122">Hand ray</span></span>](point-and-commit.md)
-* [<span data-ttu-id="300b0-123">Botão</span><span class="sxs-lookup"><span data-stu-id="300b0-123">Button</span></span>](button.md)
-* [<span data-ttu-id="300b0-124">Objeto interativo</span><span class="sxs-lookup"><span data-stu-id="300b0-124">Interactable object</span></span>](interactable-object.md)
-* [<span data-ttu-id="300b0-125">Caixa delimitadora e barra de aplicativos</span><span class="sxs-lookup"><span data-stu-id="300b0-125">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
-* [<span data-ttu-id="300b0-126">Manipulação</span><span class="sxs-lookup"><span data-stu-id="300b0-126">Manipulation</span></span>](direct-manipulation.md)
-* [<span data-ttu-id="300b0-127">Menu lateral</span><span class="sxs-lookup"><span data-stu-id="300b0-127">Hand menu</span></span>](hand-menu.md)
-* [<span data-ttu-id="300b0-128">Menu próximo</span><span class="sxs-lookup"><span data-stu-id="300b0-128">Near menu</span></span>](near-menu.md)
-* [<span data-ttu-id="300b0-129">Coleção de objetos</span><span class="sxs-lookup"><span data-stu-id="300b0-129">Object collection</span></span>](object-collection.md)
-* [<span data-ttu-id="300b0-130">Comando de voz</span><span class="sxs-lookup"><span data-stu-id="300b0-130">Voice command</span></span>](voice-input.md)
-* [<span data-ttu-id="300b0-131">Teclado</span><span class="sxs-lookup"><span data-stu-id="300b0-131">Keyboard</span></span>](keyboard.md)
-* [<span data-ttu-id="300b0-132">Dica de ferramenta</span><span class="sxs-lookup"><span data-stu-id="300b0-132">Tooltip</span></span>](tooltip.md)
-* [<span data-ttu-id="300b0-133">Slate</span><span class="sxs-lookup"><span data-stu-id="300b0-133">Slate</span></span>](slate.md)
-* [<span data-ttu-id="300b0-134">Controle deslizante</span><span class="sxs-lookup"><span data-stu-id="300b0-134">Slider</span></span>](slider.md)
-* [<span data-ttu-id="300b0-135">Sombreador</span><span class="sxs-lookup"><span data-stu-id="300b0-135">Shader</span></span>](shader.md)
-* [<span data-ttu-id="300b0-136">Mural e tag-along</span><span class="sxs-lookup"><span data-stu-id="300b0-136">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
-* [<span data-ttu-id="300b0-137">Exibindo o progresso</span><span class="sxs-lookup"><span data-stu-id="300b0-137">Displaying progress</span></span>](progress.md)
-* [<span data-ttu-id="300b0-138">Magnetismo de superfície</span><span class="sxs-lookup"><span data-stu-id="300b0-138">Surface magnetism</span></span>](surface-magnetism.md)
+* [<span data-ttu-id="2a0f9-123">Cursores</span><span class="sxs-lookup"><span data-stu-id="2a0f9-123">Cursors</span></span>](cursors.md)
+* [<span data-ttu-id="2a0f9-124">Raio de mão</span><span class="sxs-lookup"><span data-stu-id="2a0f9-124">Hand ray</span></span>](point-and-commit.md)
+* [<span data-ttu-id="2a0f9-125">Botão</span><span class="sxs-lookup"><span data-stu-id="2a0f9-125">Button</span></span>](button.md)
+* [<span data-ttu-id="2a0f9-126">Objeto interativo</span><span class="sxs-lookup"><span data-stu-id="2a0f9-126">Interactable object</span></span>](interactable-object.md)
+* [<span data-ttu-id="2a0f9-127">Caixa delimitadora e barra de aplicativos</span><span class="sxs-lookup"><span data-stu-id="2a0f9-127">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
+* [<span data-ttu-id="2a0f9-128">Manipulação</span><span class="sxs-lookup"><span data-stu-id="2a0f9-128">Manipulation</span></span>](direct-manipulation.md)
+* [<span data-ttu-id="2a0f9-129">Menu lateral</span><span class="sxs-lookup"><span data-stu-id="2a0f9-129">Hand menu</span></span>](hand-menu.md)
+* [<span data-ttu-id="2a0f9-130">Menu próximo</span><span class="sxs-lookup"><span data-stu-id="2a0f9-130">Near menu</span></span>](near-menu.md)
+* [<span data-ttu-id="2a0f9-131">Coleção de objetos</span><span class="sxs-lookup"><span data-stu-id="2a0f9-131">Object collection</span></span>](object-collection.md)
+* [<span data-ttu-id="2a0f9-132">Comando de voz</span><span class="sxs-lookup"><span data-stu-id="2a0f9-132">Voice command</span></span>](voice-input.md)
+* [<span data-ttu-id="2a0f9-133">Teclado</span><span class="sxs-lookup"><span data-stu-id="2a0f9-133">Keyboard</span></span>](keyboard.md)
+* [<span data-ttu-id="2a0f9-134">Dica de ferramenta</span><span class="sxs-lookup"><span data-stu-id="2a0f9-134">Tooltip</span></span>](tooltip.md)
+* [<span data-ttu-id="2a0f9-135">Slate</span><span class="sxs-lookup"><span data-stu-id="2a0f9-135">Slate</span></span>](slate.md)
+* [<span data-ttu-id="2a0f9-136">Controle deslizante</span><span class="sxs-lookup"><span data-stu-id="2a0f9-136">Slider</span></span>](slider.md)
+* [<span data-ttu-id="2a0f9-137">Sombreador</span><span class="sxs-lookup"><span data-stu-id="2a0f9-137">Shader</span></span>](shader.md)
+* [<span data-ttu-id="2a0f9-138">Mural e tag-along</span><span class="sxs-lookup"><span data-stu-id="2a0f9-138">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
+* [<span data-ttu-id="2a0f9-139">Exibindo o progresso</span><span class="sxs-lookup"><span data-stu-id="2a0f9-139">Displaying progress</span></span>](progress.md)
+* [<span data-ttu-id="2a0f9-140">Magnetismo de superfície</span><span class="sxs-lookup"><span data-stu-id="2a0f9-140">Surface magnetism</span></span>](surface-magnetism.md)
