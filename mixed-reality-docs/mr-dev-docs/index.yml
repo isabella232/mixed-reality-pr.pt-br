@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 158bb9d50e8d288cf4fc345b5f5e210f113146ae
-  ms.sourcegitcommit: 856a1a48f05dd84f884a6e64bef4003e3768e669
+  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
+  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96604809"
+  ms.lasthandoff: 01/06/2021
+  ms.locfileid: "97905278"
 highlightedContent:
   items:
   - title: O que é Realidade Misturada?
@@ -69,16 +69,16 @@ productDirectory:
     links:
     - url: develop/development.md
       text: Escolha o seu caminho de tecnologia
-    - url: develop/install-the-tools.md
-      text: Instalar as ferramentas
+    - url: develop/features-and-samples.md
+      text: Encontrar exemplos e aplicativos de recursos
     - url: develop/unity/unity-development-overview.md
       text: Introdução ao Unity
     - url: develop/unreal/unreal-development-overview.md
       text: Introdução ao Unreal
     - url: develop/porting-apps/porting-overview.md
       text: Portar seus aplicativos existentes
-    - url: develop/porting-apps/porting-hl1-hl2.md
-      text: Preparar o seu aplicativo para o HoloLens 2
+    - url: distribute/distribute-overview.md
+      text: Publicar seus aplicativos
   - title: Implantar
     imageSrc: images/icon-distribution.jpg
     links:
@@ -90,8 +90,8 @@ productDirectory:
       text: Registrar os seus dispositivos
     - url: https://docs.microsoft.com/hololens/hololens-updates
       text: Gerenciar as suas atualizações do HoloLens
-    - url: https://docs.microsoft.com/hololens/hololens-release-notes
-      text: Notas de versão
+    - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+      text: Implantação conectada à nuvem com a Assistência Remota
     - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
       text: Solução de problemas e suporte
 conceptualContent:
@@ -186,60 +186,3 @@ tools:
   - title: API do OpenXR
     imageSrc: images/Final_mrdl_logo.png
     url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
-additionalContent:
-  sections:
-  - title: Recursos adicionais
-    summary: Prepare os seus aplicativos para implantação comercial, integre os Serviços de Nuvem do Azure ou teste nossos aplicativos de exemplo.
-    items:
-    - title: Distribuir
-      links:
-      - text: Visão geral da distribuição
-        url: distribute/distribute-overview.md
-      - text: Criar um inicializador de aplicativos 3D
-        url: distribute/3d-app-launcher-design-guidance.md
-      - text: Criar modelos 3D para a Página Inicial da Realidade Misturada
-        url: distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
-      - text: Implementar inicializadores de aplicativos 3D em aplicativos UWP
-        url: distribute/implementing-3d-app-launchers.md
-      - text: Adicionar as compras no aplicativo
-        url: distribute/in-app-purchases.md
-      - text: Enviar para a Microsoft Store
-        url: distribute/submitting-an-app-to-the-microsoft-store.md
-    - title: Realidade Misturada do Dynamics 365
-      links:
-      - text: Documentação do Dynamics 365
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/
-      - text: Usar a Assistência Remota
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-      - text: Guias do usuário
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-      - text: Módulos de aprendizado da Assistência Remota
-        url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
-    - title: Serviços de Nuvem do Azure
-      links:
-      - text: Visão geral dos Serviços de Nuvem
-        url: develop/mixed-reality-cloud-services.md
-      - text: Aventure-se nas Âncoras Espaciais do Azure
-        url: https://docs.microsoft.com/azure/spatial-anchors/
-      - text: Tutoriais de Âncoras Espaciais do Azure
-        url: develop/unity/tutorials/mr-learning-asa-01.md
-      - text: Faça o desenvolvimento com o Azure Remote Rendering
-        url: https://docs.microsoft.com/azure/remote-rendering/
-      - text: Tutoriais do Azure Remote Rendering
-        url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
-    - title: Aplicativos de Exemplo do HoloLens 2
-      links:
-      - text: Surfaces
-        url: develop/unity/sampleapp-surfaces.md
-      - text: Tabela Periódica dos Elementos 2.0
-        url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
-      - text: Galaxy Explorer 2.0
-        url: develop/unity/galaxy-explorer-update.md
-    - title: Módulos de aprendizagem
-      links:
-      - text: Introdução à Realidade Misturada
-        url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
-      - text: Configurar um projeto de realidade misturada no Unity com o Kit de Ferramentas de Realidade Misturada
-        url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
-      - text: Criar um aplicativo tradutor de idiomas com o Unity e os Serviços Cognitivos do Azure
-        url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
