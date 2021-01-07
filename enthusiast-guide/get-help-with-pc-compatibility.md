@@ -3,17 +3,17 @@ title: Obtenha ajuda com a compatibilidade do PC no Windows Mixed Reality
 description: Recurso de ajuda para problemas de compatibilidade de PC ao trabalhar com a realidade mista do Windows.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
-ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
+ms.openlocfilehash: a3d8c21a6f9f94cbecca81915145603588e468ff
+ms.sourcegitcommit: e944f24d2deb4433865cc8f6fd9305d6d9676f48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97956059"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97971895"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Obtenha ajuda com a compatibilidade do PC no Windows Mixed Reality
 
