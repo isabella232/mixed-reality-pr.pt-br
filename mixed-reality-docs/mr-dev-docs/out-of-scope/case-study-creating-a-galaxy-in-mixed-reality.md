@@ -1,17 +1,17 @@
 ---
 title: Estudo de caso-criando um Galaxy em realidade misturada
-description: Antes de o Microsoft HoloLens ser enviado, pedimos à nossa comunidade de desenvolvedores que tipo de aplicativo gostaria de ver um Build de equipe interno experiente para o novo dispositivo. Mais de 5000 ideias foram compartilhadas e, após uma sondagem do Twitter de 24 horas, o vencedor foi uma ideia chamada "Galaxy Explorer".
+description: Saiba mais sobre o aplicativo "Galaxy Explorer" e como ele foi criado para o Microsft HoloLens e após uma sondagem do Twitter de 24 horas pelos desenvolvedores da Comunidade.
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, HoloLens, realidade mista do Windows, compartilhe sua ideia, estudo de caso
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675963"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009776"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Estudo de caso-criando um Galaxy em realidade misturada
 
@@ -41,7 +41,7 @@ Começamos testes de estresse com milhares de partículas de ponto em vários pa
 
 ### <a name="creating-the-position-of-the-stars"></a>Criando a posição das estrelas
 
-Um dos nossos membros da equipe já escreveu o código C# que geraria estrelas em sua posição inicial. As estrelas estão em uma elipse e sua posição pode ser descrita por ( **curveOffset** , **ellipseSize** , **elevação** ), em que **curveOffset** é o ângulo da estrela ao longo da elipse, **EllipseSize** é a dimensão da elipse ao longo de X e Z e elevação da elevação adequada da estrela no Galaxy. Assim, podemos criar um buffer ([ComputeBuffer do Unity](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) que seria inicializado com cada atributo Star e enviá-lo na GPU onde ele residiria para o restante da experiência. Para desenhar esse buffer, usamos o [DrawProcedural do Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) , que permite executar um sombreador (código em uma GPU) em um conjunto arbitrário de pontos sem ter uma malha real que represente o Galaxy:
+Um dos nossos membros da equipe já escreveu o código C# que geraria estrelas em sua posição inicial. As estrelas estão em uma elipse e sua posição pode ser descrita por (**curveOffset**, **ellipseSize**, **elevação**), em que **curveOffset** é o ângulo da estrela ao longo da elipse, **EllipseSize** é a dimensão da elipse ao longo de X e Z e elevação da elevação adequada da estrela no Galaxy. Assim, podemos criar um buffer ([ComputeBuffer do Unity](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) que seria inicializado com cada atributo Star e enviá-lo na GPU onde ele residiria para o restante da experiência. Para desenhar esse buffer, usamos o [DrawProcedural do Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) , que permite executar um sombreador (código em uma GPU) em um conjunto arbitrário de pontos sem ter uma malha real que represente o Galaxy:
 
 **CPUs**
 
@@ -85,14 +85,14 @@ Depois que as reticências suficientes são adicionadas e definidas para girar, 
 
 ### <a name="creating-the-motion-of-the-stars"></a>Criando o movimento das estrelas
 
-Para animar o movimento de estrela geral, precisávamos adicionar um ângulo constante para cada quadro e fazer com que as estrelas se movimentem ao longo de suas reticências a uma velocidade radial constante. Esse é o principal motivo para usar o **curveOffset** . Isso não é tecnicamente correto, pois as estrelas se moverão mais rapidamente ao longo dos lados longos das reticências, mas o movimento geral parecia bom.
+Para animar o movimento de estrela geral, precisávamos adicionar um ângulo constante para cada quadro e fazer com que as estrelas se movimentem ao longo de suas reticências a uma velocidade radial constante. Esse é o principal motivo para usar o **curveOffset**. Isso não é tecnicamente correto, pois as estrelas se moverão mais rapidamente ao longo dos lados longos das reticências, mas o movimento geral parecia bom.
 
 ![As estrelas se movem mais rapidamente no arco longo, mais devagar nas bordas.](images/ellipse-movement.jpg)
 
 As estrelas se movem mais rapidamente no arco longo, mais devagar nas bordas.
 
 
-Com isso, cada estrela é totalmente descrita por ( **curveOffset** , **ellipseSize** , **elevação** , **idade** ), em que **age** é uma acumulação do tempo total que passou desde que a cena foi carregada.
+Com isso, cada estrela é totalmente descrita por (**curveOffset**, **ellipseSize**, **elevação**, **idade**), em que **age** é uma acumulação do tempo total que passou desde que a cena foi carregada.
 
 
 
@@ -203,6 +203,6 @@ Interessado em saber mais sobre o processo de desenvolvimento do Galaxy Explorer
 </table>
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Gerenciador do Galaxy no GitHub](https://github.com/Microsoft/GalaxyExplorer)
 * [Atualizações de projeto do Galaxy Explorer no YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

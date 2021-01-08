@@ -1,17 +1,17 @@
 ---
 title: Foco com a cabeça e confirmação
-description: Visão geral do olhar e do modelo de entrada de confirmação.
+description: Comece a usar o olhar e confirme o modelo de entrada, incluindo dimensionamento, posicionamento e estabilização de destino.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, destino, foco, suavização
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847881"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009446"
 ---
 # <a name="head-gaze-and-commit"></a>Foco com a cabeça e confirmação
 
@@ -89,7 +89,7 @@ Esse mecanismo pode ser considerado como uma versão mais comum dos algoritmos d
 
 Ao determinar quais elementos interativos adjacentes fornecem, concentre-se, a adesão do foco fornece uma tendência para o elemento que está atualmente focado. Isso ajuda a reduzir os comportamentos incorretos de alternância de foco ao flutuar em um ponto médio entre dois elementos com ruído natural.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Interação ocular](eye-gaze-interaction.md)
 * [Focar e esperar](gaze-and-dwell.md)

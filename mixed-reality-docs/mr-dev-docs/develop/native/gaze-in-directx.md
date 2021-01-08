@@ -1,17 +1,17 @@
 ---
 title: Olhar fixo com cabeça e olhos no DirectX
-description: Saiba como usar o Head olhar e o acompanhamento de olho em aplicativos nativos do DirectX.
+description: Saiba como solicitar, usar e desempacotar dados do raycasting de cabeça olhar e acompanhamento de olho em aplicativos nativos do DirectX.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: olho-olhar, cabeça olhar, controle de cabeça, controle ocular, DirectX, entrada, hologramas, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848087"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009546"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Cabeça-olhar e olho-olhar entrada no DirectX
 
@@ -27,6 +27,7 @@ No Windows Mixed Reality, os olhos e a entrada olhar de cabeça são usados para
 Os raios de cabeça e olho-olhar podem ser acessados por meio da API do  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Chame [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) para receber um novo objeto SpatialPointerPose no [sistema](coordinate-systems-in-directx.md)de carimbo de data e hora especificado. Este SpatialPointerPose contém uma origem e direção olhar. Ele também contém uma origem e direção olhar, se o acompanhamento dos olhos estiver disponível.
 
 ### <a name="device-support"></a>Suporte a dispositivos
+
 <table>
 <colgroup>
     <col width="25%" />
@@ -216,7 +217,7 @@ Os desenvolvedores devem certificar-se de fornecer suporte adequado para usuári
 
 <br>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Calibragem](../../calibration.md)
 * [Sistemas de coordenadas no DirectX](coordinate-systems-in-directx.md)

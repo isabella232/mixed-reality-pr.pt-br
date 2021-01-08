@@ -1,17 +1,17 @@
 ---
 title: Notas sobre a versão – maio de 2016
-description: As notas de versão do HoloLens para o Windows Holographic podem ser atualizadas 2016.
+description: Mantenha-se atualizado sobre as notas de versão do HoloLens para o Windows Holographic pode atualizar 2016.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, notas de versão, so, recursos, compilação, plataforma
-ms.openlocfilehash: a1e5ab1ead2816baf2f03c1037299090e1246f17
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725947"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009496"
 ---
 # <a name="release-notes---may-2016"></a>Notas sobre a versão – maio de 2016
 
@@ -112,7 +112,7 @@ Corrigimos problemas com o Visual Studio em que
 ## <a name="prior-release-notes"></a>Notas de versão anteriores
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Problemas conhecidos do HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
 * [Shell](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)

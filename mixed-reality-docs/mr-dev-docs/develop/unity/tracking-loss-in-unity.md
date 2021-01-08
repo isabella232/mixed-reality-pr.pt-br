@@ -1,17 +1,17 @@
 ---
 title: Como controlar a perda no Unity
-description: Tratamento da perda de controle em um aplicativo do Unity.
+description: Saiba como lidar com a perda de rastreamento manual e padrão em um aplicativo do Unity Mixed Reality.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, perda de controle, imagem de perda de rastreamento, sondagem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010047"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009846"
 ---
 # <a name="tracking-loss-in-unity"></a>Como controlar a perda no Unity
 
@@ -81,5 +81,6 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
+
 * [Lidando com a perda de controle no DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

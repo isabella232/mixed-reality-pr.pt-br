@@ -1,17 +1,17 @@
 ---
 title: Transferências de âncora local no DirectX
-description: Explica como sincronizar dois dispositivos HoloLens Transferindo âncoras espaciais.
+description: Saiba como sincronizar dois dispositivos HoloLens Transferindo, exportando e serializando âncoras espaciais.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, sincronizar, âncora espacial, transferência, vários participantes, exibição, cenário, passo a passos, código de exemplo, transferência, transferência de âncora local, exportação de âncora, importação de âncora
-ms.openlocfilehash: 6d54b29a01617f9d78b7fdfec0ebc04a3cd48002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675188"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009646"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Transferências de âncora local no DirectX
 
@@ -31,7 +31,7 @@ Observe que as âncoras espaciais não podem ser transferidas entre diferentes t
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurar seu aplicativo para usar o recurso spatialPerception
 
-Seu aplicativo deve receber permissão para usar o recurso spatialPerception antes de poder usar o [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Isso é necessário porque a transferência de uma âncora espacial envolve o compartilhamento de imagens do sensor reunidas ao longo do tempo na proximidade da âncora, que pode incluir informações confidenciais.
+Seu aplicativo deve receber permissão para usar o recurso SpatialPerception antes de poder usar o [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Isso é necessário porque a transferência de uma âncora espacial envolve o compartilhamento de imagens do sensor reunidas ao longo do tempo na proximidade da âncora, que pode incluir informações confidenciais.
 
 Declare esse recurso no arquivo Package. appxmanifest para seu aplicativo. Aqui está um exemplo:
 
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-É isso! Agora, você deve ter informações suficientes para tentar localizar as âncoras recebidas pela rede. Novamente, observe que o cliente deve ter dados de controle visual suficientes para o espaço localizar a âncora com êxito; Se não funcionar imediatamente, tente percorrer um tempo. Se ainda não funcionar, faça com que o servidor envie mais âncoras e use as comunicações de rede para concordar em uma que funcione para o cliente. Você pode experimentar isso baixando o HolographicSpatialAnchorTransferSample, configurando seus IPs de cliente e de servidor e implantando-os em dispositivos HoloLens de cliente e servidor.
+Pronto! Agora, você deve ter informações suficientes para tentar localizar as âncoras recebidas pela rede. Novamente, observe que o cliente deve ter dados de controle visual suficientes para o espaço localizar a âncora com êxito; Se não funcionar imediatamente, tente percorrer um tempo. Se ainda não funcionar, faça com que o servidor envie mais âncoras e use as comunicações de rede para concordar em uma que funcione para o cliente. Você pode experimentar isso baixando o HolographicSpatialAnchorTransferSample, configurando seus IPs de cliente e de servidor e implantando-os em dispositivos HoloLens de cliente e servidor.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Biblioteca de padrões paralelos (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
 * [Windows. Networking. StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
 * [Windows. Networking. StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)

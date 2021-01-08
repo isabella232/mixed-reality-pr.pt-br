@@ -1,17 +1,17 @@
 ---
 title: Arquivo do emulador do HoloLens
-description: Lista de compilações liberadas do emulador Microsoft HoloLens.
+description: Mantenha-se atualizado sobre a lista arquivada de compilações lançadas para os emuladores Microsoft HoloLens (1º gen) e HoloLens 2.
 author: hamalawi
 ms.author: moelhama
 ms.date: 12/08/2020
 ms.topic: article
 keywords: HoloLens, emulador, compilações, versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, arquivo morto
-ms.openlocfilehash: 4aae710d0e976f8e7b5a36201b4b0dad0c195a45
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3f2fff072e5685e3c5c47d2e50e6c4a4588e9da4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530039"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009506"
 ---
 # <a name="hololens-2-emulator-archive"></a>Arquivo de emulador do HoloLens 2
 
@@ -58,6 +58,7 @@ O emulador do HoloLens (primeira geração) e o Emulator do HoloLens 2 são inst
 |  [10.0.11082.1033 de Build do emulador do HoloLens](https://go.microsoft.com/fwlink/?LinkID=724053) |  30 de março de 2016 |
 
 ## <a name="see-also"></a>Veja também
+
 * [Instalar as ferramentas](../../develop/install-the-tools.md)
 * [Usando o emulador do HoloLens](using-the-hololens-emulator.md)
 * [Entrada do emulador de HoloLens avançado e do simulador de realidade misturada](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

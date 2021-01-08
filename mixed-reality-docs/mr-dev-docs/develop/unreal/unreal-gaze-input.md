@@ -1,17 +1,17 @@
 ---
 title: Entrada olhar em não real
-description: Tutorial sobre como configurar a entrada de olhar para o HoloLens e o mecanismo inreal
+description: Saiba como configurar e usar a entrada olhar com acompanhamento de olho e orientação de cabeçalho para aplicativos do HoloLens em modo inreal.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, HoloLens 2, controle de olho, entrada de olhar, exibição montada de cabeçalho, mecanismo inreal, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: a11573d732e739068dca8c42dd8688c0705fc5bb
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925985"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010136"
 ---
 # <a name="gaze-input"></a>Entrada olhar
 
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento inreal que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
+Se está seguindo o percurso de desenvolvimento do Unreal que estabelecemos, você está no meio da exploração dos principais blocos de construção do MRTK. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Acompanhamento da mão](unreal-hand-tracking.md)

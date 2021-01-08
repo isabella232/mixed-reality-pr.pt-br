@@ -1,17 +1,17 @@
 ---
 title: Como obter um HolographicSpace
-description: Explica a API do HolographicSpace, um conceito básico para a renderização Holographic e a entrada espacial.
+description: Saiba como usar a API HolographicSpace para a renderização Holographic e a entrada espacial em seus aplicativos de realidade misturada.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrada espacial, renderização, Cadeia de troca, quadro de Holographic, loop de atualização, loop de jogo, quadro de referência, locatability, código de exemplo, passo a passos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
-ms.openlocfilehash: 3b0e31b8d3bf0d7741e7976edd2069db68ea5121
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613010"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009526"
 ---
 # <a name="getting-a-holographicspace"></a>Como obter um HolographicSpace
 
@@ -176,6 +176,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 Em seguida, use esse evento para determinar quando os hologramas não podem ser renderizados como estáticos para o mundo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Como renderizar no DirectX](rendering-in-directx.md)
 * [Sistemas de coordenadas no DirectX](coordinate-systems-in-directx.md)

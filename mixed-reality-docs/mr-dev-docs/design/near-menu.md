@@ -1,17 +1,17 @@
 ---
 title: Menu próximo
-description: Um menu próximo é uma coleção de botões em um painel que segue o comportamento de marca.
+description: Saiba como usar menus próximos, que são uma coleção de botões em um painel que seguem o comportamento de marca em um ambiente de realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, menu, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847262"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009926"
 ---
 # <a name="near-menu"></a>Menu próximo
 
@@ -32,7 +32,7 @@ O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece vá
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

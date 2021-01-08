@@ -1,17 +1,17 @@
 ---
 title: Implementar inicializadores de aplicativos 3D (aplicativos Win32)
-description: Saiba como criar iniciadores e logotipos de aplicativos 3D para aplicativos e jogos do Win32 VR para o menu iniciar e o ambiente inicial do Windows Mixed Reality.
+description: Saiba como criar iniciadores e logotipos de aplicativos 3D para aplicativos e jogos do Win32 VR para o menu iniciar e o ambiente inicial.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logotipo, ícone, modelagem, iniciador, iniciador 3D, bloco, cubo ao vivo, Win32, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, manifesto
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757813"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009663"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implementar inicializadores de aplicativos 3D (aplicativos Win32)
 
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Exemplo de modelo de realidade misturada](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) que contém um iniciador de aplicativo 3D.
 * [Diretrizes de projeto do inicializador de aplicativos 3D](3d-app-launcher-design-guidance.md)

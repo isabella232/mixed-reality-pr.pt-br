@@ -1,17 +1,17 @@
 ---
 title: Iniciar gesto
-description: Iniciar gesto para chamar o menu iniciar.
+description: Saiba como usar o gesto de início para chamar o menu iniciar no HoloLens e nos headsets de imersão de realidade mista do Windows.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Realidade misturada, gestos, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada, flor
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848164"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009426"
 ---
 # <a name="start-gesture"></a>Iniciar gesto
 
@@ -114,7 +114,7 @@ Você também pode usar o gesto de início com apenas uma mão. Mantenha sua mã
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Olho-olhar](eye-tracking.md)

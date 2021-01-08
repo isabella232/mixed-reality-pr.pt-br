@@ -1,17 +1,17 @@
 ---
 title: Habilitar posicionamento de modelos 3D na página inicial
-description: Como posicionar modelos 3D de seu site ou aplicativo na página inicial do Windows Mixed Reality
+description: Saiba como posicionar modelos 3D de seu site ou aplicativo na página inicial do Windows Mixed Reality.
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modelo, lugar em casa, lugar, mundo, modelagem, realidade misturada, página inicial, Web, aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757804"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010096"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Habilitar o posicionamento de modelos 3D na página inicial da realidade misturada
 
@@ -42,7 +42,7 @@ Por exemplo, se você estiver desenvolvendo um aplicativo que superfícies um ca
     </tr>
 </table>
 
-## <a name="overview"></a>Visão geral
+## <a name="the-basics"></a>Noções básicas
 
 Há duas etapas para habilitar o posicionamento de modelos 3D na página inicial do Windows Mixed Reality:
 1. [Verifique se seu modelo 3D é compatível com a página inicial do Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).
@@ -91,7 +91,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 * Para headsets de imersão (VR), o portal de realidade misturada não precisa estar em execução antes de invocar o *protocolo adicionar modelo*. Nesse caso, o *protocolo adicionar modelo* iniciará o portal de realidade misturada e posicionará o objeto diretamente, no qual o headset está olhando quando você chegar na casa misturada da realidade. 
 * Ao invocar o *protocolo adicionar modelo* da área de trabalho com o portal da realidade misturada já em execução, verifique se o headset está "ativo". Caso contrário, o posicionamento não terá sucesso. 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Criando modelos 3D para uso na página inicial do Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Como navegar na página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

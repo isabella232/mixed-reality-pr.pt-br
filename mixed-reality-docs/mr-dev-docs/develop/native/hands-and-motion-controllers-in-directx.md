@@ -1,17 +1,17 @@
 ---
 title: Controladores de mãos e emovimento no DirectX
-description: Guia do desenvolvedor para usar o rastreamento e os controladores de movimento em aplicativos nativos do DirectX.
+description: Introdução ao guia do desenvolvedor para usar os controladores de rastreamento e movimentação em aplicativos nativos do DirectX.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: mãos, controladores de movimento, DirectX, entrada, hologramas, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 52fc8f054ee4a4a57374c90fc31703b749d498de
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 43673602b01a1937953d16fcca9b4c4f4d3fd33a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613050"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009536"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Controladores de mãos e emovimento no DirectX
 
@@ -104,14 +104,14 @@ A API do SpatialInteractionSource dá suporte a controladores e sistemas de acom
 
 | Propriedade | Descrição | Gestos de HoloLens (1º gen) | Controladores de movimento | Mãos articuladas|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource::**destro/canhoto**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | À direita ou à esquerda/controlador. | Sem suporte | Com suporte | Com suporte |
+| [SpatialInteractionSource::**destro/canhoto**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | À direita ou à esquerda/controlador. | Sem suporte | Com suporte | Suportado |
 | [SpatialInteractionSourceState::**IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Estado atual do botão primário. | Toque de ar | Gatilho | Toque de ar relaxado (pinçagem vertical) |
 | [SpatialInteractionSourceState::**Issegured**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | Estado atual do botão de captura. | Sem suporte | Botão de captura | Apertar ou fechar mão |
 | [SpatialInteractionSourceState::**IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | Estado atual do botão de menu.    | Sem suporte | Botão de menu | Sem suporte |
 | [SpatialInteractionSourceLocation::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | Local XYZ da posição da mão ou de alças no controlador. | Local do Palm | Segurar posição de pose | Local do Palm |
 | [SpatialInteractionSourceLocation::**Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Quaternion representando a orientação da posição de mão ou de alça no controlador. | Sem suporte | Segure a orientação da pose | Orientação de Palm |
-| [SpatialPointerInteractionSourcePose::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origem do raio de apontar. | Sem suporte | Com suporte | Com suporte |
-| [SpatialPointerInteractionSourcePose::**ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direção do raio de apontar. | Sem suporte | Com suporte | Com suporte |
+| [SpatialPointerInteractionSourcePose::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origem do raio de apontar. | Sem suporte | Com suporte | Suportado |
+| [SpatialPointerInteractionSourcePose::**ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direção do raio de apontar. | Sem suporte | Com suporte | Suportado |
 
 Algumas das propriedades acima não estão disponíveis em todos os dispositivos, e a API fornece um meio de testar isso. Por exemplo, você pode inspecionar a propriedade [SpatialInteractionSource:: IsGraspSupported](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) para determinar se a origem fornece uma ação de compreensão.
 
@@ -231,7 +231,7 @@ Para usar o SpatialGestureRecognizer, manipule o evento [InteractionDetected](ht
 
 No HoloLens (primeira gen), as interações e os gestos devem derivar seu direcionamento do olhar de cabeça do usuário, em vez de renderizar ou interagir no local da mão. Depois que uma interação for iniciada, movimentos relativos da mão poderão ser usados para controlar o gesto, assim como com o gesto de manipulação ou de navegação.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Olhar fixo com cabeça e olhos no DirectX](gaze-in-directx.md)
 * [Modelo de entrada de manipulação direta](../../design/direct-manipulation.md)
 * [Modelo de entrada de ponto e confirmação](../../design/point-and-commit.md)

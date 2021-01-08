@@ -1,17 +1,17 @@
 ---
 title: Controle deslizante
-description: Um controle deslizante é um componente de interface do usuário que permite que você defina um valor movendo um botão ou uma alavanca em uma faixa.
+description: Saiba como usar o componente Slider da interface do usuário para definir um valor movendo um botão ou uma alavanca em uma faixa usando o kit de ferramentas de realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, controle deslizante, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848234"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009556"
 ---
 # <a name="slider"></a>Slider
 
@@ -31,7 +31,7 @@ Um controle deslizante é um componente de interface do usuário usado para defi
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

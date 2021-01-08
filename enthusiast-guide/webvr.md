@@ -1,14 +1,14 @@
 ---
 title: Usando o WebVR com o Windows Mixed Reality
-description: Descreve o WebVR e como usá-lo com o Microsoft Edge em headsets de realidade mista do Windows.
+description: Aprenda as noções básicas do WebVR, como usá-lo com o Microsoft Edge em headsets de realidade mista do Windows e problemas comuns de solução de problemas.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, WebVR, Edge, Microsoft Edge, navegação na Web
-ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725597"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009436"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Usando o WebVR com o Windows Mixed Reality
 
@@ -61,7 +61,7 @@ Para experimentar o conteúdo do WebVR em um headset de realidade mista do Windo
 5. Na primeira vez que você tentar inserir VR em um domínio específico, o navegador pedirá consentimento para usar a exibição de imersão, selecione Sim: ![IU de consentimento que é exibida na primeira tentativa de inserir VR em um domínio específico](images/1053px-Webvr-consent-ui.png)
 6. O headset deve começar a exibir o conteúdo do WebVR.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Solução de problemas > WebVR](webvr-questions.md)
 * [Como entrar em sua primeira experiência de WebVR](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

@@ -1,17 +1,17 @@
 ---
 title: Teclado
-description: Saiba como invocar o teclado do sistema no MRTK.
+description: Saiba como invocar e usar o teclado do sistema usando o kit de ferramentas de realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, teclado, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 8efb5446479e53569349eda302c7d4dcb844a137
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847277"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009726"
 ---
 # <a name="keyboard"></a>Teclado
 
@@ -38,7 +38,7 @@ Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos
 > [!div class="nextstepaction"]
 > [Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

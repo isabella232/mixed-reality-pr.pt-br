@@ -1,17 +1,17 @@
 ---
 title: Quadro holográfico
-description: Os usuários veem o mundo da realidade misturada por meio do quadro Holographic.
+description: Saiba como os usuários veem o mundo da realidade misturada por meio do quadro Holographic e como criar melhor a experiência.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, realidade misturada do Windows, quadro Holographic, campo de exibição, FOV, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, interações, navegação, menu
-ms.openlocfilehash: 679f629d5190ad6e3df2d92d2adfcce998f7dea5
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847381"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009586"
 ---
 # <a name="holographic-frame"></a>Quadro holográfico
 
@@ -139,7 +139,7 @@ Como uma experiência de imersão, esses usuários foram incentivados a examinar
 
 A representação realista de repercussão proporcionou um poderoso ponto focal, completo com técnicas sutis a serem revisadas para que o usuário se sinta como se estivesse lá, falando com você. À medida que o usuário se move sobre a experiência, a repercussão mudará para você até um limite antes de retornar a um estado neutro se o usuário se movimentar muito além de seu periferia. Se o usuário se parecer totalmente (por exemplo, para examinar algo em outro lugar na cena) e voltar para repercussão, a posição direcional do narrador se concentrará novamente no usuário. Técnicas como essa fornecem uma noção poderosa de imersão e criam um ponto focal dentro do quadro Holographic, reduzindo a movimentação de cabeça excessiva e promovendo o [conforto do usuário](comfort.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Conforto](comfort.md)
 * [Dimensionar](scale.md)

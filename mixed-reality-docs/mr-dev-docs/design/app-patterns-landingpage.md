@@ -1,21 +1,22 @@
 ---
 title: Elementos de UX da realidade misturada
-description: Este documento contém um conjunto de tópicos que explicam como projetar para dispositivos de realidade misturada.
+description: Saiba como projetar seus aplicativos para dispositivos de realidade misturada com elementos fundamentais, controles comuns e comportamentos.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: Design de UX, UX de realidade misturada, UX, padrões de aplicativo, controles, estilo, HoloLens, interação, interação espacial, interface do usuário espacial, elementos de UX, comportamentos, blocos de construção, tipografia, cor, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847780"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009696"
 ---
 # <a name="ux-elements-overview"></a>Visão geral dos elementos de UX
 
 ## <a name="foundational-elements"></a>Elementos fundamentais
+
 Saiba mais sobre os elementos fundamentais que você precisa para criar uma boa experiência de realidade misturada.
 
 :::row:::
@@ -39,6 +40,7 @@ Saiba mais sobre os elementos fundamentais que você precisa para criar uma boa 
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>Controles e comportamentos comuns
+
 Saiba mais sobre interações espaciais comuns usadas com frequência e blocos de construção de interface do usuário para experiências de realidade misturada.
 
 :::row:::

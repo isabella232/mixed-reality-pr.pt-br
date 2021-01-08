@@ -1,17 +1,17 @@
 ---
 title: Entrada de voz no Unity
-description: O Unity expõe três maneiras de adicionar entrada de voz ao seu aplicativo Windows Mixed Reality.
+description: Saiba como o Unity expõe três maneiras de adicionar entrada de voz, reconhecimento de fala e ditado ao seu aplicativo Windows Mixed Reality.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Entrada de voz, KeywordRecognizer, GrammarRecognizer, microfone, ditado, voz, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010567"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009796"
 ---
 # <a name="voice-input-in-unity"></a>Entrada de voz no Unity
 

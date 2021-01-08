@@ -1,17 +1,17 @@
 ---
 title: Série de palestras sobre Realidade Misturada
-description: Calendário de eventos de desenvolvedor de realidade misturada no reator em São Francisco.
+description: Mantenha-se atualizado com nosso calendário de eventos de desenvolvedor de realidade misturados no reator em San Francisco.
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendário, Academia, agenda, it, San Francisco, reator
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757424"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009996"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventos de realidade misturada da Microsoft
 
@@ -32,5 +32,3 @@ Junte-se à equipe do Microsoft Mixed Reality nesses próximos eventos!
 | Série de palestras sobre Realidade Misturada|22 de outubro de 2020|[Introdução ao WebXR com BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Série de palestras sobre Realidade Misturada|17 de novembro de 2020|[Compilando o futuro: o que há de novo no MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Série de palestras sobre Realidade Misturada|1º de dezembro de 2020|[Criando hologramas]()|
-
-

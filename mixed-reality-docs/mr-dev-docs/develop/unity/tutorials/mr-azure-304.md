@@ -1,17 +1,17 @@
 ---
 title: MR e Azure 304 – Reconhecimento facial
-description: Conclua este curso para implementar o reconhecimento de face do Azure em um aplicativo de realidade misturada.
+description: Conclua este curso para saber como implementar o reconhecimento facial do Azure em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, reconhecimento facial, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 8e1420e5764e7330026731ffb4f0c180604c2789
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a6578950039a0a9267b7191f5b96775dca366c01
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679825"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010146"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR e Azure 304: reconhecimento facial
 

@@ -1,17 +1,17 @@
 ---
 title: Como navegar na página inicial do Windows Mixed Reality
-description: Os headsets do HoloLens e do Windows Mixed Realm compartilham um paradigma para iniciar, colocar e manipular aplicativos e modelos 3D em seu ambiente (seja físico ou digital). Saiba como navegar na página inicial do Windows Mixed Reality em ambos os tipos de dispositivo.
+description: Saiba como navegar na página inicial do Windows Mixed Reality no HoloLens e em headsets de realidade mista do Windows.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, so, plataforma, Cliff House, casa, casa, ambiente, iniciar, menu Iniciar, menu início, Pins, aplicativo, iniciar aplicativos, colocar aplicativos, teleport, mover, navegar, headset de realidade misturada, headset de realidade virtual, o que é realidade virtual
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757684"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009686"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Como navegar na página inicial do Windows Mixed Reality
 
@@ -134,7 +134,7 @@ O Windows Mixed Reality tem vários aplicativos internos, como:
 * **Área de trabalho** (headsets de imersão) para exibir seu monitor de área de trabalho enquanto estiver em um headset de imersão
 * **Explorador de arquivos** Acessar arquivos e pastas localizados em seu dispositivo
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Modos de exibição do aplicativo](../design/app-views.md)
 * [Controladores de movimentos](../design/motion-controllers.md)
 * [Acessórios de hardware](hardware-accessories.md)

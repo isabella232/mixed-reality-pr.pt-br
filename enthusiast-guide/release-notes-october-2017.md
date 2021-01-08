@@ -1,17 +1,17 @@
 ---
 title: Notas sobre a versão – outubro de 2017
-description: Notas de versão do Windows Mixed Reality para a atualização dos criadores de outono do Windows 10 (outubro de 2017).
+description: Mantenha-se atualizado sobre as notas de versão do Windows Mixed Reality para a atualização dos criadores de outono do Windows 10 (outubro de 2017).
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: notas de versão, versão, Windows 10, Build, RS3, so
-ms.openlocfilehash: 7c5af3b8ead4aa4bee9e342e9c41b696a30e5e2c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725907"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009486"
 ---
 # <a name="release-notes---october-2017"></a>Notas sobre a versão – outubro de 2017
 
@@ -94,7 +94,7 @@ Trabalhamos duro para fornecer uma ótima experiência de realidade mista do Win
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Suporte a headsets de imersão (link externo)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Problemas conhecidos do HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

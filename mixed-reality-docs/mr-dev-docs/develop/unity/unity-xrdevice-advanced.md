@@ -1,17 +1,17 @@
 ---
 title: Objetos nativos de realidade misturada no Unity
-description: Obter acesso a objetos Holographic nativos subjacentes no Unity.
+description: Saiba como obter acesso a objetos Holographic nativos subjacentes no Unity usando o namespace XR.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: Unity, realidade misturada, nativa, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 8dda1152da9705147ca3a057faadb9edd8428df6
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 7aa69286942ce98909e23508d92fb88c59ce9175
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010587"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009806"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Objetos nativos de realidade misturada no Unity
 
@@ -130,6 +130,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ```
 
 ## <a name="see-also"></a>Consulte Também
+
 * [Como usar o namespace do Windows com aplicativos Unity para HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>

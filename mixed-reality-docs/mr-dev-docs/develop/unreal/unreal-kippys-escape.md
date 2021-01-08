@@ -1,6 +1,6 @@
 ---
 title: A criação do escape do Kippy
-description: Acompanhe conosco enquanto exploramos a criação de escape do Kippy para o HoloLens 2 em um mecanismo inreal.
+description: Acompanhe conosco ao explorarmos a criação do aplicativo de realidade misturada de escape do Kippy para o HoloLens 2 em um mecanismo inreal.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609677"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010036"
 ---
 # <a name="the-making-of-kippys-escape"></a>A criação do escape do Kippy
 
@@ -21,8 +21,6 @@ Kippy o robô é ativado para se encontrar em uma ilha. Cabe a você colocar sua
 
 > [!IMPORTANT]
 > Verifique se você está usando o **mecanismo não real 4,25 ou posterior** se estiver compilando o escape do Kippy no repositório github.
-
-## <a name="overview"></a>Visão geral
 
 O escape do Kippy é um aplicativo de exemplo do [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) de software livre criado com as ferramentas de UX inreal do mecanismo 4 e [da realidade misturada para o inreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). Nesta postagem, vamos orientá-lo pelo processo dos primeiros princípios e Design Visual para implementar e otimizar a experiência. Você pode encontrar mais informações sobre como desenvolver aplicativos de realidade misturada com as ferramentas do MRTK UX na [visão geral do desenvolvimento inreal](unreal-development-overview.md).
 

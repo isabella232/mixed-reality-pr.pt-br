@@ -1,19 +1,19 @@
 ---
 title: Configurar seu projeto sem MRTK
-description: Instruções sobre como configurar um projeto do Unity para o Windows Mixed Reality
+description: Saiba como configurar um novo projeto do Unity para o Windows Mixed Reality sem o Mixed Reality Toolkit.
 author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho
-ms.openlocfilehash: 1337001e8cc5c280c5789acbc8f10f40bca9b763
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613352"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009896"
 ---
-# <a name="configuring-your-project-without-mrtk"></a>Configurando seu projeto sem MRTK
+# <a name="configuring-your-project-without-mrtk"></a>Como configurar seu projeto sem o MRTK
 
 O Windows Mixed Reality (WMR) é uma plataforma da Microsoft introduzida como parte do sistema operacional Windows 10. A plataforma WMR permite que você crie aplicativos que processam conteúdo digital em dispositivos de vídeo Holographic e VR.
 
@@ -80,7 +80,7 @@ Seu aplicativo agora pode manipular a renderização Holographic e a entrada esp
 
 É recomendável que você faça as declarações de manifesto no Unity para incluí-las em todos os projetos futuros que você exportar. Os recursos aplicáveis para habilitar as APIs do Unity comumente usadas para realidade misturada são:
 
-|  Funcionalidade  |  APIs que exigem capacidade | 
+|  Capacidade  |  APIs que exigem capacidade | 
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver (acesso a malhas de [mapeamento espacial](../../design/spatial-mapping.md) no HoloLens) &mdash; *nenhum recurso necessário para acompanhamento espacial geral do headset* | 
 |  Integrada  |  VideoCapture e fotocaptura | 

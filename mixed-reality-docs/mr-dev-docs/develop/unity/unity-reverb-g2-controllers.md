@@ -1,17 +1,17 @@
 ---
 title: Controladores de reverbo do HP G2 no Unity
-description: Instruções sobre como usar os controladores de reverberação HP reverbo G2 no SteamVR e no Windows Mixed Reality.
+description: Saiba como configurar e usar os novos controladores HP reverbs G2 nos aplicativos SteamVR e Windows Mixed Reality Unity.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, reverberação, reverbo G2, HP reverbs G2, realidade mista, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos
-ms.openlocfilehash: 17f373a3d94740bf103821b85ee5d6fe4dbaa11f
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+ms.openlocfilehash: 1c9d8f1279f81ea1d8020e2a3c689dae86496221
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886249"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009826"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Controladores de reverbo do HP G2 no Unity
 
@@ -286,7 +286,7 @@ void Update()
 
 ### <a name="generating-events-from-the-new-inputs"></a>Gerando eventos a partir das novas entradas 
 
-Em vez de sondar o estado de um controlador uma vez por quadro, você tem a opção de lidar com todas as alterações de estado como eventos, o que permite que você manipule até as ações mais rápidas que têm menos de um quadro. Para que essa abordagem funcione, o cache de controladores de movimento precisa processar todos os Estados publicados por um controlador desde o último quadro, o que pode ser feito armazenando o carimbo de data/hora do último MotionControllerReading recuperado de um MotionController e chamando *MotionController. TryGetReadingAfterTime ()* : 
+Em vez de sondar o estado de um controlador uma vez por quadro, você tem a opção de lidar com todas as alterações de estado como eventos, o que permite que você manipule até as ações mais rápidas que têm menos de um quadro. Para que essa abordagem funcione, o cache de controladores de movimento precisa processar todos os Estados publicados por um controlador desde o último quadro, o que pode ser feito armazenando o carimbo de data/hora do último MotionControllerReading recuperado de um MotionController e chamando *MotionController. TryGetReadingAfterTime ()*: 
 
 ```csharp
 private class MotionControllerState 

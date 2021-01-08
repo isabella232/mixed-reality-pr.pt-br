@@ -1,17 +1,17 @@
 ---
 title: Foco no Unity
-description: Olhar é uma maneira primária para os usuários direcionarem os hologramas que seu aplicativo cria em realidade misturada.
+description: Saiba como usar a entrada olhar como uma maneira primária para os usuários visarem os hologramas que seu aplicativo cria em realidade misturada.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: olho-olhar, cabeça-olhar, Unity, holograma, realidade misturada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010357"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009886"
 ---
 # <a name="head-gaze-in-unity"></a>Cabeça-olhar no Unity
 
@@ -56,7 +56,7 @@ Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.gi
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Gestos e controladores de movimentos](gestures-and-motion-controllers-in-unity.md)
@@ -68,7 +68,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Câmera](camera-in-unity.md)
 * [Cursores](../../design/cursors.md)
 * [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)

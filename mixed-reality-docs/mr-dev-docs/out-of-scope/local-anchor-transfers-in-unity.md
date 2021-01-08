@@ -1,17 +1,17 @@
 ---
 title: Transferências de âncora local no Unity
-description: Transfira âncoras entre vários dispositivos HoloLens em um aplicativo Unity.
+description: Saiba como transferir âncoras entre vários dispositivos do HoloLens em um aplicativo do Unity Mixed Reality.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Compartilhamento, ancoragem, WorldAnchor, Sr Sharing 250, WorldAnchorTransferBatch, SpatialPerception, transferência, transferência de âncora local, exportação de ancoragem, importação de âncora
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676773"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009636"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Transferências de âncora local no Unity
 
@@ -35,7 +35,7 @@ Como habilitar o recurso *SpatialPerception* :
 ### <a name="anchor-transfer"></a>Transferência de âncora
 
 **Namespace:** *UnityEngine. XR. WSA. Sharing*<br>
-**Tipo** : *WorldAnchorTransferBatch*
+**Tipo**: *WorldAnchorTransferBatch*
 
 Para transferir um [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), um deve estabelecer a âncora a ser transferida. O usuário de um HoloLens examina seu ambiente e, manual ou programaticamente, escolhe um ponto no espaço para ser a âncora para a experiência compartilhada. Os dados que representam esse ponto podem ser serializados e transmitidos para os outros dispositivos que estão compartilhando na experiência. Em seguida, cada dispositivo desserializa os dados de âncora e tenta localizar esse ponto no espaço. Para que a transferência de âncora funcione, cada dispositivo deve ser examinado em suficiente no ambiente, de modo que o ponto representado pela âncora possa ser identificado.
 
@@ -43,7 +43,7 @@ Para transferir um [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md
 
 O código de exemplo nesta página tem alguns campos que deverão ser inicializados:
 1. *Gameobject rootGameObject* é um *gameobject* no Unity que tem um componente *WorldAnchor* . Um usuário na experiência compartilhada coloca esse *gameobject* e exporta os dados para os outros usuários.
-2. *WorldAnchor gameRootAnchor* é *UnityEngine. XR. WSA. WorldAnchor* que está em *rootGameObject* .
+2. *WorldAnchor gameRootAnchor* é *UnityEngine. XR. WSA. WorldAnchor* que está em *rootGameObject*.
 3. *byte [] importedData* é uma matriz de bytes para a âncora serializada que cada cliente está recebendo pela rede.
 
 ```

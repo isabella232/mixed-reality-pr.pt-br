@@ -1,17 +1,17 @@
 ---
 title: Modos de exibição do aplicativo
-description: Os dois tipos de exibições em aplicativos de realidade mista do Windows são exibições de imersão e exibições 2D.
+description: Saiba como usar os dois tipos de exibições em aplicativos de realidade mista do Windows – exibições de imersão e exibições 2D.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: exibição de imersão, exibição 2D, Slate, aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 0c6127427d5af118bb18aea5c19ddaef6fe8d5eb
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848071"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009626"
 ---
 # <a name="app-views"></a>Modos de exibição do aplicativo
 
@@ -43,7 +43,7 @@ Um uso principal de exibições 2D é mostrar um formulário de entrada de texto
 
 Um aplicativo pode ter exibições 2D no monitor da área de trabalho e em um headset conectado em um PC desktop. Por exemplo, você pode procurar o Edge no monitor de sua área de trabalho usando sua exibição 2D principal para encontrar um vídeo de 360 graus. Quando você reproduzir esse vídeo, o Edge iniciará uma exibição de imersão secundária dentro do headset para exibir o conteúdo de vídeo imersiva.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Modelo de aplicativo](app-model.md)
 * [Como atualizar aplicativos UWP 2D para realidade misturada](../develop/porting-apps/building-2d-apps.md)

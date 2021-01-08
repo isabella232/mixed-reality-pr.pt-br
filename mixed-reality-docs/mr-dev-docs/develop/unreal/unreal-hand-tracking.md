@@ -1,17 +1,17 @@
 ---
 title: Acompanhamento da mão no Unreal
-description: Explica como usar o rastreamento manual em não real
+description: Saiba como usar a entrada de rastreamento manual, a pose, as malhas à mão e as animações de link ao vivo em aplicativos inreais de realidade misturada.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realidade mista do Windows, acompanhamento manual, inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
-ms.openlocfilehash: 66ae1994f2bbee3ba4786a7c4eeebfe1cd57ca37
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002632"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010156"
 ---
 # <a name="hand-tracking-in-unreal"></a>Acompanhamento da mão no Unreal
 
@@ -162,7 +162,7 @@ O HoloLens 2 rastreia gestos espaciais, o que significa que você pode capturar 
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento inreal que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
+Se está seguindo o percurso de desenvolvimento do Unreal que estabelecemos, você está no meio da exploração dos principais blocos de construção do MRTK. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Âncoras Espaciais locais](unreal-spatial-anchors.md)

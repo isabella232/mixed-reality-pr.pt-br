@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porta, Unity, não real, middleware, mecanismo, UWP, Win32, portabilidade, 1º de HoloLens, headset de realidade misturada, headset de realidade mista do Windows, migração, Windows 10, mapeamento de entrada,
-ms.openlocfilehash: 4137ff4dcc9f72dd66b9078b0d86c2d06f01f2bc
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613220"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009866"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portabilidade dos aplicativos de VR para o Windows Mixed Reality
 
@@ -56,7 +56,7 @@ A plataforma Windows Mixed Reality ainda está em desenvolvimento ativo. Recomen
 > [!IMPORTANT]
 > Se você estiver usando os controladores de reverberação do HP, consulte [Este artigo](../unreal/unreal-reverb-g2-controllers.md) para obter instruções adicionais de mapeamento de entrada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Diretrizes mínimas de compatibilidade de hardware do PC do Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Entendendo o desempenho da realidade misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Recomendações de desempenho para o Unity](../unity/performance-recommendations-for-unity.md)

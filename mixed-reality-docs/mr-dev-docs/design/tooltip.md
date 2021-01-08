@@ -1,17 +1,17 @@
 ---
 title: Dica de ferramenta
-description: Dica de ferramenta é uma breve descrição vinculada a outro controle ou objeto.
+description: Saiba como usar dicas de ferramenta em aplicativos de realidade misturada, que são descrições curtas vinculadas a outro controle ou objeto.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, dica de ferramenta, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848125"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009406"
 ---
 # <a name="tooltip"></a>Dica de ferramenta
 
@@ -31,7 +31,7 @@ Dica de ferramenta é uma breve descrição vinculada a outro controle ou objeto
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

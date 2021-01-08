@@ -1,17 +1,17 @@
 ---
 title: Implementar inicializadores de aplicativos 3D (aplicativos UWP)
-description: Como criar iniciadores de aplicativos 3D e logotipos para aplicativos e jogos do Windows Mixed Reality UWP (distribuídos por meio do Microsoft Store), tanto no HoloLens quanto em headsets de imersão (VR).
+description: Saiba como criar iniciadores e logotipos de aplicativos 3D para aplicativos UWP de realidade mista do Windows e jogos em headsets de HoloLens e VR.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logotipo, ícone, modelagem, iniciador, iniciador 3D, bloco, cubo ao vivo, link profundo, secondarytile, bloco secundário, UWP, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, XML, caixa delimitadora, Unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757487"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009676"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementar inicializadores de aplicativos 3D (aplicativos UWP)
 
@@ -203,7 +203,7 @@ Notificações de bloco atualmente não dão suporte ao envio de uma atualizaç�
 
 Para obter mais informações sobre os outros recursos e atributos de blocos e como eles são usados para blocos 2D, consulte a [documentação blocos para aplicativos UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Exemplo de modelo de realidade misturada](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) que contém um iniciador de aplicativo 3D.
 * [Diretrizes de projeto do inicializador de aplicativos 3D](3d-app-launcher-design-guidance.md)

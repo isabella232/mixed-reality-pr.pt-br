@@ -1,14 +1,14 @@
 ---
 title: Solução de problemas do Windows Mixed Reality
-description: Solução de problemas de realidade mista do Windows que vai além da nossa documentação de suporte de consumidor padrão.
+description: Mantenha-se atualizado com a solução de problemas de realidade mista do Windows que vai além da nossa documentação de suporte de consumidor padrão.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte
-ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859485"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009476"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Solução de problemas do Windows Mixed Reality (FAQs)
 
@@ -58,5 +58,5 @@ Se você estiver executando um computador lento, ficando muito quente nos bastid
 
 - [Desempenho](performance-questions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Outras perguntas](other-questions.md)

@@ -1,17 +1,17 @@
 ---
 title: Controladores de movimento
-description: Detalhes sobre os controladores de movimento de realidade misturada.
+description: Saiba como configurar, emparelhar e gerenter interações de entrada usando controladores de movimento de realidade misturada em seus aplicativos.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: controladores de 6DOF, controladores de movimento, headset de realidade mista, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, rolagem, alça, estado
-ms.openlocfilehash: 768e316f175769d7399866b0b7cc62ee8c5c2cde
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847445"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009706"
 ---
 # <a name="motion-controllers"></a>Controladores de movimento
 
@@ -213,8 +213,6 @@ Os aplicativos que desejam tratar as posições de forma diferente com base no e
 </tr>
 </table>
 
-
-
 Esses Estados de acompanhamento do controlador de movimento são definidos da seguinte maneira:
 * **Alta precisão:** Embora o controlador de movimento esteja dentro do campo de exibição do headset, ele geralmente fornecerá posições de alta precisão, com base no rastreamento visual. Um controlador móvel que deixa momentaneamente o campo de exibição ou que é momentaneamente obscurecido dos sensores do headset (por exemplo, pelo outro lado do usuário) continuará retornando poses de alta precisão por um curto período, com base no acompanhamento inércia do próprio controlador.
 * **Alta precisão (com risco de perda):** Quando o usuário move o controlador de movimento para cima da borda do campo de exibição do headset, o headset em breve não será capaz de rastrear visualmente a posição do controlador. O aplicativo sabe quando o controlador atingiu esse limite de FOV vendo o **SourceLossRisk** REACH 1,0. Nesse ponto, o aplicativo pode optar por pausar gestos do controlador que exigem um fluxo constante de poses de alta qualidade.
@@ -277,7 +275,8 @@ Consulte [solução de problemas do controlador de movimento](https://docs.micro
 
 [Envie-nos comentários](../give-us-feedback.md) no Hub de comentários usando a categoria "realidade misturada-> entrada".
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
+
 * [Gestos e controladores de movimento no Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Controladores de mãos e emovimento no DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gestos](gaze-and-commit.md#composite-gestures)

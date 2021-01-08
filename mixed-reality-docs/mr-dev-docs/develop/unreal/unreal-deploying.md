@@ -1,6 +1,6 @@
 ---
 title: Implantar no dispositivo no Unreal
-description: Um guia para a implantação no dispositivo de não real para o HoloLens 2
+description: Saiba tudo o que você precisa saber sobre como implantar seus aplicativos inreais de realidade misturada no HoloLens 2 usando o editor ou o portal do dispositivo.
 author: sw5813
 ms.author: suwu
 ms.date: 12/9/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 390bd1a9f1bc643efb1a342421e8c96574e74334
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 24b2c013e1c9f25f54be9a6fefec8a86846c1746
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925907"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009746"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Implantar no dispositivo no Unreal
 

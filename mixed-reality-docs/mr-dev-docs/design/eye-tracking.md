@@ -1,17 +1,17 @@
 ---
 title: Acompanhamento ocular
-description: O HoloLens 2 permite um novo nível de contexto e compreensão humana dentro da experiência do Holographic, fornecendo aos desenvolvedores a capacidade de usar informações sobre o que o usuário está olhando.
+description: Saiba mais sobre o acompanhamento de olho para o HoloLens 2 e os novos níveis de compreensão humana se estiverem em experiências holographics.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, calibragem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, intenção, ações
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847937"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009596"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Acompanhamento ocular no HoloLens 2
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847937"
 
 O HoloLens 2 permite um novo nível de contexto e compreensão humana dentro da experiência do Holographic, fornecendo aos desenvolvedores a capacidade de usar informações sobre o que o usuário está olhando. Esta página explica como os desenvolvedores podem se beneficiar do controle de olho para vários casos de uso e o que procurar ao projetar interações de usuário com base no olhar. 
 
-A API de acompanhamento de olho foi projetada com a privacidade de um usuário em mente, evitando a aprovação de qualquer informação identificável, especialmente qualquer biometria. Para aplicativos compatíveis com acompanhamento de olho, o usuário precisa conceder permissão de aplicativo para usar informações de controle de olho. 
+A API de acompanhamento de olho foi projetada com a privacidade de um usuário em mente, evitando a aprovação de qualquer informação identificável, especialmente qualquer biometria. Para aplicativos compatíveis com acompanhamento de olho, o usuário precisa conceder permissão de aplicativo para usar informações de controle de olho.
 
 ### <a name="device-support"></a>Suporte a dispositivos
 
@@ -166,7 +166,7 @@ Novamente, é recomendável comunicar claramente isso com o usuário que talvez 
 
 Essa página espero que você tenha uma boa visão geral para começar a entender a função de acompanhamento de olho e a entrada olhar para o HoloLens 2. Para começar a desenvolver, confira nossas informações sobre a função de [olhar para interagir com hologramas](eye-gaze-interaction.md), [olhar de olho no Unity](https://aka.ms/mrtk-eyes) e [nos olhos-olhar no DirectX](../develop/native/gaze-in-directx.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Calibragem](../calibration.md)
 * [Conforto](comfort.md)

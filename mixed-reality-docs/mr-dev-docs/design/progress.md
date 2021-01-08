@@ -1,17 +1,17 @@
 ---
 title: Exibindo o progresso
-description: Um controle de progresso oferece feedback ao usuário que uma operação de execução longa está em andamento.
+description: Saiba como os controles de progresso fornecem comentários ao usuário de que uma operação de longa execução está em andamento em seus aplicativos de realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, controles, interface do usuário, UX, indicador de progresso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848285"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009456"
 ---
 # <a name="progress-indicator"></a>Indicador de progresso
 
@@ -98,7 +98,7 @@ Um controle de progresso fornece comentários de que uma operação de longa exe
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

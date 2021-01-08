@@ -1,17 +1,17 @@
 ---
 title: Estudo de caso - Como olhar através dos buracos na sua realidade
-description: Este estudo de caso explica como implementar o efeito de "janela mágica" no HoloLens, permitindo que o usuário veja por trás das paredes, sob o andar e em aberturas virtuais dentro de seu ambiente real.
+description: Esse estudo de caso explica a implementação de efeito da "janela mágica" no HoloLens, permitindo que o usuário veja por trás das paredes, sob o chão e em aberturas virtuais.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Realidade mista do Windows, HoloLens, janela mágica, da Parallax
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675939"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010106"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>Estudo de caso - Como olhar através dos buracos na sua realidade
 
@@ -19,7 +19,7 @@ Quando as pessoas consideram a realidade misturada e o que elas podem fazer com 
 
 ## <a name="the-tech"></a>O Tech
 
-Se você lutaram alienígenas à medida que passa pelas paredes no **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)** , desbloqueou uma parede com segurança em **[fragmentos](case-study-creating-an-immersive-experience-in-fragments.md)** , ou se houve sorte suficiente para ver o UNSC infinito hangar na **[experiência do Halo 5 em E3 em 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)** , você já viu o que estou falando. Dependendo da sua imaginação, esse truque visual pode ser usado para colocar buracos temporários em seu isolante ou ocultar mundos sob um Floorboard flexível.
+Se você lutaram alienígenas à medida que passa pelas paredes no **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)**, desbloqueou uma parede com segurança em **[fragmentos](case-study-creating-an-immersive-experience-in-fragments.md)**, ou se houve sorte suficiente para ver o UNSC infinito hangar na **[experiência do Halo 5 em E3 em 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)**, você já viu o que estou falando. Dependendo da sua imaginação, esse truque visual pode ser usado para colocar buracos temporários em seu isolante ou ocultar mundos sob um Floorboard flexível.
 
 ![RoboRaid adiciona pipes tridimensionais e outra estrutura por trás de suas paredes, visíveis somente por meio de buracos criados à medida que os invasores se dividem.](../develop/unity/images/roboraid-640px.png)
 
@@ -108,7 +108,7 @@ Aqui estão algumas ideias de onde você pode tomar essa ideia em seguida:
 </tr>
 </table>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Noções básicas do MR 101: projeto completo com dispositivo](../develop/unity/tutorials/holograms-101.md)
 * [Sistemas de coordenadas](../design/coordinate-systems.md)
 * [Âncoras espaciais](../design/spatial-anchors.md)

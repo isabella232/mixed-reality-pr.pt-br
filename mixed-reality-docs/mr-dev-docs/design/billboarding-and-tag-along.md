@@ -1,17 +1,17 @@
 ---
 title: Mural e tag-along
-description: Os objetos com o mural sempre se orientam para enfrentar o usuário.
+description: Saiba como usar objetos com o mural, que sempre se orientam a enfrentar o usuário em aplicativos de realidade misturada.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, mensagem de contorno, marca, com a realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848035"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009606"
 ---
 # <a name="billboarding-and-tag-along"></a>Mural e tag-along
 
@@ -57,7 +57,7 @@ O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scr
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)
