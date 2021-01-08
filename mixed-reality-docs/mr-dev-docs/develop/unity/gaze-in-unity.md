@@ -1,29 +1,29 @@
 ---
 title: Foco no Unity
-description: Olhar é uma maneira primária para os usuários direcionarem os hologramas que seu aplicativo cria em realidade misturada.
+description: Saiba como usar a entrada olhar como uma maneira primária para os usuários visarem os hologramas que seu aplicativo cria em realidade misturada.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: olho-olhar, cabeça-olhar, Unity, holograma, realidade misturada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010357"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009886"
 ---
-# <a name="head-gaze-in-unity"></a><span data-ttu-id="659dc-104">Cabeça-olhar no Unity</span><span class="sxs-lookup"><span data-stu-id="659dc-104">Head-gaze in Unity</span></span>
+# <a name="head-gaze-in-unity"></a><span data-ttu-id="d2597-104">Cabeça-olhar no Unity</span><span class="sxs-lookup"><span data-stu-id="d2597-104">Head-gaze in Unity</span></span>
 
-<span data-ttu-id="659dc-105">[Olhar](../../design/gaze-and-commit.md) é a principal maneira para os usuários direcionarem os [hologramas](../../discover/hologram.md) que seu aplicativo cria em [realidade misturada](../../discover/mixed-reality.md).</span><span class="sxs-lookup"><span data-stu-id="659dc-105">[Gaze](../../design/gaze-and-commit.md) is the primary way for users to target [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).</span></span>
+<span data-ttu-id="d2597-105">[Olhar](../../design/gaze-and-commit.md) é a principal maneira para os usuários direcionarem os [hologramas](../../discover/hologram.md) que seu aplicativo cria em [realidade misturada](../../discover/mixed-reality.md).</span><span class="sxs-lookup"><span data-stu-id="d2597-105">[Gaze](../../design/gaze-and-commit.md) is the primary way for users to target [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).</span></span>
 
-## <a name="implementing-head-gaze"></a><span data-ttu-id="659dc-106">Implementando o Head-olhar</span><span class="sxs-lookup"><span data-stu-id="659dc-106">Implementing head-gaze</span></span>
+## <a name="implementing-head-gaze"></a><span data-ttu-id="d2597-106">Implementando o Head-olhar</span><span class="sxs-lookup"><span data-stu-id="d2597-106">Implementing head-gaze</span></span>
 
-<span data-ttu-id="659dc-107">Conceitualmente, você determina o [Head-olhar](../../design/gaze-and-commit.md) projetando um Ray forward do headset do usuário para ver o que ele atinge.</span><span class="sxs-lookup"><span data-stu-id="659dc-107">Conceptually, you determine [head-gaze](../../design/gaze-and-commit.md) by projecting a ray forward from the user's headset to see what it hits.</span></span> <span data-ttu-id="659dc-108">No Unity, a posição e a direção da cabeça do usuário são expostas por meio da [câmera](camera-in-unity.md), especificamente [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span><span class="sxs-lookup"><span data-stu-id="659dc-108">In Unity, the user's head position and direction are exposed through the [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span></span>
+<span data-ttu-id="d2597-107">Conceitualmente, você determina o [Head-olhar](../../design/gaze-and-commit.md) projetando um Ray forward do headset do usuário para ver o que ele atinge.</span><span class="sxs-lookup"><span data-stu-id="d2597-107">Conceptually, you determine [head-gaze](../../design/gaze-and-commit.md) by projecting a ray forward from the user's headset to see what it hits.</span></span> <span data-ttu-id="d2597-108">No Unity, a posição e a direção da cabeça do usuário são expostas por meio da [câmera](camera-in-unity.md), especificamente [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span><span class="sxs-lookup"><span data-stu-id="d2597-108">In Unity, the user's head position and direction are exposed through the [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span></span>
 
-<span data-ttu-id="659dc-109">Chamar [física. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) fornece a você um [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) que contém informações sobre a colisão, incluindo o ponto de colisão 3D e o outro gameobject com o cabeçalho Head-olhar Ray.</span><span class="sxs-lookup"><span data-stu-id="659dc-109">Calling [Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) gives you a [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) containing information about the collision, including the 3D collision point and the other GameObject the head-gaze ray hit.</span></span>
+<span data-ttu-id="d2597-109">Chamar [física. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) fornece a você um [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) que contém informações sobre a colisão, incluindo o ponto de colisão 3D e o outro gameobject com o cabeçalho Head-olhar Ray.</span><span class="sxs-lookup"><span data-stu-id="d2597-109">Calling [Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) gives you a [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) containing information about the collision, including the 3D collision point and the other GameObject the head-gaze ray hit.</span></span>
 
-### <a name="example-implement-head-gaze"></a><span data-ttu-id="659dc-110">Exemplo: implementar Head-olhar</span><span class="sxs-lookup"><span data-stu-id="659dc-110">Example: Implement head-gaze</span></span>
+### <a name="example-implement-head-gaze"></a><span data-ttu-id="d2597-110">Exemplo: implementar Head-olhar</span><span class="sxs-lookup"><span data-stu-id="d2597-110">Example: Implement head-gaze</span></span>
 
 ```cs
 void Update()
@@ -43,32 +43,32 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a><span data-ttu-id="659dc-111">Práticas recomendadas</span><span class="sxs-lookup"><span data-stu-id="659dc-111">Best practices</span></span>
+### <a name="best-practices"></a><span data-ttu-id="d2597-111">Práticas recomendadas</span><span class="sxs-lookup"><span data-stu-id="d2597-111">Best practices</span></span>
 
-<span data-ttu-id="659dc-112">Enquanto o exemplo acima dispara um único Raycast do loop de atualização para localizar o destino dos pontos de partida do usuário em, recomendamos usar um único objeto para gerenciar todos os processos olhar.</span><span class="sxs-lookup"><span data-stu-id="659dc-112">While the example above fires a single raycast from the update loop to find the target the user's head points at, we recommended using a single object to manage all head-gaze processes.</span></span> <span data-ttu-id="659dc-113">A combinação da lógica Head-olhar economizará a capacidade de processamento precioso do aplicativo e limitará seu raycasting a um por quadro.</span><span class="sxs-lookup"><span data-stu-id="659dc-113">Combining your head-gaze logic will save your app precious processing power and limit your raycasting to one per frame.</span></span>
+<span data-ttu-id="d2597-112">Enquanto o exemplo acima dispara um único Raycast do loop de atualização para localizar o destino dos pontos de partida do usuário em, recomendamos usar um único objeto para gerenciar todos os processos olhar.</span><span class="sxs-lookup"><span data-stu-id="d2597-112">While the example above fires a single raycast from the update loop to find the target the user's head points at, we recommended using a single object to manage all head-gaze processes.</span></span> <span data-ttu-id="d2597-113">A combinação da lógica Head-olhar economizará a capacidade de processamento precioso do aplicativo e limitará seu raycasting a um por quadro.</span><span class="sxs-lookup"><span data-stu-id="d2597-113">Combining your head-gaze logic will save your app precious processing power and limit your raycasting to one per frame.</span></span>
 
-## <a name="visualizing-head-gaze"></a><span data-ttu-id="659dc-114">Visualizando a cabeça-olhar</span><span class="sxs-lookup"><span data-stu-id="659dc-114">Visualizing head-gaze</span></span>
+## <a name="visualizing-head-gaze"></a><span data-ttu-id="d2597-114">Visualizando a cabeça-olhar</span><span class="sxs-lookup"><span data-stu-id="d2597-114">Visualizing head-gaze</span></span>
 
-<span data-ttu-id="659dc-115">Assim como com um ponteiro do mouse em um computador, você deve implementar um [cursor](../../design/cursors.md) que represente o olhar do usuário.</span><span class="sxs-lookup"><span data-stu-id="659dc-115">Just like with a mouse pointer on a computer, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze.</span></span> <span data-ttu-id="659dc-116">Saber qual conteúdo um usuário está direcionando aumenta a confiança no que eles estão prestes a interagir.</span><span class="sxs-lookup"><span data-stu-id="659dc-116">Knowing what content a user is targeting increases confidence in what they're about to interact with.</span></span>
+<span data-ttu-id="d2597-115">Assim como com um ponteiro do mouse em um computador, você deve implementar um [cursor](../../design/cursors.md) que represente o olhar do usuário.</span><span class="sxs-lookup"><span data-stu-id="d2597-115">Just like with a mouse pointer on a computer, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze.</span></span> <span data-ttu-id="d2597-116">Saber qual conteúdo um usuário está direcionando aumenta a confiança no que eles estão prestes a interagir.</span><span class="sxs-lookup"><span data-stu-id="d2597-116">Knowing what content a user is targeting increases confidence in what they're about to interact with.</span></span>
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a><span data-ttu-id="659dc-117">Head-olhar no kit de ferramentas da realidade misturada</span><span class="sxs-lookup"><span data-stu-id="659dc-117">Head-gaze in the Mixed Reality Toolkit</span></span> 
-<span data-ttu-id="659dc-118">Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) no MRTK.</span><span class="sxs-lookup"><span data-stu-id="659dc-118">You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.</span></span>
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a><span data-ttu-id="d2597-117">Head-olhar no kit de ferramentas da realidade misturada</span><span class="sxs-lookup"><span data-stu-id="d2597-117">Head-gaze in the Mixed Reality Toolkit</span></span> 
+<span data-ttu-id="d2597-118">Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) no MRTK.</span><span class="sxs-lookup"><span data-stu-id="d2597-118">You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="659dc-119">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="659dc-119">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="d2597-119">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="d2597-119">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="659dc-120">Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core.</span><span class="sxs-lookup"><span data-stu-id="659dc-120">If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="659dc-121">A partir daqui, você pode continuar para o próximo bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="659dc-121">From here, you can continue to the next building block:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="659dc-122">Gestos e controladores de movimentos</span><span class="sxs-lookup"><span data-stu-id="659dc-122">Gestures and motion controllers</span></span>](gestures-and-motion-controllers-in-unity.md)
-
-<span data-ttu-id="659dc-123">Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:</span><span class="sxs-lookup"><span data-stu-id="659dc-123">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="d2597-120">Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core.</span><span class="sxs-lookup"><span data-stu-id="d2597-120">If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="d2597-121">Deste ponto, você pode prosseguir para o próximo bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="d2597-121">From here, you can continue to the next building block:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="659dc-124">Experiências compartilhadas</span><span class="sxs-lookup"><span data-stu-id="659dc-124">Shared experiences</span></span>](shared-experiences-in-unity.md)
+> [<span data-ttu-id="d2597-122">Gestos e controladores de movimentos</span><span class="sxs-lookup"><span data-stu-id="d2597-122">Gestures and motion controllers</span></span>](gestures-and-motion-controllers-in-unity.md)
 
-<span data-ttu-id="659dc-125">Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="659dc-125">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="d2597-123">Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:</span><span class="sxs-lookup"><span data-stu-id="d2597-123">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="659dc-126">Confira também</span><span class="sxs-lookup"><span data-stu-id="659dc-126">See also</span></span>
-* [<span data-ttu-id="659dc-127">Câmera</span><span class="sxs-lookup"><span data-stu-id="659dc-127">Camera</span></span>](camera-in-unity.md)
-* [<span data-ttu-id="659dc-128">Cursores</span><span class="sxs-lookup"><span data-stu-id="659dc-128">Cursors</span></span>](../../design/cursors.md)
-* [<span data-ttu-id="659dc-129">Focar com a cabeça e confirmar</span><span class="sxs-lookup"><span data-stu-id="659dc-129">Head-gaze and commit</span></span>](../../design/gaze-and-commit.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="d2597-124">Experiências compartilhadas</span><span class="sxs-lookup"><span data-stu-id="d2597-124">Shared experiences</span></span>](shared-experiences-in-unity.md)
+
+<span data-ttu-id="d2597-125">Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="d2597-125">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="d2597-126">Veja também</span><span class="sxs-lookup"><span data-stu-id="d2597-126">See also</span></span>
+* [<span data-ttu-id="d2597-127">Câmera</span><span class="sxs-lookup"><span data-stu-id="d2597-127">Camera</span></span>](camera-in-unity.md)
+* [<span data-ttu-id="d2597-128">Cursores</span><span class="sxs-lookup"><span data-stu-id="d2597-128">Cursors</span></span>](../../design/cursors.md)
+* [<span data-ttu-id="d2597-129">Focar com a cabeça e confirmar</span><span class="sxs-lookup"><span data-stu-id="d2597-129">Head-gaze and commit</span></span>](../../design/gaze-and-commit.md)
