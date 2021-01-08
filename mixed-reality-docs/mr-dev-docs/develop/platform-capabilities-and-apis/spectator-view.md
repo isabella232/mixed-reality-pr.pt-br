@@ -1,18 +1,18 @@
 ---
 title: Modo de exibição Espectador
-description: Visualize os hologramas em um dispositivo externo como um meio de demonstrar uma experiência de realidade misturada em uma tela externa ou gravando um vídeo de uma experiência de realidade misturada.
+description: Visualize hologramas em um dispositivo externo para mostrar ou gravar uma experiência de realidade misturada em uma tela externa.
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Modo de exibição Espectador, iPhone, iOS, iPad, OpenCV, câmera, ARKit, HoloLens, realidade misturada, MixedRealityToolkit, demonstração, gravar
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91695491"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530106"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Modo de exibição Espectador para o HoloLens e o HoloLens 2
 
@@ -20,8 +20,7 @@ ms.locfileid: "91695491"
 
 ## <a name="overview"></a>Visão geral
 
-Ao utilizar um HoloLens, muitas vezes, nós nos esquecemos de que uma pessoa sem ele não pode experimentar as maravilhas que podemos ver. O Modo de exibição Espectador permite que outras pessoas vejam em uma tela 2D o que um usuário do HoloLens vê no mundo dele.
-O Modo de exibição Espectador oferece uma abordagem rápida e acessível para a gravação de hologramas em HD com dispositivos móveis. Ele também oferece uma gravação de qualidade profissional de hologramas com câmeras de vídeo.
+Quando você estiver usando um HoloLens, é fácil esquecer que uma pessoa que não o está usando possa ver as mesmas maravilhas que você. O modo de exibição Espectador permite que outras pessoas vejam o que um usuário do HoloLens vê em uma tela 2D. Também é uma abordagem rápida e acessível para a gravação de hologramas em HD com dispositivos móveis e a obtenção de gravações de ótima qualidade de hologramas com câmeras de vídeo.
 
 ## <a name="key-resources"></a>Principais recursos
 
@@ -30,7 +29,8 @@ O Modo de exibição Espectador oferece uma abordagem rápida e acessível para 
 * [**Amostras do Modo de exibição Espectador**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>Casos de uso
-* Você pode gravar uma experiência de realidade misturada usando um dispositivo iPhone ou Android. Faça a gravação em Full HD e aplique a suavização aos hologramas e, até mesmo, às sombras. É uma maneira econômica e rápida de capturar um vídeo dos hologramas.
+
+* Você pode gravar uma experiência de realidade misturada usando um dispositivo iPhone ou Android. Grave em full HD e aplique suavização a hologramas e sombra para ter uma forma econômica e rápida de capturar vídeo de hologramas.
 * Transmita experiências de realidade misturada ao vivo para uma Apple TV diretamente no iPhone ou no iPad, sem retardos.
 * Compartilhe a experiência com seus convidados: Permita que os usuários que não sejam do HoloLens experimentem os hologramas diretamente em seus respectivos telefones ou tablets.
 

@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portal de Dispositivos do Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: 168d4175a7e55d5116f19c51a802c9a8abdc1e19
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102913"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530318"
 ---
 # <a name="using-the-windows-device-portal"></a>Usar o Portal de Dispositivos do Windows
 
@@ -31,8 +31,8 @@ Essa documentação trata especificamente do Portal de Dispositivos do Windows p
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Configurar o HoloLens para usar o Portal de Dispositivos do Windows
 
 1. Ligue seu HoloLens e coloque o dispositivo.
-2. Execute a ação [Iniciar gesto](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) para HoloLens2 ou [Abrir a mão](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) no HoloLens (1ª geração) para iniciar o menu principal. 
-3. Olhe no bloco **Configurações** e execute o gesto [fechar e abrir os dedos indicador e polegar](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) no HoloLens (1ª geração) ou selecione-o no HoloLens 2 [tocando nele ou usando um raio de mão](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
+2. Use a ação [Iniciar gesto](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) para HoloLens2 ou [Abrir a mão](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) no HoloLens (1ª geração) para iniciar o menu principal. 
+3. Foque o olhar no bloco **Configurações** e faça um gesto de [fechar e abrir dedos indicador e polegar](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) no HoloLens (1ª geração). Você também pode selecioná-lo no HoloLens 2 [tocando nele ou usando um raio de mão](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
 4. Selecione item de menu **Atualização**.
 5. Selecione o item de menu **Para desenvolvedores**.
 6. Habilite o **Modo de Desenvolvedor**.
@@ -41,7 +41,7 @@ Essa documentação trata especificamente do Portal de Dispositivos do Windows p
 > Se você estiver em vários usuários e não em um administrador, a capacidade de entrar no Modo de Desenvolvedor pode estar esmaecida. Verifique se você é um **[administrador no dispositivo](https://docs.microsoft.com/hololens/security-adminless-os)** .
 
 7. [Role para baixo](../../design/gaze-and-commit.md#composite-gestures) e habilite o **Portal de Dispositivos**.
-8. Se você estiver configurando o Portal de Dispositivos do Windows para poder implantar aplicativos nesse HoloLens por USB ou Wi-Fi, clique em **Emparelhar** para [gerar um PIN de emparelhamento](using-visual-studio.md). Saia do aplicativo Configurações no pop-up do PIN até inserir o PIN no Visual Studio durante sua primeira implantação.
+8. Se você estiver configurando o Portal de Dispositivos do Windows para poder implantar aplicativos nesse HoloLens por USB ou Wi-Fi, selecione **Emparelhar** para [gerar um PIN de emparelhamento](using-visual-studio.md). Saia do aplicativo Configurações no pop-up do PIN até inserir o PIN no Visual Studio durante sua primeira implantação.
 
 ![Habilitar o modo de desenvolvedor no aplicativo Configurações para Windows Holographic](images/using-windows-portal-img-01.jpg)
 
@@ -55,7 +55,7 @@ Essa documentação trata especificamente do Portal de Dispositivos do Windows p
 ![Configurações do HoloLens 2](images/using-windows-portal-img-02.jpg)
 
 3. Em um navegador da Web em seu computador, acesse https://<SEU_ENDEREÇO_IP_DO_HOLOLENS>
-   * O navegador exibirá a seguinte mensagem: “Há um problema com o certificado de segurança desse site”. Isso acontece porque o certificado emitido para o Device Portal é um certificado de teste. Você pode ignorar esse erro de certificado por enquanto e continuar.
+   * O navegador exibirá a seguinte mensagem: "Há um problema com o certificado de segurança desse site" porque o certificado, que é emitido para o Portal de Dispositivos, é de teste. Você pode ignorar esse erro de certificado por enquanto e continuar.
 
 ## <a name="connecting-over-usb"></a>Conectar-se por USB
 
@@ -79,18 +79,18 @@ Você pode mover arquivos do seu computador para o HoloLens sem nenhuma configur
 
 ## <a name="connecting-to-an-emulator"></a>Conectar-se a um emulador
 
-Você também pode usar o Device Portal com seu emulador. Para se conectar ao Portal de Dispositivos, use a [barra de ferramentas](using-the-hololens-emulator.md). Clique neste ícone: ![Ícone Abrir o Portal de Dispositivos](images/emulator-deviceportal.png) **Abrir o Portal de Dispositivos**: Abre o Portal de Dispositivos do Windows para o sistema operacional HoloLens no emulador.
+Você também pode usar o Device Portal com seu emulador. Para se conectar ao Portal de Dispositivos, use a [barra de ferramentas](using-the-hololens-emulator.md). Selecione este ícone: ![Ícone Abrir o Portal de Dispositivos](images/emulator-deviceportal.png) **Abrir o Portal de Dispositivos**: Abre o Portal de Dispositivos do Windows para o sistema operacional HoloLens no emulador.
 
 ## <a name="creating-a-username-and-password"></a>Criar um nome de usuário e senha
 
 ![Configurar o acesso ao Portal de Dispositivos do Windows](images/windows-device-portal-credentials-reset-page-1000px.png)<br>
 *Configurar o acesso ao Portal de Dispositivos do Windows*
 
-Na primeira vez que se conectar ao Device Portal em seu HoloLens, você precisará criar um nome de usuário e senha.
-1. Em um navegador da Web em seu computador, digite o endereço IP do HoloLens. A página Set up access é aberta.
-2. Clique ou toque em **Solicitar pin** e examine a tela do HoloLens para obter o PIN gerado.
+Na primeira vez que se conectar ao Portal de Dispositivos em seu HoloLens, você precisará criar um nome de usuário e senha.
+1. Em um navegador da Web em seu computador, digite o endereço IP do HoloLens. A página Configurar acesso é aberta.
+2. Clique ou toque em **Solicitar PIN** e olhe para a tela do HoloLens para obter o PIN gerado.
 3. Insira o PIN na caixa de texto **PIN exibido em seu dispositivo**.
-4. Insira o nome de usuário que você usará para se conectar ao Device Portal. Não é necessário ser um nome de MSA (conta da Microsoft) ou um nome de domínio.
+4. Insira o nome de usuário que você usará para se conectar ao Portal de Dispositivos. Não é necessário ser um nome de MSA (conta da Microsoft) ou um nome de domínio.
 5. Insira uma senha e confirme-a. A senha deve ter pelo menos sete caracteres de comprimento. Não é necessário ser uma senha de MSA ou de domínio.
 6. Clique em **Emparelhar** para se conectar ao Portal de Dispositivos do Windows no HoloLens.
 
@@ -100,16 +100,16 @@ Se desejar alterar o nome de usuário ou a senha, você poderá repetir esse pro
 
 Se você vir um "erro de certificado" no navegador, poderá corrigi-lo criando uma relação de confiança com o dispositivo.
 
-Cada HoloLens gera um certificado autoassinado exclusivo para sua conexão SSL. Por padrão, esse certificado não é confiável pelo navegador da Web do seu computador e você poderá receber um "erro de certificado". Ao baixar esse certificado do seu HoloLens (por USB ou uma rede Wi-Fi confiável) e torná-lo confiável em seu computador, você poderá se conectar com segurança ao seu dispositivo.
+Cada HoloLens gera um certificado autoassinado para a respectiva conexão SSL. Por padrão, esse certificado não é confiável pelo navegador da Web do seu computador e você poderá receber um "erro de certificado". Você poderá se conectar com segurança ao seu dispositivo baixando esse certificado do seu HoloLens por USB ou uma rede Wi-Fi confiável e tornando-o confiável em seu computador.
 1. **Verifique se você está em uma rede segura (por USB ou uma rede Wi-Fi confiável).**
 2. Baixe o certificado desse dispositivo da página "Segurança" no Portal de Dispositivos.
    * Navegue até: https://<SEU_ENDEREÇO_IP_DO_HOLOLENS>/devicepair.htm
    * Abra o nó de Sistema > Preferências. 
-   * Role para baixo até Segurança do Dispositivo e clique no botão “Baixar o certificado deste dispositivo”.
+   * Role para baixo até Segurança do Dispositivo e selecione o botão “Baixar o certificado deste dispositivo”.
 3. Instale o certificado no repositório “Autoridades de Certificação Raiz Confiáveis” em seu computador.
    * No menu do Windows, digite: Gerencie Certificados de Computador e inicie o applet.
    * Expanda a pasta **Autoridade de Certificação Raiz Confiável**.
-   * Clique na pasta **Certificados**.
+   * Selecione a pasta **Certificados**.
    * No menu Ação, selecione: Todas as Tarefas > Importar...
    * Conclua o Assistente para Importação de Certificados, usando o arquivo de certificado baixado do Device Portal.
 4. Reinicie o navegador.
@@ -144,7 +144,7 @@ Cada HoloLens gera um certificado autoassinado exclusivo para sua conexão SSL. 
 
 ![Captura de tela da página Gerenciador de aplicativos aberta no Portal de Dispositivos do Windows com a guia Armazenamento Local em destaque](images/sideloading-3.png)
 
-6. Selecione **Instalar** para iniciar a instalação
+6. Clique em **Instalar** para iniciar a instalação
  
 ![Captura de tela da página Gerenciador de aplicativos aberta no Portal de Dispositivos do Windows com a instalação concluída](images/sideloading-4.png) 
 
@@ -172,7 +172,7 @@ A página inicial mostra as seguintes informações:
 * **Status do Dispositivo:** monitora a integridade do dispositivo e relata erros críticos.
 * **Informações do Windows:** mostra o nome do HoloLens e a versão do Windows instalada atualmente.
 * A seção **Preferências** contém as seguintes configurações:
-   * **DIP**: define a DIP (distância entre pupilas), que é a distância, em milímetros, entre o centro das pupilas do usuário quando ele olha para frente. A configuração entra em vigor imediatamente. O valor padrão é calculado automaticamente quando você configura seu dispositivo.
+   * **DIP**: define a IPD (distância entre pupilas) – a distância, em milímetros, entre o centro das pupilas do usuário quando ele olha para frente. A configuração entra em vigor imediatamente. O valor padrão é calculado automaticamente quando você configura seu dispositivo.
    * **Nome do dispositivo**: atribui um nome ao HoloLens. Você deve reinicializar o dispositivo depois de alterar esse valor para que ele entre em vigor. Depois de clicar em **Salvar**, uma caixa de diálogo perguntará se você deseja reiniciar o dispositivo imediatamente ou mais tarde.
    * **Configurações de suspensão**: define o tempo de espera antes que o dispositivo entre em suspensão quando ele estiver conectado e quando estiver na bateria.
 
@@ -194,11 +194,11 @@ Use a página Modo de exibição 3D para ver como o HoloLens interpreta seus arr
   * **Mostrar tronco**: exibe o tronco da exibição.
   * **Mostrar o plano de estabilização**: exibe o plano que o HoloLens usa para estabilizar o movimento.
   * **Mostrar malha**: exibe a malha de mapeamento espacial que representa seus arredores.
-  * **Mostrar âncoras espaciais**: exibe âncoras espaciais para o aplicativo ativo. Você deve clicar no botão Atualizar para obter e atualizar as âncoras.
+  * **Mostrar âncoras espaciais**: exibe âncoras espaciais para o aplicativo ativo. Clique no botão Atualizar para obter e atualizar as âncoras.
   * **Mostrar detalhes**: exibe as posições das mãos, os quatérnios de rotação da cabeça e o vetor de origem do dispositivo conforme eles mudam em tempo real.
   * **Botão tela inteira**: mostra o Modo de Exibição 3D em modo de tela inteira. Pressione ESC para sair do modo de exibição de tela inteira.
-* **Reconstrução da superfície**: clique ou toque em **Atualizar** para exibir a malha de mapeamento espacial mais recente do dispositivo. Uma passagem completa pode levar um tempo para ser concluída (cerca de alguns segundos). A malha não é atualizada automaticamente no modo de exibição 3D, e você deve clicar manualmente em **Atualizar** para obter a malha mais recente do dispositivo. Clique em **Salvar** para salvar a malha de mapeamento espacial atual como um arquivo obj em seu computador.
-* **Âncoras espaciais**: clique em Atualizar para exibir ou atualizar as âncoras espaciais do aplicativo ativo.
+* **Reconstrução da superfície**: clique ou toque em **Atualizar** para exibir a malha de mapeamento espacial mais recente do dispositivo. Uma passagem completa pode levar um tempo para ser concluída (cerca de alguns segundos). A malha não é atualizada automaticamente no modo de exibição 3D, e você precisa selecionar manualmente **Atualizar** para obter a malha mais recente do dispositivo. Selecione **Salvar** para salvar a malha de mapeamento espacial atual como um arquivo obj em seu computador.
+* **Âncoras espaciais**: selecione Atualizar para exibir ou atualizar as âncoras espaciais do aplicativo ativo.
 
 ### <a name="map-manager"></a>Gerenciador de Mapas
 
@@ -211,9 +211,9 @@ Para acessar o Gerenciador de Mapas, faça logon no Portal do Dispositivo e sele
 
 #### <a name="exporting-and-importing-maps"></a>Exportar e importar mapas
 
-Para exportar mapas, clique em **Exportar Mapa e Âncoras do Sistema**. Isso pode demorar um pouco, então esteja preparado para aguardar de 30 a 60 segundos enquanto o mapa é exportado. Após a conclusão, o arquivo será baixado em seu navegador.  
+Para exportar mapas, selecione **Exportar Mapas e Âncoras do Sistema**. Isso pode demorar um pouco, então esteja preparado para aguardar de 30 a 60 segundos enquanto o mapa é exportado. Após a conclusão, o arquivo será baixado em seu navegador.  
 
-Para importar mapas e âncoras, clique em **Carregar um arquivo de mapa** e **Carregar um arquivo de âncora** respectivamente e selecione um mapa ou arquivo de âncora que você já exportou. O arquivo de âncora ou mapa carregado pode vir do seu dispositivo HoloLens ou de qualquer outro. 
+Para importar mapas e âncoras, selecione **Carregar um arquivo de mapa** e **Carregar um arquivo de âncora** respectivamente e selecione um mapa ou arquivo de âncora que você já exportou. O arquivo de âncora ou mapa carregado pode vir do de qualquer outro dispositivo HoloLens. 
 
 > [!NOTE]
 > No HoloLens, também é possível importar e exportar o banco de dados de mapeamento espacial. No entanto, isso não funciona em dispositivos que não são HoloLens.  
@@ -242,12 +242,12 @@ Use a página Mixed Reality Capture para salvar fluxos de mídia do HoloLens.
   * **Resolução de Vídeo e Taxa de Quadros**: a resolução e a taxa de quadros em que o vídeo será gravado.
   * **Buffer de Estabilização de Vídeo**: o tamanho do buffer usado ao gravar um vídeo. Quanto maior o valor, melhor ele pode compensar os movimentos rápidos.
 * Clique ou toque no botão **Visualização dinâmica** para mostrar o fluxo de captura. **Interromper a visualização dinâmica** interrompe o fluxo de captura.
-* Clique ou toque em **Gravar** para iniciar a gravação do fluxo de realidade combinada, usando as configurações especificadas. **Interromper a gravação** encerra a gravação e a salva.
+* Clique ou toque em **Gravar** para iniciar a gravação do fluxo de realidade misturada, usando as configurações especificadas. **Interromper a gravação** encerra a gravação e a salva.
 * Clique ou toque em **Tirar foto** para tirar uma imagem estática do fluxo de captura.
 * Clique ou toque em **Restaurar Configurações Padrão** para restaurar as configurações padrão de áudio, foto e vídeo.
 * **Vídeos e fotos**: mostra uma lista de capturas de vídeos e fotos feitas no dispositivo.
 
-Todas as configurações nesta página se aplicam a capturas feitas usando o Portal de Dispositivos do Windows, mas algumas se aplicam também ao sistema MRC (menu Iniciar, botões de hardware, comandos de voz globais, Miracast) e a gravadores MRC personalizados.
+Todas as configurações nesta página se aplicam a capturas feitas usando o Portal de Dispositivos do Windows. Algumas delas também se aplicam ao sistema MRC, incluindo o menu Iniciar, os botões de hardware, os comandos de voz global, o Miracast e os gravadores personalizados de MRC.
 
 |  Configuração  |  Aplica-se ao sistema do MRC  |  Aplica-se a gravadores de MRC personalizados |
 |----------|----------|----------|
@@ -285,7 +285,7 @@ Capture rastreamentos do [WPR](https://msdn.microsoft.com/library/windows/hardwa
 * **Perfis disponíveis**: selecione o perfil WPR na lista suspensa e clique ou toque em **Iniciar** para iniciar o rastreamento.
 * **Perfis personalizados**: clique ou toque em **Procurar** para escolher um perfil WPR do seu computador. Clique ou toque em **Carregar e iniciar** para iniciar o rastreamento.
 
-Para interromper o rastreamento, clique no link para interromper. Fique nesta página até que o download do arquivo de rastreamento seja concluído.
+Para interromper o rastreamento, selecione o link para interromper. Fique nesta página até que o download do arquivo de rastreamento seja concluído.
 
 Os arquivos ETL capturados podem ser abertos para análise no [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
 
@@ -304,10 +304,10 @@ Mostra detalhes sobre processos em execução no momento. Isso inclui aplicativo
 Mostra gráficos em tempo real de informações de diagnóstico do sistema, como o uso de energia, a taxa de quadros e a carga da CPU.
 
 Estas são as métricas disponíveis:
-* **Energia SoC**: utilização instantânea de energia do sistema-em-um-chip, com base na média de um minuto
-* **Energia do sistema**: utilização instantânea da energia do sistema, com base na média de um minuto
+* **Energia SoC**: uso instantâneo de energia do sistema-em-um-chip, com base na média de um minuto
+* **Energia do sistema**: uso instantâneo de energia do sistema, com base na média de um minuto
 * **Taxa de quadros**: quadros por segundo, VBlanks perdidos por segundo e VBlanks perdidos consecutivos
-* **GPU**: utilização do mecanismo GPU, percentual do total disponível
+* **GPU**: uso do mecanismo GPU, percentual do total disponível
 * **CPU**: porcentagem do total disponível
 * **E/S**: lê e grava
 * **Rede**: recebido e enviado
@@ -380,7 +380,7 @@ Por exemplo, você pode especificar os critérios *(o Nome da Tarefa contém 'Fo
 
 Permite que você grave e reproduza dados de entrada para testes.
 * **Sala de captura**: usado para baixar um arquivo de sala simulada que contém a malha de mapeamento espacial para os arredores do usuário. Dê um nome à sala e clique em **Capturar** para salvar os dados como um arquivo .xef em seu computador. Esse arquivo de sala pode ser carregado no emulador do HoloLens.
-* **Gravação**: verifique os fluxos a serem gravados, dê um nome para a gravação e clique ou toque em **Gravar** para iniciar a gravação. Execute ações com o HoloLens e, em seguida, clique em **Interromper** para salvar os dados como um arquivo .xef em seu computador. Esse arquivo pode ser carregado no emulador ou dispositivo HoloLens.
+* **Gravação**: verifique os fluxos a serem gravados, dê um nome para a gravação e clique ou toque em **Gravar** para iniciar a gravação. Execute ações com o HoloLens e, em seguida, clique em **Parar** para salvar os dados como um arquivo .xef em seu computador. Esse arquivo pode ser carregado no emulador ou dispositivo HoloLens.
 * **Reprodução**: clique ou toque em **Carregar gravação** para selecionar um arquivo xef do computador e enviar os dados ao HoloLens.
 * **Modo de controle**: selecione **Padrão** ou **Simulação** na lista suspensa e clique ou toque no botão **Definir** para selecionar o modo no HoloLens. Escolher "Simulação" desabilita os sensores reais em seu HoloLens e usa dados simulados carregados em vez disso. Se você alternar para "Simulação", o HoloLens não responderá ao usuário real até que você volte para "Padrão".
 

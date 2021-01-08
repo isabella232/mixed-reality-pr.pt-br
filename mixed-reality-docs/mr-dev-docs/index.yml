@@ -4,7 +4,7 @@ summary: Explore o mundo crescente de aplicativos de Realidade Misturada com o W
 brand: windows
 metadata:
   title: Documentação da Realidade Misturada
-  description: Aprofunde-se no mundo crescente de aplicativos de Realidade Misturada com o Windows Mixed Reality, o MRTK (Mixed Reality Toolkit), o Unity, o Unreal e muito mais para HoloLens e Headsets Imersivos do Windows.
+  description: Aprofunde-se no mundo em expansão de aplicativos de Realidade Misturada para Headsets Imersivos do Windows e HoloLens.
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
-  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
+  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 01/06/2021
-  ms.locfileid: "97905278"
+  ms.lasthandoff: 01/08/2021
+  ms.locfileid: "98007547"
 highlightedContent:
   items:
   - title: O que é Realidade Misturada?

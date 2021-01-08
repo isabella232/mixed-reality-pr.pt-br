@@ -1,24 +1,24 @@
 ---
-title: Visão geral do desenvolvimento com o Unity
-description: Introdução à criação de aplicativos de realidade misturada no Unity.
-author: thetuvix
+title: Desenvolvimento do Unity para HoloLens
+description: Introdução à criação de aplicativos de realidade misturada no Unity e no HoloLens.
+author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926033"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613470"
 ---
-# <a name="unity-development-overview"></a>Visão geral do desenvolvimento com o Unity
+# <a name="unity-development-for-hololens"></a>Desenvolvimento do Unity para HoloLens 
 
 ![Logotipo do banner do Unity](../images/unity_logo_banner.png)
 
-O caminho mais rápido para criar um [aplicativo de realidade misturada](../../design/app-views.md) no [Unity](https://unity.com) é com o MRTK (Kit de Ferramentas de Realidade Misturada). Se você não tem familiaridade com o Unity, recomendamos explorar os [tutoriais](https://unity3d.com/learn/tutorials) de nível iniciante na plataforma Unity Learn antes de continuar. Também é uma boa ideia visitar a abrangente [Asset Store](https://www.assetstore.unity3d.com/) e os [fóruns de Realidade Misturada do Unity](https://forum.unity3d.com/forums/hololens.102/) para interagir com a comunidade online que cria aplicativos de realidade misturada. Você nunca sabe quais recursos ou soluções interessantes pode encontrar por aí. Quando você estiver pronto para começar a usar o MRTK, vá para os pontos de verificação de desenvolvimento abaixo!
+O caminho mais rápido para criar um [aplicativo de realidade misturada](../../design/app-views.md) do HoloLens no [Unity](https://unity.com) é com o Kit de Ferramentas de Realidade Misturada. Se você não tem familiaridade com o Unity, recomendamos explorar os [tutoriais](https://unity3d.com/learn/tutorials) de nível iniciante na plataforma Unity Learn antes de continuar. Também é uma boa ideia visitar a abrangente [Asset Store](https://www.assetstore.unity3d.com/) e os [fóruns de Realidade Misturada do Unity](https://forum.unity3d.com/forums/hololens.102/) para interagir com a comunidade online que cria aplicativos de realidade misturada. Você nunca sabe quais recursos ou soluções interessantes pode encontrar por aí. Quando você estiver pronto para começar a usar o MRTK, vá para os pontos de verificação de desenvolvimento abaixo!
 
 > [!IMPORTANT]
 > Se você já tem um projeto Unity que deseja mover para o HoloLens 2, confira nossos **[guias de portabilidade](../porting-apps/porting-overview.md)** . Temos guias de projetos que usam HTK, MRTK v1, SteamVR ou que foram desenvolvidos para headsets imersivos, como o Reverb G2, Oculus Rift, HTC Vive.

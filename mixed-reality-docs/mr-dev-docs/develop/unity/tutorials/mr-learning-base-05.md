@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de introdução – 5. Criar conteúdo dinâmico usando Solucionadores
+title: Tutoriais do MRTK – 5. Criar conteúdo dinâmico usando Solucionadores
 description: Este curso mostra como usar os solucionadores do MRTK (Kit de Ferramentas de Realidade Misturada) para criar um conteúdo dinâmico.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores
 ms.localizationpriority: high
-ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679295"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613500"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Criar conteúdo dinâmico usando Solucionadores
 

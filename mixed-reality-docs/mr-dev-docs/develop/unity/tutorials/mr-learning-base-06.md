@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de introdução – 6. Como criar interfaces do usuário
+title: Tutoriais do MRTK – 6. Como criar interfaces do usuário
 description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar interfaces do usuário.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, pré-fabricados, hologramas, dicas de ferramentas
 ms.localizationpriority: high
-ms.openlocfilehash: 9ef3f17f8ec5508ace0c5d05cccf7a8383e54353
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679285"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613510"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Como criar interfaces do usuário
 

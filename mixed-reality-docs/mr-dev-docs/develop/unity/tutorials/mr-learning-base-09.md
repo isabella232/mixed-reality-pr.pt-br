@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de introdução – 9. Usando comandos de fala
+title: Tutoriais do MRTK – 9. Usando comandos de fala
 description: Este curso mostra como usar comandos de fala com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6e008f3e46bc4a22499691e284020321d29a2f23
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679245"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613460"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 

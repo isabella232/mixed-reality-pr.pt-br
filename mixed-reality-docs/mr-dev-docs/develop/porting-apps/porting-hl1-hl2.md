@@ -1,22 +1,20 @@
 ---
 title: Portabilidade dos aplicativos HoloLens (1ª geração) para o HoloLens 2
-description: Criado para desenvolvedores que têm um aplicativo no HoloLens (1ª geração) e/ou no MRTK mais antigo e buscam portá-lo para o MRTK versão 2 e o HoloLens 2.
+description: Criado para desenvolvedores que têm um aplicativo no HoloLens (1ª geração) e versões do MRTK mais antigas e buscam portá-lo para o MRTK versão 2 e o HoloLens 2.
 author: hferrone
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, teste, MRTK, MRTK versão 2, HoloLens 2, unity, portabilidade, 1ª geração do HoloLens, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, migração, práticas recomendadas, ARM
-ms.openlocfilehash: 7a4c05ce4918ff3868265c40096bd37016d4546a
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: ddff4ddff70211a5af38e367e863f81fd5f0c82d
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925962"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612880"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Portabilidade dos aplicativos HoloLens (1ª geração) para o HoloLens 2
-
-## <a name="overview"></a>Visão geral
 
 Este guia foi projetado para ajudar os desenvolvedores com um aplicativo do Unity para HoloLens (1ª geração) a portá-lo para o dispositivo HoloLens 2. Há quatro etapas principais para portar um aplicativo do Unity do HoloLens (1ª geração) para o HoloLens 2. 
 
@@ -27,7 +25,7 @@ As seções abaixo fornecem informações detalhadas para cada estágio:
 | ![Logotipo do Visual Studio](../images/visualstudio_logo.png) | ![Logotipo do Unity](../../design/images/logo-unity.png)| ![Ícone do Unity](../unity/images/hololens2_icon.jpg) | ![Logotipo do MRTK](../../design/images/74-12.png) |
 | Baixar as ferramentas mais recentes | Atualizar o projeto do Unity | Compilar para o ARM | Migrar para o MRTK v2
 
-Pré-requisitos:
+## <a name="prerequisites"></a>Pré-requisitos
 
 **Recomendamos expressamente** que você use o controle do código-fonte para salvar um instantâneo do estado original dos seus aplicativos antes de iniciar o processo de portabilidade. Além disso, recomendamos *salvar* os estados de ponto de verificação em vários momentos durante o processo. Também pode ser útil ter outra instância no Unity do aplicativo original para comparação lado a lado durante o processo de portabilidade. 
 
@@ -38,7 +36,7 @@ Pré-requisitos:
 
 ## <a name="migrate-project-to-the-latest-version-of-unity"></a>Migrar o projeto para a última versão do Unity
 
-Se você estiver usando o [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), o [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) será o melhor caminho de suporte de longo prazo sem alterações da falha no Unity ou no MRTK. Avalie as [dependências de plug-in](https://docs.unity3d.com/Manual/Plugins.html) atualmente existentes no projeto e determine se essas DLLs podem ser criadas para o ARM64. Se um plug-in de dependência rígida não puder ser compilado para ARM64, talvez seja necessário continuar criando seu aplicativo para o ARM.
+Se você estiver usando o [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), o [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) será o melhor caminho de suporte de longo prazo sem alterações da falha no Unity ou no MRTK. Avalie as [dependências de plug-in](https://docs.unity3d.com/Manual/Plugins.html) atualmente existentes no projeto e determine se essas DLLs podem ser criadas para o ARM64. Para projetos com um plug-in dependente do ARM64, talvez seja necessário continuar criando seu aplicativo para o ARM.
 
 <!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
 
@@ -57,7 +55,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 
 Após a atualização para o [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases), recomendamos atualizar configurações específicas no Unity para obter melhores resultados no dispositivo. Essas configurações são descritas detalhadamente em [Configurações recomendadas para o Unity](../unity/Recommended-settings-for-Unity.md).
 
-Deve-se reiterar que o [back-end de script do .NET](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) está sendo preterido no Unity 2018 e *removido* no Unity 2019. É altamente recomendável que os desenvolvedores mudem seu projeto para [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
+Reiteramos que o [back-end de script do .NET](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) está sendo preterido no Unity 2018 e **removido** no Unity 2019. É altamente recomendável que os desenvolvedores mudem seu projeto para [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
 
 > [!NOTE]
 > O back-end de script do IL2CPP pode causar tempos de build mais longos do Unity para o Visual Studio e, portanto, os desenvolvedores devem configurar seus computadores de desenvolvedor para [otimização dos tempos de build do IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
@@ -69,9 +67,9 @@ Depois de resolver as alterações da falha devido à migração para a versão 
 
 O HoloLens (1ª geração) executa aplicativos em um processador x86, enquanto o HoloLens 2 usa um processador ARM. Portanto, é necessário portar os aplicativos HoloLens existentes para que eles deem suporte ao ARM. Conforme indicado anteriormente, o Unity 2018 LTS é compatível com a compilação de aplicativos ARM32, enquanto o Unity 2019.x é compatível com a compilação de aplicativos ARM32 e ARM64. O desenvolvimento para aplicativos ARM64 é preferível, pois há uma diferença substancial de desempenho. No entanto, isso exige que todas as [dependências de plug-in](https://docs.unity3d.com/Manual/Plugins.html) também sejam compiladas para o ARM64.
 
-Examine todas as dependências de DLL em seu aplicativo. É recomendado remover de seu projeto qualquer dependência que não seja mais necessária. Para os plug-ins restantes que são necessários, ingira os respectivos binários do ARM32 ou do ARM64 no projeto do Unity.
+Examine todas as dependências de DLL em seu aplicativo. Recomendamos a remoção de dependências que não são mais necessárias para seu projeto. Para os plug-ins restantes que são necessários, ingira os respectivos binários do ARM32 ou do ARM64 no projeto do Unity.
 
-Após a ingestão das DLLs relevantes, compile uma solução do Visual Studio por meio do Unity e, em seguida, compile um appx para ARM no Visual Studio para testar se o aplicativo pode ser compilado para processadores ARM. É recomendável salvar o aplicativo como uma confirmação na solução de controle do código-fonte.
+Após a ingestão das DLLs relevantes, compile uma solução do Visual Studio por meio do Unity e, em seguida, compile um AppX para ARM no Visual Studio para testar se o aplicativo pode ser compilado para processadores ARM. É recomendável salvar o aplicativo como uma confirmação na solução de controle do código-fonte.
 
 > [!IMPORTANT]
 > O uso do MRTK v1 do aplicativo pode ser executado no HoloLens 2 após a alteração do destino de build para o ARM, supondo que todos os outros requisitos sejam atendidos. Isso inclui verificar se todos os plug-ins têm versões do ARM. No entanto, seu aplicativo não terá acesso a funções específicas do HoloLens 2, como acompanhamento ocular e mão articulada. O MRTK v1 e o MRTK v2 têm namespaces diferentes que permitem que ambas as versões estejam no mesmo projeto, o que é útil para fazer a transição de uma para a outra.
@@ -91,11 +89,11 @@ Confira os seguintes recursos para obter mais informações sobre como usar o MR
 
 Antes da ingestão dos novos arquivos [*.unitypackage para o MRTK v2](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases), é recomendável fazer um inventário de **1) qualquer código personalizado integrado ao MRTK v1** e **2) qualquer código personalizado para interações de entrada ou componentes de experiência do usuário**. O conflito mais comum e predominante para um desenvolvedor de realidade misturada que ingere o MRTK v2 envolve a entrada e as interações. É recomendável começar a ler e entender o [modelo de entrada do MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html).
 
-Por fim, o novo [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) fez a transição de um modelo de scripts e objetos de gerenciador na cena para uma configuração e uma arquitetura de provedor de serviços. Isso resulta em um modelo de arquitetura e hierarquia de cena mais limpo, mas exige uma curva de aprendizado para entender os novos perfis de configuração. Portanto, leia o [Guia de Configuração do Kit de Ferramentas de Realidade Misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) para começar a se familiarizar com os perfis e as configurações importantes para se ajustar às necessidades de seu aplicativo.
+Por fim, o novo [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) fez a transição de um modelo de scripts e objetos de gerenciador na cena para uma configuração e uma arquitetura de provedor de serviços. Isso resulta em um modelo de arquitetura e hierarquia de cena mais limpo, mas exige uma curva de aprendizado para entender os novos perfis de configuração. Leia o [Guia de Configuração do Kit de Ferramentas de Realidade Misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) para começar a se familiarizar com os perfis e as configurações importantes para se ajustar às necessidades de seu aplicativo.
 
-### <a name="perform-the-migration"></a>Realizar a migração
+### <a name="migrating-the-project"></a>Migrar o projeto
 
-Após a importação do [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), provavelmente, seu projeto do Unity terá muitos erros relacionados ao compilador. Esses se devem comumente à nova estrutura de namespace e aos novos nomes de componentes. Resolva esses erros modificando os scripts para os novos namespaces e componentes.
+Após a importação do [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), provavelmente, seu projeto do Unity terá muitos erros relacionados ao compilador. Esses se devem comumente à nova estrutura de namespace e aos novos nomes de componentes. Continue resolvendo esses erros por meio da modificação dos scripts para os novos namespaces e componentes.
 
 Para obter informações sobre as diferenças de API específicas entre o HTK/MRTK e o MRTK v2, confira o guia de portabilidade no [wiki do MRTK versão 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html).
 
@@ -104,7 +102,7 @@ Para obter informações sobre as diferenças de API específicas entre o HTK/MR
 - Prefira o uso do [sombreador padrão do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html).
 - Trabalhe em um tipo de alteração da falha por vez (por exemplo: IFocusable para [IMixedRealityFocusHandler](https://microsoft.github.io/MixedRealityToolkit-Unity/api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler.html)).
 - Faça um teste após cada alteração e use o controle do código-fonte.
-- Use a experiência do usuário padrão do MRTK (botões, imagens fixas etc.), quando possível.
+- Use a experiência do usuário padrão do MRTK (botões, imagens fixas e assim por diante), quando possível.
 - Evite modificar os arquivos do MRTK diretamente; em vez disso, crie wrappers em torno de componentes do MRTK.
     - Essa ação facilita futuras ingestões e atualizações do MRTK.
 - Examine e explore cenas de exemplo fornecidas no MRTK, especialmente *HandInteractionExamples.scene*.
@@ -113,9 +111,9 @@ Para obter informações sobre as diferenças de API específicas entre o HTK/MR
 - Defina o caminho de renderização instanciado de passagem única.
 - Usar o [perfil de configuração do HoloLens 2 para MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)
 
-### <a name="testing-your-application"></a>Como testar seu aplicativo
+### <a name="testing-your-application"></a>Testando seu aplicativo
 
-No MRTK Versão 2, você pode simular as interações com as mãos diretamente no Unity, bem como desenvolver novas APIs para interações com as mãos e acompanhamento ocular. O dispositivo HoloLens 2 é necessário para criar uma experiência de usuário satisfatória. Para adquirir uma melhor compreensão, é recomendável que você comece a estudar a documentação e as ferramentas. O [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) é compatível com o desenvolvimento no HoloLens (1ª geração) e, assim, os modelos de entrada tradicionais (tais como selecionar por meio do gesto de fechar e abrir dedos indicador e polegar) podem ser testados no HoloLens (1ª geração). 
+No MRTK Versão 2, você pode simular as interações com as mãos diretamente no Unity e desenvolver novas APIs para interações com as mãos e acompanhamento ocular. O dispositivo HoloLens 2 é necessário para criar uma experiência de usuário satisfatória. Para adquirir uma melhor compreensão, é recomendável que você comece a estudar a documentação e as ferramentas. O [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) é compatível com o desenvolvimento no HoloLens (1ª geração) e, assim, os modelos de entrada tradicionais (tais como selecionar por meio do gesto de fechar e abrir dedos indicador e polegar) podem ser testados no HoloLens (1ª geração). 
 
 ## <a name="updating-your-interaction-model-for-hololens-2"></a>Como atualizar o modelo de interação para o HoloLens 2
 
@@ -143,13 +141,13 @@ Cada aplicativo e cenário é diferente. Continuaremos refinando e postando dire
 
 - Em alguns casos, um plug-in do UWP/ARM pode não existir para os plug-ins requeridos pelo aplicativo, o que bloqueia a capacidade de portar o aplicativo e executá-lo no HoloLens 2. Entre em contato com seu provedor de plug-in para resolver o problema e fornecer suporte para o ARM.
 
-- O minfloat (e variantes como min16float, minint etc.) em sombreadores pode se comportar de modo diferente no HoloLens 2 comparado ao HoloLens (1ª geração). Especificamente, eles garantem que pelo menos o número especificado de bits seja usado. Em GPUs da Intel/da NVIDIA, eles são basicamente tratados como 32 bits. No ARM, o número de bits especificado é realmente respeitado. Isso significa que, na prática, esses números podem ter menos precisão ou alcance no HoloLens 2 do que tinham no HoloLens (1ª geração).
+- O minfloat (e variantes como min16float, minint e assim por diante) em sombreadores pode se comportar de modo diferente no HoloLens 2 comparado ao HoloLens (1ª geração). Especificamente, eles garantem que pelo menos o número especificado de bits seja usado. Em GPUs da Intel/da NVIDIA, os minfloats são basicamente tratados como 32 bits. No ARM, o número de bits especificado é realmente respeitado. Isso significa que, na prática, esses números podem ter menos precisão ou alcance no HoloLens 2 do que tinham no HoloLens (1ª geração).
 
 - As instruções de _asm não parecem funcionar no ARM, o que significa que qualquer código que use as instruções de _asm precisa ser reescrito.
 
-- A instrução SIMD definida não é compatível com o ARM porque vários cabeçalhos, como xmmintrin.h, emmintrin.h, tmmintrin.h e immintrin.h, não estão disponíveis no ARM.
+- O ARM não dá suporte à instrução SIMD definida porque vários cabeçalhos, como xmmintrin.h, emmintrin.h, tmmintrin.h e immintrin.h, não estão disponíveis no ARM.
 
-- O compilador de sombreador no ARM é executado durante a primeira chamada de desenho depois que o sombreador é carregado ou algo do qual o sombreador depende é alterado, não no tempo de carregamento do sombreador. O impacto na taxa de quadros pode ser perceptível, dependendo de quantos sombreadores precisam ser compilados. Isso tem várias implicações de como os sombreadores devem ser tratados, empacotados e atualizados de maneira diferente no HoloLens 2 em relação ao HoloLens (1ª geração).
+- O compilador de sombreador no ARM é executado durante a primeira chamada de desenho depois que o sombreador é carregado ou algo do qual o sombreador depende é alterado, não no tempo de carregamento do sombreador. O impacto na taxa de quadros pode ser perceptível, dependendo de quantos sombreadores precisam ser compilados, com implicações de como os sombreadores devem ser tratados, empacotados e atualizados de maneira diferente no HoloLens 2 versus HoloLens (1ª geração).
 
 ## <a name="see-also"></a>Veja também
 * [Instalar as ferramentas](../install-the-tools.md)

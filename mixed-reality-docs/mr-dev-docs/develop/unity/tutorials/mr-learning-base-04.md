@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de introdução – 4. Como posicionar objetos na cena
+title: Tutoriais do MRTK – 4. Como posicionar objetos na cena
 description: Este curso mostra como posicionar objetos na cena e como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para organizar objetos em uma grade.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores, coleção de objetos de grade
 ms.localizationpriority: high
-ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679305"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613250"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Como posicionar objetos na cena
 

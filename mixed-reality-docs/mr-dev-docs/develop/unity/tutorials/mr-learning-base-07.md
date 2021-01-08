@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de introdução – 7. Como interagir com objetos 3D
+title: Tutoriais do MRTK – 7. Como interagir com objetos 3D
 description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para interagir com objetos 3D.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, caixas delimitadoras
 ms.localizationpriority: high
-ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a457c850cdc5db7b9613ae20caab23d69b342997
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679265"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613490"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Como interagir com objetos 3D
 
