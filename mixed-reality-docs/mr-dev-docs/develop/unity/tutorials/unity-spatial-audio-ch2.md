@@ -1,26 +1,28 @@
 ---
-title: Tutoriais de áudio espacial-2. Espacializar sons de interação de botão
-description: Adicione um botão ao seu projeto e espaciale os sons de interação do botão.
+title: Espacializar sons de interação de botão
+description: Saiba como adicionar um botão e espacialar os sons de interação do botão em um aplicativo de realidade misturada.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, pré-fabricados, curva de volume
-ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002591"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007356"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>Espacializar sons de interação de botão
 
 ## <a name="objectives"></a>Objetivos
+
 Neste segundo capítulo do módulo de áudio espacial dos tutoriais do HoloLens 2, você irá:
 * Adicionar um botão
 * Espaciale o botão clique em sons
 
 ## <a name="add-a-button"></a>Adicionar um botão
+
 No painel **projeto** , selecione **ativos** e digite "PressableButtonHoloLens2" na barra de pesquisa:
 
 ![Botão pré-fabricado em ativos](images/spatial-audio/button-prefab-in-assets.png)
@@ -30,6 +32,7 @@ O botão pré-fabricado é a entrada representada por um ícone azul, em vez de 
 ![Transformação de botão](images/spatial-audio/button-transform.png)
 
 ## <a name="spatialize-button-feedback"></a>Comentar o botão espacial
+
 Nesta etapa, você causará a espacial dos comentários de áudio para o botão. Para obter sugestões de design relacionadas, consulte [design de som espacial](../../../design/spatial-sound-design.md). 
 
 O painel **mixer de áudio** é onde você definirá destinos, chamados de grupos de **mixers**, para reprodução de áudio de componentes de **fonte de áudio** . 
@@ -60,6 +63,7 @@ Após essas alterações, o componente **fonte de áudio** de seu **PressableBut
 > Se você mover a **mistura espacial** para 1 (3D) sem marcar a caixa de seleção **espacialize** , o Unity usará seu spatializer panorâmico, em vez do **Microsoft spatializer** com HRTFs.
 
 ## <a name="adjust-the-volume-curve"></a>Ajustar a curva de volume
+
 Por padrão, o Unity atenua os sons espaciais à medida que eles ficam mais distantes do ouvinte. Quando essa atenuação é aplicada aos sons de comentários de interação, a interface pode ser mais difícil de usar.
 
 Para desabilitar essa atenuação, ajuste a curva de **volume** . No componente **fonte de áudio** do painel **Inspetor** para o **PressableButtonHoloLens2**, há uma seção chamada configurações de **som 3D**. Nesta seção:

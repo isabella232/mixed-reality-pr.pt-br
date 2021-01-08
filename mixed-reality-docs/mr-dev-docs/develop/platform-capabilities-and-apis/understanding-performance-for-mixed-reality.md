@@ -1,17 +1,17 @@
 ---
 title: Entendendo o desempenho da realidade misturada
-description: Informações avançadas e detalhes para otimizar o desempenho do aplicativo de realidade mista do Windows.
+description: Aprenda informações e detalhes avançados para analisar e otimizar o desempenho do aplicativo de realidade mista do Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, desempenho, otimização, CPU, GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530068"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008466"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Entendendo o desempenho da realidade misturada
 
@@ -134,7 +134,7 @@ As operações de alocação e desalocação de memória excessivas podem result
 
 #### <a name="object-pooling"></a>Pool de objetos
 
-O pool de objetos é uma técnica popular para reduzir o custo de alocações e desalocações contínuas de objetos. Isso é feito alocando um grande pool de objetos idênticos e reutilizando instâncias disponíveis inativas desse pool em vez de constantemente gerar e destruir objetos ao longo do tempo. Os pools de objetos são ótimos para componentes reutilizáveis que têm tempo de vida variável durante um aplicativo.
+O pool de objetos é uma técnica popular para reduzir o custo de alocações e desalocações contínuas de objetos. Isso é feito pela alocação de um grande pool de objetos idênticos e pela reutilização das instâncias disponíveis inativas desse pool em vez da criação e da destruição constantes de objetos ao longo do tempo. Os pools de objetos são ótimos para componentes reutilizados que têm um tempo de vida variável durante um aplicativo.
 
 ## <a name="see-also"></a>Veja também
 - [Recomendações de desempenho para Unity](../unity/performance-recommendations-for-unity.md)

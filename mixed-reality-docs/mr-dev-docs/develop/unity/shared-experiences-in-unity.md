@@ -1,17 +1,17 @@
 ---
 title: Experiências compartilhadas no Unity
-description: Compartilhe os mesmos hologramas entre vários usuários em um aplicativo do Unity.
+description: Saiba como compartilhar os mesmos hologramas entre vários usuários em um aplicativo do Unity com âncoras espaciais do Azure.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Compartilhamento, ancoragem, WorldAnchor, Sr Sharing 250, WorldAnchorTransferBatch, SpatialPerception, Azure, âncoras espaciais do Azure, ASA, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual
-ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010086"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009276"
 ---
 # <a name="shared-experiences-in-unity"></a>Experiências compartilhadas no Unity
 
@@ -45,7 +45,7 @@ Ou vá diretamente para a implantação de seu aplicativo em um dispositivo ou e
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#3-platform-capabilities-and-apis) a qualquer momento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Experiências compartilhadas em realidade misturada](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">SDK de âncoras espaciais do Azure para Unity</a>

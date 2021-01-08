@@ -1,17 +1,17 @@
 ---
-title: Entrada avançada do Emulador do HoloLens e do Simulador de Realidade Misturada
+title: Emulador de HoloLens avançado e simulador de realidade misturada
 description: Instruções detalhadas para usar o teclado, o mouse e o controlador Xbox para simular a entrada para o emulador do HoloLens e o simulador de realidade mista do Windows.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, emulador, simulação, realidade mista do Windows, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530460"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006676"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrada avançada do Emulador do HoloLens e do Simulador de Realidade Misturada
 
@@ -50,13 +50,13 @@ Você também pode controlar o estado da entrada simulada do sensor:
 
 A tabela a seguir mostra como cada tipo de entrada é mapeada para o teclado, o mouse e o controlador Xbox. Cada tipo tem um mapeamento diferente, dependendo do modo de controle de entrada. Você pode encontrar mais informações sobre modos de controle de entrada mais adiante neste documento.
 
-| Entrada |  Keyboard |  Mouse |  Controlador Xbox | 
+| Entrada |  Teclado |  Mouse |  Controlador Xbox | 
 |----------|----------|----------|----------|
 |  Yaw |  Setas à esquerda/direita |  Arrastar para a esquerda/direita |  Direita Thumbstick esquerda/direita | 
 |  Densidade |  Setas para cima/para baixo |  Arrastar para cima/para baixo |  Thumbstick direita/para baixo | 
 |  Roll |  P/E |  |  DPad esquerda/direita | 
 |  X |  A/D |  |  Esquerda Thumbstick esquerda/direita | 
-|  S |  Page up/Page Down |  |  DPad para cima/para baixo | 
+|  Y |  Page up/Page Down |  |  DPad para cima/para baixo | 
 |  Z |  W/S |  |  Esquerda Thumbstick para cima/para baixo | 
 |  Ação |  Inserir ou espaço |  Botão direito |  Um botão ou um gatilho | 
 |  Flor/sistema |  F2 ou tecla do Windows |  |  Botão B | 
@@ -99,7 +99,7 @@ A tabela a seguir mostra como cada modificador de destino mapeia cada um dos con
 |  Densidade |  Girar para cima/para baixo |  Mover para cima/para baixo |  Girar para cima/para baixo | Olho olhar pesquisa | 
 |  Roll |  Rolar cabeçalho para a esquerda/direita |  |  Rolar cabeçalho para a esquerda/direita | (Nenhuma ação) |
 |  X |  Corpo do slide à esquerda/direita |  Mover mão/controlador para a esquerda/direita |  Transformar cabeçalho à esquerda/direita | (Nenhuma ação) |
-|  S |  Mover corpo para cima/para baixo |  Mover mão/controlador para cima/para baixo |  Girar para cima/para baixo | (Nenhuma ação) |
+|  Y |  Mover corpo para cima/para baixo |  Mover mão/controlador para cima/para baixo |  Girar para cima/para baixo | (Nenhuma ação) |
 |  Z |  Mover corpo para frente/para trás |  Mover mão/avançar/voltar do controlador |  Girar para cima/para baixo | (Nenhuma ação) |
  
  

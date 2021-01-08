@@ -1,17 +1,17 @@
 ---
 title: Adicionar comunicação remota do Holographic
-description: Explica como usar a comunicação remota do Holographic para renderizar hologramas em um HoloLens pela rede.
+description: Saiba como instalar, configurar e usar a comunicação remota do Holographic para renderizar hologramas em um dispositivo HoloLens pela rede.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, comunicação remota Holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 68c1dd43dac4830da061d4900ce768692057e781
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530308"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006666"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>Adicionar comunicação remota Holographic (HoloLens (primeira gen))
 

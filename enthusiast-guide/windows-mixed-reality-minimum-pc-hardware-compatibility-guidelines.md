@@ -1,6 +1,6 @@
 ---
-title: Diretrizes mínimas de compatibilidade de hardware do PC do Windows Mixed Reality
-description: Gráfico que descreve os requisitos mínimos de sistema do PC para compatibilidade com a realidade mista do Windows.
+title: Diretrizes de compatibilidade de PC do Windows Mixed Reality
+description: Gráfico de visão geral que descreve os requisitos mínimos de sistema do PC para compatibilidade com a realidade mista do Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, ultra, compatível, compatibilidade, requisitos do sistema, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ed53c388797cb57a7f2a53ed40b18923a23c8b74
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725657"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009116"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Diretrizes mínimas de compatibilidade de hardware do PC do Windows Mixed Reality
 
@@ -69,6 +69,7 @@ Em seguida, você obterá uma análise do seu PC em relação ao hardware, aos d
  [Obter ajuda com resultados do portal de realidade misturada](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## <a name="compatibility-guidelines"></a>Diretrizes de compatibilidade
+
 > [!IMPORTANT]
 > Atualizaremos, fazendo adições e podem ser revisando essas diretrizes de compatibilidade de PCs com a realidade mista do Windows. Consulte regularmente para obter as diretrizes e os requisitos mais recentes.
 
@@ -260,7 +261,8 @@ Mais informações sobre a compatibilidade de superfície com a realidade mista 
     </tr>
 </table>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
+
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
 * [Adaptadores recomendados para PCs com capacidade do Windows Mixed Reality](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

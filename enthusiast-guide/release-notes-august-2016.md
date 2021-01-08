@@ -1,17 +1,17 @@
 ---
 title: Notas sobre a versão – agosto de 2016
-description: Notas de versão do HoloLens para a versão de aniversário do Windows 10 (Outono de 2016)
+description: Mantenha-se atualizado sobre as notas de versão do HoloLens para a versão de aniversário do Windows 10 para o outono de 2016.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, notas de versão, sistema operacional, plataforma, recursos, pacote comercial
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725957"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009256"
 ---
 # <a name="release-notes---august-2016"></a>Notas sobre a versão – agosto de 2016
 
@@ -116,7 +116,7 @@ Entre em contato com seu Gerenciador de conta Microsoft local para comprar o pac
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Problemas conhecidos do HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Recursos comerciais](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
 * [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

@@ -1,6 +1,6 @@
 ---
 title: Usando a fala no Windows Mixed Reality
-description: Saiba como usar a entrada de fala em seus aplicativos do Windows Mixed Reality.
+description: Saiba como usar a entrada de fala para controlar comandos, objetos 3D e ditado em seus aplicativos do Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725767"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007666"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Usando a fala no Windows Mixed Reality
 
@@ -68,7 +68,7 @@ Olhar em uma janela de aplicativo ou em um objeto 3D para usar estes comandos:
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
-| Fechar um aplicativo ou objeto 3D | Feche |
+| Fechar um aplicativo ou objeto 3D | Fechar |
 | Ajustar algo (redimensionar ou mover) | Ajustar |
 | Parar ajuste | Concluído |
 | Ocultar a barra de aplicativos em um objeto 3D | Ocultar menu |
@@ -129,7 +129,7 @@ Mude para o modo de ditado sempre que o teclado estiver ativo para uma maneira f
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
-| Fechar o teclado | Feche |
+| Fechar o teclado | Fechar |
 | Iniciar ditado | Comece a ditar |
 | Parar ditado | Parar ditado |
 | Excluir o que você ditau | Excluir esse |
@@ -152,7 +152,7 @@ Aqui estão as palavras-chave de pontuação que você pode usar:
 
 Para parar de ditar, selecione **concluído**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

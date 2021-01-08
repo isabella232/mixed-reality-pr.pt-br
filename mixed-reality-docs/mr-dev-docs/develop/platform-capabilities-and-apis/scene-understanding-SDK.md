@@ -1,17 +1,17 @@
 ---
 title: SDK de compreensão da cena
-description: Guia de programação para o SDK de compreensão da cena
+description: Saiba como instalar e usar o SDK de compreensão da cena, incluindo componentes, malhas e objetos em aplicativos de realidade misturada.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compreensão da cena, mapeamento espacial, realidade do Windows Mixed, Unity
-ms.openlocfilehash: 1ec29d09ab52abae9a9111a6441523c8aa7720f7
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530350"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009376"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Visão geral do SDK de compreensão da cena
 
@@ -119,7 +119,7 @@ SceneObjects pode ter qualquer um dos seguintes:
 <tr>
 <th>SceneObjectKind</th> <th>Descrição</th>
 </tr>
-<tr><td>Segundo plano</td><td>O Sceneobject é conhecido como <b>não</b> um dos outros tipos reconhecidos de objeto de cena. Essa classe não deve ser confundida com desconhecido, em que o plano de fundo é conhecido como parede/piso/teto etc... Embora desconhecido ainda não seja categorizado.</b></td></tr>
+<tr><td>Tela de fundo</td><td>O Sceneobject é conhecido como <b>não</b> um dos outros tipos reconhecidos de objeto de cena. Essa classe não deve ser confundida com desconhecido, em que o plano de fundo é conhecido como parede/piso/teto etc... Embora desconhecido ainda não seja categorizado.</b></td></tr>
 <tr><td>Meu</td><td>Uma parede física. As paredes são presumidas como estruturas ambientais immovíveis.</td></tr>
 <tr><td>Piso</td><td>Os andares são quaisquer superfícies nas quais um pode ser movimentado. Observação: o escadas não é um andares. Observe também que os andares pressupõem qualquer superfície que seja orientada e, portanto, não há uma suposição explícita de um piso singular. Estruturas de vários níveis, rampas, etc... todos devem ser classificados como piso.</td></tr>
 <tr><td>Ceiling</td><td>A superfície superior de uma sala.</td></tr>

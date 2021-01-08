@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, segurança, autenticação, servidor para cliente
-ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530407"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006476"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Habilitando a segurança de conexão para comunicação remota do Holographic
 
@@ -24,7 +24,7 @@ Esta página fornece uma visão geral da segurança de rede para a comunicação
 * medidas recomendadas com base em diferentes casos de uso
 * Implementando a segurança em sua solução de comunicação remota do Holographic
 
-## <a name="overview"></a>Visão geral
+## <a name="holographic-remoting-security"></a>Segurança de comunicação remota do Holographic
 
 O Holographic remota troca informações em uma rede. Se nenhuma medida de segurança estiver em vigor, os adversários na mesma rede poderão comprometer a integridade da comunicação ou acessar informações confidenciais.
 

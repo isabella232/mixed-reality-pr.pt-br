@@ -1,17 +1,17 @@
 ---
 title: Como criar um projeto holográfico do DirectX
-description: Explica como criar um novo aplicativo Holographic com base no modelo de aplicativo do Windows Mixed Reality.
+description: Saiba como criar um novo aplicativo Holographic DirectX com base no modelo de aplicativo do Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, aplicativo Holographic, novo aplicativo, aplicativo UWP, aplicativo de modelo, hologramas, novo projeto, passo a passos, download, código de exemplo, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: f377ca5b8af08beb53c878e1ebf665b8074853f6
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 9259a85512555342877de0a5a8bae697fdd03b8d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613080"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006866"
 ---
 # <a name="creating-a-holographic-directx-project"></a>Como criar um projeto holográfico do DirectX
 
@@ -181,7 +181,7 @@ O método **render** em `AppMain.cpp` usa o <a href="https://docs.microsoft.com/
 
 O modelo de aplicativo de realidade mista do Windows agora dá suporte à compilação com o sinalizador de mitigação Spectre habilitado (/Qspectre). Certifique-se de instalar a versão Spectre das bibliotecas de tempo de execução do Microsoft Visual C++ (MSVC) antes de compilar uma configuração com a mitigação Spectre habilitada. Para instalar as bibliotecas de C++ Spectre, inicie o Instalador do Visual Studio e selecione **Modificar**. Navegue até **componentes individuais** e pesquise por "Spectre". Selecione as caixas correspondentes às plataformas de destino e à versão MSVC para a qual você precisa compilar o código Spectre mitigado e clique em **Modificar** para iniciar a instalação.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Como obter um HolographicSpace](getting-a-holographicspace.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [Como renderizar no DirectX](rendering-in-directx.md)

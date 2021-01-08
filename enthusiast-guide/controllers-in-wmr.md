@@ -1,6 +1,6 @@
 ---
 title: Controladores no Windows Mixed Reality
-description: Saiba como configurar e usar controladores no Windows Mixed Reality.
+description: Saiba como configurar, emparelhar, usar e solucionar problemas comuns com controladores no Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: f349f4bbc2cadd511515783504562052f1d58ed3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725387"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007796"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimentos no Windows Mixed Reality
 
@@ -149,7 +149,7 @@ Seu controlador se comunica com o que está fazendo, vibrando e piscando suas lu
 
 Envie-nos comentários no Hub de comentários usando a categoria "realidade misturada-> entrada".
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Controladores HP no Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 - [Controladores HP em não reais](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

@@ -1,17 +1,17 @@
 ---
 title: Focar com a cabeça e esperar
-description: Visão geral do modelo de entrada de focar com a cabeça e esperar
+description: Comece com uma visão geral do olhar e do modelo de entrada de duração, incluindo cenários comuns e princípios de design.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Realidade misturada, olhar, pesquisa, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, UX, diretrizes, exibição de lista
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847371"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007076"
 ---
 # <a name="head-gaze-and-dwell"></a>Focar com a cabeça e esperar
 
@@ -182,7 +182,7 @@ Botões de alternância exigem uma lógica sutil para funcionarem corretamente. 
 
 ---
  
- ## <a name="see-also"></a>Consulte também
+ ## <a name="see-also"></a>Veja também
 
 * [Focar e confirmar](gaze-and-commit.md)
 * [Mãos – Manipulação direta](direct-manipulation.md)

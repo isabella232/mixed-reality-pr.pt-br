@@ -1,17 +1,17 @@
 ---
 title: Compras no aplicativo
-description: As compras no aplicativo têm suporte em aplicativos de realidade misturada, mas há algum trabalho para configurá-las.
+description: Saiba como usar compras no aplicativo em seus aplicativos de realidade misturada com exibições de XAML 2D e pop-up de ações do SO Windows.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: compras no aplicativo, hololens, XAML, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757774"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008666"
 ---
 # <a name="in-app-purchases"></a>Compras no aplicativo
 

@@ -1,6 +1,6 @@
 ---
 title: Antes de começar
-description: Como garantir que seu PC seja compatível com o e pronto para o Windows Mixed Reality.
+description: Saiba como garantir que seu PC seja compatível e esteja pronto para uma variedade de experiências de aplicativos da realidade mista do Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, compatível, compatibilidade, introdução, instalação, PC, requisitos do sistema
 appliesto:
 - Windows 10
-ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725487"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006876"
 ---
 # <a name="before-you-start"></a>Antes de começar
 
@@ -84,7 +84,7 @@ Se você selecionar "colocado e posicionado", você usará o headset sem um limi
 
 Se você escolher "todas as experiências", configurará um limite e poderá se movimentar em experiências de aplicativos que funcionam com um limite e aqueles que não exigem um. Prepare seu espaço certificando-se de que não haja obstáculos, riscos ou itens frágeis na área que você usará-incluindo acima da sua cabeça. Não configure na parte superior de uma escada ou em um ventilador de teto extra-baixo. Remova breakables e obstáculos da área e certifique-se de que todos que usam o headset Leia e entenda as [diretrizes de segurança](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Conecte seu HMD](plug-in-your-headset.md)
 * [Requisitos mínimos de hardware do PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

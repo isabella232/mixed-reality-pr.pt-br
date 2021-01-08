@@ -1,14 +1,14 @@
 ---
 title: Usando o SteamVR com o Windows Mixed Reality
-description: Como jogar SteamVR Games em headsets de realidade mista do Windows com PCs compatíveis.
+description: Saiba como configurar e reproduzir jogos do SteamVR em headsets e controladores do Windows Mixed Reality com PCs compatíveis.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, jogos, SteamVR, fluxo, requisitos do sistema
-ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725737"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006896"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Usando o SteamVR com o Windows Mixed Reality
 
@@ -155,7 +155,7 @@ Seus comentários são inúteis quando se trata de melhorar a experiência de St
 
 Se você tiver dúvidas ou comentários para compartilhar, também poderá entrar em contato conosco em nosso [Fórum de fluxo](http://steamcommunity.com/app/719950/discussions/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Solução de problemas do SteamVR com o Windows Mixed Reality](steamvr-questions.md)
 * [Usando jogos e aplicativos no Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

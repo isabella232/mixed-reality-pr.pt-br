@@ -1,17 +1,17 @@
 ---
 title: Mapeamento espacial no DirectX
-description: Saiba como implementar o mapeamento espacial em seu aplicativo DirectX, incluindo o aplicativo de exemplo de mapeamento espacial fornecido com o SDK do Plataforma Universal do Windows.
+description: Saiba como implementar o mapeamento espacial em seu aplicativo DirectX e como usar o aplicativo de exemplo de mapeamento espacial no SDK do Plataforma Universal do Windows.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realidade mista do Windows, mapeamento espacial, ambiente, interação, DirectX, winrt, API, código de exemplo, UWP, SDK, passo a passos
-ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612910"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006706"
 ---
 # <a name="spatial-mapping-in-directx"></a>Mapeamento espacial no DirectX
 
@@ -88,7 +88,7 @@ Agora, veremos como adicionar capacidade de mapeamento de superfície ao seu apl
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurar seu aplicativo para usar o recurso spatialPerception
 
-Seu aplicativo pode usar o recurso de mapeamento espacial. Isso é necessário porque a malha espacial é uma representação do ambiente do usuário, que pode ser considerado dados privados. Declare esse recurso no arquivo Package. appxmanifest para seu aplicativo. Veja um exemplo:
+Seu aplicativo pode usar o recurso de mapeamento espacial. Isso é necessário porque a malha espacial é uma representação do ambiente do usuário, que pode ser considerado dados privados. Declare esse recurso no arquivo Package. appxmanifest para seu aplicativo. Aqui está um exemplo:
 
 ```xml
 <Capabilities>
@@ -96,7 +96,7 @@ Seu aplicativo pode usar o recurso de mapeamento espacial. Isso é necessário p
 </Capabilities>
 ```
 
-A funcionalidade vem do namespace **uap2** . Para obter acesso a esse namespace em seu manifesto, inclua-o como um atributo *xlmns* no &lt; elemento> do pacote. Veja um exemplo:
+A funcionalidade vem do namespace **uap2** . Para obter acesso a esse namespace em seu manifesto, inclua-o como um atributo *xlmns* no &lt; elemento> do pacote. Aqui está um exemplo:
 
 ```xml
 <Package
@@ -676,6 +676,6 @@ context->OMSetRenderTargets(1, targets, pCameraResources->GetSurfaceDepthStencil
 m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Como criar um projeto holográfico do DirectX](creating-a-holographic-directx-project.md)
 * [API Windows. percepção. espacial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx)

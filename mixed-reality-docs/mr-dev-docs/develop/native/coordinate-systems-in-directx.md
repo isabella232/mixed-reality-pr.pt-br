@@ -1,17 +1,17 @@
 ---
 title: Sistemas de coordenadas no DirectX
-description: Saiba mais sobre os sistemas de coordenadas no DirectX e a realidade misturada com localizadores espaciais, quadros de referência e âncoras espaciais. Use o SpatialStage e manipule a perda de controle, salvando e carregando âncoras e estabilização de imagem.
+description: Saiba mais sobre os sistemas de coordenadas no DirectX e a realidade misturada com localizadores espaciais, quadros de referência e âncoras espaciais.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realidade misturada, localizador espacial, quadro de referência espacial, sistema de coordenadas espaciais, estágio espacial, código de exemplo, estabilização de imagem, âncora espacial, repositório de âncora espacial, perda de controle, passo a passos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613110"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006856"
 ---
 # <a name="coordinate-systems-in-directx"></a>Sistemas de coordenadas no DirectX
 
@@ -804,7 +804,7 @@ De **AppMain. cpp:**
 
 As APIs de [mapeamento espacial](spatial-mapping-in-directx.md) fazem uso de sistemas de coordenadas para obter transformações de modelo para malhas de superfície.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Sistemas de coordenadas](../../design/coordinate-systems.md)
 * [Âncoras espaciais](../../design/spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>

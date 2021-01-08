@@ -1,17 +1,17 @@
 ---
 title: MR e Azure 313 – Serviço do Hub IoT
-description: Conclua este curso para aprender a implementar o serviço de Hub IoT do Azure em uma máquina virtual que executa o Ubuntu 16,4 e, em seguida, Visualizar os dados da mensagem usando o Microsoft HoloLens ou um headset de imersão (VR).
+description: Saiba como implementar o serviço de Hub IoT do Azure em uma máquina virtual que executa o Ubuntu 16,4 e visualizar os dados da mensagem usando o Microsoft HoloLens ou o headset do VR.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, borda, IOT Edge, tutorial, API, notificação, funções, tabelas, hololens, imersão, VR, IOT, máquina virtual, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: 2a642bad363d86e37ca2d6c00ebf1ebb73908dec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679505"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009296"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR e Azure 313: serviço Hub IoT
 

@@ -1,17 +1,17 @@
 ---
 title: Usando o WebXR com o Windows Mixed Reality
-description: Visão geral do uso e desenvolvimento para WebXR no Windows Mixed Reality
+description: Aprenda as noções básicas de como usar e desenvolver para aplicativos WebXR executados em headsets de imersão de realidade mista do Windows.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, Windows Mixed Reality, Web VR, Web XR, Web Mr, Web ar, 360, 360 vídeo, 360 vídeos, 360 Photo, 360 fotos, 360 Content, imersão Web, immersiveweb, IW
-ms.openlocfilehash: b72d4968e59e3e631138b1ecfd17ca9bbdd95c84
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: e49f5f2422c9802f94b63943f8a38949a2969f83
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416867"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006936"
 ---
 # <a name="webxr-overview"></a>Visão geral do WebXR
 

@@ -1,17 +1,17 @@
 ---
 title: Módulo lunar
-description: Saiba como estender gestos de base do HoloLens com acompanhamento de duas mãos e entrada do controlador Xbox, criar objetos que são reativos para mapeamento de superfície e localização de plano e implementar sistemas de menu simples.
+description: Saiba como estender gestos de base do HoloLens com acompanhamento de duas mãos e entrada do controlador Xbox, criar objetos reativos e implementar sistemas de menus.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, aplicativos de exemplo, design, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, aplicativos de amostra, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010497"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008816"
 ---
 # <a name="lunar-module"></a>Módulo lunar
 
@@ -108,7 +108,7 @@ Você pode encontrar scripts e pré-fabricados para o aplicativo de exemplo de m
 </tr>
 </table>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

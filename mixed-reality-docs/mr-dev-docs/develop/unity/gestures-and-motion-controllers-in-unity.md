@@ -1,17 +1,17 @@
 ---
 title: Gestos e controladores de movimento no Unity
-description: Saiba como agir em seu olhar no Unity com gestos e controladores de movimento.
+description: Saiba como agir em sua olhar no Unity com gestos e controladores de movimento com a XR e as APIs de botão/eixo comuns.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: gestos, controladores de movimento, Unity, olhar, entrada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010317"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008786"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Gestos e controladores de movimento no Unity
 
@@ -565,7 +565,7 @@ Os tutoriais passo a passo, com exemplos de personalização mais detalhados, es
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Acompanhamento de mãos e olhos](hand-eye-in-unit.md)

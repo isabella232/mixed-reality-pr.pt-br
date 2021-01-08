@@ -1,17 +1,17 @@
 ---
 title: Orientador de mão
-description: as mãos 3D disparadas quando o sistema não detecta as mãos do usuário para ajudar a auxiliá-las.
+description: Saiba como as mãos 3D são disparadas usando o direito de aprendizado quando o sistema não detecta as mãos do usuário para ajudar a ajudá-las.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847964"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009156"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -173,7 +173,7 @@ Depois de estar satisfeito com sua animação
     *   Configuração por projeto
         *   Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Interação-conceitos básicos](interaction-fundamentals.md)
 * [Processo de criação de ativos](asset-creation-process.md)

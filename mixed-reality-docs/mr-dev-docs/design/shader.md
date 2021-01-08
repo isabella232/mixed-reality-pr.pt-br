@@ -1,17 +1,17 @@
 ---
 title: Sombreador
-description: O sombreador standard do kit de ferramentas da realidade misturada fornece vários tipos de efeitos visuais que podem ser usados com hologramas.
+description: Saiba como o sombreador standard do kit de ferramentas de realidade misturada fornece vários tipos de efeitos visuais que podem ser usados com hologramas em seus aplicativos de realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, sombreador, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, efeitos visuais
-ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848242"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008856"
 ---
 # <a name="shader"></a>Sombreador
 
@@ -44,7 +44,7 @@ Como os objetos Holographic são misturados com os físicos no ambiente real, é
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

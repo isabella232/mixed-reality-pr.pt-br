@@ -1,17 +1,17 @@
 ---
 title: Configurações recomendadas do Unity
-description: O Unity oferece alguns comportamentos específicos para a realidade misturada que pode ser alternada por meio de configurações do projeto.
+description: Saiba mais sobre os comportamentos de desempenho e publicação do Unity específicos para aplicativos de realidade misturados que podem ser alternados por meio de configurações do projeto.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, configurações, realidade misturada, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, desempenho, configurações de qualidade, configurações de iluminação, buffer de profundidade, XR, perda de rastreamento
-ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010107"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009326"
 ---
 # <a name="recommended-settings-for-unity"></a>Configurações recomendadas do Unity
 
@@ -147,7 +147,7 @@ Para recusar o comportamento de pausa automática:
 
 Para definir o comportamento personalizado quando o rastreamento é perdido, manipule os [eventos de perda de controle](tracking-loss-in-unity.md)global.
 
-### <a name="capabilities"></a>Funcionalidades
+### <a name="capabilities"></a>Capacidades
 
 Para que um aplicativo aproveite determinadas funcionalidades, ele deve declarar os recursos apropriados em seu manifesto. As declarações de manifesto podem ser feitas no Unity para que elas sejam incluídas em todas as exportações futuras do projeto.
 
@@ -159,7 +159,7 @@ Os recursos podem ser habilitados para um aplicativo de realidade misturada:
 Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos Holographic são:
 <br>
 
-|  Funcionalidade  |  APIs que exigem capacidade |
+|  Capacidade  |  APIs que exigem capacidade |
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver |
 |  Integrada  |  VideoCapture e fotocaptura |
@@ -167,7 +167,7 @@ Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos
 |  Microfone  |  VideoCapture (ao capturar áudio), DictationRecognizer, GrammarRecognizer e KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (e para usar o criador de perfil do Unity) |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Visão geral do desenvolvimento do Unity](unity-development-overview.md)
 * [Noções básicas sobre o desempenho da Realidade Misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

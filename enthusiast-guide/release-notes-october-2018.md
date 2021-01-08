@@ -1,17 +1,17 @@
 ---
 title: Notas sobre a versão – outubro de 2018
-description: Notas de versão do HoloLens e do Windows Mixed Reality para a atualização de outubro de 2018 do Windows 10 (também conhecida como RS5).
+description: Mantenha-se atualizado sobre as notas de versão do HoloLens e do Windows Mixed Reality para a atualização de 2018/RS5 de outubro do Windows 10.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: notas de versão, versão, Windows 10, Build, RS5, so
-ms.openlocfilehash: 88d7393fdcf499b1fabd36668364ffb31b0e793d
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783896"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007106"
 ---
 # <a name="release-notes---october-2018"></a>Notas sobre a versão – outubro de 2018
 
@@ -19,8 +19,8 @@ A **[atualização do Windows 10 de outubro de 2018](https://blogs.windows.com/w
 
 Para atualizar para a versão mais recente no HoloLens ou no PC (para fones de ouvido com a realidade do Windows Mixed Realm), abra o aplicativo **configurações** , acesse **Atualizar & segurança** e, em seguida, selecione o botão **verificar atualizações** . Em um PC com Windows 10, você também pode instalar manualmente a atualização do Windows 10 de outubro de 2018 usando a [ferramenta de criação de mídia do Windows](https://www.microsoft.com/software-download/windows10).
 
-**Versão mais recente do desktop:** Atualização de outubro de 2018 do Windows 10 ( **10.0.17763.107** )<br>
-**Versão mais recente para o HoloLens:** Atualização de outubro de 2018 do Windows 10 ( **10.0.17763.134** )<br>
+**Versão mais recente do desktop:** Atualização de outubro de 2018 do Windows 10 (**10.0.17763.107**)<br>
+**Versão mais recente para o HoloLens:** Atualização de outubro de 2018 do Windows 10 (**10.0.17763.134**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Novos recursos para os headsets de imersão de realidade mista do Windows
 
@@ -41,7 +41,7 @@ A atualização do Windows 10 de outubro de 2018 inclui vários aprimoramentos p
     * Novo aplicativo *WebVR Showcase* para descobrir uma seleção regular de experiências de WebVR.
     * A primeira vez que os clientes do Windows Mixed Reality vão entrar na casa Cliff e encontrá-la preenchida previamente com iniciadores de aplicativos 3D para alguns dos nossos aplicativos e jogos de imersão favoritos da Microsoft Store.
     * As janelas do Microsoft Edge agora incluem um botão *compartilhar* .
-* **Menu de ações rápidas** – de dentro de um aplicativo de realidade misturada de imersão, você pode pressionar o botão Windows para acessar um novo menu de ações rápidas, com acesso fácil ao *menu SteamVR* , *captura de foto/vídeo* , *lanterna* e *página inicial* .
+* **Menu de ações rápidas** – de dentro de um aplicativo de realidade misturada de imersão, você pode pressionar o botão Windows para acessar um novo menu de ações rápidas, com acesso fácil ao *menu SteamVR*, *captura de foto/vídeo*, *lanterna* e *página inicial*.
 * **Suporte para PCs mochila** -fones de ouvido (VR) de realidade misturada do Windows são executados em PCs mochila sem a necessidade de um emulador de exibição após a conclusão da instalação.
 * **Novos recursos de áudio** – agora você pode espelhar o áudio de uma experiência de realidade mista do Windows para a tomada de áudio (ou fones de ouvido) em seu headset *e* um dispositivo de áudio conectado ao seu PC (como palestrantes externos). Também adicionamos um indicador visual para o nível de volume na tela do headset.
 * **Outros aprimoramentos**
@@ -60,7 +60,7 @@ A atualização do Windows 10 de outubro de 2018 está disponível publicamente 
 
 ### <a name="for-everyone"></a>Para todos
 
-* **Menu de ações rápidas** – de dentro de um aplicativo de realidade misturada de imersão, você pode pressionar o botão Windows para acessar um novo menu de ações rápidas, com acesso fácil para *iniciar a gravação de vídeo* , *tirar fotos* , *casa mista* , *alterar volume* e *conectar* .
+* **Menu de ações rápidas** – de dentro de um aplicativo de realidade misturada de imersão, você pode pressionar o botão Windows para acessar um novo menu de ações rápidas, com acesso fácil para *iniciar a gravação de vídeo*, *tirar fotos*, *casa mista*, *alterar volume* e *conectar*.
 * **Iniciar/parar a captura de vídeo no menu iniciar ou ações rápidas** – se você iniciar a captura de vídeo no menu iniciar ou nos menus ações rápidas, poderá parar a gravação do mesmo local. (Não se esqueça de que você sempre pode fazer isso com comandos de voz.)
 * **Projeto para um dispositivo habilitado para Miracast** -projeta seu conteúdo do HoloLens para um dispositivo de superfície ou TV/monitor próximo se estiver usando um adaptador ou uma exibição habilitado para Miracast.
 * **Novas notificações** – exiba e responda a notificações no HoloLens, exatamente como você faz em um computador.  
@@ -112,7 +112,7 @@ Use o [aplicativo de Hub de comentários em seu computador do HoloLens ou do Win
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Suporte a headsets de imersão (link externo)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Suporte ao HoloLens (link externo)](https://support.microsoft.com/products/hololens)
 * [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

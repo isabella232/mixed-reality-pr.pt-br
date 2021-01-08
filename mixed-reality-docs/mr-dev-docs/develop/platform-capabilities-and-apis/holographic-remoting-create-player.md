@@ -1,17 +1,17 @@
 ---
 title: Como criar um player personalizado de comunicação remota holográfica
-description: Ao criar um aplicativo de player de comunicação remota do Holographic personalizado, você pode criar um aplicativo personalizado capaz de exibir o conteúdo renderizado em um computador remoto para o seu HoloLens 2.
+description: Crie um aplicativo de comunicação remota Hologaphic personalizado para exibir o conteúdo renderizado em um computador remoto para o seu HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicação remota, Holographic de comunicação remota, NuGet, manifesto de aplicativo, contexto do Player, aplicativo remoto, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: 23449749e709075e6530730e596bfcc9cd088c1e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102891"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006546"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Como escrever um aplicativo personalizado do Holographic Remoting Player
 

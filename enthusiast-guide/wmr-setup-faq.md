@@ -1,6 +1,6 @@
 ---
 title: Perguntas frequentes sobre a instalação do Windows Mixed Reality
-description: Obtenha respostas para perguntas comuns de configuração ao trabalhar com a realidade mista do Windows.
+description: Obtenha respostas para perguntas comuns de configuração ao trabalhar com aplicativos e dispositivos do Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725437"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008626"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Perguntas frequentes sobre a instalação do Windows Mixed Reality
 
@@ -158,7 +158,7 @@ Se não estiver listado:
     3. Se os controladores de movimento estiverem emparelhados com o seu PC, selecione **configurações > dispositivos > Bluetooth & outros dispositivos** para desemparelhar. Selecione cada controlador e "remover dispositivo". Se os controladores estiverem emparelhados com o headset, você poderá ignorar esta etapa.
     4. Conecte seu headset ao seu PC para reinstalar a realidade mista do Windows.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

@@ -1,5 +1,5 @@
 ---
-title: Integridade, segurança e conforto do headset do Windows Mixed Reality
+title: Integridade e segurança do headset do Windows Mixed Reality
 description: Saiba como manter-se e seus usuários íntegros, seguros e confortáveis ao usar aplicativos do Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725567"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008996"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Integridade, segurança e conforto do headset do Windows Mixed Reality
 
@@ -57,6 +57,6 @@ Siga todas as recomendações de configuração para a realidade mista do Window
 **Para auxiliar no gerenciamento de seus arredores**, se disponíveis e configurados, os recursos do dispositivo podem ser usados para configurar limites para o uso do dispositivo para ajudá-lo a evitar obstáculos.
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

@@ -1,17 +1,17 @@
 ---
 title: caixa de diálogo
-description: Saiba mais sobre sobreposições de caixa de diálogo e como usá-las em aplicativos de realidade misturada.
+description: Saiba mais sobre sobreposições de caixa de diálogo no MRTK e como usá-las em aplicativos de realidade misturada.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847454"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009046"
 ---
 # <a name="dialog"></a>caixa de diálogo
 
@@ -39,7 +39,7 @@ O MRTK fornece controle de caixa de diálogo em três tamanhos com uma ou duas o
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

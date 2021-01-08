@@ -1,17 +1,17 @@
 ---
 title: Criar conteúdo para exibição holográfica
-description: Aprenda as diretrizes de design e as práticas recomendadas para a exibição do Holographic.
+description: Saiba mais sobre as diretrizes de design e as práticas recomendadas para a exibição do Holographic em dispositivos HoloLens.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Design de interface do usuário, exibição de Holographic, design de conteúdo, tema escuro, tema claro, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, design, pixels
-ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847995"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009086"
 ---
 # <a name="designing-content-for-holographic-display"></a>Criar conteúdo para exibição holográfica
 
@@ -22,6 +22,7 @@ Ao criar conteúdo para exibições do Holographic, há vários elementos que vo
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Desafios com uma cor brilhante em uma grande superfície 
+
 Com base em nossa pesquisa e teste de experiência de HoloLens, descobrimos que o uso de cores brilhantes em uma grande área da exibição pode causar vários problemas: 
 
 **Fadiga de olho** 
@@ -110,7 +111,7 @@ O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece mui
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cor, luz e materiais](color-light-and-materials.md)
 * [Cursores](cursors.md)

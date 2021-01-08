@@ -1,17 +1,17 @@
 ---
 title: Player de Comunicação Remota Holográfica
-description: O Holographic Remoting Player é um aplicativo complementar que se conecta a aplicativos do PC e jogos que dão suporte à comunicação remota holográfica. O Holographicing Remoting transmite o conteúdo do Holographic de um PC para o Microsoft HoloLens em tempo real, usando uma conexão Wi-Fi.
+description: Saiba mais sobre o player de comunicação remota do Holographic e o conteúdo do Holographic de streaming de um PC para seu HoloLens em tempo real por Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, diagnóstico, desempenho
-ms.openlocfilehash: 07848f20fb23c15688dcb7cbc668b8011e34736b
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530226"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006526"
 ---
 # <a name="holographic-remoting-player"></a>Player de Comunicação Remota Holográfica
 
@@ -47,7 +47,7 @@ A qualidade e o desempenho da sua experiência variam com base em três fatores:
 * **Hardware do seu PC** -seu PC precisa ser capaz de executar e codificar sua experiência com o holographic em 60 quadros por segundo. Para uma placa gráfica, geralmente recomendamos um GeForce GTX 970 ou o AMD Radeon R9 290 ou superior. Novamente, sua experiência específica pode exigir um cartão maior ou menor.
 * **Sua conexão de Wi-Fi** -sua experiência com o Holographic é transmitida por Wi-Fi. Use uma rede rápida com baixo congestionamento para maximizar a qualidade. Usar um computador conectado por um cabo Ethernet, em vez de Wi-Fi, também pode melhorar a qualidade.
 
-## <a name="diagnostics"></a>Diagnóstico
+## <a name="diagnostics"></a>Diagnósticos
 
 Para medir a qualidade de sua conexão, diga **"habilitar o diagnóstico"** enquanto estiver na tela principal do Holographic Remoting Player. Quando os diagnósticos estão habilitados, no **HoloLens (primeira gen)** , o aplicativo mostrará:
 

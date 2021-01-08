@@ -1,17 +1,17 @@
 ---
 title: Notas de versão – maio de 2019
-description: As notas de versão do Windows Mixed Reality para o Windows 10 podem 2019 atualização (também conhecida como 19H1).
+description: Mantenha-se atualizado sobre as notas de versão do Windows Mixed Reality para a atualização do Windows 10 de maio de 2019/19H1.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: notas de versão, versão, Windows 10, Build, 19h1, so, maio de 2019
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725917"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007116"
 ---
 # <a name="release-notes---may-2019"></a>Notas de versão – maio de 2019
 
@@ -65,7 +65,7 @@ Use o [aplicativo de Hub de comentários em seu PC com Windows 10](https://docs.
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Suporte a headsets de imersão (link externo)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Suporte ao HoloLens (link externo)](https://support.microsoft.com/products/hololens)
 * [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

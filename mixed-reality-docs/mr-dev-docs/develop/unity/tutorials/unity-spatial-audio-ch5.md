@@ -1,26 +1,28 @@
 ---
-title: Tutoriais de áudio espacial-5. Usar o reverb para adicionar distância ao áudio espacial
-description: Adicione um efeito de reverberação para melhorar o sentido de variação de distância para áudio espacial.
+title: Usar o reverb para adicionar distância ao áudio espacial
+description: Saiba como adicionar um efeito de reverberação para aprimorar o sentido de variação de distância para áudio espacial em um aplicativo de realidade misturada.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, mixer de áudio, reverbo SFX
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002611"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006356"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Usar o reverb para adicionar distância ao áudio espacial
 
 ## <a name="objectives"></a>Objetivos
+
 Nos capítulos anteriores, adicionamos a espacialização a sons para dar a eles uma ideia de direção. Neste quinto capítulo, vamos adicionar um efeito de reverberação para dar aos sons uma sensação de distância. Nossos objetivos são:
 * Melhorar a distância percebida de fontes de som adicionando o reverberador
 * Controle a distância percebida do som usando a distância do ouvinte para o holograma
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Adicionar um grupo de mixers e um efeito de reverberação
+
 No [capítulo 2](unity-spatial-audio-ch2.md), adicionamos um mixer. O mixer inclui um **grupo** por padrão chamado **Master**. Como só desejamos aplicar um efeito de reverberação a alguns sons, vamos adicionar um segundo **grupo** para esses sons. Para adicionar um **grupo**, clique com o botão direito do mouse no grupo **mestre** no **mixer de áudio** e escolha **Adicionar grupo filho**:
 
 ![Adicionar grupo filho](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ Após essas alterações, o painel de **Inspetor** do **reverberador SFX** terá
 As outras configurações controlam a sensação da sala simulada. Em particular, o **tempo de decaimento** está relacionado ao tamanho de sala percebido. 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>Habilitar reverberação na reprodução de vídeo
+
 Há duas etapas para habilitar o reverberador em uma fonte de áudio:
 * Rotear a **fonte de áudio** para o **grupo** apropriado
 * Defina o plug-in **Microsoft Spatializer** para passar áudio para o **grupo** para processamento

@@ -1,17 +1,17 @@
 ---
 title: Interação com base no foco com o olhar
-description: O HoloLens 2 permite um nível novo de contexto e entendimento humano dentro da experiência holográfica, fornecendo aos desenvolvedores a capacidade de usar as informações sobre o que os usuários estão vendo. Esta página aborda as recomendações de design para os desenvolvedores que desejam usar olhar como uma entrada.
+description: Saiba mais sobre interações baseadas em olhar e olho no HoloLens 2 e nos novos níveis de contexto e compreensão humana se isso for acessível em experiências de Holographic.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, design, interações
-ms.openlocfilehash: e21d591d2843f67f3a0b0eed42a27c74942e8999
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847330"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008576"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interação baseada em olhar no HoloLens 2
 

@@ -1,17 +1,17 @@
 ---
 title: Âncoras espaciais
-description: Práticas recomendadas para usar âncoras espaciais para renderizar hologramas estáveis.
+description: Saiba mais sobre as práticas recomendadas para usar âncoras espaciais para renderizar hologramas estáveis em aplicativos de realidade misturada.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema de coordenadas, sistema de coordenadas espaciais, escala mundial, mundo, escala, posição, orientação, âncora, âncora espacial, trancada mundial, bloqueio mundial, persistência, compartilhamento, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848216"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009106"
 ---
 # <a name="spatial-anchors"></a>Âncoras espaciais
 
@@ -71,7 +71,7 @@ Isso é especialmente importante para âncoras locais que você persistiu no rep
 
 Nas âncoras espaciais de nuvem, o armazenamento pode ser dimensionado conforme seu cenário exigir. Você pode armazenar quantas âncoras de nuvem precisar, liberando-as quando souber que os usuários não precisarão da âncora novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Sistemas de coordenadas](coordinate-systems.md)
 * [Experiências compartilhadas em realidade misturada](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

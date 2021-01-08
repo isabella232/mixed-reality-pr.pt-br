@@ -1,17 +1,17 @@
 ---
 title: Tabela periódica dos elementos
-description: A tabela periódica dos elementos é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. Saiba como criar uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma coleção de objetos.
+description: Saiba como dispor uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma coleção de objetos com a tabela periódica do aplicativo de exemplo de elementos.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, aplicativo de exemplo, controles, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010177"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009356"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tabela periódica dos elementos
 
@@ -31,7 +31,7 @@ Registrado com o HoloLens 2 usando a captura de realidade misturada
 
 A tabela periódica dos elementos visualiza os elementos químicos e cada uma de suas propriedades em um espaço 3D. Ele incorpora as interações básicas de HoloLens, como olhar e toque de ar. Os usuários podem aprender sobre os elementos com modelos 3D animados. Eles podem entender visualmente o Shell de um dos elementos do seu núcleo, que é composto de protoneladas e neutrons.
 
-## <a name="background"></a>Segundo plano
+## <a name="background"></a>Tela de fundo
 
 Depois de ter experimentado o HoloLens pela primeira vez, sabia que queria experimentar um aplicativo de tabela periódico em realidade misturada. Como cada elemento tem muitos pontos de dados que são exibidos com texto, pensei que seria um ótimo assunto para explorar a composição tipográfica em um espaço 3D. Dar aos usuários a chance de visualizar o modelo de sem interspersão do elemento era outra parte interessante deste projeto.
 
@@ -87,7 +87,7 @@ Leia a história sobre como a tabela periódica do aplicativo de elementos foi a
 </tr>
 </table>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)

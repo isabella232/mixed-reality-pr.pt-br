@@ -1,17 +1,17 @@
 ---
 title: Focar e esperar
-description: Visão geral do olhar e do modelo de entrada de duração.
+description: Obtenha uma visão geral do modelo de entrada de olho e de olhar e de cabeça para aplicativos de realidade misturada.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Realidade misturada, olhar, pesquisa, interação, design, controle de cabeça, acompanhamento de cabeçalho, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847341"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007636"
 ---
 # <a name="gaze-and-dwell"></a>Focar e esperar
 
@@ -63,7 +63,7 @@ A olhar e a pesquisa permitem que a pessoa que usa o HoloLens Navegue com confia
 
 ---
 
- ## <a name="see-also"></a>Consulte também
+ ## <a name="see-also"></a>Veja também
 
 * [Interação ocular](eye-gaze-interaction.md)
 * [Acompanhamento ocular no HoloLens 2](eye-tracking.md)

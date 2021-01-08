@@ -1,17 +1,17 @@
 ---
 title: Câmera no Unity
-description: Como usar a câmera principal do Unity para o desenvolvimento de realidade mista do Windows para fazer a renderização Holographic.
+description: Saiba como configurar e usar a câmera principal do Unity para o desenvolvimento de realidade mista do Windows para fazer a renderização Holographic.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic Rendering, Holographic, imersão, ponto de foco, buffer de profundidade, somente orientação, posicional, opaco, transparente, clipe, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010427"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006386"
 ---
 # <a name="camera-in-unity"></a>Câmera no Unity
 
@@ -97,7 +97,7 @@ Siga o guia [passo a passo](https://microsoft.github.io/MixedRealityToolkit-Unit
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Foco](gaze-in-unity.md)
@@ -109,7 +109,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Estabilidade do holograma](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit principal. pré-fabricado](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

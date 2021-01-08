@@ -1,17 +1,17 @@
 ---
 title: Tipos de aplicativos de realidade misturada
-description: Saiba mais sobre o espectro de experiências que a plataforma de realidade misturada pode dar suporte, desde ambientes totalmente envolventes até o leve em camadas de informações sobre o ambiente atual de um usuário.
+description: Saiba mais sobre as experiências com suporte na plataforma de realidade misturada, desde ambientes de imersão até a leve disposição em camadas sobre o ambiente de um usuário.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, padrões de aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848099"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007616"
 ---
 # <a name="types-of-mixed-reality-apps"></a>Tipos de aplicativos de realidade misturada
 

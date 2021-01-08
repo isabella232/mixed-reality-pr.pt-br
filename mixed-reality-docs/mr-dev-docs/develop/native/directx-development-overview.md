@@ -1,17 +1,17 @@
 ---
 title: Visão geral do desenvolvimento nativo
-description: Crie um mecanismo de realidade mista com base em DirectX usando as APIs de realidade mista do Windows diretamente.
+description: Saiba como criar um mecanismo de realidade misturada baseado em DirectX usando as APIs de realidade mista do Windows diretamente.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, renderização Holographic, nativo, aplicativo nativo, WinRT, aplicativo WinRT, APIs de plataforma, mecanismo personalizado, middleware, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613070"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006846"
 ---
 # <a name="native-development-overview"></a>Visão geral do desenvolvimento nativo
 
@@ -68,6 +68,6 @@ Se você pretende nivelar o jogo do OpenXR, confira os links abaixo:
 * [Desempenho do OpenXR](openxr-performance.md)
 * [Solução de problemas do OpenXR](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 * [Modelo de aplicativo](../../design/app-model.md)
 * [Modos de exibição do aplicativo](../../design/app-views.md)

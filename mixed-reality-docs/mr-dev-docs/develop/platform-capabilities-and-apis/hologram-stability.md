@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologramas, estabilidade, hololens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, taxa de quadros, renderização, Reprojeção, separação de cores
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808827"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006636"
 ---
 # <a name="hologram-stability"></a>Estabilidade do holograma
 
@@ -95,7 +95,7 @@ Os aplicativos precisam executar ações específicas para habilitar os diferent
 
 ### <a name="choosing-reprojection-technique"></a>Escolhendo a técnica de Reprojeção
 
-Tipo de estabilização |    Headsets imersivos |    Geração de HoloLens 1 | HoloLens 2
+Tipo de estabilização |    Headsets de imersão |    Geração de HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
 Reprojeção de profundidade |    Recomendado |   N/D |   Recomendado<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
 Reprojeção automática de planar | N/D |   Padrão recomendado |   Recomendado se a Reprojeção de profundidade não fornecer os melhores resultados<br/><br/>Os aplicativos do Unity são recomendados para usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior.  As versões anteriores do Unity funcionarão com resultados de Reprojeção ligeiramente degradados.
@@ -181,7 +181,7 @@ Embora seja difícil evitar completamente a separação de cores, há várias t�
 
 Como antes, a renderização em 60 FPS e a definição do plano de estabilização são as técnicas mais importantes para a estabilidade do holograma. Se for voltada para separação de cores perceptível, primeiro verifique se a taxa de quadros atende às expectativas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Cor, luz e materiais](../../color,-light-and-materials.md)
 * [Interações instinctuais](../../design/interaction-fundamentals.md)

@@ -1,5 +1,5 @@
 ---
-title: Adaptadores recomendados para PCs com capacidade do Windows Mixed Reality
+title: Adaptadores recomendados para computadores Windows Mixed Reality
 description: Lista de adaptadores recomendados para uso com headsets de realidade mista do Windows se o seu computador não tiver portas USB e HDMI de tamanho completo.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, adaptador, dongle, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: 248a202ce57c0b6872ddefc9ec9c2f89e2aa87a4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 86eaa8d462d97a740f15859d2ab631aafb8dd68e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725977"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009096"
 ---
 # <a name="recommended-adapters"></a>Adaptadores recomendados
 > [!NOTE]
@@ -28,7 +28,7 @@ Seu [PC compatível com realidade mista do Windows](windows-mixed-reality-minimu
 
 <table>
 <tr>
-<th style="width:30%">Tipo</th><th style="width:40%">Adaptador</th><th style="width:15%">compatível com 60 Hz</th><th style="width:15%">compatível com 90 Hz</th>
+<th style="width:30%">Type</th><th style="width:40%">Adaptador</th><th style="width:15%">compatível com 60 Hz</th><th style="width:15%">compatível com 90 Hz</th>
 </tr><tr>
 <td rowspan="2" style="vertical-align: middle;">DisplayPort (tamanho completo) para HDMI 2,0</td><td>Adaptador ativo Club3D DisplayPort 1,2 para HDMI 2,0</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -278,6 +278,6 @@ Além disso, observe as seguintes diretrizes para o uso de um hub USB 3,0 extern
 * O hub USB 3,0 deve ser conectado externamente (ter um adaptador AC que forneça energia extra).
 * O Hub conectável de 10 portas USB 3,0 SuperSpeed com 48 W Power Adapter é conhecido por funcionar bem com headsets de realidade mista do Windows e a maioria dos PCs.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Solucionando problemas de conectividade do headset](headset-connectivity.md)
 * [Diretrizes mínimas de compatibilidade de hardware do PC do Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

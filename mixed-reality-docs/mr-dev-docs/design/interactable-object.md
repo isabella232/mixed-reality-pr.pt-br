@@ -1,17 +1,17 @@
 ---
 title: Objeto interativo
-description: Um botão tem muito tempo uma metáfora usada para disparar um evento no mundo abstrato de 2D. No mundo de realidade misturada tridimensional, não precisamos mais ser confinado para esse mundo de abstração.
+description: Saiba como disparar eventos, fornecer indicações visuais e interagir com objetos em seus aplicativos de realidade misturada.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, indicações, interface do usuário, UX, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, áudio
-ms.openlocfilehash: fb7004c22602683e4edb1e38784cac5c0b7479c4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847859"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007196"
 ---
 # <a name="interactable-object"></a>Objeto interativo
 
@@ -277,7 +277,7 @@ O sombreador padrão de MixedRealityToolkit fornece várias opções, como a **l
 ---
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

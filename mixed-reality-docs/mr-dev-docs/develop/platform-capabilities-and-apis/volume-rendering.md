@@ -1,17 +1,17 @@
 ---
 title: Renderização de volume
-description: As imagens volumétricos contêm informações ricas com opacidade e cores em todo o volume que não podem ser facilmente expressas como superfícies. Saiba como renderizar com eficiência imagens volumétricos dentro da realidade mista do Windows.
+description: Saiba como renderizar com eficiência imagens volumétricos com opacidade e cor no Windows Mixed Reality.
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: imagem volumétricos, renderização de volume, desempenho, realidade misturada
-ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612940"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008776"
 ---
 # <a name="volume-rendering"></a>Renderização de volume
 

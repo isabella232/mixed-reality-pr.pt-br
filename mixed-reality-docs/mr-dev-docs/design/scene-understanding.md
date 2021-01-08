@@ -1,17 +1,17 @@
 ---
 title: Reconhecimento de cena
-description: Introdução aos recursos de compreensão da cena para o HoloLens
+description: Saiba como desenvolver com a compreensão da cena para o HoloLens, incluindo o SDK, os recursos e os cenários de uso comuns.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Compreensão da cena, mapeamento espacial, realidade mista do Windows, Unity, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, oclusão, SDK
-ms.openlocfilehash: f46245c668e7cc58258fa4e28c4af5aa7812ef5f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848257"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008866"
 ---
 # <a name="scene-understanding"></a>Reconhecimento de cena
 

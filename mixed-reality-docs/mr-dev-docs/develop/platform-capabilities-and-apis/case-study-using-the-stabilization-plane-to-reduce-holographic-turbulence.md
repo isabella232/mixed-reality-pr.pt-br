@@ -1,17 +1,17 @@
 ---
-title: Estudo de caso-usando o plano de estabilização para reduzir Holographic turbulência
-description: Como usar o plano de estabilização para reduzir a turbulência holográfica
+title: Estudo de caso-usando o plano de estabilização
+description: Explore como nossa equipe de desenvolvimento usou o plano de estabilização para reduzir Holographic turbulência em um aplicativo de realidade misturada.
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, estabilização, estudo de caso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530441"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006696"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Estudo de caso-usando o plano de estabilização para reduzir Holographic turbulência
 

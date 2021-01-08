@@ -1,17 +1,17 @@
 ---
 title: Solução de problemas e limitações de comunicação remota do Holographic
-description: Etapas de solução de problemas para a comunicação remota do Holographic no HoloLens 2.
+description: Encontre recursos de solução de problemas e instruções para o recurso de comunicação remota do Holographic em dispositivos do HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, comunicação remota Holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, solução de problemas, ajuda, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ee1dce72af02374e930de4a1bdff94285c7a84ae
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530189"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006446"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Solução de problemas de comunicação remota do Holographic
 
@@ -24,7 +24,7 @@ Os aplicativos de exemplo de comunicação remota Holographic têm/Qspectre (mit
 
 Se você receber a *vccorlib. lib, o erro fatal não poderá ser aberto* , verifique se a carga de trabalho do Visual Studio inclui as [bibliotecas atenuadas do Spectre](https://aka.ms/Ofhn4c)
 
-## <a name="speech"></a>Speech
+## <a name="speech"></a>Fala
 
 O player de comunicação remota Holographic dá suporte a uma sobreposição de diagnóstico, que pode ser habilitada dizendo ```Enable Diagnostics``` e desabilitada dizendo ```Disable Diagnostics``` . Se você tiver problemas com esses comandos de voz, também poderá iniciar o player de comunicação remota do Holographic por meio de um navegador da Web usando ```ms-holographic-remoting:?stats``` como uma URL.
 

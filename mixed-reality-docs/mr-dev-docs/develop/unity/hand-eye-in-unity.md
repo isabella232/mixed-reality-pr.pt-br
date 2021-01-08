@@ -1,17 +1,17 @@
 ---
 title: Controle de mão e de olho articulado no Unity
-description: Há duas maneiras principais de agir em seu olhar no Unity, gestos de mão e controladores de movimento.
+description: Saiba mais sobre as duas maneiras principais de agir em seu olhar no Unity, gestos de mão e controladores de movimento.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestos, controladores de movimento, Unity, olhar, entrada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: de8ea7968c36722f3690c5515e4f69e576898524
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 4c704677a78fee02b9da9d0db9bc2966ab6b3724
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97011546"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008946"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Controle de mão e de olho articulado no Unity
 
@@ -48,7 +48,7 @@ Você pode encontrar outros exemplos de cenas no [GitHub do kit de ferramentas d
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. A partir daqui, você pode continuar para o próximo bloco de construção:
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Mapeamento espacial](spatial-mapping-in-unity.md)
@@ -60,7 +60,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Interação ocular](../../design/eye-gaze-interaction.md)
 * [Acompanhamento ocular no HoloLens 2](../../design/eye-tracking.md)

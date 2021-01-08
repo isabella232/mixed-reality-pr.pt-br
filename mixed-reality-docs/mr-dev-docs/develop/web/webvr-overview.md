@@ -1,17 +1,17 @@
 ---
 title: Visão geral do WebVR
-description: Visão geral do uso e desenvolvimento para WebVR no Windows Mixed Reality
+description: Aprenda as noções básicas de como usar e desenvolver para aplicativos WebVR executados em headsets de imersão de realidade mista do Windows.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, Web VR, Web XR, Web Mr, Web ar, 360, 360 vídeo, 360 vídeos, 360 Photo, 360 fotos, 360 Content, imersiva Web, immersiveweb, IW
-ms.openlocfilehash: fdff2acf7816f36129d867650b16d9760a92e375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf0335c0fa7fd42f60a20690d22b2ef9a4f6859a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676881"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006956"
 ---
 # <a name="webvr-overview"></a>Visão geral do WebVR
 
