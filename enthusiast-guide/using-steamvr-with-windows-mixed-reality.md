@@ -3,12 +3,12 @@ title: Usando o SteamVR com o Windows Mixed Reality
 description: Saiba como configurar e reproduzir jogos do SteamVR em headsets e controladores do Windows Mixed Reality com PCs compatíveis.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, jogos, SteamVR, fluxo, requisitos do sistema
-ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006896"
+ms.locfileid: "98031962"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Usando o SteamVR com o Windows Mixed Reality
 
@@ -18,14 +18,18 @@ O Windows Mixed Reality for SteamVR permite que os usuários executem experiênc
 
 * Verifique se você não tem atualizações pendentes: selecione **iniciar > configurações > atualizar & segurança > Windows Update**. Se houver atualizações disponíveis, selecione **instalar agora**. Se nenhuma atualização estiver disponível, selecione **verificar** se há atualizações e, em seguida, instale as novas.
 * Os requisitos do PC variam para os aplicativos e o conteúdo no fluxo. Consulte os requisitos mínimos por título. Um PC com uma placa gráfica GTX 1070 (ou equivalente) e um processador Intel® Core™ i7 deve oferecer uma boa experiência para uma ampla gama de títulos.
+* Configure a [realidade mista do Windows](set-up-windows-mixed-reality.md) , se ainda não tiver feito isso. 
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>Configurar a realidade mista do Windows para SteamVR
 
-1. Configure a [realidade mista do Windows](set-up-windows-mixed-reality.md) se você ainda não
-2. Instale o [fluxo](http://store.steampowered.com/about/) e o **logon** ou **crie uma nova conta.**
-3. Instale o [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). Com o fone de ouvido conectado, inicie o fluxo e você verá uma caixa de diálogo solicitando que você instale o SteamVR. Siga os prompts na caixa de diálogo para instalá-lo.
+1. [Baixe e instale o SteamVR.](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)
+2. Quando estiver pronto, inicie o SteamVR. O tutorial do SteamVR deve ser iniciado automaticamente.
+
+> **Observação:** Para solução de problemas avançada da configuração do SteamVR, verifique se você tem os seguintes componentes de software instalados:
+> 1. Instale o [fluxo](http://store.steampowered.com/about/) e o **logon** ou **crie uma nova conta.**
+> 2. Instale o [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). Com o fone de ouvido conectado, inicie o fluxo e você verá uma caixa de diálogo solicitando que você instale o SteamVR. Siga os prompts na caixa de diálogo para instalá-lo.
     * Se você não vir o pop-up, instale o SteamVR navegando até a seção de *ferramentas* da *biblioteca*. Localize SteamVR na lista e clique com o botão direito do mouse e selecione *instalar jogo*.
-4. Instale o [Windows Mixed Reality para SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
+> 3. Instale o [Windows Mixed Reality para SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
 ## <a name="play-steamvr-games"></a>Jogue jogos SteamVR
 
