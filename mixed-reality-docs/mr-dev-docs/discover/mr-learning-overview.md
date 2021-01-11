@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 996aad49d7fa48d5c7d7d33913680da9e5a4bdd8
-ms.sourcegitcommit: 9c2a90b17fe72cf482598969f8f3beca511e78a1
+ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97350008"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757794"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 
@@ -20,7 +20,7 @@ O Microsoft Learn é como uma central de aprendizado. Descubra novas habilidades
 
 Quanto mais ferramentas você tem quando desenvolve para a Realidade Misturada, melhor. Embora a documentação e os tutoriais escritos sejam essenciais, se você é um aprendiz mais visual, nosso conteúdo de vídeo no Microsoft Learn é o lugar ideal para você. Mais módulos estão sendo adicionados o tempo todo, então lembre-se de voltar para obter mais atualizações!
 
-Nossos módulos do Learn são uma oportunidade para você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo que pode ajudar você a começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de realidade misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface. Comece a fazer os módulos do Learn de Realidade Misturada hoje mesmo ou confira nosso [vídeo](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) de introdução ao Microsoft Learn!
+Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo para você começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de Realidade Misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface. Comece a fazer os módulos do Learn de Realidade Misturada hoje mesmo ou confira nosso [vídeo](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) de introdução ao Microsoft Learn!
 
 ## <a name="general-modules"></a>Módulos gerais
 
@@ -38,7 +38,7 @@ Ao final deste módulo, você saberá como:
 * Descrever as ideias principais por trás dos hologramas
 * Comece a projetar e desenvolver aplicativos 3D
 * Entender o que a Realidade Misturada oferece nos aplicativos do mundo real
-* Utilizar o poder da nuvem para a Realidade Misturada
+* Use o poder da nuvem para a Realidade Misturada
 
 ## <a name="unity-modules"></a>Módulos do Unity
 
@@ -60,7 +60,7 @@ Ao final deste módulo, você poderá:
 
 ### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Criar um aplicativo tradutor de idioma com o Unity + Serviços Cognitivos do Azure](https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
 
-Crie um aplicativo tradutor de idiomas para seu dispositivo de Realidade Misturada (Windows Mixed Reality, HoloLens 2 etc.) usando os Serviços Cognitivos.
+Crie um aplicativo de tradução de idioma para o seu dispositivo de Realidade Misturada (Windows Mixed Reality, HoloLens 2 etc.) usando os Serviços Cognitivos.
 
 **Objetivos de aprendizagem**
 

@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010537"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865391"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Como empacotar e implantar no dispositivo ou emulador
 
@@ -30,6 +30,9 @@ No tutorial anterior, você adicionou um botão simples que redefine a peça de 
 Se você estiver seguindo por esse caminho com o aplicativo de xadrez, precisará fazer algumas coisas:
 
 1.  Instale o **Player de Comunicação Remota Holográfica** por meio da Microsoft Store no seu HoloLens 2 e execute o aplicativo. Anote o endereço IP exibido no aplicativo.
+    * Acesse **Editar > Configurações de Projeto** e verifique se o **RHI Padrão** do Windows está definido como **Padrão** ou **D3D11**:
+
+![RHI Padrão](../images/unreal/performance-recommendations-img-09.png)
 
 2.  De volta no editor do Unreal, acesse **Editar > Configurações do Projeto** e marque **Habilitar a Comunicação Remota** na seção **Comunicação Remota Holográfica**.
 

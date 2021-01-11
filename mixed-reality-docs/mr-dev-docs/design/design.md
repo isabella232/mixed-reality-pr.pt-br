@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, principais conceitos, interação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926010"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847599"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 
 ![resumo do design de realidade misturada](images/design-hero-image.png)
 
-Os aplicativos de Realidade Misturada são diferentes de qualquer outra coisa no mundo hoje, e projetá-los é um trabalho complicado. Você precisa levar em conta não apenas as novas combinações dos mundos real e virtual que está criando, mas também os novos tipos de experiências de usuário que elas proporcionam. Já que a Realidade Misturada é um tema substancial, selecionamos pontos importantes relativos ao seu espectro de design e os colocamos abaixo como uma série de pontos de verificação. Eles estão em ordem sequencial, porém, se você já estiver familiarizado com algum deles, fique à vontade para pular para qualquer uma das seções a seguir.
+Os aplicativos de Realidade Misturada são diferentes de qualquer outra coisa no mundo hoje, e projetá-los é um trabalho complicado. Você precisa levar em conta não apenas as combinações dos mundos real e virtual que está criando, mas também as novas experiências de usuário que elas proporcionam. Já que a Realidade Misturada é um tema substancial, selecionamos pontos importantes relativos ao seu espectro de design e os colocamos abaixo como uma série de pontos de verificação. Eles estão em ordem sequencial, porém, se você já estiver familiarizado com algum deles, fique à vontade para pular para qualquer uma das seções a seguir.
 
 ## <a name="design-checkpoints"></a>Pontos de verificação de design
 
@@ -34,37 +34,38 @@ Assim como em todos os percursos, sua aventura de criação de aplicativos de Re
 | --- | --- |
 | [Expanda seu processo de design](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Dê uma olhada em primeira mão no processo de design da Realidade Misturada, coletado de designers dentro e fora da Microsoft |
 | [Tipos de aplicativos de Realidade Misturada](types-of-mixed-reality-apps.md) | Decida onde sua experiência de aplicativo residirá no espectro da Realidade Misturada |
-| [Aplicativo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Aprenda os conceitos básicos do Design de UX de Realidade Misturada experimentando por conta própria e aprofundando-se nos comportamentos de Realidade Misturada e em dicas e recomendações para criar aplicativos HoloLens incríveis (disponíveis para download na Microsoft Store no HoloLens 2) |
+| [Aplicativo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Aprenda os conceitos básicos do Design de UX de Realidade Misturada fazendo experimentos com dicas, comportamentos e recomendações para criar aplicativos HoloLens incríveis (disponíveis para download na Microsoft Store no HoloLens 2) |
 | [Hub de exemplos do MRTK](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experimente interações espaciais comuns e blocos de construção de UX para Realidade Misturada (disponível para download na Microsoft Store no HoloLens 2) |
+
 ### <a name="2-core-concepts"></a>2. Conceitos fundamentais
 
-Esteja você desenvolvendo para VR ou RA, existem vários conceitos básicos que se aplicam ao design de experiências de imersão fluidas. Compreender o ponto de vista dos usuários, posicionar objetos e garantir que todos estejam confortáveis e seguros são suas principais prioridades nesta fase do percurso. Ao final desta seção, você terá uma base sólida para realizar o design de interação.
+Independentemente de você fazer o desenvolvimento para VR ou RA, existem vários conceitos básicos que se aplicam ao design de experiências de imersão fluidas. Compreender o ponto de vista dos usuários, posicionar objetos e garantir que todos estejam confortáveis e seguros são suas principais prioridades nesta fase do percurso. Ao final desta seção, você terá uma base sólida para realizar o design de interação.
 
 ![Imagem de exemplo de conceitos básicos](images/fragments-750px.jpg)
 
 |  Conceito  |  Resultado  |
 | --- | --- |
 | [Quadro holográfico](holographic-frame.md) | Entenda como os usuários veem seu conteúdo sobreposto ao mundo real quando usam headsets |
-| [Sistemas de coordenadas](coordinate-systems.md) | Saiba como posicionar hologramas em lugares do mundo que tenham relevância para o usuário, podendo ser a sala física dele ou um realm virtual que você criou |
+| [Sistemas de coordenadas](coordinate-systems.md) | Saiba como posicionar hologramas em lugares do mundo que tenham relevância, podendo ser a sala física do usuário ou um realm virtual criado por você |
 | [Mapeamento espacial](spatial-mapping.md) | Ancore objetos no mundo do usuário e aproveite as superfícies físicas do mundo real |
 | [Considerações sobre conforto](comfort.md) | Garanta o conforto e a segurança do usuário criando e apresentando o conteúdo de imersão de uma forma que imite o mundo natural |
 
 ### <a name="3-interaction-design"></a>3. Design de interação
 
-Não importa o quanto uma experiência virtual seja bela e imersiva, ela será inútil sem interação. Esta seção guiará você pelos modelos básicos de interação, controladores de movimentos e mãos, uso de entrada de voz e coleta de dados por acompanhamento ocular de seus usuários. Ao final desta seção, você estará pronto para lidar com o último grande tópico em seu percurso de design: a experiência do usuário.
+Não importa o quanto uma experiência virtual seja bela e imersiva, ela será inútil sem interação. Esta seção descreverá modelos básicos de interação, controladores de movimentos e mãos, entrada de voz e coleta de dados por acompanhamento ocular dos seus usuários. Ao final desta seção, você estará pronto para lidar com o último grande tópico em seu percurso de design: a experiência do usuário.
 
 ![Fatores de design de interação](images/UX_Hero_Manipulation.jpg)
 
 |  Conceito  |  Resultado  |
 | --- | --- |
 | [Modelos de interação](interaction-fundamentals.md) | Forneça a seus usuários interações instintivas por meio das mãos, dos olhos e da voz |
-| [Controladores de movimentos e mãos](hands-and-tools.md) | Aprenda como os hologramas podem ser tocados e manipulados de perto com as mãos do usuário ou de longe com interações precisas |
+| [Controladores de movimentos e mãos](hands-and-tools.md) | Saiba como interagir com os hologramas de perto com as mãos de um usuário ou de longe com interações precisas |
 | [Entrada de voz](voice-input.md) | Use comandos de voz como entrada em seus aplicativos de imersão para controlar ambientes e hologramas ao redor  |
 | [Acompanhamento ocular](eye-tracking.md) | Adicione um novo nível de contexto e compreensão humana a uma experiência holográfica usando informações sobre o que os usuários estão olhando |
 
 ### <a name="4-user-experience-elements"></a>4. Elementos de experiência do usuário
 
-Agora que você já domina as interações básicas, pode se concentrar nos pontos mais refinados dos elementos de experiência do usuário e em como adaptá-los para ambientes exclusivos da Realidade Misturada. Você abordará comportamentos comuns, design de ativos, dimensionamento de objetos e tipografia, tudo com o objetivo de tornar seus aplicativos o mais intuitivos possível para os usuários. Esta seção marca o fim do percurso oficial de design de Realidade Misturada, mas há outros recursos na seção [O que vem a seguir?](#whats-next) para você continuar trabalhando.
+Agora que você já domina as interações básicas, pode se concentrar nos pontos mais refinados dos elementos de experiência do usuário e em como adaptá-los para ambientes exclusivos da Realidade Misturada. Você abordará comportamentos comuns, design de ativos, dimensionamento de objetos e tipografia, além de tornar a experiência intuitiva para os usuários. Esta seção marca o fim do percurso oficial de design de Realidade Misturada, mas há outros recursos na seção [O que vem a seguir?](#whats-next) para você continuar trabalhando.
 
 ![Elementos de UX](images/UX_Hero_BoundingBox.jpg)
 
@@ -77,7 +78,7 @@ Agora que você já domina as interações básicas, pode se concentrar nos pont
 
 ## <a name="whats-next"></a>E agora?
 
-O trabalho de um designer nunca termina, especialmente quando se aprende a criar experiências de imersão em um novo paradigma. As seções a seguir vão além do material de design de nível iniciante que você já concluiu e abordam o mundo do desenvolvimento da Realidade Misturada. Estes tópicos e recursos não estão em nenhuma ordem sequencial, então fique à vontade para explorá-los!
+O trabalho de um designer nunca termina, especialmente quando se aprende a criar experiências imersivas em um novo paradigma. As seções a seguir vão além do material de design de nível iniciante que você já concluiu e abordam o mundo do desenvolvimento da Realidade Misturada. Estes tópicos e recursos não estão em nenhuma ordem sequencial, então fique à vontade para explorá-los!
 
 ### <a name="choose-a-prototyping-option"></a>Escolha uma opção de protótipo  
 
@@ -108,7 +109,7 @@ O trabalho de um designer nunca termina, especialmente quando se aprende a criar
 
 ---
 
-### <a name="additional-resources"></a>Recursos adicionais
+### <a name="other-resources"></a>Outros recursos
 
 :::row:::
     :::column:::

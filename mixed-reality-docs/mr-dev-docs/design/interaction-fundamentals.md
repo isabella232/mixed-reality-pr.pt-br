@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, foco, direcionamento de foco, interação, design, hololens, MMR, multimodal, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens
-ms.openlocfilehash: a4b4c8fed9bb74b12bfa4390e1675acab44b3eec
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703162"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847288"
 ---
 # <a name="introducing-instinctual-interactions"></a>Apresentação de interações instintivas
 
@@ -20,21 +20,18 @@ ms.locfileid: "94703162"
 
 A filosofia de interações simples e instintivas está presente em toda a plataforma de MR (realidade misturada). Temos três etapas para os desenvolvedores e designers de aplicativos fornecerem interações fáceis e intuitivas para os clientes deles. 
 
-Primeiro, fizemos nossos incríveis sensores e tecnologia de entrada, incluindo o acompanhamento da mão, de olho e de linguagem natural, serem combinados em modelos descomplicados de interação multimodal.  
-Com base em nossa pesquisa, projetar e desenvolver em uma estrutura multimodal (em vez de com base em entradas individuais) é o segredo para criar experiências instintivas.
+Primeiro, confirmamos que os nossos sensores e as tecnologias de entrada se combinam em modelos de interação multimodal. Esses modelos de interação incluem o acompanhamento ocular e de mão, juntamente com a entrada de idioma natural. Com base em nossa pesquisa, projetar e desenvolver em uma estrutura multimodal (em vez de com base em entradas individuais) é o segredo para criar experiências instintivas.
 
-Em segundo lugar, reconhecemos que muitos desenvolvedores destinam suas criações a vários dispositivos HoloLens, por exemplo, HoloLens 2 e HoloLens (1ª geração) ou então HoloLens e VR.  
-Sendo assim, criamos nossos modelos de interação para que funcionem em vários dispositivos (mesmo que a tecnologia de entrada varie em cada dispositivo).  
-Por exemplo, a interação distante em um headset imersivo do Windows com um controlador 6DoF e interação distante em um HoloLens 2 usam as funcionalidades e os padrões idênticos, facilitando o desenvolvimento de aplicativos entre dispositivos e oferecendo uma sensação natural para interações do usuário. 
+Em segundo lugar, reconhecemos que muitos desenvolvedores destinam suas criações a vários dispositivos HoloLens, por exemplo, HoloLens 2 e HoloLens (1ª geração) ou então HoloLens e VR. Sendo assim, criamos nossos modelos de interação para que funcionem em vários dispositivos (mesmo que a tecnologia de entrada varie em cada dispositivo). Por exemplo, a interação à distância em um headset imersivo do Windows com um controlador 6DoF e o HoloLens 2 usam funcionalidades e padrões idênticos. Isso facilita o desenvolvimento de aplicativos entre dispositivos e proporciona uma sensação natural às interações do usuário. 
 
-Ainda que reconheçamos que há milhares de interações eficazes, envolventes e mágicas possíveis na MR, descobrimos que empregar intencionalmente um único modelo de interação de ponta a ponta em um aplicativo é a melhor maneira de garantir que os usuários sejam bem-sucedidos e tenha uma ótima experiência. Para isso, incluímos três coisas neste guia de interação:
+Ainda que reconheçamos que há milhares de interações eficazes, envolventes e mágicas possíveis na MR, descobrimos que empregar intencionalmente um só modelo de interação em um aplicativo é a melhor maneira de garantir que os usuários sejam bem-sucedidos e tenham uma ótima experiência. Para isso, incluímos três coisas neste guia de interação:
 * Diretrizes específicas sobre os três principais modelos de interação e os componentes e os padrões necessários para cada um.
 * Diretrizes complementares sobre os outros benefícios fornecidos por nossa plataforma.
 * Diretrizes gerais para ajudar a selecionar o modelo de interação apropriado para seu cenário de desenvolvimento.
 
 ## <a name="multimodal-interaction-models"></a>Modelos de interação multimodal
 
-Com base na pesquisa e nos comentários dos clientes, descobrimos que três modelos de interação principais atendem à maioria das experiências de realidade misturada. Em muitos aspectos, o modelo de interação é o modelo mental do usuário para a maneira como concluir um fluxo de trabalho. Cada um desses modelos de interação é otimizado para um conjunto de necessidades do cliente e é conveniente, avançado e utilizável quando usado corretamente. 
+Com base nas pesquisas e nos comentários dos clientes, descobrimos que três modelos de interação principais atendem à maioria das experiências de Realidade Misturada. Em muitos aspectos, o modelo de interação é o modelo mental do usuário para a maneira como concluir um fluxo de trabalho. Cada um desses modelos de interação é otimizado para um conjunto de necessidades do cliente e é conveniente, avançado e utilizável quando usado corretamente. 
 
 O gráfico abaixo é uma visão geral simplificada. Há links para informações detalhadas de uso de cada modelo de interação nas páginas abaixo com imagens e exemplos de código. 
 
@@ -66,18 +63,18 @@ O gráfico abaixo é uma visão geral simplificada. Há links para informações
     </tr>
     <tr>
         <td><a href="gaze-and-commit.md">Focar e confirmar</a></td>
-        <td>Clique pelas experiências, p.ex., apresentações e demonstrações 3D.</td>
+        <td>Experiências de clique, por exemplo, apresentações 3D, demonstrações.</td>
         <td>Requer treinamento em HMDs, mas não em dispositivos móveis. Melhor para controladores acessíveis. Melhor para HoloLens (1ª geração).</td>
         <td>HoloLens 2<br>HoloLens (1ª geração)<br>Headsets imersivos<br>AR móvel</td>
     </tr>
 </table>
 <br>
 
-A melhor maneira de garantir que não existem lacunas na experiência de interação do usuário é seguir as diretrizes para um único modelo, do início ao fim.
+Para evitar lacunas na experiência de interação do usuário, é melhor seguir as diretrizes para um só modelo, do início ao fim.
 
 As seções a seguir seguem as etapas de seleção e implementação de um desses modelos de interação.  
  
-### <a name="by-the-end-of-this-page-you-will-understand-our-guidance-on"></a>No final desta página, você entenderá nossas diretrizes em:
+### <a name="by-the-end-of-this-page-youll-understand-our-guidance-on"></a>No final desta página, você entenderá nossas diretrizes sobre como:
  
 * Escolhendo um modelo de interação para seu cliente
 * Implementar o modelo de interação
@@ -91,7 +88,7 @@ Na maioria dos casos, os desenvolvedores e criadores pensaram nos tipos de inter
 
 ### <a name="why-follow-this-guidance"></a>Por que seguir esta orientação?
 
-* Nossos modelos de interação são testados com critérios objetivos e subjetivos, tais como esforço físico e cognitivo, intuitividade e capacidade de aprendizado. 
+* Testamos nossos modelos de interação com critérios objetivos e subjetivos, incluindo esforço físico e cognitivo, intuitividade e capacidade de aprendizado. 
 * Como as interações são diferentes, as funcionalidades de áudio/visuais e o comportamento de objeto podem ser diferentes entre os modelos de interação.  
 * Combinar partes de vários modelos de interação cria o risco de funcionalidades conflitantes, tais como raios de mão simultâneos e um cursor de foco com a cabeça. Isso pode sobrecarregar e confundir os usuários.
 
@@ -147,7 +144,7 @@ R:  Nesse caso, confira o modelo de interação de mãos e controladores de movi
 R:  Nesse caso, examine o modelo de interação de mãos livres, que fornece uma ótima experiência de mãos livres por meio de interações de movimento e voz.
  
 3.  P:  Meus usuários têm tempo para aprender as interações de meu aplicativo de realidade misturada ou precisam das interações com a curva de aprendizado mais baixa possível?<br><br>
-R:  Para a mais baixa curva de aprendizado e as interações mais intuitivas, recomendamos o modelo de mãos e controladores de movimentos, desde que os usuários sejam capazes de usar suas mãos para interação.
+R:  Para a mais baixa curva de aprendizado e as interações mais intuitivas, recomendamos o modelo de mãos e controladores de movimentos, desde que os usuários possam usar as mãos para interação.
  
 4.  P:  Meus usuários usam controladores de movimento para apontar e manipular?<br><br>
 R:  O modelo de mãos e de controladores de movimentos inclui todas as orientações para uma ótima experiência com os controladores de movimentos.
@@ -156,12 +153,12 @@ R:  O modelo de mãos e de controladores de movimentos inclui todas as orientaç
 R:  Recomendamos o modelo de foco com a cabeça e de confirmação para todos os controladores não acompanhados. Ele foi projetado para permitir que um usuário passe por uma experiência completa com um mecanismo simples de "direcionar e confirmar". 
  
 6.  P: Meus usuários progridem por uma experiência somente "clicando" (por exemplo em um ambiente de apresentação de slides 3D), em vez de navegar por layouts densos de controles de interface de usuário?<br><br>
-R:  Caso os usuários não precisem controlar muita interface de usuário, o foco de cabeça e confirmação oferece uma opção que pode ser aprendida, na qual os usuários não precisam se preocupar com direcionamento. 
+R:  Caso os usuários não precisem controlar muitos aspectos da interface do usuário, o foco com a cabeça e a confirmação oferecem uma opção que pode ser aprendida, na qual os usuários não precisam se preocupar com o direcionamento. 
  
 7.  P:  Meus usuários usam o HoloLens (1ª geração) e HoloLens 2/headsets imersivos do Windows Mixed Reality (VR)?<br><br>
-R:  Como o foco com a cabeça e confirmação é o modelo de interação do HoloLens (1ª geração), recomendamos que os criadores que dão suporte ao HoloLens (1ª geração) usem o foco com a cabeça e confirmação para os recursos ou modos que os usuários experimentarão em um headset HoloLens (1ª geração). Consulte a próxima seção abaixo em *Transição de modelos de interação* para obter detalhes sobre como ter uma excelente experiência em várias gerações do HoloLens.
+R:  Como o foco com a cabeça e a confirmação é o modelo de interação do HoloLens (1ª geração), recomendamos que os criadores que dão suporte ao HoloLens (1ª geração) usem o foco com a cabeça e a confirmação para os recursos ou os modos que os usuários experimentarão em um headset do HoloLens (1ª geração). Confira a próxima seção sobre *Transição de modelos de interação* para obter detalhes sobre como ter uma ótima experiência em várias gerações do HoloLens.
  
-8.  P: E quanto aos usuários que normalmente usam dispositivos móveis, que abrangem um grande espaço ou o movimento entre espaços, em relação aos usuários que tendem a trabalhar em um único espaço?<br><br>
+8.  P: E quanto aos usuários que usam dispositivos móveis, que abrangem um espaço amplo ou a movimentação entre espaços, em relação aos usuários que tendem a trabalhar em um só espaço?<br><br>
 R:  Qualquer um dos modelos de interação funcionará para esses usuários.  
 
 > [!NOTE]
@@ -169,8 +166,7 @@ R:  Qualquer um dos modelos de interação funcionará para esses usuários.
 
 
 ## <a name="transitioning-interaction-models"></a>Modelos de interação de transição
-Também há casos de uso que podem exigir a utilização de mais de um modelo de interação. Por exemplo, o fluxo de criação do aplicativo utiliza o modelo de interação de _“mãos e controladores de movimentos”_ , mas convém empregar um modo de mãos livres para técnicos de campo.
-Caso sua experiência precise de vários modelos de interação, tenha em mente que muitos usuários podem encontrar dificuldade ao fazer a transição de um modelo para outro, especialmente os usuários novatos na realidade misturada.
+Também há casos de uso que podem exigir o uso de mais de um modelo de interação. Por exemplo, o fluxo de criação do seu aplicativo usa o modelo de interação de _"mãos e controladores de movimentos"_ , mas o ideal é empregar um modo de mãos livres para técnicos de campo. Se a sua experiência exigir vários modelos de interação, os usuários poderão ter dificuldade em fazer a transição de um modelo para outro, especialmente quando estiverem se familiarizando com a Realidade Misturada.
 
 > [!Note]
 > Estamos trabalhando constantemente em mais diretrizes que estarão disponíveis para desenvolvedores e designers, informando-os sobre como, quando e por que usar vários modelos de interação de realidade misturada.

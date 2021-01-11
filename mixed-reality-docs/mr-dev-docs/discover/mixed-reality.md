@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Realidade Misturada, holográfico, AR, VR, MR, XR, realidade aumentada, realidade virtual, explicação, estudo de caso, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada
 ms.localizationpriority: high
-ms.openlocfilehash: 5f4e41c04206eb5ca1a0d2e0dac914a1b3b1052d
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703122"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757694"
 ---
 # <a name="what-is-mixed-reality"></a>O que é Realidade Misturada?
 
@@ -34,7 +34,7 @@ A Realidade Misturada é uma combinação dos mundos físico e digital, reveland
 
 Nas últimas décadas, a exploração da relação entre a entrada humana e a do computador continuou, levando à disciplina conhecida como *HCI* ou interação entre humanos e computadores. A entrada humana acontece por meio de diferentes meios, incluindo teclados, mouses, toque, tinta, voz e até mesmo controle estrutural Kinect.
 
-Os avanços nos sensores e no processamento estão proporcionando aumento em uma nova área de entrada computacional de ambientes. A interação entre computadores e ambientes é efetivamente a compreensão ou *percepção* ambiental, motivo pelo qual os nomes de API no Windows que revelam informações ambientais são chamados de [APIs de percepção](https://docs.microsoft.com/uwp/api/Windows.Perception). A entrada do ambiente captura coisas como a posição de uma pessoa no mundo ([acompanhamento de cabeça](../design/coordinate-systems.md)), superfícies e limites ([mapeamento espacial](../design/spatial-mapping.md) e [noção de cena](../design/scene-understanding.md)), iluminação do ambiente, som do ambiente, reconhecimento de objetos e local.
+Os avanços nos sensores e no processamento estão criando áreas de entrada do computador em ambientes. A interação entre computadores e ambientes é a compreensão ou a *percepção* ambiental, motivo pelo qual os nomes de API no Windows que revelam informações ambientais são chamados de [APIs de percepção](https://docs.microsoft.com/uwp/api/Windows.Perception). A entrada do ambiente captura aspectos como a posição de uma pessoa no mundo ([acompanhamento de cabeça](../design/coordinate-systems.md)), superfícies e limites ([mapeamento espacial](../design/spatial-mapping.md) e [reconhecimento de cena](../design/scene-understanding.md)), iluminação do ambiente, som do ambiente, reconhecimento de objetos e localização.
 
 <br>
 
@@ -43,7 +43,7 @@ Os avanços nos sensores e no processamento estão proporcionando aumento em uma
 
 <br>
 
-A combinação de todos os três – **processamento do computador, entrada humana e entrada do ambiente** – prepara a criação de experiências de Realidade Misturada verdadeiras. A movimentação no mundo físico pode ser convertida em movimento no mundo digital. Os limites no mundo físico podem influenciar as experiências de aplicativos, como jogos, no mundo digital. Sem a entrada do ambiente, as experiências não podem ser combinadas entre realidades físicas e digitais.<br>
+A combinação de todos os três – **processamento do computador, entrada humana e entrada do ambiente** – prepara a criação de experiências de Realidade Misturada verdadeiras. A movimentação no mundo físico é convertida em movimentação no mundo digital. Os limites no mundo físico influenciam as experiências de aplicativos, como jogos, no mundo digital. Sem a entrada do ambiente, as experiências não podem ser combinadas entre realidades físicas e digitais.<br>
 
 <br>
 
@@ -65,8 +65,7 @@ Como a Realidade Misturada combina mundos físicos e digitais, elas definem as e
 A maioria dos celulares no mercado atualmente tem pouca ou nenhuma funcionalidade de noção do ambiente. As experiências que eles oferecem não podem misturar realidades físicas e digitais. As experiências que sobrepõem elementos gráficos em fluxos de vídeo do mundo físico são *realidade aumentada*. As experiências que ocultam sua exibição para apresentar uma experiência digital são *realidade virtual*. As experiências habilitadas entre a realidade aumentada e virtual formam a *Realidade Misturada*:
 * Com base no mundo físico, colocando um objeto digital, como um holograma, como se ele estivesse lá.
 * Com base no mundo físico, uma representação digital de outra pessoa – um avatar – mostra o local em que ela estava quando deixou anotações. Em outras palavras, as experiências que representam a colaboração assíncrona em diferentes pontos no tempo.
-* Com base em um mundo digital, os limites físicos do mundo físico, como paredes e mobília, são exibidos digitalmente dentro da experiência para ajudar os usuários a evitar objetos físicos.
-
+* Partindo de um mundo digital, os limites físicos do mundo físico, como paredes e móveis, são exibidos digitalmente dentro da experiência para ajudar os usuários a evitar objetos físicos.
 
 <br>
 
@@ -100,7 +99,7 @@ Há dois tipos principais de dispositivos que fornecem experiências do Windows 
 > [!NOTE]
 > O fato de um dispositivo estar conectado ou vinculado a um computador separado (por cabo USB ou Wi-Fi) ou ser autônomo (não conectado) não reflete se ele é holográfico ou imersivo. Certamente, os recursos que aprimoram a mobilidade produzem melhores experiências, e os dispositivos holográficos e de imersão podem estar conectados ou não.
 
-O avanço tecnológico é o que habilitou experiências de Realidade Misturada. Não há dispositivos atualmente que podem executar experiências em todo o espectro. O Windows 10 oferece uma plataforma comum de Realidade Misturada para fabricantes e desenvolvedores de dispositivos. Atualmente, os dispositivos podem dar suporte a um intervalo específico dentro do espectro de Realidade Misturada, com novos dispositivos expandindo esse intervalo. No futuro, dispositivos holográficos ficarão mais imersivos, e os dispositivos imersivos ficarão mais holográficos.
+O avanço tecnológico permite experiências de Realidade Misturada, mas não há dispositivos atualmente que possam executar experiências em todo o espectro. O Windows 10 oferece uma plataforma comum de Realidade Misturada para fabricantes e desenvolvedores de dispositivos. Atualmente, os dispositivos podem dar suporte a um intervalo específico dentro do espectro de Realidade Misturada, com novos dispositivos expandindo esse intervalo. No futuro, os dispositivos holográficos serão mais imersivos, e os dispositivos imersivos serão mais holográficos.
 
 <br>
 
