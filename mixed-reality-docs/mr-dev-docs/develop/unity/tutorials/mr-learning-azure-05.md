@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de Nuvem do Azure – 5. Integrar o Serviço de Bot do Azure com o LUIS
+title: Integrar o Serviço de Bot do Azure com o LUIS
 description: Conclua este curso para aprender a implementar o Serviço de Bot do Azure e o reconhecimento vocal natural em um aplicativo do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, hololens 2, serviço de bot do Azure, luis, linguagem natural, bot de conversa, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 70d136467bc677c028614429e6e197ce25b30327
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679355"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008246"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrar o Serviço de Bot do Azure
 

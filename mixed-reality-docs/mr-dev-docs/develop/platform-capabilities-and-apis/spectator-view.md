@@ -7,18 +7,16 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Modo de exibição Espectador, iPhone, iOS, iPad, OpenCV, câmera, ARKit, HoloLens, realidade misturada, MixedRealityToolkit, demonstração, gravar
-ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530106"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008606"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Modo de exibição Espectador para o HoloLens e o HoloLens 2
 
 ![Marker](images/SpecViewPhoneHero.jpg)
-
-## <a name="overview"></a>Visão geral
 
 Quando você estiver usando um HoloLens, é fácil esquecer que uma pessoa que não o está usando possa ver as mesmas maravilhas que você. O modo de exibição Espectador permite que outras pessoas vejam o que um usuário do HoloLens vê em uma tela 2D. Também é uma abordagem rápida e acessível para a gravação de hologramas em HD com dispositivos móveis e a obtenção de gravações de ótima qualidade de hologramas com câmeras de vídeo.
 

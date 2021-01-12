@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de Âncoras Espaciais do Azure – 5. Âncoras Espaciais do Azure para o Android e o iOS
+title: Âncoras Espaciais do Azure para o Android e o iOS
 description: Conclua este curso para aprender a implantar um projeto do Unity com o MRTK (Kit de Ferramentas de Realidade Misturada) e as Âncoras Espaciais do Azure para Android e iOS.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, android, ios, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679425"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008386"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Âncoras Espaciais do Azure para o Android e o iOS
 

@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de Âncoras Espaciais do Azure – 1. Introdução aos Tutoriais das Âncoras Espaciais do Azure
+title: Introdução aos Tutoriais das Âncoras Espaciais do Azure
 description: Conclua este curso para aprender a implementar as Âncoras Espaciais do Azure em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, ios, android, Windows 10, ARCore, macOS, Suporte de Build do Android, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 005bbf3f9ecb7ed7f15f78d4042b4090f00edca7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679395"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008396"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Introdução aos Tutoriais das Âncoras Espaciais do Azure
-
-## <a name="overview"></a>Visão geral
 
 Bem-vindo(a) aos tutoriais de Âncoras Espaciais do Azure! Nesta série de tutoriais, você aprenderá os conceitos básicos de <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">ASA</a> (Âncoras Espaciais do Azure) e como ancorar uma experiência de realidade misturada completa no mundo real. Você também aprenderá a implantar o projeto no Android e no iOS.
 

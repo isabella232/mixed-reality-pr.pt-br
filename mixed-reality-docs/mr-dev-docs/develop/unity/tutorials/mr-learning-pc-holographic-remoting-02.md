@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de Comunicação Remota Holográfica para PC – 2. Criar um aplicativo de Comunicação Remota Holográfica para PC
+title: Criar um aplicativo de Comunicação Remota Holográfica para PC
 description: Conclua este curso para aprender a criar um aplicativo de PC para uma experiência de realidade misturada do seu PC para o HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, comunicação remota holográfica do PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 258fd80c812fca246190e98b3fa371b2f4c1b51f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679235"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007326"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Como criar um aplicativo de Comunicação Remota Holográfica para PC
 

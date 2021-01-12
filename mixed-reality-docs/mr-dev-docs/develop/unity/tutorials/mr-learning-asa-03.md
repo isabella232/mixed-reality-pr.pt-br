@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de Âncoras Espaciais do Azure – 3. Salvar, recuperar e compartilhar Âncoras Espaciais do Azure
+title: Salvar, recuperar e compartilhar Âncoras Espaciais do Azure
 description: Conclua este curso para aprender a salvar, recuperar e compartilhar as Âncoras Espaciais do Azure em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, sessões do aplicativo
 ms.localizationpriority: high
-ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679405"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008356"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Salvar, recuperar e compartilhar Âncoras Espaciais do Azure
 

@@ -1,5 +1,5 @@
 ---
-title: Tutoriais do MRTK – 1. Introdução aos tutoriais do MRTK
+title: Introdução aos tutoriais do MRTK
 description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar um aplicativo de realidade misturada do zero.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, solucionadores, acompanhamento do olho, comandos de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613200"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008076"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introdução aos tutoriais do MRTK
-
-## <a name="overview"></a>Visão geral
 
 Bem-vindo(a) à série de tutoriais d Introdução! No decorrer destes tutoriais, você aprenderá sobre o MRTK (Kit de ferramentas de realidade misturada) e alguns dos recursos que ele tem a oferecer. Você também criará uma experiência de realidade misturada na qual o usuário pode explorar um holograma modelado conforme o Mars Rover da NASA. Ao final desta série, você terá uma noção do MRTK e como ele pode acelerar seu processo de desenvolvimento.
 
