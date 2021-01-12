@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, vídeo, captura, câmera
-ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009936"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108859"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Captura de realidade misturada para desenvolvedores
 
@@ -221,7 +221,7 @@ Os aplicativos têm duas opções para adicionar o efeito:
 
 Efeito de vídeo da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
-|  Nome da propriedade  |  Digite  |  Valor padrão  |  Descrição |
+|  Nome da Propriedade  |  Digite  |  Valor padrão  |  Descrição |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Descreva para qual fluxo de captura esse efeito é usado. O áudio não está disponível. |
 |  HologramCompositionEnabled  |  booleano  |  TRUE  |  Sinalizador para habilitar ou desabilitar hologramas na captura de vídeo. |
@@ -241,7 +241,7 @@ Efeito de vídeo da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCapt
 
 Efeito de áudio da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
-| Nome da propriedade | Digite | Valor padrão | Descrição |
+| Nome da Propriedade | Digite | Valor padrão | Descrição |
 |----------|----------|----------|----------|
 | Mixermode | UINT32 | 2 (MIC e áudio do sistema) | Enum usado para indicar quais fontes de áudio devem ser usadas: 0 (somente áudio do MIC), 1 (somente áudio do sistema), 2 (áudio do sistema e MIC) |
 | LoopbackGain | FLOAT | Configuração de **aproveitamento de áudio do aplicativo** no portal do dispositivo Windows | Obter para aplicar ao volume de áudio do sistema. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
@@ -254,24 +254,27 @@ Efeito de áudio da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCapt
 
 ### <a name="simultaneous-mrc-limitations"></a>Limitações de MRC simultâneas
 
-Há certas limitações em relação a vários aplicativos que acessam a MRC ao mesmo tempo.
+Você precisa estar ciente de determinadas limitações quando vários aplicativos estão acessando a MRC ao mesmo tempo.
 
 #### <a name="photovideo-camera-access"></a>Acesso à câmera de foto/vídeo
 
-A câmera de foto/vídeo é limitada ao número de processos que podem acessá-lo ao mesmo tempo. Enquanto um processo estiver gravando vídeo ou tirando uma foto, qualquer outro processo não conseguirá adquirir a câmera de foto/vídeo. (isso se aplica a captura de realidade mista e captura de foto/vídeo padrão)
+No HoloLens 1, a MRC falhará em capturar um vídeo de foto ou captura enquanto um processo estiver gravando vídeo ou tirando uma foto. O inverso também é verdadeiro: se a MRC estiver em execução, o aplicativo não conseguirá obter acesso à câmera. 
 
-Com o HoloLens 2, um aplicativo pode usar a propriedade MediaCaptureInitializationSettings [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) para indicar que desejam executar SharedReadOnly se não precisarem de controle exclusivo sobre a câmera de foto/vídeo. A resolução e a taxa de quadros da captura serão limitadas a quais outros aplicativos configuraram a câmera para fornecer.
+Com o HoloLens 2, é possível compartilhar o acesso à câmera. Se você não precisar de controle direto da resolução ou da taxa de quadros, poderá inicializar MediaCapture usando a [Propriedade sharedmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) com SharedReadOnly.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>Acesso interno à câmera de fotos/vídeo da MRC
 
 Funcionalidade da MRC incorporada ao Windows 10 (via Cortana, menu Iniciar, atalhos de hardware, Miracast, portal de dispositivos Windows):
+
 * Será executado com ExclusiveControl por padrão
 
-No entanto, o suporte foi adicionado a cada subsistema para operar em um modo compartilhado:
-* Se um aplicativo solicitar acesso ExclusiveControl à câmera de foto/vídeo, a MRC interna interromperá automaticamente o uso da câmera de foto/vídeo para que a solicitação do aplicativo seja realizada com sucesso
-* Se a MRC interna for iniciada enquanto um aplicativo tiver ExclusiveControl, a MRC interna será executada no modo SharedReadOnly
+No entanto, o suporte foi adicionado ao subsistema da MRC para operar em um modo compartilhado: 
+
+* Se um aplicativo solicitar acesso ExclusiveControl à câmera de foto/vídeo, a MRC interna interromperá automaticamente o uso da câmera de foto/vídeo para que a solicitação do aplicativo seja realizada com sucesso 
+* Se a MRC interna for iniciada enquanto um aplicativo tiver ExclusiveControl, a MRC interna será executada no modo SharedReadOnly 
 
 Essa funcionalidade de modo compartilhado tem determinadas restrições:
+
 * Foto via Cortana, atalhos de hardware ou menu iniciar: requer a atualização do Windows 10 de abril de 2018 (ou posterior)
 * Vídeo via Cortana, atalhos de hardware ou menu iniciar: requer a atualização do Windows 10 de abril de 2018 (ou posterior)
 * Streaming de MRC sobre Miracast: requer a atualização do Windows 10 de outubro de 2018 (ou posterior)
@@ -280,11 +283,26 @@ Essa funcionalidade de modo compartilhado tem determinadas restrições:
 >[!NOTE]
 > A resolução e a taxa de quadros da interface do usuário da câmera da MRC interna podem ser reduzidas de seus valores normais quando outro aplicativo estiver usando a câmera de foto/vídeo.
 
-#### <a name="mrc-access"></a>Acesso da MRC
+#### <a name="mrc-access-for-developers"></a>Acesso da MRC para desenvolvedores
 
-Com a atualização do Windows 10 de abril de 2018, não há mais uma limitação em relação a vários aplicativos que acessam o fluxo da MRC (no entanto, o acesso à câmera de foto/vídeo ainda tem limitações).
+Recomendamos que você sempre solicite controle exclusivo para a câmera ao usar a MRC. Isso garantirá que seu aplicativo tenha controle total das configurações da câmera, contanto que você esteja ciente das limitações listadas acima. 
 
-Anterior à atualização de abril de 2018 do Windows, o gravador da MRC personalizada de um aplicativo era mutuamente exclusivo com o sistema da MRC (capturando fotos, capturando vídeos ou transmitindo do portal de dispositivos do Windows).
+* Criar um objeto de captura de mídia usando as [configurações de inicialização](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
+* Definir a propriedade [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) como **exclusiva**
+
+> [!CAUTION]
+> Lembre-se de ler atentamente os [comentários de sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) antes de continuar.
+
+* Configure sua câmera da maneira desejada
+* Inicie o aplicativo, Capture quadros de vídeo com a API inicial e, em seguida, habilite a MRC
+
+> [!CAUTION]
+> Se você iniciar a MRC antes de iniciar seu aplicativo, não será possível garantir que o recurso funcionará conforme o esperado.
+
+Você pode encontrar uma amostra completa do processo acima no exemplo de [acompanhamento facial do Holographic](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
+
+> [!NOTE]
+> Antes da atualização do Windows 10 de abril de 2018, o gravador da MRC personalizada de um aplicativo era mutuamente exclusivo com o sistema da MRC (capturando fotos, capturando vídeos ou transmitindo do portal de dispositivos do Windows).
 
 ## <a name="see-also"></a>Confira também
 

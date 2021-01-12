@@ -3,26 +3,26 @@ title: Recursos com suporte do plug-in OpenXR no Unity
 description: Descubra os recursos que o OpenXR dá suporte para desenvolvimento de realidade misturada no Unity.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: d65bab65bcb06f7ccba522461e04062458e7400c
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880580"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108839"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Recursos com suporte da realidade misturada OpenXR no Unity
 
-O pacote de **plug-in OpenXR da realidade mista** é uma extensão do **plug-in OpenXR** do Unity e dá suporte a um conjunto de recursos para headsets do HoloLens 2 e do Windows Mixed Reality. Antes de continuar, certifique-se de ter instalado o **Unity 2020,2** ou posterior, **OpenXR plugin versão 0.1.1** ou posterior e seu projeto de Unity está [configurado para OpenXR](openxr-getting-started.md).
+O pacote de **plug-in OpenXR da realidade mista** é uma extensão do **plug-in OpenXR** do Unity e dá suporte a um conjunto de recursos para headsets do HoloLens 2 e do Windows Mixed Reality. Antes de continuar, certifique-se de ter instalado o **Unity 2020,2** ou posterior, **OpenXR plugin versão 0.1.2** ou posterior e seu projeto de Unity está [configurado para OpenXR](openxr-getting-started.md).
 
 ## <a name="whats-supported"></a>O que tem suporte
 
 Atualmente, há suporte para os seguintes recursos:
 
-* Dá suporte a aplicativos UWP para o HoloLens 2 e aplicativos Win32 VR para headsets de realidade mista do Windows.
-* Otimiza o pacote UWP e a interação CoreWindow para aplicativos do HoloLens 2.
+* Dá suporte a aplicativos UWP para o HoloLens 2 e otimizar para o modelo de aplicativo do HoloLens 2.
+* Dá suporte a aplicativos Win32 VR para o headset de realidade mista do Windows com perfis de controlador mais recentes e comunicação remota de aplicativo Holographic.
 * Controle de escala mundial usando âncoras e espaço não associado.
 * [API de armazenamento de ancoragem para persistir âncoras](#anchors-and-anchor-persistence) no armazenamento local do HoloLens 2.
 * [Controlador de movimento e interações de mão](#motion-controller-and-hand-interactions), incluindo o novo controlador do HP reverberate G2.
@@ -31,7 +31,7 @@ Atualmente, há suporte para os seguintes recursos:
 * Localizando a câmera de foto/vídeo (PV) no HoloLens 2.
 * A realidade misturada é a captura usando o processamento de 3ª vista por meio da câmera VP.
 * Dá suporte à ["reprodução" para o HoloLens 2 com o aplicativo de comunicação remota do Holographic](#holographic-remoting-in-unity-editor-play-mode), permitindo que os desenvolvedores depurem scripts sem compilar e implantar no dispositivo.
-* Compatível com o MRTK Unity 2.5.2 e mais recente por meio do suporte do provedor MRTK OpenXR. [Consulte a documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) para começar.
+* Compatível com o MRTK Unity 2.5.3 e mais recente por meio do [suporte do provedor MRTK OpenXR](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatível com o Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) ou posterior
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Holographic comunicação remota no modo de reprodução do editor do Unity
