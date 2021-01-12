@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendário, Academia, agenda, it, San Francisco, reator
-ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009996"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110434"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventos de realidade misturada da Microsoft
 
@@ -31,4 +31,4 @@ Junte-se à equipe do Microsoft Mixed Reality nesses próximos eventos!
 | Série de palestras sobre Realidade Misturada|22 de setembro de 2020|[Escape do Kippy: uma introdução à inreal & MRTK para o HoloLens 2]()|
 | Série de palestras sobre Realidade Misturada|22 de outubro de 2020|[Introdução ao WebXR com BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Série de palestras sobre Realidade Misturada|17 de novembro de 2020|[Compilando o futuro: o que há de novo no MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
-| Série de palestras sobre Realidade Misturada|1º de dezembro de 2020|[Criando hologramas]()|
+| Série de palestras sobre Realidade Misturada|1º de dezembro de 2020|[Criando hologramas](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
