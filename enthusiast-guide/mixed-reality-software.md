@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
 appliesto:
 - Windows 10
-ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
+ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009246"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166751"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Visão geral do software de Realidade Misturada e histórico de versões
 
@@ -167,6 +167,7 @@ No Windows 10, versão 1809 e mais recente, o [portal de realidade misturada](ht
 
    | Versão            | Data de lançamento          | Principais alterações                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
+   | 2000.20111.1381.0  | 10 de dezembro de 2020        | <ul><li>Atualiza a página de aterrissagem do portal de realidade misturada.</li><li>Reduz erros de conectividade de headset durante atualizações de firmware. </li></ul>  |    | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
    | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
    | 2000.20041.1212.0  | 11 de maio de 2020          | <ul><li>Resolve um problema de tempo que estava resultando em um erro de 15-5 inconsistente.</li><li>Suporte aprimorado para executar a realidade mista do Windows sem conexão com a Internet.</li><li>Suporte aprimorado para controladores de movimento de emparelhamento por meio de **controladores de instalação**.</li></ul>  | 
    | 2000.20031.1202.0  | 14 de abril de 2020        | <ul><li>Suporte para inscrever-se para obter informações, dicas e ofertas sobre a realidade mista do Windows.</li></ul>  | 
