@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ff8435ee09cf380bb4b055a50abcbe4e5e91dc03
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
+ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808807"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181733"
 ---
 ![Beija-flor virtual com mão humana](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -55,7 +55,10 @@ Se você for novo em dispositivos VR, é recomendável começar com nosso guia p
 
 * [Comece seu percurso de VR](enthusiast-guide/vr-journey.md)
 
+## <a name="contributor-license-agreement-cla"></a>CLA (contrato de licença de colaborador)
+
+Este projeto aceita contribuições e sugestões. A maioria das contribuições exige que você concorde com um CLA (Contrato de Licença do Colaborador) declarando que você tem o direito de nos conceder, e de fato concede, os direitos de usar sua contribuição. Para obter detalhes, visite [https://cla.opensource.microsoft.com](https://cla.opensource.microsoft.com).
+
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta Aberto da Microsoft
 
-Este projeto adotou o [Código de Conduta de Software Livre da Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Para obter mais informações, confira as [Perguntas frequentes sobre o código de conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou entre em contato com [opencode@microsoft.com](mailto:opencode@microsoft.com) para enviar outras perguntas ou comentários.
+Este projeto adotou o [Código de Conduta de Software Livre da Microsoft](https://opensource.microsoft.com/codeofconduct). Para obter mais informações, confira as [Perguntas frequentes sobre o código de conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou entre em contato com [opencode@microsoft.com](mailto:opencode@microsoft.com) para enviar outras perguntas ou comentários.
