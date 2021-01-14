@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: olho-olhar, cabeça-olhar, Unity, holograma, realidade misturada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009886"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192634"
 ---
 # <a name="head-gaze-in-unity"></a>Cabeça-olhar no Unity
 
@@ -59,7 +59,7 @@ Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.gi
 Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
-> [Gestos e controladores de movimentos](gestures-and-motion-controllers-in-unity.md)
+> [Controladores de movimentos](motion-controllers-in-unity.md)
 
 Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
@@ -68,7 +68,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Câmera](camera-in-unity.md)
 * [Cursores](../../design/cursors.md)
 * [Focar com a cabeça e confirmar](../../design/gaze-and-commit.md)

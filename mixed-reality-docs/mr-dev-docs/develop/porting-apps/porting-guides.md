@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porta, Unity, não real, middleware, mecanismo, UWP, Win32, portabilidade, 1º de HoloLens, headset de realidade misturada, headset de realidade mista do Windows, migração, Windows 10, mapeamento de entrada,
-ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009866"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192655"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portabilidade dos aplicativos de VR para o Windows Mixed Reality
 
@@ -56,12 +56,12 @@ A plataforma Windows Mixed Reality ainda está em desenvolvimento ativo. Recomen
 > [!IMPORTANT]
 > Se você estiver usando os controladores de reverberação do HP, consulte [Este artigo](../unreal/unreal-reverb-g2-controllers.md) para obter instruções adicionais de mapeamento de entrada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Diretrizes mínimas de compatibilidade de hardware do PC do Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Entendendo o desempenho da realidade misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Recomendações de desempenho para o Unity](../unity/performance-recommendations-for-unity.md)
 * [Controladores de movimentos](../../design/motion-controllers.md)
-* [Gestos e controladores de movimento no Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Controladores de movimento no Unity](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Guias de portabilidade](porting-guides.md)

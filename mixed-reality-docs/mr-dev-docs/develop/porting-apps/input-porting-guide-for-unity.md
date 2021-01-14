@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: entrada, Unity, portabilidade
-ms.openlocfilehash: 97280ff260729bfc2042f7760fa3950e949e27a4
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: d6bef0f10cf1fc20d5067ac77a126bb793385f59
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613260"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192644"
 ---
 # <a name="input-porting-guide-for-unity"></a>Guia de portabilidade de entrada para Unity
 
@@ -21,13 +21,13 @@ Você pode portar sua lógica de entrada para a realidade mista do Windows usand
 
 No momento, o Unity usa suas APIs Input. getbutton/Input. getaxis gerais para expor a entrada para [o SDK do Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) e [o SDK do OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html). Se seus aplicativos já estiverem usando essas APIs para entrada, as APIs Input. getbutton/Input. getaxis serão os caminhos mais fáceis para dar suporte a controladores de movimento no Windows Mixed Reality. Você só precisará remapear botões e eixos no Gerenciador de entrada.
 
-Para obter mais informações, consulte a [tabela de mapeamento de botões/eixo do Unity](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) e a [visão geral das APIs comuns do Unity](../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+Para obter mais informações, consulte a [tabela de mapeamento de botões/eixo do Unity](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) e a [visão geral das APIs comuns do Unity](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## <a name="windows-specific-xrwsainput-apis"></a>XR específico do Windows. WSA. APIs de entrada
 
 Se seu aplicativo já criar uma lógica de entrada personalizada para cada plataforma, você poderá usar as APIs de entrada espaciais específicas do Windows no namespace **UnityEngine. XR. WSA. Input** . A partir daí, você acessa informações adicionais, como precisão da posição ou tipo de origem, permitindo que você informe as mãos e os controladores no HoloLens.
 
-Para obter mais informações, consulte a [visão geral das APIs UnityEngine. XR. WSA. Input](../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+Para obter mais informações, consulte a [visão geral das APIs UnityEngine. XR. WSA. Input](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Segurar pose vs. ponto de apontar
 
@@ -50,7 +50,7 @@ Essas coordenadas de pose são todas expressas nas coordenadas do mundo do Unity
 
 ## <a name="see-also"></a>Confira também
 * [Controladores de movimento]().. /.. /design/motion-controllers.md)
-* [Gestos e controladores de movimento no Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Controladores de movimento no Unity](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Guias de portabilidade](porting-guides.md)
