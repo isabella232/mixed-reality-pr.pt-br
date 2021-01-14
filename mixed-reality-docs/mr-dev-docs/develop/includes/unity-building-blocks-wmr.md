@@ -1,0 +1,31 @@
+---
+ms.openlocfilehash: 716fdc03c9e2eb3ae4ffb61940e9b11e13c4a6ce
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98040556"
+---
+# <a name="available-in-mrtk"></a>[<span data-ttu-id="65a5d-101">Disponível no MRTK</span><span class="sxs-lookup"><span data-stu-id="65a5d-101">Available in MRTK</span></span>](#tab/mrtk)
+
+|  <span data-ttu-id="65a5d-102">Recurso</span><span class="sxs-lookup"><span data-stu-id="65a5d-102">Feature</span></span>  |  <span data-ttu-id="65a5d-103">Funcionalidades</span><span class="sxs-lookup"><span data-stu-id="65a5d-103">Capabilities</span></span>  |
+| --- | --- |
+| [<span data-ttu-id="65a5d-104">Interações básicas</span><span class="sxs-lookup"><span data-stu-id="65a5d-104">Basic interactions</span></span>](../unity/mrtk-101.md) | <span data-ttu-id="65a5d-105">Aprenda o básico sobre a interação com objetos em um espaço imersivo</span><span class="sxs-lookup"><span data-stu-id="65a5d-105">Learn the basics of interacting with objects in immersive space</span></span> |
+| [<span data-ttu-id="65a5d-106">Câmera</span><span class="sxs-lookup"><span data-stu-id="65a5d-106">Camera</span></span>](../unity/camera-in-unity.md) | <span data-ttu-id="65a5d-107">Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada</span><span class="sxs-lookup"><span data-stu-id="65a5d-107">Fully optimize visual quality and hologram stability in your Mixed Reality apps</span></span> |
+| [<span data-ttu-id="65a5d-108">Gestos e controladores de movimentos</span><span class="sxs-lookup"><span data-stu-id="65a5d-108">Gestures and motion controllers</span></span>](../unity/gestures-and-motion-controllers-in-unity.md) | <span data-ttu-id="65a5d-109">Adicionar ações espaciais aos seus aplicativos de Realidade Misturada</span><span class="sxs-lookup"><span data-stu-id="65a5d-109">Add spatial actions to your Mixed Reality apps</span></span> |
+| [<span data-ttu-id="65a5d-110">Text</span><span class="sxs-lookup"><span data-stu-id="65a5d-110">Text</span></span>](../unity/text-in-unity.md) | <span data-ttu-id="65a5d-111">Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade</span><span class="sxs-lookup"><span data-stu-id="65a5d-111">Get sharp, high-quality text that has a manageable size and quality rendering</span></span> |
+| [<span data-ttu-id="65a5d-112">Entrada de voz</span><span class="sxs-lookup"><span data-stu-id="65a5d-112">Voice input</span></span>](../unity/voice-input-in-unity.md) | <span data-ttu-id="65a5d-113">Capture ditado, palavras-chave e frases faladas dos seus usuários</span><span class="sxs-lookup"><span data-stu-id="65a5d-113">Capture spoken keywords, phrases, and dictation from your users</span></span>|
+
+# <a name="standalone-features"></a>[<span data-ttu-id="65a5d-114">Recursos autônomos</span><span class="sxs-lookup"><span data-stu-id="65a5d-114">Standalone features</span></span>](#tab/standalone)
+
+|  <span data-ttu-id="65a5d-115">Recurso</span><span class="sxs-lookup"><span data-stu-id="65a5d-115">Feature</span></span>  |  <span data-ttu-id="65a5d-116">Funcionalidades</span><span class="sxs-lookup"><span data-stu-id="65a5d-116">Capabilities</span></span>  |
+| --- | --- |
+| [<span data-ttu-id="65a5d-117">Câmera</span><span class="sxs-lookup"><span data-stu-id="65a5d-117">Camera</span></span>](../unity/camera-in-unity.md) | <span data-ttu-id="65a5d-118">Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada</span><span class="sxs-lookup"><span data-stu-id="65a5d-118">Fully optimize visual quality and hologram stability in your Mixed Reality apps</span></span> |
+| [<span data-ttu-id="65a5d-119">Sistemas de coordenadas</span><span class="sxs-lookup"><span data-stu-id="65a5d-119">Coordinate systems</span></span>](../unity/coordinate-systems-in-unity.md) | <span data-ttu-id="65a5d-120">Determine a escala da experiência para qual seu aplicativo foi projetado</span><span class="sxs-lookup"><span data-stu-id="65a5d-120">Determine the experience scale your application targets</span></span> |
+| [<span data-ttu-id="65a5d-121">Gestos e controladores de movimentos</span><span class="sxs-lookup"><span data-stu-id="65a5d-121">Gestures and motion controllers</span></span>](../unity/gestures-and-motion-controllers-in-unity.md) | <span data-ttu-id="65a5d-122">Adicionar ações espaciais aos seus aplicativos de Realidade Misturada</span><span class="sxs-lookup"><span data-stu-id="65a5d-122">Add spatial actions to your Mixed Reality apps</span></span> |
+| [<span data-ttu-id="65a5d-123">Persistência</span><span class="sxs-lookup"><span data-stu-id="65a5d-123">Persistence</span></span>](../unity/persistence-in-unity.md) | <span data-ttu-id="65a5d-124">Mantenha os hologramas localmente em diferentes sessões de aplicativos</span><span class="sxs-lookup"><span data-stu-id="65a5d-124">Persist holograms locally across different app sessions</span></span> |
+| [<span data-ttu-id="65a5d-125">Som espacial</span><span class="sxs-lookup"><span data-stu-id="65a5d-125">Spatial sound</span></span>](../unity/spatial-sound-in-unity.md) | <span data-ttu-id="65a5d-126">Aprimore seus aplicativos com um áudio 3D imersivo</span><span class="sxs-lookup"><span data-stu-id="65a5d-126">Enhance your apps with immersive 3D audio</span></span> |
+| [<span data-ttu-id="65a5d-127">Text</span><span class="sxs-lookup"><span data-stu-id="65a5d-127">Text</span></span>](../unity/text-in-unity.md) | <span data-ttu-id="65a5d-128">Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade</span><span class="sxs-lookup"><span data-stu-id="65a5d-128">Get sharp, high-quality text that has a manageable size and quality rendering</span></span> |
+| [<span data-ttu-id="65a5d-129">Entrada de voz</span><span class="sxs-lookup"><span data-stu-id="65a5d-129">Voice input</span></span>](../unity/voice-input-in-unity.md) | <span data-ttu-id="65a5d-130">Capturar palavras-chave e frases faladas e ditado dos seus usuários</span><span class="sxs-lookup"><span data-stu-id="65a5d-130">Capture spoken keywords, phrases, and dictation from your users</span></span>|
+
+

@@ -1,88 +1,89 @@
 ---
 title: Âncoras Espaciais locais no Unreal
-description: Guia para uso de âncoras espaciais em Unreal
+description: Saiba como usar, salvar e gerenciar âncoras espaciais em aplicativos de realidade misturada do Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, âncoras espaciais, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 1c9d9fa119e57c57ab126fc26a26a35d75e07db7
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926087"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009976"
 ---
-# <a name="local-spatial-anchors-in-unreal"></a><span data-ttu-id="04978-104">Âncoras Espaciais locais no Unreal</span><span class="sxs-lookup"><span data-stu-id="04978-104">Local Spatial Anchors in Unreal</span></span>
+# <a name="local-spatial-anchors-in-unreal"></a><span data-ttu-id="af84c-104">Âncoras Espaciais locais no Unreal</span><span class="sxs-lookup"><span data-stu-id="af84c-104">Local Spatial Anchors in Unreal</span></span>
 
-<span data-ttu-id="04978-105">As âncoras espaciais salvam hologramas no espaço do mundo real entre as sessões do aplicativo como **ARPin** s.</span><span class="sxs-lookup"><span data-stu-id="04978-105">Spatial anchors save holograms in real-world space between application sessions as **ARPin** s.</span></span> <span data-ttu-id="04978-106">Depois de salvos no repositório de âncoras do HoloLens, os ARPins podem ser carregados em sessões futuras e são uma opção de fallback ideal quando não há conectividade com a Internet.</span><span class="sxs-lookup"><span data-stu-id="04978-106">Once saved in the HoloLens' anchor store, ARPin's can be loaded in future sessions and are an ideal fallback option when there's no internet connectivity.</span></span>
+<span data-ttu-id="af84c-105">As âncoras espaciais salvam hologramas no espaço do mundo real entre as sessões do aplicativo como **ARPin** s.</span><span class="sxs-lookup"><span data-stu-id="af84c-105">Spatial anchors save holograms in real-world space between application sessions as **ARPin** s.</span></span> <span data-ttu-id="af84c-106">Depois de salvos no repositório de âncoras do HoloLens, os ARPins podem ser carregados em sessões futuras e são uma opção de fallback ideal quando não há conectividade com a Internet.</span><span class="sxs-lookup"><span data-stu-id="af84c-106">Once saved in the HoloLens' anchor store, ARPin's can be loaded in future sessions and are an ideal fallback option when there's no internet connectivity.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="04978-107">As funções de âncora do UE 4.25 estão obsoletas na versão 4.26 e devem ser substituídas por outras mais recentes.</span><span class="sxs-lookup"><span data-stu-id="04978-107">Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones.</span></span> 
+> <span data-ttu-id="af84c-107">As funções de âncora do UE 4.25 estão obsoletas na versão 4.26 e devem ser substituídas por outras mais recentes.</span><span class="sxs-lookup"><span data-stu-id="af84c-107">Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones.</span></span> 
 
 > [!IMPORTANT]
-> <span data-ttu-id="04978-108">Elas são armazenadas no dispositivo, enquanto as Âncoras Espaciais do Azure são armazenadas na nuvem.</span><span class="sxs-lookup"><span data-stu-id="04978-108">Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud.</span></span> <span data-ttu-id="04978-109">Se você pretende usar os serviços de nuvem do Azure para armazenar suas âncoras, temos um documento que pode orientar você na integração das [Âncoras Espaciais do Azure](unreal-azure-spatial-anchors.md).</span><span class="sxs-lookup"><span data-stu-id="04978-109">If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md).</span></span> <span data-ttu-id="04978-110">Você pode ter âncoras locais e do Azure no mesmo projeto sem conflitos.</span><span class="sxs-lookup"><span data-stu-id="04978-110">Note that you can have local and Azure anchors in the same project without conflict.</span></span>
+> <span data-ttu-id="af84c-108">Elas são armazenadas no dispositivo, enquanto as Âncoras Espaciais do Azure são armazenadas na nuvem.</span><span class="sxs-lookup"><span data-stu-id="af84c-108">Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud.</span></span> <span data-ttu-id="af84c-109">Se você pretende usar os serviços de nuvem do Azure para armazenar suas âncoras, temos um documento que pode orientar você na integração das [Âncoras Espaciais do Azure](unreal-azure-spatial-anchors.md).</span><span class="sxs-lookup"><span data-stu-id="af84c-109">If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md).</span></span> <span data-ttu-id="af84c-110">Você pode ter âncoras locais e do Azure no mesmo projeto sem conflitos.</span><span class="sxs-lookup"><span data-stu-id="af84c-110">Note that you can have local and Azure anchors in the same project without conflict.</span></span>
 
-## <a name="checking-the-anchor-store"></a><span data-ttu-id="04978-111">Como verificar o repositório de âncoras</span><span class="sxs-lookup"><span data-stu-id="04978-111">Checking the anchor store</span></span>
+## <a name="checking-the-anchor-store"></a><span data-ttu-id="af84c-111">Como verificar o repositório de âncoras</span><span class="sxs-lookup"><span data-stu-id="af84c-111">Checking the anchor store</span></span>
 
-<span data-ttu-id="04978-112">Antes de salvar ou carregar âncoras, você precisa verificar se o repositório de âncoras está pronto.</span><span class="sxs-lookup"><span data-stu-id="04978-112">Before saving or loading anchors, you need to check if the anchor store is ready.</span></span>  <span data-ttu-id="04978-113">A chamada de uma das funções de âncora do HoloLens antes que o repositório de âncoras esteja pronto não terá êxito.</span><span class="sxs-lookup"><span data-stu-id="04978-113">Calling any of the HoloLens anchor functions before the anchor store is ready won't succeed.</span></span>  
+<span data-ttu-id="af84c-112">Antes de salvar ou carregar âncoras, você precisa verificar se o repositório de âncoras está pronto.</span><span class="sxs-lookup"><span data-stu-id="af84c-112">Before saving or loading anchors, you need to check if the anchor store is ready.</span></span>  <span data-ttu-id="af84c-113">A chamada de uma das funções de âncora do HoloLens antes que o repositório de âncoras esteja pronto não terá êxito.</span><span class="sxs-lookup"><span data-stu-id="af84c-113">Calling any of the HoloLens anchor functions before the anchor store is ready won't succeed.</span></span>  
 
 [!INCLUDE[](includes/tabs-sa-1.md)]
 
-## <a name="saving-anchors"></a><span data-ttu-id="04978-114">Como salvar âncoras</span><span class="sxs-lookup"><span data-stu-id="04978-114">Saving anchors</span></span>
+## <a name="saving-anchors"></a><span data-ttu-id="af84c-114">Como salvar âncoras</span><span class="sxs-lookup"><span data-stu-id="af84c-114">Saving anchors</span></span>
 
-<span data-ttu-id="04978-115">Quando o aplicativo tem um componente que você precisa fixar no mundo, ele pode ser salvo no repositório de âncoras com a seguinte sequência:</span><span class="sxs-lookup"><span data-stu-id="04978-115">Once the application has a component you need to pin to the world, it can be saved to the anchor store with the following sequence:</span></span> 
+<span data-ttu-id="af84c-115">Quando o aplicativo tem um componente que você precisa fixar no mundo, ele pode ser salvo no repositório de âncoras com a seguinte sequência:</span><span class="sxs-lookup"><span data-stu-id="af84c-115">Once the application has a component you need to pin to the world, it can be saved to the anchor store with the following sequence:</span></span> 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
-<span data-ttu-id="04978-116">Passo a passo detalhado:</span><span class="sxs-lookup"><span data-stu-id="04978-116">Breaking this down:</span></span>
-1. <span data-ttu-id="04978-117">Gere um ator em um local conhecido.</span><span class="sxs-lookup"><span data-stu-id="04978-117">Spawn an actor at a known location.</span></span>
-2. <span data-ttu-id="04978-118">Crie um **ARPin** com esse local e um nome com base na classe do ator.</span><span class="sxs-lookup"><span data-stu-id="04978-118">Create an **ARPin** with that location and a name based on the actor’s class.</span></span> 
-3. <span data-ttu-id="04978-119">Adicione o ator ao **ARPin** e salve o marcador no repositório de âncoras do HoloLens.</span><span class="sxs-lookup"><span data-stu-id="04978-119">Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.</span></span>  
-    * <span data-ttu-id="04978-120">O nome da âncora que você escolhe, que neste exemplo é o carimbo de data/hora atual, precisa ser exclusivo.</span><span class="sxs-lookup"><span data-stu-id="04978-120">The anchor name you choose must be unique, which in this example is the current timestamp.</span></span> 
+<span data-ttu-id="af84c-116">Passo a passo detalhado:</span><span class="sxs-lookup"><span data-stu-id="af84c-116">Breaking this down:</span></span>
+1. <span data-ttu-id="af84c-117">Gere um ator em um local conhecido.</span><span class="sxs-lookup"><span data-stu-id="af84c-117">Spawn an actor at a known location.</span></span>
+2. <span data-ttu-id="af84c-118">Crie um **ARPin** com esse local e um nome com base na classe do ator.</span><span class="sxs-lookup"><span data-stu-id="af84c-118">Create an **ARPin** with that location and a name based on the actor’s class.</span></span> 
+3. <span data-ttu-id="af84c-119">Adicione o ator ao **ARPin** e salve o marcador no repositório de âncoras do HoloLens.</span><span class="sxs-lookup"><span data-stu-id="af84c-119">Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.</span></span>  
+    * <span data-ttu-id="af84c-120">O nome da âncora que você escolhe, que neste exemplo é o carimbo de data/hora atual, precisa ser exclusivo.</span><span class="sxs-lookup"><span data-stu-id="af84c-120">The anchor name you choose must be unique, which in this example is the current timestamp.</span></span> 
 
-4. <span data-ttu-id="04978-121">Se a âncora for salva com êxito no repositório de âncoras, você poderá vê-la no portal do dispositivo do HoloLens em **Sistema > Gerenciador de mapas > Arquivos de Âncora Salvos no Dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="04978-121">If the anchor is successfully saved to the anchor store, you can see it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**.</span></span> 
+4. <span data-ttu-id="af84c-121">Se a âncora for salva com êxito no repositório de âncoras, você poderá vê-la no portal do dispositivo do HoloLens em **Sistema > Gerenciador de mapas > Arquivos de Âncora Salvos no Dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="af84c-121">If the anchor is successfully saved to the anchor store, you can see it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**.</span></span> 
 
-## <a name="loading-anchors"></a><span data-ttu-id="04978-122">Como carregar âncoras</span><span class="sxs-lookup"><span data-stu-id="04978-122">Loading anchors</span></span>
+## <a name="loading-anchors"></a><span data-ttu-id="af84c-122">Como carregar âncoras</span><span class="sxs-lookup"><span data-stu-id="af84c-122">Loading anchors</span></span>
 
-<span data-ttu-id="04978-123">Quando um aplicativo é iniciado, é possível usar o blueprint a seguir para restaurar os componentes aos respectivos locais de âncora:</span><span class="sxs-lookup"><span data-stu-id="04978-123">When an application starts, you can use the following blueprint to restore components to their anchor locations:</span></span>
+<span data-ttu-id="af84c-123">Quando um aplicativo é iniciado, é possível usar o blueprint a seguir para restaurar os componentes aos respectivos locais de âncora:</span><span class="sxs-lookup"><span data-stu-id="af84c-123">When an application starts, you can use the following blueprint to restore components to their anchor locations:</span></span>
 
 [!INCLUDE[](includes/tabs-sa-3.md)]
 
-<span data-ttu-id="04978-124">Passo a passo detalhado:</span><span class="sxs-lookup"><span data-stu-id="04978-124">Breaking this down:</span></span>
-1. <span data-ttu-id="04978-125">Itere por todas as âncoras no repositório de âncoras.</span><span class="sxs-lookup"><span data-stu-id="04978-125">Iterate over all of the anchors in the anchor store.</span></span> 
-2. <span data-ttu-id="04978-126">Gere um ator na identidade.</span><span class="sxs-lookup"><span data-stu-id="04978-126">Spawn an actor at identity.</span></span>
-3. <span data-ttu-id="04978-127">Fixe esse ator no **ARPin** do repositório de âncoras.</span><span class="sxs-lookup"><span data-stu-id="04978-127">Pin that actor to the **ARPin** from the anchor store.</span></span>  
+<span data-ttu-id="af84c-124">Passo a passo detalhado:</span><span class="sxs-lookup"><span data-stu-id="af84c-124">Breaking this down:</span></span>
+1. <span data-ttu-id="af84c-125">Itere por todas as âncoras no repositório de âncoras.</span><span class="sxs-lookup"><span data-stu-id="af84c-125">Iterate over all of the anchors in the anchor store.</span></span> 
+2. <span data-ttu-id="af84c-126">Gere um ator na identidade.</span><span class="sxs-lookup"><span data-stu-id="af84c-126">Spawn an actor at identity.</span></span>
+3. <span data-ttu-id="af84c-127">Fixe esse ator no **ARPin** do repositório de âncoras.</span><span class="sxs-lookup"><span data-stu-id="af84c-127">Pin that actor to the **ARPin** from the anchor store.</span></span>  
 
-    * <span data-ttu-id="04978-128">É importante gerar o ator na identidade, uma vez que a âncora é responsável por reposicionar o holograma no mundo com base no local em que ele foi salvo.</span><span class="sxs-lookup"><span data-stu-id="04978-128">It's important to spawn the actor at identity since the anchor is responsible for repositioning the hologram in the world based on where it was saved.</span></span> <span data-ttu-id="04978-129">Transformações adicionadas aqui adicionarão um deslocamento à âncora.</span><span class="sxs-lookup"><span data-stu-id="04978-129">Any transform added here will add an offset to the anchor.</span></span> 
+    * <span data-ttu-id="af84c-128">É importante gerar o ator na identidade, uma vez que a âncora é responsável por reposicionar o holograma no mundo com base no local em que ele foi salvo.</span><span class="sxs-lookup"><span data-stu-id="af84c-128">It's important to spawn the actor at identity since the anchor is responsible for repositioning the hologram in the world based on where it was saved.</span></span> <span data-ttu-id="af84c-129">Transformações adicionadas aqui adicionarão um deslocamento à âncora.</span><span class="sxs-lookup"><span data-stu-id="af84c-129">Any transform added here will add an offset to the anchor.</span></span> 
 
-<span data-ttu-id="04978-130">A ID da âncora também é consultada para que atores diferentes possam ser gerados dependendo do nome salvo da âncora.</span><span class="sxs-lookup"><span data-stu-id="04978-130">The anchor ID is also queried so that different actors can be spawned depending on the anchor’s saved name.</span></span> 
+<span data-ttu-id="af84c-130">A ID da âncora também é consultada para que atores diferentes possam ser gerados dependendo do nome salvo da âncora.</span><span class="sxs-lookup"><span data-stu-id="af84c-130">The anchor ID is also queried so that different actors can be spawned depending on the anchor’s saved name.</span></span> 
 
-## <a name="removing-anchors"></a><span data-ttu-id="04978-131">Como remover âncoras</span><span class="sxs-lookup"><span data-stu-id="04978-131">Removing anchors</span></span> 
+## <a name="removing-anchors"></a><span data-ttu-id="af84c-131">Como remover âncoras</span><span class="sxs-lookup"><span data-stu-id="af84c-131">Removing anchors</span></span> 
 
-<span data-ttu-id="04978-132">Quando terminar de usar uma âncora, limpe âncoras individuais ou o repositório de âncoras inteiro com os componentes **Remover ARPin do Repositório WMRAnchor** e **Remover Todos os ARPins do Repositório WMRAnchor**.</span><span class="sxs-lookup"><span data-stu-id="04978-132">When you're done with an anchor, you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.</span></span>
+<span data-ttu-id="af84c-132">Quando terminar de usar uma âncora, limpe âncoras individuais ou o repositório de âncoras inteiro com os componentes **Remover ARPin do Repositório WMRAnchor** e **Remover Todos os ARPins do Repositório WMRAnchor**.</span><span class="sxs-lookup"><span data-stu-id="af84c-132">When you're done with an anchor, you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.</span></span>
 
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
-> <span data-ttu-id="04978-133">Tenha em mente que as Âncoras Espaciais ainda estão na versão beta, portanto, lembre-se de conferir este material novamente para obter informações e recursos atualizados.</span><span class="sxs-lookup"><span data-stu-id="04978-133">Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.</span></span>
+> <span data-ttu-id="af84c-133">Tenha em mente que as Âncoras Espaciais ainda estão na versão beta, portanto, lembre-se de conferir este material novamente para obter informações e recursos atualizados.</span><span class="sxs-lookup"><span data-stu-id="af84c-133">Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="04978-134">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="04978-134">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="af84c-134">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="af84c-134">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="04978-135">Se está seguindo o percurso de desenvolvimento do Unreal que estabelecemos, você está no meio da exploração dos principais blocos de construção do MRTK.</span><span class="sxs-lookup"><span data-stu-id="04978-135">If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="04978-136">Deste ponto, você pode prosseguir para o próximo bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="04978-136">From here, you can continue to the next building block:</span></span> 
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="04978-137">Âncoras Espaciais do Azure</span><span class="sxs-lookup"><span data-stu-id="04978-137">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
-
-<span data-ttu-id="04978-138">Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:</span><span class="sxs-lookup"><span data-stu-id="04978-138">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="af84c-135">Se está seguindo o percurso de desenvolvimento do Unreal que estabelecemos, você está no meio da exploração dos principais blocos de construção do MRTK.</span><span class="sxs-lookup"><span data-stu-id="af84c-135">If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="af84c-136">Deste ponto, você pode prosseguir para o próximo bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="af84c-136">From here, you can continue to the next building block:</span></span> 
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="04978-139">Câmera do HoloLens</span><span class="sxs-lookup"><span data-stu-id="04978-139">HoloLens camera</span></span>](unreal-hololens-camera.md)
+> [<span data-ttu-id="af84c-137">Âncoras Espaciais do Azure</span><span class="sxs-lookup"><span data-stu-id="af84c-137">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
 
-<span data-ttu-id="04978-140">Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#2-core-building-blocks) a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="04978-140">You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="af84c-138">Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:</span><span class="sxs-lookup"><span data-stu-id="af84c-138">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="04978-141">Veja também</span><span class="sxs-lookup"><span data-stu-id="04978-141">See also</span></span>
-* [<span data-ttu-id="04978-142">Âncoras Espaciais do Azure</span><span class="sxs-lookup"><span data-stu-id="04978-142">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
-* [<span data-ttu-id="04978-143">Âncoras espaciais</span><span class="sxs-lookup"><span data-stu-id="04978-143">Spatial anchors</span></span>](../../design/spatial-anchors.md)
-* [<span data-ttu-id="04978-144">Sistemas de coordenadas</span><span class="sxs-lookup"><span data-stu-id="04978-144">Coordinate systems</span></span>](../../design/coordinate-systems.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="af84c-139">Câmera do HoloLens</span><span class="sxs-lookup"><span data-stu-id="af84c-139">HoloLens camera</span></span>](unreal-hololens-camera.md)
+
+<span data-ttu-id="af84c-140">Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#2-core-building-blocks) a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="af84c-140">You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="af84c-141">Veja também</span><span class="sxs-lookup"><span data-stu-id="af84c-141">See also</span></span>
+
+* [<span data-ttu-id="af84c-142">Âncoras Espaciais do Azure</span><span class="sxs-lookup"><span data-stu-id="af84c-142">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
+* [<span data-ttu-id="af84c-143">Âncoras espaciais</span><span class="sxs-lookup"><span data-stu-id="af84c-143">Spatial anchors</span></span>](../../design/spatial-anchors.md)
+* [<span data-ttu-id="af84c-144">Sistemas de coordenadas</span><span class="sxs-lookup"><span data-stu-id="af84c-144">Coordinate systems</span></span>](../../design/coordinate-systems.md)
