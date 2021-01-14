@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Conheça as ferramentas e a arquitetura
-description: Documentação do desenvolvedor de realidade misturada para HoloLens e headsets imersivos.
+description: Conheça as ferramentas de desenvolvimento de realidade misturada de que você precisará para começar a criar aplicativos para HoloLens e headsets imersivos.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, unity, unreal, directx, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, desenvolvimento de realidade virtual, desenvolvimento de realidade aumentada
-ms.openlocfilehash: 75501e299b0bccbc35056ebb2da6657bd5d1e335
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 9bb0f1c62315bf106a0d6d45b8a2a24203ac9296
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925963"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007626"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introdução ao desenvolvimento de Realidade Misturada
 

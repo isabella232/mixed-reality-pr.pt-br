@@ -1,18 +1,18 @@
 ---
 title: Focar com o olhar e esperar
-description: Visão geral do modelo de entrada de focar com o olhar e esperar.
+description: Comece com uma visão geral do modelo de entrada de focar com olhar e esperar, incluindo modelos de interação, diretrizes de design e desafios exclusivos.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Acompanhamento do Olhar, Realidade Misturada, Entrada, Foco do Olhar, Direcionamento de Foco, HoloLens 2, Seleção baseada no Olhar, Permanência, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, design
-ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847816"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007706"
 ---
 # <a name="eye-gaze-and-dwell"></a>Focar com o olhar e esperar
 
@@ -43,6 +43,7 @@ Recomendamos um tempo inicial de 150 a 250 ms em uma determinada proximidade (o 
 ![Estados de espera](images/eyes_dwellstate_recommendation.png)<br>
 
 ## <a name="see-also"></a>Veja também
+
 * [Acompanhamento ocular](eye-tracking.md)
 * [Focar com o olhar e confirmar](gaze-and-commit-eyes.md)
 * [Focar e confirmar](gaze-and-commit.md)

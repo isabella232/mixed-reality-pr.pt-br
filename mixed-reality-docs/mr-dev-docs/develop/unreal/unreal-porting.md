@@ -1,18 +1,18 @@
 ---
 title: Como atualizar projetos no Unreal
-description: Visão geral das etapas de atualização da versão e APIs preteridas em projetos do Unreal.
+description: Fique atualizado com as etapas de atualização de versão, alterações de API e substituições para seus projetos do Unreal.
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, documentação, guias, recursos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, portabilidade, atualização
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010617"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010046"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Como atualizar projetos no Unreal
 

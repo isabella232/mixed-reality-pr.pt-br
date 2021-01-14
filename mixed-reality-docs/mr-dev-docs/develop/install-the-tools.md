@@ -1,18 +1,18 @@
 ---
 title: Instalar as ferramentas
-description: Comece aqui para se preparar para o desenvolvimento de realidade misturada. Este artigo sempre deve refletir as versões mais recentes do Unity, do Visual Studio e das outras ferramentas recomendadas para o desenvolvimento de headset imersivo do HoloLens e do Windows Mixed Reality.
+description: Comece aqui com as versões mais atuais do Unity, do Visual Studio e de ferramentas recomendadas para o desenvolvimento do HoloLens e de VR.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: addbab6a7bedc7c8065e7b68923bf1956a522a02
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 447f0713ef26757bd6fcf89684a7f5d59a052dcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925994"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009416"
 ---
 # <a name="install-the-tools"></a>Instalar as ferramentas
 

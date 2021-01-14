@@ -1,5 +1,5 @@
 ---
-title: Tutoriais de Nuvem do Azure – 4. Integrar as Âncoras Espaciais do Azure
+title: Integrar as Âncoras Espaciais do Azure
 description: Conclua este curso para saber como implementar as Âncoras Espaciais do Azure em um aplicativo do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens 2, âncoras espaciais do Azure, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679335"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008166"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrar as Âncoras Espaciais do Azure
 
@@ -60,7 +60,7 @@ Você observará que o campo do **Gerenciador de Âncora** no componente **Contr
 As Âncoras Espaciais do Azure não podem ser executadas no Unity, portanto, para testar a funcionalidade delas, você precisa implantar o projeto em seu dispositivo.
 
 > [!TIP]
-> Para obter um lembrete sobre como criar e implantar o seu projeto do Unity no HoloLens 2, confira as instruções em [Como criar o aplicativo para o seu HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+> Para obter um lembrete sobre como criar e implantar o seu projeto do Unity no HoloLens 2, confira as instruções em [Como criar o aplicativo no seu HoloLens 2](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
 
 ## <a name="run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>Execute o aplicativo no seu HoloLens 2 e siga as instruções no aplicativo
 

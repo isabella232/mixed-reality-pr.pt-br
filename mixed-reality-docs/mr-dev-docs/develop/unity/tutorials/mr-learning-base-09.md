@@ -1,22 +1,20 @@
 ---
-title: Tutoriais do MRTK – 9. Usando comandos de fala
-description: Este curso mostra como usar comandos de fala com o MRTK (Kit de Ferramentas de Realidade Misturada).
+title: Usando comandos de fala
+description: Este curso mostra como configurar, criar e usar comandos de fala em seus aplicativos de realidade misturada com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 6e008f3e46bc4a22499691e284020321d29a2f23
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613460"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007906"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
-
-## <a name="overview"></a>Visão geral
 
 Neste tutorial, você aprenderá a criar comandos de fala e a controlá-los globalmente. Você também aprenderá a controlar os comandos de fala locais que exigem que o usuário examine o objeto que controla o comando de fala.
 
@@ -32,7 +30,7 @@ No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitá
 ![Habilitar a funcionalidade de microfone](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> A funcionalidade do Microfone deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
+> A funcionalidade do Microfone deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#selecting-mrtk-and-project-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
 
 ## <a name="creating-speech-commands"></a>Criando comandos de fala
 

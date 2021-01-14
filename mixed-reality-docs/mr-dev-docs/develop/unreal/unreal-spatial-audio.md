@@ -1,18 +1,18 @@
 ---
 title: Áudio espacial no Unreal
-description: Conheça as vantagens e desvantagens do plug-in de áudio espacial do Unreal Engine.
+description: Conheça as vantagens e desvantagens do plug-in de áudio espacial para aplicativos de realidade misturada do Unreal para dispositivos HoloLens.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, áudio espacial
-ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609537"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009966"
 ---
 # <a name="spatial-audio-in-unreal"></a>Áudio espacial no Unreal
 
@@ -34,7 +34,6 @@ A primeira etapa para adicionar som espacial ao seu projeto é instalar o plug-i
 ![Plug-in de áudio espacial do Unreal](images/unreal-spatial-audio-img-01.png)
 
 Depois que o editor for reiniciado, o projeto estará pronto.
-
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>Como configurar o plug-in de espacialização para a plataforma HoloLens 2
 

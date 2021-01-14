@@ -1,22 +1,20 @@
 ---
-title: Tutoriais de recursos multiusuário – 2. Configurar o Photon Unity Networking
-description: Conclua este curso para aprender a implementar o Photon Unity Network em um aplicativo do HoloLens 2.
+title: Configurar o Photon Unity Networking
+description: Conclua este curso para aprender a implementar o Photon Unity Network em um aplicativo de realidade misturada do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679255"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007296"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurar o Photon Unity Networking
-
-## <a name="overview"></a>Visão geral
 
 Neste tutorial, você vai se preparar para criar uma experiência compartilhada usando o PUN (Photon Unity Networking). Você aprenderá a criar um aplicativo PUN, importar ativos PUN para seu projeto do Unity e conectar seu projeto do Unity ao aplicativo PUN.
 
@@ -30,14 +28,14 @@ Neste tutorial, você vai se preparar para criar uma experiência compartilhada 
 
 Nesta seção, você criará um projeto do Unity e o deixará pronto para o desenvolvimento do MRTK.
 
-Para isso, primeiro siga [Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar o seu aplicativo para o dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2), que incluem as seguintes etapas:
+Primeiro, siga [Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar o seu aplicativo para o dispositivo](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), que incluem as seguintes etapas:
 
 1. [Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais do MRTK*
-1. [Como alternar a plataforma de build](mr-learning-base-02.md#configuring-the-unity-project)
-1. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [Como configurar o projeto do Unity](mr-learning-base-02.md#configuring-the-unity-project)
-1. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *MultiUserCapabilities*
+2. [Como alternar a plataforma de build](mr-learning-base-02.md#switching-the-build-platform)
+3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Como configurar o projeto do Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *MultiUserCapabilities*
 
 Em seguida, siga as instruções em [Alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para:
 
@@ -50,7 +48,7 @@ No menu do Unity, selecione **Editar** > **Configurações de projeto...** para 
 
 ![Configurações de Player do Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-Em **Configurações de publicação**, role para baixo até a seção **Funcionalidades** e verifique novamente se as funcionalidades **InternetClient**, **Microfone**, **SpatialPerception** e **GazeInput**, que você habilitou durante a etapa [Como configurar o projeto Unity](mr-learning-base-02.md#configuring-the-unity-project) acima estão habilitadas.
+Em **Configurações de publicação**, role para baixo até a seção **Funcionalidades** e verifique novamente se as funcionalidades **InternetClient**, **Microfone**, **SpatialPerception** e **GazeInput**, que você habilitou durante a etapa [Como configurar o projeto Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings) acima estão habilitadas.
 
 Em seguida, habilite as seguintes funcionalidades adicionais:
 

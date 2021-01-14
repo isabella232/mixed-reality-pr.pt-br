@@ -1,22 +1,20 @@
 ---
-title: Tutoriais do MRTK – 3. Como configurar os perfis do MRTK
-description: Este curso mostra como configurar os perfis do MRTK (Kit de Ferramentas de Realidade Misturada).
+title: Como configurar os perfis do MRTK
+description: Este curso mostra como configurar perfis do MRTK (Kit de Ferramentas de Realidade Misturada) para seus aplicativos de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, reconhecimento espacial
 ms.localizationpriority: high
-ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 58f9c5f756a12e99fd10b136b2a450c6227b2dad
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613240"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008006"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Como configurar os perfis do MRTK
-
-## <a name="overview"></a>Visão geral
 
 Neste tutorial, você aprenderá a personalizar e configurar os perfis do MRTK.
 

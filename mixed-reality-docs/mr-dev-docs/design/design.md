@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, principais conceitos, interação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847599"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110444"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 
 ![resumo do design de realidade misturada](images/design-hero-image.png)
 
-Os aplicativos de Realidade Misturada são diferentes de qualquer outra coisa no mundo hoje, e projetá-los é um trabalho complicado. Você precisa levar em conta não apenas as combinações dos mundos real e virtual que está criando, mas também as novas experiências de usuário que elas proporcionam. Já que a Realidade Misturada é um tema substancial, selecionamos pontos importantes relativos ao seu espectro de design e os colocamos abaixo como uma série de pontos de verificação. Eles estão em ordem sequencial, porém, se você já estiver familiarizado com algum deles, fique à vontade para pular para qualquer uma das seções a seguir.
+Os aplicativos de Realidade Misturada são diferentes de qualquer outra coisa no mundo hoje, e projetá-los é um trabalho complicado. Você precisa levar em conta não apenas as combinações dos mundos real e virtual que está criando, mas também as novas experiências de usuário que elas proporcionam. Já que a Realidade Misturada é um tema substancial, selecionamos pontos importantes relativos ao seu espectro de design e os colocamos abaixo como uma série de pontos de verificação. Eles estão em ordem sequencial, porém, se você já estiver familiarizado com algum deles, fique à vontade para pular para qualquer uma das seções a seguir. 
+
+Dê uma olhada no nosso vídeo de visão geral de design para começar:
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>Pontos de verificação de design
 

@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: ad7d530de61864528ae80e4d0086687d282e6b18
+ms.sourcegitcommit: 8f9f98342aaf66645fd74dac3fad499f9d799ce7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97718121"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98109526"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>Configuração do feed da câmera PV
+
+> [!IMPORTANT]
+> A câmera PV é implementada nos plug-ins do Windows Mixed Reality e OpenXR. No entanto, o OpenXR precisa que o [plug-in do Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) esteja instalado. O OpenXR também tem uma limitação atual: a câmera pode funcionar com o DirectX11 RHI. Essa limitação será corrigida em uma versão posterior do Unreal. 
 
 - Em **Configurações de Projeto > HoloLens**, habilite a funcionalidade **Webcam**:
 

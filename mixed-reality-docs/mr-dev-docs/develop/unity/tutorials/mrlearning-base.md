@@ -1,18 +1,18 @@
 ---
-title: Tutoriais de introdução – 1. Visão geral e objetivos
-description: Este curso mostra como implementar o reconhecimento facial do Azure em um aplicativo de realidade misturada.
+title: Visão geral e objetivos do tutorial
+description: Conclua este curso para saber como implementar o reconhecimento facial do Azure em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696016"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010086"
 ---
 # <a name="1-overview-and-objectives"></a>1. Visão geral e objetivos
 

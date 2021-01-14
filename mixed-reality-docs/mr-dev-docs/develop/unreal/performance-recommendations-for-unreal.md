@@ -1,24 +1,25 @@
 ---
 title: Recomendações de desempenho para o Unreal
-description: Recomendações para um desempenho ideal para aplicativos de realidade misturada no Unreal
+description: Saiba como obter o melhor desempenho dos seus aplicativos de realidade misturada com as configurações recomendadas do projeto do Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, performance, optimization, settings, documentation
-ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865421"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009816"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Recomendações de desempenho para o Unreal
 
 O Unreal Engine traz vários recursos que podem aumentar o desempenho de um aplicativo, tudo isso com base na discussão descrita em [Recomendações de desempenho para realidade misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Você é incentivado a detectar os gargalos do aplicativo, analisar e criar o perfil de aplicativos de realidade misturada e correções de desempenho gerais antes de continuar.
 
 ## <a name="recommended-unreal-project-settings"></a>Configurações recomendadas de projetos do Unreal
+
 Você pode encontrar cada uma das configurações a seguir em **Editar > Configurações do Projeto**.
 
 1. Como usar o renderizador de VR para dispositivos móveis:
@@ -78,4 +79,5 @@ Você pode encontrar cada uma das configurações a seguir em **Editar > Configu
 ![Redução da permuta do sombreador móvel](images/unreal/performance-recommendations-img-08.png)
 
 ## <a name="see-also"></a>Confira também
+
 * [Diretrizes de desempenho de dispositivos móveis do mecanismo do Unreal]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

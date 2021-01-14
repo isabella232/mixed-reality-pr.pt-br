@@ -1,18 +1,18 @@
 ---
 title: Visão geral do desenvolvimento com o Unreal
-description: Visão geral do desenvolvimento de realidade misturada usando o Unreal Engine 4
+description: Introdução ao desenvolvimento de realidade misturada para HoloLens e VR usando o Unreal Engine 4 com nosso percurso de ponto de verificação selecionado.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, OpenXR
-ms.openlocfilehash: af5883ad71acf919133c330b1da8eb846d3a039f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926018"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009756"
 ---
 # <a name="unreal-development-overview"></a>Visão geral do desenvolvimento com o Unreal
 

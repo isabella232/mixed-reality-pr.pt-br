@@ -1,18 +1,18 @@
 ---
 title: Recomendações de desempenho para o Unity
-description: Dicas específicas do Unity para aprimorar o desempenho com aplicativos de realidade misturada.
+description: Conheça dicas específicas do Unity para aprimorar o desempenho com configurações de projeto, criação de perfis, gerenciamento de memória em seus aplicativos de realidade misturada.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2019
 ms.topic: article
 keywords: gráficos, cpu, gpu, renderização, coleta de lixo, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010477"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009346"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recomendações de desempenho para o Unity
 

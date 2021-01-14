@@ -1,18 +1,18 @@
 ---
-title: Tutoriais de Serviços de Fala do Azure – 4. Como configurar a intenção e o reconhecimento vocal natural
-description: Conclua este curso para saber como implementar o SDK de Fala do Azure em um aplicativo de realidade misturada.
+title: Configurar a intenção e o reconhecimento vocal natural
+description: Conclua este curso para aprender a configurar o reconhecimento vocal natural e intenção em aplicativos de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10, LUIS, portal do LUIS, intenção, entidades, enunciados, reconhecimento vocal natural
 ms.localizationpriority: high
-ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678505"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007766"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Como configurar a intenção e o reconhecimento vocal natural
 

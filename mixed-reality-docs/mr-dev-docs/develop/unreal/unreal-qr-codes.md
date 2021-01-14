@@ -1,18 +1,18 @@
 ---
 title: Códigos QR no Unreal
-description: Um guia para usar códigos QR no Unreal
+description: Saiba como configurar, usar e controlar códigos QR em aplicativos de realidade misturada no Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, códigos qr, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 72f08c22b8dcab5e13de2baae817b3496ada1a60
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926077"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010006"
 ---
 # <a name="qr-codes-in-unreal"></a>Códigos QR no Unreal
 
@@ -28,6 +28,7 @@ Preste atenção especial às [considerações sobre o ambiente](../../environme
 > Os códigos QR são os únicos tipos de imagens que podem ser controlados pelo HoloLens para uso imediato. Não há suporte ao módulo **UARTrackedImage** do Unreal no HoloLens. Se precisar controlar imagens personalizadas, acesse a [webcam](unreal-hololens-camera.md) do dispositivo e processe imagens usando uma biblioteca de reconhecimento de imagem de terceiros. 
 
 ## <a name="enabling-qr-detection"></a>Como habilitar a detecção de QR
+
 Como o HoloLens 2 precisa usar a webcam para ver os códigos QR, você precisará habilitá-la nas configurações do projeto:
 - Abra **Editar > Configurações de Projeto**, role o painel até a seção **Plataformas** e selecione **HoloLens**.
     + Expanda a seção **Funcionalidades** e marque **Webcam**.  
@@ -52,6 +53,7 @@ Os códigos QR são exibidos por meio do sistema de geometria controlado pelo RA
 ![Adicionar nó a Ao Adicionar Geometria Rastreada](images/unreal-qr-codes-tracked-geometry.png)
 
 ## <a name="using-a-tracked-qr-code"></a>Como usar um código QR controlado
+
 O Grafo de Eventos na imagem a seguir mostra o evento **OnUpdateTrackedImage** que está sendo usado para processar um ponto no centro de um código QR e imprimir os dados desse código.
 
 [!INCLUDE[](includes/tabs-qr-codes-2.md)]
@@ -63,6 +65,7 @@ Isto é o que está acontecendo:
 Você também pode [obter o sistema de coordenadas de um código QR](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code) no código.
 
 ## <a name="finding-the-unique-id"></a>Como localizar a ID exclusiva
+
 Todo código QR tem uma ID GUID exclusiva, que pode ser encontrada:
 - Arrastando e soltando o marcador **Como QRCode ARTracked** e pesquisando por **Obter ID Exclusiva**.
 

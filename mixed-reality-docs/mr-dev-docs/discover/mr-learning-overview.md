@@ -1,18 +1,18 @@
 ---
 title: Visão geral do módulo de Realidade Misturada do Learn
-description: Dê uma olhada nos módulos do Learn de Realidade Misturada disponíveis.
+description: Fique atualizado com todos os módulos de Realidade Misturada disponível hospedados na plataforma Microsoft Learn.
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757794"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006906"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 

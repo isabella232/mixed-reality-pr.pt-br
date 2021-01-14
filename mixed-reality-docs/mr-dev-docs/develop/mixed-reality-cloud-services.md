@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Visão geral dos serviços de nuvem da realidade misturada do Azure
-description: Recursos de serviços de nuvem de realidade misturada.
+description: Conheça todos os serviços de nuvem de realidade misturada do Azure que você pode integrar aos seus aplicativos Unity ou Unreal.
 author: hferrone
 ms.author: v-haferr
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem, Azure, remote rendering, âncoras espaciais, serviços cognitivos, cognição, unity, machine learning, tradução de fala, pesquisa visual computacional, Microsoft Graph
-ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865401"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009566"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Visão geral dos serviços de nuvem da realidade misturada do Azure
 

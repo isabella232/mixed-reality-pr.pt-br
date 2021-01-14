@@ -1,18 +1,18 @@
 ---
 title: Exemplos e aplicativos de recursos
-description: Dê uma olhada nos exemplos de recursos disponíveis para o HoloLens.
+description: Mantenha-se atualizado com todos os aplicativos de exemplos e de recursos de realidade misturada da Microsoft para HoloLens.
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, exemplos, MRTK, modo de pesquisa, HoloLens 2, códigos qr, WebRTC, captura de realidade misturada, comunicação remota holográfica, Ferramentas de Experiência de Usuário
 ms.localizationpriority: high
-ms.openlocfilehash: 2624949dd21b4c8e14ed45f152d41900b5f91faf
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615532"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007606"
 ---
 # <a name="samples-and-feature-apps"></a>Exemplos e aplicativos de recursos
 

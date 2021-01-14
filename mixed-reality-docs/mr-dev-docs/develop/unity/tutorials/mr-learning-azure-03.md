@@ -1,18 +1,18 @@
 ---
-title: Tutoriais de Nuvem do Azure – 3. Integrar a Visão Personalizada do Azure
-description: Conclua este curso para aprender a implementar a Visão Personalizada do Azure em um aplicativo do HoloLens 2.
+title: Integrar a Visão Personalizada do Azure
+description: Conclua este curso para aprender a implementar a Visão Personalizada do Azure em um aplicativo de realidade misturada do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, hololens 2, visão personalizada do azure, serviços cognitivos do azure, serviços de nuvem do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679345"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008206"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrar a Visão Personalizada do Azure
 

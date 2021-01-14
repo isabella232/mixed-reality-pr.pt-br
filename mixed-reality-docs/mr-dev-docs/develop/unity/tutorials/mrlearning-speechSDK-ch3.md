@@ -1,18 +1,18 @@
 ---
-title: Tutoriais de Serviços de Fala do Azure – 3. Adicionar o componente de tradução de fala dos Serviços Cognitivos do Azure
-description: Neste curso, você aprenderá a implementar o SDK de Fala do Azure em um aplicativo de realidade misturada.
+title: Adicionar o componente de tradução de fala dos Serviços Cognitivos do Azure
+description: Neste curso, você aprenderá a adicionar a tradução de fala dos Serviços Cognitivos do Azure em aplicativos de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10, tradução de fala
 ms.localizationpriority: high
-ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c647ca841e51b707aae4171b31b0b045c79fb03
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679915"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009876"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Adicionar o componente de tradução de fala dos Serviços Cognitivos do Azure
 

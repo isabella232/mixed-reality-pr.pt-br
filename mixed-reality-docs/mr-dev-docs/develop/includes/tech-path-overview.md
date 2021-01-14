@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915532"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052956"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -40,11 +40,11 @@ Há várias opções de hardware e emulador disponíveis para a criação de apl
 
 Há vários serviços de nuvem que podem ser integrados aos projetos de Realidade Misturada internos do Unity, especificamente o **Azure Remote Rendering** e as **Âncoras Espaciais do Azure**. Esses serviços podem adicionar conteúdo holográfico compartilhado e renderização 3D em tempo real aos seus aplicativos, tornando-os mais atraentes e envolventes para seus usuários.
 
-Todos esses serviços são abordados no decorrer do [percurso de desenvolvimento do Unity](../unity/unity-development-overview.md), que é o **caminho altamente recomendado para aprender a Realidade Misturada com o Unity**. Você já está nesse caminho, então continue lendo e siga o botão grande azul na parte inferior do artigo. No entanto, se você estiver em um estágio de desenvolvimento mais avançado e já souber de onde quer começar, confira nossa [visão geral dos serviços de nuvem](../mixed-reality-cloud-services.md) ou acesse diretamente os [recursos de serviços](../unity/unity-development-overview.md#5-adding-services).
+Todos esses serviços serão abordados no decorrer do [percurso de desenvolvimento do Unity para HoloLens](../unity/unity-development-overview.md), que é o **caminho altamente recomendado para aprender sobre a Realidade Misturada com o Unity**. Você já está nesse caminho, então continue lendo e siga o botão grande azul na parte inferior do artigo. No entanto, se você estiver em um estágio de desenvolvimento mais avançado e já souber de onde quer começar, confira nossa [visão geral dos serviços de nuvem](../mixed-reality-cloud-services.md) ou acesse diretamente os [recursos de serviços](../unity/unity-development-overview.md#5-adding-services).
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-Você pode usar o **Microsoft Dynamics 365 Guides** para conectar visualmente as instruções holográficas ao ambiente virtual dos seus aplicativos, fornecendo importantes informações aos seus usuários quando e onde for necessário. Esse recurso também é abordado no percurso de desenvolvimento do Unity, mas, se você quiser se adiantar, poderá ver o que há na oferta selecionando a guia **Dynamics 365** [aqui](../unity/unity-development-overview.md#5-adding-services).
+Você pode usar o **Microsoft Dynamics 365 Guides** para conectar visualmente as instruções holográficas ao ambiente virtual dos seus aplicativos, fornecendo importantes informações aos seus usuários quando e onde for necessário. Esse recurso também é abordado no percurso de desenvolvimento do Unity para HoloLens, mas, se você quiser se adiantar, poderá ver o que há na oferta selecionando a guia **Dynamics 365** [aqui](../unity/unity-development-overview.md#5-adding-services).
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,7 +88,7 @@ Há várias opções de hardware, emulador e streaming disponíveis para a cria�
 
 ## <a name="cloud-services"></a>Serviços de Nuvem
 
-Ao criar aplicativos de Realidade Misturada no Unreal, você tem acesso a um serviço de nuvem avançado chamado **Âncoras Espaciais do Azure** , que você pode usar para adicionar, persistir e compartilhar o conteúdo holográfico entre diferentes dispositivos. 
+Ao criar aplicativos de Realidade Misturada no Unreal, você tem acesso a um serviço de nuvem avançado chamado **Âncoras Espaciais do Azure**, que você pode usar para adicionar, persistir e compartilhar o conteúdo holográfico entre diferentes dispositivos. 
 
 As Âncoras Espaciais do Azure são abordadas no decorrer do [percurso de desenvolvimento do Unreal](../unreal/unreal-development-overview.md), que é o **caminho altamente recomendado para aprender a Realidade Misturada com o Unreal**. Você já está nesse caminho, então continue lendo e siga o botão grande azul na parte inferior do artigo. No entanto, se você estiver em um estágio de desenvolvimento mais avançado e já souber de onde quer começar, confira nossa [visão geral dos serviços de nuvem](../mixed-reality-cloud-services.md) ou acesse diretamente os [recursos de serviços](../unreal/unreal-development-overview.md#5-adding-services).
 

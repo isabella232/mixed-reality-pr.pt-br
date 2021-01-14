@@ -1,18 +1,18 @@
 ---
-title: Tutoriais de recursos multiusuário – 3. Como conectar vários usuários
-description: Conclua este curso para aprender a conectar vários usuários em um aplicativo do HoloLens 2.
+title: Como conectar vários usuários
+description: Conclua este curso para aprender a conectar vários usuários em um aplicativo de realidade misturada do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: c16182fe2363b4682a25d70715f5ee8cb65d5886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679755"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007206"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Como conectar vários usuários
 
@@ -112,7 +112,7 @@ Se você criar e implantar agora o projeto do Unity no HoloLens, então, no Unit
 ![Animação mostrando o Unity com os usuários em rede](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> Para obter um lembrete sobre como criar e implantar o seu projeto do Unity no HoloLens 2, confira as instruções em [Como criar o aplicativo para o seu HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+> Para obter um lembrete sobre como criar e implantar o seu projeto do Unity no HoloLens 2, confira as instruções em [Como criar o aplicativo para o seu HoloLens 2](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
 
 > [!CAUTION]
 > O aplicativo precisa se conectar ao Photon; portanto, verifique se o computador/o dispositivo está conectado à Internet.

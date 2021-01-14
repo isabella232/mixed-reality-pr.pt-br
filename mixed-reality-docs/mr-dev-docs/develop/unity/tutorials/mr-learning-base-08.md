@@ -1,22 +1,20 @@
 ---
-title: Tutoriais do MRTK – 8. Como usar o acompanhamento de olho
-description: Este curso mostra como usar o acompanhamento com os olhos com o MRTK (Kit de Ferramentas de Realidade Misturada).
+title: Como usar o acompanhamento de olho
+description: Este curso mostra como usar o acompanhamento com os olhos em seus aplicativos de realidade misturada com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613480"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007886"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
-
-## <a name="overview"></a>Visão geral
 
 Neste tutorial, você aprenderá a habilitar o acompanhamento de olho para o HoloLens 2 e a adicionar acompanhamento de olho a objetos para disparar ações quando o usuário examina os objetos.
 
@@ -35,7 +33,7 @@ No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitá
 ![Janela Configurador de Projeto do MRTK no Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> A funcionalidade de Entrada de Foco deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
+> A funcionalidade de Entrada de Foco deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#selecting-mrtk-and-project-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Como habilitar o foco baseado em olho no provedor de foco
 

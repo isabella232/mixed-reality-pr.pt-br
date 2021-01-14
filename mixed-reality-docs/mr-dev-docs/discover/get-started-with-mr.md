@@ -1,18 +1,18 @@
 ---
 title: Introdução à Realidade Misturada
-description: Aprenda os conceitos básicos de teoria, desenvolvimento e casos de uso comuns da Realidade Misturada.
+description: Escolha sua trilha de desenvolvimento para aprender as noções básicas da teoria, do desenvolvimento e de casos de uso comuns da realidade misturada.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757664"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009716"
 ---
 # <a name="get-started-with-mixed-reality"></a>Introdução à Realidade Misturada
 

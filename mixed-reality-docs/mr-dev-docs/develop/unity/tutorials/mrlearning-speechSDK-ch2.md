@@ -1,20 +1,20 @@
 ---
-title: Tutoriais de Serviços de Fala do Azure – 2. Adicionar um modo offline para tradução de fala em texto local
-description: Conclua este curso para saber como implementar o SDK de Fala do Azure em um aplicativo de realidade misturada.
+title: Adicionar um modo offline para tradução de fala em texto local
+description: Conclua este curso para saber como adicionar o modo offline para a conversão local de fala em texto em aplicativos de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679725"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010076"
 ---
-# <a name="2-using-speech-recognition-to-execute-commands"></a>2. Como usar o reconhecimento de fala para executar comandos
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Adicionar um modo offline para tradução de fala em texto local
 
 Neste tutorial, você adicionará a capacidade de executar comandos usando o reconhecimento de fala do Azure, que permitirá que você faça algo com base na palavra ou na frase que você definir.
 
@@ -29,18 +29,18 @@ Na janela Hierarquia, selecione o objeto **Lunarcom** e, na janela Inspetor, use
 * No campo **Palavra de Despertar**, insira uma frase adequada, por exemplo, _Ativar o terminal_.
 * No campo **Palavra de Ignorar**, insira uma frase adequada, por exemplo, _Ignorar o terminal_.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
+![Editor do Unity com o componente de script Reconhecedor de Palavra de Despertar do Lunarcom realçado](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > O componente Reconhecedor de Palavra de Despertar do Lunarcom (Script) não faz parte do MRTK. Ele foi fornecido com os ativos deste tutorial.
 
 Se agora você inserir o modo de jogo, como no tutorial anterior, o painel do terminal será habilitado por padrão, mas você poderá desabilitá-lo dizendo a Palavra de Ignorar, **Ignorar terminal**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
+![Editor do Unity no modo de reprodução com o recurso de reconhecimento de fala em uso](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
 E habilitá-la novamente dizendo a Palavra de Despertar, **Ativar terminal**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
+![Editor do Unity no modo de reprodução com terminal ativo](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
 > [!CAUTION]
 > O aplicativo precisa se conectar ao Azure, portanto, verifique se o computador/dispositivo está conectado à Internet.
