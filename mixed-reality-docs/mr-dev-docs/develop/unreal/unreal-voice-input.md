@@ -6,18 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realidade mista do Windows, inreal, Engine 4, UE4, HoloLens 2, voz, entrada de voz, reconhecimento de fala, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
+ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010066"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205831"
 ---
 # <a name="voice-input-in-unreal"></a>Entrada de voz em não real
 
 A entrada de voz em forma inreal permite que você interaja com um holograma sem precisar usar gestos de mão e só tem suporte para o HoloLens 2. A entrada de voz no HoloLens 2 é alimentada pelo mesmo mecanismo que dá suporte à fala em todos os outros aplicativos universais do Windows, mas o uso não real usa um mecanismo mais limitado para processar a entrada de voz. Isso limita os recursos de entrada de voz em mapeamentos de fala inreais para predefinidos, que são abordados nas seções a seguir. 
 
 ## <a name="enabling-speech-recognition"></a>Habilitando o reconhecimento de fala
+
+Se você usar o plug-in do Windows Mixed Reality, a entrada de voz não exigirá nenhuma API especial do Windows Mixed Reality; Ele foi criado na API de mapeamento de [entrada](https://docs.unrealengine.com/Gameplay/Input/index.html) do mecanismo 4 inreal existente. Se você usar o OpenXR, também deverá instalar [o plug-in do Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
 
 Para habilitar o reconhecimento de fala no HoloLens:
 1. Selecione **configurações do projeto > plataforma > recursos de > do HoloLens** e habilite o **microfone**. 
@@ -29,8 +31,6 @@ Para habilitar o reconhecimento de fala no HoloLens:
 ![Configurações de reconhecimento de fala do Windows](images/unreal/speech-recognition-settings.png)
 
 3. Uma caixa de diálogo será exibida quando o aplicativo começar a perguntar se você deseja habilitar o microfone. Selecionar **Sim** inicia a entrada de voz no aplicativo.
-
-A entrada de voz não requer nenhuma API especial do Windows Mixed Reality; Ele foi criado na API de mapeamento de [entrada](https://docs.unrealengine.com/Gameplay/Input/index.html) do mecanismo 4 inreal existente. 
 
 ## <a name="adding-speech-mappings"></a>Adicionando mapeamentos de fala
 
