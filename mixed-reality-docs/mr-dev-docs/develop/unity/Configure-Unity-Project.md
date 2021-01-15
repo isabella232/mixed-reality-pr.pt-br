@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho
-ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 70df0314cb714d78c2eeb17335f67d6d90134770
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009896"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226445"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Como configurar seu projeto sem o MRTK
 
@@ -80,7 +80,7 @@ Seu aplicativo agora pode manipular a renderização Holographic e a entrada esp
 
 É recomendável que você faça as declarações de manifesto no Unity para incluí-las em todos os projetos futuros que você exportar. Os recursos aplicáveis para habilitar as APIs do Unity comumente usadas para realidade misturada são:
 
-|  Capacidade  |  APIs que exigem capacidade | 
+|  Funcionalidade  |  APIs que exigem capacidade | 
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver (acesso a malhas de [mapeamento espacial](../../design/spatial-mapping.md) no HoloLens) &mdash; *nenhum recurso necessário para acompanhamento espacial geral do headset* | 
 |  Integrada  |  VideoCapture e fotocaptura | 
@@ -124,7 +124,7 @@ Se seu aplicativo estiver direcionando para o HoloLens especificamente, você pr
 Agora que seu projeto está pronto, você pode começar a desenvolver sua experiência de realidade mista:
 
 * Adicionar [blocos de construção principais](unity-development-overview.md#2-core-building-blocks)
-* Confira as [APIs e os recursos de plataforma](unity-development-overview.md#3-platform-capabilities-and-apis) disponíveis
+* Confira as [APIs e os recursos de plataforma](unity-development-overview.md#3-advanced-features) disponíveis
 * Saiba como [implantar seu aplicativo](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
 * Usar o [simulador de realidade misturada](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

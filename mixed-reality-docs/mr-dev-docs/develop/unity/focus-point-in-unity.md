@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, ponto de foco, plano de foco, plano de estabilização, ponto de estabilização, Reprojeção, LSR, buffer de profundidade, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009336"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226395"
 ---
 # <a name="focus-point-in-unity"></a>Ponto de foco no Unity
 
@@ -63,8 +63,8 @@ Ou vá diretamente para a implantação de seu aplicativo em um dispositivo ou e
 > [!div class="nextstepaction"]
 > [Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows](../platform-capabilities-and-apis/using-visual-studio.md)
 
-Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#3-platform-capabilities-and-apis) a qualquer momento.
+Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#3-advanced-features) a qualquer momento.
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Confira também
 
 * [Plano de estabilização](../platform-capabilities-and-apis/hologram-stability.md#reprojection)
