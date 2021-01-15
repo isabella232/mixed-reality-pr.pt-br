@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, realidade misturada, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos de sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising
-ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
+ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757624"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215971"
 ---
 # <a name="distributing-your-apps"></a>Distribuindo seus aplicativos
 
@@ -66,7 +66,7 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
     <td><a href="submitting-an-app-to-the-microsoft-store.md"><strong>Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>✔️</td>
-    <td>✔️</td>s
+    <td>✔️</td>
 </tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>Microsoft Store para Empresas</strong></a></td>
@@ -97,8 +97,8 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
 
 * Se você precisar instalar um aplicativo do HoloLens 2 enquanto estiver offline, consulte as instruções [offline seguras do hololens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) ou instale o aplicativo por meio de um pacote de provisionamento sem habilitar o modo de desenvolvedor.
 
-* Você também pode implantar compilações em seu dispositivo e compartilhá-las com outros desenvolvedores que têm o modo de desenvolvedor habilitado [Implantando e Depurando com o Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou [instalando um pacote de aplicativos com o portal do dispositivo](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
+* Você também pode implantar compilações em seu dispositivo e compartilhá-las com outros desenvolvedores que têm o modo de desenvolvedor habilitado [Implantando e Depurando com o Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou [instalando um pacote de aplicativos com o portal do dispositivo](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Localizando, instalando e desinstalando aplicativos do Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 
