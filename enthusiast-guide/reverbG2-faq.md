@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009466"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242527"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -92,3 +92,13 @@ Para fazer isso
 
 A partir daqui, você pode alterar a associação do controlador ativo para "personalizado", que abrirá a opção para experimentar associações de jogos compartilhadas pela Comunidade.
 Se nenhuma associação de jogo personalizada tiver sido compartilhada para este jogo ainda (ou se você não estiver totalmente satisfeito com as que você tentou), também poderá criar suas próprias associações de jogos personalizadas e até mesmo ajudar o restante da Comunidade, compartilhando-as após algumas sessões de jogo.
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>Tenho todos os cabos conectados ao headset e ao PC, mas não liga
+
+Verifique se o cabo conectado ao headset está totalmente encaixado. Há um pequeno ponto na parte superior do cabo que será alinhado ao lado da borda superior do headset quando ele tiver sido totalmente inserido:
+
+![Ponto pequeno na parte superior do cabo](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Como posso desligar o headset enquanto ainda estou usando meu PC
+
+Desconecte o adaptador de conexão AC da caixa de link no cabo do headset para remover a energia para o headset.
