@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Inreal, não real Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade mista, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, WinRT, DLL
-ms.openlocfilehash: ac28ce08443de40d9f7eb32eb1b2e8e071a618b3
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0d181d1eff644de0512c40a140474612a1540b40
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007026"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247749"
 ---
 # <a name="winrt-in-unreal"></a>WinRT no Unreal
 
@@ -21,12 +21,12 @@ Ao longo do desenvolvimento do seu HoloLens, talvez seja necessário escrever um
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se está seguindo o percurso de desenvolvimento do Unreal que apresentamos, você está no meio da exploração de funcionalidades e APIs da plataforma de Realidade Misturada. A partir daqui, você pode continuar com qualquer [tópico](unreal-development-overview.md#3-platform-capabilities-and-apis) ou ir diretamente para a implantação de seu aplicativo em um dispositivo ou emulador.
+Se está seguindo o percurso de desenvolvimento do Unreal que apresentamos, você está no meio da exploração de funcionalidades e APIs da plataforma de Realidade Misturada. A partir daqui, você pode continuar com qualquer [tópico](unreal-development-overview.md#3-advanced-features) ou ir diretamente para a implantação de seu aplicativo em um dispositivo ou emulador.
 
 > [!div class="nextstepaction"]
 > [Como fazer a implantação no dispositivo](unreal-deploying.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [APIs do C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [Classe FileSavePicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 

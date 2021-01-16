@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, vídeo, captura, câmera
-ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108859"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247719"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Captura de realidade misturada para desenvolvedores
 
@@ -214,7 +214,7 @@ Outros aplicativos podem fazer isso usando as [APIs de captura de mídia do Wind
 
 Os aplicativos têm duas opções para adicionar o efeito:
 * A API mais antiga: [Windows. Media. Capture. MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* A nova API recomendada pela Microsoft (retorna um objeto, possibilitando a manipulação de propriedades dinâmicas): [Windows. Media. Capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. Capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) que exige que o aplicativo Crie sua própria implementação de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) e [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Consulte o exemplo da MRC [efeito, por exemplo, uso.
+* A nova API recomendada pela Microsoft (retorna um objeto, possibilitando a manipulação de propriedades dinâmicas): [Windows. Media. Capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. Capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) que exige que o aplicativo Crie sua própria implementação de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) e [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Consulte o [aplicativo de exemplo da MRC](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) para obter exemplos.
 
 >[!NOTE]
 > O namespace Windows. Media. MixedRealityCapture não será reconhecido pelo Visual Studio, mas as cadeias de caracteres ainda são válidas.
@@ -228,7 +228,7 @@ Efeito de vídeo da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCapt
 |  RecordingIndicatorEnabled  |  booleano  |  TRUE  |  Sinalizador para habilitar ou desabilitar o indicador de gravação na tela durante a captura de holograma. |
 |  VideoStabilizationEnabled  |  booleano  |  FALSE  |  Sinalizador para habilitar ou desabilitar a estabilização de vídeo da plataforma do controlador de HoloLens. |
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  Defina quantos quadros históricos são usados para estabilização de vídeo. 0 é a latência e quase "livre" de uma perspectiva de potência e desempenho. 15 é recomendado para a qualidade mais alta (com o custo de 15 quadros de latência e memória). |
-|  GlobalOpacityCoefficient  |  FLOAT  |  0,9 (HoloLens) 1,0 (Headset de imersão)  |  Defina o coeficiente de opacidade global de holograma no intervalo de 0,0 (totalmente transparente) para 1,0 (totalmente opaco). |
+|  GlobalOpacityCoefficient  |  float  |  0,9 (HoloLens) 1,0 (Headset de imersão)  |  Defina o coeficiente de opacidade global de holograma no intervalo de 0,0 (totalmente transparente) para 1,0 (totalmente opaco). |
 |  BlankOnProtectedContent  |  booleano  |  FALSE  |  Sinalizador para habilitar ou desabilitar o retorno de um quadro vazio se houver um aplicativo UWP 2D mostrando o conteúdo protegido. Se esse sinalizador for false e um aplicativo UWP 2D estiver mostrando o conteúdo protegido, o aplicativo UWP 2D será substituído por uma textura de conteúdo protegida no headset e na captura da realidade misturada. |
 |  ShowHiddenMesh  |  booleano  |  FALSE  |  Sinalizador para habilitar ou desabilitar mostrando a malha da área oculta da câmera Holographic e o conteúdo vizinho. |
 | Sobrecolocações | Tamanho | 0, 0 | Defina o tamanho de saída desejado após o corte para estabilização de vídeo. Um tamanho de corte padrão será escolhido se 0 ou um tamanho de saída inválido for especificado. |
@@ -244,8 +244,8 @@ Efeito de áudio da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCapt
 | Nome da Propriedade | Digite | Valor padrão | Descrição |
 |----------|----------|----------|----------|
 | Mixermode | UINT32 | 2 (MIC e áudio do sistema) | Enum usado para indicar quais fontes de áudio devem ser usadas: 0 (somente áudio do MIC), 1 (somente áudio do sistema), 2 (áudio do sistema e MIC) |
-| LoopbackGain | FLOAT | Configuração de **aproveitamento de áudio do aplicativo** no portal do dispositivo Windows | Obter para aplicar ao volume de áudio do sistema. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
-| MicrophoneGain | FLOAT | Configuração de **lucro de áudio do MIC** no portal do dispositivo Windows | Obter para aplicar ao volume do MIC. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
+| LoopbackGain | float | Configuração de **aproveitamento de áudio do aplicativo** no portal do dispositivo Windows | Obter para aplicar ao volume de áudio do sistema. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
+| MicrophoneGain | float | Configuração de **lucro de áudio do MIC** no portal do dispositivo Windows | Obter para aplicar ao volume do MIC. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
 
 >[!NOTE]
 > Você pode alterar o valor padrão de **LoopbackGain** ou **MicrophoneGain** no portal do dispositivo Windows acessando a [página de captura da realidade misturada](using-the-windows-device-portal.md#mixed-reality-capture) e ajustando o controle deslizante ao lado de suas respectivas configurações. Ambas as configurações assumem como padrão **1,0**, mas podem ser definidas como qualquer valor entre **0,0** e **5,0**.
