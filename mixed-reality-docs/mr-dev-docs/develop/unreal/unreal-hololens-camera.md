@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, câmera, câmera PV, MRC, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 15eba0c992d6d3d8895314f1a6128ace18c02483
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6f1301e0daeb44521dfb4e93a915d49d9aea8443
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010056"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247759"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Câmera de foto/vídeo do HoloLens no Unreal
 
@@ -35,7 +35,7 @@ Ou vá diretamente para a implantação de seu aplicativo em um dispositivo ou e
 > [!div class="nextstepaction"]
 > [Como fazer a implantação no dispositivo](unreal-deploying.md)
 
-Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#3-platform-capabilities-and-apis) a qualquer momento.
+Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#3-advanced-features) a qualquer momento.
 
 ## <a name="see-also"></a>Veja também
 
