@@ -6,43 +6,43 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, persistência, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: d74f9c0a118c1886037c564073742ebedc7d0146
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 7d12764dac2259388fe57d3924165783eab3dac5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010437"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583491"
 ---
-# <a name="persistence-in-unity"></a><span data-ttu-id="b9337-104">Persistência no Unity</span><span class="sxs-lookup"><span data-stu-id="b9337-104">Persistence in Unity</span></span>
+# <a name="persistence-in-unity"></a><span data-ttu-id="f1c02-104">Persistência no Unity</span><span class="sxs-lookup"><span data-stu-id="f1c02-104">Persistence in Unity</span></span>
 
-<span data-ttu-id="b9337-105">**Namespace:** *UnityEngine. XR. WSA. Persistence*</span><span class="sxs-lookup"><span data-stu-id="b9337-105">**Namespace:** *UnityEngine.XR.WSA.Persistence*</span></span><br>
-<span data-ttu-id="b9337-106">**Classe:** *WorldAnchorStore*</span><span class="sxs-lookup"><span data-stu-id="b9337-106">**Class:** *WorldAnchorStore*</span></span>
+<span data-ttu-id="f1c02-105">**Namespace:** *UnityEngine. XR. WSA. Persistence*</span><span class="sxs-lookup"><span data-stu-id="f1c02-105">**Namespace:** *UnityEngine.XR.WSA.Persistence*</span></span><br>
+<span data-ttu-id="f1c02-106">**Classe:** *WorldAnchorStore*</span><span class="sxs-lookup"><span data-stu-id="f1c02-106">**Class:** *WorldAnchorStore*</span></span>
 
-<span data-ttu-id="b9337-107">O WorldAnchorStore é a chave para criar experiências de Holographic em que os hologramas permanecem em posições reais específicas entre instâncias do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b9337-107">The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application.</span></span> <span data-ttu-id="b9337-108">Os usuários podem então fixar os hologramas individuais onde quiserem e encontrá-los mais tarde no mesmo ponto em vários usos de seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b9337-108">Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.</span></span>
+<span data-ttu-id="f1c02-107">O WorldAnchorStore é a chave para criar experiências de Holographic em que os hologramas permanecem em posições reais específicas entre instâncias do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f1c02-107">The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application.</span></span> <span data-ttu-id="f1c02-108">Os usuários podem então fixar os hologramas individuais onde quiserem e encontrá-los mais tarde no mesmo ponto em vários usos de seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f1c02-108">Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.</span></span>
 
-## <a name="how-to-persist-holograms-across-sessions"></a><span data-ttu-id="b9337-109">Como manter os hologramas entre as sessões</span><span class="sxs-lookup"><span data-stu-id="b9337-109">How to persist holograms across sessions</span></span>
+## <a name="how-to-persist-holograms-across-sessions"></a><span data-ttu-id="f1c02-109">Como manter os hologramas entre as sessões</span><span class="sxs-lookup"><span data-stu-id="f1c02-109">How to persist holograms across sessions</span></span>
 
-<span data-ttu-id="b9337-110">O WorldAnchorStore permitirá que você persista o local de WorldAnchor entre as sessões.</span><span class="sxs-lookup"><span data-stu-id="b9337-110">The WorldAnchorStore will allow you to persist the location of WorldAnchor's across sessions.</span></span> <span data-ttu-id="b9337-111">Para realmente manter os hologramas entre as sessões, você precisará controlar separadamente seus GameObjects que usam uma âncora mundial específica.</span><span class="sxs-lookup"><span data-stu-id="b9337-111">To actually persist holograms across sessions, you'll need to separately keep track of your GameObjects that use a particular world anchor.</span></span> <span data-ttu-id="b9337-112">Geralmente faz sentido criar uma raiz gameobject com uma âncora mundial e ter hologramas filhos ancorados por ela com um deslocamento de posição local.</span><span class="sxs-lookup"><span data-stu-id="b9337-112">It often makes sense to create a GameObject root with a world anchor and have children holograms anchored by it with a local position offset.</span></span>
+<span data-ttu-id="f1c02-110">O WorldAnchorStore permitirá que você persista o local de WorldAnchor entre as sessões.</span><span class="sxs-lookup"><span data-stu-id="f1c02-110">The WorldAnchorStore will allow you to persist the location of WorldAnchor's across sessions.</span></span> <span data-ttu-id="f1c02-111">Para realmente manter os hologramas entre as sessões, você precisará controlar separadamente seus GameObjects que usam uma âncora mundial específica.</span><span class="sxs-lookup"><span data-stu-id="f1c02-111">To actually persist holograms across sessions, you'll need to separately keep track of your GameObjects that use a particular world anchor.</span></span> <span data-ttu-id="f1c02-112">Geralmente faz sentido criar uma raiz gameobject com uma âncora mundial e ter hologramas filhos ancorados por ela com um deslocamento de posição local.</span><span class="sxs-lookup"><span data-stu-id="f1c02-112">It often makes sense to create a GameObject root with a world anchor and have children holograms anchored by it with a local position offset.</span></span>
 
-<span data-ttu-id="b9337-113">Para carregar os hologramas de sessões anteriores:</span><span class="sxs-lookup"><span data-stu-id="b9337-113">To load holograms from previous sessions:</span></span>
-1. <span data-ttu-id="b9337-114">Obter o WorldAnchorStore</span><span class="sxs-lookup"><span data-stu-id="b9337-114">Get the WorldAnchorStore</span></span>
-2. <span data-ttu-id="b9337-115">Carregar dados de aplicativo relacionados à âncora mundial, que fornece a ID da âncora mundial</span><span class="sxs-lookup"><span data-stu-id="b9337-115">Load app data relating to the world anchor, which gives you the ID of the world anchor</span></span>
-3. <span data-ttu-id="b9337-116">Carregar uma âncora mundial de sua ID</span><span class="sxs-lookup"><span data-stu-id="b9337-116">Load a world anchor from its ID</span></span>
+<span data-ttu-id="f1c02-113">Para carregar os hologramas de sessões anteriores:</span><span class="sxs-lookup"><span data-stu-id="f1c02-113">To load holograms from previous sessions:</span></span>
+1. <span data-ttu-id="f1c02-114">Obter o WorldAnchorStore</span><span class="sxs-lookup"><span data-stu-id="f1c02-114">Get the WorldAnchorStore</span></span>
+2. <span data-ttu-id="f1c02-115">Carregar dados de aplicativo relacionados à âncora mundial, que fornece a ID da âncora mundial</span><span class="sxs-lookup"><span data-stu-id="f1c02-115">Load app data relating to the world anchor, which gives you the ID of the world anchor</span></span>
+3. <span data-ttu-id="f1c02-116">Carregar uma âncora mundial de sua ID</span><span class="sxs-lookup"><span data-stu-id="f1c02-116">Load a world anchor from its ID</span></span>
 
-<span data-ttu-id="b9337-117">Para salvar os hologramas para sessões futuras:</span><span class="sxs-lookup"><span data-stu-id="b9337-117">To save holograms for future sessions:</span></span>
-1. <span data-ttu-id="b9337-118">Obter o WorldAnchorStore</span><span class="sxs-lookup"><span data-stu-id="b9337-118">Get the WorldAnchorStore</span></span>
-2. <span data-ttu-id="b9337-119">Salvar uma âncora mundial especificando uma ID</span><span class="sxs-lookup"><span data-stu-id="b9337-119">Save a world anchor specifying an ID</span></span>
-3. <span data-ttu-id="b9337-120">Salvar dados de aplicativo relacionados à âncora mundial, juntamente com uma ID</span><span class="sxs-lookup"><span data-stu-id="b9337-120">Save app data relating to the world anchor along with an ID</span></span>
+<span data-ttu-id="f1c02-117">Para salvar os hologramas para sessões futuras:</span><span class="sxs-lookup"><span data-stu-id="f1c02-117">To save holograms for future sessions:</span></span>
+1. <span data-ttu-id="f1c02-118">Obter o WorldAnchorStore</span><span class="sxs-lookup"><span data-stu-id="f1c02-118">Get the WorldAnchorStore</span></span>
+2. <span data-ttu-id="f1c02-119">Salvar uma âncora mundial especificando uma ID</span><span class="sxs-lookup"><span data-stu-id="f1c02-119">Save a world anchor specifying an ID</span></span>
+3. <span data-ttu-id="f1c02-120">Salvar dados de aplicativo relacionados à âncora mundial, juntamente com uma ID</span><span class="sxs-lookup"><span data-stu-id="f1c02-120">Save app data relating to the world anchor along with an ID</span></span>
 
-### <a name="getting-the-worldanchorstore"></a><span data-ttu-id="b9337-121">Obtendo o WorldAnchorStore</span><span class="sxs-lookup"><span data-stu-id="b9337-121">Getting the WorldAnchorStore</span></span>
+### <a name="getting-the-worldanchorstore"></a><span data-ttu-id="f1c02-121">Obtendo o WorldAnchorStore</span><span class="sxs-lookup"><span data-stu-id="f1c02-121">Getting the WorldAnchorStore</span></span>
 
-<span data-ttu-id="b9337-122">Você desejará manter uma referência ao WorldAnchorStore para saber quando ele está pronto para executar uma operação.</span><span class="sxs-lookup"><span data-stu-id="b9337-122">You'll want to keep a reference to the WorldAnchorStore so you know when it's ready to perform an operation.</span></span> <span data-ttu-id="b9337-123">Como essa é uma chamada assíncrona, possivelmente assim que iniciar, você deseja chamar:</span><span class="sxs-lookup"><span data-stu-id="b9337-123">Since this is an async call, potentially as soon as start up, you want to call:</span></span>
+<span data-ttu-id="f1c02-122">Você desejará manter uma referência ao WorldAnchorStore para saber quando ele está pronto para executar uma operação.</span><span class="sxs-lookup"><span data-stu-id="f1c02-122">You'll want to keep a reference to the WorldAnchorStore so you know when it's ready to perform an operation.</span></span> <span data-ttu-id="f1c02-123">Como essa é uma chamada assíncrona, possivelmente assim que iniciar, você deseja chamar:</span><span class="sxs-lookup"><span data-stu-id="f1c02-123">Since this is an async call, potentially as soon as start up, you want to call:</span></span>
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
 ```
 
-<span data-ttu-id="b9337-124">O StoreLoaded nesse caso é nosso manipulador para quando o WorldAnchorStore tiver concluído o carregamento:</span><span class="sxs-lookup"><span data-stu-id="b9337-124">StoreLoaded in this case is our handler for when the WorldAnchorStore has completed loading:</span></span>
+<span data-ttu-id="f1c02-124">O StoreLoaded nesse caso é nosso manipulador para quando o WorldAnchorStore tiver concluído o carregamento:</span><span class="sxs-lookup"><span data-stu-id="f1c02-124">StoreLoaded in this case is our handler for when the WorldAnchorStore has completed loading:</span></span>
 
 ```
 private void StoreLoaded(WorldAnchorStore store)
@@ -51,11 +51,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-<span data-ttu-id="b9337-125">Agora temos uma referência para o WorldAnchorStore, que usaremos para salvar e carregar âncoras mundiais específicas.</span><span class="sxs-lookup"><span data-stu-id="b9337-125">We now have a reference to the WorldAnchorStore, which we'll use to save and load specific World Anchors.</span></span>
+<span data-ttu-id="f1c02-125">Agora temos uma referência para o WorldAnchorStore, que usaremos para salvar e carregar âncoras mundiais específicas.</span><span class="sxs-lookup"><span data-stu-id="f1c02-125">We now have a reference to the WorldAnchorStore, which we'll use to save and load specific World Anchors.</span></span>
 
-### <a name="saving-a-worldanchor"></a><span data-ttu-id="b9337-126">Salvando um WorldAnchor</span><span class="sxs-lookup"><span data-stu-id="b9337-126">Saving a WorldAnchor</span></span>
+### <a name="saving-a-worldanchor"></a><span data-ttu-id="f1c02-126">Salvando um WorldAnchor</span><span class="sxs-lookup"><span data-stu-id="f1c02-126">Saving a WorldAnchor</span></span>
 
-<span data-ttu-id="b9337-127">Para economizar, precisamos simplesmente nomear o que estamos salvando e passá-lo no WorldAnchor que temos antes de se desejarmos salvar.</span><span class="sxs-lookup"><span data-stu-id="b9337-127">To save, we simply need to name what we are saving and pass it in the WorldAnchor we got before when we want to save.</span></span> <span data-ttu-id="b9337-128">Observação: tentar salvar duas âncoras na mesma cadeia de caracteres falhará (Store. Save retornará false).</span><span class="sxs-lookup"><span data-stu-id="b9337-128">Note: trying to save two anchors to the same string will fail (store.Save will return false).</span></span> <span data-ttu-id="b9337-129">Exclua o salvamento anterior antes de salvar o novo:</span><span class="sxs-lookup"><span data-stu-id="b9337-129">Delete the previous save before saving the new one:</span></span>
+<span data-ttu-id="f1c02-127">Para economizar, precisamos simplesmente nomear o que estamos salvando e passá-lo no WorldAnchor que temos antes de se desejarmos salvar.</span><span class="sxs-lookup"><span data-stu-id="f1c02-127">To save, we simply need to name what we are saving and pass it in the WorldAnchor we got before when we want to save.</span></span> <span data-ttu-id="f1c02-128">Observação: tentar salvar duas âncoras na mesma cadeia de caracteres falhará (Store. Save retornará false).</span><span class="sxs-lookup"><span data-stu-id="f1c02-128">Note: trying to save two anchors to the same string will fail (store.Save will return false).</span></span> <span data-ttu-id="f1c02-129">Exclua o salvamento anterior antes de salvar o novo:</span><span class="sxs-lookup"><span data-stu-id="f1c02-129">Delete the previous save before saving the new one:</span></span>
 
 ```
 private void SaveGame()
@@ -69,9 +69,9 @@ private void SaveGame()
 }
 ```
 
-### <a name="loading-a-worldanchor"></a><span data-ttu-id="b9337-130">Carregando um WorldAnchor</span><span class="sxs-lookup"><span data-stu-id="b9337-130">Loading a WorldAnchor</span></span>
+### <a name="loading-a-worldanchor"></a><span data-ttu-id="f1c02-130">Carregando um WorldAnchor</span><span class="sxs-lookup"><span data-stu-id="f1c02-130">Loading a WorldAnchor</span></span>
 
-<span data-ttu-id="b9337-131">E para carregar:</span><span class="sxs-lookup"><span data-stu-id="b9337-131">And to load:</span></span>
+<span data-ttu-id="f1c02-131">E para carregar:</span><span class="sxs-lookup"><span data-stu-id="f1c02-131">And to load:</span></span>
 
 ```
 private void LoadGame()
@@ -85,11 +85,11 @@ private void LoadGame()
 }
 ```
 
-<span data-ttu-id="b9337-132">Além disso, podemos usar Store. Delete () para remover uma âncora que salvamos e armazenamos anteriormente. Clear () para remover todos os dados salvos anteriormente.</span><span class="sxs-lookup"><span data-stu-id="b9337-132">We additionally can use store.Delete() to remove an anchor we previously saved and store.Clear() to remove all previously saved data.</span></span>
+<span data-ttu-id="f1c02-132">Além disso, podemos usar Store. Delete () para remover uma âncora que salvamos e armazenamos anteriormente. Clear () para remover todos os dados salvos anteriormente.</span><span class="sxs-lookup"><span data-stu-id="f1c02-132">We additionally can use store.Delete() to remove an anchor we previously saved and store.Clear() to remove all previously saved data.</span></span>
 
-### <a name="enumerating-existing-anchors"></a><span data-ttu-id="b9337-133">Enumerando âncoras existentes</span><span class="sxs-lookup"><span data-stu-id="b9337-133">Enumerating Existing Anchors</span></span>
+### <a name="enumerating-existing-anchors"></a><span data-ttu-id="f1c02-133">Enumerando âncoras existentes</span><span class="sxs-lookup"><span data-stu-id="f1c02-133">Enumerating Existing Anchors</span></span>
 
-<span data-ttu-id="b9337-134">Para descobrir âncoras armazenadas anteriormente, chame GetAllIds.</span><span class="sxs-lookup"><span data-stu-id="b9337-134">To discover previously stored anchors, call GetAllIds.</span></span>
+<span data-ttu-id="f1c02-134">Para descobrir âncoras armazenadas anteriormente, chame GetAllIds.</span><span class="sxs-lookup"><span data-stu-id="f1c02-134">To discover previously stored anchors, call GetAllIds.</span></span>
 
 ```
 string[] ids = this.store.GetAllIds();
@@ -99,29 +99,29 @@ for (int index = 0; index < ids.Length; index++)
 }
 ```
 
-## <a name="persisting-holograms-for-multiple-devices"></a><span data-ttu-id="b9337-135">Persistendo hologramas para vários dispositivos</span><span class="sxs-lookup"><span data-stu-id="b9337-135">Persisting holograms for multiple devices</span></span>
+## <a name="persisting-holograms-for-multiple-devices"></a><span data-ttu-id="f1c02-135">Persistendo hologramas para vários dispositivos</span><span class="sxs-lookup"><span data-stu-id="f1c02-135">Persisting holograms for multiple devices</span></span>
 
-<span data-ttu-id="b9337-136">Você pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem durável a partir de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos de HoloLens, Ios e Android, mesmo se esses dispositivos não estiverem presentes juntos ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="b9337-136">You can use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices, even if those devices aren't present together at the same time.</span></span>  <span data-ttu-id="b9337-137">Como as âncoras de nuvem são persistentes, vários dispositivos ao longo do tempo podem ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.</span><span class="sxs-lookup"><span data-stu-id="b9337-137">Because cloud anchors are persistent, multiple devices over time can each see content rendered relative to that anchor in the same physical location.</span></span>
+<span data-ttu-id="f1c02-136">Você pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem durável a partir de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos de HoloLens, Ios e Android, mesmo se esses dispositivos não estiverem presentes juntos ao mesmo tempo.</span><span class="sxs-lookup"><span data-stu-id="f1c02-136">You can use <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices, even if those devices aren't present together at the same time.</span></span>  <span data-ttu-id="f1c02-137">Como as âncoras de nuvem são persistentes, vários dispositivos ao longo do tempo podem ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.</span><span class="sxs-lookup"><span data-stu-id="f1c02-137">Because cloud anchors are persistent, multiple devices over time can each see content rendered relative to that anchor in the same physical location.</span></span>
 
-<span data-ttu-id="b9337-138">Para começar a criar experiências compartilhadas no Unity, experimente os guias de início rápido dos separadores <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">espaciais do Azure</a>de 5 minutos.</span><span class="sxs-lookup"><span data-stu-id="b9337-138">To get started building shared experiences in Unity, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.</span></span>
+<span data-ttu-id="f1c02-138">Para começar a criar experiências compartilhadas no Unity, experimente os guias de início rápido dos separadores <a href="/azure/spatial-anchors/unity-overview" target="_blank">espaciais do Azure</a>de 5 minutos.</span><span class="sxs-lookup"><span data-stu-id="f1c02-138">To get started building shared experiences in Unity, try out the 5-minute <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.</span></span>
 
-<span data-ttu-id="b9337-139">Quando estiver em execução com as âncoras espaciais do Azure, você poderá <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">criar e localizar âncoras no Unity</a>.</span><span class="sxs-lookup"><span data-stu-id="b9337-139">Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.</span></span>
+<span data-ttu-id="f1c02-139">Quando estiver em execução com as âncoras espaciais do Azure, você poderá <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">criar e localizar âncoras no Unity</a>.</span><span class="sxs-lookup"><span data-stu-id="f1c02-139">Once you're up and running with Azure Spatial Anchors, you can then <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="b9337-140">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="b9337-140">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="f1c02-140">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="f1c02-140">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="b9337-141">Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada.</span><span class="sxs-lookup"><span data-stu-id="b9337-141">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks.</span></span> <span data-ttu-id="b9337-142">A partir daqui, você pode continuar para o próximo bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="b9337-142">From here, you can continue to the next building block:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="b9337-143">Mapeamento espacial</span><span class="sxs-lookup"><span data-stu-id="b9337-143">Spatial mapping</span></span>](spatial-mapping-in-unity.md)
-
-<span data-ttu-id="b9337-144">Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:</span><span class="sxs-lookup"><span data-stu-id="b9337-144">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="f1c02-141">Se você estiver seguindo a jornada do ponto de verificação de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos principais blocos de construção da realidade misturada.</span><span class="sxs-lookup"><span data-stu-id="f1c02-141">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks.</span></span> <span data-ttu-id="f1c02-142">Deste ponto, você pode prosseguir para o próximo bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="f1c02-142">From here, you can continue to the next building block:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="b9337-145">Experiências compartilhadas</span><span class="sxs-lookup"><span data-stu-id="b9337-145">Shared experiences</span></span>](shared-experiences-in-unity.md)
+> [<span data-ttu-id="f1c02-143">Mapeamento espacial</span><span class="sxs-lookup"><span data-stu-id="f1c02-143">Spatial mapping</span></span>](spatial-mapping-in-unity.md)
 
-<span data-ttu-id="b9337-146">Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="b9337-146">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="f1c02-144">Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:</span><span class="sxs-lookup"><span data-stu-id="f1c02-144">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b9337-147">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="b9337-147">See Also</span></span>
-* [<span data-ttu-id="b9337-148">Persistência de ancoragem espacial</span><span class="sxs-lookup"><span data-stu-id="b9337-148">Spatial anchor persistence</span></span>](../../design/coordinate-systems.md#spatial-anchor-persistence)
-* <span data-ttu-id="b9337-149"><a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a></span><span class="sxs-lookup"><span data-stu-id="b9337-149"><a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span></span>
-* <span data-ttu-id="b9337-150"><a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">SDK de âncoras espaciais do Azure para Unity</a></span><span class="sxs-lookup"><span data-stu-id="b9337-150"><a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a></span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="f1c02-145">Experiências compartilhadas</span><span class="sxs-lookup"><span data-stu-id="f1c02-145">Shared experiences</span></span>](shared-experiences-in-unity.md)
+
+<span data-ttu-id="f1c02-146">Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="f1c02-146">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f1c02-147">Consulte Também</span><span class="sxs-lookup"><span data-stu-id="f1c02-147">See Also</span></span>
+* [<span data-ttu-id="f1c02-148">Persistência de ancoragem espacial</span><span class="sxs-lookup"><span data-stu-id="f1c02-148">Spatial anchor persistence</span></span>](../../design/coordinate-systems.md#spatial-anchor-persistence)
+* <span data-ttu-id="f1c02-149"><a href="/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a></span><span class="sxs-lookup"><span data-stu-id="f1c02-149"><a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span></span>
+* <span data-ttu-id="f1c02-150"><a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">SDK de âncoras espaciais do Azure para Unity</a></span><span class="sxs-lookup"><span data-stu-id="f1c02-150"><a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a></span></span>

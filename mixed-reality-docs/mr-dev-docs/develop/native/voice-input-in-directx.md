@@ -6,36 +6,36 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Walkthrough, comando de voz, frase, reconhecimento, fala, DirectX, plataforma, Cortana, realidade do Windows Mixed
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613100"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583747"
 ---
-# <a name="voice-input-in-directx"></a><span data-ttu-id="f61d4-104">Entrada de voz no DirectX</span><span class="sxs-lookup"><span data-stu-id="f61d4-104">Voice input in DirectX</span></span>
+# <a name="voice-input-in-directx"></a><span data-ttu-id="6ef47-104">Entrada de voz no DirectX</span><span class="sxs-lookup"><span data-stu-id="6ef47-104">Voice input in DirectX</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f61d4-105">Este artigo está relacionado às APIs nativas do WinRT herdadas.</span><span class="sxs-lookup"><span data-stu-id="f61d4-105">This article relates to the legacy WinRT native APIs.</span></span>  <span data-ttu-id="f61d4-106">Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.</span><span class="sxs-lookup"><span data-stu-id="f61d4-106">For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.</span></span>
+> <span data-ttu-id="6ef47-105">Este artigo está relacionado às APIs nativas do WinRT herdadas.</span><span class="sxs-lookup"><span data-stu-id="6ef47-105">This article relates to the legacy WinRT native APIs.</span></span>  <span data-ttu-id="6ef47-106">Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.</span><span class="sxs-lookup"><span data-stu-id="6ef47-106">For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.</span></span>
 
-<span data-ttu-id="f61d4-107">Este artigo explica como implementar [comandos de voz](../../design/voice-input.md) , além de reconhecimento de frase e frases pequenas em um aplicativo do DirectX para a realidade mista do Windows.</span><span class="sxs-lookup"><span data-stu-id="f61d4-107">This article explains how to implement [voice commands](../../design/voice-input.md) plus small-phrase and sentence recognition in a DirectX app for Windows Mixed Reality.</span></span>
+<span data-ttu-id="6ef47-107">Este artigo explica como implementar [comandos de voz](../../design/voice-input.md) , além de reconhecimento de frase e frases pequenas em um aplicativo do DirectX para a realidade mista do Windows.</span><span class="sxs-lookup"><span data-stu-id="6ef47-107">This article explains how to implement [voice commands](../../design/voice-input.md) plus small-phrase and sentence recognition in a DirectX app for Windows Mixed Reality.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="f61d4-108">Os trechos de código neste artigo usam C++/CX em vez de C++/WinRT em conformidade com C + +17, que é usado no [modelo de projeto C++ Holographic](creating-a-holographic-directx-project.md).</span><span class="sxs-lookup"><span data-stu-id="f61d4-108">The code snippets in this article use C++/CX rather than C++17-compliant C++/WinRT, which is used in the [C++ holographic project template](creating-a-holographic-directx-project.md).</span></span>  <span data-ttu-id="f61d4-109">Os conceitos são equivalentes a um projeto/WinRT do C++, mas você precisa converter o código.</span><span class="sxs-lookup"><span data-stu-id="f61d4-109">The concepts are equivalent for a C++/WinRT project, but you need to translate the code.</span></span>
+><span data-ttu-id="6ef47-108">Os trechos de código neste artigo usam C++/CX em vez de C++/WinRT em conformidade com C + +17, que é usado no [modelo de projeto C++ Holographic](creating-a-holographic-directx-project.md).</span><span class="sxs-lookup"><span data-stu-id="6ef47-108">The code snippets in this article use C++/CX rather than C++17-compliant C++/WinRT, which is used in the [C++ holographic project template](creating-a-holographic-directx-project.md).</span></span>  <span data-ttu-id="6ef47-109">Os conceitos são equivalentes a um projeto/WinRT do C++, mas você precisa converter o código.</span><span class="sxs-lookup"><span data-stu-id="6ef47-109">The concepts are equivalent for a C++/WinRT project, but you need to translate the code.</span></span>
 
-## <a name="use-speechrecognizer-for-continuous-speech-recognition"></a><span data-ttu-id="f61d4-110">Usar SpeechRecognizer para reconhecimento de fala contínuo</span><span class="sxs-lookup"><span data-stu-id="f61d4-110">Use SpeechRecognizer for continuous speech recognition</span></span>
+## <a name="use-speechrecognizer-for-continuous-speech-recognition"></a><span data-ttu-id="6ef47-110">Usar SpeechRecognizer para reconhecimento de fala contínuo</span><span class="sxs-lookup"><span data-stu-id="6ef47-110">Use SpeechRecognizer for continuous speech recognition</span></span>
 
-<span data-ttu-id="f61d4-111">Esta seção descreve como usar o reconhecimento de fala contínuo para habilitar comandos de voz em seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f61d4-111">This section describes how to use continuous speech recognition to enable voice commands in your app.</span></span> <span data-ttu-id="f61d4-112">O passo a passo usa o código do exemplo [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) .</span><span class="sxs-lookup"><span data-stu-id="f61d4-112">This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample.</span></span> <span data-ttu-id="f61d4-113">Quando o exemplo estiver em execução, fale o nome de um dos comandos de cor registrados para alterar a cor do cubo girando.</span><span class="sxs-lookup"><span data-stu-id="f61d4-113">When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.</span></span>
+<span data-ttu-id="6ef47-111">Esta seção descreve como usar o reconhecimento de fala contínuo para habilitar comandos de voz em seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6ef47-111">This section describes how to use continuous speech recognition to enable voice commands in your app.</span></span> <span data-ttu-id="6ef47-112">O passo a passo usa o código do exemplo [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) .</span><span class="sxs-lookup"><span data-stu-id="6ef47-112">This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample.</span></span> <span data-ttu-id="6ef47-113">Quando o exemplo estiver em execução, fale o nome de um dos comandos de cor registrados para alterar a cor do cubo girando.</span><span class="sxs-lookup"><span data-stu-id="6ef47-113">When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.</span></span>
 
-<span data-ttu-id="f61d4-114">Primeiro, crie uma nova instância do *Windows:: Media:: SpeechRecognition:: SpeechRecognizer* .</span><span class="sxs-lookup"><span data-stu-id="f61d4-114">First, create a new *Windows::Media::SpeechRecognition::SpeechRecognizer* instance.</span></span>
+<span data-ttu-id="6ef47-114">Primeiro, crie uma nova instância do *Windows:: Media:: SpeechRecognition:: SpeechRecognizer* .</span><span class="sxs-lookup"><span data-stu-id="6ef47-114">First, create a new *Windows::Media::SpeechRecognition::SpeechRecognizer* instance.</span></span>
 
-<span data-ttu-id="f61d4-115">De *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:</span><span class="sxs-lookup"><span data-stu-id="f61d4-115">From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:</span></span>
+<span data-ttu-id="6ef47-115">De *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:</span><span class="sxs-lookup"><span data-stu-id="6ef47-115">From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:</span></span>
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-<span data-ttu-id="f61d4-116">Crie uma lista de comandos de fala para o reconhecedor a ser escutado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-116">Create a list of speech commands for the recognizer to listen for.</span></span> <span data-ttu-id="f61d4-117">Aqui, construímos um conjunto de comandos para alterar a cor de um holograma.</span><span class="sxs-lookup"><span data-stu-id="f61d4-117">Here, we construct a set of commands to change the color of a hologram.</span></span> <span data-ttu-id="f61d4-118">Para sua conveniência, também criamos os dados que usaremos para os comandos mais tarde.</span><span class="sxs-lookup"><span data-stu-id="f61d4-118">For convenience, we also create the data that we'll use for the commands later.</span></span>
+<span data-ttu-id="6ef47-116">Crie uma lista de comandos de fala para o reconhecedor a ser escutado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-116">Create a list of speech commands for the recognizer to listen for.</span></span> <span data-ttu-id="6ef47-117">Aqui, construímos um conjunto de comandos para alterar a cor de um holograma.</span><span class="sxs-lookup"><span data-stu-id="6ef47-117">Here, we construct a set of commands to change the color of a hologram.</span></span> <span data-ttu-id="6ef47-118">Para sua conveniência, também criamos os dados que usaremos para os comandos mais tarde.</span><span class="sxs-lookup"><span data-stu-id="6ef47-118">For convenience, we also create the data that we'll use for the commands later.</span></span>
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -60,14 +60,14 @@ m_speechCommandList = ref new Platform::Collections::Vector<String^>();
    m_speechCommandData.push_back(float4(1.f, 0.f, 1.f, 1.f));
 ```
 
-<span data-ttu-id="f61d4-119">Você pode usar palavras fonéticas que podem não estar em um dicionário para especificar comandos.</span><span class="sxs-lookup"><span data-stu-id="f61d4-119">You can use phonetic words that might not be in a dictionary to specify commands.</span></span>
+<span data-ttu-id="6ef47-119">Você pode usar palavras fonéticas que podem não estar em um dicionário para especificar comandos.</span><span class="sxs-lookup"><span data-stu-id="6ef47-119">You can use phonetic words that might not be in a dictionary to specify commands.</span></span>
 
 ```
 m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-<span data-ttu-id="f61d4-120">Para carregar a lista de comandos na lista de restrições do reconhecedor de fala, use um objeto [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) .</span><span class="sxs-lookup"><span data-stu-id="f61d4-120">To load the commands list into the list of constraints for the speech recognizer, use a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.</span></span>
+<span data-ttu-id="6ef47-120">Para carregar a lista de comandos na lista de restrições do reconhecedor de fala, use um objeto [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) .</span><span class="sxs-lookup"><span data-stu-id="6ef47-120">To load the commands list into the list of constraints for the speech recognizer, use a [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) object.</span></span>
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-<span data-ttu-id="f61d4-121">Assine o evento [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) no [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)do reconhecedor de fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-121">Subscribe to the [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) event on the speech recognizer's [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx).</span></span> <span data-ttu-id="f61d4-122">Esse evento notifica seu aplicativo quando um de seus comandos for reconhecido.</span><span class="sxs-lookup"><span data-stu-id="f61d4-122">This event notifies your app when one of your commands has been recognized.</span></span>
+<span data-ttu-id="6ef47-121">Assine o evento [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) no [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)do reconhecedor de fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-121">Subscribe to the [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) event on the speech recognizer's [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession).</span></span> <span data-ttu-id="6ef47-122">Esse evento notifica seu aplicativo quando um de seus comandos for reconhecido.</span><span class="sxs-lookup"><span data-stu-id="6ef47-122">This event notifies your app when one of your commands has been recognized.</span></span>
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-<span data-ttu-id="f61d4-123">O manipulador de eventos *OnResultGenerated* recebe dados de evento em uma instância [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) .</span><span class="sxs-lookup"><span data-stu-id="f61d4-123">Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance.</span></span> <span data-ttu-id="f61d4-124">Se a confiança for maior que o limite definido, seu aplicativo deverá observar que o evento ocorreu.</span><span class="sxs-lookup"><span data-stu-id="f61d4-124">If the confidence is greater than the threshold you defined, your app should note that the event happened.</span></span> <span data-ttu-id="f61d4-125">Salve os dados do evento para que você possa usá-los em um loop de atualização posterior.</span><span class="sxs-lookup"><span data-stu-id="f61d4-125">Save the event data so that you can use it in a later update loop.</span></span>
+<span data-ttu-id="6ef47-123">O manipulador de eventos *OnResultGenerated* recebe dados de evento em uma instância [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) .</span><span class="sxs-lookup"><span data-stu-id="6ef47-123">Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) instance.</span></span> <span data-ttu-id="6ef47-124">Se a confiança for maior que o limite definido, seu aplicativo deverá observar que o evento ocorreu.</span><span class="sxs-lookup"><span data-stu-id="6ef47-124">If the confidence is greater than the threshold you defined, your app should note that the event happened.</span></span> <span data-ttu-id="6ef47-125">Salve os dados do evento para que você possa usá-los em um loop de atualização posterior.</span><span class="sxs-lookup"><span data-stu-id="6ef47-125">Save the event data so that you can use it in a later update loop.</span></span>
 
-<span data-ttu-id="f61d4-126">De *HolographicVoiceInputSampleMain. cpp*:</span><span class="sxs-lookup"><span data-stu-id="f61d4-126">From *HolographicVoiceInputSampleMain.cpp*:</span></span>
+<span data-ttu-id="6ef47-126">De *HolographicVoiceInputSampleMain. cpp*:</span><span class="sxs-lookup"><span data-stu-id="6ef47-126">From *HolographicVoiceInputSampleMain.cpp*:</span></span>
 
 ```
 // Change the cube color, if we get a valid result.
@@ -110,9 +110,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
    }
 ```
 
-<span data-ttu-id="f61d4-127">Em nosso código de exemplo, alteramos a cor do cubo de holograma girando de acordo com o comando do usuário.</span><span class="sxs-lookup"><span data-stu-id="f61d4-127">In our example code, we change the color of the spinning hologram cube according to the user's command.</span></span>
+<span data-ttu-id="6ef47-127">Em nosso código de exemplo, alteramos a cor do cubo de holograma girando de acordo com o comando do usuário.</span><span class="sxs-lookup"><span data-stu-id="6ef47-127">In our example code, we change the color of the spinning hologram cube according to the user's command.</span></span>
 
-<span data-ttu-id="f61d4-128">De *HolographicVoiceInputSampleMain:: Update*:</span><span class="sxs-lookup"><span data-stu-id="f61d4-128">From *HolographicVoiceInputSampleMain::Update*:</span></span>
+<span data-ttu-id="6ef47-128">De *HolographicVoiceInputSampleMain:: Update*:</span><span class="sxs-lookup"><span data-stu-id="6ef47-128">From *HolographicVoiceInputSampleMain::Update*:</span></span>
 
 ```
 // Check for new speech input since the last frame.
@@ -135,17 +135,17 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
    }
 ```
 
-## <a name="use-one-shot-recognition"></a><span data-ttu-id="f61d4-129">Usar o reconhecimento "One-shot"</span><span class="sxs-lookup"><span data-stu-id="f61d4-129">Use "one-shot" recognition</span></span>
+## <a name="use-one-shot-recognition"></a><span data-ttu-id="6ef47-129">Usar o reconhecimento "One-shot"</span><span class="sxs-lookup"><span data-stu-id="6ef47-129">Use "one-shot" recognition</span></span>
 
-<span data-ttu-id="f61d4-130">Você pode configurar um reconhecedor de fala para escutar frases ou frases que o usuário fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-130">You can configure a speech recognizer to listen for phrases or sentences that the user speaks.</span></span> <span data-ttu-id="f61d4-131">Nesse caso, aplicamos um *SpeechRecognitionTopicConstraint* que informa ao reconhecedor de fala o tipo de entrada a ser esperado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-131">In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect.</span></span> <span data-ttu-id="f61d4-132">Aqui está um fluxo de trabalho de aplicativo para este cenário:</span><span class="sxs-lookup"><span data-stu-id="f61d4-132">Here's an app workflow for this scenario:</span></span>
-1. <span data-ttu-id="f61d4-133">Seu aplicativo cria o SpeechRecognizer, fornece prompts de interface do usuário e começa a escutar um comando falado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-133">Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.</span></span>
-2. <span data-ttu-id="f61d4-134">O usuário fala uma frase ou frase.</span><span class="sxs-lookup"><span data-stu-id="f61d4-134">The user speaks a phrase or sentence.</span></span>
-3. <span data-ttu-id="f61d4-135">O reconhecimento da fala do usuário ocorre e um resultado é retornado para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f61d4-135">Recognition of the user's speech occurs, and a result is returned to the app.</span></span> <span data-ttu-id="f61d4-136">Neste ponto, seu aplicativo deve fornecer um prompt de interface do usuário para indicar que o reconhecimento ocorreu.</span><span class="sxs-lookup"><span data-stu-id="f61d4-136">At this point, your app should provide a UI prompt to indicate that recognition has occurred.</span></span>
-4. <span data-ttu-id="f61d4-137">Dependendo do nível de confiança que você deseja responder e do nível de confiança do resultado do reconhecimento de fala, seu aplicativo poderá processar o resultado e responder conforme apropriado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-137">Depending on the confidence level that you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.</span></span>
+<span data-ttu-id="6ef47-130">Você pode configurar um reconhecedor de fala para escutar frases ou frases que o usuário fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-130">You can configure a speech recognizer to listen for phrases or sentences that the user speaks.</span></span> <span data-ttu-id="6ef47-131">Nesse caso, aplicamos um *SpeechRecognitionTopicConstraint* que informa ao reconhecedor de fala o tipo de entrada a ser esperado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-131">In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect.</span></span> <span data-ttu-id="6ef47-132">Aqui está um fluxo de trabalho de aplicativo para este cenário:</span><span class="sxs-lookup"><span data-stu-id="6ef47-132">Here's an app workflow for this scenario:</span></span>
+1. <span data-ttu-id="6ef47-133">Seu aplicativo cria o SpeechRecognizer, fornece prompts de interface do usuário e começa a escutar um comando falado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-133">Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.</span></span>
+2. <span data-ttu-id="6ef47-134">O usuário fala uma frase ou frase.</span><span class="sxs-lookup"><span data-stu-id="6ef47-134">The user speaks a phrase or sentence.</span></span>
+3. <span data-ttu-id="6ef47-135">O reconhecimento da fala do usuário ocorre e um resultado é retornado para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6ef47-135">Recognition of the user's speech occurs, and a result is returned to the app.</span></span> <span data-ttu-id="6ef47-136">Neste ponto, seu aplicativo deve fornecer um prompt de interface do usuário para indicar que o reconhecimento ocorreu.</span><span class="sxs-lookup"><span data-stu-id="6ef47-136">At this point, your app should provide a UI prompt to indicate that recognition has occurred.</span></span>
+4. <span data-ttu-id="6ef47-137">Dependendo do nível de confiança que você deseja responder e do nível de confiança do resultado do reconhecimento de fala, seu aplicativo poderá processar o resultado e responder conforme apropriado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-137">Depending on the confidence level that you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.</span></span>
 
-<span data-ttu-id="f61d4-138">Esta seção descreve como criar um SpeechRecognizer, compilar a restrição e ouvir a entrada de fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-138">This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.</span></span>
+<span data-ttu-id="6ef47-138">Esta seção descreve como criar um SpeechRecognizer, compilar a restrição e ouvir a entrada de fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-138">This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.</span></span>
 
-<span data-ttu-id="f61d4-139">O código a seguir compila a restrição de tópico, que nesse caso é otimizada para pesquisa na Web.</span><span class="sxs-lookup"><span data-stu-id="f61d4-139">The following code compiles the topic constraint, which in this case is optimized for web search.</span></span>
+<span data-ttu-id="6ef47-139">O código a seguir compila a restrição de tópico, que nesse caso é otimizada para pesquisa na Web.</span><span class="sxs-lookup"><span data-stu-id="6ef47-139">The following code compiles the topic constraint, which in this case is optimized for web search.</span></span>
 
 ```
 auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, L"webSearch");
@@ -156,7 +156,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-<span data-ttu-id="f61d4-140">Se a compilação for realizada com sucesso, podemos continuar com o reconhecimento de fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-140">If compilation succeeds, we can continue with speech recognition.</span></span>
+<span data-ttu-id="6ef47-140">Se a compilação for realizada com sucesso, podemos continuar com o reconhecimento de fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-140">If compilation succeeds, we can continue with speech recognition.</span></span>
 
 ```
 try
@@ -171,7 +171,7 @@ try
                {
 ```
 
-<span data-ttu-id="f61d4-141">O resultado é retornado para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f61d4-141">The result is then returned to the app.</span></span> <span data-ttu-id="f61d4-142">Se estivermos confiantes o suficiente no resultado, podemos processar o comando.</span><span class="sxs-lookup"><span data-stu-id="f61d4-142">If we're confident enough in the result, we can process the command.</span></span> <span data-ttu-id="f61d4-143">Este exemplo de código processa resultados com pelo menos confiança média.</span><span class="sxs-lookup"><span data-stu-id="f61d4-143">This code example processes results with at least medium confidence.</span></span>
+<span data-ttu-id="6ef47-141">O resultado é retornado para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6ef47-141">The result is then returned to the app.</span></span> <span data-ttu-id="6ef47-142">Se estivermos confiantes o suficiente no resultado, podemos processar o comando.</span><span class="sxs-lookup"><span data-stu-id="6ef47-142">If we're confident enough in the result, we can process the command.</span></span> <span data-ttu-id="6ef47-143">Este exemplo de código processa resultados com pelo menos confiança média.</span><span class="sxs-lookup"><span data-stu-id="6ef47-143">This code example processes results with at least medium confidence.</span></span>
 
 ```
 try
@@ -212,7 +212,7 @@ try
                    }
 ```
 
-<span data-ttu-id="f61d4-144">Sempre que usar o reconhecimento de fala, observe as exceções que podem indicar que o usuário desativou o microfone nas configurações de privacidade do sistema.</span><span class="sxs-lookup"><span data-stu-id="f61d4-144">Whenever you use speech recognition, watch for exceptions that could indicate that the user has turned off the microphone in the system privacy settings.</span></span> <span data-ttu-id="f61d4-145">Isso pode ocorrer durante a inicialização ou o reconhecimento.</span><span class="sxs-lookup"><span data-stu-id="f61d4-145">This can happen during initialization or recognition.</span></span>
+<span data-ttu-id="6ef47-144">Sempre que usar o reconhecimento de fala, observe as exceções que podem indicar que o usuário desativou o microfone nas configurações de privacidade do sistema.</span><span class="sxs-lookup"><span data-stu-id="6ef47-144">Whenever you use speech recognition, watch for exceptions that could indicate that the user has turned off the microphone in the system privacy settings.</span></span> <span data-ttu-id="6ef47-145">Isso pode ocorrer durante a inicialização ou o reconhecimento.</span><span class="sxs-lookup"><span data-stu-id="6ef47-145">This can happen during initialization or recognition.</span></span>
 
 ```
 catch (Exception^ exception)
@@ -256,16 +256,16 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> <span data-ttu-id="f61d4-146">Há vários [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) predefinidos que você pode usar para otimizar o reconhecimento de fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-146">There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) that you can use to optimize speech recognition.</span></span>
+> <span data-ttu-id="6ef47-146">Há vários [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) predefinidos que você pode usar para otimizar o reconhecimento de fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-146">There are several predefined [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) that you can use to optimize speech recognition.</span></span>
 
-* <span data-ttu-id="f61d4-147">Para otimizar o ditado, use o cenário de ditado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-147">To optimize for dictation, use the dictation scenario.</span></span><br/>
+* <span data-ttu-id="6ef47-147">Para otimizar o ditado, use o cenário de ditado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-147">To optimize for dictation, use the dictation scenario.</span></span><br/>
    ```
    // Compile the dictation topic constraint, which optimizes for speech dictation.
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
    m_speechRecognizer->Constraints->Append(dictationConstraint);
    ```
 
-* <span data-ttu-id="f61d4-148">Para pesquisas na Web de fala, use a seguinte restrição de cenário específica da Web.</span><span class="sxs-lookup"><span data-stu-id="f61d4-148">For speech web searches, use the following web-specific scenario constraint.</span></span>
+* <span data-ttu-id="6ef47-148">Para pesquisas na Web de fala, use a seguinte restrição de cenário específica da Web.</span><span class="sxs-lookup"><span data-stu-id="6ef47-148">For speech web searches, use the following web-specific scenario constraint.</span></span>
 
    ```
    // Add a web search topic constraint to the recognizer.
@@ -273,22 +273,22 @@ catch (Exception^ exception)
    speechRecognizer->Constraints->Append(webSearchConstraint);
    ```
 
-* <span data-ttu-id="f61d4-149">Use a restrição formulário para preencher formulários.</span><span class="sxs-lookup"><span data-stu-id="f61d4-149">Use the form constraint to fill out forms.</span></span> <span data-ttu-id="f61d4-150">Nesse caso, é melhor aplicar sua própria gramática otimizada para preencher o formulário.</span><span class="sxs-lookup"><span data-stu-id="f61d4-150">In this case, it's best to apply your own grammar that's optimized for filling out the form.</span></span>
+* <span data-ttu-id="6ef47-149">Use a restrição formulário para preencher formulários.</span><span class="sxs-lookup"><span data-stu-id="6ef47-149">Use the form constraint to fill out forms.</span></span> <span data-ttu-id="6ef47-150">Nesse caso, é melhor aplicar sua própria gramática otimizada para preencher o formulário.</span><span class="sxs-lookup"><span data-stu-id="6ef47-150">In this case, it's best to apply your own grammar that's optimized for filling out the form.</span></span>
 
    ```
    // Add a form constraint to the recognizer.
    auto formConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::FormFilling, "formFilling");
    speechRecognizer->Constraints->Append(formConstraint );
    ```
-* <span data-ttu-id="f61d4-151">Você pode fornecer sua própria gramática no formato SRGS.</span><span class="sxs-lookup"><span data-stu-id="f61d4-151">You can provide your own grammar in the SRGS format.</span></span>
+* <span data-ttu-id="6ef47-151">Você pode fornecer sua própria gramática no formato SRGS.</span><span class="sxs-lookup"><span data-stu-id="6ef47-151">You can provide your own grammar in the SRGS format.</span></span>
 
-## <a name="use-continuous-recognition"></a><span data-ttu-id="f61d4-152">Usar reconhecimento contínuo</span><span class="sxs-lookup"><span data-stu-id="f61d4-152">Use continuous recognition</span></span>
+## <a name="use-continuous-recognition"></a><span data-ttu-id="6ef47-152">Usar reconhecimento contínuo</span><span class="sxs-lookup"><span data-stu-id="6ef47-152">Use continuous recognition</span></span>
 
-<span data-ttu-id="f61d4-153">Para o cenário de ditado contínuo, consulte o [exemplo de código de fala do UWP do Windows 10](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).</span><span class="sxs-lookup"><span data-stu-id="f61d4-153">For the continuous-dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).</span></span>
+<span data-ttu-id="6ef47-153">Para o cenário de ditado contínuo, consulte o [exemplo de código de fala do UWP do Windows 10](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).</span><span class="sxs-lookup"><span data-stu-id="6ef47-153">For the continuous-dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).</span></span>
 
-## <a name="handle-quality-degradation"></a><span data-ttu-id="f61d4-154">Lidar com a degradação da qualidade</span><span class="sxs-lookup"><span data-stu-id="f61d4-154">Handle quality degradation</span></span>
+## <a name="handle-quality-degradation"></a><span data-ttu-id="6ef47-154">Lidar com a degradação da qualidade</span><span class="sxs-lookup"><span data-stu-id="6ef47-154">Handle quality degradation</span></span>
 
-<span data-ttu-id="f61d4-155">Às vezes, as condições ambientais interferem no reconhecimento de fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-155">Environmental conditions sometimes interfere with speech recognition.</span></span> <span data-ttu-id="f61d4-156">Por exemplo, a sala pode estar muito ruidosa ou o usuário pode falar muito alto.</span><span class="sxs-lookup"><span data-stu-id="f61d4-156">For example, the room might be too noisy, or the user might speak too loudly.</span></span> <span data-ttu-id="f61d4-157">Sempre que possível, a API de reconhecimento de fala fornece informações sobre as condições que causaram a degradação da qualidade.</span><span class="sxs-lookup"><span data-stu-id="f61d4-157">Whenever possible, the speech recognition API provides information about the conditions that caused the quality degradation.</span></span> <span data-ttu-id="f61d4-158">Essas informações são enviadas por push para seu aplicativo por meio de um evento do WinRT.</span><span class="sxs-lookup"><span data-stu-id="f61d4-158">This information is pushed to your app through a WinRT event.</span></span> <span data-ttu-id="f61d4-159">O exemplo a seguir mostra como assinar esse evento.</span><span class="sxs-lookup"><span data-stu-id="f61d4-159">The following example shows  how to subscribe to this event.</span></span>
+<span data-ttu-id="6ef47-155">Às vezes, as condições ambientais interferem no reconhecimento de fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-155">Environmental conditions sometimes interfere with speech recognition.</span></span> <span data-ttu-id="6ef47-156">Por exemplo, a sala pode estar muito ruidosa ou o usuário pode falar muito alto.</span><span class="sxs-lookup"><span data-stu-id="6ef47-156">For example, the room might be too noisy, or the user might speak too loudly.</span></span> <span data-ttu-id="6ef47-157">Sempre que possível, a API de reconhecimento de fala fornece informações sobre as condições que causaram a degradação da qualidade.</span><span class="sxs-lookup"><span data-stu-id="6ef47-157">Whenever possible, the speech recognition API provides information about the conditions that caused the quality degradation.</span></span> <span data-ttu-id="6ef47-158">Essas informações são enviadas por push para seu aplicativo por meio de um evento do WinRT.</span><span class="sxs-lookup"><span data-stu-id="6ef47-158">This information is pushed to your app through a WinRT event.</span></span> <span data-ttu-id="6ef47-159">O exemplo a seguir mostra como assinar esse evento.</span><span class="sxs-lookup"><span data-stu-id="6ef47-159">The following example shows  how to subscribe to this event.</span></span>
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -297,7 +297,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-<span data-ttu-id="f61d4-160">Em nosso exemplo de código, escrevemos as informações de condições no console de depuração.</span><span class="sxs-lookup"><span data-stu-id="f61d4-160">In our code sample, we write the conditions information to the debug console.</span></span> <span data-ttu-id="f61d4-161">Um aplicativo pode querer fornecer comentários ao usuário por meio da interface do usuário, síntese de fala e outro método.</span><span class="sxs-lookup"><span data-stu-id="f61d4-161">An app might want to provide feedback to the user through the UI, speech synthesis, and another method.</span></span> <span data-ttu-id="f61d4-162">Ou talvez seja necessário se comportar de maneira diferente quando a fala é interrompida por uma redução temporária na qualidade.</span><span class="sxs-lookup"><span data-stu-id="f61d4-162">Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.</span></span>
+<span data-ttu-id="6ef47-160">Em nosso exemplo de código, escrevemos as informações de condições no console de depuração.</span><span class="sxs-lookup"><span data-stu-id="6ef47-160">In our code sample, we write the conditions information to the debug console.</span></span> <span data-ttu-id="6ef47-161">Um aplicativo pode querer fornecer comentários ao usuário por meio da interface do usuário, síntese de fala e outro método.</span><span class="sxs-lookup"><span data-stu-id="6ef47-161">An app might want to provide feedback to the user through the UI, speech synthesis, and another method.</span></span> <span data-ttu-id="6ef47-162">Ou talvez seja necessário se comportar de maneira diferente quando a fala é interrompida por uma redução temporária na qualidade.</span><span class="sxs-lookup"><span data-stu-id="6ef47-162">Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.</span></span>
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -336,7 +336,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-<span data-ttu-id="f61d4-163">Se você não estiver usando classes de referência para criar seu aplicativo DirectX, deverá cancelar a assinatura do evento antes de liberar ou recriar seu reconhecedor de fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-163">If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer.</span></span> <span data-ttu-id="f61d4-164">O HolographicSpeechPromptSample tem uma rotina para parar o reconhecimento e cancelar a assinatura de eventos.</span><span class="sxs-lookup"><span data-stu-id="f61d4-164">The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events.</span></span>
+<span data-ttu-id="6ef47-163">Se você não estiver usando classes de referência para criar seu aplicativo DirectX, deverá cancelar a assinatura do evento antes de liberar ou recriar seu reconhecedor de fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-163">If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer.</span></span> <span data-ttu-id="6ef47-164">O HolographicSpeechPromptSample tem uma rotina para parar o reconhecimento e cancelar a assinatura de eventos.</span><span class="sxs-lookup"><span data-stu-id="6ef47-164">The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events.</span></span>
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -363,26 +363,26 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
    }
 ```
 
-## <a name="use-speech-synthesis-to-provide-audible-prompts"></a><span data-ttu-id="f61d4-165">Usar a síntese de fala para fornecer prompts audíveis</span><span class="sxs-lookup"><span data-stu-id="f61d4-165">Use speech synthesis to provide audible prompts</span></span>
+## <a name="use-speech-synthesis-to-provide-audible-prompts"></a><span data-ttu-id="6ef47-165">Usar a síntese de fala para fornecer prompts audíveis</span><span class="sxs-lookup"><span data-stu-id="6ef47-165">Use speech synthesis to provide audible prompts</span></span>
 
-<span data-ttu-id="f61d4-166">Os exemplos de fala do Holographic usam a síntese de fala para fornecer instruções audíveis ao usuário.</span><span class="sxs-lookup"><span data-stu-id="f61d4-166">The holographic speech samples use speech synthesis to provide audible instructions to the user.</span></span> <span data-ttu-id="f61d4-167">Esta seção mostra como criar um exemplo de voz sintetizada e reproduzi-lo novamente por meio das APIs de áudio do HRTF.</span><span class="sxs-lookup"><span data-stu-id="f61d4-167">This section shows how to create a synthesized voice sample  and then play it back through the HRTF audio APIs.</span></span>
+<span data-ttu-id="6ef47-166">Os exemplos de fala do Holographic usam a síntese de fala para fornecer instruções audíveis ao usuário.</span><span class="sxs-lookup"><span data-stu-id="6ef47-166">The holographic speech samples use speech synthesis to provide audible instructions to the user.</span></span> <span data-ttu-id="6ef47-167">Esta seção mostra como criar um exemplo de voz sintetizada e reproduzi-lo novamente por meio das APIs de áudio do HRTF.</span><span class="sxs-lookup"><span data-stu-id="6ef47-167">This section shows how to create a synthesized voice sample  and then play it back through the HRTF audio APIs.</span></span>
 
-<span data-ttu-id="f61d4-168">É recomendável fornecer seus próprios prompts de fala ao solicitar entrada de frase.</span><span class="sxs-lookup"><span data-stu-id="f61d4-168">We recommend providing your own speech prompts when you request phrase input.</span></span> <span data-ttu-id="f61d4-169">Os prompts também podem ajudar a indicar quando os comandos de fala podem ser falados para um cenário de reconhecimento contínuo.</span><span class="sxs-lookup"><span data-stu-id="f61d4-169">Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario.</span></span> <span data-ttu-id="f61d4-170">O exemplo a seguir demonstra como usar um sintetizador de fala para fazer isso.</span><span class="sxs-lookup"><span data-stu-id="f61d4-170">The following example demonstrates how to use a speech synthesizer to do this.</span></span> <span data-ttu-id="f61d4-171">Você também pode usar um clipe de voz previamente gravado, uma interface do usuário visual ou outro indicador do que dizer, por exemplo, em cenários em que o prompt não é dinâmico.</span><span class="sxs-lookup"><span data-stu-id="f61d4-171">You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt isn't dynamic.</span></span>
+<span data-ttu-id="6ef47-168">É recomendável fornecer seus próprios prompts de fala ao solicitar entrada de frase.</span><span class="sxs-lookup"><span data-stu-id="6ef47-168">We recommend providing your own speech prompts when you request phrase input.</span></span> <span data-ttu-id="6ef47-169">Os prompts também podem ajudar a indicar quando os comandos de fala podem ser falados para um cenário de reconhecimento contínuo.</span><span class="sxs-lookup"><span data-stu-id="6ef47-169">Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario.</span></span> <span data-ttu-id="6ef47-170">O exemplo a seguir demonstra como usar um sintetizador de fala para fazer isso.</span><span class="sxs-lookup"><span data-stu-id="6ef47-170">The following example demonstrates how to use a speech synthesizer to do this.</span></span> <span data-ttu-id="6ef47-171">Você também pode usar um clipe de voz previamente gravado, uma interface do usuário visual ou outro indicador do que dizer, por exemplo, em cenários em que o prompt não é dinâmico.</span><span class="sxs-lookup"><span data-stu-id="6ef47-171">You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt isn't dynamic.</span></span>
 
-<span data-ttu-id="f61d4-172">Primeiro, crie o objeto SpeechSynthesizer.</span><span class="sxs-lookup"><span data-stu-id="f61d4-172">First, create the SpeechSynthesizer object.</span></span>
+<span data-ttu-id="6ef47-172">Primeiro, crie o objeto SpeechSynthesizer.</span><span class="sxs-lookup"><span data-stu-id="6ef47-172">First, create the SpeechSynthesizer object.</span></span>
 
 ```
 auto speechSynthesizer = ref new Windows::Media::SpeechSynthesis::SpeechSynthesizer();
 ```
 
-<span data-ttu-id="f61d4-173">Você também precisa de uma cadeia de caracteres que inclua o texto a ser sintetizado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-173">You also need a string that includes the text to  synthesize.</span></span>
+<span data-ttu-id="6ef47-173">Você também precisa de uma cadeia de caracteres que inclua o texto a ser sintetizado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-173">You also need a string that includes the text to  synthesize.</span></span>
 
 ```
 // Phrase recognition works best when requesting a phrase or sentence.
    StringReference voicePrompt = L"At the prompt: Say a phrase, asking me to change the cube to a specific color.";
 ```
 
-<span data-ttu-id="f61d4-174">A fala é sintetizada de forma assíncrona por meio de SynthesizeTextToStreamAsync.</span><span class="sxs-lookup"><span data-stu-id="f61d4-174">Speech is synthesized asynchronously through SynthesizeTextToStreamAsync.</span></span> <span data-ttu-id="f61d4-175">Aqui, iniciamos uma tarefa assíncrona para sintetizar a fala.</span><span class="sxs-lookup"><span data-stu-id="f61d4-175">Here, we start an async task to synthesize the speech.</span></span>
+<span data-ttu-id="6ef47-174">A fala é sintetizada de forma assíncrona por meio de SynthesizeTextToStreamAsync.</span><span class="sxs-lookup"><span data-stu-id="6ef47-174">Speech is synthesized asynchronously through SynthesizeTextToStreamAsync.</span></span> <span data-ttu-id="6ef47-175">Aqui, iniciamos uma tarefa assíncrona para sintetizar a fala.</span><span class="sxs-lookup"><span data-stu-id="6ef47-175">Here, we start an async task to synthesize the speech.</span></span>
 
 ```
 create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_continuation_context::use_current())
@@ -392,7 +392,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-<span data-ttu-id="f61d4-176">A síntese de fala é enviada como um fluxo de bytes.</span><span class="sxs-lookup"><span data-stu-id="f61d4-176">The speech synthesis is sent as a byte stream.</span></span> <span data-ttu-id="f61d4-177">Podemos usar esse fluxo de bytes para inicializar uma voz XAudio2.</span><span class="sxs-lookup"><span data-stu-id="f61d4-177">We can use that byte stream to initialize an XAudio2 voice.</span></span> <span data-ttu-id="f61d4-178">Para nossos exemplos de código Holographic, vamos reproduzi-lo como um efeito de áudio HRTF.</span><span class="sxs-lookup"><span data-stu-id="f61d4-178">For our holographic code samples, we play it back as an HRTF audio effect.</span></span>
+<span data-ttu-id="6ef47-176">A síntese de fala é enviada como um fluxo de bytes.</span><span class="sxs-lookup"><span data-stu-id="6ef47-176">The speech synthesis is sent as a byte stream.</span></span> <span data-ttu-id="6ef47-177">Podemos usar esse fluxo de bytes para inicializar uma voz XAudio2.</span><span class="sxs-lookup"><span data-stu-id="6ef47-177">We can use that byte stream to initialize an XAudio2 voice.</span></span> <span data-ttu-id="6ef47-178">Para nossos exemplos de código Holographic, vamos reproduzi-lo como um efeito de áudio HRTF.</span><span class="sxs-lookup"><span data-stu-id="6ef47-178">For our holographic code samples, we play it back as an HRTF audio effect.</span></span>
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
@@ -414,7 +414,7 @@ Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStream
        }
 ```
 
-<span data-ttu-id="f61d4-179">Assim como com o reconhecimento de fala, a síntese de fala gera uma exceção se algo der errado.</span><span class="sxs-lookup"><span data-stu-id="f61d4-179">As with speech recognition, speech synthesis throws an exception if something goes wrong.</span></span>
+<span data-ttu-id="6ef47-179">Assim como com o reconhecimento de fala, a síntese de fala gera uma exceção se algo der errado.</span><span class="sxs-lookup"><span data-stu-id="6ef47-179">As with speech recognition, speech synthesis throws an exception if something goes wrong.</span></span>
 
 ```
 catch (Exception^ exception)
@@ -430,6 +430,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f61d4-180">Confira também</span><span class="sxs-lookup"><span data-stu-id="f61d4-180">See also</span></span>
-* [<span data-ttu-id="f61d4-181">Design do aplicativo de fala</span><span class="sxs-lookup"><span data-stu-id="f61d4-181">Speech app design</span></span>](https://msdn.microsoft.com/library/dn596121.aspx)
-* [<span data-ttu-id="f61d4-182">Exemplo de SpeechRecognitionAndSynthesis</span><span class="sxs-lookup"><span data-stu-id="f61d4-182">SpeechRecognitionAndSynthesis sample</span></span>](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
+## <a name="see-also"></a><span data-ttu-id="6ef47-180">Confira também</span><span class="sxs-lookup"><span data-stu-id="6ef47-180">See also</span></span>
+* [<span data-ttu-id="6ef47-181">Design do aplicativo de fala</span><span class="sxs-lookup"><span data-stu-id="6ef47-181">Speech app design</span></span>](/windows/uwp/design/input/speech-interactions)
+* [<span data-ttu-id="6ef47-182">Exemplo de SpeechRecognitionAndSynthesis</span><span class="sxs-lookup"><span data-stu-id="6ef47-182">SpeechRecognitionAndSynthesis sample</span></span>](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
