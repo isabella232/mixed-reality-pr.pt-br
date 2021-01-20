@@ -1,36 +1,39 @@
 ---
-title: Habilitar e desabilitar o áudio espacial em tempo de execução
-description: Saiba como escrever um script C# que usa um botão para habilitar e desabilitar a espacial de áudio em tempo de execução.
+title: Tutoriais de áudio espacial-4. Habilitar e desabilitar o áudio espacial em tempo de execução
+description: Use um botão para habilitar e desabilitar a espacialização de áudio em tempo de execução.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer
-ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9239c45efa5196b94fe2e05f85a2e83df6c7789f
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007336"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578295"
 ---
-# <a name="enabling-and-disabling-spatialization-at-run-time"></a>Habilitando e desabilitando a espacial em tempo de execução
+# <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. habilitar e desabilitar a espacialização em tempo de execução
+
+## <a name="overview"></a>Visão geral
+
+Neste tutorial, você aprenderá a habilitar e a desabilitar a espacial em tempo de execução e a testar isso no editor de Unity e no HoloLens 2.
 
 ## <a name="objectives"></a>Objetivos
 
-Neste 4º Capítulo, você vai:
 * Adicionar um novo script para controlar a espacialização em um objeto de jogo
 * Direcionar o script de controle de espacial de ações de botão
 
 ## <a name="add-spatialization-control-script"></a>Adicionar script de controle de espacial
 
-Clique com o botão direito do mouse no painel **projeto** e crie um novo script C# escolhendo **criar-> script c#**. Nomeie o seu script como "SpatializeOnOff".
+ Clique com o botão direito do mouse na janela do projeto e escolha **criar**  >  **script c#** para criar um novo script c#, insira um nome adequado para o script, por exemplo, _SpatializeOnOff_:
 
-![Criar script](images/spatial-audio/create-script.png)
+![Criar script](images/spatial-audio/spatial-audio-04-section1-step1-1.png)
 
-Clique duas vezes no script no painel de **projeto** para abri-lo no Visual Studio. Substitua o conteúdo do script padrão pelo seguinte:
+Clique duas vezes no script na janela do projeto para abri-lo no Visual Studio. Substitua o conteúdo do script padrão pelo seguinte:
 
 > [!NOTE]
-> Várias linhas do script são comentadas. Essas linhas não serão comentadas no [capítulo 5](unity-spatial-audio-ch5.md).
+> Várias linhas do script são comentadas. Estas linhas não serão comentadas no [próximo capítulo: usando o reverberar para adicionar distância ao áudio espacial](unity-spatial-audio-ch5.md).
 
 ```c#
 using System.Collections;
@@ -88,39 +91,39 @@ public class SpatializeOnOff : MonoBehaviour
 ```
 
 > [!NOTE]
-> Para habilitar ou desabilitar a espacialização, o script ajusta apenas a propriedade **spatialBlend** , deixando a propriedade de **espacial** habilitada. Nesse modo, o Unity ainda aplica a curva de **volume** . Caso contrário, se o usuário tivesse de desabilitar a espacial quando estiver longe da origem, ele ouviria o volume aumentar abruptamente. <br> <br>
+> Para habilitar ou desabilitar a espacialização, o script ajusta apenas a propriedade **spatialBlend** , deixando a propriedade de **espacial** habilitada. Nesse modo, o Unity ainda aplica a curva de **volume** . Caso contrário, se o usuário tivesse de desabilitar a espacial quando estiver longe da origem, ele ouviria o volume aumentar abruptamente.
 > Se você preferir desabilitar totalmente a espacialização, modifique o script para ajustar também a **Propriedade booliana** booleana da variável **SourceObject** .
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Anexe o script e o conduza do botão
 
-No painel **Inspetor** do **Quad**, clique em **Adicionar componente** e adicione o script **Spatial-off** :
+Selecione **Quad** na hierarquia e, na janela Inspetor, use o botão Adicionar componente para adicionar **SpatializeOnOff (script)**
 
-![Adicionar script ao Quad](images/spatial-audio/add-script-to-quad.png)
+![Adicionar script ao Quad](images/spatial-audio/spatial-audio-04-section2-step1-1.png)
 
-No componente **espacial em diante** do **Quad**:
-1. Localize o **PressableButtonHoloLens2-> IconAndText-> TextMeshPro** Subject na **hierarquia**:
+Na hierarquia, localize **PressableButtonHoloLens2**  >  **IconAndText**  >  **TextMeshPro**.
 
-![Localizar o objeto PressableButtonHoloLens2 na hierarquia](images/spatial-audio/pressable-button-object.png)
+Com o **Quad** Object ainda selecionado na hierarquia, na janela do Inspetor, localize o componente **Spatial (script) espacial** e arraste e solte o componente **TextMeshPro** do PressableButtonHoloLens2.
 
-2. Arraste a entidade **TextMeshPro** para o campo **ButtonTextObject** do componente **espacial-off**
+![Localizar o objeto PressableButtonHoloLens2 na hierarquia](images/spatial-audio/spatial-audio-04-section2-step1-2.png)
 
-Após essas alterações, o componente **espacial ativado** do **Quad** terá a seguinte aparência:
+Para definir o botão para chamar o script **SpatializeOnOff** quando o botão for liberado, você precisará configurar o script de interação.
 
-![Espacial desabilitada básica](images/spatial-audio/spatialize-on-off-basic.png)
+Na janela hierarquia, selecione o **PressableButtonHoloLens2**. Na janela Inspetor, localize o componente de **interação (script)** e clique no ícone + no evento onclique ().
 
-Para definir o botão para chamar o script **Spatial on off** quando o botão for liberado, abra o painel **Inspetor** do objeto **PressableButtonHoloLens2** , localize o componente **interagindo** e:
-1. Localizar a região **OnClick ()** da subseção de **eventos**
-2. Arraste o **Quad** da **hierarquia** para o slot do objeto de destino.
-3. Selecione **SpatializeOnOff. SwapSpatialization** na caixa suspensa ação.
+* Com o objeto **PressableButtonHoloLens2** ainda selecionado na janela hierarquia, clique e arraste o objeto **Quad** da janela hierarquia para o campo **nenhum (objeto)** vazio do evento que você acabou de adicionar para fazer com que o objeto ButtonParent Ouça o evento de clique do botão do botão:
 
-Após essas alterações, o componente **interagindo** terá a seguinte aparência:
+* Clique no menu suspenso **Nenhuma Função** do mesmo evento. Em seguida, selecione **SpatializeOnOff**  >  **SwapSpatialization ()** para ativar e desativar o áudio espacial
 
-![Configurações de ação do botão](images/spatial-audio/button-action-settings.png)
+![Configurações de ação do botão](images/spatial-audio/spatial-audio-04-section2-step1-3.png)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="congratulations"></a>Parabéns
 
-Experimente seu aplicativo em um HoloLens 2 ou no editor do Unity. No aplicativo, agora você pode tocar no botão para ativar e desativar a espacial no vídeo. Ao testar no editor do Unity, pressione a barra de espaço e role com a roda de rolagem para ativar a simulação de mão. 
+Neste tutorial, você aprendeu a habilitar e desabilitar a spatialização em tempo de execução, testar o aplicativo em um HoloLens 2 ou no editor do Unity. No aplicativo, agora você pode clicar no botão para ativar e desativar a spatialização do áudio.
+
+No próximo tutorial, você adicionará um efeito de reverberação para dar aos sons uma sensação de distância.
+
+> [!TIP]
+> Para obter um lembrete sobre como criar e implantar o seu projeto do Unity no HoloLens 2, confira as instruções em [Como criar o aplicativo para o seu HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 > [!div class="nextstepaction"]
-> [Capítulo 5](unity-spatial-audio-ch5.md) 
-
+> [Próximo tutorial: 5. usando o reverberar para adicionar distância ao áudio espacial](unity-spatial-audio-ch5.md)
