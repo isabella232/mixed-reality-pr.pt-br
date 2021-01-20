@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, cor, luz, materiais, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 5d99941f068e808ba14d97084ef840a66aded2a9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bf64413793aa40d158fde9f9a416d9a9b66af236
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848061"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580061"
 ---
 # <a name="color-light-and-materials"></a>Cor, luz e materiais
 
@@ -100,9 +100,9 @@ O [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece um somb
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Criar conteúdo para exibição holográfica](designing-content-for-holographic-display.md)
 * [Separação de cores](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [Hologramas](../discover/hologram.md)
 * [Linguagem de design da Microsoft-cor](https://www.microsoft.com/design/color)
-* [Plataforma Universal do Windows-cor](https://docs.microsoft.com/windows/uwp/style/color)
+* [Plataforma Universal do Windows-cor](/windows/uwp/style/color)

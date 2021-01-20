@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010036"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580811"
 ---
 # <a name="the-making-of-kippys-escape"></a>A criação do escape do Kippy
 
@@ -22,7 +22,7 @@ Kippy o robô é ativado para se encontrar em uma ilha. Cabe a você colocar sua
 > [!IMPORTANT]
 > Verifique se você está usando o **mecanismo não real 4,25 ou posterior** se estiver compilando o escape do Kippy no repositório github.
 
-O escape do Kippy é um aplicativo de exemplo do [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) de software livre criado com as ferramentas de UX inreal do mecanismo 4 e [da realidade misturada para o inreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). Nesta postagem, vamos orientá-lo pelo processo dos primeiros princípios e Design Visual para implementar e otimizar a experiência. Você pode encontrar mais informações sobre como desenvolver aplicativos de realidade misturada com as ferramentas do MRTK UX na [visão geral do desenvolvimento inreal](unreal-development-overview.md).
+O escape do Kippy é um aplicativo de exemplo do [HoloLens 2](/hololens/hololens2-hardware) de software livre criado com as ferramentas de UX inreal do mecanismo 4 e [da realidade misturada para o inreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). Nesta postagem, vamos orientá-lo pelo processo dos primeiros princípios e Design Visual para implementar e otimizar a experiência. Você pode encontrar mais informações sobre como desenvolver aplicativos de realidade misturada com as ferramentas do MRTK UX na [visão geral do desenvolvimento inreal](unreal-development-overview.md).
 
 ## <a name="first-principles"></a>Primeiros princípios 
 
@@ -115,4 +115,4 @@ Inicialize o seu HoloLens 2 e [Baixe](https://www.microsoft.com/p/kippys-escape/
 </tr>
 </table>
 
-Obrigado especial aos nossos amigos em [Framestore](https://www.framestore.com/) para nos ajudar a dar vida ao Kippy de escape. Desde o desenvolvimento de caracteres até o design de ativos até a programação de jogos, a colaboração desse projeto era dinamizada.  
+Obrigado especial aos nossos amigos em [Framestore](https://www.framestore.com/) para nos ajudar a dar vida ao Kippy de escape. Desde o desenvolvimento de caracteres até o design de ativos até a programação de jogos, a colaboração desse projeto era dinamizada.

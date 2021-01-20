@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: exibição de imersão, exibição 2D, Slate, aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a16fc3b1ac45d74874f37ce44a36d3e144fee8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009626"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580107"
 ---
 # <a name="app-views"></a>Modos de exibição do aplicativo
 
@@ -24,7 +24,7 @@ Uma exibição imersiva dá ao aplicativo a capacidade de criar hologramas no mu
 ![Quando estiver em uma exibição de imersão, os hologramas podem ser colocados no mundo todo.](images/designoverview-940px.jpg)<br>
 *Quando estiver em uma exibição de imersão, os hologramas podem ser colocados no mundo todo*
 
-No [HoloLens](https://docs.microsoft.com/hololens/hololens1-hardware), seu aplicativo renderiza seus hologramas sobre os arredores do mundo real do usuário. Em um [headset de imersão de realidade mista do Windows](../discover/immersive-headset-hardware-details.md), o usuário não consegue ver o mundo real e, portanto, seu aplicativo deve renderizar tudo o que o usuário verá.
+No [HoloLens](/hololens/hololens1-hardware), seu aplicativo renderiza seus hologramas sobre os arredores do mundo real do usuário. Em um [headset de imersão de realidade mista do Windows](../discover/immersive-headset-hardware-details.md), o usuário não consegue ver o mundo real e, portanto, seu aplicativo deve renderizar tudo o que o usuário verá.
 
 O [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md) (incluindo o menu iniciar e os hologramas que você colocou em todo o ambiente) não é renderizado enquanto está em uma exibição de imersão. No HoloLens, a Cortana retransmite todas as notificações do sistema que ocorrem enquanto uma exibição imersiva é mostrada, à qual o usuário pode responder com entrada de voz.
 
@@ -43,7 +43,7 @@ Um uso principal de exibições 2D é mostrar um formulário de entrada de texto
 
 Um aplicativo pode ter exibições 2D no monitor da área de trabalho e em um headset conectado em um PC desktop. Por exemplo, você pode procurar o Edge no monitor de sua área de trabalho usando sua exibição 2D principal para encontrar um vídeo de 360 graus. Quando você reproduzir esse vídeo, o Edge iniciará uma exibição de imersão secundária dentro do headset para exibir o conteúdo de vídeo imersiva.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Modelo de aplicativo](app-model.md)
 * [Como atualizar aplicativos UWP 2D para realidade misturada](../develop/porting-apps/building-2d-apps.md)

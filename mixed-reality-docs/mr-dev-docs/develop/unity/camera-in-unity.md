@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic Rendering, Holographic, imersão, ponto de foco, buffer de profundidade, somente orientação, posicional, opaco, transparente, clipe, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006386"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581120"
 ---
 # <a name="camera-in-unity"></a>Câmera no Unity
 
@@ -33,7 +33,7 @@ Quando você gasta um headset de realidade misturada, ele se torna o centro do s
 As configurações padrão no componente câmera do Unity são para aplicativos 3D tradicionais, que precisam de um plano de fundo Skybox, pois não têm um mundo real.
 
 * Ao executar em um **[headset de imersão](../../discover/immersive-headset-hardware-details.md)**, você está renderizando tudo o que o usuário vê e, portanto, provavelmente desejará manter o Skybox.
-* No entanto, ao executar em um **Headset Holographic** como o [HoloLens](../../hololens-hardware-details.md), o mundo real deve aparecer atrás de tudo que a câmera renderiza. Defina o plano de fundo da câmera como transparente (no HoloLens, o preto é renderizado como transparente) em vez de uma textura Skybox:
+* No entanto, ao executar em um **Headset Holographic** como o [HoloLens](/hololens/hololens1-hardware), o mundo real deve aparecer atrás de tudo que a câmera renderiza. Defina o plano de fundo da câmera como transparente (no HoloLens, o preto é renderizado como transparente) em vez de uma textura Skybox:
     1. Selecione a câmera principal no painel hierarquia
     2. No painel Inspetor, localize o componente câmera e altere a lista suspensa limpar sinalizadores de Skybox para cor sólida
     3. Selecione o seletor de cor do plano de fundo e altere os valores de RGBA para (0, 0, 0, 0)
@@ -81,7 +81,7 @@ Se você souber que está criando uma [experiência somente de orientação](coo
 Compartilhar o buffer de profundidade do seu aplicativo para o Windows cada quadro dará ao seu aplicativo um dos dois aumentos na estabilidade do holograma, com base no tipo de headset que você está renderizando:
 
 * Os **headsets de imersão** podem cuidar da Reprojeção posicional quando um buffer de profundidade é fornecido, ajustando os hologramas para uma previsão incorreta na posição e na orientação.
-* Os **headsets Holographic** têm alguns métodos diferentes. O HoloLens 1 selecionará automaticamente um [ponto de foco](focus-point-in-unity.md) quando um buffer de profundidade for fornecido, otimizando a estabilidade do holograma ao longo do plano que intercepta a maior parte do conteúdo. O HoloLens 2 irá estabilizar o conteúdo usando [LSR de profundidade (consulte comentários)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
+* Os **headsets Holographic** têm alguns métodos diferentes. O HoloLens 1 selecionará automaticamente um [ponto de foco](focus-point-in-unity.md) quando um buffer de profundidade for fornecido, otimizando a estabilidade do holograma ao longo do plano que intercepta a maior parte do conteúdo. O HoloLens 2 irá estabilizar o conteúdo usando [LSR de profundidade (consulte comentários)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 Para definir se seu aplicativo de Unity fornecerá um buffer de profundidade para o Windows:
 
@@ -109,7 +109,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Estabilidade do holograma](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit principal. pré-fabricado](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

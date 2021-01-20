@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008626"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581812"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Perguntas frequentes sobre a instalação do Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Experimente as etapas a seguir:
 * Reinicie o computador e tente novamente. Talvez seja necessário repetir várias vezes ou executar a solução de problemas Windows Update para limpar as atualizações pendentes.
 
 > [!NOTE]
-> * Se você estiver em uma rede gerenciada corporativa, verifique com seu administrador. Talvez seja necessário habilitar a realidade mista do Windows. Procurando as instruções do profissional de ti? Consulte **[Este artigo](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
+> * Se você estiver em uma rede gerenciada corporativa, verifique com seu administrador. Talvez seja necessário habilitar a realidade mista do Windows. Procurando as instruções do profissional de ti? Consulte **[Este artigo](/windows/application-management/manage-windows-mixed-reality)**.
 > * Se a conexão de rede Wi-Fi estiver definida como medida, altere-a para não medido. **[Saiba mais](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>Recebo uma mensagem que diz "algo deu errado e não foi possível iniciar a realidade mista do Windows".
@@ -158,7 +158,7 @@ Se não estiver listado:
     3. Se os controladores de movimento estiverem emparelhados com o seu PC, selecione **configurações > dispositivos > Bluetooth & outros dispositivos** para desemparelhar. Selecione cada controlador e "remover dispositivo". Se os controladores estiverem emparelhados com o headset, você poderá ignorar esta etapa.
     4. Conecte seu headset ao seu PC para reinstalar a realidade mista do Windows.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

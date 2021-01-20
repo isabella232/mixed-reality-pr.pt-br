@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: notas de versão, versão, Windows 10, Build, RS3, so
-ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e3be8edab2aedd18013622c671283b71f95f98d8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009486"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581441"
 ---
 # <a name="release-notes---october-2017"></a>Notas sobre a versão – outubro de 2017
 
-Bem-vindo ao Windows Mixed Reality! A versão de **[atualização do Windows 10 outono Creators](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** introduz o suporte para novos headsets e [controladores de movimento](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)de [realidade mista do Windows](https://docs.microsoft.com/windows/mixed-reality/discover/immersive-headset-hardware-details) . Agora você pode explorar novos mundos, participar de jogos de VR e experimentar a diversão de imersão quando estiver conectado a um [PC com capacidade do Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+Bem-vindo ao Windows Mixed Reality! A versão de **[atualização do Windows 10 outono Creators](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** introduz o suporte para novos headsets e [controladores de movimento](/windows/mixed-reality/design/motion-controllers)de [realidade mista do Windows](/windows/mixed-reality/discover/immersive-headset-hardware-details) . Agora você pode explorar novos mundos, participar de jogos de VR e experimentar a diversão de imersão quando estiver conectado a um [PC com capacidade do Windows Mixed Reality](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
 
-O lançamento dos fones de ouvido e dos controladores de movimento do Windows Mixed Reality é a culminação de um grande esforço da equipe e um avanço importante para a [plataforma de realidade mista do Windows](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality), incluindo o [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details). Embora o HoloLens não esteja recebendo uma atualização com a atualização dos criadores de outono do Windows 10, o trabalho no HoloLens não foi interrompido. Teremos muitos aprendizados e ideias para se aplicarem de nosso trabalho recente na realidade mista do Windows como um todo. Na verdade, os headsets e controladores de movimento da realidade misturada no Windows também representam um ótimo ponto de entrada para o desenvolvimento para o HoloLens, já que as mesmas APIs, ferramentas e conceitos se aplicam a ambos.
+O lançamento dos fones de ouvido e dos controladores de movimento do Windows Mixed Reality é a culminação de um grande esforço da equipe e um avanço importante para a [plataforma de realidade mista do Windows](/windows/mixed-reality/discover/mixed-reality), incluindo o [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details). Embora o HoloLens não esteja recebendo uma atualização com a atualização dos criadores de outono do Windows 10, o trabalho no HoloLens não foi interrompido. Teremos muitos aprendizados e ideias para se aplicarem de nosso trabalho recente na realidade mista do Windows como um todo. Na verdade, os headsets e controladores de movimento da realidade misturada no Windows também representam um ótimo ponto de entrada para o desenvolvimento para o HoloLens, já que as mesmas APIs, ferramentas e conceitos se aplicam a ambos.
 
 Para atualizar para a versão mais recente de cada dispositivo, abra o aplicativo **configurações** , acesse **Atualizar & segurança** e, em seguida, selecione o botão **verificar atualizações** . Em um PC com Windows 10, você também pode instalar manualmente a atualização dos criadores de outono do Windows 10 usando a [ferramenta de criação de mídia do Windows](https://www.microsoft.com/software-download/windows10).
 
@@ -30,16 +30,16 @@ Para atualizar para a versão mais recente de cada dispositivo, abra o aplicativ
 
 A atualização de criadores de outono do Windows 10 introduz oficialmente o suporte para os headsets e controladores de movimento do Windows Mixed Reality e torna o Windows 10 o primeiro sistema operacional espacial do mundo. Aqui estão os destaques:
 * **[Variedade de headsets](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** – a realidade mista do Windows está permitindo que os parceiros ofereçam tipos de headset diferentes, começando em us $ $399, agrupados com controladores de movimento.
-* **[Controladores de movimento](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)** -os controladores de movimento do Windows Mixed Reality são emparelhados sem fio com seu PC por meio de Bluetooth e apresentam um acompanhamento de seis graus de liberdade, muitos métodos de entrada e IMUs.
-* **[Configuração e portabilidade fáceis](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** – configure e comece em menos de 10 minutos. Headsets de imersão usam rastreamento interno para acompanhar seu movimento e seus controladores de movimento, com seis graus de liberdade. Não são necessárias câmeras externas ou marcadores de Lighthouse!
-* **[Suporte para uma maior variedade de PCs](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)** – a realidade mista do Windows permitirá que mais pessoas experimentem o trabalho de hoje, com suporte para selecionar placas gráficas integradas e PCs a partir de us $ $499.
-* **[Início do Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** – o primeiro sistema operacional espacial do mundo fornece um ambiente doméstico familiar para várias tarefas com aplicativos 2D, lançamento de jogos e aplicativos de VR e colocação de hologramas decorativos.
+* **[Controladores de movimento](/windows/mixed-reality/design/motion-controllers)** -os controladores de movimento do Windows Mixed Reality são emparelhados sem fio com seu PC por meio de Bluetooth e apresentam um acompanhamento de seis graus de liberdade, muitos métodos de entrada e IMUs.
+* **[Configuração e portabilidade fáceis](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** – configure e comece em menos de 10 minutos. Headsets de imersão usam rastreamento interno para acompanhar seu movimento e seus controladores de movimento, com seis graus de liberdade. Não são necessárias câmeras externas ou marcadores de Lighthouse!
+* **[Suporte para uma maior variedade de PCs](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)** – a realidade mista do Windows permitirá que mais pessoas experimentem o trabalho de hoje, com suporte para selecionar placas gráficas integradas e PCs a partir de us $ $499.
+* **[Início do Windows Mixed Reality](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** – o primeiro sistema operacional espacial do mundo fornece um ambiente doméstico familiar para várias tarefas com aplicativos 2D, lançamento de jogos e aplicativos de VR e colocação de hologramas decorativos.
 * Os **[jogos e aplicativos de VR incríveis na Microsoft Store](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** -da diversão de imersão como o vídeo Hulu vr e 360 para jogos Epic como SUPERHOT VR e Arizona sol, a Microsoft Store tem uma variedade de conteúdo a ser experimentado no Windows Mixed Reality.
-* **[SteamVR Early Access](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** – a atualização do Windows 10 outono Creators permite que o suporte para títulos de SteamVR seja reproduzido com fones de ouvido e controladores do Windows Mixed Realm, tornando o maior catálogo de títulos VR disponíveis para usuários do Windows Mixed Reality.
+* **[SteamVR Early Access](./using-steamvr-with-windows-mixed-reality.md)** – a atualização do Windows 10 outono Creators permite que o suporte para títulos de SteamVR seja reproduzido com fones de ouvido e controladores do Windows Mixed Realm, tornando o maior catálogo de títulos VR disponíveis para usuários do Windows Mixed Reality.
 
 ## <a name="known-issues"></a>Problemas conhecidos
 
-Trabalhamos duro para fornecer uma ótima experiência de realidade mista do Windows, mas ainda estamos acompanhando alguns problemas conhecidos. Se você encontrar outras pessoas, [envie-nos seus comentários](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback).
+Trabalhamos duro para fornecer uma ótima experiência de realidade mista do Windows, mas ainda estamos acompanhando alguns problemas conhecidos. Se você encontrar outras pessoas, [envie-nos seus comentários](/windows/mixed-reality/give-us-feedback).
 
 ### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>Aplicativo de desktop na página inicial do Windows Mixed Reality
 * A ferramenta de recorte não funciona no aplicativo de desktop.
@@ -94,8 +94,8 @@ Trabalhamos duro para fornecer uma ótima experiência de realidade mista do Win
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Veja também
-* [Suporte a headsets de imersão (link externo)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-* [Problemas conhecidos do HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Fornecer comentários](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
+## <a name="see-also"></a>Confira também
+* [Suporte a headsets de imersão (link externo)](./troubleshooting-windows-mixed-reality.md)
+* [Problemas conhecidos do HoloLens](/windows/mixed-reality/hololens-known-issues)
+* [Instalar as ferramentas](/windows/mixed-reality/develop/install-the-tools)
+* [Fornecer comentários](/windows/mixed-reality/give-us-feedback)

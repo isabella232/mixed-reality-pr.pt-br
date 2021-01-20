@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009286"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582543"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapeamento espacial no Unity
 
@@ -34,7 +34,7 @@ Para usar o mapeamento espacial em seu aplicativo, o recurso spatialPerception p
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (primeira gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (primeira gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -487,7 +487,7 @@ Para obter mais informações sobre como usar o mapeamento espacial com o kit de
 Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção: 
 
 > [!div class="nextstepaction"]
-> [Texto](text-in-unity.md)
+> [Text](text-in-unity.md)
 
 Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 
@@ -496,7 +496,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Sistemas de coordenadas](../../design/coordinate-systems.md)
 * [Sistemas de coordenadas no Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

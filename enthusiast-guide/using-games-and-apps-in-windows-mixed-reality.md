@@ -3,12 +3,12 @@ title: Usando jogos e aplicativos no Windows Mixed Reality
 description: Como iniciar aplicativos e jogos de imersão e 2D, exibir a área de trabalho e experimentar o conteúdo de WebVR e SteamVR.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, aplicativos, jogos, desktop, SteamVR, WebVR, vapor
-ms.openlocfilehash: 24d8e0fcf93b40e21484c9b1dddd1adaaf75fb00
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: e277ede1af3e38d7f1525412431d9006092f93b6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725847"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581371"
 ---
 # <a name="using-games-and-apps-in-windows-mixed-reality"></a>Usando jogos e aplicativos no Windows Mixed Reality
 
@@ -75,9 +75,9 @@ Entrando em VR no Microsoft Edge dentro da realidade misturada cliffhouse.
 
 O Windows Mixed Reality for SteamVR permite que os usuários executem experiências de SteamVR em headsets de imersão de realidade mista do Windows. Depois de instalar o Windows Mixed Reality for SteamVR, você pode iniciar seus aplicativos SteamVR favoritos de uma biblioteca de fluxo de trabalho ou de um vapor e reproduzi-los diretamente no headset do Windows.
 
-Para começar, siga as [instruções de configuração do SteamVR para a realidade mista do Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+Para começar, siga as [instruções de configuração do SteamVR para a realidade mista do Windows](./using-steamvr-with-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 Se você estiver interessado em saber mais sobre como funciona o Windows Mixed Reality, talvez você também queira ler sobre:
 * [Página inicial do Mixed Reality](your-mixed-reality-home.md)

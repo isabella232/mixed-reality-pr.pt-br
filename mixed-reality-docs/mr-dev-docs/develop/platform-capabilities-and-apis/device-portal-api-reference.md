@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, portal de dispositivos Windows, API, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006646"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581249"
 ---
 # <a name="device-portal-api-reference"></a>Referência de API do portal de dispositivos
 
@@ -47,7 +47,7 @@ Retornar dados
 
 Obtém o status da instalação do aplicativo em andamento
 
-## <a name="dump-collection"></a>Despejar coleção
+## <a name="dump-collection"></a>Coleta de despejo
 
 **/API/Debug/dump/UserMode/crashcontrol (excluir)**
 
@@ -696,6 +696,6 @@ Parâmetros
 Retornar dados
 * Em Iniciar, retorna o status da sessão WPR.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Como usar o Portal de Dispositivos do Windows](using-the-windows-device-portal.md)
-* [Referência da API principal do portal do dispositivo (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+* [Referência da API principal do portal do dispositivo (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)

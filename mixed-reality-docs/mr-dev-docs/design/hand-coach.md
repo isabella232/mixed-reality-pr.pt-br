@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009156"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582277"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -173,11 +173,11 @@ Depois de estar satisfeito com sua animação
     *   Configuração por projeto
         *   Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Interação-conceitos básicos](interaction-fundamentals.md)
 * [Processo de criação de ativos](asset-creation-process.md)
-* [Gestos](../gestures.md)
+* [Gestos](./interaction-fundamentals.md)
 * [Instalar as ferramentas](../develop/install-the-tools.md)
 * [Configurar projeto do Unity](../develop/unity/Configure-Unity-Project.md)
 * [Visão geral do desenvolvimento do Unity](../develop/unity/unity-development-overview.md)

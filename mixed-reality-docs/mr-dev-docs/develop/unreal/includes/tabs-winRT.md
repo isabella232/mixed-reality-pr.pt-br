@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745681"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580404"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ Na primeira etapa, você deve adicionar um packages.config ( https://docs.micros
 </packages>
 ```
 
-Agora você pode baixar o NuGet, os pacotes necessários ou consultar a [documentação](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)do NuGet.
+Agora você pode baixar o NuGet, os pacotes necessários ou consultar a [documentação](/nuget/consume-packages/install-use-packages-nuget-cli)do NuGet.
 
 Abra YourModule.Build.cs e adicione o seguinte código:
 
@@ -533,5 +533,4 @@ Quando as chamadas inreais OpenFileDialogue, uma caixa de diálogo de arquivo é
 
 ## <a name="summary"></a>Resumo 
 
-Incentivamos você a usar este tutorial como um ponto de partida para consumir o código do WinRT em um estado inreal quando precisar salvar arquivos no disco do HoloLens usando a mesma caixa de diálogo de arquivo que o Windows.  O mesmo processo se aplica à exportação de funções adicionais do cabeçalho HoloLensWinrtDLL e usado em um não real.  Preste atenção especial ao código de DLL que aguarda no código de WinRT assíncrono em um thread MTA de segundo plano, que evita o deadlock do thread de jogo inreal. 
-
+Incentivamos você a usar este tutorial como um ponto de partida para consumir o código do WinRT em um estado inreal quando precisar salvar arquivos no disco do HoloLens usando a mesma caixa de diálogo de arquivo que o Windows.  O mesmo processo se aplica à exportação de funções adicionais do cabeçalho HoloLensWinrtDLL e usado em um não real.  Preste atenção especial ao código de DLL que aguarda no código de WinRT assíncrono em um thread MTA de segundo plano, que evita o deadlock do thread de jogo inreal.

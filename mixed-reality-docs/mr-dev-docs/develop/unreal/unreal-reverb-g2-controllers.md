@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Inreal, mecanismo 4, UE4, reverberação, reverbo G2, HP reverbs G2, realidade misturada, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 83ff19c0527ee2d10a4f00ccd84539ca16d05517
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 006c70208ec0eaa45447caecf39f799c4be1bfeb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009986"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582684"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Controladores de reverbo do HP G2 em um não real 
 
@@ -52,7 +52,7 @@ Clique com o botão direito do mouse em um plano gráfico e procure os novos nom
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Entrada SteamVR](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
-* [Usando o SteamVR com o Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
+* [Usando o SteamVR com o Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Câmera do Player não real](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

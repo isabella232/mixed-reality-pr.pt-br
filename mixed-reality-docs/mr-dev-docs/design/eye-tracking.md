@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, calibragem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, intenção, ações
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009596"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582326"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Acompanhamento ocular no HoloLens 2
 
@@ -32,7 +32,7 @@ A API de acompanhamento de olho foi projetada com a privacidade de um usuário e
 </colgroup>
 <tr>
      <td><strong>Recurso</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ A API de acompanhamento de olho foi projetada com a privacidade de um usuário e
 
 ## <a name="calibration"></a>Calibragem 
 
-Para que o acompanhamento de olho funcione com precisão, cada usuário precisa passar por uma [calibragem do usuário com acompanhamento de olho](../calibration.md) para o qual o usuário precisa examinar um conjunto de destinos Holographic. Isso permite que o dispositivo ajuste o sistema para uma experiência de exibição de qualidade mais confortável e mais segura para o usuário e para garantir o acompanhamento preciso do controle de olho ao mesmo tempo. 
+Para que o acompanhamento de olho funcione com precisão, cada usuário precisa passar por uma [calibragem do usuário com acompanhamento de olho](/hololens/hololens-calibration) para o qual o usuário precisa examinar um conjunto de destinos Holographic. Isso permite que o dispositivo ajuste o sistema para uma experiência de exibição de qualidade mais confortável e mais segura para o usuário e para garantir o acompanhamento preciso do controle de olho ao mesmo tempo. 
 
 O controle de olho deve funcionar para a maioria dos usuários, mas há casos raros em que um usuário não pode calibrar com êxito. A calibragem pode falhar por vários motivos, incluindo, mas não se limitando a: 
 * O usuário optou anteriormente pelo processo de calibragem
@@ -59,13 +59,13 @@ O controle de olho deve funcionar para a maioria dos usuários, mas há casos ra
 
 Os desenvolvedores devem certificar-se de fornecer suporte adequado para usuários para os quais os dados de acompanhamento de olho podem não estar disponíveis (que não podem ser calibrados com êxito). Fornecemos recomendações para soluções de fallback na seção na parte inferior desta página. 
 
-Para saber mais sobre a calibração e sobre como garantir uma experiência tranqüila, consulte nossa página de [calibragem do usuário de acompanhamento de olho](../calibration.md) .
+Para saber mais sobre a calibração e sobre como garantir uma experiência tranqüila, consulte nossa página de [calibragem do usuário de acompanhamento de olho](/hololens/hololens-calibration) .
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Dados de acompanhamento de olho disponíveis
 
-Antes de entrar em detalhes sobre os casos de uso específicos para a entrada olhar, queremos destacar rapidamente os recursos fornecidos pela [API de acompanhamento ocular](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) do HoloLens 2. Os desenvolvedores obtêm acesso a um único olhar Ray (olhar e direção) a aproximadamente _30 fps (30 Hz)_.
+Antes de entrar em detalhes sobre os casos de uso específicos para a entrada olhar, queremos destacar rapidamente os recursos fornecidos pela [API de acompanhamento ocular](/uwp/api/windows.perception.people.eyespose) do HoloLens 2. Os desenvolvedores obtêm acesso a um único olhar Ray (olhar e direção) a aproximadamente _30 fps (30 Hz)_.
 Para obter informações mais detalhadas sobre como acessar dados de controle de olho, consulte nossos guias de desenvolvedor para usar os [olhos olhar no DirectX](../develop/native/gaze-in-directx.md) e [olho-olhar no Unity](https://aka.ms/mrtk-eyes).
 
 O olho previsto-olhar é aproximadamente de 1,5 graus no ângulo visual em torno do destino real (consulte a ilustração abaixo). À medida que pequenas imprecisãos são esperadas, os desenvolvedores devem planejar uma margem em relação a esse valor de limite inferior (por exemplo, os graus do 2.0-3.0 podem resultar em uma experiência muito mais confortável). Discutiremos como abordar a seleção de destinos pequenos em mais detalhes abaixo. Para que o acompanhamento ocular funcione com precisão, cada usuário deve passar por uma calibração de usuário de acompanhamento ocular. 
@@ -135,8 +135,8 @@ Por um lado, os olhos se movem tão rapidamente que você precisa ter cuidado ao
 
 Em casos raros, os dados de acompanhamento ocular podem não estar disponíveis.
 Isso pode ser devido a diferentes motivos dos quais as mais comuns são listadas abaixo:
-* Falha do sistema ao [calibrar o usuário](../calibration.md).
-* O usuário ignorou a [calibração](../calibration.md).    
+* Falha do sistema ao [calibrar o usuário](/hololens/hololens-calibration).
+* O usuário ignorou a [calibração](/hololens/hololens-calibration).   
 * O usuário é calibrado, mas decidiu não dar permissão ao seu aplicativo para usar seus dados de controle de olho.    
 * O usuário tem óculos exclusivo ou alguma condição de olho para a qual o sistema ainda não dá suporte. 
 * Fatores externos que inibem o acompanhamento de olho confiável, como manchas no visor do HoloLens ou óculos, luz direta intensa e occlusions, devido ao cabelo em frente aos olhos.  
@@ -166,14 +166,12 @@ Novamente, é recomendável comunicar claramente isso com o usuário que talvez 
 
 Essa página espero que você tenha uma boa visão geral para começar a entender a função de acompanhamento de olho e a entrada olhar para o HoloLens 2. Para começar a desenvolver, confira nossas informações sobre a função de [olhar para interagir com hologramas](eye-gaze-interaction.md), [olhar de olho no Unity](https://aka.ms/mrtk-eyes) e [nos olhos-olhar no DirectX](../develop/native/gaze-in-directx.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Calibragem](../calibration.md)
+* [Calibragem](/hololens/hololens-calibration)
 * [Conforto](comfort.md)
 * [Interação com base no foco com o olhar](eye-gaze-interaction.md)
 * [Olho-olhar no DirectX](../develop/native/gaze-in-directx.md)
 * [Olho-olhar no Unity (Kit de ferramentas de realidade misturada)](https://aka.ms/mrtk-eyes)
 * [Focar e confirmar](gaze-and-commit.md)
 * [Entrada de voz](../out-of-scope/voice-design.md)
-
-

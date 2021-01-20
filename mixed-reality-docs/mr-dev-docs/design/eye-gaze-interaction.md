@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, design, interações
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008576"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582383"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interação baseada em olhar no HoloLens 2
 
 ![Demonstração de controle de olho no MRTK](images/mrtk_et_scenemenu.jpg)
 
-Um dos nossos novos recursos empolgantes no HoloLens 2 é o acompanhamento dos olhos. Em nossa página de [acompanhamento de olho no HoloLens 2](eye-tracking.md) , mencionamos a necessidade de cada usuário passar por uma [calibração](https://docs.microsoft.com/hololens/hololens-calibration), fornecia algumas diretrizes para desenvolvedores e casos de uso destacados para acompanhamento de olho. Olho – a entrada olhar ainda é um novo tipo de entrada do usuário e há muito a aprender. 
+Um dos nossos novos recursos empolgantes no HoloLens 2 é o acompanhamento dos olhos. Em nossa página de [acompanhamento de olho no HoloLens 2](eye-tracking.md) , mencionamos a necessidade de cada usuário passar por uma [calibração](/hololens/hololens-calibration), fornecia algumas diretrizes para desenvolvedores e casos de uso destacados para acompanhamento de olho. Olho – a entrada olhar ainda é um novo tipo de entrada do usuário e há muito a aprender. 
 
 Embora a entrada olhar seja usada apenas sutilmente em nossa experiência de shell Holographic (a interface do usuário que você vê ao iniciar o seu HoloLens 2), vários aplicativos, como o ["HoloLens playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), demonstram ótimos exemplos de como as informações de olhar de entrada podem ser adicionadas à mágica da sua experiência de Holographic.
 Nesta página, discutiremos as considerações de design para integrar a entrada olhar para interagir com seus aplicativos Holographic.
@@ -35,7 +35,7 @@ Você aprenderá sobre as principais vantagens e também desafios exclusivos que
 </colgroup>
 <tr>
      <td><strong>Recurso</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
 </tr>

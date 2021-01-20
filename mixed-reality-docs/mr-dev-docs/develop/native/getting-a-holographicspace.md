@@ -6,19 +6,19 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrada espacial, renderização, Cadeia de troca, quadro de Holographic, loop de atualização, loop de jogo, quadro de referência, locatability, código de exemplo, passo a passos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
-ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 215c3cbacd4c7975d05b3a1b3f3992c9198642f7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009526"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580911"
 ---
 # <a name="getting-a-holographicspace"></a>Como obter um HolographicSpace
 
 > [!NOTE]
 > Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.
 
-A classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> é o seu portal no mundo Holographic. Ele controla a renderização de imersão, fornece dados de câmera e fornece acesso a APIs de raciocínio espacial. Você criará um para o <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> do seu aplicativo UWP ou o HWND do seu aplicativo Win32.
+A classe <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> é o seu portal no mundo Holographic. Ele controla a renderização de imersão, fornece dados de câmera e fornece acesso a APIs de raciocínio espacial. Você criará um para o <a href="/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> do seu aplicativo UWP ou o HWND do seu aplicativo Win32.
 
 ## <a name="set-up-the-holographic-space"></a>Configurar o espaço Holographic
 
@@ -30,7 +30,7 @@ Para um **aplicativo UWP** [a partir do *modelo de aplicativo Holographic Direct
 m_holographicSpace = HolographicSpace::CreateForCoreWindow(window);
 ```
 
-Se você estiver criando um **aplicativo Win32** a [partir do exemplo do Win32 *BasicHologram*](creating-a-holographic-directx-project.md#creating-a-win32-project), examine o **aplicativo:: CreateWindowAndHolographicSpace** para obter um exemplo de HWND. Em seguida, você pode convertê-lo em um HWND de imersão criando um <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>associado:
+Se você estiver criando um **aplicativo Win32** a [partir do exemplo do Win32 *BasicHologram*](creating-a-holographic-directx-project.md#creating-a-win32-project), examine o **aplicativo:: CreateWindowAndHolographicSpace** para obter um exemplo de HWND. Em seguida, você pode convertê-lo em um HWND de imersão criando um <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>associado:
 
 ```cpp
 void App::CreateWindowAndHolographicSpace(HINSTANCE hInstance, int nCmdShow)
@@ -93,7 +93,7 @@ void App::CreateWindowAndHolographicSpace(HINSTANCE hInstance, int nCmdShow)
 ```
 
 Depois de obter um HolographicSpace para o seu CoreWindow UWP ou o HWND do Win32, o HolographicSpace pode lidar com as câmeras de Holographic, criar sistemas de coordenadas e fazer Holographic renderização. O espaço Holographic atual é usado em vários locais no modelo do DirectX:
-* A classe **DeviceResources** precisa obter algumas informações do objeto HolographicSpace para criar o dispositivo Direct3D. Esta é a ID do adaptador DXGI associada à exibição Holographic. A classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> usa o dispositivo Direct3D 11 de seu aplicativo para criar e gerenciar recursos baseados em dispositivo, como os buffers de fundo para cada câmera Holographic. Se você estiver interessado em ver o que essa função faz nos bastidores, você a encontrará em DeviceResources. cpp.
+* A classe **DeviceResources** precisa obter algumas informações do objeto HolographicSpace para criar o dispositivo Direct3D. Esta é a ID do adaptador DXGI associada à exibição Holographic. A classe <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> usa o dispositivo Direct3D 11 de seu aplicativo para criar e gerenciar recursos baseados em dispositivo, como os buffers de fundo para cada câmera Holographic. Se você estiver interessado em ver o que essa função faz nos bastidores, você a encontrará em DeviceResources. cpp.
 * A função **DeviceResources:: InitializeUsingHolographicSpace** demonstra como obter o adaptador pesquisando a LUID – e como escolher um adaptador padrão quando nenhum adaptador preferencial for especificado.
 * A classe principal do aplicativo usa o espaço Holographic de **AppView:: SetWindow** ou **App:: CreateWindowAndHolographicSpace** para atualizações e renderização.
 
@@ -126,12 +126,12 @@ Os manipuladores de eventos devem concluir algum trabalho para manter a renderiz
 
 No momento, estamos concentrados no AppMain e na configuração que ele faz para permitir que seu aplicativo saiba sobre câmeras Holographic. Com isso em mente, é importante anotar os dois requisitos a seguir:
 
-1. Para o manipulador de eventos **CameraAdded** , o aplicativo pode trabalhar de forma assíncrona para concluir a criação de recursos e o carregamento de ativos para a nova câmera Holographic. Os aplicativos que levam mais de um quadro para concluir esse trabalho devem solicitar um adiamento e concluir o adiamento após o carregamento de forma assíncrona. Uma [tarefa ppl](https://docs.microsoft.com/cpp/parallel/concrt/parallel-patterns-library-ppl) pode ser usada para fazer trabalhos assíncronos. Seu aplicativo deve garantir que esteja pronto para renderizar para essa câmera imediatamente quando ele sair do manipulador de eventos ou quando concluir o adiamento. A saída do manipulador de eventos ou a conclusão do adiamento diz ao sistema que seu aplicativo agora está pronto para receber quadros Holographic com essa câmera incluída.
+1. Para o manipulador de eventos **CameraAdded** , o aplicativo pode trabalhar de forma assíncrona para concluir a criação de recursos e o carregamento de ativos para a nova câmera Holographic. Os aplicativos que levam mais de um quadro para concluir esse trabalho devem solicitar um adiamento e concluir o adiamento após o carregamento de forma assíncrona. Uma [tarefa ppl](/cpp/parallel/concrt/parallel-patterns-library-ppl) pode ser usada para fazer trabalhos assíncronos. Seu aplicativo deve garantir que esteja pronto para renderizar para essa câmera imediatamente quando ele sair do manipulador de eventos ou quando concluir o adiamento. A saída do manipulador de eventos ou a conclusão do adiamento diz ao sistema que seu aplicativo agora está pronto para receber quadros Holographic com essa câmera incluída.
 
-2. Quando o aplicativo recebe um evento **CameraRemoved** , ele deve liberar todas as referências para o buffer de fundo e sair da função imediatamente. Isso inclui exibições de destino de renderização e qualquer outro recurso que possa conter uma referência para o [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). O aplicativo também deve garantir que o buffer de fundo não seja anexado como um destino de renderização, conforme mostrado em **CameraResources:: ReleaseResourcesForBackBuffer**. Para ajudar a acelerar as coisas, seu aplicativo pode liberar o buffer de fundo e, em seguida, iniciar uma tarefa para concluir de forma assíncrona qualquer outro trabalho de subdivisão para a câmera. O modelo de aplicativo Holographic inclui uma tarefa PPL que você pode usar para essa finalidade.
+2. Quando o aplicativo recebe um evento **CameraRemoved** , ele deve liberar todas as referências para o buffer de fundo e sair da função imediatamente. Isso inclui exibições de destino de renderização e qualquer outro recurso que possa conter uma referência para o [IDXGIResource](/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). O aplicativo também deve garantir que o buffer de fundo não seja anexado como um destino de renderização, conforme mostrado em **CameraResources:: ReleaseResourcesForBackBuffer**. Para ajudar a acelerar as coisas, seu aplicativo pode liberar o buffer de fundo e, em seguida, iniciar uma tarefa para concluir de forma assíncrona qualquer outro trabalho de subdivisão para a câmera. O modelo de aplicativo Holographic inclui uma tarefa PPL que você pode usar para essa finalidade.
 
 >[!NOTE]
->Se você quiser determinar quando uma câmera adicionada ou removida aparece no quadro, use as propriedades **HolographicFrame** [AddedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) e [RemovedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
+>Se você quiser determinar quando uma câmera adicionada ou removida aparece no quadro, use as propriedades **HolographicFrame** [AddedCameras](/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) e [RemovedCameras](/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
 
 ## <a name="create-a-frame-of-reference-for-your-holographic-content"></a>Criar um quadro de referência para o conteúdo do Holographic
 
@@ -139,7 +139,7 @@ O conteúdo do aplicativo deve ser posicionado em um [sistema de coordenadas esp
 
 Há dois tipos de quadros de referência no Windows Holographic: quadros de referência anexados ao dispositivo e quadros de referência que permanecem estacionários à medida que o dispositivo passa pelo ambiente do usuário. O modelo de aplicativo Holographic usa um quadro de referência estacionário por padrão; Essa é uma das maneiras mais simples de renderizar hologramas com bloqueios mundiais.
 
-Quadros de referência estacionários são projetados para estabilizar posições perto do local atual do dispositivo. Isso significa que as coordenadas mais adiante do dispositivo podem descompassor um pouco em relação ao ambiente do usuário, pois o dispositivo aprende mais sobre o espaço em torno dele. Há duas maneiras de criar um quadro estacionário de referência: Adquira o sistema de coordenadas do [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)ou use o <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão. Se você estiver criando um aplicativo de realidade mista do Windows para headsets de imersão, o ponto de partida recomendado será o [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). O estágio espacial também fornece informações sobre os recursos do headset de imersão gastados pelo jogador. Aqui, mostramos como usar o <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão.
+Quadros de referência estacionários são projetados para estabilizar posições perto do local atual do dispositivo. Isso significa que as coordenadas mais adiante do dispositivo podem descompassor um pouco em relação ao ambiente do usuário, pois o dispositivo aprende mais sobre o espaço em torno dele. Há duas maneiras de criar um quadro estacionário de referência: Adquira o sistema de coordenadas do [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)ou use o <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão. Se você estiver criando um aplicativo de realidade mista do Windows para headsets de imersão, o ponto de partida recomendado será o [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). O estágio espacial também fornece informações sobre os recursos do headset de imersão gastados pelo jogador. Aqui, mostramos como usar o <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão.
 
 O localizador espacial representa o dispositivo Windows Mixed Reality e rastreia o movimento do dispositivo e fornece sistemas de coordenadas que podem ser compreendidos em relação à sua localização.
 
@@ -161,7 +161,7 @@ m_stationaryReferenceFrame =
 Todos os quadros de referência estão alinhados com a gravidade, o que significa que o eixo y aponta "para cima" em relação ao ambiente do usuário. Como o Windows usa sistemas de coordenadas "destros", a direção do eixo – z coincide com a direção "encaminhar" que o dispositivo está enfrentando quando o quadro de referência é criado.
 
 >[!NOTE]
->Quando seu aplicativo exige o posicionamento preciso de hologramas individuais, use um <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a> para ancorar o holograma individual em uma posição no mundo real. Por exemplo, use uma âncora espacial quando o usuário indicar um ponto para ser um interesse especial. As posições de âncora não são descompassos, mas podem ser ajustadas. Por padrão, quando uma âncora é ajustada, ela facilita sua posição nos próximos vários quadros depois que a correção ocorre. Dependendo do seu aplicativo, quando isso ocorrer, talvez você queira lidar com o ajuste de uma maneira diferente (por exemplo, adiando-o até que o holograma esteja fora da exibição). A propriedade <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystem" target="_blank">RawCoordinateSystem</a> e os eventos <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted" target="_blank">RawCoordinateSystemAdjusted</a> permitem essas personalizações.
+>Quando seu aplicativo exige o posicionamento preciso de hologramas individuais, use um <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a> para ancorar o holograma individual em uma posição no mundo real. Por exemplo, use uma âncora espacial quando o usuário indicar um ponto para ser um interesse especial. As posições de âncora não são descompassos, mas podem ser ajustadas. Por padrão, quando uma âncora é ajustada, ela facilita sua posição nos próximos vários quadros depois que a correção ocorre. Dependendo do seu aplicativo, quando isso ocorrer, talvez você queira lidar com o ajuste de uma maneira diferente (por exemplo, adiando-o até que o holograma esteja fora da exibição). A propriedade <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystem" target="_blank">RawCoordinateSystem</a> e os eventos <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted" target="_blank">RawCoordinateSystemAdjusted</a> permitem essas personalizações.
 
 ## <a name="respond-to-locatability-changed-events"></a>Responder a eventos alterados do locatability
 
@@ -176,6 +176,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 Em seguida, use esse evento para determinar quando os hologramas não podem ser renderizados como estáticos para o mundo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Como renderizar no DirectX](rendering-in-directx.md)
 * [Sistemas de coordenadas no DirectX](coordinate-systems-in-directx.md)

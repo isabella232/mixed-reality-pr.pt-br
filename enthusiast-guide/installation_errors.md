@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, instalação
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726057"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581660"
 ---
 # <a name="installation-errors"></a>Erros de instalação
 
@@ -31,7 +31,7 @@ A realidade mista do Windows requer um driver de placa gráfica que dá suporte 
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>"Antes que possamos configurar o Windows Mixed Reality, o administrador precisará habilitá-lo para sua organização. Saiba mais "
 
-Provavelmente, você está em uma rede gerenciada pela empresa e sua organização está usando o Windows Server Update Services (WSUS). Essas e outras políticas que podem bloquear o download. Entre em contato com o departamento de ti ou o administrador do sistema da sua organização para [habilitar a realidade mista do Windows](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable).
+Provavelmente, você está em uma rede gerenciada pela empresa e sua organização está usando o Windows Server Update Services (WSUS). Essas e outras políticas que podem bloquear o download. Entre em contato com o departamento de ti ou o administrador do sistema da sua organização para [habilitar a realidade mista do Windows](/windows/application-management/manage-windows-mixed-reality#enable).
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>"Não foi possível baixar o software de realidade misturada" ou "parar de responder enquanto fazemos algum download"
 

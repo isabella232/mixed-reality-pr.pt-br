@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realidade mista do Windows, acompanhamento manual, inreal, Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010156"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581108"
 ---
 # <a name="hand-tracking-in-unreal"></a>Acompanhamento da mão no Unreal
 
@@ -156,7 +156,7 @@ A obtenção de entrega manual funciona para as interações próximas, como a c
 
 ## <a name="gestures"></a>Gestos
 
-O HoloLens 2 rastreia gestos espaciais, o que significa que você pode capturar esses gestos como entrada. O rastreamento de gestos é baseado em um modelo de assinatura. Você deve usar a função "configurar gestos" para informar ao dispositivo quais gestos você deseja rastrear.  Você pode encontrar mais detalhes sobre gestos são o documento de [uso básico do HoloLens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
+O HoloLens 2 rastreia gestos espaciais, o que significa que você pode capturar esses gestos como entrada. O rastreamento de gestos é baseado em um modelo de assinatura. Você deve usar a função "configurar gestos" para informar ao dispositivo quais gestos você deseja rastrear.  Você pode encontrar mais detalhes sobre gestos são o documento de [uso básico do HoloLens 2](/hololens/hololens2-basic-usage) .
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

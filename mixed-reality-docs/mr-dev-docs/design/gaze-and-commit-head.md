@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, destino, foco, suavização
-ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009446"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582287"
 ---
 # <a name="head-gaze-and-commit"></a>Foco com a cabeça e confirmação
 
@@ -28,7 +28,7 @@ _Head-olhar e commit_ é um caso especial do modelo de entrada [olhar e commit](
     </colgroup>
     <tr>
         <td><strong>Modelo de entrada</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -89,7 +89,7 @@ Esse mecanismo pode ser considerado como uma versão mais comum dos algoritmos d
 
 Ao determinar quais elementos interativos adjacentes fornecem, concentre-se, a adesão do foco fornece uma tendência para o elemento que está atualmente focado. Isso ajuda a reduzir os comportamentos incorretos de alternância de foco ao flutuar em um ponto médio entre dois elementos com ruído natural.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Interação ocular](eye-gaze-interaction.md)
 * [Focar e esperar](gaze-and-dwell.md)
@@ -98,6 +98,3 @@ Ao determinar quais elementos interativos adjacentes fornecem, concentre-se, a a
 * [Mãos – Apontar e confirmar](point-and-commit.md)
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Entrada de voz](voice-input.md)
-
-
-

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, pré-venda, pesquisa, compra, antes de comprar
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725507"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580294"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Antes de comprar perguntas frequentes
 
@@ -63,7 +63,7 @@ Saiba mais sobre a realidade misturada aqui: <https://docs.microsoft.com/windows
 
 * **Rastreamento externo** Oculus, Naopak e outros usam acompanhamento externo.  Com o acompanhamento externo, o headset é acompanhado por um ou mais dispositivos externos. As câmeras são incorporadas a esses dispositivos externos, posicionadas em todo o ambiente e usadas para determinar a posição do headset com base no ambiente.
 
-Saiba mais sobre o [acompanhamento interno](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
+Saiba mais sobre o [acompanhamento interno](./tracking-system.md).
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>O acompanhamento do controle de controladores de movimento pode afetar a reprodução do jogo devido à câmera FOV
 
@@ -82,7 +82,7 @@ Saiba mais sobre o [acompanhamento interno](https://docs.microsoft.com/windows/m
 <tr>
 <th style="width:25%"> Headset </th>
 <th style="width:15%"> Resolução </th>
-<th style="width:10%"> Monitor </th>
+<th style="width:10%"> Exibir </th>
 <th style="width:10%"> Taxa de atualização </th>
 <th style="width:10%"> FOV </th>
 <th style="width:15%"> Áudio </th>

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
 appliesto:
 - Windows 10
-ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166751"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581655"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Visão geral do software de Realidade Misturada e histórico de versões
 
@@ -24,7 +24,7 @@ A realidade mista do Windows consiste nos seguintes componentes de software prin
 1. **Portal de realidade misturada**, que fornece a principal experiência do Windows Mixed Reality
     * No Windows 10 versões 1709 e 1803, o portal de realidade mista é um componente fundamental do sistema operacional Windows 10 atualizado por meio de Windows Update.
     * No Windows 10 versão 1809 e mais recente, o portal de realidade misturada é atualizado por meio do aplicativo Microsoft Store.
-2. O **pacote de recursos sob demanda da realidade misturada** (fod), baixado automaticamente e instalado durante a primeira execução do portal de realidade misturada. Mais informações sobre o pacote FOD podem ser encontradas [aqui](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)
+2. O **pacote de recursos sob demanda da realidade misturada** (fod), baixado automaticamente e instalado durante a primeira execução do portal de realidade misturada. Mais informações sobre o pacote FOD podem ser encontradas [aqui](/windows/application-management/manage-windows-mixed-reality)
 3. O **Driver do controlador de headset e de movimento da realidade misturada**, também conhecido como o driver de sensores do HoloLens, é o principal pacote de driver que permite que os headsets da realidade mista do Windows funcionem com a realidade mista do Windows. Isso é baixado e instalado automaticamente por meio de Windows Update na primeira vez que o headset da realidade misturada está conectado e é atualizado regularmente por meio de Windows Update
 4. Os drivers de modelo do controlador de movimento da realidade misturada * contêm os modelos 3D dos controladores de movimento da realidade misturada e necessários para experiências de realidade misturada de terceiros. Isso é baixado e instalado automaticamente por meio do Windows Update na primeira vez que os controladores de movimento da realidade misturada são emparelhados em seu PC e são atualizados por meio de Windows Update
 5. **O Windows 10, versão 1709 (a atualização do criador de outono) ou mais recente** contém os principais componentes e tecnologias do sistema operacional que habilitam a realidade mista do Windows
@@ -50,7 +50,7 @@ Atualizando para a versão mais recente do PC para fones de ouvido do Windows Mi
 
 #### <a name="introducing-the-new-microsoft-edge"></a>Apresentando o novo Microsoft Edge
 
-Como [anunciado anteriormente](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), fizemos atualizações para dar melhor suporte ao uso do novo navegador Microsoft Edge no Windows Mixed Reality. O novo Microsoft Edge adota o projeto de código-fonte aberto Chromium para criar melhor compatibilidade com a Web para clientes e menos fragmentação da Web para todos os desenvolvedores da Web. Ele também dá suporte a WebXR, o novo padrão para a criação de experiências da Web de imersão para headsets de VR, no lugar de WebVR.
+Como [anunciado anteriormente](/windows/mixed-reality/new-microsoft-edge), fizemos atualizações para dar melhor suporte ao uso do novo navegador Microsoft Edge no Windows Mixed Reality. O novo Microsoft Edge adota o projeto de código-fonte aberto Chromium para criar melhor compatibilidade com a Web para clientes e menos fragmentação da Web para todos os desenvolvedores da Web. Ele também dá suporte a WebXR, o novo padrão para a criação de experiências da Web de imersão para headsets de VR, no lugar de WebVR.
 
 #### <a name="improved-settings-for-wmr"></a>Configurações aprimoradas para WMR
 
@@ -167,14 +167,14 @@ No Windows 10, versão 1809 e mais recente, o [portal de realidade misturada](ht
 
    | Versão            | Data de lançamento          | Principais alterações                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.20111.1381.0  | 10 de dezembro de 2020        | <ul><li>Atualiza a página de aterrissagem do portal de realidade misturada.</li><li>Reduz erros de conectividade de headset durante atualizações de firmware. </li></ul>  |    | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
-   | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
+   | 2000.20111.1381.0  | 10 de dezembro de 2020        | <ul><li>Atualiza a página de aterrissagem do portal de realidade misturada.</li><li>Reduz erros de conectividade de headset durante atualizações de firmware. </li></ul>  |    | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
+   | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
    | 2000.20041.1212.0  | 11 de maio de 2020          | <ul><li>Resolve um problema de tempo que estava resultando em um erro de 15-5 inconsistente.</li><li>Suporte aprimorado para executar a realidade mista do Windows sem conexão com a Internet.</li><li>Suporte aprimorado para controladores de movimento de emparelhamento por meio de **controladores de instalação**.</li></ul>  | 
    | 2000.20031.1202.0  | 14 de abril de 2020        | <ul><li>Suporte para inscrever-se para obter informações, dicas e ofertas sobre a realidade mista do Windows.</li></ul>  | 
-   | 2000.20011.1312.0  | 11 de fevereiro de 2020     | <ul><li>Suporte aprimorado para aplicativos que usam o [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) em dispositivos com a atualização de maio de 2019.</li><li>Resolve problemas de acessibilidade e foco de teclado</li></ul>  | 
+   | 2000.20011.1312.0  | 11 de fevereiro de 2020     | <ul><li>Suporte aprimorado para aplicativos que usam o [OpenXR](/windows/mixed-reality/openxr) em dispositivos com a atualização de maio de 2019.</li><li>Resolve problemas de acessibilidade e foco de teclado</li></ul>  | 
    | 2000.19101.1211.0  | 11 de novembro de 2019     | <ul><li>Resolve um problema que impede a alternância de visuais de limite de sala.</li><li>Resolve um problema que impede que você centralize um headset durante a configuração de limite de sala.</li></ul>  | 
    | 2000.19081.1301.0  | 23 de setembro de 2019    | <ul><li>Aborda um problema em que os headsets com problemas de hardware foram mostrados como uma mensagem de erro incorreta. Os usuários que receberam um código de erro 1-4 em versões anteriores podem agora receber um código de erro mais específico para o estado do dispositivo.</li></ul>  |
-   | 2000.19071.1302.0  | 13 de agosto de 2019     | <ul><li>Suporte para aplicativos que usam o [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) em dispositivos com a atualização de maio de 2019.</li></ul>  | 
+   | 2000.19071.1302.0  | 13 de agosto de 2019     | <ul><li>Suporte para aplicativos que usam o [OpenXR](/windows/mixed-reality/openxr) em dispositivos com a atualização de maio de 2019.</li></ul>  | 
    | 2000.19061.1011.0  | 16 de julho de 2019         | <ul><li>Suporte para opções de configuração JSON para personalizar o comportamento do aplicativo. Leia mais em https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup .</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>Histórico de versões do SteamVR ###

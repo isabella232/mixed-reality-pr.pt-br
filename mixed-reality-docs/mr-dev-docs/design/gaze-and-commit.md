@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, controle de cabeça, acompanhamento de cabeçalho, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847934"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582334"
 ---
 # <a name="gaze-and-commit"></a>Focar e confirmar
 
@@ -40,7 +40,7 @@ Abaixo estão alguns exemplos de como um desenvolvedor de realidade misturada po
     </colgroup>
     <tr>
         <td><strong>Modelo de entrada</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ Depois de direcionar um objeto ou elemento de interface do usuário, o usuário 
 Os seguintes métodos de confirmação são compatíveis:
 - Gesto de toque do ar à mão (ou seja, eleve sua mão na frente e reúna o dedo e o polegar)
 - Diga _"Select"_ ou um dos comandos de voz de destino
-- Pressione um único botão em um [clicador de HoloLens](https://docs.microsoft.com/hololens/hololens1-clicker)
+- Pressione um único botão em um [clicador de HoloLens](/hololens/hololens1-clicker)
 - Pressione o botão ' A ' em um gamepad do Xbox
 - Pressione o botão ' A ' em um controlador adaptável do Xbox
 
@@ -286,7 +286,7 @@ Há três coisas que você deve considerar:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Interação ocular](eye-gaze-interaction.md)
 * [Acompanhamento ocular no HoloLens 2](eye-tracking.md)
 * [Focar e esperar](gaze-and-dwell.md)
@@ -295,4 +295,3 @@ Há três coisas que você deve considerar:
 * [Mãos – Apontar e confirmar](point-and-commit.md)
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Entrada de voz](voice-input.md)
-

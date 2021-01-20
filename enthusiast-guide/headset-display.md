@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725407"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580517"
 ---
 # <a name="headset-display-faqs"></a>Perguntas frequentes de exibição do headset
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725407"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>Minha exibição do headset ocasionalmente fica preta após algum uso
 
-* Tente desabilitar qualquer recurso de suspensão ou de salvamento de USB em seu computador. Por exemplo, em **configurações > sistema > Power & Sleep > a [suspensão seletiva USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**, a configuração "permitir que o computador desligue este dispositivo para economizar energia" em Device Manager e quaisquer configurações de economia de energia USB no firmware do seu PC.
+* Tente desabilitar qualquer recurso de suspensão ou de salvamento de USB em seu computador. Por exemplo, em **configurações > sistema > Power & Sleep > a [suspensão seletiva USB](/windows-hardware/drivers/usbcon/usb-selective-suspend)**, a configuração "permitir que o computador desligue este dispositivo para economizar energia" em Device Manager e quaisquer configurações de economia de energia USB no firmware do seu PC.
 * Desconecte temporariamente quaisquer outros dispositivos USB e periféricos conectados ao seu PC.
 * Verifique se a versão do driver de GPU é recente e verifique se há novos problemas de desempenho e compatibilidade e regressões sobre novos drivers.
 

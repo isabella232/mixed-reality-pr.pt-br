@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: notas de versão, versão, Windows 10, Build, RS5, so
-ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62bc5b1e172958a6aebf366852cfd921f7817a3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007106"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581482"
 ---
 # <a name="release-notes---october-2018"></a>Notas sobre a versão – outubro de 2018
 
@@ -33,7 +33,7 @@ A atualização do Windows 10 de outubro de 2018 inclui vários aprimoramentos p
     ![Lanterna de realidade misturada](images/mr-flashlight.png)
 
 * **Novos aplicativos e maneiras de iniciar o conteúdo na página inicial da realidade misturada**
-    * Se você estiver usando a [realidade mista do Windows para SteamVR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), seus títulos de SteamVR agora aparecerão no menu iniciar e os iniciadores de aplicativos para cada um podem ser colocados na página inicial misturada de realidade.
+    * Se você estiver usando a [realidade mista do Windows para SteamVR](./using-steamvr-with-windows-mixed-reality.md), seus títulos de SteamVR agora aparecerão no menu iniciar e os iniciadores de aplicativos para cada um podem ser colocados na página inicial misturada de realidade.
     
         ![Iniciadores de aplicativos SteamVR](images/steamvr-launchers.png)
         
@@ -50,9 +50,9 @@ A atualização do Windows 10 de outubro de 2018 inclui vários aprimoramentos p
     
 ### <a name="for-developers"></a>Para desenvolvedores
 
-* **[Controle de código QR](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** -habilite o controle de código QR em seu aplicativo de realidade misturada, permitindo que os fones de ouvido (VR) de realidade mista do Windows verifiquem os códigos QR e relate-os de volta aos aplicativos interessados.
+* **[Controle de código QR](/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** -habilite o controle de código QR em seu aplicativo de realidade misturada, permitindo que os fones de ouvido (VR) de realidade mista do Windows verifiquem os códigos QR e relate-os de volta aos aplicativos interessados.
 * **Suporte de DRM de hardware para aplicativos de imersão** – os desenvolvedores agora podem solicitar texturas de BackBuffer protegidas por hardware, se houver suporte pelo hardware de vídeo, permitindo que os aplicativos usem conteúdo protegido por hardware de fontes como PlayReady.
-* **[Integre a interface do usuário de captura de realidade misturada a aplicativos de imersão](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** – os desenvolvedores podem integrar a captura de realidade mista em seus aplicativos usando a [interface do usuário de captura de câmera](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) do Windows interna com apenas algumas linhas de código.
+* **[Integre a interface do usuário de captura de realidade misturada a aplicativos de imersão](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** – os desenvolvedores podem integrar a captura de realidade mista em seus aplicativos usando a [interface do usuário de captura de câmera](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) do Windows interna com apenas algumas linhas de código.
 
 ## <a name="new-features-for-hololens"></a>Novos recursos para o HoloLens
 
@@ -72,7 +72,7 @@ A atualização do Windows 10 de outubro de 2018 está disponível publicamente 
 
 ### <a name="for-developers"></a>Para desenvolvedores
 
-* **[Integre a interface do usuário de captura de realidade misturada a aplicativos de imersão](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** – os desenvolvedores podem integrar a captura de realidade mista em seus aplicativos usando a [interface do usuário de captura de câmera](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) do Windows interna com apenas algumas linhas de código.
+* **[Integre a interface do usuário de captura de realidade misturada a aplicativos de imersão](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** – os desenvolvedores podem integrar a captura de realidade mista em seus aplicativos usando a [interface do usuário de captura de câmera](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) do Windows interna com apenas algumas linhas de código.
 
 ### <a name="for-commercial-customers"></a>Para clientes comerciais
 
@@ -88,7 +88,7 @@ Agora você pode usar o HoloLens com a interface do usuário localizada para chi
 
 ## <a name="known-issues"></a>Problemas conhecidos
 
-Trabalhamos duro para fornecer uma ótima experiência de realidade mista do Windows, mas ainda estamos acompanhando alguns problemas conhecidos. Se você encontrar outras pessoas, envie [-nos seus comentários](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback).
+Trabalhamos duro para fornecer uma ótima experiência de realidade mista do Windows, mas ainda estamos acompanhando alguns problemas conhecidos. Se você encontrar outras pessoas, envie [-nos seus comentários](/windows/mixed-reality/give-us-feedback).
 
 ### <a name="hololens"></a>HoloLens
  
@@ -99,7 +99,7 @@ Você pode observar os seguintes problemas ao usar a atualização do Windows 10
 
 ## <a name="provide-feedback-and-report-issues"></a>Fornecer comentários e relatar problemas
 
-Use o [aplicativo de Hub de comentários em seu computador do HoloLens ou do Windows 10](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) para fornecer comentários e relatar problemas. O uso do hub de comentários garante que todas as informações de diagnóstico necessárias estejam incluídas para ajudar nossos engenheiros a depurar e resolver o problema rapidamente.
+Use o [aplicativo de Hub de comentários em seu computador do HoloLens ou do Windows 10](/windows/mixed-reality/give-us-feedback) para fornecer comentários e relatar problemas. O uso do hub de comentários garante que todas as informações de diagnóstico necessárias estejam incluídas para ajudar nossos engenheiros a depurar e resolver o problema rapidamente.
 
 >[!NOTE]
 >Lembre-se de aceitar o prompt que pergunta se você deseja que o Hub de comentários acesse sua pasta documentos (selecione **Sim** quando solicitado).
@@ -112,9 +112,8 @@ Use o [aplicativo de Hub de comentários em seu computador do HoloLens ou do Win
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Veja também
-* [Suporte a headsets de imersão (link externo)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+## <a name="see-also"></a>Confira também
+* [Suporte a headsets de imersão (link externo)](./troubleshooting-windows-mixed-reality.md)
 * [Suporte ao HoloLens (link externo)](https://support.microsoft.com/products/hololens)
-* [Instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Fornecer comentários](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
-
+* [Instalar as ferramentas](/windows/mixed-reality/develop/install-the-tools)
+* [Fornecer comentários](/windows/mixed-reality/give-us-feedback)

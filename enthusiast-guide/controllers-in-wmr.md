@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007796"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580540"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimentos no Windows Mixed Reality
 
@@ -149,10 +149,10 @@ Seu controlador se comunica com o que está fazendo, vibrando e piscando suas lu
 
 Envie-nos comentários no Hub de comentários usando a categoria "realidade misturada-> entrada".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Controladores HP no Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [Controladores HP em não reais](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Controladores HP no Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Controladores HP em não reais](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [Pergunte à comunidade](https://answers.microsoft.com)
 - [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
 - [Solução de problemas](troubleshooting-windows-mixed-reality.md)

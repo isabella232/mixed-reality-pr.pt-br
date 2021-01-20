@@ -3,12 +3,12 @@ title: Perguntas frequentes sobre fala e áudio
 description: Solução de problemas da realidade mista do Windows com voz e áudio que vai além da nossa documentação de suporte padrão do consumidor.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, solução de problemas, erros, ajuda, suporte, problemas de áudio, problemas de fala
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725887"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581413"
 ---
 # <a name="speech-and-audio-faqs"></a>Perguntas frequentes sobre fala e áudio
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725887"
 
 * Alguns aplicativos, como aqueles iniciados por meio de SteamVR, podem perder áudio ou parar quando o dispositivo de áudio muda à medida que você inicia ou interrompe o portal de realidade misturada. Para corrigir isso, reabra o portal de realidade misturada e reinicie o aplicativo.
 * Se outro dispositivo USB de multimídia (como uma Web Cam) compartilhar o mesmo hub USB interno ou externo com o headset de realidade misturada do Windows, a tomada de áudio do headset ou os fones de ouvido poderão, ocasionalmente, ter um som de zumbi ou nenhum áudio. Conecte seu headset em uma porta USB que usa um Hub diferente ou desconecte/Desabilite seu outro dispositivo de multimídia USB.
-* Se você notar um excesso de ruídos dos fones de ouvido conectados, o hub USB do PC poderá não conseguir fornecer energia suficiente ao headset da realidade mista do Windows. Se isso ocorrer, envie um bug do [Hub de comentários](https://docs.microsoft.com/hololens/hololens-feedback) e tente:
+* Se você notar um excesso de ruídos dos fones de ouvido conectados, o hub USB do PC poderá não conseguir fornecer energia suficiente ao headset da realidade mista do Windows. Se isso ocorrer, envie um bug do [Hub de comentários](/hololens/hololens-feedback) e tente:
     * removendo cabos de extensão
     * usando um HUB USB 3,0 dedicado e com alimentação externa
     * uma porta USB diferente no PC

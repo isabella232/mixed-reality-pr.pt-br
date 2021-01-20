@@ -1,19 +1,19 @@
 ---
-title: Criação de perfil com informações inreais
+title: Criação de perfil com Insights do Unreal
 description: Saiba como usar percepções inreais no HoloLens 2.
 author: sajidfarooq
 ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, desenvolvimento, contornar, insights, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486303"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580831"
 ---
-# <a name="profiling-with-unreal-insights"></a>Criação de perfil com informações inreais 
+# <a name="profiling-with-unreal-insights"></a>Criação de perfil com Insights do Unreal 
 
 [Insights inreais](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) é um sistema de criação de perfil que coleta, analisa e visualiza dados de um mecanismo inreal. O sistema de criação de perfil pode ajudá-lo a encontrar gargalos de otimização e áreas em que o desempenho de aplicativos poderia usar um aumento. Normalmente, você habilita informações inreais diretamente do editor, mas para o HoloLens 2, você precisará usar a linha de comando.  
 
@@ -102,6 +102,6 @@ De volta às informações inreais, selecione a conexão **dinâmica** com o dis
 
 O perfil personalizado é compartilhado entre projetos. Daqui em diante, você pode usar o perfil personalizado criado em vez de ter que fazer isso todas as vezes. Você só precisa recriar a conexão com o dispositivo toda vez que iniciar inreal com as etapas 3 a 6 na [seção de instalação](#setup).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Documentação de informações inreais](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/index.html)
 

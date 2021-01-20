@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala em posição, escala de espaço, escala de quarto, escala mundial, 360 graus, encaixado, posicionado, sala, mundo, escala, posição, orientação, fixo, anexado, estágio, âncora, âncora espacial, mundialmente bloqueado, bloqueio mundial, corpo-bloqueado, bloqueio de corpo, limites, persistência, compartilhamento, perda de rastreamento, âncora espacial de nuvem, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual Realm, HoloLens, MRTK
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848020"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582412"
 ---
 # <a name="coordinate-systems"></a>Sistemas de coordenadas
 
@@ -32,9 +32,9 @@ Em seus núcleos, os aplicativos de realidade misturada colocam os [hologramas](
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Headsets imersivos</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Headsets imersivos</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">Quadro estacionário de referência</a></td>
@@ -105,7 +105,7 @@ O quadro de estágio de referência ainda não tem suporte no HoloLens. Um aplic
 
 ## <a name="spatial-coordinate-systems"></a>Sistemas de coordenadas espaciais
 
-Todos os aplicativos gráficos 3D usam [sistemas de coordenadas cartesianas](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) para ponderar sobre as posições e orientações de objetos virtuais. Esses sistemas de coordenadas estabelecem 3 eixos perpendiculares ao longo do qual posicionar objetos: um eixo X, Y e Z.
+Todos os aplicativos gráficos 3D usam [sistemas de coordenadas cartesianas](/windows/uwp/graphics-concepts/coordinate-systems) para ponderar sobre as posições e orientações de objetos virtuais. Esses sistemas de coordenadas estabelecem 3 eixos perpendiculares ao longo do qual posicionar objetos: um eixo X, Y e Z.
 
 Em [realidade misturada](../discover/mixed-reality.md), o motivo dos aplicativos sobre os sistemas de coordenadas físicas e virtuais. O Windows chama um sistema de coordenadas que tem significado real no mundo físico um **sistema de coordenadas espaciais**.
 
@@ -191,13 +191,13 @@ Você pode salvar em disco as âncoras espaciais que seu aplicativo cria e, em s
 
 Ao persistir âncoras para a loja, os usuários podem posicionar hologramas individuais ou posicionar um espaço de trabalho em volta do qual um aplicativo coloca seus diversos hologramas e, em seguida, encontrar esses hologramas posteriormente, onde eles esperam, em muitos usos de seu aplicativo.
 
-Você também pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para a persistência de holograma assíncrona em dispositivos de HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
+Você também pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para a persistência de holograma assíncrona em dispositivos de HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
 
 ### <a name="spatial-anchor-sharing"></a>Compartilhamento de âncora espacial
 
 Seu aplicativo também pode compartilhar uma âncora espacial em tempo real com outros dispositivos, permitindo experiências compartilhadas em tempo real.
 
-Usando <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a>, seu aplicativo pode compartilhar uma âncora espacial entre vários dispositivos HoloLens, Ios e Android. Ao fazer cada dispositivo renderizar um holograma usando a mesma âncora espacial, todos os usuários verão o holograma aparecer no mesmo lugar no mundo real.
+Usando <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a>, seu aplicativo pode compartilhar uma âncora espacial entre vários dispositivos HoloLens, Ios e Android. Ao fazer cada dispositivo renderizar um holograma usando a mesma âncora espacial, todos os usuários verão o holograma aparecer no mesmo lugar no mundo real.
 
 ## <a name="avoid-head-locked-content"></a>Evitar conteúdo bloqueado por cabeçalho
 
@@ -233,11 +233,11 @@ Quando você começa a usar um headset em um ambiente em que as mobília, as tra
 
 Às vezes, uma casa ou outro espaço pode ter duas áreas idênticas. Por exemplo, duas salas de conferência idênticas, duas áreas de canto idênticas, dois grandes pôsteres idênticos que abrangem o campo de exibição do dispositivo. Nesses cenários, o dispositivo pode, às vezes, ficar confuso entre as partes idênticas e marcá-las como a mesma em sua representação interna. Isso pode fazer com que os hologramas de algumas áreas apareçam em outros locais. O dispositivo pode começar a perder o controle com frequência, pois sua representação interna do ambiente foi corrompida. Nesse caso, é aconselhável redefinir a compreensão ambiental do sistema. Redefinir o mapa leva à perda de todos os posicionamentos de âncora espaciais. Isso fará com que o fone de ouvido acompanhe bem nas áreas exclusivas do ambiente. No entanto, o problema pode ocorrer novamente se o dispositivo ficar confuso entre as áreas idênticas novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Apresentação do GDC 2017 em sistemas de coordenadas espaciais e renderização Holographic](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
 * [Sistemas de coordenadas no Unity](../develop/unity/coordinate-systems-in-unity.md)
 * [Sistemas de coordenadas no DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Âncoras espaciais](spatial-anchors.md)
 * [Experiências compartilhadas em realidade misturada](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>
+* <a href="/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>
 * [Estudo de caso - Como olhar através dos buracos na sua realidade](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

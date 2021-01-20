@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Realidade mista do Windows, hologramas, HoloLens 2, controle de olho, entrada de olhar, exibição montada de cabeçalho, mecanismo inreal, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010136"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98579983"
 ---
 # <a name="gaze-input"></a>Entrada olhar
 
@@ -117,7 +117,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unreal](unreal-development-overview.md#2-core-building-blocks) a qualquer momento.
 
 ## <a name="see-also"></a>Veja também
-* [Calibragem](../../calibration.md)
+* [Calibragem](/hololens/hololens-calibration)
 * [Conforto](../../design/comfort.md)
 * [Focar e confirmar](../../design/gaze-and-commit.md)
 * [Entrada de voz](../../out-of-scope/voice-design.md)

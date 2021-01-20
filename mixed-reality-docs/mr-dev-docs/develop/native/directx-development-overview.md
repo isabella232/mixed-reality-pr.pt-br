@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, renderização Holographic, nativo, aplicativo nativo, WinRT, aplicativo WinRT, APIs de plataforma, mecanismo personalizado, middleware, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006846"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581046"
 ---
 # <a name="native-development-overview"></a>Visão geral do desenvolvimento nativo
 
@@ -32,7 +32,7 @@ O Windows Mixed Reality dá suporte a [dois tipos de aplicativos](../../design/a
 * Aplicativos UWP ou Win32 **mistos de realidade** que usam a [API HOLOGRAPHICSPACE](getting-a-holographicspace.md) ou a [API OpenXR](openxr.md) para processar uma [exibição imersiva](../../design/app-views.md) que preenche a tela do headset
 * **aplicativos 2D** (UWP) que usam DirectX, XAML ou outra estrutura para renderizar [exibições 2D](../../design/app-views.md#2d-views) em slates na página inicial do Windows Mixed Reality
 
-As diferenças entre o desenvolvimento DirectX para [exibições 2D e exibições de imersão](../../design/app-views.md) envolvem principalmente a renderização Holographic e a entrada espacial. O [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) do seu aplicativo UWP ou o HWND do seu aplicativo Win32 são necessários e permanecem basicamente os mesmos. O mesmo é verdadeiro para as APIs do WinRT que estão disponíveis para seu aplicativo. Mas você deve usar um subconjunto diferente dessas APIs para aproveitar os recursos do Holographic. Por exemplo, o sistema para aplicativos Holographic gerencia o SwapChain e o quadro presente para habilitar um loop de quadro previsto para pose.
+As diferenças entre o desenvolvimento DirectX para [exibições 2D e exibições de imersão](../../design/app-views.md) envolvem principalmente a renderização Holographic e a entrada espacial. O [IFrameworkView](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) do seu aplicativo UWP ou o HWND do seu aplicativo Win32 são necessários e permanecem basicamente os mesmos. O mesmo é verdadeiro para as APIs do WinRT que estão disponíveis para seu aplicativo. Mas você deve usar um subconjunto diferente dessas APIs para aproveitar os recursos do Holographic. Por exemplo, o sistema para aplicativos Holographic gerencia o SwapChain e o quadro presente para habilitar um loop de quadro previsto para pose.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -68,6 +68,6 @@ Se você pretende nivelar o jogo do OpenXR, confira os links abaixo:
 * [Desempenho do OpenXR](openxr-performance.md)
 * [Solução de problemas do OpenXR](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Modelo de aplicativo](../../design/app-model.md)
 * [Modos de exibição do aplicativo](../../design/app-views.md)

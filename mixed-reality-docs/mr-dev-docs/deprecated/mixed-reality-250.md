@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, imersiva, controlador de movimento, compartilhamento, controlador Xbox, rede, dispositivo cruzado
-ms.openlocfilehash: a980441ee73cd8f45afff446d9315eaf08549575
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8b6711ab3ee833306742fe938dfa501dc5b4ed0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675402"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580119"
 ---
 # <a name="mr-sharing-250-hololens-and-immersive-headsets"></a>Compartilhamento do MR 250: HoloLens e headsets imersivos
 
 >[!NOTE]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](../mr-learning-base-01.md) foi postada para o HoloLens 2.
+>Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](../develop/unity/tutorials/mr-learning-base-01.md) foi postada para o HoloLens 2.
 
 Com a flexibilidade do Plataforma Universal do Windows (UWP), é fácil criar um aplicativo que abranja vários dispositivos. Com essa flexibilidade, podemos criar experiências que aproveitam os pontos fortes de cada dispositivo. Este tutorial abordará uma experiência compartilhada básica que é executada em headsets de uso de realidade mista do HoloLens e do Windows. Este conteúdo foi originalmente entregue na conferência do Microsoft Build 2017 em Seattle, WA.
 
@@ -31,7 +31,7 @@ Com a flexibilidade do Plataforma Universal do Windows (UWP), é fácil criar um
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td>Compartilhamento do MR 250: HoloLens e headsets imersivos</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -41,7 +41,7 @@ Com a flexibilidade do Plataforma Universal do Windows (UWP), é fácil criar um
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-* Um PC com Windows 10 com as [ferramentas de desenvolvimento necessárias](../develop/install-the-tools.md) e [configurado para dar suporte a um headset de imersão de realidade mista do Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+* Um PC com Windows 10 com as [ferramentas de desenvolvimento necessárias](../develop/install-the-tools.md) e [configurado para dar suporte a um headset de imersão de realidade mista do Windows](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 * Um controlador Xbox que funciona com seu PC.
 * Pelo menos um dispositivo HoloLens e um headset de imersão.
 * Uma rede que permite a difusão UDP para descoberta.
@@ -69,40 +69,40 @@ Um aplicativo que mostra um holograma sobre o HoloLens ou um headset de imersão
 ### <a name="steps"></a>Etapas
 
 * Abra o Unity.
-    * Selecione **Abrir** .
+    * Selecione **Abrir**.
     * Navegue até onde você extraiu os arquivos de projeto.
-    * Clique em **Selecionar Pasta** .
+    * Clique em **Selecionar Pasta**.
     * *Levará algum tempo para que o Unity processe o projeto pela primeira vez.*
 * Verifique se a realidade misturada está habilitada no Unity.
-    * Abra a caixa de diálogo Configurações de compilação ( **Control + Shift + B** ou **arquivo > configurações de Build...** ).
-    * Selecione **plataforma universal do Windows** , em seguida, clique em **alternar plataforma** .
-    * Selecione **Editar configurações do Player>** .
-    * No painel **Inspetor** no lado direito, expanda Configurações de **XR** .
+    * Abra a caixa de diálogo Configurações de compilação (**Control + Shift + B** ou **arquivo > configurações de Build...**).
+    * Selecione **plataforma universal do Windows** , em seguida, clique em **alternar plataforma**.
+    * Selecione **Editar configurações do Player>**.
+    * No painel **Inspetor** no lado direito, expanda Configurações de **XR**.
     * Verifique a caixa **suporte à realidade virtual** .
     * *A realidade mista do Windows deve ser o SDK da realidade virtual.*
 * Crie uma cena.
-    * Na **hierarquia** , clique na **câmera principal** selecionar **excluir** .
-    * Em **HoloToolkit > entrada > pré-fabricados** arraste **MixedRealityCameraParent** para a **hierarquia** .
+    * Na **hierarquia** , clique na **câmera principal** selecionar **excluir**.
+    * Em **HoloToolkit > entrada > pré-fabricados** arraste **MixedRealityCameraParent** para a **hierarquia**.
 * Adicionar hologramas à cena
-    * Em **AppPrefabs** , arraste **Skybox** para a **exibição cena** .
-    * De **AppPrefabs** , arraste **os gerentes** para a **hierarquia** .
-    * Da **ilha** de arrastar **AppPrefabs** para a **hierarquia** .
+    * Em **AppPrefabs** , arraste **Skybox** para a **exibição cena**.
+    * De **AppPrefabs** , arraste **os gerentes** para a **hierarquia**.
+    * Da **ilha** de arrastar **AppPrefabs** para a **hierarquia**.
 * Salvar e compilar
-    * Salvar ( **controle + S** ou **arquivo > salvar cena** )
+    * Salvar ( **controle + S** ou **arquivo > salvar cena**)
     * Como essa é uma nova cena, você precisará nomeá-la. O nome não é importante, mas usamos SharedMixedReality.
 * Exportar para o Visual Studio
-    * Abra o menu Compilar ( **Control + Shift + B** ou **arquivos > configurações de Build** )
+    * Abra o menu Compilar (**Control + Shift + B** ou **arquivos > configurações de Build**)
     * Clique em **Adicionar abrir cenas.**
     * Verificar **projetos do Unity C#**
-    * Clique em **Compilar** .
-    * Na janela Explorador de arquivos que aparece, crie uma nova pasta chamada **aplicativo** .
+    * Clique em **Compilar**.
+    * Na janela Explorador de arquivos que aparece, crie uma nova pasta chamada **aplicativo**.
     * Clique uma vez na pasta do **aplicativo** .
     * Pressione **Selecionar pasta.**
     * **Aguarde a conclusão da compilação**
     * Na janela Explorador de arquivos que aparece, navegue até a pasta do **aplicativo** .
     * Clique duas vezes em **SharedMixedReality. sln** para iniciar o Visual Studio
 * Compilar a partir do Visual Studio
-    * Usando o destino de alteração da barra de ferramentas superior para **liberar** e **x86** .
+    * Usando o destino de alteração da barra de ferramentas superior para **liberar** e **x86**.
     * Clique na seta ao lado de **computador local** e selecione **dispositivo** para implantar no HoloLens
     * Clique na seta ao lado de **dispositivo** e selecione **computador local** para implantar para o headset de realidade misturada.
     * Clique em **depurar->iniciar sem Depurar** ou **controlar + F5** para iniciar o aplicativo.
@@ -129,38 +129,38 @@ Mostre como tratar a entrada para um aplicativo do Windows Mixed Reality.
 
 Criando o aplicativo no capítulo 1, adicionaremos funcionalidade para permitir que o usuário pegue o holograma e coloque-o em uma superfície do mundo real no HoloLens ou em uma tabela virtual em um headset de imersão.
 
-**Atualizador de entrada:** No HoloLens, o gesto de seleção é o **toque de ar** . Em headsets de imersão, usaremos **o botão a** no controlador Xbox. Para obter mais informações, confira a [visão geral do modelo de interação](../design/interaction-fundamentals.md).
+**Atualizador de entrada:** No HoloLens, o gesto de seleção é o **toque de ar**. Em headsets de imersão, usaremos **o botão a** no controlador Xbox. Para obter mais informações, confira a [visão geral do modelo de interação](../design/interaction-fundamentals.md).
 
 ### <a name="steps"></a>Etapas
 
 * Adicionar Gerenciador de entrada
-    * Em **HoloToolkit > entrada > pré-fabricados** arraste **InputManager** para **hierarquia** como um filho de **gerentes** .
-    * From **HoloToolkit > entrada > pré-fabricados >** cursor arrastar **cursor** para **hierarquia** .
+    * Em **HoloToolkit > entrada > pré-fabricados** arraste **InputManager** para **hierarquia** como um filho de **gerentes**.
+    * From **HoloToolkit > entrada > pré-fabricados >** cursor arrastar **cursor** para **hierarquia**.
 * Adicionar mapeamento espacial
-    * Em **HoloToolkit > SpatialMapping > pré-fabricados** arraste **SpatialMapping** para **hierarquia** .
+    * Em **HoloToolkit > SpatialMapping > pré-fabricados** arraste **SpatialMapping** para **hierarquia**.
 * Adicionar Playspace virtual
     * Em **hierarquia** , expanda **MixedRealityCameraParent** selecionar **limite**
     * No painel **Inspetor** , marque a caixa para habilitar o **limite**
-    * Em **AppPrefabs** , arraste **VRRoom** para **hierarquia** .
+    * Em **AppPrefabs** , arraste **VRRoom** para **hierarquia**.
 * Adicionar WorldAnchorManager
-    * Em **hierarquia** , selecione **gerentes** .
-    * No **Inspetor** , clique em **Adicionar componente** .
-    * Digite **gerente de âncora mundial** .
+    * Em **hierarquia**, selecione **gerentes**.
+    * No **Inspetor**, clique em **Adicionar componente**.
+    * Digite **gerente de âncora mundial**.
     * Selecione **gerente de âncora mundial** para adicioná-lo.
 * Adicionar TapToPlace à ilha
-    * Em **hierarquia** , expanda **ilha** .
-    * Selecione **MixedRealityLand** .
-    * No **Inspetor** , clique em **Adicionar componente** .
+    * Em **hierarquia**, expanda **ilha**.
+    * Selecione **MixedRealityLand**.
+    * No **Inspetor**, clique em **Adicionar componente**.
     * Digite **toque para inserir** e selecione-o.
-    * Verifique o **pai ao tocar** .
-    * Defina **deslocamento de posicionamento** como **(0, 0,1, 0)** .
+    * Verifique o **pai ao tocar**.
+    * Defina **deslocamento de posicionamento** como **(0, 0,1, 0)**.
 * Salvar e compilar como antes
 
 ### <a name="digging-into-the-code"></a>Aprofundando-se no código
 
 **Script 1-GamepadInput.cs**
 
-No painel projeto, navegue até **Assets\HoloToolkit\Input\Scripts\InputSources** e clique duas vezes em **GamepadInput.cs** para abri-lo. No mesmo caminho no painel de projeto, também clique duas vezes em **InteractionSourceInputSource.cs** .
+No painel projeto, navegue até **Assets\HoloToolkit\Input\Scripts\InputSources** e clique duas vezes em **GamepadInput.cs** para abri-lo. No mesmo caminho no painel de projeto, também clique duas vezes em **InteractionSourceInputSource.cs**.
 
 Observe que ambos os scripts têm uma classe base comum, BaseInputSource.
 
@@ -198,8 +198,8 @@ Converteremos nosso projeto em um projeto de vários participantes. Adicionaremo
     * Em **hierarquia** , clique com o botão direito do mouse em **ilha** selecionar **excluir**
     * Em **hierarquia** , clique com o botão direito do mouse em **VRRoom** selecionar **excluir**
 * Adicionar Usland
-    * Em **AppPrefabs** , arraste **Usland** para **hierarquia** .
-* Em **AppPrefabs** , arraste cada um dos seguintes para **hierarquia** :
+    * Em **AppPrefabs** , arraste **Usland** para **hierarquia**.
+* Em **AppPrefabs** , arraste cada um dos seguintes para **hierarquia**:
     * **UNETSharingStage**
     * **UNetAnchorRoot**
     * **UIContainer**
@@ -208,11 +208,11 @@ Converteremos nosso projeto em um projeto de vários participantes. Adicionaremo
 
 ### <a name="digging-into-the-code"></a>Aprofundando-se no código
 
-No painel projeto, navegue até **Assets\AppPrefabs\Support\SharingWithUnet\Scripts** e clique duas vezes em **UnetAnchorManager.cs** . A capacidade de um HoloLens compartilhar informações de rastreamento com outro HoloLens, de modo que ambos os dispositivos possam compartilhar o mesmo espaço é quase mágico. O poder da realidade misturada vem ativo quando duas ou mais pessoas podem colaborar usando os mesmos dados digitais.
+No painel projeto, navegue até **Assets\AppPrefabs\Support\SharingWithUnet\Scripts** e clique duas vezes em **UnetAnchorManager.cs**. A capacidade de um HoloLens compartilhar informações de rastreamento com outro HoloLens, de modo que ambos os dispositivos possam compartilhar o mesmo espaço é quase mágico. O poder da realidade misturada vem ativo quando duas ou mais pessoas podem colaborar usando os mesmos dados digitais.
 
 Algumas coisas para destacar esse script:
 
-Na função iniciar, observe a verificação de **IsDisplayOpaque** . Nesse caso, vamos fingir que a âncora é estabelecida. Isso ocorre porque os headsets de imersão não expõem uma maneira de importar ou exportar âncoras. No entanto, se estivermos executando em um HoloLens, esse script implementará âncoras de compartilhamento entre os dispositivos. O dispositivo que inicia a sessão criará uma âncora para exportação. O dispositivo que ingressa em uma sessão solicitará a âncora do dispositivo que iniciou a sessão.
+Na função iniciar, observe a verificação de **IsDisplayOpaque**. Nesse caso, vamos fingir que a âncora é estabelecida. Isso ocorre porque os headsets de imersão não expõem uma maneira de importar ou exportar âncoras. No entanto, se estivermos executando em um HoloLens, esse script implementará âncoras de compartilhamento entre os dispositivos. O dispositivo que inicia a sessão criará uma âncora para exportação. O dispositivo que ingressa em uma sessão solicitará a âncora do dispositivo que iniciou a sessão.
 
 **Exportar**
 
@@ -258,29 +258,29 @@ Atualizaremos o aplicativo para colocar os usuários de headsets imersivas na il
 ### <a name="steps"></a>Etapas
 
 * Adicionar MixedRealityTeleport a MixedRealityCameraParent
-    * Em **hierarquia** , selecione **Usland** .
-    * No **Inspetor** , habilite o **controle de nível** .
-    * Em **hierarquia** , selecione **MixedRealityCameraParent** .
-    * No **Inspetor** , clique em **Adicionar componente** .
+    * Em **hierarquia**, selecione **Usland**.
+    * No **Inspetor**, habilite o **controle de nível**.
+    * Em **hierarquia**, selecione **MixedRealityCameraParent**.
+    * No **Inspetor**, clique em **Adicionar componente**.
     * Digite **teleport de realidade misturada** e selecione-o.
 
 ### <a name="digging-into-the-code"></a>Aprofundando-se no código
 
 Os usuários do headset de imersão serão conectados a seus PCs com um cabo, mas nossa ilha é maior do que o cabo é longo. Para compensar, precisamos da capacidade de mover a câmera independentemente do movimento do usuário. Consulte a [página de conforto](../design/comfort.md) para obter mais informações sobre como criar seu aplicativo de realidade misturada (em particular e Locomotion).
 
-Para descrever esse processo, será útil definir dois termos. Primeiro, **Dolly** será o objeto que move a câmera independentemente do usuário. Um objeto de jogo filho do **Dolly** será a **câmera principal** . A câmera principal é anexada à cabeça do usuário.
+Para descrever esse processo, será útil definir dois termos. Primeiro, **Dolly** será o objeto que move a câmera independentemente do usuário. Um objeto de jogo filho do **Dolly** será a **câmera principal**. A câmera principal é anexada à cabeça do usuário.
 
-No painel projeto, navegue até **Assets\AppPrefabs\Support\Scripts\GameLogic** e clique duas vezes em **MixedRealityTeleport.cs** .
+No painel projeto, navegue até **Assets\AppPrefabs\Support\Scripts\GameLogic** e clique duas vezes em **MixedRealityTeleport.cs**.
 
 MixedRealityTeleport tem dois trabalhos. Primeiro, ele lida com a rotação usando os amortecedores. Na função Update, pesquisamos por ' ButtonUp ' em LeftBumper e RightBumper. GetButtonUp retorna true no primeiro quadro em que um botão está ativo depois de ter sido desativado. Se um dos botões tivesse sido gerado, sabemos que o usuário precisa girar.
 
-Quando giramos, fazemos um fade out e esmaecemos usando um script simples chamado ' Fade Control '. Fazemos isso para impedir que o usuário veja um movimento não natural que poderia levar a discomfort. O efeito de fade in e saída é bastante simples. Temos um buraco de cruz preto na frente da **câmera principal** . Ao desbotar, fazemos a transição do valor alfa de 0 para 1. Isso gradualmente faz com que os pixels pretos do Quad sejam renderizados e obscurecem qualquer coisa por trás deles. Ao retroceder, fazemos a transição do valor alfa de volta para zero.
+Quando giramos, fazemos um fade out e esmaecemos usando um script simples chamado ' Fade Control '. Fazemos isso para impedir que o usuário veja um movimento não natural que poderia levar a discomfort. O efeito de fade in e saída é bastante simples. Temos um buraco de cruz preto na frente da **câmera principal**. Ao desbotar, fazemos a transição do valor alfa de 0 para 1. Isso gradualmente faz com que os pixels pretos do Quad sejam renderizados e obscurecem qualquer coisa por trás deles. Ao retroceder, fazemos a transição do valor alfa de volta para zero.
 
-Quando calculamos a rotação, observe que estamos girando nosso **Dolly** , mas calculando a rotação em toda a **câmera principal** . Isso é importante, pois o mais distante da **câmera principal** está longe de 0, 0, a rotação menos precisa em relação ao Dolly se tornaria do ponto de vista do usuário. Na verdade, se você não girar a posição da câmera, o usuário será movido em um arco em volta do **Dolly** em vez de girar.
+Quando calculamos a rotação, observe que estamos girando nosso **Dolly** , mas calculando a rotação em toda a **câmera principal**. Isso é importante, pois o mais distante da **câmera principal** está longe de 0, 0, a rotação menos precisa em relação ao Dolly se tornaria do ponto de vista do usuário. Na verdade, se você não girar a posição da câmera, o usuário será movido em um arco em volta do **Dolly** em vez de girar.
 
-O segundo trabalho para MixedRealityTeleport é manipular a movimentação de **Dolly** . Isso é feito em SetWorldPosition. SetWorldPosition usa a posição do mundo desejada, a posição onde o usuário deseja percieve que estar. Precisamos colocar nosso **Dolly** nessa posição menos a posição local da **câmera principal** , pois esse deslocamento será adicionado a cada quadro.
+O segundo trabalho para MixedRealityTeleport é manipular a movimentação de **Dolly**. Isso é feito em SetWorldPosition. SetWorldPosition usa a posição do mundo desejada, a posição onde o usuário deseja percieve que estar. Precisamos colocar nosso **Dolly** nessa posição menos a posição local da **câmera principal**, pois esse deslocamento será adicionado a cada quadro.
 
-Um segundo script chama SetWorldPosition. Vamos examinar esse script. No painel projeto, navegue até **Assets\AppPrefabs\Support\Scripts\GameLogic** e clique duas vezes em **TeleportScript.cs** .
+Um segundo script chama SetWorldPosition. Vamos examinar esse script. No painel projeto, navegue até **Assets\AppPrefabs\Support\Scripts\GameLogic** e clique duas vezes em **TeleportScript.cs**.
 
 Esse script é um pouco mais envolvido do que MixedRealityTeleport. O script está verificando se o botão Y no controlador Xbox será mantido. Enquanto o botão é mantido para baixo, um cursor teleport é renderizado e o script converte um Ray a partir da posição de olhar do usuário. Se esse raio colidir com uma superfície que está mais ou menos apontando para cima, a superfície será considerada uma boa superfície para teleport e a animação no cursor teleport será habilitada. Se o raio não colidir com uma superfície mais ou menos apontando para cima, a animação no cursor será desabilitada. Quando o botão Y é liberado e o ponto calculado do raio é uma posição válida, o script chama SetWorldPosition com a posição do raio interseccionado.
 
@@ -311,14 +311,14 @@ Com base no capítulo 4, quando um usuário com um headset de imersão fica pert
 
 ### <a name="steps"></a>Etapas
 
-* Em **hierarquia** , selecione **Usland** .
-* No **Inspetor** , em **controle de nível** , marque **habilitar colaboração** .
+* Em **hierarquia**, selecione **Usland**.
+* No **Inspetor**, em **controle de nível**, marque **habilitar colaboração**.
 
 ### <a name="digging-into-the-code"></a>Aprofundando-se no código
 
 Agora vamos examinar LevelControl.cs. Esse script é o núcleo da lógica do jogo e mantém o estado do jogo. Como este é um jogo com vários participantes usando o UNET, precisamos entender como os fluxos de dados, pelo menos, o suficiente para modificar este tutorial. Para obter uma visão geral mais completa do UNET, consulte a documentação do Unity.
 
-No painel projeto, navegue até **Assets\AppPrefabs\Support\Scripts\GameLogic** e clique duas vezes em **LevelControl.cs** .
+No painel projeto, navegue até **Assets\AppPrefabs\Support\Scripts\GameLogic** e clique duas vezes em **LevelControl.cs**.
 
 Vamos entender como um headset de imersão indica que eles estão prontos para o lançamento do Rocket. O Rocket Launch Readiness é comunicado pela definição de um dos Três BOOLs em uma lista de BOOLs que correspondem aos três caminhos na ilha. O bool de um caminho será definido quando o usuário atribuído ao caminho estiver na parte superior do painel marrom dentro da sala de Rocket. Bem, agora para os detalhes.
 
@@ -354,6 +354,6 @@ De volta ao LevelControl.cs, consulte SetGoalIndex. Aqui, estamos definindo o va
 
 Criando no capítulo anterior, iniciaremos a sessão como antes. Desta vez, à medida que os usuários no headset de imersão chegarem à "porta" em seu caminho, uma dica de ferramenta aparecerá para que apenas os usuários do HoloLens possam ver. Os usuários do HoloLens são responsáveis por comunicar essa pista aos usuários no headset de imersão. O Rocket será iniciado em espaço depois que cada avatar tiver passado em seu painel marrom correspondente dentro do vulcão. A cena será redefinida após 60 segundos para que você possa fazer isso novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Entrada do MR 213: controladores de movimentos](mixed-reality-213.md)

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Edge, novo, imersão Web, Microsoft Edge, navegador, VR, 360, 360 vídeo, 360 Viewer, webxr, webvr
-ms.openlocfilehash: ef55ee564e0a7ea11aaaad62ebf259459454ab72
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 041c374e1e2120c3aac35bd09889b8594825a186
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010026"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582506"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>A nova realidade do Microsoft Edge para Windows Mixed
 
@@ -52,7 +52,7 @@ Depois de pegar a atualização cumulativa 2020-01 para o Windows 10 versão 190
 
 **Por que isso acontece**
 
-O suporte para aplicativos Win32 clássicos no Windows Mixed Reality foi introduzido com a [atualização do Windows 10 de maio de 2019](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-may-2019). Para habilitar esse suporte, um monitor virtual deve ser criado para hospedar o aplicativo Win32. Cada vez que um novo aplicativo Win32 é iniciado, outro monitor virtual precisa ser criado. Infelizmente, a criação de um monitor virtual é uma tarefa intensiva que pode fazer com que a tela do headset congele brevemente. Os clientes ofereciam comentários de que essa era uma experiência desconfortável e perturbadora. Devido a comentários e maior uso do aplicativo Win32, tomamos a decisão de alocar previamente três monitores virtuais durante a inicialização da realidade mista do Windows. Isso impede a interrupção e permite que os clientes iniciem até três aplicativos Win32 simultâneos sem experimentar o congelamento de vídeo do headset.
+O suporte para aplicativos Win32 clássicos no Windows Mixed Reality foi introduzido com a [atualização do Windows 10 de maio de 2019](/windows/mixed-reality/enthusiast-guide/release-notes-may-2019). Para habilitar esse suporte, um monitor virtual deve ser criado para hospedar o aplicativo Win32. Cada vez que um novo aplicativo Win32 é iniciado, outro monitor virtual precisa ser criado. Infelizmente, a criação de um monitor virtual é uma tarefa intensiva que pode fazer com que a tela do headset congele brevemente. Os clientes ofereciam comentários de que essa era uma experiência desconfortável e perturbadora. Devido a comentários e maior uso do aplicativo Win32, tomamos a decisão de alocar previamente três monitores virtuais durante a inicialização da realidade mista do Windows. Isso impede a interrupção e permite que os clientes iniciem até três aplicativos Win32 simultâneos sem experimentar o congelamento de vídeo do headset.
 
 **Solução alternativa**
 

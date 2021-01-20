@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717871"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581115"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -57,7 +57,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-Você pode encontrar os valores numéricos para cada caso de enum na tabela [Windows. percepção. People. HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) .
+Você pode encontrar os valores numéricos para cada caso de enum na tabela [Windows. percepção. People. HandJointKind](/uwp/api/windows.perception.people.handjointkind) .
 
 ### <a name="supporting-hand-tracking"></a>Acompanhamento de suporte à mão
 
@@ -95,4 +95,3 @@ Aqui está uma análise dos parâmetros de função do GetHandJointTransform:
 * **Transformação** – coordenadas e orientação da base do Bone. Você pode solicitar a base do próximo Bone para obter os dados de transformação para o final de um Bone. Um Bone de dica especial dá ao fim do distal.
 * * * RADIUS — raio da base do Bone.
 * * * Valor de retorno — true se o Bone for rastreado neste quadro, false se o Bone não for acompanhado.
-
