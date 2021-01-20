@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
-  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+  ms.openlocfilehash: a4a869ca70c630956427130b01928c3154164f46
+  ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "98007547"
+  ms.lasthandoff: 01/20/2021
+  ms.locfileid: "98582859"
 highlightedContent:
   items:
   - title: O que é Realidade Misturada?
@@ -26,10 +26,10 @@ highlightedContent:
     url: discover/mixed-reality.md
   - title: Introdução ao HoloLens 2
     itemType: overview
-    url: https://docs.microsoft.com/hololens/hololens2-hardware
+    url: /hololens/hololens2-hardware
   - title: Aplicativos de Realidade Misturada do Dynamics 365
     itemType: reference
-    url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    url: /dynamics365/mixed-reality/
   - title: Serviços de nuvem de realidade misturada do Azure
     itemType: whats-new
     url: develop/mixed-reality-cloud-services.md
@@ -38,13 +38,13 @@ highlightedContent:
     url: develop/development.md
   - title: Administradores de TI
     itemType: quickstart
-    url: https://docs.microsoft.com/hololens/hololens-requirements
+    url: /hololens/hololens-requirements
   - title: Entusiastas de VR
     itemType: how-to-guide
-    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
+    url: /windows/mixed-reality/enthusiast-guide/vr-journey
   - title: Módulos da Realidade Misturada do Learn
     itemType: learn
-    url: develop/mr-learning-overview.md
+    url: ./discover/mr-learning-overview.md
 productDirectory:
   title: Mergulhe na Realidade Misturada
   summary: Seja você um designer, um desenvolvedor ou um profissional de TI, temos os caminhos certos para treiná-lo.
@@ -82,17 +82,17 @@ productDirectory:
   - title: Implantar
     imageSrc: images/icon-distribution.jpg
     links:
-    - url: https://docs.microsoft.com/hololens/hololens-requirements
+    - url: /hololens/hololens-requirements
       text: Preparar para implantação comercial
-    - url: https://docs.microsoft.com/hololens/hololens-identity
+    - url: /hololens/hololens-identity
       text: Gerenciar a identidade e as credenciais do usuário
-    - url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+    - url: /hololens/hololens-enroll-mdm
       text: Registrar os seus dispositivos
-    - url: https://docs.microsoft.com/hololens/hololens-updates
+    - url: /hololens/hololens-updates
       text: Gerenciar as suas atualizações do HoloLens
-    - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+    - url: /hololens/hololens2-cloud-connected-overview
       text: Implantação conectada à nuvem com a Assistência Remota
-    - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
+    - url: /hololens/hololens-troubleshooting
       text: Solução de problemas e suporte
 conceptualContent:
   title: Estruturas

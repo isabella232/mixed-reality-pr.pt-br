@@ -17,9 +17,9 @@
 - name: Hardware do HoloLens
   items:
     - name: Detalhes de hardware do HoloLens 2
-      href: 'https://docs.microsoft.com/hololens/hololens2-hardware'
+      href: /hololens/hololens2-hardware
     - name: Detalhes de hardware do HoloLens (1ª geração)
-      href: 'https://docs.microsoft.com/hololens/hololens1-hardware'
+      href: /hololens/hololens1-hardware
 - name: Headsets imersivos
   items:
     - name: Detalhes de hardware do headset imersivo
@@ -27,7 +27,7 @@
     - name: Como navegar na página inicial do Windows Mixed Reality
       href: navigating-the-windows-mixed-reality-home.md
     - name: Guia do entusiasta de VR
-      href: 'https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/'
+      href: /windows/mixed-reality/enthusiast-guide/
     - name: Entretenimento baseado na localização
       href: location-based-experiences.md
 - name: Recursos da comunidade

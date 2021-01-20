@@ -44,7 +44,7 @@
 ### [Integridade do headset imersivo, segurança e conforto](wmr-health-safety-comfort.md)
 ### [Visão geral do software de Realidade Misturada e histórico de versões](mixed-reality-software.md)
 ### [Como funciona o acompanhamento interno](tracking-system.md)
-### [Controladores do HP Reverb G2 no Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-### [Controladores do HP Reverb G2 no Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+### [Controladores do HP Reverb G2 no Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Controladores do HP Reverb G2 no Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
 ## [Guia de contribuição](contributing.md)
