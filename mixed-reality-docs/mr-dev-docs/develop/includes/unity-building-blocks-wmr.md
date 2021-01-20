@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 716fdc03c9e2eb3ae4ffb61940e9b11e13c4a6ce
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 2327eae53e5fb921feeed127f38592770634575e
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98040556"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98195327"
 ---
 # <a name="available-in-mrtk"></a>[Disponível no MRTK](#tab/mrtk)
 
@@ -12,7 +12,8 @@ ms.locfileid: "98040556"
 | --- | --- |
 | [Interações básicas](../unity/mrtk-101.md) | Aprenda o básico sobre a interação com objetos em um espaço imersivo |
 | [Câmera](../unity/camera-in-unity.md) | Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada |
-| [Gestos e controladores de movimentos](../unity/gestures-and-motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
+| [Controladores de movimentos](../unity/motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
+| [Gestos](../unity/gestures-in-unity.md) | Use gestos de mão como entrada em suas experiências de Realidade Misturada |
 | [Text](../unity/text-in-unity.md) | Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade |
 | [Entrada de voz](../unity/voice-input-in-unity.md) | Capture ditado, palavras-chave e frases faladas dos seus usuários|
 
@@ -22,7 +23,8 @@ ms.locfileid: "98040556"
 | --- | --- |
 | [Câmera](../unity/camera-in-unity.md) | Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada |
 | [Sistemas de coordenadas](../unity/coordinate-systems-in-unity.md) | Determine a escala da experiência para qual seu aplicativo foi projetado |
-| [Gestos e controladores de movimentos](../unity/gestures-and-motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
+| [Controladores de movimentos](../unity/motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
+| [Gestos](../unity/gestures-in-unity.md) | Use gestos de mão como entrada em suas experiências de Realidade Misturada |
 | [Persistência](../unity/persistence-in-unity.md) | Mantenha os hologramas localmente em diferentes sessões de aplicativos |
 | [Som espacial](../unity/spatial-sound-in-unity.md) | Aprimore seus aplicativos com um áudio 3D imersivo |
 | [Text](../unity/text-in-unity.md) | Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade |

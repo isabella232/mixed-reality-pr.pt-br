@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, OpenXR
-ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009756"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247729"
 ---
 # <a name="unreal-development-overview"></a>Visão geral do desenvolvimento com o Unreal
 
@@ -54,7 +54,7 @@ O [Kit de Ferramentas de Realidade Misturada para Unreal](https://github.com/mic
 > [!NOTE]
 > Você pode se aprofundar nas **[Ferramentas de UX para o repositório do GitHub no Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)** para obter mais detalhes.
 
-### <a name="3-platform-capabilities-and-apis"></a>3. Funcionalidades de plataforma e APIs
+### <a name="3-advanced-features"></a>3. Recursos avançados
 
 Outros recursos importantes que desempenham uma função em aplicativos de realidade misturada estão disponíveis sem nenhum pacote ou configuração extra. Esses recursos podem ser adicionados a projetos do Unreal com ou sem o MRTK instalado. Após aprofundar-se nessas funcionalidades mais avançadas, você poderá criar aplicativos de Realidade Misturada mais complexos.
 

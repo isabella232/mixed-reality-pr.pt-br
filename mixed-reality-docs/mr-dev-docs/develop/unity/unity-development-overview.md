@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 28ddaeed4218dc3433e13122806a2032e335dd56
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031980"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226435"
 ---
 # <a name="unity-development-for-hololens"></a>Desenvolvimento do Unity para HoloLens
 
@@ -49,7 +49,7 @@ Todos os principais blocos de construção para aplicativos de realidade mistura
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3. Funcionalidades de plataforma e APIs
+### <a name="3-advanced-features"></a>3. Recursos avançados
 
 Outros recursos importantes que desempenham uma função em aplicativos de realidade misturada estão disponíveis por meio das APIs do Unity sem nenhum pacote ou configuração extra. Esses recursos podem ser adicionados a projetos do Unity com ou sem o MRTK instalado. Depois de se aprofundar nos recursos mais avançados que o Unity oferece, você conseguirá criar aplicativos de realidade misturada complexos e mais avançados.
 

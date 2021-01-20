@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é realidade aumentada, MRTK, kit de ferramentas de realidade misturada, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: ba63f137e90b68345f3e5bbb831aba6abd6fe538
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98040557"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226425"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Desenvolvimento do Unity para VR e Windows Mixed Reality
 
@@ -42,7 +42,7 @@ Depois de iniciar um novo projeto de imersão, você precisará de alguns blocos
 
 [!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3. Funcionalidades de plataforma e APIs
+### <a name="3-advanced-features"></a>3. Recursos avançados
 
 Outros recursos importantes que desempenham uma função em aplicativos de imersão estão disponíveis por meio das APIs do Unity sem nenhum pacote ou configuração extra. Depois de se aprofundar nas funcionalidades mais avançadas que o Unity oferece, você conseguirá criar aplicativos de VR complexos e mais avançados.
 
