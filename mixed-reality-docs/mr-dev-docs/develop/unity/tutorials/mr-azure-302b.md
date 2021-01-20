@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, visão personalizada, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: d40dc1cf23ee8040406047eaddd7ee3b70365199
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679545"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583406"
 ---
 # <a name="mr-and-azure-302b-custom-vision"></a>MR e Azure 302b: Visão Personalizada
 
@@ -29,7 +29,7 @@ Este serviço permitirá que você treine um modelo de aprendizado de máquina u
 
 ![resultado do curso](images/AzureLabs-Lab302b-00.png)
 
-O Azure Visão Personalizada é um serviço cognitiva da Microsoft que permite aos desenvolvedores criar classificadores de imagem personalizados. Esses classificadores podem ser usados com novas imagens para reconhecer ou classificar objetos dentro dessa nova imagem. O serviço fornece um portal online simples e fácil de usar para simplificar o processo. Para obter mais informações, visite a [página de serviço de visão personalizada do Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+O Azure Visão Personalizada é um serviço cognitiva da Microsoft que permite aos desenvolvedores criar classificadores de imagem personalizados. Esses classificadores podem ser usados com novas imagens para reconhecer ou classificar objetos dentro dessa nova imagem. O serviço fornece um portal online simples e fácil de usar para simplificar o processo. Para obter mais informações, visite a [página de serviço de visão personalizada do Azure](/azure/cognitive-services/custom-vision-service/home).
 
 Após a conclusão deste curso, você terá um aplicativo de realidade misturada que poderá trabalhar em dois modos:
 
@@ -43,7 +43,7 @@ Este curso ensinará a você como obter os resultados do Serviço de Visão Pers
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 302b: Visão Personalizada</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -64,7 +64,7 @@ Recomendamos o seguinte hardware e software para este curso:
 - [O SDK do Windows 10 mais recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](../../../hololens-hardware-details.md) modo de desenvolvedor habilitado
+- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](/hololens/hololens1-hardware) modo de desenvolvedor habilitado
 - Uma câmera conectada ao seu PC (para desenvolvimento de headsets de imersão)
 - Acesso à Internet para a instalação do Azure e recuperação de API de Visão Personalizada
 - Uma série de pelo menos cinco (5) imagens (dez (10) recomendado) para cada objeto que você deseja que a Serviço de Visão Personalizada reconheça. Se desejar, você pode usar [as imagens já fornecidas com este curso (um mouse de computador e um teclado) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip).
@@ -72,12 +72,12 @@ Recomendamos o seguinte hardware e software para este curso:
 ## <a name="before-you-start"></a>Antes de começar
 
 1.  Para evitar problemas de criação desse projeto, é altamente recomendável que você crie o projeto mencionado neste tutorial em uma pasta raiz ou quase raiz (caminhos de pasta longos podem causar problemas em tempo de compilação).
-2.  Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](/hololens/hololens-setup). 
 3.  É uma boa ideia executar a calibragem e o ajuste do sensor ao começar a desenvolver um novo aplicativo do HoloLens (às vezes, ele pode ajudar a executar essas tarefas para cada usuário). 
 
-Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](../../../calibration.md#hololens-2).
+Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](../../../sensor-tuning.md).
+Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-custom-vision-service-portal"></a>Capítulo 1-o portal de Serviço de Visão Personalizada
 
@@ -118,7 +118,7 @@ Para usar o *serviço de visão personalizada* no Azure, você precisará config
 
         ![Definir os domínios](images/AzureLabs-Lab302b-05.png)
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
 7.  Quando terminar, clique em **criar projeto**, você será redirecionado para a página Serviço de visão personalizada, projeto.
 
@@ -279,7 +279,7 @@ A seguir está uma configuração típica para o desenvolvimento com realidade m
 Este curso requer o uso da biblioteca **Newtonsoft** , que você pode adicionar como uma DLL aos seus ativos. O pacote que contém [essa biblioteca pode ser baixado deste link](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/NewtonsoftDLL.unitypackage).
 Para importar a biblioteca Newtonsoft para seu projeto, use o pacote do Unity que acompanha este curso.
 
-1.  Adicione o *. unitypackage* ao Unity usando a opção de menu **Assets*  >   >  *Custom* *pacote* personalizado do *pacote* de *importação* de ativos* .
+1.  Adicione o *. unitypackage* ao Unity usando a opção de menu * >   >   *pacote* personalizado do *pacote* de *importação* de ativos* .
 
 2.  Na caixa **Importar pacote de Unity** que é exibida, verifique se tudo em (e incluindo) **plug-ins** está selecionado.
 
@@ -1666,7 +1666,7 @@ Para implantar no HoloLens:
 
     1.  Enquanto estiver desgastando seu HoloLens, abra as **configurações**.
 
-    2.  Vá para **rede &**  >  Opções avançadas **de Internet Wi-Fi**  >  **Advanced Options**
+    2.  Vá para **rede &**  >  Opções avançadas **de Internet Wi-Fi**  >  
 
     3.  Anote o endereço **IPv4** .
 

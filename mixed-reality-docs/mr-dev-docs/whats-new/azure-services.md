@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 08/21/2019
 ms.topic: overview
 keywords: Realidade misturada, desenvolva, desenvolvimento, HoloLens, serviços do Azure, âncoras espaciais, fala, visão, renderização remota
-ms.openlocfilehash: c25584bd77495ab4e45713d2ad25b1b7b4e526e9
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 74be047e31806fce97339756205b93c01af6f79b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757564"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582823"
 ---
 # <a name="azure-mixed-reality-services"></a>Serviços de realidade misturada do Azure
 Revele aquilo em que cada humano é especialista – o mundo físico tridimensional ao nosso redor – com os serviços de realidade misturada do Azure. Ajude as pessoas a criar, aprender e colaborar com mais eficiência com a captura de informações digitais e a identificando. Traga 3D para dispositivos móveis, headsets e outros dispositivos que não estão conectados. Usando o Azure, ajude a garantir que suas informações mais confidenciais fiquem protegidas.
@@ -22,7 +22,7 @@ Revele aquilo em que cada humano é especialista – o mundo físico tridimensio
 
 Crie aplicativos de realidade misturados de vários usuários, com reconhecimento espacial, usando âncoras espaciais. Crie aplicativos de realidade misturados que mapeiam, designam e recuperam pontos de interesse precisos acessíveis em dispositivos de HoloLens, iOS e Android. Habilite o wayfinding em espaços para ajudar os usuários a colaborar com mais eficiência.
 
-[Experimente as âncoras espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors)
+[Experimente as âncoras espaciais do Azure](/azure/spatial-anchors)
 
 
 ## <a name="interactive-high-quality-3d-models-using-remote-rendering"></a>Modelos 3D interativos e de alta qualidade usando renderização remota
@@ -41,10 +41,10 @@ A visualização de renderização remota do Azure traz modelos 3D interativos e
 
 :::row:::
     :::column:::
-       [![Ícone de bolha de fala com plano de fundo cinza em branco](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![Ícone de bolha de fala com plano de fundo cinza em branco](images/speech.jpg)](/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="speech"></a>[Fala](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### <a name="speech"></a>[Fala](/azure/cognitive-services/speech-service/)
         Descubra como a Fala habilita a integração de funcionalidades de processamento de fala em qualquer aplicativo ou serviço. Converta o idioma falado em texto ou produza uma fala que soa natural com base em texto usando fontes de voz padrão (ou personalizáveis). Experimente qualquer serviço gratuitamente – e crie rapidamente aplicativos e serviços habilitados para fala com as funcionalidades a seguir.
     :::column-end:::
 :::row-end:::
@@ -53,10 +53,10 @@ A visualização de renderização remota do Azure traz modelos 3D interativos e
 
 :::row:::
     :::column:::
-       [![Gráfico de olho de visão com plano de fundo cinza em branco](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Gráfico de olho de visão com plano de fundo cinza em branco](images/vision.jpg)](/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="vision"></a>[Visão](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### <a name="vision"></a>[Visão](/azure/cognitive-services/computer-vision/)
         Reconheça, identifique, legende, indexe e modere imagens, vídeos e conteúdo de tinta digital. Saiba como a Visão possibilita que aplicativos e serviços identifiquem e analisem com precisão o conteúdo em imagens, vídeos e tinta digital.
     :::column-end:::
 :::row-end:::
@@ -64,5 +64,5 @@ A visualização de renderização remota do Azure traz modelos 3D interativos e
 
 ## <a name="see-also"></a>Confira também
 
-* Tutoriais sobre as Âncoras Espaciais do Azure para HoloLens 2 – [1 de 3: Introdução às Âncoras Espaciais do Azure](../mrlearning-asa-ch1.md)
+* Tutoriais sobre as Âncoras Espaciais do Azure para HoloLens 2 – [1 de 3: Introdução às Âncoras Espaciais do Azure](../develop/unity/tutorials/mr-learning-asa-02.md)
 * Tutoriais sobre os Serviços de Fala do Azure para HoloLens 2 – [1 de 4 Como integrar e usar a transcrição e o reconhecimento de fala](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)

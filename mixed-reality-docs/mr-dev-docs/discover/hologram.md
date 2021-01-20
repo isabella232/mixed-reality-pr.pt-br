@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, HoloLens, hologramas, design, interação, headset de realidade misturada, headset da realidade mista do Windows, o que é a realidade aumentada
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757554"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583340"
 ---
 # <a name="what-is-a-hologram"></a>O que é um holograma?
 
@@ -33,7 +33,7 @@ O HoloLens permite criar **hologramas**, que são objetos compostos de luz e som
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -126,8 +126,7 @@ Os hologramas também podem ser obstruídodos por objetos do mundo real. Por exe
 
 ## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
 
-Se estiver seguindo a [jornada de descoberta](get-started-with-mr.md) que apresentamos, você estará no meio da exploração dos fundamentos da Realidade Misturada. A partir daqui, você pode continuar para o próximo tópico básico: 
+Se estiver seguindo a [jornada de descoberta](get-started-with-mr.md) que apresentamos, você estará no meio da exploração dos fundamentos da Realidade Misturada. Desse ponto, você poderá prosseguir para o próximo tópico básico: 
 
 > [!div class="nextstepaction"]
 > [Expanda seu processo de design](case-study-expanding-the-design-process-for-mixed-reality.md)
-

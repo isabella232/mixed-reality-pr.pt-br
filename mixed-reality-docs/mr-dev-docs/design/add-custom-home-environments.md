@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Home, ambientes personalizados, lugares, Cliff House, skyloft, usuário, criar, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista
-ms.openlocfilehash: 2d88b4e20c2703b554572c0d39d5c69767164694
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848083"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583302"
 ---
 # <a name="design-your-own-immersive-environments"></a>Projete seus próprios ambientes de imersão
 
 >[!NOTE]
 >Esse é um recurso experimental. Experimente e divirta-se com ele, mas não se surpreenda se tudo não funcionar tão bem quanto o esperado. Estamos avaliando a viabilidade desse recurso e interesse em usá-lo, portanto, conte-nos sobre sua experiência (e quaisquer bugs que você encontrar) nos [fóruns de desenvolvedores](https://forums.hololens.com/categories/custom-home-environments).
 
-A partir da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), habilitamos um recurso experimental que permite adicionar ambientes personalizados ao seletor de locais (no menu Iniciar) para usar como a [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). O Windows Mixed Reality tem dois ambientes padrão, Cliff House e Skyloft, que você pode escolher como sua casa. A criação de ambientes personalizados permite expandir a lista com suas próprias criações. Estamos disponibilizando esse recurso em um estado inicial para avaliar os juros de criadores e desenvolvedores. Veja que tipos de mundos você cria e entende como você trabalha com diferentes ferramentas de criação.
+A partir da [atualização do Windows 10 de abril de 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), habilitamos um recurso experimental que permite adicionar ambientes personalizados ao seletor de locais (no menu Iniciar) para usar como a [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). O Windows Mixed Reality tem dois ambientes padrão, Cliff House e Skyloft, que você pode escolher como sua casa. A criação de ambientes personalizados permite expandir a lista com suas próprias criações. Estamos disponibilizando esse recurso em um estado inicial para avaliar os juros de criadores e desenvolvedores. Veja que tipos de mundos você cria e entende como você trabalha com diferentes ferramentas de criação.
 
 Ao usar um ambiente personalizado, você observará que o teleportamento, a interação com os aplicativos e o posicionamento de hologramas funciona exatamente como no Cliff House e Skyloft. Você pode navegar na Web em um cenário de fantasia ou preencher uma cidade fractais com hologramas-as possibilidades são infinitas!
 
@@ -32,7 +32,7 @@ Ao usar um ambiente personalizado, você observará que o teleportamento, a inte
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
      <tr>
@@ -149,6 +149,5 @@ O local de geração padrão está localizado em 0, 0, 0 no ambiente. No momento
 
 Quando você cria seu ambiente personalizado, ele usará uma simulação de renderização acústica que não corresponde ao espaço físico que você criou. O som pode vir de direções erradas e pode parecer muffled. 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Conversor de ativos da realidade mista do Windows (no GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
-

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, serviços de mídia, vídeo de streaming, 360, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679515"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583453"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>MR e Azure 306: streaming de vídeo
 
@@ -43,7 +43,7 @@ Em seu aplicativo, cabe a você como você integrará os resultados com seu desi
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 306: streaming de vídeo</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -142,7 +142,7 @@ Para usar o serviço de mídia do Azure, você precisará configurar uma instân
 
     3. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses laboratórios) em um grupo de recursos comum). 
     
-    > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar grupos de recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+    > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar grupos de recursos do Azure](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determine o **local** do seu grupo de recursos (se você estiver criando um novo grupo de recursos). O local ideal seria na região em que o aplicativo seria executado. Alguns ativos do Azure só estão disponíveis em determinadas regiões.
 
@@ -245,12 +245,12 @@ Para usar o serviço de mídia do Azure, você precisará configurar uma instân
 
 23. Você será solicitado a definir um **localizador**, que é o ponto de entrada, para arquivos/s em seus ativos. Para seu cenário, defina as seguintes propriedades:
 
-    1.  Tipo de localizador **Locator type**  >  **Progressivo**.
+    1.  Tipo de localizador   >  **Progressivo**.
 
     2.  A **Data** e a **hora** serão definidas para você, da data atual, para uma hora no futuro (100 anos, nesse caso). Deixe como está ou altere-o para o naipe.
 
     > [!NOTE]
-    > Para obter mais informações sobre localizadores e o que você pode escolher, visite a [documentação dos serviços de mídia do Azure](https://docs.microsoft.com/azure/media-services/media-services-concepts).
+    > Para obter mais informações sobre localizadores e o que você pode escolher, visite a [documentação dos serviços de mídia do Azure](/azure/media-services/media-services-concepts).
 
 24. Na parte inferior do painel, clique no botão **Adicionar** .
 
@@ -360,14 +360,14 @@ Como importar o **unitypackage**:
 
     2.  Na pasta **materiais** , você encontrará o material de **InsideOutSpheres**  *LAMBERT1*, junto com um material chamado *ButtonMaterial*, que é usado pelo GazeButton, que será exibido em breve.
 
-    3.  A pasta **pré-fabricados** contém o **InsideOutSphere** pré-fabricado que contém o modelo **InsideOutSphere** *model* e o *GazeButton*.
+    3.  A pasta **pré-fabricados** contém o **InsideOutSphere** pré-fabricado que contém o modelo **InsideOutSphere**  e o *GazeButton*.
 
     4.  **Nenhum código está incluído**, você escreverá o código seguindo este curso.
 
 
 4.  Na **hierarquia**, selecione o objeto de **câmera principal** e atualize os seguintes componentes:
 
-    1.  **Transformação**
+    1.  **Transformar**
 
         1.  Posição = **X**: 0, **Y**: 0, **Z**: 0.
 
@@ -606,7 +606,7 @@ Para criar esta classe:
     ```
 
     > [!TIP] 
-    > O método **ChangeScene ()** usa um recurso C útil \# chamado *operador condicional*. Isso permite que as condições sejam verificadas e, em seguida, os valores retornados com base no resultado da verificação, tudo dentro de uma única instrução. Siga este [link para saber mais sobre o operador condicional](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+    > O método **ChangeScene ()** usa um recurso C útil \# chamado *operador condicional*. Isso permite que as condições sejam verificadas e, em seguida, os valores retornados com base no resultado da verificação, tudo dentro de uma única instrução. Siga este [link para saber mais sobre o operador condicional](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Salve suas alterações no Visual Studio antes de retornar ao Unity.
 
@@ -888,5 +888,3 @@ Parabéns, você criou um aplicativo de realidade misturada que aproveita o serv
 **Exercício 2**
 
 Experimente com o Azure e o Unity e tente implementar a capacidade para o aplicativo selecionar automaticamente um vídeo com um tamanho de arquivo diferente, dependendo da força de uma conexão com a Internet.
-
-

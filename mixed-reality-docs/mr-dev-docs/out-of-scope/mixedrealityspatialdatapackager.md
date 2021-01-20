@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: LBE, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675636"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583643"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Documentação do pacote de dados espaciais da realidade misturada
 
@@ -37,7 +37,7 @@ ms.locfileid: "91675636"
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -71,8 +71,7 @@ Principais requisitos e limitações:
 4. Minimize as superfícies em branco e não texturas, por exemplo, colocar uma variedade de pôsteres diferentes em paredes brancas
 5. Mapear o espaço sem objetos dinâmicos na cena, como mover pessoas
 6. Bloquear o mapa na importação (disponível por meio do insider Preview)
-7. Desbloquear o mapa e examinar novamente o ambiente quando o rastreamento de qualidade degrada e/ou se há alterações no ambiente (iluminação ou alterações no layout do objeto)
-***
+7. Desbloquear o mapa e examinar novamente o ambiente quando o rastreamento de qualidade degrada e/ou se há alterações no ambiente (iluminação ou alterações no layout do objeto) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Executando o Gerenciador de dados espaciais da realidade misturada com o script complementar
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 A importação exclui os dados espaciais existentes e os substitui pelos dados do diretório especificado. A entrada do nome do aplicativo especifica o nome do pacote do aplicativo de destino que, como as âncoras espaciais, deve ser importado para o e o SID do usuário de destino especifica o usuário que deve ter acesso às âncoras espaciais importadas. O nome da família de pacotes de destino e os SIDs de usuário devem corresponder aos valores existentes no computador ou o exe falhará.
 
 
-***
+_**
 ## <a name="error-messages"></a>Mensagens de erro
 Além disso, as mensagens de erro abaixo também serão acompanhadas por um HRESULT
 

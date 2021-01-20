@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108849"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583043"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contribuindo para a documentação do desenvolvedor de realidade misturada
 
@@ -24,7 +24,7 @@ Esta página aborda as etapas e diretrizes básicas de contribuição e links pa
 
 | Nome do repositório | URL |
 | --- | --- |
-| Realidade Misturada | [MicrosoftDocs/misto – realidade](https://docs.microsoft.com/windows/mixed-reality) |
+| Realidade Misturada | [MicrosoftDocs/misto – realidade](/windows/mixed-reality) |
 | Guia dos entusiastas do VR | [MicrosoftDocs/misto-realidade/entusiasta-guia](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -131,13 +131,13 @@ Os recursos a seguir ajudarão você a aprender a editar a documentação usando
 
 - [Noções básicas de Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Cartaz de referência de visão geral](images/MarkdownPoster.pdf)
-- [Recursos adicionais para a redução do texto para docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Recursos adicionais para a redução do texto para docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Adicionando tabelas
 
 Por causa da maneira como as tabelas de estilos docs.microsoft.com, elas não terão bordas ou estilos personalizados, mesmo que você experimente o CSS embutido. Parecerá funcionar por um curto período de tempo, mas eventualmente a plataforma removerá o estilo da tabela. Então, planeje com antecedência e mantenha suas tabelas simples. [Aqui está um site que facilita a redução das tabelas](https://www.tablesgenerator.com/markdown_tables).
 
-A [extensão de redução de documentos para Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) também facilitará a geração de tabelas se você estiver usando [Visual Studio Code (veja abaixo)](#using-visual-studio-code) para editar a documentação.
+A [extensão de redução de documentos para Visual Studio Code](/teamblog/docs-extension) também facilitará a geração de tabelas se você estiver usando [Visual Studio Code (veja abaixo)](#using-visual-studio-code) para editar a documentação.
 
 ### <a name="adding-images"></a>Adicionando imagens
 

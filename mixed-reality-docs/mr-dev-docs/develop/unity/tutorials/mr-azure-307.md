@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, Machine Learning, ml, estúdio de Machine Learning, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 3bb50c146e11a340f4223d71dd401ac2b84dd6d4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679475"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583396"
 ---
 # <a name="mr-and-azure-307-machine-learning"></a>MR e Azure 307: Aprendizado de máquina
 
@@ -42,7 +42,7 @@ Este curso é um tutorial independente, que não envolve diretamente nenhum outr
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 307: Aprendizado de máquina</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -63,7 +63,7 @@ Recomendamos o seguinte hardware e software para este curso:
 - [O SDK do Windows 10 mais recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](../../../hololens-hardware-details.md) modo de desenvolvedor habilitado
+- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](/hololens/hololens1-hardware) modo de desenvolvedor habilitado
 - Acesso à Internet para a instalação do Azure e recuperação de dados de ML
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -100,7 +100,7 @@ Para usar a API do Azure Translator, você precisará configurar uma instância 
     7.  Selecione uma **Assinatura**.
     4. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses laboratórios) em um grupo de recursos comum).
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
     
     5.  Determine o **local** do seu grupo de recursos (se você estiver criando um novo grupo de recursos). O local ideal seria na região em que o aplicativo seria executado. Alguns ativos do Azure só estão disponíveis em determinadas regiões.
 
@@ -132,7 +132,7 @@ Para usar o *Azure Machine Learning*, você precisará configurar uma instância
 
     3. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses laboratórios) em um grupo de recursos comum). 
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determine o **local** do seu grupo de recursos (se você estiver criando um novo grupo de recursos). O local ideal seria na região em que o aplicativo seria executado. Alguns ativos do Azure só estão disponíveis em determinadas regiões. Você deve usar o mesmo grupo de recursos que usou para criar o armazenamento do Azure no capítulo anterior.
 
@@ -252,7 +252,7 @@ Para começar a criar um experimento:
 
     ![O Machine Learning Studio (clássico): o experimento](images/AzureLabs-Lab7-22.png)
 
-11. Você vai treinar um algoritmo de **regressão logística multiclasse** para prever o **produto** mais vendido com base na hora do dia e na data. Está além do escopo deste documento para explicar os detalhes dos diferentes algoritmos fornecidos pelo Azure Machine Learning Studio, porém, você pode saber mais sobre a folha de consulta do [algoritmo de Machine Learning](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
+11. Você vai treinar um algoritmo de **regressão logística multiclasse** para prever o **produto** mais vendido com base na hora do dia e na data. Está além do escopo deste documento para explicar os detalhes dos diferentes algoritmos fornecidos pelo Azure Machine Learning Studio, porém, você pode saber mais sobre a folha de consulta do [algoritmo de Machine Learning](/azure/machine-learning/studio/algorithm-cheat-sheet)
 
 12. No painel itens de experimento à esquerda, expanda **Machine Learning**  >  **inicializar**  >  **classificação** de modelo e arraste o item **regressão logística multiclasse** para a tela do experimento.
 

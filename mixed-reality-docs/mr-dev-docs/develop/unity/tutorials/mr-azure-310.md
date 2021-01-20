@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, visão personalizada, detecção de objetos, realidade misturada, Academia, Unity, tutorial, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010166"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583472"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr e Azure 310: detecção de objeto
 
@@ -28,8 +28,8 @@ Este serviço permitirá que você treine um modelo de aprendizado de máquina u
 
 **Visão personalizada do Azure, a detecção de objeto** é um serviço da Microsoft que permite aos desenvolvedores criar classificadores de imagem personalizados. Esses classificadores podem ser usados com novas imagens para detectar objetos nessa nova imagem, fornecendo **limites de caixa** dentro da própria imagem. O serviço fornece um portal online simples, fácil de usar, para simplificar esse processo. Para obter mais informações, visite os links a seguir:
 
-* [Página de Visão Personalizada do Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [Limites e cotas](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [Página de Visão Personalizada do Azure](/azure/cognitive-services/custom-vision-service/home)
+* [Limites e cotas](/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 Após a conclusão deste curso, você terá um aplicativo de realidade misturada que poderá fazer o seguinte:
 
@@ -49,7 +49,7 @@ Este curso ensinará como obter os resultados da Serviço de Visão Personalizad
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 310: detecção de objetos</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -63,23 +63,23 @@ Este curso ensinará como obter os resultados da Serviço de Visão Personalizad
 Recomendamos o seguinte hardware e software para este curso:
 
 - Um PC de desenvolvimento
-- [Atualização dos criadores de outono do Windows 10 (ou posterior) com o modo de desenvolvedor habilitado](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [O SDK do Windows 10 mais recente](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017,4 LTS](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- Um [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details) com o modo de desenvolvedor habilitado
+- [Atualização dos criadores de outono do Windows 10 (ou posterior) com o modo de desenvolvedor habilitado](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [O SDK do Windows 10 mais recente](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Unity 2017,4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- Um [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details) com o modo de desenvolvedor habilitado
 - Acesso à Internet para a instalação do Azure e recuperação de Serviço de Visão Personalizada
 -  Uma série de pelo menos quinze (15) imagens são necessárias) para cada objeto que você deseja que o Visão Personalizada reconheça. Se desejar, você pode usar as imagens já fornecidas com este curso, [uma série de CUPS](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)).
 
 ## <a name="before-you-start"></a>Antes de começar
 
 1.  Para evitar problemas de criação desse projeto, é altamente recomendável que você crie o projeto mencionado neste tutorial em uma pasta raiz ou quase raiz (caminhos de pasta longos podem causar problemas em tempo de compilação).
-2.  Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](/hololens/hololens-setup). 
 3.  É uma boa ideia executar a calibragem e o ajuste do sensor ao começar a desenvolver um novo aplicativo do HoloLens (às vezes, ele pode ajudar a executar essas tarefas para cada usuário). 
 
-Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](../../../calibration.md#hololens-2).
+Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](../../../sensor-tuning.md).
+Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-custom-vision-portal"></a>Capítulo 1-o portal de Visão Personalizada
 
@@ -116,7 +116,7 @@ Para usar o **serviço de visão personalizada do Azure**, você precisará conf
         ![](images/AzureLabs-Lab310-05.png)
 
         > [!NOTE]
-        > Se você quiser [ler mais sobre os grupos de recursos do Azure, navegue até o docs associado](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)
+        > Se você quiser [ler mais sobre os grupos de recursos do Azure, navegue até o docs associado](/azure/azure-resource-manager/resource-group-portal)
 
     4.  Defina os **tipos de projeto** como **detecção de objeto (versão prévia)**.
 

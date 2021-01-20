@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema de coordenadas, sistema de coordenadas espaciais, escala mundial, mundo, escala, posição, orientação, âncora, âncora espacial, trancada mundial, bloqueio mundial, persistência, compartilhamento, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens
-ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009106"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583260"
 ---
 # <a name="spatial-anchors"></a>Âncoras espaciais
 
@@ -19,8 +19,8 @@ Uma âncora espacial representa um ponto importante no mundo que o sistema rastr
 
 Você também pode persistir e compartilhar âncoras espaciais entre sessões de aplicativo e entre dispositivos:
 * Ao salvar âncoras espaciais locais em disco e carregá-las novamente mais tarde, seu aplicativo pode calcular o mesmo local no mundo real entre várias sessões de aplicativo em um único HoloLens.
-* Usando <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem, seu aplicativo pode compartilhar uma âncora espacial entre vários dispositivos HoloLens, Ios e Android. Ao fazer com que cada dispositivo processe um holograma usando a mesma âncora espacial, os usuários verão que o holograma aparecerá no mesmo lugar do mundo real. Isso permite experiências compartilhadas em tempo real.
-* Você também pode usar <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para a persistência de holograma assíncrona em dispositivos de HoloLens, Ios e Android. Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
+* Usando <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem, seu aplicativo pode compartilhar uma âncora espacial entre vários dispositivos HoloLens, Ios e Android. Ao fazer com que cada dispositivo processe um holograma usando a mesma âncora espacial, os usuários verão que o holograma aparecerá no mesmo lugar do mundo real. Isso permite experiências compartilhadas em tempo real.
+* Você também pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para a persistência de holograma assíncrona em dispositivos de HoloLens, Ios e Android. Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
 
 Para experiências em escala de pé ou em escala de sala para headsets de área de trabalho que permanecerão dentro de um diâmetro de 5 metros, você normalmente pode usar o [quadro de referência](coordinate-systems.md#stage-frame-of-reference) em vez de âncoras espaciais, que fornece um único sistema de coordenadas no qual processar todo o conteúdo. No entanto, se seu aplicativo permitir que os usuários perfrentem mais de 5 metros no HoloLens, talvez operando em todo um andar de um edifício, você precisará de âncoras espaciais para manter o conteúdo estável.
 
@@ -71,11 +71,11 @@ Isso é especialmente importante para âncoras locais que você persistiu no rep
 
 Nas âncoras espaciais de nuvem, o armazenamento pode ser dimensionado conforme seu cenário exigir. Você pode armazenar quantas âncoras de nuvem precisar, liberando-as quando souber que os usuários não precisarão da âncora novamente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Sistemas de coordenadas](coordinate-systems.md)
 * [Experiências compartilhadas em realidade misturada](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>
+* <a href="/azure/spatial-anchors" target="_blank">Âncoras Espaciais do Azure</a>
 * [Persistência no Unity](../develop/unity/persistence-in-unity.md)
 * [Âncoras espaciais no DirectX](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Estudo de caso - Como olhar através dos buracos na sua realidade](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

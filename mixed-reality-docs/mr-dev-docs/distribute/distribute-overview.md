@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, realidade misturada, headsets de imersão, aplicativo, UWP, envio, envio, filtros, metadados, requisitos de sistema, palavras-chave, wack, certificação, pacote, Appx, merchandising
-ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
-ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
+ms.openlocfilehash: eb06ff46be6fbe6e480f9b43fa7f23ee47982192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98215971"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582852"
 ---
 # <a name="distributing-your-apps"></a>Distribuindo seus aplicativos
 
@@ -27,8 +27,8 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
 > * Se você estiver compartilhando seu aplicativo com outra parte, será necessário compilar e fornecer o arquivo Appx. 
 >     * Se estiver usando o instalador do aplicativo, você também precisará compartilhar o certificado com o usuário.
 > 
-> * Se você estiver compartilhando com uma organização, precisará de uma conta corporativa ou de estudante e acessar a infraestrutura [MDM (gerenciamento de dispositivo móvel)](https://docs.microsoft.com/hololens/hololens-enroll-mdm) das organizações.  
->    * Se você for a parte compartilhada, precisará ser um administrador em seu locatário e usar o [centro de administração do Microsoft Endpoint Manager](https://docs.microsoft.com/mem/intune/apps/apps-deploy) para disponibilizar o aplicativo. Outra opção é compartilhar o arquivo Appx e as dependências do aplicativo com o usuário final.
+> * Se você estiver compartilhando com uma organização, precisará de uma conta corporativa ou de estudante e acessar a infraestrutura [MDM (gerenciamento de dispositivo móvel)](/hololens/hololens-enroll-mdm) das organizações.  
+>    * Se você for a parte compartilhada, precisará ser um administrador em seu locatário e usar o [centro de administração do Microsoft Endpoint Manager](/mem/intune/apps/apps-deploy) para disponibilizar o aplicativo. Outra opção é compartilhar o arquivo Appx e as dependências do aplicativo com o usuário final.
 >    * Se você for o usuário final, o aplicativo será baixado automaticamente ou estará disponível para download depois que você se registrar no locatário da organização de compartilhamento. 
 
 <table>
@@ -51,13 +51,13 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
     <td>❌</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>MDM-Portal da Empresa</strong></a></td>
+    <td><a href="/hololens/app-deploy-app-installer"><strong>MDM-Portal da Empresa</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-intune"><strong>MDM – instalação necessária do aplicativo</strong></a></td>
+    <td><a href="/hololens/app-deploy-intune"><strong>MDM – instalação necessária do aplicativo</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
@@ -69,13 +69,13 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>Microsoft Store para Empresas</strong></a></td>
+    <td><a href="/hololens/app-deploy-store-business"><strong>Microsoft Store para Empresas</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-provisioning-package"><strong>Pacote de provisionamento</strong></a></td>
+    <td><a href="/hololens/app-deploy-provisioning-package"><strong>Pacote de provisionamento</strong></a></td>
     <td>✔️</td>
     <td>✔️</td>
     <td>✔️</td>
@@ -95,10 +95,9 @@ Colocar seus aplicativos em mãos de seus usuários ou de fora do mundo é o mai
 
 * Você pode produzir um Win32. Arquivo EXE usando o destino de Build do PC autônomo do Unity para a implantação do aplicativo Win32, incluindo o fluxo e o jogo pass. Quando você tiver o. EXE, você pode enviar seus aplicativos normalmente para a plataforma escolhida. 
 
-* Se você precisar instalar um aplicativo do HoloLens 2 enquanto estiver offline, consulte as instruções [offline seguras do hololens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) ou instale o aplicativo por meio de um pacote de provisionamento sem habilitar o modo de desenvolvedor.
+* Se você precisar instalar um aplicativo do HoloLens 2 enquanto estiver offline, consulte as instruções [offline seguras do hololens 2](/hololens/hololens-common-scenarios-offline-secure) ou instale o aplicativo por meio de um pacote de provisionamento sem habilitar o modo de desenvolvedor.
 
 * Você também pode implantar compilações em seu dispositivo e compartilhá-las com outros desenvolvedores que têm o modo de desenvolvedor habilitado [Implantando e Depurando com o Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) ou [instalando um pacote de aplicativos com o portal do dispositivo](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications).
 
 ## <a name="see-also"></a>Confira também
-* [Localizando, instalando e desinstalando aplicativos do Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
-
+* [Localizando, instalando e desinstalando aplicativos do Microsoft Store](/hololens/holographic-store-apps)

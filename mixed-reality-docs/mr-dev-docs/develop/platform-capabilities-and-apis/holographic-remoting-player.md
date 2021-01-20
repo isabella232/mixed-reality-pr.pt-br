@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, diagnóstico, desempenho
-ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a7c7762f079dcc4ec05bacec8bd7ab0d3625e0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006526"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583164"
 ---
 # <a name="holographic-remoting-player"></a>Player de Comunicação Remota Holográfica
 
@@ -83,5 +83,5 @@ Na tela principal, você pode dizer **"desabilitar o diagnóstico"** para desati
 * [HoloLens (primeira gen): Adicionar comunicação remota do Holographic](add-holographic-remoting.md)
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs de realidade mista do Windows](holographic-remoting-create-remote-wmr.md)
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
-* [Termos de licença de software de comunicação remota holográfica](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termos de licença de software de comunicação remota holográfica](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

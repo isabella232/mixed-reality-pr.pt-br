@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: renderização, holograma
-ms.openlocfilehash: 1f8f9954aee988fa092e25910c5d6d575341b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eea302aa31829bb91ccf1cc8ad55faed5a380d17
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009386"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583126"
 ---
 # <a name="rendering"></a>Renderização
 
@@ -28,7 +28,7 @@ A renderização de Holographic permite que seu aplicativo desenhe um holograma 
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (primeira gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (primeira gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -42,7 +42,7 @@ A renderização de Holographic permite que seu aplicativo desenhe um holograma 
 
 ## <a name="holographic-rendering"></a>Renderização holográfica
 
-A chave para a renderização de Holographic é saber qual tipo de dispositivo está sendo usado. Dispositivos com **telas de exibição**, como o [HoloLens](../../hololens-hardware-details.md), adicionam luz ao mundo. Os pixels pretos são totalmente transparentes, enquanto os pixels mais brilhantes são cada vez mais opacos. Como a luz das telas é adicionada à luz do mundo real, os pixels brancos são translúcidas.
+A chave para a renderização de Holographic é saber qual tipo de dispositivo está sendo usado. Dispositivos com **telas de exibição**, como o [HoloLens](/hololens/hololens1-hardware), adicionam luz ao mundo. Os pixels pretos são totalmente transparentes, enquanto os pixels mais brilhantes são cada vez mais opacos. Como a luz das telas é adicionada à luz do mundo real, os pixels brancos são translúcidas.
 
 Embora a renderização de estereoscópico forneça uma indicação de profundidade para os hologramas, adicionar [efeitos de aterramento](../../design/interaction-fundamentals.md) pode ajudar os usuários a ver mais facilmente qual superfície um holograma está próximo. Uma técnica de aterramento é adicionar um brilho em um holograma na superfície adjacente e renderizar uma sombra em relação a esse brilho. Dessa forma, sua sombra parece subtrair a luz do ambiente. O [som espacial](../../design/spatial-sound.md) é outra indicação de profundidade importante, permitindo aos usuários o motivo da distância e do local relativo de um holograma.
 
@@ -61,11 +61,11 @@ Os aplicativos que usam técnicas avançadas para aumentar a previsão do sistem
 
 Ao renderizar um quadro, o sistema especifica o visor de buffer de fundo no qual seu aplicativo deve desenhar. Esse visor é geralmente menor do que o tamanho total do buffer de quadro. Seja qual for o tamanho do visor, depois que o quadro for renderizado pelo aplicativo, o sistema ampliará a imagem para preencher todo o exibido.
 
-Para aplicativos que não conseguem renderizar na taxa de atualização necessária, os [parâmetros de renderização do sistema podem ser configurados](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) para reduzir a pressão de memória e o custo de renderização no custo do aumento de alias de pixel. O formato de buffer de fundo também pode ser alterado, o que para alguns aplicativos pode ajudar a melhorar a largura de banda de memória e a taxa de transferência de pixel.
+Para aplicativos que não conseguem renderizar na taxa de atualização necessária, os [parâmetros de renderização do sistema podem ser configurados](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) para reduzir a pressão de memória e o custo de renderização no custo do aumento de alias de pixel. O formato de buffer de fundo também pode ser alterado, o que para alguns aplicativos pode ajudar a melhorar a largura de banda de memória e a taxa de transferência de pixel.
 
-O frustum de renderização, a resolução e a taxa de quadros em que seu aplicativo é solicitado a renderizar também podem mudar de quadro para quadro e podem ser diferentes nos olhos esquerdo e direito. Por exemplo, quando a MRC ( [captura de realidade misturada](../../mixed-reality-capture.md) ) está ativa e a [configuração de exibição de câmera de foto/vídeo](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) não é aceita, um olho pode ser renderizado com um FOV ou resolução maior.
+O frustum de renderização, a resolução e a taxa de quadros em que seu aplicativo é solicitado a renderizar também podem mudar de quadro para quadro e podem ser diferentes nos olhos esquerdo e direito. Por exemplo, quando a MRC ( [captura de realidade misturada](/hololens/holographic-photos-and-videos) ) está ativa e a [configuração de exibição de câmera de foto/vídeo](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) não é aceita, um olho pode ser renderizado com um FOV ou resolução maior.
 
-Para qualquer quadro específico, seu aplicativo *deve* renderizar usando a transformação de exibição, transformação de projeção e resolução de visor fornecida pelo sistema. Além disso, seu aplicativo nunca deve supor que qualquer parâmetro de renderização ou de exibição permaneça fixo do quadro para o quadro. Mecanismos como o Unity lidam com todas essas transformações para você em seus próprios objetos de câmera, para que o movimento físico dos usuários e o estado do sistema seja sempre respeitado. Se seu aplicativo permitir a movimentação virtual do usuário por meio do mundo (por exemplo, usando o Thumbstick em um gamepad), você poderá adicionar um objeto Rig pai acima da câmera que o move. Isso faz com que a câmera reflita o movimento físico e virtual do usuário. Se seu aplicativo Modificar a transformação exibição, transformação de projeção ou dimensão viewport fornecida pelo sistema, ele deverá informar o sistema chamando a [API de substituição](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose)apropriada.
+Para qualquer quadro específico, seu aplicativo *deve* renderizar usando a transformação de exibição, transformação de projeção e resolução de visor fornecida pelo sistema. Além disso, seu aplicativo nunca deve supor que qualquer parâmetro de renderização ou de exibição permaneça fixo do quadro para o quadro. Mecanismos como o Unity lidam com todas essas transformações para você em seus próprios objetos de câmera, para que o movimento físico dos usuários e o estado do sistema seja sempre respeitado. Se seu aplicativo permitir a movimentação virtual do usuário por meio do mundo (por exemplo, usando o Thumbstick em um gamepad), você poderá adicionar um objeto Rig pai acima da câmera que o move. Isso faz com que a câmera reflita o movimento físico e virtual do usuário. Se seu aplicativo Modificar a transformação exibição, transformação de projeção ou dimensão viewport fornecida pelo sistema, ele deverá informar o sistema chamando a [API de substituição](/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose)apropriada.
 
 Para aprimorar a estabilidade da renderização do Holographic, seu aplicativo deve fornecer ao Windows cada quadro o buffer de profundidade usado para renderização. Se o seu aplicativo fornecer um buffer de profundidade, ele deverá ter valores de profundidade coerentes, com profundidade expressa em metros da câmera. Isso permite que o sistema use seus dados de profundidade por pixel para melhor estabilizar o conteúdo se o cabeçalho do usuário terminar um desvio levemente do local previsto. Se você não conseguir fornecer seu buffer de profundidade, poderá fornecer um ponto de foco e normal, definindo um plano que reduz a maior parte do seu conteúdo. Se o buffer de profundidade e um plano de foco forem fornecidos, o sistema poderá usar ambos. Em particular, é útil fornecer o buffer de profundidade e um ponto de foco que inclui um vetor de velocidade quando seu aplicativo exibe hologramas que estão em movimento.
 
@@ -75,7 +75,7 @@ Consulte o artigo [renderizando no DirectX](../native/rendering-in-directx.md) p
 
 A realidade mista do Windows apresenta o conceito de uma **câmera Holographic**. As câmeras Holographic são semelhantes à câmera tradicional encontrada em textos de gráficos 3D; Elas definem a extrínsecos (posição e orientação) e as propriedades intrínsecas da câmera. (Por exemplo, o campo de exibição é usado para exibir uma cena 3D virtual.) Ao contrário das câmeras 3D tradicionais, o aplicativo não está no controle da posição, da orientação e das propriedades intrínsecas da câmera. Em vez disso, a posição e a orientação da câmera Holographic são implicitamente controladas pelo movimento do usuário. O movimento do usuário é retransmitido para o aplicativo em uma base quadro a quadro por meio de uma transformação de exibição. Da mesma forma, as propriedades intrínsecas da câmera são definidas pela ótica calibrada do dispositivo e retransmitidas quadro a quadro por meio da transformação projeção.
 
-Em geral, seu aplicativo será renderizado para uma única câmera estéreo. Um loop de renderização robusto dará suporte A várias câmeras e dará suporte A câmeras mono e estéreo. Por exemplo, o sistema pode solicitar que seu aplicativo renderize de uma perspectiva alternativa quando o usuário ativar um recurso como a MRC ( [captura de realidade misturada](../../mixed-reality-capture.md) ), dependendo da forma de headset. Os aplicativos que podem dar suporte a várias câmeras os obtêm conferendo ao [tipo](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) de [câmeras às quais](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) eles podem dar suporte.
+Em geral, seu aplicativo será renderizado para uma única câmera estéreo. Um loop de renderização robusto dará suporte A várias câmeras e dará suporte A câmeras mono e estéreo. Por exemplo, o sistema pode solicitar que seu aplicativo renderize de uma perspectiva alternativa quando o usuário ativar um recurso como a MRC ( [captura de realidade misturada](/hololens/holographic-photos-and-videos) ), dependendo da forma de headset. Os aplicativos que podem dar suporte a várias câmeras os obtêm conferendo ao [tipo](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) de [câmeras às quais](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) eles podem dar suporte.
 
 ## <a name="volume-rendering"></a>Renderização de volume
 
@@ -83,14 +83,14 @@ Ao renderizar MRIs médicos ou volumes de engenharia em 3D, as técnicas de [ren
 
 ## <a name="supported-resolutions-on-hololens-first-gen"></a>Resoluções com suporte no HoloLens (primeira gen)
 
-* O tamanho máximo do visor é uma propriedade do [HolographicDisplay](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay). O HoloLens é definido como o tamanho máximo do visor, que é 720p (1268x720), por padrão.
+* O tamanho máximo do visor é uma propriedade do [HolographicDisplay](/uwp/api/windows.graphics.holographic.holographicdisplay). O HoloLens é definido como o tamanho máximo do visor, que é 720p (1268x720), por padrão.
 * O tamanho do visor pode ser alterado definindo o ViewportScaleFactor no HolographicCamera. Esse fator de escala está no intervalo de 0 a 1.
 * O menor tamanho de visor com suporte no HoloLens (primeira gen) é de 50% de 720p, que é 360p (634x360). Este é um ViewportScaleFactor de 0,5.
 * Qualquer coisa inferior a 540p não é recomendada devido à degradação Visual, mas pode ser usada para identificar afunilamentos na taxa de preenchimento de pixel.
 
 ## <a name="supported-resolutions-on-hololens-2"></a>Resoluções com suporte no HoloLens 2
 
-* Os tamanhos de destino de renderização atual e máximo com suporte são propriedades da [configuração de exibição](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). O HoloLens 2 é definido como o tamanho máximo de destino de renderização, que é 1440x936, por padrão.
+* Os tamanhos de destino de renderização atual e máximo com suporte são propriedades da [configuração de exibição](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). O HoloLens 2 é definido como o tamanho máximo de destino de renderização, que é 1440x936, por padrão.
 * Os aplicativos podem alterar o tamanho dos buffers de destino de renderização chamando o método RequestRenderTargetSize para solicitar um novo tamanho de destino de renderização. Um novo tamanho de destino de renderização será escolhido, o que atenderá ou excederá o tamanho de destino de renderização solicitado. Essa API altera o tamanho do buffer de destino de renderização, que requer realocação de memória na GPU. As implicações disso incluem: o tamanho do destino de renderização pode ser reduzido para reduzir a pressão de memória na GPU, e esse método não deve ser chamado com alta frequência.
 * Os aplicativos ainda podem alterar o tamanho do visor da mesma maneira que faziam para o HoloLens 1. Não há nenhuma realocação de memória adicional na GPU, portanto, ela pode ser alterada com alta frequência, mas não pode ser usada para reduzir a pressão de memória na GPU.
 * O menor tamanho de visor com suporte no HoloLens 2 é 634x412, um ViewportScaleFactor de aproximadamente 0,44 quando o tamanho de destino de renderização padrão está em uso.
@@ -99,6 +99,6 @@ Ao renderizar MRIs médicos ou volumes de engenharia em 3D, as técnicas de [ren
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Estabilidade do holograma](hologram-stability.md)
 * [Como renderizar no DirectX](../native/rendering-in-directx.md)

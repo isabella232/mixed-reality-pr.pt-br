@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, estilo, design, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, escala, hologramas
-ms.openlocfilehash: 6711a58fb4dde2aa28272c3003e642c4f4d3e236
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848267"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583311"
 ---
 # <a name="scale"></a>Escala
 
@@ -80,7 +80,7 @@ No entanto, isso pode criar alguns artefatos possíveis na experiência:
 
 ---
 
-## <a name="see-also"></a>Consulte também
-* [Cor, luz e materiais](../color,-light-and-materials.md)
+## <a name="see-also"></a>Confira também
+* [Cor, luz e materiais](./color-light-and-materials.md)
 * [Tipografia](typography.md)
 * [Projeto de som espacial](spatial-sound-design.md)

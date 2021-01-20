@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, interação, voz
-ms.openlocfilehash: 156927f43a09474c3dd6da8e400767f13700a7ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676765"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582831"
 ---
 # <a name="voice-commanding"></a>Comando de voz
 
@@ -29,7 +29,7 @@ Ao usar comandos de voz, o olhar normalmente é usado como o mecanismo de direci
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -69,7 +69,7 @@ Dizer "selecionar" a qualquer momento ativará tudo o que o cursor estiver apont
 
 ### <a name="see-it-say-it"></a>Veja e diga
 
-O Windows Mixed Reality utiliza um modelo de voz "veja e diga", no qual os **rótulos dos botões são idênticos aos comandos de voz associados** . Como não há dissonância entre o rótulo e o comando de voz, os usuários tem melhor noção do que dizer para controlar o sistema. Para reforçar isso, ao olhar fixo para um botão, uma **"dica de espera de voz"** é exibida para comunicar quais botões estão habilitados para voz.
+O Windows Mixed Reality utiliza um modelo de voz "veja e diga", no qual os **rótulos dos botões são idênticos aos comandos de voz associados**. Como não há dissonância entre o rótulo e o comando de voz, os usuários tem melhor noção do que dizer para controlar o sistema. Para reforçar isso, ao olhar fixo para um botão, uma **"dica de espera de voz"** é exibida para comunicar quais botões estão habilitados para voz.
 
 
 ![Exemplo 1 - veja e diga](../design/images/voice-seeitsayit1-640px.jpg)
@@ -79,7 +79,7 @@ O Windows Mixed Reality utiliza um modelo de voz "veja e diga", no qual os **ró
 
 ### <a name="voices-strengths"></a>Vantagens da voz
 
-A entrada de voz é uma maneira natural de comunicarmos nossas intenções. A voz é especialmente boa em **atravessamentos** de interface porque pode ajudar os usuários a percorrer várias etapas de uma interface (um usuário pode dizer "voltar" ao olhar para uma página da Web, em vez de ter que ir e clicar no botão voltar no aplicativo). Essa pequena economia de tempo tem um **efeito emocional** poderoso sobre a percepção de um usuário da experiência e oferece uma pequena quantidade de superpotência. O uso da voz também é um método de entrada conveniente quando nossos braços estão ocupados ou quando estamos **executando várias tarefas ao mesmo tempo** . Em dispositivos em que é difícil digitar um teclado, o **ditado de voz** pode ser uma maneira eficiente e alternativa de entrada. Por fim, em alguns casos, quando o **intervalo de precisão** para olhar e gesto é limitado, a voz pode ser um método de entrada confiável de um usuário.
+A entrada de voz é uma maneira natural de comunicarmos nossas intenções. A voz é especialmente boa em **atravessamentos** de interface porque pode ajudar os usuários a percorrer várias etapas de uma interface (um usuário pode dizer "voltar" ao olhar para uma página da Web, em vez de ter que ir e clicar no botão voltar no aplicativo). Essa pequena economia de tempo tem um **efeito emocional** poderoso sobre a percepção de um usuário da experiência e oferece uma pequena quantidade de superpotência. O uso da voz também é um método de entrada conveniente quando nossos braços estão ocupados ou quando estamos **executando várias tarefas ao mesmo tempo**. Em dispositivos em que é difícil digitar um teclado, o **ditado de voz** pode ser uma maneira eficiente e alternativa de entrada. Por fim, em alguns casos, quando o **intervalo de precisão** para olhar e gesto é limitado, a voz pode ser um método de entrada confiável de um usuário.
 
 **Como o uso da voz pode beneficiar o usuário?**
 * Reduz o tempo - deve tornar o objetivo final mais eficiente.
@@ -94,7 +94,7 @@ A voz também tem algumas desvantagens. O controle refinado é uma delas. (por e
 
 ### <a name="voice-feedback-states"></a>Estados de retorno de voz
 
-Quando a voz é aplicada corretamente, o usuário sabe **o que pode dizer e obtém um retorno claro** , e o sistema **o ouve corretamente** . Esses dois sinais fazem o usuário se sentir seguro para usar a Voz como uma entrada primária. A seguir, um diagrama mostrando o que acontece com o cursor quando a entrada de voz é reconhecida e como ele comunica isso ao usuário.
+Quando a voz é aplicada corretamente, o usuário sabe **o que pode dizer e obtém um retorno claro**, e o sistema **o ouve corretamente**. Esses dois sinais fazem o usuário se sentir seguro para usar a Voz como uma entrada primária. A seguir, um diagrama mostrando o que acontece com o cursor quando a entrada de voz é reconhecida e como ele comunica isso ao usuário.
 
 ![Estados de retorno de voz para cursor](../design/images/voicefeedbackstates.png)<br>
 *Estados de retorno de voz para cursor*
@@ -113,6 +113,6 @@ Quando a voz é aplicada corretamente, o usuário sabe **o que pode dizer e obt�
 * Como direcionar minha voz a um aplicativo específico ou a um comando de aplicativo?
 * Posso usar a voz para comandar as coisas no quadro holográfico do HoloLens?
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Gestos](../design/gaze-and-commit.md#composite-gestures)
 * [Focar com a cabeça e esperar](../design/gaze-and-dwell.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, desempenho, otimização, CPU, GPU
-ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 68aae6408a59b197227ab8cd9042e11f8a255d10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008466"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583082"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Entendendo o desempenho da realidade misturada
 
@@ -21,7 +21,7 @@ Os valores de taxa de quadros de alto desempenho para cada plataforma de destino
 
 | Plataforma | Taxa de quadros de destino |
 |----------|-------------------|
-| [HoloLens](../../hololens-hardware-details.md) | 60 FPS |
+| [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
 | [Windows Mixed Reality ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Computadores Windows Mixed Reality](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
@@ -46,7 +46,7 @@ Há muitas ferramentas que permitem que você entenda o perfil de desempenho e g
 
 Abaixo estão algumas ferramentas comuns para ajudá-lo a coletar informações de criação de perfil aprofundadas para seu aplicativo:
 - [Analisadores de desempenho de gráficos Intel](https://software.intel.com/gpa)
-- [Depuradores de gráficos do Visual Studio](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Depuradores de gráficos do Visual Studio](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Criador de perfil do Unity](https://docs.unity3d.com/Manual/Profiler.html)
 - [Depurador de quadros do Unity](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
@@ -100,7 +100,7 @@ A taxa de preenchimento concentra-se na redução do número de operações que 
 
 #### <a name="reduce-polygon-count"></a>Reduzir contagem de polígonos
 
-Contagens de polígono mais altas resultam em mais operações para a GPU, portanto, [reduzir o número de polígonos](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) em sua cena reduz o tempo de renderização. Há outros fatores que tornam o sombreamento caro da geometria, mas a contagem de polígonos é a métrica mais simples para determinar quanto trabalho será necessário para processar uma cena.
+Contagens de polígono mais altas resultam em mais operações para a GPU, portanto, [reduzir o número de polígonos](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) em sua cena reduz o tempo de renderização. Há outros fatores que tornam o sombreamento caro da geometria, mas a contagem de polígonos é a métrica mais simples para determinar quanto trabalho será necessário para processar uma cena.
 
 #### <a name="limit-overdraw"></a>Limitar a sobreposição
 
@@ -136,9 +136,8 @@ As operações de alocação e desalocação de memória excessivas podem result
 
 O pool de objetos é uma técnica popular para reduzir o custo de alocações e desalocações contínuas de objetos. Isso é feito pela alocação de um grande pool de objetos idênticos e pela reutilização das instâncias disponíveis inativas desse pool em vez da criação e da destruição constantes de objetos ao longo do tempo. Os pools de objetos são ótimos para componentes reutilizados que têm um tempo de vida variável durante um aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Recomendações de desempenho para Unity](../unity/performance-recommendations-for-unity.md)
 - [Configurações recomendadas do Unity](../unity/recommended-settings-for-unity.md)
-- [Otimizar modelos 3D](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Práticas recomendadas para converter e otimizar modelos 3D em tempo real](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
-
+- [Otimizar modelos 3D](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Práticas recomendadas para converter e otimizar modelos 3D em tempo real](/dynamics365/mixed-reality/import-tool/best-practices)

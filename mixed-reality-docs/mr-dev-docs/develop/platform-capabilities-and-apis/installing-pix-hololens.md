@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, captura, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
-ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
+ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97822919"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583093"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Como instalar o PIX para o HoloLens 2
 
@@ -21,7 +21,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 
 1. Obtenha a [versão]( https://devblogs.microsoft.com/pix/download) mais recente do PIX do seu PC host e conecte o seu HoloLens 2 ao seu PC por meio de um cabo USB.
 
-2. Se o seu HoloLens 2 estiver em um [Build do Windows Insider](https://insider.windows.com) ou tiver uma configuração que interrompa o PIX,  [repisque seu dispositivo](https://docs.microsoft.com/hololens/hololens-recovery) para apagar todos os dados.
+2. Se o seu HoloLens 2 estiver em um [Build do Windows Insider](https://insider.windows.com) ou tiver uma configuração que interrompa o PIX,  [repisque seu dispositivo](/hololens/hololens-recovery) para apagar todos os dados.
 
 3. Habilitar o **modo de desenvolvedor** e o portal do **dispositivo**:
 
@@ -46,7 +46,7 @@ O [PIX](https://devblogs.microsoft.com/pix) é uma ferramenta de ajuste e depura
 * Com o dispositivo ainda conectado, ativo e com o usuário conectado, inicie o Visual Studio.
 
 > [!IMPORTANT]
-> Verifique se o dispositivo não está no modo de espera ou em suspensão. Se você estiver tendo problemas com essa etapa, consulte as [instruções do portal de dispositivo do Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+> Verifique se o dispositivo não está no modo de espera ou em suspensão. Se você estiver tendo problemas com essa etapa, consulte as [instruções do portal de dispositivo do Windows](./using-the-windows-device-portal.md).
 
 ## <a name="preparing-for-deployment"></a>Preparando para implantação
 
@@ -114,5 +114,5 @@ Primeiro, use o portal do dispositivo para verificar se o aplicativo não está 
 
 O PIX agora está pronto para uso!
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 * [Home Page do PIX](https://devblogs.microsoft.com/pix)

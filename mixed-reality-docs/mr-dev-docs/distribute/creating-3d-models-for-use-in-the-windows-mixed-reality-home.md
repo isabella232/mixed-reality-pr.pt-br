@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modelagem, diretrizes de modelagem, requisitos de ativos, diretrizes de criação, iniciador, iniciador 3D, textura, materiais, complexidade, triângulos, malha, polígonos, policontagem, limites, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757775"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583809"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Criar modelos 3D para uso em casa
 
@@ -101,7 +101,7 @@ Informa ao sombreador se algo está metal ou não. Metal bruto = 1,0 branco não
 O Windows Mixed Reality Home oferece uma série de otimizações sobre a especificação glTF básica definida usando extensões personalizadas. Essas otimizações são necessárias em versões do Windows <= 1709 e recomendadas em versões mais recentes do Windows. Você pode otimizar facilmente qualquer modelo glTF 2,0 usando o [conversor de ativos do Windows Mixed Reality disponível no GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Essa ferramenta executará a embalagem e as otimizações de textura corretas, conforme especificado abaixo. Para uso geral, é recomendável usar o WindowsMRAssetConverter, mas se você precisar de mais controle sobre a experiência e quiser criar seu próprio pipeline de otimização, poderá consultar a especificação detalhada abaixo.  
 
 > [!NOTE]
-> Para obter uma lista definitiva de quais são as possibilidades para limites exatos de modelo, consulte o artigo [otimização de modelo 3D](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) para uso em aplicativos Dynamics 365.
+> Para obter uma lista definitiva de quais são as possibilidades para limites exatos de modelo, consulte o artigo [otimização de modelo 3D](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) para uso em aplicativos Dynamics 365.
 
 ### <a name="materials"></a>Materiais
 
@@ -192,7 +192,7 @@ LODs são exibidos no Windows Mixed Reality com base em um sistema controlado pe
 ## <a name="animation-guidelines"></a>Diretrizes de animação
 
 > [!NOTE]
-> Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Em versões mais antigas do Windows, essas animações não são reproduzidas, no entanto, elas ainda serão carregadas se forem criadas de acordo com as diretrizes neste artigo.  
+> Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Em versões mais antigas do Windows, essas animações não são reproduzidas, no entanto, elas ainda serão carregadas se forem criadas de acordo com as diretrizes neste artigo.  
 
 A página de realidade misturada dá suporte a objetos glTF animados em headsets de HoloLens e de imersão (VR). Se você quiser disparar animações em seu modelo, precisará usar a extensão de mapa de animação no formato glTF. Essa extensão permite disparar animações no modelo glTF com base na presença do usuário no mundo, por exemplo, disparar uma animação quando o usuário estiver próximo ao objeto ou enquanto estiver olhando para ele. Se você glTF objeto tem animações, mas não define gatilhos, as animações não serão reproduzidas. A seção a seguir descreve um fluxo de trabalho para adicionar esses gatilhos a qualquer objeto glTF animado.
 
@@ -247,7 +247,7 @@ As animações não podem ter mais de 20 minutos e não podem conter mais de 36.
 
 |Recurso|Máximo|
 |-----|-----|
-|Duração|20 minutos|
+|Duration|20 minutos|
 |Quadros chave|36.000| 
 |Vértices de destino de Morph|8192|
 
@@ -255,7 +255,7 @@ As animações não podem ter mais de 20 minutos e não podem conter mais de 36.
 
 O Windows Sr não dá suporte à inversão de geometria usando escalas negativas. A geometria com escalas negativas provavelmente resultará em artefatos visuais.
 
-O ativo glTF deve apontar para a cena padrão usando o atributo Scene a ser renderizado pelo Windows Sr. Além disso, o carregador do Windows Sr glTF antes da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requer** acessadores:
+O ativo glTF deve apontar para a cena padrão usando o atributo Scene a ser renderizado pelo Windows Sr. Além disso, o carregador do Windows Sr glTF antes da [atualização do Windows 10 de abril de 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requer** acessadores:
 * Deve ter valores mínimo e máximo.
 * O tipo escalar deve ser ComponentType UNSIGNED_SHORT (5123) ou UNSIGNED_INT (5125).
 * O tipo VEC2 e VEC3 deve ser o ComponentType FLOAT (5126).
@@ -289,7 +289,7 @@ Há suporte apenas para um único atributo de vértice UV.
 * [Especificação de extensões de empacotamento de textura da realidade misturada do HoloLens](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Especificação de extensões glTF do Microsoft DDS Textures](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Implementar inicializadores de aplicativos 3D (aplicativos UWP)](implementing-3d-app-launchers.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos Win32)](implementing-3d-app-launchers-win32.md)

@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade mista, Windows Mixed Reality, holograma, Academia, tutorial, emulador, HoloLens, Academia de realidade misturada, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10, olhar, gestos, entrada de voz, som espacial, mapeamento espacial
-ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678305"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583692"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>Noções básicas do MR 101E: projeto completo com emulador
 
@@ -28,7 +28,7 @@ Este tutorial guiará você por um projeto completo, interno do Unity, que demon
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td>Noções básicas do MR 101E: projeto completo com emulador</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -638,7 +638,7 @@ Você aprendeu a:
 
 Agora você está pronto para começar a criar seus próprios aplicativos Holographic!
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Noções básicas do MR 101: projeto completo com dispositivo](holograms-101.md)
 * [Foco](../../../design/gaze-and-commit.md)

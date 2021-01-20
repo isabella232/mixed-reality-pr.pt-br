@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, texto do tradutor, hololens, imersão, VR, tradução de linguagem, Windows 10, Visual Studio
-ms.openlocfilehash: 3f7d48df92ae5ed979c6fa8d69d348ce084d3fb9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679565"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583297"
 ---
 # <a name="mr-and-azure-301-language-translation"></a>MR e Azure 301: Tradução de idioma
 
@@ -40,7 +40,7 @@ Este curso ensinará como obter os resultados do serviço do tradutor em um apli
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 301: Tradução de idioma</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -61,7 +61,7 @@ Recomendamos o seguinte hardware e software para este curso:
 - [O SDK do Windows 10 mais recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](../../../hololens-hardware-details.md) modo de desenvolvedor habilitado
+- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](/hololens/hololens1-hardware) modo de desenvolvedor habilitado
 - Um conjunto de fones de ouvido com um microfone interno (se o headset não tiver um MIC interno e alto-falantes)
 - Acesso à Internet para a instalação do Azure e recuperação de tradução
 
@@ -106,7 +106,7 @@ Para usar a API do Azure Translator, você precisará configurar uma instância 
     3. Selecione o **tipo de preço** apropriado para você, se esta for a primeira vez que criar um *serviço de tradução de texto*, uma camada gratuita (chamada F0) deverá estar disponível para você.
     4. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses laboratórios) em um grupo de recursos comum).
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
     5. Determine o **local** do seu grupo de recursos (se você estiver criando um novo grupo de recursos). O local ideal seria na região em que o aplicativo seria executado. Alguns ativos do Azure só estão disponíveis em determinadas regiões.
     6. Você também precisará confirmar que entendeu os termos e condições aplicados a esse serviço.
@@ -267,7 +267,7 @@ Para mostrar a entrada e a saída da tradução, é necessário criar uma interf
 
     1. Para o componente de *transformação Rect* :
 
-        | Name                   | Transformação- *posição*             | Largura      | Altura    |
+        | Nome                   | Transformação- *posição*             | Largura      | Altura    |
         |:----------------------:|:----------------------------------:|:----------:|:---------:|
         | MicrophoneStatusLabel  | **X** -80 **Y** 90 **Z** 0         | 300        | 30        |
         | AzureResponseLabel     | **X** -80 **Y** 30 **Z** 0         | 300        | 30        |
@@ -278,7 +278,7 @@ Para mostrar a entrada e a saída da tradução, é necessário criar uma interf
     2. Para o componente de **texto (script)** :
 
 
-        | Name                   | Texto               | Tamanho da fonte    |
+        | Nome                   | Texto               | Tamanho da fonte    |
         |:----------------------:|:------------------:|:------------:|
         | MicrophoneStatusLabel  | Status do microfone: | 20           |
         | AzureResponseLabel     | Resposta da Web do Azure | 20           |
@@ -296,7 +296,7 @@ Para mostrar a entrada e a saída da tradução, é necessário criar uma interf
 
     1. Para o componente de **transformação Rect** :
 
-        | Name                  | Transformação- *posição* | Largura      | Altura    |
+        | Nome                  | Transformação- *posição* | Largura      | Altura    |
         |:---------------------:|:----------------------:|:----------:|:---------:|
         | MicrophoneStatusText  | X 0 Y-30 Z 0          | 300        | 30        |
         | AzureResponseText     | X 0 Y-30 Z 0          | 300        | 30        |
@@ -305,7 +305,7 @@ Para mostrar a entrada e a saída da tradução, é necessário criar uma interf
 
     2. Para o componente de **texto (script)** :
 
-        | Name                  | Texto          | Tamanho da fonte    |
+        | Nome                  | Texto          | Tamanho da fonte    |
         |:---------------------:|:-------------:|:------------:|
         | MicrophoneStatusText  |      ??       | 20           |
         | AzureResponseText     |      ??       | 20           |
@@ -609,7 +609,7 @@ Para criar esta classe:
     ```
 
     > [!NOTE]
-    > - Os idiomas inseridos na **Enumeração** Languages são apenas exemplos. Fique à vontade para adicionar mais se desejar; a [API dá suporte a mais de 60 idiomas](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (incluindo Klingon)!
+    > - Os idiomas inseridos na **Enumeração** Languages são apenas exemplos. Fique à vontade para adicionar mais se desejar; a [API dá suporte a mais de 60 idiomas](/azure/cognitive-services/translator/languages) (incluindo Klingon)!
     > - Há uma [página mais interativa que abrange os idiomas disponíveis](https://www.microsoft.com/translator/business/languages/), embora esteja ciente de que a página só parece funcionar quando o idioma do site está definido como ' ' (e o site da Microsoft provavelmente será redirecionado para seu idioma nativo). Você pode alterar o idioma do site na parte inferior da página ou alterando a URL.
     > - O valor de **authorizationKey** , no trecho de código acima, deve ser a **chave**  que você recebeu quando assinou o *API de tradução de texto do Azure*. Isso foi abordado no [capítulo 1](#chapter-1--the-azure-portal).
 

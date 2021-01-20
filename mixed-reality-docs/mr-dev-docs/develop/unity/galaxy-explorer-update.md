@@ -6,16 +6,16 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Gerenciador do Galaxy, estudo de caso, projeto, exemplo, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, exemplos de aplicativos, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4a5df06009d2c9c25b12c8e7f4bd1622821964c8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009576"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582896"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>A criação do Galaxy Explorer para o HoloLens 2
 
-Bem-vindo ao aplicativo do Galaxy Explorer atualizado para o HoloLens 2! O [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Gerenciador do Galaxy") foi originalmente desenvolvido como um aplicativo de software livre para o HoloLens (primeira geração) por meio do seu programa de compartilhamento de ideias, e é uma das primeiras experiências de realidade misturada que muitas pessoas tinham. Agora estamos atualizando-o para os [recursos novos e empolgantes do HoloLens 2](https://www.microsoft.com/hololens/hardware).
+Bem-vindo ao aplicativo do Galaxy Explorer atualizado para o HoloLens 2! O [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "Gerenciador do Galaxy") foi originalmente desenvolvido como um aplicativo de software livre para o HoloLens (primeira geração) por meio do seu programa de compartilhamento de ideias, e é uma das primeiras experiências de realidade misturada que muitas pessoas tinham. Agora estamos atualizando-o para os [recursos novos e empolgantes do HoloLens 2](https://www.microsoft.com/hololens/hardware).
 
 Como uma das [estúdios de realidade misturada da Microsoft](galaxy-explorer-update.md#mixed-reality-studios), normalmente desenvolvemos soluções comerciais e estamos desenvolvendo & testes em plataformas de destino em todo o processo criativo e de desenvolvimento. Estamos embarcando neste projeto usando as estruturas e ferramentas (como [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) à medida que se tornam disponíveis para nós e para a Comunidade, e queremos levá-lo para a jornada.
 

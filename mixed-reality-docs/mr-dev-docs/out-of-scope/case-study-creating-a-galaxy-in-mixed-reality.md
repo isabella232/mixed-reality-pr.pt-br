@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, HoloLens, realidade mista do Windows, compartilhe sua ideia, estudo de caso
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009776"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583541"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Estudo de caso-criando um Galaxy em realidade misturada
 
@@ -147,7 +147,7 @@ Fazer nuvens de tela inteira e tentar desfocar elas teria sido uma má ideia, en
 
 ### <a name="a-bit-of-context-first"></a>Primeiro um pouco de contexto
 
-Ao usar texturas em um jogo, o tamanho da textura raramente corresponderá à área em que desejamos usá-la, mas podemos usar um tipo diferente de filtragem de textura para obter o cartão gráfico para interpolar a cor que desejamos dos pixels da textura ([filtragem de textura](https://msdn.microsoft.com/library/dn642451.aspx)). A filtragem que nos interessa é a [filtragem biline](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) , que calculará o valor de qualquer pixel usando os 4 vizinhos mais próximos.
+Ao usar texturas em um jogo, o tamanho da textura raramente corresponderá à área em que desejamos usá-la, mas podemos usar um tipo diferente de filtragem de textura para obter o cartão gráfico para interpolar a cor que desejamos dos pixels da textura ([filtragem de textura](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants)). A filtragem que nos interessa é a [filtragem biline](/windows/win32/direct3d9/bilinear-texture-filtering) , que calculará o valor de qualquer pixel usando os 4 vizinhos mais próximos.
 
 ![Original antes da filtragem](images/texture-1.png)
 
@@ -203,6 +203,6 @@ Interessado em saber mais sobre o processo de desenvolvimento do Galaxy Explorer
 </table>
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Gerenciador do Galaxy no GitHub](https://github.com/Microsoft/GalaxyExplorer)
 * [Atualizações de projeto do Galaxy Explorer no YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, Microsoft Graph, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 341b6fea537fe6001a8f7dcf2e98efea0a0b09b6
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 699e520fb9db8d8d3b5bab8b98d92fa39f0acb2d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679435"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583445"
 ---
 # <a name="mr-and-azure-311---microsoft-graph"></a>MR e Azure 311 – Microsoft Graph
 
@@ -37,7 +37,7 @@ Em seu aplicativo, cabe a você como você integrará os resultados com seu desi
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 311: Microsoft Graph</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -55,7 +55,7 @@ Recomendamos o seguinte hardware e software para este curso:
 - [O SDK do Windows 10 mais recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Um [Microsoft HoloLens](../../../hololens-hardware-details.md) com o modo de desenvolvedor habilitado
+- Um [Microsoft HoloLens](/hololens/hololens1-hardware) com o modo de desenvolvedor habilitado
 - Acesso à Internet para a instalação do Azure e recuperação de dados de Microsoft Graph
 - Uma **conta da Microsoft** válida (pessoal ou corporativa/de estudante)
 - Algumas reuniões agendadas para o dia atual, usando a mesma conta da Microsoft
@@ -63,12 +63,12 @@ Recomendamos o seguinte hardware e software para este curso:
 ### <a name="before-you-start"></a>Antes de começar
 
 1.  Para evitar problemas de criação desse projeto, é altamente recomendável que você crie o projeto mencionado neste tutorial em uma pasta raiz ou quase raiz (caminhos de pasta longos podem causar problemas em tempo de compilação).
-2.  Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](/hololens/hololens-setup). 
 3.  É uma boa ideia executar a calibragem e o ajuste do sensor ao começar a desenvolver um novo aplicativo do HoloLens (às vezes, ele pode ajudar a executar essas tarefas para cada usuário). 
 
-Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](../../../calibration.md#hololens-2).
+Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](../../../sensor-tuning.md).
+Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1---create-your-app-in-the-application-registration-portal"></a>Capítulo 1-criar seu aplicativo no portal de registro de aplicativos
 
@@ -131,7 +131,7 @@ A seguir está uma configuração típica para o desenvolvimento com realidade m
 
     ![](images/AzureLabs-Lab311-12.png)
 
-5.  Ainda em configurações de compilação de **arquivo**  >  **Build Settings**, verifique se:
+5.  Ainda em configurações de compilação de **arquivo**  >  , verifique se:
 
     1. O **dispositivo de destino** está definido como **HoloLens**
     2. O **tipo de compilação** está definido como **D3D**
@@ -205,7 +205,7 @@ Se você quiser saber mais sobre como adicionar DLLs personalizadas ao seu proje
 
 Para importar o pacote:
 
-1.  Adicione o pacote do Unity ao Unity usando a **Assets**  >  **Import Package**  >  opção de menu **pacote personalizado** do pacote de importação de ativos. Selecione o pacote que você acabou de baixar.
+1.  Adicione o pacote do Unity ao Unity usando a   >    >  opção de menu **pacote personalizado** do pacote de importação de ativos. Selecione o pacote que você acabou de baixar.
 
 2.  Na caixa **Importar pacote de Unity** que é exibida, verifique se tudo em (e incluindo) **plug-ins** está selecionado.
 
@@ -923,7 +923,7 @@ Para criar a marca:
 
 1.  No editor do Unity, clique na **câmera principal** no *painel hierarquia*.
 
-2.  No *painel Inspetor* , clique na marca **MainCamera** *Tag* para abrir uma lista suspensa. Clique em **adicionar marca..** .
+2.  No *painel Inspetor* , clique na marca **MainCamera**  para abrir uma lista suspensa. Clique em **adicionar marca..** .
 
     ![](images/AzureLabs-Lab311-30.png)
 
@@ -959,7 +959,7 @@ Para implantar no HoloLens:
 
     1.  Enquanto estiver desgastando seu HoloLens, abra as **configurações**.
 
-    2.  Vá para **rede &**  >  Opções avançadas **de Internet Wi-Fi**  >  **Advanced Options**
+    2.  Vá para **rede &**  >  Opções avançadas **de Internet Wi-Fi**  >  
 
     3.  Anote o endereço **IPv4** .
 

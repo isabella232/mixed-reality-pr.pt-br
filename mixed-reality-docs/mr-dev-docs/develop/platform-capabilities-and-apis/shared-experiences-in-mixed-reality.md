@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: experiência compartilhada, realidade misturada, holograma, âncora espacial, vários usuários, vários
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530115"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583153"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Experiências compartilhadas em realidade misturada
 
@@ -95,7 +95,7 @@ Considere suas experiências de compartilhamento se ajustando a uma destas duas 
 * **Semelhante**: ambientes que tendem a ter móveis semelhantes, luz ambiente e som, tamanho da sala física. Por exemplo: professor está no Hall da palestra A e os alunos estão na sala de palestras B. A Hall da palestra A pode ter menos cadeiras que B, mas ambas podem ter uma escrivaninha física para posicionar os hologramas.
 * **Disimilar**: ambientes diferentes nas configurações de mobília, tamanhos de sala, luz e considerações sonoras. Por exemplo: um professor está em um quarto de foco, mas os alunos estão em uma grande sala de palestras, preenchida com alunos e professores.
 
-É importante [pensar no ambiente](../../environment-considerations-for-hololens.md), pois ele influenciará:
+É importante [pensar no ambiente](/hololens/hololens-environment-considerations), pois ele influenciará:
 
 * Como as pessoas experimentarão esses objetos. Por exemplo: se sua experiência funcionar melhor em uma tabela e o usuário não tiver uma tabela? Ou em uma superfície de piso plana, mas o usuário tem um espaço desorganizado.
 * Escala dos objetos. Por exemplo: colocar um modelo humano de seis pés em uma tabela poderia ser desafiador, mas um modelo de coração funcionaria muito bem.
@@ -137,11 +137,11 @@ Dependendo do seu aplicativo e cenário, haverá vários requisitos para atingir
 
 A chave para experiências compartilhadas é ter vários usuários vendo os mesmos hologramas no mundo em seu próprio dispositivo, frequentemente feito com o compartilhamento de âncoras para alinhar as coordenadas entre os dispositivos.
 
-Para compartilhar âncoras, use as [âncoras espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors):
+Para compartilhar âncoras, use as [âncoras espaciais do Azure](/azure/spatial-anchors):
 
 * Primeiro, o usuário coloca o holograma.
 * O aplicativo cria uma [âncora espacial](../../design/spatial-anchors.md), para fixar esse holograma precisamente no mundo.
-* As âncoras podem ser compartilhadas para dispositivos de HoloLens, iOS e Android por meio de [âncoras espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/).
+* As âncoras podem ser compartilhadas para dispositivos de HoloLens, iOS e Android por meio de [âncoras espaciais do Azure](/azure/spatial-anchors/).
 
 Com uma âncora espacial compartilhada, o aplicativo em cada dispositivo agora tem um [sistema de coordenadas comum](../../design/coordinate-systems.md) no qual eles podem inserir conteúdo. Agora o aplicativo pode garantir a posição e a orientação do holograma no mesmo local.
 
@@ -153,7 +153,7 @@ Há várias opções de serviço e tecnologia disponíveis para ajudar a criar e
 
 ## <a name="shared-static-holograms-no-interactions"></a>Hologramas estáticos compartilhados (sem interações)
 
-Aproveite as [âncoras espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/) em seu aplicativo.  A habilitação e o compartilhamento de âncoras espaciais entre dispositivos permite que você crie um aplicativo onde os usuários vejam os hologramas no mesmo local ao mesmo tempo.  A sincronização adicional entre dispositivos é necessária para permitir que os usuários interajam com hologramas e veja movimentos ou atualizações de estado de hologramas.
+Aproveite as [âncoras espaciais do Azure](/azure/spatial-anchors/) em seu aplicativo.  A habilitação e o compartilhamento de âncoras espaciais entre dispositivos permite que você crie um aplicativo onde os usuários vejam os hologramas no mesmo local ao mesmo tempo.  A sincronização adicional entre dispositivos é necessária para permitir que os usuários interajam com hologramas e veja movimentos ou atualizações de estado de hologramas.
 
 ## <a name="share-first-person-perspective"></a>Compartilhar perspectiva da primeira pessoa
 
@@ -172,7 +172,7 @@ Aproveite o [MixedReality-SpectatorView](https://github.com/microsoft/MixedReali
 
 ## <a name="multi-user-collaborative-experience"></a>Experiência colaborativa de vários usuários
 
-Comece com nosso [tutorial de aprendizado de vários usuários](../../mrlearning-sharing(photon)-ch1.md), que aproveita as [âncoras espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/) para usuários locais e o [SDK do Photon](https://www.photonengine.com/PUN) para sincronizar o conteúdo/estado na cena. Crie aplicativos de colaboração localmente em que cada usuário tem sua própria perspectiva sobre os hologramas na cena e pode interagir totalmente com os hologramas.  As atualizações são fornecidas em todos os dispositivos e o gerenciamento de conflitos de interação é tratado pelo Photon.
+Comece com nosso [tutorial de aprendizado de vários usuários](../unity/tutorials/mr-learning-sharing-02.md), que aproveita as [âncoras espaciais do Azure](/azure/spatial-anchors/) para usuários locais e o [SDK do Photon](https://www.photonengine.com/PUN) para sincronizar o conteúdo/estado na cena. Crie aplicativos de colaboração localmente em que cada usuário tem sua própria perspectiva sobre os hologramas na cena e pode interagir totalmente com os hologramas.  As atualizações são fornecidas em todos os dispositivos e o gerenciamento de conflitos de interação é tratado pelo Photon.
 
 > [!NOTE]
 > Observe que o [Photon](https://www.photonengine.com/) é um produto que não é da Microsoft, portanto, uma relação de cobrança com Photon pode ser necessária para produto e dimensionamento para maior uso.
@@ -185,7 +185,7 @@ Cenário diferente ou desejo de usar um Tech/Service diferente? Forneça coment�
 
 ## <a name="see-also"></a>Veja também
 
-* [Âncoras Espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors)
+* [Âncoras Espaciais do Azure](/azure/spatial-anchors)
 * [Âncoras espaciais compartilhadas no DirectX](shared-spatial-anchors-in-directx.md)
 * [Experiências compartilhadas no Unity](../unity/shared-experiences-in-unity.md)
 * [Modo de exibição Espectador](spectator-view.md)

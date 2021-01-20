@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Realidade misturada, gestos, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada, flor
-ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d0f3bd81cab945a01a523806ebaf4546752d74c1
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009426"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583231"
 ---
 # <a name="start-gesture"></a>Iniciar gesto
 
@@ -28,7 +28,7 @@ O gesto de início é um gesto de mão usado para invocar o menu iniciar. É o e
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -114,7 +114,7 @@ Você também pode usar o gesto de início com apenas uma mão. Mantenha sua mã
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Olho-olhar](eye-tracking.md)

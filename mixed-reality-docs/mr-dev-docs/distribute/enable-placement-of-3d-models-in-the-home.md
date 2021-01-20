@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modelo, lugar em casa, lugar, mundo, modelagem, realidade misturada, página inicial, Web, aplicativo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010096"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583803"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Habilitar o posicionamento de modelos 3D na página inicial da realidade misturada
 
 > [!NOTE]
-> Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). As versões mais antigas do Windows não são compatíveis com esse recurso.
+> Esse recurso foi adicionado como parte da [atualização do Windows 10 de abril de 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). As versões mais antigas do Windows não são compatíveis com esse recurso.
 
 O [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md) é o ponto de partida onde os usuários vão antes de iniciar os aplicativos. Em alguns cenários, os aplicativos 2D (como o aplicativo hologramas) permitem o posicionamento de modelos 3D diretamente na casa mistura de realidade como decorações ou para uma inspeção mais detalhada no 3D completo. O *protocolo adicionar modelo* permite que você envie um modelo 3D de seu site ou aplicativo diretamente para a página inicial do Windows Mixed Realm, onde ele persistirá como [inicializadores de aplicativos 3D](3d-app-launcher-design-guidance.md), aplicativos 2D e hologramas. 
 
@@ -32,7 +32,7 @@ Por exemplo, se você estiver desenvolvendo um aplicativo que superfícies um ca
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
      <tr>
@@ -91,7 +91,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 * Para headsets de imersão (VR), o portal de realidade misturada não precisa estar em execução antes de invocar o *protocolo adicionar modelo*. Nesse caso, o *protocolo adicionar modelo* iniciará o portal de realidade misturada e posicionará o objeto diretamente, no qual o headset está olhando quando você chegar na casa misturada da realidade. 
 * Ao invocar o *protocolo adicionar modelo* da área de trabalho com o portal da realidade misturada já em execução, verifique se o headset está "ativo". Caso contrário, o posicionamento não terá sucesso. 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Criando modelos 3D para uso na página inicial do Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Como navegar na página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

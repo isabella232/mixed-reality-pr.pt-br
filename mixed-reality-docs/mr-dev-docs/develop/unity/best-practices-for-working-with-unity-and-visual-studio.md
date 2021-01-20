@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: implantar, Unity, Visual Studio, HoloLens, HoloLens 2, headset de imersão, práticas recomendadas, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, UWP, Ferramentas do Visual Studio, SDK do Windows
-ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009366"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583459"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Melhores práticas para trabalhar com o Unity e o Visual Studio
 
@@ -35,7 +35,7 @@ Considere instalar a [extensão do Visual Studio *UnityScriptAnalyzer*](https://
 
 ## <a name="visual-studio-tools-for-unity"></a>Ferramentas do Visual Studio para Unity
 
-Baixar [Ferramentas do Visual Studio para Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+Baixar [Ferramentas do Visual Studio para Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Benefícios do Ferramentas do Visual Studio para Unity**
 * Depure o modo de reprodução do Unity no editor do Visual Studio colocando pontos de interrupção, avaliando variáveis e expressões complexas.
@@ -57,7 +57,7 @@ As soluções UWP do Visual Studio com check-in no controle do código-fonte pod
 
 O armazenamento de ativos em formato de texto facilita a revisão de diferenciações de alteração de conteúdo no Visual Studio. Você pode armazenar ativos em formato de texto selecionando **editar > configurações do projeto > editor** e alterar o modo de **serialização do ativo** para **forçar o texto**. No entanto, mesclar alterações de arquivo de ativo de texto é propenso a erros e não é recomendado, portanto, considere habilitar check-outs binários exclusivos no controle do código-fonte.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Ferramentas do Visual Studio para Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [Otimizando os tempos de compilação para IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*UnityScriptAnalyzer* Extensão do Visual Studio](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

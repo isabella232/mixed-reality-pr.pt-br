@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: gestos, Unity, olhar, entrada, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 2a968235abaeff9187580b7f5f77263b27c38c28
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192943"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583896"
 ---
 # <a name="gestures-in-unity"></a>Gestos no Unity
 
@@ -145,7 +145,7 @@ Os tutoriais passo a passo, com exemplos de personalização mais detalhados, es
 - [Entrada do MR 211: gesto](tutorials/holograms-211.md)
 - [Entrada do MR 213: controladores de movimentos](../../deprecated/mixed-reality-213.md)
 
-[![Entrada MR 213-controlador de movimento](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![Entrada MR 213-controlador de movimento](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *Entrada MR 213-controlador de movimento*
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
@@ -153,7 +153,7 @@ Os tutoriais passo a passo, com exemplos de personalização mais detalhados, es
 Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
-> [Acompanhamento de mãos e olhos](hand-eye-in-unit.md)
+> [Acompanhamento de mãos e olhos](./hand-eye-in-unity.md)
 
 Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 

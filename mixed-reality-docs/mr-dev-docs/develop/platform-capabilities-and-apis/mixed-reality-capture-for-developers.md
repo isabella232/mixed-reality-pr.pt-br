@@ -6,19 +6,19 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, vídeo, captura, câmera
-ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247719"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583673"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Captura de realidade misturada para desenvolvedores
 
 > [!NOTE]
 > Confira [renderizar da câmera VP](#render-from-the-pv-camera-opt-in) abaixo para obter orientação sobre um novo recurso da MRC para o HoloLens 2.
 
-Você pode fazer uma foto ou vídeo da MRC ( [captura de realidade mista](../../mixed-reality-capture.md) ) a qualquer momento, mas há algumas coisas a serem lembradas ao desenvolver seu aplicativo. Isso inclui as práticas recomendadas para a qualidade visual da MRC e a resposta a alterações do sistema enquanto os MRCs estão sendo capturados.
+Você pode fazer uma foto ou vídeo da MRC ( [captura de realidade mista](/hololens/holographic-photos-and-videos) ) a qualquer momento, mas há algumas coisas a serem lembradas ao desenvolver seu aplicativo. Isso inclui as práticas recomendadas para a qualidade visual da MRC e a resposta a alterações do sistema enquanto os MRCs estão sendo capturados.
 
 Os desenvolvedores também podem integrar diretamente a captura e a inserção da realidade misturada em seus aplicativos.
 
@@ -61,7 +61,7 @@ Há três etapas para habilitar a renderização da câmera PV:
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-directx"></a>Habilitar o PhotoVideoCamera HolographicViewConfiguration no DirectX
 
-Para aceitar a renderização da câmera PV, um aplicativo simplesmente habilita o [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)do PhotoVideoCamera:
+Para aceitar a renderização da câmera PV, um aplicativo simplesmente habilita o [HolographicViewConfiguration](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)do PhotoVideoCamera:
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
 var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfigurationKind.PhotoVideoCamera);
@@ -79,7 +79,7 @@ Quando o aplicativo tem consentimento para renderizar da câmera PV e a captura 
 
 Quando a captura de realidade mista é interrompida (ou se o aplicativo desabilita a configuração de exibição enquanto a captura da realidade misturada está em execução): o HolographicCamera será exibido na lista RemovedCameras do próximo HolographicFrame e o evento CameraRemoved do HolographicSpace será acionado.
 
-Uma propriedade [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) foi adicionada a HolographicCamera para ajudar a identificar a configuração à qual uma câmera pertence.
+Uma propriedade [ViewConfiguration](/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) foi adicionada a HolographicCamera para ajudar a identificar a configuração à qual uma câmera pertence.
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>Habilitar o PhotoVideoCamera HolographicViewConfiguration no Unity
 
@@ -121,15 +121,15 @@ Se houver certas cenas que não dão suporte à renderização em uma câmera ad
 #### <a name="2d-app"></a>aplicativo 2D
 
 os aplicativos 2D podem optar por ter seu conteúdo Visual obscuro quando a captura de realidade misturada está em execução por:
-* Presente com o sinalizador de [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-present)
-* Criar a cadeia de permuta do aplicativo com o sinalizador [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag)
-* Com a atualização do Windows 10 de maio de 2019, configurando o [IsScreenCaptureEnabled](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled) da ApplicationView
+* Presente com o sinalizador de [DXGI_PRESENT_RESTRICT_TO_OUTPUT](/windows/desktop/direct3ddxgi/dxgi-present)
+* Criar a cadeia de permuta do aplicativo com o sinalizador [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag)
+* Com a atualização do Windows 10 de maio de 2019, configurando o [IsScreenCaptureEnabled](/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled) da ApplicationView
 
 #### <a name="immersive-app"></a>Aplicativo de imersão
 
 Aplicativos de imersão podem optar por ter seu conteúdo Visual excluído da captura de realidade misturada por:
-* Definindo [IsContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) de HolographicCameraRenderingParameter para desabilitar a captura de realidade misturada para seu quadro associado
-* Definindo [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) de HolographicCamera para desabilitar a captura de realidade misturada para sua câmera Holographic associada
+* Definindo [IsContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) de HolographicCameraRenderingParameter para desabilitar a captura de realidade misturada para seu quadro associado
+* Definindo [IsHardwareContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) de HolographicCamera para desabilitar a captura de realidade misturada para sua câmera Holographic associada
 
 #### <a name="password-keyboard"></a>Teclado de senha
 
@@ -137,10 +137,10 @@ Com a atualização do Windows 10 de maio de 2019, o conteúdo do Visual é excl
 
 ### <a name="knowing-when-mrc-is-active"></a>Sabendo quando a MRC está ativa
 
-A classe [AppCapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.AppCapture) pode ser usada por um aplicativo para saber quando a captura de realidade misturada do sistema está em execução (para áudio ou vídeo).
+A classe [AppCapture](/uwp/api/Windows.Media.Capture.AppCapture) pode ser usada por um aplicativo para saber quando a captura de realidade misturada do sistema está em execução (para áudio ou vídeo).
 
 >[!NOTE]
->A API [GetForCurrentView](https://docs.microsoft.com/uwp/api/windows.media.capture.appcapture.getforcurrentview) do AppCapture poderá retornar NULL se a captura da realidade misturada não estiver disponível no dispositivo. Também é importante cancelar o registro do evento Capturechanged quando seu aplicativo é suspenso; caso contrário, a MRC pode entrar em um estado bloqueado.
+>A API [GetForCurrentView](/uwp/api/windows.media.capture.appcapture.getforcurrentview) do AppCapture poderá retornar NULL se a captura da realidade misturada não estiver disponível no dispositivo. Também é importante cancelar o registro do evento Capturechanged quando seu aplicativo é suspenso; caso contrário, a MRC pode entrar em um estado bloqueado.
 
 ### <a name="best-practices-hololens-specific"></a>Práticas recomendadas (específicas do HoloLens)
 
@@ -196,7 +196,7 @@ Seu aplicativo de realidade misturada pode iniciar a captura de vídeo ou foto d
 
 ### <a name="mrc-with-built-in-camera-ui"></a>MRC com interface do usuário da câmera interna
 
-Os desenvolvedores podem usar a *[API da interface do usuário de captura de câmera](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* para obter uma foto ou vídeo de realidade misturada do usuário com apenas algumas linhas de código.
+Os desenvolvedores podem usar a *[API da interface do usuário de captura de câmera](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* para obter uma foto ou vídeo de realidade misturada do usuário com apenas algumas linhas de código.
 
 Essa API inicia a interface do usuário da câmera da MRC interna, na qual os usuários podem tirar uma foto ou um vídeo e retornar a captura resultante para seu aplicativo. Você pode criar um gravador de captura de realidade mista personalizada se precisar adicionar sua própria interface do usuário da câmera ou acesso de nível inferior para capturar fluxos.
 
@@ -210,11 +210,11 @@ Embora o usuário sempre possa disparar uma foto ou vídeo usando o serviço de 
 
 Os aplicativos do Unity devem ver [Locatable_camera_in_Unity](../unity/locatable-camera-in-unity.md) para a propriedade para habilitar os hologramas.
 
-Outros aplicativos podem fazer isso usando as [APIs de captura de mídia do Windows](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) para controlar a câmera e adicionar um efeito de vídeo e áudio da MRC para incluir hologramas virtuais e áudio do aplicativo nos vídeos e continuas.
+Outros aplicativos podem fazer isso usando as [APIs de captura de mídia do Windows](/uwp/api/Windows.Media.Capture.MediaCapture) para controlar a câmera e adicionar um efeito de vídeo e áudio da MRC para incluir hologramas virtuais e áudio do aplicativo nos vídeos e continuas.
 
 Os aplicativos têm duas opções para adicionar o efeito:
-* A API mais antiga: [Windows. Media. Capture. MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* A nova API recomendada pela Microsoft (retorna um objeto, possibilitando a manipulação de propriedades dinâmicas): [Windows. Media. Capture. MediaCapture. AddVideoEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. Capture. MediaCapture. AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) que exige que o aplicativo Crie sua própria implementação de [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) e [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Consulte o [aplicativo de exemplo da MRC](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) para obter exemplos.
+* A API mais antiga: [Windows. Media. Capture. MediaCapture. AddEffectAsync ()](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* A nova API recomendada pela Microsoft (retorna um objeto, possibilitando a manipulação de propriedades dinâmicas): [Windows. Media. Capture. MediaCapture. AddVideoEffectAsync ()](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows. Media. Capture. MediaCapture. AddAudioEffectAsync ()](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) que exige que o aplicativo Crie sua própria implementação de [IVideoEffectDefinition](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) e [IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition). Consulte o [aplicativo de exemplo da MRC](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) para obter exemplos.
 
 >[!NOTE]
 > O namespace Windows. Media. MixedRealityCapture não será reconhecido pelo Visual Studio, mas as cadeias de caracteres ainda são válidas.
@@ -223,12 +223,12 @@ Efeito de vídeo da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCapt
 
 |  Nome da Propriedade  |  Digite  |  Valor padrão  |  Descrição |
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Descreva para qual fluxo de captura esse efeito é usado. O áudio não está disponível. |
+|  StreamType  |  UINT32 ([MediaStreamType](/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Descreva para qual fluxo de captura esse efeito é usado. O áudio não está disponível. |
 |  HologramCompositionEnabled  |  booleano  |  TRUE  |  Sinalizador para habilitar ou desabilitar hologramas na captura de vídeo. |
 |  RecordingIndicatorEnabled  |  booleano  |  TRUE  |  Sinalizador para habilitar ou desabilitar o indicador de gravação na tela durante a captura de holograma. |
 |  VideoStabilizationEnabled  |  booleano  |  FALSE  |  Sinalizador para habilitar ou desabilitar a estabilização de vídeo da plataforma do controlador de HoloLens. |
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  Defina quantos quadros históricos são usados para estabilização de vídeo. 0 é a latência e quase "livre" de uma perspectiva de potência e desempenho. 15 é recomendado para a qualidade mais alta (com o custo de 15 quadros de latência e memória). |
-|  GlobalOpacityCoefficient  |  float  |  0,9 (HoloLens) 1,0 (Headset de imersão)  |  Defina o coeficiente de opacidade global de holograma no intervalo de 0,0 (totalmente transparente) para 1,0 (totalmente opaco). |
+|  GlobalOpacityCoefficient  |  FLOAT  |  0,9 (HoloLens) 1,0 (Headset de imersão)  |  Defina o coeficiente de opacidade global de holograma no intervalo de 0,0 (totalmente transparente) para 1,0 (totalmente opaco). |
 |  BlankOnProtectedContent  |  booleano  |  FALSE  |  Sinalizador para habilitar ou desabilitar o retorno de um quadro vazio se houver um aplicativo UWP 2D mostrando o conteúdo protegido. Se esse sinalizador for false e um aplicativo UWP 2D estiver mostrando o conteúdo protegido, o aplicativo UWP 2D será substituído por uma textura de conteúdo protegida no headset e na captura da realidade misturada. |
 |  ShowHiddenMesh  |  booleano  |  FALSE  |  Sinalizador para habilitar ou desabilitar mostrando a malha da área oculta da câmera Holographic e o conteúdo vizinho. |
 | Sobrecolocações | Tamanho | 0, 0 | Defina o tamanho de saída desejado após o corte para estabilização de vídeo. Um tamanho de corte padrão será escolhido se 0 ou um tamanho de saída inválido for especificado. |
@@ -244,8 +244,8 @@ Efeito de áudio da MRC (**Windows. Media. MixedRealityCapture. MixedRealityCapt
 | Nome da Propriedade | Digite | Valor padrão | Descrição |
 |----------|----------|----------|----------|
 | Mixermode | UINT32 | 2 (MIC e áudio do sistema) | Enum usado para indicar quais fontes de áudio devem ser usadas: 0 (somente áudio do MIC), 1 (somente áudio do sistema), 2 (áudio do sistema e MIC) |
-| LoopbackGain | float | Configuração de **aproveitamento de áudio do aplicativo** no portal do dispositivo Windows | Obter para aplicar ao volume de áudio do sistema. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
-| MicrophoneGain | float | Configuração de **lucro de áudio do MIC** no portal do dispositivo Windows | Obter para aplicar ao volume do MIC. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
+| LoopbackGain | FLOAT | Configuração de **aproveitamento de áudio do aplicativo** no portal do dispositivo Windows | Obter para aplicar ao volume de áudio do sistema. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
+| MicrophoneGain | FLOAT | Configuração de **lucro de áudio do MIC** no portal do dispositivo Windows | Obter para aplicar ao volume do MIC. Varia de 0,0 a 5,0. Somente com suporte no HoloLens 2 |
 
 >[!NOTE]
 > Você pode alterar o valor padrão de **LoopbackGain** ou **MicrophoneGain** no portal do dispositivo Windows acessando a [página de captura da realidade misturada](using-the-windows-device-portal.md#mixed-reality-capture) e ajustando o controle deslizante ao lado de suas respectivas configurações. Ambas as configurações assumem como padrão **1,0**, mas podem ser definidas como qualquer valor entre **0,0** e **5,0**.
@@ -260,7 +260,7 @@ Você precisa estar ciente de determinadas limitações quando vários aplicativ
 
 No HoloLens 1, a MRC falhará em capturar um vídeo de foto ou captura enquanto um processo estiver gravando vídeo ou tirando uma foto. O inverso também é verdadeiro: se a MRC estiver em execução, o aplicativo não conseguirá obter acesso à câmera. 
 
-Com o HoloLens 2, é possível compartilhar o acesso à câmera. Se você não precisar de controle direto da resolução ou da taxa de quadros, poderá inicializar MediaCapture usando a [Propriedade sharedmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) com SharedReadOnly.  
+Com o HoloLens 2, é possível compartilhar o acesso à câmera. Se você não precisar de controle direto da resolução ou da taxa de quadros, poderá inicializar MediaCapture usando a [Propriedade sharedmode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) com SharedReadOnly.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>Acesso interno à câmera de fotos/vídeo da MRC
 
@@ -287,11 +287,11 @@ Essa funcionalidade de modo compartilhado tem determinadas restrições:
 
 Recomendamos que você sempre solicite controle exclusivo para a câmera ao usar a MRC. Isso garantirá que seu aplicativo tenha controle total das configurações da câmera, contanto que você esteja ciente das limitações listadas acima. 
 
-* Criar um objeto de captura de mídia usando as [configurações de inicialização](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
-* Definir a propriedade [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) como **exclusiva**
+* Criar um objeto de captura de mídia usando as [configurações de inicialização](/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
+* Definir a propriedade [sharingmode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) como **exclusiva**
 
 > [!CAUTION]
-> Lembre-se de ler atentamente os [comentários de sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) antes de continuar.
+> Lembre-se de ler atentamente os [comentários de sharingmode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) antes de continuar.
 
 * Configure sua câmera da maneira desejada
 * Inicie o aplicativo, Capture quadros de vídeo com a API inicial e, em seguida, habilite a MRC
@@ -299,14 +299,14 @@ Recomendamos que você sempre solicite controle exclusivo para a câmera ao usar
 > [!CAUTION]
 > Se você iniciar a MRC antes de iniciar seu aplicativo, não será possível garantir que o recurso funcionará conforme o esperado.
 
-Você pode encontrar uma amostra completa do processo acima no exemplo de [acompanhamento facial do Holographic](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
+Você pode encontrar uma amostra completa do processo acima no exemplo de [acompanhamento facial do Holographic](/samples/microsoft/windows-universal-samples/holographicfacetracking).
 
 > [!NOTE]
 > Antes da atualização do Windows 10 de abril de 2018, o gravador da MRC personalizada de um aplicativo era mutuamente exclusivo com o sistema da MRC (capturando fotos, capturando vídeos ou transmitindo do portal de dispositivos do Windows).
 
 ## <a name="see-also"></a>Confira também
 
-* [Captura de realidade mista](../../mixed-reality-capture.md)
+* [Captura de realidade mista](/hololens/holographic-photos-and-videos)
 * [Modo de exibição Espectador](spectator-view.md)
 * [Visão geral do desenvolvimento do Unity](../unity/unity-development-overview.md)
 * [Visão geral do desenvolvimento do Unreal](../unreal/unreal-development-overview.md)

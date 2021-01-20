@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mapeamento espacial, HoloLens, realidade mista, reconstrução de superfície, malha, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, compreensão da cena, malha mundial, oclusão, física, navegação, observador de superfície, renderização, processamento de malha
-ms.openlocfilehash: 4305a291a2a83f4425c5a80d25dd8145a7033492
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848204"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583277"
 ---
 # <a name="spatial-mapping"></a>mapeamento espacial
 
@@ -32,7 +32,7 @@ O mapeamento espacial fornece uma representação detalhada das superfícies do 
     </colgroup>
     <tr>
         <td><strong>Recurso</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
@@ -78,7 +78,7 @@ Para o HoloLens 2, é possível consultar uma versão estática dos dados de map
 
 ## <a name="what-influences-spatial-mapping-quality"></a>O que influencia a qualidade do mapeamento espacial?
 
-Vários fatores, detalhados [aqui](../environment-considerations-for-hololens.md), podem afetar a frequência e a severidade desses erros.  No entanto, você deve projetar seu aplicativo para que o usuário possa atingir suas metas mesmo na presença de erros nos dados de mapeamento espacial.
+Vários fatores, detalhados [aqui](/hololens/hololens-environment-considerations), podem afetar a frequência e a severidade desses erros.  No entanto, você deve projetar seu aplicativo para que o usuário possa atingir suas metas mesmo na presença de erros nos dados de mapeamento espacial.
 
 ## <a name="common-usage-scenarios"></a>Cenários de uso comuns
 
@@ -209,13 +209,13 @@ Há três maneiras principais pelas quais as malhas de mapeamento espacial tende
    * Uma coisa a ser lembrada é que as malhas espaciais são diferentes para o tipo de malha que um artista 3D pode criar. A topologia de triângulo não será tão "limpa" quanto a topologia criada por humanos, e a malha será afetada de [vários erros](spatial-mapping.md#what-influences-spatial-mapping-quality).
    * Para criar uma estética visual agradável, talvez você queira fazer algum [processamento de malha](spatial-mapping.md#mesh-processing), por exemplo, para preencher buracos ou Normals de superfície suave. Você também pode querer usar um sombreador para projetar texturas criadas pelo artista em sua malha, em vez de Visualizar diretamente a topologia de malha e os normais.
 * Para os hologramas occluding por trás das superfícies do mundo real
-   * As superfícies espaciais podem ser renderizadas em uma passagem somente de profundidade, o que afeta apenas o [buffer de profundidade](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) e não afeta os destinos de renderização de cor.
+   * As superfícies espaciais podem ser renderizadas em uma passagem somente de profundidade, o que afeta apenas o [buffer de profundidade](/windows/win32/direct3d9/depth-buffers) e não afeta os destinos de renderização de cor.
    * Isso força o buffer de profundidade a occlude subsequentemente processará os hologramas por trás das superfícies espaciais. A oclusão precisa dos hologramas melhora o sentido de que os hologramas realmente existem dentro do espaço físico do usuário.
-   * Para habilitar a renderização de profundidade, atualize seu estado de mesclagem para definir o [RenderTargetWriteMask](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) como zero para todos os destinos de renderização de cor.
+   * Para habilitar a renderização de profundidade, atualize seu estado de mesclagem para definir o [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) como zero para todos os destinos de renderização de cor.
 * Para modificar a aparência de hologramas obstruído por superfícies do mundo real
-   * Normalmente, a geometria renderizada fica oculta quando é obstruído. Isso é feito definindo a função Depth em seu [estado de estêncil de profundidade](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) como "menor ou igual a", o que faz com que a geometria fique visível apenas onde está **mais perto** da câmera do que toda a geometria renderizada anteriormente.
+   * Normalmente, a geometria renderizada fica oculta quando é obstruído. Isso é feito definindo a função Depth em seu [estado de estêncil de profundidade](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) como "menor ou igual a", o que faz com que a geometria fique visível apenas onde está **mais perto** da câmera do que toda a geometria renderizada anteriormente.
    * No entanto, pode ser útil manter determinada geometria visível mesmo quando é obstruído e modificar sua aparência quando obstruído como uma forma de fornecer comentários visuais ao usuário. Por exemplo, isso permite que o aplicativo mostre ao usuário o local de um objeto, tornando-o claro que está por trás de uma superfície do mundo real.
-   * Para conseguir isso, renderize a geometria uma segunda vez com um sombreador diferente que cria a aparência desejada de ' obstruído '. Antes de renderizar a geometria pela segunda vez, faça duas alterações em seu [estado de estêncil de profundidade](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). Primeiro, defina a função Depth como "maior que ou igual a" para que a geometria seja visível somente quando ela estiver **além** da câmera do que toda a geometria renderizada anteriormente. Em segundo lugar, defina DepthWriteMask como zero, para que o buffer de profundidade não seja modificado (o buffer de profundidade deve continuar a representar a profundidade da geometria **mais próxima** da câmera).
+   * Para conseguir isso, renderize a geometria uma segunda vez com um sombreador diferente que cria a aparência desejada de ' obstruído '. Antes de renderizar a geometria pela segunda vez, faça duas alterações em seu [estado de estêncil de profundidade](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Primeiro, defina a função Depth como "maior que ou igual a" para que a geometria seja visível somente quando ela estiver **além** da câmera do que toda a geometria renderizada anteriormente. Em segundo lugar, defina DepthWriteMask como zero, para que o buffer de profundidade não seja modificado (o buffer de profundidade deve continuar a representar a profundidade da geometria **mais próxima** da câmera).
 
 O [desempenho](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) é uma preocupação importante ao renderizar malhas de mapeamento espacial. Aqui estão algumas técnicas de desempenho de renderização específicas para renderizar malhas de mapeamento espacial:
 * Ajustar densidade do triângulo
@@ -227,11 +227,11 @@ O [desempenho](../develop/platform-capabilities-and-apis/understanding-performan
    * Como a remoção é realizada em uma base por malha e as superfícies espaciais podem ser grandes, dividir cada malha de superfície espacial em partes menores pode resultar em uma remoção mais eficiente (na medida em que menos triângulos de fora da tela são renderizados). No entanto, há uma compensação; Quanto mais malhas você tiver, mais chamadas de desenho deverão ser feitas, o que pode aumentar os custos de CPU. Em um caso extremo, os próprios cálculos de remoção de frustum podem até mesmo ter um custo de CPU mensurável.
 * Ajustar a ordem de renderização
    * As superfícies espaciais tendem a ser grandes, pois representam o ambiente inteiro do usuário em torno delas. Os custos de processamento de pixel na GPU podem ser altos, especialmente em casos em que há mais de uma camada de geometria visível (incluindo superfícies espaciais e outros hologramas). Nesse caso, a camada mais próxima do usuário será occluding as camadas mais distantes, portanto, qualquer tempo de GPU gasto renderizando essas camadas mais distantes é desperdiçado.
-   * Para reduzir esse trabalho redundante na GPU, ele ajuda a renderizar superfícies opacas na ordem de frente para trás (mais próximas primeiro, mais distantes). Por ' opaco ', queremos dizer superfícies para as quais o DepthWriteMask está definido como um em seu [estado de estêncil de profundidade](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). Quando as superfícies mais próximas são renderizadas, elas primem o buffer de profundidade para que as superfícies mais distantes sejam ignoradas com eficiência pelo processador de pixel na GPU.
+   * Para reduzir esse trabalho redundante na GPU, ele ajuda a renderizar superfícies opacas na ordem de frente para trás (mais próximas primeiro, mais distantes). Por ' opaco ', queremos dizer superfícies para as quais o DepthWriteMask está definido como um em seu [estado de estêncil de profundidade](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Quando as superfícies mais próximas são renderizadas, elas primem o buffer de profundidade para que as superfícies mais distantes sejam ignoradas com eficiência pelo processador de pixel na GPU.
 
 ## <a name="mesh-processing"></a>Processamento de malha
 
-Um aplicativo pode querer realizar [várias operações](spatial-mapping.md#mesh-processing) em malhas de superfície espacial para atender às suas necessidades. Os dados de índice e vértice fornecidos com cada malha de superfície espacial usam o mesmo layout familiar que os [buffers de vértice e de índice](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) usados para renderizar malhas de triângulo em todas as APIs de renderização modernas. No entanto, um fator importante a ser considerado é que os triângulos de mapeamento espacial têm uma **ordem de vento no sentido anti-horário**. Cada triângulo é representado por três índices de vértice no buffer de índice da malha e esses índices identificarão os vértices do triângulo em um pedido no **sentido horário** , quando o triângulo for exibido do lado **frontal** . O lado frontal (ou externo) de malhas de superfície espacial corresponde à medida que você esperaria para o lado frontal (visível) das superfícies do mundo real.
+Um aplicativo pode querer realizar [várias operações](spatial-mapping.md#mesh-processing) em malhas de superfície espacial para atender às suas necessidades. Os dados de índice e vértice fornecidos com cada malha de superfície espacial usam o mesmo layout familiar que os [buffers de vértice e de índice](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) usados para renderizar malhas de triângulo em todas as APIs de renderização modernas. No entanto, um fator importante a ser considerado é que os triângulos de mapeamento espacial têm uma **ordem de vento no sentido anti-horário**. Cada triângulo é representado por três índices de vértice no buffer de índice da malha e esses índices identificarão os vértices do triângulo em um pedido no **sentido horário** , quando o triângulo for exibido do lado **frontal** . O lado frontal (ou externo) de malhas de superfície espacial corresponde à medida que você esperaria para o lado frontal (visível) das superfícies do mundo real.
 
 Os aplicativos só devem realizar a simplificação de malha se a densidade de triângulo mais grosseira fornecida pelo observador de superfície ainda for muito grande: esse trabalho é computacionalmente caro e já está sendo executado pelo tempo de execução para gerar os vários níveis de detalhes fornecidos.
 
@@ -292,7 +292,7 @@ Para ajudar a criar a experiência de verificação correta, considere quais das
    * Um aplicativo pode exigir uma verificação de todas as superfícies no espaço atual, incluindo aquelas por trás do usuário.
    * Por exemplo, um jogo pode colocar o usuário na função de Gulliver, sob o Siege de centenas de pequenas Lilliputians abordagens de todas as direções.
    * Nesses casos, o aplicativo precisará determinar quantas superfícies na sala atual já foram verificadas e direcionar o olhar do usuário para preencher lacunas significativas.
-   * A chave para esse processo é fornecer comentários visuais que o tornam claro para o usuário quais superfícies ainda não foram verificadas. O aplicativo poderia, por exemplo, usar a [neblina baseada em distância](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) para realçar visualmente regiões que não são cobertas por superfícies de mapeamento espacial.
+   * A chave para esse processo é fornecer comentários visuais que o tornam claro para o usuário quais superfícies ainda não foram verificadas. O aplicativo poderia, por exemplo, usar a [neblina baseada em distância](/windows/win32/direct3d9/fog-formulas) para realçar visualmente regiões que não são cobertas por superfícies de mapeamento espacial.
 
 * **Tirar um instantâneo inicial do ambiente**
    * Um aplicativo pode desejar ignorar todas as alterações no ambiente depois de usar um ' instantâneo ' inicial.
@@ -373,7 +373,7 @@ Aqui estão alguns exemplos de diferentes tipos de processamento de malha que po
 * Para que as malhas de superfície sejam orientadosdas corretamente, cada gameobject precisa estar ativo antes de ser enviado para o SurfaceObserver para que sua malha seja construída. Caso contrário, as malhas serão exibidas no seu espaço, mas giradas em ângulos estranhos.
 * O gameobject que executa o script que se comunica com o SurfaceObserver precisa ser definido para a origem. Caso contrário, todos os GameObjects que você criar e enviar para o SurfaceObserver ter suas malhas construídas terão um deslocamento igual ao deslocamento do objeto do jogo pai. Isso pode fazer com que suas malhas mostrem vários medidores de distância, o que dificulta a depuração do que está acontecendo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Sistemas de coordenadas](coordinate-systems.md)
 * [Mapeamento espacial no DirectX](../develop/native/spatial-mapping-in-directx.md)

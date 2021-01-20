@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, teclado, mouse, Game Controller, Xbox Controller, HoloLens, desktop, passo a passos, código de exemplo
-ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530045"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583631"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Teclado, mouse e entrada do controlador no DirectX
 
@@ -60,7 +60,7 @@ Para obter mais informações sobre como implementar o suporte a CoreTextEditCon
 Você também pode usar a entrada do mouse, novamente por meio dos manipuladores de eventos de entrada UWP CoreWindow. Aqui está como modificar o modelo de aplicativo Holographic do Windows para dar suporte a cliques do mouse da mesma maneira que os gestos pressionados. Depois de fazer essa modificação, um clique do mouse ao usar um dispositivo de headset de imersão reposicionará o cubo.
 
 > [!NOTE]
-> Os aplicativos UWP também podem obter dados XY brutos para o mouse usando a API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
+> Os aplicativos UWP também podem obter dados XY brutos para o mouse usando a API [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) .
 
 Comece declarando um novo manipulador OnPointerPressed em AppView. h:
 
@@ -269,5 +269,5 @@ Há algumas diferenças importantes em como esse código pode ser usado no Micro
 * A entrada de teclado é uma maneira excelente de controlar seu aplicativo ou a depuração do mecanismo de jogos, especialmente porque o usuário não precisará usar o teclado. Conectar-se a ele é o mesmo que você está acostumado a, com APIs de evento CoreWindow. Nesse cenário, você pode optar por implementar uma maneira de configurar seu aplicativo para rotear eventos de teclado para um modo de "somente entrada de depuração" durante as sessões de depuração.
 * Controladores Bluetooth também funcionam.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Acessórios de hardware](../../discover/hardware-accessories.md)

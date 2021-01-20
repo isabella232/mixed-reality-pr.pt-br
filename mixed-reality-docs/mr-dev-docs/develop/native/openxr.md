@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, nativo, aplicativo nativo, mecanismo personalizado, middleware
-ms.openlocfilehash: ba03799ff42d3a4c27799dcf2f4035d408360120
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613120"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583794"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -80,7 +80,7 @@ Embora algumas dessas extensões possam ser iniciadas como `MSFT` extensões esp
 
 *O novo mecanismo de RenderDragon do Minecraft está criando seu desktop VR support usando o OpenXR*
 
-A Microsoft vem trabalhando com jogos do Unity e do Epic para garantir que o futuro da realidade misturada esteja aberto, não apenas para o HoloLens 2, mas em toda a amplitude do PC VR, incluindo o [novo headset de reverberação do HP](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  Para obter mais informações sobre como desenvolver para o HoloLens (1º gen), consulte as [notas de versão](https://docs.microsoft.com/hololens/hololens1-release-notes).
+A Microsoft vem trabalhando com jogos do Unity e do Epic para garantir que o futuro da realidade misturada esteja aberto, não apenas para o HoloLens 2, mas em toda a amplitude do PC VR, incluindo o [novo headset de reverberação do HP](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  Para obter mais informações sobre como desenvolver para o HoloLens (1º gen), consulte as [notas de versão](/hololens/hololens1-release-notes).
 
 Para saber como você pode começar a usar o OpenXR no Unity, mecanismo inreal ou seu próprio mecanismo, continue lendo!
 

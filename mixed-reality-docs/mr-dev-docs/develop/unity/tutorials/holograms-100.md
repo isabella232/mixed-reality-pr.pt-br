@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade mista, Windows Mixed Reality, HoloLens, imersão, VR, Mr, introdução, holograma, Academia, tutorial, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006506"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583732"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>Noções básicas do MR 100: introdução ao Unity
 
@@ -24,7 +24,7 @@ Este tutorial orientará você na criação de um aplicativo básico de realidad
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td>Noções básicas do MR 100: introdução ao Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -223,7 +223,7 @@ Verifique se o dispositivo está conectado via cabo USB.
 
 Agora que seu aplicativo está implantado, tente mover tudo em todo o cubo e observe que ele permanece no mundo inteiro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Visão geral do desenvolvimento do Unity](../unity-development-overview.md)
 * [Melhores práticas para trabalhar com o Unity e o Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)

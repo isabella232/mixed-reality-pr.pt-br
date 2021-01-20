@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, borda, IOT Edge, tutorial, API, notificação, funções, tabelas, hololens, imersão, VR, IOT, máquina virtual, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009296"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582817"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR e Azure 313: serviço Hub IoT
 
@@ -39,9 +39,9 @@ Os serviços que serão usados incluem:
 
 - O **registro de contêiner do Azure** é um serviço Microsoft Azure que permite aos desenvolvedores armazenar imagens de contêiner para vários tipos de contêineres. Para obter mais informações, visite a página de [ **serviço do registro de contêiner do Azure**](https://azure.microsoft.com/services/container-registry/).
 
-- O **azure aplicativo de funções** é um serviço Microsoft Azure, que permite aos desenvolvedores executar pequenas partes de código, ' Functions ', no Azure. Isso fornece uma maneira de delegar trabalho para a nuvem, em vez de seu aplicativo local, que pode ter muitos benefícios. O **Azure Functions** dá suporte a várias linguagens de desenvolvimento, incluindo C \# , F \# , Node.js, Java e php. Para obter mais informações, visite a [página **Azure Functions**](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+- O **azure aplicativo de funções** é um serviço Microsoft Azure, que permite aos desenvolvedores executar pequenas partes de código, ' Functions ', no Azure. Isso fornece uma maneira de delegar trabalho para a nuvem, em vez de seu aplicativo local, que pode ter muitos benefícios. O **Azure Functions** dá suporte a várias linguagens de desenvolvimento, incluindo C \# , F \# , Node.js, Java e php. Para obter mais informações, visite a [página **Azure Functions**](/azure/azure-functions/functions-overview).
 
-- **Armazenamento do Azure: as tabelas** são um serviço Microsoft Azure, que permite aos desenvolvedores armazenar dados estruturados, não SQL, na nuvem, tornando-os facilmente acessíveis em qualquer lugar. O serviço apresenta um design sem esquema, permitindo a evolução das tabelas conforme necessário e, portanto, é muito flexível. Para obter mais informações, visite a [página **tabelas do Azure**](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- **Armazenamento do Azure: as tabelas** são um serviço Microsoft Azure, que permite aos desenvolvedores armazenar dados estruturados, não SQL, na nuvem, tornando-os facilmente acessíveis em qualquer lugar. O serviço apresenta um design sem esquema, permitindo a evolução das tabelas conforme necessário e, portanto, é muito flexível. Para obter mais informações, visite a [página **tabelas do Azure**](/azure/cosmos-db/table-storage-overview)
 
 Este curso ensinará a você como configurar e usar o serviço do Hub IoT e, em seguida, Visualizar uma resposta fornecida por um dispositivo. Será necessário aplicar esses conceitos a uma configuração de serviço do Hub IoT personalizada, que você pode estar criando.
 
@@ -49,7 +49,7 @@ Este curso ensinará a você como configurar e usar o serviço do Hub IoT e, em 
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td> MR e Azure 313: serviço Hub IoT</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,7 +57,7 @@ Este curso ensinará a você como configurar e usar o serviço do Hub IoT e, em 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para obter os pré-requisitos mais atualizados para o desenvolvimento com realidade misturada, incluindo com o Microsoft HoloLens, visite o artigo [instalar as ferramentas](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) .
+Para obter os pré-requisitos mais atualizados para o desenvolvimento com realidade misturada, incluindo com o Microsoft HoloLens, visite o artigo [instalar as ferramentas](/windows/mixed-reality/install-the-tools) .
 
 > [!NOTE]
 > Este tutorial foi projetado para desenvolvedores que têm experiência básica com o Python. Além disso, lembre-se de que os pré-requisitos e as instruções escritas neste documento representam o que foi testado e verificado no momento da gravação (julho de 2018). Você está livre para usar o software mais recente, conforme listado no artigo [instalar as ferramentas](../../install-the-tools.md) , embora não seja recomendável que as informações neste curso correspondam perfeitamente ao que você encontrará em softwares mais recentes do que os listados abaixo.
@@ -81,17 +81,17 @@ O hardware e o software a seguir são necessários:
 
 ### <a name="before-you-start"></a>Antes de começar
 
-1. Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](https://docs.microsoft.com/hololens/hololens-setup).
+1. Configure e teste seu HoloLens. Se você precisar de suporte para configurar seu HoloLens, [visite o artigo configuração do hololens](/hololens/hololens-setup).
 2. É uma boa ideia executar a **calibragem** e o **ajuste do sensor** ao começar a desenvolver um novo aplicativo do HoloLens (às vezes, ele pode ajudar a executar essas tarefas para cada usuário).
 
-Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](../../../calibration.md#hololens-2).
+Para obter ajuda sobre calibragem, siga este [link para o artigo Calibration do HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](../../../sensor-tuning.md).
+Para obter ajuda sobre o ajuste do sensor, siga este [link para o artigo de ajuste do sensor do HoloLens](/hololens/hololens-updates).
 
 3. Configure sua **máquina virtual Ubuntu** usando o **Hyper-V**. Os recursos a seguir ajudarão você com o processo.
     1.  Primeiro, siga este link para [baixar o ISO 16.04.4 LTS (Xenial Xerus)](https://au.releases.ubuntu.com/16.04/). Selecione a **imagem da área de trabalho do PC de 64 bits (amd64)**.
-    2.  Verifique se o **Hyper-V** está habilitado em seu computador com Windows 10. Você pode seguir este link para obter orientação sobre como [instalar e habilitar o Hyper-V no Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-    3.  Inicie o Hyper-V e crie uma nova VM Ubuntu. Você pode seguir este link para obter um [guia passo a passo sobre como criar uma VM com o Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). Quando solicitado a **"instalar um sistema operacional de um arquivo de imagem inicializável"**, selecione a **ISO do Ubuntu** que você baixou anteriormente.
+    2.  Verifique se o **Hyper-V** está habilitado em seu computador com Windows 10. Você pode seguir este link para obter orientação sobre como [instalar e habilitar o Hyper-V no Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
+    3.  Inicie o Hyper-V e crie uma nova VM Ubuntu. Você pode seguir este link para obter um [guia passo a passo sobre como criar uma VM com o Hyper-V](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). Quando solicitado a **"instalar um sistema operacional de um arquivo de imagem inicializável"**, selecione a **ISO do Ubuntu** que você baixou anteriormente.
 
     > [!NOTE]
     > Não é recomendável usar a **criação rápida do Hyper-V** .  
@@ -186,7 +186,7 @@ Agora, você começará a criação e a configuração do seu **serviço de Hub 
 
     1. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses cursos) em um grupo de recursos comum).
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar um grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar um grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
 
     2. Selecione um **local** apropriado (use o mesmo local em todos os serviços criados neste curso).
@@ -382,7 +382,7 @@ Agora você pode passar para a configuração de seu dispositivo **que executa o
     >1. Reinicie VS Code e/ou seu computador.
     >2. Pode ser necessário alternar o terminal de **vs Code** para aquele que você esteve usando para instalar o Python, ou seja, o **PowerShell** (especialmente caso o ambiente do Python já tenha sido instalado em seu computador). Com o terminal aberto, você encontrará o menu suspenso no lado direito do terminal.
      ![Criar seu contêiner](images/AzureLabs-Lab313-24b.png) 
-    >3. Verifique se o caminho de instalação do **Python** foi adicionado como **variável de ambiente** em seu computador. CookieCutter deve fazer parte do mesmo caminho de local. Siga este [link para obter mais informações sobre variáveis de ambiente](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx), 
+    >3. Verifique se o caminho de instalação do **Python** foi adicionado como **variável de ambiente** em seu computador. CookieCutter deve fazer parte do mesmo caminho de local. Siga este [link para obter mais informações sobre variáveis de ambiente](/windows/win32/procthread/environment-variables), 
 
 7. Depois que o **CookieCutter** terminar de instalar, você deverá reiniciar o computador para que o **CookieCutter** seja reconhecido como um comando, no ambiente do sistema.
 
@@ -870,7 +870,7 @@ Navegue de volta para o portal do Azure, no qual você criará um serviço de ta
 
     9. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses cursos) em um grupo de recursos comum).
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar um grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar um grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
     10. Deixe as **redes virtuais** como **desabilitadas**, se essa for uma opção para você.
 
@@ -1011,7 +1011,7 @@ Primeiro, você precisa criar um arquivo que permitirá que o Azure function car
 
     4. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses cursos) em um grupo de recursos comum).
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar um grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, siga este [link sobre como gerenciar um grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
     5. Para o **sistema operacional**, clique em Windows, pois essa é a plataforma pretendida.
 

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, NuGet
-ms.openlocfilehash: b78d1c93c8b2890ba8d904c289c8d61a14380824
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 65c76266c00f51cbe17f6bfd2991a6adf4103855
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006496"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583851"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Escrevendo um aplicativo remoto de comunicação remota do Holographic usando a API do HolographicSpace
 
@@ -27,7 +27,7 @@ Todo o código nesta página e projetos de trabalho podem ser encontrados no [re
 Um bom ponto de partida é um aplicativo de área de trabalho baseado em DirectX em funcionamento ou UWP, que tem como alvo a [API HolographicSpace](../native/getting-a-holographicspace.md). Para obter detalhes, consulte [visão geral do desenvolvimento do DirectX](../native/directx-development-overview.md). O [modelo de projeto C++ Holographic](../native/creating-a-holographic-directx-project.md) é um bom ponto de partida.
 
 >[!IMPORTANT]
->Qualquer aplicativo usando a comunicação remota do Holographic deve ser criado para usar um [apartamento](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments)multi-threaded. O uso de um [apartamento de thread único](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) é suportado, mas levará a um desempenho abaixo do ideal e possivelmente ocorrendo durante a reprodução. Ao usar C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) um apartamento multi-threaded é o padrão.
+>Qualquer aplicativo usando a comunicação remota do Holographic deve ser criado para usar um [apartamento](//windows/win32/com/multithreaded-apartments)multi-threaded. O uso de um [apartamento de thread único](//windows/win32/com/single-threaded-apartments) é suportado, mas levará a um desempenho abaixo do ideal e possivelmente ocorrendo durante a reprodução. Ao usar C++/WinRT [WinRT:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) um apartamento multi-threaded é o padrão.
 
 
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >Assim como acontece com qualquer API do C++/WinRT, você ```Connect``` pode lançar um WinRT:: hresult_error que precisa ser manipulado.
 
 >[!TIP]
->Para evitar o uso da projeção de linguagem [C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/) , o arquivo ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` localizado no pacote NuGet de comunicação remota do Holographic pode ser incluído. Ele contém declarações das interfaces COM subjacentes. No entanto, o uso de C++/WinRT é recomendado.
+>Para evitar o uso da projeção de linguagem [C++/WinRT](//windows/uwp/cpp-and-winrt-apis/) , o arquivo ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` localizado no pacote NuGet de comunicação remota do Holographic pode ser incluído. Ele contém declarações das interfaces COM subjacentes. No entanto, o uso de C++/WinRT é recomendado.
 
 A escuta de conexões de entrada no aplicativo remoto pode ser feita chamando o ```Listen``` método. A porta de handshake e a porta de transporte podem ser especificadas durante essa chamada. A porta de handshake é usada para o handshake inicial. Os dados são enviados pela porta de transporte. Por padrão, **8265** e **8266** são usados.
 
@@ -197,7 +197,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-Usando um método auxiliar assíncrono, você pode inicializar a fala remota. Isso deve ser feito de forma assíncrona, pois a inicialização pode levar um tempo considerável. [Operações de simultaneidade e assíncronas com c++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/concurrency) explica como criar funções assíncronas com c++/WinRT.
+Usando um método auxiliar assíncrono, você pode inicializar a fala remota. Isso deve ser feito de forma assíncrona, pois a inicialização pode levar um tempo considerável. [Operações de simultaneidade e assíncronas com c++/WinRT](//windows/uwp/cpp-and-winrt-apis/concurrency) explica como criar funções assíncronas com c++/WinRT.
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -234,7 +234,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 ```
 
 Há duas maneiras de especificar frases a serem reconhecidas.
-1) Especificação dentro de um arquivo XML de gramática de fala. Consulte [como criar uma gramática XML básica](https://docs.microsoft.com//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) para obter detalhes.
+1) Especificação dentro de um arquivo XML de gramática de fala. Consulte [como criar uma gramática XML básica](//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) para obter detalhes.
 2) Especifique ao passá-los dentro do vetor do dicionário para ```ApplyParameters``` .
 
 Dentro do retorno de chamada OnRecognizedSpeech, os eventos de fala podem ser processados:
@@ -315,7 +315,7 @@ Observe que, se os valores padrão não devem ser usados, ```ConfigureDepthVideo
 
 Tenha em mente que o uso de um buffer de profundidade de resolução completa também afeta os requisitos de largura de banda e precisa ser considerado no valor máximo de largura de banda fornecido para o ```CreateRemoteContext``` .
 
-Ao lado de configurar a resolução, você também precisa confirmar um buffer de profundidade por meio de [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
+Ao lado de configurar a resolução, você também precisa confirmar um buffer de profundidade por meio de [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
 
 ```cpp
 
@@ -362,5 +362,5 @@ Os canais de dados personalizados podem ser usados para enviar dados do usuário
 * [Canais de dados personalizados de comunicação remota holográfica](holographic-remoting-custom-data-channels.md)
 * [Como estabelecer uma conexão segura com o Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
-* [Termos de licença de software de comunicação remota holográfica](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termos de licença de software de comunicação remota holográfica](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

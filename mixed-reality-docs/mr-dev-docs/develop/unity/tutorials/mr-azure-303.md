@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, serviço de inteligência de reconhecimento de linguagem, Luis, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679495"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583438"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>Sr e Azure 303: LUIS (reconhecimento de linguagem natural)
 
@@ -44,7 +44,7 @@ Esteja preparado para treinar o LUIS várias vezes, que é abordado no [capítul
 
 <table>
 <tr>
-<th>Curso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
+<th>Curso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Headsets imersivos</a></th>
 </tr><tr>
 <td>Sr e Azure 303: LUIS (reconhecimento de linguagem natural)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Recomendamos o seguinte hardware e software para este curso:
 - [O SDK do Windows 10 mais recente](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](../../../hololens-hardware-details.md) modo de desenvolvedor habilitado
+- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md) ou [Microsoft HoloLens com o](/hololens/hololens1-hardware) modo de desenvolvedor habilitado
 - Um conjunto de fones de ouvido com um microfone interno (se o headset não tiver um MIC interno e alto-falantes)
 - Acesso à Internet para a instalação do Azure e recuperação LUIS
 
@@ -105,7 +105,7 @@ Para usar o serviço de *reconhecimento vocal* no Azure, você precisará config
     3. Selecione o **tipo de preço** apropriado para você, se esta for a primeira vez que criar um *serviço Luis*, uma camada gratuita (chamada F0) deverá estar disponível para você. A alocação gratuita deve ser mais do que suficiente para este curso.
     4. Escolha um **grupo de recursos** ou crie um novo. Um grupo de recursos fornece uma maneira de monitorar, controlar o acesso, provisionar e gerenciar a cobrança de uma coleção de ativos do Azure. É recomendável manter todos os serviços do Azure associados a um único projeto (por exemplo, esses cursos) em um grupo de recursos comum). 
 
-        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Se você quiser ler mais sobre grupos de recursos do Azure, [visite o artigo grupo de recursos](/azure/azure-resource-manager/resource-group-portal).
 
     5. Determine o **local** do seu grupo de recursos (se você estiver criando um novo grupo de recursos). O local ideal seria na região em que o aplicativo seria executado. Alguns ativos do Azure só estão disponíveis em determinadas regiões.
     6. Você também precisará confirmar que entendeu os termos e condições aplicados a esse serviço.
@@ -1117,4 +1117,4 @@ Ao usar esse aplicativo, você pode notar que, se olhar no objeto Floor e pedir 
 
 ### <a name="exercise-2"></a>Exercício 2
 
-Tente estender os recursos de LUIS e de aplicativo, adicionando funcionalidades adicionais para objetos em cena; como exemplo, crie novos objetos no ponto de acesso olhar, dependendo do que o usuário diz e, em seguida, use esses objetos junto com os objetos de cena atuais, com os comandos existentes. 
+Tente estender os recursos de LUIS e de aplicativo, adicionando funcionalidades adicionais para objetos em cena; como exemplo, crie novos objetos no ponto de acesso olhar, dependendo do que o usuário diz e, em seguida, use esses objetos junto com os objetos de cena atuais, com os comandos existentes.

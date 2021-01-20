@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: controladores de animação, Unity, entrada, realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: bf9aad0ee67a406280cefedec8b55fb1de130b8b
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192944"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583503"
 ---
 # <a name="motion-controllers-in-unity"></a>Controladores de movimento no Unity
 
@@ -152,9 +152,9 @@ Os aplicativos que desejam tratar as posições de forma diferente com base no e
 <tr>
 <th> Estado de acompanhamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Alta precisão</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Alta precisão</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Alta precisão (com risco de perda)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Alta precisão (com risco de perda)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Precisão aproximada</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -445,7 +445,7 @@ Os tutoriais passo a passo, com exemplos de personalização mais detalhados, es
 - [Entrada do MR 211: gesto](tutorials/holograms-211.md)
 - [Entrada do MR 213: controladores de movimentos](../../deprecated/mixed-reality-213.md)
 
-[![Entrada MR 213-controlador de movimento](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![Entrada MR 213-controlador de movimento](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *Entrada MR 213-controlador de movimento*
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
@@ -453,7 +453,7 @@ Os tutoriais passo a passo, com exemplos de personalização mais detalhados, es
 Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
-> [Acompanhamento de mãos e olhos](hand-eye-in-unit.md)
+> [Acompanhamento de mãos e olhos](./hand-eye-in-unity.md)
 
 Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Misturada:
 

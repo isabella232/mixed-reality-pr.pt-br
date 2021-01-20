@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, segurança, autenticação, servidor para cliente
-ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b8c26bfa32661a180f1f58acc5c4aa13529f3bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006476"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583844"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Habilitando a segurança de conexão para comunicação remota do Holographic
 
@@ -97,7 +97,7 @@ Um segredo compartilhado não será suficiente para cobrir esse caso de uso. Em 
 * O cliente envia esse token ao servidor por meio de comunicação remota do Holographic
 * O servidor valida o token do cliente em relação ao provedor de identidade
 
-Um exemplo de um provedor de identidade é a [plataforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/).
+Um exemplo de um provedor de identidade é a [plataforma Microsoft Identity](/azure/active-directory/develop/).
 
 Como no caso de uso anterior, verifique se esses tokens não são enviados por meio de canais inseguros ou expostos de outra forma.
 
@@ -115,7 +115,7 @@ Essas chamadas exigem que você forneça implementações de determinadas interf
 Todas as interfaces têm uma função solicitando que você execute uma ação, que recebe um objeto de retorno de chamada como parâmetro. Usando esse objeto, você pode implementar facilmente a manipulação assíncrona da solicitação. Mantenha uma referência a esse objeto e chame a função de conclusão quando a ação assíncrona for concluída. A função de conclusão pode ser chamada de qualquer thread.
 
 >[!TIP]
->A implementação de interfaces do WinRT pode ser feita facilmente usando C++/WinRT. O capítulo [criar APIs com C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) descreve isso em detalhes.
+>A implementação de interfaces do WinRT pode ser feita facilmente usando C++/WinRT. O capítulo [criar APIs com C++/WinRT](//windows/uwp/cpp-and-winrt-apis/author-apis) descreve isso em detalhes.
 
 >[!IMPORTANT]
 >O `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` dentro do pacote NuGet contém documentação detalhada para a API relacionada a conexões seguras.
@@ -193,5 +193,5 @@ Essa API é semelhante à API baseada em IDL descrita em [implementando a segura
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
-* [Termos de licença de software de comunicação remota holográfica](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termos de licença de software de comunicação remota holográfica](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
