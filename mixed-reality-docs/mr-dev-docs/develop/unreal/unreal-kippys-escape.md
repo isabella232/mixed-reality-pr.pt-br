@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580811"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635394"
 ---
 # <a name="the-making-of-kippys-escape"></a>A criação do escape do Kippy
 
@@ -62,21 +62,21 @@ Além do design de caractere e de ambiente, fizemos um esforço em conjunto para
 
 O escape do Kippy depende muito de componentes de ferramentas de UX da realidade misturada para tornar o jogo interativo – ou seja, os atores, controles associados, manipuladores, controles deslizantes e botões.   
 
-O [ator de interação manual](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) permite a manipulação direta e longe de hologramas. No início do escape do Kippy, o usuário terá a oportunidade de definir o local do jogo. As emissões de mão que se estendem da palma do usuário facilitam a manipulação de hologramas grandes que estão distantes, como visto no gif abaixo.  
+O [ator de interação manual](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) permite a manipulação direta e longe de hologramas. No início do escape do Kippy, o usuário terá a oportunidade de definir o local do jogo. As emissões de mão que se estendem da palma do usuário facilitam a manipulação de hologramas grandes que estão distantes, como visto no gif abaixo.  
 
 ![Gif do ator de interação manual](images/kippys-escape/kippys-escape-img-06.gif)
 
-A própria cena de espaço reservado pode ser arrastada e girada usando componente de [controle de limites](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) de ferramentas de UX.  
+A própria cena de espaço reservado pode ser arrastada e girada usando componente de [controle de limites](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) de ferramentas de UX.  
 
-Na segunda ilha, o usuário deve selecionar Gems e colocá-las em seus slots correspondentes. Os Gems têm os [manipuladores](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) anexados a eles que permitem que o usuário os pegue e os coloque. 
+Na segunda ilha, o usuário deve selecionar Gems e colocá-las em seus slots correspondentes. Os Gems têm os [manipuladores](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) anexados a eles que permitem que o usuário os pegue e os coloque. 
 
 ![Gif de exemplo de manipulador](images/kippys-escape/kippys-escape-img-07.gif)
 
-Um [botão pressionável](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) é a chave para colocar o bombas para uso na terceira ilha.  
+Um [botão pressionável](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) é a chave para colocar o bombas para uso na terceira ilha.  
 
 ![Gif de exemplo de botão pressionável](images/kippys-escape/kippys-escape-img-08.gif)
 
-Um componente [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) aparece na quarta ilha, disparando a ponte final a ser gerada.  
+Um componente [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) aparece na quarta ilha, disparando a ponte final a ser gerada.  
 
 ![Exemplo de componente de controle deslizante gif](images/kippys-escape/kippys-escape-img-09.gif) 
 
