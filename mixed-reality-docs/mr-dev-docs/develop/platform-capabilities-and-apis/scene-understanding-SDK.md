@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compreensão da cena, mapeamento espacial, realidade do Windows Mixed, Unity
-ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
+ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583749"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758373"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Visão geral do SDK de compreensão da cena
 
@@ -119,7 +119,7 @@ SceneObjects pode ter qualquer um dos seguintes:
 <tr>
 <th>SceneObjectKind</th> <th>Descrição</th>
 </tr>
-<tr><td>Segundo plano</td><td>O Sceneobject é conhecido como <b>não</b> um dos outros tipos reconhecidos de objeto de cena. Essa classe não deve ser confundida com desconhecido, em que o plano de fundo é conhecido como parede/piso/teto etc... Embora desconhecido ainda não seja categorizado.</b></td></tr>
+<tr><td>Tela de fundo</td><td>O Sceneobject é conhecido como <b>não</b> um dos outros tipos reconhecidos de objeto de cena. Essa classe não deve ser confundida com desconhecido, em que o plano de fundo é conhecido como parede/piso/teto etc... Embora desconhecido ainda não seja categorizado.</b></td></tr>
 <tr><td>Meu</td><td>Uma parede física. As paredes são presumidas como estruturas ambientais immovíveis.</td></tr>
 <tr><td>Piso</td><td>Os andares são quaisquer superfícies nas quais um pode ser movimentado. Observação: o escadas não é um andares. Observe também que os andares pressupõem qualquer superfície que seja orientada e, portanto, não há uma suposição explícita de um piso singular. Estruturas de vários níveis, rampas, etc... todos devem ser classificados como piso.</td></tr>
 <tr><td>Ceiling</td><td>A superfície superior de uma sala.</td></tr>
@@ -432,7 +432,7 @@ Se você tiver um HoloLens2, poderá salvar qualquer cena capturada salvando a s
 
 Se você não tiver um dispositivo HoloLens2, mas quiser brincar com a compreensão da cena, você precisará baixar uma cena previamente capturada. A amostra de compreensão da cena é fornecida atualmente com cenas serializadas que podem ser baixadas e usadas por sua própria conveniência. Você pode encontrá-los aqui:
 
-[Cenas de exemplo de compreensão de cena](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[Cenas de exemplo de compreensão de cena](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>Veja também
 
