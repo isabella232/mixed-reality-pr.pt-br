@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, desenvolvimento do azure, âncoras espaciais, realidade misturada, desenvolvimento, recursos, novo projeto, emulador, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009766"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583026"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Âncoras Espaciais do Azure no Unreal
 
@@ -30,17 +30,17 @@ Para concluir este guia, verifique se você:
 
 - Instalou o [Unreal versão 4.25](https://www.unrealengine.com/get-now) ou posterior
 - Um [projeto do HoloLens 2](tutorials/unreal-uxt-ch1.md) configurado no Unreal 
-- Leia a [visão geral das Âncoras Espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/overview)
+- Leia a [visão geral das Âncoras Espaciais do Azure](/azure/spatial-anchors/overview)
 - Conhecimento básico de C++ e Unreal
 
 ## <a name="getting-azure-spatial-anchors-account-info"></a>Como obter informações da conta das Âncoras Espaciais do Azure
 
 Para usar as Âncoras Espaciais do Azure no seu projeto, você precisará:
-* [Criar um recurso de âncoras espaciais](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource) e copiar os campos da conta listados abaixo. Esses valores são usados para autenticar os usuários na conta do seu aplicativo:
+* [Criar um recurso de âncoras espaciais](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource) e copiar os campos da conta listados abaixo. Esses valores são usados para autenticar os usuários na conta do seu aplicativo:
     * **ID da Conta**
     * **Chave de Conta**
 
-Confira a documentação [Autenticação das Âncoras Espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/concepts/authentication?tabs=csharp) para obter mais informações.
+Confira a documentação [Autenticação das Âncoras Espaciais do Azure](/azure/spatial-anchors/concepts/authentication?tabs=csharp) para obter mais informações.
 
 > [!NOTE]
 > As Âncoras Espaciais do Azure no Unreal 4.25 não dão suporte a tokens de autenticação do Azure AD, mas o suporte para essa funcionalidade será disponibilizado em uma versão posterior.
@@ -65,7 +65,7 @@ Uma sessão das Âncoras Espaciais do Azure permite que os aplicativos cliente s
 ![Captura de tela do painel de detalhes com a ID da conta das Âncoras Espaciais do Azure, a chave e o tipo de variável realçados](images/asa-unreal/unreal-spatial-anchors-img-02.png)
 
 Inicie uma sessão das Âncoras Espaciais do Azure:
-1. Verificando se uma **Sessão de AR** está em execução no aplicativo do HoloLens, pois a sessão das Âncoras Espaciais do Azure não pode ser iniciada até que uma Sessão de AR esteja em execução. Se você não tiver uma configuração, [crie um ativo da Sessão de AR](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
+1. Verificando se uma **Sessão de AR** está em execução no aplicativo do HoloLens, pois a sessão das Âncoras Espaciais do Azure não pode ser iniciada até que uma Sessão de AR esteja em execução. Se você não tiver uma configuração, [crie um ativo da Sessão de AR](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 2. Adicionando o evento personalizado **Iniciar Sessão das Âncoras Espaciais do Azure** e configurando-o conforme mostrado na captura de tela abaixo.
     * A criação de uma sessão não inicia a sessão por padrão, o que permite que você configure a sessão para autenticação no serviço Âncoras Espaciais do Azure.
 
@@ -216,6 +216,6 @@ Você sempre pode voltar para os [pontos de verificação de desenvolvimento do 
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Âncoras Espaciais locais](unreal-spatial-anchors.md)
-* [Documentação das Âncoras Espaciais](https://docs.microsoft.com/azure/spatial-anchors/)
+* [Documentação das Âncoras Espaciais](/azure/spatial-anchors/)
 * [Recursos da Âncora Espacial](https://azure.microsoft.com/services/spatial-anchors/#features)
-* [Diretrizes de experiência de ancoragem efetiva](https://docs.microsoft.com/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)
+* [Diretrizes de experiência de ancoragem efetiva](/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)

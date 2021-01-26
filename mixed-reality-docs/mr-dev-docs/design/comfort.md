@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, design, conforto, HoloLens 2, HoloLens (1ª geração), headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, locomoção
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847488"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582495"
 ---
 # <a name="comfort"></a>Conforto
 
@@ -78,15 +78,15 @@ DIP refere-se à distância entre as pupilas ou a parte central dos olhos de um 
 
 #### <a name="hololens-1st-gen"></a>HoloLens (1ª geração)
 
-Para o HoloLens (1ª geração), a DIP é estimada e definida durante a [calibragem do dispositivo](https://docs.microsoft.com/hololens/hololens-calibration). Para os novos usuários em um dispositivo já configurado, a calibragem precisa ser executada ou a DIP precisa ser definida manualmente. O DV depende totalmente do ajuste do dispositivo. Especificamente, para minimizar o DV, o dispositivo precisa estar apoiado na cabeça de um usuário, de modo que os capacetes estejam nivelados com o eixo dos olhos. 
+Para o HoloLens (1ª geração), a DIP é estimada e definida durante a [calibragem do dispositivo](/hololens/hololens-calibration). Para os novos usuários em um dispositivo já configurado, a calibragem precisa ser executada ou a DIP precisa ser definida manualmente. O DV depende totalmente do ajuste do dispositivo. Especificamente, para minimizar o DV, o dispositivo precisa estar apoiado na cabeça de um usuário, de modo que os capacetes estejam nivelados com o eixo dos olhos. 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-Para o HoloLens 2, a DIP é estimada e definida durante a [calibragem](https://docs.microsoft.com/hololens/hololens-calibration) do olho/do dispositivo. Para os novos usuários em um dispositivo já configurado, a calibragem precisa ser executada para garantir que a DIP seja definida corretamente. O DV é levado em conta automaticamente no HoloLens 2. 
+Para o HoloLens 2, a DIP é estimada e definida durante a [calibragem](/hololens/hololens-calibration) do olho/do dispositivo. Para os novos usuários em um dispositivo já configurado, a calibragem precisa ser executada para garantir que a DIP seja definida corretamente. O DV é levado em conta automaticamente no HoloLens 2. 
 
 ### <a name="guidance-for-immersive-devices"></a>Diretrizes para dispositivos imersivos
 
-Os HMDs imersivos do Windows Mixed Reality não têm nenhuma calibragem automática para DIP ou DV. A DIP pode ser definida manualmente no software (nas configurações do Portal de Realidade Misturada, confira [calibragem](https://docs.microsoft.com/hololens/hololens-calibration)) ou alguns HMDs têm um controle deslizante mecânico que permite ao usuário ajustar o espaçamento das lentes para uma posição confortável que corresponda aproximadamente à DIP. 
+Os HMDs imersivos do Windows Mixed Reality não têm nenhuma calibragem automática para DIP ou DV. A DIP pode ser definida manualmente no software (nas configurações do Portal de Realidade Misturada, confira [calibragem](/hololens/hololens-calibration)) ou alguns HMDs têm um controle deslizante mecânico que permite ao usuário ajustar o espaçamento das lentes para uma posição confortável que corresponda aproximadamente à DIP. 
 
 ## <a name="rendering-rates"></a>Taxas de renderização
 
@@ -177,4 +177,4 @@ A fadiga muscular pode se acumular quando é esperado que os usuários mantenham
 * [Estabilidade do holograma](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Interações instinctuais](interaction-fundamentals.md)
 * [Quadro holográfico](holographic-frame.md)
-* [Calibragem](https://docs.microsoft.com/hololens/hololens-calibration)
+* [Calibragem](/hololens/hololens-calibration)

@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem, Azure, remote rendering, âncoras espaciais, serviços cognitivos, cognição, unity, machine learning, tradução de fala, pesquisa visual computacional, Microsoft Graph
-ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 725e41e94923f1738eb11064c772f9138a6be09a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009566"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582703"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Visão geral dos serviços de nuvem da realidade misturada do Azure
 
@@ -66,10 +66,10 @@ O serviço pode ser desenvolvido em um host de ambientes e implantado em um gran
 
 :::row:::
     :::column:::
-       [![Speech](../whats-new/images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![Speech](../whats-new/images/speech.jpg)](/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="speech"></a>[Fala](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### <a name="speech"></a>[Fala](/azure/cognitive-services/speech-service/)
         Descubra como a Fala habilita a integração de funcionalidades de processamento de fala em qualquer aplicativo ou serviço. Converta o idioma falado em texto ou produza uma fala que soa natural com base em texto usando fontes de voz padrão (ou personalizáveis). Experimente qualquer serviço gratuitamente – e crie rapidamente aplicativos e serviços habilitados para fala com as funcionalidades a seguir.
     :::column-end:::
 :::row-end:::
@@ -78,10 +78,10 @@ O serviço pode ser desenvolvido em um host de ambientes e implantado em um gran
 
 :::row:::
     :::column:::
-       [![Visão](../whats-new/images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Visão](../whats-new/images/vision.jpg)](/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="vision"></a>[Visão](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### <a name="vision"></a>[Visão](/azure/cognitive-services/computer-vision/)
         Reconheça, identifique, legende, indexe e modere imagens, vídeos e conteúdo de tinta digital. Saiba como a Visão possibilita que aplicativos e serviços identifiquem e analisem com precisão o conteúdo em imagens, vídeos e tinta digital.
     :::column-end:::
 :::row-end:::
@@ -95,7 +95,7 @@ Os serviços autônomos listados abaixo não se aplicam à Realidade Misturada, 
 <table>
     <tr>
         <td><strong>Serviço de Nuvem do Azure</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens 1ª geração</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens 1ª geração</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
      <tr>
@@ -167,5 +167,5 @@ Os serviços autônomos listados abaixo não se aplicam à Realidade Misturada, 
 
 ## <a name="see-also"></a>Confira também
 
-* Tutoriais sobre as Âncoras Espaciais do Azure para HoloLens 2 – [1 de 3: Introdução às Âncoras Espaciais do Azure](../mrlearning-asa-ch1.md)
+* Tutoriais sobre as Âncoras Espaciais do Azure para HoloLens 2 – [1 de 3: Introdução às Âncoras Espaciais do Azure](./unity/tutorials/mr-learning-asa-02.md)
 * Tutoriais sobre os Serviços de Fala do Azure para HoloLens 2 – [1 de 4 Como integrar e usar a transcrição e o reconhecimento de fala](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)
