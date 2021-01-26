@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: câmera, hololens, câmera colorida, frente, hololens 2, CV, pesquisa Visual computacional, fiducial, marcadores, código QR, QR, foto, vídeo
-ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583626"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810160"
 ---
 # <a name="locatable-camera"></a>Câmera localizável
 
@@ -37,7 +37,7 @@ O HoloLens inclui uma câmera voltada para o mundo montada na frente do disposit
 
 * Câmera de foto/vídeo (PV) de foco automático com balanceamento de branco automático, exposição automática e pipeline de processamento de imagem completo.
 * O LED de privacidade branco enfrentado pelo mundo se acenderá sempre que a câmera estiver ativa.
-* O HoloLens 2 dá suporte a perfis de câmera diferentes. Saiba como [descobrir e selecionar recursos de câmera](//windows/uwp/audio-video-camera/camera-profiles).
+* O HoloLens 2 dá suporte a perfis de câmera diferentes. Saiba como [descobrir e selecionar recursos de câmera](/windows/uwp/audio-video-camera/camera-profiles).
 * A câmera dá suporte aos seguintes perfis e resoluções (todos os modos de vídeo são taxa de proporção de 16:9):
   
   | Perfil                                         | Vídeo     | Versão Prévia   | Também     | Taxas de quadros | Campo de exibição horizontal (H-FOV) | Uso sugerido                             |
@@ -75,14 +75,14 @@ Para ir do ' CameraIntrinsics ' e ' CameraCoordinateSystem ' para seu sistema/co
 
 ### <a name="using-mediaframereference"></a>Usando MediaFrameReference
 
-Essas instruções se aplicam se you'r usando a classe [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) para ler quadros de imagem da câmera.
+Essas instruções se aplicam se you'r usando a classe [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) para ler quadros de imagem da câmera.
 
-Cada quadro de imagem (seja foto ou vídeo) inclui um [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) com raiz na câmera no momento da captura, que pode ser acessado usando a propriedade [CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) de seu [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Cada quadro contém uma descrição do modelo de lente da câmera, que pode ser encontrado na propriedade [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Juntas, essas transformações definem para cada pixel um raio em um espaço 3D que representa o caminho usado pelo fótons que produziu o pixel. Esses raios podem estar relacionados a outro conteúdo no aplicativo por meio da obtenção da transformação do sistema de coordenadas do quadro para outro sistema de coordenadas (por exemplo, de um [quadro estacionário de referência](../../design/coordinate-systems.md#stationary-frame-of-reference)). 
+Cada quadro de imagem (seja foto ou vídeo) inclui um [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) com raiz na câmera no momento da captura, que pode ser acessado usando a propriedade [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) de seu [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Cada quadro contém uma descrição do modelo de lente da câmera, que pode ser encontrado na propriedade [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Juntas, essas transformações definem para cada pixel um raio em um espaço 3D que representa o caminho usado pelo fótons que produziu o pixel. Esses raios podem estar relacionados a outro conteúdo no aplicativo por meio da obtenção da transformação do sistema de coordenadas do quadro para outro sistema de coordenadas (por exemplo, de um [quadro estacionário de referência](../../design/coordinate-systems.md#stationary-frame-of-reference)). 
 
 Cada quadro de imagem fornece o seguinte:
 * Dados de pixel (em formato RGB/NV12/JPEG/etc.)
-* Um [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) do local da captura
-* Uma classe [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) que contém o modo de lente da câmera
+* Um [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) do local da captura
+* Uma classe [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) que contém o modo de lente da câmera
 
 O [exemplo HolographicFaceTracking](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) mostra a maneira bastante simples de consultar a transformação entre o sistema de coordenadas da câmera e seus próprios sistemas de coordenadas do aplicativo.
 
