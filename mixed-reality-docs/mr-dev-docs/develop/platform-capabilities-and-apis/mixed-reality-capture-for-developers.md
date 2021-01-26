@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, vídeo, captura, câmera
-ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
+ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583673"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763723"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Captura de realidade misturada para desenvolvedores
 
@@ -84,7 +84,7 @@ Uma propriedade [ViewConfiguration](/uwp/api/windows.graphics.holographic.hologr
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>Habilitar o PhotoVideoCamera HolographicViewConfiguration no Unity
 
 > [!NOTE]
-> Isso requer o **Unity 2018.4.13 F1**, o **Unity 2019.3.0 F1** ou mais recente.
+> Se você estiver usando o Unity 2018, isso exigirá que o **Unity 2018.4.13 F1** ou mais recente. Se você estiver usando o Unity 2019, isso requer o **unity 2019,4** ou mais recente.
 
 Para aceitar a renderização da câmera PV ao usar o kit de [ferramentas da realidade misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), habilite o provedor de [configurações da câmera do Windows Mixed Reality](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) e verifique o **processamento da câmera PV**.
 
