@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6d5f40f94f490901d95d70583da38bf393b2599
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195367"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582990"
 ---
 # <a name="available-in-mrtk"></a>[Disponível no MRTK](#tab/mrtk)
 
@@ -15,7 +15,7 @@ ms.locfileid: "98195367"
 | [Foco](../unity/gaze-in-unity.md) | Permitir que os usuários direcionem hologramas olhando para eles |
 | [Controladores de movimentos](../unity/motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
 | [Gestos](../unity/gestures-in-unity.md) | Use gestos de mão como entrada em suas experiências de Realidade Misturada |
-| [Acompanhamento de mãos e olhos](../unity/hand-eye-in-unit.md) | Integre a entrada articulada de acompanhamento de mãos e olhos em sua experiência do usuário |
+| [Acompanhamento de mãos e olhos](../unity/hand-eye-in-unity.md) | Integre a entrada articulada de acompanhamento de mãos e olhos em sua experiência do usuário |
 | [Mapeamento espacial](../unity/spatial-mapping-in-unity.md) | Mapeie seu espaço físico com uma sobreposição de malha virtual para marcar os limites do seu ambiente |
 | [Text](../unity/text-in-unity.md) | Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade |
 | [Entrada de voz](../unity/voice-input-in-unity.md) | Capture ditado, palavras-chave e frases faladas dos seus usuários|
@@ -34,5 +34,3 @@ ms.locfileid: "98195367"
 | [Som espacial](../unity/spatial-sound-in-unity.md) | Aprimore seus aplicativos com um áudio 3D imersivo |
 | [Text](../unity/text-in-unity.md) | Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade |
 | [Entrada de voz](../unity/voice-input-in-unity.md) | Capturar palavras-chave e frases faladas e ditado dos seus usuários|
-
-

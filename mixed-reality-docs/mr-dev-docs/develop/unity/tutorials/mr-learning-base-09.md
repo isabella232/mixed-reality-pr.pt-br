@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007906"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635446"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 
@@ -30,7 +30,7 @@ No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitá
 ![Habilitar a funcionalidade de microfone](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> A funcionalidade do Microfone deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#selecting-mrtk-and-project-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
+> A funcionalidade do Microfone deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#creating-and-configuring-the-scene) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
 
 ## <a name="creating-speech-commands"></a>Criando comandos de fala
 
@@ -147,4 +147,3 @@ Se você está seguindo o percurso do ponto de verificação de desenvolvimento 
 > [Interações básicas](../mrtk-101.md)
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](../unity-development-overview.md#1-getting-started) a qualquer momento.
-

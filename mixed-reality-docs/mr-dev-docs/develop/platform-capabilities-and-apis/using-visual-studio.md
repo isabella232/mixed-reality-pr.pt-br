@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, realidade misturada, depurar, implantar
-ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c4ffe3a426ad82c324efef20639cf836f16a7f63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97529966"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583616"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Como usar o Visual Studio para implantação e depuração
 
@@ -129,7 +129,7 @@ Para desemparelhar seu HoloLens de todos os computadores emparelhados:
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>Depurador de Gráficos do HoloLens (1ª geração)
 
-As ferramentas Diagnóstico de Gráficos do Visual Studio são úteis quando você quer escrever e otimizar um aplicativo holográfico. Confira [Diagnóstico de Gráficos do Visual Studio no MSDN](https://msdn.microsoft.com/library/hh315751.aspx) para obter detalhes completos.
+As ferramentas Diagnóstico de Gráficos do Visual Studio são úteis quando você quer escrever e otimizar um aplicativo holográfico. Confira [Diagnóstico de Gráficos do Visual Studio no MSDN](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics) para obter detalhes completos.
 
 **Para iniciar o Depurador de Gráficos**
 1. Siga as instruções acima para definir um dispositivo ou um emulador como destino
@@ -138,7 +138,7 @@ As ferramentas Diagnóstico de Gráficos do Visual Studio são úteis quando voc
 
 ## <a name="profiling"></a>Criação de perfil
 
-As ferramentas de criação de perfil do Visual Studio permitem que você analise o desempenho e o uso de recursos do seu aplicativo. Isso inclui ferramentas para otimizar a CPU, a memória, os elementos gráficos e o uso da rede. Confira [Executar ferramentas de diagnóstico sem depuração no MSDN](https://msdn.microsoft.com/library/dn957936.aspx) para obter detalhes completos.
+As ferramentas de criação de perfil do Visual Studio permitem que você analise o desempenho e o uso de recursos do seu aplicativo. Isso inclui ferramentas para otimizar a CPU, a memória, os elementos gráficos e o uso da rede. Confira [Executar ferramentas de diagnóstico sem depuração no MSDN](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools) para obter detalhes completos.
 
 **Para iniciar as ferramentas de criação de perfil com o HoloLens**
 1. Siga as instruções acima para definir um dispositivo ou um emulador como destino
@@ -175,5 +175,5 @@ Você sempre pode voltar para os [pontos de verificação de desenvolvimento do 
 ## <a name="see-also"></a>Veja também
 * [Instalar as ferramentas](../install-the-tools.md)
 * [Usando o emulador do HoloLens](using-the-hololens-emulator.md)
-* [Como implantar e depurar aplicativos UWP (Plataforma Universal do Windows)](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [Habilitar o dispositivo para desenvolvimento](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [Como implantar e depurar aplicativos UWP (Plataforma Universal do Windows)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [Habilitar o dispositivo para desenvolvimento](/windows/uwp/get-started/enable-your-device-for-development)

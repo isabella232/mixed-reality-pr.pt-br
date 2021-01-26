@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009786"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580561"
 ---
 # <a name="1-getting-started"></a>1. Introdução
 
-Se você está começando a usar a realidade misturada agora ou já é um profissional experiente, você está no lugar certo para iniciar seu percurso do [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) e do [Unreal Engine](https://www.unrealengine.com/en-US/). Esta série de tutoriais fornecerá um guia passo a passo sobre como criar um aplicativo de xadrez interativo com o [plug-in de Ferramentas de Experiência de Usuário](https://github.com/microsoft/MixedReality-UXTools-Unreal), parte do [Kit de Ferramentas de Realidade Misturada para Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). O plug-in ajudará você a adicionar recursos comuns de UX a seus projetos pelo uso de código, blueprints e exemplos. 
+Se você está começando a usar a realidade misturada agora ou já é um profissional experiente, você está no lugar certo para iniciar seu percurso do [HoloLens 2](../../../index.yml) e do [Unreal Engine](https://www.unrealengine.com/en-US/). Esta série de tutoriais fornecerá um guia passo a passo sobre como criar um aplicativo de xadrez interativo com o [plug-in de Ferramentas de Experiência de Usuário](https://github.com/microsoft/MixedReality-UXTools-Unreal), parte do [Kit de Ferramentas de Realidade Misturada para Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). O plug-in ajudará você a adicionar recursos comuns de UX a seus projetos pelo uso de código, blueprints e exemplos. 
 
 ![Encerrar cena no visor](images/unreal-uxt/5-endscene.PNG)
 
@@ -40,7 +40,7 @@ Verifique se você instalou o seguinte antes de começar:
 
 Primeiro, verifique a configuração com todos os pacotes do Visual Studio necessários:
 1. Instale a versão mais recente do [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-1. Instale as seguintes [cargas de trabalho](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
+1. Instale as seguintes [cargas de trabalho](/visualstudio/install/modify-visual-studio#modify-workloads):
     * Desenvolvimento para desktop com C++
     * Desenvolvimento para área de trabalho com .NET
     * Desenvolvimento para a Plataforma Universal do Windows
@@ -48,7 +48,7 @@ Primeiro, verifique a configuração com todos os pacotes do Visual Studio neces
     * Conectividade de dispositivos USB
     * Ferramentas da Plataforma Universal do Windows do C++ (v142)
 
-1. Instale os seguintes [componentes](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components):
+1. Instale os seguintes [componentes](/visualstudio/install/modify-visual-studio#modify-individual-components):
     * Compiladores, ferramentas de build e runtimes > ferramentas de build MSVC v142 – VS 2019 C++ ARM64 (versão mais recente)
 
 Confirme a instalação com a imagem a seguir

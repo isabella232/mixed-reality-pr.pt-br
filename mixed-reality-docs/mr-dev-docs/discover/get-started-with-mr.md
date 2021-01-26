@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009716"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583358"
 ---
 # <a name="get-started-with-mixed-reality"></a>Introdução à Realidade Misturada
 
@@ -152,7 +152,7 @@ Se estiver curioso para ver como o hardware e os diferentes serviços da Realida
 |  Conceito  |  Resultado  |
 | --- | --- |
 | [Hardware do HoloLens](https://www.microsoft.com//hololens/hardware) | O HoloLens 2 oferece a experiência mais confortável e imersiva de realidade misturada disponível, com soluções líderes no setor que entregam valor em minutos, tudo isso aprimorado com a confiabilidade, a segurança e a escalabilidade dos serviços de nuvem e de IA da Microsoft |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore uma variedade de produtos que podem capacitar os funcionários e otimizar as operações com o Dynamics 365, incluindo [Assistência Remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guias](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Um insight significativo surge na prática com trabalho real, dispositivos reais e usuários reais |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore uma variedade de produtos que podem capacitar os funcionários e otimizar as operações com o Dynamics 365, incluindo [Assistência Remota](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guias](/dynamics365/mixed-reality/guides/). Um insight significativo surge na prática com trabalho real, dispositivos reais e usuários reais |
 | [Serviços de Nuvem do Azure](../develop/mixed-reality-cloud-services.md) | Crie experiências imersivas interessantes em diferentes plataformas com reconhecimento espacial, âncoras espaciais e renderização complexa de modelos 3D |
 
 ## <a name="what-would-you-like-to-do-next"></a>O que você deseja fazer a seguir?
@@ -181,5 +181,4 @@ Se estiver curioso para ver como o hardware e os diferentes serviços da Realida
 <br>
 
 >[!IMPORTANT]
->Todos os materiais de desenvolvimento de realidade misturada são fornecidos neste site somente para referência. Seu aplicativo, seu uso e seu efeito sobre os usuários finais é de sua responsabilidade exclusiva como o desenvolvedor do aplicativo, incluindo a garantia de que o aplicativo não causará desconforto, lesão ou nenhum outro dano ao usuário final, incluindo avisos e isenções de responsabilidade apropriados. É necessário sempre seguir as etapas apropriadas no desenvolvimento e na publicação do seu aplicativo para garantir que ele seja seguro e atenda a todas as obrigações do [Contrato de Desenvolvedor de Aplicativos com a Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
-
+>Todos os materiais de desenvolvimento de realidade misturada são fornecidos neste site somente para referência. Seu aplicativo, seu uso e seu efeito sobre os usuários finais é de sua responsabilidade exclusiva como o desenvolvedor do aplicativo, incluindo a garantia de que o aplicativo não causará desconforto, lesão ou nenhum outro dano ao usuário final, incluindo avisos e isenções de responsabilidade apropriados. É necessário sempre seguir as etapas apropriadas no desenvolvimento e na publicação do seu aplicativo para garantir que ele seja seguro e atenda a todas as obrigações do [Contrato de Desenvolvedor de Aplicativos com a Microsoft](/legal/windows/agreements/app-developer-agreement).

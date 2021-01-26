@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, Foco, direcionamento de foco, interação, design, mãos perto, HoloLens, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, MRTK, Kit de Ferramentas de Realidade Misturada, botão, colisores, caixa delimitadora, 2D, gestos instintivos
-ms.openlocfilehash: a5e3497926d977f2a60cd32bb5f009d27d7b86ee
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 194212fd19196990eaf873299afbf1c11846946d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848051"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583409"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipulação direta com as mãos
 
@@ -31,9 +31,9 @@ A manipulação direta é um modelo de entrada que envolve tocar hologramas dire
 </colgroup>
 <tr>
      <td><strong>Modelo de entrada</strong></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
-     <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Headsets imersivos</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+     <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Headsets imersivos</strong></a></td>
 </tr>
 <tr>
      <td>Manipulação direta com as mãos</td>

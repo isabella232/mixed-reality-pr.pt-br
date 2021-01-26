@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, exemplos, MRTK, modo de pesquisa, HoloLens 2, códigos qr, WebRTC, captura de realidade misturada, comunicação remota holográfica, Ferramentas de Experiência de Usuário
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007606"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583192"
 ---
 # <a name="samples-and-feature-apps"></a>Exemplos e aplicativos de recursos
 
@@ -30,7 +30,7 @@ Os exemplos de recursos listados abaixo correspondem a implementações específ
 
 ### <a name="research-mode"></a>Modo de pesquisa
 
-O modo de pesquisa foi introduzido no HoloLens (1ª geração) para dar acesso aos principais sensores no dispositivo, especificamente para aplicativos de pesquisa não destinados à implantação. Os aplicativos abaixo são exemplos para acessar e gravar fluxos do modo de pesquisa e usar os [intrínsecos e os extrínsecos](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
+O modo de pesquisa foi introduzido no HoloLens (1ª geração) para dar acesso aos principais sensores no dispositivo, especificamente para aplicativos de pesquisa não destinados à implantação. Os aplicativos abaixo são exemplos para acessar e gravar fluxos do modo de pesquisa e usar os [intrínsecos e os extrínsecos](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
 
 <br>
 
@@ -67,7 +67,7 @@ A MRC (Captura de Realidade Misturada) captura a experiência da primeira pessoa
 
 | Artigo de referência | Amostra |
 | --- | --- |
-| [Captura de Realidade Misturada](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Exemplos da Captura de Realidade Misturada](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Captura de Realidade Misturada](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Exemplos da Captura de Realidade Misturada](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>Comunicação remota holográfica
 

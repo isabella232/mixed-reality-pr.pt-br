@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, sessões do aplicativo
 ms.localizationpriority: high
-ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008356"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582052"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Salvar, recuperar e compartilhar Âncoras Espaciais do Azure
 
@@ -58,7 +58,7 @@ Se você compilar o aplicativo atualizado para o HoloLens, agora poderá persist
 8. Localize a Âncora do Azure (posiciona o Rover Explorer na localização da etapa 3)
 
 > [!NOTE]
-> Para reiniciar completamente o aplicativo, depois de sair do modo de exibição imersivo do aplicativo, a janela do aplicativo na página inicial de realidade misturada precisará ser fechada antes de reiniciar o aplicativo no menu Iniciar. Para obter detalhes adicionais, você pode consultar a documentação [Como usar aplicativos no HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens).
+> Para reiniciar completamente o aplicativo, depois de sair do modo de exibição imersivo do aplicativo, a janela do aplicativo na página inicial de realidade misturada precisará ser fechada antes de reiniciar o aplicativo no menu Iniciar. Para obter detalhes adicionais, você pode consultar a documentação [Como usar aplicativos no HoloLens](/hololens/holographic-home#using-apps-on-hololens).
 
 ## <a name="sharing-azure-spatial-anchors-between-devices"></a>Compartilhar Âncoras Espaciais do Azure entre dispositivos
 

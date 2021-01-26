@@ -7,18 +7,18 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portal de Dispositivos do Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007786"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583243"
 ---
 # <a name="using-the-windows-device-portal"></a>Usar o Portal de Dispositivos do Windows
 
 <table>
 <tr>
-<th>Recurso</th><th style="width:150px"><a href="../../hololens-hardware-details.md">HoloLens (1ª geração)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
+<th>Recurso</th><th style="width:150px"><a href="/hololens/hololens1-hardware">HoloLens (1ª geração)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
 <td> Portal de Dispositivos do Windows</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -26,19 +26,19 @@ ms.locfileid: "98007786"
 
 O Portal de Dispositivos do Windows para HoloLens permite que você configure e gerencie seu dispositivo remotamente por Wi-Fi ou USB. O Device Portal é um servidor Web no HoloLens ao qual você pode se conectar usando um navegador da Web em seu computador. O Portal de Dispositivos inclui muitas ferramentas que ajudarão você a gerenciar seu HoloLens e a depurar e otimizar seus aplicativos.
 
-Essa documentação trata especificamente do Portal de Dispositivos do Windows para HoloLens. Para usar o Portal de Dispositivos do Windows para desktop (inclusive para Windows Mixed Reality), confira [Visão geral do Portal de Dispositivos do Windows](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)
+Essa documentação trata especificamente do Portal de Dispositivos do Windows para HoloLens. Para usar o Portal de Dispositivos do Windows para desktop (inclusive para Windows Mixed Reality), confira [Visão geral do Portal de Dispositivos do Windows](/windows/uwp/debug-test-perf/device-portal)
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Configurar o HoloLens para usar o Portal de Dispositivos do Windows
 
 1. Ligue seu HoloLens e coloque o dispositivo.
-2. Use a ação [Iniciar gesto](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) para HoloLens2 ou [Abrir a mão](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) no HoloLens (1ª geração) para iniciar o menu principal. 
-3. Foque o olhar no bloco **Configurações** e faça um gesto de [fechar e abrir dedos indicador e polegar](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) no HoloLens (1ª geração). Você também pode selecioná-lo no HoloLens 2 [tocando nele ou usando um raio de mão](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
+2. Use a ação [Iniciar gesto](/hololens/hololens2-basic-usage#start-gesture) para HoloLens2 ou [Abrir a mão](/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) no HoloLens (1ª geração) para iniciar o menu principal. 
+3. Foque o olhar no bloco **Configurações** e faça um gesto de [fechar e abrir dedos indicador e polegar](/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) no HoloLens (1ª geração). Você também pode selecioná-lo no HoloLens 2 [tocando nele ou usando um raio de mão](/hololens/hololens2-basic-usage). 
 4. Selecione item de menu **Atualização**.
 5. Selecione o item de menu **Para desenvolvedores**.
 6. Habilite o **Modo de Desenvolvedor**.
 
 > [!IMPORTANT]
-> Se você estiver em vários usuários e não em um administrador, a capacidade de entrar no Modo de Desenvolvedor pode estar esmaecida. Verifique se você é um **[administrador no dispositivo](https://docs.microsoft.com/hololens/security-adminless-os)** .
+> Se você estiver em vários usuários e não em um administrador, a capacidade de entrar no Modo de Desenvolvedor pode estar esmaecida. Verifique se você é um **[administrador no dispositivo](/hololens/security-adminless-os)** .
 
 7. [Role para baixo](../../design/gaze-and-commit.md#composite-gestures) e habilite o **Portal de Dispositivos**.
 8. Se você estiver configurando o Portal de Dispositivos do Windows para poder implantar aplicativos nesse HoloLens por USB ou Wi-Fi, selecione **Emparelhar** para [gerar um PIN de emparelhamento](using-visual-studio.md). Saia do aplicativo Configurações no pop-up do PIN até inserir o PIN no Visual Studio durante sua primeira implantação.
@@ -47,7 +47,7 @@ Essa documentação trata especificamente do Portal de Dispositivos do Windows p
 
 ## <a name="connecting-over-wi-fi"></a>Conectar-se por Wi-Fi
 
-1. [Conecte seu HoloLens ao Wi-Fi](../../connecting-to-wi-fi-on-hololens.md).
+1. [Conecte seu HoloLens ao Wi-Fi](/hololens/hololens-network).
 2. Pesquise o endereço IP do seu dispositivo executando uma das seguintes ações:
    * Acessando **Configurações > Rede e Internet > Wi-Fi > Opções Avançadas**.
    * Acessando **Configurações > Rede e Internet** e selecionando **Propriedades de hardware**.
@@ -281,13 +281,13 @@ Todas as configurações nesta página se aplicam a capturas feitas usando o Por
 ![Página Rastreamento de Desempenho no Portal de Dispositivos do Windows no Microsoft HoloLens](images/using-windows-portal-img-08.png)<br>
 *Página Rastreamento de Desempenho no Portal de Dispositivos do Windows no Microsoft HoloLens*
 
-Capture rastreamentos do [WPR](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (Windows Performance Recorder) no seu HoloLens.
+Capture rastreamentos do [WPR](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) (Windows Performance Recorder) no seu HoloLens.
 * **Perfis disponíveis**: selecione o perfil WPR na lista suspensa e clique ou toque em **Iniciar** para iniciar o rastreamento.
 * **Perfis personalizados**: clique ou toque em **Procurar** para escolher um perfil WPR do seu computador. Clique ou toque em **Carregar e iniciar** para iniciar o rastreamento.
 
 Para interromper o rastreamento, selecione o link para interromper. Fique nesta página até que o download do arquivo de rastreamento seja concluído.
 
-Os arquivos ETL capturados podem ser abertos para análise no [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
+Os arquivos ETL capturados podem ser abertos para análise no [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
 
 ### <a name="processes"></a>Processos
 
@@ -330,7 +330,7 @@ Gerencia os aplicativos instalados no HoloLens.
 ![Página Despejos de Memória do Aplicativo no Portal de Dispositivos do Windows no Microsoft HoloLens](images/using-windows-portal-img-12.png)<br>
 *Página Despejos de Memória do Aplicativo no Portal de Dispositivos do Windows no Microsoft HoloLens*
 
-Essa página permite que você colete despejos de memória para seus aplicativos de sideload. Marque a caixa de seleção **Despejos de Memória Habilitados** para cada aplicativo para o qual você deseja coletar despejos de memória. Retorne a essa página para coletar despejos de memória. Arquivos de despejo podem ser [abertos no Visual Studio para depuração](https://msdn.microsoft.com/library/d5zhxt22.aspx).
+Essa página permite que você colete despejos de memória para seus aplicativos de sideload. Marque a caixa de seleção **Despejos de Memória Habilitados** para cada aplicativo para o qual você deseja coletar despejos de memória. Retorne a essa página para coletar despejos de memória. Arquivos de despejo podem ser [abertos no Visual Studio para depuração](/previous-versions/visualstudio/visual-studio-2015/debugger/using-dump-files).
 
 ### <a name="file-explorer"></a>Explorador de Arquivos
 
@@ -342,11 +342,11 @@ Use o explorador de arquivos para procurar, carregar e baixar arquivos. Você po
 ### <a name="kiosk-mode"></a>Modo de quiosque
 
 >[!NOTE]
->O Modo de Quiosque só está disponível com o [Microsoft HoloLens Commercial Suite](../../commercial-features.md).
+>O Modo de Quiosque só está disponível com o [Microsoft HoloLens Commercial Suite](/hololens/hololens-commercial-features).
 
 ![Página Modo de Quiosque no Portal de Dispositivos do Windows no Microsoft HoloLens](images/using-windows-portal-img-14.png)
 
-Confira o artigo [Configurar o HoloLens no modo de quiosque](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) no Windows IT Pro Center para obter instruções atualizadas sobre como habilitar o modo de quiosque por meio do Portal de Dispositivos do Windows.
+Confira o artigo [Configurar o HoloLens no modo de quiosque](/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) no Windows IT Pro Center para obter instruções atualizadas sobre como habilitar o modo de quiosque por meio do Portal de Dispositivos do Windows.
 
 ### <a name="logging"></a>Log
 

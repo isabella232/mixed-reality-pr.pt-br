@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, áudio espacial
-ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fdb4f401188a813b99884929cd835453dec5aaf0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009966"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580429"
 ---
 # <a name="spatial-audio-in-unreal"></a>Áudio espacial no Unreal
 
@@ -124,6 +124,6 @@ Você sempre pode voltar para os [pontos de verificação de desenvolvimento do 
 
 
 ## <a name="see-also"></a>Veja também
-* [Som espacial](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [Design de som espacial](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [MR Espacial 220: som espacial](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [Som espacial](/windows/mixed-reality/spatial-sound)
+* [Design de som espacial](/windows/mixed-reality/spatial-sound-design)
+* [MR Espacial 220: som espacial](/windows/mixed-reality/holograms-220)

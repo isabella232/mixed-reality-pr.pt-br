@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 12e94e880f8b681ed9c4720b841f8a44ae9e0fd7
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609577"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635438"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Como tornar sua cena interativa
 
@@ -56,7 +56,7 @@ Em nosso caso, adicionar um Ator de Interação Manual a **MRPawn** vai:
 - Fornecer eventos de entrada com a mão articulada, que podem ser manipulados por meio do peão.
 - Permita eventos de entrada de interação distante por meio de raios de mão, que se estendem das palmas das mãos virtuais.
 
-Recomendamos ler a [documentação](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) sobre interações das mãos antes de prosseguir.
+Recomendamos ler a [documentação](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) sobre interações das mãos antes de prosseguir.
 
 Quando você estiver pronto, abra o Blueprint **MRPawn** e navegue até o **Grafo de Eventos**.
 
@@ -85,7 +85,7 @@ Verifique se as conexões correspondem à captura de tela a seguir, mas fique à
 
 ![Configuração de Ator de Interação à Mão UXT completa](images/unreal-uxt/4-fingerptrs.PNG)
 
-Encontre mais informações sobre os Atores de Interação da Mão na [documentação das Ferramentas de Experiência de Usuário](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html).
+Encontre mais informações sobre os Atores de Interação da Mão na [documentação das Ferramentas de Experiência de Usuário](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html).
 
 Agora, as mãos virtuais no projeto têm uma forma de selecionar objetos, mas ainda não podem manipulá-los. Sua última tarefa antes de testar o aplicativo é adicionar componentes de Manipulador aos atores na cena.
 

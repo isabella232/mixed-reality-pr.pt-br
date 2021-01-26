@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006906"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583525"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 
@@ -26,7 +26,7 @@ Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento d
 
 Se você está curioso para saber mais sobre os fundamentos da Realidade Misturada ou ainda não escolheu um caminho de desenvolvimento, comece com nossos módulos de aprendizado independentes de tecnologia.
 
-### <a name="introduction-to-mixed-reality"></a>[Introdução à Realidade Misturada](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+### <a name="introduction-to-mixed-reality"></a>[Introdução à Realidade Misturada](/learn/modules/intro-to-mixed-reality/)
 
 Comece aprendendo os principais conceitos, a terminologia e os processos de design exclusivos do espaço de desenvolvimento da Realidade Misturada.
 
@@ -44,7 +44,7 @@ Ao final deste módulo, você saberá como:
 
 Não importa se você só está começando ou se é um profissional experiente, nossa abordagem prática para o desenvolvimento de Realidade Misturada no Unity ajuda você a atingir suas metas mais rápido, com mais confiança e no seu ritmo.
 
-### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Configurar um projeto de realidade misturada no Unity com o Kit de Ferramentas de Realidade Misturada](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/)
+### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Configurar um projeto de realidade misturada no Unity com o Kit de Ferramentas de Realidade Misturada](/learn/modules/mixed-reality-toolkit-project-unity/)
 
 Importe o Kit de Ferramentas de Realidade Misturada para seu projeto do Unity a fim de acelerar o desenvolvimento da realidade misturada.
 
@@ -58,7 +58,7 @@ Ao final deste módulo, você poderá:
 * Comparar e contrastar os três principais modelos de interação do MRTK
 * Manipular hologramas usando o ObjectManipulator
 
-### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Criar um aplicativo tradutor de idioma com o Unity + Serviços Cognitivos do Azure](https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
+### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Criar um aplicativo tradutor de idioma com o Unity + Serviços Cognitivos do Azure](/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
 
 Crie um aplicativo de tradução de idioma para o seu dispositivo de Realidade Misturada (Windows Mixed Reality, HoloLens 2 etc.) usando os Serviços Cognitivos.
 

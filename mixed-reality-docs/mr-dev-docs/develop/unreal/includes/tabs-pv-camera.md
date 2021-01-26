@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
-ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
+ms.openlocfilehash: e79b14c19a452b5b78c6f8cf7ea24bd65bfa0eaa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98225276"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605031"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -197,7 +197,7 @@ Para aceitar a renderização por meio da Câmera de PV:
 Em seguida, o Unreal lidará com as solicitações da MRC para renderizar da perspectiva da câmera de PV.
 
 > [!NOTE]
-> Somente quando a [Captura de Realidade Misturada](../../../mixed-reality-capture.md) for disparada, o aplicativo será solicitado a renderizar partindo da perspectiva da câmera de foto/vídeo.
+> Somente quando a [Captura de Realidade Misturada](/hololens/holographic-photos-and-videos) for disparada, o aplicativo será solicitado a renderizar partindo da perspectiva da câmera de foto/vídeo.
 
 ## <a name="using-the-pv-camera"></a>Usando a câmera de PV
 
@@ -224,4 +224,3 @@ Para renderizar a imagem da câmera:
 5. Verifique se o material tem um parâmetro que corresponda ao nome em **SetTextureParameterValue** que esteja associado a uma entrada de cor. Sem o parâmetro, a imagem da câmera não pode ser exibida corretamente.
 
 ![Textura da câmera](../images/unreal-camera-material.PNG)
-

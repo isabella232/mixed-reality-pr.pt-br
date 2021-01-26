@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, interação, design, HoloLens, mãos, longe, apontar e confirmar, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, raios de mão, manipulação de objeto, MRTK, Kit de Ferramentas de Realidade Misturada, DoF
-ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3351a38cad99089a60555ffe450447fc5c356fdc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009736"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583202"
 ---
 # <a name="point-and-commit-with-hands"></a>Apontar e confirmar com as mãos
 
@@ -31,7 +31,7 @@ Apontar e confirmar com as mãos é um modelo de entrada que permite aos usuári
 </colgroup>
 <tr>
      <td><strong>Modelo de entrada</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1ª geração)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
 </tr>

@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865391"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583654"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Como empacotar e implantar no dispositivo ou emulador
 
@@ -25,7 +25,7 @@ No tutorial anterior, você adicionou um botão simples que redefine a peça de 
 
 ## <a name="device-only-streaming"></a>[Somente para dispositivo] Streaming
 
-[Comunicação remota holográfica](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) significa transmitir dados de um PC ou um dispositivo UWP autônomo para o HoloLens 2, sem mudar de canal. Um aplicativo host de comunicação remota recebe um fluxo de dados de entrada de um HoloLens, renderiza o conteúdo em uma exibição imersiva virtual e transmite quadros de conteúdo novamente para o HoloLens por Wi-Fi. O streaming permite que você adicione exibições imersivas remotas a um programa de software de PC desktop existente e tenha acesso a mais recursos do sistema.
+[Comunicação remota holográfica](/windows/mixed-reality/add-holographic-remoting) significa transmitir dados de um PC ou um dispositivo UWP autônomo para o HoloLens 2, sem mudar de canal. Um aplicativo host de comunicação remota recebe um fluxo de dados de entrada de um HoloLens, renderiza o conteúdo em uma exibição imersiva virtual e transmite quadros de conteúdo novamente para o HoloLens por Wi-Fi. O streaming permite que você adicione exibições imersivas remotas a um programa de software de PC desktop existente e tenha acesso a mais recursos do sistema.
 
 Se você estiver seguindo por esse caminho com o aplicativo de xadrez, precisará fazer algumas coisas:
 
@@ -81,7 +81,7 @@ Quando estiver conectado, clique na seta suspensa à direita do botão **Jogar**
 5. Acesse **Arquivo > Empacotar Projeto** e selecione **HoloLens**.
     * Crie uma pasta para salvar o pacote e clique em **Selecionar Pasta**.
 
-6.  Depois que o aplicativo tiver sido empacotado, abra o [Portal de Dispositivos do Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), acesse **Exibições > Aplicativos** e localize a seção **Implantar aplicativos**.
+6.  Depois que o aplicativo tiver sido empacotado, abra o [Portal de Dispositivos do Windows](/windows/mixed-reality/using-the-windows-device-portal), acesse **Exibições > Aplicativos** e localize a seção **Implantar aplicativos**.
 
 7.  Clique em **Procurar...** , encontre o arquivo **ChessApp.appxbundle** e clique em **Abrir**.
 
@@ -91,7 +91,7 @@ Quando estiver conectado, clique na seta suspensa à direita do botão **Jogar**
 8.  Clique em **Instalar**
     * Agora você pode acessar **Todos os Aplicativos** e tocar no aplicativo recém-instalado para executá-lo ou iniciar o aplicativo diretamente do **Portal de Dispositivos do Windows**. 
 
-Parabéns! Seu aplicativo de realidade misturada do HoloLens está concluído e pronto para uso. No entanto, esse não é o final da estrada. O MRTK tem muitos recursos autônomos que você pode adicionar aos seus projetos, incluindo entrada por foco e voz, mapeamento espacial e até mesmo códigos QR. Mais informações sobre esses recursos podem ser encontradas na [Visão geral do desenvolvimento com o Unreal](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
+Parabéns! Seu aplicativo de realidade misturada do HoloLens está concluído e pronto para uso. No entanto, esse não é o final da estrada. O MRTK tem muitos recursos autônomos que você pode adicionar aos seus projetos, incluindo entrada por foco e voz, mapeamento espacial e até mesmo códigos QR. Mais informações sobre esses recursos podem ser encontradas na [Visão geral do desenvolvimento com o Unreal](/windows/mixed-reality/unreal-development-overview).
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

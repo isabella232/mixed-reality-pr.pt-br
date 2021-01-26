@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, hololens 2, visão personalizada do azure, serviços cognitivos do azure, serviços de nuvem do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008206"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581933"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrar a Visão Personalizada do Azure
 
@@ -28,13 +28,13 @@ Neste tutorial, você aprenderá a usar a **Visão Personalizada do Azure**. Voc
 
 A **Visão Personalizada do Azure** faz parte da família de **Serviços Cognitivos** e é usada para treinar classificadores de imagem. O classificador de imagens é um serviço de IA que usa o modelo treinado para aplicar marcas correspondentes. Esse recurso de classificação será usado pelo nosso aplicativo para detectar *Objetos Rastreados*.
 
-Saiba mais sobre a [Visão Personalizada do Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Saiba mais sobre a [Visão Personalizada do Azure](/azure/cognitive-services/custom-vision-service/home).
 
 ## <a name="preparing-azure-custom-vision"></a>Como preparar a Visão Personalizada do Azure
 
 Para começar, crie um projeto de visão personalizada. A maneira mais rápida é usando o portal da Web.
 
-Siga este [tutorial de início rápido](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) para configurar a sua conta e o projeto até a seção *Carregar e marcar imagens*.
+Siga este [tutorial de início rápido](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) para configurar a sua conta e o projeto até a seção *Carregar e marcar imagens*.
 
 > [!WARNING]
 > Para treinar um modelo, você precisa ter pelo menos duas marcas e cinco imagens por marca. Para usar esse aplicativo, você deve criar pelo menos uma marca com cinco imagens, para que o processo de treinamento não falhe posteriormente.

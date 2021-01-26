@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores, coleção de objetos de grade
 ms.localizationpriority: high
-ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613250"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579205"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Como posicionar objetos na cena
 
@@ -143,4 +143,5 @@ Em seguida, clique no botão **Atualizar Coleção** para atualizar a posição 
 
 Neste tutorial, você aprendeu a posicionar objetos na cena em relação ao usuário e a usar o recurso Coleção de Objetos de Grade do MRTK para organizar objetos em uma coleção.
 
-[Próximo tutorial: 5. Criar conteúdo dinâmico usando Solucionadores](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[Próximo tutorial: 5. Criar conteúdo dinâmico usando Solucionadores](mr-learning-base-05.md)

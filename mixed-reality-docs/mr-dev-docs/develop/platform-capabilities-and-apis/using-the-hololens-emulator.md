@@ -7,12 +7,12 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulador
-ms.openlocfilehash: c26048db18c482312472210c133b20a42fdecae6
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 6770ce215fb846b7863b77e4b9fe6da7d7b0c98f
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166781"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583479"
 ---
 # <a name="using-the-hololens-emulator"></a>Usando o Emulador do HoloLens
 
@@ -43,7 +43,7 @@ O Emulador do HoloLens usa o Hyper-V com o RemoteFx (1ª geração do Emulador) 
 * CPU de 64 bits
 * CPU com quatro núcleos (ou várias CPUs com um total de quatro núcleos)
 * 8 GB de RAM ou mais
-* No BIOS, os recursos a seguir devem [ser compatíveis e estar habilitados](https://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx):
+* No BIOS, os recursos a seguir devem [ser compatíveis e estar habilitados](/archive/blogs/iftekhar/enable-hardware-settings-in-bios-to-run-hyper-v):
    * Virtualização assistida por hardware
    * SLAT (Conversão de Endereços de Segundo Nível)
    * DEP (Prevenção de Execução de Dados) baseados em hardware
@@ -255,7 +255,7 @@ No emulador, você verá apenas os hologramas que renderizar. Mas você verá a 
 * Ao desinstalar o Emulador do HoloLens 2, é possível que a imagem do disco rígido (Flash.vhdx) seja deixada no disco rígido na pasta Windows Kits\10\Emulation\HoloLens\<build number>.  É seguro excluir esse arquivo.
 * A aceleração de gráficos de hardware pode fazer com que os aplicativos do Holographic falhem em alguns sistemas com gráficos AMD ou Intel.  Desabilitar a aceleração de gráficos de hardware na janela Ferramentas do emulador é uma solução alternativa para esse problema.
 * Após a instalação as últimas atualizações do Windows de julho de 2020, é possível que a aceleração de elementos gráficos de hardware no Emulador HoloLens (1ª geração) não esteja mais disponível.
-O componente do RemoteFX necessário para a aceleração de elementos gráficos de hardware foi preterido e será removido em uma versão futura do Windows.  Para habilitar novamente a aceleração de elementos gráficos de hardware, use o cmdlet [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter).  Veja a [documentação sobre a reprovação e a remoção do suporte do RemoteFX no Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component) para obter mais informações.
+O componente do RemoteFX necessário para a aceleração de elementos gráficos de hardware foi preterido e será removido em uma versão futura do Windows.  Para habilitar novamente a aceleração de elementos gráficos de hardware, use o cmdlet [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter).  Veja a [documentação sobre a reprovação e a remoção do suporte do RemoteFX no Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component) para obter mais informações.
 
 ## <a name="troubleshooting"></a>Solução de problemas
 

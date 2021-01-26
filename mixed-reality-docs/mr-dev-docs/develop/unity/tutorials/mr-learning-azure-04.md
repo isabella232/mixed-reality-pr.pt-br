@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens 2, âncoras espaciais do Azure, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008166"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581893"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrar as Âncoras Espaciais do Azure
 
@@ -28,12 +28,12 @@ Neste tutorial, você aprenderá a usar as **Âncoras Espaciais do Azure**. Voc�
 
  As **Âncoras Espaciais do Azure** fazem parte da família de Serviços de Nuvem do Azure e são usadas para salvar locais de âncora. Os locais de âncora salvos podem ser recuperados com base na *ID da âncora* na nuvem. Esse local de âncora pode ser compartilhado e acessado por dispositivos de várias plataformas, como dispositivos HoloLens, iOS e Android.
 
-Saiba mais sobre as [Âncoras Espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/overview).
+Saiba mais sobre as [Âncoras Espaciais do Azure](/azure/spatial-anchors/overview).
 
 ## <a name="preparing-azure-spatial-anchors"></a>Preparar as Âncoras Espaciais do Azure
 
 Para começar, crie um recurso de âncora espacial no portal do Azure.
-Saiba como criar um [recurso de âncora espacial](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
+Saiba como criar um [recurso de âncora espacial](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## <a name="preparing-the-scene"></a>Preparando a cena
 

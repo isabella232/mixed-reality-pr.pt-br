@@ -7,12 +7,12 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Modo de exibição Espectador, iPhone, iOS, iPad, OpenCV, câmera, ARKit, HoloLens, realidade misturada, MixedRealityToolkit, demonstração, gravar
-ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa85b54283b260447c36072b74031554e1aa1939
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008606"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583111"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Modo de exibição Espectador para o HoloLens e o HoloLens 2
 
@@ -60,6 +60,6 @@ A tabela a seguir mostra diferentes funcionalidades do Modo de exibição Espect
 | Duração da instalação de runtime               |         Instantâneo          |                     Lento                    |
 ## <a name="see-also"></a>Confira também
 
-* [Captura de realidade mista](../../mixed-reality-capture.md) 
+* [Captura de realidade mista](/hololens/holographic-photos-and-videos) 
 * [Captura de realidade misturada para desenvolvedores](mixed-reality-capture-for-developers.md)
 * [Experiências compartilhadas em realidade misturada](shared-experiences-in-mixed-reality.md)

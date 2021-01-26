@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, realidade misturada, unity, tutorial, hololens, hololens 2, armazenamento de blobs do azure, armazenamento de tabelas do azure, âncoras espaciais do azure, azure bot framework, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 24f44e7ecef3aeab45978787bf09d1f947bc2411
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8f8727074870d07ac9fcd7190f5f53931d75643f
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008316"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635542"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Serviços de Nuvem do Azure para HoloLens 2
 
@@ -82,13 +82,13 @@ O aplicativo é conduzido principalmente pela interface do usuário tradicional,
 
 Nesta seção, você criará um projeto do Unity e o deixará pronto para o desenvolvimento do MRTK.
 
-Primeiro, siga [Inicializar seu projeto e o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar seu aplicativo para o dispositivo](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), que incluem as seguintes etapas:
+Primeiro, siga [Inicializar seu projeto e o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar seu aplicativo para o dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2), que incluem as seguintes etapas:
 
 1. [Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais de Nuvem do Azure*
 2. [Como alternar a plataforma de build](mr-learning-base-02.md#switching-the-build-platform)
 3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Como configurar o projeto do Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Como configurar o projeto do Unity](mr-learning-base-02.md#configuring-the-unity-project)
 6. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *AzureCloudServices*
 
 Então siga as instruções em [Alterar a opção de Exibição de Reconhecimento Espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para alterar o perfil de configuração do MRTK para sua cena para o **DefaultHoloLens2ConfigurationProfile** e alterar as opções de exibição para a malha de reconhecimento espacial para **Oclusão**.
@@ -197,7 +197,7 @@ Em **Configurações de Publicação**, role para baixo até a seção **Funcion
 Nem todos os recursos que você usará nesta série de tutoriais podem ser executados dentro do editor do Unity; isso significa que você precisa estar familiarizado com a implantação do aplicativo em seu dispositivo do HoloLens 2.
 
 > [!TIP]
-> Para se lembrar de como criar e implantar seu projeto do Unity no HoloLens 2, confira as instruções em [Tutoriais de introdução – Criar o aplicativo para seu dispositivo](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
+> Para se lembrar de como criar e implantar seu projeto do Unity no HoloLens 2, confira as instruções em [Tutoriais de introdução – Criar o aplicativo para seu dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 ### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3. Execute o aplicativo no seu HoloLens 2 e siga as instruções no aplicativo
 
