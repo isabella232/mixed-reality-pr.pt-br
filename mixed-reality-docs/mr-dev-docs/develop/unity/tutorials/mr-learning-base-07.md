@@ -7,21 +7,21 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, caixas delimitadoras
 ms.localizationpriority: high
-ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007926"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578735"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Como interagir com objetos 3D
 
-Neste tutorial, você aprenderá a habilitar a manipulação próxima e distante de objetos 3D e limitar os tipos de manipulação permitidos. Você também aprenderá a adicionar caixas delimitadoras em objetos 3D para facilitar o controle da manipulação de objetos.
+Neste tutorial, você aprenderá a habilitar a manipulação próxima e distante de objetos 3D e limitar os tipos de manipulação permitidos. Você também aprenderá a adicionar o controle de limites em objetos 3D para facilitar o controle da manipulação de objetos.
 
 ## <a name="objectives"></a>Objetivos
 
 * Saber como configurar objetos 3D para interagir com eles
-* Saber como adicionar caixas delimitadoras a objetos 3D
+* Saiba como adicionar o controle de limites em objetos 3D
 
 ## <a name="manipulating-3d-objects"></a>Como manipular objetos 3D
 
@@ -59,6 +59,9 @@ Na janela Hierarquia, expanda o objeto RoverExplorer > **RoverParts** e selecion
 > Para selecionar vários objetos que não estão próximos uns dos outros, mantenha a tecla CTRL pressionada e use o mouse para selecionar qualquer objeto.
 
 > [!NOTE]
+> Quando você adiciona um Object Manipulator (Script), nesse caso, o Constraint Manager (Script) é adicionado automaticamente porque o Object Manipulator (Script) depende dele.
+
+> [!NOTE]
 > Para os fins deste tutorial, os colisores já foram adicionados às peças do Rover. Para saber mais sobre os colisores, acesse a documentação do <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Colisor</a> do Unity.
 
 > [!NOTE]
@@ -73,7 +76,7 @@ Com todos os objetos de peças do Rover e o objeto RoverAssembly ainda seleciona
 > [!NOTE]
 > Até agora você habilitou a manipulação de objetos para todos os objetos de peças do Rover e o objeto RoverAssembly.
 
-Na janela Projeto, navegue até a pasta **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** para localizar os clipes de áudio:
+Na janela Projeto, navegue até a pasta **Assets** > **MRTK** > **StandardAssets** > **Audio** para localizar os clipes de áudio:
 
 ![Janela Projeto do Unity com a pasta Áudio selecionada](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -114,24 +117,27 @@ Para saber mais sobre o componente Object Manipulator e suas propriedades associ
 
 ## <a name="adding-bounding-boxes"></a>Como adicionar caixas delimitadoras
 
-As caixas delimitadoras tornam mais fácil e mais intuitivo manipular objetos com uma mão para interação próxima e distante fornecendo alças que podem ser usadas para dimensionamento e rotação.
+As caixas delimitadoras tornam mais fácil e mais intuitivo manipular objetos com uma mão tanto em interações próximas como em distantes fornecendo alças que podem ser usadas para escala e rotação.
 
-Neste exemplo, você adicionará uma caixa delimitadora ao objeto RoverExplorer para que toda a experiência seja facilmente movida, girada e dimensionada. Além disso, você vai configurar o Menu para poder ativar e desativar a Caixa Delimitadora.
+Neste exemplo, você adicionará uma Caixa delimitadora ao objeto RoverExplorer para que toda a experiência seja facilmente movida, girada e escalonada. Além disso, você vai configurar o Menu para poder ativar e desativar a Caixa delimitadora.
 
 Na janela Hierarquia, selecione o objeto **RoverExplorer** e, em seguida, na janela Inspetor, use o botão **Adicionar Componente** para adicionar os seguintes componentes:
 
 * Componente **BoundingBox**
 * Componente **Object Manipulator (Script)**
 
-Em seguida, **desmarque** a caixa de seleção próxima dos dois componentes para deixá-los **desabilitados** por padrão:
+Em seguida, **desmarque** a caixa de seleção próxima a todos os componentes para deixá-los **desabilitados** por padrão:
 
 ![Unity com o objeto RoverExplorer selecionado e os componentes adicionados e desabilitados](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> A visualização da Caixa Delimitadora é criada em runtime e, portanto, não fica visível até que você entre no modo de Jogo.
+> A visualização da Caixa delimitadora é criada no runtime e, portanto, não fica visível até que você entre no modo de Jogo.
 
 > [!NOTE]
-> O componente BoundingBox adicionará automaticamente o componente NearInteractionGrabbable em runtime. Portanto, não precisamos adicionar esse componente para pegar os objetos delimitados com as mãos controladas.
+>O componente BoundingBox adicionará automaticamente o componente NearInteractionGrabbable em runtime. Portanto, não precisamos adicionar esse componente para pegar os objetos delimitados com as mãos controladas.
+
+> [!NOTE]
+>O Object Manipulator (Script) adiciona automaticamente o Constraint Manager (Script)
 
 Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar os quatro botões e renomeie o terceiro botão para **BoundingBox_Enable**; em seguida, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
 
@@ -143,7 +149,7 @@ Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar 
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
 * Na lista suspensa **Sem Função**, selecione **ObjectManipulator** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **marcada**
-* Deixe o **Ícone** como o ícone de "cubo com caixa delimitadora"
+* Deixe o **Ícone** como o ícone 'cubo com o controle de limites'
 
 ![Unity com o objeto de botão BoundingBox_Enable selecionado e o componente Auxiliar de Configuração do Botão configurado](images/mr-learning-base/base-07-section2-step1-2.png)
 
@@ -157,19 +163,19 @@ Renomeie o quarto e último botão como **BoundingBox_Disable** e, na janela Ins
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
 * Na lista suspensa **Sem Função**, selecione **ObjectManipulator** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
-* Altere o **Ícone** para o ícone de "cubo com caixa delimitadora"
+* Altere o **Ícone** para o ícone 'cubo com o controle de limites'
 
 ![Unity com o objeto de botão BoundingBox_Disable selecionado e o componente Auxiliar de Configuração do Botão configurado](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Se agora você entrar no modo de Jogo e habilitar a Caixa Delimitadora clicando no botão Enable, poderá usar a interação próxima ou distante para mover, girar e dimensionar a Caixa Delimitadora e usar o botão Disable para desabilitar a Caixa Delimitadora novamente:
+Se agora você entrar no modo de Jogo e habilitar o Controle de Limites clicando no botão Habilitar, poderá usar a interação próxima ou distante para mover, girar e escalar a Caixa Delimitadora e usar o botão Desabilitar para desabilitar a Caixa Delimitadora novamente:
 
 ![Modo de exibição dividida do Modo de reprodução do Unity com a Caixa Delimitadora sendo manipulada](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Para saber mais sobre o componente de Caixa Delimitadora e suas propriedades associadas, acesse o guia da [Caixa Delimitadora](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Para saber mais sobre o componente de Caixa Delimitadora e as propriedades associadas a ele, acesse o guia da [Caixa Delimitadora](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## <a name="congratulations"></a>Parabéns
 
-Neste tutorial, você aprendeu como habilitar a manipulação próxima e distante de objetos 3D e como limitar os tipos de manipulação permitidos. Você também aprendeu como adicionar caixas delimitadoras em objetos 3D para facilitar o controle da manipulação de objetos.
+Neste tutorial, você aprendeu como habilitar a manipulação próxima e distante de objetos 3D e como limitar os tipos de manipulação permitidos. Você também aprendeu como adicionar uma caixa delimitadora em objetos 3D para facilitar o controle da manipulação de objetos.
 
 > [!div class="nextstepaction"]
 > [Próximo tutorial: 8. Como usar o acompanhamento de olho](mr-learning-base-08.md)

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, pré-fabricados, hologramas, dicas de ferramentas
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008056"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635550"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Como criar interfaces do usuário
 
@@ -97,17 +97,17 @@ Na janela Hierarquia, renomeie o objeto para **Menu** e, em seguida, expanda o s
 
 ![Unity com o objeto Menu selecionado e o objeto ButtonCollection expandido](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Renomeie o primeiro botão como **Indicador** e, na janela Inspetor, configure o componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
+Renomeie o primeiro botão em ButtonCollection como Indicador e, na janela Inspetor, configure o componente Button Config Helper (Script) da seguinte maneira:
 
 * Altere o **Texto do Rótulo Principal** para que ele corresponda ao nome do botão
-* Atribua o objeto **Indicador** ao campo **Nenhum (Objeto)**
+* Atribua o objeto Indicador que parece com uma divisa ao campo Nenhum (Objeto)
 * Na lista suspensa **Sem Função**, selecione **GameObject** > **SetActive (bool)** para definir essa função como a ação a ser executada quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **marcada**
 * Altere o **Ícone** para o ícone "pesquisar"
 
 ![Unity com o Auxiliar de Configuração do Botão do objeto de botão Indicator configurado](images/mr-learning-base/base-06-section2-step1-3.png)
 
-Na janela Hierarquia, selecione o objeto **Indicador** e, na janela Inspetor:
+Para desabilitar o objeto Indicador de divisa, na janela Hierarquia, selecione o objeto Indicador que se parece com a divisa e, na janela Inspetor:
 
 * Desmarque a caixa de seleção ao lado do nome para torná-la inativa por padrão
 * Use o botão **Adicionar Componente** para adicionar o componente **Controlador de Indicador Direcional (Script)**
@@ -115,7 +115,7 @@ Na janela Hierarquia, selecione o objeto **Indicador** e, na janela Inspetor:
 ![Unity com o objeto Indicator selecionado e desabilitado e o componente DirectionalIndicatorController adicionado](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Agora, quando o aplicativo é iniciado, o Indicador é desabilitado por padrão e pode ser habilitado pressionando o botão Indicador.
+> Agora, quando o aplicativo é iniciado, o Indicador de divisa é desabilitado por padrão e pode ser habilitado pressionando o botão Indicador.
 
 Renomeie o segundo botão como **TapToPlace** e, na janela Inspetor, configure o componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
@@ -169,7 +169,7 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK** > **SDK** > **Recu
 Na janela Hierarquia, expanda o objeto RoverExplorer > **RoverParts** e selecione todos os seus objetos filhos de peças do rover. Em seguida, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **ToolTipSpawner** e configurá-lo da seguinte maneira:
 
 * Verifique se a caixa de seleção **Foco Habilitado** está marcada para exigir que o usuário olhe a peça para que a dica de ferramenta apareça
-* Atribua o pré-fabricado **Dica de Ferramenta de Linha Simples** da janela Projeto para o campo **Pré-fabricado da Dica de Ferramenta**
+* Atribua o pré-fabricado **Dica de Ferramenta de Linha Simples** da janela Projeto ao campo **Pré-fabricado**
 * Altere as Configurações de Substituição da Dica de Ferramenta > **Modo de Configurações** para **Substituir**
 * Altere as Configurações de Substituição da Dica de Ferramenta > **Dinamizar Manualmente a Posição do Local Y** para **1,5**
 
@@ -196,4 +196,5 @@ Pressione o botão Reproduzir para entrar no Modo de jogo e pressione e segure o
 
 Neste tutorial, você aprendeu a criar uma interface do usuário simples usando os pré-fabricados de menu e de botão fornecidos do MRTK junto com o componente TextMeshPro do Unity e como configurar os botões para disparar eventos quando eles forem pressionados. Você também aprendeu como adicionar elementos de interface do usuário de dica de ferramenta dinâmicos para fornecer ao usuário informações adicionais.
 
-[Próximo tutorial: 7. Interagir com objetos 3D](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[Próximo tutorial: 7. Interagir com objetos 3D](mr-learning-base-07.md)

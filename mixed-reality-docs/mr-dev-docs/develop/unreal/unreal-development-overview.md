@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, OpenXR
-ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247729"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580043"
 ---
 # <a name="unreal-development-overview"></a>Visão geral do desenvolvimento com o Unreal
 
@@ -49,6 +49,8 @@ O [Kit de Ferramentas de Realidade Misturada para Unreal](https://github.com/mic
 
 * As [Ferramentas de Experiência de Usuário para Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) são o primeiro plug-in a ser lançado e atualmente só são compatíveis com o HoloLens 2. O plug-in inclui código C++, blueprints e ativos de exemplo de recursos comuns da Experiência de Usuário para simulação de entrada, interações das mãos, magnetismo de superfície, entre outros.
 
+* As [Ferramentas de Gráficos para Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) são um plug-in de jogo do UE com um código, blueprints e ativos de exemplo criados para ajudar a melhorar a fidelidade visual de aplicativos de Realidade Misturada ao mesmo tempo que cumprem os orçamentos de desempenho.
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
@@ -82,7 +84,7 @@ O trabalho de um desenvolvedor nunca termina, especialmente ao aprender uma nova
 
 ### <a name="debugging"></a>Depuração
 
-Se você pretende depurar o aplicativo enquanto ele está em execução no dispositivo com o Visual Studio, siga estas [instruções](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
+Se você pretende depurar o aplicativo enquanto ele está em execução no dispositivo com o Visual Studio, siga estas [instruções](/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### <a name="performance"></a>Desempenho
 
@@ -104,7 +106,7 @@ O desenvolvimento para realidade misturada vem com pontos de verificação de de
 | Áudio espacial | 4.23 | ✔️ |
 | Compatibilidade com tela Espectador para streaming | 4.24 |
 | LSR Planar por streaming | 4.24 |
-| [Aplicativos de exemplo](unreal-samples.md) | 4.24 | ✔️ |
+| [Aplicativos de exemplo](../features-and-samples.md) | 4.24 | ✔️ |
 | Exibição múltipla em dispositivos móveis: Desempenho alcança 60 quadros/s | 4.25 | ✔️ |
 | Renderização de 3ª câmera | 4.25 |
 | Streaming de um aplicativo da área de trabalho empacotado | 4.25.1 | ✔️ |

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, android, ios, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 741c000de0ab2feb3dcbff33e2a0b0acc70838e8
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008386"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699235"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Âncoras Espaciais do Azure para o Android e o iOS
 
@@ -28,7 +28,7 @@ Neste tutorial, você aprenderá a criar seu projeto para dispositivos Android e
 Nesta seção, você atualizará e instalará os seguintes pacotes embutidos:
 
 * AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
+* Auxiliares de Entrada Herdados do XR 2.1.6
 * Plug-in ARCore XR 3.1.3 para suporte ao Android
 * Plug-in ARKit XR 3.1.3 para suporte a iOS
 
@@ -73,6 +73,10 @@ Com o objeto **MixedRealityToolkit** ainda selecionado na janela Hierarquia, use
 > [!NOTE]
 > Quando você adiciona o componente AR Reference Point Manager (Script), o componente AR Session Origin (Script) é adicionado automaticamente, pois é exigido pelo componente AR Reference Point Manager (Script).
 
+
+
+Atualize as definições de script do UnityAR do MRTK invocando o item de menu: **Kit de ferramentas da Realidade Misturada** > **Utilitários** > **UnityAR** > Atualizar as Definições de Script
+
 ## <a name="building-your-application-to-your-android-device"></a>Compilar o aplicativo para seu dispositivo Android
 
 Nesta seção, você aprenderá a configurar seu projeto para compilá-lo e implantá-lo em um dispositivo Android.
@@ -93,6 +97,10 @@ No menu do Unity, selecione **Kit de Ferramentas de Realidade Misturada** > **Ut
 No menu do Unity, selecione **Editar** > **Configurações de Projeto...** para abrir a janela Configurações do Player, então localize a seção **Player** >  **Outras Configurações**, selecione **Vulkan** e remova-o clicando no símbolo de **"-"** :
 
 ![Outras Configurações do Unity com o Vulcan selecionado](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+No menu do Unity, selecione **Editar** > **Configurações do Projeto...**  >**Player**> **Configuração do XR**, verifique se você está na plataforma **Android**, marque a caixa de seleção **Realidade Virtual com Suporte**, clique no ícone + e selecione Nenhum:
+
+![Janela Configurador de Projeto do MRTK no Unity para Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 Feche a janela Configurações do Player e abra a janela Configurações de Build novamente.
 
@@ -147,7 +155,7 @@ Escolha um local adequado para armazenar o projeto do Xcode, por exemplo, _D:\Mi
 
 ![Janela Configurações de Build do Unity com a janela de prompt Salvar para iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-Quando o processo de build for concluído, siga as instruções de [Exportar o projeto do Xcode](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) para aprender a implantar o projeto do Xcode em seu dispositivo iOS.
+Quando o processo de build for concluído, siga as instruções de [Exportar o projeto do Xcode](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) para aprender a implantar o projeto do Xcode em seu dispositivo iOS.
 
 ## <a name="congratulations"></a>Parabéns
 

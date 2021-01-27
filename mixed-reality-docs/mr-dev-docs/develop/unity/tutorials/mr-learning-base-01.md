@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, solucionadores, acompanhamento do olho, comandos de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a917aea812c262e3589110a29e2399da4c1e5348
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008076"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579265"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introdução aos tutoriais do MRTK
 
@@ -42,14 +42,14 @@ Os tutoriais desta série foram concebidos de modo sequencial, portanto, siga-os
 * Um PC com Windows 10 configurado com as [ferramentas corretas instaladas](../../install-the-tools.md)
 * [SDK do Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 ou posterior
 * Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
+
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
 
 > [!CAUTION]
-> A versão recomendada do MRTK para esta série de tutoriais é a MRTK 2.4.0.
+> A versão recomendada do MRTK para esta série de tutoriais é a MRTK 2.5.1.
 
 > [!CAUTION]
 > A versão recomendada do Unity para esta série de tutoriais é o Unity 2019 LTS. Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.
 
 > [!div class="nextstepaction"]
 > [Próximo tutorial: 2. Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md)
-

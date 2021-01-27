@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007886"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635470"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
 
@@ -33,7 +33,7 @@ No menu do Unity, selecione Kit de Ferramentas de Realidade Misturada > Utilitá
 ![Janela Configurador de Projeto do MRTK no Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> A funcionalidade de Entrada de Foco deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#selecting-mrtk-and-project-settings) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
+> A funcionalidade de Entrada de Foco deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#creating-and-configuring-the-scene) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Como habilitar o foco baseado em olho no provedor de foco
 
@@ -55,9 +55,9 @@ Na janela hierarquia, selecione o objeto **MixedRealityToolkit** e, em seguida, 
 
 * Expanda a seção **Provedores de Dados de Entrada** > **Serviço de Simulação de Entrada**
 * Clone o **DefaultMixedRealityInputSimulationProfile** e dê a ele um nome adequado, por exemplo, _GettingStarted_MixedRealityInputSimulationProfile_
-* Localize a seção **Simulação de Olho** e marque a caixa de seleção **Simular Posição do Olho**
+* Localize a **Simulação de Olhar** e configure o **Modo de Simulação de Olhar Padrão** como **Eixo Dianteiro da Câmera**
 
-![Componente MixedRealityToolkit do Unity com o perfil recém-criado aplicado e a simulação de olho habilitada](images/mr-learning-base/base-08-section3-step1-1.png)
+![Unity com o objeto TextMeshPro selecionado](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>Como adicionar acompanhamento de olho a objetos
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98052956"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605152"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,8 +17,8 @@ Crie um aplicativo de realidade misturada cheio de recursos multiplataforma com 
 Há várias opções de hardware e emulador disponíveis para a criação de aplicativos de Realidade Misturada com o Unity. Embora o foco da nossa documentação para desenvolvedores esteja nos dispositivos HoloLens, você encontrará seções de suporte a dispositivos com detalhes sobre a implantação de headsets imersivos, quando aplicável.
 
 **Dispositivos de realidade aumentada**
-* [HoloLens (1ª geração)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1ª geração)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Headsets imersivos de VR**
 * HP Reverb e Reverb G2
@@ -48,7 +48,7 @@ Você pode usar o **Microsoft Dynamics 365 Guides** para conectar visualmente as
 
 ## <a name="examples"></a>Exemplos
 
-Temos vários [aplicativos de exemplo](../unity/samples.md) de software livre para você baixar e experimentar e ter uma ideia de um produto final de Realidade Misturada no Unity. Também há cenas de exemplo do MRTK disponíveis para você testar recursos específicos:
+Temos vários [aplicativos de exemplo](../features-and-samples.md) de software livre para você baixar e experimentar e ter uma ideia de um produto final de Realidade Misturada no Unity. Também há cenas de exemplo do MRTK disponíveis para você testar recursos específicos:
 * [Cena de exemplo de interação das mãos (MRTK) para Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor): a cena de exemplo HandInteractionExamples.unity contém vários tipos de interações e controles de interface do usuário que realçam a entrada de mão articulada.
 
 * [Exemplos de acompanhamento ocular (MRTK) para Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html): essa página mostra como começar a usar rapidamente o acompanhamento ocular no MRTK tendo como base os exemplos fornecidos de acompanhamento ocular do MRTK.
@@ -67,8 +67,8 @@ Crie um aplicativo de realidade misturada completo multiplataforma com o Unreal.
 Há várias opções de hardware, emulador e streaming disponíveis para a criação de aplicativos de Realidade Misturada com o Unreal Engine. Embora o foco da nossa documentação para desenvolvedores esteja nos dispositivos HoloLens, você poderá empacotar nossos projetos do Unreal como aplicativos da área de trabalho x64 e executá-los perfeitamente em headsets imersivos.
 
 **Dispositivos de realidade aumentada**
-* [HoloLens (1ª geração)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1ª geração)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Headsets imersivos de VR**
 * HP Reverb e Reverb G2
@@ -84,7 +84,8 @@ Há várias opções de hardware, emulador e streaming disponíveis para a cria�
 
 |  Ferramenta/SDK  |  Descrição  |
 | --- | --- |
-| [Kit de Ferramentas de Realidade Misturada para Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | O MRTK-Unreal (Kit de Ferramentas de Realidade Misturada para Unreal) é um conjunto de componentes, na forma de plug-ins, exemplos e documentação, projetados para acelerar o desenvolvimento de aplicativos de realidade misturada usando o Unreal Engine. |
+| [Ferramentas de Experiência do Usuário para Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | As Ferramentas de Experiência de Usuário são o primeiro plug-in a ser lançado e atualmente só são compatíveis com o HoloLens 2. O plug-in inclui código C++, blueprints e ativos de exemplo de recursos comuns da Experiência de Usuário para simulação de entrada, interações das mãos, magnetismo de superfície, entre outros. |
+| [Ferramentas de Gráficos para Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | As Ferramentas de Gráficos são um plug-in de jogo do UE com um código, blueprints e ativos de exemplo criados para ajudar a melhorar a fidelidade visual de aplicativos de Realidade Misturada ao mesmo tempo que cumprem os orçamentos de desempenho. |
 
 ## <a name="cloud-services"></a>Serviços de Nuvem
 
@@ -119,7 +120,7 @@ Crie aplicativos de realidade misturada com uma Direct Line nas APIs do Windows 
 Há várias opções de hardware, emulador e streaming disponíveis para a criação de aplicativos de Realidade Misturada com o desenvolvimento no OpenXR. 
 
 **Dispositivos de realidade aumentada**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Headsets imersivos de VR**
 * HP Reverb e Reverb G2

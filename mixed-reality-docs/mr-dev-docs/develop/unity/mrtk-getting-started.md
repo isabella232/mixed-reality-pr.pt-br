@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, teste, Kit de Ferramentas de Realidade Misturada, MRTK versão 2, MRTK, ferramentas, SDK, HoloLens, HoloLens 2, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, multiplataforma
-ms.openlocfilehash: b153c267e20b0f9609c2fe507512051b24a2b62b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4c013f1fa50518404f899b4181e7c07b9e4e0e56
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008824"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581706"
 ---
 # <a name="introducing-mrtk-for-unity"></a>Introdução ao MRTK para Unity
 
@@ -29,7 +29,6 @@ O MRTK para Unity é um kit de desenvolvimento de software livre multiplataforma
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
 Confira a [documentação do MRTK no GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) e comece a usar com o [guia de instalação](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html).
-
 
 ## <a name="new-with-mrtk-v2"></a>Novidades com o MRTK v2
 
@@ -50,6 +49,7 @@ Trabalhando com plataformas móveis, nós o construímos com o desempenho em men
 ## <a name="see-also"></a>Veja também
 
 * [Instalar as ferramentas](../install-the-tools.md)
+* [Desenvolvimento com o MRTK para Unity](unity-development-overview.md)
 * [MRTK – Guia de instalação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK – Página inicial da documentação (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Portabilidade do HoloToolkit/MRTK para o MRTK versão 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

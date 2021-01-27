@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10, LUIS, portal do LUIS, intenção, entidades, enunciados, reconhecimento vocal natural
 ms.localizationpriority: high
-ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8d840855321de5d4e055b944783649c9d8028f9a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007766"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581472"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Como configurar a intenção e o reconhecimento vocal natural
 
@@ -55,7 +55,7 @@ Clique no botão **Criar** para criar uma instância desse serviço:
 Na página Criar, clique na opção **Previsão** e insira os seguintes valores:
 
 * Para **Assinatura**, selecione **Avaliação Gratuita** se você tiver uma assinatura de avaliação, caso contrário, selecione uma das outras assinaturas
-* Para o **Grupo de recursos**, clique no link **Criar**, insira um nome adequado, por exemplo, *MRKT-Tutoriais* e, em seguida, clique em **OK**
+* Para o **Grupo de recursos**, clique no link **Criar**, insira um nome adequado, por exemplo, *MRKT-Tutoriais* e clique em **OK**
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -73,7 +73,7 @@ Enquanto ainda estiver na página Criar, insira os seguintes valores:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Em seguida, vá para a guia **Examinar + criar**, examine os detalhes e clique no botão **Criar**, localizado na parte inferior da página, para criar o recurso, bem como no novo grupo de recursos se você tiver configurado um para ser criado:
+Em seguida, clique na guia **Examinar + criar**, examine os detalhes e clique no botão **Criar**, localizado na parte inferior da página, para criar o recurso, bem como o novo grupo de recursos, se você tiver configurado um para ser criado:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -107,13 +107,14 @@ As principais etapas que você seguirá para conseguir isso são:
 Usando a mesma conta de usuário usada ao criar o recurso do Azure na seção anterior, entre no <a href="https://www.luis.ai" target="_blank">LUIS</a>, selecione seu país/região e concorde com os Termos de uso. Na próxima etapa, quando você for solicitado a **Vincular sua conta do Azure**, escolha **Continuar usando sua chave de avaliação** para usar um recurso de criação do Azure em vez disso.
 
 > [!NOTE]
-> Se você já se inscreveu no LUIS e sua chave de avaliação de criação expirou, pode ver a documentação [Migrar para uma chave de criação de recursos do Azure](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring) para alternar o recurso de criação do LUIS para o Azure.
+> Se você já se inscreveu no LUIS e sua chave de avaliação de criação expirou, pode ver a documentação [Migrar para uma chave de criação de recursos do Azure](/azure/cognitive-services/luis/luis-migration-authoring) para alternar o recurso de criação do LUIS para o Azure.
 
-Depois de conectado, navegue até a página **Meus aplicativos**, clique em **Criar aplicativo** e insira os seguintes valores na janela pop-up **Criar aplicativo**:
+Depois de conectado, clique em **Novo aplicativo** e insira os seguintes valores na janela pop-up **Criar aplicativo**:
 
 * Para **Nome**, insira um nome adequado, por exemplo, *Tutoriais do MRTK – AzureSpeechServices*
 * Para **Cultura**, selecione **Inglês**
 * Para **Descrição**, opcionalmente, insira uma descrição adequada
+* No **Recurso de previsão**, selecione o recurso de previsão por lista suspensa que foi criado no portal do Azure.
 
 Em seguida, clique no botão **Concluído** para criar o aplicativo:
 
@@ -125,7 +126,7 @@ Quando o aplicativo tiver sido criado, você será levado para a página **Paine
 
 ### <a name="2-create-intents"></a>2. Criar intenções
 
-Na página Painel, navegue até a página Criar > Ativos de Aplicativo > **Intenções**, clique em **Criar intenção** e insira o seguinte valor na janela pop-up **Criar intenção**:
+Na página Painel, navegue até a página Criar > Ativos de Aplicativo > **Intenções**, clique em **Criar** e insira o seguinte valor na janela pop-up **Criar intenção**:
 
 * Para **Nome da intenção**, insira **PressButton**
 
@@ -164,12 +165,12 @@ Quando todos os enunciados de exemplo tiverem sido adicionados, sua página de i
 
 ### <a name="4-create-entities"></a>4. Criar entidades
 
-Na página de intenção PressButton, navegue até a página Criar > Ativos de Aplicativo > **Entidades** e clique em **Criar entidade**, então insira os seguintes valores na janela pop-up **Criar entidade**:
+Na página de intenção PressButton, navegue até a página Criar > Ativos de Aplicativo > **Entidades**, clique em **Criar** e insira os seguintes valores na janela pop-up **Criar entidade**:
 
 * Para **Nome da entidade**, insira **Ação**
-* Para **Tipo de entidade**, selecione **Simples**
+* Em **Tipo de entidade**, selecione **Aprendizado de máquina**
 
-Em seguida, clique no botão **Concluído** para criar a entidade:
+Em seguida, clique no botão **Criar** para criar a entidade:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
@@ -188,7 +189,7 @@ Depois de voltar para a página de intenção de PressButton, clique na palavra 
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-A frase **ir em frente** frase agora é definida como um valor de entidade de **Ação**. Se você passar o cursor do mouse sobre o nome da entidade de Ação, poderá ver o valor da entidade de Ação associada:
+A frase **ir em frente** frase agora é definida como um valor de entidade de **Ação**. Agora você pode observar o valor da entidade de ação na palavra "go ahead":
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -199,7 +200,7 @@ Em seguida, clique na palavra **iniciar** e, em seguida, selecione **Destino (Si
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-A palavra **iniciar** agora está definida como um valor de entidade de **Destino**. Se você passar o cursor do mouse sobre o nome da entidade de Destino, poderá ver o valor da entidade de Destino associada:
+A palavra **launch** agora é definida como um valor da entidade de **Destino**. Agora, você pode observar o valor da entidade de Destino na palavra "launch":
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -219,14 +220,6 @@ O enunciado de exemplo de intenção PressButton "ir em frente e lançar o fogue
 Quando todos os enunciados de exemplo tiverem sido rotulados, sua página de intenção de PressButton deverá ser semelhante a esta:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
-
-Como alternativa para verificar novamente se você atribuiu as entidades corretas, clique no menu **Exibir opções** e alterne a exibição para **Mostrar valores de entidade**:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-6.png)
-
-Agora, com o modo de exibição definido para mostrar valores de entidade, você pode focalizar o curso do mouse sobre as palavras e frases rotuladas para verificar rapidamente o nome da entidade atribuída:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-7.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6. Treinar, testar e publicar o aplicativo
 
@@ -249,7 +242,7 @@ Quando o enunciado de teste tiver sido processado, clique em **Inspecionar** par
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-Para publicar o aplicativo, clique no botão **Publicar** no canto superior direito e, em seguida, na janela **Escolher o slot e as configurações de publicação**, selecione **Produção** e clique no botão **Publicar**:
+Para publicar o aplicativo, clique no botão **Publicar** no canto superior direito e na janela pop-up **Escolher o slot e as configurações de publicação**, selecione **Produção** e clique no botão **Concluído**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
@@ -257,25 +250,9 @@ Aguarde a conclusão do processo de publicação:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-### <a name="7-assign-an-azure-prediction-resource-to-the-app"></a>7. Atribuir um recurso de previsão do Azure ao aplicativo
+Navegue até a página Gerenciar > Configurações do Aplicativo > **Recursos do Azure**. A sua página Recursos do Azure deve ser semelhante a esta:
 
-Navegue até a página Gerenciar > Configurações do Aplicativo > **Recursos do Azure**:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-1.png)
-
-Na página Recursos do Azure, clique no botão **Adicionar recurso de previsão** e selecione os seguintes valores na janela pop-up **Atribuir um recurso ao aplicativo**:
-
-* Para **Nome do locatário**, selecione o nome do locatário
-* Para **Nome da assinatura**, selecione a mesma assinatura que você usou anteriormente ao [Criar o recurso de Reconhecimento vocal do Azure](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)
-* Para **Nome de recurso LUIS**, selecione o recurso de previsão que você criou anteriormente ao [Criar o recurso de Reconhecimento vocal do Azure](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)
-
-Em seguida, clique no botão **Atribuir recurso** para atribuir o recurso de previsão do Azure ao seu aplicativo:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-2.png)
-
-Quando o recurso tiver sido atribuído, sua página de recursos do Azure deverá ser semelhante a esta:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-3.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Como conectar o projeto do Unity ao aplicativo LUIS
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007296"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699115"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurar o Photon Unity Networking
 
@@ -28,13 +28,13 @@ Neste tutorial, você vai se preparar para criar uma experiência compartilhada 
 
 Nesta seção, você criará um projeto do Unity e o deixará pronto para o desenvolvimento do MRTK.
 
-Primeiro, siga [Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar o seu aplicativo para o dispositivo](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), que incluem as seguintes etapas:
+Primeiro, siga [Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar o seu aplicativo para o dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2), que incluem as seguintes etapas:
 
 1. [Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais do MRTK*
 2. [Como alternar a plataforma de build](mr-learning-base-02.md#switching-the-build-platform)
 3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Como configurar o projeto do Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Como configurar o projeto do Unity](mr-learning-base-02.md#configuring-the-unity-project)
 6. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *MultiUserCapabilities*
 
 Em seguida, siga as instruções em [Alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para:
@@ -48,7 +48,7 @@ No menu do Unity, selecione **Editar** > **Configurações de projeto...** para 
 
 ![Configurações de Player do Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-Em **Configurações de publicação**, role para baixo até a seção **Funcionalidades** e verifique novamente se as funcionalidades **InternetClient**, **Microfone**, **SpatialPerception** e **GazeInput**, que você habilitou durante a etapa [Como configurar o projeto Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings) acima estão habilitadas.
+Em **Configurações de publicação**, role para baixo até a seção **Funcionalidades** e verifique novamente se as funcionalidades **InternetClient**, **Microfone**, **SpatialPerception** e **GazeInput**, que você habilitou durante a etapa [Como configurar o projeto Unity](mr-learning-base-02.md#configuring-the-unity-project) acima estão habilitadas.
 
 Em seguida, habilite as seguintes funcionalidades adicionais:
 
@@ -68,9 +68,11 @@ No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a
 
 ## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
 
-Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
+Adicione o SDK do AzurespatialAnchors V2.7.1 ao seu projeto do Unity. Para adicionar os pacotes, siga este [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (versão 2.2.1)
+
+Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
+ 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage)
@@ -83,7 +85,7 @@ Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelh
 > Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções em [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
 
 > [!NOTE]
-> Depois de importar o pacote de ativos do tutorial de MultiUserCapabilities, você verá vários erros [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) na janela do console informando que o tipo ou o namespace está ausente. Isso deve ser esperado e será resolvido na próxima seção quando você importar os ativos PUN.
+> Depois de importar o pacote de ativos do tutorial de MultiUserCapabilities, você verá vários erros [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) na janela do console informando que o tipo ou o namespace está ausente. Isso deve ser esperado e será resolvido na próxima seção quando você importar os ativos PUN.
 
 ## <a name="importing-the-pun-assets"></a>Como importar os ativos PUN
 
