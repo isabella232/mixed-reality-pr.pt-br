@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, canais de dados
-ms.openlocfilehash: a11fe0bb023ae34692015585f6e1689db4330ac7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ed9da4a21c2fe9b25ae29e9b2044d82438b19559
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582610"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810098"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canais de dados personalizados de comunicação remota holográfica
 
@@ -118,5 +118,5 @@ m_customDataChannel.Close();
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
-* [Termos de licença de software de comunicação remota holográfica](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Termos de licença de software de comunicação remota holográfica](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
