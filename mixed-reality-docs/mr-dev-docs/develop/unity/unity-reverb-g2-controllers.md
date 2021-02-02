@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, reverberação, reverbo G2, HP reverbs G2, realidade mista, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos
-ms.openlocfilehash: fa9b80076d65978ae1602fc4f9519d7e11c651b5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583573"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421385"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Controladores de reverbo do HP G2 no Unity
 
@@ -31,38 +31,11 @@ Como as novas entradas não estão acessíveis por meio de APIs existentes do Wi
 
 Você pode obter instâncias de MotionController criando um *MotionControllerWatcher* e assinando seus eventos, semelhante ao uso de eventos *interactionmanager* para descobrir novas instâncias de *interação* . Os métodos e as propriedades de MotionController descrevem as entradas com suporte pelo controlador, incluindo seus botões, gatilhos, eixo 2D e Thumbstick. A classe MotionController também expõe métodos para acessar os Estados de entrada por meio da classe *MotionControllerReading* . A classe MotionControllerReading representa um instantâneo do estado do controlador em um determinado momento. 
 
-## <a name="installing-microsoftmixedrealityinput-using-the-unity-package-manager"></a>Instalando Microsoft. MixedReality. Input usando o Gerenciador de pacotes do Unity 
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Instalando o Microsoft. MixedReality. Input com a ferramenta de funcionalidade Mixed Reality
 
-O Gerenciador de pacotes do Unity usa um [arquivo de manifesto](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (manifest.jsem) para determinar quais pacotes instalar e os registros (servidores) dos quais eles podem ser instalados. Antes de poder usar o pacote Microsoft. MixedReality. Input, você precisará registrar o servidor de componentes da realidade misturada.
+Instale o plug-in Microsoft. MixedReality. Input com o novo aplicativo de ferramenta de recursos da realidade misturada. Siga as [instruções de instalação e uso](welcome-to-mr-feature-tool.md) e selecione o pacote de **entrada de realidade misturada** na categoria do kit de ferramentas da realidade misturada:
 
-### <a name="registering-the-mixed-reality-component-server"></a>Registrando o servidor de componentes da realidade misturada 
-
-Para cada projeto que usará o pacote de entrada de realidade misturada, o manifest.jsno arquivo (na pasta pacotes) precisa do registro com escopo de realidade misturada adicionado. Para modificar corretamente o manifest.jsno para dar suporte à realidade misturada: 
-    1. Abra <projectRoot> /Packages/manifest.jsem um editor de texto, como Visual Studio Code. 
-    2. Na parte superior do arquivo de manifesto, adicione o servidor de realidade misturada à seção do registro com escopo e salve o arquivo. 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
-
-### <a name="adding-the-microsoftmixedrealityinput-package"></a>Adicionando o pacote Microsoft. MixedReality. Input 
-
-Modifique a seção de dependências do <projectRoot> /Packages/manifest.jsno arquivo no editor de texto para adicionar com. Microsoft. mixedreality. Input Package e salve o arquivo. 
-
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+![Janela de pacotes da ferramenta de recurso de realidade misturada com entrada de realidade mista realçada](images/feature-tool-mrinput.png)
 
 ## <a name="using-microsoftmixedrealityinput"></a>Usando Microsoft. MixedReality. Input 
 
