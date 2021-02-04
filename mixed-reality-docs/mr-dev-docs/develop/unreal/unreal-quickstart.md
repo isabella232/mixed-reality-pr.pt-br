@@ -1,5 +1,5 @@
 ---
-title: Como criar um projeto do HoloLens
+title: Como criar seu primeiro aplicativo Unreal do HoloLens
 description: Saiba como configurar corretamente um projeto do Unreal com objetos de cena e interações de entrada para o desenvolvimento da realidade misturada do HoloLens.
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, editor do Unreal, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, documentação, guias, recursos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, portabilidade, atualização
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672733"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421425"
 ---
-# <a name="creating-a-hololens-project"></a>Como criar um projeto do HoloLens
+# <a name="creating-your-first-hololens-unreal-application"></a>Como criar seu primeiro aplicativo Unreal do HoloLens
+
+Este guia descreverá como executar seu primeiro aplicativo de Realidade Misturada no HoloLens no Unreal Engine. Na tradição do "Olá, Mundo", você criará um aplicativo simples que exibe um cubo na tela. Para torná-lo mais útil, você também criará seu primeiro gesto para girar o cubo e encerrar o aplicativo. 
+
+## <a name="objectives"></a>Objetivos
+
+* Iniciar um projeto do HoloLens
+* Habilitar os plug-ins corretos
+* Criar um ativo de dados ARSessionConfig
+* Configurar entradas de gesto
+* Criar um nível básico
+* Implementar um gesto de pinçagem
+
+## <a name="creating-a-new-project"></a>Crie um novo projeto
 
 A primeira coisa que você precisa é de um projeto com o qual trabalhar. Se você é um desenvolvedor novo do Unreal, [baixe os arquivos de suporte](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) do Epic Launcher.
 
@@ -29,7 +42,8 @@ A primeira coisa que você precisa é de um projeto com o qual trabalhar. Se voc
 
 4. Em **Configurações do Projeto**, defina **C++, 3D ou 2D Escalonável, Celular/Tablet** e **Nenhum Conteúdo Inicial**, escolha uma localização de salvamento e clique em **Criar Projeto**
 
-> [!NOTE] Você está usando um projeto C++ em vez de um projeto Blueprint para estar pronto para usar o plug-in OpenXR mais tarde. Este Guia de Início Rápido usa o plug-in OpenXR padrão fornecido com o Unreal Engine. No entanto, é recomendável baixar e usar o plug-in oficial do Microsoft OpenXR. Isso requer que o projeto seja um projeto C++.
+> [!NOTE] 
+> Você está usando um projeto C++ em vez de um projeto Blueprint para estar pronto para usar o plug-in OpenXR mais tarde. Este Guia de Início Rápido usa o plug-in OpenXR padrão fornecido com o Unreal Engine. No entanto, é recomendável baixar e usar o plug-in oficial do Microsoft OpenXR. Isso requer que o projeto seja um projeto C++.
 
 ![Janela de configurações do projeto com as opções de projeto, de desempenho, de plataforma de destino e de conteúdo inicial realçadas](images/unreal-quickstart-img-03.png)
 
@@ -131,13 +145,17 @@ Com isso feito, a próxima etapa será verificar se a sessão de RA começa e é
 
 ![Mapeamentos de ação com as opções de Interação das mãos do OpenXR MSFT realçadas](images/unreal-quickstart-img-16.jpg)
 
-4. Abra o **Blueprint de Nível** e adicione **InputAction RightPinch** e **InputAction LeftPinch**
+## <a name="setting-up-gestures"></a>Como configurar gestos
+
+Agora que configuramos as entradas, podemos chegar à parte interessante: Adicionar gestos! Vamos girar o cubo com uma pinçagem à direita e encerrar o aplicativo com uma pinçagem à esquerda.
+
+1. Abra o **Blueprint de Nível** e adicione **InputAction RightPinch** e **InputAction LeftPinch**
 * Conecte o evento de pinçagem à direita a um **AddActorLocalRotation** com o seu **Cubo** como o destino e a **Rotação Delta** definida como **X = 0, Y = 0** e **Z = 20**. O cubo agora será girado em 20 graus sempre que você pinçar
 * Conecte o evento de pinçagem à esquerda para **Encerrar o Jogo**
 
 ![Blueprint de nível aberto com as ações de entrada para eventos de pinçagem à direita e à esquerda](images/unreal-quickstart-img-17.jpg)
 
-5. Nas configurações de **Transformação** do cubo, defina a **Mobilidade** como **Móvel** para que ele possa ser movido dinamicamente:
+2. Nas configurações de **Transformação** do cubo, defina a **Mobilidade** como **Móvel** para que ele possa ser movido dinamicamente:
 
 ![Configurações de transformação com a propriedade de mobilidade realçada](images/unreal-quickstart-img-18.jpg)
 

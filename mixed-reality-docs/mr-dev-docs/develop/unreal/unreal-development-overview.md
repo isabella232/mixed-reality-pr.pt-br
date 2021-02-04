@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, OpenXR
-ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580043"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421415"
 ---
 # <a name="unreal-development-overview"></a>Visão geral do desenvolvimento com o Unreal
 
@@ -38,6 +38,7 @@ Primeiro, você precisará instalar as ferramentas para o desenvolvimento do Hol
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
 | [Instale as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale a última versão do Unreal Engine e configure seu projeto para realidade misturada |
+| [Como criar seu primeiro aplicativo Unreal do HoloLens](unreal-quickstart.md) | Comece seu percurso de desenvolvimento no Unreal e no HoloLens criando um aplicativo básico de Realidade Misturada |
 | [Série de tutoriais do HoloLens 2](tutorials/unreal-uxt-ch1.md) | Prepare-se para o desenvolvimento de realidade misturada no Unreal, crie seu primeiro aplicativo com o MRTK e implante-o no HoloLens 2 |
 | (Opcional) Introdução ao [OpenXR](../native/openxr.md) no Unreal | Se você pretende criar um aplicativo OpenXR no Unreal, desabilite o seguinte plug-in do mecanismo:<ul><li>Windows Mixed Reality</li></ul><br>Baixe e habilite o seguinte plug-in no seu projeto do GitHub:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>A lista completa de recursos atualmente compatíveis com o OpenXR é mostrada [abaixo](#supported-features).|
 

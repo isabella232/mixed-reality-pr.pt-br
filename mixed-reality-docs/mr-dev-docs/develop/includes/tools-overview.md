@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b6e75419ef9cdd4595e23e6217ab1b1762cd134e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c205e3b812eeb7a85bfe361d4fd83f9aec7b7999
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605126"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99244998"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -13,21 +13,30 @@ ms.locfileid: "98605126"
 ### <a name="1-download-the-latest-version"></a>1. Baixar a última versão
 
 Recomendamos usar o fluxo [LTS (Suporte de Longo Prazo) do Unity](https://unity3d.com/unity/qa/lts-releases), pois ele é a melhor versão para iniciar projetos. Atualize para a última revisão para obter as correções estáveis mais recentes.
-* A recomendação atual é usar o **Unity 2019**, que é o build LTS necessário para o MRTK v2 abaixo.
+* A recomendação atual é usar o **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)** , que é o build LTS necessário para o MRTK v2 abaixo.
 * Caso você precise usar outra versão do Unity por motivos específicos, o Unity dá suporte a instalações lado a lado de versões diferentes.
 
-### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2. Importar o MRTK (Kit de Ferramentas de Realidade Misturada)
+### <a name="2-install-the-mixed-reality-feature-tool"></a>2. Instalar a Ferramenta de Recursos de Realidade Misturada
+
+A [Ferramenta de Recursos de Realidade Misturada](../unity/welcome-to-mr-feature-tool.md) é uma nova maneira para os desenvolvedores descobrirem e adicionarem pacotes de recursos de Realidade Misturada em projetos do Unity. 
+
+Você pode pesquisar pacotes por nome ou categoria, ver as respectivas dependências e, até mesmo, ver as alterações propostas no arquivo de manifesto dos seus projetos antes da importação. Depois de validar os pacotes desejados, a ferramenta Recurso de Realidade Misturada os baixará no projeto de sua escolha.
+
+#### <a name="importing-the-mixed-reality-toolkit"></a>Como importar o Kit de Ferramentas de Realidade Misturada
+
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-O [MRTK](../unity/mrtk-getting-started.md) (Kit de Ferramentas de Realidade Misturada) é um kit de desenvolvimento multiplataforma de software livre para aplicativos de realidade misturada. O MRTK fornece um sistema de entrada multiplataforma, componentes básicos e blocos de construção comuns para interações espaciais. O kit de ferramentas destina-se a acelerar o desenvolvimento de aplicativos voltados para o Microsoft HoloLens, os headsets imersivos (VR) do Windows Mixed Reality e a plataforma OpenVR.
+O [MRTK](../unity/mrtk-getting-started.md) (Kit de Ferramentas de Realidade Misturada) é um kit de desenvolvimento multiplataforma de software livre para aplicativos de realidade misturada. 
 
-Para a instalação, recomendamos a conclusão da seção de introdução dos nossos percursos de desenvolvimento do [HoloLens](../unity/unity-development-overview.md#1-getting-started) ou de [VR](../unity/unity-development-wmr-overview.md#1-getting-started). Se você já estiver seguindo o percurso de desenvolvimento do Unity para HoloLens, conclua o restante das etapas de instalação listadas abaixo e avance para os [tutoriais de Introdução do HoloLens 2](../unity/tutorials/mr-learning-base-01.md).
+* Instale o pacote do Kit de Ferramentas de Realidade Misturada seguindo as [instruções de instalação e uso](../unity/welcome-to-mr-feature-tool.md#system-requirements) e selecionando o pacote do **Mixed Reality Toolkit Foundation**.
+
+Recomendamos a conclusão da seção de introdução dos nossos percursos de desenvolvimento do [HoloLens](../unity/unity-development-overview.md#1-getting-started) ou de [VR](../unity/unity-development-wmr-overview.md#1-getting-started). Se você já estiver seguindo o percurso de desenvolvimento do Unity para HoloLens, conclua o restante das etapas de instalação listadas abaixo e avance para os [tutoriais de Introdução do HoloLens 2](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
-> Observe que as instruções de instalação são destinadas à mais recente combinação estável das versões do MRTK e Unity, que são **MRTK 2.4.0** e **Unity 2019.3.15**.
+> Observe que as instruções de instalação são destinadas à mais recente combinação estável das versões do MRTK e Unity, que são **MRTK 2.5.1** e **Unity 2019.4 LTS**.
 
 > [!NOTE]
-> Se você não quiser usar o MRTK para o Unity, precisará criar o script de todas as interações e todos os comportamentos por conta própria.
+> Se você não quiser usar o MRTK para o Unity, precisará [criar o script de todas as interações e todos os comportamentos por conta própria](../unity/configure-unity-project.md).
 
 :::row:::
     :::column:::

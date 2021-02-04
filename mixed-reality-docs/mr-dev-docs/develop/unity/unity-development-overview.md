@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582989"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421405"
 ---
 # <a name="unity-development-for-hololens"></a>Desenvolvimento do Unity para HoloLens
 
@@ -36,6 +36,7 @@ A maneira mais fácil de desenvolver projetos no Unity é com o Kit de Ferrament
 | [O que é o MRTK?](mrtk-getting-started.md) | Para iniciar seu percurso, familiarize-se com o Kit de Ferramentas de Realidade Misturada e o que ele tem a oferecer |
 | [Instalar as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale o pacote mais recente do Unity e configure seu projeto para realidade misturada |
 | [Série de tutoriais do HoloLens 2](tutorials/mr-learning-base-01.md) | Aprofunde-se nos tutoriais do MRTK de nível principiante para hardware do HoloLens 2 |
+| **Opcional** [Baixar a ferramenta Recurso de Realidade Misturada](welcome-to-mr-feature-tool.md) | Uma nova ferramenta de desenvolvedor para descobrir, atualizar e adicionar pacotes de recursos de Realidade Misturada aos seus projetos do Unity |
 
 > [!IMPORTANT]
 > Caso você deseje criar um projeto do Unity sem importar o Kit de Ferramentas de Realidade Misturada, haverá um pequeno conjunto de configurações do Unity que precisará ser alterado manualmente para o Windows Mixed Reality. Elas são divididas em duas categorias: por projeto e por cena. Dê uma olhada em nosso [guia de configuração](configure-unity-project.md) para ver o processo passo a passo.

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 4d82d0974a0a797e7f8d2de2d4943666f7d32a4f
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: ff479df81316ab5ceeabf045ad1bbae007190ed4
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635478"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99238145"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Como inicializar o seu projeto e implantar o primeiro aplicativo
 
@@ -86,7 +86,13 @@ Na janela Importar Pacote do Unity, clique no botão **Todos** para garantir que
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>Como importar o Kit de Ferramentas de Realidade Misturada
 
-Baixe o pacote personalizado do Unity:
+### <a name="using-the-mixed-reality-feature-tool"></a>Como usar a Ferramenta de Recursos de Realidade Misturada
+
+Para instalar o MRTK com nosso novo aplicativo Ferramenta de Recursos de Realidade Misturada, siga nossas [instruções de instalação e uso](../welcome-to-mr-feature-tool.md) e selecione o pacote **Mixed Reality Toolkit Foundation** na categoria do Kit de Ferramentas da Realidade Misturada.
+
+### <a name="using-unity-packages"></a>Como usar pacotes do Unity
+
+Para instalar o MRTK com um pacote personalizado:
 
 * [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
 
@@ -128,7 +134,7 @@ No menu do Unity, selecione **Editar** > **Configurações de Projeto...** para 
 
 Na janela Configurações do Projeto, selecione **Gerenciamento de Plug-ins do XR** > **Instalar o Gerenciamento de Plug-ins do XR**, para instalar o Gerenciamento de Plug-ins do XR:
 
-![Configurações de Publicação do Unity com o Nome do pacote configurado](images/mr-learning-base/base-02-section5-step2-2.png)
+![Configurações de projeto com o Gerenciamento de Plug-in do XR selecionado](images/mr-learning-base/base-02-section5-step2-2.png)
 
 Depois que o Unity terminar de instalar o Gerenciamento de Plug-ins do XR. Verifique se você está nas configurações da Plataforma Universal do Windows e marque Inicializar o XR ao Iniciar.
 
@@ -142,10 +148,10 @@ Depois que o Unity terminar de importar o SDK do Windows Mixed Reality, a janela
 
 Na janela Configurador de Projeto do MRTK, use a lista suspensa **Espacializador de áudio** para selecionar o **Espacializador MS HRTF** e clique no botão **Aplicar** para aplicar a configuração:
 
-![Configurações de XR do Unity com a adição do SDK do Windows Mixed Reality selecionada](images/mr-learning-base/base-02-section5-step2-5.png)
+![Janela do configurador de projeto do MRTK com a propriedade de espacializador de áudio realçada](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
->A definição da propriedade Espacializador de áudio é opcional, mas pode aprimorar a experiência de áudio no seu projeto. Se você a definir como Espacializador MS HRTF, esse plug-in do espacializador será usado quando a propriedade AudioSource.spatialize do Unity estiver habilitada. Para saber mais sobre este tópico, veja os <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank">Tutoriais sobre áudio espacial</a>.
+>A definição da propriedade Espacializador de áudio é opcional, mas pode aprimorar a experiência de áudio no seu projeto. Se você a definir como Espacializador MS HRTF, esse plug-in do espacializador será usado quando a propriedade AudioSource.spatialize do Unity estiver habilitada. Para saber mais sobre este tópico, veja os <a href="https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank">Tutoriais sobre áudio espacial</a>.
 
 Na janela Configurações do Projeto, selecione **Player** > **Configurações de XR** e, em seguida, use a lista suspensa **Formato de Profundidade** para selecionar a **Profundidade de 16 bits**:
 
