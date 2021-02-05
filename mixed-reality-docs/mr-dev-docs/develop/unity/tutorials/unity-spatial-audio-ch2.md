@@ -3,15 +3,15 @@ title: Tutoriais de áudio espacial-2. Espacializar sons de interação de botã
 description: Adicione um botão ao seu projeto e espaciale os sons de interação do botão.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, pré-fabricados, curva de volume
-ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578465"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590758"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Espacializar sons de interação de botão
 
@@ -25,7 +25,7 @@ Neste tutorial, você aprenderá a gerar os sons de interação do botão e tamb
 
 ## <a name="add-a-button"></a>Adicionar um botão
 
-Para adicionar o botão pré-fabricado, na janela do **projeto** , selecione **ativos** e digite "PressableButtonHoloLens2" na barra de pesquisa.
+Para adicionar o botão pré-fabricado, na janela do **projeto** , selecione **pacotes** e digite "PressableButtonHoloLens2" na barra de pesquisa.
 
 ![Botão pré-fabricado em ativos](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 

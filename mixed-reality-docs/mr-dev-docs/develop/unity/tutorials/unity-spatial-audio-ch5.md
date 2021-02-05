@@ -3,15 +3,15 @@ title: Tutoriais de áudio espacial-5. Usar o reverb para adicionar distância a
 description: Adicione um efeito de reverberação para melhorar o sentido de variação de distância para áudio espacial.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer, mixer de áudio, reverbo SFX
-ms.openlocfilehash: 3d19bb0b22c507eb692a752aa318ecb82a1cf2f7
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: f7a5270d969f2e462db0244bd6c68b99347ae1a7
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578355"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590718"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Usar o reverb para adicionar distância ao áudio espacial
 

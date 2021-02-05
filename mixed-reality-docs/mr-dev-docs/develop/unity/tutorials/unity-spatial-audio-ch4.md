@@ -3,15 +3,15 @@ title: Tutoriais de áudio espacial-4. Habilitar e desabilitar o áudio espacial
 description: Use um botão para habilitar e desabilitar a espacialização de áudio em tempo de execução.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, Unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade mista, UWP, Windows 10, HRTF, função de transferência relacionada ao cabeçalho, reverberação, Microsoft Spatializer
-ms.openlocfilehash: 9239c45efa5196b94fe2e05f85a2e83df6c7789f
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578295"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590728"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. habilitar e desabilitar a espacialização em tempo de execução
 
