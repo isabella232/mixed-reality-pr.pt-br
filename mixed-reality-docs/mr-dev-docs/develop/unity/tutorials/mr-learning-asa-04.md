@@ -3,16 +3,16 @@ title: Exibir comentários de Âncoras Espaciais do Azure
 description: Conclua este curso para aprender a exibir comentários por meio das Âncoras Espaciais do Azure em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, sessões, elementos de comentários
 ms.localizationpriority: high
-ms.openlocfilehash: 05e418b84f3370274433c4cc21f0122f3475301c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f5f92d8b19da6a449b8630d7f87e0719e438b4ab
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008326"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590668"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Exibir comentários das Âncoras Espaciais do Azure
 

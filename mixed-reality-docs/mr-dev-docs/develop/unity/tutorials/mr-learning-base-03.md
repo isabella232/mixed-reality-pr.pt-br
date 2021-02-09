@@ -1,20 +1,22 @@
 ---
-title: Como configurar os perfis do MRTK
-description: Este curso mostra como configurar perfis do MRTK (Kit de Ferramentas de Realidade Misturada) para seus aplicativos de realidade misturada.
+title: Tutoriais de introdução – 3. Como configurar os perfis do MRTK
+description: Este curso mostra como configurar os perfis do MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, reconhecimento espacial
 ms.localizationpriority: high
-ms.openlocfilehash: 9b0c914bd1f518d53abdd681b3a5f6959c9a6211
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579275"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590468"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Como configurar os perfis do MRTK
+
+## <a name="overview"></a>Visão geral
 
 Neste tutorial, você aprenderá a personalizar e configurar os perfis do MRTK.
 
@@ -47,7 +49,7 @@ As principais etapas que você seguirá para ocultar a malha de reconhecimento e
 > [!NOTE]
 > O perfil de configuração é o perfil de nível superior. Assim, para poder editar outros perfis, primeiro você precisa clonar o perfil de configuração.
 
-Na janela Hierarquia, selecione o objeto **MixedRealityToolkit** e, na janela Inspetor, verifique se o Perfil de Configuração do **MixedRealityToolkit** está configurado como **DefaultXRSDKConfigurationProfile**:
+Na janela Hierarquia, selecione o objeto **MixedRealityToolkit**, então, na janela Inspetor, altere o Perfil de Configuração do **MixedRealityToolkit** para o **DefaultHoloLens2ConfigurationProfile**:
 
 ![Componente MixedRealityToolkit do Unity com DefaultHoloLens2ConfigurationProfile selecionado](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -55,7 +57,7 @@ Com o objeto **MixedRealityToolkit** ainda selecionado, na janela Inspetor, cliq
 
 ![Botão Copiar e Personalizar do componente MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step1-2.png)
 
-Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_XRSDKConfigurationProfile_ e clique no botão **Clonar** para criar uma cópia editável do **DefaultXRSDKConfigurationProfile**:
+Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_HoloLens2ConfigurationProfile_ e clique no botão **Clonar** para criar uma cópia editável do **DefaultHololens2ConfigurationProfile**:
 
 ![Janela pop-up Perfil de Configuração do clone de MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -83,7 +85,7 @@ Na guia **Reconhecimento Espacial**, clique no botão **Clonar** para abrir a ja
 
 ![Componente MixedRealityToolkit do Unity com a guia Reconhecimento Espacial selecionada](images/mr-learning-base/base-03-section1-step3-1.png)
 
-Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_XRSDKSpatialAwarenessSystemProfile_, e clique no botão **Clonar** para criar uma cópia editável do **DefaultXRSDKSpatialAwarenessSystemProfile**:
+Na janela Clonar Perfil, insira um **Nome de Perfil** adequado, por exemplo, _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_, e clique no botão **Clonar** para criar uma cópia editável do **DefaultMixedRealitySpatialAwarenessSystemProfile**:
 
 ![Janela pop-up Perfil do Sistema de Reconhecimento Espacial do clone de MixedRealityToolkit do Unity](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -93,7 +95,7 @@ O Perfil do Sistema de Reconhecimento Espacial recém-criado agora é atribuído
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Clonar o Perfil de Observador de Malha de Reconhecimento Espacial padrão
 
-Com a guia **Reconhecimento Espacial** ainda selecionada, expanda a seção **Observador de Malha Espacial do Windows Mixed Reality do SDK do XR** e clique no botão **Clonar** para abrir a janela Clonar Perfil:
+Com a guia **Reconhecimento Espacial** ainda selecionada, expanda a seção **Observador de Malha Espacial do Windows Mixed Reality** e clique no botão **Clonar** para abrir a janela Clonar Perfil:
 
 ![Componente MixedRealityToolkit do Unity com a seção Observador de Malha Espacial do Windows Mixed Reality expandida](images/mr-learning-base/base-03-section1-step4-1.png)
 

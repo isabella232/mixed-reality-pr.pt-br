@@ -3,16 +3,16 @@ title: Como usar o acompanhamento de olho
 description: Este curso mostra como usar o acompanhamento com os olhos em seus aplicativos de realidade misturada com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635470"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590368"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
 

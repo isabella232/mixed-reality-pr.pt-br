@@ -3,16 +3,16 @@ title: Integrar as Âncoras Espaciais do Azure
 description: Conclua este curso para saber como implementar as Âncoras Espaciais do Azure em um aplicativo do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens 2, âncoras espaciais do Azure, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0837ebd9d34ba12d660098fc765824da3c561d07
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581893"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590538"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrar as Âncoras Espaciais do Azure
 
