@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem, Azure, remote rendering, âncoras espaciais, serviços cognitivos, cognição, unity, machine learning, tradução de fala, pesquisa visual computacional, Microsoft Graph
-ms.openlocfilehash: e4ddfd5951945cc6a5bc9d7b71cad86a296fe725
-ms.sourcegitcommit: cd2987467044fde1e2eb227e6c25d00e744aabfc
+ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
+ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98923812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99973066"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Visão geral dos serviços de nuvem da realidade misturada do Azure
 
@@ -47,9 +47,9 @@ Como um bônus adicional, o ARR não restringe o tipo de interface do usuário q
 
 ### <a name="azure-spatial-anchors"></a>Âncoras Espaciais do Azure
 
-ASA, ou [Âncoras Espaciais do Azure](https://docs.microsoft.com /azure/spatial-anchors/), é um serviço multiplataforma que permite criar aplicativos de realidade misturada com reconhecimento espacial. Com as Âncoras Espaciais do Azure, você pode mapear, persistir e compartilhar conteúdo holográfico entre vários dispositivos em escala do mundo real. 
+As [Âncoras Espaciais do Azure](https://docs.microsoft.com /azure/spatial-anchors/) são um serviço multiplataforma que permite criar aplicativos de realidade misturada com reconhecimento espacial. Com as Âncoras Espaciais do Azure, você pode mapear, persistir e compartilhar conteúdo holográfico entre vários dispositivos em escala do mundo real. 
 
-As ASA são uma solução exclusivamente personalizada para casos de uso comuns na Realidade Misturada, incluindo:
+As Âncoras Espaciais do Azure são uma solução exclusivamente personalizada para casos de uso comuns na Realidade Misturada, incluindo:
 * **Orientação**: duas ou mais âncoras espaciais podem ser conectadas para criar uma lista de tarefas ou pontos de interesse com os quais um usuário precisa interagir.
 * **Experiências de vários usuários**: os usuários podem passar movimentos para frente e para trás interagindo com objetos no mesmo espaço virtual.
 * **Persistência de conteúdo virtual no mundo real**: os usuários podem inserir objetos virtuais no mundo real que são visíveis por outros dispositivos com suporte.
