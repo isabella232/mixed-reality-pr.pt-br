@@ -3,16 +3,16 @@ title: Usando comandos de fala
 description: Este curso mostra como configurar, criar e usar comandos de fala em seus aplicativos de realidade misturada com o MRTK (Kit de Ferramentas de Realidade Misturada).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635446"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590388"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 
@@ -59,7 +59,7 @@ Na seção Fala > **Comandos de Fala**, clique no botão **+ Adicionar um Novo C
 
 ## <a name="controlling-speech-commands"></a>Controlar comandos de fala
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK** > **SDK** > **Recursos** > **UX** > **Pré-fabricados** > **Dica de Ferramenta** para localizar os pré-fabricados de dica de ferramenta:
+Na janela Projeto, navegue até a pasta **Pacote** > **Mixed Reality Toolkit Foundation** > **SDK** > **Recursos** > **UX** > **Pré-fabricados** > **Dica de Ferramenta** para localizar os pré-fabricados da dica de ferramenta:
 
 ![Como abrir a pasta de dica de ferramenta](images/mr-learning-base/base-09-section3-step1-1.png)
 

@@ -3,16 +3,16 @@ title: Criar conteúdo dinâmico usando Solucionadores
 description: Este curso mostra como usar os solucionadores do MRTK (Kit de Ferramentas de Realidade Misturada) para criar um conteúdo dinâmico.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores
 ms.localizationpriority: high
-ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579135"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590478"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Criar conteúdo dinâmico usando Solucionadores
 
@@ -26,14 +26,14 @@ Neste tutorial, você vai explorar maneiras de posicionar hologramas dinamicamen
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Localização dos Solucionadores no MRTK
 
- Os Solucionadores do MRTK estão localizados na pasta MRTK SDK. Para ver os Solucionadores disponíveis em seu projeto, na janela Projeto, navegue até **Ativos** > **MRTK** > **SDK** > **Recursos** > **Utilitários** > **Solucionadores**:
+ Os Solucionadores do MRTK estão localizados na pasta MRTK SDK. Para ver os Solucionadores disponíveis no seu projeto, na janela Projeto, navegue até **Pacotes** > **Mixed Reality Toolkit Foundation** > **SDK** > **Recursos** > **Utilitários** > **Solucionadores**:
 
 ![Janela Projeto do Unity com a pasta Solucionadores selecionada](images/mr-learning-base/base-05-section1-step1-1.png)
 
 Neste tutorial, examinaremos a implementação do Solucionador de Indicador Direcional e o Solucionador Toque para Posicionar. Para saber mais sobre a gama completa de Solucionadores disponíveis no MRTK, você pode consultar o guia [Solucionadores](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!NOTE]
-> O Solucionador de Indicador Direcional não está localizado nas pastas de Solucionadores supramencionadas, mas nas pastas Ativos > MRTK > SDK > Experimental > Recursos > Utilitários, pois é um recurso experimental.
+> O Solucionador de Indicador Direcional não está localizado nas pastas de Solucionadores supramencionadas, mas nas pastas Pacotes > Mixed Reality Toolkit Foundation > SDK > Experimental > Recursos > Utilitários, pois é um recurso experimental.
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Como usar o Solucionador de Indicador Direcional para direcionar o usuário a objetos
 

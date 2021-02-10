@@ -116,54 +116,56 @@
                   href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
         - name: Tutoriais do HoloLens (1ª geração) e do headset imersivo
           items:
-            - name: Noções básicas do MR 100 – Introdução ao Unity
-              href: unity/tutorials/holograms-100.md
-            - name: Noções básicas do MR 101 – Projeto completo com dispositivo
-              href: unity/tutorials/holograms-101.md
-            - name: Noções básicas do MR 101E – Projeto completo com emulador
-              href: unity/tutorials/holograms-101e.md
-            - name: Entrada do MR 210 – Foco
-              href: unity/tutorials/holograms-210.md
-            - name: Entrada do MR 211 – Gesto
-              href: unity/tutorials/holograms-211.md
-            - name: Entrada do MR 212 – Voz
-              href: unity/tutorials/holograms-212.md
-            - name: MR Espacial 220 – Som espacial
-              href: unity/tutorials/holograms-220.md
-            - name: MR Espacial 230 – Mapeamento espacial
-              href: unity/tutorials/holograms-230.md
-            - name: Compartilhamento do MR 240 – Vários dispositivos HoloLens
-              href: unity/tutorials/holograms-240.md
-        - name: Tutoriais de Realidade Misturada e dos Serviços do Azure
-          items:
-            - name: MR e Azure 301 – Tradução de idioma
-              href: unity/tutorials/mr-azure-301.md
-            - name: MR e Azure 302 – Pesquisa Visual Computacional
-              href: unity/tutorials/mr-azure-302.md
-            - name: MR e Azure 302b – Visão Personalizada
-              href: unity/tutorials/mr-azure-302b.md
-            - name: MR e Azure 303 – Reconhecimento em idioma natural
-              href: unity/tutorials/mr-azure-303.md
-            - name: MR e Azure 304 – Reconhecimento facial
-              href: unity/tutorials/mr-azure-304.md
-            - name: MR e Azure 305 – Funções e Armazenamento
-              href: unity/tutorials/mr-azure-305.md
-            - name: MR e Azure 306 – Streaming de vídeo
-              href: unity/tutorials/mr-azure-306.md
-            - name: MR e Azure 307 – Machine learning
-              href: unity/tutorials/mr-azure-307.md
-            - name: MR e Azure 308 – Notificações entre dispositivos
-              href: unity/tutorials/mr-azure-308.md
-            - name: MR e Azure 309 – Application Insights
-              href: unity/tutorials/mr-azure-309.md
-            - name: MR e Azure 310 – Detecção de objetos
-              href: unity/tutorials/mr-azure-310.md
-            - name: MR e Azure 311 – Microsoft Graph
-              href: unity/tutorials/mr-azure-311.md
-            - name: MR e Azure 312 – Integração de bots
-              href: unity/tutorials/mr-azure-312.md
-            - name: MR e Azure 313 – Serviço do Hub IoT
-              href: unity/tutorials/mr-azure-301.md
+            - name: Recursos de Realidade Misturada
+              items:
+                - name: Noções básicas do MR 100 – Introdução ao Unity
+                  href: unity/tutorials/holograms-100.md
+                - name: Noções básicas do MR 101 – Projeto completo com dispositivo
+                  href: unity/tutorials/holograms-101.md
+                - name: Noções básicas do MR 101E – Projeto completo com emulador
+                  href: unity/tutorials/holograms-101e.md
+                - name: Entrada do MR 210 – Foco
+                  href: unity/tutorials/holograms-210.md
+                - name: Entrada do MR 211 – Gesto
+                  href: unity/tutorials/holograms-211.md
+                - name: Entrada do MR 212 – Voz
+                  href: unity/tutorials/holograms-212.md
+                - name: MR Espacial 220 – Som espacial
+                  href: unity/tutorials/holograms-220.md
+                - name: MR Espacial 230 – Mapeamento espacial
+                  href: unity/tutorials/holograms-230.md
+                - name: Compartilhamento do MR 240 – Vários dispositivos HoloLens
+                  href: unity/tutorials/holograms-240.md
+            - name: Realidade Misturada e Serviços do Azure
+              items:
+                - name: MR e Azure 301 – Tradução de idioma
+                  href: unity/tutorials/mr-azure-301.md
+                - name: MR e Azure 302 – Pesquisa Visual Computacional
+                  href: unity/tutorials/mr-azure-302.md
+                - name: MR e Azure 302b – Visão Personalizada
+                  href: unity/tutorials/mr-azure-302b.md
+                - name: MR e Azure 303 – Reconhecimento em idioma natural
+                  href: unity/tutorials/mr-azure-303.md
+                - name: MR e Azure 304 – Reconhecimento facial
+                  href: unity/tutorials/mr-azure-304.md
+                - name: MR e Azure 305 – Funções e Armazenamento
+                  href: unity/tutorials/mr-azure-305.md
+                - name: MR e Azure 306 – Streaming de vídeo
+                  href: unity/tutorials/mr-azure-306.md
+                - name: MR e Azure 307 – Machine learning
+                  href: unity/tutorials/mr-azure-307.md
+                - name: MR e Azure 308 – Notificações entre dispositivos
+                  href: unity/tutorials/mr-azure-308.md
+                - name: MR e Azure 309 – Application Insights
+                  href: unity/tutorials/mr-azure-309.md
+                - name: MR e Azure 310 – Detecção de objetos
+                  href: unity/tutorials/mr-azure-310.md
+                - name: MR e Azure 311 – Microsoft Graph
+                  href: unity/tutorials/mr-azure-311.md
+                - name: MR e Azure 312 – Integração de bots
+                  href: unity/tutorials/mr-azure-312.md
+                - name: MR e Azure 313 – Serviço do Hub IoT
+                  href: unity/tutorials/mr-azure-301.md
     - name: Configurando seu projeto
       items:
         - name: Introdução ao MRTK

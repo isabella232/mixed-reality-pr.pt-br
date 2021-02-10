@@ -3,16 +3,16 @@ title: Tutoriais de Serviços de Fala do Azure – 1. Integrar e usar a transcri
 description: Conclua este curso para saber como implementar o SDK de Fala do Azure em um aplicativo de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: c663bbf443c206750854c1b8f4cd8946eacd28b1
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 818e4c7ab60a2b17b60bfc97f564a4a87bf33a9b
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635454"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590118"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrar e usar a transcrição e o reconhecimento de fala
 
@@ -63,7 +63,7 @@ Com o objeto **MixedRealityToolkit** selecionado na janela Hierarquia, na janela
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 > [!TIP]
-> Para lembrar como clonar e configurar perfis do MRTK, consulte as instruções de [Como configurar os perfis do Kit de Ferramentas de Realidade Misturada](mr-learning-base-03.md).
+> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 ## <a name="configuring-the-capabilities"></a>Como configurar as funcionalidades
 

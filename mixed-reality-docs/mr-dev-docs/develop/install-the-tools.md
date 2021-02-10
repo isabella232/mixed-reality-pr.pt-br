@@ -7,20 +7,22 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: c45fa347768e5d35441f2c1fd59da815a80ec707
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 0b952922c7723bf0e2c87ddb7fed9a896d65e833
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166771"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606121"
 ---
 # <a name="install-the-tools"></a>Instalar as ferramentas
 
 Obtenha as ferramentas necessárias para criar aplicativos para os headsets imersivos (VR) do Microsoft HoloLens e do Windows Mixed Reality. Não há nenhum SDK separado para o desenvolvimento no Windows Mixed Reality; você usará o Visual Studio com o SDK do Windows 10.
 
-Não tem um dispositivo de realidade misturada? Você pode instalar o [emulador do HoloLens](platform-capabilities-and-apis/using-the-hololens-emulator.md) para testar algumas funcionalidades de aplicativos de realidade misturada sem um HoloLens. Você também pode usar o [simulador do Windows Mixed Reality](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) para testar seus aplicativos de realidade misturada para headsets imersivos. Se você estiver usando o Unity, poderá usar a simulação de entrada do [MRTK (Kit de Ferramentas de Realidade Misturada)](https://github.com/Microsoft/MixedRealityToolkit-Unity) para testar vários tipos de interações de entrada, como entrada por rastreamento de mão e rastreamento ocular.
+Não tem um dispositivo de realidade misturada? Você pode instalar o [emulador do HoloLens](platform-capabilities-and-apis/using-the-hololens-emulator.md) para testar algumas funcionalidades de aplicativos de realidade misturada sem um HoloLens. Você também pode usar o [simulador do Windows Mixed Reality](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) para testar seus aplicativos de realidade misturada para headsets imersivos. 
 
-É recomendável instalar o mecanismo de jogos Unity como a maneira mais fácil de começar a criar aplicativos de realidade misturada. No entanto, você também poderá criar com base no DirectX se quiser usar um mecanismo personalizado.
+É recomendável instalar o mecanismo de jogos Unity ou Unreal como a maneira mais fácil de começar a criar aplicativos de realidade misturada. No entanto, você também poderá criar com base no DirectX se quiser usar um mecanismo personalizado.
+
+Se você estiver usando o Unity, poderá usar a simulação de entrada do [Kit de Ferramentas de Realidade Misturada do Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) para testar vários tipos de interações de entrada, como entrada por acompanhamento da mão e acompanhamento ocular. Para projetos do Unreal, use o [plug-in das Ferramentas de UX](https://github.com/microsoft/MixedReality-UXTools-Unreal) para testar interações comuns de entrada e recursos de experiência do usuário.
 
 >[!TIP]
 >Adicione esta página aos favoritos e acesse-a regularmente para se manter atualizado sobre a versão mais recente de cada ferramenta recomendada para o desenvolvimento de realidade misturada.

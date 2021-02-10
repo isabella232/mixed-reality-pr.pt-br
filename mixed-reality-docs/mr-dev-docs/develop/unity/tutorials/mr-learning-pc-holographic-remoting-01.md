@@ -3,16 +3,16 @@ title: Introdução à comunicação remota holográfica para PC
 description: Conclua este curso para saber como transmitir aplicativos de realidade misturada remotamente do seu PC para o HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, comunicação remota holográfica do PC, dicas de ferramenta, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581968"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590378"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introdução à Comunicação Remota Holográfica para PC
 
@@ -67,7 +67,7 @@ Então siga as instruções para [Alterar a Opção de Exibição de Reconhecime
 Baixe e **importe** o [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Importar o Mixed Reality Toolkit](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
 
@@ -129,9 +129,9 @@ Para cada um dos botões restantes, conclua o processo descrito acima para atrib
 
 Agora, os botões estão configurados para demonstrar a funcionalidade de recorte e troca de modelos. É hora de adicionar modelos 3D e os objetos de recorte ao script.
 
-Fornecemos seis modelos 3D diferentes para demonstração. Expanda o **_ModelParentobject_* _ para expor esses modelos 3D.
+Fornecemos seis modelos 3D diferentes para demonstração. Expanda o ***ModelParentobject*** para expor esses modelos 3D.
 
-Com o objeto ButtonParent ainda selecionado na janela Hierarquia, na janela Inspetor, localize o componente _ *Exibir Controle de Botão (Script)* * e expanda a variável **Modelos**.
+Com o objeto ButtonParent ainda selecionado na janela hierarquia, na janela Inspetor, localize o componente **Exibir Controle de Botão (Script)** e expanda a variável **Modelos**.
 
 No campo **Tamanho**, insira o número de modelos 3D que você gostaria de ter em sua cena. Neste caso, seriam seis. Ele criará campos para adicionar modelos 3D.
 
@@ -169,7 +169,7 @@ Nesta seção, você vai explorar como habilitar o Acompanhamento Ocular em seu 
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identificar objetos de destino e dicas de ferramenta associadas
 
-Na janela Hierarquia, selecione o objeto ModelParent. Expanda o **_MarsCuriosity -> Rover_ *_ para encontrar cinco partes principais do MarsCuriosityRover: _* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer** e **POI-RUHF Antenna**.
+Na janela Hierarquia, selecione o objeto ModelParent. Expanda ***MarsCuriosity -> Rover** _ para encontrar cinco partes principais do MarsCuriosityRover: _*POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer** e **POI-RUHF Antenna**.
 
 * Observe cinco objetos de dica de ferramentas correspondentes associados a partes MarsCuriosityRover na janela Hierarquia.
 * Você vai configurar esses objetos para realçar a experiência ao examinar as partes MarsCuriosityRover.

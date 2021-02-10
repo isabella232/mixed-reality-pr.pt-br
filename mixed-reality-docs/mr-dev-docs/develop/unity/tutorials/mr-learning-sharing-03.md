@@ -3,16 +3,16 @@ title: Como conectar vários usuários
 description: Conclua este curso para aprender a conectar vários usuários em um aplicativo de realidade misturada do HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699035"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590188"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Como conectar vários usuários
 
@@ -69,7 +69,7 @@ Na janela Inspetor, use o botão **Adicionar Componente** para adicionar o compo
 
 ### <a name="2-create-the-avatar"></a>2. Criar o avatar
 
-Na janela Projeto, navegue até a pasta **Assets** > **MRTK** > **StandardAssets** > **Materials** para localizar os materiais do MRTK.
+Na janela Projeto, navegue até a pasta **Pacotes** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materiais** para localizar os materiais do MRTK.
 
 Em seguida, na janela Hierarquia, clique com o botão direito do mouse no objeto **PhotonUser** e selecione **Objeto 3D** > **Esfera** para criar um objeto de esfera como um filho do objeto PhotonUser e configure-o da seguinte maneira:
 

@@ -3,16 +3,16 @@ title: Como interagir com objetos 3D
 description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para manipular objetos 3D em aplicativos de realidade misturada e interagir com eles.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
-keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, caixas delimitadoras
+keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, Controles de Limites
 ms.localizationpriority: high
-ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578735"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590418"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Como interagir com objetos 3D
 
@@ -76,7 +76,7 @@ Com todos os objetos de peças do Rover e o objeto RoverAssembly ainda seleciona
 > [!NOTE]
 > Até agora você habilitou a manipulação de objetos para todos os objetos de peças do Rover e o objeto RoverAssembly.
 
-Na janela Projeto, navegue até a pasta **Assets** > **MRTK** > **StandardAssets** > **Audio** para localizar os clipes de áudio:
+Na janela Projeto, navegue até a pasta **Pacotes** > **Mixed Reality Toolkit Standard Assets** > **Áudio** para localizar os clipes de áudio:
 
 ![Janela Projeto do Unity com a pasta Áudio selecionada](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -115,15 +115,15 @@ Se agora você entrar no modo de Jogo, poderá usar a interação próxima ou di
 
 Para saber mais sobre o componente Object Manipulator e suas propriedades associadas, acesse o guia [Manipulador de Objeto](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-## <a name="adding-bounding-boxes"></a>Como adicionar caixas delimitadoras
+## <a name="adding-bounds-control"></a>Como adicionar o Controle de Limites
 
-As caixas delimitadoras tornam mais fácil e mais intuitivo manipular objetos com uma mão tanto em interações próximas como em distantes fornecendo alças que podem ser usadas para escala e rotação.
+O Controle de Limites torna mais fácil e mais intuitivo manipular objetos com uma mão tanto em interações próximas como em distantes fornecendo alças que podem ser usadas para escala e rotação.
 
-Neste exemplo, você adicionará uma Caixa delimitadora ao objeto RoverExplorer para que toda a experiência seja facilmente movida, girada e escalonada. Além disso, você vai configurar o Menu para poder ativar e desativar a Caixa delimitadora.
+Neste exemplo, você adicionará um BoundsControl ao objeto RoverExplorer para que toda a experiência seja facilmente movida, girada e escalonada. Além disso, você vai configurar o Menu para poder ativar e desativar o Controle de Limites.
 
 Na janela Hierarquia, selecione o objeto **RoverExplorer** e, em seguida, na janela Inspetor, use o botão **Adicionar Componente** para adicionar os seguintes componentes:
 
-* Componente **BoundingBox**
+* Componente **BoundsControl**
 * Componente **Object Manipulator (Script)**
 
 Em seguida, **desmarque** a caixa de seleção próxima a todos os componentes para deixá-los **desabilitados** por padrão:
@@ -131,19 +131,19 @@ Em seguida, **desmarque** a caixa de seleção próxima a todos os componentes p
 ![Unity com o objeto RoverExplorer selecionado e os componentes adicionados e desabilitados](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> A visualização da Caixa delimitadora é criada no runtime e, portanto, não fica visível até que você entre no modo de Jogo.
+> A visualização do Controle de Limites é criada no runtime e, portanto, não fica visível até que você entre no modo de Jogo.
 
 > [!NOTE]
->O componente BoundingBox adicionará automaticamente o componente NearInteractionGrabbable em runtime. Portanto, não precisamos adicionar esse componente para pegar os objetos delimitados com as mãos controladas.
+>O componente BoundsControl adicionará automaticamente o componente NearInteractionGrabbable no runtime. Portanto, não precisamos adicionar esse componente para pegar os objetos delimitados com as mãos controladas.
 
 > [!NOTE]
 >O Object Manipulator (Script) adiciona automaticamente o Constraint Manager (Script)
 
-Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar os quatro botões e renomeie o terceiro botão para **BoundingBox_Enable**; em seguida, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
+Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar os quatro botões e renomeie o terceiro botão como **BoundsControl_Enable**. Em seguida, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
 
 * Altere o **Texto do Rótulo Principal** para **Habilitado**
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundsControl** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **marcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
@@ -151,13 +151,13 @@ Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar 
 * Verifique se a caixa de seleção do argumento está **marcada**
 * Deixe o **Ícone** como o ícone 'cubo com o controle de limites'
 
-![Unity com o objeto de botão BoundingBox_Enable selecionado e o componente Auxiliar de Configuração do Botão configurado](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity com o objeto de botão BoundsControl_Enable selecionado e o componente Button Config Helper configurado](images/mr-learning-base/base-07-section2-step1-2.png)
 
-Renomeie o quarto e último botão como **BoundingBox_Disable** e, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
+Renomeie o quarto e último botão como **BoundsControl_Disable** e, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
 
 * Altere o **Texto do Rótulo Principal** para **Desabilitado**
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundsControl** > **bool Enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
@@ -165,17 +165,17 @@ Renomeie o quarto e último botão como **BoundingBox_Disable** e, na janela Ins
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 * Altere o **Ícone** para o ícone 'cubo com o controle de limites'
 
-![Unity com o objeto de botão BoundingBox_Disable selecionado e o componente Auxiliar de Configuração do Botão configurado](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity com o objeto de botão BoundsControl_Disable selecionado e o componente Button Config Helper configurado](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Se agora você entrar no modo de Jogo e habilitar o Controle de Limites clicando no botão Habilitar, poderá usar a interação próxima ou distante para mover, girar e escalar a Caixa Delimitadora e usar o botão Desabilitar para desabilitar a Caixa Delimitadora novamente:
+Se agora você entrar no modo de Jogo e habilitar o Controle de Limites clicando no botão Habilitar, poderá usar a interação próxima ou distante para mover, girar e escalar o Controle de Limites e usar o botão Desabilitar para desabilitar o Controle de Limites novamente:
 
-![Modo de exibição dividida do Modo de reprodução do Unity com a Caixa Delimitadora sendo manipulada](images/mr-learning-base/base-07-section2-step1-4.png)
+![Modo de exibição dividida do Modo de Jogo do Unity com o Controle de Limites sendo manipulado](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Para saber mais sobre o componente de Caixa Delimitadora e as propriedades associadas a ele, acesse o guia da [Caixa Delimitadora](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Para saber mais sobre o componente de Controle de Limites e as propriedades associadas a ele, acesse o guia da [Controle de Limites](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## <a name="congratulations"></a>Parabéns
 
-Neste tutorial, você aprendeu como habilitar a manipulação próxima e distante de objetos 3D e como limitar os tipos de manipulação permitidos. Você também aprendeu como adicionar uma caixa delimitadora em objetos 3D para facilitar o controle da manipulação de objetos.
+Neste tutorial, você aprendeu como habilitar a manipulação próxima e distante de objetos 3D e como limitar os tipos de manipulação permitidos. Você também aprendeu a adicionar o Controle de Limites em objetos 3D para facilitar o controle da manipulação de objetos.
 
 > [!div class="nextstepaction"]
 > [Próximo tutorial: 8. Como usar o acompanhamento de olho](mr-learning-base-08.md)

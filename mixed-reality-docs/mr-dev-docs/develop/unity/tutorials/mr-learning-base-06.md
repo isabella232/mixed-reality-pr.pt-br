@@ -3,16 +3,16 @@ title: Como criar interfaces do usuário
 description: Este curso mostra como usar o MRTK (Kit de Ferramentas de Realidade Misturada) para criar interfaces do usuário estáticas e dinâmicas.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, pré-fabricados, hologramas, dicas de ferramentas
 ms.localizationpriority: high
-ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 3b32faab4be13d42f228659285244c206680466e
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635550"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590548"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Como criar interfaces do usuário
 
@@ -86,7 +86,7 @@ e o botão **Detalhar** para ativar e desativar a exibição detalhada:
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Como criar um menu dinâmico que segue o usuário
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK** > **SDK** > **Recursos** > **UX** > **Pré-fabricados** > **Menus**, clique e arraste o pré-fabricado **NearMenu4x1** para a janela Hierarquia, defina a sua **Posição** de Transformar como X = 0, Y = -0,4, Z = 0 e configure-o da seguinte maneira:
+Na janela Projeto, navegue até a pasta **Pacotes** > **Mixed Reality Toolkit Foundation** > **SDK** > **Recursos** > **UX** > **Pré-fabricados** > **Menus**, clique e arraste o pré-fabricado **NearMenu4x1** para a janela Hierarquia, defina a sua **Posição** de Transformação como X = 0, Y = -0,4, Z = 0 e configure-o da seguinte maneira:
 
 * Verifique se o **Tipo de Destino Rastreado** do componente **SolverHandler** está definido como **Cabeça**
 * Marque a caixa de seleção ao lado do componente Solucionador **RadialView** para que ele seja habilitado por padrão
@@ -162,7 +162,7 @@ Em seguida, configure o componente **TextMeshPro – Texto** da seguinte maneira
 
 ## <a name="adding-tooltips"></a>Como adicionar dicas de ferramenta
 
-Na janela Projeto, navegue até a pasta **Ativos** > **MRTK** > **SDK** > **Recursos** > **UX** > **Pré-fabricados** > **Dica de Ferramenta** para localizar os pré-fabricados de dica de ferramenta:
+Na janela Projeto, navegue até a pasta **Pacotes** > **Mixed Reality Toolkit Foundation** > **SDK** > **Recursos** > **UX** > **Pré-fabricados** > **Dica de Ferramenta** para localizar os pré-fabricados de dica de ferramenta:
 
 ![Janela Projeto do Unity com a pasta Dicas de Ferramentas selecionada](images/mr-learning-base/base-06-section4-step1-1.png)
 

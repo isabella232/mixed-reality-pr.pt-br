@@ -7,12 +7,12 @@ ms.date: 01/27/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: b9d54edb251cfe22d4f5fbea6fa8c923f6ff2d69
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243869"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570249"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Bem-vindo(a) à Ferramenta de Recursos de Realidade Misturada
 
@@ -33,9 +33,11 @@ Para executar a Ferramenta de Recursos de Realidade Misturada, você precisará 
 > [!NOTE]
 > Atualmente, a Ferramenta de Recursos de Realidade Misturada só é executada no Windows, mas o suporte ao macOS estará disponível em breve.
 
+## <a name="download"></a>Baixar 
+
 Depois de configurar seu ambiente:
 
-* Baixe a última versão da Ferramenta de Recursos de Realidade Misturada do [Centro de Download da Microsoft](https://aka.ms/MRFeatureTool).
+* [Baixe a última versão da Ferramenta de Recursos da Realidade Misturada](https://aka.ms/MRFeatureTool) no Centro de Download da Microsoft.
 * Quando o download for concluído, descompacte o arquivo e salve-o na área de trabalho
     * Recomendamos criar um atalho para o arquivo executável para obter acesso mais rápido
 
