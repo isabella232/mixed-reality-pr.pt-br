@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: 1adfb979cfc22be5da18ed990c9db55e6bad97f3
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99238133"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496164"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Usando o plug-in OpenXR de realidade misturada para o Unity
 
@@ -20,7 +20,7 @@ A partir da versão 2020,2 do Unity, o pacote de plugin OpenXR de realidade mist
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Unity 2020,2 ou posterior
-* Plug-in do Unity OpenXR 0.1.2 ou posterior
+* Plug-in do Unity OpenXR 0.1.3 ou posterior
 * Visual Studio 2019 ou posterior
 * Instalar o suporte da plataforma **UWP** no Unity para aplicativos do HoloLens 2
 
@@ -87,20 +87,6 @@ Para utilizar um ou mais dos exemplos, instale o [ARFoundation 4.0 +](https://do
 O MRTK Unity dá suporte ao plug-in OpenXR da realidade mista começando pela versão 2.5.3.  
 
 1. Abra a [ferramenta de funcionalidade Mixed Reality](welcome-to-mr-feature-tool.md) novamente e selecione o pacote de **plug-in OpenXR da realidade misturada** na categoria suporte à plataforma
-
-<!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
-
-1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
-
-```json
-"dependencies": {
-    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
-    …
-}
-``` -->
-
 2. Vá para o script de componente do MixedReality Toolkit no Inspetor e alterne para o perfil **DefaultOpenXRConfigurationProfile** :
 
 ![Captura de tela de alternância da configuração MRTK no componente Mixed Reality Toolkit no Inspetor](images/openxr-img-11.png)
@@ -121,7 +107,7 @@ Agora que você tem o projeto configurado para OpenXR e tem acesso a exemplos, c
 
 O OpenXR ainda é experimental, portanto, agradecemos os comentários que você pode nos dar para ajudá-lo a melhorá-lo. Você nos verá nos fóruns do [Unity](https://aka.ms/unityforums) marcando sua postagem no fórum com o **Microsoft**  +  **OpenXR** e o **HoloLens 2** ou a **realidade mista do Windows**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Como configurar seu projeto sem o MRTK](configure-unity-project.md)
 * [Configurações recomendadas do Unity](recommended-settings-for-unity.md)

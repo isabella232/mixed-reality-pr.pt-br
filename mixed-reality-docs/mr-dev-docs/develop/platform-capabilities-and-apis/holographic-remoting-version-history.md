@@ -6,17 +6,29 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicação remota, Holographic de comunicação remota, histórico de versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699005"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496034"
 ---
 # <a name="holographic-remoting-version-history"></a>Histórico de versões de comunicação remota do Holographic
 
 > [!IMPORTANT]
 > Estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
+
+## <a name="version-250-february-12-2021"></a>Versão 2.5.0 (12 de fevereiro de 2021) <a name="v2.5.0"></a>
+* A Holographic remota usando a [API OpenXR](../native/openxr.md) agora dá suporte a:
+  * Extensão de XR_MSFT_spatial_anchor. Essa extensão permite que um aplicativo crie âncoras espaciais, que são pontos de espaço livre arbitrários no ambiente físico do usuário que serão rastreados pelo tempo de execução.
+  * Extensão de XR_MSFT_controller_model. Essa extensão fornece um mecanismo para carregar modelos GLTF para controladores.
+  * Canais de dados personalizados como parte da extensão de XR_MSFT_holographic_remoting. Um exemplo para isso é mostrado no [exemplo remoto OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+* Sincronização aprimorada entre o Player e o lado remoto. Isso permite alterar dinamicamente a pose e o buffer de quadros, o que garante que o conteúdo renderizado remotamente alcance os monitores na taxa de quadros de destino esperada.
+* Desempenho aprimorado do Holographic Remoting Player disponível por meio do Microsoft Store. No HoloLens 2, o jogador agora executa um sólido em 60 quadros por segundo.
+* Transmissão otimizada de malhas de superfície espacial que podem ser consultadas por meio de [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) por um aplicativo remoto.
+* Corrigido um problema no qual a chamada de métodos SpatialAnchorManager ou a liberação de âncoras causaram exceções na desconexão.
+* Correção do problema de Threading que leva a falhas ao fechar instâncias de PlayerContext ou RemoteContext.
+* Muitas outras correções de bugs e aprimoramentos de estabilidade.
 
 ## <a name="version-241-january-22-2021"></a>Versão 2.4.1 (22 de janeiro de 2021) <a name="v2.4.1"></a>
 

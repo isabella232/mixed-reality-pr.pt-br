@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, realidade mista do Windows, OpenXR Ferramentas para Desenvolvedores, DirectX, nativo, aplicativo nativo, mecanismo personalizado, middleware, introdução, 101, extensões de visualização, versão de tempo de execução do OpenXR, status do sistema
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613190"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496064"
 ---
 # <a name="getting-started-with-openxr"></a>Introdução ao OpenXR
 
@@ -35,7 +35,7 @@ Para começar a desenvolver aplicativos OpenXR para headsets de imersão mistura
 1. Verifique se você está executando pelo menos o Windows 10 pode 2019 atualização (1903), que é o requisito mínimo para que os usuários finais da realidade mista do Windows executem aplicativos OpenXR.  Se você estiver em uma versão anterior do Windows 10, poderá atualizar usando o assistente de <a href="https://www.microsoft.com/software-download/windows10" target="_blank">atualização do Windows 10</a>.
 2. Configure um headset de realidade mista do Windows ou siga as instruções para [habilitar o simulador de realidade mista do Windows](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
 
-Pronto!  O tempo de execução do Windows Mixed Reality OpenXR é instalado e torna-se ativo automaticamente para todos os usuários do Windows Mixed Reality.  O Microsoft Store mantém o tempo de execução atualizado.
+É isso!  O tempo de execução do Windows Mixed Reality OpenXR é instalado e torna-se ativo automaticamente para todos os usuários do Windows Mixed Reality.  O Microsoft Store mantém o tempo de execução atualizado.
 
 Para ativar o Windows Mixed Reality OpenXR Runtime novamente, inicie o portal de realidade misturada no menu iniciar e selecione "corrigir" na parte superior da janela.  Se esse botão estiver ausente, o tempo de execução do OpenXR já estará ativo.<br>
 
