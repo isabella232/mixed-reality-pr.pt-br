@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, desenvolvimento do azure, âncoras espaciais, realidade misturada, desenvolvimento, recursos, novo projeto, emulador, documentação, guias, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583026"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496185"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Âncoras Espaciais do Azure no Unreal
 
@@ -44,6 +44,12 @@ Confira a documentação [Autenticação das Âncoras Espaciais do Azure](/azure
 
 > [!NOTE]
 > As Âncoras Espaciais do Azure no Unreal 4.25 não dão suporte a tokens de autenticação do Azure AD, mas o suporte para essa funcionalidade será disponibilizado em uma versão posterior.
+
+## <a name="enabling-internet-access"></a>Habilitar o acesso à Internet
+
+Abra **Configurações do Projeto > HoloLens** e habilite a funcionalidade **Cliente da Internet**:
+
+![configurações do projeto do HoloLens com recursos realçados](images/asa-enable-wifi-connection.jpg)
 
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Como adicionar plug-ins das Âncoras Espaciais do Azure
 
