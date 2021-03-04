@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582277"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759472"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -146,7 +146,7 @@ Depois de estar satisfeito com sua animação
 
 ## <a name="implementing-hands-into-your-unity-project"></a>Implementando mãos em seu projeto do Unity
 
-### <a name="best-practices"></a>Práticas recomendadas
+### <a name="best-practices"></a>Melhores práticas
 
 * Sugerimos reduzir verticalmente as mãos no Unity para 0,6
 * As mãos devem ser executadas duas vezes e, se não forem concluídas, passarão continuamente em loop até que o gesto seja concluído. As mãos devem ser repetidas duas vezes para garantir que o usuário tenha tempo para se registrar e ver o gesto. As mãos devem aparecer e desaparecer entre os loops. 
@@ -169,7 +169,7 @@ Depois de estar satisfeito com sua animação
 * As mãos só devem ser ensinadas uma vez. O excesso de ensino pode causar confusão e bagunças
 *   Colocando-o no Unity, baixe o MRTK mais recente aqui: https://github.com/microsoft/MixedRealityToolkit-Unity
     *   Material: Teaching_Hand2
-    *   Scripts: consulte as diretrizes do MRTK para o <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK Hand </a>
+    *   Scripts: consulte as diretrizes do MRTK para o <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand </a>
     *   Configuração por projeto
         *   Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
 

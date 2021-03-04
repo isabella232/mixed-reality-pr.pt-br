@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, controle deslizante, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 29a10389e476fcb40edd97619796a56cbb579c89
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009556"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759822"
 ---
 # <a name="slider"></a>Slider
 
@@ -25,13 +25,13 @@ Um controle deslizante é um componente de interface do usuário usado para defi
 
 ## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Controle deslizante em MRTK (Kit de ferramentas de realidade misturada) para Unity
 
-* [MRTK-controle deslizante](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Sliders.html)
+* [MRTK-controle deslizante](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/sliders.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

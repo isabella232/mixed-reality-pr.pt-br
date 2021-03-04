@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Realidade mista do Windows, barra de aplicativos, caixa delimitadora, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista
-ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: aba2e318439fec2bbb9e986c2ff7cac7a8a5fb3a
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847654"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759432"
 ---
 # <a name="bounding-box-and-app-bar"></a>Caixa delimitadora e barra de aplicativos
 ![O limite é a interface padrão para a manipulação de objetos em realidade misturada.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -95,7 +95,7 @@ A barra de aplicativos é um menu de nível de objeto, que contém uma série de
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Caixa delimitadora no MRTK (Kit de ferramentas de realidade misturada) para Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e pré-fabricados para a caixa delimitadora e a barra de aplicativos. Você pode adicionar uma caixa delimitadora atribuindo o script BoundingBox.cs em qualquer objeto.
 
-* [MRTK-caixa delimitadora](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+* [MRTK-caixa delimitadora](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/bounding-box.md)
 
 
 <br>
@@ -103,7 +103,7 @@ A barra de aplicativos é um menu de nível de objeto, que contém uma série de
 ---
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

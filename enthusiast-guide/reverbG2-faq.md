@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242527"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759281"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Perguntas frequentes sobre o HP reverbs G2
 
@@ -102,3 +102,8 @@ Verifique se o cabo conectado ao headset está totalmente encaixado. Há um pequ
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Como posso desligar o headset enquanto ainda estou usando meu PC
 
 Desconecte o adaptador de conexão AC da caixa de link no cabo do headset para remover a energia para o headset.
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>A imagem das exibições do reverberador de reverbo G2 é menor e somente no canto superior esquerdo
+
+Se você tiver uma GPU de alimentação AMD, será necessário desabilitar o upescala automático. Enquanto o headset estiver conectado, navegue até configurações-> realidade misturada-> a resolução de > headset.
+No menu suspenso, selecione a opção "4320 x 2160 (melhor qualidade)". Quando "upescala automático (melhor desempenho)" é selecionado, você pode enfrentar o problema com a exibição.

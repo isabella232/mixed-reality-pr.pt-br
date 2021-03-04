@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, teclado, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 8efb5446479e53569349eda302c7d4dcb844a137
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9f42940b689a8fef77c9cf2f269100fccccfe6e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009726"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759852"
 ---
 # <a name="keyboard"></a>Teclado
 
@@ -25,7 +25,7 @@ Seu aplicativo de realidade misturada pode invocar o teclado do sistema a qualqu
 
 ## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Teclado do sistema no MRTK (Kit de ferramentas de realidade misturada) para Unity
 
-* [MRTK-teclado do sistema](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html)
+* [MRTK-teclado do sistema](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
 
 <br>
 
@@ -38,7 +38,7 @@ Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos
 > [!div class="nextstepaction"]
 > [Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

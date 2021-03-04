@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582543"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759742"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapeamento espacial no Unity
 
@@ -480,7 +480,7 @@ A DLL de compreensão armazena internamente o Playspace como uma grade de oito c
 * Quando o rastreamento for perdido, o próximo evento onsurfacechanged removerá todas as malhas.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapeamento espacial no kit de ferramentas de realidade misturada
-Para obter mais informações sobre como usar o mapeamento espacial com o kit de ferramentas de realidade misturada v2, consulte a <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">seção reconhecimento espacial</a> do docs MRTK.
+Para obter mais informações sobre como usar o mapeamento espacial com o kit de ferramentas de realidade misturada v2, consulte a <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">seção reconhecimento espacial</a> do docs MRTK.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, mensagem de contorno, marca, com a realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009606"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759402"
 ---
 # <a name="billboarding-and-tag-along"></a>Mural e tag-along
 
@@ -49,7 +49,7 @@ Assim como o conteúdo realmente bloqueado, os objetos de marca podem se comprov
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Contorno e marcação em MRTK (Kit de ferramentas de realidade misturada) para o Unity
 O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts para o comportamento de etiqueta e de contorno. Atribua o script Billboard.cs a qualquer objeto para adicionar o comportamento de mensagem e fazer com que o objeto sempre fique à frente. Para adicionar o comportamento de marca, use o script RadialView.cs. Você pode ajustar várias opções, como lerping time, Distance e diploma.
 
-* [MRTK-solucionador de exibição radial](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
+* [MRTK-solucionador de exibição radial](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
 * [MRTK-script do mural](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
@@ -57,7 +57,7 @@ O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scr
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

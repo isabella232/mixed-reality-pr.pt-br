@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, dica de ferramenta, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ac8d12dbf681fb02df6fe70f3fd7b67615f4a5d6
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009406"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759772"
 ---
 # <a name="tooltip"></a>Dica de ferramenta
 
@@ -25,13 +25,13 @@ Dica de ferramenta é uma breve descrição vinculada a outro controle ou objeto
 
 ## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Dica de ferramenta em MRTK (Mixed Reality Toolkit) para Unity
 
-* [MRTK-dica de ferramenta](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html)
+* [MRTK-dica de ferramenta](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/tooltip.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, voz, Cortana, fala, entrada, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista, olhar
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583222"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759137"
 ---
 # <a name="voice-input"></a>Entrada de voz
 
@@ -172,7 +172,7 @@ Sempre que o teclado Holographic estiver ativo, você poderá alternar para o mo
 
 Considere a adição de comandos de voz em qualquer experiência que você criar. A voz é uma maneira poderosa de controlar o sistema e os aplicativos. Como os usuários falam com diferentes tipos de dialetos e acentos, a escolha correta das palavras-chave de fala garantirá que os comandos dos usuários sejam interpretados de forma não ambígua.
 
-### <a name="best-practices"></a>Práticas recomendadas
+### <a name="best-practices"></a>Melhores práticas
 
 A seguir, algumas práticas que auxiliarão em um reconhecimento de fala perfeito.
 * **Use comandos concisos** - quando possível, escolha palavras com duas ou mais sílabas. Palavras com uma sílaba tendem a empregar sons de vogais diferentes quando faladas por pessoas com sotaques diferentes. Exemplo: "reproduzir vídeo" é melhor do que "reproduzir o vídeo selecionado no momento"
@@ -273,7 +273,7 @@ Para aplicativos que desejam aproveitar as opções de processamento de entrada 
 
 Todo esse processamento de áudio é acelerado por hardware, o que significa que os recursos esgotam muito menos energia do que se o mesmo processamento foi feito na CPU do HoloLens. Evite executar outro processamento de entrada de áudio na CPU para maximizar a vida útil da bateria do sistema e aproveitar o processamento interno de entrada de áudio descarregado.
 
-## <a name="languages"></a>Idiomas
+## <a name="languages"></a>Languages
 
 O HoloLens 2 [dá suporte a vários idiomas](/hololens/hololens2-language-support). Tenha em mente que os comandos de fala sempre serão executados no idioma de exibição do sistema, mesmo se vários teclados estiverem instalados ou se os aplicativos tentarem criar um reconhecedor de fala em um idioma diferente.
 
@@ -290,7 +290,7 @@ Para o Windows Mixed Reality Developer Edition versão 2017, a lógica de gerenc
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrada de voz em MRTK (Kit de ferramentas de realidade misturada) para Unity
 Com o **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode atribuir facilmente o comando de voz em qualquer objeto. Use o **perfil de entrada de fala** do MRTK para definir suas palavras-chave. Ao atribuir o script **SpeechInputHandler** , você pode fazer com que qualquer objeto responda às palavras-chave definidas no perfil de entrada de fala. O SpeechInputHandler também fornece um rótulo de confirmação de fala para melhorar a confiança do usuário.
 
-* [MRTK-comando de voz](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [MRTK-comando de voz](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 

@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic Rendering, Holographic, imersão, ponto de foco, buffer de profundidade, somente orientação, posicional, opaco, transparente, clipe, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581120"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759762"
 ---
 # <a name="camera-in-unity"></a>Câmera no Unity
 
@@ -93,7 +93,7 @@ Um buffer de profundidade pode melhorar a qualidade visual desde que o Windows p
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Configuração automática de cena e câmera com o kit de ferramentas de realidade misturada 
 
-Siga o guia [passo a passo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) para adicionar o kit de ferramentas de realidade misturada ao seu projeto do Unity e ele configurará seu projeto automaticamente. Você também pode configurar manualmente o projeto sem MRTK com o guia na seção abaixo.
+Siga o guia [passo a passo](tutorials/mr-learning-base-01.md) para adicionar o kit de ferramentas de realidade misturada ao seu projeto do Unity e ele configurará seu projeto automaticamente. Você também pode configurar manualmente o projeto sem MRTK com o guia na seção abaixo.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: controladores de animação, Unity, entrada, realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583503"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759057"
 ---
 # <a name="motion-controllers-in-unity"></a>Controladores de movimento no Unity
 
@@ -434,9 +434,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk-v2"></a>Controladores de movimento no MRTK v2
+## <a name="motion-controllers-in-mrtk"></a>Controladores de movimento no MRTK
 
-Você pode acessar o [gesto e o controlador de movimento](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) do Gerenciador de entrada.
+Você pode acessar o [gesto e o controlador de movimento](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) do Gerenciador de entrada.
 
 ## <a name="follow-along-with-tutorials"></a>Acompanhe com tutoriais
 

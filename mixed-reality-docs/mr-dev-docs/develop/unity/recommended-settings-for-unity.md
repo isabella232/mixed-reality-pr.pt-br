@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, configurações, realidade misturada, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, desempenho, configurações de qualidade, configurações de iluminação, buffer de profundidade, XR, perda de rastreamento
-ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cc1d2692a172c84274299580a0ce580264f65fcf
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009326"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759692"
 ---
 # <a name="recommended-settings-for-unity"></a>Configurações recomendadas do Unity
 
@@ -68,7 +68,7 @@ Além disso, é recomendável selecionar **profundidade de 16 bits** na configur
 
 Para que a plataforma Windows Mixed Reality Otimize a estabilidade do holograma, ela depende do buffer de profundidade para ser preciso e corresponder a qualquer holograma renderizado na tela. Portanto, com o compartilhamento de buffer de profundidade ativado, é importante ao renderizar a cor, para também renderizar a profundidade. No Unity, a maioria dos materiais opacos ou TransparentCutouts renderizará profundidade por padrão, mas os objetos de texto e Transparent não renderizarão a profundidade, embora isso seja dependente de sombreador, etc.
 
-Se estiver usando o [sombreador standard do kit de ferramentas do reality](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md), para renderizar a profundidade para objetos transparentes:
+Se estiver usando o [sombreador standard do kit de ferramentas do reality](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md), para renderizar a profundidade para objetos transparentes:
 
 1) Selecione o material transparente que está usando o sombreador padrão MRTK e abra a janela do editor de Inspetor
 2) Selecione o botão **corrigir agora** dentro do aviso de compartilhamento de buffer de profundidade. Isso também pode ser executado manualmente definindo o **modo de renderização** como **personalizado**; em seguida, defina **modo** como **transparente** e, por fim, defina a **gravação de profundidade** como **on**
@@ -114,8 +114,8 @@ Para alternar a tela inicial do Holographic:
 
 |  Mostrar tela inicial do Unity  |  Imagem de abertura do Holographic  |  Comportamento |
 |----------|----------|----------|
-|  Ativado  |  Nenhum  |  Mostre a tela inicial do Unity padrão por 5 segundos ou até que o aplicativo seja carregado, o que for maior. |
-|  Ativado  |  Personalizado  |  Mostre a tela inicial personalizada por 5 segundos ou até que o aplicativo seja carregado, o que for maior. |
+|  Por  |  Nenhum  |  Mostre a tela inicial do Unity padrão por 5 segundos ou até que o aplicativo seja carregado, o que for maior. |
+|  Por  |  Personalizado  |  Mostre a tela inicial personalizada por 5 segundos ou até que o aplicativo seja carregado, o que for maior. |
 |  Desativado  |  Nenhum  |  Mostrar preto transparente (Nothing) até que o aplicativo seja carregado. |
 |  Desativado  |  Personalizado  |  Mostre a tela inicial personalizada por 5 segundos ou até que o aplicativo seja carregado, o que for maior. |
 
@@ -147,7 +147,7 @@ Para recusar o comportamento de pausa automática:
 
 Para definir o comportamento personalizado quando o rastreamento é perdido, manipule os [eventos de perda de controle](tracking-loss-in-unity.md)global.
 
-### <a name="capabilities"></a>Capacidades
+### <a name="capabilities"></a>Funcionalidades
 
 Para que um aplicativo aproveite determinadas funcionalidades, ele deve declarar os recursos apropriados em seu manifesto. As declarações de manifesto podem ser feitas no Unity para que elas sejam incluídas em todas as exportações futuras do projeto.
 
@@ -159,7 +159,7 @@ Os recursos podem ser habilitados para um aplicativo de realidade misturada:
 Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos Holographic são:
 <br>
 
-|  Capacidade  |  APIs que exigem capacidade |
+|  Funcionalidade  |  APIs que exigem capacidade |
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver |
 |  Integrada  |  VideoCapture e fotocaptura |
@@ -167,7 +167,7 @@ Os recursos aplicáveis para habilitar as APIs comumente usadas para aplicativos
 |  Microfone  |  VideoCapture (ao capturar áudio), DictationRecognizer, GrammarRecognizer e KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (e para usar o criador de perfil do Unity) |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Visão geral do desenvolvimento do Unity](unity-development-overview.md)
 * [Noções básicas sobre o desempenho da Realidade Misturada](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

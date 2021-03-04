@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: olho-olhar, cabeça-olhar, Unity, holograma, realidade misturada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192634"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759682"
 ---
 # <a name="head-gaze-in-unity"></a>Cabeça-olhar no Unity
 
@@ -43,7 +43,7 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a>Práticas recomendadas
+### <a name="best-practices"></a>Melhores práticas
 
 Enquanto o exemplo acima dispara um único Raycast do loop de atualização para localizar o destino dos pontos de partida do usuário em, recomendamos usar um único objeto para gerenciar todos os processos olhar. A combinação da lógica Head-olhar economizará a capacidade de processamento precioso do aplicativo e limitará seu raycasting a um por quadro.
 
@@ -52,7 +52,7 @@ Enquanto o exemplo acima dispara um único Raycast do loop de atualização para
 Assim como com um ponteiro do mouse em um computador, você deve implementar um [cursor](../../design/cursors.md) que represente o olhar do usuário. Saber qual conteúdo um usuário está direcionando aumenta a confiança no que eles estão prestes a interagir.
 
 ## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-olhar no kit de ferramentas da realidade misturada 
-Você pode acessar o Head-olhar do [Gerenciador de entrada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) no MRTK.
+Você pode acessar o Head-olhar do [Gerenciador de entrada](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) no MRTK.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

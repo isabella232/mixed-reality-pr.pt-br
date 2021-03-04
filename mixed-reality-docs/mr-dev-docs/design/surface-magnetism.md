@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, Magnetism da superfície
-ms.openlocfilehash: 5bc1b22db00e46d95d05c719b46c8f17426be8ef
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: e8a77d2fb1c147c353d74349961977f27aea71e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848151"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759782"
 ---
 # <a name="surface-magnetism"></a>Magnetismo de superfície
 
@@ -27,14 +27,14 @@ O Surface Magnetism permite que você coloque objetos Holographic em superfície
 
 O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e exemplos de cenas para a técnica de Magnetism da superfície. Você pode usar o Surface Magnetism com vários tipos de entradas como, por exemplo, Ray, olho olhar e controladores de movimento.
 
-* [Resolvedor de Magnetism de MRTK Surface](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#surfacemagnetism)
+* [Resolvedor de Magnetism de MRTK Surface](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#surfacemagnetism)
 * [MRTK – conscientização espacial + cenas de exemplo de Magnetism de superfície](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

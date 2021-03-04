@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, aplicativos de exemplo, design, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, aplicativos de amostra, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f16652cd8ebbf1349dc3b04cb1b5f4751687ea6d
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008816"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759087"
 ---
 # <a name="lunar-module"></a>Módulo lunar
 
@@ -108,8 +108,8 @@ Você pode encontrar scripts e pré-fabricados para o aplicativo de exemplo de m
 </tr>
 </table>
 
-## <a name="see-also"></a>Veja também
-* [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+## <a name="see-also"></a>Confira também
+* [Hub de Exemplos do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

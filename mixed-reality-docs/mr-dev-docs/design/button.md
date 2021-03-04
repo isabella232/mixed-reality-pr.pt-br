@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, botão
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847590"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759422"
 ---
 # <a name="button"></a>Botão
 
@@ -46,19 +46,19 @@ Um botão permite que os usuários disparem ações imediatas em uma experiênci
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Botão no MRTK (Kit de ferramentas de realidade misturada) para Unity
-O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece vários tipos de botão pré-fabricados, incluindo botões de estilo de Shell para o hololens 2 e o hololens (1ª gen). O botão do HoloLens 2 pré-fabricado contém vários capacidades detalhados que ajudam a melhorar a confiança do usuário:
+O **[MRTK para Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece vários tipos de pré-fabricados de botão, incluindo botões de estilo de Shell para o hololens 2 e o hololens (1ª gen). O botão do HoloLens 2 pré-fabricado contém vários capacidades detalhados que ajudam a melhorar a confiança do usuário:
 
 * Realce baseado em proximidade
 * Compactando o front-end
 * Efeito de pulso no gatilho.
 
-* Confira o [botão MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) para obter mais instruções e exemplos personalizados.
+* Confira o [botão MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) para obter mais instruções e exemplos personalizados.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

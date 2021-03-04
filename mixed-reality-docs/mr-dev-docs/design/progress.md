@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, controles, interface do usuário, UX, indicador de progresso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f323559c9a50a6f01636f0aba0bddc93b547125b
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009456"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759842"
 ---
 # <a name="progress-indicator"></a>Indicador de progresso
 
@@ -80,7 +80,8 @@ Um controle de progresso fornece comentários de que uma operação de longa exe
 
 ---
 
-## <a name="best-practices"></a>Práticas recomendadas
+## <a name="best-practices"></a>Melhores práticas
+
 * Associe rigidamente a [mensagem ou a marca](billboarding-and-tag-along.md) à exibição do progresso, uma vez que o usuário pode mover facilmente o cabeçalho para o espaço vazio e perder o contexto. Seu aplicativo pode parecer que ele falhou se o usuário não conseguir ver nada. A cobrança e a marcação são criadas no pré-fabricado de progresso.
 * É sempre bom fornecer informações de status sobre o que está acontecendo com o usuário. O progresso pré-fabricado fornece vários estilos visuais, incluindo o progresso padrão do Windows do tipo de toque para fornecer o status. Você também pode usar uma malha personalizada com uma animação se quiser que o estilo do seu progresso se alinhe à marca do seu aplicativo.
 
@@ -91,14 +92,14 @@ Um controle de progresso fornece comentários de que uma operação de longa exe
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicador de progresso em MRTK (Kit de ferramentas de realidade misturada) para Unity
 
 * [MRTK pré-fabricados indicador de progresso](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [Serviço de transição MRTK-Scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
+* [Serviço de transição MRTK-Scene](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/extensions/scene-transition-service.md)
 
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

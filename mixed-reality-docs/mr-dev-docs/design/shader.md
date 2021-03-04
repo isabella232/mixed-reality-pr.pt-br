@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, sombreador, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, efeitos visuais
-ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 046969d1d16c2bddcf5b0a392d721c291b945a94
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008856"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759117"
 ---
 # <a name="shader"></a>Sombreador
 
@@ -38,13 +38,13 @@ Como os objetos Holographic são misturados com os físicos no ambiente real, é
 
 ## <a name="standard-shader-in-mrtk-for-unity"></a>Sombreador padrão no MRTK para Unity
 
-* [MRTK-sombreador padrão](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
+* [MRTK-sombreador padrão](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)
