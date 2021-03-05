@@ -1,0 +1,4 @@
+- name: Visão geral do Solvers
+  href: solver.md
+- name: Toque para posicionar
+  href: tap-to-place.md
