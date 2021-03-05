@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendário, Academia, agenda, it, San Francisco, reator
-ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760052"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230877"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventos de realidade misturada da Microsoft
 
@@ -30,5 +30,7 @@ Junte-se à equipe do Microsoft Mixed Reality nesses próximos eventos!
 | HoloLens & realidade misturada Meetup|08 de setembro de 2020|[Percepção humana e realidade mista](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | Série de palestras sobre Realidade Misturada|22 de setembro de 2020|[Escape do Kippy: uma introdução à inreal & MRTK para o HoloLens 2](../develop/unreal/unreal-kippys-escape.md)|
 | Série de palestras sobre Realidade Misturada|22 de outubro de 2020|[Introdução ao WebXR com BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| Série de palestras sobre Realidade Misturada|3 de novembro de 2020|[Efeitos visuais em realidade misturada](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | Série de palestras sobre Realidade Misturada|17 de novembro de 2020|[Compilando o futuro: o que há de novo no MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Série de palestras sobre Realidade Misturada|1º de dezembro de 2020|[Criando hologramas](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| Série de palestras sobre Realidade Misturada|11 de fevereiro de 2021|[Um dia no Sr: como os efeitos de computação espacial todos os dias da vida útil](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|
