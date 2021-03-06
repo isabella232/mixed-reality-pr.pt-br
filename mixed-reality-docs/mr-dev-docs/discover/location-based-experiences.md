@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: realidade misturada, VR, LBE, local, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, hardware, HoloLens, multi-player, serviços de nuvem, Azure
-ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236907"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Entretenimento baseado na localização com realidade do Windows Mixed
 
@@ -49,7 +49,7 @@ Para experiências de VR para PC, nossos OEMs oferecem uma seleção incrível d
 
 A HP acabou de lançar seu HP VR mochila G2, o PC de portátil mais poderoso do mundo – otimizado para experiências de mobilidade gratuita, agora com 30% mais energia com uma GPU de RTX 2080 dentro. [Detalhes](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>Configuração
+### <a name="setup"></a>Instalação
 
 **P: como posso configurar com mais facilidade a instalação e personalizar o portal de realidade misturada para o LBE?**
 
@@ -68,7 +68,7 @@ Ignorar a instalação de aplicativos da loja-a instalação normal instala vár
 
 Mostrar visualização em tela inteira – o portal de realidade misturada padrão mostrará a visualização do headset em tela inteira no PC desktop enquanto o headset está em uso.  
 
-Ocultar novo no painel lateral – impede que o novo do seu painel seja expandido no lançamento do portal de realidade misturada.  
+Ocultar novo no painel lateral – impede que o novo painel para você seja expandido no lançamento do portal de realidade misturada.  
 
 #### <a name="how-to-configure"></a>Como configurar:  
 

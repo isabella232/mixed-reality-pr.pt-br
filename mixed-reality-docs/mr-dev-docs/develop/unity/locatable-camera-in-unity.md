@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: foto, vídeo, hololens, câmera, Unity, localizável, PVC, câmera de vídeo fotográfico, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, webcam, captura de foto, captura de vídeo
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226415"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236897"
 ---
 # <a name="locatable-camera-in-unity"></a>Câmera localizável no Unity
 
@@ -26,7 +26,8 @@ Apenas uma única operação pode ocorrer com a câmera de cada vez. Você pode 
 
 ## <a name="photo-capture"></a>Captura de fotos
 
-**Namespace:** *UnityEngine. XR. WSA. webcam*<br>
+**Namespace:**  
+*UnityEngine. XR. WSA. WebCam (Unity \~ 2018) UnityEngine. Windows. webcam (unity 2019 \~ )*<br>
 **Tipo:** o *Capture*
 
 O tipo de *captura* de imagem permite que você faça ainda fotografias com a câmera de vídeo de fotos. O padrão geral para usar o *Capture* para tirar uma foto é o seguinte:
