@@ -352,9 +352,9 @@
           href: unreal/unreal-deploying.md
         - name: Publicar na Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-- name: Web
+- name: JavaScript
   items:
-    - name: Visão geral do desenvolvimento para a Web
+    - name: Visão geral do desenvolvimento em JavaScript
       href: web/javascript-development-overview.md
     - name: WebXR
       href: web/webxr-overview.md
