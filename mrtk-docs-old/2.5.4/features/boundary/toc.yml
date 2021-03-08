@@ -1,0 +1,4 @@
+- name: Introdução ao sistema de marco de delimitação
+  href: boundary-system-getting-started.md
+- name: Como configurar a visualização de marco de delimitação
+  href: configuring-boundary-visualization.md

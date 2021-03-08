@@ -1,0 +1,6 @@
+- name: Formato de arquivo de animação de entrada
+  href: input-animation-file-format.md
+- name: Gravação da animação de entrada
+  href: input-animation-recording.md
+- name: Serviço de simulação de entrada
+  href: input-simulation-service.md

@@ -1,0 +1,28 @@
+- name: Controladores
+  href: controllers.md
+- name: Criar provedor de dados
+  href: create-data-provider.md
+- name: Ditado
+  href: dictation.md
+- name: Focar
+  href: gaze.md
+- name: Gestos
+  href: gestures.md
+- name: Acompanhamento da mão
+  href: hand-tracking.md
+- name: Como adicionar uma interatividade próxima
+  href: how-to-add-near-interactivity.md
+- name: Ações de entrada
+  href: input-actions.md
+- name: Eventos de entrada
+  href: input-events.md
+- name: Provedores de entrada
+  href: input-providers.md
+- name: Estado de entrada
+  href: input-state.md
+- name: Visão geral
+  href: overview.md
+- name: Ponteiros
+  href: pointers.md
+- name: Fala
+  href: speech.md

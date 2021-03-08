@@ -1,0 +1,8 @@
+- name: Como usar o Gerenciador de Pacotes do Unity
+  href: usingupm.md
+- name: Caixa de diálogo de configuração do MRTK
+  href: mrtk-configuration-dialog.md
+- name: Introdução ao MRTK e ao XRSDK
+  href: getting-started-with-mrtk-and-xrsdk.md
+- name: Guia de configuração da realidade misturada
+  href: mixed-reality-configuration-guide.md
