@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4eb106a92b953f7c16f5cf1fc9322d7103ad182
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 465229efca35a5ac3e254ac60481a447c8708ea1
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615531"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102244819"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -29,7 +29,7 @@ A maioria dos aplicativos de exemplo de software livre criados por nossa equipe 
 
 ### <a name="hololens-2-open-source-sample-apps"></a>Aplicativos de exemplo de software livre do HoloLens 2
 
-* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example) 
+* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example)
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) – faça download da [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9) no HoloLens 2
 
 ### <a name="made-with-the-mixed-reality-toolkit-for-unreal"></a>Criado com o Kit de Ferramentas de Realidade Misturada para Unreal
@@ -41,10 +41,9 @@ Um subconjunto dos exemplos usa componentes de UX interativos, como botões e co
 
 ### <a name="made-by-epic-games"></a>Criado pela Epic Games
 
-Nossos parceiros da Epic Games lançaram um excelente projeto de exemplo de HoloLens 2 no Marketplace do Unreal. 
+Nossos parceiros da Epic Games lançaram um excelente projeto de exemplo de HoloLens 2 no Marketplace do Unreal.
 
-> [!NOTE] 
+> [!NOTE]
 > Essa experiência precisa ser transmitida de um PC de alta gama para o headset.
 
 * [RA de missão](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)
-

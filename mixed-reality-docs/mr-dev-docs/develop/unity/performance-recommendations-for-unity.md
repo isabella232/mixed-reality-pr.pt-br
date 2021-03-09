@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: gráficos, cpu, gpu, renderização, coleta de lixo, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583181"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759722"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recomendações de desempenho para o Unity
 
@@ -309,7 +309,7 @@ Portanto, a redução do número de operações no sombreador de fragmento pode,
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternativas do sombreador padrão do Unity
 
-Em vez de usar uma PBR (renderização baseada em física) ou outro sombreador de alta qualidade, examine a utilização de um sombreador mais barato e com melhor desempenho. O [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece o [sombreador padrão do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) que foi otimizado para projetos de realidade misturada.
+Em vez de usar uma PBR (renderização baseada em física) ou outro sombreador de alta qualidade, examine a utilização de um sombreador mais barato e com melhor desempenho. O [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece o [sombreador padrão do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) que foi otimizado para projetos de realidade misturada.
 
 O Unity também fornece um sombreador apagado, com vértice iluminado, difuso e outras opções de sombreador simplificadas que são mais rápidas em comparação com o sombreador padrão do Unity. Confira [Uso e desempenho de sombreadores internos](https://docs.unity3d.com/Manual/shader-Performance.html) para obter informações mais detalhadas.
 
