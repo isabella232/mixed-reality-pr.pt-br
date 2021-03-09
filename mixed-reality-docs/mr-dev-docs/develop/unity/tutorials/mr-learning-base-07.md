@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, Controles de Limites
 ms.localizationpriority: high
-ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590418"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237237"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Como interagir com objetos 3D
 
@@ -113,7 +113,7 @@ Se agora você entrar no modo de Jogo, poderá usar a interação próxima ou di
 
 ![Modo de exibição dividida do Modo de reprodução do Unity com o botão Redefinir recebendo um clique](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Para saber mais sobre o componente Object Manipulator e suas propriedades associadas, acesse o guia [Manipulador de Objeto](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Para saber mais sobre o componente Object Manipulator e suas propriedades associadas, acesse o guia [Manipulador de Objeto](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
 
 ## <a name="adding-bounds-control"></a>Como adicionar o Controle de Limites
 
@@ -132,9 +132,6 @@ Em seguida, **desmarque** a caixa de seleção próxima a todos os componentes p
 
 > [!NOTE]
 > A visualização do Controle de Limites é criada no runtime e, portanto, não fica visível até que você entre no modo de Jogo.
-
-> [!NOTE]
->O componente BoundsControl adicionará automaticamente o componente NearInteractionGrabbable no runtime. Portanto, não precisamos adicionar esse componente para pegar os objetos delimitados com as mãos controladas.
 
 > [!NOTE]
 >O Object Manipulator (Script) adiciona automaticamente o Constraint Manager (Script)
@@ -171,7 +168,7 @@ Se agora você entrar no modo de Jogo e habilitar o Controle de Limites clicando
 
 ![Modo de exibição dividida do Modo de Jogo do Unity com o Controle de Limites sendo manipulado](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Para saber mais sobre o componente de Controle de Limites e as propriedades associadas a ele, acesse o guia da [Controle de Limites](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Para saber mais sobre o componente de Controle de Limites e as propriedades associadas a ele, acesse o guia da [Controle de Limites](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
 
 ## <a name="congratulations"></a>Parabéns
 
