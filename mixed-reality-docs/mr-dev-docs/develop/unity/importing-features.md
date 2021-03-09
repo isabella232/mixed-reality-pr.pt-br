@@ -3,16 +3,16 @@ title: Como importar recursos
 description: Saiba como importar e instalar recursos da Ferramenta de Recursos de MR para desenvolvimento do HoloLens e da VR.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: a82eea93a07b662314f3a718eef0c1bd18a4ca4e
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243848"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230799"
 ---
 # <a name="importing-features"></a>Como importar recursos
 
@@ -22,26 +22,18 @@ Depois que os recursos forem baixados, eles poderão ser examinados e importados
 
 ## <a name="features-list"></a>Lista de recursos
 
-A lista **Recursos** contém a coleção de pacotes selecionados durante a descoberta. 
-* Cada recurso pode ser selecionado ou desmarcado antes da importação. Os detalhes do pacote podem ser exibidos por meio do link **Detalhes** mostrado abaixo
+A lista **Recursos** contém a coleção de pacotes selecionados durante a descoberta. Cada recurso pode ser selecionado ou desmarcado antes da importação. Os detalhes do pacote podem ser exibidos por meio do link **Detalhes** mostrado abaixo
 
 ![Lista de recursos](images/FeaturesList.png)
 
 ## <a name="required-dependencies-list"></a>Lista de dependências necessárias
 
-A lista **Dependências necessárias** contém os pacotes que um ou mais dos recursos selecionados exigem para funcionar. Essa lista também conterá dependências de dependências.
-* Cada dependência pode ser selecionada ou desmarcada antes da importação. Os detalhes do pacote podem ser exibidos por meio do link **Detalhes** mostrado abaixo
+A lista **Dependências necessárias** contém os pacotes que um ou mais dos recursos selecionados exigem para funcionar. Essa lista também conterá dependências de dependências. Cada dependência pode ser selecionada ou desmarcada antes da importação. Os detalhes do pacote podem ser exibidos por meio do link **Detalhes** mostrado abaixo
 
 ![Lista de dependências](images/RequiredDependencyList.png)
 
 > [!NOTE]
 > Se você desmarcar as dependências necessárias, um ou mais erros de dependência ausente serão exibidos ao carregar o projeto no Unity. Esses recursos não poderão ser usados no projeto.
-
-## <a name="specifying-the-unity-project-path"></a>Como especificar o caminho do projeto do Unity
-
-A fim de importar os recursos para o projeto, você precisará registrar o caminho na Ferramenta de Recursos de Realidade Misturada.
-
-![Como definir o caminho do projeto](images/ProjectPath.png)
 
 ## <a name="validating-selections"></a>Como validar as seleções
 
@@ -50,11 +42,6 @@ Recomendamos expressamente validar as seleções de recursos antes da importaç�
 ![Problemas de validação](images/ValidationIssues.png)
 
 A Ferramenta de Recursos de Realidade Misturada fornece duas resoluções de problemas automáticas (descritas nas seções a seguir) e a opção de cancelar e resolver problemas manualmente.
-
-> [!IMPORTANT]
-> A Ferramenta de Recursos de Realidade Misturada não pode resolver automaticamente os problemas relacionados às versões obrigatórias do Unity. Esses problemas precisam ser tratados manualmente pela atualização da versão do Unity usada pelo projeto ou pela desabilitação dos recursos que exigem uma versão mais recente.
->
-> Uma versão futura da Ferramenta de Recursos de Realidade Misturada fornecerá uma melhor filtragem de recursos com base na versão do Unity que está sendo usada pelo projeto.
 
 ### <a name="enable-dependencies"></a>Habilitar dependências
 

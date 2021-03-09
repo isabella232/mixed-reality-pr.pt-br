@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
+ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421405"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102126609"
 ---
 # <a name="unity-development-for-hololens"></a>Desenvolvimento do Unity para HoloLens
 
 ![Logotipo do banner do Unity](../images/unity_logo_banner.png)
 
-O caminho mais rápido para criar um [aplicativo de realidade misturada](../../design/app-views.md) do HoloLens no [Unity](https://unity.com) é com o Kit de Ferramentas de Realidade Misturada. Se você não tem familiaridade com o Unity, recomendamos explorar os [tutoriais](https://unity3d.com/learn/tutorials) de nível iniciante na plataforma Unity Learn antes de continuar. Também é uma boa ideia visitar a abrangente [Asset Store](https://www.assetstore.unity3d.com/) e os [fóruns de Realidade Misturada do Unity](https://forum.unity3d.com/forums/hololens.102/) para interagir com a comunidade online que cria aplicativos de realidade misturada. Você nunca sabe quais recursos ou soluções interessantes pode encontrar por aí. Quando você estiver pronto para começar a usar o MRTK, vá para os pontos de verificação de desenvolvimento abaixo!
+O caminho mais rápido para criar um [aplicativo de realidade misturada](../../design/app-views.md) do HoloLens no [Unity](https://unity.com) é com o Kit de Ferramentas de Realidade Misturada. Se você não tem familiaridade com o Unity, recomendamos explorar os [tutoriais](https://unity3d.com/learn/tutorials) de nível iniciante na plataforma Unity Learn antes de continuar. Também é uma boa ideia visitar a abrangente [Asset Store](https://assetstore.unity.com) e os [fóruns de Realidade Misturada do Unity](https://forum.unity3d.com/forums/hololens.102/) para interagir com a comunidade online que cria aplicativos de realidade misturada. Você nunca sabe quais recursos ou soluções interessantes pode encontrar por aí. Quando você estiver pronto para começar a usar o MRTK, vá para os pontos de verificação de desenvolvimento abaixo!
 
 > [!IMPORTANT]
 > Se você já tem um projeto Unity que deseja mover para o HoloLens 2, confira nossos **[guias de portabilidade](../porting-apps/porting-overview.md)** . Temos guias para projetos que estão usando HTK, MRTK v1 ou SteamVR.
@@ -104,7 +104,7 @@ Antes de entrar no mundo da realidade misturada por conta própria, recomendamos
 | --- | --- |
 | [Visão geral da arquitetura do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | Obtenha uma compreensão mais profunda de como o SDK do MRTK funciona em seus projetos |
 | [Configurações e desempenho](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | Crie o perfil de seu aplicativo, atualize as configurações do Unity e obtenha o melhor desempenho de estabilização de holograma disponível |
-| [Introdução ao MRTK + XR](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) | Faça a portabilidade para o pipeline XR alternativo fornecido pelo Unity |
+| [Introdução ao MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | Faça a portabilidade para o pipeline XR alternativo fornecido pelo Unity |
 
 ### <a name="unity-resources"></a>Recursos do Unity
 
