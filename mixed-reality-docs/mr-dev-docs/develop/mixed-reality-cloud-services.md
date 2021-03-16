@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, serviços de nuvem, Azure, remote rendering, âncoras espaciais, serviços cognitivos, cognição, unity, machine learning, tradução de fala, pesquisa visual computacional, Microsoft Graph
-ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
-ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
+ms.openlocfilehash: 0c123c2bca412589086799c41b183eb6f9364d0c
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99973066"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547225"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Visão geral dos serviços de nuvem da realidade misturada do Azure
 
@@ -47,7 +47,7 @@ Como um bônus adicional, o ARR não restringe o tipo de interface do usuário q
 
 ### <a name="azure-spatial-anchors"></a>Âncoras Espaciais do Azure
 
-As [Âncoras Espaciais do Azure](https://docs.microsoft.com /azure/spatial-anchors/) são um serviço multiplataforma que permite criar aplicativos de realidade misturada com reconhecimento espacial. Com as Âncoras Espaciais do Azure, você pode mapear, persistir e compartilhar conteúdo holográfico entre vários dispositivos em escala do mundo real. 
+As [Âncoras Espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/) são um serviço multiplataforma que permite criar aplicativos de realidade misturada com reconhecimento espacial. Com as Âncoras Espaciais do Azure, você pode mapear, persistir e compartilhar conteúdo holográfico entre vários dispositivos em escala do mundo real. 
 
 As Âncoras Espaciais do Azure são uma solução exclusivamente personalizada para casos de uso comuns na Realidade Misturada, incluindo:
 * **Orientação**: duas ou mais âncoras espaciais podem ser conectadas para criar uma lista de tarefas ou pontos de interesse com os quais um usuário precisa interagir.

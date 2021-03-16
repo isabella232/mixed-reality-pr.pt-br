@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583525"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770324"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 
@@ -69,3 +69,15 @@ Ao final deste módulo, você saberá como:
 * Configurar um projeto do Unity para o serviço de Fala nos Serviços Cognitivos do Azure
 * Integrar o serviço de Fala a um aplicativo do Windows Mixed Reality
 * Usar o reconhecimento de fala para traduzir texto
+
+### <a name="render-a-model-with-azure-remote-rendering"></a>[Renderizar um modelo com o Azure Remote Rendering](/learn/modules/render-model-azure-remote-rendering-unity/)
+
+Crie uma sessão do Azure Remote Rendering e renderize um modelo 3D.
+
+**Objetivos de aprendizagem**
+
+Ao final deste módulo, você saberá como:
+
+* Criar uma sessão do Azure Remote Rendering
+* Carregar um modelo 3D
+* Renderizar um modelo 3D
