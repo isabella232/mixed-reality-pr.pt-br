@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, entretenimento baseado na localização, VR de los, de los, de imersão, QR, QR Code, hololens2
-ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635428"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574942"
 ---
 # <a name="qr-code-tracking"></a>Acompanhamento de código QR
 
@@ -209,9 +209,10 @@ O tempo exato para detectar códigos depende não apenas do tamanho dos códigos
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Distância e posição angular do código QR
 As câmeras de rastreamento só podem detectar um determinado nível de detalhe. Para códigos pequenos – < 10 cm ao longo dos lados-você deve estar bem próximo. Para um código QR da versão 1 variando de 10 cm a 25 cm de largura, a distância mínima de detecção varia de 0,15 metros a 0,5 metros. 
 
-A distância de detecção para o tamanho aumenta linearmente. 
+A distância de detecção para o tamanho aumenta linearmente, mas também depende da versão QR ou do tamanho do módulo. Quanto maior a versão, menores os módulos, que só podem ser detectados em uma posição mais próxima. Você também pode experimentar os códigos micro QR se quiser que a distância da detecção seja maior. A detecção QR funciona com um intervalo de ângulos + = 45 graus para garantir que tenhamos a resolução adequada para detectar o código.
 
-A detecção QR funciona com um intervalo de ângulos + = 45 graus para garantir que tenhamos a resolução adequada para detectar o código.
+> [!IMPORTANT]
+> Sempre verifique se você tem contraste suficiente e uma borda adequada.
 
 ### <a name="qr-codes-with-logos"></a>Códigos QR com logotipos
 Códigos QR com logotipos não foram testados e não têm suporte no momento.
@@ -458,6 +459,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 * [Sistemas de coordenadas](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Âncoras Espaciais do Azure</a>
