@@ -192,24 +192,24 @@
               href: unity/reviewing-changes.md
     - name: Blocos de construção básicos
       items:
-        - name: Câmera
+        - name: Instalação da câmera
           href: unity/camera-in-unity.md
-        - name: Sistemas de coordenadas
-          href: unity/coordinate-systems-in-unity.md
-        - name: Persistência
-          href: unity/persistence-in-unity.md
-        - name: Foco com a cabeça
-          href: unity/gaze-in-unity.md
+        - name: Âncoras espaciais
+          href: unity/spatial-anchors-in-unity.md
+        - name: Interações
+          items:
+            - name: Controladores de movimento
+              href: unity/motion-controllers-in-unity.md
+            - name: Gestos
+              href: unity/gestures-in-unity.md
+            - name: Acompanhamento de mãos e olhos
+              href: unity/hand-eye-in-unity.md
+            - name: Foco da cabeça
+              href: unity/gaze-in-unity.md
+            - name: Entrada de voz
+              href: unity/voice-input-in-unity.md
         - name: Texto
           href: unity/text-in-unity.md
-        - name: Controladores de movimento
-          href: unity/motion-controllers-in-unity.md
-        - name: Gestos
-          href: unity/gestures-in-unity.md
-        - name: Acompanhamento de mãos e olhos
-          href: unity/hand-eye-in-unit.md
-        - name: Entrada de voz
-          href: unity/voice-input-in-unity.md
         - name: mapeamento espacial
           href: unity/spatial-mapping-in-unity.md
         - name: som espacial
@@ -220,6 +220,8 @@
           href: unity/shared-experiences-in-unity.md
         - name: Câmera localizável
           href: unity/locatable-camera-in-unity.md
+        - name: Comunicação remota holográfica em um aplicativo da área de trabalho
+          href: unity/holographic-remoting-desktop.md
         - name: Ponto de foco
           href: unity/focus-point-in-unity.md
         - name: Controle de perda
