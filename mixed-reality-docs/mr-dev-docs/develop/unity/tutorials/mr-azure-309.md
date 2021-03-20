@@ -1,19 +1,19 @@
 ---
-title: Sr e Azure 309-Application insights
+title: HoloLens (1º gen) e Azure 309-Application insights
 description: Conclua este curso para aprender a coletar análises sobre o comportamento do usuário em um aplicativo de realidade misturada, usando o serviço do insights Aplicativo Azure.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, Application insights, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: efd6a3f8bf526dcf6a7eaee199f5c22ffa1dd639
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582963"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730373"
 ---
-# <a name="mr-and-azure-309-application-insights"></a>MR e Azure 309: Application Insights
+# <a name="hololens-1st-gen-and-azure-309-application-insights"></a>HoloLens (1º gen) e Azure 309: Application insights
 
 <br>
 

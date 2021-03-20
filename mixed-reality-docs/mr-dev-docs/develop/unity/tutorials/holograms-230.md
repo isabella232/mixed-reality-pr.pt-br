@@ -1,19 +1,19 @@
 ---
-title: MR Espacial 230 – Mapeamento espacial
+title: HoloLens (1º gen) espacial 230-mapeamento espacial
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos espaciais de mapeamento.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, mapeamento espacial, reconstrução de superfície, malha, HoloLens, Academia de realidade misturada, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582937"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730133"
 ---
-# <a name="mr-spatial-230-spatial-mapping"></a>MR Espacial 230: mapeamento espacial
+# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (1º gen) espacial 230: mapeamento espacial
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.
@@ -151,7 +151,7 @@ Agora vamos explorar como o mapeamento espacial pode afetar o desempenho.
 * Clique em **Conectar**.
 * Observe o número de milissegundos que leva para a GPU renderizar um quadro.
 * Impedir que o aplicativo seja executado no dispositivo.
-* Retorne ao Visual Studio e abra **SpatialMappingObserver.cs**. Você o encontrará na pasta HoloToolkit\SpatialMapping do projeto Assembly-CSharp (universal do Windows).
+* Retorne ao Visual Studio e abra **SpatialMappingObserver. cs**. Você o encontrará na pasta HoloToolkit\SpatialMapping do projeto Assembly-CSharp (universal do Windows).
 * Localize a função **ativo ()** e adicione a seguinte linha de código: **TrianglesPerCubicMeter = 1200;**
 * Implante novamente o projeto em seu dispositivo e **reconecte o criador de perfil**. Observe a alteração no número de milissegundos para renderizar um quadro.
 * Impedir que o aplicativo seja executado no dispositivo.
@@ -231,15 +231,15 @@ O Unity faz um ótimo trabalho de visualização de materiais, mas é sempre uma
 * Na pasta painel de **projeto** do Unity, **hologramas** , localize o objeto **SpatialProcessing** .
 * Arraste & solte o objeto **SpatialProcessing** no painel **hierarquia** .
 
-O SpatialProcessing pré-fabricado inclui componentes para processar os dados de mapeamento espacial. **SurfaceMeshesToPlanes.cs** encontrará e gerará planos com base nos dados de mapeamento espacial. Usaremos planos em nosso aplicativo para representar paredes, andares e tetos. Esse pré-fabricado também inclui **RemoveSurfaceVertices.cs** que pode remover vértices da malha de mapeamento espacial. Isso pode ser usado para criar buracos na malha ou para remover triângulos excedentes que não são mais necessários (porque os planos podem ser usados em vez disso).
+O SpatialProcessing pré-fabricado inclui componentes para processar os dados de mapeamento espacial. **SurfaceMeshesToPlanes. cs** encontrará e gerará planos com base nos dados de mapeamento espacial. Usaremos planos em nosso aplicativo para representar paredes, andares e tetos. Esse pré-fabricado também inclui o **RemoveSurfaceVertices. cs** , que pode remover vértices da malha de mapeamento espacial. Isso pode ser usado para criar buracos na malha ou para remover triângulos excedentes que não são mais necessários (porque os planos podem ser usados em vez disso).
 
 * Na pasta painel de **projeto** do Unity, **hologramas** , localize o objeto **spacecollection** .
 * Arraste e solte o objeto **spacecollection** no painel **hierarquia** .
 * No painel **hierarquia** , selecione o objeto **SpatialProcessing** .
 * No painel **Inspetor** , localize o componente **Gerenciador de espaço de reprodução (script)** .
-* Clique duas vezes em **PlaySpaceManager.cs** para abri-lo no Visual Studio.
+* Clique duas vezes em **PlaySpaceManager. cs** para abri-lo no Visual Studio.
 
-PlaySpaceManager.cs contém código específico do aplicativo. Adicionaremos funcionalidade a esse script para habilitar o seguinte comportamento:
+PlaySpaceManager. cs contém código específico do aplicativo. Adicionaremos funcionalidade a esse script para habilitar o seguinte comportamento:
 
 1. Parar de coletar dados de mapeamento espacial depois de excedermos o limite de tempo de verificação (10 segundos).
 2. Processar os dados de mapeamento espacial:
@@ -247,7 +247,7 @@ PlaySpaceManager.cs contém código específico do aplicativo. Adicionaremos fun
     2. Use RemoveSurfaceVertices para remover triângulos de superfície que se enquadram em limites de plano.
 3. Gere uma coleção de hologramas no mundo e coloque-os nos planos de parede e piso próximos ao usuário.
 
-Conclua os exercícios de codificação marcados em PlaySpaceManager.cs ou substitua o script pela solução concluída abaixo:
+Conclua os exercícios de codificação marcados em PlaySpaceManager. cs ou substitua o script pela solução concluída abaixo:
 
 ```cs
 using System.Collections.Generic;
@@ -470,7 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * No painel **Inspetor** , encontre as **malhas da superfície para o componente planos (script)** .
 * Altere a propriedade **desenhar planos** para **nada** para limpar a seleção.
 * Altere a propriedade **desenhar planos** para a **parede**, de modo que somente os planos de parede serão renderizados.
-* Na pasta painel do **projeto** , **scripts** , clique duas vezes em **Placeable.cs** para abri-lo no Visual Studio.
+* Na pasta painel do **projeto** , **scripts** , clique duas vezes em **posicionável. cs** para abri-lo no Visual Studio.
 
 O script **posicionável** já está anexado aos cartazes e à caixa de projeção criados após a conclusão da localização do plano. Tudo o que precisamos fazer é remover o comentário de algum código, e esse script irá obter o seguinte:
 
@@ -482,7 +482,7 @@ O script **posicionável** já está anexado aos cartazes e à caixa de projeç�
 6. Reorientar o holograma para alinhar com o tipo de superfície (vertical ou horizontal) ao qual ele tem afinidade.
 7. Posicione suavemente o holograma na superfície selecionada para evitar o comportamento de salto ou de ajuste.
 
-Remova a marca de comentário de todo o código no exercício de codificação abaixo ou use essa solução concluída no **Placeable.cs**:
+Remova a marca de comentário de todo o código no exercício de codificação abaixo ou use essa solução completa em **posicionável. cs**:
 
 ```cs
 using System.Collections.Generic;
@@ -1098,13 +1098,13 @@ Em seguida, vamos adicionar um comportamento especial à terra, para que ele ten
 * No painel **Inspetor** , encontre o material da terra (componente inferior).
 * Na **lista suspensa sombreador**, altere o sombreador para **personalizado > OcclusionRim**. Isso processará um realce azul em volta da terra sempre que for obstruído por outro objeto.
 
-Por fim, vamos habilitar um efeito de visão x-ray para planetas em nosso sistema solar. Precisaremos editar **PlanetOcclusion.cs** (encontrado na pasta Scripts\SolarSystem) para obter o seguinte:
+Por fim, vamos habilitar um efeito de visão x-ray para planetas em nosso sistema solar. Precisaremos editar **PlanetOcclusion. cs** (encontrado na pasta Scripts\SolarSystem) para obter o seguinte:
 
 1. Determine se um planeta é obstruídodo pela camada SpatialMapping (malhas e planos de sala).
 2. Mostre a representação delineada de um planeta sempre que ele for obstruído pela camada SpatialMapping.
 3. Oculte a representação delineada de um planeta quando ela não estiver bloqueada pela camada SpatialMapping.
 
-Siga o exercício de codificação no PlanetOcclusion.cs ou use a seguinte solução:
+Siga o exercício de codificação no PlanetOcclusion. cs ou use a seguinte solução:
 
 ```cs
 using UnityEngine;

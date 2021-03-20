@@ -1,19 +1,19 @@
 ---
-title: Entrada do MR 210 – Foco
+title: Entrada do HoloLens (1ª gen) 210-olhar
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de olhar.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, olhar, HoloLens, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583864"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730323"
 ---
-# <a name="mr-input-210-gaze"></a>Entrada do MR 210: Focar
+# <a name="hololens-1st-gen-input-210-gaze"></a>Entrada do HoloLens (1ª gen) 210: olhar
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.
@@ -206,8 +206,8 @@ Vamos basear nosso trabalho em alguns princípios de design de cursor, ou seja:
 ### <a name="instructions"></a>Instruções
 
 1. No painel **hierarquia** , expanda o objeto **AstroMan** -> **GEO_G** -> **Back_Center** .
-2. Clique duas vezes em **Interactible.cs** para abri-lo no Visual Studio.
-3. Remova os comentários das linhas nos retornos de chamada **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** em **Interactible.cs**. Eles são chamados pelo InputManager do kit de ferramentas da realidade misturada quando o foco (por olhar ou por controlador apontando) entra e sai do colisor do Jogoobject específico.
+2. Clique duas vezes em **Interactible. cs** para abri-lo no Visual Studio.
+3. Remova os comentários das linhas nos retornos de chamada **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** em **Interactible. cs**. Eles são chamados pelo InputManager do kit de ferramentas da realidade misturada quando o foco (por olhar ou por controlador apontando) entra e sai do colisor do Jogoobject específico.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -265,7 +265,7 @@ void IFocusable.OnFocusExit()
 
 ### <a name="instructions"></a>Instruções
 
-Vamos usar o arquivo **DirectionIndicator.cs** , que:
+Vamos usar o arquivo **DirectionIndicator. cs** que irá:
 
 1. Mostre o indicador direcional se o usuário não estiver nuvens nos hologramas.
 2. Oculte o indicador direcional se o usuário estiver nuvensndo nos hologramas.
@@ -290,7 +290,7 @@ Vamos começar.
 
 * Use a mensagem para que os hologramas sempre se enfrentem para você.
 
-Usaremos o arquivo **Billboard.cs** para manter um gameobject orientado para que ele esteja sempre voltado ao usuário.
+Usaremos o arquivo de **mural. cs** para manter um gameobject orientado para que ele esteja sempre voltado ao usuário.
 
 1. No painel **hierarquia** , selecione o objeto **AstroMan** .
 2. No painel **Inspetor** , clique no botão **Adicionar componente** .
@@ -318,15 +318,15 @@ A solução usada aqui é usar uma abordagem de "marca".
 
 Um objeto de marca-ao mesmo nunca deixa totalmente a exibição do usuário. Você pode considerar uma marca como sendo um objeto anexado à cabeça do usuário por faixas de borracha. À medida que o usuário se move, o conteúdo permanecerá dentro de uma visão fácil, deslizando para a borda da exibição sem sair completamente. Quando o usuário gazes em direção ao objeto de marca, ele é mais totalmente na exibição.
 
-Vamos usar o arquivo **SimpleTagalong.cs** , que:
+Vamos usar o arquivo **SimpleTagalong. cs** que irá:
 
 1. Determine se o objeto de Tag-Along está dentro dos limites da câmera.
 2. Se não estiver dentro da exibição frustum, posicione a Tag-Along parcialmente dentro da exibição frustum.
 3. Caso contrário, posicione o Tag-Along para uma distância padrão do usuário.
 
-Para fazer isso, primeiro devemos alterar o script **Interactible.cs** para chamar o **TagalongAction**.
+Para fazer isso, primeiro devemos alterar o script **Interactible. cs** para chamar o **TagalongAction**.
 
-1. Edite **Interactible.cs** concluindo o código exercício 6. a (removendo as linhas de comentário 84 a 87).
+1. Edite o **Interactible. cs** concluindo o código exercício 6. a (removendo as linhas de comentário 84 a 87).
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,9 +337,9 @@ if (interactibleAction != null)
 }
 ```
 
-O script **InteractibleAction.cs** , emparelhado com **Interactible.cs** , executa ações personalizadas quando você toca em hologramas. Nesse caso, usaremos um especificamente para a marca.
+O script **InteractibleAction. cs** , emparelhado com **Interactible. cs** , executa ações personalizadas quando você toca em hologramas. Nesse caso, usaremos um especificamente para a marca.
 
-* Na pasta **scripts** , clique em ativo **TagalongAction.cs** para abrir no Visual Studio.
+* Na pasta **scripts** , clique em ativo **TagalongAction. cs** para abrir no Visual Studio.
 * Conclua o exercício de codificação ou altere-o para:
   * Na parte superior da **hierarquia**, no tipo de barra de pesquisa **ChestButton_Center** e selecione o resultado.
   * No painel **Inspetor** , clique no botão **Adicionar componente** .
@@ -357,7 +357,7 @@ Precisamos adicionar o seguinte:
 * Adicione a mensagem ao objeto gazed e defina o eixo dinâmico como XY.
 * Em seguida, adicione Tag-Along simples ao objeto.
 
-Aqui está nossa solução, de **TagalongAction.cs**:
+Aqui está nossa solução, de **TagalongAction. cs**:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

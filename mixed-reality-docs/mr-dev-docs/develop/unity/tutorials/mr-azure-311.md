@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 311 – Microsoft Graph
+title: HoloLens (1º gen) e Azure 311-Microsoft Graph
 description: Conclua este curso para aprender a aproveitar Microsoft Graph e conectar-se aos dados que impulsionam a produtividade, em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, Microsoft Graph, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 699e520fb9db8d8d3b5bab8b98d92fa39f0acb2d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6afa1e8c5d2baa2d46652901558b2917c5c43d70
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583445"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730243"
 ---
-# <a name="mr-and-azure-311---microsoft-graph"></a>MR e Azure 311 – Microsoft Graph
+# <a name="hololens-1st-gen-and-azure-311---microsoft-graph"></a>HoloLens (1º gen) e Azure 311-Microsoft Graph
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. Haverá uma nova série de tutoriais que serão publicados no futuro, que demonstrarão como desenvolver para o HoloLens 2.  Esse aviso será atualizado com um link para esses tutoriais quando eles forem postados.

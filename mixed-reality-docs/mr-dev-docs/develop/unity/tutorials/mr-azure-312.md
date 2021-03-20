@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 312 – Integração de bots
+title: HoloLens (1ª gen) e integração do Azure 312-bot
 description: Conclua este curso para aprender a criar e implantar um bot, usando o Microsoft bot Framework v4 e se comunicar com ele em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, pesquisa Visual computacional, hololens, imersão, VR, Microsoft bot Framework v4, bot do aplicativo Web, bot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 6b8b4624615a3c3f62800b396803572b0b67ad1a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582466"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730313"
 ---
-# <a name="mr-and-azure-312-bot-integration"></a>MR e Azure 312: integração de bots
+# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (1º gen) e Azure 312: integração de bot
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. Haverá uma nova série de tutoriais que serão publicados no futuro, que demonstrarão como desenvolver para o HoloLens 2.  Esse aviso será atualizado com um link para esses tutoriais quando eles forem postados.

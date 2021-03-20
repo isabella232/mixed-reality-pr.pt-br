@@ -1,19 +1,19 @@
 ---
-title: Compartilhamento do MR 240 – Vários dispositivos HoloLens
+title: HoloLens (1º gen) compartilhando 240-vários dispositivos HoloLens
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes do compartilhamento de hologramas.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Sharing, Networking, Academy, tutorial, HoloLens, Mixed Reality Academy, Unity, headset de realidade misturada, headset da realidade misturada do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: 97f2067c043912e7608361e73e54fdf769b8bf51
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8e3631c80702f04e9f7e50c98bed91d92c332841
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582919"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730143"
 ---
-# <a name="mr-sharing-240-multiple-hololens-devices"></a>Compartilhamento do MR 240: vários dispositivos HoloLens
+# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>HoloLens (1º gen) compartilhando 240: vários dispositivos HoloLens
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.

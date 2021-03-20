@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho
-ms.openlocfilehash: bd25c56947007f90c0310ea9802bba91a81b0914
-ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
+ms.openlocfilehash: 8d247a6a5b7c8a3d8b7ea26ebc72e86ada5dc99f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117620"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730163"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Como configurar seu projeto sem o MRTK
 
@@ -57,9 +57,13 @@ Depois de definir sua plataforma, você precisa deixar que o Unity saiba criar u
 ![Captura de tela da janela Configurações do projeto aberta no editor do Unity com o gerenciamento de plugin XR realçado](images/wmr-config-img-7.png)
 
 4. Expanda a seção **Gerenciamento de plug-ins do XR** e selecione **Universal guia Configurações da plataforma Windows**
-5. Se você estiver usando o Unity 2020 ou posterior, verá as opções para verificar **OpenXR (visualização)** ou a **realidade mista do Windows**
-6. Você pode escolher qualquer tempo de execução.  Se você estiver desenvolvendo especificamente para o HoloLens 2 ou para a HP reverbs G2 e decidir tentar a **OpenXR (versão prévia)**, selecione a caixa OpenXR (versão prévia) e examine nosso guia para [usar o plug-in informativo da realidade misturada para o Unity](openxr-getting-started.md) para se configurar corretamente para esses dispositivos antes de retornar a este tutorial
-7. Se você decidir escolher o plug-in de **realidade mista do Windows** , marque todas as caixas e defina o **modo de envio de profundidade** como profundidade de **16 bits**
+5. Se você estiver usando o Unity 2020 ou posterior, verá as opções para verificar **OpenXR (visualização)** ou a **realidade mista do Windows**. 
+    * Você pode escolher qualquer tempo de execução.  Se você estiver desenvolvendo especificamente para o HoloLens 2 ou para a HP reverbs G2 e decidir tentar a **OpenXR (versão prévia)**, selecione a caixa OpenXR (versão prévia) e examine nosso guia para [usar o plug-in informativo da realidade misturada para o Unity](openxr-getting-started.md) para se configurar corretamente para esses dispositivos antes de retornar a este tutorial
+
+> [!NOTE]
+> A partir do Unity 2020 LTS, a Microsoft está adotando o desenvolvimento com o OpenXR.  À medida que migramos para esse caminho, no Unity 2021,1, o plug-in do Windows XR será preterido e removido em 2021,2, tornando OpenXR o único caminho com suporte. Você pode encontrar mais informações sobre como [usar o plug-in OpenXR de realidade misturada](openxr-getting-started.md).
+
+6. Se você decidir escolher o plug-in de **realidade mista do Windows** , marque todas as caixas e defina o **modo de envio de profundidade** como profundidade de **16 bits**
 
 ![Captura de tela da janela Configurações do projeto abrir no editor do Unity com a seção realidade mista do Windows realçada](images/wmr-config-img-8.png)
 
@@ -82,7 +86,7 @@ Seu aplicativo agora pode manipular a renderização Holographic e a entrada esp
 
 É recomendável que você faça as declarações de manifesto no Unity para incluí-las em todos os projetos futuros que você exportar. Os recursos aplicáveis para habilitar as APIs do Unity comumente usadas para realidade misturada são:
 
-|  Funcionalidade  |  APIs que exigem capacidade | 
+|  Recurso  |  APIs que exigem capacidade | 
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver (acesso a malhas de [mapeamento espacial](../../design/spatial-mapping.md) no HoloLens) &mdash; *nenhum recurso necessário para acompanhamento espacial geral do headset* | 
 |  Integrada  |  VideoCapture e fotocaptura | 
