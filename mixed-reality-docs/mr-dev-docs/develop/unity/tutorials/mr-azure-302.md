@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 302 – Pesquisa Visual Computacional
+title: HoloLens (1º gen) e Azure 302-visão computacional
 description: Conclua este curso para aprender a reconhecer o conteúdo visual dentro de uma imagem fornecida, usando o Azure Pesquisa Visual Computacional em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade misturada, Academia, Unity, tutorial, API, pesquisa Visual computacional, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 2ba5f01b0b14c655f8639f74590a511629350fbb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 119d83ec9fef97b4e4017b2226a9593404847a71
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583286"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730533"
 ---
-# <a name="mr-and-azure-302-computer-vision"></a>MR e Azure 302: Pesquisa Visual Computacional
+# <a name="hololens-1st-gen-and-azure-302-computer-vision"></a>HoloLens (1º gen) e Azure 302: pesquisa Visual computacional
 
 <br>
 

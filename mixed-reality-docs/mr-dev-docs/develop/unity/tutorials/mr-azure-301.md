@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 301 – Tradução de idioma
+title: HoloLens (1ª gen) e Azure 301 – tradução de idioma
 description: Conclua este curso para aprender a implementar o API de Tradução de Texto do Azure em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, texto do tradutor, hololens, imersão, VR, tradução de linguagem, Windows 10, Visual Studio
-ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: d02b86b6e62a46cd3ed4ebe7e6188cfda18e0d49
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583297"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730573"
 ---
-# <a name="mr-and-azure-301-language-translation"></a>MR e Azure 301: Tradução de idioma
+# <a name="hololens-1st-gen-and-azure-301-language-translation"></a>HoloLens (1º gen) e Azure 301: tradução de idioma
 
 <br>
 

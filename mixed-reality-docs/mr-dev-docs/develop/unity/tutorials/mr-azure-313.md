@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 313 – Serviço do Hub IoT
+title: HoloLens (1º gen) e Azure 313-serviço de Hub IoT
 description: Saiba como implementar o serviço de Hub IoT do Azure em uma máquina virtual que executa o Ubuntu 16,4 e visualizar os dados da mensagem usando o Microsoft HoloLens ou o headset do VR.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, borda, IOT Edge, tutorial, API, notificação, funções, tabelas, hololens, imersão, VR, IOT, máquina virtual, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f4306e7940e2447fe31afb8c7071c00abc98dd34
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582817"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730493"
 ---
-# <a name="mr-and-azure-313-iot-hub-service"></a>MR e Azure 313: serviço Hub IoT
+# <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (1º gen) e Azure 313: serviço do Hub IoT
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. Haverá uma nova série de tutoriais que serão publicados no futuro, que demonstrarão como desenvolver para o HoloLens 2.  Esse aviso será atualizado com um link para esses tutoriais quando eles forem postados.

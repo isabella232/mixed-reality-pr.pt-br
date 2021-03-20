@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 306 – Streaming de vídeo
+title: HoloLens (1º gen) e Azure 306-vídeo de streaming
 description: Conclua este curso para aprender a implementar os serviços de mídia do Azure em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, serviços de mídia, vídeo de streaming, 360, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583453"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730563"
 ---
-# <a name="mr-and-azure-306-streaming-video"></a>MR e Azure 306: streaming de vídeo
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (1º gen) e Azure 306: vídeo de streaming
 
 <br>
 
@@ -285,7 +285,7 @@ A seguir está uma configuração típica para o desenvolvimento com a realidade
 
     ![O portal do Azure](images/AzureLabs-Lab6-30.png)
 
-4.  Em seguida, vá para **_arquivo_ *configurações de compilação*** e alterne a plataforma para **plataforma universal do Windows**, clicando no botão **alternar plataforma** .
+4.  Em seguida, vá para ***arquivo* *configurações de compilação*** e alterne a plataforma para **plataforma universal do Windows**, clicando no botão **alternar plataforma** .
 
 5.  Verifique também se:
 
@@ -629,7 +629,7 @@ Para criar esta classe:
 
 2.  Clique com o botão direito do mouse no painel **projeto** , **criar* * C \# script * *. Nomeie o script **olhar**.
 
-3.  Clique duas vezes no novo **script _olhar_*_ para abri-lo com _* Visual Studio 2017.**
+3.  Clique duas vezes no novo script ***olhar** _ para abri-lo com _ *Visual Studio 2017.**
 
 4.  Verifique se o namespace a seguir está na parte superior do script e remova todos os outros:
 

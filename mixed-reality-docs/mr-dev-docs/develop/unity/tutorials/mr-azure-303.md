@@ -1,19 +1,19 @@
 ---
-title: Sr e Azure 303 – LUIS (reconhecimento de linguagem natural)
+title: HoloLens (1º gen) e Azure 303-reconhecimento de linguagem natural (LUIS)
 description: Conclua este curso para aprender a implementar o LUIS (serviço do Azure Reconhecimento vocal Intelligence) em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, serviço de inteligência de reconhecimento de linguagem, Luis, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583438"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730553"
 ---
-# <a name="mr-and-azure-303-natural-language-understanding-luis"></a>Sr e Azure 303: LUIS (reconhecimento de linguagem natural)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (1º gen) e Azure 303: reconhecimento de linguagem natural (LUIS)
 
 <br>
 

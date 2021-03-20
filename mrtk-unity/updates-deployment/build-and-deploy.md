@@ -4,14 +4,13 @@ description: Documentação sobre build e implantação de aplicativos em vário
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Visual Studio, Android, iOS
-ms.openlocfilehash: f86e70fb80e854111c62391d706a8d33fcd67c90
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 235255dcb94f2df3c1ab4c8e8ccc71ba53992b2f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101763173"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690126"
 ---
 # <a name="building-and-deploying-mrtk"></a>Como compilar e implantar o MRTK
 

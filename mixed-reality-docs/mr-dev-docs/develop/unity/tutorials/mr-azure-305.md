@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 305 – Funções e Armazenamento
+title: HoloLens (1ª gen) e Azure 305 – funções e armazenamento
 description: Conclua este curso para aprender a implementar o armazenamento e as funções do Azure em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, funções, armazenamento, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b55acaf003a1cdf50a5a78e48fdf05a9ab07d0d6
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583421"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730543"
 ---
-# <a name="mr-and-azure-305-functions-and-storage"></a>MR e Azure 305: funções e armazenamento
+# <a name="hololens-1st-gen-and-azure-305-functions-and-storage"></a>HoloLens (1º gen) e Azure 305: funções e armazenamento
 
 <br>
 

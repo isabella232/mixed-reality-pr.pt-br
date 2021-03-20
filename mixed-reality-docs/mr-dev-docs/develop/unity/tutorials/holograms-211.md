@@ -1,19 +1,19 @@
 ---
-title: Entrada do MR 211 – Gesto
+title: Entrada do HoloLens (1ª gen) 211-gesto
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de gesto.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, gesto, HoloLens, Academia de realidade misturada, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583704"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730453"
 ---
-# <a name="mr-input-211-gesture"></a>Entrada do MR 211: Gesto
+# <a name="hololens-1st-gen-input-211-gesture"></a>Entrada do HoloLens (1ª gen) 211: gesto
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.
@@ -129,7 +129,7 @@ Se estiver implantando em um headset de imersão:
 * No painel **hierarquia** , expanda o objeto **InputManager** .
 * Procure e selecione o objeto **GesturesInput** .
 
-O script **InteractionInputSource.cs** executa estas etapas:
+O script **InteractionInputSource. cs** executa estas etapas:
 
 1. Assina os eventos InteractionSourceDetected e InteractionSourceLost.
 2. Define o estado HandDetected.
@@ -172,7 +172,7 @@ Os **dados de estado do cursor** funcionam da seguinte maneira:
 
 ### <a name="instructions"></a>Instruções
 
-Para usar gestos de navegação em nosso aplicativo, vamos editar **GestureAction.cs** para girar objetos quando ocorrer o gesto de navegação. Além disso, adicionaremos comentários ao cursor para exibir quando a navegação estiver disponível.
+Para usar gestos de navegação em nosso aplicativo, vamos editar **gestoaction. cs** para girar objetos quando ocorrer o gesto de navegação. Além disso, adicionaremos comentários ao cursor para exibir quando a navegação estiver disponível.
 
 1. No painel **hierarquia** , expanda **CursorWithFeedback**.
 2. Na pasta **hologramas** , localize o ativo **ScrollFeedback** .
@@ -185,7 +185,7 @@ Para usar gestos de navegação em nosso aplicativo, vamos editar **GestureActio
 9. No painel **Inspetor** , clique no botão **Adicionar componente** .
 10. No menu, digite a **ação de gesto** de caixa de pesquisa. Selecione o resultado da pesquisa.
 
-Em seguida, abra **GestureAction.cs** no Visual Studio. Em código exercício 2. c, edite o script para fazer o seguinte:
+Em seguida, abra **gestoaction. cs** no Visual Studio. Em código exercício 2. c, edite o script para fazer o seguinte:
 
 1. **Gire o objeto AstroMan** sempre que um gesto de navegação for executado.
 2. Calcule o **rotationFactor** para controlar a quantidade de rotação aplicada ao objeto.
@@ -341,7 +341,7 @@ Você observará que os outros eventos de navegação já estão preenchidos com
 
 ### <a name="instructions"></a>Instruções
 
-GestureManager.cs e AstronautManager.cs nos permitirão fazer o seguinte:
+Gestomanager. cs e AstronautManager. cs nos permitirá fazer o seguinte:
 
 1. Use a palavra-chave de fala "**move Astronaut**" para habilitar gestos de **manipulação** e "**girar Astronaut**" para desabilitá-los.
 2. Alterne para responder ao **reconhecedor de gestos de manipulação**.
@@ -361,7 +361,7 @@ Agora, vamos adicionar os comandos de fala necessários para controlar o estado 
 3. Digite a palavra-chave como **mover Astronaut**. Fique à vontade para adicionar um atalho de chave, se desejado.
 4. Clique no **+** lado direito para adicionar uma nova palavra-chave.
 5. Digite a palavra-chave como **girar Astronaut**. Fique à vontade para adicionar um atalho de chave, se desejado.
-6. O código de manipulador correspondente pode ser encontrado em **GestureAction.cs**, no manipulador **ISpeechHandler. OnSpeechKeywordRecognized** .
+6. O código de manipulador correspondente pode ser encontrado em **gestureaction. cs**, no manipulador **ISpeechHandler. OnSpeechKeywordRecognized** .
 
 ![Como configurar a fonte de entrada de fala para o capítulo 4](images/holograms211-speech.png)
 
@@ -372,13 +372,13 @@ Em seguida, vamos configurar os comentários de manipulação no cursor.
 3. No painel **hierarquia** , clique em **CursorWithFeedback**.
 4. Arraste e solte o objeto **PathingFeedback** da **hierarquia** para a propriedade **demarcar objeto de jogo detectado** no componente de **comentários do cursor** no **Inspetor**.
 
-Agora, precisamos adicionar código a **GestureAction.cs** para habilitar o seguinte:
+Agora, precisamos adicionar o código para **gestoaction. cs** para habilitar o seguinte:
 
 1. Adicione o código à função **IManipulationHandler. OnManipulationUpdated** , que moverá o Astronaut quando um gesto de **manipulação** for detectado.
 2. Calcule o **vetor de movimento** para determinar onde o Astronaut deve ser movido com base na posição da mão.
 3. **Mova** o Astronaut para a nova posição.
 
-Conclua a codificação exercício 4. a no **GestureAction.cs** ou use nossa solução concluída abaixo:
+Conclua a codificação exercício 4. a em **gestoaction. cs** ou use nossa solução concluída abaixo:
 
 ```cs
 using HoloToolkit.Unity.InputModule;

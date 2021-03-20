@@ -1,19 +1,19 @@
 ---
-title: Sr e Azure 307-aprendizado de máquina
+title: HoloLens (1º gen) e Azure 307-Machine Learning
 description: Conclua este curso para aprender a implementar Azure Machine Learning Studio (clássico) em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realidade mista, Academia, Unity, tutorial, API, Machine Learning, ml, estúdio de Machine Learning, hololens, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c9d6408d41340b1c0fcb1f41b61d84ba115258c3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583396"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730513"
 ---
-# <a name="mr-and-azure-307-machine-learning"></a>MR e Azure 307: Aprendizado de máquina
+# <a name="hololens-1st-gen-and-azure-307-machine-learning"></a>HoloLens (1º gen) e Azure 307: Machine Learning
 
 <br>
 
@@ -242,7 +242,7 @@ Para começar a criar um experimento:
 
     ![O Machine Learning Studio (clássico): o experimento](images/AzureLabs-Lab7-20.png)
 
-8.  Na **_parte inferior esquerda_*_ do* item de dados _ Split** , arraste uma conexão para a **parte superior direita** do item de **modelo de treinamento** . A primeira 70% de divisão do conjunto de um será usada pelo modelo de treinamento para treinar o algoritmo.
+8.  Na **parte inferior esquerda** _ do item _ *dividir dados**, arraste uma conexão para a **parte superior direita** do item de **modelo de treinamento** . A primeira 70% de divisão do conjunto de um será usada pelo modelo de treinamento para treinar o algoritmo.
 
     ![O Machine Learning Studio (clássico): o experimento](images/AzureLabs-Lab7-21.png)
 
@@ -338,11 +338,11 @@ Configure e teste seu headset de imersão de realidade misturada.
 
 2.  Com o Unity Open, vale a pena verificar se o **Editor de script** padrão está definido como **Visual Studio**. Vá para **Editar**  >  **preferências** e, em seguida, na janela novo, navegue até **Ferramentas externas**. Altere o **Editor de script externo** para o **Visual Studio 2017**. Feche a janela **preferências** .
 
-3.  Em seguida, vá para **arquivo**  >  **configurações de compilação** e alterne a plataforma para **plataforma universal do Windows**, clicando no botão **_alternar plataforma_* _.
+3.  Em seguida, vá para **arquivo**  >  **configurações de compilação** e alterne a plataforma para **plataforma universal do Windows**, clicando no botão **_alternar plataforma_** .
 
 4.  Verifique também se:
 
-    1.  _ *Dispositivo de destino** está definido como **qualquer dispositivo**.
+    1.  O **dispositivo de destino** está definido como **qualquer dispositivo**.
 
         > Para o Microsoft HoloLens, defina o **dispositivo de destino** como *HoloLens*.
 
@@ -368,9 +368,9 @@ Configure e teste seu headset de imersão de realidade misturada.
 
         1.  A **versão de tempo de execução** de **script** deve ser **experimental** (.NET 4,6 equivalente)
 
-        2. O **back-end de script** deve ser **_.net_* _
+        2. O **back-end de script** deve ser **_.net_**
 
-        3. _ *Nível de compatibilidade de API** deve ser **.NET 4,6**
+        3. O **nível de compatibilidade da API** deve ser **.NET 4,6**
 
             ![Configurando o projeto do Unity](images/AzureLabs-Lab7-36.png)
 

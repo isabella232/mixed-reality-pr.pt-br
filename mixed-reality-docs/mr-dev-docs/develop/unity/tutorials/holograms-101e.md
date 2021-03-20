@@ -1,19 +1,19 @@
 ---
-title: Noções básicas do MR 101E – Projeto completo com emulador
+title: 101E do HoloLens (1ª gen) básico – projeto completo com o emulador
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o emulador do HoloLens para aprender as noções básicas de um aplicativo Holographic.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade mista, Windows Mixed Reality, holograma, Academia, tutorial, emulador, HoloLens, Academia de realidade misturada, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10, olhar, gestos, entrada de voz, som espacial, mapeamento espacial
-ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583692"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730283"
 ---
-# <a name="mr-basics-101e-complete-project-with-emulator"></a>Noções básicas do MR 101E: projeto completo com emulador
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>101E básico do HoloLens (1ª gen): concluir o projeto com o emulador
 
 >[!NOTE]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
@@ -141,7 +141,7 @@ Neste capítulo, vamos apresentar a primeira das três maneiras de interagir com
 * Selecione o objeto **cursor** no **painel hierarquia**.
 * Arraste e solte o script **WorldCursor** no **painel Inspetor**.
 * Clique duas vezes no script **WorldCursor** para abri-lo no Visual Studio.
-* Copie e cole esse código em **WorldCursor.cs** e **Salve tudo**.
+* Copie e cole esse código em **WorldCursor. cs** e **Salve tudo**.
 
 ```cs
 using UnityEngine;
@@ -321,7 +321,7 @@ Neste capítulo, adicionaremos suporte para dois comandos de [voz](../../../desi
 * Na pasta **scripts** , crie um script chamado **speechmanager**.
 * Arraste o script **speechmanager** para o objeto **Origamicollection** na hierarquia
 * Abra o script **speechmanager** no Visual Studio.
-* Copie e cole esse código em **SpeechManager.cs** e **Salve todos**:
+* Copie e cole esse código em **speechmanager. cs** e **Salve todos**:
 
 ```cs
 using System.Collections.Generic;
@@ -638,7 +638,7 @@ Você aprendeu a:
 
 Agora você está pronto para começar a criar seus próprios aplicativos Holographic!
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Noções básicas do MR 101: projeto completo com dispositivo](holograms-101.md)
 * [Foco](../../../design/gaze-and-commit.md)

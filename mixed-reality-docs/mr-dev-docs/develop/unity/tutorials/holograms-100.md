@@ -1,19 +1,19 @@
 ---
-title: Noções básicas do MR 100 – Introdução ao Unity
+title: Informações básicas do HoloLens (1ª gen) 100-introdução ao Unity
 description: Saiba como criar seu primeiro aplicativo "Hello World" básico de realidade mista para dispositivos do HoloLens e do Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade mista, Windows Mixed Reality, HoloLens, imersão, VR, Mr, introdução, holograma, Academia, tutorial, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583732"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730353"
 ---
-# <a name="mr-basics-100-getting-started-with-unity"></a>Noções básicas do MR 100: introdução ao Unity
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Informações básicas do HoloLens (1ª gen) 100: introdução ao Unity
 
 >[!IMPORTANT]
 >Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
@@ -223,7 +223,7 @@ Verifique se o dispositivo está conectado via cabo USB.
 
 Agora que seu aplicativo está implantado, tente mover tudo em todo o cubo e observe que ele permanece no mundo inteiro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Visão geral do desenvolvimento do Unity](../unity-development-overview.md)
 * [Melhores práticas para trabalhar com o Unity e o Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)
