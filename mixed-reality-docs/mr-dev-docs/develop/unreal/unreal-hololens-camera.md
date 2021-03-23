@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, recursos, documentação, guias, hologramas, câmera, câmera PV, MRC, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
 ms.openlocfilehash: 6f1301e0daeb44521dfb4e93a915d49d9aea8443
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98247759"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Câmera de foto/vídeo do HoloLens no Unreal

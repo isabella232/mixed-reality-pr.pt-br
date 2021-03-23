@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Home, ambientes personalizados, lugares, Cliff House, skyloft, usuário, criar, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista
-ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583302"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881213"
 ---
 # <a name="design-your-own-immersive-environments"></a>Projete seus próprios ambientes de imersão
 
@@ -82,7 +82,7 @@ A realidade mista do Windows depende do glTF binário (. glb) como o formato de 
 
 A primeira etapa na exportação de ativos a serem usados como ambientes domésticos personalizados é gerar um modelo glTF 2,0. O grupo de trabalho glTF mantém uma [lista de exportadores e conversores com suporte](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) para criar um modelo glTF 2,0. Para começar, use um dos programas listados nesta página para criar e exportar um modelo do glTF 2,0 ou Converta um modelo existente usando um dos conversores com suporte.
 
-Além disso, confira [este artigo útil, que fornece uma visão geral de um fluxo de trabalho de arte para exportar modelos glTF do Blender e do 3DS Max diretamente. 
+<!-- Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly.  -->
 
 ### <a name="environment-limits"></a>Limites de ambiente
 

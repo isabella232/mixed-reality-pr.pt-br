@@ -8,10 +8,10 @@ ms.topic: article
 keywords: Realidade Misturada, holográfico, AR, VR, MR, XR, realidade aumentada, realidade virtual, explicação, estudo de caso, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada
 ms.localizationpriority: high
 ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98583016"
 ---
 # <a name="what-is-mixed-reality"></a>O que é Realidade Misturada?

@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126609"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730483"
 ---
 # <a name="unity-development-for-hololens"></a>Desenvolvimento do Unity para HoloLens
 
@@ -27,7 +27,7 @@ O caminho mais rápido para criar um [aplicativo de realidade misturada](../../d
 
 Use os pontos de verificação a seguir para levar seus jogos e aplicativos do Unity para o mundo da realidade misturada. Se você ainda não explorou o [aplicativo de exemplo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), é recomendável baixá-lo e usá-lo para se familiarizar com os conceitos básicos da UX de Realidade Misturada.
 
-### <a name="1-getting-started"></a>1. Introdução
+## <a name="1-getting-started"></a>1. Introdução
 
 A maneira mais fácil de desenvolver projetos no Unity é com o Kit de Ferramentas de Realidade Misturada. O MRTK ajudará você a configurar automaticamente um projeto para Realidade Misturada e fornecerá um conjunto de recursos para acelerar seu processo de desenvolvimento. Ao final desta seção, você terá uma compreensão básica do Kit de Ferramentas de Realidade Misturada, um ambiente de desenvolvimento configurado adequadamente para aplicativos de Realidade Misturada e um projeto do MRTK no Unity criado por você.
 
@@ -44,13 +44,13 @@ A maneira mais fácil de desenvolver projetos no Unity é com o Kit de Ferrament
 > [!NOTE]
 > Depois que você configurar o MRTK V2 em seu projeto, objetos de jogo padrão do Unity, como a câmera, serão acesos imediatamente para uma experiência com escala de posição sentada. Você pode encontrar instruções sobre como alterar a escala de experiência de seu aplicativo na página de [sistemas de coordenadas](coordinate-systems-in-unity.md).
 
-### <a name="2-core-building-blocks"></a>2. Blocos principais de construção
+## <a name="2-core-building-blocks"></a>2. Blocos principais de construção
 
 Todos os principais blocos de construção para aplicativos de realidade misturada são expostos de maneira consistente com outras APIs do Unity. Esses blocos de construção estão disponíveis como recursos autônomos e por meio do Kit de Ferramentas de Realidade Misturada. Talvez você não precise de todos eles de uma vez, mas recomendamos explorá-los logo no início. Depois de se aprofundar nos principais blocos de construção listados abaixo, você terá uma caixa de ferramentas cheia de recursos que pode integrar aos seus projetos de Realidade Misturada por conta própria ou por meio do MRTK.
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-advanced-features"></a>3. Recursos avançados
+## <a name="3-advanced-features"></a>3. Recursos avançados
 
 Outros recursos importantes que desempenham uma função em aplicativos de realidade misturada estão disponíveis por meio das APIs do Unity sem nenhum pacote ou configuração extra. Esses recursos podem ser adicionados a projetos do Unity com ou sem o MRTK instalado. Depois de se aprofundar nos recursos mais avançados que o Unity oferece, você conseguirá criar aplicativos de realidade misturada complexos e mais avançados.
 
@@ -62,7 +62,7 @@ Outros recursos importantes que desempenham uma função em aplicativos de reali
 | [Controle de perda](tracking-loss-in-unity.md) | Lide com cenários em que seu dispositivo não consegue se localizar no espaço mundial dos aplicativos |
 | [Entrada por teclado](keyboard-input-in-unity.md) | Obtenha informações de teclados do mundo real e de Realidade Misturada em seus aplicativos |
 
-### <a name="4-deploying-to-a-device-or-emulator"></a>4. Como implantar em um dispositivo ou emulador
+## <a name="4-deploying-to-a-device-or-emulator"></a>4. Como implantar em um dispositivo ou emulador
 
 Depois que o projeto holográfico do Unity estiver pronto para teste, a próxima etapa será exportar e criar uma solução do Unity para Visual Studio. Com a solução do VS em mãos, você pode executar seu aplicativo em um dispositivo real ou simulado de três maneiras. Ao final desta seção, você conseguirá implantar seu aplicativo em qualquer dispositivo ou emulador que atenda às suas necessidades de desenvolvimento.
 
@@ -70,7 +70,7 @@ Depois que o projeto holográfico do Unity estiver pronto para teste, a próxima
 * [Emulador do HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
 * [Simulador de headset imersivo do Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### <a name="5-adding-services"></a>5. Como adicionar serviços
+## <a name="5-adding-services"></a>5. Como adicionar serviços
 
 Neste ponto em seu percurso de desenvolvimento, você pode buscar a adição de serviços ou uma ajuda com a implantação comercial. A integração dos [Serviços de Nuvem do Azure](../mixed-reality-cloud-services.md) e dos recursos do Dynamics 365 pode melhorar muito o nível dos seus projetos. Compilamos alguns pontos de partida para você explorar e expandir seu conhecimento sobre Realidade Misturada.
 
