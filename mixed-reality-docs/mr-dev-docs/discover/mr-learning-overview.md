@@ -8,10 +8,10 @@ ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
 ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
-ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102770324"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
