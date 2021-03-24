@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Realidade mista do Windows, HoloLens, estudo de caso, visão, cenários, estudos de caso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757644"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895149"
 ---
 # <a name="case-study-gallery"></a>Galeria de estudos de caso
 
@@ -19,23 +19,28 @@ Histórias, aprendizado e experiências que a equipe de realidade mista encontro
 
 :::row:::
     :::column:::
-       [ ![ 3 a interface do usuário do HoloStudio e o design de interação aprendem](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio da interface do usuário e de design de interação](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio foi um dos primeiros aplicativos para o HoloLens. Por isso, tivemos que criar novas práticas recomendadas para a interface do usuário 3D e o design de interação. Fizemos isso por meio de testes de usuário, protótipos e avaliação e erro.<br>
-        *Julho de 2016*
+       [ ![ Ford GT40 experiência](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) **[Ford GT40 experiência](../develop/unreal/unreal-ford-gt40.md)**<br>
+        Esse estudo de caso permite que você se deparasse com o Racecar lendárias que supere a Ferrari em 1966 24 horas de início da corrida Mans, como a Ford GT40 chega à vida na tabela na frente de você.<br>
+        *Fevereiro de 2021*
+    :::column-end:::
+    :::column:::
+       [ ![ Dimensionamento de Datascape entre dispositivos com dimensionamento de desempenho diferente](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[Datascape entre dispositivos com desempenho diferente](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        Esse estudo de caso oferece informações sobre como os desenvolvedores da Microsoft otimizaram o aplicativo Datascape para fornecer uma experiência atraente nos dispositivos com uma variedade de recursos de desempenho.<br>
+        *Agosto de 2017*
     :::column-end:::
     :::column:::
        [ ![ Criando HoloSketch, um layout espacial e um aplicativo de esboço de UX para o hololens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[criando HoloSketch, um layout espacial e um aplicativo de esboço de UX para o hololens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch é um layout espacial do dispositivo e uma ferramenta de esboço de UX para o HoloLens para ajudar a criar experiências de Holographic.<br>
          *Julho de 2017*
     :::column-end:::
-    :::column:::
-       [ ![ Criando uma experiência de imersão em fragmentos](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) , **[criando uma experiência de imersão em fragmentos](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Os fragmentos são uma inatividade de crime interativo para o Microsoft HoloLens, onde você segue as pistas para resolver um mistério que ocorre no espaço do mundo real.<br>
-        *Agosto de 2016*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+       [ ![ Usando o plano de estabilização para reduzir Holographic turbulência](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[usando o plano de estabilização para reduzir Holographic turbulência](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+        Trabalhar com hologramas pode ser complicado. O fato de que você pode se movimentar em seu espaço e ver seus hologramas de todos os ângulos diferentes fornece um nível de imersão que você não pode obter com uma tela de computador normal.<br>
+        *Abril de 2017*
+    :::column-end:::
     :::column:::
        [ ![ Expandindo os recursos de mapeamento espacial do hololens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[expandindo os recursos de mapeamento espacial do hololens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         Ao criar nossos primeiros aplicativos para o Microsoft HoloLens, estamos ansiosos para ver a distância dos limites do mapeamento espacial no dispositivo.<br>
@@ -46,20 +51,18 @@ Histórias, aprendizado e experiências que a equipe de realidade mista encontro
         A equipe do HoloLens deseja compartilhar algumas das práticas recomendadas que foram derivadas do projeto HoloLens do Lowe.<br>
         *Setembro de 2016*
     :::column-end:::
-    :::column:::
-       [ ![ Usando o plano de estabilização para reduzir Holographic turbulência](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[usando o plano de estabilização para reduzir Holographic turbulência](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        Trabalhar com hologramas pode ser complicado. O fato de que você pode se movimentar em seu espaço e ver seus hologramas de todos os ângulos diferentes fornece um nível de imersão que você não pode obter com uma tela de computador normal.<br>
-        *Abril de 2017*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Dimensionamento de Datascape entre dispositivos com dimensionamento de desempenho diferente](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[Datascape entre dispositivos com desempenho diferente](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        Esse estudo de caso oferece informações sobre como os desenvolvedores da Microsoft otimizaram o aplicativo Datascape para fornecer uma experiência atraente nos dispositivos com uma variedade de recursos de desempenho.<br>
-        *Agosto de 2017*
+       [ ![ Criando uma experiência de imersão em fragmentos](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) , **[criando uma experiência de imersão em fragmentos](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        Os fragmentos são uma inatividade de crime interativo para o Microsoft HoloLens, onde você segue as pistas para resolver um mistério que ocorre no espaço do mundo real.<br>
+        *Agosto de 2016*
     :::column-end:::
     :::column:::
+       [ ![ 3 a interface do usuário do HoloStudio e o design de interação aprendem](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio da interface do usuário e de design de interação](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio foi um dos primeiros aplicativos para o HoloLens. Por isso, tivemos que criar novas práticas recomendadas para a interface do usuário 3D e o design de interação. Fizemos isso por meio de testes de usuário, protótipos e avaliação e erro.<br>
+        *Julho de 2016*
     :::column-end:::
     :::column:::
     :::column-end:::

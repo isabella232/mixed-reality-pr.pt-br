@@ -8,14 +8,18 @@ ms.topic: article
 keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d610907123898471e92598da134e9c4d77a195e9
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: ca577bdc5bc30aebf80c9888345eb0e2d5c3ce6d
+ms.sourcegitcommit: cc9d90b046a9fce792058fea25ae13a9186e43e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104909003"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008921"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>A criação da experiência Ford GT40
+
+*"MRTK, desenvolver para o HoloLens 2 usando inreal era um pouco entediante porque todas as interações espaciais precisavam ser codificadas manualmente, em C++. O MRTK de forma não real fez muitas dessas mesmas tarefas triviais. Eu o estimava reduzindo o tempo necessário para o protótipo inicial pela metade. "* -José Rodriguez, desenvolvedor de software
+
+*"A experiência da Ford GT40 é a prova de que um aplicativo de HoloLens 2 de alta fidelidade pode ser concluído em apenas alguns meses, com um orçamento modesto, ainda assim fornecer resultados altamente impactados."*  -Daniel Cheetham, diretor de inovação, bom término
 
 Usando o MRTK (Kit de ferramentas de realidade misturada) para a empresa de produção criativa, a conclusão feliz é uma experiência de HoloLens 2 que fornece uma nova perspectiva no Ford GT40, o carro de corrida lendárias que superou a Ferrari às 24 horas da Le Mans!
 
@@ -120,14 +124,6 @@ De acordo com o Cheetham, o pandemia global impulsionava grandes interesse na re
 > [Baixe o aplicativo Ford GT40](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 Confira nossa [introdução ao desenvolvimento de realidade misturada no HoloLens 2](../development.md) ou [MRTK para não real](https://github.com/microsoft/MixedRealityToolkit-Unreal) no github.
-
-## <a name="what-people-are-saying"></a>O que as pessoas estão dizendo
-
-*"MRTK, desenvolver para o HoloLens 2 usando inreal era um pouco entediante porque todas as interações espaciais precisavam ser codificadas manualmente, em C++. O MRTK de forma não real fez muitas dessas mesmas tarefas triviais. Eu o estimava reduzindo o tempo necessário para o protótipo inicial pela metade. "*
-- José Rodriguez, desenvolvedor de software
-
-*"A experiência da Ford GT40 é a prova de que um aplicativo de HoloLens 2 de alta fidelidade pode ser concluído em apenas alguns meses, com um orçamento modesto, ainda assim fornecer resultados altamente impactados."*  
-- Daniel Cheetham, diretor de inovação, bom término
 
 <!-- ## About the team
 
