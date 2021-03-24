@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
 appliesto:
 - Windows 10
-ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea65dd2c6c821189b1248bf3b418e38fdd7a6d7f
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581655"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105029384"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Visão geral do software de Realidade Misturada e histórico de versões
 
@@ -105,6 +105,7 @@ Esse driver é baixado e instalado automaticamente por meio de Windows Update, m
 
    | Versão          | Data de lançamento          | Principais alterações                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23 de março de 2021  | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Atualize a ordem de enrolamento da malha da área oculta para que o HP reverbo G2 seja consistente com outros headsets.</li><li>Aprimoramentos de qualidade de visuais para os fones de ouvido do HP reverbs G2.</li><li>Melhorias de confiabilidade e plataforma do Windows Mixed Reality headset.</li>|
    | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10 de dezembro de 2020  | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Novo firmware do controlador para o controlador HP para resolver um problema em que alguns controladores têm gatilhos que não funcionam.</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8 de outubro de 2020  | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Suporte oficial para o HP reverberate G2, HP Omnicept e o novo controlador HP.</li><li>Correções de exibição secundárias para HP reverbera e Samsung Odyssey + headsets. (Requer a [compilação do sistema operacional 19041,546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) ou superior ou o Builds do [sistema operacional 18362,1110 e 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) ou superior).</li><li>Melhorias na transição de estado de energia do computador da suspensão para reduzir os erros do SWW 1-4.</li><li>Melhorias de confiabilidade e correções do Windows Mixed Reality headset.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7 de maio de 2020      | Compatível com o Windows 10, versão 1903 e mais recente.<br/><ul><li>Melhorias de confiabilidade e correções do Windows Mixed Reality headset.</li></ul>  |
