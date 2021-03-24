@@ -4,14 +4,13 @@ description: Detalhes relacionados a solicitações de pull.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, PR,
-ms.openlocfilehash: acdabed1b6fe35c3f16db9cf3221481c1715321c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 31db19154adbf7016aec609e7baca8c4fa3eda48
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101763170"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687536"
 ---
 # <a name="pull-requests"></a>Solicitações de pull
 
