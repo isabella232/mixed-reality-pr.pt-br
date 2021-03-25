@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590368"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237157"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
 
@@ -61,35 +61,34 @@ Na janela hierarquia, selecione o objeto **MixedRealityToolkit** e, em seguida, 
 
 ## <a name="adding-eye-tracking-to-objects"></a>Como adicionar acompanhamento de olho a objetos
 
-Na janela Hierarquia, expanda o objeto RoverExplorer > **Botões** e, para cada um dos três objetos de botão filho, expanda e selecione o objeto SeeItSayItLabel > **TextMeshPro**:
+Na janela Hierarquia, expanda **RoverExplorer** > **Botões** e selecione os três objetos do botão filho:
 
-![Unity com o objeto TextMeshPro selecionado](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity com objeto Botão selecionado](images/mr-learning-base/base-08-section4-step1-1.png)
 
-Com os três objetos TextMeshPro ainda selecionados, na janela Inspetor, use o botão **Adicionar Componente** para adicionar os seguintes componentes a todos os objetos selecionados:
-
-* Componente **Colisor de Caixa**
-* Componente **EyeTrackingTarget**
+Com os três objetos Botão ainda selecionados, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **EyeTrackingTarget** a todos os objetos selecionados:
 
 ![Unity com o objeto TextMeshPro selecionado e os componentes adicionados](images/mr-learning-base/base-08-section4-step1-2.png)
 
-Na janela Hierarquia, selecione o objeto **Dicas** > SeeItSayItLabel > **TextMeshPro** e configure o componente **EyeTrackingTarget** da seguinte maneira:
+Na janela hierarquia, expanda **RoverExplorer** > **Botões** > **Dicas** > **SeeItSayItLabel** > **TextMeshPro**
+
+Em seguida, na janela Hierarquia, selecione o objeto de botão **Dicas** e configure o componente **EyeTrackingTarget** da seguinte maneira:
 
 * Na seção de evento **On Look At Start ()**
   * Clique no ícone pequeno **+** para adicionar outro evento
-  * Atribua o objeto em si, ou seja, o mesmo objeto **TextMeshPro** ao campo **Nenhum (Objeto)**
+  * Atribua o objeto **TextMeshPro** do botão **Dicas** ao campo **Nenhum (Objeto)**
   * Na lista suspensa **Sem Função**, selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
   * Defina o argumento como **0,06** para aumentar o tamanho da fonte atual de 0,04 em 50%
 * Na seção de evento **On Look Away ()**
   * Clique no ícone pequeno **+** para adicionar outro evento
-  * Atribua o objeto em si, ou seja, o mesmo objeto **TextMeshPro** ao campo **Nenhum (Objeto)**
+  * Atribua o objeto **TextMeshPro** do botão **Dicas** ao campo **Nenhum (Objeto)**
   * Na lista suspensa **Sem Função**, selecione **TextMeshPro** > **float fontSize** para atualizar esse valor da propriedade quando o evento for disparado
   * Defina o argumento como **0,04** para redefinir o tamanho da fonte de volta para 0,04
 
 ![Unity com o objeto Hints TextMeshPro selecionado e o componente EyeTrackingTarget configurado](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Repita** esta etapa para o objeto **Explodir** > SeeItSayItLabel > **TextMeshPro** e o objeto **Redefinir** > SeeItSayItLabel > **TextMeshPro**.
+**Repita** essa etapa para o objeto de botão **Detalhar** e **Redefinir** para configurar o acompanhamento ocular para os botões restantes.
 
-Se agora você entrar no modo de Jogo e pressionar e manter o botão direito do mouse enquanto move o mouse até que o foco atinja um dos rótulos, verá o tamanho da fonte aumentar em 50% e ser redefinido de volta ao seu tamanho original ao desviar o olhar:
+Se agora você entrar no modo de Jogo e pressionar e manter o botão direito do mouse enquanto move o mouse até que o foco atinja um dos botões, verá o tamanho da fonte do texto aumentar em 50% e ser redefinido de volta ao seu tamanho original ao desviar o olhar:
 
 ![Modo de exibição dividida do Modo de reprodução do Unity com o foco sobre o rótulo do botão Detalhar do destino de acompanhamento com os olhos](images/mr-learning-base/base-08-section4-step1-4.png)
 

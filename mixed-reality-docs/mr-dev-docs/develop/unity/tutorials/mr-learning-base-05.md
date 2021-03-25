@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores
 ms.localizationpriority: high
-ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 11d25a13e679308ef7f0f4302dd7df29e413a435
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590478"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237037"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Criar conteúdo dinâmico usando Solucionadores
 
@@ -30,7 +30,7 @@ Neste tutorial, você vai explorar maneiras de posicionar hologramas dinamicamen
 
 ![Janela Projeto do Unity com a pasta Solucionadores selecionada](images/mr-learning-base/base-05-section1-step1-1.png)
 
-Neste tutorial, examinaremos a implementação do Solucionador de Indicador Direcional e o Solucionador Toque para Posicionar. Para saber mais sobre a gama completa de Solucionadores disponíveis no MRTK, você pode consultar o guia [Solucionadores](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Neste tutorial, examinaremos a implementação do Solucionador de Indicador Direcional e o Solucionador Toque para Posicionar. Para saber mais sobre a gama completa de Solucionadores disponíveis no MRTK, você pode consultar o guia [Solucionadores](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs).
 
 > [!NOTE]
 > O Solucionador de Indicador Direcional não está localizado nas pastas de Solucionadores supramencionadas, mas nas pastas Pacotes > Mixed Reality Toolkit Foundation > SDK > Experimental > Recursos > Utilitários, pois é um recurso experimental.
@@ -72,7 +72,7 @@ Pressione o botão Reproduzir para entrar no modo Jogo, pressione e mantenha o b
 > Se você não vir o raio da câmera na janela Cena, verifique se o menu Gizmos está habilitado, como mostra a imagem acima.
 
 > [!TIP]
-> Para saber como usar a simulação de entrada no editor, você pode consultar o guia [Como usar a simulação de entrada de mão no editor para testar uma cena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) no [Portal de documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+> Para saber como usar a simulação de entrada no editor, você pode consultar o guia [Como usar a simulação de entrada de mão no editor para testar uma cena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) no [Portal de documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs).
 
 > [!TIP]
 > Se o computador tiver um microfone, você poderá alternar facilmente o estado ativo do painel Diagnóstico que aparece na janela Jogo usando o comando de fala "alternar diagnóstico". Como alternativa, você pode desabilitá-lo no Perfil de Configuração do MRTK > Diagnóstico > Habilitar o Sistema de Diagnóstico. No entanto, geralmente é recomendável manter o Sistema de Diagnóstico ativo durante o desenvolvimento.
@@ -82,6 +82,7 @@ Pressione o botão Reproduzir para entrar no modo Jogo, pressione e mantenha o b
 Na janela hierarquia, selecione o objeto RoverExplorer > **RoverAssembly** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Tocar para Posicionar (Script)** e configure-o da seguinte maneira:
 
 * Verifique se o **Tipo de Destino Rastreado** do componente **SolverHandler** está definido como **Cabeça**
+* Desmarque a opção **Usar Deslocamento Normal da Superfície Padrão** e verifique se o **Deslocamento Normal da Superfície** está definido como 0
 * Marque a caixa de seleção **Manter Orientação Vertical**
 * No menu suspenso **Superfícies Magnéticas** > **Elemento 0**, desmarque todas as opções que esperam **Reconhecimento Espacial**
 
@@ -139,7 +140,7 @@ Quando terminar de testar o recurso no modo de jogo, clique com o botão direito
 
 Neste tutorial, você aprendeu a usar o Solucionador Direcional do MRTK para ter um elemento de interface do usuário instruindo intuitivamente os usuários a objetos. Você também aprendeu a usar o Solucionador Toque para Posicionar para reposicionar os objetos facilmente.
 
-Para saber mais sobre esses e outros solucionadores incluídos no MRTK, consulte o guia [Solucionadores](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) no [Portal de Documentação do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Para saber mais sobre esses e outros solucionadores incluídos no MRTK, consulte o guia [Solucionadores](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
 
 > [!div class="nextstepaction"]
 >[Próximo tutorial: 6. Como criar interfaces do usuário](mr-learning-base-06.md)

@@ -1,18 +1,18 @@
 ---
 title: Como descobrir e adquirir recursos
-description: Conheça e baixe recursos de Realidade Misturada.
+description: Descubra e baixe recursos de Realidade Misturada.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: 4da6b6fdfc0205d4fa7fb5bf4ae9e48993d7c1e6
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243858"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102230707"
 ---
 # <a name="discovering-and-acquiring-features"></a>Como descobrir e adquirir recursos
 
@@ -51,8 +51,7 @@ Os recursos são listados na categoria apropriada. Da esquerda para a direita na
 
 ## <a name="refresh-the-feature-catalog"></a>Atualizar o catálogo de recursos
 
-Para verificar se há recursos novos e atualizados, clique no botão Atualizar ![botão Atualizar](images/RefreshButton.png) . Isso se conecta ao site do catálogo e recupera as informações mais recentes.
-* Depois que o catálogo for lido, a data e a hora da última atualização serão exibidas.
+Para verificar se há recursos novos e atualizados, clique no botão Atualizar ![botão Atualizar](images/RefreshButton.png) . Isso se conecta ao site do catálogo e recupera as informações mais recentes. Depois que o catálogo for lido, a data e a hora da última atualização serão exibidas.
 
 ## <a name="select-features"></a>Selecionar recursos
 
@@ -73,7 +72,7 @@ Quando o download for concluído, a Ferramenta de Recursos de Realidade Misturad
 
 ## <a name="going-back-to-the-previous-step"></a>Como voltar à etapa anterior
 
-Em **Descobrir recursos**, a Ferramenta de Recursos de Realidade Misturada permite navegar de volta ao início. Selecione **Voltar** para iniciar novamente.
+Em **Descobrir recursos**, a Ferramenta de Recursos de Realidade Misturada permite navegar de volta à seleção de projetos. Selecione **Voltar** para iniciar novamente.
 
 ## <a name="see-also"></a>Confira também
 

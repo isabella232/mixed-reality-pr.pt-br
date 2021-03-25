@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590388"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237197"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 
@@ -49,8 +49,8 @@ Na seção Fala > **Comandos de Fala**, clique no botão **+ Adicionar um Novo C
 
 * Habilitar Indicador
 * Habilitar Toque para Posicionar
-* Habilitar Caixa Delimitadora
-* Desabilitar Caixa Delimitadora
+* Habilitar controle de limites
+* Desabilitar controle de limites
 
 ![Como adicionar novos comandos de fala](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -88,10 +88,10 @@ Expanda **Elemento 0** e configure-o da seguinte maneira:
 
 Expanda **Elemento 1** e configure-o da seguinte maneira:
 
-* No campo **Palavra-chave**, digite **Habilitar Caixa Delimitadora** para fazer referência ao comando de fala Habilitar Caixa Delimitadora criado na seção anterior
+* No campo **Palavra-chave**, digite **Habilitar Controle de Limites** para fazer referência ao comando Habilitar Controle de Limites criado na seção anterior
 * Clique no ícone pequeno **+** para adicionar um evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundsControl** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção de argumento está **marcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
@@ -102,10 +102,10 @@ Expanda **Elemento 1** e configure-o da seguinte maneira:
 
 Expanda **Elemento 2** e configure-o da seguinte maneira:
 
-* No campo **Palavra-chave**, digite **Desabilitar Caixa Delimitadora** para fazer referência ao comando de fala Desabilitar Caixa Delimitadora criado na seção anterior
+* No campo **Palavra-chave**, digite **Desabilitar Controle de Limites** para fazer referência ao comando Desabilitar Controle de Limites criado na seção anterior
 * Clique no ícone pequeno **+** para adicionar um evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
-* Na lista suspensa **Sem Função**, selecione **BoundingBox** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
+* Na lista suspensa **Sem Função**, selecione **BoundsControl** > **bool enabled** para atualizar esse valor da propriedade quando o evento for disparado
 * Verifique se a caixa de seleção do argumento está **desmarcada**
 * Clique no ícone pequeno **+** para adicionar outro evento
 * Na janela Hierarquia, atribua o objeto **RoverExplorer** ao campo **Nenhum (Objeto)**
