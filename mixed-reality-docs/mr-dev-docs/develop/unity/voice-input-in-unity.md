@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Entrada de voz, KeywordRecognizer, GrammarRecognizer, microfone, ditado, voz, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
-ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99606111"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550376"
 ---
 # <a name="voice-input-in-unity"></a>Entrada de voz no Unity
 
 > [!CAUTION]
-> Antes de começar, considere usar o plug-in do Unity para o SDK dos serviços de fala cognitiva. O plug-in tem melhores resultados de precisão de fala e acesso fácil à decodificação de fala em texto, bem como a recursos de fala avançados, como diálogo, interação baseada em intenção, tradução, síntese de conversão de texto em fala e reconhecimento de fala em idioma natural. Para começar, confira o [exemplo e a documentação](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity).
+> Antes de começar, considere usar o plug-in do Unity para o SDK dos serviços de fala cognitiva. O plug-in tem melhores resultados de precisão de fala e acesso fácil à decodificação de fala em texto, bem como a recursos de fala avançados, como diálogo, interação baseada em intenção, tradução, síntese de conversão de texto em fala e reconhecimento de fala em idioma natural. Para começar, confira o [exemplo e a documentação](/azure/cognitive-services/speech-service/quickstart-csharp-unity).
 
 O Unity expõe três maneiras de adicionar [entrada de voz](../../design/voice-input.md) ao aplicativo do Unity, os dois primeiros tipos de PhraseRecognizer:
 * O `KeywordRecognizer` fornece ao seu aplicativo uma matriz de comandos de cadeia de caracteres a serem escutados
@@ -299,7 +299,7 @@ Você também pode apenas iniciar um KeywordRecognizer, que reiniciará o Phrase
 ## <a name="voice-input-in-mixed-reality-toolkit"></a>Entrada de voz no kit de ferramentas de realidade misturada
 
 Você pode encontrar exemplos de MRTK para entrada de voz nas seguintes cenas de demonstração:
-* [Comandos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Ditado](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
 * [Fala](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento

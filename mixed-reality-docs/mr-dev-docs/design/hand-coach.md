@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759472"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550066"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -85,7 +85,7 @@ Não espere que os usuários possam ouvir um conjunto de instruções por meio d
 
 ## <a name="can-i-create-my-own"></a>Posso criar o meu próprio?
 
-Sim. Incentivamos você a criar seu próprio gesto exclusivo para seu jogo e contribuir de volta para a Comunidade!
+Sim! Incentivamos você a criar seu próprio gesto exclusivo para seu jogo e contribuir de volta para a Comunidade!
 Fornecemos um arquivo Maya de um rigged Hand que pode ser usado para seu aplicativo, que pode ser baixado aqui: <a href="files/HandCoach_MRTK.zip"> baixar HandCoach_MRTK.zip </a>
 
 ![Exemplo de mãos animadas no Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -146,7 +146,7 @@ Depois de estar satisfeito com sua animação
 
 ## <a name="implementing-hands-into-your-unity-project"></a>Implementando mãos em seu projeto do Unity
 
-### <a name="best-practices"></a>Melhores práticas
+### <a name="best-practices"></a>Práticas recomendadas
 
 * Sugerimos reduzir verticalmente as mãos no Unity para 0,6
 * As mãos devem ser executadas duas vezes e, se não forem concluídas, passarão continuamente em loop até que o gesto seja concluído. As mãos devem ser repetidas duas vezes para garantir que o usuário tenha tempo para se registrar e ver o gesto. As mãos devem aparecer e desaparecer entre os loops. 
@@ -169,11 +169,11 @@ Depois de estar satisfeito com sua animação
 * As mãos só devem ser ensinadas uma vez. O excesso de ensino pode causar confusão e bagunças
 *   Colocando-o no Unity, baixe o MRTK mais recente aqui: https://github.com/microsoft/MixedRealityToolkit-Unity
     *   Material: Teaching_Hand2
-    *   Scripts: consulte as diretrizes do MRTK para o <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand </a>
+    *   Scripts: consulte as diretrizes do MRTK para o <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand </a>
     *   Configuração por projeto
         *   Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Interação-conceitos básicos](interaction-fundamentals.md)
 * [Processo de criação de ativos](asset-creation-process.md)
@@ -181,4 +181,4 @@ Depois de estar satisfeito com sua animação
 * [Instalar as ferramentas](../develop/install-the-tools.md)
 * [Configurar projeto do Unity](../develop/unity/Configure-Unity-Project.md)
 * [Visão geral do desenvolvimento do Unity](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../develop/unity/mrtk-101.md)
+* [MRTK 101](../out-of-scope/mrtk-101.md)

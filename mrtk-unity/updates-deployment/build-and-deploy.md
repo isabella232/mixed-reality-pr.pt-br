@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Visual Studio, Android, iOS
-ms.openlocfilehash: 235255dcb94f2df3c1ab4c8e8ccc71ba53992b2f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6f014bbd1ffd5dc0214bc52e1d3d3861409f85f6
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550856"
 ---
 # <a name="building-and-deploying-mrtk"></a>Como compilar e implantar o MRTK
 
@@ -18,7 +18,7 @@ Para executar um aplicativo no dispositivo como um aplicativo autônomo (para Ho
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-and-hololens-2-uwp"></a>Como compilar e implantar o MRTK no HoloLens 1 e no HoloLens 2 (UWP)
 
-Encontre as instruções de build e implantação para o HoloLens 1 e o HoloLens 2 (UWP) em [Como compilar seu aplicativo para o dispositivo](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device).
+Encontre as instruções de build e implantação para o HoloLens 1 e o HoloLens 2 (UWP) em [Como compilar seu aplicativo para o dispositivo](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device).
 
 **Dica:** ao compilar aplicativos para o WMR, o HoloLens 1 ou o HoloLens 2, é recomendável que as configurações de build "Versão do SDK de Destino" e "Versão Mínima da Plataforma" tenham a mesma aparência da imagem abaixo:
 

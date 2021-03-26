@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicação remota, Holographic de comunicação remota, histórico de versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496034"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550126"
 ---
 # <a name="holographic-remoting-version-history"></a>Histórico de versões de comunicação remota do Holographic
 
@@ -25,7 +25,7 @@ ms.locfileid: "100496034"
   * Canais de dados personalizados como parte da extensão de XR_MSFT_holographic_remoting. Um exemplo para isso é mostrado no [exemplo remoto OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 * Sincronização aprimorada entre o Player e o lado remoto. Isso permite alterar dinamicamente a pose e o buffer de quadros, o que garante que o conteúdo renderizado remotamente alcance os monitores na taxa de quadros de destino esperada.
 * Desempenho aprimorado do Holographic Remoting Player disponível por meio do Microsoft Store. No HoloLens 2, o jogador agora executa um sólido em 60 quadros por segundo.
-* Transmissão otimizada de malhas de superfície espacial que podem ser consultadas por meio de [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) por um aplicativo remoto.
+* Transmissão otimizada de malhas de superfície espacial que podem ser consultadas por meio de [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) por um aplicativo remoto.
 * Corrigido um problema no qual a chamada de métodos SpatialAnchorManager ou a liberação de âncoras causaram exceções na desconexão.
 * Correção do problema de Threading que leva a falhas ao fechar instâncias de PlayerContext ou RemoteContext.
 * Muitas outras correções de bugs e aprimoramentos de estabilidade.

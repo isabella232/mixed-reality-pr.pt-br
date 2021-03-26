@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759742"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549946"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapeamento espacial no Unity
 
@@ -311,7 +311,7 @@ struct TopologyResult
 ```
 
 > [!NOTE]
-> No exemplo de Unity, cada uma dessas consultas é vinculada a um botão no painel de interface do usuário virtual. Os códigos de exemplo codificam os parâmetros de cada uma dessas consultas para valores razoáveis. Consulte SpaceVisualizer.cs no código de exemplo para obter mais exemplos.
+> No exemplo de Unity, cada uma dessas consultas é vinculada a um botão no painel de interface do usuário virtual. Os códigos de exemplo codificam os parâmetros de cada uma dessas consultas para valores razoáveis. Consulte SpaceVisualizer. cs no código de exemplo para obter mais exemplos.
 
 ### <a name="shape-queries"></a>Consultas de forma
 
@@ -319,7 +319,7 @@ Na DLL, o analisador de forma ("ShapeAnalyzer_W") usa o analisador de topologia 
 
 A análise de forma funciona apenas em superfícies horizontais. Um sofá, por exemplo, é definido pela superfície de estação plana e a parte superior do sofá de volta. A consulta de forma procura duas superfícies de um tamanho, altura e intervalo de aspecto específicos, com as duas superfícies alinhadas e conectadas. Usando a terminologia de APIs, a estação de sofá e a parte superior são componentes de forma e os requisitos de alinhamento são restrições de componente de forma.
 
-Uma consulta de exemplo definida no exemplo de Unity (ShapeDefinition.cs) para objetos "sittable" é a seguinte:
+Uma consulta de exemplo definida no exemplo de Unity (ShapeDefinition. cs), para objetos "sittable", é a seguinte.
 
 ```cs
 shapeComponents = new List<ShapeComponent>()
@@ -350,7 +350,7 @@ shapeConstraints = new List<ShapeConstraint>()
 };
 ```
 
-As funções de wrapper são fornecidas no módulo do Unity para facilitar a criação de definições de formas personalizadas. A lista completa de restrições de componente e forma pode ser encontrada em "SpatialUnderstandingDll.cs" nas estruturas "ShapeComponentConstraint" e "ShapeConstraint".
+As funções de wrapper são fornecidas no módulo do Unity para facilitar a criação de definições de formas personalizadas. A lista completa de restrições de componente e forma pode ser encontrada em "SpatialUnderstandingDll. cs" nas estruturas "ShapeComponentConstraint" e "ShapeConstraint".
 
 ![A forma de retângulo foi encontrada nesta superfície](images/su-shapequery-300px.jpg)<br>
 *A forma de retângulo foi encontrada nesta superfície*
@@ -421,7 +421,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-Se for bem-sucedida, uma estrutura "ObjectPlacementResult" que contém a posição, as dimensões e a orientação do posicionamento será retornada. Além disso, o posicionamento é adicionado à lista interna de objetos posicionados da dll. As consultas de posicionamento subsequentes levarão esse objeto à conta. O arquivo "LevelSolver.cs" no exemplo de Unity contém mais consultas de exemplo.
+Se for bem-sucedida, uma estrutura "ObjectPlacementResult" que contém a posição, as dimensões e a orientação do posicionamento será retornada. Além disso, o posicionamento é adicionado à lista interna de objetos posicionados da dll. As consultas de posicionamento subsequentes levarão esse objeto à conta. O arquivo "LevelSolver. cs" no exemplo de Unity contém mais consultas de exemplo.
 
 ![Resultados da colocação do objeto](images/su-objectplacement-1000px.jpg)<br>
 *Figura 3: as caixas azuis como o resultado de três lugares em consultas de piso com afastamento das regras de posição da câmera*
@@ -441,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-"Pintura" Playspace orientada por usuário – durante a fase de verificação, o usuário se move e procura o ritmo das jogas, pintando efetivamente as áreas, que devem ser incluídas. A malha gerada é importante para fornecer comentários do usuário durante essa fase. Inportações domésticas ou de configuração do Office – as funções de consulta são projetadas em relação a superfícies simples e paredes em ângulos retos. Essa é uma limitação flexível. No entanto, durante a fase de verificação, uma análise de eixo primário é concluída para otimizar o mosaico de malha ao longo do eixo principal e secundário. O arquivo SpatialUnderstanding.cs incluído gerencia o processo da fase de verificação. Ele chama as funções a seguir.
+"Pintura" Playspace orientada por usuário – durante a fase de verificação, o usuário se move e procura o ritmo das jogas, pintando efetivamente as áreas, que devem ser incluídas. A malha gerada é importante para fornecer comentários do usuário durante essa fase. Inportações domésticas ou de configuração do Office – as funções de consulta são projetadas em relação a superfícies simples e paredes em ângulos retos. Essa é uma limitação flexível. No entanto, durante a fase de verificação, uma análise de eixo primário é concluída para otimizar o mosaico de malha ao longo do eixo principal e secundário. O arquivo SpatialUnderstanding. cs incluído gerencia o processo da fase de verificação. Ele chama as funções a seguir.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -480,7 +480,7 @@ A DLL de compreensão armazena internamente o Playspace como uma grade de oito c
 * Quando o rastreamento for perdido, o próximo evento onsurfacechanged removerá todas as malhas.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapeamento espacial no kit de ferramentas de realidade misturada
-Para obter mais informações sobre como usar o mapeamento espacial com o kit de ferramentas de realidade misturada v2, consulte a <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">seção reconhecimento espacial</a> do docs MRTK.
+Para obter mais informações sobre como usar o mapeamento espacial com o kit de ferramentas de realidade misturada v2, consulte a <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">seção reconhecimento espacial</a> do docs MRTK.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
