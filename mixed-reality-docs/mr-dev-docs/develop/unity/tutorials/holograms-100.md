@@ -1,17 +1,17 @@
 ---
-title: Informações básicas do HoloLens (1ª gen) 100-introdução ao Unity
+title: Noções básicas do HoloLens (1ª geração) 100 – Introdução ao Unity
 description: Saiba como criar seu primeiro aplicativo "Hello World" básico de realidade mista para dispositivos do HoloLens e do Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade mista, Windows Mixed Reality, HoloLens, imersão, VR, Mr, introdução, holograma, Academia, tutorial, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730353"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636168"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Informações básicas do HoloLens (1ª gen) 100: introdução ao Unity
 
@@ -77,7 +77,7 @@ Em segundo lugar, o plano de fundo da câmera padrão precisa de algum pensament
 
 Em terceiro lugar, vamos considerar o próximo clipe no Unity e impedir que os objetos sejam renderizados muito próximos dos olhos dos usuários, uma vez que um usuário se aproxima de um objeto ou um objeto se aproxima de um usuário.
 
-**Para aplicativos do HoloLens**, o próximo clipe pode ser definido como o [hololens recomendado](../camera-in-unity.md#clip-planes) 0,85 metros.
+**Para aplicativos do HoloLens**, o próximo clipe pode ser definido como o [hololens recomendado](../camera-in-unity.md#using-clipping-planes) 0,85 metros.
 
 1. Com a **câmera principal** ainda selecionada no painel **hierarquia** , localize o componente **câmera** no painel **Inspetor** e altere o campo **próximo do plano do clipe** do padrão **0,3** para o HoloLens recomendado **0,85**.
 
@@ -223,7 +223,7 @@ Verifique se o dispositivo está conectado via cabo USB.
 
 Agora que seu aplicativo está implantado, tente mover tudo em todo o cubo e observe que ele permanece no mundo inteiro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Visão geral do desenvolvimento do Unity](../unity-development-overview.md)
 * [Melhores práticas para trabalhar com o Unity e o Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, ponto de foco, plano de foco, plano de estabilização, ponto de estabilização, Reprojeção, LSR, buffer de profundidade, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226395"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636218"
 ---
 # <a name="focus-point-in-unity"></a>Ponto de foco no Unity
 
@@ -49,7 +49,7 @@ void Update()
 ```
 
 > [!NOTE]
-> O código simples acima pode reduzir a estabilidade do holograma se o objeto focalizado terminar por trás do usuário. Geralmente, recomendamos a configuração **[habilitar o compartilhamento de buffer de profundidade](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** em vez de especificar manualmente um ponto de foco.
+> O código simples acima pode reduzir a estabilidade do holograma se o objeto focalizado terminar por trás do usuário. Geralmente, recomendamos a configuração **[habilitar o compartilhamento de buffer de profundidade](camera-in-unity.md#sharing-depth-buffers)** em vez de especificar manualmente um ponto de foco.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

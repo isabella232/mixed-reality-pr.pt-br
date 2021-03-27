@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho
-ms.openlocfilehash: 47ca4041e997d623d08fa1732f7039c655810bfc
-ms.sourcegitcommit: b0fb5497bf9f280ba5610c30e4b9e5aa1cda52c9
+ms.openlocfilehash: 5889a76941c36e24f600df5a459440d93bdd4c64
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104837408"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636388"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Como configurar seu projeto sem o MRTK
 
@@ -117,7 +117,7 @@ Se seu aplicativo estiver direcionando para o HoloLens especificamente, você pr
 2. No painel de **inspetores** , defina a **posição** de transformação como **0, 0,** portanto, o local da cabeça do usuário começa na origem do Unity World.
 3. Alterar **sinalizadores claros** para **cor sólida**.
 4. Altere a cor do **plano de fundo** para **RGBA 0, 0, 0, 0**. O preto é renderizado como transparente no HoloLens.
-5. Alterar os **planos de recorte-próximo** ao [HoloLens recomendado](camera-in-unity.md#clip-planes) 0,85 (metros).
+5. Alterar os **planos de recorte-próximo** ao [HoloLens recomendado](camera-in-unity.md#using-clipping-planes) 0,85 (metros).
 
 ![Captura de tela da guia Inspetor aberta no editor do Unity](images/wmr-config-img-11.png)<br>
 *Configurações da câmera do Unity*
