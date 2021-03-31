@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: 61474ecf749b16c8c78352d9f28a6482bfa3334c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6e300c6117e04e2a49b060bcd7a6d268204f14da
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549916"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937436"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Usando o plug-in OpenXR de realidade misturada para o Unity
 
@@ -19,19 +19,48 @@ A partir da versão 2020,2 do Unity, o pacote de plugin OpenXR de realidade mist
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Unity 2020,2 ou posterior
-* Plug-in do Unity OpenXR 0.1.4 ou posterior
+* Unity 2020,3 LTS ou posterior
+* Plug-in do Unity OpenXR 1.0.3 ou posterior
 * Visual Studio 2019 ou posterior
 * Instalar o suporte da plataforma **UWP** no Unity para aplicativos do HoloLens 2
 
 > [!NOTE]
 > Se você estiver criando aplicativos VR no computador Windows, o plug-in OpenXR de realidade misturada não será necessariamente necessário. No entanto, você desejará instalar o plug-in se estiver personalizando o mapeamento do controlador para controladores do HP reverbo G2 ou compilando aplicativos que funcionam em headsets de HoloLens 2 e VR.
 
-## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a>Instalando o OpenXR com a ferramenta de funcionalidade de realidade misturada
+<!-- ## Setting up your project with MRTK
+
+MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+
+> [!div class="nextstepaction"]
+> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
+
+Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details. -->
+
+## <a name="manual-setup-without-mrtk"></a>Configuração manual sem MRTK
 
 Instale o plug-in OpenXR com o novo aplicativo de ferramenta de recursos de realidade misturada. Siga as [instruções de instalação e uso](welcome-to-mr-feature-tool.md) e selecione o pacote de **plug-in OpenXR da realidade mista** na categoria Mixed Reality Toolkit:
 
 ![Janela de pacotes da ferramenta de recurso de realidade mista com plug-in aberto XR realçado](images/feature-tool-openxr.png)
+
+## <a name="setting-your-build-target"></a>Configurando seu destino de compilação
+
+Se você estiver destinando à área de trabalho VR, sugerimos usar a plataforma autônoma do PC selecionada por padrão em um novo projeto do Unity:
+
+![Captura de tela da janela de configurações de Build aberta no editor do Unity com PC, Mac & plataforma autônoma realçada](images/wmr-config-img-3.png)
+
+Se você estiver direcionando para o HoloLens 2, precisará alternar para o Plataforma Universal do Windows:
+
+1.  Selecione **arquivo > configurações de Build...**
+2.  Selecione **plataforma universal do Windows** na lista plataforma e selecione **alternar plataforma**
+3.  Definir a **arquitetura** para o **ARM 64**
+4.  Definir o **dispositivo de destino** para o **HoloLens**
+5.  Definir **tipo de compilação** como **D3D**
+6.  Definir o **SDK do UWP** para o **mais recente instalado**
+7.  Definir a **configuração de Build** como **Release** porque há problemas de desempenho conhecidos com a depuração
+
+![Captura de tela da janela de configurações de Build aberta no editor do Unity com Plataforma Universal do Windows realçado](images/wmr-config-img-4.png)
+
+Depois de definir sua plataforma, você precisa deixar que o Unity saiba criar uma [exibição de imersão](../../design/app-views.md) em vez de uma exibição 2D quando exportada.
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>Configurando o gerenciamento de plugin XR para OpenXR
 
@@ -39,10 +68,16 @@ Para definir OpenXR como o tempo de execução no Unity:
 
 1. No editor do Unity, navegue até **editar > configurações do projeto**
 2. Na lista de configurações, selecione **Gerenciamento de plugin XR**
-3. Verifique as caixas **inicializar XR nas inicializações** e **OpenXR (visualização)**
+3. Verifique as caixas **inicializar XR nas Startup** e **OpenXR**
 4. Se estiver direcionando para o HoloLens 2, verifique se você está na plataforma UWP e selecione **conjunto de recursos do Microsoft HoloLens**
 
 ![Captura de tela do painel configurações do projeto aberta no editor do Unity com o gerenciamento de plug-in do XR realçado](images/openxr-img-05.png)
+
+## <a name="optimization"></a>Optimization
+
+Se você estiver desenvolvendo para o HoloLens 2, navegue até a **realidade misturada> OpenXR > aplicar as configurações de projeto recomendadas para o HoloLens 2** para obter melhor desempenho do aplicativo.
+
+![Captura de tela do item de menu da realidade misturada abrir com OpenXR selecionado](images/openxr-img-08.png)
 
 > [!IMPORTANT]
 > Se você vir um ícone de aviso vermelho ao lado do **plug-in OpenXR (versão prévia)**, clique no ícone e selecione **corrigir tudo** antes de continuar. O editor do Unity pode precisar ser reiniciado para que as alterações entrem em vigor.
@@ -51,17 +86,7 @@ Para definir OpenXR como o tempo de execução no Unity:
 
 Agora você está pronto para começar a desenvolver com o OpenXR no Unity!  Continue na próxima seção para aprender a usar os exemplos de OpenXR.
 
-## <a name="optimization"></a>Optimization
-
-Se você estiver desenvolvendo para o HoloLens 2, navegue até a **realidade misturada> OpenXR > aplicar as configurações de projeto recomendadas para o HoloLens 2** para obter melhor desempenho do aplicativo.
-
-![Captura de tela do item de menu da realidade misturada abrir com OpenXR selecionado](images/openxr-img-08.png)
-
 ## <a name="try-out-the-unity-sample-scenes"></a>Experimente os bastidores de exemplo do Unity
-
-Para utilizar um ou mais dos exemplos, instale o [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) do **Gerenciador de pacotes**:
-
-![Captura de tela do Gerenciador de pacotes do Unity aberta no editor do Unity com o AR Foundation realçado](images/openxr-img-09.png)
 
 ### <a name="hololens-2-samples"></a>Exemplos de HoloLens 2
 
@@ -110,7 +135,7 @@ Agora que você tem o projeto configurado para OpenXR e tem acesso a exemplos, c
 
 O OpenXR ainda é experimental, portanto, agradecemos os comentários que você pode nos dar para ajudá-lo a melhorá-lo. Você nos verá nos fóruns do [Unity](https://aka.ms/unityforums) marcando sua postagem no fórum com o **Microsoft**  +  **OpenXR** e o **HoloLens 2** ou a **realidade mista do Windows**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Como configurar seu projeto sem o MRTK](configure-unity-project.md)
 * [Configurações recomendadas do Unity](recommended-settings-for-unity.md)
