@@ -7,12 +7,12 @@ ms.date: 02/09/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: ac8e4dab8b9d9021c834e0a9d673c81ac3b7f1dc
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+ms.openlocfilehash: 28546e751d3d8001eb2fe69a74624215a6619d4c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881233"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550036"
 ---
 # <a name="install-the-tools"></a>Instalar as ferramentas
 
@@ -42,7 +42,6 @@ Se você estiver usando o Unity, poderá usar a simulação de entrada do [Kit d
 
 Agora que você tem o Windows 10, o Visual Studio e o SDK do Windows 10 prontos para uso, vamos instalar e configurar o mecanismo de sua escolha. 
 
-Se você ainda precisar escolher um mecanismo, confira a [Introdução ao desenvolvimento de Realidade Misturada](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity#what-technology-path-are-you-interested-in). 
+Se você ainda precisar escolher um mecanismo, confira a [Introdução ao desenvolvimento de Realidade Misturada](./development.md?tabs=unity#what-technology-path-are-you-interested-in). 
 
 [!INCLUDE[](includes/tools-overview.md)]
-

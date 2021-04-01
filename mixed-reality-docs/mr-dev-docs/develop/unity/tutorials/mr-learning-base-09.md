@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237197"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550246"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 
@@ -144,6 +144,6 @@ Na próxima duas série de tutoriais, [Tutoriais de Âncoras Espaciais do Azure]
 Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity que apresentamos, sua próxima tarefa é conhecer os principais blocos de construção de aplicativos de Realidade Misturada.
 
 > [!div class="nextstepaction"]
-> [Interações básicas](../mrtk-101.md)
+> [Interações básicas](../../../out-of-scope/mrtk-101.md)
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](../unity-development-overview.md#1-getting-started) a qualquer momento.
