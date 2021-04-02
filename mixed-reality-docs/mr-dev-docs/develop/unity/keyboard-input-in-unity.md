@@ -1,124 +1,67 @@
 ---
 title: Entrada do teclado no Unity
 description: O Unity fornece a classe TouchScreenKeyboard para aceitar a entrada de teclado quando não há nenhum teclado físico disponível.
-author: thetuvix
-ms.author: alexturn
-ms.date: 03/21/2018
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 03/30/2021
 ms.topic: article
-keywords: teclado, entrada, Unity, touchscreenkeyboard, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 90416f91a7de369ff97a2254fed4b3773724408b
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+keywords: teclado, entrada, Unity, touchscreenkeyboard, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, HoloLens 2
+ms.openlocfilehash: 398a7c57dc701fc848fe9091949b45b2c1796987
+ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226405"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098268"
 ---
-# <a name="keyboard-input-in-unity"></a><span data-ttu-id="c9b3e-104">Entrada do teclado no Unity</span><span class="sxs-lookup"><span data-stu-id="c9b3e-104">Keyboard input in Unity</span></span>
+# <a name="keyboard-input-in-unity"></a><span data-ttu-id="34e46-104">Entrada do teclado no Unity</span><span class="sxs-lookup"><span data-stu-id="34e46-104">Keyboard input in Unity</span></span>
 
-<span data-ttu-id="c9b3e-105">**Namespace:** *UnityEngine*</span><span class="sxs-lookup"><span data-stu-id="c9b3e-105">**Namespace:** *UnityEngine*</span></span><br>
- <span data-ttu-id="c9b3e-106">**Tipo**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*</span><span class="sxs-lookup"><span data-stu-id="c9b3e-106">**Type**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*</span></span>
+<span data-ttu-id="34e46-105">**Namespace:** *UnityEngine*</span><span class="sxs-lookup"><span data-stu-id="34e46-105">**Namespace:** *UnityEngine*</span></span><br>
+ <span data-ttu-id="34e46-106">**Tipo**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*</span><span class="sxs-lookup"><span data-stu-id="34e46-106">**Type**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*</span></span>
 
-<span data-ttu-id="c9b3e-107">Embora o HoloLens dê suporte a muitas formas de entrada, incluindo teclados Bluetooth, a maioria dos aplicativos não pode pressupor que todos os usuários terão uma Keyboard física disponível.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-107">While HoloLens supports many forms of input including Bluetooth keyboards, most applications can't assume that all users will have a physical keyboard available.</span></span> <span data-ttu-id="c9b3e-108">Se seu aplicativo requer entrada de texto, alguma forma de teclado na tela deve ser fornecida.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-108">If your application requires text input, some form of on-screen keyboard should be provided.</span></span>
+<span data-ttu-id="34e46-107">Embora o HoloLens dê suporte a muitas formas de entrada, incluindo teclados Bluetooth, a maioria dos aplicativos não pode pressupor que todos os usuários terão uma Keyboard física disponível.</span><span class="sxs-lookup"><span data-stu-id="34e46-107">While HoloLens supports many forms of input including Bluetooth keyboards, most applications can't assume that all users will have a physical keyboard available.</span></span> <span data-ttu-id="34e46-108">Se seu aplicativo requer entrada de texto, alguma forma de teclado na tela deve ser fornecida.</span><span class="sxs-lookup"><span data-stu-id="34e46-108">If your application requires text input, some form of on-screen keyboard should be provided.</span></span>
 
-<span data-ttu-id="c9b3e-109">O Unity fornece a classe *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* para aceitar a entrada de teclado quando não há nenhum teclado físico disponível.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-109">Unity provides the *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* class for accepting keyboard input when there's no physical keyboard available.</span></span>
+<span data-ttu-id="34e46-109">O Unity fornece a classe *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* para aceitar a entrada de teclado quando não há nenhum teclado físico disponível.</span><span class="sxs-lookup"><span data-stu-id="34e46-109">Unity provides the *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* class for accepting keyboard input when there's no physical keyboard available.</span></span>
 
-## <a name="hololens-system-keyboard-behavior-in-unity"></a><span data-ttu-id="c9b3e-110">Comportamento do teclado do sistema do HoloLens no Unity</span><span class="sxs-lookup"><span data-stu-id="c9b3e-110">HoloLens system keyboard behavior in Unity</span></span>
+## <a name="hololens-system-keyboard-behavior-in-unity"></a><span data-ttu-id="34e46-110">Comportamento do teclado do sistema do HoloLens no Unity</span><span class="sxs-lookup"><span data-stu-id="34e46-110">HoloLens system keyboard behavior in Unity</span></span>
 
-<span data-ttu-id="c9b3e-111">No HoloLens, o *TouchScreenKeyboard* aproveita o teclado na tela do sistema.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-111">On HoloLens, the *TouchScreenKeyboard* leverages the system's on-screen keyboard.</span></span> <span data-ttu-id="c9b3e-112">O teclado na tela do sistema não pode se sobrepor ao topo de uma exibição volumétricos.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-112">The system's on-screen keyboard can't overlay on top of a volumetric view.</span></span> <span data-ttu-id="c9b3e-113">O Unity precisa criar uma exibição XAML 2D secundária para mostrar o teclado e retornar para a exibição volumétricos depois que a entrada tiver sido enviada.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-113">Unity has to create a secondary 2D XAML view to show the keyboard then return back to the volumetric view once input has been submitted.</span></span> <span data-ttu-id="c9b3e-114">O fluxo do usuário é assim:</span><span class="sxs-lookup"><span data-stu-id="c9b3e-114">The user flow goes like this:</span></span>
-1. <span data-ttu-id="c9b3e-115">O usuário executa uma ação fazendo com que o código do aplicativo chame *TouchScreenKeyboard*</span><span class="sxs-lookup"><span data-stu-id="c9b3e-115">The user performs an action causing app code to call *TouchScreenKeyboard*</span></span>
-    * <span data-ttu-id="c9b3e-116">O aplicativo é responsável por pausar o estado do aplicativo antes de chamar *TouchScreenKeyboard*</span><span class="sxs-lookup"><span data-stu-id="c9b3e-116">The app is responsible for pausing app state before calling *TouchScreenKeyboard*</span></span>
-    * <span data-ttu-id="c9b3e-117">O aplicativo pode terminar antes de mudar de volta para a exibição volumétricos</span><span class="sxs-lookup"><span data-stu-id="c9b3e-117">The app may terminate before ever switching back to the volumetric view</span></span>
-2. <span data-ttu-id="c9b3e-118">O Unity alterna para uma exibição XAML 2D, que é autoposicionada no mundo</span><span class="sxs-lookup"><span data-stu-id="c9b3e-118">Unity switches to a 2D XAML view, which is autoplaced in the world</span></span>
-3. <span data-ttu-id="c9b3e-119">O usuário digita o texto usando o teclado do sistema e envia ou cancela</span><span class="sxs-lookup"><span data-stu-id="c9b3e-119">The user enters text using the system keyboard and submits or cancels</span></span>
-4. <span data-ttu-id="c9b3e-120">O Unity alterna para a exibição volumétricos</span><span class="sxs-lookup"><span data-stu-id="c9b3e-120">Unity switches back to the volumetric view</span></span>
-    * <span data-ttu-id="c9b3e-121">O aplicativo é responsável por retomar o estado do aplicativo quando o *TouchScreenKeyboard* é concluído</span><span class="sxs-lookup"><span data-stu-id="c9b3e-121">The app is responsible for resuming app state when the *TouchScreenKeyboard* is done</span></span>
-5. <span data-ttu-id="c9b3e-122">O texto enviado está disponível no *TouchScreenKeyboard*</span><span class="sxs-lookup"><span data-stu-id="c9b3e-122">Submitted text is available in the *TouchScreenKeyboard*</span></span>
+<span data-ttu-id="34e46-111">No HoloLens, o *TouchScreenKeyboard* aproveita o teclado na tela do sistema e se sobrepõe diretamente à exibição do volumétricos do seu aplicativo Mr.</span><span class="sxs-lookup"><span data-stu-id="34e46-111">On HoloLens, the *TouchScreenKeyboard* leverages the system's on-screen keyboard and directly overlays on top of the volumetric view of your MR application.</span></span> <span data-ttu-id="34e46-112">A experiência é semelhante ao uso do teclado nos aplicativos internos do HoloLens.</span><span class="sxs-lookup"><span data-stu-id="34e46-112">The experience is similar to using keyboard in the built-in apps of HoloLens.</span></span> <span data-ttu-id="34e46-113">Observe que o teclado do sistema se comportará de acordo com os recursos da plataforma de destino, por exemplo, o teclado no HoloLens 2 dará suporte a interações diretas, enquanto o teclado no HoloLens (1º gen) dará suporte a GGV (olhar, gesto e voz).</span><span class="sxs-lookup"><span data-stu-id="34e46-113">Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV (Gaze, Gesture, and Voice).</span></span> <span data-ttu-id="34e46-114">Além disso, o teclado do sistema não aparecerá ao executar a comunicação remota do Unity do editor para um HoloLens.</span><span class="sxs-lookup"><span data-stu-id="34e46-114">Additionally, the system keyboard will not show up when performing Unity Remoting from the editor to a HoloLens.</span></span>
 
-### <a name="available-keyboard-views"></a><span data-ttu-id="c9b3e-123">Modos de exibição de teclado disponíveis</span><span class="sxs-lookup"><span data-stu-id="c9b3e-123">Available keyboard views</span></span>
+## <a name="using-the-system-keyboard-in-your-unity-app"></a><span data-ttu-id="34e46-115">Usando o teclado do sistema em seu aplicativo do Unity</span><span class="sxs-lookup"><span data-stu-id="34e46-115">Using the system keyboard in your Unity app</span></span>
 
-<span data-ttu-id="c9b3e-124">Há seis exibições de teclado diferentes disponíveis:</span><span class="sxs-lookup"><span data-stu-id="c9b3e-124">There are six different keyboard views available:</span></span>
-* <span data-ttu-id="c9b3e-125">Caixa de texto de linha única</span><span class="sxs-lookup"><span data-stu-id="c9b3e-125">Single-line textbox</span></span>
-* <span data-ttu-id="c9b3e-126">Caixa de texto de linha única com título</span><span class="sxs-lookup"><span data-stu-id="c9b3e-126">Single-line textbox with title</span></span>
-* <span data-ttu-id="c9b3e-127">Caixa de texto de várias linhas</span><span class="sxs-lookup"><span data-stu-id="c9b3e-127">Multi-line textbox</span></span>
-* <span data-ttu-id="c9b3e-128">Caixa de texto de várias linhas com título</span><span class="sxs-lookup"><span data-stu-id="c9b3e-128">Multi-line textbox with title</span></span>
-* <span data-ttu-id="c9b3e-129">Caixa de senha de linha única</span><span class="sxs-lookup"><span data-stu-id="c9b3e-129">Single-line password box</span></span>
-* <span data-ttu-id="c9b3e-130">Caixa de senha de linha única com título</span><span class="sxs-lookup"><span data-stu-id="c9b3e-130">Single-line password box with title</span></span>
+### <a name="declare-the-keyboard"></a><span data-ttu-id="34e46-116">Declarar o teclado</span><span class="sxs-lookup"><span data-stu-id="34e46-116">Declare the keyboard</span></span>
 
-## <a name="how-to-enable-the-system-keyboard-in-unity"></a><span data-ttu-id="c9b3e-131">Como habilitar o teclado do sistema no Unity</span><span class="sxs-lookup"><span data-stu-id="c9b3e-131">How to enable the system keyboard in Unity</span></span>
-
-<span data-ttu-id="c9b3e-132">O teclado do sistema do HoloLens está disponível somente para aplicativos do Unity que são exportados com o "tipo de compilação UWP" definido como "XAML".</span><span class="sxs-lookup"><span data-stu-id="c9b3e-132">The HoloLens system keyboard is only available to Unity applications that are exported with the "UWP Build Type" set to "XAML".</span></span> <span data-ttu-id="c9b3e-133">Há compensações que você faz quando escolhe "XAML" como o "tipo de compilação UWP" sobre "D3D".</span><span class="sxs-lookup"><span data-stu-id="c9b3e-133">There are tradeoffs you make when you choose "XAML" as the "UWP Build Type" over "D3D".</span></span> <span data-ttu-id="c9b3e-134">Se você não estiver familiarizado com essas compensações, talvez queira explorar uma [solução de entrada alternativa](#alternative-keyboard-options) para o teclado do sistema.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-134">If you aren't comfortable with those tradeoffs, you may wish to explore an [alternative input solution](#alternative-keyboard-options) to the system keyboard.</span></span>
-1. <span data-ttu-id="c9b3e-135">Abra o menu **arquivo** e selecione **configurações de compilação...**</span><span class="sxs-lookup"><span data-stu-id="c9b3e-135">Open the **File** menu and select **Build Settings...**</span></span>
-2. <span data-ttu-id="c9b3e-136">Verifique se **a plataforma** está definida como **Windows Store**, se o **SDK** está definido como **Universal 10** e defina o **tipo de compilação UWP** como **XAML**.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-136">Ensure the **Platform** is set to **Windows Store**, the **SDK** is set to **Universal 10**, and set the **UWP Build Type** to **XAML**.</span></span>
-3. <span data-ttu-id="c9b3e-137">Na caixa de diálogo **configurações de compilação** , selecione o botão **configurações do Player...**</span><span class="sxs-lookup"><span data-stu-id="c9b3e-137">In the **Build Settings** dialog, select the **Player Settings...** button</span></span>
-4. <span data-ttu-id="c9b3e-138">Selecione a guia **configurações da Windows Store**</span><span class="sxs-lookup"><span data-stu-id="c9b3e-138">Select the **Settings for Windows Store** tab</span></span>
-5. <span data-ttu-id="c9b3e-139">Expanda o grupo **outras configurações**</span><span class="sxs-lookup"><span data-stu-id="c9b3e-139">Expand the **Other Settings** group</span></span>
-6. <span data-ttu-id="c9b3e-140">Na seção **renderização** , marque a caixa de seleção **suporte à realidade virtual** para adicionar uma nova lista de **dispositivos de realidade virtual**</span><span class="sxs-lookup"><span data-stu-id="c9b3e-140">In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list</span></span>
-7. <span data-ttu-id="c9b3e-141">Verifique se o **Windows Holographic** aparece na lista de SDKs de realidade virtual</span><span class="sxs-lookup"><span data-stu-id="c9b3e-141">Ensure **Windows Holographic** appears in the list of Virtual Reality SDKs</span></span>
-
->[!NOTE]
-><span data-ttu-id="c9b3e-142">Se você não marcar a compilação como realidade virtual com suporte com o dispositivo de HoloLens, o projeto será exportado como um aplicativo XAML 2D.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-142">If you don't mark the build as Virtual Reality Supported with the HoloLens device, the project will export as a 2D XAML app.</span></span>
-
-## <a name="using-the-system-keyboard-in-your-unity-app"></a><span data-ttu-id="c9b3e-143">Usando o teclado do sistema em seu aplicativo do Unity</span><span class="sxs-lookup"><span data-stu-id="c9b3e-143">Using the system keyboard in your Unity app</span></span>
-
-### <a name="declare-the-keyboard"></a><span data-ttu-id="c9b3e-144">Declarar o teclado</span><span class="sxs-lookup"><span data-stu-id="c9b3e-144">Declare the keyboard</span></span>
-
-<span data-ttu-id="c9b3e-145">Na classe, declare uma variável para armazenar o *TouchScreenKeyboard* e uma variável para conter a cadeia de caracteres que o teclado retorna.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-145">In the class, declare a variable to store the *TouchScreenKeyboard* and a variable to hold the string the keyboard returns.</span></span>
+<span data-ttu-id="34e46-117">Na classe, declare uma variável para armazenar o *TouchScreenKeyboard* e uma variável para conter a cadeia de caracteres que o teclado retorna.</span><span class="sxs-lookup"><span data-stu-id="34e46-117">In the class, declare a variable to store the *TouchScreenKeyboard* and a variable to hold the string the keyboard returns.</span></span>
 
 ```cs
 UnityEngine.TouchScreenKeyboard keyboard;
 public static string keyboardText = "";
 ```
 
-### <a name="invoke-the-keyboard"></a><span data-ttu-id="c9b3e-146">Invocar o teclado</span><span class="sxs-lookup"><span data-stu-id="c9b3e-146">Invoke the keyboard</span></span>
+### <a name="invoke-the-keyboard"></a><span data-ttu-id="34e46-118">Invocar o teclado</span><span class="sxs-lookup"><span data-stu-id="34e46-118">Invoke the keyboard</span></span>
 
-<span data-ttu-id="c9b3e-147">Quando um evento ocorre solicitando entrada de teclado, chame uma dessas funções dependendo do tipo de entrada que você deseja usando o título no parâmetro textplaceholder.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-147">When an event occurs requesting keyboard input, call one of these functions depending on the type of input you want using the title in the textPlaceholder parameter.</span></span>
-
-```cs
-// Single-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false);
-
-// Single-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "Single-line title");
-
-// Multi-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false);
-
-// Multi-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false, "Multi-line Title");
-
-// Single-line password box
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false);
-
-// Single-line password box with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false, "Secure Single-line Title");
-```
-
-### <a name="retrieve-typed-contents"></a><span data-ttu-id="c9b3e-148">Recuperar conteúdo digitado</span><span class="sxs-lookup"><span data-stu-id="c9b3e-148">Retrieve typed contents</span></span>
-
-<span data-ttu-id="c9b3e-149">No loop de atualização, verifique se o teclado recebeu uma nova entrada e armazene-a para uso em outro lugar.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-149">In the update loop, check if the keyboard received new input and store it for use elsewhere.</span></span>
+<span data-ttu-id="34e46-119">Quando ocorrer um evento solicitando entrada de teclado, use o seguinte para mostrar o teclado.</span><span class="sxs-lookup"><span data-stu-id="34e46-119">When an event occurs requesting keyboard input, use the following to show the keyboard.</span></span>
 
 ```cs
-if (TouchScreenKeyboard.visible == false && keyboard != null)
-{
-       if (keyboard.status == TouchScreenKeyboard.Status.Done)
-       {
-           keyboardText = keyboard.text;
-           keyboard = null;
-       }
-}
+keyboard = TouchScreenKeyboard.Open("text to edit");
 ```
 
-## <a name="alternative-keyboard-options"></a><span data-ttu-id="c9b3e-150">Opções de teclado alternativas</span><span class="sxs-lookup"><span data-stu-id="c9b3e-150">Alternative keyboard options</span></span>
+<span data-ttu-id="34e46-120">Você pode usar parâmetros adicionais passados para a `TouchScreenKeyboard.Open` função para controlar o comportamento do teclado (por exemplo, definir o texto do espaço reservado ou dar suporte à correção automática).</span><span class="sxs-lookup"><span data-stu-id="34e46-120">You can use additional parameters passed into the `TouchScreenKeyboard.Open` function to control the behavior of the keyboard (e.g. setting placeholder text or supporting autocorrection).</span></span> <span data-ttu-id="34e46-121">Para obter a lista completa de parâmetros, consulte a [documentação do Unity](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.Open.html).</span><span class="sxs-lookup"><span data-stu-id="34e46-121">For the full list of parameters please refer to [Unity's documentation](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.Open.html).</span></span>
 
-<span data-ttu-id="c9b3e-151">Entendemos que a mudança de uma exibição volumétricos para uma exibição 2D não é a maneira ideal de obter a entrada de texto do usuário.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-151">We understand that switching out of a volumetric view into a 2D view isn't the ideal way to get text input from the user.</span></span>
+### <a name="retrieve-typed-contents"></a><span data-ttu-id="34e46-122">Recuperar conteúdo digitado</span><span class="sxs-lookup"><span data-stu-id="34e46-122">Retrieve typed contents</span></span>
 
-<span data-ttu-id="c9b3e-152">As alternativas atuais para aproveitar o teclado do sistema por meio do Unity incluem:</span><span class="sxs-lookup"><span data-stu-id="c9b3e-152">The current alternatives to leveraging the system keyboard through Unity include:</span></span>
-* <span data-ttu-id="c9b3e-153">Usando o ditado de fala para entrada (<b>Observação:</b> geralmente, esse erro é propenso a erros para palavras não encontradas no dicionário e não é adequado para entrada de senha)</span><span class="sxs-lookup"><span data-stu-id="c9b3e-153">Using speech dictation for input (<b>Note:</b> this is often error prone for words not found in the dictionary and isn't suitable for password entry)</span></span>
-* <span data-ttu-id="c9b3e-154">Criar um teclado que funciona em sua exibição exclusiva de aplicativos</span><span class="sxs-lookup"><span data-stu-id="c9b3e-154">Create a keyboard that works in your applications exclusive view</span></span>
+<span data-ttu-id="34e46-123">O conteúdo pode simplesmente ser recuperado chamando `keyboard.text` .</span><span class="sxs-lookup"><span data-stu-id="34e46-123">The content can simply be retrieved by calling `keyboard.text`.</span></span> <span data-ttu-id="34e46-124">Talvez você queira recuperar o conteúdo por quadro ou apenas quando o teclado for fechado.</span><span class="sxs-lookup"><span data-stu-id="34e46-124">You may want to retrieve the content per frame or only when the keyboard is closed.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="c9b3e-155">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="c9b3e-155">Next Development Checkpoint</span></span>
+```cs
+keyboardText = keyboard.text;
+```
 
-<span data-ttu-id="c9b3e-156">Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-156">If you're following the Unity development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="c9b3e-157">A partir daqui, você pode continuar com qualquer [tópico](unity-development-overview.md#3-advanced-features) ou ir diretamente para a implantação de seu aplicativo em um dispositivo ou emulador.</span><span class="sxs-lookup"><span data-stu-id="c9b3e-157">From here, you can continue to any [topic](unity-development-overview.md#3-advanced-features) or jump directly to deploying your app on a device or emulator.</span></span>
+## <a name="alternative-keyboard-options"></a><span data-ttu-id="34e46-125">Opções de teclado alternativas</span><span class="sxs-lookup"><span data-stu-id="34e46-125">Alternative keyboard options</span></span>
+
+<span data-ttu-id="34e46-126">Além de usar a classe *TouchScreenKeyboard* diretamente, você também pode obter a entrada do usuário usando o campo de entrada da *interface do usuário* do Unity ou o *campo de entrada TextMeshPro*.</span><span class="sxs-lookup"><span data-stu-id="34e46-126">Besides using the *TouchScreenKeyboard* class directly, you can also get user input by using Unity's *UI Input Field* or *TextMeshPro Input Field*.</span></span> <span data-ttu-id="34e46-127">Além disso, há uma implementação baseada em *TouchScreenKeyboard* na [cena HandInteractionExamples](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) de [MRTK](/windows/mixed-reality/mrtk-unity) (há um exemplo de interação de teclado no lado esquerdo).</span><span class="sxs-lookup"><span data-stu-id="34e46-127">Additionally, there is an implementation based on *TouchScreenKeyboard* in the [HandInteractionExamples scene](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) of [MRTK](/windows/mixed-reality/mrtk-unity) (there is a keyboard interaction sample on the left hand side).</span></span>
+
+## <a name="next-development-checkpoint"></a><span data-ttu-id="34e46-128">Próximo ponto de verificação de desenvolvimento</span><span class="sxs-lookup"><span data-stu-id="34e46-128">Next Development Checkpoint</span></span>
+
+<span data-ttu-id="34e46-129">Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos recursos e APIs da plataforma de realidade misturada.</span><span class="sxs-lookup"><span data-stu-id="34e46-129">If you're following the Unity development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="34e46-130">A partir daqui, você pode continuar com qualquer [tópico](unity-development-overview.md#3-advanced-features) ou ir diretamente para a implantação de seu aplicativo em um dispositivo ou emulador.</span><span class="sxs-lookup"><span data-stu-id="34e46-130">From here, you can continue to any [topic](unity-development-overview.md#3-advanced-features) or jump directly to deploying your app on a device or emulator.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="c9b3e-158">Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows</span><span class="sxs-lookup"><span data-stu-id="c9b3e-158">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
+> [<span data-ttu-id="34e46-131">Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows</span><span class="sxs-lookup"><span data-stu-id="34e46-131">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
