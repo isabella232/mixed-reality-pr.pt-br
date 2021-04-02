@@ -1,17 +1,17 @@
 ---
 title: Entrada do teclado no Unity
 description: O Unity fornece a classe TouchScreenKeyboard para aceitar a entrada de teclado quando não há nenhum teclado físico disponível.
-author: thetuvix
-ms.author: alexturn
-ms.date: 03/21/2018
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 03/30/2021
 ms.topic: article
-keywords: teclado, entrada, Unity, touchscreenkeyboard, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 90416f91a7de369ff97a2254fed4b3773724408b
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+keywords: teclado, entrada, Unity, touchscreenkeyboard, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, HoloLens 2
+ms.openlocfilehash: 398a7c57dc701fc848fe9091949b45b2c1796987
+ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226405"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098268"
 ---
 # <a name="keyboard-input-in-unity"></a>Entrada do teclado no Unity
 
@@ -24,39 +24,7 @@ O Unity fornece a classe *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptR
 
 ## <a name="hololens-system-keyboard-behavior-in-unity"></a>Comportamento do teclado do sistema do HoloLens no Unity
 
-No HoloLens, o *TouchScreenKeyboard* aproveita o teclado na tela do sistema. O teclado na tela do sistema não pode se sobrepor ao topo de uma exibição volumétricos. O Unity precisa criar uma exibição XAML 2D secundária para mostrar o teclado e retornar para a exibição volumétricos depois que a entrada tiver sido enviada. O fluxo do usuário é assim:
-1. O usuário executa uma ação fazendo com que o código do aplicativo chame *TouchScreenKeyboard*
-    * O aplicativo é responsável por pausar o estado do aplicativo antes de chamar *TouchScreenKeyboard*
-    * O aplicativo pode terminar antes de mudar de volta para a exibição volumétricos
-2. O Unity alterna para uma exibição XAML 2D, que é autoposicionada no mundo
-3. O usuário digita o texto usando o teclado do sistema e envia ou cancela
-4. O Unity alterna para a exibição volumétricos
-    * O aplicativo é responsável por retomar o estado do aplicativo quando o *TouchScreenKeyboard* é concluído
-5. O texto enviado está disponível no *TouchScreenKeyboard*
-
-### <a name="available-keyboard-views"></a>Modos de exibição de teclado disponíveis
-
-Há seis exibições de teclado diferentes disponíveis:
-* Caixa de texto de linha única
-* Caixa de texto de linha única com título
-* Caixa de texto de várias linhas
-* Caixa de texto de várias linhas com título
-* Caixa de senha de linha única
-* Caixa de senha de linha única com título
-
-## <a name="how-to-enable-the-system-keyboard-in-unity"></a>Como habilitar o teclado do sistema no Unity
-
-O teclado do sistema do HoloLens está disponível somente para aplicativos do Unity que são exportados com o "tipo de compilação UWP" definido como "XAML". Há compensações que você faz quando escolhe "XAML" como o "tipo de compilação UWP" sobre "D3D". Se você não estiver familiarizado com essas compensações, talvez queira explorar uma [solução de entrada alternativa](#alternative-keyboard-options) para o teclado do sistema.
-1. Abra o menu **arquivo** e selecione **configurações de compilação...**
-2. Verifique se **a plataforma** está definida como **Windows Store**, se o **SDK** está definido como **Universal 10** e defina o **tipo de compilação UWP** como **XAML**.
-3. Na caixa de diálogo **configurações de compilação** , selecione o botão **configurações do Player...**
-4. Selecione a guia **configurações da Windows Store**
-5. Expanda o grupo **outras configurações**
-6. Na seção **renderização** , marque a caixa de seleção **suporte à realidade virtual** para adicionar uma nova lista de **dispositivos de realidade virtual**
-7. Verifique se o **Windows Holographic** aparece na lista de SDKs de realidade virtual
-
->[!NOTE]
->Se você não marcar a compilação como realidade virtual com suporte com o dispositivo de HoloLens, o projeto será exportado como um aplicativo XAML 2D.
+No HoloLens, o *TouchScreenKeyboard* aproveita o teclado na tela do sistema e se sobrepõe diretamente à exibição do volumétricos do seu aplicativo Mr. A experiência é semelhante ao uso do teclado nos aplicativos internos do HoloLens. Observe que o teclado do sistema se comportará de acordo com os recursos da plataforma de destino, por exemplo, o teclado no HoloLens 2 dará suporte a interações diretas, enquanto o teclado no HoloLens (1º gen) dará suporte a GGV (olhar, gesto e voz). Além disso, o teclado do sistema não aparecerá ao executar a comunicação remota do Unity do editor para um HoloLens.
 
 ## <a name="using-the-system-keyboard-in-your-unity-app"></a>Usando o teclado do sistema em seu aplicativo do Unity
 
@@ -71,50 +39,25 @@ public static string keyboardText = "";
 
 ### <a name="invoke-the-keyboard"></a>Invocar o teclado
 
-Quando um evento ocorre solicitando entrada de teclado, chame uma dessas funções dependendo do tipo de entrada que você deseja usando o título no parâmetro textplaceholder.
+Quando ocorrer um evento solicitando entrada de teclado, use o seguinte para mostrar o teclado.
 
 ```cs
-// Single-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false);
-
-// Single-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "Single-line title");
-
-// Multi-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false);
-
-// Multi-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false, "Multi-line Title");
-
-// Single-line password box
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false);
-
-// Single-line password box with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false, "Secure Single-line Title");
+keyboard = TouchScreenKeyboard.Open("text to edit");
 ```
+
+Você pode usar parâmetros adicionais passados para a `TouchScreenKeyboard.Open` função para controlar o comportamento do teclado (por exemplo, definir o texto do espaço reservado ou dar suporte à correção automática). Para obter a lista completa de parâmetros, consulte a [documentação do Unity](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.Open.html).
 
 ### <a name="retrieve-typed-contents"></a>Recuperar conteúdo digitado
 
-No loop de atualização, verifique se o teclado recebeu uma nova entrada e armazene-a para uso em outro lugar.
+O conteúdo pode simplesmente ser recuperado chamando `keyboard.text` . Talvez você queira recuperar o conteúdo por quadro ou apenas quando o teclado for fechado.
 
 ```cs
-if (TouchScreenKeyboard.visible == false && keyboard != null)
-{
-       if (keyboard.status == TouchScreenKeyboard.Status.Done)
-       {
-           keyboardText = keyboard.text;
-           keyboard = null;
-       }
-}
+keyboardText = keyboard.text;
 ```
 
 ## <a name="alternative-keyboard-options"></a>Opções de teclado alternativas
 
-Entendemos que a mudança de uma exibição volumétricos para uma exibição 2D não é a maneira ideal de obter a entrada de texto do usuário.
-
-As alternativas atuais para aproveitar o teclado do sistema por meio do Unity incluem:
-* Usando o ditado de fala para entrada (<b>Observação:</b> geralmente, esse erro é propenso a erros para palavras não encontradas no dicionário e não é adequado para entrada de senha)
-* Criar um teclado que funciona em sua exibição exclusiva de aplicativos
+Além de usar a classe *TouchScreenKeyboard* diretamente, você também pode obter a entrada do usuário usando o campo de entrada da *interface do usuário* do Unity ou o *campo de entrada TextMeshPro*. Além disso, há uma implementação baseada em *TouchScreenKeyboard* na [cena HandInteractionExamples](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) de [MRTK](/windows/mixed-reality/mrtk-unity) (há um exemplo de interação de teclado no lado esquerdo).
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
