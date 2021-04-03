@@ -1,22 +1,22 @@
 ---
-title: Entrada do HoloLens (1ª gen) 210-olhar
+title: Entrada do HoloLens (1ª geração) 210 – Olhar
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de olhar.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, olhar, HoloLens, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730323"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269961"
 ---
 # <a name="hololens-1st-gen-input-210-gaze"></a>Entrada do HoloLens (1ª gen) 210: olhar
 
->[!NOTE]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.
+>[!IMPORTANT]
+>Os tutoriais misturados do Academia de realidade foram projetados com o HoloLens (1º gen), o Unity 2017 e o fone de ouvido de imersão de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos. Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes ou as interações usadas para o HoloLens 2 e podem não ser compatíveis com as versões mais recentes do Unity.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
 
 [Olhar](../../../design/gaze-and-commit.md) é a primeira forma de entrada e revela a intenção e a conscientização do usuário. A entrada MR 210 (também conhecida como explorador de projeto) é aprofundada nos conceitos relacionados ao olhar para a realidade mista do Windows. Adicionaremos reconhecimento contextual ao cursor e aos hologramas, aproveitando ao máximo o que seu aplicativo sabe sobre o olhar do usuário.
 

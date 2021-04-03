@@ -1,19 +1,19 @@
 ---
-title: Comece seu percurso de VR
+title: Comece sua jornada VR
 description: Explore nossos pontos de verificação orientados para orientar novos usuários de dispositivos por meio da configuração e uso de seus dispositivos VR de imersão.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr,
-ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007056"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223927"
 ---
-# <a name="start-your-vr-journey"></a>Comece seu percurso de VR
+# <a name="start-your-vr-journey"></a>Comece sua jornada VR
 
 ![Imagem de estoque do ambiente de VR sobreposto](images/mr-win32-slates-pinspanel.png)
 
@@ -82,6 +82,7 @@ Encontre jogos de imersão, aplicativos de área de trabalho e conteúdo VR nos 
 | [Usar o SteamVR](using-steamvr-with-windows-mixed-reality.md) | Conecte seu dispositivo e jogue jogos SteamVR e saiba mais sobre o programa Windows Insider |
 | [Usar o Microsoft Edge](using-microsoft-edge.md) | Instalar a versão mais recente do Microsoft Edge em seu dispositivo de imersão |
 | [Usando WebVR](webvr.md) | Obtenha a configuração para experimentar o VR em seu ambiente de navegador |
+| [Explorar AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Explore o mundo em expansão de eventos VR com o AltspaceVR |
 
 ## <a name="troubleshooting-tips--resources"></a>Solução de problemas, dicas & recursos
 

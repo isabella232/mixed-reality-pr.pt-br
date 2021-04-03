@@ -1,24 +1,24 @@
 ---
-title: Informações básicas do HoloLens (1ª gen) 101 – projeto completo com dispositivo
+title: Noções básicas do HoloLens (1ª geração) 101 – Projeto completo com dispositivo
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender as noções básicas sobre a realidade mista do Windows.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade misturada, Windows Mixed Reality, HoloLens, holograma, Academia, tutorial, HoloLens, realidade misturada, Academia, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 0ebfeb017271b7f98093a8ba6cac59dccae2a440
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730333"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269942"
 ---
 # <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>Informações básicas do HoloLens (1ª gen) 101: concluir o projeto com o dispositivo
 
 <br>
 
->[!NOTE]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
+>[!IMPORTANT]
+>Os tutoriais misturados do Academia de realidade foram projetados com o HoloLens (1º gen), o Unity 2017 e o fone de ouvido de imersão de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos. Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes ou as interações usadas para o HoloLens 2 e podem não ser compatíveis com as versões mais recentes do Unity.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
 
 <br>
 
@@ -695,7 +695,7 @@ Você aprendeu a:
 
 Agora você está pronto para começar a criar sua própria experiência de Holographic!
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Noções básicas do MR 101E: projeto completo com emulador](holograms-101e.md)
 * [Foco](../../../design/gaze-and-commit.md)

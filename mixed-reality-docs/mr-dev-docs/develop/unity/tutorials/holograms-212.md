@@ -1,22 +1,22 @@
 ---
-title: Entrada do HoloLens (1ª gen) 212-Voice
+title: Entrada do HoloLens (1ª geração) 212 – Serviço de Voz
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de voz.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, voz, HoloLens, Academia de realidade misturada, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 8e36233ff4abd3ac91670dd7d04b6675bec045ff
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730443"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269922"
 ---
 # <a name="hololens-1st-gen-input-212-voice"></a>Entrada do HoloLens (1ª gen) 212: voz
 
->[!NOTE]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.
+>[!IMPORTANT]
+>Os tutoriais misturados do Academia de realidade foram projetados com o HoloLens (1º gen), o Unity 2017 e o fone de ouvido de imersão de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos. Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes ou as interações usadas para o HoloLens 2 e podem não ser compatíveis com as versões mais recentes do Unity.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
 
 A [entrada de voz](../../../design/voice-input.md) nos dá outra maneira de interagir com nossos hologramas. Os comandos de voz funcionam de maneira muito natural e fácil. Crie seus comandos de voz para que eles sejam:
 

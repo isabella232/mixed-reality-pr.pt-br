@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937422"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088485"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Recursos com suporte da realidade misturada OpenXR no Unity
 
@@ -38,6 +38,7 @@ Atualmente, há suporte para os seguintes recursos:
 * (Adicionado em 0.2.0) Dá suporte à **âncora** na comunicação remota do Holographic
 * (Adicionado em 0.2.0) Dá suporte a **junções de mão e acompanhamento de malha à mão**
 * (Adicionado em 0.2.0) Dá suporte a **ARPlaneSubsystems** para detecção de plano e posicionar o holograma usando **ARRaycastManager**.
+* (0.9.0) dá suporte a **XRMeshSubsystem** e **ARMeshManager** para mapeamento espacial.
 
 ## <a name="holographic-remoting-setup"></a>Configuração de comunicação remota do Holographic
 
@@ -113,7 +114,7 @@ Para referência, temos um [projeto de exemplo de acompanhamento QR no GitHub](h
 
 ## <a name="whats-coming-soon"></a>O que virá em breve
 
-Os seguintes problemas e recursos ausentes são conhecidos com o plug-in OpenXR da realidade misturada **versão 0.1.0**. Estamos trabalhando nessas soluções e lançaremos correções e novos recursos em versões futuras.
+Os seguintes problemas e recursos ausentes são conhecidos com o plug-in OpenXR da realidade misturada **versão 0.9.0**. Estamos trabalhando nessas soluções e lançaremos correções e novos recursos em versões futuras.
 
 * O suporte a **âncoras espaciais do Azure** estará disponível em uma versão futura.
 * **ARM64** é a única plataforma com suporte para aplicativos do HoloLens 2. A plataforma **ARM** estará disponível em uma versão futura.

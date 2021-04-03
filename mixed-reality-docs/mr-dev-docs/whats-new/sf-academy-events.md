@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendário, Academia, agenda, it, San Francisco, reator
-ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 17db5ecac5953326eeb30c33693be18243579869
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230877"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106270012"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventos de realidade misturada da Microsoft
 
@@ -21,6 +21,7 @@ Junte-se à equipe do Microsoft Mixed Reality nesses próximos eventos!
 
 |Evento|Data|Tema|
 |-------------|-------------|-----|
+| Série de palestras sobre Realidade Misturada|6 de abril de 2021 @10 am PST|[Criando aplicativos de realidade misturada com Microsoft PowerApps](https://www.meetup.com/hololens-mr/events/277257132)|
 | Série de palestras sobre Realidade Misturada|23 de abril de 2020|[Aumentando a Web](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Série de palestras sobre Realidade Misturada|22 de junho de 2020|[Criando experiências educacionais com o Sr](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
 | [O evento de realidade virtual da Microsoft](https://www.meetup.com/hololens-mr/events/272364822/)|20 de agosto de 2020|Mini Summit VR|

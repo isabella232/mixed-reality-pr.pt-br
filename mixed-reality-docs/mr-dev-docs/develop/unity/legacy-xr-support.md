@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho, herdado, mrtk
-ms.openlocfilehash: 0860154034a63d5058da09a3b842e70bc3775dc5
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: 09989b3b2b7fa1d351235a2cc9b885d4795dc2b6
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105938094"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088525"
 ---
 # <a name="using-legacy-built-in-xr-support"></a>Usando o suporte interno a XR herdado
 
@@ -20,7 +20,7 @@ ms.locfileid: "105938094"
 O MRTK para Unity fornece um sistema de entrada multiplataforma, componentes básicos e blocos de construção comuns para interações espaciais. A versão 2 do MRTK tem o objetivo de acelerar o desenvolvimento de aplicativos para o Microsoft HoloLens, os headsets imersivos (VR) do Windows Mixed Reality e a plataforma OpenVR. O projeto visa reduzir as barreiras de entrada criando aplicativos de realidade misturada e contribuindo com a comunidade à medida que todos nós crescemos.
 
 > [!div class="nextstepaction"]
-> [Experimente os nossos tutoriais do MRTK](tutorials/mr-learning-base-01.md)
+> [Experimente os nossos tutoriais do MRTK](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=wsa)
 
 Dê uma olhada na [documentação do MRTK](/windows/mixed-reality/mrtk-unity) para obter mais detalhes sobre os recursos.
 

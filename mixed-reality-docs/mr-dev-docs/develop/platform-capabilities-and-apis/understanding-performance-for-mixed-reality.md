@@ -6,16 +6,21 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, desempenho, otimização, CPU, GPU
-ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550116"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269952"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Entendendo o desempenho da realidade misturada
 
 Este artigo é uma introdução ao entendimento do significado do desempenho para seu aplicativo de realidade misturada.  A experiência do usuário pode ser bastante degradada se o seu aplicativo não for executado em uma taxa de quadros ideal. Os hologramas aparecerão instáveis e o controle de cabeça do ambiente será impreciso, levando a uma experiência ruim para o usuário. O desempenho deve ser considerado um recurso de primeira classe para o desenvolvimento de realidade misturada e não uma tarefa em polonês.
+
+Recentemente, lançamos um aplicativo chamado conceitos básicos de qualidade que abrange problemas comuns de desempenho, design e ambiente e soluções para aplicativos do HoloLens 2. Esse aplicativo é uma ótima demonstração visual para o conteúdo do seguinte.
+
+> [!div class="nextstepaction"]
+> [Baixe o aplicativo de conceitos básicos de qualidade](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
 
 Os valores de taxa de quadros de alto desempenho para cada plataforma de destino são listados abaixo.
 

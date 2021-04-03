@@ -1,22 +1,22 @@
 ---
-title: HoloLens (1º gen) espacial 220-som espacial
+title: Aspecto espacial do HoloLens (1ª geração) 220 – Som espacial
 description: Siga este passo a passo de codificação usando o Unity, o Visual Studio e o HoloLens para aprender os detalhes dos conceitos de som espaciais.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academia, tutorial, som espacial, HoloLens, Academia de realidade mista, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Windows 10
-ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 789f4da924c00554042ad991cc5610d3e816f12d
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730303"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269992"
 ---
 # <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (1º gen) espacial 220: som espacial
 
->[!NOTE]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](./mr-learning-base-01.md) foi postada para o HoloLens 2.
+>[!IMPORTANT]
+>Os tutoriais misturados do Academia de realidade foram projetados com o HoloLens (1º gen), o Unity 2017 e o fone de ouvido de imersão de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos. Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes ou as interações usadas para o HoloLens 2 e podem não ser compatíveis com as versões mais recentes do Unity.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
 
 O [som espacial](../../../design/spatial-sound.md) traz a vida para os hologramas e dá a eles presença em nosso mundo. Os hologramas são compostos por luz e som e, se você perder a visão de seus hologramas, o som espacial poderá ajudá-lo a encontrá-los. O som espacial não é como o som típico que você ouviria no rádio, é um som posicionado no espaço 3D. Com o som espacial, você pode fazer com que os hologramas pareçam estar por trás de você, ao lado de você ou mesmo à sua cabeça! Neste curso, você vai:
 

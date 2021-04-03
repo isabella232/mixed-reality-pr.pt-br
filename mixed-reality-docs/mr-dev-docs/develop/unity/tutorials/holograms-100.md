@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realidade mista, Windows Mixed Reality, HoloLens, imersão, VR, Mr, introdução, holograma, Academia, tutorial, reality Academy, Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 68939eda0a18e2d49948d2a87b9f709389857bf3
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636168"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269972"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Informações básicas do HoloLens (1ª gen) 100: introdução ao Unity
 
 >[!IMPORTANT]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
+>Os tutoriais misturados do Academia de realidade foram projetados com o HoloLens (1º gen), o Unity 2017 e o fone de ouvido de imersão de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos. Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes ou as interações usadas para o HoloLens 2 e podem não ser compatíveis com as versões mais recentes do Unity.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. [Uma nova série de tutoriais](mrlearning-base.md) foi postada para o HoloLens 2.
 
 Este tutorial orientará você na criação de um aplicativo básico de realidade misturada criado com o Unity.
 
@@ -223,7 +223,7 @@ Verifique se o dispositivo está conectado via cabo USB.
 
 Agora que seu aplicativo está implantado, tente mover tudo em todo o cubo e observe que ele permanece no mundo inteiro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Visão geral do desenvolvimento do Unity](../unity-development-overview.md)
 * [Melhores práticas para trabalhar com o Unity e o Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)
