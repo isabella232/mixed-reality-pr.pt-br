@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 53cb83725bcc9f8f810ba40df5d08e81ec545f19
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98582990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105582778"
 ---
 # <a name="available-in-mrtk"></a>[Disponível no MRTK](#tab/mrtk)
 
 |  Recurso  |  Funcionalidades  |
 | --- | --- |
-| [Interações básicas](../unity/mrtk-101.md) | Aprenda o básico sobre a interação com objetos em um espaço imersivo |
+| [Interações básicas](../../out-of-scope/mrtk-101.md) | Aprenda o básico sobre a interação com objetos em um espaço imersivo |
 | [Câmera](../unity/camera-in-unity.md) | Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada |
 | [Foco](../unity/gaze-in-unity.md) | Permitir que os usuários direcionem hologramas olhando para eles |
 | [Controladores de movimentos](../unity/motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |

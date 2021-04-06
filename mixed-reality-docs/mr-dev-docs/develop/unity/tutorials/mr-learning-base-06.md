@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, pré-fabricados, hologramas, dicas de ferramentas
 ms.localizationpriority: high
-ms.openlocfilehash: 8e7ab83fa195fc48d8fe1c1daf8207c49e3ec71e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101760022"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982969"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Como criar interfaces do usuário
 
@@ -67,7 +67,7 @@ Na janela Hierarquia, selecione o objeto do botão **Dicas** e, na janela Inspet
 ![Unity com o evento OnClick do objeto de botão Hints configurado](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> O componente de interação é um contêiner all-in-one para facilitar a interação e a resposta à entrada de qualquer objeto. Um componente passível de interação engloba todos os tipos de entrada, incluindo toque, raios de mão, fala etc. e afunila essas interações em eventos e respostas de tema visual. Para saber como configurá-lo para diferentes tipos de entrada e personalizar o tema visual, veja o guia de [Interação](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
+> O componente de interação é um contêiner all-in-one para facilitar a interação e a resposta à entrada de qualquer objeto. Um componente passível de interação engloba todos os tipos de entrada, incluindo toque, raios de mão, fala etc. e afunila essas interações em eventos e respostas de tema visual. Para saber como configurá-lo para diferentes tipos de entrada e personalizar o tema visual, veja o guia de [Interação](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 Na janela Hierarquia, selecione o objeto do botão **Detalhar** e, na janela Inspetor, configure o evento **Interactable.OnClick ()** da seguinte maneira:
 
