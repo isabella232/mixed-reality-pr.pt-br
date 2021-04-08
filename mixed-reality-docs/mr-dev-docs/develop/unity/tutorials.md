@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Tutoriais
 description: Fique em dia com os tutoriais de desenvolvimento de realidade misturada que oferecemos para HoloLens e serviços do Azure.
 author: keveleigh
@@ -8,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, unity, unreal, HoloLens, âncoras espaciais do Azure, serviços de fala do Azure
-ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c64ceb918cfec31b7ac934d9a1f9c719a4dde244
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98006516"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223937"
 ---
 # <a name="tutorials"></a>Tutoriais
 
@@ -25,12 +24,13 @@ Atualmente, todos os tutoriais e aplicativos de exemplo são baseados no Unity o
 
 Os tutoriais do HoloLens 2 foram elaborados para ensinar técnicas e melhores práticas para o desenvolvimento de aplicativos de realidade misturada. Os tutoriais do Unity se baseiam no [MRTK 2.0 (Kit de Ferramentas de Realidade Misturada 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity) e o tutorial Unreal é baseado nas [Ferramentas de UX para Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
-* Tutoriais de introdução
-    * Unity – [1 de 9 Introdução](tutorials/mr-learning-base-01.md)
-    * Unreal – [1 de 6 Introdução](../unreal/tutorials/unreal-uxt-ch1.md)
-* Tutoriais de Âncoras Espaciais do Azure – [1 de 5 Introdução](tutorials/mr-learning-asa-01.md)
-* Tutoriais de recursos multiusuário – [1 de 5 Introdução](tutorials/mr-learning-sharing-01.md)
-* Tutoriais sobre os Serviços de Fala do Azure – [1 de 4 Como integrar e usar a transcrição e o reconhecimento de fala](tutorials/mrlearning-speechSDK-ch1.md)
+* Tutoriais do MRTK para iniciantes – [Introdução (1 de 9)](tutorials/mr-learning-base-01.md)
+* Tutoriais de Âncoras Espaciais do Azure – [Introdução (1 de 5)](tutorials/mr-learning-asa-01.md)
+* Tutoriais de funcionalidades multiusuário – [Introdução (1 de 5)](tutorials/mr-learning-sharing-01.md)
+* Tutoriais de Serviços de Fala do Azure – [Como integrar e usar a transcrição e o reconhecimento de fala (1 de 4)](tutorials/mrlearning-speechSDK-ch1.md)
+* Tutoriais de áudio espacial – [Como adicionar áudio espacial (1 ao 5)](tutorials/unity-spatial-audio-ch1.md)
+* Tutoriais de Serviços de Nuvem do Azure – [Introdução (1 de 5)](tutorials/mr-learning-azure-01.md)
+* Tutoriais de comunicação remota do PC Holographic – [Como começar (1 de 2)](tutorials/mr-learning-pc-holographic-remoting-01.md)
 
 ## <a name="mixed-reality-academy"></a>Mixed Reality Academy 
 
