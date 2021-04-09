@@ -409,7 +409,7 @@ Cada chave de piano tem um `PressableButton` e um `NearInteractionTouchable` scr
 
 <img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Interativo](interactable.md)
 * [Temas visuais](visual-themes.md)
