@@ -110,7 +110,7 @@ Para obter um tour por meio de todos os principais componentes da API do OpenXR,
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * <a href="https://www.khronos.org/openxr/" target="_blank">Mais informações sobre o OpenXR</a>
 * <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">Especificação do OpenXR 1,0</a>

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605152"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104325"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ Há várias opções de hardware e emulador disponíveis para a criação de apl
 |  Ferramenta/SDK  |  Descrição  |
 | --- | --- |
 | [Kit de Ferramentas de Realidade Misturada para Unity](../unity/mrtk-getting-started.md) | O Kit de Ferramentas de Realidade Misturada para Unity é um kit de desenvolvimento multiplataforma de software livre criado para acelerar o desenvolvimento de aplicativos destinados ao Microsoft HoloLens, a headsets imersivos (VR) do Windows Mixed Reality e à plataforma OpenVR. |
+| Versão prévia privada do [Microsoft Mesh](/mesh/overview) | Preencha o formulário de [interesse no registro do Microsoft Mesh](https://aka.ms/meshsignup) para ficar sempre em dia com os anúncios e as novidades do Mesh. Com o Mesh, você pode aprimorar reuniões virtuais, conduzir sessões virtuais de design, ajudar outras pessoas remotamente e hospedar encontros virtuais. |
 
 ## <a name="cloud-services"></a>Serviços de Nuvem
 
@@ -49,9 +50,10 @@ Você pode usar o **Microsoft Dynamics 365 Guides** para conectar visualmente as
 ## <a name="examples"></a>Exemplos
 
 Temos vários [aplicativos de exemplo](../features-and-samples.md) de software livre para você baixar e experimentar e ter uma ideia de um produto final de Realidade Misturada no Unity. Também há cenas de exemplo do MRTK disponíveis para você testar recursos específicos:
-* [Cena de exemplo de interação das mãos (MRTK) para Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor): a cena de exemplo HandInteractionExamples.unity contém vários tipos de interações e controles de interface do usuário que realçam a entrada de mão articulada.
 
-* [Exemplos de acompanhamento ocular (MRTK) para Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html): essa página mostra como começar a usar rapidamente o acompanhamento ocular no MRTK tendo como base os exemplos fornecidos de acompanhamento ocular do MRTK.
+* [Cena de exemplo de interação das mãos (MRTK) para Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples): a cena de exemplo HandInteractionExamples.unity contém vários tipos de interações e controles de interface do usuário que realçam a entrada de mão articulada.
+
+* [Exemplos de acompanhamento ocular (MRTK) para Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview): essa página mostra como começar a usar rapidamente o acompanhamento ocular no MRTK tendo como base os exemplos fornecidos de acompanhamento ocular do MRTK.
 
 >[!NOTE]
 >As duas cenas de exemplo do MRTK exigem a instalação dos pacotes do MRTK Foundation e do Unity de exemplo.
@@ -106,7 +108,7 @@ Você pode usar o **Microsoft Dynamics 365 Guides** para conectar visualmente as
 
 ![Web](../images/javascript_logo_banner.png)
 
-A API de Dispositivo WebXR é uma especificação aberta que permite que você experimente aplicativos de Realidade Misturada no navegador em qualquer plataforma. Confira a [visão geral de desenvolvimento no JavaScript](../web/javascript-development-overview.md) para começar a criar aplicativos de Realidade Misturada para qualquer plataforma.
+A API de Dispositivo WebXR é uma especificação aberta que permite que você experimente aplicativos de Realidade Misturada no navegador em qualquer plataforma. Confira a [visão geral de desenvolvimento no JavaScript](../javascript/javascript-development-overview.md) para começar a criar aplicativos de Realidade Misturada para qualquer plataforma.
 
 
 # <a name="native-openxr"></a>[Nativo (OpenXR)](#tab/native)
