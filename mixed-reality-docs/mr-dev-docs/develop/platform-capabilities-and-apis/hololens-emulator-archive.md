@@ -3,22 +3,24 @@ title: Arquivo do emulador do HoloLens
 description: Mantenha-se atualizado sobre a lista arquivada de compilações lançadas para os emuladores Microsoft HoloLens (1º gen) e HoloLens 2.
 author: hamalawi
 ms.author: moelhama
-ms.date: 02/09/2021
+ms.date: 04/13/2021
 ms.topic: article
 keywords: HoloLens, emulador, compilações, versões, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, arquivo morto
-ms.openlocfilehash: 0466ebe84388164e1c29f6f93325987118bb80b4
-ms.sourcegitcommit: 55dab2b9f2d9b98fdb1cb9f26d3d075bb8f95dcd
+ms.openlocfilehash: fcf53ddc5514103955452fc620962d3db0b031b5
+ms.sourcegitcommit: be79d8e9ebac553aabec7c57c44eee56123aa00e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102526013"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107369859"
 ---
 # <a name="hololens-2-emulator-archive"></a>Arquivo de emulador do HoloLens 2
 
 O emulador do HoloLens (primeira geração) e o Emulator do HoloLens 2 são instalados lado a lado. É recomendável usar a compilação mais recente disponível, mas pode haver casos em que você deseja testar um aplicativo em relação a um emulador antigo. Esta página inclui links para todas as versões lançadas.
 
-|  Build |  Data de lançamento |  Anotações |
+|  Build |  Data de lançamento |  Observações |
 |----------|----------|----------|
+|  [10.0.19041.1144 de Build do emulador do HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2160829) | 13 de abril de 2021 | Windows Holographic, versão 20H2 abril 2021 atualização.  Para ver as notas de versão gerais do HoloLens 2, consulte https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [10.0.18362.1108 de Build do emulador do HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2160820) | 13 de abril de 2021 | Windows Holographic, versão 1903 de abril de 2021 atualização.  Para ver as notas de versão gerais do HoloLens 2, consulte https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.19041.1140 de Build do emulador do HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2156684) | 9 de março de 2021 | Windows Holographic, versão 20H2 março 2021 atualização.  Para ver as notas de versão gerais do HoloLens 2, consulte https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1102 de Build do emulador do HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2156989) | 9 de março de 2021 | Windows Holographic, versão 1903 março 2021 atualização.  Para ver as notas de versão gerais do HoloLens 2, consulte https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.19041.1136 de Build do emulador do HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2154784) | 9 de fevereiro de 2021 | Windows Holographic, versão 20H2 de fevereiro de 2021 atualização.  Para ver as notas de versão gerais do HoloLens 2, consulte https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -54,7 +56,7 @@ O emulador do HoloLens (primeira geração) e o Emulator do HoloLens 2 são inst
 
 ## <a name="hololens-emulator-first-gen-archive"></a>Arquivo de emulador do HoloLens (primeira geração)
 
-|  Build |  Data de lançamento |  Anotações |
+|  Build |  Data de lançamento |  Observações |
 |----------|----------|----------|
 |  [10.0.17763.134 de Build do emulador do HoloLens](https://go.microsoft.com/fwlink/?linkid=2065980) | 19 de novembro de 2018 | Compilação mais recente do HoloLens (primeira geração). Atualização do Windows 10 de outubro de 2018. |
 |  [10.0.17134.80 de Build do emulador do HoloLens](https://go.microsoft.com/fwlink/?linkid=874531) | 21 de maio de 2018 |
