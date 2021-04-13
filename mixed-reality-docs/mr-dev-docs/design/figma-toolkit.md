@@ -1,29 +1,38 @@
 ---
-title: Kit de ferramentas figma
+title: Kit de ferramentas do Figma
 description: Baixe o arquivo figma que contém ativos para blocos de construção de interface do usuário comuns.
 author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, esboço, Adobe XD, design, designer, arquivo de design, design de UX, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 4e5b28a08d52ddc0b3a1311e51d71581a31cb0c0
-ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
+ms.openlocfilehash: 1386ce6238a406c2e2b45c9a6a551ae57c52cc59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107222011"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299931"
 ---
-# <a name="figma-toolkit"></a>Kit de ferramentas figma
+# <a name="figma-toolkit"></a>Kit de ferramentas do Figma
 
-![Kit de ferramentas figma](images/UX_Tools_FigmaToolkit_Hero.png)<br>
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
 
 O figma Toolkit fornece os ativos que podem ser usados para esboço e layout da interface do usuário. Todos os controles da interface do usuário são baseados nos componentes disponíveis no MRTK. 
 
 > [!div class="nextstepaction"]
-> [Baixe o figma Toolkit](https://1drv.ms/u/s!ArqCGDZ4bpk7gRIA9QbpoQ5ln90B?e=qgc6YX)
+> [Exibir o kit de ferramentas figma](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>Como usar o kit de ferramentas figma
-Importe o arquivo baixado (. Fig) para figma usando o botão **importar** no canto superior direito.
+Use **duplicar para o menu rascunhos** para fazer uma cópia.
+<img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
+
+Clique em **voltar aos arquivos** para ver a cópia duplicada. Você pode usar essa cópia para sua própria criação.
+
+<img src="images/UX_Figma_Use2.png" width="400px" alt="Menu duplicate 2"><br>
+
+<img src="images/UX_Figma_Use3.png" width="300px" alt="Menu duplicate 3"><br>
+
+Para baixar e trabalhar localmente, use o menu **arquivo > salvar cópia local** . Importe o arquivo baixado (. Fig) para figma usando o botão **importar** no canto superior direito.
 
 <img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 
@@ -57,7 +66,7 @@ Os ativos podem ser usados para Storyboarding.
 ![Exemplo de kit de ferramentas figma – Storyboarding](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

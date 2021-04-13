@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, indicações, interface do usuário, UX, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, áudio
-ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0e9f4dc09e3c4a4c38ffeb1a9042f39996918e36
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759872"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300461"
 ---
 # <a name="interactable-object"></a>Objeto interativo
 
@@ -140,7 +140,7 @@ Um [botão no HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/
 :::row:::
     :::column:::
         ![Default](images/640px-interactibleobject-pressablebutton-default.jpg)<br>
-        **Default**<br>
+        **Padrão**<br>
     :::column-end:::
     :::column:::
         ![Passar o mouse](images/640px-interactibleobject-pressablebutton-hover.jpg)<br>
@@ -214,13 +214,11 @@ Para interações diretas, os comentários de áudio adequados podem melhorar dr
 
 ---
 
-
-## <a name="sizing-recommendations"></a>Recomendações de dimensionamento 
+## <a name="sizing-recommendations"></a>Recomendações de dimensionamento
 
 Para garantir que todos os objetos que podem interagir possam ser facilmente tocadas, é recomendável garantir que os interajam com um tamanho mínimo com base na distância em que são colocados do usuário. O ângulo visual é geralmente medido em graus de arco Visual. O ângulo visual se baseia na distância entre os olhos do usuário e o objeto e permanece constante, enquanto o tamanho físico do destino pode mudar à medida que a distância do usuário é alterada. Para determinar o tamanho físico necessário de um objeto com base na distância do usuário, tente usar uma calculadora de ângulo visual como [esta](https://elvers.us/perception/visualAngle/).
 
 Abaixo estão as recomendações para tamanhos mínimos de conteúdo de interação.
-
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Tamanho de destino para interação direta
 
@@ -254,28 +252,25 @@ Ao criar botões para interação direta, recomendamos um tamanho mínimo maior 
 ![Tamanho de destino para interação de olhar](images/TargetSizingFar.jpg)<br>
 *Tamanho de destino para interação de olhar*
 
-
 <br>
 
 ---
-
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objeto de interação no MRTK (Kit de ferramentas de realidade misturada) para Unity
 
 No **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode usar o script de forma a [**interagir**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) para fazer com que os objetos respondam a vários tipos de Estados de interação de entrada. Ele dá suporte a vários tipos de temas que permitem definir estados visuais controlando Propriedades de objeto, como cor, tamanho, material e sombreador.
 
-* [Interagir](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
-* [Botão](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
+* [Interativo](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Botão](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [Exemplos de interação de mão cena](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 O sombreador padrão de MixedRealityToolkit fornece várias opções, como a **luz de proximidade** que ajuda você a criar indicações visuais e de áudio.
-* [Sombreador padrão MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
+* [Sombreador padrão MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
-
 
 ## <a name="see-also"></a>Confira também
 

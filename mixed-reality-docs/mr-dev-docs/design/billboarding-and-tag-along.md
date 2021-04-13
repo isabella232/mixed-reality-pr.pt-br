@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, mensagem de contorno, marca, com a realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759402"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299881"
 ---
 # <a name="billboarding-and-tag-along"></a>Mural e tag-along
 
@@ -47,9 +47,9 @@ Assim como o conteúdo realmente bloqueado, os objetos de marca podem se comprov
 ---
 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Contorno e marcação em MRTK (Kit de ferramentas de realidade misturada) para o Unity
-O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts para o comportamento de etiqueta e de contorno. Atribua o script Billboard.cs a qualquer objeto para adicionar o comportamento de mensagem e fazer com que o objeto sempre fique à frente. Para adicionar o comportamento de marca, use o script RadialView.cs. Você pode ajustar várias opções, como lerping time, Distance e diploma.
+O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts para o comportamento de etiqueta e de contorno. Atribua o script do mural. cs em qualquer objeto para adicionar o comportamento da mensagem e fazer com que o objeto sempre fique à sua face. Para adicionar o comportamento de marca, use o script RadialView. cs. Você pode ajustar várias opções, como lerping time, Distance e diploma.
 
-* [MRTK-solucionador de exibição radial](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
+* [MRTK-solucionador de exibição radial](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [MRTK-script do mural](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 

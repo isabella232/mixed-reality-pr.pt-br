@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, botão
-ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 177ccfc1c07df9a9523c9ed6733d3da61bdb7921
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759422"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299751"
 ---
 # <a name="button"></a>Botão
 
@@ -52,7 +52,7 @@ O **[MRTK para Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 
 * Compactando o front-end
 * Efeito de pulso no gatilho.
 
-* Confira o [botão MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) para obter mais instruções e exemplos personalizados.
+* Confira o [botão MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) para obter mais instruções e exemplos personalizados.
 
 <br>
 

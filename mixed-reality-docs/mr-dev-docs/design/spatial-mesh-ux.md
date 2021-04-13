@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 5e8ffbb90b1143cd4e11bf45a889c11c233232df
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0d8d2811c2fae96f679eeb1df2f1053e7ecf5def
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759802"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300341"
 ---
 # <a name="spatial-mesh"></a>Malha espacial
 
@@ -35,7 +35,8 @@ O MRTK fornece vários materiais para a visualização de malha espacial.
 - **MRTK_SurfaceReconstruction. passe-partout**: esse material oferece um efeito de pulso animado na malha espacial. Você pode usar esse material para visualizar o ambiente em um momento específico ou na entrada aérea do usuário. Consulte a cena **PulseShaderExamples. Unity** para ver os exemplos.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* Para obter mais informações, consulte [reconhecimento espacial do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md) e [sombreador MRTK-Pulse](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/pulse-shader.md).
+
+* Para obter mais informações, consulte [reconhecimento espacial do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) e [sombreador MRTK-Pulse](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader).
 
 <br>
 

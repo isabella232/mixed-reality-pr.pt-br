@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, controles, design, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, coleta de objetos, 2D, 3D, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 53ec99b998f1c65fdd3ca8b5d935b43ff0070500
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 109dcd59a2b52a8eec82096c5aa88cd1070f5649
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759147"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299721"
 ---
 # <a name="object-collection"></a>Coleção de objetos
 
@@ -48,7 +48,7 @@ Você também pode usar imagens 2D com a coleção de objetos. Os exemplos a seg
 
 ## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Coleção de objetos no MRTK (Kit de ferramentas de realidade misturada) para Unity
 
-* [MRTK-coleção de objetos](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-collection.md)
+* [MRTK-coleção de objetos](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 
 <br>
 

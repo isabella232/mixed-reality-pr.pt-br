@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realidade mista do Windows, design, cor, luz, materiais, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 6e5857436b0325537d0ea5d0321d296c58c09eae
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b3ee769208bdcd0d86beb05760de377f2a776a47
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759261"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299741"
 ---
 # <a name="color-light-and-materials"></a>Cor, luz e materiais
 
@@ -88,7 +88,7 @@ A luz e a cor podem ajudar a tornar seus hologramas mais naturalmente no ambient
     :::column:::
 Os materiais são elementos cruciais para fazer hologramas realistas. Ao fornecer as características visuais adequadas, você pode criar objetos Holographic atraentes que podem misturar bem com o ambiente físico. Os materiais também são importantes para fornecer comentários visuais para os vários tipos de interações de entrada do usuário.  
 
-O [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece um sombreador padrão MRTK com várias opções de efeito visual que podem ser usadas para comentários visuais. Por exemplo, você pode usar a propriedade ' proximidade clara ' para fornecer um efeito de iluminação quando o dedo do usuário estiver se aproximando da superfície do objeto. Saiba mais sobre o [sombreador padrão do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
+O [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece um sombreador padrão MRTK com várias opções de efeito visual que podem ser usadas para comentários visuais. Por exemplo, você pode usar a propriedade ' proximidade clara ' para fornecer um efeito de iluminação quando o dedo do usuário estiver se aproximando da superfície do objeto. Saiba mais sobre o [sombreador padrão do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
         :::column:::
     *Loop de vídeo: exemplo de comentários visuais com base na proximidade a uma caixa* 

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550066"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300041"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -157,7 +157,7 @@ Depois de estar satisfeito com sua animação
 *   Se você tiver ensinado as mãos pelo menos uma vez, repita o gesto se detectar que o usuário está preso.
 *   Se as posições de dedos/mãos específicas forem críticas, verifique se os usuários podem ver claramente essas nuances na animação. Experimente Angling as mãos para que as partes mais importantes fiquem claramente visíveis. 
 * Se você perceber distorção nas mãos, precisará ir para as configurações de qualidade do Unity aumentar o número de Bones. 
- Acesse as configurações de projeto de > de edição do Unity > qualidade > outros pesos do Blend >. Verifique se "4 Bones" estão selecionados para ver as junções suaves. 
+ Acesse as configurações de projeto de > de edição do Unity > qualidade > outros pesos do Blend >. Verifique se "4 Bones" estão selecionados para ver as junções suaves.
 
    ![Exemplo: janela de configurações do projeto](images/HandCoach/ProjectSettings.png)<br>
 
@@ -167,13 +167,13 @@ Depois de estar satisfeito com sua animação
 * Dimensionar as mãos muito grandes
 * colocar as mãos muito próximas ao usuário
 * As mãos só devem ser ensinadas uma vez. O excesso de ensino pode causar confusão e bagunças
-*   Colocando-o no Unity, baixe o MRTK mais recente aqui: https://github.com/microsoft/MixedRealityToolkit-Unity
-    *   Material: Teaching_Hand2
-    *   Scripts: consulte as diretrizes do MRTK para o <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand </a>
-    *   Configuração por projeto
-        *   Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
+* Colocando-o no Unity, baixe o MRTK mais recente aqui: https://github.com/microsoft/MixedRealityToolkit-Unity
+  * Material: Teaching_Hand2
+  * Scripts: consulte as diretrizes do MRTK para o <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK Hand </a>
+  * Configuração por projeto
+    * Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Interação-conceitos básicos](interaction-fundamentals.md)
 * [Processo de criação de ativos](asset-creation-process.md)

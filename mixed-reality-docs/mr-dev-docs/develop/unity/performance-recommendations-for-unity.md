@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: gráficos, cpu, gpu, renderização, coleta de lixo, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759722"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300151"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recomendações de desempenho para o Unity
 
@@ -301,15 +301,15 @@ Uma aproximação fácil para comparar os sombreadores em desempenho é identifi
 
 #### <a name="optimize-pixel-shaders"></a>Otimizar sombreadores de pixel
 
-Observando os resultados da estatística compilada usando o método acima, em média, o [sombreador de fragmento](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) geralmente executará mais operações do que o [sombreador de vértice](https://en.wikipedia.org/wiki/Shader#Vertex_shaders). O sombreador de fragmento, também conhecido como sombreador de pixel, é executado por pixel na saída da tela, ao passo que o sombreador de vértice só é executado por vértice de todas as malhas que estão sendo desenhadas na tela. 
+Observando os resultados da estatística compilada usando o método acima, em média, o [sombreador de fragmento](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) geralmente executará mais operações do que o [sombreador de vértice](https://en.wikipedia.org/wiki/Shader#Vertex_shaders). O sombreador de fragmento, também conhecido como sombreador de pixel, é executado por pixel na saída da tela, ao passo que o sombreador de vértice só é executado por vértice de todas as malhas que estão sendo desenhadas na tela.
 
-Portanto, os sombreadores de fragmento têm mais instruções do que os sombreadores de vértice devido a todos os cálculos de iluminação e quase sempre são executados em um conjunto de dados maior. Por exemplo, se a saída da tela for uma imagem de 2.000 por 2.000, o sombreador de fragmento poderá ser executado 2.000 * 2.000 = 4.000.000 vezes. Se a renderização de dois olhos estiver sendo feita, esse número dobrará, pois há duas telas. Se um aplicativo de realidade misturada tiver várias passagens, efeitos de pós-processamento de tela inteira ou estiver renderizando várias malhas no mesmo pixel, esse número aumentará drasticamente. 
+Portanto, os sombreadores de fragmento têm mais instruções do que os sombreadores de vértice devido a todos os cálculos de iluminação e quase sempre são executados em um conjunto de dados maior. Por exemplo, se a saída da tela for uma imagem de 2.000 por 2.000, o sombreador de fragmento poderá ser executado 2.000 * 2.000 = 4.000.000 vezes. Se a renderização de dois olhos estiver sendo feita, esse número dobrará, pois há duas telas. Se um aplicativo de realidade misturada tiver várias passagens, efeitos de pós-processamento de tela inteira ou estiver renderizando várias malhas no mesmo pixel, esse número aumentará drasticamente.
 
 Portanto, a redução do número de operações no sombreador de fragmento pode, em geral, proporcionar ganhos de desempenho muito maiores em otimizações no sombreador de vértice.
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternativas do sombreador padrão do Unity
 
-Em vez de usar uma PBR (renderização baseada em física) ou outro sombreador de alta qualidade, examine a utilização de um sombreador mais barato e com melhor desempenho. O [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece o [sombreador padrão do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) que foi otimizado para projetos de realidade misturada.
+Em vez de usar uma PBR (renderização baseada em física) ou outro sombreador de alta qualidade, examine a utilização de um sombreador mais barato e com melhor desempenho. O [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece o [sombreador padrão do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) que foi otimizado para projetos de realidade misturada.
 
 O Unity também fornece um sombreador apagado, com vértice iluminado, difuso e outras opções de sombreador simplificadas que são mais rápidas em comparação com o sombreador padrão do Unity. Confira [Uso e desempenho de sombreadores internos](https://docs.unity3d.com/Manual/shader-Performance.html) para obter informações mais detalhadas.
 

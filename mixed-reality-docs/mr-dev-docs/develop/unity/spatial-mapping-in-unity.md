@@ -6,18 +6,19 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549946"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300161"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapeamento espacial no Unity
 
 o [mapeamento espacial](../../design/spatial-mapping.md) permite que você recupere malhas de triângulo que representam as superfícies do mundo em um dispositivo HoloLens. Você pode usar dados de superfície para posicionamento, oclusão e análise de sala para dar a seus projetos de Unity um dose extra de imersão.
 
 O Unity inclui suporte completo para o mapeamento espacial, que é exposto aos desenvolvedores das seguintes maneiras:
+
 1. Componentes de mapeamento espacial disponíveis no MixedRealityToolkit, que fornecem um caminho conveniente e rápido para introdução ao mapeamento espacial
 2. APIs de mapeamento espacial de nível inferior, que fornecem controle total e permitem uma personalização mais sofisticada específica do aplicativo
 
@@ -51,6 +52,7 @@ Para usar o mapeamento espacial em seu aplicativo, o recurso spatialPerception p
 Para que um aplicativo consuma dados de mapeamento espacial, o recurso SpatialPerception deve ser habilitado.
 
 Como habilitar o recurso SpatialPerception:
+
 1. No editor do Unity, abra o painel **"configurações do Player"** (editar > configurações do projeto > Player)
 2. Selecione na guia **"Windows Store"**
 3. Expanda **"configurações de publicação"** e verifique o recurso **"SpatialPerception"** na lista **"recursos"**
@@ -59,6 +61,7 @@ Como habilitar o recurso SpatialPerception:
 > Se você já tiver exportado seu projeto do Unity para uma solução do Visual Studio, será necessário exportar para uma nova pasta ou [definir manualmente esse recurso no AppxManifest no Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 O mapeamento espacial também requer um MaxVersionTested de pelo menos 10.0.10586.0:
+
 1. No Visual Studio, clique com o botão direito do mouse em **Package. appxmanifest** na Gerenciador de soluções e selecione **Exibir código**
 2. Localize a linha especificando **TargetDeviceFamily** e altere **MaxVersionTested = "10.0.10240.0"** para **MaxVersionTested = "10.0.10586.0"**
 3. **Salve** o Package. appxmanifest.
@@ -84,6 +87,7 @@ O colisor de mapeamento espacial permite a interação de conteúdo Holographic 
 Você pode adicionar ambos os componentes ao seu aplicativo se desejar visualizar e interagir com superfícies físicas.
 
 Para usar esses dois componentes em seu aplicativo do Unity:
+
 1. Selecione um gameobject no centro da área na qual você gostaria de detectar malhas de superfície espacial.
 2. Na janela Inspetor, **adicione** o processador de  >    >  **mapeamento espacial** do componente XR ou o **renderizador de mapeamento espacial**.
 
@@ -92,6 +96,7 @@ Você pode encontrar mais detalhes sobre como usar esses componentes no site de 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Indo além dos componentes internos de mapeamento espacial
 
 Esses componentes o tornam fácil de arrastar e soltar para começar a usar o mapeamento espacial.  Quando quiser ir além, há dois caminhos principais a serem explorados:
+
 * Para fazer seu próprio processamento de malha de nível inferior, consulte a seção abaixo sobre a API de script de mapeamento espacial de baixo nível.
 * Para fazer uma análise de malha de nível superior, consulte a seção abaixo sobre a biblioteca SpatialUnderstanding em <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -137,6 +142,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### <a name="handling-surface-changes"></a>Lidando com alterações de superfície
 
 Há vários casos principais para manipular-adicionados e atualizados, que podem usar o mesmo caminho de código e removidos.
+
 * Nos casos adicionados e atualizados, adicionamos ou obtemos o gameobject que representa essa malha do dicionário, criamos uma estrutura SurfaceData com os componentes necessários e chamamos RequestMeshDataAsync para preencher o gameobject com os dados de malha e a posição na cena.
 * No caso removido, removemos o gameobject que representa a malha do dicionário e o destruimos.
 
@@ -268,7 +274,7 @@ No exemplo de Unity, o cursor converte um raio cada quadro. Primeiro, em relaç�
 
 ### <a name="topology-queries"></a>Consultas de topologia
 
-Dentro da DLL, o Gerenciador de topologia lida com a rotulagem do ambiente. Conforme mencionado acima, grande parte dos dados é armazenada no surfels, contido em um volume VOXEL. Além disso, a estrutura "PlaySpaceInfos" é usada para armazenar informações sobre o Playspace, incluindo o alinhamento Mundial (mais detalhes sobre isso abaixo), piso e altura do teto. A heurística é usada para determinar piso, teto e paredes. Por exemplo, a maior e menor superfície horizontal com área de superfície maior que 1 m2 é considerada a base. 
+Dentro da DLL, o Gerenciador de topologia lida com a rotulagem do ambiente. Conforme mencionado acima, grande parte dos dados é armazenada no surfels, contido em um volume VOXEL. Além disso, a estrutura "PlaySpaceInfos" é usada para armazenar informações sobre o Playspace, incluindo o alinhamento Mundial (mais detalhes sobre isso abaixo), piso e altura do teto. A heurística é usada para determinar piso, teto e paredes. Por exemplo, a maior e menor superfície horizontal com área de superfície maior que 1 m2 é considerada a base.
 
 > [!NOTE]
 > O caminho da câmera durante o processo de verificação também é usado nesse processo.
@@ -470,21 +476,23 @@ O fluxo de verificação, controlado pelo comportamento "SpatialUnderstanding", 
 
 ### <a name="understanding-mesh"></a>Entendendo a malha
 
-A DLL de compreensão armazena internamente o Playspace como uma grade de oito cubos VOXEL de tamanho 8 cm. Durante a parte inicial da verificação, uma análise de componente primário é concluída para determinar os eixos da sala. Internamente, ele armazena seu espaço VOXEL alinhado a esses eixos. Uma malha é gerada aproximadamente a cada segundo, extraindo o isosurface do volume VOXEL. 
+A DLL de compreensão armazena internamente o Playspace como uma grade de oito cubos VOXEL de tamanho 8 cm. Durante a parte inicial da verificação, uma análise de componente primário é concluída para determinar os eixos da sala. Internamente, ele armazena seu espaço VOXEL alinhado a esses eixos. Uma malha é gerada aproximadamente a cada segundo, extraindo o isosurface do volume VOXEL.
 
 ![Malha gerada produzida a partir do volume VOXEL](images/su-custommesh.jpg)<br>
 *Malha gerada produzida a partir do volume VOXEL*
 
 ## <a name="troubleshooting"></a>Solução de problemas
+
 * Verifique se você definiu o recurso [SpatialPerception](#setting-the-spatialperception-capability)
 * Quando o rastreamento for perdido, o próximo evento onsurfacechanged removerá todas as malhas.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapeamento espacial no kit de ferramentas de realidade misturada
-Para obter mais informações sobre como usar o mapeamento espacial com o kit de ferramentas de realidade misturada v2, consulte a <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">seção reconhecimento espacial</a> do docs MRTK.
+
+Para obter mais informações sobre como usar o mapeamento espacial com o kit de ferramentas de realidade misturada v2, consulte a <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">seção reconhecimento espacial</a> do docs MRTK.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção: 
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, você está no meio da exploração dos blocos de construção do MRTK Core. Deste ponto, você pode prosseguir para o próximo bloco de construção:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -497,6 +505,7 @@ Ou vá diretamente para as funcionalidades e APIs da plataforma de Realidade Mis
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](unity-development-overview.md#2-core-building-blocks) a qualquer momento.
 
 ## <a name="see-also"></a>Confira também
+
 * [Sistemas de coordenadas](../../design/coordinate-systems.md)
 * [Sistemas de coordenadas no Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

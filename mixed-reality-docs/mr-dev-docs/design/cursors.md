@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1º gen), HoloLens 2, realidade misturada, cursores, direcionamento, olhar, gestos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, raios, entrada
-ms.openlocfilehash: 0b35c832e6d13ff10d14686909754de60b83fa23
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 744e75f4212046b7c237a6c6634a4980e9148b0e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759412"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300081"
 ---
 # <a name="cursors"></a>Cursores
 
@@ -141,7 +141,7 @@ Se você quiser personalizar os comportamentos e as aparências dos comentários
 * Poderíamos usar o cursor para exibir o estado ou a intenção de entrada do usuário. Por exemplo, podemos exibir um ícone informando ao usuário que o sistema vê seu estado de mão e que o aplicativo sabe que está pronto para agir.
 * Também poderíamos usar o cursor para mostrar aos usuários que comandos de voz foram ouvidos pelo sistema por meio de uma alteração de cor momentânea
 
-* Os seguintes Estados de cursor podem ser implementados de maneiras diferentes. Você pode implementar esses Estados diferentes modelando o cursor como um computador de estado. Por exemplo: 
+* Os seguintes Estados de cursor podem ser implementados de maneiras diferentes. Você pode implementar esses Estados diferentes modelando o cursor como um computador de estado. Por exemplo:
     * Estado ocioso é onde você mostra o cursor padrão.
     * Estado pronto é quando você detecta a mão do usuário na posição pronta.
     * O estado de interação é quando o usuário está fazendo uma interação específica.
@@ -165,9 +165,9 @@ A criação sem um cursor é recomendada quando o sentido do imersão é um comp
 
 Por padrão, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece um cursor pré-fabricado ([DefaultCursor. pré-fabricado](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) que tem o mesmo estado visual que o cursor do sistema do Shell. Ele é atribuído no perfil de Entrada do MRTK, em Ponteiros. Você pode substituir/personalizar este cursor para sua experiência. Para a experiência com a entrada de controle de olho, o MRTK também fornece EyeGazeCursor, que tem Visual sutil para minimizar a distração.
 
-* [MRTK – Perfil de ponteiro](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/mixed-reality-configuration-guide.md#pointer-configuration)
-* [MRTK – Sistema de entrada](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
-* [MRTK – Ponteiros](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
+* [MRTK – Perfil de ponteiro](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK – Sistema de entrada](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK – Ponteiros](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, teclado, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 9f42940b689a8fef77c9cf2f269100fccccfe6e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d20fabb2536b028ce4c48aac84592bbdc3a0c291
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759852"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300431"
 ---
 # <a name="keyboard"></a>Teclado
 
@@ -25,7 +25,7 @@ Seu aplicativo de realidade misturada pode invocar o teclado do sistema a qualqu
 
 ## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Teclado do sistema no MRTK (Kit de ferramentas de realidade misturada) para Unity
 
-* [MRTK-teclado do sistema](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
+* [MRTK-teclado do sistema](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -33,7 +33,7 @@ Seu aplicativo de realidade misturada pode invocar o teclado do sistema a qualqu
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
-Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, sua próxima tarefa é implantar seu aplicativo em um dispositivo ou emulador. 
+Se você estiver seguindo a jornada de desenvolvimento do Unity que apresentamos, sua próxima tarefa é implantar seu aplicativo em um dispositivo ou emulador.
 
 > [!div class="nextstepaction"]
 > [Implantar no HoloLens ou em headsets de imersão de realidade mista do Windows](../develop/platform-capabilities-and-apis/using-visual-studio.md)

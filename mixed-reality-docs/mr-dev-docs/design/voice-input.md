@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, voz, Cortana, fala, entrada, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista, olhar
-ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759137"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300291"
 ---
 # <a name="voice-input"></a>Entrada de voz
 
@@ -23,9 +23,9 @@ A entrada de voz é alimentada pelo [mesmo mecanismo](/windows/uwp/design/input/
 
 <br>
 
-## <a name="voice-and-gaze"></a>Voz e olhar
+## <a name="voice-and-gaze&quot;></a>Voz e olhar
 
-Quando você estiver usando comandos de voz, o olhar de cabeça ou de olho é o mecanismo de direcionamento típico, seja com um cursor para "selecionar" ou para canalizar o comando para um aplicativo que você está vendo. Talvez nem seja necessário mostrar qualquer cursor olhar _("vê-lo, digamos")_. Alguns comandos de voz não exigem um destino, como "ir para iniciar" ou "Ei Cortana".
+Quando você estiver usando comandos de voz, o olhar de cabeça ou de olho é o mecanismo de direcionamento típico, seja com um cursor para &quot;selecionar&quot; ou para canalizar o comando para um aplicativo que você está vendo. Talvez nem seja necessário mostrar qualquer cursor olhar _(&quot;vê-lo, digamos")_. Alguns comandos de voz não exigem um destino, como "ir para iniciar" ou "Ei Cortana".
 
 <br>
 
@@ -172,7 +172,7 @@ Sempre que o teclado Holographic estiver ativo, você poderá alternar para o mo
 
 Considere a adição de comandos de voz em qualquer experiência que você criar. A voz é uma maneira poderosa de controlar o sistema e os aplicativos. Como os usuários falam com diferentes tipos de dialetos e acentos, a escolha correta das palavras-chave de fala garantirá que os comandos dos usuários sejam interpretados de forma não ambígua.
 
-### <a name="best-practices"></a>Melhores práticas
+### <a name="best-practices"></a>Práticas recomendadas
 
 A seguir, algumas práticas que auxiliarão em um reconhecimento de fala perfeito.
 * **Use comandos concisos** - quando possível, escolha palavras com duas ou mais sílabas. Palavras com uma sílaba tendem a empregar sons de vogais diferentes quando faladas por pessoas com sotaques diferentes. Exemplo: "reproduzir vídeo" é melhor do que "reproduzir o vídeo selecionado no momento"
@@ -273,7 +273,7 @@ Para aplicativos que desejam aproveitar as opções de processamento de entrada 
 
 Todo esse processamento de áudio é acelerado por hardware, o que significa que os recursos esgotam muito menos energia do que se o mesmo processamento foi feito na CPU do HoloLens. Evite executar outro processamento de entrada de áudio na CPU para maximizar a vida útil da bateria do sistema e aproveitar o processamento interno de entrada de áudio descarregado.
 
-## <a name="languages"></a>Languages
+## <a name="languages"></a>Idiomas
 
 O HoloLens 2 [dá suporte a vários idiomas](/hololens/hololens2-language-support). Tenha em mente que os comandos de fala sempre serão executados no idioma de exibição do sistema, mesmo se vários teclados estiverem instalados ou se os aplicativos tentarem criar um reconhecedor de fala em um idioma diferente.
 
@@ -290,7 +290,7 @@ Para o Windows Mixed Reality Developer Edition versão 2017, a lógica de gerenc
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrada de voz em MRTK (Kit de ferramentas de realidade misturada) para Unity
 Com o **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode atribuir facilmente o comando de voz em qualquer objeto. Use o **perfil de entrada de fala** do MRTK para definir suas palavras-chave. Ao atribuir o script **SpeechInputHandler** , você pode fazer com que qualquer objeto responda às palavras-chave definidas no perfil de entrada de fala. O SpeechInputHandler também fornece um rótulo de confirmação de fala para melhorar a confiança do usuário.
 
-* [MRTK-comando de voz](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
+* [MRTK-comando de voz](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

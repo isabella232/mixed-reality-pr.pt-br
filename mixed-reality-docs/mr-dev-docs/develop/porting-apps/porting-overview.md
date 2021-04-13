@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: portabilidade, Unity, middleware, mecanismo, UWP, Win32
-ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5b89d3448a7baf12cc76dd3677140fcf6e297ee2
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759107"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299781"
 ---
 # <a name="porting-overview"></a>Visão geral de portabilidade
 
@@ -33,14 +33,13 @@ Primeiro, configure o destino do projeto com base em nossas recomendações de [
 Nossa recomendação atual para o desenvolvimento do Unity com realidade misturada é **o Unity 2019 LTS usando o pacote XR herdado**. Se o seu projeto usa o kit de ferramentas de realidade misturada, verifique se você está na versão mais recente, que atualmente é **MRTK-Unity 2,5**.
 
 > [!CAUTION]
-> Embora o XR SDK esteja disponível com esta versão do Unity, as âncoras espaciais do Azure não são atualmente compatíveis com essa configuração. Essa recomendação será atualizada com uma versão futura do pacote de âncoras espaciais do Azure para o Unity. 
+> Embora o XR SDK esteja disponível com esta versão do Unity, as âncoras espaciais do Azure não são atualmente compatíveis com essa configuração. Essa recomendação será atualizada com uma versão futura do pacote de âncoras espaciais do Azure para o Unity.
 > 
-> * Se você não precisar de âncoras espaciais do Azure, poderá [configurar seu projeto do Unity para XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e começar a usar o [MRTK e o XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md).
+> * Se você não precisar de âncoras espaciais do Azure, poderá [configurar seu projeto do Unity para XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e começar a usar o [MRTK e o XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk).
 > 
 > * Se você estiver usando atualmente o SDK do XR em seu projeto e quiser usar âncoras espaciais do Azure, desinstale o SDK do XR e reinstale o pacote de XR herdado para reverter as configurações do projeto.
 
-
-### <a name="unreal"></a>Unreal 
+### <a name="unreal"></a>Unreal
 
 Nossa recomendação atual para desenvolvimento inreal com realidade misturada é o **mecanismo inreal 4,26**. Se seu projeto usa as ferramentas de UX do kit de ferramentas da realidade misturada, verifique se você está usando a versão mais recente, que atualmente é **UXT 0,10**.
 
