@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, principais conceitos, interação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
+ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98110444"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107221558"
 ---
 # <a name="start-designing-and-prototyping"></a>Comece a projetar e a criar protótipos
 
@@ -40,6 +40,7 @@ Assim como em todos os percursos, sua aventura de criação de aplicativos de Re
 | [Tipos de aplicativos de Realidade Misturada](types-of-mixed-reality-apps.md) | Decida onde sua experiência de aplicativo residirá no espectro da Realidade Misturada |
 | [Aplicativo Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Aprenda os conceitos básicos do Design de UX de Realidade Misturada fazendo experimentos com dicas, comportamentos e recomendações para criar aplicativos HoloLens incríveis (disponíveis para download na Microsoft Store no HoloLens 2) |
 | [Hub de exemplos do MRTK](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experimente interações espaciais comuns e blocos de construção de UX para Realidade Misturada (disponível para download na Microsoft Store no HoloLens 2) |
+| **Opcional** [Download do Kit de ferramentas do Figma](figma-toolkit.md) | O Kit de ferramentas do Figma fornece ativos para você usar para esboço e layout da interface do usuário com base nos componentes disponíveis no MRTK |
 
 ### <a name="2-core-concepts"></a>2. Conceitos fundamentais
 
