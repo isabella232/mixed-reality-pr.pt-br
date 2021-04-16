@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala assentada, escala em posição, espaço em escala, escala mundial, 360 graus, encaixada, posicionada, sala, mundo, escala, posição, orientação, Unity, âncora, âncora espacial, ancoragem mundial, trancada mundial, bloqueio mundial, fone de ouvido, bloqueio de corpo, perda de controle, locatability, limites, recentralizar, realidade misturada, headset do Windows, headset de realidade virtual
-ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581065"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528745"
 ---
 # <a name="coordinate-systems-in-unity"></a>Sistemas de coordenadas no Unity
 
-O Windows Mixed Reality dá suporte a aplicativos em uma ampla variedade de [escalas de experiência](../../design/coordinate-systems.md), desde aplicativos de dimensionamento e de orientação e escalados até aplicativos em escala de sala. No HoloLens, você pode ir além e criar aplicativos de escala mundial que permitem que os usuários passem além de 5 metros, explorando um andar inteiro de um edifício e além disso.
+O Windows Mixed Reality dá suporte a aplicativos em uma ampla variedade de escalas de experiência, desde aplicativos de dimensionamento e de orientação e escalados até aplicativos em escala de sala. No HoloLens, você pode ir além e criar aplicativos de escala mundial que permitem que os usuários passem além de 5 metros, explorando um andar inteiro de um edifício e além disso.
 
-Sua primeira etapa na criação de uma experiência de realidade mista no Unity é determinar qual [escala de experiência](../../design/coordinate-systems.md) seu aplicativo será direcionada.
+Sua primeira etapa na criação de uma experiência de realidade mista no Unity é entender [os sistemas de coordenadas e escolher a escala de experiência que](../../design/coordinate-systems.md) seu aplicativo terá como destino.
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Criando uma experiência somente de orientação ou de escala assentada
 
@@ -102,7 +102,7 @@ Para adicionar uma âncora mundial, chame addComponent <WorldAnchor> () no objet
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-Pronto! Este objeto de jogo agora será ancorado ao seu local atual no mundo físico – você pode ver que suas coordenadas do Unity World se ajustam um pouco ao longo do tempo para garantir que o alinhamento físico. Use a [persistência](persistence-in-unity.md) para localizar esse local ancorado novamente em uma sessão de aplicativo futura.
+É isso! Este objeto de jogo agora será ancorado ao seu local atual no mundo físico – você pode ver que suas coordenadas do Unity World se ajustam um pouco ao longo do tempo para garantir que o alinhamento físico. Use a [persistência](persistence-in-unity.md) para localizar esse local ancorado novamente em uma sessão de aplicativo futura.
 
 ### <a name="removing-a-world-anchor"></a>Removendo uma âncora mundial
 
