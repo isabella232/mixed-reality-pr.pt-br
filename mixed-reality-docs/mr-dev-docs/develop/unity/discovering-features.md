@@ -3,16 +3,16 @@ title: Como descobrir e adquirir recursos
 description: Descubra e baixe recursos de Realidade Misturada.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230707"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107731988"
 ---
 # <a name="discovering-and-acquiring-features"></a>Como descobrir e adquirir recursos
 
@@ -37,6 +37,10 @@ O cabeçalho da categoria na captura de tela acima contém as seguintes propried
 - Nome da categoria (por exemplo: Kit de Ferramentas de Realidade Misturada)
 - Contagem de recursos selecionados
 - Contagem de recursos disponíveis
+- Botões de seção
+
+> [!NOTE]
+> Os botões de seleção são sensíveis ao contexto. Conforme o estado da seleção de recursos na categoria, um ou mais dos botões `Select All` e `Select None` serão exibidos.
 
 ### <a name="feature"></a>Recurso
 
@@ -49,6 +53,9 @@ Os recursos são listados na categoria apropriada. Da esquerda para a direita na
 - Lista de versões disponíveis
 - Link para os [detalhes do pacote de recursos](viewing-package-details.md)
 
+> [!NOTE]
+> Se um recurso for fornecido por um programa de Acesso Antecipado (também chamado de versão prévia privada), um ícone de indicador de ![acesso antecipado](images/EarlyAccess.png) será exibido.
+
 ## <a name="refresh-the-feature-catalog"></a>Atualizar o catálogo de recursos
 
 Para verificar se há recursos novos e atualizados, clique no botão Atualizar ![botão Atualizar](images/RefreshButton.png) . Isso se conecta ao site do catálogo e recupera as informações mais recentes. Depois que o catálogo for lido, a data e a hora da última atualização serão exibidas.
@@ -58,6 +65,8 @@ Para verificar se há recursos novos e atualizados, clique no botão Atualizar !
 Os recursos são selecionados expandindo uma categoria, selecionando uma versão e clicando na caixa de seleção:
 
 ![Recursos selecionados](images/SelectedFeatures.png)
+
+Para selecionar todos os pacotes de uma categoria, um botão `Select All` é fornecido. `Select None` cancelará a seleção de todos os pacotes selecionados. 
 
 Cada categoria com um ou mais recursos selecionados será atualizada para exibir a contagem.
 

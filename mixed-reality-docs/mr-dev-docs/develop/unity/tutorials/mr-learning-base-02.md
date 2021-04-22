@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: c9cf580b1123002e9e8cdfd5c3914c3aa39e2825
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: b0b8d97471dfae9d6dc6bbee26079af04f97de62
+ms.sourcegitcommit: 94ae851f78e5b861af601b445f8f0a3405197c40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003125"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107716017"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Como inicializar o seu projeto e implantar o primeiro aplicativo
 
@@ -186,7 +186,7 @@ Repita o mesmo procedimento para adicionar o **script de Interação Próxima co
 > [!NOTE]
 > Para os fins deste tutorial, os colisores já foram adicionados ao Objeto Cubo. Para saber mais sobre os colisores, acesse a documentação do <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Colisor</a> do Unity.
 
-Para fazer o teste no editor do Unity, acesse o modo de execução e mantenha pressionada a tecla **Shift da esquerda** ou a tecla **Espaço** para habilitar o controlador. Você pode mover o controlador com o mouse e usar o botão de rolagem para aproximá-lo ou afastá-lo da câmera. Com o ponteiro sobre o Cubo, mantenha pressionado o **botão direito do mouse** para mover o objeto Cubo.
+Para fazer o teste no editor do Unity, acesse o modo de execução e mantenha pressionada a tecla **Shift da esquerda** ou a tecla **Espaço** para habilitar o controlador. Você pode mover o controlador com o mouse e usar o botão de rolagem para aproximá-lo ou afastá-lo da câmera. Com o ponteiro sobre o Cubo, mantenha pressionado o **botão esquerdo do mouse** para mover o objeto Cubo.
 
 ![Modo de Jogo](images/mr-learning-base/base-02-section8-step1-4.png)
 

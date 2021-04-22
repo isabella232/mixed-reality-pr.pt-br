@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é realidade aumentada, MRTK, kit de ferramentas de realidade misturada, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237137"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528713"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Desenvolvimento do Unity para VR e Windows Mixed Reality
 
@@ -34,13 +34,23 @@ Há um pequeno conjunto de configurações do Unity que você precisará alterar
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
 | [Instale as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale o pacote mais recente do Unity e configure seu projeto para realidade misturada |
-| [Como configurar seu projeto para o WMR](configure-unity-project.md) | Saiba como criar aplicativos que renderizam conteúdo digital em dispositivos de vídeo holográficos e VR |
+| [Como configurar seu projeto para o WMR](windows-xr-plugin.md) | Saiba como criar aplicativos que renderizam conteúdo digital em dispositivos de vídeo holográficos e VR |
+
+> [!IMPORTANT]
+> Confira o [guia de configuração](choosing-unity-version.md) do projeto do Unity para obter mais informações sobre como configurar seus projetos.
 
 ### <a name="2-core-building-blocks"></a>2. Blocos principais de construção
 
 Depois de iniciar um novo projeto de imersão, você precisará de alguns blocos de construção básicos para desenvolver aplicativos de imersão. Todos os principais blocos de construção para aplicativos de realidade misturada são expostos de maneira consistente com outras APIs do Unity. Talvez você não precise de todos eles de uma vez, mas recomendamos explorá-los logo no início. Depois de aprofundar-se nos principais blocos de construção listados abaixo, você terá uma caixa de ferramentas cheia de recursos que pode integrar ao seu projeto de VR.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  Recurso  |  Funcionalidades  |
+| --- | --- |
+| [Câmera](../unity/camera-in-unity.md) | Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada |
+| [Âncoras espaciais e bloqueio de mundo](spatial-anchors-in-unity.md) | Solucione problemas de estabilização e ajuste de câmera e integrar uma solução de sistema de coordenadas estável || [Controladores de movimentos](../unity/motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
+| [Gestos](../unity/gestures-in-unity.md) | Use gestos de mão como entrada em suas experiências de Realidade Misturada |
+| [Som espacial](../unity/spatial-sound-in-unity.md) | Aprimore seus aplicativos com um áudio 3D imersivo |
+| [Text](../unity/text-in-unity.md) | Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade |
+| [Entrada de voz](../unity/voice-input-in-unity.md) | Capturar palavras-chave e frases faladas e ditado dos seus usuários|
 
 ### <a name="3-advanced-features"></a>3. Recursos avançados
 

@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, mapeamento espacial, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982779"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528735"
 ---
 # <a name="unity-development-for-hololens"></a>Desenvolvimento do Unity para HoloLens
 
@@ -33,22 +33,34 @@ A maneira mais fácil de desenvolver projetos no Unity é com o Kit de Ferrament
 
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
-| [O que é o MRTK?](mrtk-getting-started.md) | Para iniciar seu percurso, familiarize-se com o Kit de Ferramentas de Realidade Misturada e o que ele tem a oferecer |
-| [Instalar as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale o pacote mais recente do Unity e configure seu projeto para realidade misturada |
-| [Série de tutoriais do HoloLens 2](tutorials/mr-learning-base-01.md) | Aprofunde-se nos tutoriais do MRTK de nível principiante para hardware do HoloLens 2 |
-| **Opcional** [Baixar a ferramenta Recurso de Realidade Misturada](welcome-to-mr-feature-tool.md) | Uma nova ferramenta de desenvolvedor para descobrir, atualizar e adicionar pacotes de recursos de Realidade Misturada aos seus projetos do Unity |
+| [Apresentação do Kit de Ferramentas de Realidade Misturada](mrtk-getting-started.md) | Para iniciar seu percurso, familiarize-se com o Kit de Ferramentas de Realidade Misturada e o que ele tem a oferecer |
+| [Baixe a Ferramenta de Recursos de Realidade Misturada](welcome-to-mr-feature-tool.md) | Uma nova ferramenta de desenvolvedor para descobrir, atualizar e adicionar pacotes de recursos de Realidade Misturada aos seus projetos do Unity |
+| [Configurará seu ambiente de desenvolvedor](../install-the-tools.md) | Baixe e instale o pacote mais recente do Unity e configure seu projeto para realidade misturada |
+| [Conclua a série de tutoriais do HoloLens 2](tutorials/mr-learning-base-01.md) | Aprofunde-se nos tutoriais do MRTK de nível principiante para hardware do HoloLens 2 |
 
 > [!IMPORTANT]
-> Caso você deseje criar um projeto do Unity sem importar o Kit de Ferramentas de Realidade Misturada, haverá um pequeno conjunto de configurações do Unity que precisará ser alterado manualmente para o Windows Mixed Reality. Elas são divididas em duas categorias: por projeto e por cena. Dê uma olhada em nosso [guia de configuração](configure-unity-project.md) para ver o processo passo a passo.
+> Caso você deseje criar um projeto do Unity sem importar o Kit de Ferramentas de Realidade Misturada, haverá um pequeno conjunto de configurações do Unity que precisará ser alterado manualmente para o Windows Mixed Reality. Dê uma olhada no [guia de configuração](choosing-unity-version.md) para obter mais informações.
 
 > [!NOTE]
-> Depois que você configurar o MRTK V2 em seu projeto, objetos de jogo padrão do Unity, como a câmera, serão acesos imediatamente para uma experiência com escala de posição sentada. Você pode encontrar instruções sobre como alterar a escala de experiência de seu aplicativo na página de [sistemas de coordenadas](coordinate-systems-in-unity.md).
+> Depois que você configurar o MRTK no seu projeto, objetos de jogo padrão do Unity, como a câmera, serão acesos imediatamente para uma experiência com escala de posição sentada. Você pode encontrar instruções sobre como alterar a escala de experiência de seu aplicativo na página de [sistemas de coordenadas](coordinate-systems-in-unity.md).
 
 ## <a name="2-core-building-blocks"></a>2. Blocos principais de construção
 
 Todos os principais blocos de construção para aplicativos de realidade misturada são expostos de maneira consistente com outras APIs do Unity. Esses blocos de construção estão disponíveis como recursos autônomos e por meio do Kit de Ferramentas de Realidade Misturada. Talvez você não precise de todos eles de uma vez, mas recomendamos explorá-los logo no início. Depois de se aprofundar nos principais blocos de construção listados abaixo, você terá uma caixa de ferramentas cheia de recursos que pode integrar aos seus projetos de Realidade Misturada por conta própria ou por meio do MRTK.
 
-[!INCLUDE[](../includes/unity-building-blocks.md)]
+|  Recurso  |  Funcionalidades  |
+| --- | --- |
+| [Câmera](../unity/camera-in-unity.md) | Otimize completamente a estabilidade do holograma e a qualidade visual nos seus aplicativos de Realidade Misturada |
+| [Âncoras espaciais e bloqueio de mundo](spatial-anchors-in-unity.md) | Solucione problemas de estabilização e ajuste de câmera e integrar uma solução de sistema de coordenadas estável |
+| [Experiências compartilhadas](shared-experiences-in-unity.md) | Exiba e interaja coletivamente com o mesmo holograma em um ponto fixo no espaço usando o compartilhamento de âncora espacial |
+| [Foco](../unity/gaze-in-unity.md) | Permitir que os usuários direcionem hologramas olhando para eles |
+| [Controladores de movimentos](../unity/motion-controllers-in-unity.md) | Adicionar ações espaciais aos seus aplicativos de Realidade Misturada |
+| [Gestos](../unity/gestures-in-unity.md) | Use gestos de mão como entrada em suas experiências de Realidade Misturada |
+| [Acompanhamento de mãos e olhos](../unity/hand-eye-in-unity.md) | Integre a entrada articulada de acompanhamento de mãos e olhos em sua experiência do usuário |
+| [Mapeamento espacial](../unity/spatial-mapping-in-unity.md) | Mapeie seu espaço físico com uma sobreposição de malha virtual para marcar os limites do seu ambiente |
+| [Som espacial](../unity/spatial-sound-in-unity.md) | Aprimore seus aplicativos com um áudio 3D imersivo |
+| [Text](../unity/text-in-unity.md) | Obtenha texto nítido e de alta qualidade com tamanho gerenciável e renderização de qualidade |
+| [Entrada de voz](../unity/voice-input-in-unity.md) | Capturar palavras-chave e frases faladas e ditado dos seus usuários|
 
 ## <a name="3-advanced-features"></a>3. Recursos avançados
 
@@ -56,8 +68,7 @@ Outros recursos importantes que desempenham uma função em aplicativos de reali
 
 |  Recurso  |  Funcionalidades  |
 | --- | --- |
-| [Experiências compartilhadas](shared-experiences-in-unity.md) | Exiba e interaja coletivamente com o mesmo holograma em um ponto fixo no espaço usando o compartilhamento de âncora espacial |
-| [Câmera localizável](locatable-camera-in-unity.md) | Capture fotos e conteúdo de vídeo em seu aplicativo de realidade misturada |
+| [Câmera de foto e vídeo](locatable-camera-in-unity.md) | Capture fotos e conteúdo de vídeo em seu aplicativo de realidade misturada |
 | [Ponto de foco](focus-point-in-unity.md) | Dê ao HoloLens uma dica sobre a melhor forma de realizar a estabilização nos hologramas que estão sendo exibidos |
 | [Controle de perda](tracking-loss-in-unity.md) | Lide com cenários em que seu dispositivo não consegue se localizar no espaço mundial dos aplicativos |
 | [Entrada por teclado](keyboard-input-in-unity.md) | Obtenha informações de teclados do mundo real e de Realidade Misturada em seus aplicativos |

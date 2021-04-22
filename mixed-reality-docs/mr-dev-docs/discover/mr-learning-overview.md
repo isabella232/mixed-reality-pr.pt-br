@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
+ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102770324"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107581548"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 
@@ -20,7 +20,10 @@ O Microsoft Learn é como uma central de aprendizado. Descubra novas habilidades
 
 Quanto mais ferramentas você tem quando desenvolve para a Realidade Misturada, melhor. Embora a documentação e os tutoriais escritos sejam essenciais, se você é um aprendiz mais visual, nosso conteúdo de vídeo no Microsoft Learn é o lugar ideal para você. Mais módulos estão sendo adicionados o tempo todo, então lembre-se de voltar para obter mais atualizações!
 
-Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo para você começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de Realidade Misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface. Comece a fazer os módulos do Learn de Realidade Misturada hoje mesmo ou confira nosso [vídeo](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) de introdução ao Microsoft Learn!
+Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo para você começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de Realidade Misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface. 
+
+> [!div class="nextstepaction"]
+> [Introdução ao nosso roteiro de aprendizagem de Realidade Misturada](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
 
 ## <a name="general-modules"></a>Módulos gerais
 
