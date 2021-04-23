@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: e6756df7f082e56b029b6e82e06d960ba39ed04a
+ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088485"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107893996"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Recursos com suporte da realidade misturada OpenXR no Unity
 
@@ -39,6 +39,8 @@ Atualmente, há suporte para os seguintes recursos:
 * (Adicionado em 0.2.0) Dá suporte a **junções de mão e acompanhamento de malha à mão**
 * (Adicionado em 0.2.0) Dá suporte a **ARPlaneSubsystems** para detecção de plano e posicionar o holograma usando **ARRaycastManager**.
 * (0.9.0) dá suporte a **XRMeshSubsystem** e **ARMeshManager** para mapeamento espacial.
+* (Adicionado em 0.9.0) Dá suporte ao SDK de âncoras espaciais do Azure para o plug-in do Windows. Para obter mais informações, consulte o [projeto de exemplo das âncoras espaciais do Azure de realidade mista + OpenXR no GitHub](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/AzureSpatialAnchorsSample).
+* (Adicionado em 0.9.1) Dá suporte à comunicação remota do aplicativo de desktop Holographic de um aplicativo UWP do Windows criado e implantado.
 
 ## <a name="holographic-remoting-setup"></a>Configuração de comunicação remota do Holographic
 
@@ -114,9 +116,8 @@ Para referência, temos um [projeto de exemplo de acompanhamento QR no GitHub](h
 
 ## <a name="whats-coming-soon"></a>O que virá em breve
 
-Os seguintes problemas e recursos ausentes são conhecidos com o plug-in OpenXR da realidade misturada **versão 0.9.0**. Estamos trabalhando nessas soluções e lançaremos correções e novos recursos em versões futuras.
+Os seguintes problemas e recursos ausentes são conhecidos com o plug-in OpenXR da realidade misturada **versão 0.9.2**. Estamos trabalhando nessas soluções e lançaremos correções e novos recursos em versões futuras.
 
-* O suporte a **âncoras espaciais do Azure** estará disponível em uma versão futura.
 * **ARM64** é a única plataforma com suporte para aplicativos do HoloLens 2. A plataforma **ARM** estará disponível em uma versão futura.
 
 ## <a name="troubleshooting"></a>Solução de problemas

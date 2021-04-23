@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: ebe7d32b236e28259b2ed9a7915bd337f84f8762
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 97169507e2b61110d2d16580ba957feff3755258
+ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088495"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107894006"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Usando o plug-in OpenXR de realidade misturada para o Unity
 
@@ -20,7 +20,7 @@ A partir da versão 2020,2 do Unity, o pacote de plugin OpenXR de realidade mist
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Unity 2020,3 LTS ou posterior
-* Plug-in do Unity OpenXR 1.0.3 ou posterior
+* Plug-in do Unity OpenXR 1.1.1 ou posterior
 * Visual Studio 2019 ou posterior
 * Instalar o suporte da plataforma **UWP** no Unity para aplicativos do HoloLens 2
 
@@ -52,11 +52,11 @@ Se você estiver direcionando para o HoloLens 2, precisará alternar para o Plat
 
 1.  Selecione **arquivo > configurações de Build...**
 2.  Selecione **plataforma universal do Windows** na lista plataforma e selecione **alternar plataforma**
-3.  Definir a **arquitetura** para o **ARM 64**
-4.  Definir o **dispositivo de destino** para o **HoloLens**
-5.  Definir **tipo de compilação** como **D3D**
-6.  Definir o **SDK do UWP** para o **mais recente instalado**
-7.  Definir a **configuração de Build** como **Release** porque há problemas de desempenho conhecidos com a depuração
+3.  Defina a **Arquitetura** como **ARM 64**
+4.  Defina o **Dispositivo de destino** como **HoloLens**
+5.  Defina o **Tipo de Build** como **D3D**
+6.  Defina o **SDK do UWP** como **Último instalado**
+7.  Defina a **Configuração de Build** como **Lançamento** porque há problemas de desempenho conhecidos com a opção Depurar
 
 ![Captura de tela da janela de configurações de Build aberta no editor do Unity com Plataforma Universal do Windows realçado](images/wmr-config-img-4.png)
 
