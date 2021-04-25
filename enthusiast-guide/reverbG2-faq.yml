@@ -1,0 +1,143 @@
+### YamlMime:FAQ
+metadata:
+  title: Perguntas frequentes sobre HP reverbs G2
+  description: Mantenha-se atualizado com as perguntas frequentes sobre o uso do HP reverberar G2 Headset com headsets de imersão de realidade mista do Windows.
+  ms.author: v-hferrone
+  ms.date: 09/15/2020
+  ms.topic: article
+  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
+  appliesto:
+  - Windows 10
+  ms.openlocfilehash: 7715af5f2a94378a0c56ddcdcb83d1d21fc83700
+  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 04/24/2021
+  ms.locfileid: "107953745"
+title: Perguntas frequentes sobre o HP reverbs G2
+summary: ''
+sections:
+- name: Ignored
+  questions:
+  - question: >
+      Há uma ordem específica que devo seguir para conectar meus cabos de headset a um PC
+    answer: >
+      A HP recomenda:
+
+
+      - Conecte primeiro o cabo de 6 medidores ao headset antes de se conectar ao PC ou à fonte de energia.
+
+      - Deixe o cabo de 6 metros conectado ao headset após a instalação inicial.
+
+      - Quando o headset não estiver em uso, desconecte o adaptador de energia do cabo de 6 metros.
+  - question: >
+      O que devo fazer para obter uma imagem mais nítida
+    answer: >
+      Há algumas coisas que você pode tentar se sentir que a exibição parece um pouco desfoque:
+
+
+      - Verifique se o headset está em sua cabeça corretamente com seus olhos centralizados nas lentes.
+
+      - Tente ajustar o IPD (distância interpupillary). O verbo de reverberação usa um IPD de hardware. Para alterá-lo, procure ajuste de IPD no headset.
+
+      - Se precisar de óculos ou contatos, você precisará usá-los ao usar o dispositivo.
+
+      - Verifique se suas lentes estão limpas (somente microfiber tecido – sem fluids).
+
+      - Devido ao design avançado de headset, pode haver algumas fantasmas de imagem secundária nos primeiros minutos ao iniciar o dispositivo enquanto estiver frio até que os LCDs tenham a oportunidade de fazer o aquecimento.
+  - question: >
+      Estou recebendo um erro de 7-14 "algo errado" ao conectar meu Headset
+    answer: >
+      O 7-14 algo deu errado significa que alguns dos componentes USB2 necessários não foram encontrados.  Por causa do cabo extra para o HP reverberate G2, algumas das tolerâncias para os sinais USB são mais rígidas.  Isso significa que uma porta em seu computador pode funcionar de forma mais confiável do que outra.
+
+
+      Se você estiver vendo um erro 7-14 "algo deu errado", tente as seguintes etapas:
+
+
+      - Verifique se você tem os drivers mais recentes instalados para o headset e o controlador USB.
+
+      - Verifique se você está usando um driver USB da Microsoft. Deve haver uma "Microsoft" no nome do dispositivo "controlador de host extensível".
+
+      - Tente conectar o cabo a uma porta USB-3,0 diferente em seu computador. (Experimente o tipo USB-C e as portas Type-A)
+
+      - Use o USB C incluído em um adaptador para testar portas diferentes.
+
+      - Tente conectar o headset por meio de um hub USB ao seu computador.
+
+
+      > [!NOTE]
+
+      > A HP recomenda o uso de controladores USB integrados à placa-mãe com dispositivos reverbo G2.
+
+      > Se não for possível conectar seu dispositivo, entre em contato com o [suporte da HP](https://support.hp.com/us-en)
+  - question: >
+      Estou recebendo um erro de 13-14 "algo errado" quando meu PC reinicia da hibernação (S4)
+    answer: >
+      Às vezes, durante o processo de retomada, a placa de vídeo não pode estabelecer uma conexão, portanto, desconectar o tipo USB C do seu PC e conectá-lo novamente pode ajudar a estabelecer uma conexão.
+  - question: >
+      O meu joystick do controlador HP Motion às vezes vai para um lado
+    answer: >
+      Esse problema é corrigido com a remoção completa do joystick até que ele clique e seja movido livremente.
+  - question: >
+      Outros Estados me tenho alto ou que meu áudio está recortando enquanto estou usando o microfone com alguns aplicativos
+    answer: >
+      Os níveis de volume de entrada são automaticamente definidos como 100% quando o microfone do HP reverbs G2 é reconhecido pela primeira vez por um computador Windows. Devido aos microfones de alta qualidade do G2's do verbo, a sensibilidade de entrada é muito maior do que as configurações padrão do Windows 10 esperadas. É recomendável definir o nível de entrada do microfone G2 de reverberação a partir de 50% e escalar verticalmente a partir daí. Uma configuração ideal é específica para o usuário, especialmente ao usar aplicativos que não têm uma configuração de microfone de "" obter automaticamente ". Exemplos de aplicativos que têm "conquista automática" são o Skype, o zoom, as equipes e o Cisco WebEx, mas nem todos os aplicativos sociais ou de difusão de VR têm esse recurso.
+  - question: >
+      O portal de realidade misturada diz "não é possível executar a realidade misturada neste headset", mas isso funcionou bem com meu Headset WMR anterior
+    answer: >
+      Isso pode acontecer porque seu HP reverbo G2 requer um PC mais potente para garantir a melhor experiência. Para obter mais informações, consulte os requisitos mínimos do [PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+  - question: >
+      Parece que minha exibição à esquerda é ampliada e a exibição à direita está descentralizada e meia preta
+    answer: >
+      Isso pode acontecer quando o headset não está em execução na resolução nativa. Devido à natureza das exibições de alta resolução no HP reverbs G2 HMD, nem todos os sistemas podem renderizar a resolução nativa. Há uma correção em um futuro Windows Update que resolverá o problema de renderização quando o headset não estiver na resolução nativa.
+
+
+      Há alguns motivos pelos quais o sistema não é capaz de renderizar na resolução nativa:
+
+
+      - O DisplayPort no sistema pode não ser compatível com 1,3 ou pode não dar suporte a todas as quatro pistas.
+
+      - Se você estiver usando um adaptador, talvez ele não seja compatível com HBR3, ou talvez não dê suporte a todas as quatro pistas.
+
+      - Se o seu sistema tiver uma GPU híbrida, isso pode estar limitando a largura de banda disponível para o DisplayPort.
+  - question: >
+      Por que meus modelos do meu HP Motion Controller não aparecem corretamente em um jogo
+    answer: >
+      Embora a maioria dos jogos não exiba os controladores ou use os modelos instalados pelo driver, alguns jogos usam suas próprias versões dos modelos de controlador, para personalizá-los ou para exibir a ajuda contextual para as entradas disponíveis. Normalmente, isso não bloqueia nenhum recurso dos jogos, mas pode levar à confusão ou até mesmo a artefatos visuais. Isso só pode ser corrigido com uma atualização do próprio jogo.
+  - question: >
+      Meus jogos do SteamVR parecem funcionar corretamente com meus controladores HP Motion
+    answer: >
+      Embora os desenvolvedores estejam trabalhando para atualizar seus jogos para compatibilidade com o HP Motion Controller, fornecemos associações de controlador personalizadas para muitos dos jogos mais populares no fluxo. Com o "Windows Mixed realment for SteamVR" totalmente atualizado para a versão 1.2.444, essas associações devem ser selecionadas automaticamente quando o jogo estiver em execução. No entanto, se o jogo não parece registrar suas ações no momento, você pode procurar manualmente por perfis de associação personalizados usando o menu de configurações do SteamVR.
+
+      Para fazer isso
+
+
+      - Abra o menu SteamVR pressionando o botão de menu do controlador de movimento à direita
+
+      - Selecione o ícone "configurações" no canto inferior direito do menu SteamVR
+
+      - Selecione a guia "controladores"
+
+      - Selecione a opção "gerenciar associações de controlador"
+
+
+      A partir daqui, você pode alterar a associação do controlador ativo para "personalizado", que abrirá a opção para experimentar associações de jogos compartilhadas pela Comunidade.
+
+      Se nenhuma associação de jogo personalizada tiver sido compartilhada para este jogo ainda (ou se você não estiver totalmente satisfeito com as que você tentou), também poderá criar suas próprias associações de jogos personalizadas e até mesmo ajudar o restante da Comunidade, compartilhando-as após algumas sessões de jogo.
+  - question: >
+      Tenho todos os cabos conectados ao headset e ao PC, mas não liga
+    answer: >
+      Verifique se o cabo conectado ao headset está totalmente encaixado. Há um pequeno ponto na parte superior do cabo que será alinhado ao lado da borda superior do headset quando ele tiver sido totalmente inserido:
+
+
+      ![Ponto pequeno na parte superior do cabo](images/small-dot.jpg)
+  - question: >
+      Como posso desligar o headset enquanto ainda estou usando meu PC
+    answer: >
+      Desconecte o adaptador de conexão AC da caixa de link no cabo do headset para remover a energia para o headset.
+  - question: >
+      A imagem das exibições do reverberador de reverbo G2 é menor e somente no canto superior esquerdo
+    answer: >-
+      Se você tiver uma GPU de alimentação AMD, será necessário desabilitar o upescala automático. Enquanto o headset estiver conectado, navegue até configurações-> realidade misturada-> a resolução de > headset.
+
+      No menu suspenso, selecione a opção "4320 x 2160 (melhor qualidade)". Quando "upescala automático (melhor desempenho)" é selecionado, você pode enfrentar o problema com a exibição.

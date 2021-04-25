@@ -3,12 +3,12 @@ title: Configurar o Windows Mixed Reality
 description: Como configurar seus controladores de movimento, fala e áudio do Windows Mixed Reality e definir o limite da sala para um espaço de reprodução seguro.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, introdução, instalação, controlador de movimento, controlador, fala, áudio, encaixado, posição, limites, drivers gráficos, Microsoft Edge, Chromium
-ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a08982112fea4d1b67b690233ae387b76afc2f90
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725937"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944747"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurar o Windows Mixed Reality
 
@@ -177,12 +177,12 @@ Para usar o novo Microsoft Edge baseado em Chromium no Windows Mixed Reality Hom
 
 Entrar na realidade misturada uma segunda vez é tão fácil quanto colocar o fone de ouvido de volta enquanto está conectado ao seu PC. Você também pode iniciar o aplicativo do portal da realidade misturada manualmente abrindo-o no menu iniciar. A entrada e o áudio serão roteados automaticamente para o headset quando você o colocar, ou você poderá dispará-lo manualmente pressionando o **Windows + Y** no teclado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
 * [Como solucionar problemas de instalação](installation_errors.md)
-* [Solução de problemas de instalação](wmr-setup-faq.md)
+* [Solução de problemas de instalação](wmr-setup-faq.yml)
 * [Aprender Realidade Misturada](learn-mixed-reality.md)
 * [Controladores de movimentos](controllers-in-wmr.md)
 * [Como funciona o acompanhamento interno](tracking-system.md)

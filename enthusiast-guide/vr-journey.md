@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr,
-ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223927"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944647"
 ---
 # <a name="start-your-vr-journey"></a>Comece sua jornada VR
 
@@ -47,7 +47,7 @@ Depois de ter o dispositivo, você precisará configurá-lo e configurá-lo corr
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
 | [Configurar o Windows Mixed Reality](set-up-windows-mixed-reality.md) | Familiarize-se com seus controladores, limites de sala, entrada de fala e Microsoft Edge no seu novo dispositivo VR |
-| [Perguntas frequentes sobre a instalação do Windows Mixed Reality](wmr-setup-faq.md) | Obtenha respostas e solucione problemas de ajuda com problemas conhecidos ao configurar a realidade mista do Windows |
+| [Perguntas frequentes sobre a instalação do Windows Mixed Reality](wmr-setup-faq.yml) | Obtenha respostas e solucione problemas de ajuda com problemas conhecidos ao configurar a realidade mista do Windows |
 | [Diretrizes de integridade, segurança e conforto](wmr-health-safety-comfort.md) | Recomendações para se manter seguro ao usar a realidade mista do Windows antes de usar o headset  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. usando a realidade mista do Windows
@@ -68,7 +68,7 @@ Há diferentes recursos e serviços disponíveis por meio de realidade mista do 
 | [Usar a entrada de fala](using-speech-in-wmr.md) | Familiarize-se com comandos de voz diferentes que podem interagir com objetos 3D, a barra de aplicativos, o menu iniciar e a Cortana |
 
 > [!NOTE]
-> Se você estiver tendo problemas com qualquer um dos recursos acima, Confira as **[perguntas frequentes sobre o uso do Windows Mixed Reality](using-wmr-faq.md)**.
+> Se você estiver tendo problemas com qualquer um dos recursos acima, Confira as **[perguntas frequentes sobre o uso do Windows Mixed Reality](using-wmr-faq.yml)**.
 
 ## <a name="4-discover-apps-and-content"></a>4. descobrir aplicativos e conteúdo
 

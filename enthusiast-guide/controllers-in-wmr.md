@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 66b352696016577ab121520102dd766b030ccf0e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580540"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944627"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controladores de movimentos no Windows Mixed Reality
 
@@ -36,7 +36,7 @@ A maioria dos headsets vem emparelhada diretamente com o headset, mas alguns hea
 > * Para controladores que emparelham diretamente com seu PC, você precisará colocá-los no modo de emparelhamento ativando-os e, em seguida, pressionando o botão de emparelhamento dentro do compartimento da bateria até que as luzes comecem a piscar.
 > * Os controladores de movimento dão suporte apenas a pares em um computador por vez. Se você precisar usá-los com um headset diferente, precisará passar pelo processo de emparelhamento. Consulte [Configurar a realidade mista do Windows](set-up-windows-mixed-reality.md)
 
-[Obter ajuda para se conectar](wmr-setup-faq.md#my-motion-controllers-arent-working)
+[Obter ajuda para se conectar](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **Tem um controlador Xbox?**
@@ -75,7 +75,7 @@ Quando o emparelhamento for concluído, os LEDs serão sólidos e brilhantes.
 
 ### <a name="common-issues"></a>Problemas comuns
 
-* Verifique se você tem apenas uma rádio Bluetooth ativa em seu computador. Se você tiver mais de um rádio Bluetooth, precisará desabilitar as outras rádios em Device Manager.
+* Verifique se você tem apenas uma rádio Bluetooth ativa em seu computador. Se você tiver mais de um rádio Bluetooth, precisará desabilitar as outras rádios em Gerenciador de Dispositivos.
 * Coloque seu dongle Bluetooth em uma porta que tenha uma clara linha de visão para seus controladores e longe de conectar dispositivos USB 3,0. O USB 3,0 é conhecido por ter interferência de RF com Bluetooth (leia [Este artigo](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) da Intel para obter mais detalhes). Portas USB 2,0 podem funcionar melhor para seu dongle Bluetooth.
 * Verifique se o dongle Bluetooth não está conectado a uma porta USB ao lado do cabo USB do seu HMD. O cabo do headset também tem sido conhecido por causar interferências com dongles Bluetooth. Conecte o dongle na porta USB frontal no seu PC para obter os melhores resultados.
 * Para notebooks, verifique se a Wi-Fi está conectada à banda de 5 GHz para obter a melhor experiência. Selecione o ícone de rede sem fio inferior à bandeja direita e selecione Propriedades para a rede que você está usando. Os notebooks projetados para compartilhar uma antena de 2,4 GHz para conectividade Bluetooth e WiFi verão o congestionamento de dados de velocidades de rede lentas ou desempenho de rastreamento do controlador de movimento insatisfatório.

@@ -8,18 +8,18 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007666"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944673"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Usando a fala no Windows Mixed Reality
 
 Você pode usar sua voz para contornar a realidade mista do Windows mais rápida. Fazer uma foto rápida, abrir um aplicativo, até mesmo a teleportabilidade sem um controlador é uma palavra ausente. Para uma maneira fácil de digitar, experimente o modo de ditado no teclado de realidade misturada. 
 
-Está tendo problemas com a fala? [Obter ajuda](using-wmr-faq.md#speech-commands-arent-working)
+Está tendo problemas com a fala? [Obter ajuda](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
@@ -152,7 +152,7 @@ Aqui estão as palavras-chave de pontuação que você pode usar:
 
 Para parar de ditar, selecione **concluído**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
 * [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)

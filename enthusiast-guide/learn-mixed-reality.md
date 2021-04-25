@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, tutorial, introdução
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9210f9bb7dd4c922c0d202ddc114beab60e66de8
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726047"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944727"
 ---
 # <a name="learn-mixed-reality"></a>Aprender Realidade Misturada
 
@@ -51,8 +51,8 @@ Para saber mais sobre como entrar em realidade misturada com os controladores de
 
 Basta pressionar o ícone de **reprodução** na parte inferior do aplicativo portal da realidade misturada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Como solucionar problemas de instalação](installation_errors.md)
-* [Solução de problemas de instalação](wmr-setup-faq.md)
+* [Solução de problemas de instalação](wmr-setup-faq.yml)
 * [Sua base de realidade misturada](your-mixed-reality-home.md)

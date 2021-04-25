@@ -3,12 +3,12 @@ title: Sua base de realidade misturada
 description: Como navegar e teleport na página inicial do Windows Mixed Reality, iniciar aplicativos e jogos, personalizar a página inicial e alterar as configurações de Visual, áudio e fala.
 ms.topic: article
 keywords: Realidade mista do Windows, realidade mista, realidade virtual, VR, Sr, Home, navegar, contornar, aplicativos, jogos
-ms.openlocfilehash: 4fd4fb70edf9aadb9b34187f4d8fd421ca1e8a95
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 440660b12b92e0c818cd3601be486d6fd1dfdb92
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725537"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944687"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Sua página inicial do Windows Mixed Reality
 
@@ -82,9 +82,9 @@ O Windows Mixed Reality Home inclui uma simulação de som espacial em que o som
 > [!NOTE]
 > Esse recurso está desabilitado em computadores com gráficos integrados devido à carga colocada na GPU.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-* [Solução de problemas da página inicial do Windows Mixed Reality](wmr-setup-faq.md#my-motion-controllers-arent-working)
+* [Solução de problemas da página inicial do Windows Mixed Reality](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 * [Usando jogos e aplicativos no Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Como funciona o acompanhamento interno](tracking-system.md)
 * [Como funcionam os controladores de movimento](controllers-in-wmr.md)
