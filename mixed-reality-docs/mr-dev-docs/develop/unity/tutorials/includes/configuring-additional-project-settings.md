@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2b0dc328a1a47d9a0bd385cac6a88563dcc3938d
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d8d46da1a1a095074f059b53ebd997e1b6f89961
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327753"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984316"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Plug-in do Windows XR](#tab/winxr)
 
@@ -60,13 +60,13 @@ Depois que o Unity terminar de instalar o Gerenciamento de Plug-ins do XR. Verif
 
 ![Configurações de XR do Unity com a adição do OpenXR e dos recursos do Microsoft HoloLens selecionados](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-Na barra de menus na parte superior da tela, navegue até **Realidade Misturada > OpenXR > Aplicar as configurações de projeto recomendadas para o HoloLens 2** para obter melhor desempenho do aplicativo.
-
-![Menu da Realidade Misturada com as opções OpenXR e Aplicar as configurações de projeto recomendadas para o HoloLens 2 selecionadas](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >Se você vir um ícone de aviso vermelho ao lado de Plug-in do OpenXR (Versão Prévia), clique no ícone e selecione Corrigir Tudo antes de continuar. O editor do Unity pode precisar ser reiniciado para que as alterações entrem em vigor.
 >![Menu de validação de projeto do OpenXR com todos os problemas a serem corrigidos selecionados.](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+Na barra de menus na parte superior da tela, navegue até **Realidade Misturada > OpenXR > Aplicar as configurações de projeto recomendadas para o HoloLens 2** para obter melhor desempenho do aplicativo.
+
+![Menu da Realidade Misturada com as opções OpenXR e Aplicar as configurações de projeto recomendadas para o HoloLens 2 selecionadas](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 Depois que o Unity terminar de importar os arquivos necessários, a janela do Configurador de Projeto do MRTK será exibida novamente. Se ela não aparecer, use o menu do Unity para abri-la.
 
