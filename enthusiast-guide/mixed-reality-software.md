@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
 appliesto:
 - Windows 10
-ms.openlocfilehash: ea65dd2c6c821189b1248bf3b418e38fdd7a6d7f
-ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
+ms.openlocfilehash: 5e6cdcbc7d91a6c1fadb519f94fc0339bdd39ca7
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105029384"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069200"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Visão geral do software de Realidade Misturada e histórico de versões
 
@@ -168,7 +168,8 @@ No Windows 10, versão 1809 e mais recente, o [portal de realidade misturada](ht
 
    | Versão            | Data de lançamento          | Principais alterações                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.20111.1381.0  | 10 de dezembro de 2020        | <ul><li>Atualiza a página de aterrissagem do portal de realidade misturada.</li><li>Reduz erros de conectividade de headset durante atualizações de firmware. </li></ul>  |    | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
+   | 2000.21041.1051.0  | 26 de abril de 2020        | <ul><li>Atualiza o ícone do aplicativo para o portal de realidade misturada.</li></ul>  |
+   | 2000.20111.1381.0  | 10 de dezembro de 2020        | <ul><li>Atualiza a página de aterrissagem do portal de realidade misturada.</li><li>Reduz erros de conectividade de headset durante atualizações de firmware. </li></ul>  |
    | 2000.20071.1133.0  | 5 de agosto de 2020        | <ul><li>Suporte para [OpenXR](/windows/mixed-reality/openxr) para pausar a janela de visualização.</li></ul>  | 
    | 2000.20041.1212.0  | 11 de maio de 2020          | <ul><li>Resolve um problema de tempo que estava resultando em um erro de 15-5 inconsistente.</li><li>Suporte aprimorado para executar a realidade mista do Windows sem conexão com a Internet.</li><li>Suporte aprimorado para controladores de movimento de emparelhamento por meio de **controladores de instalação**.</li></ul>  | 
    | 2000.20031.1202.0  | 14 de abril de 2020        | <ul><li>Suporte para inscrever-se para obter informações, dicas e ofertas sobre a realidade mista do Windows.</li></ul>  | 

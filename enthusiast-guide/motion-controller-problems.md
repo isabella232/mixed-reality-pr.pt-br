@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, controladores de movimento
 appliesto:
 - Windows 10
-ms.openlocfilehash: 372e9ca294e7b65d3450e76b1dbd826a7b5b736b
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: cf45794d5c5c6c790578e76be4b222d851b5a73c
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726027"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069190"
 ---
 # <a name="motion-controller-faqs"></a>Perguntas frequentes do controlador de movimento
 
@@ -45,7 +45,7 @@ Se os seus [controladores de movimento](controllers-in-wmr.md) não estiverem fu
     * Rastreamento perdido – o portal de realidade misturada não pode localizar seus controladores. Mantenha-os na frente do headset e reinicie-os pressionando o botão Windows por quatro segundos e, em seguida, novamente por dois segundos.
     * Bateria fraca – Substitua as baterias do controlador.
 7. Se você estiver usando um adaptador Bluetooth USB externo, verifique se ele está conectado a uma porta USB 2,0 (geralmente, mas nem sempre preto). Ele também deve ser conectado o máximo possível de qualquer outro transmissor sem fio ou unidades flash USB, incluindo o conector USB para o headset. 
-8. Acesse **Device Manager > Bluetooth** e procure um adaptador para verificar se há apenas um rádio Bluetooth no PC. Se você estiver usando a configuração de computador desktop com rádio interno, verifique se uma antena externa está conectada. Se não houver nenhuma antena externa conectada, isso poderá causar problemas de controle. Ou use um dongle Bluetooth externo (USB), desabilite o recurso Bluetooth interno e tente emparelhar e se conectar novamente.
+8. Acesse **Gerenciador de Dispositivos > Bluetooth** e procure um adaptador para verificar se há apenas um rádio Bluetooth no PC. Se você estiver usando a configuração de computador desktop com rádio interno, verifique se uma antena externa está conectada. Se não houver nenhuma antena externa conectada, isso poderá causar problemas de controle. Ou use um dongle Bluetooth externo (USB), desabilite o recurso Bluetooth interno e tente emparelhar e se conectar novamente.
 9. Se a janela configurações de Bluetooth estiver aberta em segundo plano, muitas chamadas extras serão feitas no protocolo Bluetooth. Feche-o.
 10. Verifique o nível da bateria virtual no controlador de movimento girando os controladores em realidade misturada para ver o ícone de bateria. Aguarde cerca de 15 segundos antes de ler o nível, pois o nível relatado é maior do que o nível real imediatamente após conectar um controlador. Substitua as baterias se o ícone estiver vermelho.
 11. Remova os fones de ouvido e os alto-falantes Bluetooth em **configurações > dispositivos > Bluetooth & outros dispositivos** e desative os dispositivos. Use a tomada de fone de ouvido ou os palestrantes internos em seu headset de realidade misturada para obter a melhor experiência de áudio.
@@ -54,7 +54,7 @@ Se os seus [controladores de movimento](controllers-in-wmr.md) não estiverem fu
 14. As luzes do controlador piscam quando estão passando por uma atualização de firmware. Aguarde a conclusão da atualização e os controladores devem aparecer em realidade misturada.
 15. Verifique se o PC está conectado a uma rede de 5 GHz Wi-Fi. Se o seu laptop estiver conectado a uma rede Wi-Fi de 2,4 GHz, ele geralmente está compartilhando a conexão Bluetooth. Isso pode afetar negativamente o desempenho do Wi-Fi ou do Bluetooth, dependendo do design do produto. Altere a banda preferencial para 5 GHz nas configurações do adaptador de rede. Se a sua rede não der suporte a 5 GHz, um dongle Bluetooth poderá ser usado em vez do recurso Bluetooth interno.
 16. Se as configurações de Bluetooth já tiverem os controladores de movimento emparelhados, o Windows não descobrirá os novos dispositivos até que eles sejam removidos. Se eles tiverem sido adicionados usando um dongle específico, eles só poderão ser removidos com esse dongle.
-17. Se o seu computador tiver um Bluetooth interno e você estiver tendo problemas de conexão, tente usar um adaptador USB Bluetooth. Para fazer isso, desative seu rádio Bluetooth interno em Device Manager e, em seguida, emparelhe os outros dispositivos Bluetooth com o novo adaptador.
+17. Se o seu computador tiver um Bluetooth interno e você estiver tendo problemas de conexão, tente usar um adaptador USB Bluetooth. Para fazer isso, desative seu rádio Bluetooth interno em Gerenciador de Dispositivos e, em seguida, emparelhe os outros dispositivos Bluetooth com o novo adaptador.
 
 ## <a name="my-controllers-jitter-get-stuck-or-flicker-and-disappear-in-mixed-reality"></a>Meus controladores tremulam, ficam presos ou cintilam e desaparecem em realidade misturada
 
@@ -90,11 +90,9 @@ Primeiro, certifique-se de que as baterias do controlador sejam cobradas. Os con
 Se você puder ver seus controladores na casa Cliff, mas não em aplicativos e jogos do SteamVR, talvez o driver do modelo do controlador de movimento não esteja instalado corretamente. Para verificar se o driver do modelo do controlador de movimento está instalado corretamente:
 
 1. Ative os dois controladores de movimento. Verifique se os controladores de movimento estão [emparelhados corretamente](controllers-in-wmr.md#pair-motion-controllers).
-2. Vá para **Device Manager > Bluetooth** e procure "controlador de movimento".
-3. Selecione o dispositivo e vá para **exibir > dispositivos por conexão**.
-4. Vá para **configurações do sistema > dispositivos > Bluetooth & outros dispositivos > outros dispositivos** vejam se estão visíveis. Haverá dois dispositivos de "dispositivo HID Bluetooth" e, em cada dispositivo HID Bluetooth, devem ser dispositivos chamados "controlador de movimento" (com ícones cinzas) no mesmo nó que o controlador de movimento.
-5. Clique duas vezes em cada dispositivo "controlador de movimento" e vá para a guia "driver". Confirme se a versão do driver listada corresponde a uma dessas [versões](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
-6. Se não estiver, execute Windows Update, que irá baixar e instalar automaticamente o driver. Se você estiver em um PC que tenha políticas corporativas ou se Windows Update for, de outra forma, restrita, talvez seja necessário instalar manualmente o driver do modelo do controlador de movimento. Para fazer isso, visite [esta página](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) e procure a versão do driver correspondente à sua versão do Windows 10. As instruções de instalação estão disponíveis na página de download.
+2. Vá para **Gerenciador de Dispositivos > dispositivos de interface humana** e procure "controlador de movimento".
+3. Clique duas vezes em cada dispositivo "controlador de movimento" e vá para a guia "driver". Confirme se a versão do driver listada corresponde a uma dessas [versões](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
+4. Se a versão do driver não corresponder ou se não for possível encontrar um dispositivo chamado "controlador de movimento", execute Windows Update.  Isso baixará e instalará automaticamente o driver. Se você estiver em um PC que tenha políticas corporativas ou se Windows Update for, de outra forma, restrita, talvez seja necessário instalar manualmente o driver do modelo do controlador de movimento. Para fazer isso, visite [esta página](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) e procure a versão do driver correspondente ao seu hardware do controlador. As instruções de instalação estão disponíveis na página de download.
 
 ## <a name="the-controller-firmware-update-takes-longer-than-two-minutes"></a>A atualização do firmware do controlador leva mais de dois minutos
 
@@ -166,25 +164,25 @@ Observação: se outro conjunto de controladores de movimento estiver emparelhad
 
 Os controladores de movimento usam a mesma tecnologia Bluetooth encontrada em muitos dispositivos de consumo e foram projetados para funcionar com o recurso de Bluetooth incluído em qualquer PC recente. Seu PC deve ter rádio Bluetooth se ele passou na verificação de compatibilidade da realidade misturada. Para verificar:
 
-* Abra "Device Manager".
+* Abra "Gerenciador de Dispositivos".
 * Expanda a seção Bluetooth e procure um adaptador.
 
-![Captura de tela de um exemplo Device Manager. O adaptador é o rádio Bluetooth.](images/devicemanagerbtadapterpic.png)
+![Captura de tela de um exemplo Gerenciador de Dispositivos. O adaptador é o rádio Bluetooth.](images/devicemanagerbtadapterpic.png)
 
 Se o seu computador não tiver o Bluetooth, use o adaptador de baixa energia micro USB Bluetooth 4,0 de baixo consumo.
 
 ## <a name="wi-fi-slows-down-on-my-notebook-when-motion-controllers-are-turned-on"></a>Wi-Fi fica mais lento no meu notebook quando os controladores de movimento estão ativados
 
-Seu notebook pode compartilhar sua antena Wi-Fi com Bluetooth quando conectado a um ponto de acesso de 2,4 GHz. Faça check-in Device Manager se você puder alternar a preferência de banda para 5 GHz. Se uma rede de 5 GHz não estiver disponível e o desempenho for seriamente afetado, considere usar um dongle Bluetooth.
+Seu notebook pode compartilhar sua antena Wi-Fi com Bluetooth quando conectado a um ponto de acesso de 2,4 GHz. Faça check-in Gerenciador de Dispositivos se você puder alternar a preferência de banda para 5 GHz. Se uma rede de 5 GHz não estiver disponível e o desempenho for seriamente afetado, considere usar um dongle Bluetooth.
 
 ![As configurações de seleção de banda WiFi podem ser encontradas por meio do Gerenciador de dispositivos](images/wifi5ghz.png)
 
-## <a name="my-pc-has-bluetooth-technology-but-im-having-problems-with-my-controllers"></a>Meu PC tem tecnologia Bluetooth, mas estou tendo problemas com meus controladores
+## <a name="my-pc-has-bluetooth-technology-but-im-having-problems-with-my-controllers&quot;></a>Meu PC tem tecnologia Bluetooth, mas estou tendo problemas com meus controladores
 
 Os controladores de movimento devem funcionar com outros teclados, mouses e controladores de jogo Bluetooth. A experiência irá variar dependendo do modelo de teclado, mouse ou controlador de jogo que você usar. Aqui estão algumas coisas que você pode fazer para melhorar o desempenho:
 
-* Se o seu computador tiver o Bluetooth, mas você ainda tiver problemas com os controladores de movimento, considere substituir o rádio Bluetooth por um adaptador Bluetooth externo conectável conectado ao USB. Você só pode ter um adaptador de rádio Bluetooth ativo por vez. Se você conectar um rádio externo junto com um rádio existente, será necessário desabilitar o rádio Bluetooth existente no Device Manager. Clique com o botão direito do mouse no adaptador e selecione "desabilitar dispositivo" e desemparelhar/emparelhar todos os seus dispositivos Bluetooth anteriores.
-* Se você estiver usando um adaptador Bluetooth USB, conecte-o a uma porta USB 2,0 (as portas 2,0 geralmente são pretas e não são rotuladas "SS"), se disponíveis. A porta deve ser fisicamente separada de:
+* Se o seu computador tiver o Bluetooth, mas você ainda tiver problemas com os controladores de movimento, considere substituir o rádio Bluetooth por um adaptador Bluetooth externo conectável conectado ao USB. Você só pode ter um adaptador de rádio Bluetooth ativo por vez. Se você conectar um rádio externo junto com um rádio existente, será necessário desabilitar o rádio Bluetooth existente no Gerenciador de Dispositivos. Clique com o botão direito do mouse no adaptador e selecione &quot;desabilitar dispositivo&quot; e desemparelhar/emparelhar todos os seus dispositivos Bluetooth anteriores.
+* Se você estiver usando um adaptador Bluetooth USB, conecte-o a uma porta USB 2,0 (as portas 2,0 geralmente são pretas e não são rotuladas &quot;SS"), se disponíveis. A porta deve ser fisicamente separada de:
     - o conector USB do HMD
     - unidades flash
     - discos rígidos
@@ -206,4 +204,4 @@ Drivers de rádio do Qualcomm (QCA) Bluetooth antes de 10.0.0.448 podem terminar
 
 ## <a name="im-experiencing-poor-controller-tracking-with-marvell-radio"></a>Estou tendo um controle insatisfatório do controlador com o Marvell Radio
 
-Vá para **Device Manager > bluetooth > adaptador de rádio Bluetooth Marvell AVASTAR > propriedades > driver** e verifique se você está usando o driver 15.68.9210.47 ou posterior.
+Vá para **Gerenciador de Dispositivos > bluetooth > adaptador de rádio Bluetooth Marvell AVASTAR > propriedades > driver** e verifique se você está usando o driver 15.68.9210.47 ou posterior.
