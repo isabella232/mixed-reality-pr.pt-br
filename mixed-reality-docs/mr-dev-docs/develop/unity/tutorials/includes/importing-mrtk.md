@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 63a1435c1a0e01ef3bf8fbcedb175a16035db65b
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 7c86356a960929839f36cf326c5dd1a1005e64d2
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088599"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984285"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Plug-in do Windows XR](#tab/winxr)
 

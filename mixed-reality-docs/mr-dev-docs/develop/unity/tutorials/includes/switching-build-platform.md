@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2a2dcb6ec9133eb5efa0dc04e4d757cabd48461a
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d7232ca645c2a8cfb2508b090fdb7ae02c2ab010
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327596"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984467"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Plug-in do Windows XR](#tab/winxr)
 
@@ -33,11 +33,13 @@ No menu do Unity, selecione **Arquivo** > **Configurações de Build...** para a
 Na janela Configurações de Build, selecione **Plataforma Universal do Windows** e:
 1.  Defina o **Dispositivo de destino** como **HoloLens**
 2.  Defina a **Arquitetura** como **ARM 64**
-3.  Defina o **Tipo de Build** como **D3D**
-4.  Defina **Versão Mínima da Plataforma** como **10.0.18362**
-5.  Defina o **SDK do UWP** como **Último instalado**
-6.  Defina a **Configuração de Build** como **Lançamento** porque há problemas de desempenho conhecidos com a opção Depurar
-7.  Pressione o botão Alternar Plataforma
+3.  Defina **Tipo de Build** como **Projeto D3D**
+4.  Defina **Versão do SDK de destino** como **Última instalação**
+5.  Defina **Versão Mínima da Plataforma** como **10.0.18362**
+6.  Defina **Versão do Visual Studio** como **Instalação mais recente**
+7.  Defina **Compilar e executar em** como **Dispositivo USB**
+8.  Defina a **Configuração de Build** como **Lançamento** porque há problemas de desempenho conhecidos com a opção Depurar
+9.  Pressione o botão Alternar Plataforma
 
 
 ![Configurações de Build do Unity com conjunto de configurações da Plataforma Universal do Windows](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)
