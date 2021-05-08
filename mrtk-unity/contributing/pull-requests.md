@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, PR,
-ms.openlocfilehash: c49934139ae23b714addcb9c015e95377f47900e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
-ms.translationtype: HT
+ms.openlocfilehash: 008e719cd2fd3c854cbbe6876090b2de96f369be
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693283"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489226"
 ---
 # <a name="pull-requests"></a>Solicitações de pull
 
@@ -24,7 +24,7 @@ Um comentário na PR informará se você precisa assiná-lo.
 
 ## <a name="creating-a-pull-request"></a>Como criar uma solicitação de pull
 
-Quando estiver pronto para enviar uma solicitação de pull, [crie uma solicitação de pull](https://github.com/microsoft/MixedRealityToolkit-Unity/compare/mrtk_development...mrtk_development?expand=1) direcionando o branch [mrtk_development](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/mrtk_development).
+Quando você estiver pronto para enviar uma solicitação de pull, [crie uma solicitação de pull](https://github.com/microsoft/MixedRealityToolkit-Unity/compare/main...main?expand=1) direcionando o [branch](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/main) principal. Para correções de bugs durante um período de estabilização de versão, procure o branch `prerelease/*` mais recente. Novos recursos sempre devem entrar no `main` .
 
 Leia as diretrizes e verifique se a sua solicitação de pull atende às diretrizes.
 

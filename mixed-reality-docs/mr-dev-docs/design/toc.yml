@@ -141,7 +141,7 @@
     - name: Conheça o Unity
       href: 'https://learn.unity.com/'
     - name: Kit de ferramentas de realidade misturada
-      href: 'https://github.com/Microsoft/MixedRealityToolkit-Unity'
+      href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/'
     - name: Laboratórios de Design de Realidade Misturada
       href: 'https://github.com/microsoft/MixedRealityDesignLabs_Unity'
     - name: Maquete da Microsoft

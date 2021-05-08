@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK
-ms.openlocfilehash: 6576eaedbfba11fae62e59fa9777fe928f0c6a69
-ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
+ms.openlocfilehash: cb8b95cf9e563e8a277fa0d4b253639a763f5ad5
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108172558"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489296"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>O que é o Kit de Ferramentas de Realidade Misturada
 
@@ -65,7 +65,7 @@ Quer ver o que está acontecendo nos bastidores?
 
 | Branch | Status de CI | Status dos documentos |
 |---|---|---|
-| `mrtk_development` |[![Status de CI](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_CI?branchName=mrtk_development)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=15)|[![Status dos documentos](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_docs?branchName=mrtk_development)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=7)
+| `main` |[![Status de CI](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_CI?branchName=main)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=15)|[![Status dos documentos](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_docs?branchName=main)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=7)
 
 ## <a name="feature-areas"></a>Áreas de recursos
 

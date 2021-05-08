@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, esboço, Adobe XD, design, designer, arquivo de design, design de UX, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 1386ce6238a406c2e2b45c9a6a551ae57c52cc59
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299931"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644852"
 ---
 # <a name="figma-toolkit"></a>Kit de ferramentas do Figma
 
@@ -24,6 +24,7 @@ O figma Toolkit fornece os ativos que podem ser usados para esboço e layout da 
 
 ## <a name="how-to-use-figma-toolkit"></a>Como usar o kit de ferramentas figma
 Use **duplicar para o menu rascunhos** para fazer uma cópia.
+
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
 
 Clique em **voltar aos arquivos** para ver a cópia duplicada. Você pode usar essa cópia para sua própria criação.

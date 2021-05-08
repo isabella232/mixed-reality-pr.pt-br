@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compreensão da cena, mapeamento espacial, realidade do Windows Mixed, Unity
-ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810131"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644832"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Visão geral do SDK de compreensão da cena
 
@@ -19,17 +19,13 @@ A compreensão da cena transforma os dados do sensor do ambiente não estruturad
 
 ## <a name="where-do-i-get-the-sdk"></a>Onde obtenho o SDK?
 
-O SDK do SceneUnderstanding é baixável via NuGet.
-
-[SDK do SceneUnderstanding](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+O SDK do SceneUnderstanding é baixável por meio da [ferramenta de funcionalidade Mixed Reality](../unity/welcome-to-mr-feature-tool.md).
 
 **Observação:** a versão mais recente depende dos pacotes de visualização e você precisará habilitar os pacotes de pré-lançamento para vê-lo.
 
 Para a versão 0.5.2022-RC e posterior, a compreensão da cena dá suporte a projeções de linguagem para C# e C++, permitindo que os aplicativos desenvolvam aplicativos para plataformas Win32 ou UWP. A partir desta versão, o SceneUnderstanding dá suporte ao SceneObserver do Unity que está impedindo o bloqueio, que é usado exclusivamente para comunicação com o HoloLens2. 
 
 O SceneUnderstanding requer SDK do Windows versão 18362 ou superior. 
-
-Se você estiver usando o SDK em um projeto do Unity, use o [NuGet para o Unity](https://github.com/GlitchEnzo/NuGetForUnity) para instalar o pacote em seu projeto.
 
 ## <a name="conceptual-overview"></a>Visão geral conceitual
 
@@ -222,7 +218,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-refinding-components"></a>Atualização de componente e relocalização de componentes
 
-Há outra função que recupera componentes na cena chamada **_FindComponent_* _. Essa função é útil ao atualizar objetos de acompanhamento e localizá-los em cenas posteriores. O código a seguir calculará uma nova cena em relação a uma cena anterior e, em seguida, encontrará o andar na nova cena.
+Há outra função que recupera componentes na cena chamada ***FindComponent***. Essa função é útil ao atualizar objetos de acompanhamento e localizá-los em cenas posteriores. O código a seguir calculará uma nova cena em relação a uma cena anterior e, em seguida, encontrará o andar na nova cena.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +235,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Acessando malhas e quatros de objetos de cena
 
-Depois que SceneObjects tiver sido localizado, o aplicativo provavelmente desejará acessar os dados contidos nos quatro processadores/malhas dos quais ele é composto. Esses dados são acessados com as propriedades de _*_quádruplas_*_ e de _*_malhas_*_ . O código a seguir enumerará todos os quádruplos e malhas do nosso objeto Floor.
+Depois que SceneObjects tiver sido localizado, o aplicativo provavelmente desejará acessar os dados contidos nos quatro processadores/malhas dos quais ele é composto. Esses dados são acessados com as propriedades ***quádruplos** _ e _ *_malhas_**. O código a seguir enumerará todos os quádruplos e malhas do nosso objeto Floor.
 
 ```cs
 
@@ -351,7 +347,7 @@ SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix
 
 Os quatro processadores foram projetados para ajudar os cenários de posicionamento de 2D e devem ser considerados como extensões para elementos de UX de tela 2D. Embora os quatro processadores sejam componentes de SceneObjects e possam ser renderizados em 3D, as APIs quádruplas em si pressupõem que as quatro são estruturas 2D. Eles oferecem informações como extensão, forma e fornecem APIs para posicionamento.
 
-Os quatro processadores têm extensões retangulares, mas representam superfícies 2D com formato arbitrário. Para habilitar o posicionamento nessas superfícies 2D que interagem com o ambiente 3D, as quatro ofertas oferecem utilitários para tornar essa interação possível. Atualmente, a compreensão da cena fornece duas funções desse tipo, _ *FindCentermostPlacement** e **GetSurfaceMask**. FindCentermostPlacement é uma API de alto nível que localiza uma posição no Quad em que um objeto pode ser colocado e tentará encontrar o melhor local para seu objeto, garantindo que a caixa delimitadora que você fornece permanecerá na superfície subjacente.
+Os quatro processadores têm extensões retangulares, mas representam superfícies 2D com formato arbitrário. Para habilitar o posicionamento nessas superfícies 2D que interagem com o ambiente 3D, as quatro ofertas oferecem utilitários para tornar essa interação possível. Atualmente, a compreensão da cena fornece duas funções desse tipo, **FindCentermostPlacement** e **GetSurfaceMask**. FindCentermostPlacement é uma API de alto nível que localiza uma posição no Quad em que um objeto pode ser colocado e tentará encontrar o melhor local para seu objeto, garantindo que a caixa delimitadora que você fornece permanecerá na superfície subjacente.
 
 > [!NOTE]
 > As coordenadas da saída são relativas ao quádruplo em "espaço quádruplo" com o canto superior esquerdo (x = 0, y = 0), assim como seria com outros tipos de RECT do Windows. Lembre-se de levar isso em conta ao trabalhar com as origens de seus próprios objetos. 
