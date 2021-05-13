@@ -1,0 +1,10 @@
+- name: Implantação no Hololens e WMR
+  href: wmr-mrtk.md
+- name: Implantação no Oculus Quest
+  href: oculus-quest-mrtk.md
+- name: Como usar o Leap Motion
+  href: leap-motion-mrtk.md
+- name: Como usar o AR Foundation
+  href: using-ar-foundation.md
+- name: Como detectar funcionalidades de plataforma
+  href: detecting-platform-capabilities.md
