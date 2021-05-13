@@ -2,8 +2,6 @@
   href: boundary/toc.yml
 - name: Sistema de câmera
   href: camera-system/toc.yml
-- name: Plataforma cruzada
-  href: cross-platform/toc.yml
 - name: Diagnósticos
   href: diagnostics/toc.yml
 - name: Cenas de exemplo
