@@ -4,13 +4,15 @@
   href: running-examples-hub.md
 - name: Configuração
   href: configuration/toc.yml
+- name: Visão geral de dispositivos compatíveis
+  href: supported-devices/toc.yml
 - name: Arquitetura
   href: architecture/toc.yml
 - name: Visão geral dos recursos
   href: features/toc.yml
 - name: Desempenho e melhores práticas
   href: performance/toc.yml
-- name: Atualizações e implantação
+- name: Upgrade e atualização
   href: updates-deployment/toc.yml
 - name: Pacotes
   href: packages/toc.yml
