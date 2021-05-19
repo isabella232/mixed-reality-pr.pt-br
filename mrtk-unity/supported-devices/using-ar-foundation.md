@@ -1,16 +1,16 @@
 ---
-title: UsingARFoundation
+title: Como usar o AR Foundation
 description: Documentação para usar ARFoundation no Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, AR Core, AR Kit
-ms.openlocfilehash: d96c5cab2439b581c0de9d59a1a349abccf34fb5
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1c39950e8b64968e182ddc551ef344dee42060e9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852303"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143947"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Como configurar o MRTK para iOS e Android [Experimental]
 
@@ -34,22 +34,22 @@ ms.locfileid: "109852303"
     | AR Foundation  <br/> Versão: 2.1.8 |  AR Foundation  <br/> Versão: 2.1.8 |
     | Plug-in ARCore XR <br/> Versão: 2.1.11 | Plug-in ARKit XR <br/> Versão: 2.1.9 |
 
-    **Unity 2020.1.x (atualmente sem suporte formal, incluído apenas para fins informacionais)**
+    **Unity 2020.1. x (atualmente não tem suporte, incluído apenas para fins informativos)**
 
     | **Android** | **iOS** |
     | --- | --- |
     | AR Foundation  <br/> Versão: 3.1.3 |  AR Foundation  <br/> Versão: 3.1.3 |
     | Plug-in ARCore XR <br/> Versão: 3.1.4 | Plug-in ARKit XR <br/> Versão: 3.1.3 |
 
-1. Atualize o script UnityAR do MRTK definido invocando o item de menu: Utilitários do > do Kit de Ferramentas de Realidade Misturada **> UnityAR >** Script de Atualização define
+1. Atualize o MRTK UnityAR scripting define invocando o item de menu: **Mixed Reality Toolkit > Utilities > UnityAR > script Update define**
 
-## <a name="enabling-the-unity-ar-camera-settings-provider"></a>Habilitando o provedor de configurações de câmera ar do Unity
+## <a name="enabling-the-unity-ar-camera-settings-provider"></a>Habilitando o provedor de configurações da câmera do Unity AR
 
 As etapas a seguir presumem o uso do objeto MixedRealityToolkit. As etapas necessárias para outros registradores de serviço podem ser diferentes.
 
 1. Selecione o objeto MixedRealityToolkit na hierarquia de cena.
 
-    ![Hierarquia de cena configurada do MRTK](../features/images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK hierarquia de cena configurada](../features/images/MRTK_ConfiguredHierarchy.png)
 
 1. Selecione **copiar e personalizar** para clonar o perfil MRTK para habilitar a configuração personalizada.
 
@@ -86,7 +86,7 @@ As etapas a seguir presumem o uso do objeto MixedRealityToolkit. As etapas neces
 
     Quando você alternar a plataforma, deverá ver a janela configuradora do projeto MRTK com as configurações da sua plataforma escolhida.  Clique em aplicar para habilitar as configurações específicas da plataforma.
 
-    Configurações do Configurador de Projeto do iOS
+    Configurações do Configurador do projeto do iOS
 
     ![Configurador de Projeto do iOS](../features/images/camera-system/MRTKProjectConfigurator.png)
 

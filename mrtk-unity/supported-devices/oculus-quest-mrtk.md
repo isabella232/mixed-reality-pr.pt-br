@@ -1,16 +1,16 @@
 ---
-title: OculusQuestMRTK
+title: MRTK de solicitação Oculus
 description: Documentação para configurar o Oculus Quest no MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, Oculus Quest,
-ms.openlocfilehash: 9350ed7c8426c3bb31cf41493056fb6fc1e26107
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852304"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143968"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>Como configurar o Oculus Quest no MRTK usando o pipeline do SDK do XR
 
@@ -38,7 +38,7 @@ Este provedor de dados **não usa o** pipeline **XR** do Unity ou o **tubulator 
 
 1. Verifique se o provedor de plug-in do Oculus está incluído no seu projeto acessando **Editar--> configurações do projeto--> o gerenciamento de plug-ins do XR--provedores de plug-in do >**
 
-    ![Provedor de plug-in do Oculus](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
+    ![Provedor de plug-in Oculus](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
 ## <a name="setting-up-the-oculus-integration-unity-package-to-enable-handtracking"></a>Configurando o pacote do Unity de Integração do Oculus para habilitar o retrocesso
 
@@ -92,31 +92,31 @@ Este provedor de dados **não usa o** pipeline **XR** do Unity ou o **tubulator 
     ![Oculus executar dispositivo](../images/cross-platform/oculus-quest/OculusRunDevice.png)
 
 1. Selecione compilar e executar
-    - Você provavelmente encontrará o seguinte conjunto de erros de compilação ao selecionar *Compilar e executar* a primeira vez. Você deve ser capaz de implantar com êxito ao selecionar *Build e Executar* novamente.
+    - Você provavelmente encontrará o seguinte conjunto de erros de compilação ao selecionar *Compilar e executar* a primeira vez. Você deve ser capaz de implantar com êxito ao selecionar *Compilar e executar* novamente.
 
-    ![Erros de build esperados do Oculus](../images/cross-platform/oculus-quest/OculusExpectedBuildErrors.png)
+    ![Oculus erros de compilação esperados](../images/cross-platform/oculus-quest/OculusExpectedBuildErrors.png)
 
-1. Aceite o _prompt Permitir Depuração USB_ de dentro da busca
+1. Aceite o prompt _permitir depuração de USB_ de dentro do Quest
 1. Veja sua cena dentro do Oculus Quest
 
 ## <a name="removing-oculus-integration-from-the-project"></a>Removendo a integração do Oculus do projeto
 
-1. Navegue até o Kit de Ferramentas de Realidade Misturada > Oculus > Módulos separados do Oculus Integration Unity  ![ Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
-1. Permitir que o Unity seja atualizado como referências no Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef e outros arquivos serão modificados nesta etapa
-1. Fechar Unity
-1. Feche Visual Studio, se estiver aberto
-1. Abra Explorador de Arquivos e navegue até a raiz do projeto unity do MRTK
-1. Excluir o diretório UnityProjectName/Library
-1. Excluir o diretório UnityProjectName/Assets/Oculus
-1. Excluir o arquivo UnityProjectName/Assets/Oculus.meta
+1. Navegue até o kit de ferramentas de realidade misturada > Oculus > módulos de integração do Oculus separados  ![ Oculus separação Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
+1. Permitir que o Unity atualize como referências no Microsoft. MixedReality. Toolkit. Providers. Oculus. asmdef e outros arquivos sejam modificados nesta etapa
+1. Fechar o Unity
+1. Feche o Visual Studio, se ele estiver aberto
+1. Abra o explorador de arquivos e navegue até a raiz do projeto do MRTK Unity
+1. Excluir o diretório de UnityProjectName/biblioteca
+1. Excluir o diretório UnityProjectName/assets/Oculus
+1. Excluir o arquivo UnityProjectName/assets/Oculus. meta
 1. Reabrir o Unity
 
 ## <a name="common-errors"></a>Erros comuns
 
-### <a name="quest-not-recognized-by-unity"></a>Busca não reconhecida pelo Unity
+### <a name="quest-not-recognized-by-unity"></a>Quest não reconhecida pelo Unity
 
-Certifique-se de que os caminhos do Android estão configurados corretamente. Se você continuar encontrando problemas, siga este [guia](https://developer.oculus.com/documentation/unity/book-unity-gsg/#install-android-tools)
+Verifique se os caminhos do Android estão configurados corretamente. Se você continuar a encontrar problemas, siga este [guia](https://developer.oculus.com/documentation/unity/book-unity-gsg/#install-android-tools)
 
-**Editar > preferências > ferramentas externas > Android**
+**Editar preferências de > > ferramentas externas > Android**
 
-![Configuração das Ferramentas do Android](../images/cross-platform/oculus-quest/AndroidToolsConfig.png)
+![Configuração de ferramentas do Android](../images/cross-platform/oculus-quest/AndroidToolsConfig.png)

@@ -1,16 +1,16 @@
 ---
-title: LeapMotionMRTK
+title: Movimento Leap do MRTK
 description: Documentação a ser configurada para o Leap Motion
 author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Leap Motion,
-ms.openlocfilehash: ea9e257815116c364fe2f1e37ca3477ec56262cb
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 285328b1248f04504f30192f1294e9ae665b3fc9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852316"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145193"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Como configurar o acompanhamento de mão do Leap Motion (por Ultraleap) no MRTK
 
@@ -67,7 +67,7 @@ Esse provedor pode ser usado no editor e no dispositivo enquanto estiver na plat
 
     - A Provedor de Dados de movimento Leap contém a `LeapControllerOrientation` propriedade que é o local do controlador de movimento Leap. `LeapControllerOrientation.Headset` indica que o controlador está montado em um headset. `LeapControllerOrientation.Desk` indica que o controlador é colocado plano na mesa. O valor padrão é definido como `LeapControllerOrientation.Headset` .
     - Cada orientação de controlador contém propriedades de deslocamento:
-      - As **propriedades de deslocamento** de orientação do headset espelham as propriedades de deslocamento no componente LeapXRServiceProvider.  O `LeapVRDeviceOffsetMode` tem três opções: Padrão, Deslocamento de Cabeça Manual e Transformação.  Se o modo de deslocamento for Padrão, um deslocamento não será aplicado ao Controlador de Movimento Bissexo.  O modo deslocamento de cabeça manual permite a modificação de três propriedades: `LeapVRDeviceOffsetY` e `LeapVRDeviceOffsetZ` `LeapVRDeviceTiltX` .  Os valores de propriedade de deslocamento do eixo são aplicados ao posicionamento padrão do controlador.  O modo de deslocamento transformar contém `LeapVRDeviceOrigin` a propriedade Transformar que especifica uma nova origem para o Controlador de Movimento Bissextos.
+      - As propriedades de deslocamento de orientação do **Headset** espelham as propriedades de deslocamento no componente LeapXRServiceProvider.  O `LeapVRDeviceOffsetMode` tem três opções: Padrão, Deslocamento de Cabeça Manual e Transformação.  Se o modo de deslocamento for Padrão, um deslocamento não será aplicado ao Controlador de Movimento Bissexo.  O modo deslocamento de cabeça manual permite a modificação de três propriedades: `LeapVRDeviceOffsetY` e `LeapVRDeviceOffsetZ` `LeapVRDeviceTiltX` .  Os valores de propriedade de deslocamento do eixo são aplicados ao posicionamento padrão do controlador.  O modo de deslocamento transformar contém `LeapVRDeviceOrigin` a propriedade Transformar que especifica uma nova origem para o Controlador de Movimento Bissextos.
       - A **orientação** De mesa contém `LeapControllerOffset` a propriedade que define a posição de âncora das mãos bissextivas da mesa.  O deslocamento é calculado em relação à posição da câmera principal e o valor padrão é (0,-0,2, 0,35) para garantir que as mãos apareçam na frente e na exibição da câmera.
 
         > [!NOTE]
@@ -84,7 +84,7 @@ Esse provedor pode ser usado no editor e no dispositivo enquanto estiver na plat
     ![LeapHeadsetGif](../images/cross-platform/leap-motion/LeapHeadsetOrientationExampleMetacarpals.gif)  |  ![LeapDeskGif](../images/cross-platform/leap-motion/LeapDeskOrientationExampleMetacarpals.gif)
     ![LeapHeadsetInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerHeadset.png) |     ![LeapDeskInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerDesk.png)
 
-1. Testando o movimento Leap Provedor de Dados
+1. Testando o Provedor de Dados
     - Depois que o movimento Leap Provedor de Dados tiver sido adicionado ao perfil do sistema de entrada, pressione reproduzir, mova-o para frente do controlador de movimento Leap e você deverá ver a representação conjunta do lado.
 
 1. Criando seu projeto
@@ -151,7 +151,7 @@ As mãos de movimento Leap aparecerão no editor, sem um headset VR conectado.  
 > [!NOTE]
 > Se a câmera for movida usando chaves WASD no editor e o `LeapControllerOrientation` fone de **ouvido**, as mãos não seguirão a câmera. As mãos seguirão apenas a movimentação da câmera se um headset de VR estiver conectado enquanto o `LeapControllerOrientation` estiver definido como **Headset**.  As mãos de salto seguirão o movimento da câmera no editor se o `LeapControllerOrientation` estiver definido como **escrivaninha**.
 
-## <a name="removing-leap-motion-from-the-project"></a>Removendo o Leap Motion do projeto
+## <a name="removing-leap-motion-from-the-project"></a>Removendo o movimento Leap do projeto
 
 1. Navegue até os **módulos** do Unity do  >  **Leap Motion Separados** do Leap Motion do Kit de Ferramentas de Realidade  >  **Misturada**
     - Permitir que o Unity atualize como referências **no arquivo Microsoft.MixedReality.Toolkit.Providers.LeapMotion.asmdef** são modificadas nesta etapa
@@ -179,7 +179,7 @@ Para testar se os Módulos do Unity do Leap Motion foram integrados ao MRTK:
   - Certifique-se de que a versão adicionada tenha suporte, consulte a tabela na parte superior da página para ver as versões com suporte.
   - Experimente **o Kit de Ferramentas de Realidade Misturada > utilitários > Leap Motion > integrar módulos do Leap Motion Unity**
 
-### <a name="copying-assembly-multiplayer-hlapi-failed"></a>Falha ao copiar HLAPI de vários participantes do assembly
+### <a name="copying-assembly-multiplayer-hlapi-failed"></a>Falha ao copiar o assembly multijogador HLAPI
 
 Na importação dos ativos do Unity Core de movimento Leap, esse erro pode ser registrado:
 

@@ -1,16 +1,16 @@
 ---
-title: holograma – estabilização
+title: Estabilização de holograma
 description: Desempenho de hologramas em diferentes condições de ambiente e taxa de quadros.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, acompanhamento de ambiente, TMP,
-ms.openlocfilehash: 4ea3f62153676154188584221c83ac97b5589e05
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: e2c83e7e4ca909e31803d55aabbc0c2344e89139
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528729"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143892"
 ---
 # <a name="hologram-stabilization"></a>Estabilização de holograma
 
@@ -48,35 +48,35 @@ Se não for possível criar um buffer de profundidade preciso para compartilhar 
 
 #### <a name="depth-buffer-format"></a>Formato de buffer de profundidade
 
-Se tiver como alvo o HoloLens para desenvolvimento, é altamente recomendável utilizar o formato de buffer de profundidade de 16 bits em comparação com o de 24 bits. Isso pode economizar enormemente no desempenho, embora os valores de profundidade tenham menos precisão. Para compensar a precisão mais baixa e evitar o [combate ao z](https://en.wikipedia.org/wiki/Z-fighting), é recomendável reduzir o [plano de clipe distante](https://docs.unity3d.com/Manual/class-Camera.html) do valor padrão 1000m definido pelo Unity.
+Se estiver direcionando o HoloLens para desenvolvimento, é altamente recomendável utilizar o formato de buffer de profundidade de 16 bits em comparação com 24 bits. Isso pode economizar muito no desempenho, embora os valores de profundidade tenham menos precisão. Para compensar a precisão mais baixa e evitar o [](https://docs.unity3d.com/Manual/class-Camera.html) [z-fighting](https://en.wikipedia.org/wiki/Z-fighting), é recomendável reduzir o plano de corte distante do valor padrão de 1000 m definido pelo Unity.
 
 > [!NOTE]
-> Se você estiver usando o *formato de profundidade de 16 bits*, os efeitos necessários do buffer de estêncil não funcionarão porque [o Unity não cria um buffer de estêncil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) nessa configuração. A seleção de *formato de profundidade de 24 bits, por* outro lado, geralmente criará um [buffer de estêncil de 8 bits](https://docs.unity3d.com/Manual/SL-Stencil.html), se aplicável na plataforma de gráficos do ponto de extremidade.
+> Se estiver usando o formato de profundidade de *16* bits, os efeitos necessários do buffer de estêncil não funcionarão porque o Unity não cria um buffer de [estêncil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) nessa configuração. Selecionar o formato de profundidade de *24* bits geralmente criará um buffer de estêncil de [8 bits,](https://docs.unity3d.com/Manual/SL-Stencil.html)se aplicável na plataforma de gráficos do ponto de extremidade.
 
 #### <a name="depth-buffer-sharing-in-unity"></a>Compartilhamento de buffer de profundidade no Unity
 
-Para utilizar LSR com base em profundidade, há duas etapas importantes que os desenvolvedores precisam tomar.
+Para utilizar a LSR baseada em profundidade, há duas etapas importantes que os desenvolvedores precisam seguir.
 
-1. Em **Editar**  >  **configurações do projeto**, configurações do  >  **Player**  >  **XR**  >  **SDKs de realidade virtual** > habilitar **compartilhamento de buffer de profundidade**
-    1. Se estiver direcionando para o HoloLens, é recomendável selecionar **formato de profundidade de 16 bits** também.
-1. Ao renderizar a cor na tela, também é possível renderizar a profundidade
+1. Em **Editar**  >  **Configurações do Projeto Configurações do**  >  **Player**  >  **XR,** os SDKs de Realidade Virtual >  >   Habilitar o **Compartilhamento de Buffer de Profundidade**
+    1. Se estiver direcionando o HoloLens, é recomendável selecionar o formato de profundidade de **16** bits também.
+1. Ao renderizar a cor na tela, a profundidade de renderização também
 
-O [Gameobjects opaco](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) no Unity geralmente irá gravar em profundidade automaticamente. No entanto, os objetos de texto & transparente geralmente não serão gravados em profundidade por padrão. Se estiver utilizando o sombreador padrão MRTK ou o Text mesh pro, isso poderá ser facilmente remediado.
+[GameObjects opacos](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) no Unity geralmente gravarão em profundidade automaticamente. No entanto, objetos & de texto transparente geralmente não serão escritos em profundidade por padrão. Se estiver utilizando o Sombreador Padrão do MRTK ou o Text Mesh Pro, isso poderá ser facilmente corrigido.
 
 > [!NOTE]
-> Para determinar rapidamente quais objetos em uma cena não gravam no buffer de profundidade visualmente, é possível usar o utilitário de [ *buffer de profundidade de renderização*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) nas configurações do *Editor* no perfil de configuração do MRTK.
+> Para determinar rapidamente quais objetos em uma cena não são *escritos* no buffer de profundidade visualmente, é possível usar o utilitário [ *Buffer*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) de Profundidade de Renderização nas Configurações do Editor no perfil configuração do MRTK.
 
-##### <a name="transparent-mrtk-standard-shader"></a>Sombreador padrão MRTK transparente
+##### <a name="transparent-mrtk-standard-shader"></a>Sombreador padrão transparente do MRTK
 
-Para materiais transparentes usando o [sombreador padrão MRTK](../features/rendering/MRTK-standard-shader.md), selecione o material para exibi-lo na janela *Inspetor* . Em seguida, clique no botão *corrigir agora* para converter o material para gravação em profundidade (ou seja, Z-gravação ativada).
+Para materiais transparentes usando o [sombreador padrão do MRTK,](../features/rendering/MRTK-standard-shader.md)selecione o material para exibi-lo na *janela Inspetor.* Em seguida, *clique no botão Corrigir* Agora para converter o material para gravar em profundidade (ou seja, Z-Write On).
 
 Antes
 
-![Buffer de profundidade antes de corrigir o sombreador Standard MRTK](../features/images/performance/DepthBufferFixNow_Before.PNG)
+![Buffer de profundidade antes de corrigir o sombreador padrão do MRTK](../features/images/performance/DepthBufferFixNow_Before.PNG)
 
-After (após)
+Depois
 
-![MRTK sombreador padrão fixo do buffer de profundidade](../features/images/performance/DepthBufferFixNow_After.PNG)
+![Sombreador padrão mrtk de buffer de profundidade fixo](../features/images/performance/DepthBufferFixNow_After.PNG)
 
 ##### <a name="text-mesh-pro"></a>Malha de texto pro
 
@@ -111,10 +111,10 @@ Se os métodos acima não funcionarem para um determinado cenário (ou seja, usa
 
 Além de garantir que as configurações corretas sejam atendidas para garantir a estabilidade Visual, é importante garantir que os hologramas permaneçam estáveis em seus locais físicos corretos. Para informar a plataforma em locais importantes em um espaço físico, os desenvolvedores podem aproveitar o [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) no Gameobjects que precisam permanecer em um só lugar. Um [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) é um componente adicionado a um gameobject que assume o controle absoluto sobre a transformação desse objeto.
 
-Dispositivos como o HoloLens estão constantemente digitalizando e aprendendo sobre o ambiente. Assim, como o HoloLens acompanha a movimentação & posição no espaço, suas estimativas serão atualizadas e o [sistema de coordenadas do Unity será ajustado](/windows/mixed-reality/coordinate-systems-in-unity). Por exemplo, se um gameobject é colocado 1 m da câmera na inicialização, como o HoloLens rastreia o ambiente, ele pode perceber que o ponto físico onde o gameobject está localizado é, na verdade, a 1,1 m. Isso resultaria na descompasso do holograma. Aplicar um WorldAnchor a um gameobject permitirá que a âncora controle a transformação do objeto para que o objeto permaneça no local físico correto (ou seja, Atualize para 1.1 m em vez de 1m em tempo de execução). Para manter o [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) entre as sessões de aplicativo, os desenvolvedores podem empregar o [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) para [salvar e carregar WorldAnchors](/windows/mixed-reality/persistence-in-unity).
+Dispositivos como o HoloLens estão constantemente digitalizando e aprendendo sobre o ambiente. Assim, como o HoloLens acompanha a movimentação & posição no espaço, suas estimativas serão atualizadas e o [sistema de coordenadas do Unity será ajustado](/windows/mixed-reality/coordinate-systems-in-unity). Por exemplo, se um gameobject é colocado 1 m da câmera na inicialização, como o HoloLens rastreia o ambiente, ele pode perceber que o ponto físico onde o gameobject está localizado é, na verdade, a 1,1 m. Isso resultaria na descompasso do holograma. Aplicar um WorldAnchor a um gameobject permitirá que a âncora controle a transformação do objeto para que o objeto permaneça no local físico correto (ou seja, atualize para 1,1 m de distância em vez de 1 m em runtime). Para [persistir WorldAnchors entre](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) sessões de aplicativo, os desenvolvedores podem [empregar o WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) para [salvar e carregar o WorldAnchors.](/windows/mixed-reality/persistence-in-unity)
 
 > [!NOTE]
-> Depois que um componente WorldAnchor foi adicionado a um gameobject, não é possível modificar essa transformação do gameobject (ou seja, Transform. Position = x). Um desenvolvedor deve remover o WorldAnchor para editar a transformação.
+> Depois que um componente WorldAnchor tiver sido adicionado a um GameObject, não será possível modificar a transformação desse GameObject (ou seja, transform.position = x). Um desenvolvedor deve remover o WorldAnchor para editar a transformação.
 
 ```c#
 WorldAnchor m_anchor;
@@ -130,18 +130,18 @@ public void RemoveAnchor()
 }
 ```
 
-Se você quiser uma alternativa para trabalhar manualmente com âncoras, Confira as ferramentas de bloqueio do Microsoft World. 
+Se você quiser uma alternativa para trabalhar manualmente com Âncoras, confira As Ferramentas de Bloqueio do Microsoft World. 
 
 > [!div class="nextstepaction"]
-> [Instalar com a ferramenta de recurso do Sr](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Instal with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
 
 ## <a name="see-also"></a>Veja também
 
 - [Desempenho](../performance/perf-getting-started.md)
-- [Considerações de ambiente para o HoloLens](/windows/mixed-reality/environment-considerations-for-hololens)
-- [Instabilidade do holograma Windows Mixed Reality](/windows/mixed-reality/hologram-stability)
+- [Considerações sobre o ambiente para HoloLens](/windows/mixed-reality/environment-considerations-for-hololens)
+- [Estabilidade do holograma Windows Mixed Reality](/windows/mixed-reality/hologram-stability)
 - [Ponto de foco no Unity](/windows/mixed-reality/focus-point-in-unity)
 - [Sistemas de coordenadas no Unity](/windows/mixed-reality/coordinate-systems-in-unity)
 - [Persistência no Unity](/windows/mixed-reality/persistence-in-unity)
-- [Entendendo o desempenho da realidade misturada](/windows/mixed-reality/understanding-performance-for-mixed-reality)
+- [Noções básicas sobre o desempenho da realidade misturada](/windows/mixed-reality/understanding-performance-for-mixed-reality)
 - [Recomendações de desempenho para Unity](/windows/mixed-reality/performance-recommendations-for-unity)

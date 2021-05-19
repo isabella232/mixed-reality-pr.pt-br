@@ -1,16 +1,16 @@
 ---
-title: UnityArCameraSettings
+title: Configurações de câmera ar do Unity
 description: Documentação para usar a câmera AR no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Câmera AR,
-ms.openlocfilehash: 15aacae4cb543a3a94660ef1ab057ad0febcb715
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: baa54f4a7c6238b136a108cf5adcbddd29c3ee1b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850412"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143462"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Provedor de configurações de câmera AR do Unity
 

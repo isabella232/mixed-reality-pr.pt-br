@@ -1,27 +1,27 @@
 ---
 title: mapeamento espacial
-description: O mapeamento espacial fornece uma representação detalhada das superfícies do mundo real no ambiente em volta do HoloLens.
+description: O mapeamento espacial fornece uma representação detalhada das superfícies do mundo real no ambiente em torno do HoloLens.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mapeamento espacial, HoloLens, realidade mista, reconstrução de superfície, malha, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, compreensão da cena, malha mundial, oclusão, física, navegação, observador de superfície, renderização, processamento de malha
-ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: mapeamento espacial, HoloLens, realidade misturada, reconstrução de superfície, malha, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, compreensão de cena, malha do mundo, oclusão, física, navegação, observador de superfície, renderização, processamento de malha
+ms.openlocfilehash: 941e72b441771849e48e8ebc4924605750804831
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583277"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143721"
 ---
 # <a name="spatial-mapping"></a>mapeamento espacial
 
-O mapeamento espacial fornece uma representação detalhada das superfícies do mundo real no ambiente em todo o HoloLens, permitindo que os desenvolvedores criem uma experiência de realidade misturada convincente. Ao mesclar o mundo real com o mundo virtual, um aplicativo pode fazer com que os hologramas pareçam reais. Os aplicativos também podem se alinhar naturalmente com as expectativas do usuário, fornecendo comportamentos e interações do mundo real.
+O mapeamento espacial fornece uma representação detalhada das superfícies do mundo real no ambiente em torno do HoloLens, permitindo que os desenvolvedores criem uma experiência de realidade misturada confusa. Mesclando o mundo real com o mundo virtual, um aplicativo pode fazer com que os hologramas pareçam reais. Os aplicativos também podem alinhar-se naturalmente com as expectativas do usuário fornecendo comportamentos e interações conhecidos do mundo real.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/zff2aQ1RaVo]
 
-## <a name="device-supports"></a>Suporte a dispositivos
+## <a name="device-supports"></a>Suporte ao dispositivo
 
 <table>
     <colgroup>
@@ -47,22 +47,28 @@ O mapeamento espacial fornece uma representação detalhada das superfícies do 
 
 ## <a name="why-is-spatial-mapping-important"></a>Por que o mapeamento espacial é importante?
 
-O mapeamento espacial torna possível posicionar objetos em superfícies reais. Isso ajuda a ancorar objetos no mundo do usuário e aproveita as indicações de profundidade do mundo real. Occluding seus hologramas com base em outros hologramas e objetos do mundo real ajudam a convencer o usuário de que esses hologramas estão na verdade em seu espaço. Os hologramas flutuam no espaço ou quando se movem com o usuário não se sentirão reais. Quando possível, coloque os itens em conforto.
+O mapeamento espacial torna possível posicionar objetos em superfícies reais. Isso ajuda a ancorar objetos no mundo do usuário e aproveita as responsabilidades de profundidade do mundo real. A conclusão de seus hologramas com base em outros hologramas e objetos do mundo real ajuda a convencer o usuário de que esses hologramas estão realmente em seu espaço. Os hologramas que flutuam no espaço ou se movem com o usuário não se sentirão tão reais. Quando possível, coloque itens para conforto.
 
-Visualize superfícies ao colocar ou mover hologramas (use uma grade projetada). Isso ajuda os usuários a saber onde eles podem posicionar melhor seus hologramas e mostra se o ponto em que eles estão tentando posicionar o holograma não está mapeado. Você pode "itens do mural" em direção ao usuário se eles acabarem em muito um ângulo.
+Visualize superfícies ao colocar ou mover hologramas (use uma grade projetada). Isso ajuda os usuários a saber onde eles podem colocar melhor seus hologramas e mostra se o ponto em que eles estão tentando colocar o holograma não está mapeado. Você poderá "itens de 1000000000" para o usuário se eles acabarem em um ângulo muito grande.
 
 ## <a name="conceptual-overview"></a>Visão geral conceitual
 
 ![Superfícies de malha que abrangem uma sala](images/SurfaceReconstruction.jpg)<br>
 *Um exemplo de uma malha de mapeamento espacial que abrange uma sala*
 
-Os dois tipos de objeto primários usados para o mapeamento espacial são o ' observador de superfície espacial ' e a ' superfície espacial '.
+Os dois tipos de objeto primários usados para mapeamento espacial são o 'Observador da Superfície Espacial' e a 'Superfície Espacial'.
 
-O aplicativo fornece o observador de superfície espacial com um ou mais volumes delimitadores para definir as regiões de espaço em que o aplicativo deseja receber dados de mapeamento espacial. Para cada um desses volumes, o mapeamento espacial fornecerá ao aplicativo um conjunto de superfícies espaciais.
+O aplicativo fornece ao Observador da Superfície Espacial um ou mais volumes delimitados para definir as regiões do espaço em que o aplicativo deseja receber dados de mapeamento espacial. Para cada um desses volumes, o mapeamento espacial fornecerá ao aplicativo um conjunto de superfícies espaciais.
 
 Esses volumes podem ser fixos (em um local fixo com base no mundo real) ou podem ser anexados ao HoloLens (eles se movem, mas não giram, com o HoloLens à medida que se movem pelo ambiente). Cada superfície espacial descreve as superfícies do mundo real em um pequeno volume de espaço, representado como uma malha de triângulo anexada a um [sistema de coordenadas espaciais](coordinate-systems.md)bloqueados pelo mundo.
 
 Como o HoloLens reúne novos dados sobre o ambiente e, à medida que ocorrem alterações no ambiente, as superfícies espaciais aparecerão, desaparecerão e serão alteradas.
+
+## <a name="spatial-awareness-design-concepts-demo"></a>Demonstração dos conceitos de design de conscientização espacial
+
+Se você quiser ver os conceitos de design de conscientização espacial em ação, Confira nossa demonstração de vídeo [de conscientização espacial a]() seguir. Quando tiver terminado, continue em para obter mais detalhes sobre tópicos específicos.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>Mapeamento espacial versus WorldMesh de compreensão da cena
 
@@ -78,19 +84,19 @@ Para o HoloLens 2, é possível consultar uma versão estática dos dados de map
 
 ## <a name="what-influences-spatial-mapping-quality"></a>O que influencia a qualidade do mapeamento espacial?
 
-Vários fatores, detalhados [aqui](/hololens/hololens-environment-considerations), podem afetar a frequência e a severidade desses erros.  No entanto, você deve projetar seu aplicativo para que o usuário possa atingir suas metas mesmo na presença de erros nos dados de mapeamento espacial.
+Vários fatores, [detalhados aqui,](/hololens/hololens-environment-considerations)podem afetar a frequência e a gravidade desses erros.  No entanto, você deve criar seu aplicativo para que o usuário possa atingir suas metas mesmo na presença de erros nos dados de mapeamento espacial.
 
 ## <a name="common-usage-scenarios"></a>Cenários de uso comuns
 
-![Ilustrações de cenários de uso de mapeamento espacial comum: posicionamento, oclusão, física e navegação](images/sm-concepts-1000px.png)
+![Ilustrações de cenários comuns de uso do Mapeamento Espacial: Posicionamento, Oclusão, Física e Navegação](images/sm-concepts-1000px.png)
 
 ### <a name="placement"></a>Posicionamento
 
-O mapeamento espacial fornece aos aplicativos a oportunidade de apresentar formas naturais e familiares de interação para o usuário; o que poderia ser mais natural do que colocar seu telefone na mesa?
+O mapeamento espacial fornece aos aplicativos a oportunidade de apresentar formas naturais e familiares de interação com o usuário; o que poderia ser mais natural do que colocar seu telefone na mesa?
 
-Restringir o posicionamento de hologramas (ou mais geralmente, qualquer seleção de locais espaciais) para se situar em superfícies fornece um mapeamento natural de 3D (ponto no espaço) para 2D (ponto na superfície). Isso reduz a quantidade de informações que o usuário precisa fornecer ao aplicativo e torna as interações do usuário mais rápidas, fáceis e mais precisas. Isso é verdade porque a "distância" não é algo que estamos acostumados a se comunicar fisicamente com outras pessoas ou computadores. Quando apontamos para o dedo, estamos especificando uma direção, mas não uma distância.
+Restringir o posicionamento de hologramas (ou, em geral, qualquer seleção de locais espaciais) para ficar em superfícies fornece um mapeamento natural de 3D (ponto no espaço) para 2D (ponto na superfície). Isso reduz a quantidade de informações que o usuário precisa fornecer ao aplicativo e torna as interações do usuário mais rápidas, fáceis e precisas. Isso é verdadeiro porque 'distância' não é algo que estamos acostumados a nos comunicar fisicamente com outras pessoas ou com computadores. Quando apontamos com o dedo, estamos especificando uma direção, mas não uma distância.
 
-Uma limitação importante aqui é que, quando um aplicativo infere distância da direção (por exemplo, fazendo uma Raycast ao longo da direção do olhar do usuário para encontrar a superfície espacial mais próxima), isso deve produzir resultados que o usuário pode prever de forma confiável. Caso contrário, o usuário perderá sua noção de controle e isso pode rapidamente se tornar frustrante. Um método que ajuda com isso é fazer várias raycasts em vez de apenas uma. Os resultados agregados devem ser mais suaves e mais previsíveis, menos suscetíveis a influenciar de resultados transitórios "de exceção" (como pode ser causado por raios que passam por pequenos orifícios ou atingindo pequenos bits de geometria que o usuário não está ciente). A agregação ou a suavização também pode ser executada ao longo do tempo; por exemplo, você pode limitar a velocidade máxima na qual um holograma pode variar em distância do usuário. Simplesmente limitar o valor de distância mínimo e máximo também pode ajudar, de modo que o holograma que está sendo movido não acabe repentinamente na distância ou venha a falhar novamente na face do usuário.
+Uma ressalva importante aqui é que, quando um aplicativo infere a distância da direção (por exemplo, fazendo um raycast ao longo da direção do olhar do usuário para encontrar a superfície espacial mais próxima), isso deve gerar resultados que o usuário possa prever de forma confiável. Caso contrário, o usuário perderá a noção de controle e isso poderá se tornar frustrante rapidamente. Um método que ajuda com isso é fazer vários raycasts em vez de apenas um. Os resultados agregados devem ser mais suaves e mais previsíveis, menos suscetíveis a influenciar de resultados transitórios de "outlier" (como pode ser causado por raios passando por pequenos orifícios ou atingindo pequenos bits de geometria que o usuário não está ciente). A agregação ou suavização também podem ser executadas ao longo do tempo; por exemplo, você pode limitar a velocidade máxima na qual um holograma pode variar em distância do usuário. Simplesmente limitar o valor de distância mínimo e máximo também pode ajudar, de modo que o holograma que está sendo movido não acabe repentinamente na distância ou venha a falhar novamente na face do usuário.
 
 Os aplicativos também podem usar a forma e a direção das superfícies para orientar o posicionamento do holograma. Uma cadeira Holographic não deve penetrar através de paredes e deve ficar com o chão, mesmo que seja ligeiramente desigual. Esse tipo de funcionalidade provavelmente dependeria do uso de colisões de física em vez de raycasts, mas questões semelhantes serão aplicadas. Se o holograma que está sendo posicionado tiver muitos polígonos pequenos que se desdobram, como os lados de uma cadeira, pode fazer sentido expandir a representação física desses polígonos para algo mais largo e suave, de forma que seja mais capaz de deslizar por superfícies espaciais sem realce em captura.
 
@@ -98,17 +104,17 @@ Em seu extremo, a entrada do usuário pode ser simplificada de maneira totalment
 
 Observe também que a capacidade de um aplicativo de usar superfícies espaciais para posicionamento depende muito da experiência de [verificação](spatial-mapping.md#the-environment-scanning-experience)do aplicativo. Se uma superfície não tiver sido verificada, ela não poderá ser usada para posicionamento. Cabe ao aplicativo ficar claro para o usuário, para que eles possam ajudar a examinar novas superfícies ou selecionar um novo local.
 
-Os comentários visuais para o usuário são de extrema importância durante o posicionamento. O usuário precisa saber onde o holograma é baseado na superfície mais próxima com efeitos de [aterramento](spatial-mapping.md#visualization). Eles devem entender por que a movimentação de seu holograma está sendo restrita (por exemplo, devido a colisões com outra superfície próxima). Se eles não conseguirem colocar um holograma no local atual, os comentários visuais devem deixá-lo claro por que não. Por exemplo, se o usuário estiver tentando posicionar um Holographic sofá preso na parede, as partes do sofá que estão atrás da parede devem pulsater em uma cor irritado. Ou inversamente, se o aplicativo não conseguir encontrar uma superfície espacial em um local onde o usuário possa ver uma superfície do mundo real, o aplicativo deverá tornar isso claro. A ausência óbvia de um efeito de aterramento nessa área pode atingir essa finalidade.
+Os comentários visuais para o usuário são de importância fundamental durante o posicionamento. O usuário precisa saber onde o holograma é baseado na superfície mais próxima com [efeitos de terra.](spatial-mapping.md#visualization) Eles devem entender por que o movimento do holograma está sendo restrito (por exemplo, devido a colisões com outra superfície próxima). Se eles não puderem colocar um holograma no local atual, os comentários visuais deverão deixar claro por que não. Por exemplo, se o usuário estiver tentando colocar um diviso holográfico preso na parede, as partes do diviso que estão atrás da parede deverão pulsar em uma cor vermelha. Ou, por outro lado, se o aplicativo não puder encontrar uma superfície espacial em um local em que o usuário possa ver uma superfície do mundo real, o aplicativo deverá deixar isso claro. A ausência óbvia de um efeito de base nessa área pode atingir essa finalidade.
 
 ### <a name="occlusion"></a>Oclusão
 
-Um dos principais usos das superfícies de mapeamento espacial é simplesmente para os hologramas occlude. Esse comportamento simples tem um grande impacto sobre o realm de hologramas percebido, ajudando a criar um sensor de visceral que realmente inempolga o mesmo espaço físico que o usuário.
+Um dos principais usos de superfícies de mapeamento espacial é simplesmente ocluir hologramas. Esse comportamento simples tem um grande impacto sobre o realismo percebido dos hologramas, ajudando a criar uma noção de que realmente tem o mesmo espaço físico que o usuário.
 
-O oclusão também fornece informações para o usuário; Quando um holograma parece ser obstruídodo por uma superfície do mundo real, isso fornece comentários visuais adicionais sobre o local espacial desse holograma no mundo. Por outro lado, o oclusão também pode *ocultar* informações de forma útil do usuário; os hologramas occluding por trás das paredes podem reduzir a desordem Visual de uma maneira intuitiva. Para ocultar ou revelar um holograma, o usuário precisa apenas mover sua cabeça.
+A oclusão também fornece informações para o usuário; quando um holograma parece estar ocluído por uma superfície do mundo real, isso fornece comentários visuais adicionais sobre a localização espacial desse holograma no mundo. Por outro lado, a oclusão também pode *ocultar* informações do usuário de maneira útil; A oclusão de hologramas atrás de paredes pode reduzir a desorganização visual de maneira intuitiva. Para ocultar ou revelar um holograma, o usuário simplesmente precisa mover a cabeça.
 
-O oclusão também pode ser usado para obter as principais expectativas de uma interface do usuário natural com base em interações físicas familiares; se um holograma for obstruídodo por uma superfície, isso ocorre porque essa superfície é sólida e, portanto, o usuário deve esperar que o holograma *colidirá* com essa superfície e não passará por ela.
+A oclusão também pode ser usada para a expectativa de uma interface do usuário natural com base em interações físicas familiares; se um holograma é ocluído por uma superfície, é porque essa superfície  é sólida, portanto, o usuário deve esperar que o holograma colida com essa superfície e não passe por ela.
 
-Às vezes, oclusão de hologramas é indesejável. Se um usuário precisar interagir com um holograma, ele precisará vê-lo-mesmo que esteja por trás de uma superfície do mundo real. Nesses casos, geralmente faz sentido renderizar esse holograma de forma diferente quando é obstruído (por exemplo, reduzindo seu brilho). Dessa forma, o usuário pode visualmente localizar o holograma, mas ainda saberá que está por trás de algo.
+Às vezes, a oclusão de hologramas é indesejável. Se um usuário precisar interagir com um holograma, ele precisará vê-lo-mesmo que esteja por trás de uma superfície do mundo real. Nesses casos, geralmente faz sentido renderizar esse holograma de forma diferente quando é obstruído (por exemplo, reduzindo seu brilho). Dessa forma, o usuário pode visualmente localizar o holograma, mas ainda saberá que está por trás de algo.
 
 ### <a name="physics"></a>Física
 
@@ -122,13 +128,13 @@ Você também precisará considerar como a [experiência de verificação](spati
 
 ### <a name="navigation"></a>Navegação
 
-Os aplicativos podem usar dados de mapeamento espacial para conceder aos Holographic caracteres (ou agentes) a capacidade de navegar pelo mundo real da mesma maneira que uma pessoa real. Isso pode ajudar a reforçar a presença de caracteres Holographic restringindo-os ao mesmo conjunto de comportamentos naturais e conhecidos que os do usuário e seus amigos.
+Os aplicativos podem usar dados de mapeamento espacial para conceder aos caracteres holográficos (ou agentes) a capacidade de navegar pelo mundo real da mesma maneira que uma pessoa real. Isso pode ajudar a reforçar a presença de caracteres holográficos restringindo-os ao mesmo conjunto de comportamentos naturais e familiares que aqueles do usuário e seus amigos.
 
-Os recursos de navegação também podem ser úteis para os usuários. Depois que um mapa de navegação tiver sido criado em uma determinada área, ele poderá ser compartilhado para fornecer instruções de Holographic para novos usuários que não conhecem esse local. Esse mapa poderia ser criado para ajudar a manter o tráfego do básicos em trânsito sem problemas, ou para evitar acidentes em locais perigosos, como sites de construção.
+As funcionalidades de navegação também podem ser úteis para os usuários. Depois que um mapa de navegação tiver sido criado em uma determinada área, ele poderá ser compartilhado para fornecer instruções holográficas para novos usuários não familiarizados com esse local. Esse mapa pode ser projetado para ajudar a manter o fluxo contínuo do 'tráfego' ou evitar acidentes em locais perigosos, como locais de construção.
 
-Os principais desafios técnicos envolvidos na implementação da funcionalidade de navegação serão a detecção confiável de superfícies que poderão ser perfeitas (as pessoas não se movimentam nas tabelas!) e a adaptação normal às alterações no ambiente (as pessoas não percorrem as portas fechadas!). A malha pode exigir algum [processamento](spatial-mapping.md#mesh-processing) antes de ser utilizável para o planejamento e a navegação de caminho por um caractere virtual. Suavizar a malha e remover hallucinations pode ajudar a evitar que os caracteres se tornem presos. Você também pode desejar simplificar drasticamente a malha para acelerar os cálculos de navegação e de planejamento de caminho do caractere. Esses desafios receberam muita atenção no desenvolvimento da tecnologia de jogos de vídeo, e há uma infinidade de literatura de pesquisa disponível sobre esses tópicos.
+Os principais desafios técnicos envolvidos na implementação da funcionalidade de navegação serão a detecção confiável de superfícies walkable (os humanos não andam em tabelas!) e a adaptação elegante às alterações no ambiente (os humanos não passam por portas fechadas!). A malha pode exigir algum [processamento antes](spatial-mapping.md#mesh-processing) de ser acessível para planejamento de caminho e navegação por um caractere virtual. Suavizar a malha e remover desilusão pode ajudar a evitar que os caracteres fique preso. Talvez você também queira simplificar drasticamente a malha para acelerar os cálculos de navegação e planejamento de caminho do seu caractere. Esses desafios receberam muita atenção no desenvolvimento da tecnologia de jogos de vídeo e há uma grande quantidade de pesquisas disponíveis sobre esses tópicos.
 
-A funcionalidade interna NavMesh no Unity não pode ser usada com superfícies de mapeamento espacial. Isso ocorre porque as superfícies de mapeamento espacial não são conhecidas até que o aplicativo seja iniciado, mas os arquivos de dados de NavMesh precisam ser gerados a partir dos ativos de origem antes do tempo. Observe também que, o sistema de mapeamento espacial não fornecerá [informações sobre superfícies longe](spatial-mapping.md#the-environment-scanning-experience) da localização atual do usuário. Portanto, o aplicativo deve "se lembrar" dessas superfícies se for criar um mapa de uma área grande.
+A funcionalidade interna na NavMesh no Unity não pode ser usada com superfícies de mapeamento espacial. Isso acontece porque as superfícies de mapeamento espacial não são conhecidas até que o aplicativo seja iniciado, mas os arquivos de dados NavMesh precisam ser gerados a partir de ativos de origem com antecedência. Observe também que o sistema de mapeamento espacial não fornecerá informações sobre [superfícies distantes](spatial-mapping.md#the-environment-scanning-experience) do local atual do usuário. Portanto, o aplicativo deve 'lembrar' aparecer se for para criar um mapa de uma área grande.
 
 ### <a name="visualization"></a>Visualização
 
@@ -149,23 +155,23 @@ As malhas de superfície fornecidas pelo mapeamento espacial podem não ser part
 
 O ponto de partida para o mapeamento espacial é o observador de superfície. O fluxo do programa é o seguinte:
 * Criar um objeto de observador de superfície
-   * Forneça um ou mais volumes espaciais para definir as regiões de interesse em que o aplicativo deseja receber dados de mapeamento espacial. Um volume espacial é simplesmente uma forma que define uma região de espaço, como uma esfera ou uma caixa.
-   * Use um volume espacial com um sistema de coordenadas espaciais bloqueados pelo mundo para identificar uma região fixa do mundo físico.
-   * Use um volume espacial, atualizado cada quadro com um sistema de coordenadas espaciais bloqueadas pelo corpo, para identificar uma região de espaço que se move (mas não gira) com o usuário.
-   * Esses volumes espaciais podem ser alterados posteriormente a qualquer momento, à medida que o status do aplicativo ou do usuário é alterado.
+   * Forneça um ou mais volumes espaciais para definir as regiões de interesse nas quais o aplicativo deseja receber dados de mapeamento espacial. Um volume espacial é simplesmente uma forma que define uma região do espaço, como uma esfera ou uma caixa.
+   * Use um volume espacial com um sistema de coordenadas espaciais bloqueado pelo mundo para identificar uma região fixa do mundo físico.
+   * Use um volume espacial, atualizou cada quadro com um sistema de coordenadas espaciais bloqueado pelo corpo para identificar uma região de espaço que se move (mas não gira) com o usuário.
+   * Esses volumes espaciais podem ser alterados posteriormente a qualquer momento, conforme o status do aplicativo ou do usuário muda.
 * Usar sondagem ou notificação para recuperar informações sobre superfícies espaciais
-   * Você pode ' sondar ' o observador de superfície para o status da superfície espacial a qualquer momento. Em vez disso, você pode se registrar para o evento ' superfícies alteradas ' do observador de superfície, que notificará o aplicativo quando as superfícies espaciais forem alteradas.
-   * Para um volume espacial dinâmico, como o modo de exibição frustum ou um volume bloqueado por corpo, os aplicativos precisarão sondar as alterações em cada quadro definindo a região de interesse e, em seguida, obtendo o conjunto atual de superfícies espaciais.
-   * Para um volume estático, como um cubo protegido por mundo que cobre uma única sala, os aplicativos podem se registrar para que o evento ' superfícies alteradas ' seja notificado quando as superfícies espaciais dentro desse volume podem ter sido alteradas.
-* Alterações de superfícies de processo
-   * Itere o conjunto de superfícies espaciais fornecido.
-   * Classifique as superfícies espaciais como adicionadas, alteradas ou removidas.
-   * Para cada superfície espacial adicionada ou alterada, se apropriado, envie uma solicitação assíncrona para receber a malha atualizada que representa o estado atual da superfície no nível de detalhe desejado.
+   * Você pode 'sondar' o observador da superfície quanto ao status da superfície espacial a qualquer momento. Em vez disso, você pode se registrar para o evento 'superfícies alteradas' do observador de superfície, que notificará o aplicativo quando as superfícies espaciais foram alteradas.
+   * Para um volume espacial dinâmico, como a exibição frustum ou um volume bloqueado pelo corpo, os aplicativos precisarão sondar alterações em cada quadro definindo a região de interesse e, em seguida, obtendo o conjunto atual de superfícies espaciais.
+   * Para um volume estático, como um cubo mundialmente bloqueado que abrange uma única sala, os aplicativos podem se registrar para o evento 'superfícies alteradas' serem notificados quando superfícies espaciais dentro desse volume podem ter sido alteradas.
+* Alterações nas superfícies de processo
+   * Iterar o conjunto fornecido de superfícies espaciais.
+   * Classificar superfícies espaciais como adicionadas, alteradas ou removidas.
+   * Para cada superfície espacial adicionada ou alterada, se apropriado, envie uma solicitação assíncrona para receber a malha atualizada que representa o estado atual da superfície no nível desejado de detalhes.
 * Processe a solicitação de malha assíncrona (mais detalhes nas seções a seguir).
 
 ## <a name="mesh-caching"></a>Cache de malha
 
-As superfícies espaciais são representadas por malhas de triângulo densas. Armazenar, renderizar e processar essas malhas pode consumir recursos de computação e armazenamento significativos. Assim, cada aplicativo deve adotar um esquema de cache de malha apropriado às suas necessidades, para minimizar os recursos usados para processamento e armazenamento de malha. Esse esquema deve determinar quais malhas manter e quais descartar e quando atualizar a malha para cada superfície espacial.
+As superfícies espaciais são representadas por malhas de triângulo denso. Armazenar, renderizar e processar essas malhas pode consumir recursos computacionais e de armazenamento significativos. Assim, cada aplicativo deve adotar um esquema de cache de malha apropriado às suas necessidades, para minimizar os recursos usados para processamento e armazenamento de malha. Esse esquema deve determinar quais malhas manter e quais descartar e quando atualizar a malha para cada superfície espacial.
 
 Muitas das considerações discutidas aqui informarão diretamente como seu aplicativo deve abordar o cache de malha. Você deve considerar como o usuário passa pelo ambiente, quais superfícies são necessárias, quando superfícies diferentes serão observadas e quando as alterações no ambiente devem ser capturadas.
 
@@ -182,18 +188,18 @@ Cabe a cada aplicativo, então, fazer as seguintes escolhas:
 * Para superfícies espaciais atualizadas, a malha deve ser solicitada?
    * As superfícies espaciais atualizadas perto e na frente do usuário devem receber prioridade e sua malha deve ser solicitada primeiro.
    * Também pode ser apropriado fornecer prioridade mais alta para novas superfícies do que para superfícies atualizadas, especialmente durante a experiência de verificação.
-   * Para limitar os custos de processamento, os aplicativos podem querer limitar a taxa na qual eles processam atualizações em superfícies espaciais.
-   * Pode ser possível inferir que as alterações em uma superfície espacial sejam secundárias, por exemplo, se os limites da superfície forem pequenos, caso em que a atualização pode não ser importante para ser processada.
-   * As atualizações para superfícies espaciais fora da região atual de interesse do usuário podem ser ignoradas inteiramente, embora, nesse caso, seja mais eficiente modificar os volumes delimitadores espaciais em uso pelo observador de superfície.
+   * Para limitar os custos de processamento, os aplicativos podem querer limitar a taxa na qual eles processam atualizações para superfícies espaciais.
+   * Pode ser possível inferir que as alterações em uma superfície espacial sejam secundárias, por exemplo, se os limites da superfície são pequenos, caso em que a atualização pode não ser importante o suficiente para processar.
+   * As atualizações em superfícies espaciais fora da região atual de interesse do usuário podem ser totalmente ignoradas, embora, nesse caso, possa ser mais eficiente modificar os volumes delimitadores espaciais em uso pelo observador da superfície.
 * Para superfícies espaciais removidas, a malha deve ser descartada?
-   * Em geral, a malha deve ser descartada imediatamente para superfícies espaciais removidas, de forma que o holograma oclusão permaneça correto.
-   * No entanto, se o aplicativo tiver motivo para acreditar que uma superfície espacial reaparecerá em breve (com base no design da experiência do usuário), poderá ser mais eficiente mantê-la do que descartar sua malha e recriá-la mais tarde.
-   * Se o aplicativo estiver criando um modelo de grande escala do ambiente do usuário, talvez não queira descartar todas as malhas. No entanto, ele ainda precisará limitar o uso de recursos, possivelmente colocando em spool as malhas em disco, pois as superfícies espaciais desaparecem.
-   * Alguns eventos relativamente raros durante a geração de superfície espacial podem fazer com que superfícies espaciais sejam substituídas por novas superfícies espaciais em um local semelhante, mas com IDs diferentes. Assim, os aplicativos que optam por não descartar uma superfície removida devem ter cuidado para não terminar com várias malhas de superfícies espaciais altamente sobrepostas que abrangem o mesmo local.
-* A malha deve ser descartada para outras superfícies espaciais?
-   * Mesmo que exista uma superfície espacial, se ela não for mais útil para a experiência do usuário, ela deverá ser descartada. Por exemplo, se o aplicativo "substituir" a sala do outro lado de um porta com um espaço virtual alternativo, as superfícies espaciais nessa sala não serão mais importantes.
+   * Geralmente, a malha deve ser descartada imediatamente para superfícies espaciais removidas, para que a oclusão do holograma permaneça correta.
+   * No entanto, se o aplicativo tiver motivos para acreditar que uma superfície espacial reaparecerá em breve (com base no design da experiência do usuário), poderá ser mais eficiente mantê-la do que descartar sua malha e recriá-la mais tarde.
+   * Se o aplicativo estiver criando um modelo em grande escala do ambiente do usuário, talvez ele não queira descartar malhas. No entanto, ele ainda precisará limitar o uso de recursos, possivelmente por meio do spool de malhas no disco à medida que as superfícies espaciais desaparecerem.
+   * Alguns eventos relativamente raros durante a geração de superfície espacial podem fazer com que superfícies espaciais sejam substituídas por novas superfícies espaciais em um local semelhante, mas com IDs diferentes. Portanto, os aplicativos que optam por não descartar uma superfície removida devem ter cuidado para não acabar com várias malhas de superfícies espaciais altamente sobrecargadas que abrangem o mesmo local.
+* A malha deve ser descartada para qualquer outra superfície espacial?
+   * Mesmo que exista uma superfície espacial, se ela não for mais útil para a experiência do usuário, ela deverá ser descartada. Por exemplo, se o aplicativo 'substituir' a sala do outro lado de uma porta por um espaço virtual alternativo, as superfícies espaciais nessa sala não serão mais importantes.
 
-Aqui está um exemplo de estratégia de cache de malha, usando histerese espacial e temporal:
+Aqui está um exemplo de estratégia de cache de malha, usando a histeresia espacial e temporal:
 * Considere um aplicativo que deseja usar um volume de interesse espacial em forma de frustum que segue o olhar do usuário à medida que eles buscam e percorrem.
 * Uma superfície espacial pode desaparecer temporariamente desse volume simplesmente porque o usuário fica longe da superfície ou das etapas mais distantes dela... apenas para olhar de volta ou se aproximar mais de um momento mais tarde. Nesse caso, descartar e recriar a malha para essa superfície representa muitos processos redundantes.
 * Para reduzir o número de alterações processadas, o aplicativo usa dois observadores de superfície espacial, um contido dentro do outro. O volume maior é esférico e segue o usuário ' lentamente '; Ele só se move quando necessário para garantir que seu centro esteja dentro de 2,0 metros do usuário.
@@ -207,15 +213,15 @@ Há três maneiras principais pelas quais as malhas de mapeamento espacial tende
 * Para visualização de superfície
    * Geralmente, é útil Visualizar superfícies espaciais diretamente. Por exemplo, a conversão de ' Shadows ' de objetos em superfícies espaciais pode fornecer comentários visuais úteis ao usuário enquanto eles estão colocando hologramas em superfícies.
    * Uma coisa a ser lembrada é que as malhas espaciais são diferentes para o tipo de malha que um artista 3D pode criar. A topologia de triângulo não será tão "limpa" quanto a topologia criada por humanos, e a malha será afetada de [vários erros](spatial-mapping.md#what-influences-spatial-mapping-quality).
-   * Para criar uma estética visual agradável, talvez você queira fazer algum [processamento de malha](spatial-mapping.md#mesh-processing), por exemplo, para preencher buracos ou Normals de superfície suave. Você também pode querer usar um sombreador para projetar texturas criadas pelo artista em sua malha, em vez de Visualizar diretamente a topologia de malha e os normais.
-* Para os hologramas occluding por trás das superfícies do mundo real
-   * As superfícies espaciais podem ser renderizadas em uma passagem somente de profundidade, o que afeta apenas o [buffer de profundidade](/windows/win32/direct3d9/depth-buffers) e não afeta os destinos de renderização de cor.
-   * Isso força o buffer de profundidade a occlude subsequentemente processará os hologramas por trás das superfícies espaciais. A oclusão precisa dos hologramas melhora o sentido de que os hologramas realmente existem dentro do espaço físico do usuário.
-   * Para habilitar a renderização de profundidade, atualize seu estado de mesclagem para definir o [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) como zero para todos os destinos de renderização de cor.
-* Para modificar a aparência de hologramas obstruído por superfícies do mundo real
-   * Normalmente, a geometria renderizada fica oculta quando é obstruído. Isso é feito definindo a função Depth em seu [estado de estêncil de profundidade](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) como "menor ou igual a", o que faz com que a geometria fique visível apenas onde está **mais perto** da câmera do que toda a geometria renderizada anteriormente.
-   * No entanto, pode ser útil manter determinada geometria visível mesmo quando é obstruído e modificar sua aparência quando obstruído como uma forma de fornecer comentários visuais ao usuário. Por exemplo, isso permite que o aplicativo mostre ao usuário o local de um objeto, tornando-o claro que está por trás de uma superfície do mundo real.
-   * Para conseguir isso, renderize a geometria uma segunda vez com um sombreador diferente que cria a aparência desejada de ' obstruído '. Antes de renderizar a geometria pela segunda vez, faça duas alterações em seu [estado de estêncil de profundidade](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Primeiro, defina a função Depth como "maior que ou igual a" para que a geometria seja visível somente quando ela estiver **além** da câmera do que toda a geometria renderizada anteriormente. Em segundo lugar, defina DepthWriteMask como zero, para que o buffer de profundidade não seja modificado (o buffer de profundidade deve continuar a representar a profundidade da geometria **mais próxima** da câmera).
+   * Para criar uma insinteição visual, talvez você queira fazer algum processamento de [malha,](spatial-mapping.md#mesh-processing)por exemplo, para preencher os orifícios ou os normais de superfície suave. Você também pode querer usar um sombreador para projetar texturas projetadas por um artista em sua malha, em vez de visualizar diretamente a topologia e os normais da malha.
+* Para oclusão de hologramas por trás de superfícies do mundo real
+   * Superfícies espaciais podem ser renderizadas em uma passagem somente de profundidade, o que afeta apenas o [buffer](/windows/win32/direct3d9/depth-buffers) de profundidade e não afeta os destinos de renderização de cores.
+   * Isso impede que o buffer de profundidade oclua os hologramas renderizados posteriormente por trás de superfícies espaciais. A oclusão precisa de hologramas melhora a noção de que os hologramas realmente existem dentro do espaço físico do usuário.
+   * Para habilitar a renderização somente de profundidade, atualize o estado do blend para definir [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) como zero para todos os destinos de renderização de cor.
+* Para modificar a aparência de hologramas ocluídos por superfícies do mundo real
+   * Normalmente, a geometria renderizada fica oculta quando está oclusa. Isso é feito definindo a função de profundidade em seu estado de estêncil de profundidade como "menor  ou igual", o que faz com que a geometria seja visível apenas quando está mais próxima da câmera do que toda a geometria renderizada anteriormente. [](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)
+   * No entanto, pode ser útil manter determinada geometria visível mesmo quando ela está oclusa e modificar sua aparência quando ocluído como uma maneira de fornecer comentários visuais ao usuário. Por exemplo, isso permite que o aplicativo mostre ao usuário o local de um objeto, deixando claro que está atrás de uma superfície do mundo real.
+   * Para fazer isso, renderize a geometria uma segunda vez com um sombreador diferente que cria a aparência 'oclusiva' desejada. Antes de renderizar a geometria pela segunda vez, faça duas alterações no estado [de estêncil de profundidade.](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) Primeiro, de definir a função de profundidade como "maior ou igual" para  que a geometria seja visível somente onde ela está mais distante da câmera do que toda a geometria renderizada anteriormente. Em segundo lugar, defina DepthWriteMask como zero, para que o buffer de profundidade não seja modificado (o buffer de profundidade deve continuar a representar a profundidade da geometria **mais próxima** da câmera).
 
 O [desempenho](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) é uma preocupação importante ao renderizar malhas de mapeamento espacial. Aqui estão algumas técnicas de desempenho de renderização específicas para renderizar malhas de mapeamento espacial:
 * Ajustar densidade do triângulo
@@ -227,17 +233,17 @@ O [desempenho](../develop/platform-capabilities-and-apis/understanding-performan
    * Como a remoção é realizada em uma base por malha e as superfícies espaciais podem ser grandes, dividir cada malha de superfície espacial em partes menores pode resultar em uma remoção mais eficiente (na medida em que menos triângulos de fora da tela são renderizados). No entanto, há uma compensação; Quanto mais malhas você tiver, mais chamadas de desenho deverão ser feitas, o que pode aumentar os custos de CPU. Em um caso extremo, os próprios cálculos de remoção de frustum podem até mesmo ter um custo de CPU mensurável.
 * Ajustar a ordem de renderização
    * As superfícies espaciais tendem a ser grandes, pois representam o ambiente inteiro do usuário em torno delas. Os custos de processamento de pixel na GPU podem ser altos, especialmente em casos em que há mais de uma camada de geometria visível (incluindo superfícies espaciais e outros hologramas). Nesse caso, a camada mais próxima do usuário será occluding as camadas mais distantes, portanto, qualquer tempo de GPU gasto renderizando essas camadas mais distantes é desperdiçado.
-   * Para reduzir esse trabalho redundante na GPU, ele ajuda a renderizar superfícies opacas na ordem de frente para trás (mais próximas primeiro, mais distantes). Por ' opaco ', queremos dizer superfícies para as quais o DepthWriteMask está definido como um em seu [estado de estêncil de profundidade](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Quando as superfícies mais próximas são renderizadas, elas primem o buffer de profundidade para que as superfícies mais distantes sejam ignoradas com eficiência pelo processador de pixel na GPU.
+   * Para reduzir esse trabalho redundante na GPU, ele ajuda a renderizar superfícies opacas na ordem de frente para trás (aquelas mais próximas primeiro, mais distantes por último). Por 'opaco', queremos dizer superfícies para as quais DepthWriteMask é definido como um em seu estado [de estêncil de profundidade.](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) Quando as superfícies mais próximas são renderizadas, elas a primem o buffer de profundidade para que superfícies mais distantes sejam ignoradas com eficiência pelo processador de pixel na GPU.
 
 ## <a name="mesh-processing"></a>Processamento de malha
 
-Um aplicativo pode querer realizar [várias operações](spatial-mapping.md#mesh-processing) em malhas de superfície espacial para atender às suas necessidades. Os dados de índice e vértice fornecidos com cada malha de superfície espacial usam o mesmo layout familiar que os [buffers de vértice e de índice](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) usados para renderizar malhas de triângulo em todas as APIs de renderização modernas. No entanto, um fator importante a ser considerado é que os triângulos de mapeamento espacial têm uma **ordem de vento no sentido anti-horário**. Cada triângulo é representado por três índices de vértice no buffer de índice da malha e esses índices identificarão os vértices do triângulo em um pedido no **sentido horário** , quando o triângulo for exibido do lado **frontal** . O lado frontal (ou externo) de malhas de superfície espacial corresponde à medida que você esperaria para o lado frontal (visível) das superfícies do mundo real.
+Um aplicativo pode querer fazer várias [operações em](spatial-mapping.md#mesh-processing) malhas de superfície espacial para atender às suas necessidades. Os dados de índice e vértice fornecidos com cada malha de superfície espacial usam o mesmo layout familiar que os buffers de [vértice](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) e índice usados para renderizar malhas de triângulo em todas as APIs de renderização modernas. No entanto, um fato importante a ser ciente é que os triângulos de mapeamento espacial têm uma ordem de vento no sentido horário **frontal.** Cada triângulo é representado por três índices de vértice no buffer de índice da malha e  esses índices identificarão os vértices do triângulo em uma ordem horário, quando o triângulo for exibido do lado frontal.  O lado frontal (ou fora) das malhas da superfície espacial corresponde à esperada do lado frontal (visível) das superfícies do mundo real.
 
-Os aplicativos só devem realizar a simplificação de malha se a densidade de triângulo mais grosseira fornecida pelo observador de superfície ainda for muito grande: esse trabalho é computacionalmente caro e já está sendo executado pelo tempo de execução para gerar os vários níveis de detalhes fornecidos.
+Os aplicativos só deverão fazer a simplificação de malha se a densidade de triângulo mais alta fornecida pelo observador de superfície ainda for insuficientemente grosseira – esse trabalho é computacionalmente caro e já está sendo executado pelo runtime para gerar os vários níveis de detalhes fornecidos.
 
-Como cada observador de superfície pode fornecer várias superfícies espaciais desconectadas, alguns aplicativos talvez queiram recortar essas malhas de superfície espacial entre si e, em seguida, zipper-las em conjunto. Em geral, a etapa de recorte é necessária, pois as malhas de superfície espacial próximas geralmente se sobrepõem ligeiramente.
+Como cada observador de superfície pode fornecer várias superfícies espaciais não conectadas, alguns aplicativos podem querer cortar essas malhas de superfície espacial entre si e, em seguida, reenconectá-las. Em geral, a etapa de recorte é necessária, pois malhas de superfície espacial próximas geralmente se sobrepõem ligeiramente.
 
-## <a name="raycasting-and-collision"></a>Raycasting e colisão
+## <a name="raycasting-and-collision"></a>Raycasting e Colisão
 
 Para que uma API física (como [Havok](https://www.havok.com/)) forneça um aplicativo com raycasting e funcionalidade de colisão para superfícies espaciais, o aplicativo deve fornecer malhas de superfície espacial para a API física. As malhas usadas para a física geralmente têm as seguintes propriedades:
 * Eles contêm apenas pequenos números de triângulos. As operações de física são mais intensivas em computação do que as operações de renderização.
@@ -255,20 +261,20 @@ Cada aplicativo que usa o mapeamento espacial deve considerar a possibilidade de
 ![Exemplo de verificação](images/sr-mixedworld-140429-8pm-00068-1000px.png)<br>
 *Exemplo de verificação*
 
-A natureza dessa experiência de verificação pode variar muito dependendo das necessidades de cada aplicativo, mas dois princípios principais devem guiar seu design.
+A natureza dessa experiência de verificação pode variar muito dependendo das necessidades de cada aplicativo, mas dois princípios principais devem orientar seu design.
 
-Em primeiro lugar, **a comunicação clara com o usuário é a principal preocupação**. O usuário deve estar sempre atento se os requisitos do aplicativo estão sendo atendidos. Quando eles não estão sendo atendidos, deve ser imediatamente claro para o usuário por que isso é feito, e eles devem ser rapidamente acionados para executar a ação apropriada.
+Em primeiro lugar, **a comunicação clara com o usuário é a principal preocupação.** O usuário sempre deve estar ciente de se os requisitos do aplicativo estão sendo atendidos. Quando eles não estão sendo atendidos, deve ser imediatamente claro para o usuário por que isso é assim e eles devem ser rapidamente levados a tomar a ação apropriada.
 
-Em segundo lugar, **os aplicativos devem tentar um equilíbrio entre a eficiência e a confiabilidade**. Quando é possível fazer isso de forma **confiável**, os aplicativos devem analisar automaticamente os dados de mapeamento espacial para salvar a hora do usuário. Quando não é possível fazer isso de forma confiável, os aplicativos devem permitir que o usuário forneça rapidamente o aplicativo com as informações adicionais necessárias.
+Em segundo lugar, **os aplicativos devem tentar atingir um equilíbrio entre eficiência e confiabilidade.** Quando for possível fazer isso de forma **confiável,** os aplicativos deverão analisar automaticamente os dados de mapeamento espacial para economizar o tempo do usuário. Quando não é possível fazer isso de forma confiável, os aplicativos devem permitir que o usuário forneça rapidamente ao aplicativo as informações adicionais necessárias.
 
-Para ajudar a criar a experiência de verificação correta, considere quais das seguintes possibilidades são aplicáveis ao seu aplicativo:
+Para ajudar a projetar a experiência de verificação correta, considere quais das seguintes possibilidades são aplicáveis ao seu aplicativo:
 
 * **Nenhuma experiência de verificação**
-   * Um aplicativo pode funcionar perfeitamente sem nenhuma experiência de verificação guiada; Ele aprenderá sobre as superfícies observadas no decorrer do movimento de usuário natural.
-   * Por exemplo, um aplicativo que permite que o usuário desenhe superfícies com tinta de irrigação Holographic requer conhecimento apenas das superfícies visíveis no momento para o usuário.
-   * O ambiente pode ser verificado, já que é aquele em que o usuário já gastou muito tempo usando o HoloLens.
-   * No entanto, lembre-se de que a câmera usada pelo mapeamento espacial só pode ver 3,1 m na frente do usuário, portanto, o mapeamento espacial não saberá sobre nenhuma superfície mais distante, a menos que o usuário as tenha observado de uma distância mais próxima no passado.
-   * Portanto, o usuário entende quais superfícies foram verificadas, o aplicativo deve fornecer comentários visuais para esse efeito, por exemplo, converter sombras virtuais em superfícies digitalizadas pode ajudar o usuário a posicionar os hologramas nessas superfícies.
+   * Um aplicativo pode funcionar perfeitamente sem qualquer experiência de verificação guiada; ele aprenderá sobre as superfícies que são observadas durante a movimentação natural do usuário.
+   * Por exemplo, um aplicativo que permite ao usuário desenhar em superfícies com pintura de pulverização holográfica requer conhecimento apenas das superfícies visíveis no momento para o usuário.
+   * O ambiente já poderá ser verificado se ele for aquele em que o usuário já passou muito tempo usando o HoloLens.
+   * Tenha em mente, no entanto, que a câmera usada pelo mapeamento espacial só pode ver 3,1 m na frente do usuário, portanto, o mapeamento espacial não conhecerá superfícies mais distantes, a menos que o usuário as tenha observado de uma distância mais próxima no passado.
+   * Portanto, o usuário entende quais superfícies foram examinadas, o aplicativo deve fornecer comentários visuais para esse efeito, por exemplo, a transmissão de sombras virtuais em superfícies examinadas pode ajudar o usuário a colocar hologramas nessas superfícies.
    * Nesse caso, os volumes delimitados do observador de superfície espacial devem ser atualizados cada quadro para um [sistema de coordenadas espaciais](coordinate-systems.md)bloqueadas pelo corpo, para que eles sigam o usuário.
 
 * **Encontrar um local adequado**
@@ -290,24 +296,24 @@ Para ajudar a criar a experiência de verificação correta, considere quais das
 
 * **Verificar a sala inteira**
    * Um aplicativo pode exigir uma verificação de todas as superfícies no espaço atual, incluindo aquelas por trás do usuário.
-   * Por exemplo, um jogo pode colocar o usuário na função de Gulliver, sob o Siege de centenas de pequenas Lilliputians abordagens de todas as direções.
-   * Nesses casos, o aplicativo precisará determinar quantas superfícies na sala atual já foram verificadas e direcionar o olhar do usuário para preencher lacunas significativas.
-   * A chave para esse processo é fornecer comentários visuais que o tornam claro para o usuário quais superfícies ainda não foram verificadas. O aplicativo poderia, por exemplo, usar a [neblina baseada em distância](/windows/win32/direct3d9/fog-formulas) para realçar visualmente regiões que não são cobertas por superfícies de mapeamento espacial.
+   * Por exemplo, um jogo pode colocar o usuário na função de Sempre, sob pressão de centenas de lilliputianos minúsculos se aproximando de todas as direções.
+   * Nesses casos, o aplicativo precisará determinar quantas superfícies na sala atual já foram examinadas e direcionar o olhar do usuário para preencher lacunas significativas.
+   * A chave para esse processo é fornecer comentários visuais que deixa claro para o usuário quais superfícies ainda não foram examinadas. O aplicativo pode, por exemplo, usar a base de distância [para](/windows/win32/direct3d9/fog-formulas) realçar visualmente as regiões que não são cobertas por superfícies de mapeamento espacial.
 
 * **Tirar um instantâneo inicial do ambiente**
-   * Um aplicativo pode desejar ignorar todas as alterações no ambiente depois de usar um ' instantâneo ' inicial.
-   * Isso pode ser apropriado para evitar a interrupção de dados criados pelo usuário que estejam rigidamente acoplados ao estado inicial do ambiente.
-   * Nesse caso, o aplicativo deve fazer uma cópia dos dados de mapeamento espacial em seu estado inicial quando a verificação for concluída.
-   * Os aplicativos devem continuar recebendo atualizações para dados de mapeamento espacial se os hologramas ainda estiverem obstruídodos corretamente pelo ambiente.
-   * Atualizações continuadas para dados de mapeamento espacial também permitem visualizar todas as alterações que ocorreram, esclarecendo ao usuário as diferenças entre os Estados anterior e o presente do ambiente.
+   * Um aplicativo pode querer ignorar todas as alterações no ambiente depois de tirar um 'instantâneo' inicial.
+   * Isso pode ser apropriado para evitar a interrupção de dados criados pelo usuário que estão firmemente a coupleados ao estado inicial do ambiente.
+   * Nesse caso, o aplicativo deve fazer uma cópia dos dados de mapeamento espacial em seu estado inicial depois que a verificação for concluída.
+   * Os aplicativos devem continuar recebendo atualizações para dados de mapeamento espacial se os hologramas ainda devem ser corretamente ocluídos pelo ambiente.
+   * As atualizações contínuas nos dados de mapeamento espacial também permitem visualizar todas as alterações ocorridas, esclarecendo ao usuário as diferenças entre estados anteriores e atuais do ambiente.
 
-* **Fazer instantâneos iniciados pelo usuário do ambiente**
-   * Um aplicativo pode querer responder apenas a alterações ambientais quando instruído pelo usuário.
-   * Por exemplo, o usuário poderia criar várias ' Statues ' 3D de um amigo capturando suas poses em momentos diferentes.
+* **Tirar instantâneos iniciados pelo usuário do ambiente**
+   * Um aplicativo só pode querer responder a alterações ambientais quando instruído pelo usuário.
+   * Por exemplo, o usuário pode criar várias '3D' de um amigo capturando suas poses em momentos diferentes.
 
 * **Permitir que o usuário altere o ambiente**
    * Um aplicativo pode ser projetado para responder em tempo real a quaisquer alterações feitas no ambiente do usuário.
-   * Por exemplo, o usuário que desenha um Curtain poderia disparar a "mudança de cena" para uma reprodução de Holographic em andamento no outro lado.
+   * Por exemplo, o usuário desenhando uma cena pode disparar a 'alteração de cena' para uma peça holográfica que ocorre no outro lado.
 
 * **Orientar o usuário para evitar erros nos dados de mapeamento espacial**
    * Um aplicativo pode desejar fornecer orientações ao usuário enquanto eles estão verificando seu ambiente.
@@ -327,20 +333,20 @@ Aqui estão alguns exemplos de diferentes tipos de processamento de malha que po
    * Se um pequeno objeto formado por um material escuro falhar ao digitalizar, ele deixará um orifício na superfície ao redor.
    * Os buracos afetam o oclusão: os hologramas podem ser vistos "por meio de um buraco em uma superfície do mundo real opaca supostamente.
    * Os buracos afetam o raycasts: se você estiver usando o raycasts para ajudar os usuários a interagir com as superfícies, pode ser indesejável que esses raios passem por buracos. Uma mitigação é usar um pacote de vários raycasts cobrindo uma região de tamanho adequado. Isso permitirá que você filtre os resultados de "exceção", de modo que, mesmo que um Raycast passe por uma pequena brecha, o resultado da agregação ainda será válido. No entanto, essa abordagem vem com um custo computacional.
-   * Os buracos afetam as colisões de física: um objeto controlado pela simulação física pode derrubar um orifício no chão e se tornar perdido.
-   * É possível forma algorítmica o preenchimento desses buracos na malha da superfície. No entanto, você precisará ajustar seu algoritmo para que "buracos reais", como Windows e doorways, não sejam preenchidos. Pode ser difícil diferenciar de forma confiável ' buracos reais ' de ' buracos imaginários ', portanto, você precisará experimentar uma heurística diferente, como ' tamanho ' e ' forma de limite '.
+   * Os orifícios afetam colisões físicas: um objeto controlado pela simulação de física pode cair por um orifício no chão e se perder.
+   * É possível preencher de forma algorítmicamente esses orifícios na malha da superfície. No entanto, você precisará ajustar seu algoritmo para que "orifícios reais", como janelas e portas, não seja preenchido. Pode ser difícil diferenciar de forma confiável 'orifícios reais' de 'orifícios imaginários', portanto, você precisará experimentar heurísticas diferentes, como 'tamanho' e 'forma de limite'.
 
-* **Remoção de hallucination**
-   * Reflexos, luzes brilhantes e movimentação de objetos podem deixar o ' hallucinations ' remanescente pequeno no ar médio.
-   * Hallucinations afeta oclusão: hallucinations pode se tornar visível como formas escuras se movendo na frente e occluding outros hologramas.
-   * Hallucinations afeta raycasts: se você estiver usando o raycasts para ajudar os usuários a interagir com superfícies, esses raios poderão atingir um hallucination em vez da superfície por trás dele. Assim como acontece com os buracos, uma mitigação é usar muitas raycasts em vez de um único Raycast, mas novamente isso será fornecido a um custo computacional.
-   * Hallucinations afetam as colisões de física: um objeto controlado pela simulação física pode ficar preso contra um hallucination e não pode passar por uma área de espaço aparentemente nítida.
-   * É possível filtrar esses hallucinations da malha de superfície. No entanto, assim como com os buracos, você precisará ajustar seu algoritmo para que os objetos reais pequenos, como a lâmpada e os identificadores de porta, não sejam removidos.
+* **Remoção de remoção de resíduos**
+   * As reflexões, as luzes brilhante e os objetos móveis podem deixar pequenas 'desilusão' persistentes flutuando no ar médio.
+   * As figuras afetam a oclusão: as desilusão podem se tornar visíveis à medida que as formas escuras se movem na frente e ocluem outros hologramas.
+   * As rotinas afetam os raios: se você estiver usando raycasts para ajudar os usuários a interagir com superfícies, esses raios poderão atingir uma desastagem em vez da superfície por trás dela. Assim como com os orifícios, uma mitigação é usar muitos raycasts em vez de um único raycast, mas novamente isso ocorrerá a um custo computacional.
+   * As simulações afetam colisões físicas: um objeto controlado pela simulação de física pode ficar preso em uma desilusão e não conseguir se mover por uma área aparentemente clara do espaço.
+   * É possível filtrar essas reações da malha da superfície. No entanto, assim como ocorre com os orifícios, você precisará ajustar seu algoritmo para que objetos pequenos reais, como arquibancadas de lâmpada e alças de porta, não seja removido.
 
 * **Suavização**
-   * O mapeamento espacial pode retornar superfícies que parecem ser aproximadas ou "ruidosas" em comparação com suas contrapartes do mundo real.
-   * A suavidade afeta as colisões de física: se o piso for aproximado, uma bola de golfe fisicamente simulada poderá não ser organizada sem problemas em uma linha reta.
-   * A suavidade afeta a renderização: se uma superfície for visualizada diretamente, os Normals da superfície aproximada poderão afetar sua aparência e interromper uma aparência "limpa". É possível mitigar isso usando a iluminação e texturas apropriadas no sombreador que é usado para renderizar a superfície.
+   * O mapeamento espacial pode retornar superfícies que parecem ser aproximadas ou 'barulhentos' em comparação com suas contrapartes do mundo real.
+   * A suavidade afeta colisões físicas: se o chão for aproximado, uma bola de futebol fisicamente simulada poderá não rolar suavemente em uma linha reta.
+   * A suavidade afeta a renderização: se uma superfície for visualizada diretamente, os normais de superfície aproximada poderão afetar sua aparência e interromper uma aparência "limpa". É possível atenuar isso usando iluminação e texturas apropriadas no sombreador usado para renderizar a superfície.
    * É possível suavizar a áspero em uma malha de superfície. No entanto, isso pode empurrar a superfície para longe da superfície real correspondente. Manter uma correspondência próxima é importante para produzir oclusão de holograma precisos e para permitir que os usuários obtenham interações precisas e previsíveis com superfícies holographics.
    * Se apenas uma alteração superficial for necessária, pode ser suficiente para suavizar Normals de vértice sem alterar as posições de vértice.
 
@@ -359,26 +365,26 @@ Aqui estão alguns exemplos de diferentes tipos de processamento de malha que po
 
 * O [emulador do HoloLens](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md) pode ser usado para desenvolver aplicativos usando o mapeamento espacial sem acesso a um HoloLens físico. Ele permite simular uma sessão ao vivo em um HoloLens em um ambiente realista, com todos os dados que seu aplicativo normalmente consumiria, incluindo movimento de HoloLens, sistemas de coordenadas espaciais e malhas de mapeamento espacial. Isso pode ser usado para fornecer entradas confiáveis e reproduzíveis, que podem ser úteis para depurar problemas e avaliar alterações em seu código.
 * Para reproduzir um cenário, Capture dados de mapeamento espacial pela rede de um HoloLens ao vivo e, em seguida, salve-os no disco e reutilize-os em sessões de depuração posteriores.
-* O [modo de exibição 3D do portal de dispositivo do Windows](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view) fornece uma maneira de ver todas as superfícies espaciais disponíveis atualmente por meio do sistema de mapeamento espacial. Isso fornece uma base de comparação para as superfícies espaciais dentro de seu aplicativo; por exemplo, você pode identificar facilmente se alguma superfície espacial está ausente ou sendo exibida no local errado.
+* A [exibição 3D](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view) do portal de dispositivos windows fornece uma maneira de ver todas as superfícies espaciais disponíveis atualmente por meio do sistema de mapeamento espacial. Isso fornece uma base de comparação para as superfícies espaciais dentro de seu aplicativo; por exemplo, você pode facilmente saber se alguma superfície espacial está ausente ou está sendo exibida no local errado.
 
-### <a name="general-prototyping-guidance"></a>Diretrizes gerais de protótipo
+### <a name="general-prototyping-guidance"></a>Diretrizes gerais de criação de protótipos
 
-* Como os [erros](spatial-mapping.md#what-influences-spatial-mapping-quality) nos dados de mapeamento espacial podem afetar seriamente a experiência do usuário, recomendamos que você teste seu aplicativo em uma ampla variedade de ambientes.
-* Não se preocupe com o hábito de testar sempre no mesmo local, por exemplo, em sua mesa. Certifique-se de testar várias superfícies de diferentes posições, formas, tamanhos e materiais.
-* Da mesma forma, embora os dados sintéticos ou registrados possam ser úteis para depuração, não se tornem muito dependentes dos mesmos casos de teste. Isso pode atrasar a localização de problemas importantes que os testes mais variados teriam detectados anteriormente.
-* É uma boa ideia executar testes com usuários reais (e, teoricamente, iniguals), porque eles não podem usar o HoloLens ou seu aplicativo exatamente da mesma maneira que você. Na verdade, ele pode surpreender você como o comportamento, o conhecimento e as suposições das pessoas podem ser divergentes!
+* Como [os erros nos](spatial-mapping.md#what-influences-spatial-mapping-quality) dados de mapeamento espacial podem afetar fortemente a experiência do usuário, recomendamos que você teste seu aplicativo em uma ampla variedade de ambientes.
+* Não fique preso no hábito de sempre testar no mesmo local, por exemplo, em sua mesa. Certifique-se de testar em várias superfícies de diferentes posições, formas, tamanhos e materiais.
+* Da mesma forma, embora os dados sintéticos ou gravados possam ser úteis para depuração, não se tornem muito dependentes dos mesmos poucos casos de teste. Isso pode atrasar a descoberta de problemas importantes que testes mais variados teriam capturado anteriormente.
+* É uma boa ideia executar testes com usuários reais (e idealmente sem acesso), pois eles podem não usar o HoloLens ou seu aplicativo exatamente da mesma maneira que você. Na verdade, pode ser surpreendente como o comportamento, o conhecimento e as suposições das pessoas divergentes podem ser!
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-* Para que as malhas de superfície sejam orientadosdas corretamente, cada gameobject precisa estar ativo antes de ser enviado para o SurfaceObserver para que sua malha seja construída. Caso contrário, as malhas serão exibidas no seu espaço, mas giradas em ângulos estranhos.
-* O gameobject que executa o script que se comunica com o SurfaceObserver precisa ser definido para a origem. Caso contrário, todos os GameObjects que você criar e enviar para o SurfaceObserver ter suas malhas construídas terão um deslocamento igual ao deslocamento do objeto do jogo pai. Isso pode fazer com que suas malhas mostrem vários medidores de distância, o que dificulta a depuração do que está acontecendo.
+* Para que as malhas de superfície sejam orientadas corretamente, cada GameObject precisa estar ativo antes de ser enviado ao SurfaceObserver para que sua malha seja construída. Caso contrário, as malhas aparecerão em seu espaço, mas giradas em ângulos estranho.
+* O GameObject que executa o script que se comunica com o SurfaceObserver precisa ser definido como a origem. Caso contrário, todos os GameObjects que você criar e enviar ao SurfaceObserver para construir suas malhas terão um deslocamento igual ao deslocamento do Objeto de Jogo Pai. Isso pode fazer com que suas malhas mostrem vários metros de distância, o que dificulta a depuração do que está acontecendo.
 
 ## <a name="see-also"></a>Confira também
 
 * [Sistemas de coordenadas](coordinate-systems.md)
 * [Mapeamento espacial no DirectX](../develop/native/spatial-mapping-in-directx.md)
 * [Mapeamento espacial no Unity](../develop/unity/spatial-mapping-in-unity.md)
-* [Compreensão da cena](scene-understanding.md)
+* [Noções básicas sobre a cena](scene-understanding.md)
 * [Visualização de varredura do ambiente](room-scan-visualization.md)
 * [Projeto de som espacial](spatial-sound-design.md)
 * [Estudo de caso - Como olhar através dos buracos na sua realidade](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

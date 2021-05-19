@@ -1,32 +1,32 @@
 ---
-title: TeleportHotspot
-description: Documentação sobre o componente de HotSpot teleport no MRTK
+title: Hotspot Demão
+description: Documentação sobre o componente Hotspot Dev No MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, teleport System, teleport HotSpot
-ms.openlocfilehash: 986105dd771c38b1e26fd9f86df90224110591a4
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sistema Detransporte, Hotspot DeTransporte
+ms.openlocfilehash: 0cbdad3c038d457109077b742d3f453d63436ae4
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105582948"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144431"
 ---
-# <a name="teleport-hotspot-experimental"></a>Teleport hotspot [experimental]
+# <a name="teleport-hotspot-experimental"></a>Hotspot Demão [Experimental]
 
-O HotSpot teleport é um componente que você pode adicionar ao gameobject para garantir que o usuário esteja em uma determinada posição e orientação quando teleport para esse local.
+O hotspot de teletransporte é um componente que você pode adicionar ao gameobject para garantir que o usuário está em uma determinada posição e orientação quando ele for para esse local.
 
 ## <a name="usage"></a>Uso
 
-### <a name="how-to-create-a-teleport-hotspot"></a>Como criar um hotspot teleport
+### <a name="how-to-create-a-teleport-hotspot"></a>Como criar um hotspot detransporte
 
-Para criar um hotspot teleport, adicione o componente TeleportHotspot a um objeto que também tem um componente colisor. 
+Para criar um hotspot de teletransporte, adicione o componenteHotspot a um objeto que também tem um componente colisor. 
 
-![Componente de HotSpot teleport](../images/teleport/TeleportHotspotComponent.png)
+![Componente Hotspot Detrans](../images/teleport/TeleportHotspotComponent.png)
 
-Agora, o indicador do ponteiro teleport mudará a cor quando for direcionado por um TeleportHotspot. Quando a ação teleport for concluída sobre o HotSpot, o usuário será teleport ao centro do TeleportHotspot.
+Agora, o indicador do ponteiro de teletransporte mudará de cor quando ele for direcionado sobre um Hothotspot. Quando a ação de teletransporte for concluída sobre o ponto de acesso, o usuário será teletransportado para o centro doHotHotspot.
 
-Se o sinalizador de orientação de substituição for marcado como desativado, a orientação do usuário corresponderá à do ponto de interrupção teleport.
+Se o sinalizador de orientação de substituição estiver marcado, a orientação do usuário corresponderá à do hotspot detransporte.
 
-![Exemplo de HotSpot teleport](../images/teleport/TeleportHotspotExample.gif)
+![Exemplo de Hotspot Demão](../images/teleport/TeleportHotspotExample.gif)
