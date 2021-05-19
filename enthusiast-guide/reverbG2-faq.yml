@@ -8,12 +8,12 @@ metadata:
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 7715af5f2a94378a0c56ddcdcb83d1d21fc83700
-  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.openlocfilehash: a15a29f36d4ad053f9f76016239c94365695d7c3
+  ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/24/2021
-  ms.locfileid: "107953745"
+  ms.lasthandoff: 05/19/2021
+  ms.locfileid: "110143264"
 title: Perguntas frequentes sobre o HP reverbs G2
 summary: ''
 sections:
@@ -67,8 +67,6 @@ sections:
 
       > [!NOTE]
 
-      > A HP recomenda o uso de controladores USB integrados à placa-mãe com dispositivos reverbo G2.
-
       > Se não for possível conectar seu dispositivo, entre em contato com o [suporte da HP](https://support.hp.com/us-en)
   - question: >
       Estou recebendo um erro de 13-14 "algo errado" quando meu PC reinicia da hibernação (S4)
@@ -83,31 +81,31 @@ sections:
     answer: >
       Os níveis de volume de entrada são automaticamente definidos como 100% quando o microfone do HP reverbs G2 é reconhecido pela primeira vez por um computador Windows. Devido aos microfones de alta qualidade do G2's do verbo, a sensibilidade de entrada é muito maior do que as configurações padrão do Windows 10 esperadas. É recomendável definir o nível de entrada do microfone G2 de reverberação a partir de 50% e escalar verticalmente a partir daí. Uma configuração ideal é específica para o usuário, especialmente ao usar aplicativos que não têm uma configuração de microfone de "" obter automaticamente ". Exemplos de aplicativos que têm "conquista automática" são o Skype, o zoom, as equipes e o Cisco WebEx, mas nem todos os aplicativos sociais ou de difusão de VR têm esse recurso.
   - question: >
-      O portal de realidade misturada diz "não é possível executar a realidade misturada neste headset", mas isso funcionou bem com meu Headset WMR anterior
+      O Portal de Realidade Misturada diz "Não é possível executar a realidade misturada neste headset", mas isso funcionou bem com meu headset WMR anterior
     answer: >
-      Isso pode acontecer porque seu HP reverbo G2 requer um PC mais potente para garantir a melhor experiência. Para obter mais informações, consulte os requisitos mínimos do [PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+      Isso pode acontecer porque o HP Reverb G2 requer um pc mais poderoso para garantir a melhor experiência. Para obter mais informações, revise os requisitos mínimos [do pc](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
   - question: >
-      Parece que minha exibição à esquerda é ampliada e a exibição à direita está descentralizada e meia preta
+      Parece que minha exibição à esquerda está alongada e a exibição à direita está des centralizada e metade preta
     answer: >
-      Isso pode acontecer quando o headset não está em execução na resolução nativa. Devido à natureza das exibições de alta resolução no HP reverbs G2 HMD, nem todos os sistemas podem renderizar a resolução nativa. Há uma correção em um futuro Windows Update que resolverá o problema de renderização quando o headset não estiver na resolução nativa.
+      Isso pode acontecer quando o headset não está em execução na resolução nativa. Devido à natureza das exibições de alta resolução no HMD do HP Reverb G2, nem todos os sistemas podem renderizar a resolução nativa. Há uma correção que vem em um futuro Windows Update resolverá o problema de renderização quando o headset não estiver na resolução nativa.
 
 
-      Há alguns motivos pelos quais o sistema não é capaz de renderizar na resolução nativa:
+      Há alguns motivos pelos quais seu sistema não é capaz de renderizar na resolução nativa:
 
 
-      - O DisplayPort no sistema pode não ser compatível com 1,3 ou pode não dar suporte a todas as quatro pistas.
+      - O DisplayPort no sistema pode não ser compatível com 1.3 ou pode não dar suporte a todas as quatro faixas.
 
-      - Se você estiver usando um adaptador, talvez ele não seja compatível com HBR3, ou talvez não dê suporte a todas as quatro pistas.
+      - Se você estiver usando um adaptador, talvez ele não seja compatível com HBR3 ou talvez não seja compatível com todas as quatro faixas.
 
-      - Se o seu sistema tiver uma GPU híbrida, isso pode estar limitando a largura de banda disponível para o DisplayPort.
+      - Se o sistema tiver uma GPU híbrida, isso poderá limitar a largura de banda disponível para o DisplayPort.
   - question: >
-      Por que meus modelos do meu HP Motion Controller não aparecem corretamente em um jogo
+      Por que meus modelos do HP Motion Controller não estão aparecendo corretamente em um jogo
     answer: >
-      Embora a maioria dos jogos não exiba os controladores ou use os modelos instalados pelo driver, alguns jogos usam suas próprias versões dos modelos de controlador, para personalizá-los ou para exibir a ajuda contextual para as entradas disponíveis. Normalmente, isso não bloqueia nenhum recurso dos jogos, mas pode levar à confusão ou até mesmo a artefatos visuais. Isso só pode ser corrigido com uma atualização do próprio jogo.
+      Embora a maioria dos jogos não exibe os controladores ou usa os modelos instalados pelo driver, alguns jogos usam suas próprias versões dos modelos de controlador, seja para personalizá-los ou para exibir ajuda contextual para as entradas disponíveis. Normalmente, isso não bloqueia nenhum dos recursos dos jogos, mas pode levar a confusão ou até mesmo artefatos visuais. Isso só pode ser corrigido com uma atualização do próprio jogo.
   - question: >
-      Meus jogos do SteamVR parecem funcionar corretamente com meus controladores HP Motion
+      Meus jogos do SteamVR não parecem funcionar corretamente com meus controladores de movimento HP
     answer: >
-      Embora os desenvolvedores estejam trabalhando para atualizar seus jogos para compatibilidade com o HP Motion Controller, fornecemos associações de controlador personalizadas para muitos dos jogos mais populares no fluxo. Com o "Windows Mixed realment for SteamVR" totalmente atualizado para a versão 1.2.444, essas associações devem ser selecionadas automaticamente quando o jogo estiver em execução. No entanto, se o jogo não parece registrar suas ações no momento, você pode procurar manualmente por perfis de associação personalizados usando o menu de configurações do SteamVR.
+      Enquanto os desenvolvedores estão trabalhando para atualizar seus jogos para compatibilidade com o HP Motion Controller, fornecemos vinculações de controlador personalizadas para muitos dos jogos mais populares no Steam. Com o "Windows Mixed Reality para SteamVR" totalmente atualizado para a versão 1.2.444, essas vinculações devem ser escolhidas automaticamente quando o jogo estiver em execução. No entanto, se o jogo não parece registrar suas ações no momento, você pode procurar manualmente por perfis de associação personalizados usando o menu de configurações do SteamVR.
 
       Para fazer isso
 
