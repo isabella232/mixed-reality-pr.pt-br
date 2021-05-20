@@ -1,3 +1,5 @@
+- name: Janela de compilação
+  href: build-window.md
 - name: Utilitário de permuta de ativos
   href: asset-swap-utility.md
 - name: Ferramenta de mapeamento de controlador
