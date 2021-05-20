@@ -1,21 +1,21 @@
 ---
 title: Foco com a cabeça e confirmação
-description: Comece a usar o olhar e confirme o modelo de entrada, incluindo dimensionamento, posicionamento e estabilização de destino.
+description: Começar a trabalhar com o modelo de entrada de confirmação e com o olhar com a cabeça, incluindo o posicionamento, o posicionamento e a estabilização de destino.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Realidade misturada, olhar, direcionamento de olhar, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, destino, foco, suavização
-ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Realidade Misturada, foco, direcionamento de foco, interação, design, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, destino, foco, suavização
+ms.openlocfilehash: 74f963a6b450d1fb7f1302886a01c12cf79ce28a
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582287"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196511"
 ---
 # <a name="head-gaze-and-commit"></a>Foco com a cabeça e confirmação
 
-_Head-olhar e commit_ é um caso especial do modelo de entrada [olhar e commit](gaze-and-commit.md) que envolve o direcionamento de um objeto com uma direção de cabeçalho de usuários. Você pode agir no destino com uma entrada secundária, como o comando de voz do gesto de toque de mão ou "selecionar". 
+_O olhar com a cabeça_ e [](gaze-and-commit.md) a confirmação são um caso especial do modelo de entrada de olhar e confirmação que envolve o direcionamento de um objeto com a direção da cabeça dos usuários. Você pode agir no destino com uma entrada secundária, como o toque de ar do gesto de mão ou o comando de voz "Selecionar". 
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -42,12 +42,20 @@ _Head-olhar e commit_ é um caso especial do modelo de entrada [olhar e commit](
 
 ---
 
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demonstração de conceitos de design de acompanhamento ocular e de cabeça
+
+Se você quiser ver os conceitos de design de acompanhamento de cabeça e de olho em ação, confira nossa demonstração de vídeo **Designing Holograms – Head Tracking and Eye Tracking** abaixo. Quando terminar, continue para obter uma análise mais detalhada de tópicos específicos.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Este vídeo foi tirado do aplicativo "Projetando hologramas" do HoloLens 2. Baixe e aproveite a experiência completa [aqui.](https://aka.ms/dhapp)*
+
 ## <a name="target-sizing-and-feedback"></a>Dimensionamento e comentários sobre o alvo
 
-O vetor olhar de cabeçalho foi mostrado repetidamente para ser usado para direcionamento fino, mas geralmente funciona melhor para direcionamento bruto, adquirindo destinos maiores. Os tamanhos de destino mínimos de 1 grau a 1,5 graus permitem ações de usuário bem-sucedidas na maioria dos cenários, embora os destinos de 3 graus geralmente permitam maior velocidade. O tamanho que o usuário tem como destino é efetivamente uma área 2D mesmo para elementos 3D – qualquer projeção que esteja voltado para eles deve ser a área de destino. Fornecer uma indicação evidente de que um elemento é "ativo" (que o usuário está direcionando para ele) é útil. Isso pode incluir tratamentos como efeitos "focalizar" visíveis, realces ou cliques de áudio ou alinhamento claro de um cursor com um elemento.
+O vetor de olhar para a cabeça foi mostrado repetidamente para ser acessível para direcionamento fino, mas geralmente funciona melhor para direcionamento bruto– adquirir destinos maiores. Tamanhos mínimos de destino de 1 a 1,5 graus permitem ações bem-sucedidas do usuário na maioria dos cenários, embora os destinos de 3 graus geralmente permitam maior velocidade. O tamanho que o usuário tem como destino é efetivamente uma área 2D, mesmo para elementos 3D, o que quer que a projeção está voltada para eles deve ser a área de destino. Fornecer alguma indicação de que um elemento está "ativo" (que o usuário está direcionando para ele) é útil. Isso pode incluir tratamentos como efeitos visíveis de "foco", realçamentos de áudio ou cliques ou alinhamento claro de um cursor com um elemento.
 
 ![Tamanho ideal do alvo em uma distância de 2 metros](images/gazetargeting-size-1000px.jpg)<br>
-*Tamanho de destino ideal em distância de 2 metros*
+*Tamanho de destino ideal a uma distância de 2 metros*
 
 <br>
 
@@ -56,16 +64,16 @@ O vetor olhar de cabeçalho foi mostrado repetidamente para ser usado para direc
 
 ## <a name="target-placement"></a>Posicionamento do alvo
 
-Geralmente, os usuários não conseguem localizar elementos da interface do usuário localizados muito altos ou baixos em seu campo de exibição. A maioria das suas atenções acaba com as áreas em torno do foco principal, que é aproximadamente no nível dos olhos. O posicionamento da maioria dos alvos em uma faixa razoável em torno do nível dos olhos pode ajudar. Considerando a tendência para os usuários se concentrarem em uma área Visual relativamente pequena a qualquer momento (o cone de atenção de visão é de aproximadamente 10 graus), agrupar elementos da interface do usuário em conjunto com o grau relacionado conceitualmente pode usar comportamentos de encadeamento de atenção do item para o item, uma vez que um usuário move sua olhar por uma área. Ao projetar a interface do usuário, tenha em mente a grande variação potencial no campo de visão entre o HoloLens e os headsets imersivos.
+Os usuários geralmente não conseguem localizar elementos de interface do usuário localizados muito altos ou baixos em seu campo de exibição. A maior parte de sua atenção termina em áreas ao redor de seu foco principal, que está aproximadamente no nível do olho. O posicionamento da maioria dos alvos em uma faixa razoável em torno do nível dos olhos pode ajudar. Considerando a tendência para os usuários se concentrarem em uma área Visual relativamente pequena a qualquer momento (o cone de atenção de visão é de aproximadamente 10 graus), agrupar elementos da interface do usuário em conjunto com o grau relacionado conceitualmente pode usar comportamentos de encadeamento de atenção do item para o item, uma vez que um usuário move sua olhar por uma área. Ao projetar a interface do usuário, tenha em mente a grande variação potencial no campo de visão entre o HoloLens e os headsets imersivos.
 
 ![Um exemplo de elementos de interface do usuário agrupados para um direcionamento do foco mais fácil no Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg)<br>
 *Um exemplo de elementos de interface do usuário agrupados para um direcionamento do foco mais fácil no Galaxy Explorer*
 
-## <a name="improving-targeting-behaviors"></a>Como melhorar os comportamentos de direcionamento
+## <a name="improving-targeting-behaviors&quot;></a>Como melhorar os comportamentos de direcionamento
 
 Se a intenção do usuário de direcionar algo puder ser determinada ou aproximada, pode ser útil aceitar tentativas de interação quase ausentes como se elas estivessem corretas corretamente. Aqui estão alguns métodos bem-sucedidos que podem ser incorporados em experiências de realidade misturada:
 
-### <a name="head-gaze-stabilization-gravity-wells"></a>Estabilização do foco com a cabeça ("poços gravitacionais")
+### <a name=&quot;head-gaze-stabilization-gravity-wells&quot;></a>Estabilização do foco com a cabeça (&quot;poços gravitacionais")
 
 Isso deve ser ativado na maior parte das vezes. Essa técnica remove a cabeça natural e as tremulações do pescoço que os usuários podem ter também movimento por causa de comportamentos de aparência e fala.
 
@@ -87,7 +95,7 @@ Esse mecanismo pode ser considerado como uma versão mais comum dos algoritmos d
 
 ### <a name="focus-stickiness"></a>Adesão do foco
 
-Ao determinar quais elementos interativos adjacentes fornecem, concentre-se, a adesão do foco fornece uma tendência para o elemento que está atualmente focado. Isso ajuda a reduzir os comportamentos incorretos de alternância de foco ao flutuar em um ponto médio entre dois elementos com ruído natural.
+Ao determinar quais elementos interativos próximos dar, concentre-se, a mesmidade de foco fornece um desvio para o elemento que está focalizado no momento. Isso ajuda a reduzir comportamentos de alternação de foco instável ao flutuar em um ponto médio entre dois elementos com ruído natural.
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,49 +1,49 @@
 ---
-title: Antes de comprar-perguntas frequentes
-description: Respostas para perguntas frequentes que possíveis compradores podem ter antes de comprar um headset de realidade mista do Windows e um PC compatível.
+title: Antes de comprar – Perguntas frequentes
+description: Respostas para perguntas frequentes que possíveis compradores podem ter antes de comprar um headset de realidade misturada do Windows e um computador compatível.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, pré-venda, pesquisa, compra, antes de comprar
+keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, pré-venda, pesquisa, compra, antes de comprar
 appliesto:
 - Windows 10
-ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 82ae2af5a8edd60317ba7d7c343c80a25b226301
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580294"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196611"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Antes de comprar perguntas frequentes
 
 ## <a name="general-questions"></a>Perguntas gerais
 
-### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Onde posso comprar um PC ou headset do Windows Mixed Reality Ready
+### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Onde posso comprar um Windows Mixed Reality ou headset pronto para uso
 
-**Resposta rápida:** Você pode comprar um PC ou fone de ouvido com o Windows Mixed Reality pronto em um varejista local aprovado ou online de diferentes varejistas, incluindo o Microsoft Store. Encontre um PC com o Windows Mixed Reality Ready ou headset online: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**Resposta rápida:** Você pode comprar um Windows Mixed Reality ou headset pronto para uso em um varejista local aprovado ou online de diferentes varejistas, incluindo o Microsoft Store. Encontre um computador Windows Mixed Reality ou headset online: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
-### <a name="where-can-i-try-windows-mixed-reality"></a>Onde posso experimentar o Windows Mixed Reality
+### <a name="where-can-i-try-windows-mixed-reality"></a>Onde posso tentar Windows Mixed Reality
 
-**Resposta rápida:** Você pode experimentar a realidade mista do Windows em um [reator da Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) perto de você.
+**Resposta rápida:** Você pode tentar Windows Mixed Reality em um [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) perto de você.
 
-* Localizar eventos de reator da Microsoft no Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
+* Encontre eventos do Microsoft Reactor Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
-### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quais fabricantes estão vendendo dispositivos Windows Mixed Reality
+### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quais fabricantes estão vender Windows Mixed Reality dispositivos
 
-**Resposta rápida:** Os headsets e os controladores de movimento estão disponíveis atualmente na HP. Veja <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**Resposta rápida:** Os headsets e controladores de movimento estão disponíveis atualmente na HP. Veja <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Onde posso comprar controladores de movimento autônomos
 
-**Resposta rápida:** Infelizmente, não estamos cientes dos varejistas que vendem controladores de movimento autônomos no momento.
+**Resposta rápida:** Infelizmente, não estamos cientes de nenhum varejista que venda controladores de movimento autônomos no momento.
 
-### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Qual é a diferença entre um PC com realidade do Windows Mixed e um ultra PC do Windows Mixed Reality
+### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Qual é a diferença entre um computador Windows Mixed Reality e um computador Windows Mixed Reality Ultra computador
 
-**Resposta rápida:** Os detalhes sobre os PCs com a realidade mista do Windows e os ultra PCs são capturados aqui: <https://aka.ms/mrcompat>
+**Resposta rápida:** Detalhes sobre Windows Mixed Reality PCs e PCs Ultra são capturados aqui: <https://aka.ms/mrcompat>
 
-### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Por que isso é chamado de "realidade mista" do Windows quando os dispositivos parecem que fornecem uma experiência de "realidade virtual"
+### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Por que isso é chamado de "Realidade Misturada" do Windows quando os dispositivos parecem fornecer uma experiência de "Realidade Virtual"
 
-**Resposta rápida:** A realidade misturada refere-se ao espectro completo de computação espacial, da realidade aumentada e dos hologramas à realidade virtual. A plataforma Windows Mixed Reality dá suporte a dispositivos em VR (realidade virtual) e AR (realidade aumentada). Atualmente, damos suporte a dois tipos de dispositivo com tecnologia semelhante nesse espectro: o HoloLens (AR) e headsets do Windows Mixed Reality (VR) com controladores de movimento.
+**Resposta rápida:** Realidade Misturada refere-se ao espectro completo da computação espacial, da realidade aumentada e dos hologramas à realidade virtual. Windows Mixed Reality plataforma dá suporte a dispositivos em VR (Realidade Virtual) e AR (Realidade Aumentada). Atualmente, damos suporte a dois tipos de dispositivos com tecnologia semelhante nesse espectro: HoloLens (AR) e headsets Windows Mixed Reality (VR) com controladores de movimento.
 
 Saiba mais sobre a realidade misturada aqui: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -59,22 +59,22 @@ Saiba mais sobre a realidade misturada aqui: <https://docs.microsoft.com/windows
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>O que é acompanhamento interno? Como ele é diferente do acompanhamento externo ou acompanhamento de Lighthouse
 
-* **Rastreamento interno** A realidade mista do Windows usa rastreamento interno. Com câmeras de rastreamento internas, estão incorporadas ao headset e controlam as alterações no ambiente para determinar a posição dos headsets com base no ambiente à medida que você se movimenta.
+* **Rastreamento interno** Os sistemas Windows Mixed Reality, Oculus Quest e Naopak/index usam rastreamento interno. Com câmeras de acompanhamento internas, estão incorporadas ao headset e controlam as alterações no ambiente para determinar a posição do headset com base no ambiente à medida que você se movimenta. Alguns sistemas, como o Naopak do HTC e o índice de válvula, usam sensores de infravermelho em vez de câmeras e dependem de "Lighthouses" ou de "estações base" externas que a luz de infravermelho do projeto para controlar seu ambiente.
 
-* **Rastreamento externo** Oculus, Naopak e outros usam acompanhamento externo.  Com o acompanhamento externo, o headset é acompanhado por um ou mais dispositivos externos. As câmeras são incorporadas a esses dispositivos externos, posicionadas em todo o ambiente e usadas para determinar a posição do headset com base no ambiente.
+* **Rastreamento externo** Sistemas como o Oculus Rift e o PlayStation VR usam acompanhamento externo.  Com o acompanhamento externo, o headset é acompanhado por um ou mais dispositivos externos. As câmeras são internas nesses dispositivos externos, colocadas em torno do ambiente e são usadas para determinar a posição do headset com base no ambiente.
 
-Saiba mais sobre o [acompanhamento interno](./tracking-system.md).
+Saiba mais sobre o [acompanhamento interno.](./tracking-system.md)
 
-### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>O acompanhamento do controle de controladores de movimento pode afetar a reprodução do jogo devido à câmera FOV
+### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>O acompanhamento interno de controladores de movimento pode afetar meu jogo devido ao FOV da câmera
 
- Assim como os headsets, os controladores de movimento do Windows Mixed Reality não exigem nenhuma configuração de sensores de controle externo. Em vez disso, os controladores são acompanhados por sensores no próprio headset. Se o usuário mover os controladores para fora do campo de exibição do headset, na maioria dos casos, o Windows continuará inferindo as posições do controlador e as fornecerá ao aplicativo. Quando o controlador tiver perdido o acompanhamento Visual por tempo suficiente, as posições do controlador serão descartadas para as posições de precisão aproximada. Neste ponto, o sistema bloqueará o corpo do controlador para o usuário, controlando a posição do usuário à medida que eles se movimentam, ao mesmo tempo em que ainda expõe a orientação verdadeira do controlador usando seus sensores de orientação interna. Muitos aplicativos que usam controladores para apontar e ativar elementos da interface do usuário podem operar normalmente em precisão aproximada sem que o usuário perceba. A melhor maneira de ter uma ideia para isso é experimentá-lo por conta própria.
+ Assim como os headsets, os Windows Mixed Reality de movimento não exigem nenhuma configuração de sensores de acompanhamento externos. Em vez disso, os controladores são rastreados por sensores no próprio headset. Se o usuário mover os controladores para fora do campo de exibição do headset, na maioria dos casos, o Windows continuará inferindo posições do controlador e os fornecerá ao aplicativo. Quando o controlador tiver perdido o controle visual por tempo suficiente, as posições do controlador cairão para posições de precisão aproximada. Neste ponto, o sistema bloqueará o controlador por corpo para o usuário, acompanhando a posição do usuário conforme ele se move, ainda expondo a orientação verdadeira do controlador usando seus sensores de orientação internos. Muitos aplicativos que usam controladores para apontar e ativar elementos da interface do usuário podem operar normalmente com precisão aproximada sem que o usuário perceba. A melhor maneira de ter uma sensação disso é experimentar por conta própria.
 
-### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Como a realidade mista do Windows é diferente da Samsung Gear VR
+### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Como o Windows Mixed Reality diferente do Samsung Gear VR
 
-**Resposta rápida:** Todos os produtos VR baseados em Smartphone, incluindo o Samsung Gear VR e o Google Daydream, usam três graus de liberdade (3DOF) de controle de posição de cabeçalho. os sistemas baseados em 3DOF permitem que você mova sua cabeça **apenas** do pescoço para cima no mundo virtual. O Windows Sr, por outro lado, usa uma cabeça de 6DOF (seis graus de liberdade) e controladores de controle de posição. os sistemas baseados em 6DOF permitem que você mova todo o corpo no mundo virtual; Você pode percorrer um objeto e vê-lo de diferentes perspectivas, assim como no mundo físico. O Rift e o Naopak também são sistemas baseados em 6DOF.
+**Resposta rápida:** Todos os produtos de VR baseados em smartphone, incluindo o Samsung Gear VR e o Google Vr, usam três sistemas de controle de posição de cabeça de 3DOF (Degrees Of Freedom). Os sistemas baseados em 3DOF permitem que você mova a cabeça apenas do meio do mundo virtual.  O Windows MR, por outro lado, usa um sistema de controle de posição de 6DOF (seis graus de liberdade) e controladores. Os sistemas baseados em 6DOF permitem que você mova todo o corpo no mundo virtual; para que você possa dar uma olhada em um objeto e vê-lo de diferentes perspectivas, assim como você pode no mundo físico. A Base e a Vida também são sistemas baseados em 6DOF.
 
 * Leia mais sobre 3DOF e 6DOF aqui: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
-* Leia mais sobre o acompanhamento de posição e o grau de liberdade (DOF) aqui: <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
+* Leia mais sobre o Acompanhamento Posicional e o DOF (Degree's of Freedom) aqui: <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
 
 ## <a name="technical-specifications"></a>Especificações técnicas
 
@@ -82,14 +82,14 @@ Saiba mais sobre o [acompanhamento interno](./tracking-system.md).
 <tr>
 <th style="width:25%"> Headset </th>
 <th style="width:15%"> Resolução </th>
-<th style="width:10%"> Exibir </th>
+<th style="width:10%"> Monitor </th>
 <th style="width:10%"> Taxa de atualização </th>
-<th style="width:10%"> FOV </th>
+<th style="width:10%"> Fov </th>
 <th style="width:15%"> Áudio </th>
 <th style="width:10%"> Bluetooth </th>
 <th style="width:10%"> Ajuste de IPD </th>
 <th style="width:10%"> Data de lançamento </th>
-<th style="width:25%"> Mais informações </th>
+<th style="width:25%"> Obter mais informações </th>
 </tr>
 
 <tr>
@@ -113,7 +113,7 @@ Saiba mais sobre o [acompanhamento interno](./tracking-system.md).
 <td> 100 ° </td>
 <td> Conector integrado + 3,5-mm </td>
 <td> Interno </td>
-<td style="text-align: center;">Apoio</td>
+<td style="text-align: center;">Mecânica</td>
 <td> Outono de 2018 </td>
 <td> <a href="https://www.acer.com/ac/en/US/press/2018/427890">Acer</a> </td>
 </tr>
@@ -124,41 +124,41 @@ Saiba mais sobre o [acompanhamento interno](./tracking-system.md).
 <td> MONITORES </td>
 <td> Até 90 Hz </td>
 <td> 95 ° </td>
-<td> Jack de 3,5-mm </td>
+<td> Tomada de 3,5 mm </td>
 <td> Nenhum </td>
 <td style="text-align: center;">Software</td>
-<td> Outono de 2017 </td>
-<td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">PLACA</a> </td>
+<td> Fall 2017 </td>
+<td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">Asus</a> </td>
 </tr>
 
 <tr>
 <td> Dell Visor </td>
 <td> 2880x1440 </td>
-<td> MONITORES </td>
+<td> Lcd </td>
 <td> Até 90 Hz </td>
-<td> 105 ° </td>
-<td> Jack de 3,5-mm </td>
+<td> 105˚ </td>
+<td> Tomada de 3,5 mm </td>
 <td> Nenhum </td>
 <td style="text-align: center;">Software</td>
-<td> Outono de 2017 </td>
+<td> Fall 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Dell</a> </td>
 </tr>
 
 <tr>
-<td> Headset Fujitsu FMV </td>
+<td> Fu fmv headset </td>
 <td> 2880x1440 </td>
-<td> MONITORES </td>
+<td> Lcd </td>
 <td> Até 90 Hz </td>
-<td> 105 ° </td>
-<td> Jack de 3,5-mm </td>
+<td> 105˚ </td>
+<td> Tomada de 3,5 mm </td>
 <td> Nenhum </td>
 <td style="text-align: center;">Software</td>
-<td> Outono de 2017 </td>
+<td> Fall 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
 </tr>
 
 <tr>
-<td> Reverberação HP </td>
+<td> HP Reverb </td>
 <td> 4320x2160 </td>
 <td> MONITORES </td>
 <td> Até 90 Hz </td>
@@ -197,40 +197,40 @@ Saiba mais sobre o [acompanhamento interno](./tracking-system.md).
 </tr>
 
 <tr>
-<td> Medion ERAZER Sr X1000 </td>
+<td> Medion ERAZER MR X1000 </td>
 <td> 2880x1440 </td>
-<td> MONITORES </td>
+<td> Lcd </td>
 <td> Até 90 Hz </td>
-<td> 105 ° </td>
-<td> Jack de 3,5-mm </td>
+<td> 105˚ </td>
+<td> Tomada de 3,5 mm </td>
 <td> Nenhum </td>
 <td style="text-align: center;">Software</td>
-<td> Outono de 2017 </td>
+<td> Fall 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
 </tr>
 
 <tr>
-<td> Samsung HMD Odyssey</td>
+<td> Samsung HMDSeyy</td>
 <td> 2880x1600 </td>
-<td> AMOLED </td>
+<td> Amoled </td>
 <td> Até 90 Hz </td>
-<td> 110 ° </td>
+<td> 110˚ </td>
 <td> Integrado </td>
 <td> Nenhum </td>
-<td style="text-align: center;">Apoio</td>
-<td> Outono de 2017 </td>
+<td style="text-align: center;">Mecânica</td>
+<td> Fall 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
 </tr>
 
 <tr>
 <td> Samsung HMD Odyssey+</td>
 <td> 2880x1600 </td>
-<td> AMOLED </td>
+<td> Amoled </td>
 <td> Até 90 Hz </td>
-<td> 110 ° </td>
+<td> 110˚ </td>
 <td> Integrado </td>
 <td> Interno </td>
-<td style="text-align: center;">Apoio</td>
+<td style="text-align: center;">Mecânica</td>
 <td> Outono de 2018 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/">Samsung</a> </td>
 </tr>
@@ -263,35 +263,35 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 **Resposta rápida:** Não, os headsets da realidade mista do Windows não têm ajuste de relevo de olho.
 
-### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>Haverá problemas com o controle do controlador de movimento se vários headsets de realidade misturada do Windows estiverem em proximidades?
+### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>Haverá problemas com o acompanhamento do controlador de movimento se vários Windows Mixed Reality headsets estão próximos?
 
-**Resposta rápida:** Descobrimos que não há interferência com os controladores de movimento, mas você deve fornecer ao usuário espaço suficiente para obter a melhor experiência em realidade misturada, por exemplo, 10 metros x 10 pés.
+**Resposta rápida:** Descobrimos que não há interferência com controladores de movimento, mas você deve dar aos usuários espaço suficiente para a melhor experiência em realidade misturada, por exemplo, 10 pés x 10 pés.
 
-### <a name="is-there-boundary-chaperone-or-guardian-system-in-windows-mixed-reality"></a>Há um sistema de limite, Chaperone ou guardião no Windows Mixed Reality?
+### <a name="is-there-boundary-chaperone-or-guardian-system-in-windows-mixed-reality"></a>Há limite, chaperone ou sistema guardião em Windows Mixed Reality?
 
-**Resposta rápida:** O Windows Mixed Reality permite que você configure um limite. Além disso, alguns dos fones de ouvido do Windows Sr têm uma exibição dobradiça frontal, para que você possa virar o fone de ouvido enquanto trabalha.
+**Resposta rápida:** Windows Mixed Reality permite configurar um limite. Além disso, alguns dos headsets do Windows MR têm uma exibição dobradiça frontal, para que você possa inverter o headset para cima durante o trabalho.
 
-### <a name="do-windows-mixed-reality-headsets-work-in-the-dark"></a>Os headsets de realidade mista do Windows funcionam no escuro?
+### <a name="do-windows-mixed-reality-headsets-work-in-the-dark"></a>Os Windows Mixed Reality headsets funcionam no escuro?
 
-**Resposta rápida:** Uma boa regra geral é que, se você não puder se mover com confiança na sala porque ela é muito escura, o sistema de controle também terá um tempo rígido para trabalhar nesse ambiente.
+**Resposta rápida:** Uma boa regra geral é se você não puder se mover com confiança pela sala porque ela está muito escura, o sistema de acompanhamento também terá um tempo difícil de trabalhar nesse ambiente.
 
-### <a name="what-is-the-cable-length-of-the-windows-mixed-reality-headset"></a>Qual é a duração do cabo do headset do Windows Mixed Reality?
+### <a name="what-is-the-cable-length-of-the-windows-mixed-reality-headset"></a>Qual é o comprimento do cabo do Windows Mixed Reality Headset?
 
-**Resposta rápida:** Normalmente, o comprimento do cabo da realidade mista do Windows Headset é de 4 metros, mas depende do headset. Para obter mais detalhes, confira: <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
+**Resposta rápida:** Normalmente, o comprimento do cabo Windows Mixed Reality headsets é de 4 metros, mas depende do Headset. Para obter mais detalhes, confira: <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
 
-### <a name="can-i-use-a-usb--hdmi-extension-cable-with-windows-mixed-reality-headsets"></a>Posso usar um cabo de extensão USB/HDMI com headsets de realidade mista do Windows?
+### <a name="can-i-use-a-usb--hdmi-extension-cable-with-windows-mixed-reality-headsets"></a>Posso usar um cabo de extensão USB/HDMI com Windows Mixed Reality Headsets?
 
-**Resposta rápida:** Projetamos a realidade mista do Windows para trabalhar sem cabos de extensão. O uso de cabos de extensão com a realidade misturada Headset não é suportado e o uso pode afetar sua experiência.
+**Resposta rápida:** Projetamos o Windows Mixed Reality funcionar sem cabos de extensão. Não há suporte para o uso de cabos de extensão com headset de realidade misturada e o uso pode afetar sua experiência.
 
-## <a name="pc-compatibility"></a>Compatibilidade de PC
+## <a name="pc-compatibility"></a>Compatibilidade do PC
 
-### <a name="will-my-pc-work-with-windows-mixed-reality-what-are-the-minimum-specs"></a>Meu PC funcionará com a realidade mista do Windows? Quais são as especificações mínimas?
+### <a name="will-my-pc-work-with-windows-mixed-reality-what-are-the-minimum-specs"></a>Meu computador funcionará com Windows Mixed Reality? Quais são as especificações mínimas?
 
-**Resposta rápida:** Você pode encontrar as especificações mínimas [aqui](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ou pode baixar e executar o [portal de realidade misturada](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) para ver se seu PC funcionará com a realidade mista do Windows.
+**Resposta rápida:** Você pode encontrar as especificações [mínimas](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) [](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) aqui ou pode baixar e executar Portal de Realidade Misturada para ver se o computador funcionará com Windows Mixed Reality.
 
-### <a name="will-windows-mixed-reality-work-with-my-xbox"></a>A realidade mista do Windows funcionará com meu Xbox?
+### <a name="will-windows-mixed-reality-work-with-my-xbox"></a>O Windows Mixed Reality funcionará com meu Xbox?
 
-**Resposta rápida:** Não, a realidade mista do Windows funciona apenas com PCs. Baixe e execute o [portal de realidade misturada](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) para ver se o seu computador está WMR pronto.
+**Resposta rápida:** Não, Windows Mixed Reality funciona apenas com PCs. Baixe e execute [Portal de Realidade Misturada](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) para ver se o computador está pronto para WMR.
 
 ### <a name="what-pcs-have-been-badged-for-windows-mixed-reality"></a>Quais PCs foram crachás para a realidade mista do Windows?
 
@@ -324,37 +324,37 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>O controlador funcionará com o Bluetooth 3,1 ou eu preciso do Bluetooth 4,0?
 
-**Resposta rápida:** A especificação mínima com suporte para a realidade mista do Windows é o Bluetooth 4,0. Se o seu computador tiver o Bluetooth 3,1, você não será impedido de usar os controladores, mas a melhor experiência é a BT 4,0. Baixe e execute o [portal de realidade misturada](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) para ver se o seu computador está WMR pronto.
+**Resposta rápida:** A especificação mínima com suporte para Windows Mixed Reality é Bluetooth 4.0. Se o computador tiver Bluetooth 3.1, você não será impedido de usar os controladores, mas a melhor experiência será no BT 4.0. Baixe e execute [Portal de Realidade Misturada](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) para ver se o computador está pronto para WMR.
 
-### <a name="will-windows-mixed-reality-controllers-work-with-hololens"></a>Os controladores de realidade do Windows misto funcionam com o HoloLens?
+### <a name="will-windows-mixed-reality-controllers-work-with-hololens"></a>Os Windows Mixed Reality funcionarão com o HoloLens?
 
-**Resposta rápida:** Não, os controladores de movimento do Windows Mixed Reality não funcionam com o HoloLens.
+**Resposta rápida:** Não, Windows Mixed Reality controladores de movimento não funcionam com o HoloLens.
 
-### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>A realidade mista do Windows funcionará com meus controladores Oculus Touch ou com os controladores/headsets Naopak HTC?
+### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>O Windows Mixed Reality funcionará com meus controladores Oculus Touch ou com os headsets/controladores HTC Vive?
 
-**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Resposta rápida:** Não, Windows Mixed Reality funcionará apenas com headsets/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
-### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>A realidade mista do Windows funcionará com meus controladores SteamVR Knuckle?
+### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>O Windows Mixed Reality funcionará com meus controladores Desagravadores do SteamVR?
 
-**Resposta rápida:** Não, a realidade mista do Windows só funcionará com fones de ouvido/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Resposta rápida:** Não, Windows Mixed Reality funcionará apenas com headsets/controladores aprovados. Veja <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
-### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>A realidade do Windows Mixed dará suporte ao meu controlador Xbox One com o adaptador Xbox sem fio?
+### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>O Windows Mixed Reality dar suporte ao meu controlador Xbox One com o adaptador Xbox sem fio?
 
-**Resposta rápida:** Sim, ele funcionará com um adaptador Xbox sem fio (nenhum Bluetooth é necessário).
+**Resposta rápida:** Sim, ele funcionará com um adaptador Xbox sem fio (sem Bluetooth necessário).
 
 ## <a name="comfort"></a>Conforto
 
-### <a name="can-i-wear-a-windows-mixed-reality-headset-with-glasses"></a>Posso usar um headset de realidade misturada do Windows com óculos?
+### <a name="can-i-wear-a-windows-mixed-reality-headset-with-glasses"></a>Posso usar um headset Windows Mixed Reality com óculos?
 
-**Resposta rápida:** Sim, você pode ter um headset de realidade mista do Windows com e sem óculos.
+**Resposta rápida:** Sim, você pode usar um Windows Mixed Reality headset com e sem óculos.
 
 ### <a name="does-windows-mixed-reality-support-productivity-within-a-vr-headset-on-a-desktop-environment"></a>O Windows Mixed Reality dá suporte à produtividade em um headset de VR em um ambiente de área de trabalho?
 
-**Resposta rápida:** Em um headset de realidade mista do Windows, você pode realizar a multitarefa com aplicativos UWP do Windows, como o email & calendário e acessar aplicativos Win32 completos que estão em execução na sua área de trabalho usando o aplicativo de visualização de desktop.
+**Resposta rápida:** Em um headset Windows Mixed Reality, você pode fazer multitarefa com aplicativos UWP do Windows, como o Calendário & mail e acessar aplicativos Win32 completos que estão em execução na área de trabalho usando o aplicativo de Visualização da Área de Trabalho.
 
-### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>Posso ver meu teclado de dentro de um headset de realidade misturada do Windows?
+### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>Posso ver meu teclado de dentro de um headset Windows Mixed Reality dispositivo?
 
-**Resposta rápida:** Você não pode ver o teclado físico do headset, mas pode usar nosso teclado de software. Além disso, muitos headsets de realidade misturada do Windows têm uma exibição dobradiça frontal, para que você possa virar o fone de ouvido enquanto trabalha. Mais detalhes: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
+**Resposta rápida:** Você não pode ver o teclado físico do headset, mas pode usar nosso teclado de software. Além disso, muitos Windows Mixed Reality headsets têm uma exibição com dobradiça frontal, para que você possa inverter o headset enquanto trabalha. Mais detalhes: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
 
 ### <a name="what-games-require-a-gamepad-as-opposed-to-motion-controllers"></a>Quais jogos exigem um gamepad em vez de controladores de movimento?
 
@@ -386,8 +386,8 @@ Os detalhes técnicos listados acima são referenciados nas especificações do 
 
 ### <a name="are-the-minimum-specs-for-steamvr-higher-than-a-windows-mixed-reality-ultra-pc"></a>São as especificações mínimas para SteamVR mais altas do que um ultra PC com realidade mista do Windows?
 
-**Resposta rápida:** Você pode executar o SteamVR com os requisitos do Ultra PC para a realidade mista do Windows. No entanto, é recomendável executar a visualização SteamVR em um PC com uma placa de vídeo GTX 1070 (ou melhor) e um processador Intel Core i7. Continuamos a examinar os comentários e a otimizar o desempenho para dar suporte a configurações de sistema adicionais em atualizações futuras. Seu computador não será impedido de executar o Windows Mixed Reality SteamVR se você não atender a essas especificações mais altas, no entanto, isso afetará o desempenho e a qualidade da experiência geral.
+**Resposta rápida:** Você pode executar o SteamVR com os requisitos do Ultra PC para a realidade mista do Windows. No entanto, é recomendável executar a Versão Prévia do SteamVR em um computador com uma placa de vídeo GTX 1070 (ou melhor) e um processador Intel Core i7. Continuamos a revisar os comentários e otimizar o desempenho para dar suporte a configurações adicionais do sistema em atualizações futuras. Seu computador não será impedido de executar Windows Mixed Reality SteamVR se você não atender a essas especificações mais altas, no entanto, isso afetará o desempenho e a qualidade da experiência geral.
 
-### <a name="are-all-steam-vr-games-be-supported"></a>Há suporte para todos os jogos do vapor VR?
+### <a name="are-all-steam-vr-games-be-supported"></a>Há suporte para todos os jogos de VR do Steam?
 
-**Resposta rápida:** Nossa intenção é dar suporte a uma grande variedade de jogos de fluxo possíveis, mas tenha em mente que os jogos de vapor podem assumir dependências de configurações específicas de hardware e de controlador com base nas decisões do desenvolvedor de jogos durante o desenvolvimento.
+**Resposta rápida:** Nossa intenção é dar suporte à maior variedade possível de jogos do Steam, mas tenha em mente que os jogos do Steam podem assumir dependências de configurações específicas de hardware e controlador com base nas decisões do desenvolvedor de jogos durante o desenvolvimento.
