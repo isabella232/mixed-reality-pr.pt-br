@@ -1,63 +1,63 @@
 ---
 title: Como escolher uma versão do Unity e um plug-in de XR
-description: Mantenha-se atualizado sobre as recomendações de plug-in do Unity e XR mais recentes para o desenvolvimento de aplicativos holoLens.
+description: Mantenha-se atualizado sobre as recomendações de plug-in mais recentes do Unity e do XR para o desenvolvimento de aplicativos do HoloLens.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2021
 ms.topic: article
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, unity
-ms.openlocfilehash: 3bdaa35f495d7a647a7cbf37ddcd4f85e96d74d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, Unity
+ms.openlocfilehash: febeb46972935a02d9c945e2a0cafabebedd0715
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143669"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333378"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Como escolher uma versão do Unity e um plug-in de XR
 
-Embora seja recomendável instalar o **Unity 2019.4 LTS** e usar o XR integrado herdado para desenvolvimento de Realidade Misturada, você também pode criar aplicativos com outras configurações do Unity.
+Embora, no momento, **recomendamos a instalação do Unity 2019,4 LTS e o uso da XR interna herdada** para o desenvolvimento de realidade misturada, você também pode criar aplicativos com outras configurações do Unity.
 
-## <a name="unity-20194-lts-recommended"></a>Unity 2019.4 LTS (recomendado)
+## <a name="unity-20194-lts-recommended"></a>Unity 2019,4 LTS (recomendado)
 
-A configuração atual recomendada do Unity da Microsoft para o desenvolvimento do HoloLens 2 e Windows Mixed Reality é **o Unity 2019.4 LTS** usando o suporte herdado a XR.
+A configuração atual do Unity recomendada pela Microsoft para o HoloLens 2 e o desenvolvimento de realidade mista do Windows é o **Unity 2019,4 LTS usando o suporte interno a XR herdado** .
 
-A melhor maneira de instalar e gerenciar o Unity é por meio <a href="https://unity3d.com/get-unity/download" target="_blank">do [Hub do Unity].</a> Quando ele estiver instalado, abra o Hub do Unity:
+A melhor maneira de instalar e gerenciar o Unity é por meio do <a href="https://unity3d.com/get-unity/download" target="_blank">[Hub do Unity]</a>. Quando ele estiver instalado, abra o Hub do Unity:
 
-1. Selecione a **guia Instalar e** escolha **ADICIONAR**
-2. Selecione Unity 2019.4 LTS e clique em **Próximo**
+1. Selecione a guia **instalações** e escolha **Adicionar**
+2. Selecione Unity 2019,4 LTS e clique em **Avançar**
 
-![Nova versão instal do hub do Unity](images/unity-hub-img-01.png)
+![Instalar nova versão do Hub do Unity](images/unity-hub-img-01.png)
 
-3. Verifique os componentes a seguir **em 'Plataformas'**
+3. Verifique os seguintes componentes em **' plataformas '**
     * **Suporte de build da Plataforma Universal do Windows** 
     * **Suporte de build do Windows (IL2CPP)**
 
 ![Opção do Unity de suporte de build da Plataforma Universal do Windows](../images/Unity_Install_Option_UWP.png)
 
-4. Se você instalou o Unity sem essas opções, poderá adicioná-las por meio do menu **'Adicionar Módulos'** no Hub do Unity:
+4. Se você instalou o Unity sem essas opções, poderá adicioná-los por meio do menu **' Adicionar módulos '** no Hub do Unity:
 
 ![Opção do Unity de suporte de build do Windows](../images/Unity_Install_Option_UWP2.png)
 
-Para começar a trabalhar com o XR integrado herdados no Unity 2019.4 LTS, clique aqui:
+Para começar a usar a XR interna herdada no Unity 2019,4 LTS, clique aqui:
 
 > [!div class="nextstepaction"]
-> [Configurar o XR integrado herddo](legacy-xr-support.md)
+> [Configurar a XR interna herdada](legacy-xr-support.md)
 
 > [!NOTE]
-> O Unity preterido seu suporte de XR integrado herdado a partir do Unity 2019.  Embora o Unity 2019 ofereça uma nova estrutura de plug-in XR, a Microsoft não está recomendando esse caminho no Unity 2019 devido a incompatibilidades das Âncoras Espaciais do Azure com o AR Foundation 2.  No Unity 2020, as Âncoras Espaciais do Azure são suportadas na estrutura de plug-in XR.
+> O Unity preteriu seu suporte interno de XR herdado a partir do Unity 2019.  Embora o Unity 2019 ofereça uma nova estrutura de plug-ins XR, a Microsoft não recomenda esse caminho no Unity 2019 devido a incompatibilidades de âncoras espaciais do Azure com o AR Foundation 2.  No Unity 2020, há suporte para âncoras espaciais do Azure na estrutura de plug-ins do XR.
 
-Se você estiver desenvolvendo aplicativos para HoloLens (1ª geração), esses headsets permanecerão com suporte no Unity 2019 LTS com XR integrado herdado para o ciclo de vida completo do Unity 2019 LTS até meados de 2022.
+Se você estiver desenvolvendo aplicativos para o HoloLens (1º gen), esses headsets permanecerão com suporte no Unity 2019 LTS com a XR interna herdada para o ciclo de vida completo do Unity 2019 LTS até o Mid-2022.
 
-## <a name="unity-20203-lts"></a>Unity 2020.3 LTS 
+## <a name="unity-20203-lts"></a>Unity 2020,3 LTS 
 
-Se você estiver usando **o Unity 2020.3 LTS,** poderá usar o **plug-in do Windows XR** para desenvolver o HoloLens 2 e Windows Mixed Reality aplicativos.
+Se você estiver usando o **Unity 2020,3 LTS**, poderá usar o **plug-in do Windows XR** para desenvolver aplicativos do HoloLens 2 e do Windows Mixed Reality.
 
 No entanto, há problemas conhecidos que afetam a estabilidade do holograma e outros recursos no HoloLens 2: 
 
 * Os aplicativos de comunicação remota do aplicativo Holographic usando o destino de compilação Plataforma Universal do Windows não estão funcionando.
 * O sistema de trabalhos gráficos do Unity é padronizado, embora não seja compatível com projetos do HoloLens.
 
-Se você optar por iniciar um novo projeto no Unity 2020 hoje, certifique-se de acompanhar os próximos meses para obter as compilações do Unity atualizadas e as compilações do plug-in do Windows XR antes de enviar seu aplicativo.  Isso garantirá que seus usuários tenham a estabilidade correta do holograma.
+Se você optar por usar o Unity 2020, certifique-se de atualizar para o Unity 2020.3.6 F1 ou versões posteriores para garantir que sua experiência do usuário seja adequada para a estabilidade do holograma.
 
 > [!div class="nextstepaction"]
 > [Como usar o plug-in de XR do Windows](windows-xr-plugin.md)
