@@ -4,48 +4,48 @@ description: Configurar o MRTK no projeto do Unity
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Unity
-ms.openlocfilehash: ef326a4e4c9e34479cebacf3f3f575cd902ff24e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, Unity
+ms.openlocfilehash: fd05f7f3b579522a1225e11b0411b255a43e1e3f
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144831"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345089"
 ---
-# <a name="mrtk-project-configuration-dialog"></a>Caixa de diálogo de configuração de projeto do MRTK
+# <a name="mrtk-project-configuration-dialog"></a>Caixa de diálogo configuração do projeto MRTK
 
-A caixa de diálogo de configuração do MRTK é exibida quando o Unity carrega um projeto e é determinado que uma ou mais opções de configuração precisam da atenção do desenvolvedor.
+A caixa de diálogo configuração do MRTK é exibida quando o Unity carrega um projeto e é determinado que uma ou mais opções de configuração precisam da atenção do desenvolvedor.
 
-![Aplicar Ignorar posteriormente](../features/images/configuration-dialog/ConfigurationDialogHeader.png)
+![Aplicar ignorar mais tarde](../features/images/configuration-dialog/ConfigurationDialogHeader.png)
 
-Para aplicar as alterações, clique no **botão** Aplicar. O **botão** Posterior adiará as alterações até que o projeto seja recarregado em um momento futuro.
+Para aplicar as alterações, clique no botão **aplicar** . O botão **posterior** adiará as alterações até que o projeto seja recarregado em um momento futuro.
 
 > [!NOTE]
-> A caixa de diálogo de configuração reaparecerá se uma ou mais das configurações recomendadas não for desmarcada. Para impedir que isso ocorra, aplique as opções desejadas e, em seguida, relançar a caixa de diálogo por meio dos Utilitários do Kit de Ferramentas de Realidade Misturada Configurar Projeto do Unity e clique em  >    >   **Ignorar**. Isso impedirá que a caixa de diálogo de configuração reaparece automaticamente.
+> A caixa de diálogo de configuração reaparecerá se uma ou mais das configurações recomendadas forem deixadas desmarcadas. Para evitar que isso ocorra, aplique as opções desejadas e reinicie a caixa de diálogo por meio de utilitários do **Kit de ferramentas da realidade misturados**  >    >  **Configurar o projeto do Unity** e clique em **ignorar**. Isso impedirá que a caixa de diálogo de configuração reapareça automaticamente.
 
 ## <a name="common-settings"></a>Configurações padrão
 
-Todos os destinos de build compartilham uma coleção de opções comuns.
+Todos os destinos de compilação compartilham uma coleção de opções comuns.
 
 ![Configurações Comuns](../features/images/configuration-dialog/ConfigurationDialogCommonSettings.png)
 
-### <a name="force-text-asset-serialization-and-enable-visible-meta-files"></a>Forçar a serialização de ativos de texto e Habilitar metadados visíveis
+### <a name="force-text-asset-serialization-and-enable-visible-meta-files"></a>Forçar a serialização de ativos de texto e habilitar os metadados visíveis
 
-Essas configurações ajudam a simplificar o trabalho com projetos do Unity e sistemas de controle do código-fonte (por ex. Git).
+Essas configurações ajudam a simplificar o trabalho com projetos do Unity e sistemas de controle do código-fonte (por exemplo: git).
 
 ### <a name="enable-vr-supported"></a>Habilitar VR com suporte
 
 **Unity 2018**
 
-Configura as opções de SDK de Realidade Virtual e Com Suporte de Realidade Virtual em **Configurações do**  >  **Player Configurações de XR**.
+Configura a realidade virtual com suporte e as opções do SDK da realidade virtual nas **configurações do Player**  >  **XR Settings**.
 
-### <a name="set-single-pass-instanced-rendering-path"></a>Definir o caminho de renderização da Instância de Passagem Única
+### <a name="set-single-pass-instanced-rendering-path"></a>Definir caminho de renderização da instância única Pass
 
-Define o modo **de renderização**  >  **estéreo** configurações do XR  >  **configurações do player** como instância de passagem **única.**
+Define as configurações do **Player**  >  **XR Settings**  >  **modo de renderização estéreo** para **passagem única instância**.
 
-### <a name="set-default-spatial-awareness-layer"></a>Definir camada de Reconhecimento Espacial padrão
+### <a name="set-default-spatial-awareness-layer"></a>Definir camada de reconhecimento espacial padrão
 
-Registra o Reconhecimento Espacial como camada 31 para habilitar a configuração fácil e consistente de opções de raycast e física.
+Registra o reconhecimento espacial como a camada 31 para habilitar a configuração fácil e consistente das opções Raycast e física.
 
 ### <a name="audio-spatializer"></a>Spatializer de áudio
 

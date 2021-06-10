@@ -1,24 +1,24 @@
 ---
 title: Surfaces
-description: Saiba como criar tactile Sensations com Visual, áudio e controle de mão articulado no aplicativo de exemplo de superfícies.
+description: Saiba como criar reações de tactile com visual, áudio e acompanhamento manual articulado no aplicativo de exemplo Surfaces.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Realidade mista do Windows, design, aplicativo de exemplo, controles, MRTK, kit de ferramentas de realidade misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 0e75a72ec518dea3513b6868aec56d1c7c89bd05
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, Kit de Ferramentas de Realidade Misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
+ms.openlocfilehash: 28f8bc1e1f30573936067a83b1ad26133c23c5b8
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300131"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743396"
 ---
 # <a name="surfaces"></a>Surfaces
 
 >[!NOTE]
->Este artigo discute um exemplo exploratório que criamos nos laboratórios de [design de realidade misturada](https://github.com/Microsoft/MRDesignLabs_Unity), um lugar onde compartilhamos nossas aprendeções e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e códigos relacionados ao design irão evoluir à medida que fizermos novas descobertas.
+>Este artigo aborda um exemplo exploratório que criamos nos [Laboratórios](https://github.com/Microsoft/MRDesignLabs_Unity)de Design de Realidade Misturada, um local em que compartilhamos nossos aprendizados e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e código relacionados ao design evoluirão à medida que fazemos novas descobertas.
 
-As [superfícies](https://github.com/microsoft/MRDL_Unity_Surfaces) são um aplicativo de exemplo de software livre dos laboratórios de design de realidade misturada da Microsoft. Ele explora como podemos criar um tactile sensação com Visual, áudio e acompanhamento de mão totalmente articulado.
+[O Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  é um aplicativo de exemplo de código aberto dos Laboratórios de Design de Realidade Misturada da Microsoft. Ele explora como podemos criar uma sensação de tactile com visual, áudio e acompanhamento de mão totalmente articulado.
 
 ![Surfaces](images/MRDL_Surfaces_1.jpg)
 
@@ -26,28 +26,28 @@ As [superfícies](https://github.com/microsoft/MRDL_Unity_Surfaces) são um apli
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
-Registrado com o HoloLens 2 usando a captura de realidade misturada
+Gravado com o HoloLens 2 usando Captura de Realidade Misturada
 
 ## <a name="about-the-app"></a>Sobre o aplicativo
 
-As superfícies demonstram como usar o sistema de entrada do MRTK (Kit de ferramentas de realidade misturada) e os blocos de construção para criar uma experiência de aplicativo para o HoloLens 2. Neste projeto, você pode encontrar os exemplos de:
+As superfícies demonstram como usar o sistema de entrada e blocos de construção do MRTK (Kit de Ferramentas de Realidade Misturada) para criar uma experiência de aplicativo para o HoloLens 2. Neste projeto, você pode encontrar os exemplos de:
 
-- Use o [sistema de entrada](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)do MRTK, o acompanhamento de forma específica/conjunta.
-- Use o [sombreador padrão](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) do MRTK para gráficos de alto desempenho.
+- Use o Sistema de Entrada [do](/windows/mixed-reality/mrtk-unity/features/input/overview)MRTK, especificamente acompanhamento manual/conjunto.
+- Use o Sombreador Padrão [do](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) MRTK para gráficos de alto desempenho.
 
-Você pode usar os componentes deste projeto para criar suas próprias experiências de aplicativo de realidade misturada.
+Você pode usar os componentes desse projeto para criar suas próprias experiências de aplicativo de realidade misturada.
 
-## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>MR dev dias 2020-aprendizado do aplicativo Sr superfícies
+## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>MR Dev Days 2020 – Aprendizados do aplicativo mr surfaces
 
-[Aprendizado do aplicativo Sr superfícies](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
+[Aprendizados do aplicativo Surfaces do MR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
-Lars Simkins, designer sênior por trás do aplicativo de superfícies MRDLs fala sobre a história de design do aplicativo e os destaques técnicos.
+Lars Simkins, designer sênior por trás do aplicativo MRDL Surfaces, fala sobre a história de design e os destaques técnicos do aplicativo.
 
-## <a name="project-repository-on-github"></a>Repositório do projeto no GitHub
+## <a name="project-repository-on-github"></a>Repositório de projetos no GitHub
 
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
-## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Baixar o aplicativo de Microsoft Store no HoloLens 2
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Baixar o aplicativo Microsoft Store no HoloLens 2
 
 https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
 
@@ -64,7 +64,7 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 
 ## <a name="see-also"></a>Confira também
 
-* [Hub de Exemplos do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Hub de Exemplos do MRTK](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 59bf0df2a32030281c8bf0a1a8574b4dd9bf4607
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a0c66969a9058adc790919f0054783b7368da8f6
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143797"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647067"
 ---
 # <a name="screenshot-utility"></a>Utilitário de captura de tela
 
@@ -20,7 +20,7 @@ A classe ScreenshotUtility ajuda a fazer capturas de tela por meio de itens de m
 
 ## <a name="taking-screenshots"></a>Como tirar capturas de tela
 
-Capturas de tela podem ser obtidas facilmente enquanto estiverem no editor. Para isso, selecione *Kit de Ferramentas de Realidade Misturada->Utilitários->Tirar Captura de Tela* e a opção desejada. Se estiver fazendo capturas enquanto não estiver jogando, verifique se a guia da janela do jogo está visível. Caso contrário, a captura de tela pode não ser salva.
+Capturas de tela podem ser capturadas facilmente enquanto estiverem no editor, selecionando os utilitários de kit de ferramentas da **realidade misturada**  >    >    >  **usam captura de tela** e selecionando a opção desejada. Se estiver fazendo capturas enquanto não estiver jogando, verifique se a guia da janela do jogo está visível. Caso contrário, a captura de tela pode não ser salva.
 
 Por padrão, todas as capturas de tela são salvas no seu [caminho de cache temporário](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html). O caminho para a captura de tela será exibido no console do Unity.
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Design de interface do usuário, exibição de Holographic, design de conteúdo, tema escuro, tema claro, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, design, pixels
-ms.openlocfilehash: 325b7bf6318d1b54c4b4c33aa58faea7388e0864
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300031"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600315"
 ---
 # <a name="designing-content-for-holographic-display"></a>Criar conteúdo para exibição holográfica
 
@@ -85,7 +85,7 @@ Para melhorar a Reprojeção do Holographic ou a estabilidade do holograma, um a
 
 Por padrão, os objetos Transparent ou translúcidas não gravam profundidade para permitir a mistura adequada. Maneiras de atenuar esse problema incluem, usando objetos opacos, garantindo que objetos translúcidas pareçam próximos a objetos opacos (como um botão translúcida na frente de uma chapa traseira opaca), forçando os objetos translúcidas a gravar profundidade (não aplicável em todos os cenários) ou renderizando objetos proxy, que só contribuem com valores de profundidade no final do quadro.
 
-Soluções dentro do MRTK-Unity: https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
+Soluções em MRTK-Unity:/Windows/Mixed-Reality/mrtk-Unity/performance/Hologram-Stabilization # Depth-buffer-Sharing-in-Unity  
 
 Usando uma chapa invertida sólida e opaca, podemos proteger a segurança da legibilidade e da interação.
 
@@ -103,9 +103,9 @@ Se o seu projeto deve usar objetos transparentes, tente minimizar o número de p
 
 O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece muitos exemplos de blocos de construção de interface do usuário com base nos esquemas de cores escuros.
 
-* [Menu próximo](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
-* [Diálogo](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
-* [Menu do lado](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [Menu próximo](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [Diálogo](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
+* [Menu do lado](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: gestos, Unity, olhar, entrada, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 523f05f9b3dd05a140bb40168b654a2dc0b00bb5
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 87666c120686547b1a07f6da41519219d4a47720
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299711"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600635"
 ---
 # <a name="gestures-in-unity"></a>Gestos no Unity
 
@@ -135,8 +135,8 @@ O lançamento continuará a melhorar com futuras atualizações do Windows e voc
 
 Você pode acessar o gesto e o controlador de movimento do Gerenciador de entrada.
 
-* [Gesto em MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/gestures)
-* [Controlador de movimento no MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers)
+* [Gesto em MRTK](/windows/mixed-reality/mrtk-unity/features/input/gestures)
+* [Controlador de movimento no MRTK](/windows/mixed-reality/mrtk-unity/features/input/controllers)
 
 ## <a name="follow-along-with-tutorials"></a>Acompanhe com tutoriais
 

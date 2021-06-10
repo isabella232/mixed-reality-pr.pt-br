@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 22ecbb09ebf759e15f1f21085a7b7696cb24bc6e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: fd17db3f365d8bd97b8cd9c43a6111e2b82a61fe
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144439"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647032"
 ---
 # <a name="dependency-window"></a>Janela dependência
 
@@ -20,7 +20,7 @@ A Janela de Dependência exibe como os ativos se referenciam e dependem uns dos 
 
 ## <a name="usage"></a>Uso
 
-Para abrir a janela, selecione Kit de Ferramentas de Realidade *Misturada->Utilitários->Janela* de Dependência que abrirá a janela e começará automaticamente a criar o grafo de dependência do projeto. Depois que o grafo de dependência for criado, você poderá selecionar ativos na guia do projeto para inspecionar suas dependências.
+Para abrir a janela, **selecione** Janela de Dependência de Utilitários do Kit de Ferramentas de Realidade  >    >    >   Misturada, que abrirá a janela e começará automaticamente a criar o grafo de dependência do projeto. Depois que o grafo de dependência for criado, você poderá selecionar ativos na guia do projeto para inspecionar suas dependências.
 
 ![Janela dependência](../images/dependency-window/MRTK_Dependency_Window.png)
 

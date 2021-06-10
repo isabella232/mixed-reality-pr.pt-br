@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, voz, Cortana, fala, entrada, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista, olhar
-ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 6773bb71da7d98b1dd00d2246084d469e5e7c6ba
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300291"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600575"
 ---
 # <a name="voice-input"></a>Entrada de voz
 
@@ -44,7 +44,7 @@ Quando você estiver usando comandos de voz, o olhar de cabeça ou de olho é o 
     <tr>
         <td><strong>Recurso</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
     </tr>
      <tr>
@@ -288,9 +288,9 @@ Para o Windows Mixed Reality Developer Edition versão 2017, a lógica de gerenc
 ---
 
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Entrada de voz em MRTK (Kit de ferramentas de realidade misturada) para Unity
-Com o **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode atribuir facilmente o comando de voz em qualquer objeto. Use o **perfil de entrada de fala** do MRTK para definir suas palavras-chave. Ao atribuir o script **SpeechInputHandler** , você pode fazer com que qualquer objeto responda às palavras-chave definidas no perfil de entrada de fala. O SpeechInputHandler também fornece um rótulo de confirmação de fala para melhorar a confiança do usuário.
+Com o **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode atribuir facilmente o comando de voz em qualquer objeto. Use o **perfil de entrada de fala** do MRTK para definir suas palavras-chave. Ao atribuir o script **SpeechInputHandler,** você pode fazer com que qualquer objeto responda às palavras-chave definidas no Perfil de Entrada de Fala. SpeechInputHandler também fornece o rótulo de confirmação de fala para melhorar a confiança do usuário.
 
-* [MRTK-comando de voz](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
+* [MRTK – Comando de voz](/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

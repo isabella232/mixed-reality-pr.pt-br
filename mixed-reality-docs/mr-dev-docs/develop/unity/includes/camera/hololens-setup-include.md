@@ -1,68 +1,68 @@
 ---
-ms.openlocfilehash: 7470690a96380184ead7319d4461005042c6db82
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636241"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748515"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Siga este [tutorial](../../tutorials/mr-learning-base-01.md) passo a passo para adicionar e configurar automaticamente o kit de ferramentas de realidade misturada em seu projeto do Unity. Também é possível trabalhar diretamente com a classe [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) de MRTK para Unity e definir a escala de **destino** como **mundo**:
+Siga este [tutorial passo a passo para](../../tutorials/mr-learning-base-01.md) adicionar e configurar automaticamente o Kit de Ferramentas de Realidade Misturada em seu projeto do Unity. Também é possível trabalhar diretamente com a [classe MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) do MRTK para Unity e definir a **Escala** de Destino como **Mundo:**
 
 ![Janela de configurações do MRTK](../../images/mrtk-target-scale.png)
 
-MRTK deve tratar a posição da Playspace e da câmera automaticamente, mas é bom fazer uma verificação dupla:
+O MRTK deve lidar com a posição do playspace e da câmera automaticamente, mas é bom verificar duas vezes:
 
-![MRTK playspace](../../images/mrtk-playspace.png)
+![Playspace do MRTK](../../images/mrtk-playspace.png)
 
-1. No painel **hierarquia** , expanda o **MixedRealityPlayspace** gameobject e localize o objeto filho da **câmera principal**
-2. No painel **Inspetor** , localize o componente **transformar** e altere a **posição** para **(X: 0, Y: 0, Z: 0)**
+1. No painel **Hierarquia,** expanda **MixedRealityPlayspace** GameObject e encontre o **objeto filho da Câmera** Principal
+2. No painel **Inspetor,** encontre o **componente Transformar** e altere a **Posição** para **(X: 0, Y: 0, Z: 0)**
 
 # <a name="xr-sdk"></a>[SDK do XR](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Defina o modo de origem de rastreamento no [XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html). Depois de obter o subsistema, chame [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html):
+De definir o modo de origem de acompanhamento [no XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html). Depois de obter o subsistema, chame [TrySetTrackingOriginMode:](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html)
 
 ```cs
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Unbounded); // Recommendation for OpenXR
 ```
 
-Você pode usar o [ARSession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) para aplicativos do HoloLens, que funciona melhor com âncoras e ARKit/ARCore.
+Você pode usar [ARSession para aplicativos](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) HoloLens, que funciona melhor com âncoras e ARKit/ARCore.
 
 ![Sessão AR na hierarquia](../../images/xrsdk-arsession.png)
 
 > [!IMPORTANT]
-> A sessão AR e os recursos relacionados precisam do AR Foundation instalado.
+> A Sessão de RA e os recursos relacionados precisam do AR Foundation instalado.
 
 Também é possível aplicar as alterações da câmera manualmente sem usar ARSession:
 
-1. Selecione a **câmera principal** no painel **hierarquia**
-1. No painel **Inspetor** , localize o componente **transformar** e altere a **posição** para **(X: 0, Y: 0, Z: 0)**
+1. Selecione **Câmera Principal** no painel **Hierarquia**
+1. No painel **Inspetor,** encontre o **componente Transformar** e altere a **Posição** para **(X: 0, Y: 0, Z: 0)**
 
-   ![Câmera no painel de Inspetor no Unity](../../images/maincamera-350px.png)  
-   *Câmera no painel de Inspetor no Unity*
+   ![Câmera no painel Inspetor no Unity](../../images/maincamera-350px.png)  
+   *Câmera no painel Inspetor no Unity*
 
-1. Adicionar um **TrackedPoseDriver** à **câmera principal**
+1. Adicionar um **TrackedPoseDriver** à **Câmera Principal**
 
 # <a name="legacy-wsa"></a>[WSA herdado](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. Selecione a **câmera principal** no painel **hierarquia**
-1. No painel **Inspetor** , localize o componente **transformar** e altere a **posição** para **(X: 0, Y: 0, Z: 0)**
+1. Selecione **Câmera Principal** no painel **Hierarquia**
+1. No painel **Inspetor,** encontre o **componente Transformar** e altere a **Posição** para **(X: 0, Y: 0, Z: 0)**
 
-   ![Câmera no painel de Inspetor no Unity](../../images/maincamera-350px.png)  
-   *Câmera no painel de Inspetor no Unity*
+   ![Câmera no painel Inspetor no Unity](../../images/maincamera-350px.png)  
+   *Câmera no painel Inspetor no Unity*
 
-1. Ir para **outra** seção de configurações das **configurações do Windows Store Player**
-1. Escolha a **realidade mista do Windows** como o dispositivo, que pode ser listado como **Holographic do Windows** em versões mais antigas do Unity
-1. Selecione a **realidade virtual com suporte**
+1. Vá para **a seção Outras Configurações** das **Configurações do Player da Windows Store**
+1. Escolha **Windows Mixed Reality** como o dispositivo, que pode ser listado como **Windows Holographic** em versões mais antigas do Unity
+1. Selecione **Realidade Virtual Com Suporte**
 
-Como o objeto da câmera principal é marcado automaticamente como a câmera, o Unity alimenta todo o movimento e a tradução.
+Como o objeto Câmera Principal é marcado automaticamente como a câmera, o Unity acionará toda a movimentação e a tradução.
 
 >[!NOTE]
->Essas configurações precisam ser aplicadas à câmera em cada cena do seu aplicativo.
+>Essas configurações precisam ser aplicadas à Câmera em cada cena do seu aplicativo.
 >
->Por padrão, quando você cria uma nova cena no Unity, ela conterá uma câmara de jogo principal na hierarquia que inclui o componente da câmera, mas pode não ter as configurações aplicadas corretamente.
+>Por padrão, quando você cria uma nova cena no Unity, ela conterá um GameObject da Câmera Principal na Hierarquia que inclui o componente Câmera, mas pode não ter as configurações aplicadas corretamente.

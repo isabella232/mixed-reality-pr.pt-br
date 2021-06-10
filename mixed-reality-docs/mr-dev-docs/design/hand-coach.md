@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300041"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600425"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -154,31 +154,31 @@ Depois de estar satisfeito com sua animação
 *   Se as mãos do usuário não estiverem visíveis por câmeras HL2, as mãos aparecerão após 5 segundos.  
 *   Se as mãos do usuário forem visivelmente rastreadas por câmeras HL2s no meio da animação, a animação será concluída e desaparecer.
 *   Se você estiver incluindo a voz, sugerimos que ela corresponda ao gesto da mão.
-*   Se você tiver ensinado as mãos pelo menos uma vez, repita o gesto se detectar que o usuário está preso.
-*   Se as posições de dedos/mãos específicas forem críticas, verifique se os usuários podem ver claramente essas nuances na animação. Experimente Angling as mãos para que as partes mais importantes fiquem claramente visíveis. 
-* Se você perceber distorção nas mãos, precisará ir para as configurações de qualidade do Unity aumentar o número de Bones. 
- Acesse as configurações de projeto de > de edição do Unity > qualidade > outros pesos do Blend >. Verifique se "4 Bones" estão selecionados para ver as junções suaves.
+*   Se você tiver ensinado as mãos pelo menos uma vez, repita o gesto apenas se for detectado que o usuário está preso.
+*   Se as posições específicas do dedo/mão são críticas, verifique se os usuários podem ver claramente essas nuances na animação. Experimente a pendendo das mãos para que as partes mais importantes sejam claramente visíveis. 
+* Se você observar distorção nas mãos, precisará ir para as configurações de Qualidade do Unity aumentar o número de animais. 
+ Vá para Editar configurações > projeto do Unity > qualidade > outros > Pesos do Blend. Certifique-se de que "4 animais" estão selecionados para ver Smooth Joints.
 
-   ![Exemplo: janela de configurações do projeto](images/HandCoach/ProjectSettings.png)<br>
+   ![Exemplo: janela Configurações do Projeto](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>O que evitar
 
-* Dimensionar as mãos muito grandes
-* colocar as mãos muito próximas ao usuário
-* As mãos só devem ser ensinadas uma vez. O excesso de ensino pode causar confusão e bagunças
-* Colocando-o no Unity, baixe o MRTK mais recente aqui: https://github.com/microsoft/MixedRealityToolkit-Unity
+* Dimensionando as mãos muito grandes
+* colocando as mãos muito próximas do usuário
+* As mãos só devem ser ensinadas uma vez. O ensino pode causar confusão e confusão
+* Trazendo-o para o Unity, baixe o MRTK mais recente aqui: https://github.com/microsoft/MixedRealityToolkit-Unity
   * Material: Teaching_Hand2
-  * Scripts: consulte as diretrizes do MRTK para o <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK Hand </a>
+  * Scripts: consulte as diretrizes do MRTK para o <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> técnico de mão do MRTK </a>
   * Configuração por projeto
-    * Cena definida como UWP: a instrução pode ser encontrada no [projeto do Unity de configuração](../develop/unity/Configure-Unity-Project.md) para o Windows Mixed Reality
+    * Cena definida como UWP: a instrução pode ser encontrada em [Configurar projeto do Unity](../develop/unity/Configure-Unity-Project.md) para Windows Mixed Reality
 
 ## <a name="see-also"></a>Confira também
 
-* [Interação-conceitos básicos](interaction-fundamentals.md)
+* [Conceitos básicos de interação](interaction-fundamentals.md)
 * [Processo de criação de ativos](asset-creation-process.md)
 * [Gestos](./interaction-fundamentals.md)
 * [Instalar as ferramentas](../develop/install-the-tools.md)
-* [Configurar projeto do Unity](../develop/unity/Configure-Unity-Project.md)
+* [Configurar o projeto do Unity](../develop/unity/Configure-Unity-Project.md)
 * [Visão geral do desenvolvimento do Unity](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../out-of-scope/mrtk-101.md)
+* [MRTK 101](/windows/mixed-reality/mrtk-unity/)

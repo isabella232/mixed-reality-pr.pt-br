@@ -1,26 +1,35 @@
 ---
-title: Implantando em dispositivos Hololens e WMR
+title: Implantação em headsets Hololens e WMR
 description: Documentação sobre build e implantação de aplicativos em vários dispositivos.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, Visual Studio
-ms.openlocfilehash: ec66c6ccb8cf1c702fed804230f5cf3ca0526139
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Visual Studio
+ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852306"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441155"
 ---
-# <a name="building-and-deploying-mrtk-uwp"></a>Criando e implantando MRTK (UWP)
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Implantação em headsets Hololens e WMR
 
-Para executar um aplicativo no dispositivo como um aplicativo autônomo (para HoloLens, Android, iOS etc.), a etapa de build e implantação precisa ser executada no projeto do Unity. Compilar e implantar um aplicativo que usa o MRTK é como compilar e implantar qualquer outro aplicativo do Unity. Não há instruções específicas do MRTK. Leia abaixo para obter etapas detalhadas sobre como compilar e implantar um aplicativo do Unity para o HoloLens. Saiba mais sobre o build para outras plataformas em [Builds de publicação](https://docs.unity3d.com/Manual/PublishingBuilds.html).
+Há duas maneiras de implantar aplicativos construídos com o MRTK em seu dispositivo Windows, a UWP (Plataforma Univeral do Windows) e a Plataforma Autônoma. Os aplicativos criado para o HoloLens 1 ou o HoloLens 2 devem ser destinados à UWP, enquanto os aplicativos criado para headsets WMR podem ser destinados a UWP ou Autônomo.
 
-## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>Criando e implantando MRTK para o HoloLens 1, o HoloLens 2 e o headsets WMR (UWP)
+## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>Criando e implantando o MRTK no HoloLens 1, hololens 2 e headsets WMR (UWP)
 
-As instruções sobre como criar e implantar para o **hololens 1** e o **hololens 2** (UWP) podem ser encontradas em [criando seu aplicativo para o dispositivo](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). Essas etapas também permitem que você implante em **headsets WMR**.
+Instruções sobre como criar e implantar para **o HoloLens 1** e **o HoloLens 2** (UWP) podem ser encontradas na criação do aplicativo [para o dispositivo](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). Essas etapas também permitem implantar em **headsets WMR.**
 
-**Dica:** Ao compilar para o HoloLens 1, o HoloLens 2 ou o WMR, é recomendável que as configurações de compilação "versão do SDK de destino" e "versão mínima da plataforma" tenham a seguinte aparência na imagem abaixo:
+> [!NOTE]
+> Ao implantar seu aplicativo em seu dispositivo no Visual Studio, você precisa configurar Visual Studio de forma ligeiramente diferente, dependendo do dispositivo. As configurações são as a seguir
+>
+>| Plataforma | Configuração | Arquitetura | Destino |
+|---|---|---|---|
+| HoloLens 2 | Versão ou Mestre | ARM64 | Dispositivo |
+| HoloLens 1 | Versão ou Mestre | x86 | Dispositivo |
+| WMR Headsets | Versão ou Mestre | x64 | Computador Local |
+
+**Dica:** Ao criar para o HoloLens 1, o HoloLens 2 ou o WMR, é recomendável que as configurações de build "Versão do SDK de Destino" e "Versão Mínima da Plataforma" se pareçam com a imagem abaixo:
 
 ![Janela de build](../features/images/getting-started/BuildWindow.png)
 
@@ -50,9 +59,9 @@ Se você estiver usando o Plug-in de XR:
 >
 > Se a arquitetura do ARM for necessária, acesse **Editar > Configurações de Projeto, Player** e, no menu **Outras Configurações**, desabilite **Trabalhos Gráficos**. A desabilitação de **Trabalhos Gráficos** permitirá que o aplicativo seja implantado com a arquitetura de build do ARM para o Unity 2019.3.x, mas o ARM64 é recomendado.
 
-## <a name="building-and-deploying-mrtk-standalone"></a>Criando e implantando MRTK (autônomo)
+## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>Criando e implantando o MRTK em headsets WMR (autônomo)
 
-Compilações autônomas de MRTK podem ser usadas em headsets WMR. Um build autônomo para um headset do WMR exige as seguintes etapas extras:
+Builds autônomos do MRTK podem ser usados em headsets WMR. Um build autônomo para um headset do WMR exige as seguintes etapas extras:
 
 > [!NOTE]
 > O SDK de XR do Unity também dá suporte ao WMR nativo em builds autônomos, mas não exige o plug-in do SteamVR ou do WMR. Essas etapas são necessárias para o XR herdado do Unity.

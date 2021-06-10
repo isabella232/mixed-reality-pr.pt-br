@@ -1,17 +1,17 @@
 ---
 title: Mural e tag-along
-description: Saiba como usar objetos com o mural, que sempre se orientam a enfrentar o usuário em aplicativos de realidade misturada.
+description: Saiba como usar objetos com mistas, que sempre se orientam para enfrentar o usuário em aplicativos de realidade misturada.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, mensagem de contorno, marca, com a realidade misturada Headset, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, marcação, marcação, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada
+ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299881"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600335"
 ---
 # <a name="billboarding-and-tag-along"></a>Mural e tag-along
 
@@ -20,37 +20,37 @@ ms.locfileid: "107299881"
 <img src="images/MRTK_TagAlong.gif" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 <br>
 
-## <a name="what-is-billboarding"></a>O que é o mural?
+## <a name="what-is-billboarding"></a>O que é a reação de dados?
 
-A mensagem é um conceito comportamental que pode ser aplicado a objetos em realidade misturada. Os objetos com o mural sempre se orientam para enfrentar o usuário. Os sistemas de texto e de menus são casos de uso comuns, em que os objetos estáticos colocados no ambiente do usuário (bloqueado pelo mundo) seriam obscuros ou ilegíveis quando os usuários perfrentem.
+A mista é um conceito comportamental que pode ser aplicado a objetos na realidade misturada. Objetos com o uso de objetos sempre se orientam para enfrentar o usuário. Sistemas de texto e menu são casos de uso comuns, em que objetos estáticos colocados no ambiente do usuário (bloqueados pelo mundo) seriam obscurecidos ou ilegíveis quando os usuários se movimentam.
 
-Os objetos com o mural habilitado podem girar livremente no ambiente do usuário. Eles também podem ser restritos a um único eixo, dependendo das considerações de design. Tenha em mente que os objetos convelados podem recortar ou se occluder quando colocados muito próximos de outros objetos, ou no HoloLens, fecham as superfícies digitalizadas. Para evitar isso, pense na superfície total que um objeto pode produzir quando girado no eixo habilitado para a mensagem.
-
-<br>
-
----
-## <a name="what-is-a-tag-along"></a>O que é uma marca?
-
-A marcação é um conceito comportamental que pode ser adicionado a hologramas. Um objeto de marca ao longo das tentativas de permanecer em um intervalo que permite que o usuário interaja confortavelmente.
-
-![O painel Pins do HoloLens é um ótimo exemplo de como a tag se comporta](images/tagalong-1000px.jpg)<br>
-*O menu Iniciar do HoloLens é um ótimo exemplo de comportamento de marcação*
-
-Os objetos de marca têm parâmetros, que podem ajustar a forma com que se comportam. O conteúdo pode estar dentro ou fora da linha de visão do usuário, enquanto o usuário se move em torno de seu ambiente. À medida que você se move, o conteúdo tenta permanecer dentro do periferia do usuário, deslizando para a borda da exibição. O conteúdo pode estar temporariamente fora de exibição, dependendo da rapidez com que o usuário está se movendo. Quando o usuário gazes em direção ao objeto de marca, ele é mais totalmente na exibição. Imagine que o conteúdo esteja sempre sendo "um relance" para que os usuários nunca se esqueçam em que direção seu conteúdo está.
-
-Os parâmetros extras podem fazer com que a marca de objeto fique anexada à cabeça do usuário por uma faixa de borracha. A aceleração ou a desaceleração proporciona peso ao objeto, fazendo com que ele fique mais fisicamente presente. Esse comportamento de mola é uma forma que ajuda o usuário a criar um modelo mental preciso de como o Tag-by funciona. O áudio ajuda a fornecer outras indicações para quando os usuários têm objetos no modo de marca. O áudio deve reforçar a velocidade de movimento; uma rodada de cabeça rápida deve fornecer um efeito de som mais perceptível, ao passo que a movimentação em uma velocidade natural deve ter um mínimo ou sem efeitos de áudio.
-
-Assim como o conteúdo realmente bloqueado, os objetos de marca podem se comprovar de forma exagerada ou nauseating se se moverem intensamente ou se acabarem muito na exibição do usuário. À medida que um usuário é examinado e, em seguida, pára rapidamente, seus sentidos dizem que eles foram interrompidos. Seu saldo informa que sua cabeça parou de ser ativada e sua visão vê o mundo parar de ligar. No entanto, se a marca ainda mantiver a movimentação quando o usuário for interrompido, ele poderá confundir seus sentidos.
+Objetos com a reação de dados habilitada podem girar livremente no ambiente do usuário. Eles também podem ser restritos a um único eixo, dependendo das considerações de design. Lembre-se de que objetos com recodados podem ser repassados ou ocluir a si mesmos quando colocados muito próximos de outros objetos ou, no HoloLens, superfícies examinadas muito próximas. Para evitar isso, pense no volume total que um objeto pode produzir quando girado no eixo habilitado para a rotação.
 
 <br>
 
 ---
+## <a name="what-is-a-tag-along"></a>O que é um tag-along?
 
-## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Contorno e marcação em MRTK (Kit de ferramentas de realidade misturada) para o Unity
-O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts para o comportamento de etiqueta e de contorno. Atribua o script do mural. cs em qualquer objeto para adicionar o comportamento da mensagem e fazer com que o objeto sempre fique à sua face. Para adicionar o comportamento de marca, use o script RadialView. cs. Você pode ajustar várias opções, como lerping time, Distance e diploma.
+O tag-along é um conceito comportamental que pode ser adicionado aos hologramas. Um objeto de marcação ao longo tenta permanecer em um intervalo que permite que o usuário interaja de maneira confortável.
 
-* [MRTK-solucionador de exibição radial](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
-* [MRTK-script do mural](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
+![O painel de pinos do HoloLens é um ótimo exemplo de como o tag-along se comporta](images/tagalong-1000px.jpg)<br>
+*O menu Iniciar HoloLens é um ótimo exemplo de comportamento de tag-along*
+
+Os objetos de marcação têm parâmetros, que podem ajustar a maneira como se comportam. O conteúdo pode estar dentro ou fora da linha de visão do usuário enquanto o usuário se move em torno de seu ambiente. Conforme você se move, o conteúdo tenta permanecer dentro da periférico do usuário deslizando para a borda da exibição. O conteúdo pode estar temporariamente fora de exibição, dependendo da rapidez com que o usuário está se movendo. Quando o usuário se volta para o objeto tag-along, ele fica mais totalmente em exibição. Pense no conteúdo sempre sendo "um relance" para que os usuários nunca se esqueça em qual direção seu conteúdo está.
+
+Parâmetros extras podem fazer com que o objeto de marcação ao longo se sinta anexado à cabeça do usuário por uma faixa de borracha. A aceleração ou a desaceleração mais intensas dão peso ao objeto, fazendo com que ele se sinta fisicamente mais presente. Esse comportamento spring é uma capacidade que ajuda o usuário a criar um modelo mental preciso de como o tag-along funciona. O áudio ajuda a fornecer outras dicas para quando os usuários têm objetos no modo de tag-along. O áudio deve reforçar a velocidade de movimentação; um turno de cabeça rápido deve fornecer um efeito de som mais perceptível, enquanto o trabalho em uma velocidade natural deve ter efeitos de áudio mínimos ou não.
+
+Assim como o conteúdo realmente com a cabeça bloqueada, os objetos de marcação podem se mostrar avassaladores ou desalocar se eles se movem muito ou soltam muito na exibição do usuário. À medida que um usuário procura e, em seguida, para rapidamente, seus sentidoes dizem que ele parou. Seu equilíbrio informa que sua cabeça parou de girar e sua visão vê o mundo parar de girar. No entanto, se o tag-along continuar se movendo quando o usuário tiver parado, isso poderá confundir seus sentidos.
+
+<br>
+
+---
+
+## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Mistas e marcações no MRTK (Kit de Ferramentas de Realidade Misturada) para Unity
+**[O MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts para o comportamento de Marcação e Marcação. Atribua o script Dem.cs a qualquer objeto para adicionar o comportamento de minguação e fazer com que o objeto sempre o despente. Para adicionar o comportamento de tag-along, use o script RadialView.cs. Você pode ajustar várias opções, como tempo de leitura, distância e grau.
+
+* [MRTK – Solucionador de Exibição Radial](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
+* [MRTK – Script de Script de Script do MrTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
 <br>

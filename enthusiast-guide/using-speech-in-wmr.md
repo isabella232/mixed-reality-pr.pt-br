@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944673"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647025"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Usando a fala no Windows Mixed Reality
 
@@ -41,7 +41,7 @@ Use os seguintes comandos de fala em toda a realidade mista do Windows para obte
 | Selecionar | Diga "Select" para abrir o cursor olhar. Em seguida, transforme a sua cabeça para posicionar o cursor no item que você deseja selecionar e diga "Select" novamente. |
 | Abra o menu Iniciar | Ir para Iniciar |
 | Deixar um aplicativo de imersão | Diga "ir para o início" para abrir o menu de ações rápidas e, em seguida, dizer "página inicial de realidade misturada". |
-| Ativar/desativar lanterna | Diga "ir para o início" para abrir o menu de ações rápidas e, em seguida, dizer "página inicial de realidade misturada". |
+| Ativar/desativar lanterna | Lanterna elétrica/lanterna desativado |
 | Teleport | Transforme seu rumo em direção ao local que você deseja ir e, em seguida, diga "teleport". (Para direcionamento mais preciso, primeiro diga "Select" para abrir o cursor olhar e, em seguida, diga "teleport.") |
 | Virar à esquerda ou à direita | Virar à esquerda/virar à direita |
 | Transforme 180 graus | Virar |
@@ -68,7 +68,7 @@ Olhar em uma janela de aplicativo ou em um objeto 3D para usar estes comandos:
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
-| Fechar um aplicativo ou objeto 3D | Fechar |
+| Fechar um aplicativo ou objeto 3D | Feche |
 | Ajustar algo (redimensionar ou mover) | Ajustar |
 | Parar ajuste | Concluído |
 | Ocultar a barra de aplicativos em um objeto 3D | Ocultar menu |
@@ -129,7 +129,7 @@ Mude para o modo de ditado sempre que o teclado estiver ativo para uma maneira f
 
 | Para fazer isso | Digamos que isso |
 | --- | --- |
-| Fechar o teclado | Fechar |
+| Fechar o teclado | Feche |
 | Iniciar ditado | Comece a ditar |
 | Parar ditado | Parar ditado |
 | Excluir o que você ditau | Excluir esse |

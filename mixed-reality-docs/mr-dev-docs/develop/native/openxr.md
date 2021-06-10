@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR, roteiro, extensões, Khronos, BasicXRApp, DirectX, nativo, aplicativo nativo, mecanismo personalizado, middleware
-ms.openlocfilehash: cf2613bcd7c31ee5fc09d2708688d8f7356433be
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: 98b75f8b6059e6537d4cb4a10ecf8d057ad19a07
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003085"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110711535"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -89,7 +89,7 @@ Para saber como você pode começar a usar o OpenXR no Unity, mecanismo inreal o
 
 Hoje, o caminho de desenvolvimento do Unity com suporte para o HoloLens 2, o HoloLens (1º gen) e o headset da realidade mista do Windows é o **Unity 2019 LTS** com o back-end da API do WinRT existente.  Você pode ir para o [OpenXR com o Unity](../unity/openxr-getting-started.md); Se você estiver direcionando o novo controlador do HP reverberar G2 em um aplicativo do Unity 2019, consulte nossos [documentos de entrada do HP reverbo G2](../unity/unity-reverb-g2-controllers.md).
 
-A partir do **unity 2020 LTS**, [o Unity envia um back-end OpenXR](https://forum.unity.com/threads/unitys-plans-for-openxr.993225/) que dá suporte a headsets do HoloLens 2 e do Windows Mixed Reality.  Isso inclui suporte para as extensões de OpenXR que iluminam os [recursos completos de headsets do HoloLens 2 e do Windows Mixed Reality](#roadmap), incluindo acompanhamento de mão/olho, âncoras espaciais e controladores de reverberação HP.  MRTK-Unity dá suporte a OpenXR a partir de [MRTK 2,7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit).  Para obter mais informações sobre o status atual do suporte do Unity 2020 LTS para o HoloLens 2, consulte [escolhendo uma versão do Unity](../unity/choosing-unity-version.md).
+A partir do **unity 2020 LTS**, [o Unity envia um back-end OpenXR](https://forum.unity.com/threads/unitys-plans-for-openxr.993225/) que dá suporte a headsets do HoloLens 2 e do Windows Mixed Reality.  Isso inclui suporte para as extensões de OpenXR que iluminam os [recursos completos de headsets do HoloLens 2 e do Windows Mixed Reality](#roadmap), incluindo acompanhamento de mão/olho, âncoras espaciais e controladores de reverberação HP.  MRTK-Unity dá suporte a OpenXR a partir de [MRTK 2,7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project).  Para obter mais informações sobre o status atual do suporte do Unity 2020 LTS para o HoloLens 2, consulte [escolhendo uma versão do Unity](../unity/choosing-unity-version.md).
 
 A partir do **Unity 2021**, a OpenXR será então formada como o único back-end de Unity com suporte para direcionamento de headsets do HoloLens 2 e do Windows Mixed Reality.
 
@@ -110,7 +110,7 @@ Para obter um tour por meio de todos os principais componentes da API do OpenXR,
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * <a href="https://www.khronos.org/openxr/" target="_blank">Mais informações sobre o OpenXR</a>
 * <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">Especificação do OpenXR 1,0</a>

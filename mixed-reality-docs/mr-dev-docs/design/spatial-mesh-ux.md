@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 0d8d2811c2fae96f679eeb1df2f1053e7ecf5def
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 5bdcba60f38ac67bbf0f394337735f4a2d4ec423
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300341"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600625"
 ---
 # <a name="spatial-mesh"></a>Malha espacial
 
@@ -36,7 +36,7 @@ O MRTK fornece vários materiais para a visualização de malha espacial.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 
-* Para obter mais informações, consulte [reconhecimento espacial do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) e [sombreador MRTK-Pulse](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader).
+* Para obter mais informações, consulte [reconhecimento espacial do MRTK](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) e [sombreador MRTK-Pulse](/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader).
 
 <br>
 

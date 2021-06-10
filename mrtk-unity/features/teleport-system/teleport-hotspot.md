@@ -6,14 +6,15 @@ ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sistema Detransporte, Hotspot DeTransporte
-ms.openlocfilehash: 0cbdad3c038d457109077b742d3f453d63436ae4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+monikerRange: '>= mrtkunity-2021-05'
+ms.openlocfilehash: 2d6160570b43ca931d46f4ec04c604b53b18d731
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144431"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647037"
 ---
-# <a name="teleport-hotspot-experimental"></a>Hotspot Demão [Experimental]
+# <a name="teleport-hotspot"></a>Hotspot Demão
 
 O hotspot de teletransporte é um componente que você pode adicionar ao gameobject para garantir que o usuário está em uma determinada posição e orientação quando ele for para esse local.
 

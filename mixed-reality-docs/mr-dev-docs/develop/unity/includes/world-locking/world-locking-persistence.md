@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 25e42ba872764a98d4cb966b5a4922cc1dea0dc9
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528759"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349743"
 ---
 # <a name="world-locking-tools-recommended"></a>[Ferramentas de bloqueio Mundial (recomendado)](#tab/wlt)
 
@@ -99,7 +99,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Para ver um exemplo completo de persistência/descontinuação de âncoras, confira o script ancoragem-> ancoragems de exemplo Gamesobject e AnchorsSample. cs na [cena de exemplo do plugin OpenXR da realidade misturada](../../openxr-getting-started.md#hololens-2-samples):
+Para ver um exemplo completo de persistência/descontinuação de âncoras, confira o script ancoragem-> ancoragems de exemplo Gamesobject e AnchorsSample. cs na [cena de exemplo do plugin OpenXR da realidade misturada](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2):
 
 ![Captura de tela do painel hierarquia aberta no editor do Unity com o exemplo âncoras realçado](../../images/openxr-features-img-04.png)
 

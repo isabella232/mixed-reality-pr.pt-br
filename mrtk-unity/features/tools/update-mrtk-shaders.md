@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: ed9f9fa5e6337850f31ecce9d07bc82a8ea12060
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1f943d8ac7050b8607ae3a85af0a377a7460eb3b
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145135"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647097"
 ---
 # <a name="updating-shaders"></a>Atualizando sombreadores
 
@@ -23,10 +23,10 @@ Selecionar **Sim** instrui o MRTK a substituir o conteúdo dos **ativos**  >  **
 > [!IMPORTANT]
 > Ao substituir os arquivos do sombreador, todas as modificações personalizadas serão perdidas. Certifique-se de fazer backup de todos os arquivos de sombreador modificados antes de atualizar.
 >
-> Se o projeto tiver sido configurado para usar o pipeline de processamento universal (Urp), anteriormente conhecido como LWRP (pipeline de renderização leve), execute novamente o **Mixed Reality Toolkit** > **Utilities** >
+> Se o projeto tiver sido configurado para usar o pipeline de processamento universal (Urp), anteriormente conhecido como LWRP (pipeline de renderização leve), execute novamente o **Mixed Reality** > **Toolkit** > **Utilities** >
 >  **upgrade MRTK Standard Shader para Lightweight render pipeline**.
 
-Em também é possível verificar se há atualizações de sombreador a qualquer momento usando utilitários de **Kit de ferramentas de realidade misturada**  >    >  **verificar atualizações de sombreador** na barra de menus do editor de Unity.
+Em também é possível verificar se há atualizações de sombreador a qualquer momento usando  >    >  **utilitários** de kit de ferramentas de realidade misturada  >  **verificar atualizações de sombreador** na barra de menus do editor de Unity.
 
 ![Verificar se há atualizações de sombreador](../images/tools/ShaderUpdateMenu.png)
 
