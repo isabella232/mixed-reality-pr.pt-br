@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, perfis,
-ms.openlocfilehash: 384614f27c099af197ea8a9aedc72c711f0c099e
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
-ms.translationtype: HT
+ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881223"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908245"
 ---
 # <a name="profiles"></a>Perfis
 
@@ -31,9 +31,14 @@ Também há perfis criados com base nos recursos de entrada de dispositivos espe
 
 ## <a name="xr-sdk"></a>SDK do XR
 
+::: moniker range=">= mrtkunity-2021-05"
+Use qualquer um dos perfis de MRTK padrão, que são todos configurados nos pipelines XR do Unity. Os "DefaultOpenXRConfigurationProfile" e "DefaultXRSDKConfigurationProfile" anteriores agora estão rotulados como obsoletos.
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 Atualmente, há dois perfis fornecidos para o SDK do XR, `DefaultXRSDKConfigurationProfile` e `DefaultHoloLens2XRSDKConfigurationProfile`. Como resultado, nem todas as cenas de exemplo têm suporte total devido a configurações específicas de cenário e cena. Os exemplos que usam `DefaultMixedRealityToolkitConfigurationProfile` e `DefaultHoloLens2ConfigurationProfile` _podem_ ser trocados pelos seus perfis do SDK do XR correspondentes. Se você estiver usando o OpenXR com o SDK do XR, use o `DefaultOpenXRConfigurationProfile`.
 
 O trabalho adicional está sendo retirado para facilitar a configuração e dar suporte a todas as cenas de exemplo, permitindo que o XR herdado e o SDK do XR sejam configurados lado a lado. Confira o problema [nº 9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) para acompanhamento.
+::: moniker-end
 
 Confira [Configuração do MRTK para o pipeline do SDK do XR](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) para obter mais informações sobre como converter perfis entre o XR herdado e o SDK do XR.
 
