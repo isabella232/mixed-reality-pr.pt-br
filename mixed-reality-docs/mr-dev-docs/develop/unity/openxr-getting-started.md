@@ -6,26 +6,24 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realidade misturada, MRTK, kit de ferramentas de realidade mista, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução
-ms.openlocfilehash: 65b79aadeb52db6be61edcc90a5d4a44c12384a1
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: ffec0cbe2ea9fd87cbb5f38010dad2d64e2e82ee
+ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547069"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112270431"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin"></a>Como usar o plug-in OpenXR de Realidade Misturada
 
-Para os desenvolvedores que visam o Unity 2020 criarem aplicativos de realidade 2 ou misturados, o plug-in OpenXR pode ser usado em vez do plug-in WindowsXR para melhorar as compatibilidades entre plataformas.  O plug-in OpenXR de realidade misturada também funciona bem com o mais recente [Kit de ferramentas de realidade mista 2,7](/windows/mixed-reality/mrtk-unity).
+Para os desenvolvedores que visam o Unity 2020 criarem aplicativos de realidade 2 ou misturados, o plug-in OpenXR pode ser usado em vez do plug-in WindowsXR para melhorar as compatibilidades entre plataformas.  O plug-in Mixed Reality OpenXR também funciona bem com a [ferramenta de recursos de realidade misturada](welcome-to-mr-feature-tool.md)mais recente.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* LTS do Unity 2020,3 mais recente, (recomendamos o 2020.3.8 F1 ou superior)
-* Plug-in mais recente do Unity OpenXR (Recomendamos 1,2 ou posterior)
+* Mais recente o Unity 2020,3 LTS, recomendado 2020.3.6 F1 ou superior.
+* Plug-in mais recente do Unity OpenXR, recomendado 1,2 ou posterior
 * Ferramentas mais recentes [para o desenvolvimento do HoloLens 2](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)
-* MRTK mais recente (opcional), (recomendamos a versão 2,7 ou posterior)
-* Plugin OpenXR de realidade mista mais recente, (recomendamos a versão 1.0.0-Preview. 1 ou posterior)
-
-![Captura de tela da amostra do Open XR Unity básico em execução em um HoloLens](images/openxr-example.png)
+* MRTK mais recente (opcional), recomendar a versão 2,6 ou posterior
+* Plugin OpenXR de realidade mista mais recente, recomendar a versão 0.9.5 ou posterior
 
 > [!NOTE]
 > Se você estiver criando aplicativos VR no computador Windows, o plug-in OpenXR de realidade misturada não será necessariamente necessário. No entanto, você desejará instalar o plug-in se estiver personalizando o mapeamento do controlador para controladores do HP reverbo G2 ou compilando aplicativos que funcionam em headsets de HoloLens 2 e VR.
@@ -35,7 +33,7 @@ Para os desenvolvedores que visam o Unity 2020 criarem aplicativos de realidade 
 O MRTK para Unity fornece um sistema de entrada multiplataforma, componentes básicos e blocos de construção comuns para interações espaciais. A versão 2 do MRTK tem o objetivo de acelerar o desenvolvimento de aplicativos para o Microsoft HoloLens, os headsets imersivos (VR) do Windows Mixed Reality e a plataforma OpenVR. O projeto visa reduzir as barreiras de entrada criando aplicativos de realidade misturada e contribuindo com a comunidade à medida que todos nós crescemos.
 
 > [!div class="nextstepaction"]
-> [Configurar seu projeto usando o MRTK](./tutorials/mr-learning-base-02.md?tabs=openxr)
+> [Configurar seu projeto usando o MRTK](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
 Dê uma olhada na [documentação do MRTK](/windows/mixed-reality/mrtk-unity) para obter mais detalhes sobre os recursos.
 
@@ -92,11 +90,14 @@ Confira o [repositório de exemplos de realidade misturada OpenXR](https://githu
 
 ## <a name="using-mrtk-with-openxr-support"></a>Usando o MRTK com suporte a OpenXR
 
-O MRTK para a versão 2,7 do Unity agora dá suporte oficialmente ao plug-in OpenXR da realidade mista.
+MRTK-Unity dá suporte ao plug-in OpenXR de realidade misturada começando pela versão 2.5.3.
 
-Abra a [ferramenta de funcionalidade Mixed Reality](welcome-to-mr-feature-tool.md) novamente para instalar o kit de ferramentas do reality misto, se ainda não tiver feito isso. O suporte do OpenXR está no pacote **base** .
+1. Abra a [ferramenta de funcionalidade Mixed Reality](welcome-to-mr-feature-tool.md) novamente para instalar o kit de ferramentas do reality misto, se ainda não tiver feito isso. O suporte do OpenXR está no pacote **base** .
+2. Vá para o script de componente do MixedReality Toolkit no Inspetor e alterne para o perfil **DefaultOpenXRConfigurationProfile** :
 
-![Ferramenta de recursos da realidade misturada descobrir janela de características com ativos padrão realçados](images/mrft-install-openxr.png)
+    ![Captura de tela de alternância da configuração MRTK no componente Mixed Reality Toolkit no Inspetor](images/openxr-img-11.png)
+
+    1. Consulte a documentação do MRTK para obter [informações mais detalhadas sobre como migrar para o OpenXR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
 
 > [!NOTE]
 > Ao atualizar de uma versão anterior do MRTK, verifique se a linha a seguir está no arquivo **assets/MixedRealityToolkit. Generated/link.xml** :
