@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestos, controladores de movimento, Unity, olhar, entrada, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: ff4c4b064e11e0cad45f4b0c1aaa90c61eda51d7
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 2daa02a0681fe4f3da24fa32379e10877750af7e
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600655"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110230"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Controle de mão e de olho articulado no Unity
 
@@ -35,12 +35,12 @@ O MRTK v2 fornece um conjunto de controles de interface do usuário e blocos de 
 | Vários comportamentos de posicionamento de objeto, como marca, bloqueio de corpo, tamanho de exibição constante e Magnetism de superfície | Script para dispor uma matriz de objetos em uma forma tridimensional | A interface do usuário de anotações com sistema flexível âncora/dinâmico, que pode ser usada para rotular os controladores de movimento e o objeto. |
 |  [![Barra de aplicativos](images/MRTK_AppBar_Main.png)](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar) [Barra de aplicativos](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar) | [![Ponteiros](images/MRTK_Pointer_Main.png)](/windows/mixed-reality/mrtk-unity/features/input/pointers) [Ponteiros](/windows/mixed-reality/mrtk-unity/features/input/pointers) | [![Visualização da ponta do dedo](images/MRTK_FingertipVisualization_Main.png)](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization) [Visualização da ponta do dedo](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization) |
 | Interface do usuário para ativação manual da caixa delimitadora | Saiba mais sobre os vários tipos de ponteiros | A unificação Visual está na ponta, o que melhora a confiança para a interação direta |
-|  [![Acompanhamento ocular: seleção de destino](images/mrtk_et_targetselect.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) [Acompanhamento ocular: seleção de destino](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) | [![Acompanhamento ocular: navegação](images/mrtk_et_navigation.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) [Acompanhamento ocular: navegação](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) | [![Acompanhamento ocular: mapa de calor](images/mrtk_et_heatmaps.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) [Acompanhamento ocular: mapa de calor](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) |
+|  [![Acompanhamento ocular: seleção de destino](images/mrtk_et_targetselect.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) [Acompanhamento ocular: seleção de destino](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) | [![Acompanhamento ocular: navegação](images/mrtk_et_navigation.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) [Acompanhamento ocular: navegação](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) |
 | Combine a entrada de olhos, voz e mão para selecionar com rapidez e facilidade os hologramas em sua cena | Saiba como rolar automaticamente o texto ou ampliar o conteúdo focado com base no que você está vendo| Exemplos de registro em log, carregamento e visualização do que os usuários estão olhando em seu aplicativo |
 
 ## <a name="example-scenes"></a>Cenas de exemplo
 
-Explore os vários tipos de interações e controles de interface do usuário do MRTK nesta [cena de exemplo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html).
+Explore os vários tipos de interações e controles de interface do usuário do MRTK nesta [cena de exemplo](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples).
 
 Você pode encontrar outros exemplos de cenas no [GitHub do kit de ferramentas da realidade misturada](https://github.com/Microsoft/MixedRealityToolkit-Unity) em **assets/MixedRealityToolkit. examples/demos** Folder.
 

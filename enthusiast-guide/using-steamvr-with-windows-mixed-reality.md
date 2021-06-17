@@ -3,12 +3,12 @@ title: Usando o SteamVR com Windows Mixed Reality
 description: Saiba como configurar e reproduzir jogos do SteamVR Windows Mixed Reality headsets e controladores com PCs compatíveis.
 ms.topic: article
 keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, jogos, SteamVR, Steam, requisitos do sistema
-ms.openlocfilehash: 641f2b7db890229b88c0614b6b2bc2e3e88ec309
-ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
+ms.openlocfilehash: 0d79b0c2079875b32387d616e77c5f497ab4aa59
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112064111"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110145"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Usando o SteamVR com Windows Mixed Reality
 
@@ -43,9 +43,18 @@ Windows Mixed Reality para o SteamVR permite que os usuários executem experiên
 
 **Executar o SteamVR no computador de destino**
 1. Depois de conectar o dispositivo de armazenamento portátil ao computador de destino, mova o SteamVR, MixedRealityVRDriver e outras pastas para um local conveniente no computador de destino.
-2. Garantir que o SteamVR e MixedRealityVRDriver [](scripts/steamvr-add-wmr-driver.bat) estão na mesma pasta, baixesteamvr-add-wmr-driver.batna pasta que o contém e clique duas vezes nele. Isso permitirá que o runtime encontre o Windows Mixed Reality para o driver SteamVR em sua instalação personalizada.
 ![SteamVR e Windows Mixed Reality para o SteamVR instalados no computador de destino](images/steamvr-install-files.png)
-3. Para executar o SteamVR, clique duas vezes no arquivo "vrstartup.exe" localizado no *SteamVR\bin\win64\vrstartup.exe* ou *SteamVR\bin\win32\vrstartup.exe* se o computador de destino estiver executando uma versão de 32 bits do Windows.
+
+2. Garantindo que o SteamVR e MixedRealityVRDriver estão na mesma pasta, abra um prompt de comando. Para este exemplo, vamos supor que a pasta que contém está *em C:\SteamVRInstall.* Nesse caso, no prompt de comando, você deve executar:
+```powershell
+chdir "C:\SteamVRInstall"
+.\SteamVR\bin\win64\vrpathreg.exe adddriver "C:\SteamVRInstall\MixedRealityVRDriver"
+```
+(Observe que, se você estiver executando uma versão de 32 bits do Windows, a parte do caminho `win64` acima deverá ser em vez `win32` disso.)
+
+Isso permitirá que o runtime encontre o Windows Mixed Reality para o driver SteamVR em sua instalação personalizada.
+
+4. Para executar o SteamVR, clique duas vezes no arquivo "vrstartup.exe" localizado no *SteamVR\bin\win64\vrstartup.exe* ou *SteamVR\bin\win32\vrstartup.exe* se o computador de destino estiver executando uma versão de 32 bits do Windows.
 
 Consulte a página [de documentação do Steamworks para obter mais informações e solução de problemas.](https://partner.steamgames.com/doc/features/steamvr/enterprise#2)
 
@@ -113,74 +122,74 @@ Quando a reprojeção de movimento estiver habilitada, todos os jogos de VR do S
 Os modos de reprodução de movimento disponíveis são os seguinte:
 
 * **Configuração de SteamVR por aplicativo:** permite controlar a reprojeção de movimento por meio da interface do usuário de Configurações do SteamVR. Em seguida, você pode abrir Configurações do SteamVR, ir para Vídeo > Per-Application Configurações de Vídeo e selecionar uma opção para "Suavização de movimento".
-* **Auto:** permite que a reprojeção de movimento seja ativada automaticamente quando um jogo estiver renderizar muito lentamente para manter 90 FPS. Quando um jogo começa a manter 90 FPS ou começa a renderizar com menos de 45 FPS, a reprojeção de movimento será desligada. A reprojeção rotacional assíncrona está sempre habilitada.
-* **Vetor de** Movimento: força o aplicativo a ser sempre executado na taxa de meio quadro com a reprojeção de vetor de movimento.
-* **Nenhum:** desabilita a reprojeção de movimento.
+* **Automático**: permite que a Reprojeção de movimento seja ativada automaticamente quando um jogo está sendo renderizado muito lentamente para manter 90 fps. Quando um jogo começa a manter 90 FPS ou inicia a renderização com menos de 45 FPS, a Reprojeção de movimento será desativada. A Reprojeção de rodízio assíncrona está habilitada sempre.
+* **Vetor de movimento**: força o aplicativo a ser sempre executado com metade da taxa de quadros com a Reprojeção do vetor de movimento.
+* **Nenhum**: desabilita a Reprojeção de movimento.
 
 **Artefatos visuais esperados** 
 
-1. Ao usar uma resolução de aplicativo maior que 150%, você pode ter desfocado. Ao usar a reprojeção de movimento, é recomendável usar um valor menor que 150%.
-2. Bordas de contraste nítido ou texto, especialmente em HUDs ou menus no jogo, podem parecer temporariamente distorcidos ou distorcidos devido à desolocação.
-3. O SteamVR Home e muitos outros jogos que não atingem de maneira confiável 50 a 60 FPS em seu computador continuarão a ter uma experiência ruim com esse modo.
-4. Alguns jogos foram relatados para ser executados a 50% de velocidade ou com maior latência (retardo). Reporte esses jogos por meio [das Hub do Windows Feedback](filing-feedback.md) abaixo.
+1. Ao usar uma resolução de aplicativo maior que 150%, você pode enfrentar o desfoque. Ao usar a Reprojeção de movimento, é recomendável usar um valor menor que 150%.
+2. Bordas ou texto de contraste nítido, especialmente em HUDs ou menus no jogo, podem parecer temporariamente distorcidos ou distorcidas devido a disocclusion.
+3. SteamVR Home e muitos outros jogos que não atingirem 50-60 FPS em seu PC continuarão a ter uma experiência ruim com esse modo.
+4. Alguns jogos foram relatados para serem executados às 50% de velocidade ou com latência maior (retardo). Relate esses jogos por meio das instruções do [Hub de comentários do Windows](filing-feedback.md) abaixo.
 
-Inicialmente, temos suporte experimental para GPUs NVidia de geração recente. Continuamos iterando e melhorando nosso suporte à reprojeção de movimento em mais GPUs e estamos ansiosos para ouvir seus comentários.
+Inicialmente, temos suporte experimental para GPUs NVidia de geração recente. Estamos continuando a iterar e melhorar nosso suporte de Reprojeção de movimento em mais GPUs e estamos ansiosos para ouvir seus comentários.
 
-**GPUs com suporte:** Nvidia GeForce GTX1060, AMD RX470 ou melhor, com Windows Mixed Reality drivers gráficos compatíveis instalados.
+**GPUs com suporte:** NVIDIA GeForce GTX1060, AMD RX470 ou superior, com drivers gráficos compatíveis com o Windows Mixed Reality instalados.
 
-Para habilitar a reprojeção de movimento:
+Para habilitar a Reprojeção de movimento:
 
-1. Certifique-se de que você optou pelo Windows Mixed Reality **para o SteamVR Beta** usando as instruções acima.
+1. Certifique-se de ter optado pelo **Windows Mixed Reality for SteamVR beta** usando as instruções acima.
 2. Abra o painel do SteamVR.
-3. Selecione o botão no lado esquerdo com o logotipo Windows Mixed Reality para abrir Windows Mixed Reality **configurações do SteamVR.**
-4. Na interface do usuário que aparece, selecione a guia Gráficos.
-5. Selecione "Auto" para "Modo de reprojeção de movimento do aplicativo SteamVR padrão" para habilitar a reprodução automática de movimento.
+3. Selecione o botão no lado esquerdo com o logotipo do Windows Mixed Reality para abrir as configurações **do Windows Mixed Reality for SteamVR** .
+4. Na interface do usuário exibida, selecione a guia gráficos.
+5. Selecione "auto" para "modo de Reprojeção de movimento de aplicativo padrão SteamVR" para habilitar a Reprojeção de movimento automático.
 
-![Habilitar o indicador LSR & LSR com SettingsUX](images/settingsux-enable-lsr.gif)
+![Habilitar LSR & indicador LSR com SettingsUX](images/settingsux-enable-lsr.gif)
 
-**Indicador de reprojeção de movimento**
+**Indicador de Reprojeção de movimento**
 
-O indicador de reprojeção de movimento ajuda a diagnosticar problemas com o recurso de reprojeção de movimento automático experimental. Quando definido como true, você verá um indicador no canto superior esquerdo da exibição do headset durante a reprodução automática de movimento. A cor e a posição desse indicador correspondem ao modo de reprojeção de movimento atual – consulte o diagrama abaixo para ver exemplos.
+O indicador de Reprojeção de movimento ajuda a diagnosticar problemas com o recurso de Reprojeção de movimento automático experimental. Quando definido como true, você verá um indicador no canto superior esquerdo da tela do headset durante a Reprojeção de movimento automático. A cor e a posição desse indicador correspondem ao modo de Reprojeção de movimento atual-consulte o diagrama abaixo para obter exemplos.
 
-![Indicador mvLSR](images/mvLSRIndicator.png)
+![Indicador de mvLSR](images/mvLSRIndicator.png)
 
-Verde = a reprojeção de movimento está desligada porque o aplicativo pode renderizar com taxa de quadros completa.
+Verde = a Reprojeção de movimento está desativada porque o aplicativo pode ser renderizado em uma taxa de quadros completa.
 
-Cyan = a reprojeção de movimento está ligada porque o aplicativo está vinculado à CPU.
+Ciano = a Reprojeção de movimento está ativada porque o aplicativo está associado à CPU.
 
-Blue = a reprojeção de movimento está ligada porque o aplicativo está vinculado à GPU.
+Blue = a Reprojeção de movimento está ativada porque o aplicativo está associado à GPU.
 
-Vermelho = a reprojeção de movimento está desligada porque o aplicativo está em execução com menos de metade da taxa de quadros; tente reduzir a super amostragem se habilitada.
+Vermelho = a Reprojeção de movimento está desativada porque o aplicativo está sendo executado com menos de meia taxa de quadros; Tente reduzir a Superamostragem se estiver habilitado.
 
-Verde + Ciano + Azul = a reprojeção de movimento está no modo de taxa de meio quadro ou a reprojeção de movimento solicitada pelo aplicativo.
+Verde + ciano + azul = a Reprojeção de movimento está no modo de meia-taxa de bits ou o aplicativo solicitou a Reprojeção de movimento.
 
-## <a name="sharing-feedback-on-steamvr"></a>Compartilhar comentários no SteamVR
+## <a name="sharing-feedback-on-steamvr"></a>Compartilhando comentários no SteamVR
 
-Seus comentários são valiosas quando se trata de melhorar a Windows Mixed Reality do SteamVR. Envie todos os comentários e bugs por meio [do Hub do Windows Feedback](filing-feedback.md). Siga estas sugestões para nos ajudar a obter o máximo de seus comentários:
+Seus comentários são inúteis quando se trata de melhorar a experiência de SteamVR do Windows Mixed Reality. Envie todos os comentários e bugs por meio do [Hub de comentários do Windows](filing-feedback.md). Siga estas sugestões para nos ajudar a obter o máximo de seus comentários:
 
-1. No Hub de Comentários, indique que você está relatando um novo problema em "Que tipo de comentários é?" na parte superior.
-2. Selecione a **categoria Realidade Misturada** e **a** subcategoria Aplicativos.
+1. No Hub de comentários, indique que você está relatando um novo problema no "que tipo de comentário é?" na parte superior.
+2. Selecione a categoria de **realidade misturada** e a subcategoria **aplicativos** .
 3. Coloque a palavra "SteamVR" no resumo do problema. Isso nos ajuda a encontrar seus comentários.
-4. Descreva qual jogo ou aplicativo do SteamVR você estava usando quando se deparou com o problema.
+4. Descreva o que SteamVR o jogo ou o aplicativo que você estava usando quando se deparar com o problema.
 5. Considere anexar um relatório do sistema SteamVR aos seus comentários. Isso fornece mais logs que podem nos ajudar a diagnosticar seu problema.
-    1. Na Janela Do SteamVR (as janelas pequenas que mostram o status do controlador) selecione o título para abrir o menu.
-    2. Selecione "Criar Relatório do Sistema".
-    3. Salve em Arquivo.
-    4. Anexe o arquivo gerado à entrada do Hub de Comentários diretamente.
-6. Se seus comentários são sobre o desempenho do SteamVR, colete um rastreamento de Desempenho de Realidade Misturada: 
-    1. Selecione o **botão Recriar meu** Problema.
-    2. Na lista de opções ao lado de "incluir dados sobre", selecione **Desempenho de Realidade Misturada.**
-    3. Certifique-se de que o jogo está em execução e selecione **Iniciar Captura**.
-    4. Passe alguns segundos no jogo para capturar o rastreamento. Não capture o rastreamento por mais de 10 a 15 segundos ou ele será muito grande para enviar.
-    5. Selecione **Parar Captura**.
+    1. Na janela SteamVR (as pequenas janelas que mostram o status do controlador), selecione no título para abrir o menu.
+    2. Selecione "criar relatório do sistema".
+    3. Salvar no arquivo.
+    4. Anexe o arquivo gerado à entrada do hub de comentários diretamente.
+6. Se seus comentários forem sobre o desempenho do SteamVR, colete um rastreamento de desempenho de realidade misturada: 
+    1. Selecione o botão **recriar meu problema** .
+    2. Na lista suspensa ao lado de "incluir dados sobre", selecione **desempenho de realidade misturada**.
+    3. Verifique se o jogo está em execução e selecione **Iniciar captura**.
+    4. Gaste alguns segundos jogando o jogo para capturar o rastreamento. Não Capture o rastreamento por mais de 10-15 segundos ou ele será muito grande para ser enviado.
+    5. Selecione **parar captura**.
 7. Selecione **Enviar** depois de concluir o restante dos campos.
 
-Se você tiver dúvidas ou comentários para compartilhar, também poderá nos encontrar em nosso fórum [do Steam.](http://steamcommunity.com/app/719950/discussions/)
+Se você tiver dúvidas ou comentários para compartilhar, também poderá entrar em contato conosco em nosso [Fórum de fluxo](http://steamcommunity.com/app/719950/discussions/).
 
 ## <a name="see-also"></a>Confira também
 
-* [Solução de problemas do SteamVR com Windows Mixed Reality](steamvr-questions.md)
+* [Solução de problemas do SteamVR com o Windows Mixed Reality](steamvr-questions.md)
 * [Usando jogos e aplicativos no Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Usando controladores HP no Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [Usando controladores HP no Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [Usando controladores HP em um não real](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [Enviar bugs e comentários](filing-feedback.md)

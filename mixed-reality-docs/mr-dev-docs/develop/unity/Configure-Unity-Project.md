@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho
-ms.openlocfilehash: 5889a76941c36e24f600df5a459440d93bdd4c64
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: c496dc415ff09eea3015b5195e131554c43a98f1
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636388"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110254"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Como configurar seu projeto sem o MRTK
 
 O Windows Mixed Reality (WMR) é uma plataforma da Microsoft introduzida como parte do sistema operacional Windows 10. A plataforma WMR permite que você crie aplicativos que processam conteúdo digital em dispositivos de vídeo Holographic e VR.
 
-Embora a Microsoft e a Comunidade tenham criado ferramentas abertas como o [MRTK (Mixed Reality Toolkit)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) que configurará automaticamente o ambiente WMR, muitos desenvolvedores desejam criar suas experiências desde o início.  A documentação a seguir demonstrará como configurar corretamente um projeto para o desenvolvimento de realidade misturada se você estiver usando MRTK ou não.  As configurações que você precisa alterar são divididas em duas categorias: configurações por projeto e configurações por cena.
+Embora a Microsoft e a Comunidade tenham criado ferramentas de código aberto, como o [MRTK (Kit de ferramentas de realidade misturada)](/windows/mixed-reality/mrtk-unity/configuration/usingupm) , que configurará automaticamente o ambiente WMR, muitos desenvolvedores desejam criar suas experiências desde o início.  A documentação a seguir demonstrará como configurar corretamente um projeto para o desenvolvimento de realidade misturada se você estiver usando MRTK ou não.  As configurações que você precisa alterar são divididas em duas categorias: configurações por projeto e configurações por cena.
 
 > [!NOTE]
 > Você sempre pode importar MRTK posteriormente, portanto, não há penalidade para passar a rota manual primeiro.
@@ -34,11 +34,11 @@ Se você estiver direcionando para o HoloLens 2, precisará alternar para o Plat
 
 1.  Selecione **arquivo > configurações de Build...**
 2.  Selecione **plataforma universal do Windows** na lista plataforma e selecione **alternar plataforma**
-3.  Definir a **arquitetura** para o **ARM 64**
-4.  Definir o **dispositivo de destino** para o **HoloLens**
-5.  Definir **tipo de compilação** como **D3D**
-6.  Definir o **SDK do UWP** para o **mais recente instalado**
-7.  Definir a **configuração de Build** como **Release** porque há problemas de desempenho conhecidos com a depuração
+3.  Defina a **Arquitetura** como **ARM 64**
+4.  Defina o **Dispositivo de destino** como **HoloLens**
+5.  Defina o **Tipo de Build** como **D3D**
+6.  Defina o **SDK do UWP** como **Último instalado**
+7.  Defina a **Configuração de Build** como **Lançamento** porque há problemas de desempenho conhecidos com a opção Depurar
 
 ![Captura de tela da janela de configurações de Build aberta no editor do Unity com Plataforma Universal do Windows realçado](images/wmr-config-img-4.png)
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realidade Misturada, Controles, interação, versões de interface do usuário, experiência do usuário, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, áudio
-ms.openlocfilehash: 8a68006d68b985f8d26a3d1a11e4d52fcfb5acb5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: b25c25a6dd48bcc85a556787099734d147d18df2
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600435"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110215"
 ---
 # <a name="interactable-object"></a>Objeto interativo
 
@@ -135,7 +135,7 @@ Use comentários visuais para comunicar os seguintes estados:
 
 ---
 
-Um [botão no HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) é um exemplo de como os diferentes estados de interação de entrada são visualizados:
+Um [botão no HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) é um exemplo de como os diferentes estados de interação de entrada são visualizados:
 
 :::row:::
     :::column:::

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: hologramas, estabilidade, hololens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, taxa de quadros, renderização, Reprojeção, separação de cores
 appliesto:
 - HoloLens
-ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 560b1551b153f1735b0106869c6a82c977693968
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582882"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110104"
 ---
 # <a name="hologram-stability"></a>Estabilidade do holograma
 
@@ -91,13 +91,13 @@ Há quatro tipos principais de Reprojeção
 Os aplicativos precisam executar ações específicas para habilitar os diferentes tipos de Reprojeção
 * **Reprojeção de profundidade:** O aplicativo envia seu buffer de profundidade ao sistema para cada quadro renderizado.  No Unity, a Reprojeção de profundidade é feita com a opção de **buffer de profundidade compartilhada** no painel de **configurações de realidade mista do Windows** em **XR plugin Management**.  Aplicativos DirectX chamam CommitDirect3D11DepthBuffer.  O aplicativo não deve chamar SetFocusPoint.
 * **Reprojeção do planar:** Em todos os quadros, os aplicativos informam ao sistema o local de um plano a ser estabilizado.  Os aplicativos do Unity chamam SetFocusPointForFrame e devem ter o **buffer de profundidade compartilhado** desabilitado.  Os aplicativos DirectX chamam SetFocusPoint e não devem chamar CommitDirect3D11DepthBuffer.
-* **Reprojeção automática de planar:** Para habilitar o, o aplicativo precisa enviar seu buffer de profundidade ao sistema como faria para a Reprojeção de profundidade. Os aplicativos que usam o MRTK (Kit de ferramentas de realidade misturada) podem configurar o [provedor de configurações da câmera](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) para usar a Reprojeção do autoplanar. Aplicativos nativos devem definir o `DepthReprojectionMode` no [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) para `AutoPlanar` cada quadro. Para o HoloLens geração 1, o aplicativo não deve chamar SetFocusPoint.
+* **Reprojeção automática de planar:** Para habilitar o, o aplicativo precisa enviar seu buffer de profundidade ao sistema como faria para a Reprojeção de profundidade. Os aplicativos que usam o MRTK (Kit de ferramentas de realidade misturada) podem configurar o [provedor de configurações da câmera](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) para usar a Reprojeção do autoplanar. Aplicativos nativos devem definir o `DepthReprojectionMode` no [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) para `AutoPlanar` cada quadro. Para o HoloLens geração 1, o aplicativo não deve chamar SetFocusPoint.
 
 ### <a name="choosing-reprojection-technique"></a>Escolhendo a técnica de Reprojeção
 
-Tipo de estabilização |    Headsets de imersão |    Geração de HoloLens 1 | HoloLens 2
+Tipo de estabilização |    Headsets imersivos |    Geração de HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojeção de profundidade |    Recomendadas |   N/D |   Recomendadas<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
+Reprojeção de profundidade |    Recomendado |   N/D |   Recomendado<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
 Reprojeção automática de planar | N/D |   Padrão recomendado |   Recomendado se a Reprojeção de profundidade não fornecer os melhores resultados<br/><br/>Os aplicativos do Unity são recomendados para usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior.  As versões anteriores do Unity funcionarão com resultados de Reprojeção ligeiramente degradados.
 Reprojeção do planar |   Não recomendado |   Recomendado se o planar automático não fornecer os melhores resultados | Use se nenhuma das opções de profundidade fornecer os resultados desejados    
 
@@ -185,4 +185,4 @@ Como antes, a renderização em 60 FPS e a definição do plano de estabilizaç�
 * [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Cor, luz e materiais](../../design/color-light-and-materials.md)
 * [Interações instinctuais](../../design/interaction-fundamentals.md)
-* [Estabilização do holograma MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)
+* [Estabilização do holograma MRTK](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)

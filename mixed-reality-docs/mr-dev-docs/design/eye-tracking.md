@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Acompanhamento de olho, realidade misturada, entrada, olho-olhar, calibragem, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, intenção, ações
-ms.openlocfilehash: b76fd2e05999e5807156714fcdf12ca2863501bc
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 4dac059f72dd043802286081a54137c392c1e912
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196501"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110116"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Acompanhamento ocular no HoloLens 2
 
@@ -60,40 +60,40 @@ Para que o acompanhamento de olho funcione com precisão, cada usuário precisa 
 
 O controle de olho deve funcionar para a maioria dos usuários, mas há casos raros em que um usuário não pode calibrar com êxito. A calibragem pode falhar por vários motivos, incluindo, mas não se limitando a: 
 * O usuário optou anteriormente pelo processo de calibragem
-* O usuário ficou confuso e não seguiu as metas de calibragem
-* O usuário tem determinados tipos de lentes de contato e óculos, aos quais o sistema ainda não dá suporte 
-* O usuário tem determinadas condições otais, de olho ou de olho, às quais o sistema ainda não dá suporte  
-* Fatores externos que inibim o acompanhamento ocular confiável, como smudges no visor ou óculos do HoloLens, redução direta intensa e oclusão devido a pelos na frente dos olhos
+* O usuário obteve distraídos e não segue os destinos de calibragem
+* O usuário tem determinados tipos de lentes e óculos de contato, para os quais o sistema ainda não dá suporte 
+* O usuário tem certos olhos physiologys, condições de olho ou tinha cirurgia de olho, para o qual o sistema ainda não dá suporte  
+* Fatores externos que inibem o acompanhamento de olho confiável, como manchas no visor do HoloLens ou óculos, luz direta intensa e occlusions devido ao cabelo na frente dos olhos
 
-Os desenvolvedores devem fornecer suporte adequado para usuários para os quais os dados de acompanhamento ocular podem não estar disponíveis (que não podem calibrar com êxito). Fornecemos recomendações para soluções de fallback na seção na parte inferior desta página. 
+Os desenvolvedores devem certificar-se de fornecer suporte adequado para usuários para os quais os dados de acompanhamento de olho podem não estar disponíveis (que não podem ser calibrados com êxito). Fornecemos recomendações para soluções de fallback na seção na parte inferior desta página. 
 
-Para saber mais sobre a calibragem e sobre como garantir uma experiência suave, verifique nossa página [de calibragem do usuário de acompanhamento](/hololens/hololens-calibration) ocular.
+Para saber mais sobre a calibração e sobre como garantir uma experiência tranqüila, consulte nossa página de [calibragem do usuário de acompanhamento de olho](/hololens/hololens-calibration) .
 
 <br>
 
-## <a name="available-eye-tracking-data"></a>Dados de acompanhamento ocular disponíveis
+## <a name="available-eye-tracking-data"></a>Dados de acompanhamento de olho disponíveis
 
-Antes de entrar em detalhes sobre casos de uso específicos para entrada com o olhar, queremos apontar brevemente os recursos que a [API](/uwp/api/windows.perception.people.eyespose) de Acompanhamento Ocular do HoloLens 2 fornece. Os desenvolvedores têm acesso a um único raio de olhar (origem e direção do olhar) a aproximadamente _30 FPS (30 Hz)._
-Para obter informações mais detalhadas sobre como acessar dados de acompanhamento ocular, consulte nossos guias de desenvolvedor para usar o olhar no [DirectX](../develop/native/gaze-in-directx.md) e o olhar [no Unity.](https://aka.ms/mrtk-eyes)
+Antes de entrar em detalhes sobre os casos de uso específicos para a entrada olhar, queremos destacar rapidamente os recursos fornecidos pela [API de acompanhamento ocular](/uwp/api/windows.perception.people.eyespose) do HoloLens 2. Os desenvolvedores obtêm acesso a um único olhar Ray (olhar e direção) a aproximadamente _30 fps (30 Hz)_.
+Para obter informações mais detalhadas sobre como acessar dados de controle de olho, consulte nossos guias de desenvolvedor para usar os [olhos olhar no DirectX](../develop/native/gaze-in-directx.md) e [olho-olhar no Unity](https://aka.ms/mrtk-eyes).
 
-O olhar previsto está aproximadamente dentro de 1,5 graus no ângulo visual em torno do destino real (consulte a ilustração abaixo). Como pequenas imprecisões são esperadas, os desenvolvedores devem planejar alguma margem em torno desse valor de limite inferior (por exemplo, 2,0 a 3,0 graus pode resultar em uma experiência muito mais confortável). Discutiremos como abordar a seleção de destinos pequenos mais detalhadamente abaixo. Para que o acompanhamento ocular funcione com precisão, cada usuário deve passar por uma calibração de usuário de acompanhamento ocular. 
+O olho previsto-olhar é aproximadamente de 1,5 graus no ângulo visual em torno do destino real (consulte a ilustração abaixo). À medida que pequenas imprecisãos são esperadas, os desenvolvedores devem planejar uma margem em relação a esse valor de limite inferior (por exemplo, os graus do 2.0-3.0 podem resultar em uma experiência muito mais confortável). Discutiremos como abordar a seleção de destinos pequenos em mais detalhes abaixo. Para que o acompanhamento ocular funcione com precisão, cada usuário deve passar por uma calibração de usuário de acompanhamento ocular. 
 
 ![Tamanho ideal do alvo em uma distância de 2 metros](images/gazetargeting-size-1000px.jpg)<br>
-*Tamanho de destino ideal a uma distância de 2 metros*
+*Tamanho de destino ideal em uma distância de 2 medidores*
 
 <br>
 
 ## <a name="use-cases"></a>Casos de uso
 
-O acompanhamento ocular permite que os aplicativos acompanhem para que local o usuário está olhando em tempo real. Os casos de uso a seguir descrevem algumas interações possíveis com o acompanhamento ocular no HoloLens 2 na realidade misturada.
+O acompanhamento ocular permite que os aplicativos acompanhem para que local o usuário está olhando em tempo real. Os casos de uso a seguir descrevem algumas interações que são possíveis com o acompanhamento de olho no HoloLens 2 em realidade misturada.
 Esses casos de uso ainda não fazem parte da experiência de shell Holographic (ou seja, a interface que você vê quando inicia o seu HoloLens 2).
-Você pode experimentar alguns deles no kit de [ferramentas de realidade misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), que fornece vários exemplos interessantes e eficientes para usar o acompanhamento de olho, como seleções de destino com suporte rápido e sem esforço e rolagem automática pelo texto com base no que o usuário examina. 
+Você pode experimentar alguns deles no kit de [ferramentas de realidade misturada](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main), que fornece vários exemplos interessantes e eficientes para usar o acompanhamento de olho, como seleções de destino com suporte rápido e sem esforço e rolagem automática pelo texto com base no que o usuário examina. 
 
 ### <a name="user-intent"></a>Intenção do usuário
 
 As informações sobre onde e o que um usuário observa fornecem um **contexto poderoso para outras entradas**, como voz, mãos e controladores.
 Isso pode ser usado para várias tarefas.
-Por exemplo, isso pode variar de um **direcionamento** rápido e sem esforço em toda a cena, observando um holograma e dizendo *"Select"* (também Confira [olhar e commit](gaze-and-commit.md)) ou *"Put this..."* e, em seguida, procurando onde o usuário deseja colocar o holograma e dizer *"... lá "*. Exemplos para esse caso podem ser encontrados em [Kit de Ferramentas de Realidade Misturada – Seleção de alvo com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Kit de Ferramentas de Realidade Misturada – Posicionamento de alvo com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+Por exemplo, isso pode variar de um **direcionamento** rápido e sem esforço em toda a cena, observando um holograma e dizendo *"Select"* (também Confira [olhar e commit](gaze-and-commit.md)) ou *"Put this..."* e, em seguida, procurando onde o usuário deseja colocar o holograma e dizer *"... lá "*. Exemplos para esse caso podem ser encontrados em [Kit de Ferramentas de Realidade Misturada – Seleção de alvo com suporte ocular](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) e [Kit de Ferramentas de Realidade Misturada – Posicionamento de alvo com suporte ocular](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-positioning).
 
 Além disso, um exemplo de intenção de usuário pode incluir o uso de informações sobre o que os usuários examinam para aprimorar o envolvimento com os agentes virtuais e os hologramas interativos. Por exemplo, os agentes virtuais podem adaptar as opções disponíveis e seu comportamento, com base no conteúdo exibido atualmente. 
 
@@ -102,18 +102,18 @@ Além disso, um exemplo de intenção de usuário pode incluir o uso de informa�
 A categoria de ações implícitas está intimamente relacionada à intenção do usuário.
 A ideia é que os hologramas ou os elementos da interface do usuário reagem de uma maneira instinctual que talvez nem pareça que o usuário esteja interagindo com o sistema, mas que o sistema e o usuário estejam em sincronia. Um exemplo é a **rolagem automática baseada em olhar de olho** em que o usuário pode ler um texto longo, o que inicia automaticamente a rolagem quando o usuário chega à parte inferior da caixa de texto para manter o usuário no fluxo de leitura, sem levantar um dedo.  
 Um aspecto fundamental disso é que a velocidade da rolagem se adapta à velocidade de leitura do usuário.
-Outro exemplo é o **zoom e a panorâmica com suporte,** em que o usuário pode se sentir como mergulhar exatamente em relação ao que ele está concentrado. Disparar e controlar a velocidade de zoom pode ser controlado pela entrada de voz ou mão, o que é importante para fornecer ao usuário a sensação de controle, evitando a sobrecarregamento. Vamos falar sobre essas considerações de design mais detalhadamente abaixo. Uma vez ampliado, o usuário pode seguir sem problemas, por exemplo, o curso de uma rua para explorar seu distrito usando o olhar.
-Exemplos de demonstração para esses tipos de interações podem ser encontrados na amostra do [Kit de Ferramentas de Realidade Misturada – Navegação com suporte ocular](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html).
+Outro exemplo é o **zoom e a panorâmica com suporte,** em que o usuário pode se sentir como mergulhar exatamente em relação ao que ele está concentrado. Disparar e controlar a velocidade de zoom pode ser controlado por entrada por voz ou por mão, o que é importante para fornecer ao usuário a sensação de controle, evitando que seja sobrecarregado. Falaremos sobre essas considerações de design em mais detalhes abaixo. Uma vez ampliado, o usuário pode seguir, por exemplo, o curso de uma rua para explorar sua vizinhança usando seus olhos olhars.
+Exemplos de demonstração para esses tipos de interações podem ser encontrados na amostra do [Kit de Ferramentas de Realidade Misturada – Navegação com suporte ocular](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation).
 
 Outros casos de uso para _ações implícitas_ podem incluir:
-- **Notificações inteligentes:** Já ficou com medo por notificações que aparecem exatamente onde você está procurando? Levando em conta o que um usuário está prestendo atenção, você pode melhorar essa experiência deslocando as notificações do local em que o usuário está olhando no momento. Isso limita as distração e as descarta automaticamente quando o usuário termina a leitura. 
-- **Hologramas desamodos:** Hologramas que reagem de forma subtly ao se olharem. Isso pode variar de elementos de interface do usuário ligeiramente ativos, uma flor lentamente em um cachorro virtual começando a olhar para o usuário e abanando sua cauda. Essa interação pode fornecer uma noção interessante de conectividade e satisfação em seu aplicativo.
+- **Notificações inteligentes:** Nunca se incomodar pelas notificações que aparecem logo onde você está olhando? Levando em conta o que um usuário está prestando a atenção, você pode melhorar a experiência com notificações de compensação de onde o usuário está nuvens no momento. Isso limita distrações e os descarta automaticamente quando o usuário termina de ler. 
+- **Hologramas de cuidadosa:** Hologramas que reagem sutilmente ao serem gazeddos. Isso pode variar de elementos de interface do usuário ligeiramente brilhantes, uma flor de intratação mais lenta para um cachorro virtual começando a olhar de volta para a usuária e wagging sua parte final. Essa interação pode fornecer uma noção interessante de conectividade e satisfação em seu aplicativo.
 
 ### <a name="attention-tracking"></a>Acompanhamento de atenção
 
-Informações sobre onde ou o que os usuários estão olhando podem ser uma ferramenta extremamente poderosa. Ele pode ajudar a avaliar a usabilidade de designs e identificar problemas em fluxos de trabalho para torná-los mais eficientes.
-A visualização e a análise de acompanhamento ocular são uma prática comum em várias áreas de aplicativo. Com o HoloLens 2, fornecemos uma nova dimensão para essa compreensão, pois os hologramas 3D podem ser colocados em contextos do mundo real e avaliados adequadamente. O [Kit de Ferramentas de Realidade Misturada](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) fornece exemplos básicos para registro em log e carregamento de dados de acompanhamento ocular e como visualizá-los.
-A Microsoft é dedicada a facilitar a inovação, garantindo que os usuários tenham uma experiência informada e transparente com como suas informações de acompanhamento ocular são usadas.  Trabalharemos com nossos desenvolvedores e equipes de experiência do usuário para fornecer diretrizes para terceiros a fim de garantir que as experiências sejam centralizadas em torno do usuário.  
+As informações sobre onde ou o que os usuários examinam podem ser uma ferramenta imensamente poderosa. Ele pode ajudar a avaliar a usabilidade de designs e identificar problemas em fluxos de trabalho para torná-los mais eficientes.
+A visualização e a análise de controle de olho são uma prática comum em várias áreas de aplicativo. Com o HoloLens 2, fornecemos uma nova dimensão para essa compreensão, pois os hologramas de 3D podem ser colocados em contextos reais e avaliados de acordo. O [Kit de ferramentas de realidade misturada](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) fornece exemplos básicos para registrar e carregar dados de acompanhamento de olho e como visualizá-los.
+A Microsoft dedica-se a facilitar a inovação, garantindo que os usuários tenham uma experiência informada e transparente com a forma como as informações de controle de olho são usadas.  Trabalharemos com nossas equipes de desenvolvedores e UX para fornecer diretrizes para terceiros a fim de garantir que as experiências sejam centralizadas em todo o usuário.  
 
 Outros aplicativos nessa área podem incluir: 
 -   **Visualização de olhar de olho remoto:** Visualizações de olhar de olho remoto: visualize o que os colaboradores remotos estão observando, para poder fornecer comentários imediatos e facilitar o processamento de informações mais precisos.
@@ -136,23 +136,23 @@ Fique atento ao fato de não sobrecarregar o usuário – para saber mais, confi
 ## <a name="using-eye-gaze-for-interaction"></a>Usando olho-olhar para interação
 
 A criação de uma interação que aproveita o direcionamento de olho rápido pode ser desafiadora.
-Por um lado, os olhos se movem tão rapidamente que você precisa ter cuidado sobre como usar a entrada de olhar com o olhar, pois caso contrário, os usuários podem achar a experiência desapressiva ou desadorante. Por outro lado, você também pode criar experiências verdadeiramente mágicas que vão excitar seus usuários! Para [ajudá-lo,](eye-gaze-interaction.md)confira nossa visão geral das principais vantagens, desafios e recomendações de design para o olhar para interação. 
+Por um lado, os olhos se movem tão rapidamente que você precisa ter cuidado ao usar a entrada olhar, pois os usuários podem achar a experiência difícil ou atrapalhar. Por outro lado, você também pode criar experiências verdadeiramente mágicos que vão para seus usuários! Para ajudá-lo, Confira nossa visão geral das principais vantagens, desafios e recomendações de design para [olhar de interação](eye-gaze-interaction.md). 
  
-## <a name="fallback-solutions-when-eye-tracking-isnt-available"></a>Soluções de fallback quando o acompanhamento ocular não está disponível
+## <a name="fallback-solutions-when-eye-tracking-isnt-available"></a>Soluções de fallback quando o controle de olho não está disponível
 
 Em casos raros, os dados de acompanhamento ocular podem não estar disponíveis.
-Isso pode ser devido a diferentes motivos dos quais os mais comuns estão listados abaixo:
-* O sistema não conseguiu [calibrar o usuário.](/hololens/hololens-calibration)
-* O usuário ignorava a [calibragem](/hololens/hololens-calibration).   
-* O usuário está calibrado, mas decidiu não dar permissão ao seu aplicativo para usar seus dados de acompanhamento ocular.    
-* O usuário tem óculos exclusivos ou alguma condição ocular que o sistema ainda não dá suporte. 
-* Fatores externos que inibim o acompanhamento ocular confiável, como asudges no visor ou óculos do HoloLens, redução direta intensa e oclusão devido a pelos na frente dos olhos.
+Isso pode ser devido a diferentes motivos dos quais as mais comuns são listadas abaixo:
+* Falha do sistema ao [calibrar o usuário](/hololens/hololens-calibration).
+* O usuário ignorou a [calibração](/hololens/hololens-calibration).   
+* O usuário é calibrado, mas decidiu não dar permissão ao seu aplicativo para usar seus dados de controle de olho.    
+* O usuário tem óculos exclusivo ou alguma condição de olho para a qual o sistema ainda não dá suporte. 
+* Fatores externos que inibem o acompanhamento de olho confiável, como manchas no visor do HoloLens ou óculos, luz direta intensa e occlusions, devido ao cabelo em frente aos olhos.
 
-Os desenvolvedores devem garantir que haja suporte de fallback apropriado para esses usuários. Na página [Acompanhamento ocular no DirectX,](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) explicamos as APIs necessárias para detectar se os dados de acompanhamento ocular estão disponíveis. 
+Os desenvolvedores devem garantir que haja suporte de fallback apropriado para esses usuários. Na página [controle de olho no DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) , explicamos as APIs necessárias para detectar se os dados de acompanhamento de olho estão disponíveis. 
 
-Embora alguns usuários possam ter decidido revogar com certeza, o acesso aos seus dados de acompanhamento ocular e estão de acordo com a troca de uma experiência inferior do usuário com a privacidade de não fornecer acesso aos dados de acompanhamento ocular, em alguns casos, isso pode não ser intencional. Se seu aplicativo usa acompanhamento ocular e essa é uma parte importante da experiência, recomendamos comunicar isso claramente ao usuário.   
+Embora alguns usuários possam ter decidido a revogação, o acesso aos seus dados de controle de olho e estão ok com a compensação de uma experiência de usuário inferior à privacidade de não fornecer acesso aos dados de controle de olho, em alguns casos isso pode não ser intencional. Se seu aplicativo usa o acompanhamento de olho, e essa é uma parte importante da experiência, recomendamos que você se comunique claramente com o usuário.   
 
-Informe ao usuário por que o acompanhamento ocular é essencial para seu aplicativo (talvez até mesmo listar alguns recursos avançados) para experimentar todo o potencial do seu aplicativo, pode ajudar o usuário a entender melhor o que ele está desistindo. Ajude o usuário a identificar por que o acompanhamento de olhos pode não estar funcionando (com base nas verificações acima) e oferecer algumas sugestões para solucionar problemas em potencial rapidamente. 
+Informando, de maneira adequada, o usuário por que o acompanhamento de olho é essencial para seu aplicativo (talvez até mesmo listar alguns recursos avançados) para experimentar todo o potencial do seu aplicativo, pode ajudar o usuário a entender melhor o que está desistindo. Ajude o usuário a identificar por que o acompanhamento de olhos pode não estar funcionando (com base nas verificações acima) e oferecer algumas sugestões para solucionar problemas em potencial rapidamente. 
 
 Por exemplo, se você puder detectar que o sistema dá suporte ao controle de olho, o usuário será calibrado e terá, até mesmo, dada a sua permissão, mas nenhum dado de acompanhamento de olho será recebido, isso poderá apontar para alguns outros problemas, como manchas ou olhos obstruídodos. 
 
@@ -169,14 +169,14 @@ Novamente, é recomendável comunicar claramente isso com o usuário que talvez 
 
 <br>
 
-Essa página espero que você tenha uma boa visão geral para começar a entender a função de acompanhamento de olho e a entrada olhar para o HoloLens 2. Para começar a desenvolver, confira nossas informações sobre a função de olhar para interagir com [hologramas,](eye-gaze-interaction.md)com o olhar no [Unity](https://aka.ms/mrtk-eyes) e com o olhar [no DirectX.](../develop/native/gaze-in-directx.md)
+Essa página espero que você tenha uma boa visão geral para começar a entender a função de acompanhamento de olho e a entrada olhar para o HoloLens 2. Para começar a desenvolver, confira nossas informações sobre a função de [olhar para interagir com hologramas](eye-gaze-interaction.md), [olhar de olho no Unity](https://aka.ms/mrtk-eyes) e [nos olhos-olhar no DirectX](../develop/native/gaze-in-directx.md).
 
 ## <a name="see-also"></a>Confira também
 
 * [Calibragem](/hololens/hololens-calibration)
 * [Conforto](comfort.md)
 * [Interação com base no foco com o olhar](eye-gaze-interaction.md)
-* [Olhar com o olhar no DirectX](../develop/native/gaze-in-directx.md)
-* [Olhar com o olhar no Unity (Kit de Ferramentas de Realidade Misturada)](https://aka.ms/mrtk-eyes)
+* [Olho-olhar no DirectX](../develop/native/gaze-in-directx.md)
+* [Olho-olhar no Unity (Kit de ferramentas de realidade misturada)](https://aka.ms/mrtk-eyes)
 * [Focar e confirmar](gaze-and-commit.md)
 * [Entrada de voz](../out-of-scope/voice-design.md)

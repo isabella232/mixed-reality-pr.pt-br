@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity, realidade mista, desenvolvimento, introdução, novo projeto, realidade do Windows Mixed, UWP, XR, desempenho, herdado, mrtk, Windows
-ms.openlocfilehash: 44de6b418995b75d9e199f03922f89016b76c5cd
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: c9733d58236d97db370ce4f58dc1760bdf4eda86
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743638"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110240"
 ---
 # <a name="using-windows-xr-plugin"></a>Usando o plug-in do Windows XR
 
 Para desenvolvedores direcionados para o Unity 2020, o plug-in do Windows XR permite o acesso a recursos mistos de realidade em headsets do HoloLens 2 e do Windows Mixed Reality.  Esse plug-in também tem suporte no Unity 2019, embora haja algumas incompatibilidades conhecidas com âncoras espaciais do Azure ao usar esse plug-in nessa versão.
 
-Embora a Microsoft e a Comunidade tenham criado ferramentas abertas como o [MRTK (Mixed Reality Toolkit)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) que configurará automaticamente o ambiente WMR, muitos desenvolvedores desejam criar suas experiências desde o início.  A documentação a seguir demonstrará como configurar corretamente um projeto para o desenvolvimento de realidade misturada se você estiver usando MRTK ou não.  As configurações que você precisa alterar são divididas em duas categorias: configurações por projeto e configurações por cena.
+Embora a Microsoft e a Comunidade tenham criado ferramentas abertas como o [MRTK (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/configuration/usingupm) que configurará automaticamente o ambiente WMR, muitos desenvolvedores desejam criar suas experiências desde o início.  A documentação a seguir demonstrará como configurar corretamente um projeto para o desenvolvimento de realidade misturada se você estiver usando MRTK ou não.  As configurações que você precisa alterar são divididas em duas categorias: configurações por projeto e configurações por cena.
 
 ## <a name="setting-up-your-project-with-mrtk"></a>Configurando seu projeto com o MRTK
 
