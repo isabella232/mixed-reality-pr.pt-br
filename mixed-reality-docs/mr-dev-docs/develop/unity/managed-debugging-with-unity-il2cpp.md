@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: unity, visual studio, depuração, il2cpp, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, UWP
-ms.openlocfilehash: 8e3967971220fa453f4e60639bd08f2554a8dd7e
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: 48f5fbd4b2ac217a3f840117595aa36fb3d7c10e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547083"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394500"
 ---
 # <a name="managed-debugging-with-unity"></a>Depuração gerenciada com o Unity
 
@@ -41,3 +41,7 @@ Siga estas etapas para anexar um depurador gerenciado ao build UWP do Unity IL2C
 10. Selecione seu dispositivo na lista e clique em "OK" para anexar.
 
     ![Lista de dispositivos](images/il2cpp-debugging-machines.png)
+
+## <a name="see-also"></a>Confira também 
+
+* [Depuração de C#](/visualstudio/get-started/csharp/tutorial-debugger)

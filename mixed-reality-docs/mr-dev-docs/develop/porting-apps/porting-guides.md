@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porta, Unity, não real, middleware, mecanismo, UWP, Win32, portabilidade, 1º de HoloLens, headset de realidade misturada, headset de realidade mista do Windows, migração, Windows 10, mapeamento de entrada,
-ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: bb76325c0a2d10150cff6604e29c7ead8a97df8e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580580"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394460"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portabilidade dos aplicativos de VR para o Windows Mixed Reality
 
@@ -30,7 +30,7 @@ Em um alto nível, as etapas a seguir estão envolvidas na portabilidade de cont
 
 ### <a name="1-make-sure-you-have-the-right-development-hardware"></a>1. Verifique se você tem o hardware de desenvolvimento correto
 
-A página [instalar as ferramentas](../install-the-tools.md#immersive-vr-headset-requirements) lista o hardware de desenvolvimento recomendado.
+A página [Guia de entusiastas VR](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) lista o hardware de desenvolvimento recomendado.
 
 ### <a name="2-upgrade-to-the-latest-flight-of-windows-10"></a>2. atualizar para o vôo mais recente do Windows 10
 

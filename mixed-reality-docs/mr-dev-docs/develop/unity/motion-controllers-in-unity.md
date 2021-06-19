@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: controladores de movimento, unity, entrada, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743480"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394510"
 ---
 # <a name="motion-controllers-in-unity"></a>Controladores de movimento no Unity
 
@@ -101,42 +101,80 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </tr>
 </table> -->
 
+### <a name="openxr"></a>OpenXR
 
-## <a name="grip-pose-vs-pointing-pose"></a>Pose da mão versus pose apontando
+Para saber as noções básicas sobre interações de realidade misturada no Unity, visite o Manual do [Unity para Entrada XR do Unity.](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html) Esta documentação do Unity aborda os mapeamentos de entradas específicas do controlador para entradas mais generalizáveis **InputFeatureUsage** s, como as entradas XR disponíveis podem ser identificadas e categorizadas, como ler dados dessas entradas e muito mais.
 
-Windows Mixed Reality dá suporte a controladores de movimento em uma variedade de fatores forma. O design de cada controlador difere em sua relação entre a posição da mão do usuário e a direção natural de "avançar" que os aplicativos devem usar para apontar ao renderizar o controlador.
+O Plug-in OpenXR de Realidade Misturada fornece perfis de interação de entrada adicionais, mapeados para **InputFeatureUsage** s padrão, conforme detalhado abaixo:
 
-Para representar melhor esses controladores, há dois tipos de poses  que você pode investigar para cada fonte de interação, a pose da mão e a pose **do ponteiro.** As coordenadas de pose da mão e da pose do ponteiro são expressas por todas as APIs do Unity nas coordenadas globais do mundo do Unity.
+| InputFeatureUsage | Controlador HP Reverb G2 (OpenXR) | Mão do HoloLens (OpenXR) |
+| ---- | ---- | ---- |
+| primary2DAxis | Joystick | |
+| primary2DAxisClick | Mouse – Click | |
+| gatilho | Gatilho  | |
+| Aperto | Dimensiona | Toque ou aperte o ar |
+| primaryButton | [X/A]-Pressione | Fechar e abrir dedos indicador e polegar |
+| secondaryButton | [S/B]-Pressione | |
+| gripButton | Segure a tecla | |
+| triggerButton | Gatilho-Pressione | |
+| menuButton | Menu | |
 
-### <a name="grip-pose"></a>Pose da mão
+## <a name="grip-pose-vs-pointing-pose"></a>Segurar pose vs. ponto de apontar
 
-A **pose da mão** representa o local da mão dos usuários, seja detectada por um HoloLens ou mantendo um controlador de movimento.
+O Windows Mixed Reality dá suporte a controladores de movimento em uma variedade de fatores forma. O design de cada controlador difere em sua relação entre a posição da mão do usuário e a direção natural "encaminhar" que os aplicativos devem usar para apontar ao renderizar o controlador.
 
-Em headsets imersivos, a pose de segurar é mais bem usada para **renderizar** a mão do usuário ou um objeto mantido **na mão do usuário.** A pose da mão também é usada ao visualizar um controlador de movimento. O **modelo renderizável** fornecido pelo Windows para um controlador de movimento usa a pose de controle como sua origem e centro de rotação.
+Para representar melhor esses controladores, há dois tipos de poses que você pode investigar para cada origem de interação, a **pose de alça** e a pose do **ponteiro**. As coordenadas de pose pose e ponteiro representam expressas por todas as APIs do Unity nas coordenadas do mundo global do Unity.
 
-A pose da mão é definida especificamente da seguinte forma:
-* A **posição da mão:** o centroide da mão ao manter o controlador naturalmente, ajustado para a esquerda ou para a direita para centralar a posição dentro da mão. No controlador Windows Mixed Reality de movimento, essa posição geralmente se alinha ao botão Compreender.
-* Eixo direito da orientação da **mão:** quando você abre completamente a mão para formar uma pose de 5 dedos simples, o raio que é normal para sua mão (para frente da mão esquerda, para trás da mão direita)
-* Eixo **de** avanço da orientação da mão: quando você fecha a mão parcialmente (como se estivesse segurando o controlador), o raio que aponta para "para frente" pelo sinal formado pelos dedos não polegares.
-* Eixo **para cima da orientação da** mão: o eixo Para cima implícito nas definições Direita e Avanço.
+### <a name="grip-pose"></a>Segurar pose
 
-Você pode acessar a pose de controle por meio da API de entrada entre fornecedores do Unity *[(XR). InputTracking.](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html) GetLocalPosition/Rotation*) ou por meio da API específica do Windows MR (*sourceState.sourcePose.TryGetPosition/Rotation*, solicitando dados de pose para o **nó de controle).**
+A **alça de pose** representa o local dos usuários Palm, detectado por um HoloLens ou segurando um controlador de movimento.
+
+Em headsets de imersão, a alça de pose é mais bem usada para renderizar **a mão do usuário** ou **um objeto mantido na mão do usuário**. A pose de alça também é usada ao visualizar um controlador de movimento. O **modelo renderizado** fornecido pelo Windows para um controlador de movimento usa a alça de pose como sua origem e o centro de rotação.
+
+A pose de alça é definida especificamente da seguinte maneira:
+* A **posição de alça**: o Palm centróide ao manter o controlador naturalmente, ajustado para a esquerda ou para a direita para centralizar a posição dentro da alça. No controlador de movimento de realidade mista do Windows, essa posição geralmente se alinha com o botão compreender.
+* O **eixo direito da orientação de alça**: quando você abre completamente a mão para formar uma pose plana de 5 dedos, o raio normal para o Palm (para frente do Palm esquerdo, para trás do Palm direito)
+* O **eixo de encaminhamento da orientação de alça**: quando você fecha a sua mão parcialmente (como se você mantiver o controlador), o raio que aponta para "encaminhar" por meio do tubo formado por seus dedos não-thumbs.
+* O **eixo superior da orientação de alça**: o eixo superior implícito pelas definições direita e avançar.
+
+Você pode acessar a alça de pose por meio da API de entrada entre fornecedores do Unity (*[XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation*) ou por meio da API específica do Windows Mr (*SourceState. SourcePose. TryGetPosition/Rotation*, solicitando dados de pose para o nó de **fixação** ).
 
 ### <a name="pointer-pose"></a>Pose de ponteiro
 
-A **pose do ponteiro** representa a dica do controlador apontando para frente.
+A **pose do ponteiro** representa a ponta do controlador que está apontando para frente.
 
-A pose de ponteiro fornecida pelo sistema é mais bem usada para raycast quando você está **renderizar o próprio modelo de controlador.** Se você estiver renderizar algum outro objeto virtual no lugar do controlador, como uma gun virtual, deverá apontar com um raio mais natural para esse objeto virtual, como um raio que percorre a cerca do modelo de disparo definido pelo aplicativo. Como os usuários podem ver o objeto virtual e não o controlador físico, apontar com o objeto virtual provavelmente será mais natural para aqueles que usam seu aplicativo.
+A pose de ponteiro fornecida pelo sistema é mais bem usada para Raycast quando você está **renderizando o próprio modelo de controlador**. Se estiver renderizando algum outro objeto virtual no lugar do controlador, como uma arma virtual, você deve apontar um raio mais natural para esse objeto virtual, como um Ray que viaja ao longo do cilindro do modelo de pressão definido pelo aplicativo. Como os usuários podem ver o objeto virtual e não o controlador físico, apontar com o objeto virtual provavelmente será mais natural para aqueles que usam seu aplicativo.
 
-Atualmente, a pose do ponteiro está disponível no Unity apenas por meio da API específica do Windows MR, *sourceState.sourcePose.TryGetPosition/Rotation,* passando *InteractionSourceNode.Pointer* como o argumento .
+Atualmente, a pose do ponteiro está disponível no Unity somente por meio da API específica do Windows Sr, *SourceState. sourcePose. TryGetPosition/Rotation*, passando *InteractionSourceNode. pointer* como o argumento.
 
-## <a name="controller-tracking-state"></a>Estado de acompanhamento do controlador
+### <a name="openxr"></a>OpenXR 
 
-Assim como os headsets, o Windows Mixed Reality de movimento não requer nenhuma configuração de sensores de acompanhamento externos. Em vez disso, os controladores são rastreados por sensores no próprio headset.
+Você tem acesso a dois conjuntos de poses por meio de interações de entrada OpenXR:
 
-Se o usuário mover os controladores para fora do campo de exibição do headset, o Windows continuará inferindo posições do controlador na maioria dos casos. Quando o controlador tiver perdido o controle visual por tempo suficiente, as posições do controlador cairão para posições de precisão aproximada.
+* A alça representa a renderização de objetos à mão
+* O objetivo se destaca no mundo.
 
-Neste ponto, o sistema bloqueará o controlador por corpo para o usuário, acompanhando a posição do usuário conforme ele se move, ainda expondo a orientação verdadeira do controlador usando seus sensores de orientação internos. Muitos aplicativos que usam controladores para apontar e ativar elementos de interface do usuário podem operar normalmente enquanto estão com precisão aproximada sem que o usuário perceba.
+Mais informações sobre esse design e as diferenças entre as duas poses podem ser encontradas na [especificação OpenXR-subcaminhos de entrada](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input).
+
+As poses fornecidas pelo InputFeatureUsages **DevicePosition**, **DeviceRotation**, **DeviceVelocity** e **DeviceAngularVelocity** representam a pose de **alça** de OpenXR. Os InputFeatureUsages relacionados a pose são definidos no [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html)do Unity.
+
+As poses fornecidas pelo InputFeatureUsages **PointerPosition**, **PointerRotation**, **PointerVelocity** e **PointerAngularVelocity** representam a pose de **AIM** de OpenXR. Esses InputFeatureUsages não são definidos em nenhum arquivo C# incluído, portanto, você precisará definir seu próprio InputFeatureUsages da seguinte maneira:
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+## <a name="haptics"></a>Haptics
+
+Para obter informações sobre como usar o haptics no sistema de entrada XR da Unity, a documentação pode ser encontrada no [manual do Unity para o Unity XR Input-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
+
+## <a name="controller-tracking-state"></a>Estado de controle do controlador
+
+Assim como os headsets, o controlador de movimento do Windows Mixed Reality não requer nenhuma configuração de sensores de controle externo. Em vez disso, os controladores são acompanhados por sensores no próprio headset.
+
+Se o usuário mover os controladores para fora do campo de visão do headset, o Windows continuará inferindo as posições do controlador na maioria dos casos. Quando o controlador tiver perdido o acompanhamento Visual por tempo suficiente, as posições do controlador serão descartadas para as posições de precisão aproximada.
+
+Neste ponto, o sistema bloqueará o corpo do controlador para o usuário, controlando a posição do usuário à medida que eles se movimentam, ao mesmo tempo em que ainda expõe a orientação verdadeira do controlador usando seus sensores de orientação interna. Muitos aplicativos que usam controladores para apontar e ativar elementos de interface do usuário podem operar normalmente em precisão aproximada sem que o usuário perceba.
 
 <!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
@@ -144,42 +182,42 @@ Neste ponto, o sistema bloqueará o controlador por corpo para o usuário, acomp
 
  >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
-### <a name="reasoning-about-tracking-state-explicitly"></a>Raciocínio sobre o estado de acompanhamento explicitamente
+### <a name="reasoning-about-tracking-state-explicitly"></a>Raciocínio sobre o estado de rastreamento explicitamente
 
-Aplicativos que desejam tratar posições de forma diferente com base no estado de acompanhamento podem ir além e inspecionar propriedades no estado do controlador, como *SourceLossRisk* e *PositionAccuracy:*
+Os aplicativos que desejam tratar as posições de forma diferente com base no estado de controle podem ir além e inspecionar as propriedades no estado do controlador, como *SourceLossRisk* e *PositionAccuracy*:
 
 <table>
 <tr>
 <th> Estado de acompanhamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Alta precisão</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Alta precisão</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Alta precisão (com risco de perda)</b> </td><td style="background-color: orange"> == 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Alta precisão (com risco de perda)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Precisão aproximada</b> </td><td style="background-color: orange"> == 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Precisão aproximada</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Nenhuma posição</b> </td><td style="background-color: orange"> == 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: orange"> false</td>
+<td> <b>Sem posição</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Aproximado </td><td style="background-color: orange"> false</td>
 </tr>
 </table>
 
-Esses estados de acompanhamento do controlador de movimento são definidos da seguinte forma:
-* **Alta precisão:** Embora o controlador de movimento está dentro do campo de exibição do headset, ele geralmente fornecerá posições de alta precisão, com base no acompanhamento visual. Um controlador móvel que sai momentaneamente do campo de exibição ou está momentaneamente obscurecido dos sensores do headset (por exemplo, por outro lado do usuário) continuará retornando poses de alta precisão por um curto período, com base no acompanhamento inerial do próprio controlador.
-* **Alta precisão (com risco de perda):** Quando o usuário move o controlador de movimento para além da borda do campo de exibição do headset, o headset em breve não poderá acompanhar visualmente a posição do controlador. O aplicativo sabe quando o controlador atingiu esse limite de FOV vendo **o SourceLossRisk** alcançar 1.0. Nesse ponto, o aplicativo pode optar por pausar gestos do controlador que exigem um fluxo constante de poses de alta qualidade.
-* **Precisão aproximada:** Quando o controlador tiver perdido o controle visual por tempo suficiente, as posições do controlador cairão para posições de precisão aproximada. Neste ponto, o sistema bloqueará o controlador por corpo para o usuário, acompanhando a posição do usuário conforme ele se move, ainda expondo a orientação verdadeira do controlador usando seus sensores de orientação internos. Muitos aplicativos que usam controladores para apontar e ativar elementos de interface do usuário podem operar normalmente, enquanto com precisão aproximada sem que o usuário perceba. Aplicativos com requisitos de entrada mais  pesados podem  optar por perceber essa queda de Precisão alta para Precisão aproximada inspecionando a propriedade **PositionAccuracy,** por exemplo, para dar ao usuário uma caixa de seleção mais desproposicionada em destinos fora da tela durante esse tempo.
-* **Nenhuma posição:** Embora o controlador possa operar com precisão aproximada por um longo tempo, às vezes, o sistema sabe que até mesmo uma posição bloqueada pelo corpo não é significativa no momento. Por exemplo, um controlador que foi ligado pode nunca ter sido observado visualmente ou um usuário pode colocar um controlador que é então retirado por outra pessoa. Nesses momentos, o sistema não fornecerá nenhuma posição para o aplicativo e *TryGetPosition* retornará false.
+Esses Estados de acompanhamento do controlador de movimento são definidos da seguinte maneira:
+* **Alta precisão:** Embora o controlador de movimento esteja dentro do campo de exibição do headset, ele geralmente fornecerá posições de alta precisão, com base no rastreamento visual. Um controlador móvel que deixa momentaneamente o campo de exibição ou é momentaneamente obscurecido dos sensores do headset (por exemplo, por outro lado do usuário) continuará a retornar poses de alta precisão por um curto período, com base no acompanhamento inércia do próprio controlador.
+* **Alta precisão (com risco de perda):** Quando o usuário move o controlador de movimento para cima da borda do campo de exibição do headset, o headset em breve não será capaz de rastrear visualmente a posição do controlador. O aplicativo sabe quando o controlador atingiu esse limite de FOV vendo o **SourceLossRisk** REACH 1,0. Nesse ponto, o aplicativo pode optar por pausar gestos do controlador que exigem um fluxo constante de poses de alta qualidade.
+* **Precisão aproximada:** Quando o controlador tiver perdido o acompanhamento Visual por tempo suficiente, as posições do controlador serão descartadas para as posições de precisão aproximada. Neste ponto, o sistema bloqueará o corpo do controlador para o usuário, controlando a posição do usuário à medida que eles se movimentam, ao mesmo tempo em que ainda expõe a orientação verdadeira do controlador usando seus sensores de orientação interna. Muitos aplicativos que usam controladores para apontar para e ativar elementos da interface do usuário podem operar normalmente em precisão aproximada sem que o usuário perceba. Os aplicativos com requisitos de entrada mais pesados podem optar por detectar essa queda de **alta** precisão à precisão **aproximada** inspecionando a propriedade **PositionAccuracy** , por exemplo, para dar ao usuário um hitbox mais generosa em destinos fora da tela durante esse tempo.
+* **Sem posição:** Embora o controlador possa operar com precisão aproximada por um longo tempo, às vezes o sistema sabe que até mesmo uma posição bloqueada pelo corpo não é significativa no momento. Por exemplo, um controlador que foi ativado pode nunca ter sido observado visualmente ou um usuário pode colocar um controlador selecionado por outra pessoa. Naqueles momentos, o sistema não fornecerá nenhuma posição ao aplicativo e *TryGetPosition* retornará false.
 
-## <a name="common-unity-apis-inputgetbuttongetaxis"></a>APIs comuns do Unity (Input.GetButton/GetAxis)
+## <a name="common-unity-apis-inputgetbuttongetaxis"></a>APIs comuns do Unity (Input. getbutton/getaxis)
 
-**Namespace:** *UnityEngine,* *UnityEngine.XR*<br>
-**Tipos:** *Entrada*, *XR. InputTracking*
+**Namespace:** *UnityEngine*, *UnityEngine. XR*<br>
+**Tipos**: *Input*, *XR. InputTracking*
 
-Atualmente, o Unity usa suas APIs *Input.GetButton/Input.GetAxis* gerais para expor a entrada para o [SDK do Oculus,](https://docs.unity3d.com/Manual/OculusControllers.html)o [SDK do OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html) e Windows Mixed Reality, incluindo controladores de movimento e mãos. Se seu aplicativo usar essas APIs para entrada, ele poderá dar suporte facilmente a controladores de movimento em vários SDKs XR, incluindo Windows Mixed Reality.
+No momento, o Unity usa suas APIs de *entrada geral. getbutton/Input. getaxis* para expor a entrada para [o SDK do OCULUS](https://docs.unity3d.com/Manual/OculusControllers.html), [o SDK do OpenVR e a](https://docs.unity3d.com/Manual/OpenVRControllers.html) realidade mista do Windows, incluindo controladores de mãos e de movimento. Se seu aplicativo usa essas APIs para entrada, ele pode facilmente dar suporte a controladores de movimento em vários SDKs do XR, incluindo a realidade mista do Windows.
 
-### <a name="getting-a-logical-buttons-pressed-state"></a>Obter o estado pressionado de um botão lógico
+### <a name="getting-a-logical-buttons-pressed-state"></a>Obtendo o estado pressionado de um botão lógico
 
-Para usar as APIs de entrada gerais do Unity, normalmente você começará vinculando botões e eixos a nomes lógicos no Gerenciador de Entrada do [Unity,](https://docs.unity3d.com/Manual/ConventionalGameInput.html)vinculando um botão ou IDs de eixo a cada nome. Em seguida, você pode escrever um código que se refere ao nome do eixo/botão lógico.
+Para usar as APIs de entrada gerais da Unity, você normalmente começará com a vinculação de botões e eixos a nomes lógicos no [Gerenciador de entrada do Unity](https://docs.unity3d.com/Manual/ConventionalGameInput.html), ligando um botão ou IDs de eixo a cada nome. Em seguida, você pode escrever código que se refere a esse botão lógico/nome do eixo.
 
-Por exemplo, para mapear o botão de gatilho do controlador de movimento esquerdo para a ação Enviar, acesse Editar configurações do projeto > > **Entrada** no Unity e expanda as propriedades da seção Enviar em Eixos. Altere **a propriedade Botão Positivo** ou Botão Alt **Positivo** para ler o botão de **mouse 14,** desta forma:
+Por exemplo, para mapear o botão de gatilho do controlador de movimento à esquerda para a ação enviar, acesse **editar > configurações do projeto > entrada** no Unity e expanda as propriedades da seção enviar em eixos. Altere o **botão positivo** ou a propriedade do **botão Alt positivo** para ler o **botão 14 do joystick**, desta forma:
 
 ![InputManager do Unity](images/unity-input-manager.png)<br>
 *Unity InputManager*
