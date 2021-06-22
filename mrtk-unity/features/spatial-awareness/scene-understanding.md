@@ -5,12 +5,12 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Compreensão de cena
-ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743548"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449745"
 ---
 # <a name="scene-understanding"></a>Noções básicas sobre a cena
 
@@ -69,7 +69,7 @@ A cena demonstra o seguinte:
 ::: moniker range="= mrtkunity-2021-05"
 
 > [!NOTE] 
-> A cena de exemplo registra um `There is no active AsyncCoroutineRunner when an action is posted.` aviso sob determinada circunstância devido à ordem de inicialização/execução do thread. Se você puder confirmar que o componente está anexado ao GameObject "Controlador de Demonstração" e o `AsyncCoroutineRunner` componente/GameObject permanecer habilitado/ativo na cena (o caso padrão), o aviso poderá ser ignorado com segurança.
+> A cena de exemplo registra um `There is no active AsyncCoroutineRunner when an action is posted.` aviso sob determinada circunstância devido à ordem de inicialização/execução do thread. Se você puder confirmar que o componente está anexado ao GameObject "Controlador de Demonstração" e o `AsyncCoroutineRunner` componente/GameObject permanecer habilitado/ativo na cena (o caso padrão), o aviso poderá ser ignorado com segurança. **No entanto, ao criar uma nova cena com o Entendimento de Cena, crie um GameObject vazio na raiz e anexe o script a ela, caso contrário, a Compreensão de Cena pode não `AsyncCoroutineRunner` funcionar corretamente.**
 ::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>Configurando o serviço observador

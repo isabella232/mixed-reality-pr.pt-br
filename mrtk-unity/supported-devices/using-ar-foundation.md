@@ -1,22 +1,22 @@
 ---
-title: Configuração do Android e iOS MRTK (ARFoundation)
+title: Criando e implantando no Android e iOS por meio do AR Foundation
 description: Documentação para configurar o MRTK para Android e iOS (ARFoundation) no Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: 9f621008db76e3f8e443545b795db442d7c17dda
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345129"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449735"
 ---
-# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Como configurar o MRTK para iOS e Android [experimental]
+# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>Criando e implantando no Android e iOS por meio do AR Foundation [experimental]
 
 ## <a name="install-required-packages"></a>Instalar os pacotes necessários
 
-1. Baixe e importe o pacote **Microsoft. MixedReality. Toolkit. Unity. Foundation** , do [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) ou do [Gerenciador de pacotes do Unity](../configuration/usingupm.md)
+1. Baixe e importe o pacote **Microsoft. MixedReality. Toolkit. Unity. Foundation** , do [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) ou do [Gerenciador de pacotes do Unity](../configuration/usingupm.md)
 
 1. No Gerenciador de pacotes do Unity (UPM), instale os seguintes pacotes:
 
@@ -34,12 +34,12 @@ ms.locfileid: "110345129"
     | AR Foundation  <br/> Versão: 2.1.8 |  AR Foundation  <br/> Versão: 2.1.8 |
     | Plug-in ARCore XR <br/> Versão: 2.1.11 | Plug-in ARKit XR <br/> Versão: 2.1.9 |
 
-    **Unity 2020.1. x (atualmente não tem suporte, incluído apenas para fins informativos)**
+    **Unity 2020.3. x**
 
     | **Android** | **iOS** |
     | --- | --- |
-    | AR Foundation  <br/> Versão: 3.1.3 |  AR Foundation  <br/> Versão: 3.1.3 |
-    | Plug-in ARCore XR <br/> Versão: 3.1.4 | Plug-in ARKit XR <br/> Versão: 3.1.3 |
+    | AR Foundation  <br/> Versão: 3.1.3 |  AR Foundation  <br/> Versão: 4.0.12 |
+    | Plug-in ARCore XR <br/> Versão: 3.1.4 | Plug-in ARKit XR <br/> Versão: 4.1.7 |
 
 1. Atualize o MRTK UnityAR scripting define invocando o item de menu: **mixed reality > Toolkit > Utilities > UnityAR > atualizar script define**
 
