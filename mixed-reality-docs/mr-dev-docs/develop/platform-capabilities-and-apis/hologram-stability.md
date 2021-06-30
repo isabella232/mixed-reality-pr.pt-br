@@ -1,85 +1,85 @@
 ---
 title: Estabilidade do holograma
-description: O HoloLens estabiliza automaticamente os hologramas, mas há etapas que os desenvolvedores podem seguir para melhorar ainda mais a estabilidade do holograma.
+description: O HoloLens estabiliza automaticamente hologramas, mas há etapas que os desenvolvedores podem seguir para melhorar ainda mais a estabilidade do holograma.
 author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: hologramas, estabilidade, hololens, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, taxa de quadros, renderização, Reprojeção, separação de cores
+keywords: hologramas, estabilidade, hololens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, taxa de quadros, renderização, reprodução, separação de cores
 appliesto:
 - HoloLens
-ms.openlocfilehash: 560b1551b153f1735b0106869c6a82c977693968
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: a4a22221d3238bb7dfed711e6ee1f11edc70238e
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110104"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042287"
 ---
 # <a name="hologram-stability"></a>Estabilidade do holograma
 
-Para atingir hologramas estáveis, o HoloLens tem um pipeline de estabilização de imagem interno. O pipeline de estabilização funciona automaticamente em segundo plano, portanto, você não precisa executar nenhuma etapa adicional para habilitá-lo. No entanto, você deve exercitar as técnicas que melhoram a estabilidade do holograma e evitar cenários que reduzam a estabilidade.
+Para alcançar hologramas estáveis, o HoloLens tem um pipeline de estabilização de imagem integrado. O pipeline de estabilização funciona automaticamente em segundo plano, portanto, você não precisa seguir nenhuma etapa adicional para habilita-lo. No entanto, você deve exercício de técnicas que melhoram a estabilidade do holograma e evitam cenários que reduzem a estabilidade.
 
 ## <a name="hologram-quality-terminology"></a>Terminologia de qualidade do holograma
 
-A qualidade dos hologramas é um resultado de um bom ambiente e um bom desenvolvimento de aplicativos. Aplicativos em execução em uma constante 60 de quadros por segundo em um ambiente em que o HoloLens pode rastrear os arredores garante que o holograma e o sistema de coordenadas correspondentes estejam em sincronia. Da perspectiva de um usuário, os hologramas que devem ser transportáveis não se moverão em relação ao ambiente.
+A qualidade dos hologramas é resultado de um bom ambiente e bom desenvolvimento de aplicativos. Aplicativos em execução em uma constante de 60 quadros por segundo em um ambiente em que o HoloLens pode acompanhar o ambiente garante que o holograma e o sistema de coordenadas correspondentes estão em sincronia. Da perspectiva de um usuário, os hologramas que devem ser estacionários não serão movimentados em relação ao ambiente.
 
-A terminologia a seguir pode ajudá-lo quando você estiver identificando problemas com o ambiente, tarifas de renderização baixa ou inconsistentes ou qualquer outra coisa.
-* **Correta.** Depois que o holograma é bloqueado mundialmente e colocado no mundo real, ele deve permanecer onde é colocado em relação ao ambiente ao redor e independente do movimento do usuário ou de alterações de ambiente pequenas e esparsas. Se um holograma mais tarde aparecer em um local inesperado, será um problema de *precisão* . Esses cenários podem ocorrer se duas salas distintas parecem idênticas.
-* **Tremulação.** Os usuários observam a tremulação de alta frequência de um holograma, o que pode acontecer quando o controle do ambiente degrada. Para os usuários, a solução está executando o [ajuste de sensor](/hololens/hololens-updates).
-* **Judder.** Baixas frequências de renderização resultam em animações desiguais e imagens duplas de hologramas. O judder é especialmente perceptível em hologramas com movimento. Os desenvolvedores precisam manter uma [constante 60 fps](hologram-stability.md#frame-rate).
-* **Continente.** Os usuários veem a descompasso, uma vez que um holograma parece deixar de onde ele foi colocado originalmente. A descompasso acontece quando você coloca os hologramas longe das [âncoras espaciais](../../design/spatial-anchors.md), especialmente em partes não mapeadas do ambiente. A criação de hologramas perto de âncoras espaciais reduz a probabilidade de descompasso.
-* **Jumpize.** Quando um holograma "aparece" ou "salta" para fora de seu local ocasionalmente. A jumpização pode ocorrer conforme o controle ajusta os hologramas para que correspondam à compreensão atualizada do seu ambiente.
-* **Nadam.** Quando um holograma aparenta ser o Sway correspondente ao movimento do cabeçalho do usuário. Nada acontece quando o aplicativo não implementou totalmente a [Reprojeção](hologram-stability.md#reprojection)e, se o HoloLens não for [calibrado](/hololens/hololens-calibration) para o usuário atual. O usuário pode executar novamente o aplicativo de [calibragem](/hololens/hololens-calibration) para corrigir o problema. Os desenvolvedores podem atualizar o plano de estabilização para melhorar ainda mais a estabilidade.
-* **Separação de cores.** Os monitores no HoloLens são exibições sequenciais de cores, que canais de cores flash de vermelho-verde-azul-verde a 60 Hz (campos de cor individuais são mostrados às 240 Hz). Sempre que um usuário rastreia um holograma de movimento com seus olhos, as bordas à esquerda e à direita do holograma são separadas em suas cores constituintes, produzindo um efeito arco-íris. O grau de separação depende da velocidade do holograma. Em alguns casos raros, mover os cabeçotes rapidamente enquanto examina um holograma estacionário também pode resultar em um efeito de arco-íris, que é chamado de *[separação de cores](hologram-stability.md#color-separation)*.
+A terminologia a seguir pode ajudá-lo ao identificar problemas com o ambiente, taxas de renderização inconsistentes ou baixas ou qualquer outra coisa.
+* **Precisão.** Depois que o holograma é bloqueado e colocado no mundo real, ele deve permanecer onde está colocado em relação ao ambiente ao redor e independentemente do movimento do usuário ou alterações de ambiente pequenas e esparsas. Se um holograma aparecer posteriormente em um local inesperado, será um problema *de precisão.* Esses cenários poderão ocorrer se duas salas distintas parecer idênticas.
+* **Jitter.** Os usuários observam trem tremulações como uma grande frequência de um holograma, o que pode acontecer quando o acompanhamento do ambiente degrada. Para usuários, a solução está executando o [ajuste do sensor](/hololens/hololens-updates).
+* **Trepidação.** Frequências de renderização baixas resultam em movimento irregular e imagens duplas de hologramas. O Hologramer é especialmente perceptível em hologramas com movimento. Os desenvolvedores precisam manter uma [constante de 60 FPS.](hologram-stability.md#frame-rate)
+* **Deriva.** Os usuários veem o desmando como um holograma parece se mover para fora do local em que foi originalmente colocado. O desacordo ocorre quando você coloca os hologramas longe das [âncoras espaciais,](../../design/spatial-anchors.md)especialmente em partes não mapeadas do ambiente. Criar hologramas próximos a âncoras espaciais reduz a probabilidade de desacordo.
+* **Jumpiness.** Quando um holograma "aparece" ou "salta" para fora de seu local ocasionalmente. A preparação pode ocorrer à medida que o acompanhamento ajusta os hologramas para corresponder à compreensão atualizada do seu ambiente.
+* **Nadar.** Quando um holograma parece estar em movimento correspondente ao movimento da cabeça do usuário. O nada ocorre quando o aplicativo não implementou totalmente [a reprojetação](hologram-stability.md#reprojection)e se o HoloLens não está [calibrado](/hololens/hololens-calibration) para o usuário atual. O usuário pode reprisar o [aplicativo de calibragem](/hololens/hololens-calibration) para corrigir o problema. Os desenvolvedores podem atualizar o plano de estabilização para aprimorar ainda mais a estabilidade.
+* **Separação de cores.** As exibições no HoloLens são exibições sequenciais de cores, que piscam canais de cores vermelho-verde-azul-verde a 60 Hz (campos de cor individuais são mostrados a 240 Hz). Sempre que um usuário rastreia um holograma móvel com os olhos, as bordas à frente e à parte inferior do holograma são separadas em suas cores constituintes, produzindo um efeito de arco. O grau de separação depende da velocidade do holograma. Em alguns casos mais raros, mover a cabeça deles rapidamente ao olhar para um holograma estacionário também pode resultar em um efeito de arco, que é chamado de *[separação de cores.](hologram-stability.md#color-separation)*
 
 ## <a name="frame-rate"></a>Taxa de quadros
 
-A taxa de quadros é o primeiro pilar da estabilidade do holograma. Para que os hologramas pareçam estáveis no mundo, cada imagem apresentada ao usuário deve ter os hologramas desenhados no local correto. O exibe na atualização do HoloLens 240 vezes por segundo, mostrando quatro campos coloridos separados para cada imagem recém processada, resultando em uma experiência do usuário de 60 FPS (quadros por segundo). Para fornecer a melhor experiência possível, os desenvolvedores de aplicativos devem manter 60 FPS, o que traduz para fornecer consistentemente uma nova imagem ao sistema operacional a cada 16 milissegundos.
+A taxa de quadros é o primeiro pilar da estabilidade do holograma. Para que os hologramas pareçam estáveis no mundo, cada imagem apresentada ao usuário deve ter os hologramas desenhados no ponto correto. O é exibido na atualização do HoloLens 240 vezes por segundo, mostrando quatro campos de cores separados para cada imagem renderizada recentemente, resultando em uma experiência do usuário de 60 FPS (quadros por segundo). Para fornecer a melhor experiência possível, os desenvolvedores de aplicativos devem manter 60 FPS, o que se traduz em fornecer consistentemente uma nova imagem para o sistema operacional a cada 16 milissegundos.
 
-**60 fps** Para desenhar hologramas para que pareçam estar sentado no mundo real, o HoloLens precisa renderizar imagens da posição do usuário. Como a renderização de imagem leva tempo, o HoloLens prevê onde o cabeçalho de um usuário será quando as imagens forem mostradas nas exibições. No entanto, esse algoritmo de previsão é uma aproximação. O HoloLens tem um hardware que ajusta a imagem renderizada para considerar a discrepância entre a posição da cabeça prevista e a posição real da cabeça. O ajuste faz a imagem que o usuário vê aparece como se fosse renderizado do local correto e os hologramas sentem-se estáveis. As atualizações de imagem funcionam melhor com pequenas alterações e não podem corrigir completamente certas coisas na imagem renderizada, como Motion-da Parallax.
+**60 FPS** Para desenhar hologramas para parecer que estão no mundo real, o HoloLens precisa renderizar imagens da posição do usuário. Como a renderização de imagem leva tempo, o HoloLens prevê onde a cabeça do usuário estará quando as imagens são mostradas nas exibições. No entanto, esse algoritmo de previsão é uma aproximação. O HoloLens tem hardware que ajusta a imagem renderizada para levar em conta a discrepância entre a posição de cabeça prevista e a posição real da cabeça. O ajuste faz com que a imagem que o usuário vê apareça como se fosse renderizada do local correto e os hologramas se sintam estáveis. As atualizações de imagem funcionam melhor com pequenas alterações e não podem corrigir completamente certas coisas na imagem renderizada, como motion-parallax.
 
-Ao renderizar em 60 FPS, você está fazendo três coisas para ajudar a tornar os hologramas estáveis:
-1. Minimizar a latência geral entre a renderização de uma imagem e a imagem que está sendo vista pelo usuário. Em um mecanismo com um jogo e um thread de renderização em execução no atrelada, a execução em 30FPS pode adicionar 33,3 ms de latência extra. A redução da latência diminui o erro de previsão e aumenta a estabilidade do holograma.
-2. Fazendo isso, todas as imagens que atingem os olhos do usuário têm uma quantidade consistente de latência. Se você renderizar a 30 fps, a exibição ainda exibirá imagens em 60 FPS, o que significa que a mesma imagem será exibida duas vezes em uma linha. O segundo quadro terá 16,6-ms mais latência do que o primeiro quadro e terá que corrigir uma quantidade mais pronunciada de erro. Essa inconsistência na magnitude do erro pode causar judder de 60 Hz indesejadas.
-3. Reduzir a aparência de trepidação, que é caracterizada pelo movimento irregular e por imagens duplas. Um movimento mais rápido do holograma e taxas de renderização mais baixas estão associados a uma trepidação mais acentuada. Empenhar-se em manter 60 FPS em todos os momentos ajudará a evitar judder para um determinado holograma de movimentação.
+Ao renderizar em 60 FPS, você está fazendo três coisas para ajudar a tornar hologramas estáveis:
+1. Minimizar a latência geral entre renderizar uma imagem e essa imagem que está sendo vista pelo usuário. Em um mecanismo com um jogo e um thread de renderização em execução em lockstep, a execução a 30FPS pode adicionar 33,3 ms de latência extra. Reduzir a latência diminui o erro de previsão e aumenta a estabilidade do holograma.
+2. Tornando-o para que cada imagem que alcance os olhos do usuário tenha uma quantidade consistente de latência. Se você renderizar a 30 fps, a exibição ainda exibirá imagens a 60 FPS, o que significa que a mesma imagem será exibida duas vezes em uma linha. O segundo quadro terá 16,6 ms de latência maior do que o primeiro quadro e terá que corrigir uma quantidade mais pronunciada de erro. Essa inconsistência na magnitude do erro pode causar 60 Hz indesejados.
+3. Reduzir a aparência de trepidação, que é caracterizada pelo movimento irregular e por imagens duplas. Um movimento mais rápido do holograma e taxas de renderização mais baixas estão associados a uma trepidação mais acentuada. Tentar manter 60 FPS o tempo todo ajudará a evitar o uso de um holograma móvel determinado.
 
-**Consistência de taxa de quadros** A consistência da taxa de quadros é tão importante quanto uma alta de quadros por segundo. Ocasionalmente, os quadros descartados são inevitáveis para qualquer aplicativo rico em conteúdo, e o HoloLens implementa alguns algoritmos sofisticados para se recuperar de falhas ocasionais. No entanto, uma taxa de quadros com flutuação constante é muito mais perceptível para um usuário do que executar consistentemente em taxas de quadros inferiores. Por exemplo, um aplicativo que é processado sem problemas para cinco quadros (60 FPS durante esses cinco quadros) e, em seguida, descarta todos os outros quadros para os 10 quadros seguintes (30 FPS para a duração desses 10 quadros) aparecerão mais instável do que um aplicativo que é processado consistentemente em 30 FPS.
+**Consistência da taxa de quadros** A consistência da taxa de quadros é tão importante quanto um quadro alto por segundo. Ocasionalmente, quadros descartados são inevitáveis para qualquer aplicativo com conteúdo avançado e o HoloLens implementa alguns algoritmos sofisticados para se recuperar de falhas ocasionais. No entanto, uma taxa de quadros constantemente flutuante é muito mais perceptível para um usuário do que executar consistentemente com taxas de quadros menores. Por exemplo, um aplicativo que renderiza suavemente para cinco quadros (60 FPS durante esses cinco quadros) e, em seguida, descarta todos os outros quadros para os próximos 10 quadros (30 FPS durante esses 10 quadros) aparecerá mais instável do que um aplicativo que renderiza consistentemente em 30 FPS.
 
-Em uma observação relacionada, o sistema operacional limita os aplicativos a 30 FPS quando a [captura de realidade misturada](/hololens/holographic-photos-and-videos) está em execução.
+Em uma observação relacionada, o sistema operacional reduz os aplicativos para 30 FPS quando a captura [de realidade misturada](/hololens/holographic-photos-and-videos) está em execução.
 
-**Análise de desempenho** Há diferentes tipos de ferramentas que podem ser usadas para avaliar o benchmark da taxa de quadros do aplicativo, como:
+**Análise de desempenho** Há diferentes tipos de ferramentas que podem ser usadas para fazer o parâmetro de comparação da taxa de quadros do aplicativo, como:
 * GPUView
 * Depurador de Gráficos do Visual Studio
-* Criadores de criação de perfil em mecanismos 3D, como o Unity
+* Profilers integrados a mecanismos 3D, como o Unity
 
-## <a name="hologram-render-distances"></a>Distâncias de renderização de holograma
+## <a name="hologram-render-distances"></a>Distâncias de renderização do holograma
 
 >[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
-O sistema visual humano integra vários sinais dependentes de distância quando fixates e se concentra em um objeto.
-* [Acomodação](https://en.wikipedia.org/wiki/Accommodation_%28eye%29) -o foco de um olho individual.
-* [Convergência](https://en.wikipedia.org/wiki/Convergence_(eye)) -dois olhos se movendo para dentro ou para fora para o centro em um objeto.
-* [Visão de binóculo](https://en.wikipedia.org/wiki/Stereopsis) – diparidades entre as imagens de olho esquerdo e direito que dependem da distância de um objeto do seu ponto de fixação da.
-* Sombreamento, tamanho angular relativo e outros indícios de monocular (olho único).
+O sistema visual humano integra vários sinais dependentes de distância quando ele fixa e se concentra em um objeto .
+* [Acomodação](https://en.wikipedia.org/wiki/Accommodation_%28eye%29) – o foco de um olho individual.
+* [Convergência](https://en.wikipedia.org/wiki/Convergence_(eye)) – dois olhos se movendo para dentro ou para fora para o centro em um objeto .
+* [Visão visionária](https://en.wikipedia.org/wiki/Stereopsis) – disparidades entre as imagens esquerda e direita que dependem da distância de um objeto do ponto de fixação.
+* Sombreamento, tamanho angular relativo e outras dicas monocular (olho único).
 
-A convergência e a acomodação são exclusivas porque suas indicações retinas adicionais relacionadas a como os olhos mudam para perceber os objetos em diferentes distâncias. Na visualização natural, a convergência e a acomodação são vinculadas. Quando os olhos exibem algo próximo (por exemplo, seu nariz), os olhos cruzam e acomodam a um ponto próximo. Quando os olhos visualizam algo no infinito, os olhos se tornam paralelos e os olhos se acomodam ao infinito. 
+A convergência e a acomodação são exclusivas porque suas responsabilidades extratinais relacionadas a como os olhos mudam para perceber objetos a distâncias diferentes. Na exibição natural, a convergência e a acomodação são vinculadas. Quando os olhos visualizam algo próximo (por exemplo, seu nariz), os olhos se cruzam e acomodam a um ponto próximo. Quando os olhos visualizam algo no infinito, os olhos se tornam paralelos e o olho se acomoda ao infinito. 
 
-Os usuários com o HoloLens serão sempre acomodados a 2,0 m para manter uma imagem clara porque as exibições do HoloLens são fixas em uma distância óptica de aproximadamente 2,0 m para longe do usuário. Os desenvolvedores de aplicativos controlam onde os olhos dos usuários convergem colocando o conteúdo e os hologramas em várias profundidades. Quando os usuários acomodam e convergem para distâncias diferentes, o link natural entre as duas indicações é quebrado, o que pode levar ao Visual discomfort ou fadiga, especialmente quando a magnitude do conflito é grande. 
+Os usuários que usam o HoloLens sempre se acomodarão a 2,0 m para manter uma imagem clara, pois as exibições do HoloLens são fixas a uma distância óptica de aproximadamente 2,0 m do usuário. Os desenvolvedores de aplicativos controlam onde os olhos dos usuários convergem colocando conteúdo e hologramas em várias profundidades. Quando os usuários acomodam e convergem para distâncias diferentes, o vínculo natural entre as duas responsabilidades é desfeito, o que pode levar a estresse visual ou estresse, especialmente quando a magnitude do conflito é grande. 
 
-Discomfort do conflito Vergence pode ser evitado ou minimizado mantendo o conteúdo convergido o mais próximo de 2,0 m possível (ou seja, em uma cena com muito profundidade, coloque as áreas de interesse perto de 2,0 m, quando possível). Quando o conteúdo não pode ser colocado perto de 2,0 m, o discomfort do conflito de Vergence é maior quando o olhar do usuário é alternado entre distâncias diferentes. Em outras palavras, é muito mais confortável olhar para um holograma fixo a 50 cm de distância do que para um holograma a 50 cm que se move para frente e para longe de você com o tempo.
+O medo do conflito de acomodação-de-veracidade pode ser evitado ou minimizado mantendo o conteúdo convergido o mais próximo possível de 2,0 m (ou seja, em uma cena com muita profundidade, coloque as áreas de interesse próximas de 2,0 m, quando possível). Quando o conteúdo não pode ser colocado perto de 2,0 m, o medo do conflito de acomodação-de-veracidade é maior quando o olhar do usuário entre diferentes distâncias. Em outras palavras, é muito mais confortável olhar para um holograma fixo a 50 cm de distância do que para um holograma a 50 cm que se move para frente e para longe de você com o tempo.
 
-Colocar o conteúdo em 2,0 m também é vantajoso, pois as duas telas são projetadas para se sobrepor totalmente nessa distância. Para imagens colocadas fora desse plano, à medida que eles se movem para fora do quadro Holographic, eles aparecerão de uma exibição, enquanto continuam sendo visíveis no outro. Este rival de binóculo pode causar interrupções na percepção de profundidade do holograma.
+Colocar o conteúdo a 2,0 m também é vantajoso porque as duas exibições são projetadas para se sobrepor totalmente a essa distância. Para imagens colocadas fora desse plano, conforme elas se movem para fora do lado do quadro holográfico, elas aparecerão de uma exibição enquanto ainda estão visíveis na outra. Essa consulta pode ser uma interrupção na percepção de profundidade do holograma.
 
 **Distância ideal para colocação dos hologramas partindo do usuário**
 
 ![Distância ideal para colocação dos hologramas partindo do usuário](images/distanceguiderendering-750px.png)
 
-**Planos de clipes** Para maior conforto, é recomendável recortar a distância de renderização em 85 cm com fade out do conteúdo começando em 1 m. Em aplicativos em que os hologramas e os usuários são estáticos, os hologramas podem ser vistos confortavelmente como se aproximando 50 cm. Nesses casos, os aplicativos devem posicionar um plano de clipes que não sejam mais de 30 cm e desaparecer devem iniciar pelo menos 10 cm fora do plano. Sempre que o conteúdo estiver mais próximo do que 85 cm, é importante garantir que os usuários não se aproximem mais de perto ou longe de hologramas ou que os hologramas não se movam com frequência mais perto ou longe do usuário, pois essas situações têm mais probabilidade de causar discomfort do conflito de Vergence. O conteúdo deve ser criado para minimizar a necessidade de interação com mais de 85 cm do usuário, mas quando o conteúdo deve ser processado mais de 85 cm, uma boa regra prática para os desenvolvedores é criar cenários em que os usuários e/ou os hologramas não se movam em profundidade mais de 25% do tempo.
+**Planos de clipe** Para o máximo de conforto, recomendamos a distância de renderização de recorte em 85 cm com o esmaeçamento do conteúdo começando em 1 m. Em aplicativos em que os hologramas e os usuários são estacionários, os hologramas podem ser exibidos de maneira confortável até 50 cm. Nesses casos, os aplicativos devem colocar um plano de clipes não mais próximo de 30 cm e esmaecer devem iniciar pelo menos 10 cm de distância do plano de clipe. Sempre que o conteúdo estiver mais próximo de 85 cm, é importante garantir que os usuários não se movam com frequência mais próximos ou mais distantes dos hologramas ou que os hologramas não se movam com frequência para mais perto ou para mais longe do usuário, pois essas situações têm maior probabilidade de causar o ressarquite do conflito de acomodação de verão. O conteúdo deve ser projetado para minimizar a necessidade de interação mais próxima de 85 cm do usuário, mas quando o conteúdo deve ser renderizado mais próximo de 85 cm, uma boa regra geral para os desenvolvedores é projetar cenários em que usuários e/ou hologramas não se movem em profundidade mais de 25% do tempo.
 
-**Práticas recomendadas** Quando os hologramas não podem ser colocados em 2 m e os conflitos entre a convergência e a acomodação não podem ser evitados, a zona ideal para o posicionamento do holograma é entre 1,25 m e 5 m. Em todos os casos, os designers devem estruturar o conteúdo para incentivar os usuários a interagir de 1 + m fora (por exemplo, ajustar o tamanho do conteúdo e os parâmetros de posicionamento padrão).
+**Práticas recomendadas** Quando os hologramas não podem ser colocados a 2 m e conflitos entre convergência e acomodação não podem ser evitados, a zona ideal para o posicionamento do holograma está entre 1,25 m e 5 m. Em todos os casos, os designers devem estruturar o conteúdo para incentivar os usuários a interagir a mais de 1 m de distância (por exemplo, ajustar o tamanho do conteúdo e os parâmetros de posicionamento padrão).
 
-## <a name="reprojection"></a>Reprojeção
-O HoloLens tem uma técnica de estabilização de Holographic assistida por hardware sofisticada conhecida como Reprojeção. A Reprojeção leva em conta o movimento e a alteração do ponto de vista (CameraPose) à medida que a cena anima e o usuário move a cabeça.  Os aplicativos precisam tomar ações específicas para melhor utilização da Reprojeção.
+## <a name="reprojection"></a>Reprojetação
+O HoloLens tem uma técnica sofisticada de estabilização holográfica assistida por hardware conhecida como reprojeção. A reprojeção leva em conta o movimento e a alteração do ponto de vista (CameraPose) à medida que a cena é animada e o usuário move a cabeça.  Os aplicativos precisam tomar ações específicas para melhor utilização da Reprojeção.
 
 
 Há quatro tipos principais de Reprojeção
@@ -97,8 +97,8 @@ Os aplicativos precisam executar ações específicas para habilitar os diferent
 
 Tipo de estabilização |    Headsets imersivos |    Geração de HoloLens 1 | HoloLens 2
 --- | --- | --- | ---
-Reprojeção de profundidade |    Recomendado |   N/D |   Recomendado<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior. Caso contrário, use a Reprojeção automática de planar.
-Reprojeção automática de planar | N/D |   Padrão recomendado |   Recomendado se a Reprojeção de profundidade não fornecer os melhores resultados<br/><br/>Os aplicativos do Unity são recomendados para usar o Unity 2018.4.12 ou posterior ou o Unity 2019,3 ou posterior.  As versões anteriores do Unity funcionarão com resultados de Reprojeção ligeiramente degradados.
+Reprojeção de profundidade |    Recomendado |   N/D |   Recomendado<br/><br/>Os aplicativos do Unity devem usar o Unity 2018.4.12 +, Unity 2019.3 + ou Unity 2020.3 +. Caso contrário, use a Reprojeção automática de planar.
+Reprojeção automática de planar | N/D |   Padrão recomendado |   Recomendado se a Reprojeção de profundidade não fornecer os melhores resultados<br/><br/>Os aplicativos do Unity são recomendados para usar o Unity 2018.4.12 +, Unity 2019.3 + ou Unity 2020.3 +.  As versões anteriores do Unity funcionarão com resultados de Reprojeção ligeiramente degradados.
 Reprojeção do planar |   Não recomendado |   Recomendado se o planar automático não fornecer os melhores resultados | Use se nenhuma das opções de profundidade fornecer os resultados desejados    
 
 ### <a name="verifying-depth-is-set-correctly"></a>A verificação de profundidade está definida corretamente
@@ -165,24 +165,24 @@ Devido à natureza de exibições do HoloLens, um artefato chamado "separação 
 
 ![Um exemplo de qual é a separação de cores de um cursor redondo branco de cabeçalho de cabeça como um usuário gira sua cabeça para o lado.](images/colorseparationofroundwhitecursor-300px.png)
 
-Embora seja difícil evitar completamente a separação de cores, há várias técnicas disponíveis para atenuá-las.
+Embora seja difícil evitar completamente a separação de cores, há várias técnicas disponíveis para atenuá-la.
 
 **A separação de cores pode ser vista em:**
-* Objetos que estão se movendo rapidamente, incluindo objetos bloqueados por cabeçalho, como o [cursor](../../design/cursors.md).
-* Objetos que estão significativamente longe do [plano de estabilização](hologram-stability.md#reprojection).
+* Objetos que estão se movendo rapidamente, incluindo objetos com a cabeça bloqueada, como o [cursor](../../design/cursors.md).
+* Objetos que estão substancialmente longe do plano [de estabilização](hologram-stability.md#reprojection).
 
 **Para atenuar os efeitos da separação de cores:**
-* Faça o objeto atrasar o olhar do usuário. Ele deve aparecer como se tiver algum inércia e estiver anexado ao olhar "em molas". Essa abordagem reduz o cursor (reduzindo a distância de separação) e a coloca atrás do ponto de olhar provável do usuário. Desde que ele se ajuste rapidamente quando o usuário parar de mudar seu olhar, ele se sentirá natural.
-* Se você quiser mover um holograma, tente manter sua velocidade de movimentação abaixo de 5 graus/segundo se você espera que o usuário o acompanhe com seus olhos.
-* Use *Light* em vez de *Geometry* para o cursor. Uma fonte de iluminação virtual anexada ao olhar será percebida como um ponteiro interativo, mas não causará a separação de cores.
-* Ajuste o plano de estabilização para corresponder aos hologramas em que o usuário está nuvens.
+* Faça com que o objeto atrase o olhar do usuário. Ele deve aparecer como se tivesse alguma inércia e estivesse anexado ao olhar "na chuva". Essa abordagem retarda o cursor (reduzindo a distância de separação) e o coloca atrás do ponto de vista provável do usuário. Desde que ele seja rapidamente catch up quando o usuário parar de mudar o foco, parece natural.
+* Se você quiser mover um holograma, tente manter sua velocidade de movimento abaixo de 5 graus/segundo se você espera que o usuário a siga com os olhos.
+* Use *luz* em vez *de geometria* para o cursor. Uma fonte de iluminação virtual anexada ao olhar será percebida como um ponteiro interativo, mas não causará separação de cores.
+* Ajuste o plano de estabilização para corresponder aos hologramas em que o usuário está olhando.
 * Tornar o objeto vermelho, verde ou azul.
-* Mudar para uma versão desfocada do conteúdo. Por exemplo, um cursor branco redondo pode ser alterado para uma linha levemente desfocada na direção do movimento.
+* Alternar para uma versão desfocado do conteúdo. Por exemplo, um cursor branco arredondado pode ser alterado para uma linha ligeiramente desfoque orientada na direção do movimento.
 
-Como antes, a renderização em 60 FPS e a definição do plano de estabilização são as técnicas mais importantes para a estabilidade do holograma. Se for voltada para separação de cores perceptível, primeiro verifique se a taxa de quadros atende às expectativas.
+Como antes, renderizar em 60 FPS e definir o plano de estabilização são as técnicas mais importantes para a estabilidade do holograma. Se estiver enfrentando uma separação de cores perceptível, primeiro certifique-se de que a taxa de quadros atenda às expectativas.
 
 ## <a name="see-also"></a>Confira também
-* [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
+* [Noções básicas sobre o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Cor, luz e materiais](../../design/color-light-and-materials.md)
 * [Interações instinctuais](../../design/interaction-fundamentals.md)
-* [Estabilização do holograma MRTK](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)
+* [Estabilização do holograma do MRTK](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)

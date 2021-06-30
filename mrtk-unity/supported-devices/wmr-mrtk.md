@@ -1,18 +1,18 @@
 ---
-title: Implantação em headsets Hololens e WMR
+title: Implantação em headsets HoloLens e WMR
 description: Documentação sobre build e implantação de aplicativos em vários dispositivos.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Visual Studio
-ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
-ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
+ms.openlocfilehash: 12384c3d3c0c2208d86a9a946580d0311f8a8955
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110441155"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042297"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>Implantação em headsets Hololens e WMR
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Implantação em headsets HoloLens e WMR
 
 Há duas maneiras de implantar aplicativos construídos com o MRTK em seu dispositivo Windows, a UWP (Plataforma Univeral do Windows) e a Plataforma Autônoma. Os aplicativos criado para o HoloLens 1 ou o HoloLens 2 devem ser destinados à UWP, enquanto os aplicativos criado para headsets WMR podem ser destinados a UWP ou Autônomo.
 
@@ -37,17 +37,17 @@ As outras configurações podem ser diferentes (por exemplo, Configuração de B
 
 Verifique se a lista suspensa "Versão do SDK de Destino" inclui a opção "10.0.18362.0". Se isso estiver ausente, [o último SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk) precisará ser instalado.
 
-### <a name="unity-20193-and-hololens"></a>Unity 2019.3 e HoloLens
+### <a name="unity-20192020-and-hololens"></a>Unity 2019/2020 e HoloLens
 
-Se um aplicativo do HoloLens aparecer como um painel 2D no dispositivo, verifique se as seguintes configurações foram definidas no Unity 2019.3.x antes de implantar seu aplicativo UWP:
+Se um aplicativo HoloLens aparecer como um painel 2D no dispositivo, certifique-se de que as seguintes configurações foram configuradas no Unity antes de implantar seu aplicativo UWP:
 
-Se você estiver usando o XR herdado:
+Se estiver usando o suporte AXR herdado (somente Unity 2019):
 
 1. Acesse Editar > Configurações do Projeto, Player
 1. Em **Configurações de XR** na guia UWP, verifique se a opção **Realidade Virtual Compatível** está habilitada e se o SDK do **Windows Mixed Reality** foi adicionado aos SDKs.
 1. Build e implantação no Visual Studio
 
-Se você estiver usando o Plug-in de XR:
+Se estiver usando os plug-ins do OpenXR ou do Windows XR:
 
 1. Siga as etapas encontradas em [Introdução ao XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md)
 1. Verifique se o perfil de configuração é o **DefaultXRSDKConfigurationProfile**
@@ -55,9 +55,11 @@ Se você estiver usando o Plug-in de XR:
 1. Build e implantação no Visual Studio
 
 >[!IMPORTANT]
-> Se você estiver usando o Unity 2019.3.x, selecione **ARM64** e não **ARM** como a arquitetura de build no Visual Studio. Com as configurações padrão do Unity no Unity 2019.3.x, um aplicativo do Unity não será implantado em um HoloLens se o ARM for selecionado devido a um bug do Unity. Acompanhe isso no [rastreador de problemas do Unity](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2).
+> Se você estiver usando o Unity 2019.3.x, selecione **ARM64** e não **ARM** como a arquitetura de build no Visual Studio. Com as configurações padrão do Unity no Unity 2019.3.x, um aplicativo do Unity não será implantado em um HoloLens se o ARM for selecionado devido a um bug do Unity.
 >
 > Se a arquitetura do ARM for necessária, acesse **Editar > Configurações de Projeto, Player** e, no menu **Outras Configurações**, desabilite **Trabalhos Gráficos**. A desabilitação de **Trabalhos Gráficos** permitirá que o aplicativo seja implantado com a arquitetura de build do ARM para o Unity 2019.3.x, mas o ARM64 é recomendado.
+>
+> Esse problema foi corrigido no Unity 2019.4 e no Unity 2020.3.
 
 ## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>Criando e implantando o MRTK em headsets WMR (autônomo)
 

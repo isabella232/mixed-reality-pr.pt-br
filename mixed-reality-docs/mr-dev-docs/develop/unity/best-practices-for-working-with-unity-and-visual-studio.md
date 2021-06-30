@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: implantar, Unity, Visual Studio, HoloLens, HoloLens 2, headset de imersão, práticas recomendadas, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, UWP, Ferramentas do Visual Studio, SDK do Windows
-ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: edd79b95d02cfeb1da4effc485fc57078e3d24a3
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583459"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042257"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Melhores práticas para trabalhar com o Unity e o Visual Studio
 
@@ -19,7 +19,7 @@ Ao criar um aplicativo de realidade misturada com o Unity, você precisa alterna
 
 ## <a name="improving-iteration-time"></a>Melhorando o tempo de iteração
 
-O suporte para o back-end de script do .NET no Unity está sendo substituído no Unity 2018 e removido no Unity 2019 +. Portanto, recomendamos que você alterne para [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). No entanto, você pode experimentar tempos de compilação mais longos do Unity para o Visual Studio. Para melhorar a iteração mais rápida, configure seu ambiente para obter melhores resultados de compilação:
+O suporte para o back-end de script do .NET no Unity foi preterido no Unity 2018 e removido a partir do Unity 2019 +, portanto, recomendamos que você alterne para [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). No entanto, você pode experimentar tempos de compilação mais longos do Unity para o Visual Studio. Para melhorar a iteração mais rápida, configure seu ambiente para obter melhores resultados de compilação:
 
 1) Use a criação incremental criando seu projeto para o mesmo diretório a cada vez, reutilizando os arquivos pré-criados lá
 2) Desabilitar verificações de software antimalware para seu projeto & criar pastas
