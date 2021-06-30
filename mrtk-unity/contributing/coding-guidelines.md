@@ -1,16 +1,16 @@
 ---
-title: Codificando diretrizes
-description: princípios de codificação e convenções a seguir ao contribuir com o MRTK.
+title: Diretrizes de codificação
+description: Princípios e convenções de codificação a seguir ao contribuir com o MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, C#,
-ms.openlocfilehash: 8887e248bd550bdd7a59f19c16df1ec3647ceff7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145241"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121434"
 ---
 # <a name="coding-guidelines"></a>Diretrizes de codificação
 
@@ -34,23 +34,23 @@ A leitura do código está correlacionada com baixas taxas de defeito. Busque cr
 
 Todos os detalhes do código produzido são importantes, desde os detalhes mais básicos de correção até o estilo e a formatação consistentes. Mantenha seu estilo de codificação consistente com o que já existe, mesmo que ele não seja correspondente à sua preferência. Isso aumenta a capacidade de leitura da base de código geral.
 
-### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a>Suporte à configuração de componentes no editor e no tempo de execução
+### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a>Suporte à configuração de componentes no editor e no tempo de run-time
 
-O MRTK dá suporte a um conjunto diversificado de usuários – pessoas que preferem configurar componentes no editor do Unity e carregar pré-fabricados e pessoas que precisam instanciar e configurar objetos em tempo de execução.
+O MRTK dá suporte a um conjunto diversificado de usuários – pessoas que preferem configurar componentes no editor do Unity e carregar pré-requisitos e pessoas que precisam criar uma inciação e configurar objetos em tempo de run-time.
 
-Todo o seu código deve funcionar adicionando um componente a um gameobject em uma cena salva e instanciando esse componente no código. Os testes devem incluir um caso de teste para instanciar pré-fabricados e instanciar, configurando o componente em tempo de execução.
+Todo o código deve funcionar adicionando um componente a um GameObject em uma cena salva e instando esse componente no código. Os testes devem incluir um caso de teste para infiguração de pré-requisitos e insta instaência, configurando o componente em runtime.
 
-### <a name="play-in-editor-is-your-first-and-primary-target-platform"></a>O Play-in-editor é sua primeira e principal plataforma de destino
+### <a name="play-in-editor-is-your-first-and-primary-target-platform"></a>Play-in-editor é sua primeira plataforma de destino e principal
 
-O Play-in-editor é a maneira mais rápida de iterar no Unity. Fornecer maneiras para que nossos clientes iterem rapidamente permite que eles desenvolvam soluções mais rapidamente e experimentem mais ideias. Em outras palavras, maximizar a velocidade da iteração permite que nossos clientes obtenham mais.
+O Play-In-Editor é a maneira mais rápida de iterar no Unity. Fornecer maneiras para nossos clientes iterar rapidamente permite que eles desenvolvam soluções mais rapidamente e experimentem mais ideias. Em outras palavras, maximizar a velocidade da iteração capacita nossos clientes a alcançarem mais.
 
-Faça tudo funcionar no editor e, em seguida, faça com que ele funcione em qualquer outra plataforma. Mantenha-o funcionando no editor. É fácil adicionar uma nova plataforma ao editor de reprodução. É muito difícil obter o editor de reprodução funcionando se seu aplicativo funciona apenas em um dispositivo.
+Faça tudo funcionar no editor e, em seguida, faça com que funcione em qualquer outra plataforma. Mantenha-o funcionando no editor. É fácil adicionar uma nova plataforma ao Play-In-Editor. É muito difícil fazer com que o Play-In-Editor funcione se seu aplicativo funciona apenas em um dispositivo.
 
-### <a name="add-new-public-fields-properties-methods-and-serialized-private-fields-with-care"></a>Adicione novos campos públicos, propriedades, métodos e campos privados serializados com cuidado
+### <a name="add-new-public-fields-properties-methods-and-serialized-private-fields-with-care"></a>Adicionar novos campos públicos, propriedades, métodos e campos privados serializados com cuidado
 
-Sempre que você adiciona um método público, campo, propriedade, ele se torna parte da superfície da API pública do MRTK. Campos privados marcados com `[SerializeField]` também expõem campos ao editor e fazem parte da superfície da API pública. Outras pessoas podem usar esse método público, configurar o pré-fabricados personalizado com seu campo público e assumir uma dependência dele.
+Sempre que você adiciona um método público, campo, propriedade, ele se torna parte da superfície de API pública do MRTK. Campos privados marcados `[SerializeField]` com também expõem campos ao editor e fazem parte da superfície de API pública. Outras pessoas podem usar esse método público, configurar pré-fabs personalizados com seu campo público e assumir uma dependência dele.
 
-Novos membros públicos devem ser examinados cuidadosamente. Qualquer campo público precisará ser mantido no futuro. Lembre-se de que, se o tipo de um campo público (ou campo privado serializado) for alterado ou removido de um monocomportamento, isso poderá quebrar outras pessoas. O campo precisará primeiro ser preterido para uma versão e o código para migrar as alterações para as pessoas que tomaram dependências precisaria ser fornecido.
+Novos membros públicos devem ser examinados cuidadosamente. Qualquer campo público precisará ser mantido no futuro. Lembre-se de que, se o tipo de um campo público (ou campo privado serializado) mudar ou for removido de um MonoBehaviour, isso poderá quebrar outras pessoas. O campo precisará primeiro ser preterido para uma versão e o código para migrar as alterações para as pessoas que têm dependências precisaria ser fornecido.
 
 ### <a name="prioritize-writing-tests"></a>Priorizar a escrita de testes
 
@@ -197,9 +197,9 @@ public class MyNewProfile : ScriptableObject
 
 ### <a name="logging"></a>Log
 
-Ao adicionar novos recursos ou atualizar recursos existentes, considere adicionar logs DebugUtilities.LogVerbose a um código interessante que pode ser útil para futura depuração. Há uma diferença entre a adição de registro em log e o ruído adicionado e o registro em log não suficiente (o que dificulta o diagnóstico).
+Ao adicionar novos recursos ou atualizar os recursos existentes, considere adicionar os logs de DebugUtilities. LogVerbose ao código interessante que pode ser útil para depuração futura. Há uma compensação aqui entre adicionar o registro em log e o ruído adicionado e não há log suficiente (o que dificulta o diagnóstico).
 
-Um exemplo interessante em que o registro em log é útil (juntamente com o payload interessante):
+Um exemplo interessante em que o registro em log é útil (juntamente com o conteúdo interessante):
 
 ```c#
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
@@ -364,7 +364,7 @@ public class MyClass
 
 #### <a name="do"></a>O que fazer
 
-MyStruct.cs
+MyStruct. cs
 
 ```c#
 // Public Struct / Enum definitions for use in your class.  Try to make them generic for reuse.
@@ -375,7 +375,7 @@ public struct MyStruct
 }
 ```
 
-MyEnumType.cs
+Myenumtype. cs
 
 ```c#
 public enum MuEnumType
@@ -385,7 +385,7 @@ public enum MuEnumType
 }
 ```
 
-Myclass.cs
+MyClass. cs
 
 ```c#
 public class MyClass
@@ -397,7 +397,7 @@ public class MyClass
 
 ### <a name="initialize-enums"></a>Inicializar enums
 
-Para garantir que todas as enums sejam inicializadas corretamente a partir de 0, o .NET fornece um atalho organizado para inicializar automaticamente a enum apenas adicionando o primeiro valor (starter). (por exemplo, Valor 1 = 0 Valores restantes não são necessários)
+Para garantir que todas as enumerações sejam inicializadas corretamente a partir de 0, o .NET oferece um atalho organizado para inicializar automaticamente a enumeração apenas adicionando o primeiro valor (início). (por exemplo, valor 1 = 0 valores restantes não são necessários)
 
 #### <a name="dont"></a>O que não fazer
 
@@ -421,9 +421,9 @@ public enum ValueType
 }
 ```
 
-### <a name="order-enums-for-appropriate-extension"></a>Ordenar enums para a extensão apropriada
+### <a name="order-enums-for-appropriate-extension"></a>Ordenar enumerações para a extensão apropriada
 
-É essencial que, se uma Enum provavelmente for estendida no futuro, para ordenar padrões na parte superior da Enum, isso garantirá que os índices Enum não sejam afetados com novas adições.
+É essencial que, se uma enumeração for provavelmente estendida no futuro, para ordenar os padrões na parte superior da enumeração, isso garante que os índices de enumeração não sejam afetados por novas adições.
 
 #### <a name="dont"></a>O que não fazer
 
@@ -470,11 +470,11 @@ public enum SDKType
 }
 ```
 
-### <a name="review-enum-use-for-bitfields"></a>Revisar o uso de enum para bitfields
+### <a name="review-enum-use-for-bitfields"></a>Examinar o uso de enum para bitfields
 
-Se houver uma possibilidade de uma enum exigir vários estados como um valor, por exemplo, Handedness = Left & Right. Em seguida, a Enum precisa ser decorada corretamente com BitFlags para permitir que ele seja usado corretamente
+Se houver uma possibilidade de um enum exigir vários Estados como um valor, por exemplo, Destroly-Left & Right. Em seguida, a enumeração precisa ser decorada corretamente com BitFlags para permitir que ela seja usada corretamente
 
-O arquivo Handedness.cs tem uma implementação concreta para isso
+O arquivo de destro-canhoto. cs tem uma implementação concreta para isso
 
 ### <a name="dont"></a>O que não fazer
 
@@ -500,14 +500,14 @@ public enum Handedness
 }
 ```
 
-### <a name="hard-coded-file-paths"></a>Caminhos de arquivo em código
+### <a name="hard-coded-file-paths"></a>Caminhos de arquivo embutidos em código
 
-Ao gerar caminhos de arquivo de cadeia de caracteres e, em particular, escrever caminhos de cadeia de caracteres codificados, faça o seguinte:
+Ao gerar caminhos de arquivo de cadeia de caracteres e, em particular, escrever caminhos de cadeia de caracteres embutidos em código, faça o seguinte:
 
-1. Use as APIs do [ `Path` C#sempre](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) que possível, como `Path.Combine` ou `Path.GetFullPath` .
-1. Use / ou [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) em vez de \ ou \\ \\ .
+1. Use as [ `Path` APIs](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) do C# sempre que possível, como `Path.Combine` ou `Path.GetFullPath` .
+1. Use/ou [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) em vez de \ ou \\ \\ .
 
-Essas etapas garantem que o MRTK funcione em sistemas baseados em Windows e Unix.
+Essas etapas garantem que o MRTK funcione em sistemas baseados em Windows e UNIX.
 
 ### <a name="dont"></a>O que não fazer
 
@@ -532,7 +532,7 @@ string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 
 ## <a name="best-practices-including-unity-recommendations"></a>Práticas recomendadas, incluindo recomendações do Unity
 
-Algumas das plataformas de destino deste projeto precisam levar em consideração o desempenho. Com isso em mente, sempre tenha cuidado ao alocar memória no código chamado com frequência em loops de atualização ou algoritmos rígidos.
+Algumas das plataformas de destino deste projeto exigem que o desempenho seja levado em consideração. Com isso em mente, sempre tenha cuidado ao alocar memória em um código chamado com freqüência em loops ou algoritmos de atualização rígidas.
 
 ### <a name="encapsulation"></a>Encapsulamento
 
@@ -691,13 +691,13 @@ Este gráfico pode ajudá-lo a decidir qual `#if` usar, dependendo de seus casos
 
 ### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Prefira DateTime. UtcNow sobre DateTime. Now
 
-DateTime. UtcNow é mais rápido que DateTime. Now. Em investigações de desempenho anteriores, descobrimos que o uso de DateTime.Now adiciona sobrecarga significativa, especialmente quando usado no loop Update(). [Outros atingiram o mesmo problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
+DateTime. UtcNow é mais rápido que DateTime. Now. Em investigações de desempenho anteriores, descobrimos que o uso de DateTime. agora adiciona uma sobrecarga significativa especialmente quando usada no loop Update (). [Outras pessoas atingiram o mesmo problema](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).
 
-Prefira usar DateTime.UtcNow, a menos que você realmente precise dos horários localizados (um motivo legítimo pode ser que você queira mostrar a hora atual no fuso horário do usuário). Se você estiver lidando com tempos relativos (ou seja, o delta entre alguma última atualização e agora), é melhor usar DateTime.UtcNow para evitar a sobrecarga de fazer conversões de timezone.
+Prefira usar DateTime. UtcNow, a menos que você realmente precise dos horários localizados (um motivo legítimo pode estar querendo mostrar a hora atual no fuso horário do usuário). Se você estiver lidando com tempos relativos (ou seja, o Delta entre alguma última atualização e agora), é melhor usar DateTime. UtcNow para evitar a sobrecarga de fazer conversões de fuso horário.
 
 ## <a name="powershell-coding-conventions"></a>Convenções de codificação do PowerShell
 
-Um subconjunto da base de código do MRTK usa o PowerShell para infraestrutura de pipeline e vários scripts e utilitários. O novo código do PowerShell deve seguir o [estilo PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
+Um subconjunto da base de código MRTK usa o PowerShell para infraestrutura de pipeline e vários scripts e utilitários. O novo código do PowerShell deve seguir o [estilo PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
 
 ## <a name="see-also"></a>Confira também
 

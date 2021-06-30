@@ -1,44 +1,44 @@
 ---
-title: Introdução ao sistema de marco de delimitação
-description: Página de aterrissagem do sistema de limites no MRTK
+title: Visão geral do sistema de limite
+description: Página de aterrissagem para o sistema de limite no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sistema de Limites,
-ms.openlocfilehash: 2858b770fb49a44d1e2d704e8d3a81affe74d272
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sistema de limite,
+ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144733"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121354"
 ---
-# <a name="boundary-system"></a>Sistema de limites
+# <a name="boundary-system"></a>Sistema de limite
 
-O sistema de limites fornece suporte para visualizar componentes de limite da Realidade Virtual em aplicativos de realidade misturada. Os limites definem a área na qual os usuários podem se mover com segurança enquanto usam um headset de VR. Os limites são um componente importante de uma experiência de realidade misturada para ajudar os usuários a evitar obstáculos não vistos ao usar um headset de VR.
+O sistema de limite fornece suporte para visualização de componentes de limite da realidade virtual em aplicativos de realidade misturada. Os limites definem a área na qual os usuários podem se movimentar com segurança ao mesmo tempo em que se aproveitam um headset VR. Os limites são um componente importante de uma experiência de realidade misturada para ajudar os usuários a evitar obstáculos não vistos ao utilizar um headset de VR.
 
-Muitas plataformas de Realidade Virtual fornecem uma exibição automática, por exemplo, um contorno em branco sobreposto no mundo virtual à medida que o usuário ou seu controlador se aproxima do limite. O Sistema de Limites do Kit de Ferramentas de Realidade Misturada estende esse recurso para habilitar a exibição de um contorno da área rastreada, um plano de chão e outros recursos que podem ser usados para fornecer informações adicionais aos usuários.
+Muitas plataformas de realidade virtual fornecem uma exibição automática, por exemplo, uma estrutura de tópicos branco sobreposta no mundo virtual como o usuário ou seu controlador perto do limite. O sistema de limite do kit de ferramentas da realidade misturada estende esse recurso para habilitar a exibição de uma estrutura de tópicos da área controlada, um plano de chão e outros recursos que podem ser usados para fornecer informações adicionais aos usuários.
 
 ## <a name="getting-started"></a>Introdução
 
-A adição de suporte para limites requer dois componentes principais do Kit de Ferramentas de Realidade Misturada: o Sistema de Limites e uma plataforma de Realidade Virtual configurada com um limite.
+Adicionar suporte para limites requer dois componentes principais do kit de ferramentas de realidade misturada: o sistema de limite e uma plataforma de realidade virtual configurada com um limite.
 
-1. [Habilitar](#enable-boundary-system) o sistema de limites
+1. [Habilitar](#enable-boundary-system) o sistema de limite
 2. [Configurar](#configure-boundary-visualization) a visualização de limite
-3. [Criar e implantar](#build-and-deploy) em uma plataforma de VR com um limite configurado
+3. [Crie e implante](#build-and-deploy) em uma plataforma VR com um limite configurado
 
-## <a name="enable-boundary-system"></a>Habilitar o sistema de limites
+## <a name="enable-boundary-system"></a>Habilitar sistema de limite
 
-O Sistema de Limites é gerenciado pelo objeto MixedRealityToolkit (ou outro componente [do registrador de](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) serviços).
+O sistema de limite é gerenciado pelo objeto MixedRealityToolkit (ou outro componente [registrador de serviço](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) ).
 
 As etapas a seguir presumem o uso do objeto MixedRealityToolkit. As etapas necessárias para outros registradores de serviço podem ser diferentes.
 
 1. Selecione o objeto MixedRealityToolkit na hierarquia de cena.
 
-    ![Hierarquia de cena configurada do MRTK](../images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK hierarquia de cena configurada](../images/MRTK_ConfiguredHierarchy.png)
 
-1. Navegue pelo painel Inspetor até a seção Sistema de Limites e marque Habilitar
+1. Navegue pelo painel Inspetor até a seção sistema de limite e marque Habilitar
 
-    ![Habilitar o sistema de limites](../images/boundary/MRTKConfig_Boundary.png)
+    ![Habilitar o sistema de limite](../images/boundary/MRTKConfig_Boundary.png)
 
 1. Selecione a implementação do sistema de limite. A implementação de classe padrão fornecida pelo MRTK é o [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 

@@ -1,48 +1,48 @@
 ---
 title: Guia da documentação
-description: Diretrizes e padrões de documentação para o MRTK.
+description: diretrizes de documentação e padrões para o MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: cc5572e65540fa40cb1b8db56afbdd0986c467b9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144795"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121384"
 ---
-# <a name="documentation-guidelines"></a>Diretrizes da documentação
+# <a name="documentation-guidelines"></a>Diretrizes de documentação
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 
-Este documento descreve as diretrizes e os padrões de documentação do MRTK (Kit de ferramentas de realidade misturada). Isso fornece uma introdução aos aspectos técnicos de escrita e geração de documentação, para destacar armadilhas comuns e para descrever o estilo de escrita recomendado.
+Este documento descreve as diretrizes e os padrões de documentação do MRTK (Kit de Ferramentas de Realidade Misturada). Isso fornece uma introdução aos aspectos técnicos da escrita e geração de documentação, para realçar armadilhas comuns e descrever o estilo de escrita recomendado.
 
-A página em si deve servir como exemplo, portanto, ela usa o estilo pretendido e os recursos de marcação mais comuns da documentação.
+A página em si deve servir como um exemplo, portanto, ela usa o estilo pretendido e os recursos de marcação mais comuns da documentação.
 
 - [Origem](#source-documentation)
-- [Instruções](#how-to-documentation)
+- [Como](#how-to-documentation)
 - [Projetar](#design-documentation)
 - [Notas de desempenho](#performance-notes)
-- [Alterações interruptivas](#breaking-changes)
+- [Alterações da falha](#breaking-changes)
 
 ---
 
 ## <a name="functionality-and-markup"></a>Funcionalidade e marcação
 
-Esta seção descreve os recursos frequentemente necessários. Para ver como eles funcionam, examine o código-fonte da página.
+Esta seção descreve os recursos necessários com frequência. Para ver como eles funcionam, veja o código-fonte da página.
 
 1. Listas numeradas
-   1. Listas numeradas aninhadas com pelo menos 3 espaços em branco à esquerda
-   1. O número real no código é irrelevante; a análise cuidará da definição do número de item correto.
+   1. Listas numeradas aninhadas com pelo menos três espaços em branco à frente
+   1. O número real no código é irrelevante; A análise cuidará da configuração do número de item correto.
 
-- Listas de pontos de marcador
+- Listas de pontos com marcador
   - Listas de pontos de marcador aninhados
 - Texto em **negrito** com \* \* asterisco duplo\*\*
--  *texto* em itálico com \_ sublinhado \_ ou \* asterisco único\*
-- Texto `highlighted as code` dentro de uma frase \` usando aspas revertidas\`
-- Links para páginas de docs [MRTK diretrizes de documentação](documentation-guide.md)
-- Links para [âncoras em uma página](#style); as âncoras são formadas com a substituição de espaços por traços e a conversão em minúsculas
+- _texto itálico_ *com* \_ sublinhado \_ ou \* asterisco único\*
+- Texto `highlighted as code` dentro de uma frase usando \` aspas inativos\`
+- Links para diretrizes de documentação [do MRTK de](documentation-guide.md) páginas de documentos
+- Links para [âncoras em uma página](#style); âncoras são formadas substituindo espaços por traços e convertendo em minúsculas
 
 Para exemplos de código, usamos os blocos com três acentos insertórios e especificamos \` \` \` *csharp* como a linguagem para realce de sintaxe:
 
@@ -93,25 +93,25 @@ Use títulos de dois e três níveis para estruturar o restante.
 
 Use uma linha de texto em negrito para blocos que devem se destacar. Podemos substituir isso por títulos de quatro níveis em algum momento.
 
-### <a name="see-also-section"></a>Seção ' Veja também '
+### <a name="see-also-section"></a>Seção 'Consulte também'
 
-A maioria das páginas deve terminar com um capítulo chamado *Ver também*. Este capítulo é simplesmente uma lista com marcadores de links para páginas relacionadas a este tópico. Esses links também podem aparecer dentro do texto da página quando apropriado, mas isso não é necessário. Da mesma forma, o texto da página pode conter links para páginas que não estão relacionadas ao tópico principal, eles não devem ser incluídos na lista *Consulte também* . Consulte o [capítulo ' ' Veja também ' ' da página](#see-also) como um exemplo para a escolha de links.
+A maioria das páginas deve terminar com um capítulo chamado *Ver também*. Este capítulo é simplesmente uma lista com marcador de links para páginas relacionadas a este tópico. Esses links também podem aparecer dentro do texto da página quando apropriado, mas isso não é necessário. Da mesma forma, o texto da página pode conter links para páginas que não estão relacionadas ao tópico principal, elas não devem ser incluídas na *lista* Ver também. Consulte [o capítulo ''See also'' desta](#see-also) página como um exemplo para a escolha de links.
 
-## <a name="table-of-contents-toc"></a>Sumário (TOC)
+## <a name="table-of-contents-toc"></a>ToC (Tabela de Conteúdo)
 
-Os arquivos de Sumário são usados para gerar as barras de navegação na documentação do MRTK github.io.
-Sempre que um novo arquivo de documentação for adicionado, verifique se há uma entrada para esse arquivo em um dos arquivos TOC. yml da pasta de documentação. Somente os artigos listados nos arquivos de Sumário serão exibidos na navegação dos documentos do desenvolvedor. Pode haver um arquivo de Sumário para cada subpasta na pasta de documentação que pode ser vinculada a qualquer arquivo de Sumário existente para adicioná-lo como uma subseção à parte correspondente da navegação.
+Os arquivos toc são usados para gerar as barras de navegação na documentação github.io MRTK.
+Sempre que um novo arquivo de documentação for adicionado, certifique-se de que haja uma entrada para esse arquivo em um dos arquivos toc.yml da pasta de documentação. Somente os artigos listados nos arquivos toc aparecerão na navegação dos documentos do desenvolvedor. Pode haver um arquivo toc para cada subpasta na pasta de documentação que pode ser vinculado a qualquer arquivo toc existente para adicioná-lo como uma subseção à parte correspondente da navegação.
 
 ## <a name="style"></a>Estilo
 
 ### <a name="writing-style"></a>Estilo de escrita
 
-Regra geral: Tente **soar profissional**. Isso geralmente significa evitar um ' Tom de conversação '. Além disso, tente evitar o hiperbólico e o sensationalism.
+Regra geral: tente parecer **profissional.** Isso geralmente significa evitar um 'tom de conversa'. Além disso, tente evitar hiperbole e esterismo.
 
-1. Não tente ser (excessivamente) engraçado.
-2. Nunca gravar ' I '
-3. Evite ' nós '. Normalmente, isso pode ser reformulado facilmente, usando ' MRTK ' em vez disso. Exemplo: "damos suporte a esse recurso"-> "o MRTK" dá suporte a esse recurso "ou" há suporte para os recursos a seguir... ".
-4. Da mesma forma, tente evitar ' você '. Exemplo: "com essa alteração simples seu sombreador se torna configurável!" -> "Sombreadores podem ser configurados com pouco esforço".
+1. Não tente ser (muito) divertido.
+2. Nunca escreva 'I'
+3. Evite "nós". Isso geralmente pode ser reformulado facilmente, usando 'MRTK'. Exemplo: "damos suporte a esse recurso" -> "o MRTK dá suporte a esse recurso" ou "os recursos a seguir têm suporte...".
+4. Da mesma forma, tente evitar "você". Exemplo: "Com essa alteração simples, o sombreador se torna configurável!" -> "Sombreadores podem ser configurados com pouco esforço".
 5. Não use 'frases de expressão'.
 6. Evite parecer muito animado, não precisamos vender nada.
 7. Da mesma forma, evite ser muito drástica. As marcas de exclamação raramente são necessárias.
@@ -128,15 +128,15 @@ Regra geral: Tente **soar profissional**. Isso geralmente significa evitar um ' 
 
 Há duas maneiras de enfatizar ou realçar palavras, tornando-as em negrito ou tornando-as itálico. O efeito do texto  em negrito é que o texto em negrito se destaca e, portanto, pode ser facilmente observado ao deslizar um trecho de texto ou até mesmo apenas rolar sobre uma página. Negrito é ótimo para realçar frases que as pessoas devem lembrar. No entanto, **use texto em negrito raramente**, pois geralmente é uma distração.
 
-Muitas vezes, você deseja "agrupar" algo que pertença logicamente ao mesmo tempo ou realce um termo específico, pois ele tem um significado especial. Essas coisas não precisam destacar o texto geral. Use texto em itálico como um *método leve* para realçar algo.
+Geralmente, alguém deseja 'agrupar' algo que pertence logicamente ou realça um termo específico, porque ele tem um significado especial. Essas coisas não precisam se destacar do texto geral. Use texto itálico como um *método leve para* realçar algo.
 
-Da mesma forma, quando um nome de arquivo, um caminho ou uma entrada de menu é mencionado em texto, prefira deixá-lo em itálico para agrupá-lo logicamente, sem atrapalhar.
+Da mesma forma, quando um nome de arquivo, um caminho ou uma entrada de menu é mencionado no texto, prefira torná-lo itálico para a groupá-lo logicamente, sem ser uma distração.
 
-Em geral, tente **evitar o realce de texto desnecessário**. Os termos especiais podem ser realçados uma vez para facilitar o reconhecimento do leitor, não repita o realce em todo o texto, quando ele não tem mais nenhuma finalidade e apenas uma distração.
+Em geral, tente evitar **realçamento de texto desnecessário.** Os termos especiais podem ser realçadas uma vez para tornar o leitor ciente, não repita esse realçamento em todo o texto, quando ele não serve mais para nenhuma finalidade e apenas desvia.
 
 ### <a name="mentioning-menu-entries"></a>Mencionando entradas de menu
 
-Ao mencionar uma entrada de menu que um usuário deve clicar, a Convenção atual é: *arquivos de > de projeto > criar > folha*
+Ao mencionar uma entrada de menu que um usuário *deve clicar,* a convenção atual é: Project > Files > Create > Leaf
 
 ### <a name="links"></a>Links
 
@@ -155,12 +155,12 @@ Ao adicionar um link, considere se ele também deve ser listado na seção [Cons
 
 **Use capturas de tela com moderação.** A manutenção de imagens na documentação é muito trabalho, pequenas alterações na interface do usuário podem fazer muitas capturas de tela desatualizadas. As regras a seguir reduzirão o esforço de manutenção:
 
-1. Não use capturas de tela para coisas que podem ser descritas no texto. Especialmente, **nunca captura de tela de uma grade de** propriedades com a única finalidade de mostrar valores e nomes de propriedade.
-2. Não inclua coisas em uma captura de tela irrelevantes para o que é mostrado. Por exemplo, quando um efeito de renderização é mostrado, faça uma captura de tela do viewport, mas exclua qualquer interface do usuário ao redor dele. Mostrando alguma interface do usuário, tente mover janelas de forma que apenas essa parte importante está na imagem.
-3. Ao incluir a interface do usuário de captura de tela, mostre apenas as partes importantes. Por exemplo, ao falar sobre botões em uma barra de ferramentas, faça uma imagem pequena que mostre os botões importantes da barra de ferramentas, mas exclua tudo ao redor dela.
-4. Use apenas imagens fáceis de reproduzir. Isso significa que não pintar marcadores ou realça em capturas de tela. Primeiro, não há regras consistentes sobre como elas devem ser, de qualquer forma. Em segundo lugar, reproduzir essa captura de tela é um esforço adicional. Em vez disso, descreva as partes importantes no texto. Há exceções a essa regra, mas elas são raras.
-5. Obviamente, é muito mais esforço recriar um GIF animado. Espere ser responsável por recriá-lo até o fim do tempo ou esperar que as pessoas o lancem, se não quiserem gastar esse tempo.
-6. Mantenha o número de imagens em um artigo baixo. Geralmente, um bom método é fazer uma captura de tela geral de alguma ferramenta, que mostra tudo e, em seguida, descrever o restante em texto. Isso facilita a substituição da captura de tela quando necessário.
+1. Não use capturas de tela para coisas que podem ser descritas em texto. Especialmente, **nunca a captura de tela de uma grade de propriedades** para a única finalidade de mostrar nomes e valores de propriedade.
+2. Não inclua itens em uma captura de tela que sejam irrelevantes para o que é mostrado. Por exemplo, quando um efeito de renderização é mostrado, faça uma captura de tela do visor, mas exclua qualquer interface do usuário em seu lugar. Mostrando alguma interface do usuário, tente mover janelas de tal forma que apenas essa parte importante esteja na imagem.
+3. Ao incluir a interface do usuário da captura de tela, mostre apenas as partes importantes. Por exemplo, ao falar sobre botões em uma barra de ferramentas, crie uma imagem pequena que mostre os botões importantes da barra de ferramentas, mas exclua tudo o que estiver em torno dele.
+4. Use apenas imagens que sejam fáceis de reproduzir. Isso significa que o não pinta marcadores nem realça em capturas de tela. Primeiro, não há regras consistentes como elas devem ser semelhantes, de qualquer forma. Em segundo lugar, a reprodução dessa captura de tela é um esforço adicional. Em vez disso, descreva as partes importantes no texto. Há exceções a essa regra, mas elas são raras.
+5. Obviamente, é muito mais trabalhoso recriar um GIF animado. Esperamos ser responsável por recriá-lo até o fim do tempo, ou esperar que as pessoas o lancem, caso não queiram gastar esse tempo.
+6. Mantenha o número de imagens em um artigo baixo. Geralmente, um bom método é fazer uma captura de tela geral de alguma ferramenta, que mostra tudo e, em seguida, descrever o restante no texto. Isso facilita a substituição da captura de tela quando necessário.
 
 Alguns outros aspectos:
 
@@ -186,17 +186,17 @@ Além disso, não se esqueça de concluir todas as frases com um ponto.
 
 A documentação da API será gerada automaticamente a partir dos arquivos de origem do MRTK. Para facilitar isso, os arquivos de origem são necessários para conter o seguinte:
 
-- [Blocos de resumo de classe, struct, enum](#class-struct-enum-summary-blocks)
-- [Blocos de propriedade, método, resumo de eventos](#property-method-event-summary-blocks)
-- [Versão e dependências de introdução de recursos](#feature-introduction-version-and-dependencies)
+- [Blocos de Resumo de Class, struct, enum](#class-struct-enum-summary-blocks)
+- [Blocos de Resumo de eventos, propriedade, método](#property-method-event-summary-blocks)
+- [Versão de introdução do recurso e dependências](#feature-introduction-version-and-dependencies)
 - [Campos serializados](#serialized-fields)
 - [Valores de enumeração](#enumeration-values)
 
-Além do acima, o código deve ser bem comentado para permitir manutenção, correções de bugs e facilidade de personalização.
+Além do que está acima, o código deve ser bem comentado para permitir a manutenção, correções de bugs e facilidade de personalização.
 
-### <a name="class-struct-enum-summary-blocks"></a>Blocos de resumo de classe, struct, enum
+### <a name="class-struct-enum-summary-blocks"></a>Blocos de Resumo de Class, struct, enum
 
-Se uma classe, struct ou enum estiver sendo adicionado ao MRTK, sua finalidade deverá ser descrita. Isso é para assumir a forma de um bloco de resumo acima da classe .
+Se uma classe, struct ou enum estiver sendo adicionada ao MRTK, sua finalidade deverá ser descrita. Isso é para assumir a forma de um bloco de resumo acima da classe.
 
 ```c#
 /// <summary>
@@ -204,7 +204,7 @@ Se uma classe, struct ou enum estiver sendo adicionado ao MRTK, sua finalidade d
 /// </summary>
 ```
 
-Se houver dependências de nível de classe, elas deverão ser documentadas em um bloco de comentários, imediatamente abaixo do resumo.
+Se houver qualquer dependência de nível de classe, elas deverão ser documentadas em um bloco de comentários, imediatamente abaixo do resumo.
 
 ```c#
 /// <remarks>
@@ -213,17 +213,17 @@ Se houver dependências de nível de classe, elas deverão ser documentadas em u
 /// </remarks>
 ```
 
-Solicitações de pull enviadas sem resumos para classes, estruturas ou enums não serão aprovadas.
+Solicitações pull enviadas sem resumos para classes, estruturas ou enums não serão aprovadas.
 
-### <a name="property-method-event-summary-blocks"></a>Blocos de propriedade, método, resumo de eventos
+### <a name="property-method-event-summary-blocks"></a>Blocos de Resumo de eventos, propriedade, método
 
-Propriedades, métodos e eventos (PMEs), bem como campos, devem ser documentados com blocos de resumo, independentemente da visibilidade do código (pública, privada, protegida e interna). A ferramenta de geração de documentação é responsável por filtrar e publicar apenas os recursos públicos e protegidos.
+Propriedades, métodos e eventos (PMEs), bem como campos, devem ser documentados com blocos de resumo, independentemente da visibilidade do código (público, privado, protegido e interno). A ferramenta de geração de documentação é responsável por filtrar e publicar apenas os recursos públicos e protegidos.
 
-OBSERVAÇÃO: um bloco de resumo **não é** necessário para métodos do Unity (por exemplo: Ativas, Iniciar, Atualizar).
+Observação: um bloco de resumo **não** é necessário para métodos do Unity (ex: ativo, iniciar, atualizar).
 
-A documentação do PME **é necessária** para que uma solicitação de pull seja aprovada.
+A documentação do PME é **necessária** para que uma solicitação de pull seja aprovada.
 
-Como parte de um bloco de resumo do PME, o significado e a finalidade dos parâmetros e dos dados retornados são necessários.
+Como parte de um bloco de Resumo de PME, o significado e a finalidade dos parâmetros e dos dados retornados são necessários.
 
 ```c#
 /// <summary>
@@ -233,9 +233,9 @@ Como parte de um bloco de resumo do PME, o significado e a finalidade dos parâm
 /// <returns>The new cutoff frequency value.</returns>
 ```
 
-### <a name="feature-introduction-version-and-dependencies"></a>Versão e dependências de introdução de recursos
+### <a name="feature-introduction-version-and-dependencies"></a>Versão de introdução do recurso e dependências
 
-Como parte da documentação de resumo da API, as informações sobre a versão do MRTK na qual o recurso foi introduzido e quaisquer dependências devem ser documentadas em um bloco de comentários.
+Como parte da documentação de resumo da API, informações sobre a versão do MRTK em que o recurso foi introduzido e as dependências devem ser documentadas em um bloco de comentários.
 
 As dependências devem incluir dependências de extensão e/ou plataforma.
 
@@ -295,13 +295,13 @@ Alguns exemplos em que a documentação de design pode ser útil:
 - Visualizações de mapeamento espacial
 - Arquivos de efeito de som
 
-Esse tipo de documentação **é altamente** recomendável e **pode** ser solicitado como parte de uma revisão de solicitação de pull.
+Esse tipo de documentação é **altamente** recomendável e **pode** ser solicitado como parte de uma revisão de solicitação de pull.
 
-Isso pode ou não ser diferente da recomendação de design no [site do Desenvolvedor do MS](/windows/mixed-reality/design)
+Isso pode ou não ser diferente da recomendação de design no site do [desenvolvedor MS](/windows/mixed-reality/design)
 
 ## <a name="performance-notes"></a>Notas de desempenho
 
-Alguns recursos importantes vêm com um custo de desempenho. Geralmente, esse código dependerá muito de como eles são configurados.
+Alguns recursos importantes vêm com um custo de desempenho. Geralmente, esse código dependerá de como eles são configurados.
 
 Por exemplo:
 
@@ -310,13 +310,13 @@ When using the spatial mapping component, the performance impact will increase w
 It is recommended to use the least detail possible for the desired experience.
 ```
 
-As notas de desempenho são recomendadas para  componentes de CPU e/ou GPU pesada e podem ser solicitadas como parte de uma revisão de solicitação de pull. Todas as notas de desempenho aplicáveis devem ser incluídas na API e **na documentação de visão** geral.
+As notas de desempenho são recomendadas para componentes pesados de CPU e/ou GPU e **podem** ser solicitadas como parte de uma revisão de solicitação de pull. Todas as notas de desempenho aplicáveis devem ser incluídas na API e na documentação **de** visão geral.
 
 ## <a name="breaking-changes"></a>Alterações de quebra
 
-A documentação de alterações significativas é composta por um arquivo de nível [superior](../contributing/breaking-changes.md) que se vincula ao arquivo individual de cada área de breaking-changes.md.
+A documentação de alterações recentes é formada por um [arquivo](../contributing/breaking-changes.md) de nível superior que se vincula aos Breaking-Changes.MD individuais de cada área de recurso.
 
-A área de breaking-changes.md arquivos deve conter a lista de todas  as alterações de quebra conhecidas para uma determinada versão, bem como o histórico de alterações significativas de versões anteriores.
+Os arquivos da área de recursos breaking-changes.md devem conter a lista de todas as alterações significativas conhecidas para uma determinada versão **, bem como** o histórico de alterações significativas de versões anteriores.
 
 Por exemplo:
 
@@ -334,21 +334,21 @@ No known breaking changes
 ...
 ```
 
-As informações contidas no nível do recurso breaking-changes.md arquivos serão agregadas às notas de versão de cada nova versão do MRTK.
+As informações contidas nos arquivos de breaking-changes.md no nível do recurso serão agregadas às notas de versão de cada nova versão do MRTK.
 
 Todas as alterações significativas que fazem parte de uma alteração **devem** ser documentadas como parte de uma solicitação de pull.
 
-## <a name="tools-for-editing-markdown"></a>Ferramentas para editar MarkDown
+## <a name="tools-for-editing-markdown"></a>Ferramentas de redução
 
-[Visual Studio Code](https://code.visualstudio.com/) é uma ótima ferramenta para editar arquivos markdown que fazem parte da documentação do MRTK.
+[Visual Studio Code](https://code.visualstudio.com/) é uma excelente ferramenta para edição de arquivos de redução que fazem parte da documentação do MRTK.
 
-Ao escrever a documentação, instalar as duas extensões a seguir também é altamente recomendável:
+Ao escrever a documentação, a instalação das duas extensões a seguir também é altamente recomendável:
 
-- Extensão Markdown do Docs para Visual Studio Code – use Alt+M para abrir um menu de opções de autor de documentos.
+- Extensão de redução de documentos para Visual Studio Code-use Alt + M para abrir um menu de opções de criação de docs.
 
-- Verificador Ortônico de Código – palavras com ortagem inoclinada serão sublinhadas; Clique com o botão direito do mouse em uma palavra com o botão direito do mouse para alterá-la ou salvá-la no dicionário.
+- Verificador ortográfico de código-palavras incorretas serão sublinhadas; Clique com o botão direito do mouse em uma palavra incorreta para alterá-la ou salvá-la no dicionário.
 
-Ambos são empacotados no Pacote de Autorização do Docs publicado pela Microsoft.
+Ambos vêm incluídos no pacote de criação de docs publicados da Microsoft.
 
 ## <a name="see-also"></a>Confira também 
 

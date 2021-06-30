@@ -1,16 +1,16 @@
 ---
-title: Introdução do sistema de diagnóstico
-description: documentação para habilitar e desabilitar o diagnóstico no MRTK
+title: Visão geral do sistema de diagnóstico
+description: Documentação para habilitar e desabilitar o diagnóstico no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 66d68902dd9ffa36a5b30c1130a8640d154ac5e1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0de7b904a48453d6021cf7aed5835412c19b7884
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144727"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121774"
 ---
 # <a name="diagnostic-system"></a>Sistema de diagnóstico
 
@@ -51,12 +51,12 @@ As etapas a seguir presumem o uso do objeto MixedRealityToolkit. As etapas neces
 O sistema de diagnóstico usa um perfil de configuração para especificar quais componentes devem ser exibidos e para definir suas configurações. Consulte [Configurando o sistema de diagnóstico](configuring-diagnostics.md) para obter mais informações referentes às configurações de componente disponíveis.
 
 > [!IMPORTANT]
-> Embora seja possível usar o Modo de Reprodução do Unity ao desenvolver aplicativos sem exigir as etapas de build e implantação, é importante avaliar os resultados do sistema de diagnóstico usando um aplicativo compilado em execução no hardware e na plataforma de destino.
+> Embora seja possível usar o modo de reprodução do Unity ao desenvolver aplicativos sem exigir as etapas de compilação e implantação, é importante avaliar os resultados do sistema de diagnóstico usando um aplicativo compilado em execução no hardware e na plataforma de destino.
 >
-> O diagnóstico de desempenho, como o [Visual Profiler,](using-visual-profiler.md)pode não refletir com precisão o desempenho real do aplicativo quando executado de dentro do editor.
+> O diagnóstico de desempenho, como o [Visual Profiler](using-visual-profiler.md), pode não refletir com precisão o desempenho real do aplicativo quando executado de dentro do editor.
 
 ## <a name="see-also"></a>Confira também
 
-- [Documentação da API de Diagnóstico](xref:Microsoft.MixedReality.Toolkit.Diagnostics)
+- [Documentação da API de diagnóstico](xref:Microsoft.MixedReality.Toolkit.Diagnostics)
 - [Configurando o sistema de diagnóstico](configuring-diagnostics.md)
-- [Usando o Visual Profiler](using-visual-profiler.md)
+- [Usando o criador de perfil Visual](using-visual-profiler.md)

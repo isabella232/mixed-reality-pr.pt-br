@@ -1,16 +1,16 @@
 ---
-title: Configurações de câmera ar do Unity
+title: Configurações da câmera AR do Unity
 description: Documentação para usar a câmera AR no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Câmera AR,
-ms.openlocfilehash: baa54f4a7c6238b136a108cf5adcbddd29c3ee1b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: e1c032805bc4b733cfcc51e1ceac5096c73715cf
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143462"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121194"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Provedor de configurações de câmera AR do Unity
 
@@ -37,16 +37,16 @@ As opções disponíveis são descritas na tabela a seguir.
 | Centro | O olho central de um dispositivo montado na cabeça. |
 | Câmera de cores | A câmera de cores de um dispositivo móvel. |
 | Head | O olho da cabeça de um dispositivo montado na cabeça, geralmente um pouco acima do olho central. |
-| Olho esquerdo | O olho à esquerda de um dispositivo montado no cabeçalho. |
-| Pose esquerda | O controlador esquerdo é composto. |
-| Olho à direita | O olho certo de um dispositivo montado na cabeça. |
-| Pose direita | A pose do controlador à direita. |
+| Olho esquerdo | O olho esquerdo de um dispositivo montado na cabeça. |
+| Pose esquerda | A pose do controlador esquerdo. |
+| Olho direito | O olho direito de um dispositivo montado na cabeça. |
+| Pose à direita | A pose do controlador à direita. |
 
-O valor padrão da origem da pose é a **câmera colorida**, para habilitar uma exibição transparente em dispositivos móveis, como um telefone ou Tablet.
+O valor padrão para a fonte de pose é **Câmera de Cores**, para habilitar uma exibição transparente em dispositivos móveis, como um telefone ou tablet.
 
-**Tipo de rastreamento**
+**Tipo de acompanhamento**
 
-O tipo de rastreamento define as partes da pose que serão usadas para acompanhamento.
+O tipo de acompanhamento define as partes da pose que serão usadas para acompanhamento.
 
 As opções disponíveis são descritas na tabela a seguir.
 
@@ -56,7 +56,7 @@ As opções disponíveis são descritas na tabela a seguir.
 | Rotação | A rotação do dispositivo. |
 | Rotação e posição | A posição e a rotação do dispositivo. |
 
-O valor padrão para o tipo de rastreamento é **rotação e posição**, para habilitar a experiência de controle mais rica.
+O valor padrão para o tipo de acompanhamento é **Rotação e Posição**, para habilitar a experiência de acompanhamento de acompanhamento.
 
 **Tipo de atualização**
 

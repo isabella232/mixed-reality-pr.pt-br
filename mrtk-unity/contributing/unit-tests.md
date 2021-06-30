@@ -1,56 +1,56 @@
 ---
-title: Testes de Unidade
-description: UnitTests para verificar do de MRTK.
+title: Testes de unidade
+description: Testes de unidade para verificar a confiabilidade do MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, UnitTest,
-ms.openlocfilehash: 76d246634cf190787fcfd78c849a0bd6da3a2135
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, UnitTest,
+ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144717"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121344"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a>Escrevendo e executando testes em MRTK
+# <a name="writing-and-running-tests-in-mrtk"></a>Escrevendo e executando testes no MRTK
 
-Para garantir que o MRTK seja confiável, o MRTK tem um conjunto de testes para garantir que as alterações no código não retenha o comportamento existente. Ter boa cobertura de teste em uma grande base de código como MRTK é crucial para a estabilidade e ter confiança ao fazer alterações.
+Para garantir que o MRTK seja confiável, o MRTK tem um conjunto de testes para garantir que as alterações no código não regredam o comportamento existente. Ter uma boa cobertura de teste em uma grande base de código, como o MRTK, é crucial para a estabilidade e a confiança ao fazer alterações.
 
-O MRTK usa o [executor de teste do Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) , que usa uma integração do Unity do [NUnit](https://nunit.org/). Este guia fornecerá um ponto de partida sobre como adicionar testes ao MRTK. Ele não explicará o [executor de teste do Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e o [NUnit](https://nunit.org/) , que pode ser pesquisado nos links fornecidos.
+O MRTK usa o [Test Runner do Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) que usa uma integração do Unity do [NUnit.](https://nunit.org/) Este guia fornecerá um ponto de partida sobre como adicionar testes ao MRTK. Ele não explicará o [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e o [NUnit,](https://nunit.org/) que podem ser procurados nos links fornecidos.
 
 Antes de enviar uma solicitação de pull, certifique-se de:
 
-1. Execute os testes localmente para que suas alterações não retenham o comportamento existente (concluir PRs não será permitido se algum teste falhar).
+1. Execute os testes localmente para que suas alterações não regredissem o comportamento existente (a conclusão de PRs não será permitida se algum teste falhar).
 
-1. Se estiver corrigindo um bug, escreva um teste para testar a correção e certifique-se de que as modificações futuras no código não o quebrem novamente.
+1. Se estiver corrigindo um bug, escreva um teste para testar a correção e verifique se as modificações futuras de código não a quebrarão novamente.
 
-1. Se estiver escrevendo um recurso, grave novos testes para evitar que alterações de código futuras quebrem esse recurso.
+1. Se estiver escrevendo um recurso, escreva novos testes para evitar alterações de código futuras quebrando esse recurso.
 
-Os testes do PlayMode no momento devem ser executados no Unity 2018,4 e podem falhar em outras versões do Unity
+Atualmente, os testes de playmode devem ser executados no Unity 2018.4 e podem falhar em outras versões do Unity
 
 ## <a name="running-tests"></a>Executando testes
 
 ### <a name="unity-editor"></a>Editor do Unity
 
-O [corredor de teste do Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) pode ser encontrado em **janela**  >    >  de teste geral de **testes** e mostrará todos os testes de modo de reprodução e de MRTK disponíveis.
+O [Test Runner do Unity pode](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) ser encontrado em **Window** General Test Runner e mostrará todos os testes de modo de reprodução e edição do  >    >   MRTK disponíveis.
 
 ### <a name="command-line"></a>Linha de comando
 
-Os testes também podem ser executados por um script do [PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) localizado em `Scripts\test\run_playmode_tests.ps1` . Isso executará os testes PlayMode exatamente como são executados no GitHub/CI (veja abaixo) e imprimirá os resultados. Aqui estão alguns exemplos de como executar o script
+Os testes também podem ser executados por um script [do PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) localizado em `Scripts\test\run_playmode_tests.ps1` . Isso executará os testes de playmode exatamente como eles são executados no github/CI (veja abaixo) e imprimirá os resultados. Aqui estão alguns exemplos de como executar o script
 
-Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018,4 (por exemplo, Unity 2018.4.26 F1)
+Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018.4 (por exemplo, Unity 2018.4.26f1)
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018,4, resultados de saída para C:\ playmode_test_out
+Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018.4, saída de resultados para C:\playmode_test_out
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
-Também é possível executar os testes PlayMode várias vezes por meio do `run_repeat_tests.ps1` script. Todos os parâmetros usados no `run_playmode_tests.ps1` podem ser usados.
+Também é possível executar os testes de playmode várias vezes por meio do `run_repeat_tests.ps1` script. Todos os parâmetros usados no `run_playmode_tests.ps1` podem ser usados.
 
 ```ps
 .\run_repeat_tests.ps1 -Times 5
@@ -115,18 +115,18 @@ Abra o test runner e observe os novos testes que agora podem ser chamados repeti
 Há dois tipos de testes que podem ser adicionados para o novo código
 
 * Testes de modo de reprodução
-* Testes do modo de edição
+* Editar testes de modo
 
-### <a name="play-mode-tests"></a>Testes do modo de reprodução
+### <a name="play-mode-tests"></a>Testes de modo de reprodução
 
-Os testes do modo Play MRTK têm a capacidade de testar como o novo recurso responde a diferentes fontes de entrada, como mãos ou olhos.
+Os testes de modo de reprodução do MRTK têm a capacidade de testar como o novo recurso responde a diferentes fontes de entrada, como mãos ou olhos.
 
-Novos testes do modo de reprodução podem herdar [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) ou o esqueleto abaixo pode ser usado.
+Novos testes de modo de reprodução podem [herdar BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) ou o esqueleto abaixo pode ser usado.
 
 Para criar um novo teste de modo de reprodução:
 
-* Navegue até ativos > MRTK > testes > PlayModeTests
-* Clique com o botão direito do mouse em criar > teste > script de teste C#
+* Navegue até Ativos > mrtk > testes > PlayModeTests
+* Clique com o botão direito do mouse em Criar > teste > script de teste do C#
 * Substitua o modelo padrão pelo esqueleto abaixo
 
 ```c#
@@ -219,9 +219,9 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 #endif
 ```
 
-### <a name="edit-mode-tests"></a>Testes do modo de edição
+### <a name="edit-mode-tests"></a>Editar testes de modo
 
-Os testes do modo de edição são executados no modo de edição do Unity e podem ser adicionados na pasta **MRTK**  >  **tests**  >  **EditModeTests** no repositório do kit de ferramentas do reality Mixed.
+Os testes de modo de edição são executados no modo de edição do Unity e podem ser adicionados na pasta  >    >  **EditModeTests** de Testes do MRTK no repo do Kit de Ferramentas de Realidade Misturada.
 Para criar um novo teste, o seguinte modelo pode ser usado:
 
 ```c#
@@ -244,9 +244,9 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 }
 ```
 
-### <a name="test-naming-conventions"></a>Convenções de nomenclatura de teste
+### <a name="test-naming-conventions"></a>Testar convenções de nomen entre
 
-Os testes devem geralmente ser nomeados com base na classe que estão sendo testada ou no cenário em que estão sendo testados.
+Os testes geralmente devem ser nomeados com base na classe que estão testando ou no cenário em que estão testando.
 Por exemplo, dada uma classe a ser testada:
 
 ```c#
@@ -269,7 +269,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 }
 ```
 
-Considere colocar o teste em uma hierarquia de pastas semelhante ao arquivo que não é de teste correspondente.
+Considere colocar o teste em uma hierarquia de pastas semelhante ao arquivo não de teste correspondente.
 Por exemplo:
 
 ```md
@@ -277,13 +277,13 @@ Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs
 Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest.cs
 ```
 
-Isso é para garantir que há uma maneira óbvia de localizar a classe de teste correspondente de cada classe, se existir uma classe de teste.
+Isso é para garantir que haja uma maneira clara de localizar a classe de teste correspondente de cada classe, se tal classe de teste existir.
 
-O posicionamento de testes baseados em cenários é menos definido-se o teste exercitar o sistema de entrada geral, por exemplo, considere colocá-lo em uma pasta "InputSystem" na pasta de teste do modo de edição ou modo de reprodução correspondente.
+O posicionamento de testes baseados em cenário é menos definido – se o teste exercícios do sistema de entrada geral, por exemplo, considere colocá-lo em uma pasta "InputSystem" no modo de edição correspondente ou na pasta de teste do modo de reprodução.
 
 ### <a name="test-script-icons"></a>Ícones de script de teste
 
-Ao adicionar um novo teste, modifique o script para que ele tenha o ícone de MRTK correto. Há uma ferramenta de MRTK fácil para fazer isso:
+Ao adicionar um novo teste, modifique o script para ter o ícone correto do MRTK. Há uma ferramenta de MRTK fácil para fazer isso:
 
 1. Acesse o item de menu Kit de Ferramentas de Realidade Misturada
 1. Clique em Utilitários, em Atualizar e em Ícones

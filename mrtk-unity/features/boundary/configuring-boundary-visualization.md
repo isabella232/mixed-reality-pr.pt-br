@@ -1,16 +1,16 @@
 ---
-title: Configurar a visualização de limite
+title: Configurando a visualização de limite
 description: Detalhes para configurar o sistema de limites no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sistema de Limites,
-ms.openlocfilehash: 36717493107b129a7200dd3f912bcbdc3337b9a1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144496"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121244"
 ---
 # <a name="configuring-the-boundary-visualization"></a>Configurando a visualização de limite
 
@@ -50,31 +50,31 @@ A camada na qual o plano de piso deve ser definido. O valor padrão é a *camada
 
 **Mostrar**
 
-Indica se um retângulo de área de reprodução é ou não criado e adicionado à cena. O valor padrão é true.
+Indica se um retângulo de área de reprodução é criado e adicionado à cena. O valor padrão é true.
 
 **Material**
 
-Indica o material que deve ser usado ao criar o objeto da área de reprodução.
+Indica o material que deve ser usado ao criar o objeto de área de reprodução.
 
 **Camada física**
 
-A camada na qual a área de reprodução deve ser definida. O valor padrão é a camada *ignorar Raycast* .
+A camada na qual a área de reprodução deve ser definida. O valor padrão é a *camada Ignorar Raycast.*
 
-## <a name="tracked-area-settings"></a>Configurações da área rastreada
+## <a name="tracked-area-settings"></a>Configurações de área rastreada
 
 ![Configurações de área rastreada de visualização de limite](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Mostrar**
 
-Indica se o contorno da área rastreada é criado e adicionado à cena. O valor padrão é true.
+Indica se o contorno da área rastreada é criado ou não e adicionado à cena. O valor padrão é true.
 
 **Material**
 
-Indica o material que deve ser usado ao criar a estrutura de tópicos da área rastreada.
+Indica o material que deve ser usado ao criar o contorno da área rastreada.
 
 **Camada física**
 
-A camada na qual a área rastreada deve ser definida. O valor padrão é a camada *ignorar Raycast* .
+A camada na qual a área rastreada deve ser configurada. O valor padrão é a *camada Ignorar Raycast.*
 
 ## <a name="boundary-wall-settings"></a>Configurações de parede de limite
 
@@ -82,7 +82,7 @@ A camada na qual a área rastreada deve ser definida. O valor padrão é a camad
 
 **Mostrar**
 
-Indica se os planos de parede de limite devem ser criados e adicionados à cena. O valor padrão é false.
+Indica se planos de parede de limite devem ou não ser criados e adicionados à cena. O valor padrão é false.
 
 **Material**
 
@@ -90,10 +90,10 @@ Indica o material que deve ser usado ao criar os planos de parede de limite.
 
 **Camada física**
 
-A camada na qual as paredes de limite devem ser definidas. O valor padrão é a camada *ignorar Raycast* .
+A camada na qual as paredes de limite devem ser definidas. O valor padrão é a *camada Ignorar Raycast.*
 
 > [!NOTE]
-> Definir o componente de borda de limite como uma camada física diferente de *ignorar Raycast* pode impedir que os usuários interajam com objetos dentro da cena.
+> Definir o componente de parede de limite como uma camada física diferente de *Ignorar Raycast* pode impedir que os usuários interajam com objetos dentro da cena.
 
 ## <a name="boundary-ceiling-settings"></a>Configurações de limite de limite
 

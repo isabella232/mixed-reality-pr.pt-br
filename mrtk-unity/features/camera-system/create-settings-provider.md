@@ -1,53 +1,53 @@
 ---
 title: Criar provedor de configuração
-description: provedor de dados para configurações de câmera no MRTK
+description: Provedor de dados para configurações de câmera no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 6ec3fc1c88c1a32334cb2869ad1994863e55bf9a
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: d07b84c3cf550f9a235e58286b4cd239ac43b649
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144897"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121184"
 ---
 # <a name="creating-a-camera-settings-provider"></a>Criando um provedor de configurações de câmera
 
-O sistema câmera é um sistema extensível para dar suporte a configurações de câmera específicas da plataforma. Para adicionar suporte para uma nova configuração de câmera, um provedor de configurações personalizadas pode ser necessário.
+O sistema de câmera é um sistema extensível para fornecer suporte para configurações de câmera específicas da plataforma. Para adicionar suporte a uma nova configuração de câmera, um provedor de configurações personalizado pode ser necessário.
 
 > [!NOTE]
-> O código-fonte completo usado neste exemplo pode ser encontrado na pasta **MRTK/Providers/UnityAR.**
+> O código-fonte completo usado neste exemplo pode ser encontrado na pasta **MRTK/Providers/UnityAR** .
 
-## <a name="namespace-and-folder-structure"></a>Estrutura de namespace e pasta
+## <a name="namespace-and-folder-structure"></a>Namespace e estrutura de pastas
 
-Os provedores de dados podem ser distribuídos de uma das duas maneiras:
+Os provedores de dados podem ser distribuídos de duas maneiras:
 
 1. Complementos de terceiros
-1. Parte do Microsoft Mixed Reality Toolkit
+1. Parte do kit de ferramentas do Microsoft Mixed Reality
 
-O processo de aprovação para envios de novos provedores de dados para o MRTK variará caso a caso e será comunicado no momento da proposta inicial. As propostas podem ser enviadas criando um novo problema de tipo [ *de Solicitação* de Recurso](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
+O processo de aprovação para envios de novos provedores de dados para o MRTK variará de acordo com o caso e será comunicado no momento da proposta inicial. As propostas podem ser enviadas criando um novo [problema de tipo de *solicitação de recurso*](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
 ### <a name="third-party-add-ons"></a>Complementos de terceiros
 
 **Namespace**
 
-Os provedores de dados precisam ter um namespace para atenuar possíveis colisões de nomes. É recomendável que o namespace inclua os componentes a seguir.
+Os provedores de dados precisam ter um namespace para atenuar colisões de nomes potenciais. É recomendável que o namespace inclua os componentes a seguir.
 
 - Nome da empresa que produz o complemento
 - Área do recurso
 
-Por exemplo, um provedor de configurações de câmera criado e enviado pela empresa Contoso pode ser *"Contoso.MixedReality.Toolkit.Camera".*
+Por exemplo, um provedor de configurações de câmera criado e enviado pela empresa contoso pode ser *"contoso. MixedReality. Toolkit. Camera"*.
 
 **Estrutura de pastas**
 
-É recomendável que o código-fonte para provedores de dados seja organizado em uma hierarquia de pastas, conforme mostrado na imagem a seguir.
+É recomendável que o código-fonte para provedores de dados seja layeddo em uma hierarquia de pastas, conforme mostrado na imagem a seguir.
 
 ![Estrutura de pasta de exemplo](../images/camera-system/ExampleProviderFolderStructure.png)
 
-Onde a *pasta ContosoCamera* contém a implementação do provedor de dados, a pasta *Editor*  contém o inspetor (e qualquer outro código específico do editor do Unity) e a pasta Perfis contém um ou mais objetos de script de perfil pré-criados.
+Onde a pasta *ContosoCamera* contém a implementação do provedor de dados, a pasta do *Editor* contém o Inspetor (e qualquer outro código específico do editor do Unity) e a pasta *perfis* contém um ou mais objetos programáveis por script predefinidos.
 
-### <a name="mrtk-submission"></a>Envio do MRTK
+### <a name="mrtk-submission"></a>Envio de MRTK
 
 **Namespace**
 
@@ -115,13 +115,13 @@ Os métodos que devem ser implementados pelo provedor de dados são:
 
 A próxima etapa é adicionar a lógica do provedor de configurações implementando [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) . Essa parte do provedor de dados normalmente será específica da configuração da câmera.
 
-## <a name="create-the-profile-and-inspector"></a>Criar o perfil e o inspetor
+## <a name="create-the-profile-and-inspector"></a>Criar o perfil e o Inspetor
 
-No Kit de Ferramentas de Realidade Misturada, os provedores de dados são configurados usando [perfis](../profiles/profiles.md).
+No kit de ferramentas de realidade misturada, os provedores de dados são configurados usando [perfis](../profiles/profiles.md).
 
 ### <a name="define-the-profile"></a>Definir o perfil
 
-O conteúdo do perfil deve espelhar as opções de configuração selecionáveis pelo desenvolvedor. Todas as propriedades configuráveis pelo usuário definidas em cada interface também devem estar contidas com o perfil.
+O conteúdo do perfil deve espelhar as opções de configuração selecionáveis pelo desenvolvedor. Qualquer propriedade configurável pelo usuário definida em cada interface também deve estar contida no perfil.
 
 ```c#
 using UnityEngine.SpatialTracking;
@@ -164,13 +164,13 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 }
 ```
 
-O atributo pode ser aplicado à classe de perfil para permitir que os clientes criem uma instância de perfil usando o menu Criar Perfis do Kit de Ferramentas de Realidade `CreateAssetMenu`   >    >    >   Misturada de Ativos.
+O `CreateAssetMenu` atributo pode ser aplicado à classe de perfil para permitir que os clientes criem uma instância de perfil usando o menu **Create**  >  **assets**  >  **Mixed Realm**  >  **Profiles** do kit de ferramentas.
 
-### <a name="implement-the-inspector"></a>Implementar o inspetor
+### <a name="implement-the-inspector"></a>Implementar o Inspetor
 
-Inspetores de perfil são a interface do usuário para configurar e exibir o conteúdo do perfil. Cada inspetor de perfil deve estender a [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) classe.
+Os inspetores de perfil são a interface do usuário para configurar e exibir o conteúdo do perfil. Cada Inspetor de perfil deve estender a [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) classe.
 
-O `CustomEditor` atributo informa ao Unity o tipo de ativo ao qual o inspetor se aplica.
+O `CustomEditor` atributo informa ao Unity o tipo de ativo ao qual o Inspetor se aplica.
 
 ```c#
 namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
@@ -181,17 +181,17 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 }
 ```
 
-## <a name="create-assembly-definitions"></a>Criar definições de assembly
+## <a name="create-assembly-definitions"></a>Criar definição (ões) de assembly
 
-O Kit de Ferramentas de Realidade Misturada usa arquivos de definição de assembly ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) para especificar dependências entre componentes, bem como para ajudar o Unity a reduzir o tempo de compilação.
+O kit de ferramentas de realidade misturada usa arquivos de definição de assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) para especificar dependências entre componentes, bem como para auxiliar o Unity na redução do tempo de compilação.
 
 É recomendável que os arquivos de definição de assembly sejam criados para todos os provedores de dados e seus componentes do editor.
 
-Usando a [estrutura de](#namespace-and-folder-structure) pastas no exemplo anterior, haveria dois arquivos .asmdef para o provedor de dados ContosoCamera.
+Usando a [estrutura de pastas](#namespace-and-folder-structure) no exemplo anterior, haveria dois arquivos. asmdef para o provedor de dados ContosoCamera.
 
-A primeira definição de assembly é para o provedor de dados. Neste exemplo, ele será chamado contosoCamera e estará localizado na pasta *ContosoCamera do* exemplo. Essa definição de assembly deve especificar uma dependência no Microsoft.MixedReality.Toolkit e em todos os outros assemblies dos quais ela depende.
+A primeira definição do assembly é para o provedor de dados. Para este exemplo, ele será chamado de ContosoCamera e estará localizado na pasta *ContosoCamera* do exemplo. Essa definição de assembly deve especificar uma dependência em Microsoft. MixedReality. Toolkit e quaisquer outros assemblies sobre os quais ela depende.
 
-A definição de assembly ContosoCameraEditor especificará o inspetor de perfil e qualquer código específico do editor. Esse arquivo deve estar localizado na pasta raiz do código do editor. Neste exemplo, o arquivo estará localizado na pasta *ContosoCamera\Editor* . Essa definição de assembly conterá uma referência ao assembly ContosoCamera, bem como:
+A definição do assembly ContosoCameraEditor especificará o Inspetor de perfil e qualquer código específico do editor. Esse arquivo deve estar localizado na pasta raiz do código do editor. Neste exemplo, o arquivo estará localizado na pasta *ContosoCamera\Editor* . Essa definição de assembly conterá uma referência ao assembly ContosoCamera, bem como:
 
 - Microsoft. MixedReality. Toolkit
 - Microsoft. MixedReality. Toolkit. editor. Inspectors

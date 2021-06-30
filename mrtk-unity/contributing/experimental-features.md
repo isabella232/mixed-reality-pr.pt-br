@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 705b7ab96d22c5c94c04476de30e5524095c1ce2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144781"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121374"
 ---
 # <a name="experimental-features"></a>Recursos experimentais
 
@@ -42,21 +42,21 @@ Por exemplo, os solucionadores entrariam em `MRTK/SDK/Experimental/FooBar/Featur
 Mantenha cenas em uma pasta de cena perto da parte superior: `MRTK/Examples/Experimental/FooBar/Scenes/FooBarExample.unity`
 
 > [!NOTE]
-> Consideramos não ter uma única pasta raiz experimental e, em vez disso, colocar o experimental sob digamos `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` . Decidimos usar as pastas na base para facilitar a descoberta dos recursos experimentais.
+> Considerámos não ter uma única pasta raiz experimental e, em vez disso, colocar Experimental em digamos `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` . Decidimos usar pastas na base para facilitar a descoberta dos recursos experimentais.
 
 ### <a name="experimental-code-should-be-in-a-special-namespace"></a>O código experimental deve estar em um namespace especial
 
-Verifique se o código experimental reside em um namespace experimental que corresponde ao local não experimental. Por exemplo, se o componente fizer parte de solveres em `Microsoft.MixedReality.Toolkit.Utilities.Solvers` , seu namespace deverá ser `Microsoft.MixedReality.Toolkit.Experimental.Utilities.Solvers` .
+Verifique se o código experimental reside em um namespace experimental que corresponde ao local não experimental. Por exemplo, se o componente faz parte dos solucionadores em `Microsoft.MixedReality.Toolkit.Utilities.Solvers` , seu namespace deve ser `Microsoft.MixedReality.Toolkit.Experimental.Utilities.Solvers` .
 
-Consulte [esta PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/4532) para obter um exemplo.
+Consulte [esta PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/4532) para ver um exemplo.
 
-### <a name="experimental-features-should-have-an-experimental-attribute"></a>Os recursos experimentais devem ter um atributo [experimental]
+### <a name="experimental-features-should-have-an-experimental-attribute"></a>Os recursos experimentais devem ter um atributo [Experimental]
 
-Adicione um `[Experimental]` atributo acima de um dos campos para que uma pequena caixa de diálogo apareça no editor de componentes que mencione que o recurso é experimental e esteja sujeito a alterações significativas.
+Adicione um atributo acima de um de seus campos para que uma pequena caixa de diálogo apareça no editor de componentes que menciona que seu recurso é experimental e está sujeito `[Experimental]` a alterações significativas.
 
-### <a name="menus-for-experimental-features-should-go-under-experimental-sub-menu"></a>Os menus para recursos experimentais devem estar no submenu "experimental"
+### <a name="menus-for-experimental-features-should-go-under-experimental-sub-menu"></a>Menus para recursos experimentais devem estar no sub menu "Experimental"
 
-Verifique se os recursos experimentais estão em submenus "experimentais" ao adicionar comandos aos menus no editor. Veja alguns exemplos:
+Verifique se os recursos experimentais estão em sub-menus "experimentais" ao adicionar comandos aos menus no editor. Veja alguns exemplos:
 
 Adicionando um comando de menu de nível superior:
 
@@ -65,7 +65,7 @@ Adicionando um comando de menu de nível superior:
 public static void MyCommand()
 ```
 
-Adicionando um menu de componentes:
+Adicionando um menu de componente:
 
 ```c#
 [AddComponentMenu("MRTK/Experimental/MyCommand")]
@@ -73,18 +73,18 @@ Adicionando um menu de componentes:
 
 ## <a name="documentation"></a>Documentação
 
-Siga estas etapas para adicionar a documentação para seu recurso experimental:
+Siga estas etapas para adicionar a documentação do recurso experimental:
 
-1. Qualquer documentação para um recurso experimental deve estar em um `readme.md` arquivo na pasta experimental. Por exemplo, MRTK/SDK/experimental/PulseShader/README. MD.
+1. Qualquer documentação para um recurso experimental deve estar em `readme.md` um arquivo na pasta experimental. Por exemplo, MRTK/SDK/Experimental/PulseShader/readme.md.
 
-1. Em *visões gerais de recurso* , adicione um link na seção *experimental* em [`Documentation/toc.yml`](../toc.yml) .
+1. Em *Visão geral do recurso,* adicione um link na seção *Experimental* em [`Documentation/toc.yml`](../toc.yml) .
 
-### <a name="minimize-impact-to-mrtk-code"></a>Minimizar o impacto no código MRTK
+### <a name="minimize-impact-to-mrtk-code"></a>Minimizar o impacto no código do MRTK
 
-Embora sua alteração MRTK possa fazer com que seu experimento funcione, isso pode afetar outras pessoas de maneiras que você não espera.
-Quaisquer regressões feitas ao código do MRTK Core resultarão na reversão da sua solicitação pull.
+Embora a alteração do MRTK possa fazer com que seu experimento funcione, isso pode afetar outras pessoas de maneiras que você não espera.
+Todas as regressões que você fizer ao código principal do MRTK resultariam na reversão da solicitação de pull.
 
-O objetivo de ter zero alterações em pastas diferentes das pastas experimentais. Aqui está uma lista de pastas que podem ter alterações experimentais:
+O objetivo é ter zero alterações em pastas que não são experimentais. Aqui está uma lista de pastas que podem ter alterações experimentais:
 
 - MRTK/SDK/Experimental
 - MRTK/SDK/Inspetores/Experimental
@@ -114,8 +114,8 @@ Teste sua cena de exemplo em sua plataforma de destino, certifique-se de que ela
 
 ## <a name="graduating-experimental-code-into-mrtk-code"></a>Como transformar código experimental em código MRTK
 
-Se um recurso acabar vendo muito uso, devemos gradua-lo no código principal de MRTK. Para fazer isso, o recurso deve ter testes, documentação e uma cena de exemplo.
+Se um recurso acabar vendo muita utilização, devemos agredá-lo no código principal do MRTK. Para fazer isso, o recurso deve ter testes, documentação e uma cena de exemplo.
 
-Quando estiver pronto para graduar o recurso MRTK, crie um problema para fazer check-in do seu PR em relação ao. A PR deve incluir todas as coisas necessárias para tornar esse recurso principal: testes, documentação e uma cena de exemplo mostrando o uso.
+Quando você estiver pronto para formar o RECURSO MRTK, crie um problema para verificar sua PR. A PR deve incluir todas as coisas necessárias para tornar isso um recurso principal: testes, documentação e uma cena de exemplo mostrando o uso.
 
-Além disso, não se esqueça de atualizar os namespaces para remover o subespaço "experimental".
+Além disso, não se esqueça de atualizar os namespaces para remover o subespaço "Experimental".

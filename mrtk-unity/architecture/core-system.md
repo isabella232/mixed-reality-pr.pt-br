@@ -1,16 +1,16 @@
 ---
-title: Sistema Principal
+title: Sistema principal
 description: Sistema de entrada, gerenciadores de dispositivos e provedores de dados no MRTK
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, eventos
-ms.openlocfilehash: 12719a6c749a03648d4f75e9e6461b85cc9ab275
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144291"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121594"
 ---
 # <a name="core-system"></a>Sistema principal
 
@@ -41,26 +41,26 @@ Isso é feito usando [ExecuteHierarchy](https://docs.unity3d.com/ScriptReference
 
 ### <a name="global-listeners"></a>Ouvintes globais
 
-Os eventos podem ser enviados para ouvintes globais. É possível registrar todos os eventos de entrada usando a interface do sistema de [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) entrada. É recomendável usar o método [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) para registrar eventos globais – a função preterida fará com que os ouvintes recebam notificados de TODOS os eventos de entrada, em vez de apenas eventos de entrada de um tipo específico (em que o tipo é definido pela interface de `Register` evento).
+Os eventos podem ser enviados para ouvintes globais. É possível registrar-se para todos os eventos de entrada usando a interface do sistema de entrada [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) . É recomendável usar o método [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) para o registro de eventos globais – a função preterida fará com que os `Register` ouvintes sejam notificados de todos os eventos de entrada, em vez de apenas eventos de entrada de um tipo específico (em que Type é definido pela interface de evento).
 
-Observe que [os ouvintes de fallback](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) são outro tipo de ouvintes globais que também não são desencorajados porque receberão todos os eventos de entrada que não foram tratados em outro lugar na cena.
+Observe que os [ouvintes de fallback](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) são outro tipo de ouvintes globais que também são desencorajados, pois eles receberão todos os eventos de entrada únicos que não foram tratados em outro lugar na cena.
 
-### <a name="order-of-event-dispatch"></a>Ordem de expedição de eventos
+### <a name="order-of-event-dispatch"></a>Ordem de expedição do evento
 
-Em geral, os eventos são enviados aos ouvintes da seguinte maneira. Observe que, se qualquer uma das etapas abaixo marcar o evento como [manipulado,](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html)o processo de expedição de eventos será interrompido.
+Em geral, os eventos são enviados aos ouvintes da seguinte maneira. Observe que, se qualquer uma das etapas abaixo marcar o evento como [manipulado](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html), o processo de expedição do evento será interrompido.
 
 1. O evento é enviado para ouvintes globais.
 2. O evento é enviado para caixas de diálogo modais do objeto focalizado.
 3. O evento é enviado para o objeto focalizado.
-4. O evento é enviado para ouvintes de fallback.
+4. O evento é enviado aos ouvintes de fallback.
 
 ## <a name="device-managers-and-data-providers"></a>Gerenciadores de dispositivos e provedores de dados
 
-Essas entidades são responsáveis por intercalar com APIs de nível inferior (como APIs do Windows Mixed Reality ou APIs OpenVR) e traduzir dados desses sistemas em aqueles que se ajustam às abstrações de entrada de nível superior do MRTK. Eles são responsáveis por detectar, criar e gerenciar o tempo de vida [dos controladores](controllers-pointers-and-focus.md#controllers).
+Essas entidades são responsáveis pela interface com APIs de nível inferior (como APIs de realidade mista do Windows ou APIs OpenVR) e pela conversão de dados desses sistemas em aquelas que se ajustam às abstrações de entrada de nível superior do MRTK. Eles são responsáveis por detectar, criar e gerenciar o tempo de vida dos [controladores](controllers-pointers-and-focus.md#controllers).
 
-O fluxo básico de um gerenciador de dispositivos envolve:
+O fluxo básico de um Gerenciador de dispositivos envolve:
 
-1. O gerenciador de dispositivos é instanciado pelo serviço de sistema de entrada.
-2. O gerenciador de dispositivos registra-se com seu sistema subjacente (por [](../features/input/input-events.md) exemplo, o Windows Mixed Reality de dispositivos registrará eventos de entrada [e](../features/input/gestures.md#gesture-events) gesto.
-3. Ele cria controladores que descobre do sistema subjacente (por exemplo, o provedor pode detectar a presença de mãos articuladas)
-4. Em seu loop Update(), chame UpdateController() para sondar o novo estado do sistema subjacente e atualizar sua representação do controlador.
+1. O Gerenciador de dispositivos é instanciado pelo serviço do sistema de entrada.
+2. O Gerenciador de dispositivos se registra com seu sistema subjacente (por exemplo, o Gerenciador de dispositivos do Windows Mixed Reality será registrado para eventos de [entrada](../features/input/input-events.md) e de [gesto](../features/input/gestures.md#gesture-events) .
+3. Ele cria controladores que ele descobre do sistema subjacente (por exemplo, o provedor pode detectar a presença de mãos articuladas)
+4. Em seu loop Update (), chame UpdateController () para sondar o novo estado do sistema subjacente e atualizar sua representação do controlador.

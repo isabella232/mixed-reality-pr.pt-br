@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, extensões do sistema,
-ms.openlocfilehash: add1f443edb687edfc387a316d83443779e079f9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 358294702971b7d9e8de1b842d3bc1844e5dc9bf
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143507"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121464"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>Sistemas, serviços de extensão e provedores de dados
 
@@ -42,25 +42,25 @@ Para ser acessível ao MRTK, os serviços de extensão são registrados e config
 
 ## <a name="data-providers"></a>Provedores de dados
 
-Os provedores de dados são componentes que, por nome, fornecem dados para um serviço kit de ferramentas de realidade misturada. Todos os provedores de dados devem especificar que implementam a [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interface .
+Provedores de dados são componentes que, por seu nome, fornecem dados a um serviço de kit de ferramentas de realidade misto. Todos os provedores de dados devem especificar que eles implementam a [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interface.
 
 > [!NOTE]
-> Nem todos os serviços exigirão provedores de dados. Dos sistemas do Kit de Ferramentas de Realidade Misturada, os sistemas de Entrada e Reconhecimento Espacial são os únicos serviços para utilizar provedores de dados.
+> Nem todos os serviços precisarão de provedores de dados. Dos sistemas mistos do kit de ferramentas da realidade, os sistemas de reconhecimento de entrada e espaciais são os únicos serviços para utilizar provedores de dados.
 
-Para ser acessível ao serviço específico do MRTK, os provedores de dados são registrados no perfil de configuração do serviço.
+Para ser acessível para o serviço MRTK específico, os provedores de dados são registrados no perfil de configuração do serviço.
 
-O código do aplicativo acessa provedores de dados por meio da [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) interface . Para simplificar o acesso, os provedores de dados também podem ser recuperados por meio `CoreServices` da classe auxiliar.
+O código do aplicativo acessa provedores de dados por meio da [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) interface. Para simplificar o acesso, os provedores de dados também podem ser recuperados por meio da `CoreServices` classe auxiliar.
 
 ```c#
 var inputSimulationService = CoreServices.GetDataProvider<IInputSimulationService>(CoreServices.InputSystem);
 ```
 
 > [!IMPORTANT]
-> Embora `IMixedRealityDataProvider` herde de `IMixedRealityService` , os provedores de dados não estão registrados com o `MixedRealityServiceRegistry` . Para acessar provedores de dados, o código do aplicativo deve consultar a instância de serviço para a qual eles foram registrados (por exemplo: sistema de entrada).
+> Embora `IMixedRealityDataProvider` herde de `IMixedRealityService` , os provedores de dados não são registrados com o `MixedRealityServiceRegistry` . Para acessar provedores de dados, o código do aplicativo deve consultar a instância de serviço para a qual eles foram registrados (por exemplo: sistema de entrada).
 
 ### <a name="input"></a>Entrada
 
-O sistema de entrada do MRTK utiliza apenas provedores de dados que implementam o [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager) .
+O sistema de entrada MRTK utiliza apenas provedores de dados que implementam o [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager) .
 
 ![Provedores de dados do sistema de entrada](../features/images/input/RegisteredServiceProviders.PNG)
 
@@ -92,13 +92,13 @@ if (inputSimulationService != null)
 ```
 
 > [!NOTE]
-> O sistema de entrada retorna apenas provedores de dados com suporte para a plataforma na qual o aplicativo está em execução.
+> O sistema de entrada retorna somente provedores de dados com suporte para a plataforma na qual o aplicativo está sendo executado.
 
-Para obter informações sobre como escrever um provedor de dados para o sistema de entrada do MRTK, consulte [criando um provedor de dados do sistema de entrada](../features/input/create-data-provider.md).
+Para obter informações sobre como gravar um provedor de dados para o sistema de entrada MRTK, consulte [criando um provedor de dados do sistema de entrada](../features/input/create-data-provider.md).
 
-### <a name="spatial-awareness"></a>Reconhecimento espacial
+### <a name="spatial-awareness"></a>Conscientização espacial
 
-O sistema de reconhecimento espacial do MRTK utiliza apenas provedores de dados que implementam a [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface.
+O sistema de conscientização espacial MRTK utiliza apenas provedores de dados que implementam a [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface.
 
 ![Provedores de dados do sistema de reconhecimento espacial](../features/images/spatial-awareness/SpatialAwarenessProfile.png)
 
