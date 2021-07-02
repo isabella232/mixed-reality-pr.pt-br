@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: f00dc01555ef158dab21334761bd23ef6a70dba4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8c1da7ae6a46bd00599a77b1c4cbb0b2f7baa632
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144081"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176176"
 ---
 # <a name="controller-mapping-tool"></a>Ferramenta de mapeamento de controlador
 
@@ -26,13 +26,13 @@ Para começar a usar a ferramenta de mapeamento de controlador, navegue até **M
 
 Para examinar os mapeamentos do Unity para um controlador:
 
-- Conectar o controlador
+- Conexão controlador
 - Pressione cada botão e mova cada eixo
 - Observe os mapeamentos na exibição
 - Atualizar os mapeamentos de controle no provedor de dados do sistema de entrada para o controlador
 
 > [!NOTE]
-> A ferramenta de mapeamento de controlador não faz uso dos componentes do kit de ferramentas do Microsoft Mixed Reality. Ele se comunica diretamente com o Unity para determinar e exibir os mapeamentos de controle.
+> a ferramenta de mapeamento de controlador não faz uso do Microsoft Mixed reality Toolkit components. Ele se comunica diretamente com o Unity para determinar e exibir os mapeamentos de controle.
 
 ### <a name="all-controls-display"></a>Todos os controles são exibidos
 
@@ -42,7 +42,7 @@ O painel de exibição grande relata o estado de todos os eixos de entrada e bot
 
 ### <a name="active-controls-display"></a>Exibição de controles ativos
 
-O painel de exibição menor e estreito mostra o eixo de entrada do Unity e os botões que estão em um estado ativo (por exemplo: um botão é pressionado). A exibição de controles ativos fornece uma exibição resumida fácil de ler do estado do controlador.
+O painel de exibição menor e estreito mostra o axed de entrada do Unity e os botões que estão em um estado ativo (por exemplo: um botão é pressionado). A exibição de controles ativos fornece uma exibição resumida fácil de ler do estado do controlador.
 
 ![Exibição de controles ativos](../images/controller-mapping-tool/ActiveControls.png)
 

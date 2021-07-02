@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, C#,
-ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121434"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175328"
 ---
 # <a name="coding-guidelines"></a>Diretrizes de codificação
 
@@ -92,18 +92,18 @@ Todos os arquivos de script enviados sem marcas de resumo adequadas serão rejei
 
 ### <a name="mrtk-namespace-rules"></a>Regras de namespace do MRTK
 
-O Kit de Ferramentas de Realidade Misturada usa um modelo de namespace baseado em recurso, em que todos os namespaces fundamentais começam com "Microsoft.MixedReality.Toolkit". Em geral, você não precisa especificar a camada do kit de ferramentas (por ex. Core, Provedores, Serviços) em seus namespaces.
+A Toolkit realidade misturada usa um modelo de namespace baseado em recursos, em que todos os namespaces fundamentais começam com "Microsoft.MixedReality. Toolkit". Em geral, você não precisa especificar a camada do kit de ferramentas (por ex. Core, Provedores, Serviços) em seus namespaces.
 
 Os namespaces definidos no momento são:
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Boundary
-- Microsoft.MixedReality.Toolkit.Diagnostics
-- Microsoft.MixedReality.Toolkit.Editor
-- Microsoft.MixedReality.Toolkit.Input
-- Microsoft.MixedReality.Toolkit.SpatialAwareness
-- Microsoft.MixedReality.Toolkit.Ltd
-- Microsoft.MixedReality.Toolkit.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Limite
+- Microsoft.MixedReality. Toolkit. Diagnostics
+- Microsoft.MixedReality. Toolkit. Editor
+- Microsoft.MixedReality. Toolkit. Entrada
+- Microsoft.MixedReality. Toolkit. SpatialAwareness
+- Microsoft.MixedReality. Toolkit. Teleport
+- Microsoft.MixedReality. Toolkit. Utilitários
 
 Para namespaces com uma grande quantidade de tipos, é aceitável criar um número limitado de sub-namespaces para auxiliar no uso do scoping.
 
@@ -197,23 +197,23 @@ public class MyNewProfile : ScriptableObject
 
 ### <a name="logging"></a>Log
 
-Ao adicionar novos recursos ou atualizar os recursos existentes, considere adicionar os logs de DebugUtilities. LogVerbose ao código interessante que pode ser útil para depuração futura. Há uma compensação aqui entre adicionar o registro em log e o ruído adicionado e não há log suficiente (o que dificulta o diagnóstico).
+Ao adicionar novos recursos ou atualizar recursos existentes, considere adicionar logs DebugUtilities.LogVerbose a um código interessante que pode ser útil para futura depuração. Há uma diferença entre a adição de registro em log e o ruído adicionado e o registro em log não suficiente (o que dificulta o diagnóstico).
 
-Um exemplo interessante em que o registro em log é útil (juntamente com o conteúdo interessante):
+Um exemplo interessante em que o registro em log é útil (juntamente com o payload interessante):
 
 ```c#
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-Esse tipo de log pode ajudar a detectar problemas como [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) , que foram causados por eventos de origem incompatíveis detectados e perdidos de origem.
+Esse tipo de registro em log pode ajudar a capturar problemas como , que foram causados por eventos de origem [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) incompatibilidade detectados e perda de origem.
 
-Evite adicionar logs para dados e eventos que estão ocorrendo em cada quadro-o registro em log ideal deve abranger eventos "interessantes" controlados por entradas de usuário distintas (ou seja, um "clique" por um usuário e o conjunto de alterações e eventos provenientes do que são interessantes para log). O estado em andamento do "o usuário ainda está mantendo um gesto" registrado em todos os quadros não é interessante e sobrecarregará os logs.
+Evite adicionar logs para dados e eventos que estão ocorrendo em cada quadro – o ideal é registrar em log eventos "interessantes" orientados por entradas de usuário distintas (ou seja, um "clique" por um usuário e o conjunto de alterações e eventos que são interessantes para o log). O estado contínuo de "o usuário ainda está mantendo um gesto" registrado em cada quadro não é interessante e sobrecarrega os logs.
 
-Observe que esse log detalhado não é ativado por padrão (ele deve ser habilitado nas configurações do [sistema de diagnóstico](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging))
+Observe que esse log detalhado não está ativado por padrão (ele deve ser habilitado nas configurações [do Sistema de Diagnóstico](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging))
 
 ### <a name="spaces-vs-tabs"></a>Espaços versus guias
 
-Certifique-se de usar quatro espaços em vez de guias ao contribuir para este projeto.
+Certifique-se de usar 4 espaços em vez de guias ao contribuir com este projeto.
 
 ### <a name="spacing"></a>Espaçamento
 
@@ -242,7 +242,7 @@ private Foo()
 
 ### <a name="naming-conventions"></a>Convenções de nomenclatura
 
-Sempre use `PascalCase` para propriedades. Use `camelCase` para a maioria dos campos, exceto o uso `PascalCase` de `static readonly` `const` campos e. A única exceção a isso é para estruturas de dados que exigem que os campos sejam serializados pelo `JsonUtility` .
+Sempre use `PascalCase` para propriedades. Use `camelCase` para a maioria dos campos, exceto para os campos e `PascalCase` `static readonly` `const` . A única exceção a isso é para estruturas de dados que exigem que os campos sejam serializados pelo `JsonUtility` .
 
 #### <a name="dont"></a>O que não fazer
 
@@ -264,11 +264,11 @@ private string myField;
 
 Sempre declare um modificador de acesso para todos os campos, propriedades e métodos.
 
-- Todos os métodos de API do Unity devem ser `private` por padrão, a menos que você precise substituí-los em uma classe derivada. Nesse caso, `protected` deve ser usado.
+- Todos os Métodos de API do Unity devem ser por padrão, a menos que você precise `private` substituí-los em uma classe derivada. Nesse caso, `protected` deve ser usado.
 
-- Os campos devem ser sempre `private` , com `public` ou `protected` acessadores de propriedade.
+- Os campos sempre devem ser `private` , com `public` ou `protected` acessadores de propriedade.
 
-- Usar [membros do Expression-apto para](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) e [Propriedades automáticas](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) sempre que possível
+- Usar [membros aptos para expressão e](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) propriedades [automáticas](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) sempre que possível
 
 #### <a name="dont"></a>O que não fazer
 
@@ -335,9 +335,9 @@ private Foo()
 }
 ```
 
-### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>As classes públicas, as estruturas e as enumerações devem estar em seus próprios arquivos
+### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Classes públicas, structs e enums devem entrar em seus próprios arquivos
 
-Se a classe, a struct ou a enumeração puderem ser tornadas privadas, não haverá problema em ser incluído no mesmo arquivo.  Isso evita problemas de compilação com o Unity e garante que a abstração de código adequada ocorra, além de reduzir conflitos e alterações significativas quando o código precisar ser alterado.
+Se a classe, struct ou enum puder ser privada, não há problema em ser incluído no mesmo arquivo.  Isso evita problemas de compilação com o Unity e garante que a abstração de código adequada ocorra, ele também reduz conflitos e alterações significativas quando o código precisa mudar.
 
 #### <a name="dont"></a>O que não fazer
 
@@ -364,7 +364,7 @@ public class MyClass
 
 #### <a name="do"></a>O que fazer
 
-MyStruct. cs
+MyStruct.cs
 
 ```c#
 // Public Struct / Enum definitions for use in your class.  Try to make them generic for reuse.
@@ -375,7 +375,7 @@ public struct MyStruct
 }
 ```
 
-Myenumtype. cs
+MyEnumType.cs
 
 ```c#
 public enum MuEnumType
@@ -385,7 +385,7 @@ public enum MuEnumType
 }
 ```
 
-MyClass. cs
+Myclass.cs
 
 ```c#
 public class MyClass
@@ -397,7 +397,7 @@ public class MyClass
 
 ### <a name="initialize-enums"></a>Inicializar enums
 
-Para garantir que todas as enumerações sejam inicializadas corretamente a partir de 0, o .NET oferece um atalho organizado para inicializar automaticamente a enumeração apenas adicionando o primeiro valor (início). (por exemplo, valor 1 = 0 valores restantes não são necessários)
+Para garantir que todas as enums sejam inicializadas corretamente a partir de 0, o .NET fornece um atalho organizado para inicializar automaticamente a enum apenas adicionando o primeiro valor (starter). (por exemplo, Valor 1 = 0 Valores restantes não são necessários)
 
 #### <a name="dont"></a>O que não fazer
 
@@ -421,9 +421,9 @@ public enum ValueType
 }
 ```
 
-### <a name="order-enums-for-appropriate-extension"></a>Ordenar enumerações para a extensão apropriada
+### <a name="order-enums-for-appropriate-extension"></a>Ordenar enums para a extensão apropriada
 
-É essencial que, se uma enumeração for provavelmente estendida no futuro, para ordenar os padrões na parte superior da enumeração, isso garante que os índices de enumeração não sejam afetados por novas adições.
+É essencial que, se uma Enum provavelmente for estendida no futuro, para ordenar padrões na parte superior da Enum, isso garantirá que os índices Enum não sejam afetados com novas adições.
 
 #### <a name="dont"></a>O que não fazer
 
@@ -470,11 +470,11 @@ public enum SDKType
 }
 ```
 
-### <a name="review-enum-use-for-bitfields"></a>Examinar o uso de enum para bitfields
+### <a name="review-enum-use-for-bitfields"></a>Revisar o uso de enum para bitfields
 
-Se houver uma possibilidade de um enum exigir vários Estados como um valor, por exemplo, Destroly-Left & Right. Em seguida, a enumeração precisa ser decorada corretamente com BitFlags para permitir que ela seja usada corretamente
+Se houver uma possibilidade de uma enum exigir vários estados como um valor, por exemplo, Handedness = Left & Right. Em seguida, a Enum precisa ser decorada corretamente com BitFlags para permitir que ele seja usado corretamente
 
-O arquivo de destro-canhoto. cs tem uma implementação concreta para isso
+O arquivo Handedness.cs tem uma implementação concreta para isso
 
 ### <a name="dont"></a>O que não fazer
 
@@ -500,14 +500,14 @@ public enum Handedness
 }
 ```
 
-### <a name="hard-coded-file-paths"></a>Caminhos de arquivo embutidos em código
+### <a name="hard-coded-file-paths"></a>Caminhos de arquivo em código
 
-Ao gerar caminhos de arquivo de cadeia de caracteres e, em particular, escrever caminhos de cadeia de caracteres embutidos em código, faça o seguinte:
+Ao gerar caminhos de arquivo de cadeia de caracteres e, em particular, escrever caminhos de cadeia de caracteres codificados, faça o seguinte:
 
-1. Use as [ `Path` APIs](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) do C# sempre que possível, como `Path.Combine` ou `Path.GetFullPath` .
-1. Use/ou [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) em vez de \ ou \\ \\ .
+1. Use as APIs do [ `Path` C#sempre](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) que possível, como `Path.Combine` ou `Path.GetFullPath` .
+1. Use / ou [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) em vez de \ ou \\ \\ .
 
-Essas etapas garantem que o MRTK funcione em sistemas baseados em Windows e UNIX.
+Essas etapas garantem que o MRTK funcione em sistemas Windows e unix.
 
 ### <a name="dont"></a>O que não fazer
 
@@ -532,14 +532,14 @@ string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 
 ## <a name="best-practices-including-unity-recommendations"></a>Práticas recomendadas, incluindo recomendações do Unity
 
-Algumas das plataformas de destino deste projeto exigem que o desempenho seja levado em consideração. Com isso em mente, sempre tenha cuidado ao alocar memória em um código chamado com freqüência em loops ou algoritmos de atualização rígidas.
+Algumas das plataformas de destino deste projeto precisam levar em consideração o desempenho. Com isso em mente, sempre tenha cuidado ao alocar memória no código chamado com frequência em loops de atualização ou algoritmos rígidos.
 
 ### <a name="encapsulation"></a>Encapsulamento
 
-Sempre use campos privados e propriedades públicas se o acesso ao campo for necessário de fora da classe ou estrutura.  Certifique-se de colocalizar o campo privado e a propriedade pública. Isso facilita a visualização, em um relance, o que faz o backup da propriedade e que o campo é modificável por script.
+Sempre use campos privados e propriedades públicas se o acesso ao campo for necessário de fora da classe ou struct.  Certifique-se de co-localizar o campo privado e a propriedade pública. Isso torna mais fácil ver, rapidamente, o que dá o retorno da propriedade e que o campo é modificável pelo script.
 
 > [!NOTE]
-> A única exceção a isso é para as estruturas de dados que exigem que os campos sejam serializados pelo `JsonUtility` , onde uma classe de dados precisa ter todos os campos públicos para que a serialização funcione.
+> A única exceção a isso é para estruturas de dados que exigem que os campos sejam serializados pelo , em que uma classe de dados é necessária para ter todos os campos públicos para `JsonUtility` que a serialização funcione.
 
 #### <a name="dont"></a>O que não fazer
 
@@ -594,9 +594,9 @@ public float AbsMyValue
 }
 ```
 
-### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Armazenar valores em cache e serializá-los na cena/pré-fabricado sempre que possível
+### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Armazenar valores em cache e serializá-los na cena/pré-fab sempre que possível
 
-Com o HoloLens em mente, é melhor otimizar o desempenho e as referências de cache na cena ou pré-fabricado para limitar as alocações de memória de tempo de execução.
+Com o HoloLens em mente, é melhor otimizar para referências de desempenho e cache na cena ou pré-fab para limitar as alocações de memória de runtime.
 
 #### <a name="dont"></a>O que não fazer
 
@@ -628,9 +628,9 @@ private void Update()
 }
 ```
 
-### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>Referências de cache aos materiais, não chame o ". material" a cada vez
+### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>Referências de cache a materiais, não chame o ".material" toda vez
 
-O Unity criará um novo material sempre que você usar ". material", o que provocará um vazamento de memória se ele não for limpo corretamente.
+O Unity criará um novo material sempre que você usar ".material", o que causará uma perda de memória se não for limpo corretamente.
 
 #### <a name="dont"></a>O que não fazer
 
@@ -673,14 +673,14 @@ public class MyClass
 > [!NOTE]
 > Como alternativa, use a propriedade "SharedMaterial" do Unity que não cria um novo material sempre que ele é referenciado.
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Use a [compilação dependente de plataforma](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) para garantir que o kit de ferramentas não interrompa a compilação em outra plataforma
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Use [a compilação dependente da](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) plataforma para garantir Toolkit não quebrará o build em outra plataforma
 
-- Use `WINDOWS_UWP` para usar APIs não Unity específicas de UWP. Isso irá impedi-lo de tentar executar no editor ou em plataformas sem suporte. Isso é equivalente a `UNITY_WSA && !UNITY_EDITOR` e deve ser usado em favor do.
-- Use `UNITY_WSA` para usar APIs do Unity específicas de UWP, como o `UnityEngine.XR.WSA` namespace. Isso será executado no editor quando a plataforma for definida como UWP, bem como em aplicativos UWP criados.
+- Use para usar APIs não Unity específicas da `WINDOWS_UWP` UWP. Isso impedirá que eles tentarem ser executados no Editor ou em plataformas sem suporte. Isso é equivalente a `UNITY_WSA && !UNITY_EDITOR` e deve ser usado em favor de .
+- Use `UNITY_WSA` para usar APIs do Unity específicas da UWP, como o `UnityEngine.XR.WSA` namespace . Isso será executado no Editor quando a plataforma for definida como UWP, bem como em aplicativos UWP integrados.
 
-Este gráfico pode ajudá-lo a decidir qual `#if` usar, dependendo de seus casos de uso e das configurações de compilação que você espera.
+Esse gráfico pode ajudá-lo a decidir qual usar, dependendo dos casos de uso e `#if` das configurações de build esperadas.
 
-|Plataforma | IL2CPP UWP | UWP .NET | Editor |
+|Plataforma | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |
 | `UNITY_EDITOR` | Falso | Falso | True |
 | `UNITY_WSA` | True | True | True |
@@ -689,15 +689,15 @@ Este gráfico pode ajudá-lo a decidir qual `#if` usar, dependendo de seus casos
 | `ENABLE_WINMD_SUPPORT` | True | True | Falso |
 | `NETFX_CORE` | Falso | True | Falso |
 
-### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Prefira DateTime. UtcNow sobre DateTime. Now
+### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferir DateTime.UtcNow em vez de DateTime.Now
 
-DateTime. UtcNow é mais rápido que DateTime. Now. Em investigações de desempenho anteriores, descobrimos que o uso de DateTime. agora adiciona uma sobrecarga significativa especialmente quando usada no loop Update (). [Outras pessoas atingiram o mesmo problema](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).
+DateTime.UtcNow é mais rápido do que DateTime.Now. Em investigações de desempenho anteriores, descobrimos que o uso de DateTime.Now adiciona sobrecarga significativa, especialmente quando usado no loop Update(). [Outros atingiram o mesmo problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
 
-Prefira usar DateTime. UtcNow, a menos que você realmente precise dos horários localizados (um motivo legítimo pode estar querendo mostrar a hora atual no fuso horário do usuário). Se você estiver lidando com tempos relativos (ou seja, o Delta entre alguma última atualização e agora), é melhor usar DateTime. UtcNow para evitar a sobrecarga de fazer conversões de fuso horário.
+Prefira usar DateTime.UtcNow, a menos que você realmente precise dos horários localizados (um motivo legítimo pode ser que você queira mostrar a hora atual no fuso horário do usuário). Se você estiver lidando com tempos relativos (ou seja, o delta entre alguma última atualização e agora), é melhor usar DateTime.UtcNow para evitar a sobrecarga de fazer conversões de timezone.
 
 ## <a name="powershell-coding-conventions"></a>Convenções de codificação do PowerShell
 
-Um subconjunto da base de código MRTK usa o PowerShell para infraestrutura de pipeline e vários scripts e utilitários. O novo código do PowerShell deve seguir o [estilo PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
+Um subconjunto da base de código do MRTK usa o PowerShell para infraestrutura de pipeline e vários scripts e utilitários. O novo código do PowerShell deve seguir o [estilo PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
 
 ## <a name="see-also"></a>Confira também
 

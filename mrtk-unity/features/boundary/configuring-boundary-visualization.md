@@ -5,20 +5,20 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sistema de Limites,
-ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121244"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177090"
 ---
-# <a name="configuring-the-boundary-visualization"></a>Configurando a visualização de limite
+# <a name="configuring-boundary-visualization"></a>Configurando a visualização de limite
 
 O *Perfil de Visualização de* Limite fornece opções para configurar a linguagem visual e outros parâmetros relacionados para o sistema de limites. As visualizações de limite são anexadas ao objeto do Playspace de Realidade Misturada na cena e são conectadas ao usuário.
 
 ## <a name="general-settings"></a>Configurações gerais
 
-![Configurações gerais de visualização de limite](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![Visualização de limite geral Configurações](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>Altura do limite
 
@@ -26,7 +26,7 @@ A altura do limite indica a distância acima do plano de piso no qual o limite d
 
 ## <a name="floor-settings"></a>Configurações de piso
 
-![Configurações de piso de visualização de limite](../images/boundary/BoundaryVisualizationFloorSettings.png)
+![Área de visualização de limite Configurações](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
 **Mostrar**
 
@@ -46,7 +46,7 @@ A camada na qual o plano de piso deve ser definido. O valor padrão é a *camada
 
 ## <a name="play-area-settings"></a>Configurações da área de reprodução
 
-![Configurações de área de reprodução de visualização de limite](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
+![Área de reprodução de visualização de limite Configurações](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
 
 **Mostrar**
 
@@ -62,7 +62,7 @@ A camada na qual a área de reprodução deve ser definida. O valor padrão é a
 
 ## <a name="tracked-area-settings"></a>Configurações de área rastreada
 
-![Configurações de área rastreada de visualização de limite](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
+![Área rastreada de visualização de limite Configurações](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Mostrar**
 
@@ -78,7 +78,7 @@ A camada na qual a área rastreada deve ser configurada. O valor padrão é a *c
 
 ## <a name="boundary-wall-settings"></a>Configurações de parede de limite
 
-![Configurações de parede de limite de visualização de limite](../images/boundary/BoundaryVisualizationWallSettings.png)
+![Mural de limite de visualização de limite Configurações](../images/boundary/BoundaryVisualizationWallSettings.png)
 
 **Mostrar**
 
@@ -97,7 +97,7 @@ A camada na qual as paredes de limite devem ser definidas. O valor padrão é a 
 
 ## <a name="boundary-ceiling-settings"></a>Configurações de limite de limite
 
-![Configurações de limite de limite de visualização de limite](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![Limite limite limite de visualização Configurações](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **Mostrar**
 

@@ -1,16 +1,16 @@
 ---
-title: README_HandCoach
+title: Orientador de mão
 description: Descrição e exemplos para o direito à mão.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 8b4069f25692c4058c912ccd06ae678d67882fcd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489266"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177156"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -33,36 +33,36 @@ O modelo de interação atual representa uma ampla variedade de controles de ges
 
 Você pode encontrar exemplos na cena **HandCoachExample** em: [MixedRealityToolkit. examples/experimental/HandCoach/Scenes](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach/Scenes)
 
-## <a name="hand-3d-assets"></a>Ativos 3D de mão
+## <a name="hand-3d-assets"></a>Mãos de ativos 3D
 
-Você pode encontrar os ativos em: [MixedRealityToolkit.SDK/Experimental/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach)
+Você pode encontrar os ativos em: [MixedRealityToolkit. SDK/experimental/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach)
 
 ## <a name="quality"></a>Qualidade
 
-Se você observar distorções na malha ressalvada, precisará certificar-se de que seu projeto está usando a quantidade adequada de junções.
-Vá para Editar configurações > projeto do Unity > qualidade > outros > Pesos do Blend. Certifique-se de que "4 animais" estão selecionados para ver Smooth Joints.
-![Configuração do projeto](../images/hand-coach/MRTK_ProjectSettings.png)
+Se você perceber distorções na malha com revestimento, precisará ter certeza de que seu projeto está usando a quantidade adequada de junções.
+vá para editar > do Unity Project Configurações > qualidade > outros pesos de mesclagem >. Verifique se "4 Bones" estão selecionados para ver as junções suaves.
+![Project Configuração](../images/hand-coach/MRTK_ProjectSettings.png)
 
 ## <a name="scripts"></a>Scripts
 
 ### <a name="interaction-hint"></a>Dica de interação
 
-O `InteractionHint.cs` script fornece funcionalidade de wrapper para disparar animações e esmaecer para o equipamento de mão.
+O `InteractionHint.cs` script fornece a funcionalidade de wrapper para disparar animações e esmaecer para o Rig à mão.
 
 #### <a name="how-to-set-up-an-interaction-hint"></a>Como configurar uma dica de interação
 
-Para configurar uma dica de interação, é recomendável usar os pré-fabs fornecidos "StaticHandCoachRoot_L.prefab" e "StaticHandCoachRoot_R.prefab". Esse pré-fab contém o script InteractionHint e o equipamento de mão, bem como a hierarquia adequada para garantir que as animações de dica fornecidas funcionem conforme o esperado.
-Caso contrário, você precisará colocar o script em um gameObject um nível pai acima do seu equipamento de mão com animador.
+Para configurar uma dica de interação, é recomendável usar o pré-fabricados fornecido "StaticHandCoachRoot_L. pré-fabricado" e "StaticHandCoachRoot_R. pré-fabricado". Esse pré-fabricado contém o script InteractionHint e o Rig mão, bem como a hierarquia apropriada para garantir que as animações de dica fornecidas funcionem conforme o esperado.
+Caso contrário, você precisará colocar o script em um gameobject um nível pai do seu Rig com Animator.
 
-#### <a name="inspector-properties"></a>Propriedades do inspetor
+#### <a name="inspector-properties"></a>Propriedades do Inspetor
 
-- **HideIfHandTracked** Esse booliana especifica se o estado de acompanhamento de mão deve ser usado para ocultar visuais quando as mãos de um usuário estão sendo rastreadas. Se isso for definido como false, somente a propriedade de script "customShouldHideVisuals" será usada para determinar se a dica deve ser ocultada.
+- **HideIfHandTracked** Esse booliano especifica se o estado de acompanhamento manual deve ser usado para ocultar visuais quando as mãos de um usuário estão sendo rastreadas. Se isso for definido como false, somente a propriedade de script "customShouldHideVisuals" será usada para determinar se a dica deve ser ocultada.
 
-- **MinDelay** Essa propriedade especifica o atraso mínimo para mostrar os visuais. Por padrão, os visuais da mão serão exibidos após esse número de segundos se as mãos do usuário não estão sendo rastreadas.
+- **MinDelay** Esta propriedade especifica o atraso mínimo para mostrar os elementos visuais. Por padrão, os visuais para a mão aparecerão após esse número de segundos se as mãos do usuário não estiverem sendo rastreadas.
 
-- **MaxDelay** Essa propriedade especifica o atraso máximo para mostrar os visuais. Por padrão, os visuais da mão serão exibidos após esse número de segundos, mesmo que as mãos do usuário sejam rastreadas.
+- **MaxDelay** Esta propriedade especifica o atraso máximo para mostrar os elementos visuais. Por padrão, os visuais para a mão aparecerão após esse número de segundos, mesmo se as mãos do usuário estiverem sendo rastreadas.
 
-- **UseMaxTimer** Se esse booliana for definido como false, ele desabilitará o temporizador máximo e só permitirá que a dica de mão seja mostrada quando as mãos do usuário estão fora de exibição ou a condição personalizada retornará false.
+- **UseMaxTimer** Se esse booliano for definido como false, ele desabilitará o timer máximo e só permitirá que a dica de mão seja mostrada quando as mãos do usuário estiverem fora de exibição ou a condição personalizada retornar false.
 
 - **Repetições** Essa propriedade controla quantas vezes a animação de dica é reproduzida quando o temporizador mínimo ou máximo passou. Em seguida, a dica é ocultada e aguarda o atraso novamente.
 
@@ -83,26 +83,26 @@ Os fade-out são padronizados para 0,5 segundos, portanto, qualquer animação p
 
 Os Estados de fade in e fade out padrão fornecidos, Fade_In e Fade_Out podem ser ajustados alterando o carimbo de data/hora do segundo quadro-chave para definir o comprimento de esmaecimento.
 
-O Animator e o script foram configurados de forma a tornar a instalação o mais simples possível. Para adicionar novos estados de animação, basta importar seu fbx, garantir que o nome da animação seja definido com um nome distinto e arraste essa animação para o animador.
+O Animator e o script foram configurados de forma a tornar a instalação o mais simples possível. Para adicionar novos Estados de animação, simplesmente importe seu FBX, verifique se o nome da animação está definido com um nome distinto e arraste essa animação para o Animator.
 
 ### <a name="movetotarget"></a>MoveToTarget
 
-O script MoveToTarget.cs fornece funcionalidade para mover a dica de mão de uma posição de acompanhamento para uma posição de destino ao longo do tempo.
+O script MoveToTarget. cs fornece a funcionalidade para mover a dica de mão de uma posição de rastreamento para uma posição de destino ao longo do tempo.
 
 #### <a name="how-to-set-up-movetotarget"></a>Como configurar o MoveToTarget
 
-Os pré-fabs "MovingHandCoachRoot_L.prefab" e "MovingHandCoachRoot_R.prefab" fornecidos contêm um MoveToTarget em suas hierarquias. Se você quiser usar esse script em sua própria configuração, será necessário coloque-o no gameobject raiz que contém o Animator para o seu equipamento.
+O pré-fabricados "MovingHandCoachRoot_L. pré-fabricado" e "MovingHandCoachRoot_R. pré-fabricado" fornecidos contêm um MoveToTarget em suas hierarquias. Se você quiser usar esse script em sua própria configuração, precisará colocá-lo no gameobject raiz que contém o Animator para seu Rig.
 
-#### <a name="inspector-properties"></a>Propriedades do inspetor
+#### <a name="inspector-properties"></a>Propriedades do Inspetor
 
-- **TrackingObject** De definido com o objeto que você deseja que o equipamento siga antes de iniciar seu movimento. É recomendável criar um GameObject vazio e movê-lo para uma posição específica para ajudá-lo a identificar o rastreamento.
-- **TargetObject** De definir isso com o objeto para o que você deseja que o equipamento se mova durante seu movimento. É recomendável criar um GameObject vazio e movê-lo para uma posição específica para ajudá-lo a identificar o rastreamento.
-- **RootObject** De definido como um pai compartilhado entre o controle e o objeto de destino para que as posições relativas possam ser calculadas corretamente. O pré-fab incluído tem objetos de acompanhamento e de destino em sua hierarquia, mas você pode definir o objeto de destino como um gameObject fora do pré-fab e alterar o objeto raiz para um pai compartilhado.
-- **Duração** A quantidade de tempo que deve levar (em segundos) para passar de TrackingObject para TargetObject em segundos.
-- **TargetOffset** Um deslocamento acessível para fazer com que o GameObject chegue à posição de destino correta. Isso será útil se a animação incluir um deslocamento de posição durante a animação.
-- **AnimationCurve** Isso é padrão para uma curva linear, mas você pode alterar a curva para fornecer easing in/out ao iniciar e parar o caminho de movimento.
+- **Trackingobject** Defina isso com o objeto que você deseja que o Rig acompanhe antes de iniciar seu movimento. É recomendável criar um gameobject vazio e movê-lo para uma posição específica para ajudá-lo a identificar o controle.
+- **TargetObject** Defina isso com o objeto que você deseja que o Rig mova durante seu movimento. É recomendável criar um gameobject vazio e movê-lo para uma posição específica para ajudá-lo a identificar o controle.
+- **RootObject** Defina isso para um pai compartilhado entre o rastreamento e o objeto de destino para que as posições relativas possam ser calculadas corretamente. O pré-fabricado incluído tem objetos de rastreamento e de destino em sua hierarquia, mas você pode definir o objeto de destino como um gameobject fora do pré-fabricado e alterar o objeto raiz para um pai compartilhado.
+- **Duração** A quantidade de tempo que deve levar (em segundos) para passar de Trackingobject para TargetObject em segundos.
+- **TargetOffset** Um deslocamento ajustável para obter o gameobject para chegar à posição de destino correta. Isso será útil se a sua animação incluir um deslocamento de posição durante a animação.
+- **AnimationCurve** Isso é padronizado para uma curva linear, mas você pode alterar a curva para fornecer a atenuação de entrada/saída ao iniciar e parar o caminho de movimento.
 
-#### <a name="controlling-movetotarget-via-script"></a>Controlando o MoveToTarget por meio de script
+#### <a name="controlling-movetotarget-via-script"></a>Controlando MoveToTarget por meio de script
 
 Em seu script personalizado, faça uma chamada a follow () enquanto você quiser que o Rig de mão esteja seguindo o Trackingobject e, em seguida, faça uma chamada para MoveToTargetPosition () quando desejar que o Rig mão comece seu movimento com o TargetObject.
 
@@ -129,8 +129,8 @@ O pré-fabricados "RotatingHandCoachRoot_L. pré-fabricado" e "RotatingHandCoach
 
 #### <a name="controlling-rotatearoundpoint-via-script"></a>Controlando RotateAroundPoint por meio de script
 
-No script personalizado, faça uma chamada para RotateToTarget() quando quiser que o equipamento de mão inicie sua rotação em torno do CenteredParent. Quando você quiser que a posição seja redefinida para o PivotPosition original, faça uma chamada para ResetAndDeterminePivot().
+Em seu script personalizado, faça uma chamada para RotateToTarget () quando você quiser que o Rig de mão comece sua rotação em volta do CenteredParent. Quando desejar que a posição seja redefinida para o PivotPosition original, faça uma chamada para ResetAndDeterminePivot ().
 
-#### <a name="controlling-rotatearoundpoint-via-animations"></a>Controlando RotateAroundPoint por meio de animações
+#### <a name="controlling-rotatearoundpoint-via-animations"></a>Controlando o RotateAroundPoint por meio de animações
 
-Na animação que precisa ser movimentada, defina dois eventos: um com uma chamada para ResetAndDeterminePivot() e outro com uma chamada para RotateToTarget(). ResetAndDeterminePivot deve ser definido no primeiro keyframe, pois faz com que o equipamento de mão seja redefinido para o PivotPosition. RotateToTarget deve ser definido no keyframe em que você deseja que o equipamento comece a girar em torno do CenteredParent. É assim que a funcionalidade de script é usada nos pré-requisitos fornecidos.
+Na animação que precisa ser movida, defina dois eventos: um com uma chamada para ResetAndDeterminePivot () e outro com uma chamada para RotateToTarget (). ResetAndDeterminePivot deve ser definido no primeiro quadro-chave, pois faz com que o Rig de mão redefina para o PivotPosition. RotateToTarget deve ser definido no quadro-chave onde você deseja que o Rig comece a girar em volta do CenteredParent. É assim que a funcionalidade de script é usada no pré-fabricados fornecido.

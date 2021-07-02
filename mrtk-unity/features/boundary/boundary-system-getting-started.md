@@ -4,23 +4,23 @@ description: Página de aterrissagem para o sistema de limite no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sistema de limite,
-ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sistema de limites,
+ms.openlocfilehash: fd70479e5183e9a7557de5c5a532cc87161be017
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121354"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177083"
 ---
-# <a name="boundary-system"></a>Sistema de limite
+# <a name="boundary-system-overview"></a>Visão geral do sistema de limite
 
 O sistema de limite fornece suporte para visualização de componentes de limite da realidade virtual em aplicativos de realidade misturada. Os limites definem a área na qual os usuários podem se movimentar com segurança ao mesmo tempo em que se aproveitam um headset VR. Os limites são um componente importante de uma experiência de realidade misturada para ajudar os usuários a evitar obstáculos não vistos ao utilizar um headset de VR.
 
-Muitas plataformas de realidade virtual fornecem uma exibição automática, por exemplo, uma estrutura de tópicos branco sobreposta no mundo virtual como o usuário ou seu controlador perto do limite. O sistema de limite do kit de ferramentas da realidade misturada estende esse recurso para habilitar a exibição de uma estrutura de tópicos da área controlada, um plano de chão e outros recursos que podem ser usados para fornecer informações adicionais aos usuários.
+Muitas plataformas de realidade virtual fornecem uma exibição automática, por exemplo, uma estrutura de tópicos branco sobreposta no mundo virtual como o usuário ou seu controlador perto do limite. o sistema de limite da realidade mista Toolkit estende esse recurso para permitir a exibição de uma estrutura de tópicos da área controlada, um plano de chão e outros recursos que podem ser usados para fornecer informações adicionais aos usuários.
 
 ## <a name="getting-started"></a>Introdução
 
-Adicionar suporte para limites requer dois componentes principais do kit de ferramentas de realidade misturada: o sistema de limite e uma plataforma de realidade virtual configurada com um limite.
+adicionar suporte para limites requer dois componentes principais da realidade misturada Toolkit: o sistema de limite e uma plataforma de realidade Virtual configurada com um limite.
 
 1. [Habilitar](#enable-boundary-system) o sistema de limite
 2. [Configurar](#configure-boundary-visualization) a visualização de limite

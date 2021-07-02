@@ -1,33 +1,33 @@
 ---
-title: Registro do Serviço de Realidade Misturada e IMixedRealityServiceRegistrar
-description: Documentação sobre MixedRealityServiceRegistry e IMixedRealityServiceRegistrar
+title: Registro de serviço de realidade misturada
+description: Documentação em MixedRealityServiceRegistry e IMixedRealityServiceRegistrar
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 09b20537824af42d241b6c33496cedcb4f530bc7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 061e4233d61de817b1aaed7faaa6d461427d6f07
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145231"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176701"
 ---
-# <a name="what-are-the-mixedrealityserviceregistry-and-imixedrealityserviceregistrar"></a>O que são MixedRealityServiceRegistry e IMixedRealityServiceRegistrar?
+# <a name="mixed-reality-service-registry"></a>Registro de serviço de realidade misturada
 
-O Kit de Ferramentas de Realidade Misturada tem dois componentes nomeados de forma muito semelhante que executam tarefas relacionadas: MixedRealityServiceRegistry e IMixedRealityServiceRegistrar.
+a realidade misturada Toolkit tem dois componentes nomeados de forma semelhante que executam tarefas relacionadas: MixedRealityServiceRegistry e IMixedRealityServiceRegistrar.
 
 ## <a name="mixedrealityserviceregistry"></a>MixedRealityServiceRegistry
 
 O [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) é o componente que contém instâncias de cada serviço registrado (sistemas principais e serviços de extensão).
 
 > [!NOTE]
-> O MixedRealityServiceRegistry contém instâncias de objetos que implementam a interface [IMixedRealityService,](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) incluindo [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService).
+> O MixedRealityServiceRegistry contém instâncias de objetos que implementam a interface [IMixedRealityService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) , incluindo [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService).
 >
->Os objetos que implementam [o IMixedRealityDataProvider](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) (uma subclasse de IMixedRealityService) não são explicitamente registrados no MixedRealityServiceRegistry. Esses objetos são gerenciados pelos serviços individuais (por ex. Reconhecimento Espacial).
+>Objetos que implementam o [IMixedRealityDataProvider](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) (uma subclasse de IMixedRealityService) não são explicitamente registrados no MixedRealityServiceRegistry. Esses objetos são gerenciados pelos serviços individuais (por exemplo, reconhecimento espacial).
 
 O MixedRealityServiceRegistry é implementado como uma classe C# estática e é o padrão recomendado a ser usado para adquirir instâncias de serviço no código do aplicativo.
 
-O snippet a seguir demonstra a aquisição de uma instância IMixedRealityInputSystem.
+O trecho a seguir demonstra a aquisição de uma instância IMixedRealityInputSystem.
 
 ```c#
 IMixedRealityInputSystem inputSystem = null;
@@ -40,9 +40,9 @@ if (!MixedRealityServiceRegistry.TryGetService<IMixedRealityInputSystem>(out inp
 
 ## <a name="imixedrealityserviceregistrar"></a>IMixedRealityServiceRegistrar
 
-O [IMixedRealityServiceRegistrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) é a interface que define a funcionalidade implementada pelos componentes que gerenciam o registro de um ou mais serviços. Os componentes que implementam IMixedRealityServiceRegistrar são responsáveis por adicionar e remover os dados no MixedRealityServiceRegistry. O [objeto MixedRealityToolkit](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) é um desses componentes.
+O [IMixedRealityServiceRegistrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) é a interface que define a funcionalidade implementada por componentes que gerenciam o registro de um ou mais serviços. Os componentes que implementam IMixedRealityServiceRegistrar são responsáveis por adicionar e remover os dados dentro do MixedRealityServiceRegistry. O objeto [MixedRealityToolkit](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) é um desses componentes.
 
-Outros registradores podem ser encontrados na pasta MRTK/SDK/Experimental/Features. Esses componentes podem ser usados para adicionar suporte de serviço único (por exemplo: Reconhecimento Espacial) a um aplicativo. Esses gerenciadores de serviços individuais estão listados abaixo.
+Outros registradores podem ser encontrados na pasta MRTK/SDK/experimental/Features. Esses componentes podem ser usados para adicionar suporte a um único serviço (por exemplo, reconhecimento espacial) a um aplicativo. Esses gerenciadores de serviços únicos estão listados abaixo.
 
 - [BoundarySystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Boundary.BoundarySystemManager)
 - [CameraSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.CameraSystem.CameraSystemManager)

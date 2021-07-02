@@ -5,19 +5,19 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 09e5140fd9585c19eacac5ba937eaf4ea8f2a8ea
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8b8e0f4488a6e955e599084c0b59d8c80f553a78
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143732"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176290"
 ---
-# <a name="mrtk-and-unity-managed-code-stripping"></a>Remoção de código gerenciado por MRTK e Unity
+# <a name="mrtk-and-managed-code-stripping"></a>MRTK e remoção de código gerenciado
 
 Ao usar o back-end de script IL2CPP do Unity (opcional no Unity 2018,4, necessário no 2019 e mais recente), ocorre a [remoção de código gerenciado](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) .
 O vinculador da Unity executa esse processo para reduzir o tamanho binário, bem como para diminuir os tempos de compilação.
 
-O kit de ferramentas da realidade mista usa um arquivo, `link.xml` , para influenciar como o vinculador do Unity processa ASSEMBLIES MRTK. Esse arquivo, descrito em Full na [documentação do Unity](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), fornece ao vinculador instruções sobre como preservar o código quando seu uso não pode ser inferido (por exemplo: usado por meio de reflexão).
+a realidade misturada Toolkit usa um arquivo, `link.xml` , para influenciar como o vinculador do Unity processa os assemblies MRTK. Esse arquivo, descrito em Full na [documentação do Unity](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), fornece ao vinculador instruções sobre como preservar o código quando seu uso não pode ser inferido (por exemplo: usado por meio de reflexão).
 
 Como uma plataforma flexível e personalizável, o MRTK cria o `link.xml` arquivo na `Assets/MixedRealityToolkit.Generated` importação, caso ele não exista. Arquivos de link.xml preexistentes não são substituídos. É recomendável que `link.xml` e `link.xml.meta` seja adicionado ao controle de versão. Os desenvolvedores devem se sentir livres para personalizar `Assets/MixedRealityToolkit.Generated/link.xml` o para atender às necessidades do projeto.
 

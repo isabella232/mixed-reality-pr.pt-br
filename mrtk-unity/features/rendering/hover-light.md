@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, luz de foco,
-ms.openlocfilehash: b98dff0dd3ff0312f6ce607a5fb8a26f94959ff2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145174"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176730"
 ---
 # <a name="hover-light"></a>Luz de foco
 
-Um [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) é um paradigma de [sistema de design fluente](https://www.microsoft.com/design/fluent/) que imita uma [luz de ponto](https://docs.unity3d.com/Manual/Lighting.html) focalizando perto da superfície de um objeto. Geralmente usado para interações distantes, o aplicativo pode controlar as propriedades de uma luz de foco por meio do [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) componente.
+um [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) é um paradigma de [Sistema Fluent Design](https://www.microsoft.com/design/fluent/) que imita uma [luz de ponto](https://docs.unity3d.com/Manual/Lighting.html) focalizando perto da superfície de um objeto. Geralmente usado para interações distantes, o aplicativo pode controlar as propriedades de uma luz de foco por meio do [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) componente.
 
-Para que um material seja influenciado por [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) um *Kit de ferramentas de realidade misturada/Standard* , o sombreador padrão deve ser usado e a propriedade de *luz de foco* deve ser habilitada.
+para que um material seja influenciado por [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) uma *realidade misturada Toolkit* sombreador/padrão deve ser usado e a propriedade de *luz de foco* deve ser habilitada.
 
 > [!Note]
 > O sombreador MRTK/Standard dá suporte a até dois [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) por padrão, mas será dimensionado para dar suporte a quatro e dez, pois mais luzes serão adicionadas à cena.

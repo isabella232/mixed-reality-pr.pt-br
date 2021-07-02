@@ -1,22 +1,22 @@
 ---
-title: Configurando o diagnóstico
+title: Configurando o sistema de diagnóstico
 description: Documentação para configurar o diagnóstico no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 211ee2ed06ba9b13bd90169bcc7ee50da4594034
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: d81b441cd9bcd40846eb94320f6f7de1bbd2f0a8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121794"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177251"
 ---
 # <a name="configuring-the-diagnostics-system"></a>Configurando o sistema de diagnóstico
 
 ## <a name="general-settings"></a>Configurações gerais
 
-![Configurações gerais de diagnóstico](../images/diagnostics/DiagnosticsGeneralSettings.png)
+![diagnóstico geral Configurações](../images/diagnostics/DiagnosticsGeneralSettings.png)
 
 ### <a name="enable-verbose-logging"></a>Habilitar o log detalhado
 
@@ -32,7 +32,7 @@ Quando desabilitado, todas as opções de diagnóstico configuradas serão ocult
 
 ## <a name="profiler-settings"></a>Configurações do criador de perfil
 
-![Configurações do diagnóstico Profiler](../images/diagnostics/DiagnosticsProfilerSettings.png)
+![Configurações do criador de perfil de diagnóstico](../images/diagnostics/DiagnosticsProfilerSettings.png)
 
 ### <a name="show-profiler"></a>Mostrar criador de perfil
 

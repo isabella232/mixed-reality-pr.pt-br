@@ -5,16 +5,16 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: c3238aed60f6bbf824c74c034ddf506f49f436c7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121644"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177224"
 ---
 # <a name="using-the-visual-profiler"></a>Usando o profiler visual
 
-O VisualProfiler fornece uma exibição fácil de usar no aplicativo do desempenho de um aplicativo de realidade misturada. O profiler tem suporte em todas as plataformas do Kit de Ferramentas de Realidade Misturada, incluindo:
+O VisualProfiler fornece uma exibição fácil de usar no aplicativo do desempenho de um aplicativo de realidade misturada. O profiler tem suporte em todas as plataformas de Toolkit realidade misturada, incluindo:
 
 - Microsoft HoloLens (1ª geração)
 - Microsoft HoloLens 2
@@ -34,7 +34,7 @@ A interface do Visual Profiler inclui os seguintes componentes:
 
 - [Taxa de quadros](#frame-rate)
 - [Tempo do quadro](#frame-time)
-- [Gráfico de quadros](#frame-graph)
+- [Estrutura Graph](#frame-graph)
 - [Utilização de Memória](#memory-utilization)
 
 ### <a name="frame-rate"></a>Taxa de quadros
@@ -47,7 +47,7 @@ A configuração específica de plataforma e hardware desempenhará uma função
 - Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> Devido à reação da taxa de quadros no [HoloLens](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)quando o MRC padrão está ativo, o profiler visual se oculta enquanto vídeos e fotos são capturados. Essa configuração pode ser substituído no perfil do sistema de diagnóstico.
+> Devido à taxa de quadros que está HoloLens quando o [MRC](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)padrão está ativo, o profiler visual se oculta enquanto vídeos e fotos são capturados. Essa configuração pode ser substituído no perfil do sistema de diagnóstico.
 
 ### <a name="frame-time"></a>Tempo do quadro
 
@@ -62,7 +62,7 @@ O tempo de GPU está planejado para ser adicionado em uma versão futura.
 
 O gráfico de quadros fornece uma exibição gráfica do histórico de taxa de quadros do aplicativo.
 
-![Grafo de Quadro Perdido do Visual Profiler](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Registro de quadro perdido do Visual Profiler Graph](../images/diagnostics/VisualProfilerMissedFrames.png)
 
 Ao usar o aplicativo, procure quadros que indicam que o aplicativo não está atingindo sua taxa de quadros de destino e pode precisar de trabalho de otimização.
 

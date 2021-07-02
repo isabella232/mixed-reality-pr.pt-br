@@ -1,45 +1,45 @@
 ---
-title: Visão geral do exemplo de acompanhamento de olho
-description: Exemplo para criar eyetracking em MRTK
+title: Visão geral de exemplos de acompanhamento ocular
+description: Exemplo para criar o retrocesso no MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, EyeTracking,
-ms.openlocfilehash: b5fd3ee35e54c54f2f6b21dc1ce53625c68f65b4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, EyeTracking,
+ms.openlocfilehash: 4cdeaa10725e00ac1a041c3692d64c1bd6488854
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144684"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175538"
 ---
-# <a name="eye-tracking-examples"></a>Exemplos de acompanhamento de olho
+# <a name="eye-tracking-examples-overview"></a>Visão geral de exemplos de acompanhamento ocular
 
-Este tópico descreve como começar rapidamente a usar o controle de olho no MRTK criando exemplos de acompanhamento de olho do MRTK (ativos/MRTK/exemplos/demos/EyeTracking).
-Esses exemplos permitem que você experimente um de nossos novos recursos de entrada do mágico: **acompanhamento ocular**!
-A demonstração inclui vários casos de uso, variando de ativações implícitas com base em olhos para como combinar diretamente as informações sobre o que você está vendo com a entrada de **voz** e **mão** .
-Isso permite que os usuários selecionem e movam com rapidez e facilidade o conteúdo do Holographic em sua exibição simplesmente examinando um destino e dizendo _' Select '_ ou executando um gesto de mão.
-As demonstrações também incluem um exemplo de rolagem direcionada olhar, panorâmica e zoom de texto e imagens em um Slate.
-Por fim, um exemplo é fornecido para gravar e visualizar a atenção visual do usuário em um Tablet 2D.
-Na seção a seguir, você encontrará mais detalhes sobre o que cada um dos diferentes exemplos no pacote de exemplo de acompanhamento de olho MRTK (assets/MRTK/examples/demos/EyeTracking) inclui:
+Este tópico descreve como começar rapidamente com o acompanhamento ocular no MRTK criando exemplos de acompanhamento ocular do MRTK (Ativos/MRTK/Exemplos/Demonstrações/EyeTracking).
+Esses exemplos permitem que você experimente uma de nossas novas funcionalidades de entrada mágica: **Acompanhamento ocular!**
+A demonstração inclui vários casos de uso, desde ativações implícitas baseadas em olho  até como combinar perfeitamente informações sobre o que você está vendo com a entrada de voz **e** mão.
+Isso permite que os usuários selecionem e movam conteúdo holográfico de forma rápida e fácil em sua exibição simplesmente observando um destino e dizendo _"Selecionar"_ ou executando um gesto de mão.
+As demonstrações também incluem um exemplo de rolagem direcionada ao olhar, panor rolante e zoom de texto e imagens em um slate.
+Por fim, um exemplo é fornecido para gravar e visualizar a atenção visual do usuário em um slate 2D.
+Na seção a seguir, você encontrará mais detalhes sobre o que cada uma das diferentes amostras no pacote de exemplo de acompanhamento ocular do MRTK (Ativos/MRTK/Exemplos/Demonstrações/EyeTracking) inclui:
 
-![Lista de cenas de acompanhamento de olho](../images/eye-tracking/mrtk_et_list_et_scenes.jpg)
+![Lista de cenas de acompanhamento ocular](../images/eye-tracking/mrtk_et_list_et_scenes.jpg)
 
-A seção a seguir é uma rápida visão geral do que são os bastidores da demonstração de controle de olho individual.
-Os bastidores de demonstração de acompanhamento de olho MRTK são carregados de forma [aditiva](https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.Additive.html), o que explicaremos abaixo de como configurar.
+A seção a seguir é uma visão geral rápida do que são as cenas de demonstração de acompanhamento ocular individuais.
+As cenas de demonstração de acompanhamento ocular do MRTK são carregadas [aditivamente,](https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.Additive.html)que explicaremos abaixo como configurar.
 
-## <a name="overview-of-the-eye-tracking-demo-samples"></a>Visão geral dos exemplos de demonstração de acompanhamento de olho
+## <a name="overview-of-the-eye-tracking-demo-samples"></a>Visão geral dos exemplos de demonstração de acompanhamento ocular
 
-### <a name="eye-supported-target-selection"></a>[**Seleção de destino com suporte de olho**](../input/eye-tracking/eye-tracking-target-selection.md)
+### <a name="eye-supported-target-selection"></a>[**Seleção de destino com suporte ocular**](../input/eye-tracking/eye-tracking-target-selection.md)
 
-Este tutorial demonstra a facilidade de acessar dados de olhar de olho para selecionar destinos.
-Ele inclui um exemplo para um feedback sutil, mas poderoso, para fornecer ao usuário a confiança de que um alvo está concentrado sem ser impressionante.
+Este tutorial demonstra a facilidade de acessar dados de olhar para selecionar destinos.
+Ele inclui um exemplo de comentários sutis, porém poderosos, para fornecer ao usuário a confiança de que um destino está focado sem sobrecarregá-lo.
 Além disso, há um exemplo simples de notificações inteligentes que desaparecem automaticamente após serem lidas.
 
-**Resumo**: seleções de destino rápidas e sem esforço usando uma combinação de olhos, entrada de voz e mão.
+**Resumo:** seleções de destino rápidas e sem esforço usando uma combinação de olhos, voz e entrada de mão.
 
 ### <a name="eye-supported-navigation"></a>[**Navegação com suporte ocular**](../input/eye-tracking/eye-tracking-navigation.md)
 
-Imagine que você esteja lendo algumas informações em uma exibição distante ou em seu leitor de email e, quando chegar ao final do texto exibido, o texto rolará automaticamente para cima para revelar mais conteúdo.
+Imagine que você está lendo algumas informações sobre uma exibição distante ou seu leitor de email e quando você chega ao final do texto exibido, o texto rola automaticamente para cima para revelar mais conteúdo.
 Ou que tal ampliar magicamente diretamente para onde você estava olhando?
 Estes são alguns dos exemplos apresentados neste tutorial sobre navegação com suporte ocular.
 Além disso, há um exemplo de rotação de mãos livres de hologramas 3D, fazendo com que eles girem automaticamente com base no foco atual.
@@ -67,36 +67,36 @@ Fornecemos exemplos básicos para registro em log e carregamento de dados de aco
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Observe que usar os exemplos de acompanhamento de olho no dispositivo requer um HoloLens 2 e um pacote de aplicativo de exemplo criado com o recurso de "entrada olhar" no AppXManifest do pacote.
+Observe que o uso dos exemplos de acompanhamento ocular no dispositivo requer um HoloLens 2 e um pacote de aplicativo de exemplo criado com a funcionalidade "Entrada de Olhar" no AppXManifest do pacote.
 
-Para usar esses exemplos de acompanhamento de olho no dispositivo, certifique-se de seguir [estas etapas](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2) antes de criar o aplicativo no Visual Studio.
+Para usar esses exemplos de acompanhamento ocular no [](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2) dispositivo, siga estas etapas antes de criar o aplicativo Visual Studio.
 
-### <a name="1-load-eyetrackingdemo-00-rootsceneunity"></a>1. carregar EyeTrackingDemo-00-RootScene. Unity
+### <a name="1-load-eyetrackingdemo-00-rootsceneunity"></a>1. Carregar EyeTrackingDemo-00-RootScene.unity
 
-O *EyeTrackingDemo-00-RootScene* é a cena base (_raiz_) que tem todos os componentes principais do MRTK incluídos.
-Essa é a cena que você precisa carregar primeiro e a partir da qual você executará as demonstrações de controle de olho.
-Ele apresenta um menu de cena gráfica que permite alternar facilmente entre os diferentes exemplos de controle de olho que serão [carregados](https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.Additive.html)de forma aditiva.
+O *EyeTrackingDemo-00-RootScene* é a cena base _(_ raiz) que tem todos os componentes principais do MRTK incluídos.
+Essa é a cena que você precisa carregar primeiro e da qual executará as demonstrações de acompanhamento ocular.
+Ele apresenta um menu de cena gráfica que permite alternar facilmente entre os diferentes exemplos de acompanhamento ocular que serão [carregados aditivamente.](https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.Additive.html)
 
-![Menu cena no exemplo de acompanhamento de olho](../images/eye-tracking/mrtk_et_scenemenu.jpg)
+![Menu cena no exemplo de acompanhamento ocular](../images/eye-tracking/mrtk_et_scenemenu.jpg)
 
-A cena raiz inclui alguns componentes principais que persistirão em bastidores com carregamento aditivo, como os perfis configurados por MRTK e a câmera de cena.
-O _MixedRealityBasicSceneSetup_ (veja a captura de tela abaixo) inclui um script que irá carregar automaticamente a cena referenciada na inicialização.
-Por padrão, isso é _EyeTrackingDemo-02-TargetSelection_.  
+A cena raiz inclui alguns componentes principais que persistirão nas cenas carregadas aditivamente, como os perfis configurados pelo MRTK e a câmera da cena.
+O _MixedRealityBasicSceneSetup_ (veja a captura de tela abaixo) inclui um script que carregará automaticamente a cena referenciada na inicialização.
+Por padrão, é _EyeTrackingDemo-02-TargetSelection._  
 
 ![Exemplo para o script OnLoadStartScene](../images/eye-tracking/mrtk_et_onloadstartscene.jpg)
 
-### <a name="2-adding-scenes-to-the-build-menu"></a>2. adicionando cenas ao menu de compilação
+### <a name="2-adding-scenes-to-the-build-menu"></a>2. Adicionar cenas ao menu de build
 
-Para carregar cenas aditivas durante o tempo de execução, você deve adicionar essas cenas às suas _configurações de Build-> cenas no menu de Build_ primeiro.
+Para carregar cenas aditivas durante o runtime, você deve adicionar essas cenas ao menu Criar Configurações _-> Cenas_ no Build primeiro.
 É importante que a cena raiz seja mostrada como a primeira cena na lista:
 
-![Menu de cena de configurações de compilação para exemplos de acompanhamento de olho](../images/eye-tracking/mrtk_et_build_settings.jpg)
+![Criar Configurações de cena para amostras de acompanhamento ocular](../images/eye-tracking/mrtk_et_build_settings.jpg)
 
-### <a name="3-play-the-eye-tracking-samples-in-the-unity-editor"></a>3. reproduzir os exemplos de acompanhamento de olho no editor do Unity
+### <a name="3-play-the-eye-tracking-samples-in-the-unity-editor"></a>3. Reproduzir os exemplos de acompanhamento ocular no editor do Unity
 
-Depois de adicionar os bastidores de acompanhamento de olho às configurações de compilação e carregar o _EyeTrackingDemo-00-RootScene_, há uma última coisa que você pode querer verificar: é o script _' OnLoadStartScene '_ que está anexado ao _MixedRealityBasicSceneSetup_ gameobject habilitado? Isso é para permitir que a cena raiz saiba qual cena de demonstração carregar primeiro.
+Depois de adicionar as cenas de acompanhamento ocular ao Build Configurações e carregar o _EyeTrackingDemo-00-RootScene,_ há uma última coisa que você pode querer verificar: O script _'OnLoadStartScene'_ anexado ao _MixedRealityBasicSceneSetup_ GameObject está habilitado? Isso é para permitir que a cena raiz saiba qual cena de demonstração carregar primeiro.
 
-![Exemplo para o script de OnLoad_StartScene](../images/eye-tracking/mrtk_et_onloadstartscene.jpg)
+![Exemplo para o OnLoad_StartScene script](../images/eye-tracking/mrtk_et_onloadstartscene.jpg)
 
 Vamos rolar! Toque _em "Reproduzir"_!
 Você deverá ver várias gemas aparecerem e o menu de cena na parte superior.
@@ -127,20 +127,20 @@ Ao trabalhar em um cenário específico, talvez você não queira passar pelo me
 Em vez disso, talvez você queira começar diretamente da cena em que está trabalhando no momento ao pressionar o _botão_ Reproduzir.
 Sem problemas. Veja o que você pode fazer:
 
-1. Carregar a cena _raiz_
-2. Na cena _raiz_ , desabilite o script _' OnLoadStartScene '_
-3. _Arraste e solte_ um dos cenas de teste de controle ocular descritos abaixo (ou qualquer outra cena) em sua exibição de _hierarquia_ , conforme mostrado na captura de tela abaixo.
+1. Carregar a _cena_ raiz
+2. Na cena _raiz,_ desabilite o script _'OnLoadStartScene'_
+3. _Arraste e solte uma_ das cenas de teste de acompanhamento ocular  descritas abaixo (ou qualquer outra cena) na exibição Hierarquia, conforme mostrado na captura de tela abaixo.
 
     ![Exemplo de cena aditiva](../images/eye-tracking/mrtk_et_additivescene.jpg)
 
-4. Pressione _reproduzir_
+4. Pressione _Reproduzir_
 
-Observe que o carregamento da sub-rotina como esta não é persistente: isso significa que, se você implantar seu aplicativo no dispositivo do HoloLens 2, ele carregará apenas a cena raiz (supondo que ela apareça na parte superior das configurações de Build).
-Além disso, quando você compartilha seu projeto com outras pessoas, os sub-cenas não são carregados automaticamente.
-
----
-
-Agora que você sabe como fazer as cenas de exemplo de acompanhamento de olho do MRTK para funcionar, vamos continuar com mais detalhes sobre como selecionar hologramas com seus olhos: [seleção de destino com suporte de olho](../input/eye-tracking/eye-tracking-target-selection.md).
+Observe que carregar a sub-cena como esta não é persistente: isso significa que, se você implantar seu aplicativo no dispositivo HoloLens 2, ele carregará apenas a cena raiz (supondo que ela apareça na parte superior do seu build Configurações).
+Além disso, quando você compartilha seu projeto com outras pessoas, as sub-cenas não são carregadas automaticamente.
 
 ---
-[Voltar para "acompanhamento de olho no MixedRealityToolkit"](../input/eye-tracking/eye-tracking-Main.md)
+
+Agora que você sabe como fazer com que as cenas de exemplo de acompanhamento ocular do MRTK funcionem, vamos continuar nos aprofundando em como selecionar hologramas com seus [olhos:](../input/eye-tracking/eye-tracking-target-selection.md)seleção de destino com suporte ocular.
+
+---
+[De volta ao "Acompanhamento ocular no MixedRealityToolkit"](../input/eye-tracking/eye-tracking-Main.md)

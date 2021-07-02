@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 96090b05c60cfaa6ff5d8c5e1dc7a58cc2658b71
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 70274639326563b1f3c3a2061dcdbf824fd43709
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144522"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176220"
 ---
-# <a name="lost-tracking-visualization"></a>Visualização de rastreamento perdida
+# <a name="lost-tracking-service"></a>Serviço de acompanhamento perdido
 
 ![Controle perdido](../images/lost-tracking/LostTrackingVisualization.jpg)
 
-O serviço de extensão de rastreamento perdido fornece o Visual animado de estilo de shell do HoloLens para o estado de rastreamento perdido.
+o serviço de extensão de rastreamento perdido fornece HoloLens visual animado de estilo de shell para o estado de rastreamento perdido.
 
 ## <a name="how-to-use-lost-tracking-extensions"></a>Como usar as extensões de rastreamento perdidas
 

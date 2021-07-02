@@ -1,20 +1,20 @@
 ---
-title: Visão geral do sistema teleport
+title: Sistema teleport
 description: Visão geral sobre como habilitar e desabilitar o sistema teleport no MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sistema teleport,
-ms.openlocfilehash: a44ad1827597dd0b27bc88a9420a3b251f934afd
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sistema Teleport,
+ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144146"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176186"
 ---
 # <a name="teleport-system"></a>Sistema de teletransporte
 
-O sistema teleport é um subsistema do MRTK que lida com o transporte do usuário quando o aplicativo está usando uma exibição opaca. Para experiências de AR (como o HoloLens), o sistema de teleportação não está ativo. Para experiências de HMD de imersão (OpenVR, WMR), o sistema teleport pode ser habilitado.
+O sistema teleport é um subsistema do MRTK que lida com o transporte do usuário quando o aplicativo está usando uma exibição opaca. para experiências de AR (como HoloLens), o sistema de teleportação não está ativo. Para experiências de HMD de imersão (OpenVR, WMR), o sistema teleport pode ser habilitado.
 
 ## <a name="enabling-and-disabling"></a>Habilitando e desabilitando
 

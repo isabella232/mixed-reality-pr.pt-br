@@ -5,14 +5,14 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: f310b3687a6773404c7a998a3764163daf159857
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145147"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177583"
 ---
-# <a name="content-scene-loading"></a>Carregamento de cena de conteúdo
+# <a name="scene-system-content-loading"></a>Carregamento de conteúdo do sistema de cena
 
 Todas as operações de carregamento de conteúdo são assíncronas e, por padrão, todo o carregamento de conteúdo é aditivo. As cenas de iluminação e gerente nunca são afetadas por operações de carregamento de conteúdo. Para obter informações sobre como monitorar o progresso da carga e a ativação de cena, [consulte Monitorando o carregamento de conteúdo.](scene-system-load-progress.md)
 
@@ -91,7 +91,7 @@ if (prevSceneRequested)
 
 ![Carregando cenas de conteúdo por marca](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
 
-Às vezes, é desejável carregar cenas de conteúdo em grupos. Por exemplo, um estágio de uma experiência pode ser composto de várias cenas, que devem ser carregadas simultaneamente para funcionar. Para facilitar isso, você pode marcar seus bastidores e, em seguida, carregá-los ou descarregá-los com essa marca.
+Às vezes, é desejável carregar cenas de conteúdo em grupos. Por exemplo, um estágio de uma experiência pode ser composto por várias cenas, todas elas devem ser carregadas simultaneamente para funcionar. Para facilitar isso, você pode marcar suas cenas e carregá-las ou descarregá-las com essa marca.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -104,7 +104,7 @@ await UnloadContentByTag("Stage1");
 await LoadContentByTag("Stage2);
 ```
 
-O carregamento por marca também pode ser útil se os artistas desejam incorporar/remover elementos de uma experiência sem precisar modificar scripts. Por exemplo, a execução desse script com os dois conjuntos de marcas a seguir produz resultados diferentes:
+Carregar por marca também poderá ser útil se os canhões quiserem incorporar/remover elementos de uma experiência sem precisar modificar scripts. Por exemplo, executar esse script com os dois conjuntos de marcas a seguir produz resultados diferentes:
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -114,14 +114,14 @@ await LoadContentByTag("Structures");
 await LoadContentByTag("Vegetation");
 ```
 
-### <a name="testing-content"></a>Testando conteúdo
+### <a name="testing-content"></a>Testar conteúdo
 
 Nome da cena | Marca de cena | Carregado por script
 ---|---|---
-DebugTerrainPhysics | Levo | •
+DebugTerrainPhysics | Terreno | •
 StructureTesting | Estruturas | •
-VegetationTools | Vegetação | •
-Mountain | Levo | •
+ToolsTools | Vegetação | •
+Mountain | Terreno | •
 Cabine | Estruturas | •
 Árvores | Vegetação | •
 

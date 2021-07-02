@@ -1,18 +1,18 @@
 ---
-title: Ferramenta de uso de recursos de entrada
+title: Ferramenta de uso do recurso de entrada
 description: Entrada da documentaçãoA ferramenta InputFeatureUsage no MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 0f2d3d3eb07d8b631f3f11a8b497a22a028a2f24
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 413d2a3105294411f9c08f4a2add9365389ea783
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145013"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176118"
 ---
-# <a name="inputfeatureusage-tool"></a>Ferramenta InputFeatureUsage
+# <a name="input-feature-usage-tool"></a>Ferramenta de uso do recurso de entrada
 
 A ferramenta InputFeatureUsage é uma ferramenta de runtime (no dispositivo ou no editor) que permite aos desenvolvedores determinar rapidamente a InputFeatureUsages do Unity disponível para uma fonte de entrada detectada (por exemplo: controlador de movimento ou mão articulada).
 
@@ -29,7 +29,7 @@ Para começar com a ferramenta InputFeatureUsage, navegue até **MRTK/Tools/Runt
 
 Para examinar os mapeamentos do Unity para um controlador:
 
-- Conectar o controlador
+- Conexão o controlador
 - Pressione cada botão e mova cada eixo
 - Observe os usos de recursos na exibição
 - Atualizar os mapeamentos de controle no provedor de dados do sistema de entrada para o controlador
@@ -46,4 +46,4 @@ O painel menor na parte superior lista os nomes de todas as fontes detectadas.
 ## <a name="see-also"></a>Confira também
 
 - [Criando um provedor de dados do sistema de entrada](../input/create-data-provider.md)
-- [Ferramenta de mapeamento de controlador](controller-mapping-tool.md)
+- [Ferramenta de mapeamento do controlador](controller-mapping-tool.md)

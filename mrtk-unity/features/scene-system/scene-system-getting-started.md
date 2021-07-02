@@ -1,18 +1,18 @@
 ---
-title: Introdução ao sistema de cena
+title: Começar a trabalhar com o sistema de cena
 description: Página de aterrissagem do sistema de cena com o MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 205b89d4defdeb5418a8a82896551d681cccde3d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 16adf431498f8146ca2cc60565e59dc8ae03fd92
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144306"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177569"
 ---
-# <a name="scene-system-overview"></a>Visão geral do sistema de cena
+# <a name="scene-system-getting-started"></a>Começar a trabalhar com o sistema de cena
 
 ## <a name="when-to-use-the-scene-system"></a>Quando usar o sistema de cena
 
@@ -32,51 +32,51 @@ Por padrão, o Sistema de Cena utiliza um par de objetos de cena (cena DefaultMa
 
 >! [Observação] Se o projeto estiver usando o gerenciador personalizado e as cenas de iluminação, essa mensagem poderá ser ignorada com segurança.
 
-As seções a seguir descrevem agora para resolver essa mensagem, com base em qual método foi usado para importar o Kit de Ferramentas de Realidade Misturada.
+As seções a seguir descrevem agora para resolver essa mensagem, com base em qual método foi usado para importar o Toolkit.
 
 ### <a name="unity-package-manager-upm"></a>Unity Gerenciador de Pacotes (UPM)
 
-Nos pacotes UPM do Kit de Ferramentas de Realidade Misturada, os recursos do sistema de cena são empacotados como um exemplo. Devido a pacotes UPM serem imutáveis, o Unity não poderá abrir o arquivo de cena necessário, a menos que eles sejam explicitamente importados para o projeto.
+Nos pacotes upm Toolkit realidade misturada, os recursos do sistema de cena são empacotados como um exemplo. Devido a pacotes UPM serem imutáveis, o Unity não poderá abrir o arquivo de cena necessário, a menos que eles sejam explicitamente importados para o projeto.
 
 Para importar, use as seguintes etapas:
 
-- Selecionar   >  **Gerenciador de pacotes** do Windows
-- Selecione **Mixed Reality Toolkit Foundation**
-- Localizar **recursos do sistema de cena** na seção de **exemplos**
+- Selecione **Janela**  >  **Gerenciador de Pacotes**
+- Selecione **Realidade Misturada Toolkit Foundation**
+- Localizar **recursos do sistema de** cena na seção **Exemplos**
 
   ![Importar recursos do sistema de cena](../images/scene-system/UpmImportSceneSystemResources.png)
 
-- Selecionar **importação**
+- Selecione **Importar**
 
-### <a name="asset-unitypackage-files"></a>Arquivos de ativo (. unitypackage)
+### <a name="asset-unitypackage-files"></a>Arquivos de ativo (.unitypackage)
 
-Se a pasta SceneSystemResources tiver sido excluída ou tiver sido desmarcada durante a importação, ela poderá ser recuperada usando as seguintes etapas:
+Se a pasta SceneSystemResources tiver sido excluída ou tiver sido deseleitada durante a importação, ela poderá ser recuperada usando as seguintes etapas:
 
-- Selecione os **ativos** pacote de  >  **importação** pacote  >  **personalizado**
-- Abra o pacote **Microsoft. MixedReality. Toolkit. Foundation**
-- Verifique se os **Serviços/SceneSystem/SceneSystemResources** e todas as opções filho estão selecionadas
+- Selecionar **Pacote** Personalizado  >  **de Importação de**  >  **Ativos**
+- Abra o **Microsoft.MixedReality.Toolkit. Pacote foundation**
+- Verifique se **Services/SceneSystem/SceneSystemResources** e todas as opções filho estão selecionadas
 
-  ![Reimportar recursos do sistema de cena](../images/scene-system/ReimportSceneSystemResources.png)
+  ![Reimporte recursos do sistema de cena](../images/scene-system/ReimportSceneSystemResources.png)
 
-- Selecionar **importação**
+- Selecione **Importar**
 
 ## <a name="how-to-use-the-scene-system"></a>Como usar o sistema de cena
 
 - [Tipos de cena](scene-system-scene-types.md)
 - [Carregamento de cena de conteúdo](scene-system-content-loading.md)
 - [Monitorando o carregamento de conteúdo](scene-system-load-progress.md)
-- [Carregamento da cena de iluminação](scene-system-lighting-scenes.md)
+- [Carregamento de cena de iluminação](scene-system-lighting-scenes.md)
 
 ## <a name="editor-settings"></a>Configurações do editor
 
-Por padrão, o sistema de cena impõe vários comportamentos no editor do Unity. Se você encontrar qualquer um desses comportamentos de alta mão, eles poderão ser desabilitados na seção **configurações do editor** do seu perfil de sistema de cena.
+Por padrão, o Sistema de Cena impõe vários comportamentos no editor do Unity. Se você encontrar qualquer um desses comportamentos com muita mão, eles poderão ser desabilitados na seção **Editor Configurações** do seu perfil do Sistema de Cena.
 
-- `Editor Manage Build Settings:` Se for true, o serviço atualizará as configurações de Build automaticamente, garantindo que todas as cenas de gerente, iluminação e conteúdo sejam adicionadas. Desabilite-o se desejar ter controle total sobre as configurações de compilação.
+- `Editor Manage Build Settings:` Se true, o serviço atualizará suas configurações de build automaticamente, garantindo que todas as cenas de gerenciador, iluminação e conteúdo sejam adicionadas. Desabilite isso se você quiser ter controle total sobre as configurações de build.
 
-- `Editor Enforce Scene Order:` Se for true, o serviço garantirá que a cena do gerente seja exibida primeiro na hierarquia de cena, seguida da iluminação e do conteúdo. Desabilite-o se desejar ter controle total sobre a hierarquia de cena.
+- `Editor Enforce Scene Order:` Se true, o serviço garantirá que a cena do gerente seja exibida primeiro na hierarquia de cena, seguida pela iluminação e, em seguida, pelo conteúdo. Desabilite isso se você quiser ter controle total sobre a hierarquia de cena.
 
-- `Editor Manage Loaded Scenes:` Se for verdadeiro, o serviço garantirá que os bastidores gerente, conteúdo e iluminação sempre sejam carregados. Desabilite se você quiser o controle total sobre quais cenas são carregadas no editor.
+- `Editor Manage Loaded Scenes:` Se true, o serviço garantirá que o gerenciador, o conteúdo e as cenas de iluminação sejam sempre carregados. Desabilite se você quiser ter controle total sobre quais cenas são carregadas no editor.
 
-- `Editor Enforce Lighting Scene Types:` Se for true, o serviço garantirá que apenas os componentes relacionados à iluminação definidos no `PermittedLightingSceneComponentTypes` sejam permitidos em cenas de iluminação. Desabilite se você quiser controle total sobre o conteúdo de cenas de iluminação.
+- `Editor Enforce Lighting Scene Types:` Se true, o serviço garantirá que somente os componentes relacionados à iluminação definidos em `PermittedLightingSceneComponentTypes` sejam permitidos em cenas de iluminação. Desabilite se você quiser controle total sobre o conteúdo das cenas de iluminação.
 
 ![Configurações do editor do sistema de cena](../images/scene-system/MRTK_SceneSystemProfileEditorSettings.PNG)

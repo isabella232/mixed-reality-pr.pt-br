@@ -1,55 +1,55 @@
 ---
-title: Guia de configuração de Realidade Misturada
+title: Guia de configuração do perfil MRTK
 description: Documentação para configurar o MRTK no Unity.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: a8aca05b4a4bc154061d6f7594e5128ab91d5f0e
-ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK,
+ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588860"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176414"
 ---
-# <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Guia de configuração de perfil do Kit de Ferramentas de Realidade Misturada
+# <a name="mrtk-profile-configuration-guide"></a>Guia de configuração do perfil MRTK
 
-O Kit de Ferramentas de Realidade Misturada centraliza a maior parte da configuração necessária para gerenciar o kit de ferramentas o máximo possível (exceto para "coisas" do runtime verdadeiro).
+a realidade misturada Toolkit centralizar a maior parte da configuração necessária para gerenciar o kit de ferramentas o mais possível (exceto para "coisas" de tempo de execução verdadeiras).
 
-Este guia é um passo a passo simples para cada uma das telas de perfil de configuração disponíveis atualmente para o kit de ferramentas.
+Este guia é uma explicação simples para cada uma das telas de perfil de configuração disponíveis atualmente para o kit de ferramentas.
 
-## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>O perfil de configuração principal do Kit de Ferramentas de Realidade Misturada
+## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>a principal realidade misturada Toolkit perfil de configuração
 
-O perfil de configuração principal, anexado ao GameObject *MixedRealityToolkit* em sua cena, fornece o ponto de entrada principal para o Kit de Ferramentas em seu projeto.
+o principal perfil de configuração, que é anexado ao gameobject *MixedRealityToolkit* em sua cena, fornece o ponto de entrada principal para o Toolkit em seu projeto.
 
 > [!NOTE]
-> O Kit de Ferramentas de Realidade Misturada "bloqueia" as telas de configuração padrão para garantir que você sempre tenha um ponto de partida comum para seu projeto e é incentivado a começar a definir suas próprias configurações conforme o projeto evolui. A configuração do MRTK não é editável durante o modo de reprodução.
+> a realidade misturada Toolkit "bloqueia" as telas de configuração padrão para garantir que você sempre tenha um ponto de partida comum para seu projeto e seja incentivado a começar a definir suas próprias configurações à medida que seu projeto evolui. A configuração MRTK não é editável durante o modo de reprodução.
 
 ![Perfil de configuração do MRTK](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
-Todos os perfis "padrão" para o Kit de Ferramentas de Realidade Misturada podem ser encontrados no projeto do SDK na pasta Ativos/MRTK/SDK/Perfis.
+todos os perfis "padrão" para a realidade misturada Toolkit podem ser encontrados no projeto do SDK na pasta ativos/MRTK/SDK/perfis.
 
 > [!IMPORTANT]
-> DefaultHoloLens2ConfigurationProfile é otimizado para o HoloLens 2. Consulte [Perfis](../features/profiles/profiles.md) para obter os detalhes.
+> DefaultHoloLens2ConfigurationProfile é otimizado para o HoloLens 2. Consulte [perfis](../features/profiles/profiles.md) para obter os detalhes.
 
-Ao abrir o principal Perfil de Configuração do Kit de Ferramentas de Realidade Misturada, você verá a seguinte tela no inspetor:
+ao abrir a realidade mista principal Toolkit perfil de configuração, você verá a seguinte tela no inspetor:
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" alt="MRTK configuration scene" style="display:block;">
 
 Se você selecionar um ativo MixedRealityToolkitConfigurationProfile sem o MixedRealityToolkit na cena, ele perguntará se você deseja que o MRTK configure automaticamente a cena para você. Isso é opcional, no entanto, deve haver um objeto MixedRealityToolkit ativo na cena para acessar todas as telas de configuração.
 
-Isso resimente a configuração atual do runtime ativo para o projeto.
+Isso abriga a configuração atual de tempo de execução ativo para o projeto.
 
-A partir daqui, você pode navegar até todos os perfis de configuração do MRTK, incluindo:
+A partir daqui, você pode navegar para todos os perfis de configuração para o MRTK, incluindo:
 
-- [Guia de configuração de perfil do Kit de Ferramentas de Realidade Misturada](#mixed-reality-toolkit-profile-configuration-guide)
-  - [O perfil de configuração principal do Kit de Ferramentas de Realidade Misturada](#the-main-mixed-reality-toolkit-configuration-profile)
-  - [Configurações de experiência](#experience-settings)
+- [guia de configuração do perfil da realidade mista Toolkit](#mrtk-profile-configuration-guide)
+  - [a principal realidade misturada Toolkit perfil de configuração](#the-main-mixed-reality-toolkit-configuration-profile)
+  - [Configurações da experiência](#experience-settings)
   - [Configurações da câmera](#camera-settings)
   - [Configurações do sistema de entrada](#input-system-settings)
   - [Configurações de visualização de limite](#boundary-visualization-settings)
-  - [Seleção do sistema de teletransporte](#teleportation-system-selection)
-  - [Configurações de reconhecimento espacial](#spatial-awareness-settings)
+  - [Seleção do sistema de teleportabilidade](#teleportation-system-selection)
+  - [Configurações de conscientização espacial](#spatial-awareness-settings)
   - [Configurações de diagnóstico](#diagnostics-settings)
   - [Configurações do sistema de cena](#scene-system-settings)
   - [Configurações de serviços adicionais](#additional-services-settings)
@@ -58,13 +58,13 @@ A partir daqui, você pode navegar até todos os perfis de configuração do MRT
   - [Configuração do ponteiro](#pointer-configuration)
   - [Configuração de gestos](#gestures-configuration)
   - [Comandos de fala](#speech-commands)
-  - [Configuração de mapeamento do controlador](#controller-mapping-configuration)
+  - [Configuração de mapeamento de controlador](#controller-mapping-configuration)
   - [Configurações de visualização do controlador](#controller-visualization-settings)
   - [Utilitários do editor](#editor-utilities)
     - [Inspetores de serviço](#service-inspectors)
-    - [Renderização de buffer de profundidade](#depth-buffer-renderer)
-  - [Alterando perfis em runtime](#changing-profiles-at-runtime)
-    - [Opção de perfil de inicialização do MRTK](#pre-mrtk-initialization-profile-switch)
+    - [Renderizador de buffer de profundidade](#depth-buffer-renderer)
+  - [Alterando perfis em tempo de execução](#changing-profiles-at-runtime)
+    - [Opção de perfil de inicialização MRTK](#pre-mrtk-initialization-profile-switch)
     - [Opção de perfil ativo](#active-profile-switch)
   - [Consulte também](#see-also)
 
@@ -73,9 +73,9 @@ Esses perfis de configuração são detalhados abaixo em suas seções relevante
 ---
 <a name="experience"></a>
 
-## <a name="experience-settings"></a>Configurações de experiência
+## <a name="experience-settings"></a>Configurações da experiência
 
-Localizada na página principal de configuração do Kit de Ferramentas de Realidade Misturada, essa configuração define a operação padrão da escala de ambiente de [Realidade](/windows/mixed-reality/coordinate-systems-in-unity) Misturada para seu projeto.
+localizada na página principal de configuração Toolkit reality, essa configuração define a operação padrão da [escala de ambiente da realidade misturada](/windows/mixed-reality/coordinate-systems-in-unity) para o seu projeto.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" alt="Experiance settings" style="display:block;">
 
@@ -84,7 +84,7 @@ Localizada na página principal de configuração do Kit de Ferramentas de Reali
 
 ## <a name="camera-settings"></a>Configurações da câmera
 
-As configurações da câmera definem como a câmera será configurada para seu projeto de Realidade Misturada, definindo as configurações genéricas de recorte, qualidade e transparência.
+As configurações da câmera definem como a câmera será configurada para o projeto de realidade misturada, definindo as configurações de recorte genérico, qualidade e transparência.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_CameraProfile.png" width="650px" alt="Camera Profile" style="display:block;">
 
@@ -93,11 +93,11 @@ As configurações da câmera definem como a câmera será configurada para seu 
 
 ## <a name="input-system-settings"></a>Configurações do sistema de entrada
 
-O Projeto de Realidade Misturada fornece um sistema de entrada robusto e bem treinado para rotear todos os eventos de entrada em torno do projeto selecionado por padrão.
+a realidade misturada Project fornece um sistema de entrada robusto e bem treinado para rotear todos os eventos de entrada em todo o projeto que é selecionado por padrão.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1" style="display:block;">
 
-Por trás do Sistema de Entrada fornecido pelo MRTK estão vários outros sistemas, esses ajudam a impulsionar e gerenciar as intercalações complexas necessárias para abstrair as complexidades de uma estrutura de realidade misturada/multiplatata.
+Por trás do sistema de entrada fornecido pelo MRTK são vários outros sistemas, eles ajudam a impulsionar e gerenciar o complexo weavings necessário para abstrair as complexidades de uma estrutura de realidade mista de várias plataformas.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemProfile.png" width="650px" alt="Input System settings 2" style="display:block;">
 
@@ -109,7 +109,7 @@ Cada um dos perfis individuais é detalhado abaixo:
 - [Configuração do ponteiro](#pointer-configuration)
 - [Configuração de gestos](#gestures-configuration)
 - [Comandos de fala](#speech-commands)
-- [Configuração de mapeamento do controlador](#controller-mapping-configuration)
+- [Configuração de mapeamento de controlador](#controller-mapping-configuration)
 - [Configurações de visualização do controlador](#controller-visualization-settings)
 
 ---
@@ -117,33 +117,33 @@ Cada um dos perfis individuais é detalhado abaixo:
 
 ## <a name="boundary-visualization-settings"></a>Configurações de visualização de limite
 
-O sistema de limites converte o limite percebido relatado pelo sistema guardião/limite das plataformas subjacentes. A configuração do Visualizador de limites oferece a capacidade de mostrar automaticamente o limite gravado em sua cena em relação à posição do usuário. O limite também reagirá/atualizará com base no local em que o usuário se destaca dentro da cena.
+O sistema de limite traduz o limite percebido relatado pelo sistema de limite/guardião de plataformas subjacentes. A configuração do Visualizador de limite fornece a capacidade de mostrar automaticamente o limite registrado em sua cena em relação à posição do usuário. O limite também reagirá/será atualizado com base em onde o usuário portará dentro da cena.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_BoundaryVisualizationProfile.png" width="650px" alt="Boundry Visualization Settings" style="display:block;">
 
 ---
 <a name="teleportation"></a>
 
-## <a name="teleportation-system-selection"></a>Seleção do sistema de teletransporte
+## <a name="teleportation-system-selection"></a>Seleção do sistema de teleportabilidade
 
-O Projeto de Realidade Misturada fornece um sistema de Seleção completo para gerenciar eventos de teletransmissão no projeto que é selecionado por padrão.
+a realidade misturada Project fornece um sistema de teleportabilidade completo para gerenciar eventos de teleportação no projeto que é selecionado por padrão.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_TeleportationSystemSelection.png" width="650px" alt="Teleport System settings" style="display:block;">
 
 ---
 <a name="spatialawareness"></a>
 
-## <a name="spatial-awareness-settings"></a>Configurações de reconhecimento espacial
+## <a name="spatial-awareness-settings"></a>Configurações de conscientização espacial
 
-O Projeto de Realidade Misturada fornece um sistema de reconhecimento espacial reconstruído para trabalhar com sistemas de verificação espacial no projeto selecionado por padrão.
+a realidade misturada Project fornece um sistema de conscientização espacial recriado para trabalhar com sistemas de verificação espacial no projeto que é selecionado por padrão.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
-A configuração de reconhecimento espacial do Kit de Ferramentas de Realidade Misturada permite personalizar como o sistema é iniciado, seja automaticamente quando o aplicativo é iniciado ou posteriormente programaticamente, bem como definir as extensão para o campo de exibição.
+a realidade misturada Toolkit configuração de conscientização espacial permite que você personalize a forma como o sistema é iniciado, se ele é automaticamente quando o aplicativo inicia ou posteriormente de forma programática, bem como a definição das extensões para o campo de exibição.
 
-Ele também permite definir as configurações de malha e superfície, personalização posterior de como seu projeto compreende o ambiente ao seu redor.
+Ele também permite que você defina as configurações de malha e superfície, personalizando ainda mais a forma como o seu projeto compreende o ambiente em relação a você.
 
-Isso só é aplicável a dispositivos que podem fornecer um ambiente verificado.
+Isso só é aplicável a dispositivos que podem fornecer um ambiente examinado.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessProfile.png" width="650px" alt="Spatial Awareness settings 2" style="display:block;">
 
@@ -152,11 +152,11 @@ Isso só é aplicável a dispositivos que podem fornecer um ambiente verificado.
 
 ## <a name="diagnostics-settings"></a>Configurações de diagnóstico
 
-Um recurso opcional, mas altamente útil do MRTK, é a funcionalidade de diagnóstico do plug-in.
+Um recurso opcional, mas altamente útil do MRTK, é a funcionalidade de diagnóstico de plug-in.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsSystemSelection.png" width="650px" alt="Diagnostics settings" style="display:block;">
 
-O perfil de diagnóstico fornece vários sistemas simples para monitorar enquanto o projeto está em execução, incluindo uma opção habilitada/desligada útil para habilitar/desabilitar o painel de exibição na cena.
+O perfil de diagnóstico fornece vários sistemas simples para monitorar enquanto o projeto está em execução, incluindo uma opção de ligar/desligar útil para habilitar/desabilitar o painel de exibição na cena.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsProfile.png" width="650px" alt="Diagnostics settings System settings 2" style="display:block;">
 
@@ -165,7 +165,7 @@ O perfil de diagnóstico fornece vários sistemas simples para monitorar enquant
 
 ## <a name="scene-system-settings"></a>Configurações do sistema de cena
 
-O MRTK fornece esse serviço opcional para ajudá-lo a gerenciar carregamento/descarregamento de cena aditivo complexo. Para decidir se o Sistema de Cena seria uma boa ideia para seu projeto, leia o Guia de [Ponto de Partida cena.](../features/scene-system/scene-system-getting-started.md)
+O MRTK fornece esse serviço opcional para ajudá-lo a gerenciar o carregamento/descarregamento de uma cena aditiva complexa. Para decidir se o sistema de cena seria uma boa opção para seu projeto, leia o [Guia de introdução do sistema de cena.](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1" style="display:block;">
 
@@ -174,9 +174,9 @@ O MRTK fornece esse serviço opcional para ajudá-lo a gerenciar carregamento/de
 
 ## <a name="additional-services-settings"></a>Configurações de serviços adicionais
 
-Uma das áreas mais avançadas do [](https://en.wikipedia.org/wiki/Service_locator_pattern) Kit de Ferramentas de Realidade Misturada é sua implementação de padrão de localizador de serviço que permite o registro de qualquer "Serviço" com a estrutura. Isso permite que a estrutura seja estendida com novos recursos/sistemas facilmente, mas também permite que os projetos aproveitem esses recursos para registrar seus próprios componentes de runtime.
+uma das áreas mais avançadas da realidade misturada Toolkit é sua implementação de [padrão de localizador de serviço](https://en.wikipedia.org/wiki/Service_locator_pattern) que permite o registro de qualquer "serviço" com a estrutura. Isso permite que a estrutura seja estendida com novos recursos/sistemas facilmente, mas também permite que os projetos aproveitem esses recursos para registrar seus próprios componentes de tempo de execução.
 
-Qualquer serviço registrado ainda obtém toda a vantagem de todos os eventos do Unity, sem a sobrecarga e o custo de implementação de padrões de singleton MonoBehaviour ou clunky. Isso permite componentes C# puros sem sobrecarga de cena para executar processos em primeiro plano e em segundo plano, por exemplo, gerar sistemas, lógica de jogo de runtime ou praticamente qualquer outra coisa.
+Qualquer serviço registrado ainda Obtém a vantagem total de todos os eventos do Unity, sem a sobrecarga e o custo da implementação de padrões de desajeitado ou monocomportamento. Isso permite componentes puros do C# sem sobrecarga de cena para a execução de processos em primeiro plano e em segundo plano, por exemplo, sistemas de geração, lógica de jogo em tempo de execução ou praticamente qualquer outra coisa.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_RegisteredServiceProvidersProfile.png" width="650px" alt="additional System settings" style="display:block;">
 
@@ -185,14 +185,14 @@ Qualquer serviço registrado ainda obtém toda a vantagem de todos os eventos do
 
 ## <a name="input-actions-settings"></a>Configurações de ações de entrada
 
-As ações de entrada fornecem uma maneira de abstrair quaisquer interações físicas e entradas de um projeto de runtime. Toda a entrada física (de controladores/mãos/mouse/etc) é convertida em em uma ação de entrada lógica para uso em seu projeto de runtime. Isso garante que, independentemente de onde a entrada venha, seu projeto simplesmente implementa essas ações como "Coisas a fazer" ou "Interagir com" em suas cenas.
+As ações de entrada fornecem uma maneira de abstrair quaisquer interações físicas e entradas de um projeto de tempo de execução. Todas as entradas físicas (de controladores/mãos/mouse/etc.) são convertidas em uma ação de entrada lógica para uso em seu projeto de tempo de execução. Isso garante que, independentemente de onde venha a entrada, seu projeto simplesmente implemente essas ações como "coisas para fazer" ou "interagir com" em seus bastidores.
 
-Para criar uma nova ação de entrada, basta clicar no botão "Adicionar uma nova ação" e inserir um nome de texto amigável para o que ela representa. Em seguida, você só precisa selecionar um eixo (o tipo de dados) ao qual a ação deve ser transmitida ou, no caso de controladores físicos, o tipo de entrada física ao qual ele pode ser anexado, por exemplo:
+Para criar uma nova ação de entrada, basta clicar no botão "adicionar uma nova ação" e inserir um nome de texto amigável para o que ele representa. Em seguida, você só precisa selecionar um eixo (o tipo de dados) que a ação deve transmitir, ou no caso de controladores físicos, o tipo de entrada física ao qual ele pode ser anexado, por exemplo:
 
 | Restrição de eixo | Tipo de Dados | Descrição | Uso de exemplo |
 | :--- | :--- | :--- | :--- |
 | Nenhum | Sem dados | Usado para uma ação ou evento vazio | Gatilho de evento |
-| Bruto (reservado) | objeto | Reservado para uso futuro | N/D |
+| Bruto (reservado) | object | Reservado para uso futuro | N/D |
 | Digital | bool | Um booliana em dados de tipo de ou para fora | Um botão do controlador |
 | Eixo único | FLOAT | Um único valor de dados de precisão | Uma entrada de intervalo, por exemplo, um gatilho |
 | Eixo duplo | Vector2 | Uma data de tipo float duplo para vários eixos | Um Dpad ou thumbstick |
@@ -229,7 +229,7 @@ As regras de ação de entrada podem ser configuradas para qualquer um dos eixos
 
 Ponteiros são usados para impulsionar a interatividade na cena de qualquer dispositivo de entrada, dando uma direção e um teste de ocorrência com qualquer objeto em uma cena (que tem um colisor anexado ou é um componente da interface do usuário). Os ponteiros são configurados automaticamente por padrão para controladores, headsets (foco/foco) e entrada de mouse/toque.
 
-Os ponteiros também podem ser visualizados na cena ativa usando um dos muitos componentes de linha fornecidos pelo Kit de Ferramentas de Realidade Misturada ou qualquer um dos seus se implementarem a interface IMixedRealityPointer do MRTK.
+Os ponteiros também podem ser visualizados na cena ativa usando um dos muitos componentes de linha fornecidos pelo Toolkit de Realidade Misturada ou qualquer um dos seus se implementarem a interface IMixedRealityPointer do MRTK.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputPointerProfile.png" width="650px" alt="Input Pointer Profile" style="display:block;">
 
@@ -249,7 +249,7 @@ Há um botão auxiliar adicional para ir rapidamente para o Provedor de Foco par
 Gestos são uma implementação específica do sistema que permite atribuir ações de entrada aos vários métodos de entrada "Gesto" fornecidos por vários SDKs (por exemplo, HoloLens).
 
 > [!NOTE]
-> A implementação atual de Gestos é apenas para o HoloLens e será aprimorada para outros sistemas à medida que eles são adicionados ao Kit de Ferramentas no futuro (ainda não há datas).
+> A implementação atual de Gestos é apenas para o HoloLens e será aprimorada para outros sistemas à medida que eles são adicionados ao Toolkit no futuro (ainda não há datas).
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_GesturesProfile.png" width="650px" alt="Gesture configuration" style="display:block;">
 
@@ -260,7 +260,7 @@ Gestos são uma implementação específica do sistema que permite atribuir aç�
 
 Assim como os gestos, algumas plataformas de runtime também fornecem funcionalidades de "Conversão de Fala em Texto" inteligentes com a capacidade de gerar comandos que podem ser recebidos por um projeto do Unity. Esse perfil de configuração permite que você configure o seguinte:
 
-1. Configurações Gerais – "Comportamento inicial" definido como Início Automático ou Início Manual determina se a Palavra-chaveRecognizer deve ser inicializada na inicialização do sistema de entrada ou se o projeto decide quando inicializar o KeywordRecognizer. O "Nível de Confiança de Reconhecimento" é usado para inicializar a [API KeywordRecognizer do](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html) Unity
+1. Geral Configurações – "Comportamento de Início" definido como Início Automático ou Início Manual determina se é preciso inicializar KeywordRecognizer na inicialização do sistema de entrada ou permitir que o projeto decida quando inicializar o KeywordRecognizer. O "Nível de Confiança de Reconhecimento" é usado para inicializar a [API KeywordRecognizer do](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html) Unity
 2. Comandos de Fala – registra "palavras" e as converte em ações de entrada que podem ser recebidas pelo seu projeto. Eles também podem ser anexados às ações de teclado, se necessário.
 
 > [!IMPORTANT]
@@ -273,7 +273,7 @@ Assim como os gestos, algumas plataformas de runtime também fornecem funcionali
 
 ## <a name="controller-mapping-configuration"></a>Configuração de mapeamento do controlador
 
-Uma das principais telas de configuração do Kit de Ferramentas de Realidade Misturada é a capacidade de configurar e mapear os vários tipos de controladores que podem ser utilizados pelo seu projeto.
+Uma das principais telas de configuração para o Toolkit realidade misturada é a capacidade de configurar e mapear os vários tipos de controladores que podem ser utilizados pelo seu projeto.
 
 A tela de configuração abaixo permite que você configure qualquer um dos controladores atualmente reconhecidos pelo kit de ferramentas.
 
@@ -285,7 +285,7 @@ O MRTK fornece uma configuração padrão para os seguintes controladores/sistem
 - Tela touch
 - Controladores Xbox
 - Windows Mixed Reality controladores
-- Gestos do HoloLens
+- HoloLens Gestos
 - Controladores de controladores HTC Vive
 - Controladores touch do Oculus
 - Controlador remoto do Oculus
@@ -306,7 +306,7 @@ Além do mapeamento do controlador, um perfil de configuração separado é forn
 
 Isso pode ser configurado em um "Global" (todas as instâncias de um controlador para uma mão específica) ou específico para um tipo/mão de controlador individual.
 
-O MRTK também dá suporte a modelos nativos de controlador do SDK para Windows Mixed Reality e OpenVR. Eles são carregados como GameObjects em sua cena e posicionados usando o acompanhamento do controlador da plataforma.
+O MRTK também dá suporte a modelos de controlador SDK nativos para Windows Mixed Reality e OpenVR. Eles são carregados como GameObjects em sua cena e posicionados usando o acompanhamento do controlador da plataforma.
 
 Se a representação do controlador na cena precisar ser deslocada da posição do controlador físico, basta definir esse deslocamento em relação ao pré-padrão do modelo do controlador (por exemplo, definir a posição de transformação do pré-padrão do controlador com uma posição de deslocamento).
 
@@ -326,13 +326,13 @@ Os Inspetores de Serviço são um recurso somente editor que gera objetos na cen
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ServiceInspectors.PNG" width="350px" alt="Service Inspectors" style="display:block;">
 
-Você pode habilitar inspetores de serviço marcando *Usar Inspetores de Serviço* em *Configurações do Editor* no Perfil de Configuração.
+Você pode habilitar inspetores de serviço verificando *Usar Inspetores de Serviço* em Editor *Configurações* no Perfil de Configuração.
 
 ### <a name="depth-buffer-renderer"></a>Renderização de buffer de profundidade
 
 Compartilhar o buffer de profundidade com algumas plataformas de realidade misturada pode melhorar a [estabilização do holograma.](../performance/hologram-stabilization.md) Por exemplo, a Windows Mixed Reality pode modificar a cena renderizada por pixel para levar em conta os movimentos sutis de cabeça durante o tempo necessário para renderizar um quadro. No entanto, essas técnicas exigem buffers de profundidade com dados precisos para saber onde e a distância da geometria do usuário.
 
-Para garantir que uma cena renderiza todos os dados *necessários* para o buffer de profundidade, os desenvolvedores podem alternar o recurso *Buffer* de Profundidade de Renderização em Configurações do Editor no Perfil de Configuração. Isso pegará o buffer de profundidade atual e o renderizará como cor para a exibição da cena aplicando um efeito pós-processamento, , à [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) câmera principal.
+Para garantir que uma cena renderiza todos os dados necessários para o buffer de profundidade, os desenvolvedores podem alternar o recurso *Buffer* de Profundidade de Renderização em *Editor Configurações* no Perfil de Configuração. Isso pegará o buffer de profundidade atual e o renderizará como cor para a exibição da cena aplicando um efeito pós-processamento, , à [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) câmera principal.
 
 ![Utilitário de buffer de profundidade de renderização O cilindro azul na cena tem um material com ](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DepthBufferExample.gif)
  <sup>ZWrite desligado para</sup> que nenhum dado de profundidade seja gravado
@@ -377,7 +377,7 @@ public class PreInitProfileSwapper : MonoBehaviour
 }
 ```
 
-Em vez de "profileToUse", é possível ter algum conjunto arbitrário de perfis que se aplicam a plataformas específicas (por exemplo, um para o HoloLens 1, um para VR, um para o HoloLens 2, etc.). É possível usar vários outros indicadores (por exemplo https://docs.unity3d.com/ScriptReference/SystemInfo.html , ou se a câmera é opaca/transparente), para descobrir qual perfil deve ser carregado.
+em vez de "profileToUse", é possível ter algum conjunto arbitrário de perfis que se aplicam a plataformas específicas (por exemplo, um para HoloLens 1, um para VR, um para HoloLens 2, etc.). É possível usar vários outros indicadores (por exemplo https://docs.unity3d.com/ScriptReference/SystemInfo.html , ou se a câmera é opaca/transparente), para descobrir qual perfil deve ser carregado.
 
 ### <a name="active-profile-switch"></a>Opção de perfil ativo
 

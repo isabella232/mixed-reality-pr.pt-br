@@ -5,12 +5,12 @@ author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, objeto de rolagem
-ms.openlocfilehash: 0ed1d61aed203a5daa45c5d89990e66115cc3abb
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a724b9fb4a0f72910e16353a6c76b9e31005a76e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300111"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176605"
 ---
 # <a name="scrolling-object-collection"></a>Rolagem da coleção de objetos
 
@@ -23,7 +23,7 @@ A coleção de objetos de rolagem MRTK é um componente de UX que permite a rola
 ### <a name="setting-up-the-scene"></a>Configurando a cena
 
 1. Crie uma nova cena do Unity.
-1. Adicione MRTK à cena navegando até o **Kit de ferramentas da realidade misturada**  >  **Adicionar à cena e configurar**.
+1. adicione MRTK à cena navegando até a **realidade misturada Toolkit**  >  **adicionar à cena e configurar**.
 
 ### <a name="setting-up-the-scrolling-object"></a>Configurando o objeto de rolagem
 
@@ -91,54 +91,54 @@ public class ScrollablePagination : MonoBehaviour
     public void ScrollByTier(int amount)
     {
         scrollView.MoveByTiers(amount);
-    }       
+    }
 }
 ```
 
 ## <a name="scrolling-object-collection-properties"></a>Propriedades da coleção de objetos de rolagem
 
-| Geral                                                                                                                                                                                                     |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Direção da rolagem             | A direção na qual o conteúdo deve rolar.|
+| Geral          | Descrição                                   |
+| :--------------- | :-------------------------------------------- |
+| Direção da rolagem | A direção na qual o conteúdo deve rolar. |
 
-| Paginação                   |               Descrição                                                                                                                                                                                      |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Células por camada               | Número de células em uma linha na exibição de rolagem para cima ou no número de células em uma coluna na exibição de rolagem esquerda-direita.                                                                                                         |
-| Camadas por página               | Número de camadas visíveis na área de rolagem.                                                                                                                                                                         |
-| Célula da página                    | Dimensões da célula de paginação.                  |
+| Paginação     | Descrição                                                                                               |
+| :------------- | :-------------------------------------------------------------------------------------------------------- |
+| Células por camada | Número de células em uma linha na exibição de rolagem para cima ou no número de células em uma coluna na exibição de rolagem esquerda-direita. |
+| Camadas por página | Número de camadas visíveis na área de rolagem.                                                            |
+| Célula da página      | Dimensões da célula de paginação.                                                                        |
 
-| Configurações avançadas            |                  Descrição                                                                                                                                                                                    |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Modo de edição de máscara               | Edite modos para definir os limites de mascaramento da caixa de recorte. Escolha ' automático ' para usar automaticamente os valores de paginação. Escolha ' manual ' para habilitar a manipulação direta do objeto da caixa de recorte.|
-| Modo de edição do colisor           | Edite modos para definir os limites de conflito de interação da rolagem. Escolha ' automático ' para usar automaticamente os valores de paginação. Escolha ' manual ' para habilitar a manipulação direta do colisor.|
-| Pode rolar                   | Habilita/desabilita a rolagem com interação quase/longe.                  |
-| Usar em pré-renderização            | Alterna se o scrollingObjectCollection usará o evento OnPreRender da câmera para gerenciar a visibilidade do conteúdo.                  |
-| Curva de paginação             | Curva de animação para paginação.                  |
-| Comprimento da animação             | A quantidade de tempo (em segundos) que o PaginationCurve levará para avaliar.                  |
-| Limite de rolagem Delta à mão  | A distância, em metros, o ponteiro atual pode viajar ao longo da direção da rolagem antes de disparar um arrasto de rolagem.                  |
-| Distância do toque frontal         | Distância, em metros, para posicionar um plano XY local usado para verificar se uma interação de toque começou na frente da exibição de rolagem.                  |
-| Limite de liberação            | Retire o valor, em metros, dos limites de rolagem necessários para a transição do toque envolvido para o lançamento.                  |
+| Configurações avançadas           | Descrição                                                                                                                                                                |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Modo de edição de máscara              | Edite modos para definir os limites de mascaramento da caixa de recorte. ' Auto ' usa automaticamente valores de paginação. ' Manual ' habilita a manipulação direta do objeto de caixa de recorte. |
+| Modo de edição do colisor          | Edite modos para definir os limites de conflito de interação da rolagem. ' Auto ' usa automaticamente valores de paginação. ' Manual ' habilita a manipulação direta do colisor.     |
+| Pode rolar                  | Habilita/desabilita a rolagem com interação quase/longe.                                                                                                                      |
+| Usar em pré-renderização           | Alterna se o scrollingObjectCollection usará o evento OnPreRender da câmera para gerenciar a visibilidade do conteúdo.                                                          |
+| Curva de paginação            | Curva de animação para paginação.                                                                                                                                            |
+| Comprimento da animação            | A quantidade de tempo (em segundos) que o PaginationCurve levará para avaliar.                                                                                                 |
+| Limite de rolagem Delta à mão | A distância, em metros, o ponteiro atual pode viajar ao longo da direção da rolagem antes de disparar um arrasto de rolagem.                                                        |
+| Distância do toque frontal        | Distância, em metros, para posicionar um plano XY local usado para verificar se uma interação de toque começou na frente da exibição de rolagem.                                           |
+| Limite de liberação           | Retire o valor, em metros, dos limites de rolagem necessários para a transição do toque envolvido para o lançamento.                                                                |
 
-| Velocidade |               Descrição                                                                                                                                                                      |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo de velocidade       | O tipo desejado de queda de velocidade para o Rolador.                                                                                        |
-| Multiplicador Velocity     | Quantidade de velocidade (extra) a ser aplicada ao Rolador.                                                                                                                                                        |
-| Redução de velocidade     | Quantidade de queda aplicada à velocidade. |
-| Multiplicador de retorno     | Multiplicador para adicionar mais retorno à rolagem de uma lista ao usar queda por quadro ou queda por item. |
+| Velocidade            | Descrição                                                                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Tipo de velocidade    | O tipo desejado de queda de velocidade para o Rolador.                                                      |
+| Multiplicador Velocity | Quantidade de velocidade (extra) a ser aplicada ao Rolador.                                                       |
+| Redução de velocidade     | Quantidade de queda aplicada à velocidade.                                                                  |
+| Multiplicador de retorno   | Multiplicador para adicionar mais retorno à rolagem de uma lista ao usar queda por quadro ou queda por item. |
 
-| Opções de depuração |            Descrição                                                                                                                                                                         |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Máscara habilitada       | Modo de visibilidade do conteúdo de rolagem. O valor padrão irá mascarar todos os objetos fora da área de rolagem visível.                                                                                        |
-| Mostrar planos de limite     | Se for true, o editor renderizará os planos de limite de liberação de toque em volta dos limites de rolagem.                                                                                                                                                        |
-| Depurar paginação     | Use esta seção para depurar a paginação de rolagem durante o tempo de execução. |
+| Opções de depuração         | Descrição                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Máscara habilitada          | Modo de visibilidade do conteúdo de rolagem. O valor padrão irá mascarar todos os objetos fora da área de rolagem visível. |
+| Mostrar planos de limite | Se for true, o editor renderizará os planos de limite de liberação de toque em volta dos limites de rolagem.            |
+| Depurar paginação      | Use esta seção para depurar a paginação de rolagem durante o tempo de execução.                                             |
 
-| Eventos|    DESCRIÇÃO                                                                                                                                                                                 |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ao clicar em       | Evento disparado quando o colisador de fundo da rolagem ou qualquer um de seus conteúdos interativos recebe um clique.                                                                                        |
-| No toque iniciado     | Evento disparado quando o colisador de fundo da rolagem ou qualquer um de seus conteúdos interativos recebe um toque próximo à interação.                                                                                                                                                        |
-| No toque encerrado     | Evento disparado quando uma interação de toque ativo é encerrada com o ponteiro de interação próximo que atravessa um dos planos de limite de liberação. |
-| Na dinâmica iniciada     | Evento disparado quando o contêiner de rolagem começa a ser movido por interação, velocidade fallofff ou paginação. |
-| No impulso encerrado     | Evento disparado quando o contêiner de rolagem para de ser movido por interação, velocidade fallofff ou paginação. |
+| Eventos              | DESCRIÇÃO                                                                                                                   |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Ao clicar em            | Disparado quando o colisador de fundo da rolagem ou qualquer um de seus conteúdos interativos recebe um clique.                             |
+| No toque iniciado    | Disparado quando o colisador de fundo da rolagem ou qualquer um de seus conteúdos interativos recebe um toque próximo à interação.            |
+| No toque encerrado      | Disparado quando uma interação de toque ativo é encerrada quando o ponteiro de interação próxima cruza um plano de limite de liberação. |
+| Na dinâmica iniciada | Disparado quando o contêiner de rolagem começa a ser movido por interação, queda de velocidade ou paginação.                            |
+| No impulso encerrado   | Disparado quando o contêiner de rolagem para de ser movido por interação, queda de velocidade ou paginação.                             |
 
 ## <a name="scrolling-example-scene"></a>Cena de exemplo de rolagem
 

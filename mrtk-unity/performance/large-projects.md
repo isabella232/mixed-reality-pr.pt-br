@@ -1,28 +1,28 @@
 ---
-title: Projetos grandes
-description: Dicas para consumidores do MRTK com projetos grandes.
+title: Usando o MRTK em projetos grandes
+description: Dicas para consumidores de MRTK com projetos grandes.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 5db750048cf996b10062e638572b578ba383d5ee
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 28ba272a48b0a0c524185ac7114a09cf8e0e91f8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144555"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177124"
 ---
 # <a name="using-mrtk-in-large-projects"></a>Usando o MRTK em projetos grandes
 
-Esta página contém algumas dicas úteis para os consumidores do MRTK que o estão endossando em projetos grandes existentes ou configurando algo novo que será controlado pela origem e terá vários desenvolvedores.
+Esta página contém algumas dicas úteis para os consumidores de MRTK que estão reunindo-o em projetos grandes existentes ou configurando algo novo que será controlado pela fonte e terá vários desenvolvedores.
 
-*É recomendável ler todas as diretrizes abaixo, seguindo-as ajudará a evitar alguns problemas complicados ao trabalhar em bases de código maiores*
+*É recomendável ler todas as diretrizes abaixo, as seguintes ajudarão a evitar alguns problemas complicados ao trabalhar em bases de código maiores*
 
 ## <a name="gitignore"></a>gitignore
 
-O arquivo .gitignore a seguir é uma base recomendada para fazer pull ao consumir o MRTK– há partes do MRTK que criam o estado local que podem ser ignorados com segurança pelo controle do código-fonte, o que, de outra forma, sujaria o estado git local.
+O arquivo. gitignore a seguir é uma base recomendada para efetuar pull ao consumir MRTK-há partes de MRTK que cria o estado local que pode ser ignorado com segurança pelo controle do código-fonte, o que, de outra forma, faria sujo com o estado do git local.
 
-Observe que as partes in início disso são retiradas do .gitignore padrão do Github Unity com adições específicas do MRTK posteriormente. Observe também que algumas dessas regras assumem determinados caminhos e podem ser modificadas com base no local em que o MRTK está localizado em seu projeto.
+Observe que as partes iniciais disso são tiradas do GitHub Unity. gitignore padrão com adições específicas de MRTK mais tarde. Observe também que algumas dessas regras assumem determinados caminhos e podem ser modificadas com base em onde MRTK está localizado em seu projeto.
 
 ```
 # This .gitignore file should be placed at the root of your Unity project directory
@@ -99,18 +99,18 @@ crashlytics-build.properties
 !/scripts/Packaging/NuGetRestoreProject.csproj
 ```
 
-## <a name="projectpreferencesasset-file"></a>Arquivo ProjectPreferences.asset
+## <a name="projectpreferencesasset-file"></a>Arquivo ProjectPreferences. Asset
 
-As configurações do MRTK em todo o projeto podem ser encontradas na localização Editar -> configurações do projeto -> kit de ferramentas de realidade misturada. Essas configurações serão salvas em um arquivo nesse local na pasta Ativos:
+as configurações de MRTK de todo o Project podem ser encontradas sob a edição > Project Configurações > realidade mista Toolkit local. Essas configurações serão salvas em um arquivo neste local na pasta ativos:
 
 ```
 Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset
 ```
 
-Se o projeto tiver vários colaboradores, é recomendável que esse arquivo de ativo seja verificado depois de fazer uma configuração inicial das configurações do MRTK. Em particular, considere verificar as **seguintes configurações:**
+Se o seu projeto tiver vários colaboradores, é recomendável fazer check-in desse arquivo de ativo depois de fazer uma configuração inicial das configurações de MRTK. Em particular, considere as **seguintes configurações marcadas**:
 
-**Bloquear perfis do SDK** – se isso estiver desabilitado, os perfis padrão do MRTK serão editáveis globalmente, o que torna as atualizações do MRTK desafiadoras (isso pode levar a conflitos de mesclagem na própria estrutura)
+**Bloquear perfis do SDK** – se isso estiver desabilitado, os perfis de MRTK padrão serão editados globalmente, o que fará com que as atualizações do MRTK sejam desafiadoras (pode levar a uma mescla de conflitos na própria estrutura)
 
-**Ignorar o configurador** de projeto do MRTK – se isso estiver desabilitado, o configurador de projeto mostrará se as configurações atuais do MRTK não corresponderem aos padrões recomendados do MRTK. Como seu projeto pode ter optado explicitamente por não ter algumas configurações habilitadas, ter essa configuração marcada impedirá que outros colaboradores vejam essa caixa de diálogo alterando as configurações inadvertidamente. Essas configurações devem ser definidas pela pessoa que está configurando o projeto e, em seguida, ignorada pelos outros colaboradores.
+**Ignorar configurador de projeto MRTK** -se estiver desabilitado, o configurador de projeto mostrará se as configurações de MRTK atuais não corresponderem aos padrões recomendados MRTK. Como seu projeto pode ter optado explicitamente por não ter algumas configurações habilitadas, ter essa configuração marcada impedirá que outros colaboradores vejam essa caixa de diálogo para alterar as configurações de forma inadvertida. Essas configurações devem ser definidas pela pessoa que está configurando o projeto e, em seguida, ignorada pelos outros colaboradores.
 
 **Habilitar automaticamente as funcionalidades de UWP** -se isso estiver desabilitado, determinada funcionalidade (por exemplo, acompanhamento de olho) poderá falhar silenciosamente quando implantada em um dispositivo, porque o Unity não adicionará automaticamente os recursos de tempo de execução necessários ao manifesto do aplicativo. Ter essa configuração marcada protegerá sua experiência de implantação de aplicativo dessa classe de problemas.

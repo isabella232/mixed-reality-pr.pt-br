@@ -1,18 +1,18 @@
 ---
-title: Visão geral do serviço de física
+title: Mão do serviço de física
 description: documentação para usar o serviço de extensão de física manual no MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 751aec148d3a40da4728d2fdd60a60402b59a4de
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145087"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176249"
 ---
-# <a name="hand-physics-extension-service"></a>Serviço de extensão de física manual
+# <a name="hand-physics-service"></a>Mão do serviço de física
 
 ![Serviço de extensão de física manual](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 
@@ -38,18 +38,18 @@ Controla qual pré-fabricado é instanciado em mãos. Para que o serviço funcio
 - Um colisor
 - componente `JointKinematicBody`
 
-### <a name="use-palm-kinematic-body"></a>Usar o corpo kinematic da mão
+### <a name="use-palm-kinematic-body"></a>Usar o corpo do Palm cinemática
 
-Controla se o serviço tentará insinuar um pré-fab na junção da mão.
+Controla se o serviço tentará criar uma instância de um pré-fabricado no conjunto de Palm.
 
-### <a name="palm-kinematic-body-prefab"></a>Pré-fab de corpo kinematic da mão
+### <a name="palm-kinematic-body-prefab"></a>Pré-fabricado do corpo de Palm cinemática
 
-Quando `UsePalmKinematicBody` está habilitado, esse é o pré-fab que ele insinuou. Assim como `FingerTipKinematicBodyPrefab` , esse pré-fab requer:
+Quando `UsePalmKinematicBody` está habilitado, esse é o pré-fabricado que ele criará. Assim como `FingerTipKinematicBodyPrefab` , esse pré-fabricado requer:
 
-- Um componente rigidbody, com isKinematic habilitado
+- Um componente rigidbody, com iscinemática habilitada
 - Um colisor
 - componente `JointKinematicBody`
 
 ## <a name="how-to-use-the-service"></a>Como usar o serviço
 
-Uma vez habilitado, use a propriedade de qualquer colisor para receber eventos de colisão de todos os 10 dígitos (e as mãos, se eles `IsTrigger` estão habilitados).
+Uma vez habilitado, use `IsTrigger` a propriedade do colisor para receber eventos de colisão de todos os 10 dígitos (e Palms, se estiverem habilitados).

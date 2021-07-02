@@ -1,154 +1,154 @@
 ---
-title: Serviços de simulação de entrada
+title: Serviço de simulação de entrada
 description: Documentação sobre o serviço de simulação de entrada no MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 5420f3f2d20d07585007a58f5cf70d8e2027efc6
-ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
+ms.openlocfilehash: 66b79c14bbd0ea8c188aba684b9bd1034de31bf9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588840"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176966"
 ---
 # <a name="input-simulation-service"></a>Serviço de simulação de entrada
 
-![Simulação de entrada MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
+![Simulação de entrada do MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 
-Com a simulação de entrada do MRTK, você pode testar vários tipos de interações no editor do Unity sem compilar e implantar em um dispositivo. Isso permite que você itere rapidamente suas ideias no processo de design e desenvolvimento. Use combinações de teclado e mouse para controlar as entradas simuladas.
+Com a simulação de entrada do MRTK, você pode testar vários tipos de interações no editor do Unity sem criar e implantar em um dispositivo. Isso permite iterar rapidamente suas ideias no processo de design e desenvolvimento. Use combinações de teclado e mouse para controlar entradas simuladas.
 
-O serviço de simulação de entrada emula o comportamento de dispositivos e plataformas que podem não estar disponíveis no editor do Unity. Os exemplos incluem:
+O Serviço de Simulação de Entrada emula o comportamento de dispositivos e plataformas que podem não estar disponíveis no editor do Unity. Os exemplos incluem:
 
-* Rastreamento de cabeça do dispositivo HoloLens ou VR
-* Gestos do HoloLens Hand
-* Acompanhamento de mão articulada 2 do HoloLens
-* Acompanhamento de olho do HoloLens 2
+* HoloLens ou controle de cabeça do dispositivo VR
+* HoloLens gestos de mão
+* HoloLens 2 acompanhamento de mão articulado
+* HoloLens acompanhamento ocular 2
 * Controladores de dispositivo VR
 
 > [!WARNING]
-> Isso não funciona ao usar o modo de emulação de > de emulação de Holographic do Unity = "simular no editor". A simulação no editor do Unity assumirá o controle da simulação de entrada do MRTK. Para usar o serviço de simulação de entrada do MRTK, você precisará definir a emulação de Holographic de XR para o modo de emulação = *"nenhum"*
+> Isso não funciona ao usar a Emulação Holográfica XR do Unity > Modo de Emulação = "Simular no Editor". A simulação no editor do Unity assumirá o controle da simulação de entrada do MRTK. Para usar o serviço de simulação de entrada do MRTK, você precisará definir a Emulação Holográfica do XR para o Modo de Emulação = *"Nenhum"*
 
 ## <a name="how-to-use-mrtk-input-simulation"></a>Como usar a simulação de entrada do MRTK 
 
-A simulação de entrada é habilitada por padrão nos perfis fornecidos com MRTK. Você pode simplesmente clicar no botão **executar** para executar a cena com suporte à simulação de entrada.
+A simulação de entrada é habilitada por padrão nos perfis que são fornecidas com o MRTK. Você pode simplesmente clicar **no botão Reproduzir** para executar a cena com suporte à simulação de entrada.
 
-* Pressione **W, A, S, D, Q e** as teclas e para mover a câmera.
-* Mantenha o **botão direito do mouse** e mova o mouse para examinar.
-* Para exibir as mãos simuladas, pressione a **barra de espaço (à direita)** ou a **tecla SHIFT esquerda (à esquerda)**
-* Para manter as mãos simuladas na exibição, pressione **T** ou a tecla **Y**
-* Para girar as mãos simuladas, pressione e segure a **tecla CTRL** e mova o mouse
+* Pressione **as teclas W, A, S, D, Q, E** para mover a câmera.
+* Mantenha o **botão direito do mouse** pressionado e mova o mouse para dar uma olhada.
+* Para abrir as mãos simuladas, pressione Barra **de espaço (mão direita)** ou **Tecla shift esquerda (mão esquerda)**
+* Para manter as mãos simuladas na exibição, pressione **a tecla T** ou **Y**
+* Para girar as mãos simuladas, pressione e mantenha pressionada a **tecla Ctrl e** mova o mouse
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
 
-## <a name="in-editor-input-simulation-cheat-sheet"></a>Na folha de consulta de simulação de entrada do editor
+## <a name="in-editor-input-simulation-cheat-sheet"></a>Folha de ida e saída da simulação de entrada do editor
 
-Pressione **Ctrl + H** na cena HandInteractionExamples para abrir uma folha de consulta com controles de simulação de entrada.
+Pressione **Ctrl esquerdo + H** na cena HandInteractionExamples para abrir uma folha de reprodução com controles de simulação de entrada.
 
-> ![Roteiro de MRTK de simulação de entrada](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+> ![Folha de dados de simulação de entrada do MRTK](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
 
 
 ## <a name="enabling-the-input-simulation-service"></a>Habilitando o serviço de simulação de entrada
 
-Na configuração do provedor de dados do sistema de entrada, o serviço de simulação de entrada pode ser configurado com o seguinte.
+Na configuração do provedor de dados do sistema de entrada, o serviço de Simulação de Entrada pode ser configurado com o seguinte.
 
-* O **tipo** deve ser *Microsoft. MixedReality. Toolkit. Input > InputSimulationService*.
-* As **plataformas com suporte** por padrão incluem todas as plataformas do *Editor* , já que o serviço usa teclado e entrada do mouse.
+* **O** tipo deve *ser Microsoft.MixedReality.Toolkit. Entrada > InputSimulationService*.
+* **As plataformas com suporte por** padrão incluem todas as plataformas *do Editor,* pois o serviço usa a entrada do teclado e do mouse.
 
 > [!NOTE]
-> O serviço de simulação de entrada pode ser usado em outros pontos de extremidade de plataforma, como autônomo, alterando a propriedade de **plataforma (s) com suporte** para incluir os destinos desejados.
+> O serviço de Simulação de Entrada pode ser usado em outros pontos de extremidade de plataforma, como autônomos, alterando a propriedade **Plataformas** com Suporte para incluir os destinos desejados.
 > <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
 
 ## <a name="camera-control"></a>Controle de câmera
 
-A movimentação de cabeçalho pode ser emulada pelo serviço de simulação de entrada.
+O movimento de cabeça pode ser emulado pelo Serviço de Simulação de Entrada.
 
-### <a name="rotating-the-camera"></a>Girando a câmera
+### <a name="rotating-the-camera"></a>Girar a câmera
 
-1. Passe o mouse sobre a janela do editor do visor.
-    *Talvez seja necessário clicar na janela para dar um foco de entrada se os pressionamentos de botão não funcionarem.*
-1. Pressione e segure o **botão de aparência do mouse** (padrão: botão direito do mouse).
-1. Mova o mouse na janela do visor para girar a câmera.
-1. Use a roda de rolagem para rolar a câmera pela direção da exibição.
+1. Passe o mouse sobre a janela do editor do viewport.
+    *Talvez seja necessário clicar na janela para dar a ela o foco de entrada se as teclas de botão não funcionarem.*
+1. Pressione e mantenha pressionado o **Botão de Aparência do Mouse** (padrão: botão direito do mouse).
+1. Mova o mouse na janela do viewport para girar a câmera.
+1. Use a roda de rolagem para rolar a câmera em torno da direção da exibição.
 
-A velocidade de rotação da câmera pode ser configurada alterando a configuração de **velocidade de aparência do mouse** no perfil de simulação de entrada.
+A velocidade de rotação da câmera pode ser configurada alterando a **configuração Velocidade** de Aparência do Mouse no perfil de simulação de entrada.
 
-Como alternativa, use a aparência **horizontal** / com eixos **verticais** para girar a câmera (padrão: Game Controller Right Thumbstick).
+Como alternativa, use os eixos Vertical de Aparência **Horizontal** para girar a câmera (padrão: miniatura direita do /  controlador de jogo).
 
 ### <a name="moving-the-camera"></a>Movimentação da câmera
 
-Use os eixos verticais mover **horizontalmente** /  para mover a câmera (padrão: WASD chaves ou controlador de jogo para a esquerda Thumbstick).
+Use os **eixos Mover** / **Horizontalmente Verticalmente** para mover a câmera (padrão: chaves WASD ou o controle de jogo à esquerda).
 
-A posição da câmera e os ângulos de rotação também podem ser definidos explicitamente na janela ferramentas. A câmera pode ser redefinida para o padrão usando o botão **Redefinir** .
+Os ângulos de posição e rotação da câmera também podem ser definidos explicitamente na janela de ferramentas. A câmera pode ser redefinida para seu padrão usando o **botão Redefinir.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="controller-simulation"></a>Simulação de controlador
+## <a name="controller-simulation"></a>Simulação do controlador
 
-A simulação de entrada dá suporte a dispositivos de controlador emulados (ou seja, controladores de movimento e mãos). Esses controladores virtuais podem interagir com qualquer objeto que ofereça suporte a controladores regulares, como botões ou objetos que podem ser capturados.
+A simulação de entrada dá suporte a dispositivos controladores emulados (ou seja, controladores de movimento e mãos). Esses controladores virtuais podem interagir com qualquer objeto que dá suporte a controladores regulares, como botões ou objetos que podem ser capturados.
 
 ### <a name="controller-simulation-mode"></a>Modo de simulação do controlador
 
-Na [janela ferramentas de simulação de entrada](#input-simulation-tools-window) , a configuração do modo de simulação do **controlador padrão** alterna entre três modelos de entrada distintos. Esse modo padrão também pode ser definido no perfil de simulação de entrada.
+Na janela ferramentas [de simulação de entrada,](#input-simulation-tools-window) a **configuração Modo de** Simulação do Controlador Padrão alterna entre três modelos de entrada distintos. Esse modo padrão também pode ser definido no perfil de simulação de entrada.
 
-* *Mãos articuladas*: simula um dispositivo de mão totalmente articulado com dados de posição conjunta.
+* *Mãos articuladas:* simula um dispositivo de mão totalmente articulado com dados de posição conjunta.
 
-   Emula o modelo de interação do HoloLens 2.
+   Emula HoloLens modelo de interação 2.
 
-   As interações que se baseiam no posicionamento preciso da mão ou usam o toque podem ser simuladas nesse modo.
+   As interações baseadas no posicionamento preciso da mão ou no toque de uso podem ser simuladas nesse modo.
 
-* *Gestos de mão*: simula um modelo de mão simplificado com toque de ar e gestos básicos.
+* *Gestos de mão:* simula um modelo de mão simplificado com toque de ar e gestos básicos.
 
-   Emula o [modelo de interação do HoloLens](/windows/mixed-reality/gestures).
+   Emula HoloLens [de interação.](/windows/mixed-reality/gestures)
 
-   O foco é controlado usando o ponteiro olhar. O gesto de *toque do ar* é usado para interagir com botões.
+   O foco é controlado usando o ponteiro De foco. O *gesto de toque* de ar é usado para interagir com botões.
 
-* *Controlador de movimento*: simula um controlador de movimento usado com headsets VR que funciona de forma semelhante a interações com mãos articuladas.
+* *Controlador de Movimento:* simula um controlador de movimento usado com headsets vr que funciona de forma semelhante a interações distantes com mãos articuladas.
 
-   Emula o headset de VR com o modelo de interação de controladores.
+   Emula o headset VR com o modelo de interação de controladores.
 
-   O gatilho, as teclas de captura e de menu são simuladas por meio de entrada de teclado e mouse.
+   As teclas de gatilho, de captura e de menu são simuladas por meio da entrada do teclado e do mouse.
 
 ### <a name="simulating-controller-movement"></a>Simulando a movimentação do controlador
 
-Pressione e segure a **tecla de manipulação do controlador à esquerda/direita** (padrão: *deslocamento à* esquerda para o controlador esquerdo e o *espaço* para o controlador direito) para obter o controle de qualquer controlador. Enquanto a tecla de manipulação for pressionada, o controlador aparecerá no visor. Depois que a chave de manipulação for liberada, os controladores desaparecerão após um curto **tempo limite de ocultar controlador**.
+Pressione e mantenha pressionada a Tecla de Manipulação do  Controlador **esquerdo/direito** (padrão:  Deslocamento para a esquerda para o controlador esquerdo e Espaço para o controlador direito) para obter controle de qualquer controlador. Enquanto a tecla de manipulação é pressionada, o controlador aparecerá no viewport. Depois que a chave de manipulação for liberada, os controladores desaparecerão depois de um curto Tempo de O tempo **de ocultação do controlador.**
 
-Os controladores podem ser ativados e congelados em relação à câmera na [janela ferramentas de simulação de entrada](#input-simulation-tools-window) ou pressionando a **tecla ativar/desativar chave do controlador** (padrão: *T* para esquerda e *Y* para direita). Pressione a tecla de alternância novamente para ocultar os controladores novamente. Para manipular os controladores, a **chave de manipulação do controlador à esquerda/direita** precisa ser mantida. Tocar duas vezes na **tecla de manipulação do controlador à esquerda/direita** também pode ativar/desativar os controladores.
+Os controladores podem ser alternados e congelados em relação à câmera na janela de ferramentas de simulação de entrada ou pressionando a tecla Alternar Para a **esquerda/direita** do controlador (padrão: [](#input-simulation-tools-window) *T* para a esquerda e *Y* para a direita). Pressione a tecla de alternância novamente para ocultar os controladores novamente. Para manipular os controladores, a chave de manipulação do controlador **esquerdo/direito** precisa ser mantida. Tocar duas vezes **na Tecla de Manipulação do** Controlador Para a Esquerda/Direita também pode alternar os controladores para cima/para fora.
 
-O movimento do mouse moverá o controlador no plano de exibição. Os controladores podem ser movidos mais ou mais perto da câmera usando a **roda do mouse**.
+O movimento do mouse move o controlador no plano de exibição. Os controladores podem ser movidos para mais ou mais perto da câmera usando a roda **do mouse**.
 
-Para girar os controladores usando o mouse, mantenha a **tecla de manipulação do controlador à esquerda/direita** (*deslocamento à esquerda* ou o *espaço*) *e* o **botão de rotação do controlador** (padrão: botão *CTRL esquerda* ) e, em seguida, mova o mouse para girar o controlador. A velocidade de rotação do controlador pode ser configurada alterando a configuração de **velocidade de rotação do controlador do mouse** no perfil de simulação de entrada.
+Para girar controladores usando o mouse, mantenha a Tecla de Manipulação do Controlador **esquerdo/direito** *(Deslocamento* à Esquerda ou Espaço) e o Botão Girar do Controlador **(padrão:** botão *Ctrl* à Esquerda) e mova o mouse para girar o controlador.   A velocidade de rotação do controlador pode ser configurada alterando a configuração Velocidade de Rotação do Controlador do **Mouse** no perfil de simulação de entrada.
 
-Todo o posicionamento manual também pode ser alterado na [janela ferramentas de simulação de entrada](#input-simulation-tools-window), incluindo redefinição de mãos para padrão.
+Todo o posicionamento de mão também pode ser alterado na janela [de ferramentas de simulação de entrada](#input-simulation-tools-window), incluindo a redefinição de mãos para o padrão.
 
 ### <a name="additional-profile-settings"></a>Configurações de perfil adicionais
 
-* O **multiplicador de profundidade do controlador** controla a sensibilidade da movimentação de profundidade da roda de rolagem do mouse. Um número maior acelerará o zoom do controlador.
-* A **distância do controlador padrão** é a distância inicial dos controladores da câmera. Clicar nos controladores de botão **Redefinir** também irá posicionar os controladores nessa distância.
-* O **valor de Tremulação do controlador** adiciona movimento aleatório aos controladores. Esse recurso pode ser usado para simular o controle de controlador impreciso no dispositivo e garantir que as interações funcionem bem com entradas ruidosas.
+* **O Multiplicador de Profundidade do Controlador** controla a sensibilidade do movimento de profundidade da roda de rolagem do mouse. Um número maior acelerará o zoom do controlador.
+* **A distância padrão do** controlador é a distância inicial dos controladores da câmera. Clicar nos **controladores** de botão Redefinir também colocará os controladores a essa distância.
+* **A Quantidade de Tremeia** do Controlador adiciona movimento aleatório aos controladores. Esse recurso pode ser usado para simular o acompanhamento impreciso do controlador no dispositivo e garantir que as interações funcionem bem com entrada com barulhento.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="hand-gestures"></a>Gestos de mão
 
-Gestos de mão como pinçagem, captura, investigar, etc. também podem ser simulados.
+Gestos de mão, como pinçar, segurar, a pinçar etc. também podem ser simulados.
 
-1. Habilitar o controle de mão usando a **tecla de manipulação do controlador à esquerda/direita** (*deslocamento à esquerda* ou *espaço*)
+1. Habilitar o controle de mão usando a tecla de manipulação do **controlador esquerdo/direito** (*deslocamento à esquerda* ou *espaço*)
 
-2. Durante a manipulação, pressione e mantenha pressionado um botão do mouse para executar um gesto de mão.
+2. Ao manipular, pressione e segure um botão do mouse para executar um gesto de mão.
 
-Cada um dos botões do mouse pode ser mapeado para transformar a forma mão em um gesto diferente usando as configurações de *gesto esquerdo/médio/direito do mouse* . O *gesto de mão padrão* é a forma da mão quando nenhum botão é pressionado.
+Cada um dos botões do mouse pode ser mapeado para transformar a forma da mão em um gesto diferente usando as configurações de Gesto da Mão *esquerda/intermediária/direita* do mouse. O *Gesto de Mão* Padrão é a forma da mão quando nenhum botão é pressionado.
 
 > [!NOTE]
-> O gesto de *pinçar* é o único gesto que executa a ação "selecionar" neste ponto.
+> O *gesto de* pinçar é o único gesto que executa a ação "Selecionar" neste ponto.
 
-### <a name="one-hand-manipulation"></a>Manipulação unidirecional
+### <a name="one-hand-manipulation"></a>Manipulação de uma mão
 
-1. Pressione e mantenha a **tecla de manipulação da controladora esquerda/direita** (*SHIFT esquerda* ou *espaço*)
-2. Ponto no objeto
-3. Mantenha o botão do mouse para pinçar
+1. Pressione e mantenha **pressionada a tecla de manipulação do controlador esquerdo/direito** *(deslocamento à esquerda* ou *espaço)*
+2. Objeto ponto a ponto
+3. Mantenha o botão do mouse pressionado para pinçar
 4. Use o mouse para mover o objeto
-5. Solte o botão do mouse para parar a interação
+5. Liberar o botão do mouse para interromper a interação
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -156,7 +156,7 @@ Cada um dos botões do mouse pode ser mapeado para transformar a forma mão em u
 
 Para manipular objetos com duas mãos ao mesmo tempo, o modo de mão persistente é recomendado.
 
-1. Ative as duas mãos pressionando as teclas de alternância (*T/Y*).
+1. Alterne em ambas as mãos pressionando as teclas de alternância (*T/Y*).
 1. Manipule uma mão por vez:
     1. Mantenha **espaço** para controlar a mão direita
     1. Mover a mão para onde você deseja obter o objeto
@@ -190,11 +190,11 @@ Além disso, você pode usar as mãos simuladas para a interação GGV
 
 ### <a name="raising-teleport-events"></a>Gerando eventos teleport
 
-Para gerar o evento teleport na simulação de entrada, defina as configurações de gesto da mão no perfil de simulação de entrada para que um execute o gesto de **início teleport** enquanto o outro executa o gesto de **término teleport** . O gesto de **início de teleport** abrirá o ponteiro teleport, enquanto o Gesure **teleport end** concluirá a ação teleport e moverá o usuário.
+para gerar o evento teleport na simulação de entrada, configure o gesto de mão Configurações no perfil de simulação de entrada para que um execute o gesto de **início teleport** enquanto o outro executa o gesto de **término teleport** . O gesto de **início de teleport** abrirá o ponteiro teleport, enquanto o Gesure **teleport end** concluirá a ação teleport e moverá o usuário.
 
 A posição y de seu teleport resultante depende do deslocamento da câmera ao longo do eixo y. No editor, isso é 0 por padrão. portanto, use as teclas **Q** e **e** para ajustá-la à altura apropriada.
 
-![Configurações de teleport de simulação de entrada](../images/input-simulation/InputSimulationTeleport.gif)
+![Configurações de simulação de entrada Teleport](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### <a name="motion-controller-interaction"></a>Interação do controlador de movimento
 
@@ -206,7 +206,7 @@ A [simulação de acompanhamento de olho](../input/eye-tracking/eye-tracking-bas
 
 ## <a name="input-simulation-tools-window"></a>Janela de ferramentas de simulação de entrada
 
-Habilite a janela ferramentas de simulação de entrada do menu de simulação de entrada do kit de ferramentas da **realidade misturada**  >    >    >   . Esta janela fornece acesso ao estado da simulação de entrada durante o modo de reprodução.
+habilite a janela ferramentas de simulação de entrada do menu de simulação de entrada da **realidade misturada**  >  **Toolkit**  >  **Utilities**  >   . Esta janela fornece acesso ao estado da simulação de entrada durante o modo de reprodução.
 
 ## <a name="viewport-buttons-optional"></a>Botões do visor (opcional)
 

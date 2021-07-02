@@ -1,16 +1,16 @@
 ---
-title: Visão geral do serviço de transição de cena
+title: Serviço de transição de cena
 description: documentação da Transição de Cena no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, SceneTransition,
-ms.openlocfilehash: 5ea76b572b3cddc097e8266d3c31f152b63a13aa
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b645012a055f693fdac794b79e24fd20154fdb65
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144281"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176212"
 ---
 # <a name="scene-transition-service"></a>Serviço de transição de cena
 
@@ -36,32 +36,32 @@ Se marcada, o serviço de transição aplicará um esmaeçando durante a transi�
 
 Controla a cor do efeito de esmaecer. Alfa é ignorado. Essa configuração pode ser alterada em runtime antes de uma transição por meio da propriedade do `FadeColor` serviço.
 
-### <a name="fade-targets"></a>Desbotar destinos
+### <a name="fade-targets"></a>Destinos de esmaeçamento
 
-Controla quais câmeras terão um efeito de esmaecimento aplicado a elas. Essa configuração pode ser alterada em tempo de execução por meio da Propriedade do serviço `FadeTargets` .
+Controla quais câmeras terão um efeito de esmaeamento aplicado a elas. Essa configuração pode ser alterada em runtime por meio da propriedade do `FadeTargets` serviço.
 
-Configuração | Câmeras de destino
+Configuração | Câmeras direcionadas
 --- | --- | ---
-Principal | Aplica o efeito de esmaecimento à câmera principal.
-Interface do usuário | Aplica o efeito de esmaecimento a câmeras na camada de interface do usuário. (Não afeta a sobreposição da interface do usuário)
-Todos | Aplica-se às câmeras principal e da interface do usuário.
-Personalizado | Aplica-se a um conjunto personalizado de câmeras fornecidas por meio do `SetCustomFadeTargetCameras`
+Principal | Aplica o efeito de esmaecer à câmera principal.
+Interface do usuário | Aplica o efeito de esmaecer às câmeras na camada da interface do usuário. (Não afeta a interface do usuário de sobreposição)
+Todos | Aplica-se a câmeras principais e de interface do usuário.
+Personalizado | Aplica-se a um conjunto personalizado de câmeras fornecido por meio de `SetCustomFadeTargetCameras`
 
-### <a name="fade-out-time--fade-in-time"></a>Fade out do tempo/esmaecimento no tempo
+### <a name="fade-out-time--fade-in-time"></a>Esmaeça o tempo/esmaeça no tempo
 
-Configurações padrão para a duração de um fade ao entrar/sair de uma transição. Essas configurações podem ser alteradas em tempo de execução por meio das `FadeOutTime` Propriedades e do serviço `FadeInTime` .
+Configurações padrão para a duração de um esmaeçamento ao entrar/sair de uma transição. Essas configurações podem ser alteradas em runtime por meio das propriedades `FadeOutTime` e do `FadeInTime` serviço.
 
-### <a name="camera-fader-type"></a>Tipo de Fader da câmera
+### <a name="camera-fader-type"></a>Tipo de esmaeçador de câmera
 
-Qual `ICameraFader` classe usar para aplicar um efeito de esmaecimento a câmeras. A `CameraFaderQuad` classe padrão instancia um quad com um material transparente na frente da câmera de destino perto do plano de corte. Outra abordagem pode ser usar um sistema de efeitos de postagem.
+Qual `ICameraFader` classe usar para aplicar um efeito de esmaecer às câmeras. A classe padrão instalita um quad com um material transparente na frente da `CameraFaderQuad` câmera de destino perto do plano de clipe. Outra abordagem pode ser usar um sistema de pós-efeitos.
 
 ## <a name="using-the-extension"></a>Usar a extensão
 
-Você usa o serviço de transição passando tarefas que são executadas enquanto a câmera está desbotada.
+Use o serviço de transição passando Tarefas que são executadas enquanto a câmera fica esbotada.
 
 ### <a name="using-scene-system-tasks"></a>Usando tarefas do sistema de cena
 
-Na maioria dos casos, você usará as tarefas fornecidas pelo serviço SceneSystem:
+Na maioria dos casos, você estará usando tarefas fornecidas pelo serviço SceneSystem:
 
 ```c#
 private async void TransitionToScene()
@@ -173,9 +173,9 @@ private async Task FadeAudio(float targetVolume, float duration)
 
 ## <a name="using-the-progress-indicator"></a>Usando o indicador de progresso
 
-Um indicador de progresso é qualquer coisa que implemente a `IProgressIndicator` interface. Isso pode assumir a forma de uma tela inicial, um indicador de carregamento de que 3D ou qualquer outra coisa que forneça comentários sobre o progresso da transição.
+Um indicador de progresso é qualquer coisa que implementa a `IProgressIndicator` interface . Isso pode assumir a forma de uma tela inicial, um indicador de carregamento 3D tagalong ou qualquer outra coisa que fornece comentários sobre o progresso da transição.
 
-Se `UseDefaultProgressIndicator` o for verificado no perfil SceneTransitionService, um indicador de progresso será instanciado quando uma transição for iniciada. Para a duração da transição, esse indicador `Progress` e `Message` as propriedades podem ser acessados por meio desse serviço `SetProgressValue` e `SetProgressMessage` métodos.
+Se `UseDefaultProgressIndicator` estiver marcado no perfil SceneTransitionService, um indicador de progresso será instariado quando uma transição for iniciada. Durante a transição, as propriedades e desse indicador podem ser acessadas por meio dos `Progress` `Message` métodos e desse `SetProgressValue` `SetProgressMessage` serviço.
 
 ```c#
 private async void TransitionToScene()
@@ -212,4 +212,4 @@ private async void ListenToSceneTransition(IMixedRealitySceneSystem sceneSystem,
 }
 ```
 
-Como alternativa, ao chamar, `DoSceneTransition` você pode fornecer seu próprio indicador de progresso por meio do `progressIndicator` argumento opcional. Isso substituirá o indicador de progresso padrão.
+Como alternativa, ao `DoSceneTransition` chamar, você pode fornecer seu próprio indicador de progresso por meio do argumento `progressIndicator` opcional. Isso substituirá o indicador de progresso padrão.

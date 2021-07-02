@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 1adf4d1d70313c917d63224b91a14d995d1888c1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6e57a76d54d0f3f63ce8dcb80582e178effa39d9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145003"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176380"
 ---
 # <a name="proximity-light"></a>Luz de proximidade
 
 Um é um Sistema Fluent Design paradigma que imita uma "luz de ponto inverso do gradiente" que se aproxima da [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) superfície de um objeto. [](https://www.microsoft.com/design/fluent/) Geralmente usado para interações próximas, o aplicativo pode controlar as propriedades de uma Luz de Proximidade por meio do [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) componente.
 
-Para que um material seja influenciado por um sombreador Standard/Kit de Ferramentas de Realidade Misturada deve ser usado e a propriedade Luz de Proximidade [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) deve ser  habilitada. 
+Para que um material seja influenciado por um sombreador de Toolkit/Standard deve ser usado e a propriedade Luz de Proximidade [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) deve ser  habilitada. 
 
 > [!NOTE]
 > Há suporte [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) para até dois por padrão.

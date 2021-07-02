@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 83797a9d6d465a150406b27162a5e84c157567f1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 4be9a58c7d63ab3bc93bcc326a90260cf6a3366b
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143547"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176610"
 ---
 # <a name="extension-service-creation-wizard"></a>Assistente para criação de serviço de extensão
 

@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: ad4a643d0fb46cdb15cee3c37edaffb4f51ed44b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f53932b5e12e60b3638c1d6c31e569016de983ee
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145267"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176755"
 ---
 # <a name="input-providers"></a>Provedores de entrada
 
-Os provedores de entrada são registrados no **Perfil de Provedores de Serviços Registrados**, encontrado no componente Kit de Ferramentas de Realidade Misturada:
+Os provedores de entrada são registrados no **Perfil de Provedores de Serviços Registrados**, encontrado no componente Toolkit Mixed Reality:
 
 <img src="../images/input/RegisteredServiceProviders.PNG" width="650px" style="display:block;" alt="Service providers">
 

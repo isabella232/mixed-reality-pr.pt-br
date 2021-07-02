@@ -5,14 +5,14 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Câmera,
-ms.openlocfilehash: e3b7caacaa9baa67fd81f6d32f3fd8c9f123e66d
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: cfb40b00d81133ad40e0e4d7a7b2ad87ee645e36
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121284"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177040"
 ---
-# <a name="camera-system"></a>Sistema de câmeras
+# <a name="camera-system-overview"></a>Visão geral do sistema de câmeras
 
 O sistema de câmeras permite que o Microsoft Mixed Reality Toolkit configure e otimize a câmera do aplicativo para uso em aplicativos de realidade misturada. Usando o sistema de câmeras, os aplicativos podem ser escritos para dar suporte a dispositivos opacos (por exemplo: realidade virtual) e transparentes (por exemplo: Microsoft HoloLens) sem a necessidade de escrever código para distinguir e acomodar cada tipo de exibição.
 
@@ -40,20 +40,20 @@ As etapas a seguir presumem o uso do objeto MixedRealityToolkit. As etapas neces
 
 ## <a name="configuring-the-camera-system"></a>Configurando o sistema de câmeras
 
-### <a name="settings-providers"></a>Provedores de configurações
+### <a name="settings-providers"></a>Configurações provedores
 
-![Provedores de configurações de câmera](../images/camera-system/CameraSettingsProviders.png)
+![Provedores Configurações câmera](../images/camera-system/CameraSettingsProviders.png)
 
 Os provedores de configuração de câmera habilitam a configuração específica da plataforma da câmera. Essas configurações podem incluir etapas de configuração personalizadas e/ou componentes.
 
-Os provedores podem ser adicionados clicando no botão Adicionar Provedor **de Configurações de** Câmera. Eles podem ser removidos clicando **-** no botão à direita do nome do provedor.
+Os provedores podem ser adicionados clicando no **botão Adicionar Câmera Configurações Provedor.** Eles podem ser removidos clicando **-** no botão à direita do nome do provedor.
 
 > [!Note]
 > Nem todas as plataformas exigirão um provedor de configurações de câmera. Se não houver provedores compatíveis com a plataforma na qual o aplicativo está sendo executado, o Microsoft Mixed Reality Toolkit aplicará padrões básicos.
 
 ### <a name="display-settings"></a>Configurações de vídeo
 
-![Configurações de exibição da câmera](../images/camera-system/CameraDisplaySettings.png)
+![Exibição da câmera Configurações](../images/camera-system/CameraDisplaySettings.png)
 
 As configurações de exibição são especificadas para exibições opacas (por exemplo: Realidade Virtual) e transparentes (por exemplo, Microsoft HoloLens). A câmera é configurada, em tempo de executar, usando essas configurações.
 
@@ -80,4 +80,4 @@ O valor de configurações de qualidade indica a qualidade dos gráficos que o U
 ## <a name="see-also"></a>Confira também
 
 - [Documentação da API do Sistema de Câmera](xref:Microsoft.MixedReality.Toolkit.CameraSystem)
-- [Criando um provedor de configurações de câmera](create-settings-provider.md)
+- [Criando um provedor de Configurações câmera](create-settings-provider.md)

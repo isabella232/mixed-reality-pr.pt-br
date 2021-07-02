@@ -5,17 +5,17 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 536a37b56b4c7de9875ce1e1642922bd363fecb1
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562486"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177514"
 ---
-# <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Notas de versão do Microsoft Mixed Reality Toolkit 2,5
+# <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>notas de versão do Microsoft Mixed reality Toolkit 2,5
 
 > [!IMPORTANT]
-> Há um problema de compilador conhecido que afeta os aplicativos criados para o Microsoft HoloLens 2 usando o ARM64. Esse problema é corrigido com a atualização do Visual Studio 2019 para a versão 16,8 ou posterior. Se não for possível atualizar o Visual Studio, importe o `com.microsoft.mixedreality.toolkit.tools` pacote para aplicar uma solução alternativa.
+> há um problema de compilador conhecido que afeta os aplicativos criados para Microsoft HoloLens 2 usando ARM64. esse problema é corrigido atualizando Visual Studio 2019 para a versão 16,8 ou posterior. se não for possível atualizar Visual Studio, importe o `com.microsoft.mixedreality.toolkit.tools` pacote para aplicar uma solução alternativa.
 
 ## <a name="whats-new-in-254"></a>O que há de novo no 2.5.4
 
@@ -25,7 +25,7 @@ Ao usar UPM, o OculusXRSDKDeviceManagerProfile sempre teria seu [pré-fabricados
 
 ### <a name="fixes-an-issue-with-openxr-via-upm"></a>Corrige um problema com o OpenXR via UPM
 
-Corrige um problema em que os provedores de OpenXR não foram adicionados ao link.xml por padrão, fazendo com que novos projetos falhem na execução no dispositivo ao usar OpenXR e MRTK por meio do Gerenciador de pacotes do Unity. Os projetos existentes que são atualizados ainda precisarão ser adicionados manualmente.
+corrige um problema em que os provedores de OpenXR não foram adicionados ao link.xml por padrão, fazendo com que novos projetos falhem na execução no dispositivo ao usar OpenXR e MRTK por meio do Gerenciador de Pacotes do Unity. Os projetos existentes que são atualizados ainda precisarão ser adicionados manualmente.
 
 ## <a name="whats-new-in-253"></a>O que há de novo no 2.5.3
 
@@ -47,15 +47,15 @@ Foi adicionado o suporte inicial para o pacote de visualização do OpenXR da Un
 
 As visualizações de limite, como o piso ou as paredes, agora serão configuradas e visíveis corretamente em tempo de execução de acordo com o perfil de limite.
 
-### <a name="msbuild-for-unity-support"></a>Suporte do MSBuild para Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild para suporte do Unity
 
-O suporte para MSBuild para Unity foi removido da versão 2.5.2, para se alinhar com a [nova orientação de pacote do Unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
+o suporte para MSBuild para Unity foi removido da versão 2.5.2, para se alinhar com a [nova orientação de pacote do Unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
 
 ## <a name="whats-new-in-251"></a>O que há de novo na 2.5.1
 
 ### <a name="package-dependency-errors-fixed"></a>Erros de dependência de pacote corrigidos
 
-Esta versão corrige dependências de arquivo entre pacotes incorretas (por exemplo: arquivos em ativos padrão não referenciam mais arquivos na base). A versão 2.5.1 também adiciona uma dependência explícita no Text mesh pro.
+Esta versão corrige dependências de arquivo entre pacotes incorretas (por exemplo: arquivos em ativos padrão não referenciam mais arquivos na base). A versão 2.5.1 também adiciona uma dependência explícita na Pro de malha de texto.
 
 ### <a name="standard-assets-package-shaders-copied-to-assetsmrtkshaders"></a>Sombreadores de pacote de ativos padrão copiados para ativos/MRTK/sombreadores
 
@@ -67,14 +67,14 @@ Esta versão corrige um [problema](https://github.com/microsoft/MixedRealityTool
 
 ## <a name="whats-new-in-250"></a>O que há de novo no 2.5.0
 
-### <a name="unity-package-manager-upm-support"></a>Suporte ao Gerenciador de pacotes do Unity (UPM)
+### <a name="unity-package-manager-upm-support"></a>suporte a Gerenciador de Pacotes do Unity (UPM)
 
-O kit de ferramentas de realidade misturada agora pode ser gerenciado usando o Gerenciador de pacotes do Unity.
+a realidade misturada Toolkit agora pode ser gerenciada usando o Gerenciador de Pacotes do Unity.
 
 ![Pacote UPM do MRTK Foundation](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> Há algumas etapas manuais necessárias para importar os pacotes MRTK UPM. Examine o [Kit de ferramentas de realidade misturada e o Gerenciador de pacotes do Unity](../configuration/usingupm.md) para obter mais informações.
+> Há algumas etapas manuais necessárias para importar os pacotes MRTK UPM. examine a [realidade misturada Toolkit e Gerenciador de Pacotes do Unity](../configuration/usingupm.md) para obter mais informações.
 
 ### <a name="oculus-quest-xr-sdk-support"></a>Suporte ao SDK do Oculus Quest XR
 
@@ -112,7 +112,7 @@ Agora, os usuários podem simular o controle de movimento como as mãos no modo 
 
 ### <a name="conical-grab-pointer"></a>Ponteiro de captura cônica
 
-Os ponteiros de captura agora podem ser configurados para consultar objetos próximos usando um cone do ponto de captura em vez de uma esfera. Isso é mais parecido com o comportamento da interface padrão do HoloLens 2, que consulta objetos próximos usando um cone. O DefaultHoloLens2InputSystemProfile também foi ajustado para usar o novo `ConicalGrabPointer` .
+Os ponteiros de captura agora podem ser configurados para consultar objetos próximos usando um cone do ponto de captura em vez de uma esfera. isso é mais parecido com o comportamento da interface padrão HoloLens 2, que consulta objetos próximos usando um cone. O DefaultHoloLens2InputSystemProfile também foi ajustado para usar o novo `ConicalGrabPointer` .
 
 ![Ponteiro de captura cônica](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
@@ -154,8 +154,8 @@ Mais informações sobre o arquivo de link.xml MRTK podem ser encontradas no art
 
 ### <a name="unity-20193-mrtk-configuration-dialog-no-longer-attempts-to-enable-legacy-xr-support"></a>Unity 2019.3 +: a caixa de diálogo de configuração MRTK não tenta mais habilitar o suporte a XR herdado
 
-Para evitar possíveis conflitos ao usar a plataforma XR da Unity, a opção para habilitar o suporte a XR herdado foi removida da caixa de diálogo de configuração do MRTK. Se desejar, o suporte a XR herdado poderá ser habilitado, no Unity 2019, usando **Editar**  >  **configurações do projeto** configuração do  >
- **Player**  >  **XR configurações** da  >  **realidade virtual suportada**.
+Para evitar possíveis conflitos ao usar a plataforma XR da Unity, a opção para habilitar o suporte a XR herdado foi removida da caixa de diálogo de configuração do MRTK. se desejar, o suporte a XR herdado poderá ser habilitado, no Unity 2019, usando a realidade de **editar**  >  **Project Configurações**  >
+ **Player**  >  **XR Configurações**  >  **com suporte**.
 
 ### <a name="reduction-in-initializeonload-overhead"></a>Redução na sobrecarga de InitializeOnLoad
 
@@ -166,7 +166,7 @@ Em alguns casos, houve uma compensação que tinha que ser feita:
 - Confira [configuração de acompanhamento da mão de movimento Leap](../supported-devices/leap-motion-mrtk.md) para obter a etapa de integração extra.
 - Para aqueles que estão usando o ARFoundation, agora há uma etapa manual adicional em suas etapas de introdução.
   Consulte [ARFoundation](../supported-devices/using-ar-foundation.md#install-required-packages) para obter as novas etapas.
-- Para aqueles que usarão a [comunicação remota do Holographic com o pipeline XR herdado](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) no HoloLens 2, agora há uma [etapa manual](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) a ser executada.
+- para aqueles que usarão a [comunicação remota do Holographic com o pipeline do XR herdado](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) no HoloLens 2, agora há uma [etapa manual](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) a ser executada.
 
 ### <a name="bounds-control-graduated"></a>Controle de limites graduado
 
@@ -197,11 +197,11 @@ Por esse motivo, a maneira como exibimos restrições no Inspetor de propriedade
 As restrições que são aplicadas ao componente agora são mostradas como uma lista no componente Gerenciador de restrição, enquanto o componente usando o Gerenciador de restrição ( [controle de limites](../features/ux-building-blocks/bounds-control.md#constraint-system) ou manipulador de [objeto](../features/ux-building-blocks/object-manipulator.md#constraint-manager)) agora mostrará o Gerenciador e o modo de restrição selecionado (automático ou manual).
 Para obter mais informações, leia a seção [Gerenciador de restrição](../features/ux-building-blocks/constraint-manager.md) em nossos documentos.
 
-### <a name="hololens-2-button-material-update"></a>Atualização do material de botão do HoloLens 2
+### <a name="hololens-2-button-material-update"></a>atualização de material de botão HoloLens 2
 
-Material frontal do compartimento do botão do HoloLens 2 atualizado para remover cor preta na MRC.
+atualizado o material do compartimento frontal do botão HoloLens 2 para remover a cor preta na MRC.
 
-![Atualização do material de botão do HoloLens 2](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
+![atualização de material de botão HoloLens 2](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
 
 ### <a name="description-panel-update-movable-example-scene"></a>Atualização do painel de descrição, cena de exemplo móvel
 
@@ -211,7 +211,7 @@ Painel de descrição atualizado. (SceneDescriptionPanelRev. pré-fabricado) o n
 
 ### <a name="spatial-mesh-visualization---pulse-on-air-tap"></a>Visualização de malha espacial-pulso no ar-toque
 
-Exemplo atualizado de sombreador de pulso para a malha espacial para corresponder ao comportamento do shell do HoloLens 2.
+exemplo atualizado de sombreador de pulso para a malha espacial para corresponder ao comportamento do shell do HoloLens 2.
 
 ![Pulso no ar-toque](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
@@ -219,7 +219,7 @@ Exemplo atualizado de sombreador de pulso para a malha espacial para corresponde
 
 ![System2 elástico](../features/images/elastics/Elastics_Main.gif)
 
-O MRTK agora vem com um [sistema de simulação elástica](../features/elastics/elastic-system.md) que inclui uma ampla variedade de subclasses extensíveis e flexíveis, oferecendo associações para molas de quaternions bidimensionais, molas de volume tridimensionais e sistemas Spring lineares simples.
+O MRTK agora vem com um [sistema de simulação elástica](../features/experimental/elastic-system.md) que inclui uma ampla variedade de subclasses extensíveis e flexíveis, oferecendo associações para molas de quaternions bidimensionais, molas de volume tridimensionais e sistemas Spring lineares simples.
 
 Atualmente, os seguintes componentes do MRTK que dão suporte ao [Gerenciador de elásticos](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) podem aproveitar a funcionalidade de elásticos:
 
@@ -277,7 +277,7 @@ DevicePortal.UseSSL = true
 
 ### <a name="linkxml"></a>Link.xml
 
-Se um aplicativo estava usando anteriormente a distribuição do NuGet do MRTK, o `link.xml` arquivo foi removido do pacote base. Para restaurar as regras de preservação de código, abrir o projeto no Unity uma vez criará um `link.xml` arquivo padrão no `Assets/MixedRealityToolkit.Generated` . É recomendável que esse arquivo (e `link.xml.meta` ) seja adicionado ao controle do código-fonte.
+se um aplicativo estava usando anteriormente a distribuição de NuGet do MRTK, o `link.xml` arquivo foi removido do pacote base. Para restaurar as regras de preservação de código, abrir o projeto no Unity uma vez criará um `link.xml` arquivo padrão no `Assets/MixedRealityToolkit.Generated` . É recomendável que esse arquivo (e `link.xml.meta` ) seja adicionado ao controle do código-fonte.
 
 ### <a name="transform-constraint-changes"></a>Transformar alterações de restrição
 
@@ -309,9 +309,9 @@ A simulação do controlador de movimento agora é oferecida no modo de reprodu�
 
 Em algumas situações (por exemplo, ao usar o provedor LeapMotion no editor do Unity), é possível que o CameraCache recrie o MainCamera no desligamento. Consulte [este problema](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) para obter mais informações.
 
-### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException quando exemplos são importados por meio do Gerenciador de pacotes do Unity
+### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException quando exemplos são importados por meio do Unity Gerenciador de Pacotes
 
-Dependendo do tamanho do caminho do projeto, a importação de exemplos por meio do Gerenciador de pacotes do Unity pode gerar mensagens FileNotFoundException no console do Unity. A causa disso é o caminho para o arquivo "Missing" ter mais de MAX_PATH (256 caracteres). Para resolver, reduza o tamanho do caminho do projeto.
+dependendo do tamanho do caminho do projeto, a importação de exemplos por meio do Unity Gerenciador de Pacotes poderá gerar mensagens FileNotFoundException no Console do Unity. A causa disso é o caminho para o arquivo "Missing" ter mais de MAX_PATH (256 caracteres). Para resolver, reduza o tamanho do caminho do projeto.
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>Nenhum spatializer foi especificado. O aplicativo não dará suporte a som espacial
 
@@ -319,8 +319,8 @@ Um aviso "nenhum spatializer foi especificado" será exibido se um spatializer d
 
 Para resolver, verifique se:
 
-- **Janela**  >  do O **Gerenciador de pacotes** tem um ou mais pacotes XR instalados
-- **Kit de ferramentas**  >  de realidade misturada **Utilitários**  >  do **Configurar o projeto do Unity** e fazer uma seleção para **Spatializer de áudio**
+- **Janela**  >  do **Gerenciador de Pacotes** tem um ou mais pacotes XR instalados
+- **Realidade misturada Toolkit**  >  **Utilitários**  >  do **configurar Project do Unity** e fazer uma seleção para **Spatializer de áudio**
 
   ![Selecionar áudio Spatializer](images/SpatializerSelection.png)
 

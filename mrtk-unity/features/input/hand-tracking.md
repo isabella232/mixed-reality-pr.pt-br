@@ -4,44 +4,44 @@ description: Documentação sobre como usar o HandTracking no MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Acompanhamento de Mão,
-ms.openlocfilehash: 6cd55bc76d9fba42640954bcbf50e62f66454a94
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, acompanhamento à mão,
+ms.openlocfilehash: 68e936cb4121027008f37aae72496fe59445b636
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143351"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176893"
 ---
 # <a name="hand-tracking"></a>Acompanhamento da mão
 
-## <a name="hand-tracking-profile"></a>Perfil de acompanhamento de mão
+## <a name="hand-tracking-profile"></a>Perfil de acompanhamento à mão
 
-O _perfil de Acompanhamento de Mão_ é encontrado no perfil sistema de _entrada_. Ele contém configurações para personalizar a representação da mão.
+O _perfil de rastreamento de mão_ é encontrado no _perfil do sistema de entrada_. Ele contém configurações para personalizar a representação manual.
 
 <img src="../images/input/HandTrackingProfile.png" width="650px" alt="Hand Tracking Profile" style="display:block;">
 
-## <a name="joint-prefabs"></a>Pré-requisitos conjuntos
+## <a name="joint-prefabs"></a>Pré-fabricados conjunta
 
-Os pré-fabs conjuntos são visualizados usando pré-fabs simples. As _junções de_ dedo indicador e de mão indicador são de importância especial e têm seu próprio pré-fab, enquanto todas as outras junções compartilham o mesmo pré-fab. 
+As pré-fabricados conjuntas são visualizadas usando pré-fabricados simples. As junções de _palmeira_ e de _índice_ são de importância especial e têm seu próprio pré-fabricado, enquanto todas as outras junções compartilham o mesmo pré-fabricado.
 
-Por padrão, os pré-padrões de junção de mão são primitivos geométricos simples. Eles podem ser substituídos, se desejado. Se nenhum pré-fab for especificado, [gameObjects vazios](https://docs.unity3d.com/ScriptReference/GameObject.html) serão criados.
+Por padrão, as pré-fabricados conjuntas de mão são primitivos geométricos simples. Eles podem ser substituídos, se desejado. Se nenhum pré-fabricado for especificado, os [Gameobjects](https://docs.unity3d.com/ScriptReference/GameObject.html) vazios serão criados em vez disso.
 
 > [!WARNING]
-> Evite usar scripts complexos ou renderização cara em pré-requisitos conjuntos, pois os objetos comuns são transformados em cada quadro e podem ter um custo de desempenho significativo!
+> Evite usar scripts complexos ou processamentos caros em pré-fabricados conjuntas, pois os objetos conjuntas são transformados em todos os quadros e podem ter um custo de desempenho significativo!
 
-Representação conjunta de mão padrão |  Rótulos conjuntos
+Representação conjunta padrão |  Rótulos conjuntas
 :-------------------------:|:-------------------------:
 <img src="../images/input-simulation/ArticulatedHandJoints.png" height="300px" alt="Articulated hand joints"  style="display:inline;">  |  <img src="../images/input-simulation/MRTK_Core_Input_Hands_JointNames.png" height="300px" alt="Input Hand joints"  style="display:inline;">
 
-## <a name="hand-mesh-prefab"></a>Pré-fab de malha de mão
+## <a name="hand-mesh-prefab"></a>Pré-fabricado de malha à mão
 
-A malha manual será usada se os dados de malha totalmente definidos são fornecidos pelo dispositivo de acompanhamento de mão. A malha renderizável no pré-teste é substituída pelos dados do dispositivo, portanto, uma malha fiada, como um cubo, é suficiente. O material do pré-fab é usado para a malha manual.
+A malha à mão será usada se os dados de malha totalmente definidos forem fornecidos pelo dispositivo de rastreamento manual. A malha renderizada no pré-fabricado é substituída pelos dados do dispositivo, portanto, uma malha fictícia, como um cubo, é suficiente. O material do pré-fabricado é usado para a malha de mão.
 
 <img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px" alt="Input Hand Mesh"  style="display:block;">
 
-A exibição da malha manual pode ter um impacto perceptível no desempenho, por esse motivo, ela pode ser desabilitada inteiramente desmarcando a opção Habilitar Visualização **de Malha manual.**
+A exibição de malha à mão pode ter um impacto perceptível no desempenho, por esse motivo, ela pode ser totalmente desativada desmarcando a opção **habilitar visualização de malha à mão** .
 
-## <a name="hand-visualization-settings"></a>Configurações de visualização de mão
+## <a name="hand-visualization-settings"></a>Configurações de visualização da mão
 
 A malha de mão e as visualizações conjuntas podem ser desativadas ou ativadas por meio da configuração dos *modos de visualização de malha à* mão e *modos de visualização conjunta* , respectivamente. Essas configurações são específicas do modo de aplicativo, o que significa que é possível ativar alguns recursos enquanto estiver no editor (para ver as junções com a simulação no editor, por exemplo) enquanto têm os mesmos recursos desativados quando implantados no dispositivo (em builds de Player).
 
@@ -102,9 +102,9 @@ public void OnSourceDetected(SourceStateEventData eventData)
 
 Se nenhum controlador específico for fornecido, as classes utilitárias serão fornecidas para acesso conveniente aos dados conjuntas. Essas funções solicitam dados conjuntas do primeiro dispositivo disponível atualmente controlado.
 
-#### <a name="polling-joint-pose-from-handjointutils"></a>Pose conjunta de sondagem de HandJointUtils
+#### <a name="polling-joint-pose-from-handjointutils"></a>Sondagem em conjunto de HandJointUtils
 
-[`HandJointUtils`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils) é uma classe estática que consulta o primeiro dispositivo de mão ativo.
+[`HandJointUtils`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils) é uma classe estática que consulta o primeiro dispositivo ativo de mão.
 
 ```c#
 if (HandJointUtils.TryGetJointPose(TrackedHandJoint.IndexTip, Handedness.Right, out MixedRealityPose pose))
@@ -113,9 +113,9 @@ if (HandJointUtils.TryGetJointPose(TrackedHandJoint.IndexTip, Handedness.Right, 
 }
 ```
 
-#### <a name="joint-transform-from-hand-joint-service"></a>Transformação conjunta do serviço conjunto de mão
+#### <a name="joint-transform-from-hand-joint-service"></a>Transformação conjunta do serviço de conjunto de mão
 
-[`IMixedRealityHandJointService`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointService) mantém um conjunto persistente de [GameObjects para](https://docs.unity3d.com/ScriptReference/GameObject.html) controlar junções.
+[`IMixedRealityHandJointService`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointService) mantém um conjunto persistente de [Gameobjects](https://docs.unity3d.com/ScriptReference/GameObject.html) para acompanhamento de junções.
 
 ```c#
 var handJointService = CoreServices.GetInputSystemDataProvider<IMixedRealityHandJointService>();
@@ -130,7 +130,7 @@ if (handJointService != null)
 
 O sistema de entrada também fornece eventos, se a sondagem de dados de controladores diretamente não for desejável.
 
-#### <a name="joint-events"></a>Eventos conjuntos
+#### <a name="joint-events"></a>Eventos conjuntas
 
 [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) lida com atualizações de posições conjuntas.
 
@@ -154,9 +154,9 @@ public class MyHandJointEventHandler : IMixedRealityHandJointHandler
 
 #### <a name="mesh-events"></a>Eventos de malha
 
-[`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) trata as alterações da malha de mão articulada.
+[`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) lida com alterações da malha lado articulada.
 
-Observe que as malhas de mão não estão habilitadas por padrão.
+Observe que as malhas à mão não estão habilitadas por padrão.
 
 ```c#
 public class MyHandMeshEventHandler : IMixedRealityHandMeshHandler
@@ -187,9 +187,9 @@ public class MyHandMeshEventHandler : IMixedRealityHandMeshHandler
 
 ### <a name="net-native"></a>.NET Nativo
 
-Atualmente, há um problema conhecido com builds Mestre usando o back-end do .NET. No .NET Native, `IInspectable` ponteiros não podem ser marshalados de código nativo para gerenciado usando `Marshal.GetObjectForIUnknown` . O MRTK usa isso para obter o para receber dados de mãos e olhos `SpatialCoordinateSystem` da plataforma.
+Atualmente, há um problema conhecido com compilações mestras usando o back-end do .NET. no .NET Native, os `IInspectable` ponteiros não podem ser empacotados do código nativo para o gerenciado usando `Marshal.GetObjectForIUnknown` . O MRTK usa isso para obter o a `SpatialCoordinateSystem` fim de receber dados de olho e de mão da plataforma.
 
-Fornecemos a origem da DLL como uma solução alternativa para esse problema, no repo nativo do Kit de Ferramentas [de Realidade Misturada](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround). Siga as instruções no LEIAME e copie os binários resultantes em uma pasta Plug-ins em seus ativos do Unity. Depois disso, o script WindowsMixedRealityUtilities fornecido no MRTK resolverá a solução alternativa para você.
+fornecemos a origem da DLL como uma solução alternativa para esse problema, na [realidade misturada nativa Toolkit repositório](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround). Siga as instruções no arquivo LEIAme e copie os binários resultantes em uma pasta plugins em seus ativos de Unity. Depois disso, o script WindowsMixedRealityUtilities fornecido no MRTK resolverá a solução alternativa para você.
 
 Se você quiser criar sua própria DLL ou incluir essa solução alternativa em uma existente, o núcleo da solução alternativa será:
 
@@ -200,7 +200,7 @@ extern "C" __declspec(dllexport) void __stdcall MarshalIInspectable(IUnknown* na
 }
 ```
 
-E seu uso em seu código do Unity em C#:
+E seu uso em seu código da Unity em C#:
 
 ```c#
 [DllImport("DotNetNativeWorkaround.dll", EntryPoint = "MarshalIInspectable")]

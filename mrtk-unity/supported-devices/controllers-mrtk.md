@@ -1,18 +1,18 @@
 ---
-title: Controladores no MRTK
+title: Detectando controladores no MRTK
 description: Documentação sobre como usar vários controladores com o MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, controladores, HP reverbera, oculus, HTC Naopak, mãos
-ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, controladores, HP reverbo, Oculus, HTC naopak, mãos
+ms.openlocfilehash: 2bb749f4e2f6294c4feb74f97af55ecb857d5f76
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743588"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175596"
 ---
-# <a name="controllers-in-mrtk"></a>Controladores no MRTK
+# <a name="detecting-controllers-in-mrtk"></a>Detectando controladores no MRTK
 
 O MRTK tem suporte para vários controladores diferentes. Muitos controladores, como o HTC Naopak Knuckles e as varinhas de Naopak do HTC, funcionarão de forma nativa quando um aplicativo criado com MRTK for iniciado no dispositivo compatível. Outros controladores, como as mãos articuladas na Quest Oculus e os controladores de reverberação HP reverbo G2, exigem pacotes adicionais antes de serem reconhecidos pelo MRTK.
 

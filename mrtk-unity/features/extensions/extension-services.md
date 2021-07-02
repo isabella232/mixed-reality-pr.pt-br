@@ -1,58 +1,58 @@
 ---
-title: Serviços de Extensão
+title: Serviços de extensão
 description: documentação para funcionalidade estendida no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: a39616a091a3f6800c429dc797ec2f3130e96f40
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f8f7b8dbac0355c226e4bbfae39246e5c1c58f69
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144545"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176270"
 ---
 # <a name="extension-services"></a>Serviços de extensão
 
-Os serviços de extensão são componentes que estendem a funcionalidade do kit de ferramentas de realidade misturada. Esses serviços podem ser fornecidos pelo MRTK ou por outras partes.
+Os serviços de extensão são componentes que estendem a funcionalidade do Toolkit. Esses serviços podem ser fornecidos pelo MRTK ou por outras partes.
 
 ## <a name="creating-an-extension-service"></a>Criando um serviço de extensão
 
-A maneira mais eficiente de criar um serviço de extensão é usar o [Assistente de criação de serviço de extensão](../tools/extension-service-creation-wizard.md).
-Para iniciar o assistente para criação de serviço de extensão, selecione o **Kit de ferramentas do reality Toolkit > utilitários > criar serviço de extensão**.
+A maneira mais eficiente de criar um serviço de extensão é usar o assistente [de criação do serviço de extensão](../tools/extension-service-creation-wizard.md).
+Para iniciar o assistente de criação do serviço de extensão, selecione **Realidade Misturada Toolkit > Utilitários > Criar Serviço de Extensão**.
 
-![Assistente para criação de serviço de extensão](../images/extension-wizard/ExtensionServiceCreationWizard.png)
+![Assistente de criação do serviço de extensão](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
 O assistente automatiza a criação dos componentes de serviço e garante a herança de interface adequada.
 
-![Componentes criados pelo Assistente para criação de serviço de extensão](../images/extension-wizard/ExtensionServiceComponents.png)
+![Componentes criados pelo assistente de criação do serviço de extensão](../images/extension-wizard/ExtensionServiceComponents.png)
 
 > [!Note]
-> No MRTK versão 2.0.0, há um problema no assistente de serviço de extensão em que o Inspetor de serviço e o perfil de serviço devem ser gerados. Consulte o problema [5654](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5654) para obter mais informações.
+> No MRTK versão 2.0.0, há um problema no assistente de serviço de extensão em que o inspetor de serviço e o perfil de serviço precisam ser gerados. Consulte o problema [5654 para](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5654) obter mais informações.
 
 Quando o assistente for concluído, a funcionalidade do serviço poderá ser implementada.
 
 ## <a name="registering-an-extension-service"></a>Registrando um serviço de extensão
 
-Para ser acessível por um aplicativo, o novo serviço de extensão precisa ser registrado com o kit de ferramentas de realidade misturada.
+Para ser acessível por um aplicativo, o novo serviço de extensão precisa ser registrado com o Toolkit.
 
-O assistente para criação de serviço de extensão pode ser usado para registrar o serviço.
+O assistente de criação do serviço de extensão pode ser usado para registrar o serviço.
 
-![Registro do assistente para criação de serviço de extensão](../images/extension-wizard/ExtensionServiceWizardRegister.png)
+![Registro do assistente de criação do serviço de extensão](../images/extension-wizard/ExtensionServiceWizardRegister.png)
 
-O serviço também pode ser registrado manualmente usando o Inspetor de configuração do kit de ferramentas de realidade misturada.
+O serviço também pode ser registrado manualmente usando o inspetor de configuração Toolkit Realidade Misturada.
 
-![Registro de serviço de extensão manual](../images/profiles/RegisterExtensionService.png)
+![Registro manual do serviço de extensão](../images/profiles/RegisterExtensionService.png)
 
-Se o serviço de extensão usar um perfil, verifique se ele está especificado no Inspetor.
+Se o serviço de extensão usar um perfil, verifique se ele está especificado no inspetor.
 
 ![Serviço de extensão configurado](../images/profiles/ConfiguredExtensionService.png)
 
-O nome do componente e a prioridade também podem ser ajustados.
+O nome e a prioridade do componente também podem ser ajustados.
 
 ## <a name="accessing-an-extension-service"></a>Acessando um serviço de extensão
 
-Os serviços de extensão são acessados, no código, usando o, [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) conforme mostrado no exemplo abaixo.
+Os serviços de extensão são acessados, no código, [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) usando o conforme mostrado no exemplo abaixo.
 
 ```c#
 INewService service = null;
@@ -65,6 +65,6 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 ## <a name="see-also"></a>Confira também
 
 - [Sistemas, serviços de extensão e provedores de dados](../../architecture/systems-extensions-providers.md)
-- [Assistente para criação de serviço de extensão](../tools/extension-service-creation-wizard.md)
+- [Assistente de criação do serviço de extensão](../tools/extension-service-creation-wizard.md)
 - [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)
 - [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)
