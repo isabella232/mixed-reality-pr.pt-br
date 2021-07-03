@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: gráficos, cpu, gpu, renderização, coleta de lixo, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 7d672af0c9309e4dd2965cc3cb315671a720a58a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300151"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743432"
 ---
 # <a name="performance-recommendations-for-unity"></a>Recomendações de desempenho para o Unity
 
@@ -309,7 +309,7 @@ Portanto, a redução do número de operações no sombreador de fragmento pode,
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternativas do sombreador padrão do Unity
 
-Em vez de usar uma PBR (renderização baseada em física) ou outro sombreador de alta qualidade, examine a utilização de um sombreador mais barato e com melhor desempenho. O [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece o [sombreador padrão do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) que foi otimizado para projetos de realidade misturada.
+Em vez de usar uma PBR (renderização baseada em física) ou outro sombreador de alta qualidade, examine a utilização de um sombreador mais barato e com melhor desempenho. O [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornece o [sombreador padrão do MRTK](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) que foi otimizado para projetos de realidade misturada.
 
 O Unity também fornece um sombreador apagado, com vértice iluminado, difuso e outras opções de sombreador simplificadas que são mais rápidas em comparação com o sombreador padrão do Unity. Confira [Uso e desempenho de sombreadores internos](https://docs.unity3d.com/Manual/shader-Performance.html) para obter informações mais detalhadas.
 

@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, interação, design, HoloLens, mãos, longe, apontar e confirmar, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, raios de mão, manipulação de objeto, MRTK, Kit de Ferramentas de Realidade Misturada, DoF
-ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a33927396d0d9a349d655245355733d24ea7d9ad
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299801"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600605"
 ---
 # <a name="point-and-commit-with-hands"></a>Apontar e confirmar com as mãos
 
@@ -32,7 +32,7 @@ Apontar e confirmar com as mãos é um modelo de entrada que permite aos usuári
 <tr>
      <td><strong>Modelo de entrada</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1ª geração)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Headsets imersivos</strong></a></td>
 </tr>
 <tr>
@@ -204,9 +204,9 @@ O conceito de apontar e confirmar para interação à distância foi criado e de
 
 Por padrão, o MRTK fornece um prefab de raio de mão ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) que tem o mesmo estado visual que o raio de mão do sistema do shell. Ele é atribuído no perfil de Entrada do MRTK, em Ponteiros. Em um headset imersivo, os mesmos raios são usados para os controladores de movimento.
 
-* [MRTK – Perfil de ponteiro](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
-* [MRTK – Sistema de entrada](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
-* [MRTK – Ponteiros](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
+* [MRTK – Perfil de ponteiro](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK – Sistema de entrada](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK – Ponteiros](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

@@ -5,7 +5,7 @@
 - name: Saiba mais sobre os serviços de nuvem de realidade misturada do Azure
   href: ../develop/mixed-reality-cloud-services.md
 - name: Introdução ao OpenXR no Unity
-  href: ../develop/unity/openxr-getting-started.md
+  href: ../develop/unity/xr-project-setup.md
 - name: Usar os novos controladores do HP Reverb G2
   items:
     - name: Unity

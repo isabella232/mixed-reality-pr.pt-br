@@ -29,52 +29,43 @@ highlightedContent:
       url: wmr-health-safety-comfort.md
     - title: Explorar o AltspaceVR
       itemType: whats-new
-      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application'
-conceptualContent:
+      url: /windows/mixed-reality/altspace-vr/journey?tabs=application
+productDirectory:
   title: Introdução ao Windows Mixed Reality
   summary: 'Encontre informações adicionais sobre software, hardware e solução de problemas do Mixed Reality.'
   items:
     - title: Instruções
+      imageSrc: images/WMR_Docs_Landing_How-To's.png
       links:
         - url: plug-in-your-headset.md
-          itemType: quickstart
           text: Conectar seu headset
         - url: install-windows-mixed-reality.md
-          itemType: quickstart
           text: Instalar o software Windows Mixed Reality
         - url: learn-mixed-reality.md
-          itemType: quickstart
           text: Executar a experiência de aprendizagem
         - url: using-games-and-apps-in-windows-mixed-reality.md
-          itemType: quickstart
           text: Usar jogos e aplicativos
     - title: Referências
+      imageSrc: images/WMR_Docs_Landing_References.png
       links:
         - url: your-mixed-reality-home.md
-          itemType: concept
           text: Página inicial do Mixed Reality
         - url: controllers-in-wmr.md
-          itemType: concept
           text: Controladores de movimentos no Windows Mixed Reality
         - url: using-steamvr-with-windows-mixed-reality.md
-          itemType: concept
           text: SteamVR com o Windows Mixed Reality
         - url: using-speech-in-wmr.md
-          itemType: concept
           text: Voz no Windows Mixed Reality
     - title: Solução de problemas
+      imageSrc: images/WMR_Docs_Landing_TroubleShooting.png
       links:
         - url: troubleshooting-windows-mixed-reality.md
-          itemType: concept
           text: Opções de Ajuda e suporte
         - url: filing-feedback.md
-          itemType: concept
           text: Enviar bugs e comentários
         - url: error-codes.md
-          itemType: concept
           text: Códigos do Erro
         - url: installation_errors.md
-          itemType: concept
           text: Erros de instalação
 additionalContent:
   sections:

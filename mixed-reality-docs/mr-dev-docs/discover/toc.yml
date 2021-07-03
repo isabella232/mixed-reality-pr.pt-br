@@ -8,29 +8,29 @@
   href: mr-learning-overview.md
 - name: Expanda o seu processo de design
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: Executando o Hub de exemplos do MRTK
-  href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub'
 - name: Como criar hologramas
   href: designing-holograms.md
 - name: Visão geral dos estudos de caso
   href: case-studies-overview.md
-- name: Hardware do HoloLens
+- name: Hardware
   items:
-    - name: Detalhes de hardware do HoloLens 2
-      href: /hololens/hololens2-hardware
-    - name: Detalhes de hardware do HoloLens (1ª geração)
-      href: /hololens/hololens1-hardware
-- name: Headsets imersivos
-  items:
-    - name: Detalhes de hardware do headset imersivo
-      href: immersive-headset-hardware-details.md
-    - name: Como navegar na página inicial do Windows Mixed Reality
-      href: navigating-the-windows-mixed-reality-home.md
-    - name: Guia do entusiasta de VR
-      href: /windows/mixed-reality/enthusiast-guide/
-    - name: Entretenimento baseado na localização
-      href: location-based-experiences.md
+    - name: HoloLens
+      items:
+        - name: Detalhes de hardware do HoloLens 2
+          href: /hololens/hololens2-hardware
+        - name: Detalhes de hardware do HoloLens (1ª geração)
+          href: /hololens/hololens1-hardware
+    - name: Headsets imersivos
+      items:
+        - name: Detalhes de hardware do headset imersivo
+          href: immersive-headset-hardware-details.md
+        - name: Como navegar na página inicial do Windows Mixed Reality
+          href: navigating-the-windows-mixed-reality-home.md
+        - name: Guia do entusiasta de VR
+          href: /windows/mixed-reality/enthusiast-guide/
+        - name: Entretenimento baseado na localização
+          href: location-based-experiences.md
+    - name: Acessórios
+      href: hardware-accessories.md
 - name: Recursos da comunidade
   href: community.md
-- name: Acessórios de hardware
-  href: hardware-accessories.md

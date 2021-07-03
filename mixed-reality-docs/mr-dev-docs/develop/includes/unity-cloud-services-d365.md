@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ee466c65bd6de166b15042f93989b5d8829c8d59
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2f7424bc25e358bd368e651af7d906930afe6ccc
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98582991"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741949"
 ---
 # <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/arr)
 
@@ -27,14 +27,3 @@ As ASA (Âncoras Espaciais do Azure) são um serviço multiplataforma que permit
 * [Descobrir âncoras próximas](/azure/spatial-anchors/how-tos/set-up-coarse-reloc-unity)
 * [Tutorial: compartilhar âncoras em diferentes sessões e dispositivos](/azure/spatial-anchors/tutorials/tutorial-share-anchors-across-devices?tabs=VS%2cAndroid)  
 * [Exemplos das Âncoras Espaciais do Azure (GitHub)](https://github.com/Azure/azure-spatial-anchors-samples) 
-
-# <a name="dynamics-365"></a>[Dynamics 365](#tab/D365)
-
-O Microsoft Dynamics 365 Guides é um aplicativo de realidade misturada para Microsoft HoloLens que permite que os operadores aprendam durante o fluxo de trabalho fornecendo instruções holográficas quando e onde elas forem necessárias. Esses cartões de instrução são visualmente conectados ao local em que o trabalho precisa ser feito e podem incluir imagens, vídeos e modelos holográficos 3D.
-
-* [Visão geral](/dynamics365/mixed-reality/guides/) 
-* [Introdução](/dynamics365/mixed-reality/guides/get-started) 
-* [Sou administrador](/dynamics365/mixed-reality/guides/setup)
-* [Sou autor](/dynamics365/mixed-reality/guides/authoring-overview) 
-* [Sou operador](/dynamics365/mixed-reality/guides/operator-overview) 
-* [Referência de entidade para desenvolvedores](/dynamics365/mixed-reality/guides/developer-entity-reference)
