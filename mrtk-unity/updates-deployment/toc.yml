@@ -2,5 +2,5 @@
   href: htk-to-mrtk-porting-guide.md
 - name: MRTK e remoção de código gerenciado
   href: mrtk-and-managed-code-stripping.md
-- name: Atualização de versões anteriores
+- name: Atualizando de versões anteriores
   href: updating.md

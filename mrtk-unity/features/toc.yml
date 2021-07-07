@@ -1,4 +1,4 @@
-- name: Sistema de limite
+- name: Sistema de limites
   href: boundary/toc.yml
 - name: Sistema de câmera
   href: camera-system/toc.yml
@@ -6,6 +6,8 @@
   href: diagnostics/toc.yml
 - name: Cenas de exemplo
   href: example-scenes/toc.yml
+- name: Configurações da experiência
+  href: experience-settings/toc.yml
 - name: Habilitação
   href: experimental/toc.yml
 - name: Extensões
@@ -28,5 +30,5 @@
   href: teleport-system/toc.yml
 - name: Ferramentas
   href: tools/toc.yml
-- name: Blocos de construção de UX
+- name: Blocos de construção de experiência do usuário
   href: ux-building-blocks/toc.yml

@@ -1,4 +1,4 @@
-- name: Formato de arquivo de animação de entrada
+- name: Formato do arquivo de animação de entrada
   href: input-animation-file-format.md
 - name: Gravação da animação de entrada
   href: input-animation-recording.md

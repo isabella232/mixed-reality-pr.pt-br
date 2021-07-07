@@ -1,14 +1,16 @@
-- name: Visão geral de contribuição
+- name: Autores
+  href: authors.md
+- name: Visão geral da contribuição
   href: contributing.md
-- name: Codificando diretrizes
+- name: Diretrizes de codificação
   href: coding-guidelines.md
-- name: Como gravar e executar testes
+- name: Escrevendo e executando testes
   href: unit-tests.md
-- name: Diretrizes da documentação
+- name: Diretrizes de documentação
   href: documentation-guide.md
 - name: Solicitações de pull
   href: pull-requests.md
 - name: Recursos experimentais
   href: experimental-features.md
-- name: Alterações de quebra
+- name: Alterações da falha
   href: breaking-changes.md

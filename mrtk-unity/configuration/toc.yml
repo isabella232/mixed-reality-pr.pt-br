@@ -2,7 +2,7 @@
   href: usingupm.md
 - name: Caixa de diálogo de configuração do MRTK
   href: mrtk-configuration-dialog.md
-- name: Introdução ao MRTK e ao XRSDK
+- name: Introdução ao SDK do MRTK e do XR
   href: getting-started-with-mrtk-and-xrsdk.md
-- name: Guia de configuração da realidade misturada
+- name: Guia de configuração do perfil do MRTK
   href: mixed-reality-configuration-guide.md

@@ -10,7 +10,7 @@
   href: gestures.md
 - name: Acompanhamento da mão
   href: hand-tracking.md
-- name: Como adicionar uma interatividade próxima
+- name: Como adicionar interatividade próxima
   href: how-to-add-near-interactivity.md
 - name: Ações de entrada
   href: input-actions.md
@@ -26,5 +26,5 @@
   href: pointers.md
 - name: Fala
   href: speech.md
-- name: Acompanhamento Ocular
+- name: Acompanhamento ocular
   href: eye-tracking/toc.yml

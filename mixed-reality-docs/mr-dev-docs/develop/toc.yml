@@ -1,11 +1,15 @@
 - name: Introdução ao desenvolvimento de Realidade Misturada
-  href: development.md
+  items:
+    - name: Introdução
+      href: development.md
+    - name: Instalar as ferramentas
+      href: install-the-tools.md
+    - name: Escolhendo um mecanismo
+      href: choosing-an-engine.md
 - name: Visão geral dos serviços de nuvem da realidade misturada do Azure
   href: mixed-reality-cloud-services.md
 - name: Exemplos e aplicativos de recursos
   href: features-and-samples.md
-- name: Instalar as ferramentas
-  href: install-the-tools.md
 - name: Portabilidade de aplicativos
   items:
     - name: Visão geral de portabilidade
@@ -170,14 +174,8 @@
       items:
         - name: Como escolher uma versão do Unity e um plug-in de XR
           href: unity/choosing-unity-version.md
-        - name: Como usar o suporte para XR interno do Legacy
-          href: unity/legacy-xr-support.md
-        - name: Como usar o plug-in de XR do Windows
-          href: unity/windows-xr-plugin.md
-        - name: Como usar o plug-in do OpenXR
-          href: unity/openxr-getting-started.md
-        - name: Recursos com suporte para o plug-in OpenXR
-          href: unity/openxr-supported-features.md
+        - name: Definindo sua configuração do XR
+          href: unity/xr-project-setup.md
         - name: Ferramenta Recurso de Realidade Misturada
           items:
             - name: Bem-vindo(a) à Ferramenta Recurso de MR
@@ -234,7 +232,7 @@
           href: unity/udp-packets-in-unity.md
         - name: Como usar o namespace do Windows com aplicativos Unity para HoloLens
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Objetos nativos de Realidade Misturada
+        - name: Interoperabilidade nativa da Realidade Misturada no Unity
           href: unity/unity-xrdevice-advanced.md
         - name: Como usar o Vuforia
           href: unity/vuforia-development-overview.md
@@ -262,7 +260,7 @@
               href: unity/lunar-module.md
     - name: Depuração e desempenho
       items:
-        - name: Depuração gerenciada com o Unity IL2CPP
+        - name: Depuração gerenciada com o Unity
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Configurações recomendadas do Unity
           href: unity/recommended-settings-for-unity.md
@@ -274,12 +272,18 @@
           href: unity/exporting-and-building-a-unity-visual-studio-solution.md
         - name: Melhores práticas para trabalhar com o Unity e o Visual Studio
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+    - name: Notas de versão
+      items:
+        - name: Plug-in OpenXR de Realidade Misturada
+          href: unity/openxr-release-notes.md
 - name: Unreal
   items:
     - name: Visão geral do desenvolvimento com o Unreal
       href: unreal/unreal-development-overview.md
     - name: Introdução ao MRTK
       href: unreal/unreal-mrtk-introduction.md
+    - name: Configurando seu projeto
+      href: unreal/unreal-project-setup.md
     - name: Como atualizar projetos no Unreal
       href: unreal/unreal-porting.md
     - name: Inícios rápidos
@@ -361,12 +365,10 @@
 - name: JavaScript
   items:
     - name: Visão geral do desenvolvimento em JavaScript
-      href: javascript/javascript-development-overview.md
-    - name: WebXR
       href: javascript/webxr-overview.md
     - name: Tutoriais
       items:
-        - name: 'Olá, Mundo usando BabylonJS'
+        - name: 'Olá, Mundo de VR usando o BabylonJS'
           items:
             - name: 1. Introdução
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
@@ -374,9 +376,9 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. Interagir com um objeto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: Nativo
+- name: Mecanismo personalizado
   items:
-    - name: Visão geral do desenvolvimento nativo
+    - name: Visão geral do desenvolvimento de mecanismos personalizados
       href: native/directx-development-overview.md
     - name: OpenXR
       items:
@@ -469,9 +471,9 @@
         - name: Termos de licença de software de comunicação remota holográfica
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Comunicação remota holográfica para o HoloLens (1ª geração)
-          href: null
-        - name: Adicionar comunicação remota holográfica
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: Adicionar comunicação remota holográfica
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: Teste e qualidade do aplicativo
       items:
         - name: Critérios de qualidade do aplicativo
