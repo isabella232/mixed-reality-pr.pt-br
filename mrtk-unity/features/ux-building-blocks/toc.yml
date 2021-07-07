@@ -10,6 +10,8 @@
   href: constraint-manager.md
 - name: caixa de diálogo
   href: dialog.md
+- name: Espera
+  href: dwell.md
 - name: Visualização de ponta do dedo
   href: fingertip-visualization.md
 - name: Orientador de mão
@@ -26,9 +28,9 @@
   href: object-collection.md
 - name: Manipulador de objetos
   href: object-manipulator.md
-- name: Indicador de Progresso
+- name: Indicador de progresso
   href: progress-indicator.md
-- name: Rolagem da coleção de objetos
+- name: Coleção de objetos com rolagem
   href: scrolling-object-collection.md
 - name: Slate
   href: slate.md

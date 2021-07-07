@@ -1,6 +1,6 @@
-- name: Janela de compilação
+- name: Janela de build
   href: build-window.md
-- name: Utilitário de permuta de ativos
+- name: Utilitário de troca de ativos
   href: asset-swap-utility.md
 - name: Ferramenta de mapeamento de controlador
   href: controller-mapping-tool.md
@@ -14,7 +14,7 @@
   href: input-feature-usage-tool.md
 - name: Janela de migração
   href: migration-window.md
-- name: Otimizar janela
+- name: Janela de otimização
   href: optimize-window.md
 - name: Utilitário de captura de tela
   href: screenshot-utility.md

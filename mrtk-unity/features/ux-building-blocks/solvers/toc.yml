@@ -1,4 +1,4 @@
-- name: Visão geral do Solvers
+- name: Visão geral do solucionador
   href: solver.md
 - name: Toque para posicionar
   href: tap-to-place.md

@@ -1,10 +1,10 @@
 - name: Introdução à conscientização espacial
   href: spatial-awareness-getting-started.md
-- name: Ocultar a malha de conscientização espacial
+- name: Observador da malha de conscientização espacial
   href: configuring-spatial-awareness-mesh-observer.md
-- name: Observador de malha de objeto espacial
+- name: Observador da malha de objeto espacial
   href: spatial-object-mesh-observer.md
-- name: Observador de reconhecimento de cena
+- name: Observador de compreensão da cena
   href: scene-understanding.md
 - name: Guia de uso
   href: usage-guide.md

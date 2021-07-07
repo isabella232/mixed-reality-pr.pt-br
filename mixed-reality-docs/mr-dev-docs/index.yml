@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Documentação da Realidade Misturada
-summary: Explore o mundo crescente de aplicativos de Realidade Misturada com o Windows Mixed Reality, o MRTK (Kit de Ferramentas de Realidade Misturada), o Unity, o Unreal e muito mais para HoloLens e Headsets Imersivos do Windows.
+summary: 'Explore o mundo crescente de aplicativos de Realidade Misturada com o MRTK (Kit de Ferramentas de Realidade Misturada), o Windows Mixed Reality, o Unity, o Unreal e muito mais para HoloLens e Headsets Imersivos do Windows.'
 brand: windows
 metadata:
   title: Documentação da Realidade Misturada
-  description: Aprofunde-se no mundo em expansão de aplicativos de Realidade Misturada para Headsets Imersivos do Windows e HoloLens.
+  description: 'Explore o mundo crescente de aplicativos de Realidade Misturada com o MRTK (Kit de Ferramentas de Realidade Misturada), o Windows Mixed Reality, o Unity, o Unreal e muito mais para HoloLens e Headsets Imersivos do Windows.'
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -13,176 +13,170 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 61f51b3cfb76e42d869cffe327a14cccd4389afe
-  ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
-  ms.translationtype: HT
-  ms.contentlocale: pt-BR
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105550616"
 highlightedContent:
   items:
-  - title: O que é Realidade Misturada?
-    itemType: concept
-    url: discover/mixed-reality.md
-  - title: Introdução ao HoloLens 2
-    itemType: overview
-    url: /hololens/hololens2-hardware
-  - title: Aplicativos de Realidade Misturada do Dynamics 365
-    itemType: reference
-    url: /dynamics365/mixed-reality/
-  - title: Serviços de nuvem de realidade misturada do Azure
-    itemType: whats-new
-    url: develop/mixed-reality-cloud-services.md
-  - title: Desenvolvedores
-    itemType: get-started
-    url: develop/development.md
-  - title: Administradores de TI
-    itemType: quickstart
-    url: /hololens/hololens-requirements
-  - title: Entusiastas de VR
-    itemType: how-to-guide
-    url: /windows/mixed-reality/enthusiast-guide/vr-journey
-  - title: Microsoft Mesh (versão prévia)
-    itemType: whats-new
-    url: /mesh/overview
+    - title: O que é Realidade Misturada?
+      itemType: concept
+      url: discover/mixed-reality.md
+    - title: Introdução ao HoloLens 2
+      itemType: overview
+      url: /hololens/hololens2-hardware
+    - title: Aplicativos de Realidade Misturada do Dynamics 365
+      itemType: reference
+      url: /dynamics365/mixed-reality/
+    - title: Desenvolvedores
+      itemType: get-started
+      url: develop/development.md
+    - title: Administradores de TI
+      itemType: quickstart
+      url: /hololens/hololens-requirements
+    - title: Entusiastas de VR
+      itemType: how-to-guide
+      url: /windows/mixed-reality/enthusiast-guide/vr-journey
+    - title: Microsoft Mesh (versão prévia)
+      itemType: whats-new
+      url: /mesh/overview
+    - title: AltspaceVR
+      itemType: whats-new
+      url: /windows/mixed-reality/altspace-vr/journey
 productDirectory:
   title: Mergulhe na Realidade Misturada
-  summary: Seja você um designer, um desenvolvedor ou um profissional de TI, temos os caminhos certos para treiná-lo.
+  summary: 'Quer você esteja criando, desenvolvendo ou implantando um aplicativo de realidade misturada, temos o caminho certo para você começar da maneira ideal.'
   items:
-  - title: Design
-    imageSrc: images/icon-design.png
-    links:
-    - url: design/design.md
-      text: Design e protótipo
-    - url: design/types-of-mixed-reality-apps.md
-      text: Escolha o seu tipo de aplicativo de Realidade Misturada
-    - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
-      text: Expanda o seu processo de design
-    - url: design/app-patterns-landingpage.md
-      text: Saiba mais sobre os elementos de UX
-    - url: design/comfort.md
-      text: Saiba mais sobre o conforto do usuário
-    - url: design/interaction-fundamentals.md
-      text: Compreenda os conceitos básicos de interação
-  - title: Desenvolver
-    imageSrc: design/images/icon-developer.png
-    links:
-    - url: develop/development.md
-      text: Escolha o seu caminho de tecnologia
-    - url: develop/features-and-samples.md
-      text: Encontrar exemplos e aplicativos de recursos
-    - url: develop/unity/unity-development-overview.md
-      text: Introdução ao Unity
-    - url: develop/unreal/unreal-development-overview.md
-      text: Introdução ao Unreal
-    - url: develop/porting-apps/porting-overview.md
-      text: Portar seus aplicativos existentes
-    - url: distribute/distribute-overview.md
-      text: Publicar seus aplicativos
-  - title: Implantar
-    imageSrc: images/icon-distribution.jpg
-    links:
-    - url: /hololens/hololens-requirements
-      text: Preparar para implantação comercial
-    - url: /hololens/hololens-identity
-      text: Gerenciar a identidade e as credenciais do usuário
-    - url: /hololens/hololens-enroll-mdm
-      text: Registrar os seus dispositivos
-    - url: /hololens/hololens-updates
-      text: Gerenciar as suas atualizações do HoloLens
-    - url: /hololens/hololens2-cloud-connected-overview
-      text: Implantação conectada à nuvem com a Assistência Remota
-    - url: /hololens/hololens-troubleshooting
-      text: Solução de problemas e suporte
+    - title: Design
+      imageSrc: images/icon-design.png
+      links:
+        - url: design/design.md
+          text: Design e protótipo
+        - url: design/types-of-mixed-reality-apps.md
+          text: Escolha o seu tipo de aplicativo de Realidade Misturada
+        - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
+          text: Expanda o seu processo de design
+        - url: design/app-patterns-landingpage.md
+          text: Saiba mais sobre os elementos de UX
+        - url: design/comfort.md
+          text: Saiba mais sobre o conforto do usuário
+        - url: design/interaction-fundamentals.md
+          text: Compreenda os conceitos básicos de interação
+    - title: Desenvolver
+      imageSrc: design/images/icon-developer.png
+      links:
+        - url: develop/development.md
+          text: Escolha o seu caminho de tecnologia
+        - url: develop/features-and-samples.md
+          text: Encontrar exemplos e aplicativos de recursos
+        - url: develop/unity/unity-development-overview.md
+          text: Introdução ao Unity
+        - url: develop/unreal/unreal-development-overview.md
+          text: Introdução ao Unreal
+        - url: develop/porting-apps/porting-overview.md
+          text: Portar seus aplicativos existentes
+        - url: distribute/distribute-overview.md
+          text: Publicar seus aplicativos
+    - title: Implantar
+      imageSrc: images/icon-distribution.jpg
+      links:
+        - url: /hololens/hololens-requirements
+          text: Preparar para implantação comercial
+        - url: /hololens/hololens-identity
+          text: Gerenciar a identidade e as credenciais do usuário
+        - url: /hololens/hololens-enroll-mdm
+          text: Registrar os seus dispositivos
+        - url: /hololens/hololens-updates
+          text: Gerenciar as suas atualizações do HoloLens
+        - url: /hololens/hololens2-cloud-connected-overview
+          text: Implantação conectada à nuvem com a Assistência Remota
+        - url: /hololens/hololens-troubleshooting
+          text: Solução de problemas e suporte
 conceptualContent:
-  title: Estruturas
-  summary: Independentemente se o seu processo de desenvolvimento depender de um mecanismo, do idioma de sua preferência ou do hardware que você tem disponível, nós temos tudo o que você precisa.
+  title: Ambientes de desenvolvimento
+  summary: 'Saiba como criar aplicativos de realidade misturada em diversos ambientes, mecanismos e linguagens de produção.'
   items:
-  - title: Unity
-    summary: Crie, configure e implante aplicativos no Unity com o SDK do Kit de Ferramentas de Realidade Misturada.
-    links:
-    - url: develop/unity/unity-development-overview.md
-      itemType: overview
-      text: Visão geral do desenvolvimento com o Unity
-    - url: develop/unity/mrtk-getting-started.md
-      itemType: overview
-      text: O que é o MRTK?
-    - url: develop/unity/tutorials/mr-learning-base-01.md
-      itemType: tutorial
-      text: Série de tutoriais do HoloLens 2
-    - url: ./out-of-scope/mrtk-101.md
-      itemType: concept
-      text: Blocos principais de construção
-    - url: develop/unity/shared-experiences-in-unity.md
-      itemType: concept
-      text: Funcionalidades de plataforma e APIs
-    - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
-      itemType: deploy
-      text: Implantar no dispositivo ou emulador
-    footerLink:
-      url: develop/unity/unity-development-overview.md
-      text: Veja mais
-  - title: Unreal
-    summary: Crie, personalize e implante aplicativos no Unreal com o SDK do Kit de Ferramentas de Realidade Misturada.
-    links:
-    - url: develop/unreal/unreal-development-overview.md
-      itemType: overview
-      text: Visão geral do desenvolvimento com o Unreal
-    - url: develop/unreal/tutorials/unreal-uxt-ch1.md
-      itemType: tutorial
-      text: Criar uma série de tutoriais do aplicativo de xadrez
-    - url: develop/unreal/unreal-gaze-input.md
-      itemType: concept
-      text: Blocos principais de construção
-    - url: develop/unreal/unreal-hololens-camera.md
-      itemType: concept
-      text: Funcionalidades de plataforma e APIs
-    - url: develop/unreal/performance-recommendations-for-unreal.md
-      itemType: concept
-      text: Recomendações de desempenho
-    - url: develop/unreal/unreal-deploying.md
-      itemType: deploy
-      text: Implantar no dispositivo ou emulador
-    footerLink:
-      url: develop/unreal/unreal-development-overview.md
-      text: Veja mais
-  - title: Nativo
-    summary: Construa experiências holográficas nativas com o OpenXR, o WinRT e o DirectX.
-    links:
-    - url: develop/native/directx-development-overview.md
-      itemType: overview
-      text: Visão geral do desenvolvimento nativo
-    - url: develop/native/openxr.md
-      itemType: overview
-      text: O que é o OpenXR?
-    - url: develop/native/openxr-getting-started.md
-      itemType: get-started
-      text: Introdução ao OpenXR
-    - url: develop/native/openxr-best-practices.md
-      itemType: concept
-      text: Práticas recomendadas do OpenXR
-    - url: develop/native/openxr-troubleshooting.md
-      itemType: reference
-      text: Solução de problemas do OpenXR
-    footerLink:
-      url: develop/native/directx-development-overview.md
-      text: Veja mais
+    - title: Unity
+      summary: 'Crie, configure e implante aplicativos no Unity com o SDK do Kit de Ferramentas de Realidade Misturada.'
+      links:
+        - url: develop/unity/unity-development-overview.md
+          itemType: overview
+          text: Visão geral do desenvolvimento com o Unity
+        - url: develop/unity/mrtk-getting-started.md
+          itemType: overview
+          text: O que é o MRTK?
+        - url: develop/unity/tutorials/mr-learning-base-01.md
+          itemType: tutorial
+          text: Série de tutoriais do HoloLens 2
+        - url: /windows/mixed-reality/mrtk-unity/
+          itemType: concept
+          text: Blocos principais de construção
+        - url: develop/unity/shared-experiences-in-unity.md
+          itemType: concept
+          text: Funcionalidades de plataforma e APIs
+        - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
+          itemType: deploy
+          text: Implantar no dispositivo ou emulador
+      footerLink:
+        url: develop/unity/unity-development-overview.md
+        text: Veja mais
+    - title: Unreal
+      summary: 'Crie, personalize e implante aplicativos no Unreal com o SDK do Kit de Ferramentas de Realidade Misturada.'
+      links:
+        - url: develop/unreal/unreal-development-overview.md
+          itemType: overview
+          text: Visão geral do desenvolvimento com o Unreal
+        - url: develop/unreal/tutorials/unreal-uxt-ch1.md
+          itemType: tutorial
+          text: Criar uma série de tutoriais do aplicativo de xadrez
+        - url: develop/unreal/unreal-gaze-input.md
+          itemType: concept
+          text: Blocos principais de construção
+        - url: develop/unreal/unreal-hololens-camera.md
+          itemType: concept
+          text: Funcionalidades de plataforma e APIs
+        - url: develop/unreal/performance-recommendations-for-unreal.md
+          itemType: concept
+          text: Recomendações de desempenho
+        - url: develop/unreal/unreal-deploying.md
+          itemType: deploy
+          text: Implantar no dispositivo ou emulador
+      footerLink:
+        url: develop/unreal/unreal-development-overview.md
+        text: Veja mais
+    - title: Nativo
+      summary: 'Construa experiências holográficas nativas com o OpenXR, o WinRT e o DirectX.'
+      links:
+        - url: develop/native/directx-development-overview.md
+          itemType: overview
+          text: Visão geral do desenvolvimento nativo
+        - url: develop/native/openxr.md
+          itemType: overview
+          text: O que é o OpenXR?
+        - url: develop/native/openxr-getting-started.md
+          itemType: get-started
+          text: Introdução ao OpenXR
+        - url: develop/native/openxr-best-practices.md
+          itemType: concept
+          text: Práticas recomendadas do OpenXR
+        - url: develop/native/openxr-troubleshooting.md
+          itemType: reference
+          text: Solução de problemas do OpenXR
+      footerLink:
+        url: develop/native/directx-development-overview.md
+        text: Veja mais
 tools:
   title: SDKs e APIs
-  summary: Introdução ao SDK do Kit de Ferramentas de Realidade Misturada usando o seu mecanismo de jogo favorito.
+  summary: Comece a usar o Kit de Ferramentas de Realidade Misturada para o Unity e o Unreal e explore o que o Windows XR e o OpenXR têm a oferecer.
   items:
-  - title: MRTK para o Unity
-    imageSrc: images/Final_mrtk-small_logo.png
-    url: https://github.com/microsoft/MixedRealityToolkit-Unity
-  - title: MRTK para o Unreal
-    imageSrc: images/Final_mrtk-small_logo.png
-    url: https://github.com/microsoft/MixedRealityToolkit-Unreal
-  - title: Plug-in do Windows XR para o Unity
-    imageSrc: images/icon-plugin.png
-    url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
-  - title: Especificações do OpenXR
-    imageSrc: images/Final_mrdl_logo.png
-    url: https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html
-  - title: API do OpenXR
-    imageSrc: images/Final_mrdl_logo.png
-    url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
+    - title: MRTK para o Unity
+      imageSrc: images/Final_mrtk-small_logo.png
+      url: 'https://github.com/microsoft/MixedRealityToolkit-Unity'
+    - title: MRTK para o Unreal
+      imageSrc: images/Final_mrtk-small_logo.png
+      url: 'https://github.com/microsoft/MixedRealityToolkit-Unreal'
+    - title: Plug-in do Windows XR para o Unity
+      imageSrc: images/icon-plugin.png
+      url: 'https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html'
+    - title: Especificações do OpenXR
+      imageSrc: images/Final_mrdl_logo.png
+      url: 'https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html'
+    - title: API do OpenXR
+      imageSrc: images/Final_mrdl_logo.png
+      url: 'https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html'

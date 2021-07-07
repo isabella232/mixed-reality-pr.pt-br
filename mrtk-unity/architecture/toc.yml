@@ -6,9 +6,9 @@
   items:
     - name: Terminologia
       href: terminology.md
-    - name: Sistema Principal
+    - name: Sistema principal
       href: core-system.md
-    - name: Ponteiros e foco de controladores
+    - name: 'Controladores, ponteiros e foco'
       href: controllers-pointers-and-focus.md
 - name: 'Sistemas, serviços de extensão e provedores de dados'
   href: systems-extensions-providers.md

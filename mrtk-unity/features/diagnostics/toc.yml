@@ -1,6 +1,6 @@
-- name: Configurando o diagnóstico
+- name: Configurando diagnósticos
   href: configuring-diagnostics.md
-- name: Introdução do sistema de diagnóstico
+- name: Visão geral do sistema de diagnósticos
   href: diagnostics-system-getting-started.md
-- name: Como usar o Visual Profiler
+- name: Usando o criador de perfil visual
   href: using-visual-profiler.md

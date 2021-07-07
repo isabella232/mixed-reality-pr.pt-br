@@ -1,8 +1,8 @@
 - name: Hub de exemplo
   href: example-hub.md
-- name: Exemplos de interação à mão
+- name: Exemplos de interação com a mão
   href: hand-interaction-examples.md
-- name: Acompanhamento da junta da mão
+- name: Acompanhamento da articulação da mão
   href: hand-joint-chaser.md
 - name: Visão geral dos exemplos de acompanhamento ocular
   href: eye-tracking-examples-overview.md

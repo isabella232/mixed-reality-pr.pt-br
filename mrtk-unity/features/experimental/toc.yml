@@ -1,8 +1,8 @@
 - name: Dock
   href: dock.md
-- name: Serviço de física de mão
-  href: hand-physics-service.md
+- name: Sistema elástico
+  href: elastic-system.md
 - name: Elemento interativo
   href: interactive-element.md
-- name: Teclado de realidade misturada
+- name: Teclado de Realidade Misturada
   href: mixed-reality-keyboard.md
