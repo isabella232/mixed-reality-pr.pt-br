@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 9fa81db9a71f1d0ce32bdd80a123eb072fc26fc5
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6a33ed5b021e90cba56344f32a9c9a33e8fcc476
+ms.sourcegitcommit: c260aed8a37855faf9575d968e615959a56a13fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143395"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113466226"
 ---
-# <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>Classes auxiliares de teclado do HoloLens e realidade misturada
+# <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>Classes auxiliares de teclado HoloLens realidade misturada
 
 O MRTK fornece vários componentes auxiliares experimentais para ajudar a iniciar e ler texto do [Teclado do Sistema.](../ux-building-blocks/system-keyboard.md)
 
-Observe que o teclado do sistema se comportará de acordo com os recursos da plataforma de destino, por exemplo, o teclado no HoloLens 2 dará suporte a interações diretas à mão, enquanto o teclado no HoloLens (1ª geração) dará suporte ao GGV<sup>[1.](/windows/mixed-reality/gaze)</sup> Além disso, o teclado do sistema não será aparecer ao executar a [Remoting do Unity](../tools/holographic-remoting.md) do editor para um HoloLens.
+Observe que o teclado do sistema se comportará de acordo com as funcionalidades da plataforma de destino, por exemplo, o teclado no HoloLens 2 dará suporte a interações diretas à mão, enquanto o teclado no HoloLens (1ª geração) dará suporte ao GGV<sup>[1.](/windows/mixed-reality/gaze)</sup> Além disso, o teclado do sistema não será aparecer ao executar a [Remoting do Unity](../tools/holographic-remoting.md) do editor para um HoloLens.
 
 ## <a name="mixedrealitykeyboard"></a>MixedRealityKeyboard
 
@@ -25,7 +25,7 @@ Observe que o teclado do sistema se comportará de acordo com os recursos da pla
 ### <a name="how-to-use"></a>Como usar
 
 1. Anexe [`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard) o componente a qualquer objeto.
-2. Chame para mostrar e ocultar o teclado e manipular os eventos e para manipular quando o teclado for mostrado, oculto e quando a `Show()` `Hide()` tecla Enter for `OnShowKeyboard` `OnHideKeyboard` `OnCommitText` pressionada.
+2. Chame para mostrar e ocultar o teclado e manipular os eventos e para manipular quando o teclado for mostrado, oculto e quando a `ShowKeyboard(string text = "", bool multiLine = false)` `HideKeyboard()` tecla Enter for `OnShowKeyboard` `OnHideKeyboard` `OnCommitText` pressionada.
 
 ## <a name="input-fields-tmp_keyboardinputfield-and-ui_keyboardinputfield"></a>Campos de entrada TMP_KeyboardInputField e UI_KeyboardInputField
 
