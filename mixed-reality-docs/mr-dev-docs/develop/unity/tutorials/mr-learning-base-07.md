@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, interações de objetos, Controles de Limites
 ms.localizationpriority: high
-ms.openlocfilehash: c2cca67afe19665ea899eb56140011bd9c756a7f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: cbf2bbf78a34cfdd4856b7b8d192e4ac7c2f0154
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982859"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110266"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Como interagir com objetos 3D
 
@@ -88,7 +88,7 @@ Na janela Hierarquia, selecione novamente todos os **objetos de peças do Rover*
 
 ![Unity com todas as partes da sonda selecionadas e o componente Fonte de Áudio adicionado e configurado](images/mr-learning-base/base-07-section1-step1-4.png)
 
-Na janela Hierarquia, expanda o objeto RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** para revelar todos os objetos de dica de posicionamento e, em seguida, selecione a primeira peça do Rover, RoverParts > **Camera_Part** e configure o componente **Part Assembly Controller (Script)** da seguinte maneira:
+Na janela Hierarquia, expanda o objeto RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** para revelar todos os objetos de dica de posicionamento, e selecione a parte Camera_part do Rover, RoverParts > **Camera_Part** e configure o componente **Part Assembly Controller (Script)** da seguinte maneira:
 
 * Atribua o objeto **Camera_PlacementHint** ao campo **Location To Place**
 
@@ -113,7 +113,7 @@ Se agora você entrar no modo de Jogo, poderá usar a interação próxima ou di
 
 ![Modo de exibição dividida do Modo de reprodução do Unity com o botão Redefinir recebendo um clique](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Para saber mais sobre o componente Object Manipulator e suas propriedades associadas, acesse o guia [Manipulador de Objeto](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Para saber mais sobre o componente Object Manipulator e suas propriedades associadas, acesse o guia [Manipulador de Objeto](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator) no [Portal de Documentação do MRTK](/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="adding-bounds-control"></a>Como adicionar o Controle de Limites
 
@@ -134,7 +134,7 @@ Em seguida, **desmarque** a caixa de seleção próxima a todos os componentes p
 > A visualização do Controle de Limites é criada no runtime e, portanto, não fica visível até que você entre no modo de Jogo.
 
 > [!NOTE]
->O Object Manipulator (Script) adiciona automaticamente o Constraint Manager (Script)
+> O Object Manipulator (Script) adiciona automaticamente o Constraint Manager (Script)
 
 Na janela Hierarquia, expanda o objeto Menu > **ButtonCollection** para revelar os quatro botões e renomeie o terceiro botão como **BoundsControl_Enable**. Em seguida, na janela Inspetor, configure o componente **Button Config Helper (Script)** da seguinte maneira:
 
@@ -168,7 +168,7 @@ Se agora você entrar no modo de Jogo e habilitar o Controle de Limites clicando
 
 ![Modo de exibição dividida do Modo de Jogo do Unity com o Controle de Limites sendo manipulado](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Para saber mais sobre o componente de Controle de Limites e as propriedades associadas a ele, acesse o guia da [Controle de Limites](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Para saber mais sobre o componente de Controle de Limites e as propriedades associadas a ele, acesse o guia da [Controle de Limites](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control) no [Portal de Documentação do MRTK](/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="congratulations"></a>Parabéns
 

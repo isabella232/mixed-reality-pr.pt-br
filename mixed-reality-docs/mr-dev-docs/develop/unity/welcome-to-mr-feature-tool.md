@@ -3,16 +3,16 @@ title: Bem-vindo(a) à Ferramenta de Recursos de Realidade Misturada
 description: Conheça os conceitos básicos da Ferramenta de Recursos de MR para desenvolvimento do HoloLens e da VR.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
-ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
+ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570249"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772409"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Bem-vindo(a) à Ferramenta de Recursos de Realidade Misturada
 
@@ -33,13 +33,31 @@ Para executar a Ferramenta de Recursos de Realidade Misturada, você precisará 
 > [!NOTE]
 > Atualmente, a Ferramenta de Recursos de Realidade Misturada só é executada no Windows, mas o suporte ao macOS estará disponível em breve.
 
-## <a name="download"></a>Baixar 
+## <a name="download"></a>Baixar
 
 Depois de configurar seu ambiente:
 
 * [Baixe a última versão da Ferramenta de Recursos da Realidade Misturada](https://aka.ms/MRFeatureTool) no Centro de Download da Microsoft.
 * Quando o download for concluído, descompacte o arquivo e salve-o na área de trabalho
     * Recomendamos criar um atalho para o arquivo executável para obter acesso mais rápido
+
+> [!NOTE]
+> Se não estiver usando o Gerenciador de Pacotes do Unity, siga nossas [instruções do UPM](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
+
+## <a name="changes-in-this-release"></a>Alterações nessa versão
+
+A versão 1.0.2103 Beta inclui as seguintes correções:
+
+* Melhorias no download de detecção de erros.
+* Atualizações sobre como os manifestos são gravados para evitar falhas na atualização correta.
+* O Escpaing foi removido dos caminhos de arquivo no manifesto do projeto.
+
+Os seguintes recursos foram adicionados nesta atualização:
+
+* O catálogo de recursos agora é armazenado em cache. Para verificar se há novos recursos e atualizações, use o botão Atualizar na Descoberta.
+* A seleção de projeto foi transferida da etapa Importar para antes da Descoberta.
+* Os pacotes disponíveis são filtrados pela versão especificada do Unity do projeto.
+* A exibição de descoberta agora mostra os pacotes instalados no momento.
 
 ## <a name="1-getting-started"></a>1. Introdução
 
@@ -53,26 +71,43 @@ Na página inicial, você poderá:
 * Usar o botão de **ponto de interrogação** para iniciar o navegador da Web padrão e ver nossa documentação
 * Selecione **Iniciar** para começar a descobrir os pacotes de recursos
 
-## <a name="2-discovering-and-acquiring-feature-packages"></a>2. Como descobrir e adquirir pacotes de recursos
+## <a name="2-selecting-your-unity-project"></a>2. Como selecionar o projeto do Unity
 
-O catálogo do pacote de recursos é recuperado assim que você clica em Iniciar. Os recursos são agrupados por categoria para facilitar a localização dos itens. Por exemplo, a categoria **Kit de Ferramentas de Realidade Misturada** traz vários recursos para sua escolha:
+Para garantir que todos os recursos descobertos são compatíveis com a versão do Unity do seu projeto, o primeiro passo é apontar a Ferramenta de Recursos de Realidade Misturada para seu projeto usando o botão de **elipse** (à direita do campo de caminho do projeto).
+
+![Selecionar o projeto do Unity](images/FeatureToolSelectUnityProject.png)
+
+> [!NOTE]
+> A caixa de diálogo exibida durante a navegação para a pasta de projeto do Unity contém '_' como o nome do arquivo. É necessário colocar um valor para o nome do arquivo a fim de permitir que a pasta seja selecionada.
+
+Depois de localizar a pasta do projeto, clique em Abrir para retornar à Ferramenta de Recursos de Realidade Misturada.
+
+> [!IMPORTANT]
+> A Ferramenta de Recursos de Realidade Misturada executa a validação para garantir que ela tenha sido direcionada para a pasta do projeto do Unity. A pasta deve conter as pastas `Assets`, `Packages` e `Project Settings`.
+
+## <a name="3-discovering-and-acquiring-feature-packages"></a>3. Como descobrir e adquirir pacotes de recursos
+
+> [!NOTE]
+> A versão 1.0.2103 Beta agora armazena em cache o conteúdo do catálogo de recursos sempre que o servidor é acessado. Essa alteração permite o acesso rápido aos recursos disponíveis, em detrimento da exibição dos dados absolutos mais recentes. Para atualizar o catálogo, use o botão **Atualizar**.
+
+Os recursos são agrupados por categoria para facilitar a localização dos itens. Por exemplo, a categoria **Kit de Ferramentas de Realidade Misturada** traz vários recursos para sua escolha:
 
 ![Descoberta e aquisição](images/FeatureToolDiscovery.png)
 
+Quando a Ferramenta de Recursos de Realidade Misturada reconhece os recursos importados anteriormente, ela exibe uma mensagem de notificação para cada um.
+
+![Notificação do recurso importado](images/feature-tool-imported-note.png)
+
+
 Depois de fazer suas escolhas, selecione **Obter recursos** para buscar todos os pacotes necessários do catálogo. Para obter mais informações, confira [Como descobrir e adquirir recursos](discovering-features.md).
 
-## <a name="3-importing-feature-packages"></a>3. Como importar pacotes de recursos
+## <a name="4-importing-feature-packages"></a>4. Como importar pacotes de recursos
 
 Após a aquisição, o conjunto completo de pacotes é apresentado, juntamente com uma lista de dependências necessárias. Caso você precise alterar qualquer seleção de recurso ou pacote, esta é a hora:
 
 ![Importando pacotes](images/FeatureToolImport.png)
 
 Recomendamos expressamente usar o botão **Validar** para garantir que o projeto do Unity possa importar os recursos selecionados com êxito. Após a validação, você verá uma caixa de diálogo pop-up com uma mensagem de êxito ou uma lista dos problemas identificados.
-
-Você também precisará definir a localização do projeto de destino do Unity antes da importação. Use o botão de **reticências** à esquerda do campo do caminho do projeto para a busca. Quando terminar de navegar no sistema de arquivos, abra a pasta que contém o projeto de destino do Unity.
-
-> [!NOTE]
-> A caixa de diálogo exibida durante a navegação para a pasta de projeto do Unity contém '_' como o nome do arquivo. É necessário colocar um valor para o nome do arquivo a fim de permitir que a pasta seja selecionada.
 
 Escolha **Importar** para continuar.
 
@@ -81,7 +116,7 @@ Escolha **Importar** para continuar.
 
 Para obter mais informações, confira [Como importar recursos](importing-features.md).
 
-## <a name="4-reviewing-and-approving-project-changes"></a>4. Como examinar e aprovar as alterações do projeto
+## <a name="5-reviewing-and-approving-project-changes"></a>5. Como examinar e aprovar as alterações do projeto
 
 A etapa final é examinar e aprovar as alterações propostas para os arquivos de manifesto e de projeto:
 
@@ -93,9 +128,9 @@ A etapa final é examinar e aprovar as alterações propostas para os arquivos d
 
 Para obter mais informações, confira [Como examinar e aprovar as modificações do projeto](reviewing-changes.md).
 
-## <a name="5-project-updated"></a>5. Projeto atualizado
+## <a name="6-project-updated"></a>6. Projeto atualizado
 
-Quando as alterações propostas forem aprovadas, o projeto de destino do Unity será atualizado para referenciar os recursos de Realidade Misturada selecionados:
+Quando as alterações propostas forem aprovadas, o projeto de destino do Unity será atualizado para referenciar os recursos de Realidade Misturada selecionados.
 
 ![Projeto atualizado](images/FeatureToolProjectUpdated.png)
 

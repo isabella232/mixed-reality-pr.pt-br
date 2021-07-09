@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983139"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175569"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introdução às Âncoras Espaciais do Azure
 
@@ -31,43 +31,15 @@ Primeiro, siga [Como inicializar o seu projeto e implantar o primeiro aplicativo
 
 1. [Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais do MRTK*
 2. [Como alternar a plataforma de build](mr-learning-base-02.md#switching-the-build-platform)
-3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Como configurar o projeto do Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *AzureSpatialAnchors*
+3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Como importar o Kit de ferramentas de Realidade Misturada e configurar o projeto do Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Criar e configurar a cena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e dar um nome adequado à cena, por exemplo, *AzureSpatialAnchors*
 
-Em seguida, siga as instruções em [Alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para:
+Em seguida, siga as instruções em [Alterar a Opção de Exibição de Reconhecimento Espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para verificar se o perfil de configuração do MRTK da sua cena é o **DefaultHoloLens2ConfigurationProfile** e alterar as opções de exibição da malha de reconhecimento espacial para **Oclusão**.
 
-1. Alterar o **perfil de configuração do MRTK** para **DefaultHoloLens2ConfigurationProfile**
-1. Alterar as **opções de exibição da malha de reconhecimento espacial** para **Oclusão**.
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>Instalação de pacotes incorporados do Unity e importação de ativos do tutorial
 
-## <a name="installing-inbuilt-unity-packages"></a>Instalar pacotes internos do Unity
-
-No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a janela Gerenciador de Pacotes e selecione **AR Foundation** e clique no botão **Instalar** para instalar o pacote:
-
-![Janela Gerenciador de Pacotes do Unity com o AR Foundation selecionado](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Você está instalando o pacote do AR Foundation porque ele é exigido pelo SDK de Âncoras Espaciais do Azure e será importado na próxima seção.
-
-## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
-
-Adicione o SDK do AzurespatialAnchors V2.7.1 ao seu projeto do Unity. Para adicionar os pacotes, siga este [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
-
-![Janelas Hierarquia, Cena e Projeto do Unity após a importação dos ativos do tutorial](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> Se você vir avisos CS0618 sobre 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' estar obsoleto, poderá ignorá-los.
-
-> [!TIP]
-> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-02.md#importing-the-tutorial-assets).
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## <a name="preparing-the-scene"></a>Preparando a cena
 
@@ -84,6 +56,20 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureSpati
 
 > [!TIP]
 > Se você considerar que ícones grandes na sua cena, por exemplo, os ícones "T" grandes, causam distração, poderá ocultá-los <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">alternando o Utensílio</a> para a posição de desligado, conforme mostrado na imagem acima.
+
+Selecione o objeto **MixedRealityToolkit** na janela Hierarquia e use o botão **Adicionar Componente** na janela Inspetor para adicionar os seguintes componentes:
+
+* AR Anchor Manager (Script)
+* DisableDiagnosticsSystem (Script)
+
+![Objeto MixedRealityToolkit do Unity com o AR Anchor Manager e os componentes DisableDiagnosticsSystem adicionados ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!WARNING]
+> Existe um problema conhecido com o ASA v2.9.0 e o v2.10.0-versão prévia.1 que exige que dois objetos adicionais sejam incluidos. Use o botão **Adicionar componente** na janela Inspetor para adicionar um Gerenciador de Câmera AR (script) e uma sessão AR (script) ao objeto **MixedRealityToolkit**. Não se esqueça de desabilitar a Câmera, que é criada automaticamente ao adicionar o Gerenciador de câmera AR (script), desmarcando a caixa de seleção ao lado do objeto Câmera na janela Inspetor. Esse problema será abordado na versão completa do ASA v2.10.0.
+> 
+
+> [!NOTE]
+> Quando você adiciona o componente AR Anchor Manager (script), o componente AR Session Origin (script) é adicionado automaticamente, pois ele é exigido pelo componente AR Anchor Manager (script).
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>Como configurar os botões para operar a cena
 
@@ -153,15 +139,15 @@ As Âncoras Espaciais do Azure não podem ser executadas no Unity, portanto, par
 Quando o aplicativo for executado no seu dispositivo, siga as instruções na tela exibidas no painel Instruções do Tutorial de Âncora Espacial do Azure:
 
 1. Mover o cubo para uma localização diferente
-1. Iniciar a Sessão do Azure
-1. Criar Âncora do Azure (cria uma âncora na localização do cubo).
-1. Interromper a Sessão do Azure
-1. Remover a Âncora Local (permite que o usuário mova o cubo)
-1. Mover o cubo para outro lugar
-1. Iniciar a Sessão do Azure
-1. Localizar a Âncora do Azure (posiciona o cubo na localização da etapa 3)
-1. Excluir a Âncora do Azure
-1. Interromper a sessão do Azure
+2. Iniciar a Sessão do Azure
+3. Criar Âncora do Azure (cria uma âncora na localização do cubo).
+4. Interromper a Sessão do Azure
+5. Remover a Âncora Local (permite que o usuário mova o cubo)
+6. Mover o cubo para outro lugar
+7. Iniciar a Sessão do Azure
+8. Localizar a Âncora do Azure (posiciona o cubo na localização da etapa 3)
+9. Excluir a Âncora do Azure
+10. Interromper a sessão do Azure
 
 ![Unity com o objeto Instructions selecionado](images/mr-learning-asa/asa-02-section7-step1-1.png)
 

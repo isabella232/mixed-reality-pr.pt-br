@@ -1,18 +1,18 @@
 ---
-ms.openlocfilehash: cd8a8229c7f70891a8f01d39ee1d6315c47429f6
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: f540c1cb417f64c412657ce291c0a0822961e55d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104988318"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112255496"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
-Os aplicativos de exemplo de software livre foram criados pelas nossas equipes para ajudar você a aprender a lidar com o desenvolvimento de Realidade Misturada em primeira mão. Fornecemos os projetos e o código-fonte completo como uma referência de aprendizado.
+Os aplicativos de exemplo de código aberto foram criados pelas nossas equipes para ajudar você a controlar o desenvolvimento de Realidade Misturada em primeira mão. Fornecemos os projetos e o código-fonte completo como uma referência de aprendizado.
 
 ### <a name="hololens-2-open-source-sample-apps"></a>Aplicativos de exemplo de software livre do HoloLens 2
 
-* [Hub de Exemplos do MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Hub de Exemplos do MRTK](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](../unity/sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/p/surfaces/9nvkpv3sk3x0)
 * [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](../unity/galaxy-explorer-update.md)

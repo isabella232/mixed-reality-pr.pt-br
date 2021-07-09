@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Conheça as ferramentas e a arquitetura
 description: Conheça as ferramentas de desenvolvimento de realidade misturada de que você precisará para começar a criar aplicativos para HoloLens e headsets imersivos.
 author: grbury
@@ -8,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, desenvolver, desenvolvimento, HoloLens, unity, unreal, directx, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada, desenvolvimento de realidade virtual, desenvolvimento de realidade aumentada
-ms.openlocfilehash: fb470fe0ec146346d18b353b5d359956d2fd28ac
-ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
+ms.openlocfilehash: b47970de15451ea3bd0c121edd7dc61438fa115c
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108172538"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394320"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introdução ao desenvolvimento de Realidade Misturada
 
@@ -21,27 +20,30 @@ ms.locfileid: "108172538"
 
 A Realidade Misturada é um lugar imenso, um nexo em que os mundos real e virtual colidem com uma explosão. As possibilidades são intermináveis, e isso começa com você. Escolha seu mecanismo, baixe suas ferramentas e tire o pó do teclado. Bem-vindo(a) ao ecossistema de Realidade Misturada: chegou a hora de criar.
 
-## <a name="development-options"></a>Opções de desenvolvimento
+Temos três caminhos possíveis para começar no desenvolvimento de realidade misturada, cada um deles descrito na respectiva seção abaixo:
+* [Microsoft Learn](#microsoft-learn)
+* [Série de tutoriais de Kit de ferramentas de Realidade Misturada](#mixed-reality-toolkit-tutorials)
+* [Exploração autoguiada](#self-guided-exploration)
 
-**Unity** – O Unity é uma das principais plataformas de desenvolvimento em tempo real no mercado, com código de runtime subjacente escrito em C++; todo o script de desenvolvimento é feito em C#. Se você está buscando criar jogos, filmes e cinemática de animação ou, até mesmo, renderizar conceitos de arquitetura ou engenharia em um mundo virtual, o Unity tem a infraestrutura certa para ajudar você.
+## <a name="microsoft-learn"></a>Microsoft Learn
 
-**Unreal** – o Unreal Engine 4 é um mecanismo de criação avançado e de software livre com suporte completo para realidade misturada em C++ e Blueprints. Desde o Unreal Engine 4.25, o suporte ao HoloLens é completo e pronto para produção. Com funcionalidades como o sistema de Script Visual de Blueprints flexível, os designers podem praticamente usar a gama completa de conceitos e ferramentas que geralmente estão disponíveis apenas para programadores. Os criadores de vários setores podem aproveitar a liberdade e o controle para oferecer conteúdo de ponta, experiências interativas e mundos virtuais de imersão.
+O Microsoft Learn é como uma central de aprendizado. Descubra novas habilidades, encontre certificações e desenvolva sua carreira em questão de minutos com 	roteiros de aprendizagem práticos e interativos.
 
-**Nativo (OpenXR)** – o OpenXR é um padrão aberto de API isento de royalties da Khronos, que fornece aos mecanismos o acesso nativo a uma ampla variedade de dispositivos de fornecedores em toda a gama de realidade misturada. Faça o desenvolvimento com o OpenXR em um headset imersivo do HoloLens 2 ou do Windows Mixed Reality na área de trabalho. Se você não tem acesso a um headset, os emuladores para o HoloLens 2 e os headsets do Windows Mixed Reality estão disponíveis.
+Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo para você começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de Realidade Misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface.
 
-## <a name="what-technology-path-are-you-interested-in"></a>Em qual caminho de tecnologia você está interessado? 
+> [!div class="nextstepaction"]
+> [Introdução à Realidade Misturada no Microsoft Learn](/learn/modules/intro-to-mixed-reality)
 
-Há vários caminhos de desenvolvimento que você pode adotar por meio da nossa documentação. A primeira etapa é encontrar a tecnologia certa para você. Se você já tiver uma em mente, vá em frente e vá direto para a respectiva guia abaixo. Se estiver indeciso ou apenas começando, dê uma olhada em cada uma delas e entenda o que oferecem, as plataformas e as ferramentas disponíveis, e comece a criar.
+## <a name="mixed-reality-toolkit-tutorials"></a>Tutorias de Kit de ferramentas de Realidade Misturada
 
-> [!IMPORTANT]
-> Dê uma olhada em nossa **[visão geral dos guias de portabilidade](porting-apps/porting-overview.md)** se você tiver projetos existentes que deseja trazer para o HoloLens 2 ou headsets de VR imersivos, como o Reverb G2. Temos guias de projetos que usam HTK, MRTK v1, SteamVR ou que foram desenvolvidos para headsets imersivos, como o Oculus Rift ou HTC Vive.
+Se você for do tipo que aprende na prática, confira nossa série de tutoriais MRTK (Kit de ferramentas de Realidade Misturada). Você criará uma experiência de realidade misturada em que o usuário poderá explorar um holograma modelado após o Mars Curiosity Rover da NASA e obterá uma compreensão segura do MRTK e como ele pode acelerar seu processo de desenvolvimento.
 
-[!INCLUDE[](includes/tech-path-overview.md)]
+> [!div class="nextstepaction"]
+> [Tutoriais do MRTK](unity/tutorials/mr-learning-base-01.md)
 
-## <a name="whats-next"></a>E agora?
+## <a name="self-guided-exploration"></a>Exploração autoguiada
 
-Agora que você tem um caminho de tecnologia em mente, vamos equipar você com as ferramentas necessárias para iniciar sua jornada.
+Se você for um desenvolvedor experiente e deseja ir direto para os nossos documentos, comece instalando as ferramentas necessárias. Depois, escolha a configuração de desenvolvimento do Unity e siga nosso caminho de desenvolvimento com curadoria do Unity usando o HoloLens, ou navegue por nossa biblioteca de conteúdo.
 
 > [!div class="nextstepaction"]
 > [Instalar as ferramentas](install-the-tools.md)
-

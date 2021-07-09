@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é realidade aumentada, MRTK, kit de ferramentas de realidade misturada, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 074f42fd077d888523c2cf0a7da5bcafcfadb0f0
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528713"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906962"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Desenvolvimento do Unity para VR e Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Se você não tem familiaridade com o Unity, recomendamos explorar os [tutoriais
 
 ## <a name="development-checkpoints"></a>Pontos de verificação de desenvolvimento
 
-Use os pontos de verificação a seguir para levar seus jogos e aplicativos do Unity para o mundo da realidade misturada. 
+Use os pontos de verificação a seguir para levar seus jogos e aplicativos do Unity para o mundo da realidade misturada.
 
 ### <a name="1-getting-started"></a>1. Introdução
 
@@ -34,7 +34,7 @@ Há um pequeno conjunto de configurações do Unity que você precisará alterar
 |  Ponto de verificação  |  Resultado  |
 | --- | --- |
 | [Instale as ferramentas mais recentes](../install-the-tools.md) | Baixe e instale o pacote mais recente do Unity e configure seu projeto para realidade misturada |
-| [Como configurar seu projeto para o WMR](windows-xr-plugin.md) | Saiba como criar aplicativos que renderizam conteúdo digital em dispositivos de vídeo holográficos e VR |
+| [Configuração do projeto para VR e headsets do Windows Mixed Reality](./xr-project-setup.md?tabs=openxr) | Saiba como criar aplicativos que renderizam conteúdo digital em dispositivos de vídeo holográficos e VR |
 
 > [!IMPORTANT]
 > Confira o [guia de configuração](choosing-unity-version.md) do projeto do Unity para obter mais informações sobre como configurar seus projetos.

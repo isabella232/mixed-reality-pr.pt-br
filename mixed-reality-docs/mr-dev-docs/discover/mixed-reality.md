@@ -1,18 +1,18 @@
 ---
 title: O que é Realidade Misturada?
-description: Este artigo define a Realidade Misturada e demonstra onde os dispositivos RA e VR ficam ao longo do espectro da Realidade Misturada.
+description: Discussão sobre Realidade Misturada, demonstrando o uso de dispositivos AR e VR no espectro da Realidade Misturada.
 author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
 keywords: Realidade Misturada, holográfico, AR, VR, MR, XR, realidade aumentada, realidade virtual, explicação, estudo de caso, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é a realidade aumentada
 ms.localizationpriority: high
-ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e524312b2e479b1c3d05039403aba10de864ae18
+ms.sourcegitcommit: 5603dc9f6511707cb8b215f20f6c6485ef480538
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583016"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112230207"
 ---
 # <a name="what-is-mixed-reality"></a>O que é Realidade Misturada?
 

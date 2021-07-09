@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10, LUIS, portal do LUIS, intenção, entidades, enunciados, reconhecimento vocal natural
 ms.localizationpriority: high
-ms.openlocfilehash: 49e2b44000add22e924d9552f60b63ac1ac30288
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ab9c1db7ca90a59e4ef688a8faa3d294e433cff6
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590358"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403457"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Como configurar a intenção e o reconhecimento vocal natural
 
@@ -27,18 +27,18 @@ Neste tutorial, você vai explorar o reconhecimento de intenção do Serviço de
 
 Na janela Hierarquia, selecione o objeto **Lunarcom** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Reconhecedor de Intenção do Lunarcom (Script)** ao objeto Lunarcom:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-1.png)
+![mrlearning-speech 1](images/mrlearning-speech/tutorial4-section1-step1-1.png)
 
 Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutoriais.GettingStarted** > **Pré-fabricados** > **RocketLauncher**, arraste o pré-fabricado **RocketLauncher_Complete** para a janela Hierarquia e coloque-o em uma localização adequada na frente da câmera, por exemplo:
 
 * **Posição** da Transformação X = 0, Y = -0,4, Z = 1
 * **Rotação** da Transformação X = 0, Y = 90, Z = 0
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-2.png)
+![mrlearning-speech 2](images/mrlearning-speech/tutorial4-section1-step1-2.png)
 
 Na janela Hierarquia, selecione o objeto **Lunarcom** novamente e, em seguida, expanda o objeto **RocketLauncher_Complete** > **Botão** e atribua a cada um dos botões filho do objeto **Botões** ao campo **Botões do Iniciador Lunar** correspondente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-3.png)
+![mrlearning-speech 3](images/mrlearning-speech/tutorial4-section1-step1-3.png)
 
 ## <a name="creating-the-azure-language-understanding-resource"></a>Como criar o recurso de Reconhecimento vocal do Azure
 
@@ -46,18 +46,18 @@ Nesta seção, você criará um recurso de previsão do Azure para o aplicativo 
 
 Entre no <a href="https://portal.azure.com" target="_blank">Azure</a> e clique em **Criar um recurso**. Em seguida, pesquise e selecione **Reconhecimento vocal**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-1.png)
+![mrlearning-speech 4](images/mrlearning-speech/tutorial4-section2-step1-1.png)
 
 Clique no botão **Criar** para criar uma instância desse serviço:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-2.png)
+![mrlearning-speech 5](images/mrlearning-speech/tutorial4-section2-step1-2.png)
 
 Na página Criar, clique na opção **Previsão** e insira os seguintes valores:
 
 * Para **Assinatura**, selecione **Avaliação Gratuita** se você tiver uma assinatura de avaliação, caso contrário, selecione uma das outras assinaturas
 * Para o **Grupo de recursos**, clique no link **Criar**, insira um nome adequado, por exemplo, *MRKT-Tutoriais* e clique em **OK**
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
+![mrlearning-speech 6](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
 > [!NOTE]
 > No momento da redação deste artigo, você não precisa criar um recurso de criação porque uma chave de avaliação de criação será gerada automaticamente no LUIS quando você criar o LUIS (Serviço Inteligente de Reconhecimento vocal) na próxima seção.
@@ -71,18 +71,18 @@ Enquanto ainda estiver na página Criar, insira os seguintes valores:
 * Para **Localização de previsão**, escolha uma localização próxima à localização física dos usuários do seu aplicativo, por exemplo, *(EUA) Oeste dos EUA*
 * Para **Tipo de preço de previsão**, para os fins deste tutorial, selecione **F0 (cinco chamadas por segundo, dez mil chamadas por mês)**
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
+![mrlearning-speech 7](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
 Em seguida, clique na guia **Examinar + criar**, examine os detalhes e clique no botão **Criar**, localizado na parte inferior da página, para criar o recurso, bem como o novo grupo de recursos, se você tiver configurado um para ser criado:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
+![mrlearning-speech 8](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
 > [!NOTE]
 > Depois de clicar no botão Criar, você precisará aguardar até que o serviço seja criado, o que poderá levar alguns minutos.
 
 Depois que o processo de criação de recursos for concluído, você verá a mensagem **Sua implantação foi concluída**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-6.png)
+![mrlearning-speech 9](images/mrlearning-speech/tutorial4-section2-step1-6.png)
 
 ## <a name="creating-the-language-understanding-intelligent-service-luis"></a>Como criar o LUIS (Serviço Inteligente de Reconhecimento Vocal)
 
@@ -118,11 +118,11 @@ Depois de conectado, clique em **Novo aplicativo** e insira os seguintes valores
 
 Em seguida, clique no botão **Concluído** para criar o aplicativo:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step1-1.png)
+![mrlearning-speech 10](images/mrlearning-speech/tutorial4-section3-step1-1.png)
 
 Quando o aplicativo tiver sido criado, você será levado para a página **Painel** desse aplicativo:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step1-2.png)
+![mrlearning-speech 11](images/mrlearning-speech/tutorial4-section3-step1-2.png)
 
 ### <a name="2-create-intents"></a>2. Criar intenções
 
@@ -132,14 +132,14 @@ Na página Painel, navegue até a página Criar > Ativos de Aplicativo > **Inten
 
 Em seguida, clique no botão **Concluído** para criar a intenção:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-1.png)
+![mrlearning-speech 12](images/mrlearning-speech/tutorial4-section3-step2-1.png)
 
 > [!CAUTION]
 > Para os fins deste tutorial, seu projeto do Unity fará referência a essa intenção por seu nome, ou seja, 'PressButton'. Assim, é extremamente importante que você dê à sua intenção um nome exatamente igual.
 
 Quando a intenção for criada, você será levado para a página dessa intenção:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-2.png)
+![mrlearning-speech 14](images/mrlearning-speech/tutorial4-section3-step2-2.png)
 
 ### <a name="3-create-example-utterances"></a>3. Criar exemplos de enunciados
 
@@ -158,7 +158,7 @@ Para a lista **Enunciado de exemplo** da intenção **PressButton**, adicione os
 
 Quando todos os enunciados de exemplo tiverem sido adicionados, sua página de intenção de PressButton deverá ser semelhante a esta:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step3-1.png)
+![mrlearning-speech 15](images/mrlearning-speech/tutorial4-section3-step3-1.png)
 
 > [!CAUTION]
 > Para os fins deste tutorial, seu projeto do Unity fará referência às palavras "dica", "dicas", "redefinir" e "iniciar". Assim, é extremamente importante que você escreva essas palavras exatamente da mesma maneira.
@@ -172,11 +172,11 @@ Na página de intenção PressButton, navegue até a página Criar > Ativos de A
 
 Em seguida, clique no botão **Criar** para criar a entidade:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
+![mrlearning-speech 16](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
 **Repita** a etapa anterior para criar outra entidade chamada **Destino** para que você tenha duas entidades chamadas Ação e Destino:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-2.png)
+![mrlearning-speech 17](images/mrlearning-speech/tutorial4-section3-step4-2.png)
 
 > [!CAUTION]
 > Para os fins deste tutorial, seu projeto do Unity fará referência a essas entidades pelo nome, ou seja, "Ação" e "Alvo". Assim, é extremamente importante que você dê às suas entidades um nome exatamente igual.
@@ -187,22 +187,22 @@ Na página entidades, navegue de volta para a página de intenção de **PressBu
 
 Depois de voltar para a página de intenção de PressButton, clique na palavra **ir** e, em seguida, na palavra **em frente** e selecione **Ação (Simples)** no menu pop-up contextual para rotular **ir em frente** como um valor de entidade de **Ação**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
+![mrlearning-speech 18](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
 A frase **ir em frente** frase agora é definida como um valor de entidade de **Ação**. Agora você pode observar o valor da entidade de ação na palavra "go ahead":
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
+![mrlearning-speech 19](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
 > [!NOTE]
 > A linha vermelha que você vê sob o rótulo na imagem acima indica que o valor da entidade não foi previsto. Isso será resolvido quando você treinar o modelo na próxima seção.
 
 Em seguida, clique na palavra **iniciar** e, em seguida, selecione **Destino (Simples)** no menu pop-up contextual para rotular **iniciar** como um valor de entidade de **destino**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
+![mrlearning-speech 20](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
 A palavra **launch** agora é definida como um valor da entidade de **Destino**. Agora, você pode observar o valor da entidade de Destino na palavra "launch":
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
+![mrlearning-speech 21](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
 O enunciado de exemplo de intenção PressButton "ir em frente e lançar o foguete" agora está configurado para ser previsto da seguinte maneira:
 
@@ -219,20 +219,20 @@ O enunciado de exemplo de intenção PressButton "ir em frente e lançar o fogue
 
 Quando todos os enunciados de exemplo tiverem sido rotulados, sua página de intenção de PressButton deverá ser semelhante a esta:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
+![mrlearning-speech 22](images/mrlearning-speech/tutorial4-section3-step5-5.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6. Treinar, testar e publicar o aplicativo
 
 Para treinar o aplicativo, clique no botão **Treinar** e aguarde a conclusão do processo de treinamento:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-1.png)
+![mrlearning-speech 23](images/mrlearning-speech/tutorial4-section3-step6-1.png)
 
 > [!NOTE]
 > Como você pode ver na imagem acima, as linhas vermelhas em todos os rótulos foram removidas, indicando que todos os valores de entidade foram previstos. Observe também que o ícone de status à esquerda do botão Treinar mudou a cor de vermelho para verde.
 
 Quando o processamento do treinamento for concluído, clique no botão **Testar**, digite **ir em frente e lançar o foguete** e pressione a tecla Enter:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-2.png)
+![mrlearning-speech 24](images/mrlearning-speech/tutorial4-section3-step6-2.png)
 
 Quando o enunciado de teste tiver sido processado, clique em **Inspecionar** para ver o resultado do teste:
 
@@ -240,41 +240,41 @@ Quando o enunciado de teste tiver sido processado, clique em **Inspecionar** par
 * Entidade de ação: vá em frente
 * Entidade de destino: iniciar
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
+![mrlearning-speech 25](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
 Para publicar o aplicativo, clique no botão **Publicar** no canto superior direito e na janela pop-up **Escolher o slot e as configurações de publicação**, selecione **Produção** e clique no botão **Concluído**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
+![mrlearning-speech 26](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
 Aguarde a conclusão do processo de publicação:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
+![mrlearning-speech 27](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
 Navegue até a página Gerenciar > Configurações do Aplicativo > **Recursos do Azure**. A sua página Recursos do Azure deve ser semelhante a esta:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
+![mrlearning-speech 28](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Como conectar o projeto do Unity ao aplicativo LUIS
 
 Na página Gerenciar > Configurações do Aplicativo > **Recursos do Azure**, clique no ícone **copiar** para copiar a **Consulta de Exemplo**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-1.png)
+![mrlearning-speech 29](images/mrlearning-speech/tutorial4-section4-step1-1.png)
 
 De volta ao seu projeto do Unity, na janela Hierarquia, selecione o objeto **Lunarcom** e, em seguida, na janela Inspetor, localize o componente **Lunarcom do Reconhecedor de Intenção (Script)** e configure-o da seguinte maneira:
 
 * No campo **Ponto de Extremidade LUIS**, após a **Consulta de Exemplo** que você copiou na etapa anterior:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-2.png)
+![mrlearning-speech 30](images/mrlearning-speech/tutorial4-section4-step1-2.png)
 
 ## <a name="testing-and-improving-the-intent-recognition"></a>Como testar e aprimorar o reconhecimento de intenção
 
 Para usar o reconhecimento de intenção diretamente no editor do Unity, você deve permitir que seu computador de desenvolvimento use ditado. Para verificar essa configuração, abra as **Configurações** do Windows e escolha **Privacidade** > **Fala** e garanta que **Reconhecimento de fala online** esteja ativado:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-1.png)
+![mrlearning-speech 31](images/mrlearning-speech/tutorial4-section5-step1-1.png)
 
 Se agora você entrar no modo de Jogo, poderá testar o reconhecimento de intenção pressionando primeiro o botão foguete. Em seguida, supondo que o computador tenha um microfone, quando você disser o primeiro enunciado de exemplo, **ir em frente e lançar o foguete**, você verá o lançamento do LunarModule no espaço:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-2.png)
+![mrlearning-speech 32](images/mrlearning-speech/tutorial4-section5-step1-2.png)
 
 Experimente todos os **enunciados de exemplo**, então algumas **variações dos enunciados de exemplo**, bem como alguns **enunciados aleatórios**.
 
@@ -286,7 +286,7 @@ Em seguida, retorne para <a href="https://www.luis.ai" target="_blank">LUIS</a> 
 
 Quando você tiver examinado o número de enunciados que desejar, clique no botão **Treinar** para treinar novamente o modelo e, em seguida, no botão **Publicar** para republicar o aplicativo atualizado:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-3.png)
+![mrlearning-speech 33](images/mrlearning-speech/tutorial4-section5-step1-3.png)
 
 > [!NOTE]
 > Se um enunciado do ponto de extremidade não se alinhar com a intenção PressButton, mas você quiser que seu modelo saiba que o enunciado não tem nenhuma intenção, poderá alterar a intenção Alinhada para Nenhum.

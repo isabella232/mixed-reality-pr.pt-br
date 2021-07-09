@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, pré-fabricados, hologramas, dicas de ferramentas
 ms.localizationpriority: high
-ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982969"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110275"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Como criar interfaces do usuário
 
@@ -67,7 +67,7 @@ Na janela Hierarquia, selecione o objeto do botão **Dicas** e, na janela Inspet
 ![Unity com o evento OnClick do objeto de botão Hints configurado](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> O componente de interação é um contêiner all-in-one para facilitar a interação e a resposta à entrada de qualquer objeto. Um componente passível de interação engloba todos os tipos de entrada, incluindo toque, raios de mão, fala etc. e afunila essas interações em eventos e respostas de tema visual. Para saber como configurá-lo para diferentes tipos de entrada e personalizar o tema visual, veja o guia de [Interação](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+> O componente de interação é um contêiner all-in-one para facilitar a interação e a resposta à entrada de qualquer objeto. Um componente passível de interação engloba todos os tipos de entrada, incluindo toque, raios de mão, fala etc. e afunila essas interações em eventos e respostas de tema visual. Para saber como configurá-lo para diferentes tipos de entrada e personalizar o tema visual, veja o guia de [Interação](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) no [Portal de Documentação do MRTK](/windows/mixed-reality/mrtk-unity/).
 
 Na janela Hierarquia, selecione o objeto do botão **Detalhar** e, na janela Inspetor, configure o evento **Interactable.OnClick ()** da seguinte maneira:
 
@@ -116,6 +116,9 @@ Para desabilitar o objeto Indicador de divisa, na janela Hierarquia, selecione o
 
 > [!NOTE]
 > Agora, quando o aplicativo é iniciado, o Indicador de divisa é desabilitado por padrão e pode ser habilitado pressionando o botão Indicador.
+
+> [!NOTE]
+> O Controlador de Indicador Direcional (Script) não faz parte do MRTK, mas foi incluído nos ativos do tutorial.
 
 Renomeie o segundo botão como **TapToPlace** e, na janela Inspetor, configure o componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
@@ -175,7 +178,7 @@ Na janela Hierarquia, expanda o objeto RoverExplorer > **RoverParts** e selecion
 
 ![Unity com todos os objetos das partes da sonda selecionados e o componente ToolTipSpawner adicionado e configurado](images/mr-learning-base/base-06-section4-step1-2.png)
 
-Na janela Hierarquia, selecione a primeira peça do Rover, RoverParts > **Camera_Part** e configure o componente **ToolTipSpawner** da seguinte maneira:
+Na janela Hierarquia, selecione Camera_Part, RoverParts > **Camera_Part** e configure o componente **ToolTipSpawner** conforme abaixo:
 
 * Altere o **Texto da Dica de Ferramenta** para refletir o nome da peça, ou seja, **Câmera**
 
@@ -197,4 +200,4 @@ Pressione o botão Reproduzir para entrar no Modo de jogo e pressione e segure o
 Neste tutorial, você aprendeu a criar uma interface do usuário simples usando os pré-fabricados de menu e de botão fornecidos do MRTK junto com o componente TextMeshPro do Unity e como configurar os botões para disparar eventos quando eles forem pressionados. Você também aprendeu como adicionar elementos de interface do usuário de dica de ferramenta dinâmicos para fornecer ao usuário informações adicionais.
 
 > [!div class="nextstepaction"]
->[Próximo tutorial: 7. Interagir com objetos 3D](mr-learning-base-07.md)
+> [Próximo tutorial: 7. Interagir com objetos 3D](mr-learning-base-07.md)

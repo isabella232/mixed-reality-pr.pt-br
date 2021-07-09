@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 4b81ed3a78cc47f4ad0463cab085621102060dc8
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982759"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175426"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurar o Photon Unity Networking
 
@@ -28,14 +28,13 @@ Neste tutorial, você vai se preparar para criar uma experiência compartilhada 
 
 Nesta seção, você criará um projeto do Unity e o deixará pronto para o desenvolvimento do MRTK.
 
-Primeiro, siga [Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md), excluindo as instruções [Criar o seu aplicativo para o dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2), que incluem as seguintes etapas:
+Primeiro, siga [Como inicializar seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md) (excluindo as instruções contidas em [Adição de interação manual a um objeto](mr-learning-base-02.md#adding-hand-interaction-to-an-object) e [Criar aplicativo para o seu dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2)) que incluem as seguintes etapas:
 
 1. [Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais do MRTK*
 2. [Como alternar a plataforma de build](mr-learning-base-02.md#switching-the-build-platform)
-3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Como configurar o projeto do Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *MultiUserCapabilities*
+3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Como importar o Kit de ferramentas de Realidade Misturada e configurar o projeto do Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Criação da cena e configuração do MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e defina um nome adequado à cena, por exemplo, *MultiUserCapabilities*
 
 Em seguida, siga as instruções em [Alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para:
 
@@ -82,7 +81,7 @@ Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelh
 ![Janelas Hierarquia, Cena e Projeto do Unity após a importação dos ativos do tutorial](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-02.md#importing-the-tutorial-assets).
+> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 > [!NOTE]
 > Depois de importar o pacote de ativos do tutorial de MultiUserCapabilities, você verá vários erros [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) na janela do console informando que o tipo ou o namespace está ausente. Isso deve ser esperado e será resolvido na próxima seção quando você importar os ativos PUN.

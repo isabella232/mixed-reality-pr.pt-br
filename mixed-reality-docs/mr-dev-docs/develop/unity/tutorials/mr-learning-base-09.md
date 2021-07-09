@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, comandos de fala, entrada de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 9422c16781af33fa3d68d7f6046e3a86c4b36b44
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982919"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403367"
 ---
 # <a name="9-using-speech-commands"></a>9. Usando comandos de fala
 
@@ -23,7 +23,14 @@ Neste tutorial, você aprenderá a criar comandos de fala e a controlá-los glob
 * Saber como criar comandos de fala
 * Aprender a controlar comandos de fala globalmente e localmente
 
-[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
+## <a name="ensuring-the-microphone-capability-is-enabled"></a>Garantir que a funcionalidade do Microfone esteja habilitada
+
+No menu do Unity, selecione Realidade Misturada > Kit de Ferramentas > Utilitários > **Configurar projeto do MRTK** para abrir a janela **Configurador de projeto do MRTK**, e na seção **Recursos UWP**, verifique se a opção **Habilitar funcionalidade do microfone** está esmaecida:
+
+![Habilitar a funcionalidade de microfone](images/mr-learning-base/base-09-section1-step1-1.png)
+
+> [!NOTE]
+> A funcionalidade do Microfone deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
 
 ## <a name="creating-speech-commands"></a>Criando comandos de fala
 
@@ -137,6 +144,6 @@ Na próxima duas série de tutoriais, [Tutoriais de Âncoras Espaciais do Azure]
 Se você está seguindo o percurso do ponto de verificação de desenvolvimento do Unity que apresentamos, sua próxima tarefa é conhecer os principais blocos de construção de aplicativos de Realidade Misturada.
 
 > [!div class="nextstepaction"]
-> [Interações básicas](../../../out-of-scope/mrtk-101.md)
+> [Interações básicas](/windows/mixed-reality/mrtk-unity/)
 
 Você sempre pode voltar para os [pontos de verificação de desenvolvimento do Unity](../unity-development-overview.md#1-getting-started) a qualquer momento.

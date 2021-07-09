@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, solucionadores, acompanhamento do olho, comandos de voz
 ms.localizationpriority: high
-ms.openlocfilehash: 8bae8b821e7ffe67b745bbbab763193612a58485
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: abee2163c3b92897396ea35cc43ae025e8e7b804
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590408"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175503"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introdução aos tutoriais do MRTK
 
@@ -43,13 +43,24 @@ Os tutoriais desta série foram concebidos de modo sequencial, portanto, siga-os
 * [SDK do Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 ou posterior
 * Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub Unity</a> com Unity 2020.3 LTS ou Unity 2019.4 LTS instalado (**OpenXR requer 2020.3.8 ou posterior para evitar bugs**)
 
-> [!CAUTION]
-> A versão recomendada do MRTK para esta série de tutoriais é a MRTK 2.5.3.
+Ao instalar o Unity, certifique-se de verificar os componentes a seguir em **'Plataformas'** .
 
-> [!CAUTION]
-> A versão recomendada do Unity para esta série de tutoriais é o Unity 2019 LTS. Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.
+* **Suporte de build da Plataforma Universal do Windows**
+* **Suporte de build do Windows (IL2CPP)**
+
+<img src="../../../develop/images/Unity_Install_Option_UWP.png" alt="Unity Universal Windows Platform Build Support option" width="600px">
+
+Se você instalou o Unity sem essas opções, poderá adicioná-las por meio do menu **'Adicionar Módulos'** no Hub do Unity.
+
+<img src="../../../develop/images/Unity_Install_Option_UWP2.png" alt="Unity Hub - Add Module" width="600px">
+
+> [!Important]
+> A versão recomendada do MRTK para esta série de tutoriais é a MRTK 2.7.2
+
+> [!Important]
+> Essa série de tutoriais suporta o Unity 2020 LTS (atualmente 2020.3.x) se você estiver usando o Open XR ou o Windows XR Plugin, e também o Unity 2019 LTS (atualmente 2019.4.x) se estiver usando o Legacy WSA ou o Windows XR Plugin. Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.
 
 > [!div class="nextstepaction"]
 > [Próximo tutorial: 2. Como inicializar o seu projeto e implantar o primeiro aplicativo](mr-learning-base-02.md)

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores, coleção de objetos de grade
 ms.localizationpriority: high
-ms.openlocfilehash: 28cebe871e1046e8668a079affabf6167632cfa4
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: d5d10893ba8274139c6e09b8cd426d58a0b3a0cb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982989"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175469"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Como posicionar objetos na cena
 
@@ -24,6 +24,37 @@ Neste tutorial, você posicionará na cena os objetos fornecidos nos ativos.
 
 * Saiba como posicionar objetos na cena
 * Saiba como usar o recurso Coleção de Objetos de Grade do MRTK
+
+## <a name="importing-the-textmeshpro-essential-resources"></a>Como importar os Recursos Essenciais do TextMeshPro
+Os Recursos Essenciais do TextMeshPro são exigidos pelos elementos da interface do usuário do MRTK. No menu do Unity, selecione **Janela** > **TextMeshPro** > **Importar Recursos Essenciais do TMP** para abrir a janela Importar Pacote do Unity:
+
+![Caminho do menu Importar Recursos Essenciais do TMP do Unity](images/mr-learning-base/base-02-section3-step1-1.png)
+
+Na janela Importar Pacote do Unity, clique no botão **Todos** para garantir que todos os ativos sejam selecionados e clique no botão **Importar** para importar os ativos:
+
+![Janela Importar Recursos Essenciais do TMP do Unity](images/mr-learning-base/base-02-section3-step1-2.png)
+
+## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
+
+Faça o download do seguinte pacote personalizado do Unity. Esse pacote inclui ativos 3D, como o Mars Rover que vamos usar neste tutorial.
+
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+Para importar um pacote personalizado do Unity, no menu do Unity selecione **Ativos** > **Importar Pacote** > **Pacote Personalizado...** para abrir a janela Importar pacote...:
+
+![Como importar um pacote personalizado](images/mr-learning-base/base-02-section7-step1-1.png)
+
+Na janela Importar Pacote..., selecione o **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** que você baixou e clique no botão Abrir:
+
+![Como selecionar um pacote de ativos](images/mr-learning-base/base-02-section7-step1-2.png)
+
+Na janela Importar Pacote do Unity, clique no botão Todos para garantir que todos os ativos sejam selecionados e clique no botão Importar para importar os ativos:
+
+![Como selecionar todos os ativos a serem importados](images/mr-learning-base/base-02-section7-step1-3.png)
+
+Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
+
+![Janela de projeto do Unity após importar os ativos](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="creating-the-parent-object"></a>Como criar um objeto pai
 

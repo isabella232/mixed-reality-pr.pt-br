@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, realidade misturada, unity, tutorial, hololens, hololens 2, armazenamento de blobs do azure, armazenamento de tabelas do azure, âncoras espaciais do azure, azure bot framework, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f82253ce4894038a8d8e34b06f5d699289fef691
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: c38f3102adfb5178a4d2b5429eeb24c0733db50a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982909"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175536"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Serviços de Nuvem do Azure para HoloLens 2
 
@@ -86,10 +86,9 @@ Primeiro, siga [Inicializar seu projeto e o primeiro aplicativo](mr-learning-bas
 
 1. [Criar um projeto do Unity](mr-learning-base-02.md#creating-the-unity-project) e dar a ele um nome adequado, por exemplo, *Tutoriais de Nuvem do Azure*
 2. [Como alternar a plataforma de build](mr-learning-base-02.md#switching-the-build-platform)
-3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Como importar o Kit de Ferramentas de Realidade Misturada](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Como configurar o projeto do Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Criar e configurar a cena](mr-learning-base-02.md#creating-and-configuring-the-scene) e dar um nome adequado à cena, por exemplo, *AzureCloudServices*
+3. [Como importar os Recursos Essenciais do TextMeshPro](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Como importar o Kit de ferramentas de Realidade Misturada e configurar o projeto do Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Criar e configurar a cena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e dar um nome adequado à cena, por exemplo, *AzureCloudServices*
 
 Depois, siga as instruções descritas em [Como alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para verificar se o perfil de configuração do MRTK da sua cena é o **DefaultXRSDKConfigurationProfile** e altere as opções de exibição da malha de reconhecimento espacial para **Oclusão**.
 
@@ -112,7 +111,7 @@ Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em q
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-02.md#importing-the-tutorial-assets).
+> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
 

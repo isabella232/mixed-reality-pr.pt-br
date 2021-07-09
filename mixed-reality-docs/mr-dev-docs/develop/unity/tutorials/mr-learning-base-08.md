@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: bf7bd266eb471193979c588d97d14dd37aed175e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: a5b93b9e66ffb1e4e9f60251cdc146f48005ae8b
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982869"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110713728"
 ---
 # <a name="8-using-eye-tracking"></a>8. Como usar o acompanhamento de olho
 
@@ -26,7 +26,14 @@ Neste tutorial, você aprenderá a habilitar o acompanhamento de olho para o Hol
 * Saiba como habilitar o acompanhamento de olho para o HoleLens 2
 * Saiba como usar o acompanhamento de olho para disparar ações
 
-[!INCLUDE[](includes/ensuring-eye-gaze-capabality.md)]
+## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>Como garantir que a funcionalidade de Entrada de Foco de Olho esteja habilitada
+
+No menu do Unity, selecione Realidade Misturada > Kit de Ferramentas > Utilitários > **Configurar projeto do Unity** para abrir a janela **Configurador de projeto do MRTK**, e na seção **Recursos UWP**, verifique se a opção **Habilitar funcionalidade de entrada do olhar** está esmaecida:
+
+![Janela Configurador de Projeto do MRTK no Unity](images/mr-learning-base/base-08-section1-step1-1.png)
+
+> [!NOTE]
+> A funcionalidade de Entrada de Foco deve ter sido habilitada durante as instruções em [Aplicar as definições do Configurador de Projeto do MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) quando você configurou o projeto do Unity no início desta série de tutoriais. No entanto, se não estiver habilitada, faça isso agora.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Como habilitar o foco baseado em olho no provedor de foco
 

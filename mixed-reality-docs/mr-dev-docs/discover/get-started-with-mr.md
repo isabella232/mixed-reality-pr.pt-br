@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realidade Misturada, descobrir, distribuir, indexar, página de aterrissagem, design, desenvolvimento, tutoriais, aplicativos de exemplo, conceitos básicos, estudos de caso, recursos, instruções sobre o HoloLens, projetos de Software livre, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583358"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403377"
 ---
 # <a name="get-started-with-mixed-reality"></a>Introdução à Realidade Misturada
 
@@ -20,35 +20,12 @@ ms.locfileid: "98583358"
 
 O ecossistema de Realidade Misturada é um cenário emergente das interações físicas e digitais, limitado apenas pela sua imaginação. Seja você um desenvolvedor experiente ou um novo usuário, recomendamos começar seu percurso de Realidade Misturada com os recursos que apresentamos abaixo. Há muitos novos aspectos a serem abordados, então, vamos começar! 
 
-## <a name="choose-your-track"></a>Escolha seu caminho
-
-Se você já sabe qual área da Realidade Misturada deseja explorar, fique à vontade para ir diretamente para um dos caminhos abaixo. No entanto, mantenha esta página nos Favoritos para referenciar o conteúdo conceitual básico posteriormente.
-
-:::row:::
-    :::column:::
-       [![Não estou familiarizado com a realidade misturada](images/Tile-New.jpg)](#understand-the-basics)<br>
-        **[Não estou familiarizado com a realidade misturada](#understand-the-basics)**<br>
-        Noções básicas
-    :::column-end:::
-    :::column:::
-       [![Sou designer](images/Tile-Create.jpg)](../design/design.md)<br>
-        **[Sou designer](../design/design.md)**<br>
-        Comece a projetar e a criar protótipos
-    :::column-end:::
-    :::column:::
-       [![Sou um desenvolvedor](images/Tile-Develop.jpg)](../develop/development.md)<br>
-        **[Sou um desenvolvedor](../develop/development.md)**<br>
-        Conheça as ferramentas e a arquitetura
-    :::column-end:::
-:::row-end:::
-
-<br>
-
----
-
 ## <a name="understand-the-basics"></a>Noções básicas
 
-Se você está conhecendo a Realidade Misturada agora, é importante começar do início e estudar os conceitos básicos, as experiências e as funcionalidades. Criamos uma jornada sequencial de itens para ajudar você a estabelecer uma base sólida para projetar e desenvolver suas ideias em Realidade Misturada.
+Se você está conhecendo a Realidade Misturada agora, é importante começar do início e estudar os conceitos básicos, as experiências e as funcionalidades. Você tem duas opções: temos um módulo focado no Microsoft Learn que o deixará atualizado rapidamente ou você pode explorar a jornada á la carte que configuramos abaixo. Ambos o ajudarão a estabelecer uma base sólida para projetar e desenvolver suas próprias ideias em Realidade Misturada.
+
+> [!div class="nextstepaction"]
+> [Introdução ao módulo de Realidade Misturada](/learn/modules/intro-to-mixed-reality)
 
 ### <a name="what-is-mixed-reality"></a>O que é realidade misturada?
 
@@ -154,16 +131,17 @@ Se estiver curioso para ver como o hardware e os diferentes serviços da Realida
 | [Hardware do HoloLens](https://www.microsoft.com//hololens/hardware) | O HoloLens 2 oferece a experiência mais confortável e imersiva de realidade misturada disponível, com soluções líderes no setor que entregam valor em minutos, tudo isso aprimorado com a confiabilidade, a segurança e a escalabilidade dos serviços de nuvem e de IA da Microsoft |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore uma variedade de produtos que podem capacitar os funcionários e otimizar as operações com o Dynamics 365, incluindo [Assistência Remota](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guias](/dynamics365/mixed-reality/guides/). Um insight significativo surge na prática com trabalho real, dispositivos reais e usuários reais |
 | [Serviços de Nuvem do Azure](../develop/mixed-reality-cloud-services.md) | Crie experiências imersivas interessantes em diferentes plataformas com reconhecimento espacial, âncoras espaciais e renderização complexa de modelos 3D |
+| [Microsoft Mesh](/mesh/overview) | O Mesh permite que as pessoas se conectem de modo presencial, compartilhem espaços e colaborem entre si de qualquer lugar do mundo por meio de experiências de realidade misturada habilitadas pelo Mesh. Com o Mesh, você pode aprimorar reuniões virtuais, conduzir sessões virtuais de design, ajudar outras pessoas remotamente e hospedar encontros virtuais |
 
 ## <a name="what-would-you-like-to-do-next"></a>O que você deseja fazer a seguir?
 
 :::row:::
     :::column:::
-        [![Torne-se um criador](images/icon-design.png)](../design/design.md)<br>
-        **[Torne-se um criador](../design/design.md)**<br>
+        [![Começar a projetar](images/icon-design.png)](../design/design.md)<br>
+        **[Começar a projetar](../design/design.md)**<br>
         Aprenda os conceitos básicos de que você precisa para começar a projetar e a criar protótipos.
     :::column-end:::
-        :::column:::
+    :::column:::
         [![Comece a desenvolver](images/icon-developer.png)](../develop/development.md)<br>
         **[Comece a desenvolver](../develop/development.md)**<br>
         Escolha um caminho de desenvolvimento com base no seu nível de habilidade, estilo de trabalho ou interesse na plataforma.
@@ -174,9 +152,6 @@ Se estiver curioso para ver como o hardware e os diferentes serviços da Realida
         Consulte o hardware e obtenha um tutorial prático para criar seu primeiro aplicativo HoloLens 2.
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 

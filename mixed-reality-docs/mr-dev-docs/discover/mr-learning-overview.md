@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
-ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
+ms.openlocfilehash: e21f6245be5a47797c2b58fd8f57c4c6179b1751
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581548"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906872"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 
@@ -23,7 +23,7 @@ Quanto mais ferramentas você tem quando desenvolve para a Realidade Misturada, 
 Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo para você começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de Realidade Misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface. 
 
 > [!div class="nextstepaction"]
-> [Introdução ao nosso roteiro de aprendizagem de Realidade Misturada](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
+> [Introdução ao nosso roteiro de aprendizagem de Realidade Misturada](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Módulos gerais
 
@@ -46,6 +46,22 @@ Ao final deste módulo, você saberá como:
 ## <a name="unity-modules"></a>Módulos do Unity
 
 Não importa se você só está começando ou se é um profissional experiente, nossa abordagem prática para o desenvolvimento de Realidade Misturada no Unity ajuda você a atingir suas metas mais rápido, com mais confiança e no seu ritmo.
+
+### <a name="build-mixed-reality-digital-twins-with-azure-digital-twins-and-unity"></a>[Criar gêmeos digitais de realidade misturada com Gêmeos Digitais do Azure e Unity](/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+
+Saiba como criar um aplicativo HoloLens 2 de realidade misturada usando os Gêmeos Digitais do Azure e o Unity, uma plataforma 3D em tempo real.
+
+**Objetivos de aprendizagem**
+
+Ao final deste roteiro de aprendizagem, você poderá:
+
+* Instalar e configurar seu ambiente de desenvolvimento para a criação de soluções de Realidade Misturada para o HoloLens 2, usando os Gêmeos Digitais do Azure e Unity
+* Criar uma cena 3D no Unity usando dados de terreno estáticos e dinâmicos com o SDK de Mapas da Microsoft
+* Usar interações do MRTK para fornecer uma experiência de usuário sofisticada
+* Conectar-se a uma fonte de dados de Gêmeo Digital no Azure
+* Transmitir dados telemétricos para ativos em sua Cena do Unity usando serviços do Azure, incluindo o ADT
+* Visualizar os dados em um HoloLens 2 por meio do SignalR
+* Enviar atualizações de dados do aplicativo HoloLens 2 de volta para os Gêmeos Digitais do Azure
 
 ### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Configurar um projeto de realidade misturada no Unity com o Kit de Ferramentas de Realidade Misturada](/learn/modules/mixed-reality-toolkit-project-unity/)
 

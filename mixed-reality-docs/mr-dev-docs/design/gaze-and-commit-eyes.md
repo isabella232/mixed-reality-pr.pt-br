@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Acompanhamento do Olhar, Realidade Misturada, Entrada, Foco do Olhar, Direcionamento de Foco, HoloLens 2, Seleção baseada no Olhar, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, foco
-ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847869"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196461"
 ---
 # <a name="eye-gaze-and-commit"></a>Focar com o olhar e confirmar
 
@@ -26,8 +26,18 @@ Com o HoloLens 2, temos a excelente oportunidade de tornar o recurso de _focar c
    - Comando de voz (por exemplo, "Selecionar")
    - Espera (ou seja, o usuário simplesmente continua olhando para o alvo para selecioná-lo)
 
-No entanto, o foco com o olhar se comporta de maneira diferente em relação ao foco com a cabeça em algumas circunstâncias e traz muitos desafios únicos. Nas [Diretrizes de design de foco com o olhar](eye-tracking.md), resumimos as vantagens e os desafios gerais ao usar o acompanhamento ocular como uma entrada no seu aplicativo holográfico. Nesta seção, abordaremos considerações de design específicas de _focar com o olhar e confirmar_.
+No entanto, o foco com o olhar se comporta de maneira diferente em relação ao foco com a cabeça em algumas circunstâncias e traz muitos desafios únicos. 
+
+Nas [Diretrizes de design de foco com o olhar](eye-tracking.md), resumimos as vantagens e os desafios gerais ao usar o acompanhamento ocular como uma entrada no seu aplicativo holográfico. Nesta seção, abordaremos considerações de design específicas de _focar com o olhar e confirmar_.
 Primeiro, nossos olhos se movem incrivelmente rápido e são ótimos para focalizar algo rapidamente na visão. O foco com o olhar é ideal para ações rápidas de foco com o olhar e confirmação, especialmente quando combinadas com confirmações rápidas, como pressionar um botão ou fechar e abrir os dedos indicador e polegar.
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demonstração dos conceitos de design de rastreamento da cabeça e dos olhos
+
+Se quiser ver os conceitos de design de rastreamento da cabeça e dos olhos em ação, confira abaixo nosso vídeo de demonstração do **Projetando hologramas - Rastreamento da cabeça e rastreamento dos olhos**. Depois de assistir ao vídeo, prossiga para saber mais sobre os tópicos específicos.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Este vídeo foi retirado do aplicativo "Projetando hologramas" do HoloLens 2. Baixe e aproveite a experiência completa [aqui](https://aka.ms/dhapp).*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>Diretrizes de design para o foco com o olhar e confirmação
 

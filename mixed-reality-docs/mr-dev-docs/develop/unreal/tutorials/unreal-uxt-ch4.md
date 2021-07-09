@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237147"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712585"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Como tornar sua cena interativa
 
@@ -20,26 +20,28 @@ No tutorial anterior, você adicionou um ARSession, um Peão e um Modo de Jogo p
 
 ## <a name="objectives"></a>Objetivos
 
-* Instalar o plug-in de Ferramentas de Experiência de Usuário de Realidade Misturada do GitHub
+* Instalação do plug-in das Ferramentas de UX de Realidade Misturada
 * Como adicionar Atores de Interação à Mão às pontas dos seus dedos
 * Como criar e adicionar manipuladores a objetos na cena
 * Como usar simulação de entrada para validar o projeto
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>Baixar o plug-in das Ferramentas de Experiência de Usuário do Kit de Ferramentas de Realidade Misturada
-Antes de começar a trabalhar com a entrada do usuário, você precisará adicionar o plug-in ao projeto.
+Antes de começar a trabalhar com a entrada do usuário, você precisa adicionar o plug-in das Ferramentas de UX de Realidade Misturada ao projeto. Para saber mais sobre as Ferramentas de UX, confira o projeto no [GitHub](https://aka.ms/uxt-unreal).
 
-1. Na [página de versões](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) das Ferramentas de Experiência de Usuário de Realidade Misturada no GitHub, navegue até a versão v0.10.0 das Ferramentas de Experiência de Usuário para Unreal e baixe o **UXTools.0.10.0.zip**. Descompacte o arquivo.
+1. Abra o Epic Games Launcher. Navegue até o Marketplace do Unreal Engine e pesquise "[Ferramentas de UX de Realidade Misturada](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)". Instale o plug-in em seu mecanismo.
 
-2.  Na pasta raiz do projeto, crie uma pasta chamada **Plugins**. Copie o plug-in UXTools descompactado para essa pasta e reinicie o editor Unreal.
+![Marketplace do Unreal](images/unreal-uxt/2-uxt-plugin.PNG)
 
-![Criar uma pasta de plug-ins do projeto](images/unreal-uxt/4-plugins.PNG)
+2. Retorne ao editor do Unreal, acesse as **Configurações de projeto** > **Plug-ins** e pesquise "Ferramentas de UX de Realidade Misturada". Verifique se o plug-in está ativado e reinicie o editor, se solicitado.
 
-3.  O plug-in de UXTools fornece uma pasta Conteúdo com subpastas para componentes, incluindo **Botões**, **Simulação de Entrada** e **Ponteiros**, bem como uma pasta Classes C++ com um código adicional.  
+![Ativação do plug-in de Ferramentas de UX de Realidade Misturada](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.  O plug-in UXTools fornece uma pasta Conteúdo com subpastas para componentes, incluindo **Botões**, **Simulação de XR** e **Ponteiros**, bem como uma pasta Classes C++ com um código adicional.  
 
 > [!NOTE]
-> Se você não vir a seção **Conteúdo do UXTools** no **Navegador de Conteúdo**, clique em **Exibir Opções > Mostrar Conteúdo do Plug-in**.
+> Se a seção **Conteúdo do UXTools** não aparecer em **Navegador de conteúdo**, clique em **Visualizar opções > Mostrar conteúdo do mecanismo**.
 
-![Mostrar conteúdo do plug-in](images/unreal-uxt/4-showplugincontent.PNG)
+![Mostrar conteúdo do mecanismo](images/unreal-uxt/4-showenginecontent.PNG)
 
 Encontre a documentação adicional do plug-in no [repositório](https://aka.ms/uxt-unreal) GitHub das Ferramentas de Experiência de Usuário de Realidade Misturada.
 

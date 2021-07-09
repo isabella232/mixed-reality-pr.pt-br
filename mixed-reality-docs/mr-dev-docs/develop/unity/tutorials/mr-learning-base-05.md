@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores
 ms.localizationpriority: high
-ms.openlocfilehash: b2d23601419c36f2a79a0c6e19d06eda6dc54d09
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
+ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300391"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112270421"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Criar conteúdo dinâmico usando Solucionadores
 
@@ -30,7 +30,7 @@ Neste tutorial, você vai explorar maneiras de posicionar hologramas dinamicamen
 
 ![Janela Projeto do Unity com a pasta Solucionadores selecionada](images/mr-learning-base/base-05-section1-step1-1.png)
 
-Neste tutorial, examinaremos a implementação do Solucionador de Indicador Direcional e o Solucionador Toque para Posicionar. Para saber mais sobre a gama completa de Solucionadores disponíveis no MRTK, você pode consultar o guia [Solucionadores](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+Neste tutorial, examinaremos a implementação do Solucionador de Indicador Direcional e o Solucionador Toque para Posicionar. Para saber mais sobre a gama completa de Solucionadores disponíveis no MRTK, você pode consultar o guia [Solucionadores](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) no [Portal de Documentação do MRTK](/windows/mixed-reality/mrtk-unity).
 
 > [!NOTE]
 > O Solucionador de Indicador Direcional não está localizado nas pastas de Solucionadores supramencionadas, mas nas pastas Pacotes > Mixed Reality Toolkit Foundation > SDK > Experimental > Recursos > Utilitários, pois é um recurso experimental.
@@ -44,15 +44,12 @@ Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.GettingSta
 > [!TIP]
 > Se você descobrir que a câmera ou quaisquer outros ícones em sua cena estão ocultando os objetos ou causando distração, poderá ocultá-los <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">alternando o Gizmos</a> para a posição Desligado, conforme mostra a imagem acima. Para saber mais sobre o menu Gizmos e como você pode usá-lo para otimizar a exibição de cena, consulte a documentação do <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> do Unity.
 
-Renomeie o **Indicador** do objeto de Divisa recém-adicionado e, em seguida, na janela do Inspetor, use o botão **Adicionar Componente** para adicionar o componente **DirectionalIndicator**:
+Renomeie o objeto Chevron recém-adicionado para **Indicador** e na janela Inspetor, use o botão **Adicionar componente** para adicionar **DirectionalIndicator**:
 
 ![Unity com o componente do solucionador DirectionalIndicator adicionado](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > Quando você adiciona um solucionador, nesse caso, o componente DirectionalIndicator, o componente SolverHandler é adicionado automaticamente porque os solucionadores exigem isso.
-
-> [!NOTE]
-> O Controlador de Indicador Direcional (Script) não faz parte do MRTK, mas foi incluído nos ativos do tutorial.
 
 Configure os componentes DirectionalIndicator e SolverHandler da seguinte maneira:
 
@@ -72,7 +69,7 @@ Pressione o botão Reproduzir para entrar no modo Jogo, pressione e mantenha o b
 > Se você não vir o raio da câmera na janela Cena, verifique se o menu Gizmos está habilitado, como mostra a imagem acima.
 
 > [!TIP]
-> Para saber como usar a simulação de entrada no editor, você pode consultar o guia [Como usar a simulação de entrada de mão no editor para testar uma cena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) no [Portal de documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+> Para saber como usar a simulação de entrada no editor, você pode consultar o guia [Como usar a simulação de entrada de mão no editor para testar uma cena](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service) no [Portal de documentação do MRTK](/windows/mixed-reality/mrtk-unity).
 
 > [!TIP]
 > Se o computador tiver um microfone, você poderá alternar facilmente o estado ativo do painel Diagnóstico que aparece na janela Jogo usando o comando de fala "alternar diagnóstico". Como alternativa, você pode desabilitá-lo no Perfil de Configuração do MRTK > Diagnóstico > Habilitar o Sistema de Diagnóstico. No entanto, geralmente é recomendável manter o Sistema de Diagnóstico ativo durante o desenvolvimento.
@@ -91,7 +88,7 @@ Na janela hierarquia, selecione o objeto RoverExplorer > **RoverAssembly** e, na
 > [!NOTE]
 > A configuração de Superfícies Magnéticas determina quais objetos o componente Tocar para Posicionar (Script) pode detectar ao posicionar um objeto. Ao alterar a configuração para Somente Reconhecimento Espacial, o componente Tocar para Posicionar (Script) só poderá posicionar o Rover em objetos na camada do Unity denominada Reconhecimento Espacial, que, por padrão, é a Malha de Conscientização Espacial gerada pelo HoloLens.
 >
->Para saber mais sobre Camadas, você pode consultar a documentação <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Camadas</a> do Unity.
+> Para saber mais sobre Camadas, você pode consultar a documentação <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Camadas</a> do Unity.
 
 > [!TIP]
 > Se você quiser ver a malha de conscientização espacial ao testar a funcionalidade Tocar para Posicionar em seu HoloLens, poderá definir temporariamente a Opção de Exibição do Observador de Malha Espacial como Visível. Para obter um lembrete sobre como alterar a Opção de Exibição, você pode consultar as instruções de [Como alterar a opção de exibição de conscientização espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option).
@@ -140,7 +137,7 @@ Quando terminar de testar o recurso no modo de jogo, clique com o botão direito
 
 Neste tutorial, você aprendeu a usar o Solucionador Direcional do MRTK para ter um elemento de interface do usuário instruindo intuitivamente os usuários a objetos. Você também aprendeu a usar o Solucionador Toque para Posicionar para reposicionar os objetos facilmente.
 
-Para saber mais sobre esses e outros solucionadores incluídos no MRTK, consulte o guia [Solucionadores](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) no [Portal de Documentação do MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Para saber mais sobre esses e outros solucionadores incluídos no MRTK, consulte o guia [Solucionadores](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) no [Portal de Documentação do MRTK](/windows/mixed-reality/mrtk-unity/).
 
 > [!div class="nextstepaction"]
->[Próximo tutorial: 6. Como criar interfaces do usuário](mr-learning-base-06.md)
+> [Próximo tutorial: 6. Como criar interfaces do usuário](mr-learning-base-06.md)
