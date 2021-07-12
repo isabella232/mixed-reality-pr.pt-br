@@ -1,45 +1,53 @@
 ---
-ms.openlocfilehash: 550ad2b9fa92894cdf4dad86def4cd3a9b450fb1
-ms.sourcegitcommit: e9a1510984d00dc40ffd39239349e500f5737a0d
+ms.openlocfilehash: eaa2651a22fd5b2b601493845d507aeda6745f1a
+ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113103895"
+ms.lasthandoff: 07/11/2021
+ms.locfileid: "113603697"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
-O plug-in Mixed Reality OpenXR é a **recomendação da Microsoft para o** Unity 2020 LTS ou posterior. À medida que novos recursos forem desenvolvidos no futuro, eles só serão incluídos no plug-in Mixed Reality OpenXR.
+O plug-in OpenXR de Realidade Misturada é a recomendação da **Microsoft** para **Unity 2020 LTS** ou posterior. À medida que novos recursos são desenvolvidos no futuro, eles só serão incluídos no plug-in OpenXR de Realidade Misturada no futuro.
 
-O plug-in Mixed Reality OpenXR dá suporte total ao AR Foundation 4,0, fornecendo implementações ARPlaneManager e ARRaycastManager. Isso permite que você escreva o código raycasting uma vez que se estenda por telefones 2 e ARCore/ARKit celulares e tablets.
+O plug-in OpenXR de Realidade Misturada dá suporte total ao AR Foundation 4.0, fornecendo implementações ARPlaneManager e ARRaycastManager. Isso permite que você escreva um código de raycasting uma vez que, em seguida, abrange HoloLens e telefones e tablets ARCore/ARKit.
 
 ### <a name="prerequisites"></a>Pré-requisitos 
 
-* Ferramentas mais recentes [para o desenvolvimento do HoloLens 2](../../../install-the-tools.md?tabs=unity#installation-checklist)
-* LTS do Unity 2020,3 mais recente, (recomendamos o 2020.3.8 F1 ou superior)
+* Ferramentas [mais recentes para HoloLens desenvolvimento 2](../../../install-the-tools.md?tabs=unity#installation-checklist)
+* Unity 2020.3 LTS mais recente: versão 2020.3.8f1 ou posterior
 
-### <a name="minimum-versions"></a>Versões mínimas
+### <a name="recommended-package-versions"></a>Versões de pacote recomendadas
 
-As instruções nesta página o configurarão com os melhores e mais recentes requisitos de Unity e OpenXR listados abaixo:
+As instruções nesta página configurarão você com os principais pacotes OpenXR do Unity necessários para implantar HoloLens 2 ou Windows Mixed Reality aplicativos:
 
-* Plug-in mais recente do Unity OpenXR (Recomendamos 1,2 ou posterior)
-* Plugin OpenXR de realidade mista mais recente, (recomendamos a versão 1.0.0 ou posterior)
-* Se seu projeto usar MRTK, recomendamos a versão 2.7.2 ou posterior
-* Se o seu projeto usa o pacote do pipeline de renderização universal (URP), recomendamos a versão 10.5.1 ou posterior
+* Plug-in do Unity OpenXR: versão 1.2 ou posterior
+* Plug-in openXR de Realidade Misturada: versão 1.0.0 ou posterior
 
-<!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
+Se você usar os seguintes pacotes em seu projeto, precisará garantir que use pelo menos as versões mínimas listadas abaixo:
+
+* MRTK: versão 2.7.2 ou posterior
+* AR Foundation: versão 4.1.1 ou posterior
+* URP (Pipeline de Renderização Universal): versão 10.5.1 ou posterior
+* Âncoras Espaciais do Azure: versão 2.10 ou posterior
+* Azure Remote Rendering: versão 1.0.15 ou posterior
 
 > [!NOTE]
-> Se você estiver criando aplicativos VR no computador Windows, o plug-in OpenXR de realidade misturada não será necessariamente necessário. No entanto, você desejará instalar o plug-in se estiver personalizando o mapeamento do controlador para controladores do HP reverbo G2 ou compilando aplicativos que funcionam em headsets de HoloLens 2 e VR.
+> Se você estiver criando aplicativos de VR no Windows PC, o plug-in OpenXR de Realidade Misturada não será estritamente necessário. No entanto, você deseja instalar o plug-in se estiver configurando vinculações de entrada para controladores HP Reverb G2 ou criando aplicativos que funcionam em headsets HoloLens 2 e VR.
 
-# <a name="windows-xr"></a>[Windows XR](#tab/windowsxr)
+# <a name="windows-xr"></a>[Windows Xr](#tab/windowsxr)
 
-A Microsoft não recomenda usar o plug-in do Windows XR para novos projetos no Unity 2020.
+A Microsoft não recomenda usar o plug-in Windows XR para novos projetos no Unity 2020.  Em vez disso, você deve usar o plug-in OpenXR de Realidade Misturada.
 
-No entanto, se você estiver usando o Unity 2019 e precisar do AR Foundation 2,0 para compatibilidade com dispositivos ARCore/ARKit, esse plug-in permitirá esse suporte.
+No entanto, se você estiver usando o Unity 2019 e precisar do AR Foundation 2.0 para compatibilidade com dispositivos ARCore/ARKit, esse plug-in habilita esse suporte.
 
 > [!IMPORTANT]
-> O uso desse plug-in no Unity 2019 não oferece suporte a âncoras espaciais do Azure. 
+> O uso desse plug-in no Unity 2019 não é compatível com as Âncoras Espaciais do Azure.
 
 # <a name="legacy-xr"></a>[Legacy XR](#tab/legacy)
 
-Se você ainda estiver no Unity 2019 ou anterior, a Microsoft recomenda usar o suporte interno a XR herdado. Embora o plug-in do Windows XR seja funcional no Unity 2019, não é recomendável porque as âncoras espaciais do Azure não têm suporte.
+Se você ainda estiver no **Unity 2019** ou anterior, a Microsoft recomenda o uso do suporte a **XR integrado herdado.**
+
+Embora o plug-in Windows XR seja funcional no Unity 2019, não é recomendável porque esse plug-in não é compatível com âncoras espaciais do Azure no Unity 2019.
+
+Se você estiver iniciando um novo projeto, recomendamos instalar o [Unity 2020](../../choosing-unity-version.md) e usar o plug-in OpenXR de Realidade Misturada.
