@@ -5,24 +5,24 @@ author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
-keywords: Figma, esboço, Adobe XD, design, designer, arquivo de design, design de UX, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+keywords: Figma, esboço, Adobe XD, design, designer, arquivo de design, design de UX, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644852"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224314"
 ---
 # <a name="figma-toolkit"></a>Kit de ferramentas do Figma
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-O figma Toolkit fornece os ativos que podem ser usados para esboço e layout da interface do usuário. Todos os controles da interface do usuário são baseados nos componentes disponíveis no MRTK. 
+MRTK Figma Toolkit fornece versões 2d dos controles de interface do usuário de estilo HoloLens 2 que você pode encontrar no MRTK para Unity ou MRTK para inreal. Você pode usar isso no processo de design para criar layouts de interface do usuário e storyboards.
 
 > [!div class="nextstepaction"]
-> [Exibir o kit de ferramentas figma](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [Exibir Toolkit figma](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
-## <a name="how-to-use-figma-toolkit"></a>Como usar o kit de ferramentas figma
+## <a name="how-to-use-figma-toolkit"></a>Como usar o figma Toolkit
 Use **duplicar para o menu rascunhos** para fazer uma cópia.
 
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
@@ -46,9 +46,12 @@ Abra a página de **introdução** para saber mais sobre como usar componentes e
 ## <a name="ui-gallery--components"></a>Componentes de & da Galeria de interface do usuário
 A página Galeria de interface de usuário e componentes mostram todos os componentes disponíveis para seu design.
 
-![Exemplo do kit de ferramentas figma – IU do menu 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
+![Figma Toolkit exemplo – iu de Menu 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
 
-![Exemplo do kit de ferramentas figma – IU do menu 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+![Figma Toolkit exemplo – iu do Menu 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+
+
+![Figma Toolkit exemplo – iu do Menu 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
 
 Usando a guia **ativos** , você pode navegar por esses componentes e arrastar para sua página.
 
@@ -57,14 +60,14 @@ Usando a guia **ativos** , você pode navegar por esses componentes e arrastar p
 
 ## <a name="examples"></a>Exemplos
 
-O figma Toolkit pode ser útil para a interface do usuário do menu de esboço. 
+Figma Toolkit pode ser útil para a interface do usuário do menu de esboço. 
 
-![Exemplo do kit de ferramentas figma – IU do menu 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Figma Toolkit exemplo – iu do Menu 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Os ativos podem ser usados para Storyboarding.
 
-![Exemplo de kit de ferramentas figma – Storyboarding](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
+![Figma Toolkit exemplo – storyboarding](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
 ## <a name="see-also"></a>Confira também
