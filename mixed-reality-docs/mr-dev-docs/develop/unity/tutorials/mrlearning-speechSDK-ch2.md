@@ -1,20 +1,20 @@
 ---
-title: Adicionar um modo offline para tradução de fala em texto local
-description: Conclua este curso para saber como adicionar o modo offline para a conversão local de fala em texto em aplicativos de realidade misturada.
+title: Executar comandos usando o reconhecimento de fala do Azure
+description: Conclua este curso para saber como executar comandos usando o reconhecimento de fala do Azure em aplicativos de realidade misturada.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590148"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656625"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Adicionar um modo offline para tradução de fala em texto local
+# <a name="2-execute-commands-using-azure-speech-recognition"></a>2. Executar comandos usando o reconhecimento de fala do Azure
 
 Neste tutorial, você adicionará a capacidade de executar comandos usando o reconhecimento de fala do Azure, que permitirá que você faça algo com base na palavra ou na frase que você definir.
 

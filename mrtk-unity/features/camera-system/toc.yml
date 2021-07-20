@@ -1,6 +1,6 @@
 - name: Visão geral do sistema de câmeras
   href: camera-system-overview.md
-- name: Criar provedor de configurações
+- name: Criar um provedor de configurações de câmera
   href: create-settings-provider.md
 - name: Configurações da câmera de RA do Unity
   href: unity-ar-camera-settings.md

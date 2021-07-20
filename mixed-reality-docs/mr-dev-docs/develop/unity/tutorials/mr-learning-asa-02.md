@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9c3ae23c39bf4d0b32d8a5d82716f93fee48b6db
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175569"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656639"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introdução às Âncoras Espaciais do Azure
 
@@ -66,7 +66,7 @@ Selecione o objeto **MixedRealityToolkit** na janela Hierarquia e use o botão *
 
 > [!WARNING]
 > Existe um problema conhecido com o ASA v2.9.0 e o v2.10.0-versão prévia.1 que exige que dois objetos adicionais sejam incluidos. Use o botão **Adicionar componente** na janela Inspetor para adicionar um Gerenciador de Câmera AR (script) e uma sessão AR (script) ao objeto **MixedRealityToolkit**. Não se esqueça de desabilitar a Câmera, que é criada automaticamente ao adicionar o Gerenciador de câmera AR (script), desmarcando a caixa de seleção ao lado do objeto Câmera na janela Inspetor. Esse problema será abordado na versão completa do ASA v2.10.0.
-> 
+>
 
 > [!NOTE]
 > Quando você adiciona o componente AR Anchor Manager (script), o componente AR Session Origin (script) é adicionado automaticamente, pois ele é exigido pelo componente AR Anchor Manager (script).
@@ -77,21 +77,21 @@ Nesta seção, você adicionará scripts à cena para criar uma série de evento
 
 Na janela Hierarquia, expanda o objeto **ButtonParent** e selecione o primeiro objeto filho chamado **StartAzureSession**, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **ParentAnchor** como ouvinte para o evento On Click () arrastando-o da janela Hierarquia até o campo **Nenhum (objeto)**
 * Na lista suspensa **Sem Função**, selecione **AnchorModuleScript** > **StartAzureSession ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
 ![Unity com o evento OnClick do botão StartAzureSession configurado](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **StopAzureSession**, em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **ParentAnchor** como ouvinte para o evento On Click () arrastando-o da janela Hierarquia até o campo **Nenhum (objeto)**
 * Na lista suspensa **Sem Função**, selecione **AnchorModuleScript** > **StopAzureSession ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
 ![Unity com o evento OnClick do botão StopAzureSession configurado](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **CreateAzureAnchor**, em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **ParentAnchor** como ouvinte para o evento On Click () arrastando-o da janela Hierarquia até o campo **Nenhum (objeto)**
 * Na lista suspensa **Sem Função**, selecione **AnchorModuleScript** > **CreateAzureAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 * Atribua o objeto **ParentAnchor** ao campo vazio **Nenhum (Objeto de Jogo)** para torná-lo o argumento para a função CreateAzureAnchor ()
 
@@ -99,7 +99,7 @@ Na janela Hierarquia, selecione o próximo botão denominado **CreateAzureAnchor
 
 Na janela Hierarquia, selecione o próximo botão denominado **RemoveLocalAnchor**, em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **ParentAnchor** como ouvinte para o evento On Click () arrastando-o da janela Hierarquia até o campo **Nenhum (objeto)**
 * Na lista suspensa **Sem Função**, selecione **AnchorModuleScript** > **RemoveLocalAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 * Atribua o objeto **ParentAnchor** ao campo vazio **Nenhum (Objeto de Jogo)** para torná-lo o argumento para a função RemoveLocalAnchor ()
 
@@ -107,14 +107,14 @@ Na janela Hierarquia, selecione o próximo botão denominado **RemoveLocalAnchor
 
 Na janela Hierarquia, selecione o próximo botão denominado **FindAzureAnchor**, em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **ParentAnchor** como ouvinte para o evento On Click () arrastando-o da janela Hierarquia até o campo **Nenhum (objeto)**
 * Na lista suspensa **Sem Função**, selecione **AnchorModuleScript** > **FindAzureAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
 ![Unity com o evento OnClick do botão FindAzureAnchor configurado](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Na janela Hierarquia, selecione o próximo botão denominado **DeleteAzureAnchor**, em seguida, na janela Inspetor, configure o evento **On Click ()** do componente **Auxiliar de Configuração do Botão (Script)** da seguinte maneira:
 
-* Atribua o objeto **ParentAnchor** ao campo **Nenhum (Objeto)**
+* Atribua o objeto **ParentAnchor** como ouvinte para o evento On Click () arrastando-o da janela Hierarquia até o campo **Nenhum (objeto)**
 * Na lista suspensa **Sem Função**, selecione **AnchorModuleScript** > **DeleteAzureAnchor ()** para definir essa função como a ação a ser executada quando o evento for disparado
 
 ![Unity com o evento OnClick do botão DeleteAzureAnchor configurado](images/mr-learning-asa/asa-02-section5-step1-6.png)
