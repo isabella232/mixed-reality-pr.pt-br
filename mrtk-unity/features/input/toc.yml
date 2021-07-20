@@ -1,6 +1,6 @@
 - name: Controladores
   href: controllers.md
-- name: Criar provedor de dados
+- name: Criar um provedor de dados do sistema de entrada
   href: create-data-provider.md
 - name: Ditado
   href: dictation.md

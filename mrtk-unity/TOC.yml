@@ -1,6 +1,6 @@
 - name: Bem-vindo(a) ao MRTK
   href: index.md
-- name: Experimente o Hub de exemplos
+- name: Experimente o Hub de exemplos do MRTK
   href: running-examples-hub.md
 - name: Cenas de exemplo
   href: running-example-scenes.md

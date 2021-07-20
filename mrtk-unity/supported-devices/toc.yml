@@ -1,8 +1,8 @@
-- name: Implantação no HoloLens e no WMR
+- name: Implantação no HoloLens e nos headsets do WMR
   href: wmr-mrtk.md
 - name: Implantação no Oculus Quest
   href: oculus-quest-mrtk.md
-- name: Implantação no Android e no iOS (Fundamentos da RA)
+- name: 'Implantação no Android e no iOS (Fundamentos da RA) [Experimental]'
   href: using-ar-foundation.md
 - name: Como usar o Leap Motion
   href: leap-motion-mrtk.md
