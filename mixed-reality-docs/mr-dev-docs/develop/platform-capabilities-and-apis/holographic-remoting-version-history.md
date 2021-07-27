@@ -3,28 +3,33 @@ title: Histórico de versão de remoção holográfica
 description: Mantenha-se atualizado sobre o histórico de versão do recurso de Remoção Holográfica para HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 06/10/2021
+ms.date: 07/20/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, histórico de versão, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
-ms.openlocfilehash: dae7bc0dac792cbe1a8472415d5e9fa34532e918
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: ec810683a556bebfe92615e9085d26bf33cf7f2c
+ms.sourcegitcommit: ebc22c5adee0e785e45fb25fade83191e920f92b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908219"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114585719"
 ---
 # <a name="holographic-remoting-version-history"></a>Histórico de versão de remoção holográfica
 
 > [!IMPORTANT]
 > Essas diretrizes são específicas da Holographic Remoting no HoloLens 2.
 
+## <a name="version-261-july-20-2021"></a>Versão 2.6.1 (20 de julho de 2021) <a name="v2.6.1"></a>
+* A XR_MSFT_holographic_remoting_speech agora permite a inicialização do reconhecedor de fala com novos parâmetros durante uma sessão em execução.
+* Corrigido um problema em que a confiabilidade do reconhecimento de fala diminuía em várias conexões.
+* Várias correções de bugs e melhorias de estabilidade.
+
 ## <a name="version-260-june-10-2021"></a>Versão 2.6.0 (10 de junho de 2021) <a name="v2.6.0"></a>
 * O Holographic Remoting usando a API openXR agora dá suporte a:
   * A nova XR_MSFT_holographic_remoting_speech, que permite aos aplicativos escutar comandos de fala personalizados em vários idiomas.
   * A extensão XR_MSFT_scene_understanding, que fornece aos aplicativos uma representação estruturada e de alto nível dos planos, malhas e objetos no ambiente do usuário, permitindo o desenvolvimento de aplicativos com conhecimento espacial. No entanto, com a ressalva XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT é a única consistência com suporte de xrComputeNewSceneMSFT.
-  * A XR_MSFT_spatial_graph_bridge, que permite que os aplicativos criem alças XrSpace para acompanhar os nós do Spatial Graph de outras bibliotecas ou APIs Windows Mixed Reality plataforma de dispositivos. No entanto, com a ressalva XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT é o único tipo de nó com suporte de xrCreateSpatialGraphNodeSpaceMSFT. 
+  * A extensão XR_MSFT_spatial_graph_bridge, que permite que os aplicativos criem alças XrSpace para acompanhar os nós de Graph espaciais de outras bibliotecas ou APIs Windows Mixed Reality plataforma de dispositivos. No entanto, com a ressalva XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT é o único tipo de nó com suporte de xrCreateSpatialGraphNodeSpaceMSFT. 
 * O Holographic Remoting usando a API de Realidade Misturada agora dá suporte a:
-  * As sobrecargas SpatialGraphInteropPreview.CreateCoordinateSystemForNode, que permitem que os aplicativos acompanhem nós estáticos do Spatial Graph para que os usuários possam pensar sobre locais e coisas em seu ambiente.
+  * As sobrecargas SpatialGraphInteropPreview.CreateCoordinateSystemForNode, que permitem que os aplicativos acompanhem nós de Graph espaciais estáticos para que os usuários possam pensar sobre locais e coisas em seu ambiente.
 * O Holographic Remoting usando as APIs OpenXR e Mixed Reality agora dá suporte a:
   * O SDK Microsoft.MixedReality.SceneUnderstanding, que permite que os aplicativos computem uma descrição da cena em torno do usuário (como paredes, pisos e superfícies), fornecendo quads, malhas e dicas de posicionamento de conteúdo.
   * O SDK Microsoft.MixedReality.QR, que permite que os aplicativos acompanhem o local, o tamanho e o conteúdo dos códigos QR detectados.
@@ -47,7 +52,7 @@ ms.locfileid: "111908219"
 * Transmissão otimizada de malhas de superfície espacial que podem ser consultadas por [meio de SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) por um aplicativo remoto.
 * Corrigido um problema em que chamar métodos SpatialAnchorManager ou liberar âncoras causava exceções na desconexão.
 * Corrigido o problema de threading que leva a falhas ao fechar instâncias PlayerContext ou RemoteContext.
-* Holographic Remoting Player on Desktop: exibe uma mensagem de erro quando Windows Mixed Reality não está instalado em vez de fechar silenciosamente.
+* Holographic Remoting Player on Desktop: exibe uma mensagem de erro Windows Mixed Reality não está instalado em vez de fechar silenciosamente.
 * Muitas outras correções de bug e melhorias de estabilidade.
 
 ## <a name="version-241-january-22-2021"></a>Versão 2.4.1 (22 de janeiro de 2021) <a name="v2.4.1"></a>
@@ -63,7 +68,7 @@ ms.locfileid: "111908219"
 ## <a name="version-231-october-10-2020"></a>Versão 2.3.1 (10 de outubro de 2020) <a name="v2.3.1"></a>
 
 * Corrigida a regressão com previsão de pose remota, o que causava tremução visual.
-* Implementado PerceptionDeviceSetCreateFactoryOverride, o que garante que o PerceptionDevice.dll fornecido com a Holographic Remoting não interfira na versão enviada com Windows 10.
+* Implementado PerceptionDeviceSetCreateFactoryOverride, o que garante que o PerceptionDevice.dll fornecido com o Holographic Remoting não interfere na versão enviada com Windows 10.
 
 ## <a name="version-230-october-2-2020"></a>Versão 2.3.0 (2 de outubro de 2020) <a name="v2.3.0"></a>
 
@@ -76,14 +81,14 @@ ms.locfileid: "111908219"
 
 ## <a name="version-222-july-10-2020"></a>Versão 2.2.2 (10 de julho de 2020) <a name="v2.2.2"></a>
 
-* Corrigido o problema com [HolographicCamera.LeftViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) e [HolographicCamera.RightViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) que não retornam nenhum vértice de malha de área oculta ao transmitir de um headset Windows Mixed Reality.
+* Corrigido o problema [com HolographicCamera.LeftViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) e [HolographicCamera.RightViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) não retornando nenhum vértice de malha de área oculta ao transmitir de um headset Windows Mixed Reality.
 * Falha corrigida, o que pode acontecer com uma conexão de rede ruim.
 
 ## <a name="version-221-july-6-2020"></a>Versão 2.2.1 (6 de julho de 2020) <a name="v2.2.1"></a>
 
 > [!IMPORTANT]
-> [Kit de Certificação de Aplicativos Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) validação com a [versão 2.2.0](holographic-remoting-version-history.md#v2.2.0) falhará. Caso você esteja na versão [2.2.0](holographic-remoting-version-history.md#v2.2.0) e queira enviar seu aplicativo para a concessão p da Microsoft Store atualizada para pelo menos a versão 2.2.1.
-* Corrigidos [Kit de Certificação de Aplicativos Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) de conformidade.
+> [Windows validação do Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) de Certificação de Aplicativos com a versão [2.2.0](holographic-remoting-version-history.md#v2.2.0) falhará. Caso você esteja na versão [2.2.0](holographic-remoting-version-history.md#v2.2.0) e queira enviar seu aplicativo para a concessão p da Microsoft Store atualizada para pelo menos a versão 2.2.1.
+* Corrigidos [Windows de conformidade do Kit de Certificação de Aplicativos.](https://developer.microsoft.com/windows/downloads/app-certification-kit/)
 
 ## <a name="version-220-july-1-2020"></a>Versão 2.2.0 (1º de julho de 2020) <a name="v2.2.0"></a>
 
@@ -131,7 +136,7 @@ ms.locfileid: "111908219"
 
 ## <a name="version-2014-october-26-2019"></a>Versão 2.0.14 (26 de outubro de 2019) <a name="v2.0.14"></a>
 
-* Suporte para novas APIs perceptionDevice (Windows 10 de novembro de 2019).
+* Suporte para novas APIs perceptionDevice (Windows 10 atualização de novembro de 2019).
 * Corrigido o problema, que impede que eventos de gesto de espera são disparados por SpatialGestureRecognizer.
 * Corrigido o problema de threading ao usar SpatialSurfaceObserver.SetBoundingVolume.
 
@@ -141,7 +146,7 @@ ms.locfileid: "111908219"
 
 ## <a name="version-2010-october-10-2019"></a>Versão 2.0.10 (10 de outubro de 2019) <a name="v2.0.10"></a>
 
-* Falha corrigida ao usar o botão de gatilho dos controladores de VR. O Holographic Remoting não dá suporte total a controladores, apenas o botão de gatilho e o botão do Windows estão funcionando se emparelhados com o HoloLens 2.
+* Falha corrigida ao usar o botão de gatilho dos controladores de VR. O Holographic Remoting não dá suporte total a controladores, apenas o botão de gatilho e o botão Windows estão funcionando se emparelhados com HoloLens 2.
 
 ## <a name="version-209-september-19-2019"></a>Versão 2.0.9 (19 de setembro de 2019) <a name="v2.0.9"></a>
 
@@ -162,7 +167,7 @@ ms.locfileid: "111908219"
 
 ## <a name="see-also"></a>Consulte Também
 
-* [Escrevendo um aplicativo remoto de remota remota de Windows Mixed Reality Holographic](holographic-remoting-create-remote-wmr.md)
+* [Escrevendo um aplicativo remoto de remoção holográfica usando APIs Windows Mixed Reality holográficas](holographic-remoting-create-remote-wmr.md)
 * [Escrevendo um aplicativo remoto de remoção holográfica usando APIs OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Solução de problemas e limitações de remoção holográfica](holographic-remoting-troubleshooting.md)

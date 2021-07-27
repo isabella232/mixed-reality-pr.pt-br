@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, realidade misturada, unity, tutorial, hololens, hololens 2, armazenamento de blobs do azure, armazenamento de tabelas do azure, âncoras espaciais do azure, azure bot framework, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: c38f3102adfb5178a4d2b5429eeb24c0733db50a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3c52384b118a72b1c2f2dfaa2205e4f890e2e5a7
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175536"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224344"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Serviços de Nuvem do Azure para HoloLens 2
 
@@ -73,10 +73,10 @@ O aplicativo é conduzido principalmente pela interface do usuário tradicional,
 * Alguma habilidade básica de programação em C#
 * Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * Uma webcam conectada se você quiser testar no editor do Unity
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2020/2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
 
-> [!CAUTION]
-> A versão recomendada do Unity para esta série de tutoriais é o Unity 2019 LTS. Ela substitui todos os requisitos de versão do Unity ou as recomendações indicadas nos pré-requisitos vinculados acima.
+> [!Important]
+> Essa série de tutoriais suporta o Unity 2020 LTS (atualmente 2020.3.x) se você estiver usando o plug-in Open XR ou Windows XR, e também o Unity 2019 LTS (atualmente 2019.4.x) se estiver usando o Legacy WSA. Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Como criar e preparar o projeto do Unity
 
@@ -90,38 +90,13 @@ Primeiro, siga [Inicializar seu projeto e o primeiro aplicativo](mr-learning-bas
 4. [Como importar o Kit de ferramentas de Realidade Misturada e configurar o projeto do Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [Criar e configurar a cena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e dar um nome adequado à cena, por exemplo, *AzureCloudServices*
 
-Depois, siga as instruções descritas em [Como alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para verificar se o perfil de configuração do MRTK da sua cena é o **DefaultXRSDKConfigurationProfile** e altere as opções de exibição da malha de reconhecimento espacial para **Oclusão**.
+Em seguida, siga as instruções em [Alterar a opção de exibição de reconhecimento espacial](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) para garantir que o perfil de configuração MRTK para sua cena seja **DefaultHololens2ConfigurationProfile** e altere as opções de exibição da malha de reconhecimento espacial para **Oclusão**.
 
-## <a name="installing-inbuilt-unity-packages"></a>Instalar pacotes internos do Unity
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>Instalação de pacotes incorporados do Unity e importação de ativos do tutorial
 
-No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a janela Gerenciador de Pacotes e selecione **AR Foundation** e clique no botão **Instalar** para instalar o pacote:
-
-![Janela do Gerenciador de Pacotes do Unity com o AR Foundation selecionado](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Você está instalando o pacote do AR Foundation porque ele é exigido pelo SDK de Âncoras Espaciais do Azure e será importado na próxima seção.
-
-## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
-
-Adicione o SDK do AzurespatialAnchors V2.7.1 ao seu projeto do Unity. Para adicionar os pacotes, siga este [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
-
-* [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
-* [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
-
-> [!TIP]
-> Para obter um lembrete sobre como importar um pacote personalizado do Unity, você pode consultar as instruções [Como importar os ativos de tutorial](mr-learning-base-04.md#importing-the-tutorial-assets).
-
-Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
-
-![Janelas Hierarquia, Cena e Projeto do Unity após a importação dos ativos do tutorial](images/mr-learning-azure/tutorial1-section4-step1-1.png)
-
-> [!NOTE]
-> Se você vir avisos CS0618 sobre 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' e 'WorldAnchor.GetNativeSpatialAnchorPtr()' estarem obsoletos, poderá ignorá-los.
+[!INCLUDE[](includes/installing-packages-for-azure-cloud-services.md)]
 
 ## <a name="creating-and-preparing-the-scene"></a>Como criar e preparar a cena
-<!-- TODO: Consider renaming to 'Preparing the scene' -->
 
 Nesta seção, você vai preparar a cena adicionando alguns pré-fabricados do tutorial.
 
@@ -129,7 +104,7 @@ Na janela do projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.AzureCl
 
 ![Unity com os pré-fabricados SceneController, RootMenu e DataManager selecionados](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-O **SceneController (prefab)** contém dois scripts: **SceneController (script)** e **UnityDispatcher (script)** . O componente de script **SceneController** contém várias funções de UX e facilita a funcionalidade de captura de fotos e o **UnityDispatcher** é uma classe auxiliar para permitir a execução de ações no thread principal do Unity.
+O **SceneController (pré-fabricado)** contém dois scripts, **SceneController (script)** e **AppDispatcher (script)** . O componente de script **SceneController** contém várias funções de experiência do usuário e facilita a funcionalidade de captura de fotos. O **AppDispatcher** é uma classe auxiliar para permitir a execução de ações no thread principal do Unity.
 
 O **RootMenu (prefab)** é o pré-fabricado da interface do usuário principal que mantém todas as janelas da interface do usuário conectadas entre si por meio de vários pequenos componentes de script e que controla o fluxo geral de UX do aplicativo.
 
