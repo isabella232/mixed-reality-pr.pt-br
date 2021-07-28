@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590058"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702497"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Compartilhar movimentações de objeto com vários usuários
 
@@ -27,9 +27,17 @@ Neste tutorial, você aprenderá a compartilhar os movimentos de objetos, de mod
 
 Nesta seção, você vai preparar a cena adicionando o pré-fabricado do tutorial.
 
+Na janela Hierarquia, expanda o objeto **MixedRealityPlayspace** e selecione o objeto filho **Câmera Principal** e, na janela Inspetor, use o botão **Adicionar Componente** para adicionar o componente **Gerenciador de Câmera de RA (Script)** no objeto **Câmera Principal**:
+
+![Unity com o componente Gerenciador de Câmera de RA parcialmente configurado](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 Na janela Projeto, navegue até a pasta **Ativos** > **MRTK.Tutorials.MultiUserCapabilities** > **Pré-fabricados** e arraste o pré-fabricado **TableAnchor** sobre o objeto **SharedPlayground** na janela Hierarquia para adicioná-lo à cena como um filho do objeto SharedPlayground:
 
 ![Unity com o pré-fabricado TableAnchor recém-adicionado selecionado](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+Na janela Hierarquia, verifique se o objeto **MixedRealityPlayspace** está expandido e se o objeto **TableAnchor** está selecionado. Arraste o componente **Câmera Principal** para o campo **Câmera** do componente **Origem da Sessão de RA** do **TableAnchor**:
+
+![Unity com a atribuição de Câmera Principal de Origem da Sessão de RA configurada](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Como configurar o PUN para criar uma instância dos objetos
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 28776e106b96d1265e435d60e7008b1d88c01060
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175426"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702509"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurar o Photon Unity Networking
 
@@ -56,15 +56,6 @@ Em seguida, habilite as seguintes funcionalidades adicionais:
 
 ![Configurações de funcionalidades do Unity](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
-## <a name="installing-inbuilt-unity-packages"></a>Instalar pacotes internos do Unity
-
-No menu do Unity, selecione **Janela** > **Gerenciador de Pacotes** para abrir a janela Gerenciador de Pacotes e selecione **AR Foundation** e clique no botão **Instalar** para instalar o pacote:
-
-![Janela Gerenciador de Pacotes do Unity com o AR Foundation selecionado](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
-
-> [!NOTE]
-> Você está instalando o pacote do AR Foundation porque ele é exigido pelo SDK de Âncoras Espaciais do Azure que você importará na próxima seção.
-
 ## <a name="importing-the-tutorial-assets"></a>Como importar os ativos do tutorial
 
 Adicione o SDK do AzurespatialAnchors V2.7.1 ao seu projeto do Unity. Para adicionar os pacotes, siga este [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
@@ -72,9 +63,9 @@ Adicione o SDK do AzurespatialAnchors V2.7.1 ao seu projeto do Unity. Para adici
 
 Baixe e **importe** os seguintes pacotes personalizados do Unity **na ordem em que estão listados**:
  
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage)
 
 Depois de importar os ativos do tutorial, a janela do projeto deverá ser semelhante a esta:
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 90c5b2ee3f25c39fc644aee0fbbf49643f7d2a59
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: dc8f495bc620eca3539b48f38fa15d089c0e28f4
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590168"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702457"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Introdução aos Tutoriais de funcionalidades de vários usuários
 
@@ -37,23 +37,23 @@ Tutoriais desta série:
 * Um computador com Windows 10 configurado com as [ferramentas corretas instaladas](../../install-the-tools.md)
 * SDK do Windows 10 10.0.18362.0 ou posterior
 * Um dispositivo HoloLens 2 [configurado para desenvolvimento](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
-* Conclua a seção [Criar um recurso de Âncoras Espaciais](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) do tutorial [Início Rápido: Criar um aplicativo HoloLens do Unity que usa as Âncoras Espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens)
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2020 LTS instalado e o módulo Suporte de Build da Plataforma Universal do Windows adicionado
+* Conclua a seção [Criar um recurso de Âncoras Espaciais](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) do tutorial [Início Rápido: Criar um aplicativo HoloLens do Unity que usa as Âncoras Espaciais do Azure](/azure/spatial-anchors/quickstarts/get-started-unity-hololens)
 * Ter concluído a série de [Tutoriais de introdução](mr-learning-base-01.md) ou ter alguma experiência anterior básica com o Unity e o MRTK
 * Ter concluído a série de [Tutoriais de Âncoras Espaciais do Azure](mr-learning-asa-01.md) ou experiência anterior criando uma conta de Âncoras Espaciais do Azure
 * Se você pretende implantar no Android, bem como no HoloLens
   * Um <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">desenvolvedor habilitado</a> e um dispositivo Android <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">com capacidade para ARCore</a> com conexão USB para o seu computador com Windows ou macOS
-  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo de Suporte de Build do Android adicionado
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2020 LTS instalado e o módulo de Suporte de Build do Android adicionado
 * Se você pretende implantar no iOS, bem como no HoloLens
   * Um computador macOS com a versão mais recente do <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> e do <a href="https://cocoapods.org" target="_blank">CocoaPods</a> instaladas
   * Um dispositivo iOS <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">compatível com ARKit</a> com conexão USB para seu computador macOS
-  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2019 LTS instalado e o módulo de Suporte de Build do iOS adicionado
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub do Unity</a> com o Unity 2020 LTS instalado e o módulo de Suporte de Build do iOS adicionado
 
-> [!CAUTION]
-> A versão recomendada do Kit de Ferramentas de Realidade Misturada para esta série de tutoriais é o MRTK 2.5.3.
+> [!IMPORTANT]
+> A versão recomendada do Kit de Ferramentas de Realidade Misturada para esta série de tutoriais é o MRTK 2.7.
 
-> [!CAUTION]
-> A versão recomendada do Unity para esta série de tutoriais é o Unity 2019 LTS. Isso substitui os requisitos de versão do Unity indicados nos pré-requisitos vinculados acima.
+> [!IMPORTANT]
+> A versão recomendada do Unity para esta série de tutoriais é o Unity 2020 LTS. Ela substitui todos os requisitos de versão do Unity indicadas nos pré-requisitos vinculados acima.
 
 > [!div class="nextstepaction"]
 > [Próximo tutorial: 2. Configurar uma rede Unity Photon](mr-learning-sharing-02.md)
