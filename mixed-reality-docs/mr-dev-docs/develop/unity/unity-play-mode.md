@@ -1,39 +1,41 @@
 ---
-title: Modo de reprodução do Unity
-description: Saiba como usar o Modo de Reprodução no editor do Unity para visualizar as alterações do aplicativo em um dispositivo sem implantar um aplicativo.
+title: Visualize seu trabalho com a comunicação remota do Holographic
+description: Use a comunicação remota do Holographic no modo de reprodução para visualizar as alterações do aplicativo em um dispositivo sem implantar um aplicativo.
 author: keveleigh
-ms.author: kurtie
-ms.date: 05/21/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
-keywords: Unity, remoting, holographic remoting, holographic remoting player, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, unity play mode
-ms.openlocfilehash: b998233fda34beee0c98795a1efa2c86a53541ba
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+keywords: Unity, comunicação remota, holographic de comunicação remota, holographic de comunicação remota, HoloLens, headset de realidade mista, headset de realidade mista do windows, headset de realidade virtual, modo de reprodução de unity
+ms.openlocfilehash: 0c71791c80a5e84ee48241baa756064a800e5a41
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392283"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757208"
 ---
-# <a name="unity-play-mode"></a>Modo de reprodução do Unity
+# <a name="preview-your-work-with-holographic-remoting"></a>Visualize seu trabalho com a comunicação remota do Holographic
 
-Uma maneira rápida de trabalhar em seu projeto do Unity é usar o "Modo de Reprodução", que executa seu aplicativo localmente no editor do Unity em seu computador. O Unity usa a Holographic Remoting para fornecer uma maneira rápida de visualizar seu conteúdo em um dispositivo HoloLens real. O Modo de Reprodução também pode ser usado com um Windows Mixed Reality headset anexado ao computador de desenvolvimento.
+você pode usar a comunicação remota do Holographic para transmitir conteúdo do Holographic para seu HoloLens 2 em tempo real. Essa é uma ótima maneira de depurar rapidamente seu aplicativo sem criar e implantar um projeto completo. 
 
-## <a name="holographic-remoting-setup"></a>Configuração de remoção holográfica
+Uma maneira rápida de trabalhar em seu projeto de Unity é usar o "modo de reprodução", que executa seu aplicativo localmente no editor do Unity em seu computador. o Unity usa a comunicação remota do Holographic para fornecer uma maneira rápida de visualizar o conteúdo em um dispositivo de HoloLens real. o modo de reprodução também pode ser usado com um Windows Mixed Reality headset conectado ao seu PC de desenvolvimento.
 
-1. Primeiro, você precisa instalar [o aplicativo Holographic Remoting Player](https://www.microsoft.com/store/productId/9NBLGGH4SV40) do Microsoft Store em seu HoloLens 2
-2. Execute o aplicativo Holographic Remoting Player no HoloLens 2 e você verá o número de versão e o endereço IP ao que se conectar
-    * Você precisará da v2.4 ou posterior para trabalhar com o plug-in OpenXR
+## <a name="holographic-remoting-setup"></a>Configuração de comunicação remota do Holographic
 
-    ![Captura de tela do Holographic Remoting Player em execução no HoloLens](images/openxr-features-img-01.png)
+1. primeiro, você precisa [instalar o aplicativo de Player de comunicação remota do Holographic](https://www.microsoft.com/store/productId/9NBLGGH4SV40) do Microsoft Store no seu HoloLens 2
+2. execute o aplicativo de Player de comunicação remota do Holographic no HoloLens 2 e você verá o número de versão e o endereço IP para se conectar
+    * Você precisará do v 2.4 ou posterior para trabalhar com o plug-in OpenXR
 
-## <a name="unity-play-mode-with-holographic-remoting"></a>Modo de reprodução do Unity com a Holographic Remoting
+    ![Captura de tela do player de comunicação remota do Holographic em execução no HoloLens](images/openxr-features-img-01.png)
 
-Com o Holographic Remoting, você pode experimentar seu aplicativo no HoloLens enquanto ele é executado no editor do Unity em seu computador. O olhar, o gesto, a voz e a entrada de mapeamento espacial são enviados do HoloLens para o computador. Os quadros renderizados são então enviados de volta para o HoloLens. Essa é uma ótima maneira de depurar rapidamente seu aplicativo sem criar e implantar um projeto completo.
+## <a name="unity-play-mode-with-holographic-remoting"></a>Modo de reprodução do Unity com comunicação remota do Holographic
+
+com a comunicação remota do Holographic, você pode experimentar seu aplicativo no HoloLens enquanto ele é executado no editor do Unity em seu computador. olhar, gesto, voz e entrada de mapeamento espacial são enviados de seu HoloLens para o seu PC. Os quadros renderizados são enviados de volta para o HoloLens. Essa é uma ótima maneira de depurar rapidamente seu aplicativo sem criar e implantar um projeto completo.
 
 [!INCLUDE[](includes/unity-play-mode.md)]
 
-A remoção holográfica requer um computador rápido e Wi-Fi conexão. Você pode encontrar mais detalhes na [documentação do Holographic Remoting Player.](../platform-capabilities-and-apis/holographic-remoting-player.md)
+A comunicação remota do Holographic exige um PC rápido e uma conexão Wi-Fi. Você pode encontrar mais detalhes na documentação do [player de comunicação remota do Holographic](../platform-capabilities-and-apis/holographic-remoting-player.md) .
 
-Para melhores resultados, certifique-se de que seu aplicativo define corretamente o [ponto de foco](focus-point-in-unity.md). Isso ajuda o Holographic Remoting a adaptar melhor sua cena à latência de sua conexão sem fio.
+Para obter melhores resultados, verifique se seu aplicativo define corretamente o [ponto de foco](focus-point-in-unity.md). Isso ajuda a Holographic a comunicação remota a melhor adaptação à sua cena com a latência de sua conexão sem fio.
 
 ## <a name="see-also"></a>Consulte Também
 

@@ -1,40 +1,47 @@
 ---
 title: A criação do escape do Kippy
-description: Acompanhe conosco ao explorarmos a criação do aplicativo de realidade misturada de escape do Kippy para o HoloLens 2 em um mecanismo inreal.
+description: acompanhe conosco ao explorarmos a criação do aplicativo de realidade misturada de Escape do Kippy para o HoloLens 2 em um mecanismo inreal.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+keywords: inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635394"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757104"
 ---
 # <a name="the-making-of-kippys-escape"></a>A criação do escape do Kippy
+![Imagem do herói de escape do Kippy](images/KippysEscape_1920.jpg)
 
-Kippy o robô é ativado para se encontrar em uma ilha. Cabe a você colocar sua solução de problemas para ajudá-lo a encontrar um caminho de volta para seu Rocket Ship! A tira do seu HoloLens 2 e [Baixe o aplicativo](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) do Microsoft Store ou clone o [repositório](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) do GitHub e obtenha o Kippy Home Safe!  
+Kippy o robô é ativado para se encontrar em uma ilha. Cabe a você colocar sua solução de problemas para ajudá-lo a encontrar um caminho de volta para seu Rocket Ship! a tira do seu HoloLens 2 e [baixe o aplicativo](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) do Microsoft Store ou clone o [repositório](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) de GitHub e obtenha o Kippy home safe!  
 
 > [!IMPORTANT]
-> Verifique se você está usando o **mecanismo não real 4,25 ou posterior** se estiver compilando o escape do Kippy no repositório github.
+> verifique se você está usando o **mecanismo não real 4,25 ou posterior** se estiver compilando o Escape do Kippy no repositório de GitHub.
 
-O escape do Kippy é um aplicativo de exemplo do [HoloLens 2](/hololens/hololens2-hardware) de software livre criado com as ferramentas de UX inreal do mecanismo 4 e [da realidade misturada para o inreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). Nesta postagem, vamos orientá-lo pelo processo dos primeiros princípios e Design Visual para implementar e otimizar a experiência. Você pode encontrar mais informações sobre como desenvolver aplicativos de realidade misturada com as ferramentas do MRTK UX na [visão geral do desenvolvimento inreal](unreal-development-overview.md).
+o Escape do Kippy é um aplicativo de exemplo de [HoloLens 2](/hololens/hololens2-hardware) de software livre criado com [ferramentas UX de realidade do](https://github.com/microsoft/MixedReality-UXTools-Unreal)mecanismo 4 e inreals para o inreal. Nesta postagem, vamos orientá-lo pelo processo dos primeiros princípios e Design Visual para implementar e otimizar a experiência. Você pode encontrar mais informações sobre como desenvolver aplicativos de realidade misturada com as ferramentas do MRTK UX na [visão geral do desenvolvimento inreal](unreal-development-overview.md).
+
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>baixar o aplicativo de Microsoft Store no HoloLens 2
+se você tiver HoloLens 2 dispositivo, poderá baixar e instalar diretamente o aplicativo em seu dispositivo.
+
+<a href='//www.microsoft.com/store/apps/9nbd7gl86vkd?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
+
 
 ## <a name="first-principles"></a>Primeiros princípios 
 
-Na configuração para criar o escape do Kippy, nosso objetivo era criar uma experiência que realçasse o [suporte do hololens 2 do mecanismo inreal](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), os recursos do hololens 2 e o kit de ferramentas de realidade misturada. Queríamos inspirar os desenvolvedores a imaginar o que poderiam criar com o inreal e o HoloLens 2.  
+na configuração para criar o Escape do Kippy, nosso objetivo era criar uma experiência que realçasse o [suporte de HoloLens 2 do mecanismo inreal](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), os recursos do HoloLens 2 e a realidade misturada Toolkit. queríamos inspirar os desenvolvedores a imaginar o que poderiam criar com o inreal e o HoloLens 2.  
 
 Nós chegamos a três princípios de orientação para a experiência: que precisa ser divertido, interativo e ter uma barreira baixa para entrar. Queríamos que a experiência seja intuitiva o suficiente, até mesmo um usuário de realidade misturada pela primeira vez não precisará de um tutorial para passar por ele.  
 
 ## <a name="designing-the-game"></a>Projetando o jogo 
 
-O HoloLens 2 tem acesso aos recursos de design encontrados em qualquer lugar no jogo hoje. Os objetos podem ser enviados por Push ou manipulados diretamente usando suas mãos ou direcionados com acompanhamento de olho. Esses recursos principais estão por trás de algum tempo divertido que criamos no escape do Kippy.  
+o HoloLens 2 tem acesso aos recursos de design encontrados em qualquer lugar no jogo hoje. Os objetos podem ser enviados por Push ou manipulados diretamente usando suas mãos ou direcionados com acompanhamento de olho. Esses recursos principais estão por trás de algum tempo divertido que criamos no escape do Kippy.  
 
-Usando os recursos exclusivos do HoloLens 2 como orientação para nosso design de jogos, fizemos um escopo de alguns cenários de ambiente pequeno. As ilhas faziam sentido porque podem ser ajustadas para diferentes alturas do jogador e fornecer ideias de ponte divertidas. Nós descarregoumos o tema de Civilization antigo que cumprem a tecnologia Sci-Fi, com a ideia de que alguém tinha criado máquinas sobre ruins aproveitando uma energia estranha fornecida por cada ilha. As ilhas eram cada uma dada à aparência própria, um detalhe que ajudou a criar interesse visual. Um bom equilíbrio entre modelagem e texturing manteria as chamadas de desenho baixas para o desempenho de renderização, de modo que uma aparência estilizada foi projetada com isso em mente. 
+usando os recursos exclusivos do HoloLens 2 como orientação para o nosso design de jogos, fizemos um escopo de alguns cenários de ambiente pequenos. As ilhas faziam sentido porque podem ser ajustadas para diferentes alturas do jogador e fornecer ideias de ponte divertidas. Nós descarregoumos o tema de Civilization antigo que cumprem a tecnologia Sci-Fi, com a ideia de que alguém tinha criado máquinas sobre ruins aproveitando uma energia estranha fornecida por cada ilha. As ilhas eram cada uma dada à aparência própria, um detalhe que ajudou a criar interesse visual. Um bom equilíbrio entre modelagem e texturing manteria as chamadas de desenho baixas para o desempenho de renderização, de modo que uma aparência estilizada foi projetada com isso em mente. 
 
 ![O design inicial de jogos esboça ](images/kippys-escape/kippys-escape-img-01.png)
  *alguns esboços iniciais sobre a aparência da experiência*
@@ -80,13 +87,13 @@ Um componente [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/D
 
 ![Exemplo de componente de controle deslizante gif](images/kippys-escape/kippys-escape-img-09.gif) 
 
-## <a name="optimizing-for-hololens-2"></a>Otimizando para o HoloLens 2 
+## <a name="optimizing-for-hololens-2"></a>otimizando para o HoloLens 2 
 
-Com qualquer experiência criada para ser executada em um dispositivo móvel, manter-se atento ao desempenho é essencial. O inreal 4,25 inclui uma atualização importante para dar suporte a várias exibições móveis, o que reduz significativamente a sobrecarga de renderização e aumenta a taxa de quadros. É recomendável verificar nossas outras [configurações de desempenho recomendadas](performance-recommendations-for-unreal.md) para desenvolvimento de HoloLens 2 com inreal quando você está otimizando.  
+Com qualquer experiência criada para ser executada em um dispositivo móvel, manter-se atento ao desempenho é essencial. O inreal 4,25 inclui uma atualização importante para dar suporte a várias exibições móveis, o que reduz significativamente a sobrecarga de renderização e aumenta a taxa de quadros. é recomendável verificar nossas outras [configurações de desempenho recomendadas](performance-recommendations-for-unreal.md) para desenvolvimento HoloLens 2 com inreal quando você estiver otimizando.  
 
 Os objetos de física ainda permanecem caros para o desempenho, portanto, algumas soluções alternativas inteligentes foram usadas. Por exemplo, a terceira "ponte" requer a sopro de alguns resíduos que bloqueiam o Stairway. Em vez de ter um impacto forçado nas pedras como objetos de física, o bomba denotação dispara uma permuta, alternando as pedras estáticas para um efeito de partículas explodida. 
 
-![Exemplo otimizado para GIF 2 do HoloLens](images/kippys-escape/kippys-escape-img-10.gif) 
+![exemplo otimizado para o HoloLens 2 gif](images/kippys-escape/kippys-escape-img-10.gif) 
 
 Também reduzimos nossas chamadas de desenho de mais de 400 para ~ 260: 
 * Reduzindo a complexidade da malha
@@ -97,14 +104,14 @@ Embora seja muito provável que possamos ter feito, achamos que foi um bom equil
 
 ## <a name="try-it-out"></a>Experimente! 
 
-Inicialize o seu HoloLens 2 e [Baixe](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) o aplicativo do Microsoft Store, ou clone o [repositório](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) do GitHub e crie o aplicativo por conta própria!  
+inicialize seu HoloLens 2 e [baixe](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) o aplicativo do Microsoft Store, ou clone o [repositório](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) de GitHub e compile o aplicativo por conta própria!  
 
 ## <a name="about-the-team"></a>Sobre a equipe
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
-<td style="border-style: none"><b>Jack-Caron</b><br><i>Designer de jogo líder</i><br>Atualmente, a Jack trabalha em experiências de realidade mista para a Microsoft, incluindo projetos do HoloLens 2 e AltspaceVR, e era um designer da equipe da plataforma do HoloLens.</td>
+<td style="border-style: none"><b>Jack-Caron</b><br><i>Designer de jogo líder</i><br>atualmente, a Jack trabalha em experiências de realidade mista para a Microsoft, incluindo HoloLens 2 projetos e AltspaceVR, e era um designer da equipe de plataforma HoloLens.</td>
 </tr>
 </table>
 

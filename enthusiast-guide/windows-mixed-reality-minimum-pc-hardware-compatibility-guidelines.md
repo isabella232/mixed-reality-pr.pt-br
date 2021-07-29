@@ -8,14 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, Ultra, compatível, compatibilidade, requisitos do sistema, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
-ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
+ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114713563"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757024"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality diretrizes mínimas de compatibilidade de hardware do pc
+
+![Imagem hero de compatibilidade do computador](images/pc-comp-hero.png)
 
 ## <a name="features-and-experiences"></a>Recursos e experiências
 
@@ -155,19 +157,19 @@ Para todos os outros HMDs, consulte os seguintes requisitos:
 * Headsets diferentes podem exigir portas de hardware diferentes, portanto, certifique-se de que o computador tenha as portas corretas ou adaptadores [necessários](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) para se conectar ao headset.
 
 >[!NOTE]
->Hardware gráfico discreto e integrado que não atendem às especificações mínimas confirmadas não foram testados, confirmados ou otimizados para Windows Mixed Reality e podem não funcionar corretamente ou de forma alguma.
+>hardware de gráficos discretos e integrados que não atendem às especificações confirmadas mínimas não foram testados, confirmados ou otimizados para Windows Mixed Reality e podem não funcionar corretamente ou de nenhuma forma.
 
-## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality e Surface
+## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality e superfície
 
-Para a melhor Windows Mixed Reality em um dispositivo Surface, recomendamos o SurfaceBook (15) mais recente configurado com pelo menos o NVIDIA GeForce GTX 1060 GB e 16 GB de RAM.  Essa configuração dá suporte a todos os Windows Mixed Reality e foi testada para Windows Mixed Reality.  O Surface Book mais recente (13,5"), Surface Studio, Surface Laptop e Surface Pro (2017) dará suporte a alguns recursos do Windows Mixed Reality quando configurados com uma CPU Intel Core i5 (ou melhor) e pelo menos 8 GB de RAM.
+para obter a melhor experiência de Windows Mixed Reality em um dispositivo de superfície, recomendamos o SurfaceBook (15 ") mais recente configurado com pelo menos o NVIDIA GeForce GTX 1060 GB e 16 GB de RAM.  essa configuração dá suporte a todos os recursos de Windows Mixed Reality e foi testada para Windows Mixed Reality.  a Surface Book mais recente (13,5 "), Surface Studio, Surface Laptop e Surface Pro (2017) dará suporte a alguns recursos de Windows Mixed Reality quando configurados com uma CPU Intel Core i5 (ou melhor) e pelo menos 8 GB de RAM.
 
 **Requisitos:**
 
-* Os produtos surface exigem que as atualizações de driver sejam compatíveis com Windows Mixed Reality. Esses drivers podem ser instalados no Surface indo para atualizar e Configurações > segurança > **verificar se há atualizações.**
-* Os produtos [](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) surface exigem um adaptador da porta de vídeo (Mini DisplayPort ou USB-C, dependendo do Surface PC) para HDMI 2.0 para headsets Windows Mixed Reality disco. A versão mais recente do Surface Mini-DisplayPort adaptador AV do HDMI é compatível com o HDMI 2.0 (a versão mais antiga não é). Da mesma forma, o <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Adaptador USB-C do Surface</a> para HDMI também é compatível com o HDMI 2.0.
+* Produtos de superfície exigem atualizações de driver para serem compatíveis com Windows Mixed Reality. esses drivers podem ser instalados em sua superfície acessando **Configurações > atualização e segurança > verificar** se há atualizações.
+* produtos de superfície exigem um [adaptador](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) da porta de vídeo (Mini DisplayPort ou USB-C, dependendo do PC de superfície) até o HDMI 2,0 para Windows Mixed Reality headsets. A versão mais recente da superfície Mini-DisplayPort ao adaptador HDMI AV é compatível com o HDMI 2,0 (a versão mais antiga não é). Da mesma forma, o <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">adaptador de superfície USB-C para HDMI</a> também é compatível com HDMI 2,0.
 
 ## <a name="see-also"></a>Confira também
 
 * [Pergunte à comunidade](https://answers.microsoft.com)
-* [Entre em contato conosco para ter suporte](https://support.microsoft.com/contactus/)
-* [Adaptadores recomendados para Windows Mixed Reality PCs com capacidade](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* [Entre em contato conosco para obter suporte](https://support.microsoft.com/contactus/)
+* [adaptadores recomendados para Windows Mixed Reality PCs compatíveis](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
