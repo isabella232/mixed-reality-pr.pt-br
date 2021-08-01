@@ -222,8 +222,6 @@
       items:
         - name: Câmera de foto/vídeo no Unity
           href: unity/locatable-camera-in-unity.md
-        - name: Comunicação remota holográfica em um aplicativo da área de trabalho
-          href: unity/holographic-remoting-desktop.md
         - name: Ponto de foco
           href: unity/focus-point-in-unity.md
         - name: Controle de perda
@@ -249,7 +247,7 @@
             - name: Surfaces
               href: unity/sampleapp-surfaces.md
             - name: Tabela periódica dos elementos 2.0
-              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+              href: unity/periodic-table-of-the-elements-2.md
             - name: Galaxy Explorer 2.0
               href: unity/galaxy-explorer-update.md
             - name: Conceitos básicos de qualidade
@@ -268,8 +266,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Configurações recomendadas do Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Modo de reprodução do Unity
-          href: unity/unity-play-mode.md
+        - name: Visualizar seu trabalho com a comunicação remota holográfica
+          href: unity/holographic-remoting-in-unity.md
     - name: Soluções do Visual Studio
       items:
         - name: Como exportar e criar uma solução do Visual Studio do Unity
@@ -454,7 +452,9 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Comunicação remota holográfica
       items:
-        - name: Player de Comunicação Remota Holográfica
+        - name: Visão geral
+          href: platform-capabilities-and-apis/holographic-remoting-overview.md
+        - name: Player de comunicação remota holográfica
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Como criar um aplicativo remoto de comunicação remota holográfica
           items:
@@ -475,9 +475,7 @@
         - name: Termos de licença de software de comunicação remota holográfica
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Comunicação remota holográfica para o HoloLens (1ª geração)
-          items:
-            - name: Adicionar comunicação remota holográfica
-              href: platform-capabilities-and-apis/add-holographic-remoting.md
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: Teste e qualidade do aplicativo
       items:
         - name: Critérios de qualidade do aplicativo
