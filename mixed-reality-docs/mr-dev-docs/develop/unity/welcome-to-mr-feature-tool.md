@@ -7,16 +7,16 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1244f9cd4da0d6ae0b5c6f92698f87f0edd812e2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772409"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757084"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Bem-vindo(a) à Ferramenta de Recursos de Realidade Misturada
 
-![Imagem da faixa da Ferramenta de Recursos de Realidade Misturada](images/feature-tool-banner.png)
+![Imagem da faixa da Ferramenta de Recursos de Realidade Misturada](images/feature-tool-banner.jpg)
 
 > [!IMPORTANT]
 > No momento, a Ferramenta de Recursos de Realidade Misturada só está disponível para o Unity. Se você estiver realizando o desenvolvimento no Unreal, veja a documentação de [instalação das ferramentas](../install-the-tools.md).
