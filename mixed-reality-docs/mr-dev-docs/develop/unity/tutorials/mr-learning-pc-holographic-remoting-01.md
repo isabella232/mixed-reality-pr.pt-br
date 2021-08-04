@@ -2,25 +2,27 @@
 title: Introdução à comunicação remota holográfica para PC
 description: Conclua este curso para saber como transmitir aplicativos de realidade misturada remotamente do seu PC para o HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, comunicação remota holográfica do PC, dicas de ferramenta, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175435"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757348"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introdução à Comunicação Remota Holográfica para PC
 
-Bem-vindo(a) aos tutoriais do HoloLens 2. Nesta série de tutoriais de duas partes, você aprenderá a criar uma demonstração de experiência de realidade misturada e a criar um aplicativo de PC para a Comunicação Remota do Holographic.
+Bem-vindo(a) aos tutoriais do HoloLens 2. Nesta série de tutoriais de duas partes, você aprenderá a criar uma demonstração de experiência de realidade misturada e um aplicativo de PC para a comunicação remota do Holographic.
+
+[Conheça os conceitos básicos da comunicação remota do Holographic.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Neste tutorial, você aprenderá a criar uma experiência de realidade misturada. Ele demonstrará elementos da interface do usuário, manipulação de modelo 3D, recorte de modelo e recursos de acompanhamento de olho.
 
-No segundo tutorial, [Criar um aplicativo de Comunicação Remota Holographic](mr-learning-pc-holographic-remoting-02.md), você aprenderá a criar um aplicativo de PC para Comunicação Remota do Holographic. E conecte-se ao HoloLens 2 a qualquer momento, fornecendo um modo de visualizar o conteúdo 3D em realidade misturada.
+No segundo tutorial, [Criar um aplicativo de comunicação remota do Holographic](mr-learning-pc-holographic-remoting-02.md), você aprenderá a criar um aplicativo de PC que usa a comunicação remota do Holographic para que você possa transmitir seu trabalho em andamento para o HoloLens e exibi-lo sem a necessidade de compilação anterior.
 
 ## <a name="objectives"></a>Objetivos
 

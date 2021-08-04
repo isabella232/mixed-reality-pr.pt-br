@@ -2,27 +2,29 @@
 title: Criar um aplicativo de Comunicação Remota Holográfica para PC
 description: Conclua este curso para aprender a criar um aplicativo de PC para uma experiência de realidade misturada do seu PC para o HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, comunicação remota holográfica do PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392473"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757228"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Como criar um aplicativo de Comunicação Remota Holográfica para PC
 
-Neste tutorial, você aprenderá a criar um aplicativo para PC de Comunicação Remota Holográfica e a conectar-se ao HoloLens 2 a qualquer momento, fornecendo um modo de visualizar o conteúdo em 3D na realidade misturada.
+Neste tutorial, você aprenderá a criar um aplicativo de PC que usa a comunicação remota do Holographic para transmitir seu trabalho em andamento para o HoloLens e exibi-lo sem a necessidade de compilação anterior.
+
+[Conheça os conceitos básicos da comunicação remota do Holographic.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 ## <a name="objectives"></a>Objetivos
 
 * Configurar o Unity para Comunicação Remota Holográfica
 * Saber como criar e implantar o aplicativo com o Visual Studio
-* Desenvolver o aplicativo de Comunicação Remota Holográfica e conectar-se ao HoloLens
+* Desenvolver um aplicativo de comunicação remota do Holographic e conectar-se com o HoloLens
 
 ## <a name="configuring-the-capabilities"></a>Como configurar as funcionalidades
 

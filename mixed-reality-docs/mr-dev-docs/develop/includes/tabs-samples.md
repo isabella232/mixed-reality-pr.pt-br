@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f540c1cb417f64c412657ce291c0a0822961e55d
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: d7b025ebc362a441ef45860b946a7a0f30b99b1e
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112255496"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757372"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,10 +12,23 @@ Os aplicativos de exemplo de código aberto foram criados pelas nossas equipes p
 
 ### <a name="hololens-2-open-source-sample-apps"></a>Aplicativos de exemplo de software livre do HoloLens 2
 
-* [Hub de Exemplos do MRTK](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
-* [Surfaces](../unity/sampleapp-surfaces.md) - [(download da Microsoft Store no HoloLens 2)](https://www.microsoft.com/p/surfaces/9nvkpv3sk3x0)
-* [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-* [Galaxy Explorer 2.0](../unity/galaxy-explorer-update.md)
+:::row:::
+    :::column:::
+       [![Tabela periódica dos elementos 2.0](../images/MRDL_PeriodicTable.jpg)](../unity/periodic-table-of-the-elements-2.md) **[Tabela periódica dos elementos 2.0](../unity/periodic-table-of-the-elements-2.md)**
+    :::column-end:::
+    :::column:::
+       [![Hub de exemplos de MRTK](../images/MRTKExamplesHub.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) **[Hub de exemplos de MRTK](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Superfícies](../images/MRDL_Surfaces.jpg)](../unity/sampleapp-surfaces.md) **[Superfícies](../unity/sampleapp-surfaces.md)**
+    :::column-end:::
+    :::column:::
+       [![Galaxy Explorer 2.0](../images/GalaxyExplorer2.jpg)](../unity/galaxy-explorer-update.md) **[Galaxy Explorer 2.0](../unity/galaxy-explorer-update.md)**
+    :::column-end:::
+:::row-end:::
 
 ### <a name="hololens-1st-gen-open-source-sample-apps"></a>HoloLens (1º gen) aplicativos de exemplo de software livre
 
@@ -36,9 +49,23 @@ A maioria dos aplicativos de exemplo de software livre criados por nossa equipe 
 
 Um subconjunto dos exemplos usa componentes de UX interativos, como botões e controles deslizantes, que são fornecidos pelo [plug-in de Ferramentas de UX](https://aka.ms/uxt-unreal) como parte do [Kit de Ferramentas de Realidade Misturada para Unreal](https://aka.ms/mrtk-unreal).
 
-* [Aplicativo de Xadrez](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
-* [Kippy's Escape](../unreal/unreal-kippys-escape.md) – faça download da [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) no HoloLens 2
-* [Ford GT40](../unreal/unreal-ford-gt40.md) – Baixar da [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
+:::row:::
+    :::column:::
+       [![Kippy's Escape](../unreal/images/KippysEscape_1920.jpg)](../unreal/unreal-kippys-escape.md) **[Kippy's Escape](../unreal/unreal-kippys-escape.md)**
+    :::column-end:::
+    :::column:::
+       [![Ford GT40](../unreal/images/ford-gt40-hero_1920.jpg)](../unreal/unreal-ford-gt40.md) **[Ford GT40](../unreal/unreal-ford-gt40.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Aplicativo de xadrez](../images/Unreal_ChessApp.png)](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp) **[Aplicativo de xadrez](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)**
+    :::column-end:::
+    :::column:::
+
+    :::column-end:::
+:::row-end:::
 
 ### <a name="made-by-epic-games"></a>Criado pela Epic Games
 
