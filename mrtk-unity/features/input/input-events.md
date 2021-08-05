@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Eventos,
-ms.openlocfilehash: c8871aa575e2aa4507e9dbbdcc8bdf0fc0604633
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 25ac5bd4a4f5d5678a80ec362512ce7daac791a17e93944aa4832d9d09c02ee2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176783"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208328"
 ---
 # <a name="input-events"></a>Eventos de entrada
 
@@ -26,7 +26,7 @@ A lista a seguir descreve todas as interfaces de evento de entrada disponíveis 
 | [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | Entrada para baixo/para cima | Gerado em alterações em entradas binárias, como botões. |
 | [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Entrada alterada | Gerado em alterações em entradas do tipo determinado. **T** pode usar os seguintes valores: <br/> - *float* (por exemplo, retorna gatilho análogo)<br/> - *Vector2* (por exemplo, retorna a direção do thumbstick do gamepad) <br/> - *Vector3* (por exemplo, posição de retorno do dispositivo rastreado) <br/> - *Quatternion* (por exemplo, retorna a orientação do dispositivo rastreado)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (por exemplo, retorna o dispositivo totalmente rastreado) |
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | Palavra-chave speech recognized | Gerado no reconhecimento de uma das palavras-chave configuradas no Perfil *de Comandos de Fala*. |
-| [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Ditado<br/> Hipótese <br/> Resultado <br/> Concluir <br/> Erro | Gerado por sistemas de ditado para relatar os resultados de uma sessão de ditado. |
+| [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Ditado<br/> Hipótese <br/> Result <br/> Concluir <br/> Erro | Gerado por sistemas de ditado para relatar os resultados de uma sessão de ditado. |
 | [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | Eventos de gesto em: <br/> Iniciado <br/> Atualizado <br/> Concluído <br/> Canceled | Gerado na detecção de gestos. |
 | [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Gesto atualizado/concluído | Gerado na detecção de gestos que contêm dados adicionais do tipo determinado. Consulte [**eventos de gesto**](gestures.md#gesture-events) para obter detalhes sobre possíveis valores para **T**. |
 | [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) | Junções de mão atualizadas | Gerado por controladores de mão articulados quando as junções de mão são atualizadas. |

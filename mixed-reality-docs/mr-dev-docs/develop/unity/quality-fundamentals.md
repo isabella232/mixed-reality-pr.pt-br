@@ -6,12 +6,12 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: conceitos básicos de qualidade, estudo de caso, projeto, exemplo, MRTK, Toolkit de Realidade Misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
-ms.openlocfilehash: e91ea1c69aeafaafa9c9bae30af6e5a288754764
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211934"
 ---
 # <a name="quality-fundamentals"></a>Conceitos básicos de qualidade
 

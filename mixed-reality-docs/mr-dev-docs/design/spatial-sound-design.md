@@ -5,38 +5,38 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, som espacial, design, estilo, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, gestos, interações, atenuação
-ms.openlocfilehash: d51fbdf16d7186c386f124c773f75dacc8c157fd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: Windows Mixed Reality, som espacial, design, estilo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, realidade misturada Toolkit, gestos, interações, atenuação
+ms.openlocfilehash: 687811f23e11cadf6e75129098c9feb0393009f819eb961cf2f55a3208cc5f96
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208956"
 ---
-# <a name="how-to-use-sound-in-mixed-reality-applications"></a>Como usar o som em aplicativos de realidade misturada
+# <a name="how-to-use-sound-in-mixed-reality-applications"></a>Como usar o som em aplicativos de realidade mista
 
-Você pode usar o som para informar e reforçar o modelo mental do usuário do estado do aplicativo. Use a espacialização, quando apropriado, para colocar sons no mundo da realidade misturada. Ao conectar o auditivo e o visual dessa maneira, você aprofunda a natureza intuitiva das interações e aumenta a confiança do usuário.
+Você pode usar o som para informar e reforçar o modelo mental do usuário do estado do aplicativo. Use a espacial, quando apropriado, para inserir sons no mundo de realidade misturada. Ao conectar a auditoria e o Visual dessa forma, você aprofunda a natureza intuitiva das interações e aumenta a confiança do usuário.
 <br><br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="when-to-add-sounds"></a>Quando adicionar sons
 
-Aplicativos de realidade misturada geralmente têm uma necessidade maior de som do que aplicativos 2D, devido à falta de uma interface tactile. Adicione sons quando eles informarem o usuário ou reforçarem as interações.
+Aplicativos de realidade misturada geralmente têm uma necessidade maior de som do que aplicativos 2D, devido à falta de uma interface tactile. Adicione sons quando informar ao usuário ou reforçar as interações.
 
 ### <a name="inform-and-reinforce"></a>Informar e reforçar
 
 * Para eventos que não são iniciados pelo usuário, como notificações, use o som para informar ao usuário que ocorreu uma alteração.
 * As interações podem ter vários estágios. Use o som para reforçar as transições de estágio.
 
-Confira os exemplos a seguir de interações, eventos e características de som sugeridas.
+Consulte os exemplos de interações, eventos e características de som sugeridos a seguir.
 
-### <a name="exercise-restraint"></a>Exercício físico
+### <a name="exercise-restraint"></a>Retentor exercício
 
 Os usuários não têm uma capacidade ilimitada para informações de áudio.
-* Cada som deve comunicar informações específicas e valiosas.
-* Quando seu aplicativo reproduz um som para informar o usuário, reduza temporariamente o volume de outros sons.
-* Para sons de foco do botão (consulte as informações a seguir), adicione um atraso de tempo para evitar o disparo excessivo de som.
+* Cada som deve comunicar informações valiosas e específicas.
+* Quando seu aplicativo toca um som para informar o usuário, reduza temporariamente o volume de outros sons.
+* Para sons de botão de mouse (consulte as informações a seguir), adicione um atraso de tempo para evitar o disparo excessivo de som.
 
 ### <a name="dont-rely-solely-on-sounds"></a>Não confie exclusivamente em sons
 
@@ -58,17 +58,17 @@ Em realidade misturada, os usuários podem interagir com botões usando um mouse
 
 ### <a name="direct-manipulation"></a>Manipulação direta
 
-No HoloLens 2, o acompanhamento de mão articulado dá suporte à manipulação direta de elementos da interface do usuário. Os sons são importantes quando não há outros comentários físicos.
+no HoloLens 2, o controle de mão articulado dá suporte à manipulação direta de elementos de interface do usuário. Os sons são importantes quando não há outros comentários físicos.
 
-Um *som de pressão* de botão é importante porque o usuário não tem nenhuma outra indicação ao atingir a parte inferior do traço de tecla. Indicadores de som de viagem de chave podem ser pequenos, sutis e oclusivos. Assim como nas interações de gesto, os pressionadores de botão devem obter um som curto e tactile como um clique. Os descompactes devem ter um som de clique semelhante, mas com tom elevado.
-* Exemplo: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Exemplo: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+Um som de *pressionamento de botão* é importante porque o usuário não recebe nenhuma outra indicação quando chega à parte inferior do traço de chave. Indicadores de som de viagem de chave podem ser pequenos, sutis e obstruído. Assim como ocorre com interações de gesto, os pressionamentos de botão devem ter um som curto, tactile, como um clique. As reimpressões devem ter um som de clique semelhante, mas com densidade elevada.
+* Exemplo: [MRTK_ButtonPress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Exemplo: [MRTK_ButtonUnpress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 
-É difícil confirmar visualmente uma ação de captura ou liberação. A mão do usuário geralmente estará no caminho de qualquer efeito visual e objetos aptos não têm um análogo visual do mundo real de "segurar". Os sons podem comunicar efetivamente interações de captura e liberação bem-sucedidas.
-* As ações de captura devem ter um som de tactile curto e um pouco mais curto que solicita a ideia de fechar os dedos em torno de um objeto. Às vezes, também há um som "who motion" que leva até o som de segurar para comunicar o movimento da mão.<br/>Exemplo: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
-* As ações de versão devem obter um som semelhantemente curto e tactile. Geralmente, ele é menor do que o som de captura e em ordem inversa, com um impacto e, em seguida, um "who pitch" para comunicar que o objeto está se estabelecendo no lugar.<br/>Exemplo: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
+É difícil confirmar visualmente uma ação de captação ou liberação. A mão do usuário geralmente estará no caminho de qualquer efeito visual, e os objetos apto para não têm uma analogia visual do mundo real de "captação". Os sons podem comunicar efetivamente as interações de captura e liberação bem-sucedidas.
+* As ações de captura devem ter um som de tactile curto e um pouco muffled que solicite a ideia de fechamento de um objeto. Às vezes, há também um som "whoosh" que leva até o som de captação para comunicar o movimento do lado.<br/>Exemplo: [MRTK_Move_Start. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
+* As ações de liberação devem ter um som tactile e curto. Isso geralmente é mais baixo do que o som de captura e na ordem inversa, com um impacto e, em seguida, um "whoosh" para se comunicar que o objeto está sendo liquidado no lugar.<br/>Exemplo: [MRTK_Move_End. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
-Uma *interação* de desenho deve obter um som de loop persistente com volume determinado pelo movimento da mão do usuário. Ele deve ficar silencioso quando a mão do usuário ainda estiver e mais alto quando a mão estiver se movendo rapidamente.
+Uma interação de *desenho* deve obter um som persistente, em loop com o volume determinado pelo movimento da mão do usuário. Ele deve ser silencioso quando a mão do usuário ainda estiver e mais alta quando a mão estiver se movendo rapidamente.
 
 ### <a name="voice-interactions"></a>Interações de voz
 
@@ -88,24 +88,24 @@ Em realidade misturada, os objetos às vezes se movem para fora do campo de exib
 
 Os sons de *notificação de mensagem* podem ser ouvidos repetidamente, às vezes em uma rápida sucessão. É importante que eles não se destaquem. Os sons de tons positivos do intervalo médio entram em vigor.
 
-* Os sons de chamada de entrada devem ter qualidades semelhantes a um toque de telefone celular. Esses sons são frases de música em loop que tocam até que o usuário responda à chamada.
-* A conexão de comunicação de voz e a desconexão devem ter um som curto e tonal. O som da conexão deve ser um tom positivo para indicar uma conexão bem-sucedida. O som de desconexão deve ser um som neutro para indicar a conclusão da chamada.
+* Os sons de chamada de entrada devem ter qualidades semelhantes a um toque de telefone celular. Esses sons estão em loop de frases musicais que são executadas até que o usuário responda à chamada.
+* A conexão de comunicação de voz e a desconexão devem ter um som tonal curto. O som de conexão deve ser um tom positivo para indicar uma conexão bem-sucedida. O som de desconexão deve ser um som neutro para indicar a conclusão da chamada.
 
-## <a name="handle-spatialization"></a>Manipular espacialização
+## <a name="handle-spatialization"></a>A espacial da manipulação
 
-A espacialização usa fones de ouvido estéreo ou alto-falantes para colocar sons no mundo da realidade misturada.
+A espacialização usa fones estéreo ou alto-falantes para inserir sons no mundo de realidade misturada.
 
-### <a name="which-sounds-to-spatialize"></a>Que parece espacializar
+### <a name="which-sounds-to-spatialize"></a>O que parece ter uma espacial
 
-Um som deve ser espacializado quando associado a um evento que tem um local espacial. Isso inclui interface do usuário, vozes de IA incorporadas e indicadores visuais.
+Um som deve ser espacial quando estiver associado a um evento que tenha um local espacial. Isso inclui a interface do usuário, as vozes de ia incorporadas e os indicadores visuais.
 
-Espacializar *elementos de interface* do usuário para ajudar a desalocar o "espaço" sônico do usuário limitando o número de sons estéreos que eles escutam. Interações de manipulação, como tocar, segurar e liberar, são mais naturais quando os comentários de áudio são espacializados. Considere as informações a seguir sobre atenuação de distância para esses elementos.
+Espacialize os elementos da *interface do usuário* para ajudar a confundir o "espaço" do Sonic do usuário, limitando o número de sons estéreo que eles ouvem. As interações de manipulação, como toque, captura e liberação, se sentem mais naturais quando os comentários de áudio são espaciais. Considere as seguintes informações sobre a atenuação de distância para esses elementos.
 
-Espacializar *indicadores visuais* e vozes *de IA* incorporadas para informar intuitivamente os usuários quando essas coisas estão fora do campo de exibição.
+Espaciale os *indicadores visuais* e as *vozes de ia incorporadas* para informar os usuários de forma intuitiva quando essas coisas estiverem fora do campo de exibição.
     
-Por outro lado, evite a espacialização para *vozes* de IA sem faceta e outros elementos que não têm um local espacial bem definido. A espacialização sem um elemento visual relacionado pode desviar os usuários a pensar que há um elemento visual que eles não conseguem encontrar.
+Por outro lado, evite a espacialização para *vozes de ia sem face* e outros elementos que não têm um local espacial bem definido. A espacialização sem um elemento visual relacionado pode distrair os usuários de pensar que há um elemento visual que ele não pode localizar.
 
-A espacialização vem com algum custo de CPU. Muitos aplicativos têm no máximo dois sons tocando simultaneamente. O custo da espacialização nesse caso é provavelmente insignificante. Você pode usar o monitor de taxa de quadros do MRTK para avaliar o impacto da adição de espacialização.
+A espacialização vem com algum custo de CPU. Muitos aplicativos têm no máximo dois sons reproduzidos simultaneamente. O custo da espacial nesse caso provavelmente é insignificante. Você pode usar o monitor de taxa de quadros MRTK para avaliar o impacto da adição de espacial.
 
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Quando e como aplicar atenuação baseada em distância
 
@@ -119,7 +119,7 @@ Sons que reforçam os *estágios progressivos de ações de botão* e outras int
 
 ### <a name="which-spatialization-technology-to-use"></a>Qual tecnologia de espacial deve ser usada
 
-Com fones de ouvido ou os alto-falantes do HoloLens, use tecnologias de espacial com base em HRTF (função de transferência relacionada à carga). Essas tecnologias modelam a propagação sonora em toda a cabeça do mundo físico. Mesmo quando uma fonte de som está no lado distante do cabeçalho de um, o som é propagado para o Ear distante com algumas atenuações e atrasos. O movimento panorâmico do orador depende apenas da atenuação e aplica a atenuação total no Ear esquerdo quando sons estão no lado direito e o contrário. Essa técnica pode ser desconfortável para ouvintes "audição normais" e inacessíveis para ouvintes que têm deficiência auditiva em um Ear.
+com os fones de ouvido ou os alto-falantes de HoloLens, use tecnologias de espacial com base em HRTF (função de transferência relacionada à carga). Essas tecnologias modelam a propagação sonora em toda a cabeça do mundo físico. Mesmo quando uma fonte de som está no lado distante do cabeçalho de um, o som é propagado para o Ear distante com algumas atenuações e atrasos. O movimento panorâmico do orador depende apenas da atenuação e aplica a atenuação total no Ear esquerdo quando sons estão no lado direito e o contrário. Essa técnica pode ser desconfortável para ouvintes "audição normais" e inacessíveis para ouvintes que têm deficiência auditiva em um Ear.
 
 ## <a name="next-steps"></a>Próximas etapas
 

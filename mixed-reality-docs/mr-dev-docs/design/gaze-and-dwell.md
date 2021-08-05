@@ -1,33 +1,33 @@
 ---
 title: Focar e esperar
-description: Obtenha uma visão geral do modelo de entrada de olho e de olhar e de cabeça para aplicativos de realidade misturada.
+description: Obter uma visão geral do modelo de entrada de olhar e de olhar e de cabeça para aplicativos de realidade misturada.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Realidade misturada, olhar, pesquisa, interação, design, controle de cabeça, acompanhamento de cabeçalho, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Realidade Misturada, olhar, duração, interação, design, acompanhamento ocular, acompanhamento de cabeça, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Realidade Misturada Toolkit
+ms.openlocfilehash: c65c13b06df70ed5471b283ad349dd72e1575018a98913177983d7a13571d666
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213670"
 ---
 # <a name="gaze-and-dwell"></a>Focar e esperar
 
 Quando as mãos estão ocupadas com ferramentas e peças, os gestos podem ser entediantes ou impossíveis.
-Os comandos de voz também podem não ser confiáveis em determinados contextos, por exemplo, sob condições excessivamente alta.
-A olhar e a pesquisa oferecem um mecanismo familiar e fácil de dominar para as cabeças de trabalho e as mãos gratuitas no HoloLens.
-Além disso, o olhar e a pesquisa são um ótimo fallback, o que é independente da interferência de ruído ou restrições de silêncio no ambiente operacional.
-Distinguimos duas variantes de _olhar e de duração_: [Head-olhar e de pesquisa](gaze-and-dwell-head.md) e [olho-olhar e a pesquisa](gaze-and-dwell-eyes.md).
+Os comandos de voz também podem não ser confiáveis em determinados contextos, por exemplo, em condições excessivamente altas.
+O olhar e a vida oferecem um mecanismo familiar e fácil de dominar para trabalhar de cabeça para cima e mãos livres em HoloLens.
+Além disso, o olhar e a suspensão são um excelente fallback, que é independente das restrições de interferência de ruído ou silêncio no ambiente operacional.
+Distinguemos duas variantes do olhar _e da cabeça:_ com o olhar [com a](gaze-and-dwell-head.md) cabeça e a cabeça e com o olhar e com [a cabeça.](gaze-and-dwell-eyes.md)
 
 ## <a name="scenarios"></a>Cenários
 
-A olhar e a pesquisa são Excel em cenários em que as mãos de uma pessoa estão ocupadas com outras tarefas, e a voz não é 100% confiável ou está disponível devido a restrições de ambiente ou sociais.
+O olhar e a atenção se destaca em cenários em que as mãos de uma pessoa estão ocupadas com outras tarefas e a voz não é 100% confiável ou disponível devido a restrições ambientais ou sociais.
 Um bom exemplo é uma pessoa que usa o HoloLens para sobrepor informações de referência ao realizar reparos no motor de um carro.
 Suas mãos estão ocupadas com ferramentas ou para apoiar o corpo conforme acessa o compartimento do motor.
 O ambiente da garagem é barulhento, com estrondos e zumbidos constantes de ferramentas, o que dificulta os comandos de voz.
-A olhar e a pesquisa permitem que a pessoa que usa o HoloLens Navegue com confiança no material de referência sem interromper o fluxo de trabalho.
+O olhar e a facilidade permitem que a pessoa que usa o HoloLens navegue com confiança no material de referência sem interromper seu fluxo de trabalho.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 

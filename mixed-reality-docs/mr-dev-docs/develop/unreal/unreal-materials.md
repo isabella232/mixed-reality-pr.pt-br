@@ -1,94 +1,94 @@
 ---
 title: Recomendações de material no Unreal
-description: Visão geral dos materiais no mecanismo inreal.
+description: Visão geral dos materiais no mecanismo do Unreal.
 author: hferrone
 ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Inreal, Engine 4, UE4, HoloLens, HoloLens 2, desenvolvimento, materiais, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, desenvolvimento, materiais, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
+ms.openlocfilehash: d5ce702495c95e8ca6d07a0209a4bc7d02f5d4d682415b028d63995e8910a7e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580789"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187676"
 ---
 # <a name="material-recommendations-in-unreal"></a>Recomendações de material no Unreal
 
-Os materiais que você usa podem afetar diretamente o quão bem seus projetos são executados em um mecanismo inreal. Esta página atua como um início rápido para as configurações básicas que você deve usar para obter o melhor desempenho de seus aplicativos de realidade misturada.
+Os materiais usados podem afetar diretamente o quão bem seus projetos são executados no Unreal Engine. Esta página atua como um início rápido para as configurações básicas que você deve usar para obter o melhor desempenho de seus aplicativos de realidade misturada.
 
-## <a name="using-customizeduvs"></a>Usando CustomizedUVs
+## <a name="using-customizeduvs"></a>Usando CustomedUVs
 
-Se você precisar fornecer uma disposição UV em seu material, use CustomizedUVs em vez de modificar a UV do nó de textura diretamente. CustomizedUVs permitem que você manipule UVs nos sombreadores de vértice em vez do sombreador de pixel.
+Se você precisar fornecer blocos UV em seu material, use CustomedUVs em vez de modificar o UV do nó de textura diretamente. Os CustomedUVs permitem manipular UVs nos sombreadores de vértice em vez do sombreador de Pixel.
 
-![Configurações de material em inreal](images/unreal-materials-img-01c.png)
+![Configurações de material no Unreal](images/unreal-materials-img-01c.png)
 
-Você pode encontrar detalhes materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) e nos exemplos de práticas recomendadas nas capturas de tela abaixo:
+Você pode encontrar detalhes de material na [documentação do Unreal Engine](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) e exemplos de melhores práticas nas capturas de tela abaixo:
 
-[ ![ Configurações de material recomendadas em ](images/unreal-materials-img-01.png) configuração de ](images/unreal-materials-img-01.png#lightbox) 
- *material recomendado* inreal
+[ ![ Configurações de material ](images/unreal-materials-img-01.png) recomendadas na configuração de ](images/unreal-materials-img-01.png#lightbox) 
+ *material recomendado pelo* Unreal
 
-[ ![ Configurações de material não recomendadas em ](images/unreal-materials-img-01b.png) ](images/unreal-materials-img-01b.png#lightbox) 
- *configuração de material não recomendável não recomendada*
+[ ![ Configurações de material ](images/unreal-materials-img-01b.png) não recomendadas na ](images/unreal-materials-img-01b.png#lightbox) 
+ *configuração de material não recomendado do* Unreal
 
-## <a name="changing-blend-mode"></a>Alterando o modo de mesclagem
+## <a name="changing-blend-mode"></a>Alterando o modo blend
 
-É recomendável definir o modo de mesclagem como opaco, a menos que haja um motivo forte para fazer o contrário. Os materiais mascarados e translúcidas são lentos. Você pode encontrar mais detalhes sobre materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+É recomendável definir o modo blend como opaco, a menos que haja um motivo forte para fazer o contrário. Materiais mascarados e translúcidos são lentos. Você pode encontrar mais detalhes sobre materiais na [documentação do Unreal Engine](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
-![Alterando o modo de mesclagem](images/unreal-materials-img-02.jpg)
+![Alterando o modo de combinação](images/unreal-materials-img-02.jpg)
 
 ## <a name="updating-lighting-for-mobile"></a>Atualizando a iluminação para dispositivos móveis
 
-A precisão total deve ser desativada. A iluminação lightmap pode ser discada por meio da ativação de informações direcionais. Quando desabilitada, a iluminação de lightmaps será simples, mas mais barata.
+A precisão total deve ser desligada. A iluminação de mapa de luz pode ser discada ao girar informações direcionais. Quando desabilitado, a iluminação de mapas de luz será simples, mas mais barata.
 
-![Configurações de material móvel em não real](images/unreal-materials-img-03.jpg)
+![Configurações de material móvel no Unreal](images/unreal-materials-img-03.jpg)
 
-## <a name="adjusting-forward-shading"></a>Ajustando o sombreamento de encaminhamento
+## <a name="adjusting-forward-shading"></a>Ajustando o sombreamento de avanço
 
-Essas opções melhoram a fidelidade visual ao custo do desempenho. Eles devem ser desativados para o desempenho máximo.
+Essas opções melhoram a fidelidade visual às custas do desempenho. Eles devem ser desligados para o desempenho máximo.
 
-![Encaminhe as configurações de material de sombreamento em um espaço inreal](images/unreal-materials-img-04.jpg)
+![Encaminhar configurações de material de sombreamento no Unreal](images/unreal-materials-img-04.jpg)
 
-## <a name="setting-material-translucency"></a>Configurando material Translucency
+## <a name="setting-material-translucency"></a>Definindo a transluência do material
 
-Indica que o material translúcida não deve ser afetado por flor ou DOF. Como ambos os efeitos são raros no Sr, essa configuração deve estar ativada por padrão.
+Indica que o material translúcido não deve ser afetado por bloom ou DOF. Como ambos os efeitos são raros no MR, essa configuração deve estar em por padrão.
 
-![Configuração de Translucency separada para dispositivos móveis em não real](images/unreal-materials-img-05.jpg)
+![Configuração de translência separada móvel no Unreal](images/unreal-materials-img-05.jpg)
 
 ## <a name="optional-settings"></a>Configurações opcionais
 
 As configurações a seguir podem melhorar o desempenho, mas observe que elas desabilitam determinados recursos. Use essas configurações somente se tiver certeza de que não precisa dos recursos em questão.
 
-![Configurações de material opcionais em inreal](images/unreal-materials-img-06.jpg)
+![Configurações de material opcionais no Unreal](images/unreal-materials-img-06.jpg)
 
-Se seu material não exigir reflexo ou brilho, a definição dessa opção pode fornecer um enorme aumento de desempenho. No teste interno, é tão rápido quanto "unlit" ao fornecer informações de iluminação.
+Se o material não exigir reflexões ou brilho, definir essa opção poderá fornecer um enorme aumento de desempenho. No teste interno, ele é tão rápido quanto "desllitado" ao fornecer informações de iluminação.
 
 ## <a name="best-practices"></a>Práticas recomendadas
 
-As seguintes não são "configurações", assim como as práticas recomendadas relacionadas aos materiais.
+As "configurações" a seguir não são as melhores práticas relacionadas aos Materiais.
 
-Ao criar parâmetros, prefira usar "parâmetros estáticos" sempre que possível. Opções estáticas podem ser usadas para remover uma ramificação inteira de um material sem custo de tempo de execução. As instâncias podem ter valores diferentes, tornando possível ter um sombreado modelo configurado sem perda de desempenho. A desvantagem é que várias permutações são criadas e causarão a recompilação do sombreador. Tente minimizar o número de parâmetros estáticos no material e o número de permutações desses parâmetros estáticos que são usados. Você pode encontrar mais detalhes sobre como renderizar os parâmetros de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
+Ao criar parâmetros, prefira usar "Parâmetros Estáticos" sempre que possível. Comutadores Estáticos podem ser usados para remover um branch inteiro de um material sem custo de runtime. As instâncias podem ter valores diferentes, possibilitando a configuração de um sombreador com modelo sem perda de desempenho. A desvantagem é que várias permutações são criadas que causarão a recomputação do sombreador. Tente minimizar o número de parâmetros estáticos no material e o número de permutações desses parâmetros estáticos usados. Você pode encontrar mais detalhes sobre como renderizar parâmetros de material na [documentação do Unreal Engine](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
 
 ![Práticas recomendadas para configurações de material](images/unreal-materials-img-07.jpg)
 
-Ao criar instâncias de material, a preferência deve ser dada à **constante da instância material** sobre a instância de material dinâmica. **Constante de instância de material** é um material de instância que calcula apenas uma vez antes do tempo de execução.
+Ao criar Instâncias de Material, a preferência deve ser dada à Constante **da Instância de Material sobre** a Instância de Material Dinâmica. **A Constante da Instância** de Material é um Material de instância que calcula apenas uma vez antes do runtime.
 
-A instância de material criada por meio do navegador de conteúdo (**clique com o botão direito do mouse > criar instância de material**) é uma constante de instância de material. A instância de material dinâmica é criada por meio de código. Você pode encontrar mais detalhes sobre as instâncias de material na [documentação do mecanismo inreal](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
+A instância de material criada por meio do Navegador de Conteúdo ( clique com o botão **direito do mouse > Criar Instância de Material**) é uma Constante de Instância de Material. A Instância de Material Dinâmica é criada por meio de código. Você pode encontrar mais detalhes sobre instâncias de material na [documentação do Unreal Engine](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
-![Criando instâncias de material em um não real](images/unreal-materials-img-08.png)
+![Criando instâncias de material no Unreal](images/unreal-materials-img-08.png)
 
-Fique atento à complexidade dos seus materiais/sombreadores. Você pode exibir o custo de seu material em várias plataformas clicando no ícone de estatísticas de plataforma. Você também pode encontrar mais detalhes sobre materiais na [documentação do mecanismo inreal](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+Fique atento à complexidade de seus materiais/sombreadores. Você pode exibir o custo do Material em várias plataformas clicando no ícone Estatísticas da Plataforma. Você também pode encontrar mais detalhes sobre materiais na [documentação do Unreal Engine.](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 
-![Criando configurações dinâmicas da instância de material em um inreal](images/unreal-materials-img-09.png)
+![Criando configurações dinâmicas da instância de material no Unreal](images/unreal-materials-img-09.png)
 
-Você pode obter uma ideia rápida da complexidade relativa do seu sombreador por meio do [modo de exibição](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)de complexidade do sombreador.
+Você pode ter uma ideia rápida da complexidade relativa do sombreador por meio do modo de Exibição de Complexidade [do Sombreador](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html).
 
 * Tecla de atalho do modo de exibição: Alt + 8
-* Comando de console: ViewMode shadercomplexity
+* Comando do console: viewmode shadercomplexity
 
-![Complexidade de material em não real](images/unreal-materials-img-10.png)
+![Complexidade do material no Unreal](images/unreal-materials-img-10.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 * [Materiais móveis](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [Modos de exibição](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 * [Instâncias de material](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
 keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, Realidade Misturada Toolkit, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, OpenXR, Open XR, Unity
-ms.openlocfilehash: 29dc4c99505d3f8e2d9bab70e54da25c1ab6c87b
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 78961c73ee01efcd097d2dcc4456bce156287691fa6dc8e2121c817e4812bfac
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211844"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>Tabela periódica dos elementos 2.0
 ![Tabela de período do aplicativo Elements](../images/MRDL_PeriodicTable.jpg)

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, XRSDK, XR SDK
-ms.openlocfilehash: bc2924f8e080b0c202f7c3e394a5382cf306431c
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 1560188d1a69f0083940a37da8c378691ee75a9d569c2c5088e0e3f614a44858
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188212"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Introdução ao SDK do MRTK e do XR
 
@@ -24,7 +24,7 @@ para começar com a realidade misturada Toolkit, siga [as etapas fornecidas](../
 
 o pipeline do XR SDK atualmente dá suporte a três plataformas: Windows Mixed Reality, Oculus e OpenXR. As seções a seguir abordarão as etapas necessárias para configurar o XR SDK para cada plataforma.
 
-### <a name="windows-mixed-reality"></a>Realidade Misturada do Windows
+### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
 acesse o **Gerenciador de Pacotes do Unity** e instale o pacote de plug-in Windows xr, que adiciona suporte para Windows Mixed Reality no XR SDK. Isso também obterá alguns pacotes de dependência.
 
@@ -195,9 +195,9 @@ como
 
 ### <a name="controller-mappings"></a>Mapeamentos de controlador
 
-Se estiver usando perfis de mapeamento de controlador personalizado, abra um deles e execute o item de menu Utilitários de Toolkit -> -> Update -> Controller Mapping Profiles para garantir que os novos tipos de controlador do SDK do XR sejam definidos.
+se você estiver usando perfis de mapeamento de controlador personalizado, abra um deles e execute o item de menu Toolkit da realidade misturada-> utilitários-> Update-> controller mappings para garantir que os novos tipos de controlador SDK do XR sejam definidos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-* [Começar a trabalhar com o desenvolvimento de RA no Unity](https://docs.unity3d.com/Manual/AROverview.html)
-* [Começar a trabalhar com o desenvolvimento de VR no Unity](https://docs.unity3d.com/Manual/VROverview.html)
+* [Introdução ao desenvolvimento do AR no Unity](https://docs.unity3d.com/Manual/AROverview.html)
+* [Introdução ao desenvolvimento VR no Unity](https://docs.unity3d.com/Manual/VROverview.html)

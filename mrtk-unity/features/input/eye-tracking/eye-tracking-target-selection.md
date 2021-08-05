@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, EyeTracking,
-ms.openlocfilehash: 229903e01c597aefbb3fc29de8a49d79cbbd42d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: aab2f35259db183f4f3edb4fffc2b3e7a066bccf9c69e492c90ee193388b8b7a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189580"
 ---
 # <a name="eye-supported-target-selection"></a>Seleção de destino com suporte de olho
 
@@ -20,7 +20,7 @@ Esta página discute diferentes opções para acessar dados olhars de olho e olh
 
 - Procure & diga _"Select"_ (comando de voz padrão)
 - Procure & diga _"explodir"_ ou _"pop"_ (comandos de voz personalizados)
-- Procurar & botão Bluetooth
+- botão procurar & Bluetooth
 - Olhe & pinça (ou seja, mantenha sua mão na frente e traga seu polegar e um índice para o dedo)
   - Observe que, para que isso funcione, os [raios à mão precisam ser desabilitados](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)
 
@@ -55,13 +55,13 @@ Para habilitar isso, você precisa usar um script EyeTrackingTarget específico 
 
 ## <a name="1-use-generic-focus-and-pointer-handlers"></a>1. usar manipuladores de foco e ponteiro genérico
 
-Se o acompanhamento ocular estiver configurado corretamente (consulte Configuração básica do [MRTK](eye-tracking-basic-setup.md)para usar o acompanhamento ocular), permitir que os usuários selecionem hologramas usando os olhos será o mesmo que qualquer outra entrada de foco (por exemplo, foco com a cabeça ou raio de mão). Isso oferece a grande vantagem de uma maneira flexível de interagir com seus hologramas definindo o tipo de foco principal em seu Perfil de Ponteiro de Entrada do MRTK, dependendo das necessidades do usuário, deixando seu código inalterado. Isso permite alternar entre o olhar ou a cabeça sem alterar uma linha de código ou substituir raios de mão por direcionamento ocular para interações distantes.
+Se o acompanhamento de olho estiver configurado corretamente (consulte a [configuração básica do MRTK para usar o controle de olho](eye-tracking-basic-setup.md)), permitir que os usuários selecionem hologramas usando seus olhos é o mesmo para qualquer outra entrada de foco (por exemplo, Head olhar ou Hand Ray). Isso fornece a grande vantagem de uma maneira flexível de interagir com os hologramas definindo o tipo de foco principal em seu perfil de ponteiro de entrada MRTK dependendo das necessidades do usuário, deixando seu código inalterado. Isso permite alternar entre o olhar de cabeça ou olho sem alterar uma linha de código ou substituir raios de mão com o alvo dos olhos para interações distantes.
 
 ### <a name="focusing-on-a-hologram"></a>Concentrando-se em um holograma
 
-Para detectar quando um holograma está focalizado, use a interface _'IMixedRealityFocusHandler'_ que fornece dois membros de interface: _OnFocusEnter_ e _OnFocusExit_.
+Para detectar quando um holograma está focalizado, use a interface _' IMixedRealityFocusHandler '_ que fornece dois membros de interface: _OnFocusEnter_ e _OnFocusExit_.
 
-Aqui está um exemplo simples de [ColorTap.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) para alterar a cor de um holograma ao ser procurado.
+Aqui está um exemplo simples de [ColorTap. cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) para alterar a cor de um holograma ao ser examinado.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
@@ -79,14 +79,14 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
 }
 ```
 
-### <a name="selecting-a-focused-hologram"></a>Selecionando um holograma focalizado
+### <a name="selecting-a-focused-hologram"></a>Selecionando um holograma focado
 
-Para selecionar um holograma focalizado, use _PointerHandler_ para escutar eventos de entrada para confirmar uma seleção.
-Por exemplo, adicionar _o IMixedRealityPointerHandler_ fará com que eles reajam à entrada de ponteiro simples.
-A interface _IMixedRealityPointerHandler_ requer a implementação dos três membros de interface a seguir: _OnPointerUp,_ _OnPointerDown_ e _OnPointerClicked_.
+Para selecionar um holograma focado, use _PointerHandler_ para escutar eventos de entrada para confirmar uma seleção.
+Por exemplo, adicionar o _IMixedRealityPointerHandler_ fará com que eles reajam à entrada de ponteiro simples.
+A interface _IMixedRealityPointerHandler_ requer a implementação dos três seguintes membros de interface: _OnPointerUp_, _OnPointerDown_ e _OnPointerClicked_.
 
-No exemplo a seguir, alteramos a cor de um holograma observando-o e pinçando ou dizendo "selecionar".
-A ação necessária para disparar o evento é definida pelo qual podemos definir o tipo de no Editor do Unity – por padrão, é a `eventData.MixedRealityInputAction == selectAction` `selectAction` ação "Selecionar". Os tipos de [MixedRealityInputActions](../input-actions.md) disponíveis podem ser configurados no Perfil do MRTK por meio das Ações de Entrada de Entrada do Perfil de Configuração do _MRTK._  ->    ->  
+No exemplo a seguir, alteramos a cor de um holograma examinando-o e Pinçando ou dizendo "Select".
+A ação necessária para disparar o evento é definida por `eventData.MixedRealityInputAction == selectAction` meio do qual podemos definir o tipo de `selectAction` no editor do Unity – por padrão, é a ação "selecionar". Os tipos de [MixedRealityInputActions](../input-actions.md) disponíveis podem ser configurados no perfil MRTK por meio de ações de entrada do _perfil de configuração do MRTK_  ->    ->  .
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
@@ -116,9 +116,9 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityP
 }
 ```
 
-### <a name="eye-gaze-specific-baseeyefocushandler"></a>BaseEyeFocusHandler específica do foco com o olhar
+### <a name="eye-gaze-specific-baseeyefocushandler"></a>BaseEyeFocusHandler específico de olhos olhar
 
-Considerando que o foco com o olhar pode ser muito diferente de outras entradas de  ponteiro, talvez você queira garantir que reaja apenas à entrada de foco se ele for foco com o olhar e ele for atualmente o ponteiro de entrada primário.
+Considerando que o olho olhar pode ser muito diferente para outras entradas de ponteiro, você pode querer se certificar de reagir apenas à entrada de foco se estiver _atento olhar_ e, no momento, é o ponteiro de entrada primário.
 Para essa finalidade, você usaria o [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) que é específico para acompanhamento de olho e que deriva do [`BaseFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseFocusHandler) .
 Como mencionado anteriormente, ele só será disparado se o foco olhar direcionamento for a entrada do ponteiro principal (ou seja, não há um raio de disposição ativo). Para obter mais informações, consulte [como dar suporte a gestos de olho olhar + Hand](eye-tracking-eyes-and-hands.md).
 
@@ -169,34 +169,34 @@ Por fim, fornecemos uma solução que permite que você trate a entrada baseada 
 Isso tem três _vantagens_:
 
 - Você pode se certificar de que o holograma está apenas se reagindo ao olhar de olhos do usuário.
-- Isso é independente da entrada primária ativa no momento. Portanto, você pode processar várias entradas de uma só vez– por exemplo, combinando direcionamento de olho rápido com gestos de mão.
-- Vários eventos do Unity já foram definidos para torná-lo rápido e conveniente para lidar e reutilizar comportamentos existentes de dentro do Editor do Unity ou por meio de código.
+- Isso é independente da entrada primária ativa no momento. Portanto, você pode processar várias entradas de uma vez, por exemplo, combinando olho rápido com gestos de mão.
+- Vários eventos do Unity já foram configurados para torná-lo rápido e conveniente para manipular e reutilizar comportamentos existentes no editor do Unity ou por meio de código.
 
 Também há algumas _desvantagens:_
 
 - Mais esforço para lidar com entradas separadas individualmente.
-- Nenhuma degradação elegante: ele dá suporte apenas ao direcionamento ocular. Se o acompanhamento ocular não estiver funcionando, você exigirá algum fallback adicional.
+- Sem degradação elegante: ele só dá suporte a direcionamento de olho. Se o acompanhamento de olho não estiver funcionando, você precisará de algum fallback adicional.
 
-Semelhante ao _BaseFocusHandler_, o _EyeTrackingTarget_ vem pronto com vários eventos específicos do Unity que você pode escutar convenientemente por meio do Editor do Unity (veja o exemplo abaixo) ou usando _AddListener()_ no código:
+Semelhante ao _BaseFocusHandler_, o _EyeTrackingTarget_ vem pronto com vários eventos de Unity específicos de olhar que você pode ouvir de forma conveniente por meio do editor do Unity (Veja o exemplo abaixo) ou usando _addListener ()_ no código:
 
 - OnLookAtStart()
 - WhileLookingAtTarget()
 - OnLookAway()
-- OnDwell()
-- OnSelected()
+- ()
+- Desmarcado ()
 
-A seguir, explicamos alguns exemplos de como usar _EyeTrackingTarget._
+A seguir, vamos orientá-lo em alguns exemplos de como usar o _EyeTrackingTarget_.
 
-### <a name="example-1-eye-supported-smart-notifications"></a>Exemplo #1: notificações inteligentes com suporte ocular
+### <a name="example-1-eye-supported-smart-notifications"></a>Exemplo #1: notificações inteligentes com suporte de olho
 
-Em `EyeTrackingDemo-02-TargetSelection` (Ativos/MRTK/Exemplos/Demonstrações/EyeTracking/Scenes), você pode encontrar um exemplo de _'notificações_ inteligentes de notificação de notificação' que reagem ao seu olhar.
-Essas são caixas de texto 3D que podem ser colocadas na cena e que aumentarão suavemente e se voltarão para o usuário ao serem olhadas para facilitar a legibilidade. Enquanto o usuário estiver lendo a notificação, as informações continuarão sendo exibidas claras e claras. Depois de lê-la e olhar para fora da notificação, a notificação será automaticamente descartada e esmaeça. Para fazer tudo isso, há alguns scripts de comportamento genéricos que não são específicos do acompanhamento ocular, como:
+Em `EyeTrackingDemo-02-TargetSelection` (ativos/MRTK/exemplos/demos/EyeTracking/cenas), você pode encontrar um exemplo para _"notificações do Smart cuidadosa"_ que reagem ao seu olho olhar.
+Essas são caixas de texto 3D que podem ser colocadas na cena e que aumentarão e voltarão para o usuário quando for examinado para facilitar a legibilidade. Embora o usuário esteja lendo a notificação, as informações continuam sendo exibidas e claras. Depois de lê-lo e olhar para fora da notificação, a notificação será automaticamente descartada e esmaecerá. Para obter tudo isso, há alguns scripts de comportamento genéricos que não são específicos do acompanhamento de olho, como:
 
 - [`FaceUser`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FaceUser)
 - [`ChangeSize`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ChangeSize)
 - [`BlendOut`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.BlendOut)
 
-A vantagem dessa abordagem é que os mesmos scripts podem ser reutilizado por vários eventos. Por exemplo, um holograma pode começar a ser voltado para o usuário com base em comandos de voz ou depois de pressionar um botão virtual. Para disparar esses eventos, você pode simplesmente referenciar os métodos que devem ser executados no [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) script que está anexado ao gameobject.
+A vantagem dessa abordagem é que os mesmos scripts podem ser reutilizados por vários eventos. Por exemplo, um holograma pode começar a direcionar o usuário com base em comandos de voz ou depois de pressionar um botão virtual. Para disparar esses eventos, você pode simplesmente referenciar os métodos que devem ser executados no [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) script que está anexado ao gameobject.
 
 Para o exemplo de _' notificações do Smart cuidadosa '_, acontece o seguinte:
 
@@ -276,13 +276,13 @@ Isso significa que o usuário pode simplesmente aumentar sua mão e pinçar seu 
             - Associar a ação que você acabou de criar
             - Atribuir um _código_ de Key-prima para permitir o acionamento da ação por meio de um pressionamento de botão
 
-![Exemplo de Comandos de voz EyeTrackingTarget](../../images/eye-tracking/mrtk_et_voicecmdsample.jpg)
+![Exemplo de comandos de voz EyeTrackingTarget](../../images/eye-tracking/mrtk_et_voicecmdsample.jpg)
 
-Quando uma gema é selecionada, ela vai estourar, fazendo um som e desaparecendo. Isso é tratado pelo [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script. Você tem duas opções:
+Quando um Gem é selecionado, ele explodirá, fazendo um som e desaparecerá. Isso é tratado pelo [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script. Você tem duas opções:
 
-- **No Editor do Unity:** Você pode simplesmente vincular o script anexado a cada um dos nossos modelos gem ao evento OnSelected() Unity no Editor do Unity.
-- **No código:** Se você não quiser arrastar e soltar GameObjects, também poderá simplesmente adicionar um ouvinte de eventos diretamente ao script.  
-Veja um exemplo de como fizemos isso no [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script:
+- **No editor do Unity:** Você poderia simplesmente vincular o script que está anexado a cada um de nossos modelos de Gem ao evento OnSelected () Unity no editor do Unity.
+- **No código:** Se você não quiser arrastar e soltar GameObjects, também poderá simplesmente adicionar um ouvinte de eventos diretamente ao seu script.  
+Veja um exemplo de como fizemos no [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script:
 
 ```c#
 /// <summary>
@@ -318,21 +318,21 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 }
 ```
 
-### <a name="example-4-use-hand-rays-and-eye-gaze-input-together"></a>Exemplo #4: usar raios de mão e entrada de olhar juntos
+### <a name="example-4-use-hand-rays-and-eye-gaze-input-together"></a>Exemplo #4: usar raios de mão e olhar de olho para a entrada em conjunto
 
-Os raios de mão têm prioridade sobre o direcionamento do olhar e da cabeça. Isso significa que, se os raios de mão estão habilitados, no momento em que as mãos são vistas, o raio de mão atuará como o ponteiro primário.
-No entanto, pode haver situações em que você deseja usar raios de mão enquanto ainda detecta se um usuário está olhando para um determinado holograma. Muito fácil. Essencialmente, você precisa de duas etapas:
+Raios de mão têm prioridade sobre o direcionamento de olhar de cabeça e olho. Isso significa que, se os raios à mão estiverem habilitados, o momento em que as mãos entrarão no modo de exibição, o raio da mão atuará como o ponteiro principal.
+No entanto, pode haver situações em que você deseja usar raios de mão e, ao mesmo tempo, detectar se um usuário está olhando para um determinado holograma. Muito fácil. Essencialmente, você precisa de duas etapas:
 
-**1. Habilitar o** raio de mão: para habilitar o raio de mão, acesse Kit de Ferramentas de Realidade Misturada _-> Entrada -> Ponteiros_.
-No _EyeTrackingDemo-00-RootScene_ em que o Kit de Ferramentas de Realidade Misturada é configurado uma vez para todas as cenas de demonstração de acompanhamento ocular, você deve ver _o EyeTrackingDemoPointerProfile_.
-Você pode criar um novo Perfil _de Entrada do_ zero ou adaptar o acompanhamento ocular atual:
+**1. habilitar o raio de inserção:** para habilitar o raio da mão, vá para _realidade misturada Toolkit-> ponteiros de > de entrada_.
+no _EyeTrackingDemo-00-RootScene_ em que a realidade misturada Toolkit é configurada uma vez para todos os bastidores de demonstração do controle ocular, você deve ver o _EyeTrackingDemoPointerProfile_.
+Você pode criar um novo _perfil de entrada_ do zero ou adaptar o acompanhamento de olho atual:
 
-- **Do zero:** Na guia _Ponteiros,_ selecione _DefaultMixedRealityInputPointerProfile_ no menu de contexto.
-Esse é o perfil de ponteiro padrão que já tem o raio de mão habilitado!
+- **Do zero:** Na guia _ponteiros_ , selecione o _DefaultMixedRealityInputPointerProfile_ no menu de contexto.
+Este é o perfil de ponteiro padrão que já tem o raio definido habilitado!
 Para alterar o cursor padrão (um ponto branco opaco), basta clonar o perfil e criar seu próprio perfil de ponteiro personalizado.
-Em seguida, _substitua DefaultCursor_ por _EyeGazeCursor em_ _Prefab do Cursor de_ Olhar.  
-- **Com base no _EyeTrackingDemoPointerProfile_ existente:** clique duas vezes no _EyeTrackingDemoPointerProfile_ e adicione a seguinte entrada em Opções _de Ponteiro:_
-  - **Tipo de controlador:** "Mão articulada", "realidade misturada do Windows"
+Em seguida, substitua _DefaultCursor_ por _EyeGazeCursor_ sob _olhar cursor pré-fabricado_.  
+- **Com base no _EyeTrackingDemoPointerProfile_ existente:** clique duas vezes no _EyeTrackingDemoPointerProfile_ e adicione a seguinte entrada em _Opções de ponteiro_:
+  - **Tipo de controlador:** ' Articulated Hand ', ' Windows Mixed Reality '
   - **Destromente:** Outro
   - **Pré-fabricado do ponteiro:** DefaultControllerPointer
 

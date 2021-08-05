@@ -5,13 +5,13 @@ author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
-keywords: Realidade mista do Windows, hologramas, HoloLens 2, controle de olho, entrada de olhar, tela de montagem de cabeça, mecanismo inreal, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, widgets, interface do usuário, UMG, gráficos de movimento inreal, mecanismo inreal, UE, UE4
-ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+keywords: Windows Mixed Reality, hologramas, HoloLens 2, controle de olho, entrada de olhar, tela de montagem de cabeça, mecanismo inreal, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual, widgets, interface do usuário, UMG, gráficos de movimento inreal, mecanismo inreal, UE, UE4
+ms.openlocfilehash: 8cb1c804757332ce7b78f0cb92cf895b873c1835208962b20d5bbbfae4684785
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212782"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>UMG e teclado no Unreal
 
@@ -27,7 +27,7 @@ O UMG (elementos gráficos de movimento inreal) é um sistema de interface do us
 
 ![Captura de tela da janela de hierarquia com componente de widget de texto realçado e expandido](images/unreal-umg-img-02.png)
 
-- Selecione um widget na janela hierarquia ou designer e modifique os parâmetros no painel de detalhes.  Nesse caso, adicionamos um "texto de dica" padrão e uma cor de tonalidade que aparece quando você passa o mouse sobre a caixa de texto.  Uma caixa de texto exibirá um teclado virtual no HoloLens quando ele estiver interagindo com:
+- Selecione um widget na janela hierarquia ou designer e modifique os parâmetros no painel de detalhes.  Nesse caso, adicionamos um "texto de dica" padrão e uma cor de tonalidade que aparece quando você passa o mouse sobre a caixa de texto.  uma caixa de texto exibirá um teclado virtual no HoloLens quando ele estiver interagindo com:
 
 ![Captura de tela de parâmetros modificados na janela hierarquia](images/unreal-umg-img-03.png)
 
@@ -51,7 +51,7 @@ O UMG (elementos gráficos de movimento inreal) é um sistema de interface do us
 
 ## <a name="widget-interaction"></a>Interação do widget
 
-Os widgets do UMG normalmente recebem a entrada de um mouse.  No HoloLens ou VR, precisamos simular um mouse com um componente de interação do widget para obter os mesmos eventos.
+Os widgets do UMG normalmente recebem a entrada de um mouse.  em HoloLens ou VR, precisamos simular um mouse com um componente de interação do Widget para obter os mesmos eventos.
 
 - Crie um novo ator, adicione um componente de **interação do widget** e adicione o ator à sua cena:
 
@@ -70,14 +70,14 @@ Aqui, estamos chamando isso a partir do tique do evento:
 
 ![Plano gráfico de tiques de eventos](images/unreal-umg-img-10.png)
 
-Em seguida, adicione eventos de ponteiro do mouse virtual ao componente de interação do widget reagindo à entrada do HoloLens.  Nesse caso, envie um evento de pressionamento do mouse à esquerda quando a mão estiver segurando e um evento de liberação do mouse esquerdo quando não for compreendido:
+em seguida, adicione eventos de ponteiro do mouse virtual ao componente de interação do widget reagindo para HoloLens entrada.  Nesse caso, envie um evento de pressionamento do mouse à esquerda quando a mão estiver segurando e um evento de liberação do mouse esquerdo quando não for compreendido:
 
 ![Plano gráfico com eventos de ponteiro de mouse virtual adicionados](images/unreal-umg-img-13.png)
 
-Agora, ao implantar o aplicativo no HoloLens 2, você verá uma extensão de raio à direita do seu lado direito. Se você o direcionar a uma das caixas de texto editáveis e ao toque do ar, o teclado do sistema aparecerá na frente de você e permitirá que você insira o texto. 
+agora, ao implantar o aplicativo no HoloLens 2, você verá um raio de extensão à sua mão à direita. Se você o direcionar a uma das caixas de texto editáveis e ao toque do ar, o teclado do sistema aparecerá na frente de você e permitirá que você insira o texto. 
  
 > [!NOTE]
-> O teclado do sistema do HoloLens requer um mecanismo inreal 4,26 ou posterior. Além disso, o teclado não será exibido quando seu aplicativo estiver sendo transmitido do editor inreal para o headset, somente quando o aplicativo estiver em execução no dispositivo.
+> o teclado do sistema HoloLens requer um mecanismo inreal 4,26 ou posterior. Além disso, o teclado não será exibido quando seu aplicativo estiver sendo transmitido do editor inreal para o headset, somente quando o aplicativo estiver em execução no dispositivo.
 
 ## <a name="see-also"></a>Consulte Também:
 * [Documentação de UMG inreal](https://docs.unrealengine.com/Engine/UMG/index.html)

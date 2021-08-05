@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, C#,
-ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: fe54a9fe1f906a31ac7ed0417dd3a57fee167314b4b2db29eadcd1eaa22f97b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210732"
 ---
 # <a name="coding-guidelines"></a>Diretrizes de codificação
 
@@ -195,7 +195,7 @@ No exemplo abaixo, o *arquivo MyNewService | MyNewProvider* deve ser preenchido 
 public class MyNewProfile : ScriptableObject
 ```
 
-### <a name="logging"></a>Log
+### <a name="logging"></a>Registro em log
 
 Ao adicionar novos recursos ou atualizar recursos existentes, considere adicionar logs DebugUtilities.LogVerbose a um código interessante que pode ser útil para futura depuração. Há uma diferença entre a adição de registro em log e o ruído adicionado e o registro em log não suficiente (o que dificulta o diagnóstico).
 
@@ -689,15 +689,15 @@ Esse gráfico pode ajudá-lo a decidir qual usar, dependendo dos casos de uso e 
 | `ENABLE_WINMD_SUPPORT` | True | True | Falso |
 | `NETFX_CORE` | Falso | True | Falso |
 
-### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferir DateTime.UtcNow em vez de DateTime.Now
+### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Prefira DateTime. UtcNow sobre DateTime. Now
 
-DateTime.UtcNow é mais rápido do que DateTime.Now. Em investigações de desempenho anteriores, descobrimos que o uso de DateTime.Now adiciona sobrecarga significativa, especialmente quando usado no loop Update(). [Outros atingiram o mesmo problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
+DateTime. UtcNow é mais rápido que DateTime. Now. Em investigações de desempenho anteriores, descobrimos que o uso de DateTime. agora adiciona uma sobrecarga significativa especialmente quando usada no loop Update (). [Outras pessoas atingiram o mesmo problema](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).
 
-Prefira usar DateTime.UtcNow, a menos que você realmente precise dos horários localizados (um motivo legítimo pode ser que você queira mostrar a hora atual no fuso horário do usuário). Se você estiver lidando com tempos relativos (ou seja, o delta entre alguma última atualização e agora), é melhor usar DateTime.UtcNow para evitar a sobrecarga de fazer conversões de timezone.
+Prefira usar DateTime. UtcNow, a menos que você realmente precise dos horários localizados (um motivo legítimo pode estar querendo mostrar a hora atual no fuso horário do usuário). Se você estiver lidando com tempos relativos (ou seja, o Delta entre alguma última atualização e agora), é melhor usar DateTime. UtcNow para evitar a sobrecarga de fazer conversões de fuso horário.
 
 ## <a name="powershell-coding-conventions"></a>Convenções de codificação do PowerShell
 
-Um subconjunto da base de código do MRTK usa o PowerShell para infraestrutura de pipeline e vários scripts e utilitários. O novo código do PowerShell deve seguir o [estilo PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
+Um subconjunto da base de código MRTK usa o PowerShell para infraestrutura de pipeline e vários scripts e utilitários. O novo código do PowerShell deve seguir o [estilo PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
 
 ## <a name="see-also"></a>Confira também
 

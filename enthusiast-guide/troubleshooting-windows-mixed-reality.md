@@ -1,85 +1,85 @@
 ---
-title: Solução de problemas do Windows Mixed Reality
-description: Mantenha-se atualizado com a solução de problemas de realidade mista do Windows que vai além da nossa documentação de suporte de consumidor padrão.
+title: Solução de Windows Mixed Reality
+description: Mantenha-se atualizado com Windows Mixed Reality solução de problemas que vão além da nossa documentação de suporte ao consumidor padrão.
 ms.topic: article
 ms.author: rajhawar
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte
-ms.openlocfilehash: 24120e9c1bb34b8b32c00e2b677f530c4ba563ab
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, Solução de Problemas, Erros, Ajuda, Suporte
+ms.openlocfilehash: 2610ab12e19bd7011cba171b5acdaeed6a7834c358e9c4bae3ded301aa452353
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212454"
 ---
-# <a name="troubleshooting-in-windows-mixed-reality"></a>Solução de problemas no Windows Mixed Reality
+# <a name="troubleshooting-in-windows-mixed-reality"></a>Solução de problemas em Windows Mixed Reality
 
-![Logotipo de cabeçalho de solução de problemas](images/1050px-Mixedrealityportal.png)
+![Logotipo do header de solução de problemas](images/1050px-Mixedrealityportal.png)
 
-Se você tiver problemas com o hardware de imersão, é importante diagnosticar a área geral de problemas e, em seguida, consultar os artigos a seguir para obter ajuda mais detalhada.
+Se você tiver problemas com seu hardware imersivo, é importante diagnosticar a área de problema geral e, em seguida, consultar os artigos a seguir para obter ajuda mais detalhada.
 
-Aqui você encontrará as opções de suporte para as seguintes opções, garantindo que você é direcionado para as informações certas com menos complicações. Também abordaremos os recursos da Comunidade e as opções de conteúdo de autoatendimento para você explorar:
+Aqui, você encontrará as opções de suporte para as opções a seguir, garantindo que você seja direcionado para as informações corretas com menos complicações. Também abordamos os recursos da comunidade e as opções de conteúdo de autoatend pois você pode explorar:
 
 >[!Note]
->Em honrar os novos fones de ouvido e controladores do HP reverbs G2, compilamos uma [página de perguntas frequentes dedicada](reverbG2-faq.yml) para todas as coisas G2. Este artigo aborda tudo, desde problemas de conexão e clareza de imagem até problemas de controladores de movimento e execução de realidade misturada.
+>Em respeito ao headset e controladores HP Reverb G2 recém-lançados, compilamos uma página de perguntas frequentes dedicadas [para](reverbG2-faq.yml) todas as coisas G2. Este artigo aborda tudo, desde problemas de conexão e clareza de imagem até problemas de controladores de movimento e execução da Realidade Misturada.
 
-- [Obter as opções de ajuda da Comunidade](#community-help-options)
-- [Obter suas próprias opções de ajuda](#troubleshooting-topics)
+- [Obter as opções de ajuda da comunidade](#community-help-options)
+- [Obter suas opções de auto ajuda](#troubleshooting-topics)
 
-## <a name="community-help-options"></a>Opções da ajuda da Comunidade
+## <a name="community-help-options"></a>Community opções de ajuda
 
-Para obter respostas sobre suas perguntas de desenvolvedor do ecossistema do desenvolvedor da Comunidade, faça sua pergunta sobre Stack Overflow ou reddit.
+Para obter respostas sobre suas perguntas de desenvolvedor do ecossistema de desenvolvedores da comunidade, faça sua pergunta Stack Overflow ou Reddit.
 
-### <a name="post-a-question-on-reddit"></a>Poste uma pergunta no Reddit
+### <a name="post-a-question-on-reddit"></a>Postar uma pergunta no Reddit
 <div class='icon is-large'>
     <img alt='Reddit' src='https://docs.microsoft.com/media/logos/logo_reddit.svg'>
 </div><br/>
 
-- [Realidade mista do Windows no Reddit](https://www.reddit.com/r/WindowsMR/)
+- [Windows Mixed Reality no Reddit](https://www.reddit.com/r/WindowsMR/)
 
 ### <a name="post-a-question-on-stack-overflow"></a>Postar uma pergunta no Stack Overflow
 <div class='icon is-large'>
     <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
-- [Realidade mista do Windows no Stack Overflow](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
+- [Windows Mixed Reality em Stack Overflow](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 
 ## <a name="troubleshooting-topics"></a>Tópicos de solução de problemas
 
-Quando você tem problemas com o hardware de imersão, é importante diagnosticar a área geral de problemas e, em seguida, consultar os artigos a seguir para obter ajuda mais detalhada. 
+Quando você se depara com problemas com seu hardware imersivo, é importante diagnosticar a área de problema geral e, em seguida, consultar os artigos a seguir para obter ajuda mais detalhada. 
 
 ### <a name="installation-and-setup-issues"></a>Problemas de instalação e instalação
 
-Para problemas com a instalação, executando a realidade mista do Windows, erros de instalação, requisitos mínimos do PC ou permissões de administrador, Confira estas duas perguntas frequentes:
+Para problemas com instalação, execução Windows Mixed Reality, erros de instalação, requisitos mínimos de pc ou permissões de administrador, confira estas duas perguntas frequentes:
 
 - [Erros de instalação](installation_errors.md)
 - [Problemas relacionados à instalação](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>Problemas de hardware
 
-Para problemas com o dispositivo de headset físico, conexões de cabo, erros de conexão, início do portal de realidade misturada e telas de headset em branco ou preto, confira os seguintes artigos:
+Para problemas com seu dispositivo de headset físico, conexões de cabo, erros de conexão, iniciar o Portal de Realidade Misturada e exibições de headset preto ou em branco, confira os seguintes artigos:
 
 - [Conectividade do headset](headset-connectivity.md)
 - [Exibição do headset](headset-display.md)
 - [Controladores de movimentos](motion-controller-problems.md)
 
-### <a name="core-experience-issues"></a>Problemas de experiência principal
+### <a name="core-experience-issues"></a>Principais problemas de experiência
 
-Se você estiver tendo problemas com a criação de limites, audição ou sem ouvir som, áudio Bluetooth ou acompanhamento de fone de ouvido, Confira as seguintes perguntas frequentes:
+Se você estiver tendo problemas ao criar limites, ouvir ou não ouvir som, Bluetooth áudio ou acompanhamento de headset, confira as seguintes perguntas frequentes:
 
 - [Ajuda com limites](boundary-questions.md)
 - [Suppprt para problemas mais comuns de fala e áudio](speech-and-audio.md)
 - [Sistema de acompanhamento](tracking.md)
 
-### <a name="vr-experience-issues"></a>Problemas da experiência VR
+### <a name="vr-experience-issues"></a>Problemas de experiência de VR
 
-Se você estiver tendo problemas com jogos do SteamVR, instalando o modo de desenvolvedor do Windows ou exibindo o conteúdo do WebVR em um navegador, os artigos abaixo são o lugar a ser:
+Se você estiver tendo problemas com jogos do SteamVR, instalando o Windows Developer Mode ou exibindo o conteúdo webVR em um navegador, os artigos a seguir são o local a ser:
 
-- [Suporte com SteamVR](steamvr-questions.md)
+- [Suporte com o SteamVR](steamvr-questions.md)
 - [Suporte com WebVR](webvr-questions.md)
 
-### <a name="performance-issues-and-immersice-hardware-related-issues"></a>Problemas de desempenho e problemas relacionados a hardware immersice
+### <a name="performance-issues-and-immersice-hardware-related-issues"></a>Problemas de desempenho e problemas relacionados ao hardware de imersão
 
-Se você estiver executando um computador lento, ficando muito quente nos bastidores, ou apenas experimentando elementos visuais ruins, temos a certeza de que:
+Se o computador estiver em execução lenta, ficando muito quente nos panos ou apenas enfrentando visuais variados, você será abordado:
 
 - [Problemas gerais relacionados ao desempenho](performance-questions.md)
-- [Problemas relacionados a hardware de imersão](other-questions.md)
+- [Problemas relacionados ao hardware imersivo](other-questions.md)

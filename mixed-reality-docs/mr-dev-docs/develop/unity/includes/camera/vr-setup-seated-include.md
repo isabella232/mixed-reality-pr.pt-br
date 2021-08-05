@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3bffb5db8f4a36d04c2b408c939cbd2010a7def7
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: f55de39af8c9bc59bb23136203bfc093a4e29f1ea9ddc5ccd147f8c81d6f0020
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212198"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
@@ -36,8 +36,8 @@ E trabalhar com o [XRRig](https://docs.unity3d.com/Manual/configuring-project-fo
 # <a name="legacy-wsa"></a>[WSA herdado](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. Ir para **outra** seção de configurações das **configurações do Windows Store Player**
-2. Escolha a **realidade mista do Windows** como o dispositivo, que pode ser listado como **Holographic do Windows** em versões mais antigas do Unity
+1. vá para **outras Configurações** seção do **Player do Windows Store Configurações**
+2. escolha **Windows Mixed Reality** como o dispositivo, que pode ser listado como **Windows Holographic** em versões anteriores do Unity
 3. Selecione a **realidade virtual com suporte**
 
 Como o objeto da câmera principal é marcado automaticamente como a câmera, o Unity alimenta todo o movimento e a tradução.

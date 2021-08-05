@@ -1,21 +1,21 @@
 ---
 title: Transferências de âncora local no Unity
-description: Saiba como transferir âncoras entre vários dispositivos do HoloLens em um aplicativo do Unity Mixed Reality.
+description: saiba como transferir âncoras entre vários dispositivos HoloLens em um aplicativo do Unity mixed reality.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Compartilhamento, ancoragem, WorldAnchor, Sr Sharing 250, WorldAnchorTransferBatch, SpatialPerception, transferência, transferência de âncora local, exportação de ancoragem, importação de âncora
-ms.openlocfilehash: 4949dd49817d723729974fb5666d5defb64b72ba
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eaf25edbae39aab628277aa29f975f3d4d9d7374c796fd1b7b159053d4a46b95
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189122"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Transferências de âncora local no Unity
 
-Em situações em que você não pode usar <a href="/azure/spatial-anchors" target="_blank">âncoras espaciais do Azure</a>, as transferências de âncora local permitem que um dispositivo de hololens exporte uma âncora a ser importada por um segundo dispositivo hololens.
+em situações em que você não pode usar <a href="/azure/spatial-anchors" target="_blank">âncoras espaciais do Azure</a>, as transferências de âncora local permitem que um dispositivo de HoloLens exporte uma âncora a ser importada por um segundo dispositivo de HoloLens.
 
 >[!NOTE]
 >As transferências de âncora local fornecem uma recall de ancoragem menos robusta do que as <a href="/azure/spatial-anchors" target="_blank">âncoras espaciais do Azure</a>, e os dispositivos IOS e Android não são compatíveis com essa abordagem.
@@ -25,19 +25,19 @@ Em situações em que você não pode usar <a href="/azure/spatial-anchors" targ
 Para que um aplicativo transfira âncoras espaciais, o recurso *SpatialPerception* deve ser habilitado.
 
 Como habilitar o recurso *SpatialPerception* :
-1. No editor do Unity, abra o painel **"configurações do Player"** (editar > configurações do projeto > Player)
-2. Clique na guia **"Windows Store"**
-3. Expanda **"configurações de publicação"** e verifique o recurso **"SpatialPerception"** na lista **"recursos"**
+1. no Editor do Unity, abra o painel **"Player Configurações"** (editar > Project Configurações > Player)
+2. clique na guia **"armazenamento Windows"**
+3. expanda **"Publishing Configurações"** e verifique o recurso **"SpatialPerception"** na lista **"Capabilities"**
 
 >[!NOTE]
->Se você já tiver exportado seu projeto do Unity para uma solução do Visual Studio, será necessário exportar para uma nova pasta ou [definir manualmente esse recurso no AppxManifest no Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+>se você já tiver exportado seu projeto do Unity para uma solução Visual Studio, será necessário exportar para uma nova pasta ou [definir manualmente esse recurso no AppxManifest no Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 ### <a name="anchor-transfer"></a>Transferência de âncora
 
 **Namespace:** *UnityEngine. XR. WSA. Sharing*<br>
 **Tipo**: *WorldAnchorTransferBatch*
 
-Para transferir um [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), um deve estabelecer a âncora a ser transferida. O usuário de um HoloLens examina seu ambiente e, manual ou programaticamente, escolhe um ponto no espaço para ser a âncora para a experiência compartilhada. Os dados que representam esse ponto podem ser serializados e transmitidos para os outros dispositivos que estão compartilhando na experiência. Em seguida, cada dispositivo desserializa os dados de âncora e tenta localizar esse ponto no espaço. Para que a transferência de âncora funcione, cada dispositivo deve ser examinado em suficiente no ambiente, de modo que o ponto representado pela âncora possa ser identificado.
+Para transferir um [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), um deve estabelecer a âncora a ser transferida. o usuário de um HoloLens examina seu ambiente e, manual ou programaticamente, escolhe um ponto no espaço para ser a âncora para a experiência compartilhada. Os dados que representam esse ponto podem ser serializados e transmitidos para os outros dispositivos que estão compartilhando na experiência. Em seguida, cada dispositivo desserializa os dados de âncora e tenta localizar esse ponto no espaço. Para que a transferência de âncora funcione, cada dispositivo deve ser examinado em suficiente no ambiente, de modo que o ponto representado pela âncora possa ser identificado.
 
 ### <a name="setup"></a>Instalação
 
@@ -61,7 +61,7 @@ void Start ()
 }
 ```
 
-### <a name="exporting"></a>Exportar
+### <a name="exporting"></a>Exportação
 
 Para exportar, precisamos apenas de um *WorldAnchor* e saber o que iremos chamá-lo de modo que faça sentido para o aplicativo de recebimento. Um cliente na experiência compartilhada executará estas etapas para exportar a âncora compartilhada:
 1. Criar um *WorldAnchorTransferBatch*

@@ -1,41 +1,41 @@
 ---
 title: Reconhecimento de cena
-description: Saiba como desenvolver com a compreensão de cena para o HoloLens, incluindo o SDK, as funcionalidades e os cenários de uso comuns.
+description: saiba como desenvolver com compreensão de cena para HoloLens, incluindo o SDK, os recursos e os cenários de uso comuns.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Compreensão de cena, Mapeamento Espacial, Windows Mixed Reality, Unity, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, oclusão, SDK
-ms.openlocfilehash: dd54be85ed71c3359408c02914470e97ab42b90e
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: compreensão da cena, mapeamento espacial, Windows Mixed Reality, Unity, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, oclusão, SDK
+ms.openlocfilehash: 4dd5a2c96478e50b2e9eda35be22c15c1db07f88cfc4d25d753c4860a1283f55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213450"
 ---
 # <a name="scene-understanding"></a>Reconhecimento de cena
 
-A compreensão de cena fornece aos desenvolvedores de Realidade Misturada uma representação de ambiente estruturada e de alto nível projetada para tornar o desenvolvimento para aplicativos com conhecimento ambiental intuitivo. A compreensão de cena faz isso combinando o poder dos runtimes [](spatial-mapping.md) de realidade misturada existentes, como o mapeamento espacial altamente preciso, mas menos estruturado e os novos runtimes orientados por IA. Combinando essas tecnologias, a compreensão de cena gera representações de ambientes 3D semelhantes aos que você pode ter usado em estruturas como Unity ou ARKit/ARCore. O ponto de entrada Noções básicas de cena começa com um Observador de Cena, que é chamado pelo seu aplicativo para calcular uma nova cena. Atualmente, a tecnologia pode gerar três categorias de objeto distintas, mas relacionadas:
+O reconhecimento de cena fornece aos desenvolvedores de Realidade Misturada uma representação de ambiente estruturada e de alto nível, projetada para tornar intuitivo o desenvolvimento de aplicativos ecologicamente corretos. O entendimento da cena faz isso combinando o poder dos tempos de execução de realidade misturados existentes, como o [mapeamento espacial](spatial-mapping.md) altamente preciso, mas menos estrutura, e novos tempos de execução orientados a ia. Ao combinar essas tecnologias, a compreensão da cena gera representações de ambientes 3D semelhantes aos que você pode ter usado em estruturas como Unity ou ARKit/ARCore. O ponto de entrada de compreensão da cena começa com um observador de cena, que é chamado pelo seu aplicativo para computar uma nova cena. Hoje, a tecnologia pode gerar 3 categorias de objeto diferentes, mas relacionadas:
 
-* Malhas simplificadas do ambiente watershes que inferem a estrutura da sala planar sem confusão
-* Regiões de plano para posicionamento que chamamos de Quads
-* Um instantâneo da malha [de mapeamento](spatial-mapping.md) espacial que se alinha com os dados Quads/Water spatial que superfíciemos
+* Malhas de ambiente Watertight simplificadas que inferem na estrutura de sala planar sem aglomeração
+* Regiões de plano para posicionamento que chamamos de quatro processadores
+* Um instantâneo da malha de [mapeamento espacial](spatial-mapping.md) que se alinha com os dados do quads/Watertight que fazemos
 
-![Malha de mapeamento espacial, superfícies planar rotuladas, malha water spatial](images/SUScenarios.png)
+![Malha de mapeamento espacial, superfícies de planar rotuladas, malha Watertight](images/SUScenarios.png)
 
-Este documento destina-se a fornecer uma visão geral do cenário e esclarecer a relação que a Compreensão de cena e o mapeamento espacial compartilham. Se você quiser ver o Reconhecimento de Cena em ação, confira nossa demonstração de vídeo **Designing Holograms – Spatial Awareness** abaixo:
+Este documento destina-se a fornecer uma visão geral do cenário e esclarecer a relação que a cena compreende e o compartilhamento de mapeamento espacial. se você quiser ver a compreensão da cena em ação, confira nossa demonstração de vídeo sobre **conscientização Hologramas espacial** abaixo:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*Este vídeo foi tirado do aplicativo "Projetando hologramas" do HoloLens 2. Baixe e aproveite a experiência completa [aqui.](https://aka.ms/dhapp)*
+*Este vídeo foi retirado do aplicativo "Projetando hologramas" do HoloLens 2. Baixe e aproveite a experiência completa [aqui](https://aka.ms/dhapp).*
 
-## <a name="developing-with-scene-understanding"></a>Desenvolvendo com o Entendimento de Cena
+## <a name="developing-with-scene-understanding"></a>Desenvolvendo com compreensão da cena
 
-Este artigo serve apenas para introduzir o runtime e os conceitos do Scene Understanding. Se você estiver procurando documentação sobre como desenvolver com a compreensão da cena, talvez esteja interessado nos seguintes artigos:
+Este artigo só serve para apresentar a cena que entende o tempo de execução e os conceitos. Se você estiver procurando documentação sobre como desenvolver com a compreensão da cena, talvez esteja interessado nos seguintes artigos:
 
 [Visão geral do SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
-Você pode baixar o aplicativo de exemplo de compreensão da cena no site do GitHub de exemplo:
+você pode baixar o aplicativo de exemplo de compreensão da cena no site de exemplo GitHub:
 
 [Exemplo de compreensão da cena](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
@@ -85,29 +85,29 @@ As seções a seguir revisitam os cenários principais de mapeamento espacial no
 
 ### <a name="placement"></a>Posicionamento
 
-A compreensão da cena fornece novas construções projetadas para simplificar os cenários de posicionamento. Uma cena pode computar primitivos chamados SceneQuads, que descrevem superfícies simples nas quais os hologramas podem ser colocados. SceneQuads foram projetados em torno do posicionamento e descrevem uma superfície 2D e fornecem uma API para posicionamento nessa superfície. Anteriormente, ao usar a malha de triângulo para fazer o posicionamento, era preciso verificar todas as áreas do quad e fazer o preenchimento/pós-processamento de orifícios para identificar bons locais para posicionamento de objeto. Isso nem sempre é necessário com o Quads, pois a compreensão de cena de runtime infere quais áreas quad não foram examinadas e invalida áreas que não fazem parte da superfície.
+A compreensão da cena fornece novas construções projetadas para simplificar os cenários de posicionamento. Uma cena pode computar primitivos chamados SceneQuads, que descrevem superfícies simples nas quais os hologramas podem ser colocados. Os SceneQuads foram projetados para o posicionamento e a descrição de uma superfície 2D e fornecem uma API para posicionamento nessa superfície. Anteriormente, ao usar a malha de triângulo para fazer o posicionamento, era necessário verificar todas as áreas do Quad e fazer o preenchimento/pós-processamento de orifício para identificar bons locais para o posicionamento do objeto. Isso nem sempre é necessário com o quads, pois a cena que entende o tempo de execução infere quais áreas quádruplas não foram examinadas e invalida áreas que não fazem parte da superfície.
 
 :::row:::
     :::column:::
-       ![SceneQuads com inferência desabilitada, capturando áreas de posicionamento para regiões examinadas.](images/SUQuads.png)<br>
-       **Imagem #1** – SceneQuads com inferência desabilitada, capturando áreas de posicionamento para regiões examinadas.
+       ![SceneQuads com inferência desabilitada, capturando áreas de posicionamento para regiões digitalizadas.](images/SUQuads.png)<br>
+       **Imagem #1** -SceneQuads com inferência desabilitada, capturando áreas de posicionamento para regiões digitalizadas.
     :::column-end:::
         :::column:::
-       ![Quads com inferência habilitada, o posicionamento não está mais limitado a áreas examinadas.](images/SUWatertight.png)<br>
-        **Imagem #2** - Quads com inferência habilitada, o posicionamento não está mais limitado a áreas examinadas.
+       ![Quatro processadores com inferência habilitada, o posicionamento não é mais limitado a áreas digitalizadas.](images/SUWatertight.png)<br>
+        **#2 de imagem** -quads com inferência habilitada, o posicionamento não está mais limitado a áreas digitalizadas.
     :::column-end:::
 :::row-end:::
 
 <br>
 
 
-Se seu aplicativo pretende colocar hologramas 2D ou 3D em estruturas rígidas do seu ambiente, a simplicidade e a [](spatial-mapping.md) conveniência do SceneQuads para posicionamento são preferíveis à computação dessas informações da malha de mapeamento espacial. Para obter mais informações sobre este tópico, consulte a Referência [do SDK de compreensão de cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+Se seu aplicativo pretende colocar hologramas 2D ou 3D em estruturas rígidas de seu ambiente, a simplicidade e a conveniência do SceneQuads para posicionamento é preferível a computar essas informações da malha de [mapeamento espacial](spatial-mapping.md) . Para obter mais informações sobre este tópico, consulte a [referência do SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
-**Observação** Para o código de posicionamento herdado que depende da malha de mapeamento espacial, a malha de mapeamento espacial pode ser computada junto com SceneQuads definindo a configuração EnableWorldMesh. Se a API de Compreensão de Cena não atender aos requisitos de latência do aplicativo, recomendamos que você continue a usar a [API de mapeamento espacial](spatial-mapping.md#placement).
+**Observação** Para o código de posicionamento herdado que depende da malha de mapeamento espacial, a malha de mapeamento espacial pode ser computada junto com SceneQuads definindo a configuração EnableWorldMesh. Se a API de compreensão da cena não atender aos requisitos de latência do seu aplicativo, recomendamos que você continue a usar a [API de mapeamento espacial](spatial-mapping.md#placement).
 
 ### <a name="occlusion"></a>Oclusão
 
-[A oclusão de mapeamento espacial](spatial-mapping.md#occlusion) permanece a maneira menos latente de capturar o estado em tempo real do ambiente. Embora isso possa ser útil para fornecer oclusão em cenas altamente dinâmicas, talvez você queira considerar a Compreensão de cena para oclusão por vários motivos. Se você usar a malha de mapeamento espacial gerada pelo Entendimento de Cena, poderá solicitar dados do mapeamento espacial que não seriam armazenados no cache local e não estão disponíveis nas APIs de percepção. Usar o mapeamento espacial para oclusão juntamente com malhas Watertight fornecerá valor extra, especificamente a conclusão da estrutura de sala não verificada.
+O [mapeamento espacial oclusão](spatial-mapping.md#occlusion) permanece o modo menos latente de capturar o estado em tempo real do ambiente. Embora isso possa ser útil para fornecer oclusão em cenas altamente dinâmicas, talvez você queira considerar a compreensão da cena para o oclusão por vários motivos. Se você usar a malha de mapeamento espacial gerada pela compreensão da cena, poderá solicitar dados do mapeamento espacial que não seria armazenado no cache local e que não está disponível nas APIs de percepção. Usar o mapeamento espacial para oclusão juntamente com malhas Watertight fornecerá valor extra, especificamente a conclusão da estrutura de sala não verificada.
 
 Se seus requisitos puderem tolerar a maior latência de compreensão da cena, os desenvolvedores de aplicativos devem considerar o uso da malha de compreensão Watertight da cena e a malha de mapeamento espacial em harmonia com representações planares. Isso forneceria um cenário "o melhor de ambos os mundos", em que simplificava a Watertight oclusão é casado com uma geometria mais realista que fornece os mapas oclusão mais realistas possíveis.
 
@@ -119,15 +119,15 @@ O entendimento da cena gera malhas Watertight que decompõem o espaço com a sem
 
 As malhas de planar decomposta por classe semântica são construções ideais para navegação e planejamento de caminho, facilitando muitos dos problemas descritos na visão geral de [navegação de mapeamento espacial](spatial-mapping.md#navigation) . Os objetos SceneMesh computados na cena são descompostos por tipo de superfície, garantindo que a geração de malha de NAV seja limitada a superfícies que podem ser performadas. Devido à simplicidade das estruturas baixas, a geração de malha de navegação dinâmica em mecanismos 3D, como o Unity, é atingível dependendo dos requisitos em tempo real.
 
-A geração de malhas de navegação precisas ainda requer pós-processamento, ou seja, os aplicativos ainda precisam projetar occluders no chão para garantir que a navegação não passe por resíduos/tabelas e assim por diante. A maneira mais precisa de fazer isso é projetar os dados de malha do mundo, que serão fornecidos se a cena for computada com o sinalizador EnableWorldMesh.
+A geração de malhas de navegação precisas ainda requer pós-processamento, ou seja, os aplicativos ainda precisam projetar occluders no chão para garantir que a navegação não passe por resíduos/tabelas e assim por diante. A maneira mais precisa de fazer isso é projetar os dados de malha mundial, que será fornecido se a cena for computada com o sinalizador EnableWorldMesh.
 
 ### <a name="visualization"></a>Visualização
 
-Embora [a visualização](spatial-mapping.md#visualization) de mapeamento espacial possa ser usada para comentários em tempo real do ambiente, há muitos cenários em que a simplicidade dos objetos planar e waterfast fornece mais desempenho ou qualidade visual. As técnicas de projeção de sombra e de moagem descritas usando o mapeamento espacial podem ser mais desagradadas se projetadas nas superfícies planar fornecidas pelo Quads ou pela malha de water seta planora. Isso é especialmente verdadeiro para ambientes/cenários em que a pré-verificação completa não é ideal porque a cena inferiria e ambientes completos e suposições planar minimizarão os artefatos.
+Embora a [visualização de mapeamento espacial](spatial-mapping.md#visualization) possa ser usada para comentários em tempo real do ambiente, há muitos cenários em que a simplicidade dos objetos planar e Watertight fornece mais desempenho ou qualidade visual. A projeção de sombra e técnicas de aterramento que são descritas usando o mapeamento espacial podem ser mais agradáveis se projetadas nas superfícies do planar fornecidas por quads ou pela malha Watertight do planar. Isso é especialmente verdadeiro para ambientes/cenários em que a pré-verificação completa não é ideal, pois a cena inferirá, e ambientes completos e suposições de planar minimizarão artefatos.
 
-Além disso, o número total de superfícies retornadas pelo Mapeamento Espacial é limitado pelo cache espacial interno, enquanto a versão da compreensão de cena da malha mapeamento espacial pode acessar dados de mapeamento espacial que não são armazenados em cache. Por isso, a Compreensão de cena é mais adequada para capturar representações de malha para espaços maiores (por exemplo, maiores que uma única sala) para visualização ou processamento de malha posterior. A malha mundial retornada com EnableWorldMesh terá um nível consistente de detalhes, o que pode gerar uma visualização mais agradável se renderizada como wireframe.
+Além disso, o número total de superfícies retornado pelo mapeamento espacial é limitado pelo cache espacial interno, enquanto a versão de compreensão da cena da malha de mapeamento espacial pode acessar dados de mapeamento espacial que não são armazenados em cache. Por isso, a compreensão da cena é mais adequada à captura de representações de malha para espaços maiores (por exemplo, mais de um único espaço) para visualização ou processamento de malha adicional. A malha mundial retornada com EnableWorldMesh terá um nível consistente de detalhes em todo o mundo, o que pode gerar uma visualização mais agradável se for renderizado como wireframe.
 
 ### <a name="see-also"></a>Consulte Também
 
-* [SDK de compreensão de cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 * [Mapeamento espacial](spatial-mapping.md)

@@ -1,18 +1,18 @@
 ---
-title: Configurando a visualização de limite
+title: Configurando a visualização do limite
 description: Detalhes para configurar o sistema de limites no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sistema de Limites,
-ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 29ffe7826d797fd32387fab42f24232f98ab283740848b7fce928718f95f0fc9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211531"
 ---
-# <a name="configuring-boundary-visualization"></a>Configurando a visualização de limite
+# <a name="configuring-boundary-visualization"></a>Configurando a visualização do limite
 
 O *Perfil de Visualização de* Limite fornece opções para configurar a linguagem visual e outros parâmetros relacionados para o sistema de limites. As visualizações de limite são anexadas ao objeto do Playspace de Realidade Misturada na cena e são conectadas ao usuário.
 

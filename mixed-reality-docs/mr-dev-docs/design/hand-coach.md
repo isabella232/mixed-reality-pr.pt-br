@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Realidade mista do Windows, design, direito à mão, headset de imersão, MRTK, mãos, ajuda, mãos, headsets de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, design, direito de vida, headset de imersão, MRTK, mãos, ajuda, mãos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: baf1dab7d73f4e5fca9078717b43dab7b71632f4aa7c36dcac280c029b05d58b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208464"
 ---
 # <a name="hand-coach"></a>Orientador de mão
 
@@ -94,7 +94,7 @@ Fornecemos um arquivo Maya de um rigged Hand que pode ser usado para seu aplicat
 
 **Ferramenta de criação recomendada**
 
-Entre artistas 3D, muitos optam por usar o [Maya do Autodesk, que pode usar o HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) para transformar a maneira como os ativos são criados. O arquivo hands fornecido é um arquivo binário Maya, portanto, é recomendável usar Maya para animar e exportar as mãos. Se você preferir usar outro programa 3D, aqui está um <b>. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Baixe HandCoachMRTK_FBX.zip </a> para criar sua própria configuração de controlador. 
+entre artistas 3d, muitos optam por usar o [Maya do Autodesk, que pode usar HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) para transformar a maneira como os ativos são criados. O arquivo hands fornecido é um arquivo binário Maya, portanto, é recomendável usar Maya para animar e exportar as mãos. Se você preferir usar outro programa 3D, aqui está um <b>. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Baixe HandCoachMRTK_FBX.zip </a> para criar sua própria configuração de controlador. 
 
 Se estiver usando o arquivo do Maya Hand disponível para download fornecido, é recomendável reduzir verticalmente as mãos no Unity para 0,6.
 
@@ -140,8 +140,8 @@ Depois de estar satisfeito com sua animação
 
  Ao exportar como um FBX e trazido para o Unity, dimensione as mãos para 0,6. Descobrimos que esse foi um equilíbrio perfeito para a exibição das mãos. 
 
-![Exemplo: configurações de Unity](images/HandCoach/HandHintScale.png)<br>
-*Configurações de Unity para HandCoach_R pré-fabricado encontradas em MRTK*
+![exemplo: Unity Configurações](images/HandCoach/HandHintScale.png)<br>
+*Configurações do Unity para HandCoach_R pré-fabricado encontradas em MRTK*
 
 
 ## <a name="implementing-hands-into-your-unity-project"></a>Implementando mãos em seu projeto do Unity
@@ -157,9 +157,9 @@ Depois de estar satisfeito com sua animação
 *   Se você tiver ensinado as mãos pelo menos uma vez, repita o gesto apenas se for detectado que o usuário está preso.
 *   Se as posições específicas do dedo/mão são críticas, verifique se os usuários podem ver claramente essas nuances na animação. Experimente a pendendo das mãos para que as partes mais importantes sejam claramente visíveis. 
 * Se você observar distorção nas mãos, precisará ir para as configurações de Qualidade do Unity aumentar o número de animais. 
- Vá para Editar configurações > projeto do Unity > qualidade > outros > Pesos do Blend. Certifique-se de que "4 animais" estão selecionados para ver Smooth Joints.
+ Vá para Editar > Project Configurações > Qualidade > outros > Blend Weights. Certifique-se de que "4 animais" estão selecionados para ver Smooth Joints.
 
-   ![Exemplo: janela Configurações do Projeto](images/HandCoach/ProjectSettings.png)<br>
+   ![Exemplo: Project Configurações janela](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>O que evitar
@@ -171,7 +171,7 @@ Depois de estar satisfeito com sua animação
   * Material: Teaching_Hand2
   * Scripts: consulte as diretrizes do MRTK para o <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> técnico de mão do MRTK </a>
   * Configuração por projeto
-    * Cena definida como UWP: a instrução pode ser encontrada em [Configurar projeto do Unity](../develop/unity/Configure-Unity-Project.md) para Windows Mixed Reality
+    * Cena definida como UWP: a instrução pode ser encontrada no [guia Configurar o Unity Project](../develop/unity/Configure-Unity-Project.md) para Windows Mixed Reality
 
 ## <a name="see-also"></a>Confira também
 
@@ -179,6 +179,6 @@ Depois de estar satisfeito com sua animação
 * [Processo de criação de ativos](asset-creation-process.md)
 * [Gestos](./interaction-fundamentals.md)
 * [Instalar as ferramentas](../develop/install-the-tools.md)
-* [Configurar o projeto do Unity](../develop/unity/Configure-Unity-Project.md)
+* [Configurar o Unity Project](../develop/unity/Configure-Unity-Project.md)
 * [Visão geral do desenvolvimento do Unity](../develop/unity/unity-development-overview.md)
 * [MRTK 101](/windows/mixed-reality/mrtk-unity/)

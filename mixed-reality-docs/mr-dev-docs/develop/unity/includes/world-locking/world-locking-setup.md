@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6229b258233f7a80ef6530edd6eb94774a0e54cf
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528772"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208828"
 ---
 # <a name="world-locking-tools-recommended"></a>[Ferramentas de bloqueio Mundial (recomendado)](#tab/wlt)
 
@@ -17,9 +17,9 @@ Recomendamos instalar as ferramentas de bloqueio mundial usando a nova ferrament
 
 ### <a name="automated-setup"></a>Configuração automatizada
 
-Quando seu projeto estiver pronto para começar, execute o utilitário configurar cena do **Kit de ferramentas de realidade misturada > utilitários > ferramentas de bloqueio mundial**:
+quando seu projeto estiver pronto, execute o utilitário configurar cena de **realidade misturada Toolkit > utilitários > World lock Tools**:
 
-![Editor Unity com o menu do kit de ferramentas da realidade misturada selecionado](../../images/world-locking-configuration-img-01.jpeg)
+![editor Unity com realidade misturada Toolkit menu selecionado](../../images/world-locking-configuration-img-01.jpeg)
 
 > [!IMPORTANT]
 > O utilitário configurar cena pode ser executado novamente a qualquer momento. Por exemplo, ele deve ser executado novamente se o destino AR tiver sido alterado de herdado para o SDK do XR. Se a cena já estiver configurada corretamente, a execução do utilitário não terá nenhum efeito.
@@ -39,7 +39,7 @@ O plug-in Mixed Reality OpenXR fornece a funcionalidade de ancoragem básica por
 **Namespace:** *UnityEngine. XR. WSA*<br>
 **Tipo:** *WorldAnchor*
 
-Para experiências reais em grande **escala** sobre o HoloLens que permitem aos usuários percorrer mais de 5 metros, você precisará de novas técnicas além das usadas para experiências em escala de sala. Uma técnica importante que você usará é criar uma [âncora espacial](../../../../design/coordinate-systems.md#spatial-anchors) para bloquear um cluster de hologramas precisamente no mundo físico, não importa o quanto o usuário está em roaming e, em seguida, [encontrar esses hologramas novamente em sessões posteriores](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
+para experiências reais em **escala mundial** em HoloLens que permitem que os usuários perfrentem mais de 5 metros, você precisará de novas técnicas além das usadas para experiências em escala de sala. Uma técnica importante que você usará é criar uma [âncora espacial](../../../../design/coordinate-systems.md#spatial-anchors) para bloquear um cluster de hologramas precisamente no mundo físico, não importa o quanto o usuário está em roaming e, em seguida, [encontrar esses hologramas novamente em sessões posteriores](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
 
 No Unity, você cria uma âncora espacial adicionando o componente **WorldAnchor** Unity a um gameobject.
 

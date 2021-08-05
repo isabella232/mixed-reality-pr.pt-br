@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade misturada, UWP, Windows 10, HRTF, função de transferência relacionada à cabeça, reverb, Microsoft Spatializer, prefabs, curva de volume
-ms.openlocfilehash: f3f2faf8220eaebcc674bcf02a45d99d58169076
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: e0f916ecf8cd8da81e0738b082021c76c55a7f2031517a37b959575e1b21ce16
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209816"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Espacializar sons de interação de botão
 
@@ -25,7 +25,7 @@ Neste tutorial, você aprenderá a espacializar os sons de interação do botão
 
 ## <a name="add-a-button"></a>Adicionar um botão
 
-Para adicionar o pré-fab  Botão,  na janela Projeto, selecione Pacotes e digite "PressableButtonHoloLens2" na barra de pesquisa.
+Para adicionar o pré-fab Botão, na  janela **Project,** selecione Pacotes e digite "PressableButtonHoloLens2" na barra de pesquisa.
 
 ![Prefab do botão em Ativos](images/spatial-audio/spatial-audio-02-section1-step1-1.PNG)
 
@@ -43,20 +43,20 @@ Para se concentrar nos objetos na cena, você pode clicar duas vezes no objeto *
 
 Nesta etapa, você espacializará os comentários de áudio para o botão. Para sugestões de design relacionadas, consulte [design de som espacial](../../../design/spatial-sound-design.md).
 
-Na janela **Mixer de Áudio,** você definirá destinos chamados **Grupos do Mixer** para reprodução de áudio de componentes de Fonte **de** Áudio.
+Na janela **Mixer** áudio, você definirá destinos **chamados grupos Mixer**, para reprodução de áudio de componentes de Fonte **de** Áudio.
 
-Para abrir a janela **Do Mixer de** Áudio, no menu do Unity, selecione Janela   >  **Audio**  >  **Mixer:** ![ Abrir Janela do Mixer de Áudio](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
+Para abrir a **janela Mixer** áudio, no menu do Unity, selecione Janela Áudio  >    >  **Mixer:** Abrir Janela Mixer ![ Áudio](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
 
- Crie um **Mixer** clicando no '+' ao lado de **Mixers** e insira um nome adequado para o Mixer, por exemplo, _Mixer de Áudio Espacial._ O novo mixer incluirá um Grupo **padrão** chamado **Mestre.**
+ Crie um **Mixer** clicando no '+' ao lado de **Mixers** e insira um nome adequado para o Mixer, por exemplo, Áudio _Espacial Mixer_. O novo mixer incluirá um Grupo **padrão** chamado **Mestre.**
 
-![Painel mixer com o primeiro mixer](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
+![Mixer com o primeiro mixer](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
 
 > [!NOTE]
 > Até que o reverb seja habilitado no [5º Capítulo:](unity-spatial-audio-ch5.md)Usando o reverb para adicionar distância ao áudio espacial, o medidor de volume do mixer não mostra a atividade de sons tocadas por meio do Microsoft Spatializer
 
 Na janela Hierarquia, selecione **PressableButtonHoloLens2** e, na  janela Inspetor, encontre o componente Fonte de Áudio e Configure o componente Fonte de Áudio da seguinte forma:
 
-1. Para a **propriedade Saída,** clique no seletor e escolha o **Mixer** que você criou.
+1. Para a **propriedade** Saída, clique no seletor e escolha a **Mixer** que você criou.
 2. Marque a **caixa de seleção Espacializar.**
 3. Mova o **controle deslizante do Spatial Blend** para 3D (1).
 
@@ -71,7 +71,7 @@ Por padrão, o Unity atenua os sons espacializados à medida que eles ficam mais
 
 Para desabilitar essa atenuação, você precisa ajustar a curva **volume** no componente **Fonte de** Áudio.
 
-Na janela Hierarquia, selecione **PressableButtonHoloLens2** e, na janela Inspetor, navegue até Configurações de Som  >  **3D** da Fonte de Áudio e Configure da seguinte forma:
+Na janela Hierarquia, selecione **PressableButtonHoloLens2** e, em seguida, na janela Inspetor, navegue até a fonte de áudio Configurações som  >  **3D** e Configure da seguinte forma:
 
 1. Definir a **propriedade Volume Rolloff** como Rolloff Linear
 2. Arraste o ponto de extremidade na curva **volume** (a curva vermelha) de '0' no eixo y até '1'

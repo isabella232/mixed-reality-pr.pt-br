@@ -1,31 +1,31 @@
 ---
 title: Critérios de qualidade do aplicativo
-description: Este documento descreve os principais fatores que afetam a qualidade dos aplicativos de realidade misturada.
+description: Este documento descreve os principais fatores que impactam a qualidade dos aplicativos de realidade misturada.
 author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: critérios de qualidade de aplicativo, realidade mista, aplicativo de realidade misturada, headset de realidade mista, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: critérios de qualidade do aplicativo, realidade misturada, aplicativo de realidade misturada, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
+ms.openlocfilehash: 858b0782c4e6754ee6753d463d5fe498e3a893f6c21b3f1c86ac14f8c0e6c8cf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189375"
 ---
 # <a name="app-quality-criteria"></a>Critérios de qualidade do aplicativo
 
-Este documento descreve os principais fatores que afetam a qualidade dos aplicativos de realidade misturada. Para cada fator, as informações a seguir são fornecidas
+Este documento descreve os principais fatores que impactam a qualidade dos aplicativos de realidade misturada. Para cada fator, as informações a seguir são fornecidas
 * Visão geral – uma breve descrição do fator de qualidade e por que ele é importante.
-* Impacto do dispositivo – qual tipo de o dispositivo de realidade misturada da janela é afetado.
+* Impacto do dispositivo – qual tipo de dispositivo de Realidade Misturada da Janela é afetado.
 * Critérios de qualidade – como avaliar o fator de qualidade.
 * Como medir – métodos para medir (ou experimentar) o problema.
-* Recomendações – Resumo de abordagens para fornecer uma melhor experiência do usuário.
-* Recursos – desenvolvedor relevante e recursos de design que são úteis para criar melhores experiências de aplicativo.
+* Recomendações – resumo das abordagens para fornecer uma melhor experiência do usuário.
+* Recursos – recursos de design e desenvolvedor relevantes que são úteis para criar experiências de aplicativo melhores.
 
 ## <a name="frame-rate"></a>Taxa de quadros
 
-A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto do usuário. A taxa de quadros abaixo dos destinos recomendados pode fazer com que os hologramas pareçam tremulação, afetando negativamente a believability da experiência e potencialmente causando fadiga de olho. A taxa de quadros de destino para sua experiência em headsets de imersão de realidade mista do Windows é de 60 Hz ou 90 Hz, dependendo de quais PCs compatíveis com a realidade mista do Windows você está dando suporte. Para o HoloLens, a taxa de quadros de destino é de 60 Hz.
+A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto do usuário. A taxa de quadros abaixo dos destinos recomendados pode fazer com que os hologramas pareçam tremidos, afetando negativamente a capacidade de insuperabilidade da experiência e potencialmente causando a dor ocular. A taxa de quadros de destino para Windows Mixed Reality experiência em headsets imersivos é de 60 Hz ou 90 Hz, dependendo de quais Windows Mixed Reality compatíveis com os quais você está dando suporte. Por HoloLens, a taxa de quadros de destino é de 60 Hz.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -49,45 +49,45 @@ A taxa de quadros é o primeiro pilar da estabilidade do holograma e do conforto
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-| O aplicativo atende consistentemente a meta de quadros por segundo (FPS) para o dispositivo de destino: 60 fps no HoloLens; 90 fps em ultra PCs; e 60 fps em computadores de base. | O aplicativo tem quedas de quadros intermitentes que não impedem a experiência principal, ou FPS é consistentemente menor do que a meta desejada, mas não impede a experiência do aplicativo. | O aplicativo está apresentando uma queda na taxa de quadros em média a cada 10 segundos ou menos. |
+| O aplicativo atende consistentemente à meta de FPS (quadros por segundo) para o dispositivo de destino: 60 fps no HoloLens; 90 fps em PCs Ultra; e 60 fps em PCs base. | O aplicativo tem quedas de quadro intermitentes não impedindo a experiência principal ou o FPS é consistentemente menor do que a meta desejada, mas não impede a experiência do aplicativo. | O aplicativo está apresentando uma queda na taxa de quadros em média a cada 10 segundos ou menos. |
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Um grafo de taxa de quadros em tempo real é fornecido pelo [portal do dispositivo do Windows](using-the-windows-device-portal.md#system-performance) em "desempenho do sistema".
-* Para a depuração de desenvolvimento, adicione um contador de diagnóstico de taxa de quadros ao aplicativo. Consulte recursos para um contador de exemplo.
-* Quedas de taxa de quadros podem ser experimentadas no dispositivo enquanto o aplicativo está em execução, movendo seu cabeçalho de lado para o outro. Se o holograma mostrar uma movimentação de tremulação inesperada, a taxa de quadros baixa ou o plano de estabilidade provavelmente será a causa.
+* Um grafo de taxa de quadros em tempo real é fornecido pelo [Windows Portal de Dispositivos](using-the-windows-device-portal.md#system-performance) em "Desempenho do Sistema".
+* Para depuração de desenvolvimento, adicione um contador de diagnóstico de taxa de quadros ao aplicativo. Consulte Recursos para um contador de exemplo.
+* As quedas de taxa de quadros podem ser experimentadas no dispositivo enquanto o aplicativo está em execução movendo a cabeça de um lado para outro. Se o holograma mostrar movimento tremumétrico inesperado, a baixa taxa de quadros ou o plano de estabilidade provavelmente será a causa.
 
 ### <a name="recommendations"></a>Recomendações
 
 * Adicione um contador de taxa de quadros no início do trabalho de desenvolvimento.
-* As alterações que incorrem em uma taxa de quadros de queda devem ser avaliadas e resolvidas adequadamente como um bug de desempenho.
+* As alterações que incorrem em uma queda na taxa de quadros devem ser avaliadas e resolvidas adequadamente como um bug de desempenho.
 
 ### <a name="resources"></a>Recursos
 
 #### <a name="documentation"></a>Documentação
 
-* [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
+* [Noções básicas sobre o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Estabilidade e taxa de quadros do holograma](hologram-stability.md#frame-rate)
 * [Orçamento de desempenho do ativo](../../design/asset-creation-process.md)
 * [Recomendações de desempenho para Unity](../unity/performance-recommendations-for-unity.md)
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Kit de ferramentas de realidade misturada, exibição do contador de FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [Kit de ferramentas de realidade misturada, sombreadores](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [Exibição de Toolkit, contador FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [Realidade Misturada Toolkit, Sombreadores](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### <a name="external-references"></a>Referências externas
 
-* [Unity, otimizando aplicativos móveis](https://www.youtube.com/watch?v=j4YAY36xjwE)
+* [Unity, Otimizando aplicativos móveis](https://www.youtube.com/watch?v=j4YAY36xjwE)
 
 ## <a name="hologram-stability"></a>Estabilidade do holograma
 
-Os hologramas estáveis aumentarão a usabilidade e a believability de seu aplicativo e criarão uma experiência de exibição mais confortável para o usuário. A qualidade da estabilidade do holograma é um resultado do bom desenvolvimento de aplicativos e da capacidade do dispositivo de entender (controlar) seu ambiente. Embora a taxa de quadros seja o primeiro pilar da estabilidade, outros fatores podem afetar a estabilidade, incluindo:
+Hologramas estáveis aumentarão a usabilidade e a acessibilidade do seu aplicativo e criarão uma experiência de exibição mais confortável para o usuário. A qualidade da estabilidade do holograma é resultado do bom desenvolvimento de aplicativos e da capacidade do dispositivo de entender (controlar) seu ambiente. Embora a taxa de quadros seja o primeiro pilar da estabilidade, outros fatores podem afetar a estabilidade, incluindo:
 
 * Uso do plano de estabilização
-* Distâncias para âncoras espaciais
+* Distância para âncoras espaciais
 * Acompanhamento
 
 ### <a name="device-impact"></a>Impacto do dispositivo
@@ -112,24 +112,24 @@ Os hologramas estáveis aumentarão a usabilidade e a believability de seu aplic
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  Os hologramas parecem consistentemente estáveis. | Conteúdo secundário mostra movimento inesperado; ou o movimento inesperado não impede a experiência geral do aplicativo. | O conteúdo primário no quadro mostra movimento inesperado. |
+|  Hologramas consistentemente parecem estáveis. | O conteúdo secundário mostra movimentação inesperada; ou movimento inesperado não impede a experiência geral do aplicativo. | O conteúdo primário no quadro mostra movimentação inesperada. |
 
 ### <a name="how-to-measure"></a>Como medir
 
-Ao desgastar o dispositivo e exibir a experiência:
+Ao usar o dispositivo e exibir a experiência:
 
-* Mova seu cabeçalho de lado a lado. Se os hologramas mostrarem o movimento inesperado, a taxa de quadros baixa ou o alinhamento impróprio do plano de estabilidade para o plano focal será a causa provável.
-* Mova-se para os hologramas e o ambiente, procure comportamentos como, por exemplo, nada e salto. Esse tipo de movimento é provavelmente causado pelo dispositivo não rastreando o ambiente ou pela distância para a âncora espacial.
-* Se houver grandes ou vários hologramas no quadro, observe o comportamento do holograma em várias profundidades ao mover sua posição de cabeçalho de lado a lado, se shakiness parecer que isso é provavelmente causado pelo plano de estabilização.
+* Mova a cabeça de um lado para outro. Se os hologramas mostrarem movimento inesperado, a baixa taxa de quadros ou o alinhamento inadequado do plano de estabilidade para o plano focal será a causa provável.
+* Mova os hologramas e o ambiente, procure comportamentos como nada e jumpiness. Esse tipo de movimento provavelmente é causado pelo dispositivo não acompanhar o ambiente ou pela distância até a âncora espacial.
+* Se os hologramas grandes ou múltiplos estão no quadro, observe o comportamento do holograma em várias profundidades ao mover a posição da cabeça de um lado para o outro, se a estrutura aparecer, isso provavelmente será causado pelo plano de estabilização.
 
 ### <a name="recommendations"></a>Recomendações
 
 * Adicione um contador de taxa de quadros no início do trabalho de desenvolvimento.
 * Use o plano de estabilização.
-* Sempre renderizar hologramas ancorados dentro de 3 metros de sua âncora.
-* Verifique se o ambiente está configurado para acompanhamento adequado.
+* Sempre renderizar hologramas ancorados a 3 metros de sua âncora.
+* Certifique-se de que seu ambiente está definido para o acompanhamento adequado.
 * Projete sua experiência para evitar hologramas em vários níveis de profundidade focal dentro do quadro.
 
 ### <a name="resources"></a>Recursos
@@ -138,19 +138,19 @@ Ao desgastar o dispositivo e exibir a experiência:
 
 * [Estabilidade e taxa de quadros do holograma](hologram-stability.md#frame-rate)
 * [Estudo de caso, usando o plano de estabilização](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-* [Entendendo o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
+* [Noções básicas sobre o desempenho da realidade misturada](understanding-performance-for-mixed-reality.md)
 * [Recomendações de desempenho para Unity](../unity/performance-recommendations-for-unity.md)
 * [Âncoras espaciais](../../design/spatial-anchors.md)
-* [Manipulação de erros de controle](../../design/coordinate-systems.md#handling-tracking-errors)
+* [Tratamento de erros de acompanhamento](../../design/coordinate-systems.md#handling-tracking-errors)
 * [Quadro estacionário de referência](../../design/coordinate-systems.md#stationary-frame-of-reference)
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Sr Companion Kit, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
+* [KIT de adoção do MR, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
-## <a name="holograms-position-on-real-surfaces"></a>Posição dos hologramas em superfícies reais
+## <a name="holograms-position-on-real-surfaces"></a>Hologramas posição em superfícies reais
 
-Os desalinhamentos de hologramas com objetos físicos (se a intenção de serem colocados em relação uns aos outros) são uma indicação clara da não União de hologramas e do mundo real. A precisão do posicionamento deve ser relativa às necessidades do cenário; por exemplo, o posicionamento de superfície geral pode usar o mapa espacial, mas o posicionamento mais preciso exigirá algum uso de marcadores e calibragem.
+Desalinhamentos de hologramas com objetos físicos (se destinados a serem colocados em relação um ao outro) são uma indicação clara da não união de hologramas e do mundo real. A precisão do posicionamento deve ser relativa às necessidades do cenário; por exemplo, o posicionamento de superfície geral pode usar o mapa espacial, mas um posicionamento mais preciso exigirá algum uso de marcadores e calibragem.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -174,21 +174,21 @@ Os desalinhamentos de hologramas com objetos físicos (se a intenção de serem 
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-| Os hologramas se alinham à superfície normalmente no intervalo de centímetros para polegadas. Se você precisar de mais precisão, o aplicativo deverá fornecer um meio eficiente de colaboração na especificação do aplicativo. | NA | Os hologramas aparecem desalinhados com o objeto de destino físico, dividindo o plano de superfície ou aparecendo flutuando para fora da superfície. Se a precisão for necessária, os hologramas devem atender à especificação de proximidade do cenário. | 
+| Hologramas alinhar à superfície normalmente no intervalo de centímetros a polegadas. Se você precisar de mais precisão, o aplicativo deverá fornecer um meio eficiente para a colaboração dentro da especificação do aplicativo. | NA | Os hologramas aparecem sem qualificação com o objeto de destino físico, quebrando o plano de superfície ou aparecendo para sair da superfície. Se a precisão for necessária, Hologramas deverá atender à especificação de proximidade do cenário. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Os hologramas que são colocados no mapa espacial não devem parecer muito flutuar acima ou abaixo da superfície.
-* Os hologramas que exigem posicionamento preciso devem ter alguma forma de marcador e sistema de calibração que seja precisa do requisito do cenário.
+* Hologramas que são colocados no mapa espacial não devem parecer flutuando drasticamente acima ou abaixo da superfície.
+* Hologramas que exigem posicionamento preciso deve ter alguma forma de sistema de calibragem e marcador que seja preciso para os requisitos do cenário.
 
 ### <a name="recommendations"></a>Recomendações
 
 * O mapa espacial é útil para colocar objetos em superfícies quando a precisão não é necessária.
-* Para obter a melhor precisão, use marcadores ou cartazes para definir os hologramas e um controlador Xbox (ou algum mecanismo de alinhamento manual) para a calibragem final.
-* Considere quebrar hologramas grandes e extras em partes lógicas e alinhar cada parte à superfície.
-* O IPD (Interpupillary Distance) definido incorretamente também pode afetar o alinhamento do holograma. Sempre configure o HoloLens para o IPD do usuário.
+* Para melhor precisão, use marcadores ou cartazes para definir os hologramas e um controlador Xbox (ou algum mecanismo de alinhamento manual) para calibragem final.
+* Considere a quebra de hologramas extra grandes em partes lógicas e alinhe cada parte à superfície.
+* Definir incorretamente a ipd (distância interpupária) também pode ter efeito no alinhamento do holograma. Sempre configure HoloLens para o IPD do usuário.
 
 ### <a name="resources"></a>Recursos
 
@@ -196,24 +196,24 @@ Os desalinhamentos de hologramas com objetos físicos (se a intenção de serem 
 
 * [Posicionamento de mapeamento espacial](../../design/spatial-mapping.md#placement)
 * [Processo de verificação de sala](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
-* [Práticas recomendadas das âncoras espaciais](../../design/spatial-anchors.md#best-practices)
-* [Manipulação de erros de controle](../../design/coordinate-systems.md#handling-tracking-errors)
+* [Melhores práticas de âncoras espaciais](../../design/spatial-anchors.md#best-practices)
+* [Tratamento de erros de acompanhamento](../../design/coordinate-systems.md#handling-tracking-errors)
 * [Mapeamento espacial no Unity](../unity/spatial-mapping-in-unity.md)
 * [Visão geral do desenvolvimento do Vuforia](../unity/vuforia-development-overview.md)
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Sr Toolkit, bibliotecas de mapeamento espacial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
-* [Sr Companion Kit, exemplo de calibração de pôster](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
-* [Sr Companion Kit, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
+* [Bibliotecas Toolkit de mapeamento espacial do MR](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
+* [Kit de adoção do MR, amostra de calibragem de cartaz](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
+* [KIT de adoção do MR, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
 #### <a name="external-references"></a>Referências externas
 
-* [Estudo de caso do Lowes, alinhamento de precisão](https://www.youtube.com/watch?v=LceMdyKZ4PI)
+* [Estudo de caso lowes, alinhamento de precisão](https://www.youtube.com/watch?v=LceMdyKZ4PI)
 
 ## <a name="viewing-zone-of-comfort"></a>Exibindo a zona de conforto
 
-Os desenvolvedores de aplicativos controlam onde os olhos dos usuários convergem colocando o conteúdo e os hologramas em várias profundidades. Os usuários com o HoloLens serão sempre acomodados a 2,0 m para manter uma imagem clara porque as exibições do HoloLens são corrigidas a uma distância óptica de aproximadamente 2,0 m para fora do usuário. A profundidade de conteúdo inadequado pode levar ao Visual discomfort ou fadiga.
+Os desenvolvedores de aplicativos controlam onde os olhos dos usuários convergem colocando conteúdo e hologramas em várias profundidades. Os usuários que usam HoloLens sempre se acomodarão a 2,0 m para manter uma imagem clara, pois as exibições HoloLens são fixas a uma distância óptica de aproximadamente 2,0 m do usuário. A profundidade inadequada do conteúdo pode levar a um estresse visual ou a um estresse.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -240,37 +240,37 @@ Os desenvolvedores de aplicativos controlam onde os olhos dos usuários converge
 <table>
 <tr>
 <td> Melhor </td><td><ul>
-<li>Coloque o conteúdo em 2 m.</li><li>Quando os hologramas não podem ser colocados em 2 m e os conflitos entre a convergência e a acomodação não podem ser evitados, a zona ideal para o posicionamento do holograma é entre 1,25 m e 5 m.</li><li>Em todos os casos, os designers devem estruturar o conteúdo para incentivar os usuários a interagir de 1 + m (por exemplo, ajustar o tamanho do conteúdo e os parâmetros de posicionamento padrão).</li><li>A menos que não seja exigido pelo cenário, um plano de recorte deve ser implementado com fade out a partir de 1 m.</li><li>Nos casos em que a observação mais próxima de um holograma não-movimento é necessária, o conteúdo não deve ficar mais próximo que 50 cm.</li>
+<li>Coloque o conteúdo em 2 m.</li><li>Quando os hologramas não podem ser colocados a 2 m e conflitos entre convergência e acomodação não podem ser evitados, a zona ideal para posicionamento do holograma está entre 1,25 m e 5 m.</li><li>Em todos os casos, os designers devem estruturar o conteúdo para incentivar os usuários a interagir a mais de 1 m de distância (por exemplo, ajustar o tamanho do conteúdo e os parâmetros de posicionamento padrão).</li><li>A menos que não seja exigido pelo cenário, um plano de recorte deve ser implementado com esmaeçamento começando em 1 m.</li><li>Nos casos em que uma observação mais próxima de um holograma sem movimento é necessária, o conteúdo não deve estar mais próximo de 50 cm.</li>
 </ul></td>
 </tr><tr>
-<td> Corresponde</td><td> O conteúdo está dentro das diretrizes de visualização e movimentação, mas uso inadequado ou não uso do plano de recorte.</td>
+<td> Encontra</td><td> O conteúdo está dentro das diretrizes de exibição e movimento, mas uso inadequado ou nenhum uso do plano de recorte.</td>
 </tr><tr>
-<td> Falha </td><td> O conteúdo é apresentado muito próximo (geralmente &lt; , 1,25 m ou &lt; 50 cm para hologramas estáticos que exigem uma observação mais detalhada.)</td>
+<td> Falha </td><td> O conteúdo é apresentado muito próximo (normalmente &lt; 1,25 m ou &lt; 50 cm para hologramas estacionários que exigem uma observação mais próxima.)</td>
 </tr>
 </table>
 
 ### <a name="how-to-measure"></a>Como medir
 
-* O conteúdo deve ser normalmente de 2 m, mas não mais que 1,25 ou superior a 5 m.
-* Com poucas exceções, a distância de renderização de recorte de HoloLens deve ser definida como 85CM com fade out do conteúdo começando em 1 m. Aborde o conteúdo e observe o efeito do plano de recorte.
-* O conteúdo estacionário não deve ficar mais próximo que 50 cm.
+* O conteúdo normalmente deve estar a 2 m de distância, mas não mais próximo de 1,25 ou mais de 5 m.
+* Com poucas exceções, a HoloLens de renderização de recorte deve ser definida como 85CM com esmaeçamento do conteúdo começando em 1 m. Aborde o conteúdo e observe o efeito do plano de recorte.
+* O conteúdo estacionário não deve estar mais próximo de 50 cm de distância.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Crie conteúdo para a distância de exibição ideal de 2 m.
-* Defina a distância de renderização de recorte como 85 cm com fade out do conteúdo começando em 1 m.
-* Para hologramas estáticos que precisam de exibição mais próxima, o plano de recorte não deve ter mais de 30 cm e desaparecer deve iniciar pelo menos 10 cm fora do plano de recorte.
+* Criar conteúdo para a distância de exibição ideal de 2 m.
+* De definir a distância de renderização de recorte como 85 cm com esmaeçamento do conteúdo começando em 1 m.
+* Para hologramas estacionários que precisam de uma exibição mais próxima, o plano de recorte não deve estar mais próximo de 30 cm e esmaecer deve começar pelo menos 10 cm de distância do plano de recorte.
 
 ### <a name="resources"></a>Recursos
 
 * [Distância de renderização](hologram-stability.md#hologram-render-distances)
 * [Ponto de foco no Unity](../unity/focus-point-in-unity.md)
-* [Experimentando a escala](../../design/scale.md#experimenting-with-scale)
-* [Texto, tamanho de fonte recomendado](../../design/typography.md#recommended-font-size)
+* [Experimentando com escala](../../design/scale.md#experimenting-with-scale)
+* [Texto, Tamanho da fonte recomendado](../../design/typography.md#recommended-font-size)
 
-## <a name="depth-switching"></a>Alternância de profundidade
+## <a name="depth-switching"></a>Alternamento de profundidade
 
-Independentemente da exibição da zona de problemas de conforto, as demandas pelo usuário de alternar com frequência ou rapidamente entre objetos focalmente próximos e distantes (incluindo hologramas e conteúdo do mundo real) podem levar a oculomotor fadiga e discomfort geral.
+Independentemente da zona de exibição de problemas de conforto, as demandas para o usuário alternar com frequência ou rapidez entre objetos focal próximos e distantes (incluindo hologramas e conteúdo do mundo real) podem levar à confusão oculoculor e ao conforto geral.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -294,17 +294,17 @@ Independentemente da exibição da zona de problemas de conforto, as demandas pe
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  Alternância de profundidade limitada ou natural que não faz com que o usuário se concentre de volta natural. | A mudança de profundidade abrupta é fundamental e projetada para a experiência do aplicativo ou para o interruptor de profundidade abrupta que é causado pelo conteúdo real do mundo inesperado. | Opção de profundidade consistente ou alternância de profundidade abrupta que não é necessária ou essencial para a experiência do aplicativo. | 
+|  Alternação de profundidade limitada ou natural que não faz com que o usuário se refocuse de maneira natural. | Alternam a profundidade de um núcleo e foram projetados para a experiência do aplicativo ou com a opção de profundidade abrupta causada por conteúdo inesperado do mundo real. | Alternamento de profundidade consistente ou alternação de profundidade repentina que não é necessária ou fundamental para a experiência do aplicativo. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Se o aplicativo exigir que o usuário altere o foco de profundidade de forma consistente e/ou abruptamente, haverá um problema de alternância de profundidade.
+* Se o aplicativo exigir que o usuário altere o foco de profundidade de forma consistente e/ou de forma coerente, haverá um problema de alternação de profundidade.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Mantenha o conteúdo principal em um plano focal consistente e verifique se o plano de estabilização corresponde ao plano focal. Isso aliviará o oculomotor fadiga e o movimento de holograma inesperado.
+* Mantenha o conteúdo primário em um plano focal consistente e certifique-se de que o plano de estabilização corresponde ao plano focal. Isso atenuará o estresse oculométricor e a movimentação inesperada do holograma.
 
 ### <a name="resources"></a>Recursos
 
@@ -313,7 +313,7 @@ Independentemente da exibição da zona de problemas de conforto, as demandas pe
 
 ## <a name="use-of-spatial-sound"></a>Uso de som espacial
 
-No Windows Mixed Reality, o mecanismo de áudio fornece o componente auricular da experiência de realidade misturada por meio da simulação de som 3D usando a direção, a distância e as simulações ambientais. O uso de som espacial em um aplicativo permite que os desenvolvedores coloquem os sons de forma convincente em um espaço tridimensional (esfera) em todo o usuário. Esses sons parecerão como se estivessem vindo de objetos físicos reais ou de hologramas de realidade misturada no ambiente do usuário. O som espacial é uma ferramenta poderosa para imersão, acessibilidade e design de UX em aplicativos de realidade misturada.
+No Windows Mixed Reality, o mecanismo de áudio fornece o componente aural da experiência de realidade misturada simulando o som 3D usando simulações de direção, distância e ambiente. O uso de som espacial em um aplicativo permite que os desenvolvedores coloquem os sons de maneira convincente em um espaço tridimensional (esfera) ao redor do usuário. Esses sons, então, parecerão como se fossem provenientes de objetos físicos reais ou dos hologramas de realidade misturada no ambiente do usuário. O som espacial é uma ferramenta poderosa para imersão, acessibilidade e design de UX em aplicativos de realidade misturada.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -337,20 +337,20 @@ No Windows Mixed Reality, o mecanismo de áudio fornece o componente auricular d
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  O som é logicamente espacial e o UX usa o som adequadamente para auxiliar na descoberta de objetos e nos comentários dos usuários. O som é natural e relevante para objetos e normalizados em todo o cenário. | O áudio espacial é usado adequadamente para believability, mas ausente como meio de ajudar com os comentários do usuário e a descoberta. | O som não está espacial como esperado e/ou falta de som para auxiliar o usuário no UX. Ou o áudio espacial não foi considerado ou usado no design do cenário. | 
+|  O som é espacializado logicamente e a experiência do usuário usa adequadamente o som para ajudar com a descoberta de objetos e comentários do usuário. O som é natural e relevante para objetos e normalizado em todo o cenário. | O áudio espacial é usado adequadamente para invisibilidade, mas ausente como meio de ajudar com comentários do usuário e capacidade de descoberta. | O som não é espacializado conforme o esperado e/ou a falta de som para ajudar o usuário na experiência do usuário. Ou o áudio espacial não foi considerado ou usado no design do cenário. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Em geral, os sons relevantes devem emitir de hologramas de destino (por exemplo, som latido proveniente do Holographic Dog.)
-* As indicações de som devem ser usadas em todo o UX para ajudar o usuário com comentários ou conscientização de ações fora do quadro do Holographic.
+* Em geral, os sons relevantes devem emitir dos hologramas de destino (por exemplo, o som do cachorro holográfico.)
+* As dicas de som devem ser usadas em toda a experiência do usuário para auxiliar o usuário com comentários ou reconhecimento de ações fora do quadro holográfico.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Use o áudio espacial para auxiliar na descoberta de objeto e nas interfaces do usuário.
-* Os sons reais funcionam melhor que o sintetizado ou o som não natural.
-* A maioria dos sons deve ser espacial.
+* Use áudio espacial para auxiliar na descoberta de objetos e interfaces do usuário.
+* Os sons reais funcionam melhor do que sintetizar ou fazer som anormal.
+* A maioria dos sons deve ser espacializada.
 * Evite emissores invisíveis.
 * Evite mascaramento espacial.
 * Normalizar todos os sons.
@@ -363,15 +363,15 @@ No Windows Mixed Reality, o mecanismo de áudio fornece o componente auricular d
 * [Projeto de som espacial](../../design/spatial-sound-design.md)
 * [Som espacial no Unity](../unity/spatial-sound-in-unity.md)
 * [Estudo de caso, som espacial para HoloTour](../../design/case-study-spatial-sound-design-for-holotour.md)
-* [Estudo de caso, usando o som espacial em RoboRaid](../../design/case-study-using-spatial-sound-in-roboraid.md)
+* [Estudo de caso, Uso de som espacial no RoboRaid](../../design/case-study-using-spatial-sound-in-roboraid.md)
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Kit de ferramentas de realidade misturada – áudio espacial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
+* [Realidade Misturada Toolkit – Áudio Espacial](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
-## <a name="focus-on-holographic-frame-fov-boundaries"></a>Foco nos limites do quadro Holographic (FOV)
+## <a name="focus-on-holographic-frame-fov-boundaries"></a>Foco em limites de FOV (quadro holográfico)
 
-Experiências de usuário bem projetadas podem criar e manter um contexto útil do ambiente virtual que se estende pelos usuários. Reduzir o efeito dos limites de FOV envolve um design elaborado de escala e contexto de conteúdo, uso de áudio espacial, sistemas de orientação e posição do usuário. Se for feito certo, o usuário se sentirá menos prejudicado pelos limites do FOV enquanto tem uma experiência de aplicativo confortável.
+Experiências de usuário bem projetadas podem criar e manter um contexto útil do ambiente virtual que se estende em torno dos usuários. Atenuar o efeito dos limites de FOV envolve um design cuidadoso de escala e contexto de conteúdo, uso de áudio espacial, sistemas de diretrizes e a posição do usuário. Se for feito responsabilidade, o usuário se sentirá menos prejudicado pelos limites de FOV enquanto tiver uma experiência de aplicativo confortável.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -395,21 +395,21 @@ Experiências de usuário bem projetadas podem criar e manter um contexto útil 
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  O usuário nunca perde o contexto e a exibição é confortável. A assistência de contexto é fornecida para objetos grandes. As diretrizes de descoberta e exibição são fornecidas para objetos fora do quadro. Em geral, o design de movimento e a escala dos hologramas são apropriados para uma experiência de exibição confortável. | O usuário nunca perde o contexto, mas o movimento de pescoço extra pode ser necessário em situações limitadas. Em situações limitadas, a escala faz com que os hologramas quebrem o quadro vertical ou horizontal, fazendo com que um movimento de pescoço exiba os hologramas. | O usuário provavelmente perderá o contexto e/ou o movimento de pescoço consistente é necessário para exibir hologramas. Não há diretrizes de contexto para objetos Holographic grandes, movendo objetos fáceis de serem perdidos fora do quadro sem orientação de descoberta ou hologramas altos requer movimento de pescoço regular para exibição. | 
+|  O usuário nunca perde o contexto e a exibição é confortável. A assistência de contexto é fornecida para objetos grandes. As diretrizes de descoberta e exibição são fornecidas para objetos fora do quadro. Em geral, o design de movimento e a escala dos hologramas são apropriados para uma experiência de exibição confortável. | O usuário nunca perde o contexto, mas o movimento extra do braço pode ser necessário em situações limitadas. Em situações limitadas, a escala faz com que os hologramas quebrem o quadro vertical ou horizontal, fazendo com que algum movimento do braço veja hologramas. | É provável que o usuário perca o contexto e/ou o movimento consistente do braço para exibir hologramas. Nenhuma orientação de contexto para objetos holográficos grandes, movimentação de objetos fáceis de perder fora do quadro sem diretrizes de descoberta ou hologramas altos exigem movimento regular do corpo para exibição. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* O contexto de um holograma (grande) é perdido ou não compreendido devido a ser recortado nos limites.
-* É difícil encontrar locais de hologramas devido à falta de diretores de atenção ou conteúdo que se movem rapidamente para dentro e para fora do quadro Holographic.
-* O cenário requer um movimento regular e repetitivo para cima e para baixo para ver totalmente um holograma, resultando em fadiga de pescoço.
+* O contexto de um holograma (grande) é perdido ou não é compreendido devido à recortada nos limites.
+* Locais de hologramas são difíceis de encontrar devido à falta de diretores de atenção ou conteúdo que se move rapidamente para dentro e para fora do quadro holográfico.
+* O cenário requer movimento normal para cima e para baixo para ver totalmente um holograma, resultando em estresse no braço.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Inicie a experiência com objetos pequenos que se ajustam ao FOV e, em seguida, migre com indicações visuais para versões maiores.
-* Use os diretores espaciais de áudio e atenção para ajudar o usuário a encontrar conteúdo fora do FOV.
-* Tanto quanto possível, evite hologramas que recortem verticalmente o FOV.
+* Inicie a experiência com objetos pequenos que se ajustam ao FOV e, em seguida, transição com versões visuais para versões maiores.
+* Use áudio espacial e diretores de atenção para ajudar o usuário a encontrar conteúdo que está fora do FOV.
+* Tanto quanto possível, evite hologramas que cortem verticalmente o FOV.
 * Forneça ao usuário diretrizes no aplicativo para melhor localização de exibição.
 
 ### <a name="resources"></a>Recursos
@@ -417,9 +417,9 @@ Experiências de usuário bem projetadas podem criar e manter um contexto útil 
 #### <a name="documentation"></a>Documentação
 
 * [Quadro holográfico](../../design/holographic-frame.md)
-* [Estudo de caso, interface do usuário do HoloStudio e aprendizado de design de interação](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
+* [Estudo de caso, HoloStudio interface do usuário e aprendizados de design de interação](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
 * [Escala de objetos e ambientes](../../design/scale.md)
-* [Cursores, indicações visuais](../../design/cursors.md#visual-cues)
+* [Cursores, dicas visuais](../../design/cursors.md#visual-cues)
 
 #### <a name="external-references"></a>Referências externas
 
@@ -427,7 +427,7 @@ Experiências de usuário bem projetadas podem criar e manter um contexto útil 
 
 ## <a name="content-reacts-to-user-position"></a>O conteúdo reage à posição do usuário
 
-Os hologramas devem reagir à posição do usuário praticamente da mesma maneira que os objetos "reais". Uma consideração de design notável são os elementos da interface do usuário que não podem, necessariamente, supor que a posição dos usuários seja imóvel e se adapte ao movimento do usuário. A criação de um aplicativo que se adapta corretamente à posição do usuário criará uma experiência mais verossímeis e facilitará o uso.
+Hologramas deve reagir à posição do usuário aproximadamente da mesma maneira que os objetos "reais". Uma consideração de design notável são elementos de interface do usuário que não podem necessariamente assumir que a posição de um usuário é estacionária e se adaptar ao movimento do usuário. Criar um aplicativo que se adapta corretamente à posição do usuário criará uma experiência mais fácil e facilitará o uso.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -453,26 +453,26 @@ Os hologramas devem reagir à posição do usuário praticamente da mesma maneir
 
 <table>
 <tr>
-<td> Melhor </td><td> O conteúdo e a interface do usuário se adaptam às posições dos usuários, permitindo que o usuário interaja naturalmente com o conteúdo dentro do escopo do movimento de usuário esperado.</td>
+<td> Melhor </td><td> O conteúdo e a interface do usuário se adaptam às posições do usuário, permitindo que o usuário interaja naturalmente com o conteúdo dentro do escopo da movimentação esperada do usuário.</td>
 </tr><tr>
-<td> Corresponde </td><td> A IU se adapta à posição do usuário, mas pode impedir a exibição do conteúdo da chave que exige que o usuário ajuste sua posição.</td>
+<td> Encontra </td><td> A interface do usuário se adapta à posição do usuário, mas pode impedir a exibição do conteúdo de chave que exige que o usuário ajuste sua posição.</td>
 </tr><tr>
 <td> Falha </td><td><ol>
-<li>Os elementos da interface do usuário são perdidos ou bloqueados durante a movimentação, fazendo com que o usuário volte de volta para (ou localize) controles.</li><li>Os elementos da interface do usuário limitam a exibição do conteúdo primário.</li><li>O movimento da interface do usuário não é otimizado para exibir a distância e a dinâmica particularmente com elementos de interface do usuário com <a href="../../design/billboarding-and-tag-along.md">marcas</a> .</li>
+<li>Os elementos da interface do usuário são perdidos ou bloqueados durante a movimentação, fazendo com que o usuário retorne de maneira não natural a controles (ou encontre).</li><li>Os elementos da interface do usuário limitam a exibição do conteúdo primário.</li><li>A movimentação da interface do usuário não é otimizada para exibir a distância e a dinâmica, especialmente com elementos de interface do usuário <a href="../../design/billboarding-and-tag-along.md">de marcação.</a></li>
 </ol></td>
 </tr>
 </table>
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Todas as medidas devem ser feitas dentro de um escopo razoável do cenário. Embora a movimentação do usuário varie, não tente enganar o aplicativo com movimento extremo do usuário.
-* Para elementos de interface do usuário, os controles relevantes devem estar disponíveis independentemente do movimento do usuário. Por exemplo, se o usuário estiver exibindo e percorrendo um mapa 3D com zoom, o controle de zoom deverá estar prontamente disponível para o usuário, independentemente do local.
+* Todas as medidas devem ser feitas dentro de um escopo razoável do cenário. Embora a movimentação do usuário varie, não tente enganar o aplicativo com movimentação extrema do usuário.
+* Para elementos da interface do usuário, os controles relevantes devem estar disponíveis, independentemente da movimentação do usuário. Por exemplo, se o usuário estiver exibindo e passeando em torno de um mapa 3D com zoom, o controle de zoom deverá estar prontamente disponível para o usuário, independentemente da localização.
 
 ### <a name="recommendations"></a>Recomendações
 
-* O usuário é a câmera e controla o movimento. Deixe-os na unidade.
-* Considere a mensagem para os sistemas de texto e de menu que, de outra forma, seriam bloqueados no mundo, se um usuário fosse se movimentando.
-* Use uma marca para o conteúdo que precisa seguir o usuário enquanto ainda permite que o usuário veja o que está na frente deles.
+* O usuário é a câmera e controla o movimento. Deixe-os conduzir.
+* Considere o uso de texto e sistemas de menu que, de outra forma, seriam bloqueados pelo mundo ou obscurecidos se um usuário se movimentasse.
+* Use tag-along para conteúdo que precisa seguir o usuário, permitindo que o usuário veja o que está na frente dele.
 
 ### <a name="resources"></a>Recursos
 
@@ -486,7 +486,7 @@ Os hologramas devem reagir à posição do usuário praticamente da mesma maneir
 
 ## <a name="input-interaction-clarity"></a>Clareza da interação de entrada
 
-A clareza da interação de entrada é essencial para a usabilidade de um aplicativo e inclui consistência de entrada, capacidade de detecção, descoberta de métodos de interação. O usuário pode usar interações comuns em toda a plataforma sem reaprender. Se o aplicativo tiver uma entrada personalizada, ele deverá ser claramente comunicado e demonstrado.
+A clareza da interação de entrada é essencial para a usabilidade de um aplicativo e inclui consistência de entrada, abordagem, capacidade de descoberta de métodos de interação. O usuário pode usar interações comuns em toda a plataforma sem relearning. Se o aplicativo tiver entrada personalizada, ele deverá ser claramente comunicado e demonstrado.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -510,16 +510,16 @@ A clareza da interação de entrada é essencial para a usabilidade de um aplica
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  Os métodos de interação de entrada são consistentes com as [diretrizes](../../design/interaction-fundamentals.md)do Windows Mixed Reality fornecidas. Qualquer entrada personalizada não deve ser redundante com entrada padrão (em vez disso, usar a interação padrão) e deve ser claramente comunicada e demonstrada para o usuário. | Semelhante à melhor, mas as entradas personalizadas são redundantes com métodos de entrada padrão. O usuário ainda pode alcançar a meta e o progresso por meio da experiência do aplicativo. | É difícil entender o método de entrada ou o mapeamento de botão. A entrada é bastante personalizada, não dá suporte à entrada padrão, não há instruções ou provavelmente causar problemas de fadiga e conforto. | 
+|  Os métodos de interação de entrada são consistentes Windows Mixed Reality [diretrizes fornecidas.](../../design/interaction-fundamentals.md) Qualquer entrada personalizada não deve ser redundante com a entrada padrão (em vez de usar a interação padrão) e deve ser claramente comunicada e demonstrada ao usuário. | Semelhante ao melhor, mas as entradas personalizadas são redundantes com métodos de entrada padrão. O usuário ainda pode atingir a meta e o progresso por meio da experiência do aplicativo. | Difícil de entender o método de entrada ou o mapeamento de botão. A entrada é altamente personalizada, não dá suporte à entrada padrão, nenhuma instrução ou provavelmente causa problemas de estresse e conforto. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* O aplicativo usa [métodos de entrada padrão](../../design/interaction-fundamentals.md) consistentes.
-* Se o aplicativo tiver uma entrada personalizada, ele será claramente comunicado por meio de:
-* Experiência de primeira execução
-* Telas introdutórias
+* O aplicativo usa métodos de [entrada padrão consistentes.](../../design/interaction-fundamentals.md)
+* Se o aplicativo tiver entrada personalizada, ele será claramente comunicado por meio de:
+* Experiência de primeira a ser executado
+* Telas introdutórios
 * Dicas de ferramenta
 * Orientador de mão
 * Seção de ajuda
@@ -536,7 +536,7 @@ A clareza da interação de entrada é essencial para a usabilidade de um aplica
 #### <a name="documentation"></a>Documentação
 
 * [Interações instinctuais](../../design/interaction-fundamentals.md)
-* [Objetos que interagem](../../design/interactable-object.md)
+* [Objetos interagidos](../../design/interactable-object.md)
 * [Focar com a cabeça e esperar](../../design/gaze-and-dwell.md)
 * [Cursores](../../design/cursors.md)
 * [Conforto e olhar](../../design/comfort.md#gaze-direction)
@@ -555,14 +555,14 @@ A clareza da interação de entrada é essencial para a usabilidade de um aplica
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Estudo de caso: a busca de mais computação pessoal](../../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md#less-interface-in-your-face)
-* [Estudo de conversão: aprendizado de HoloStudio de interface do usuário e interação do projeto](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+* [Estudo de caso: a busca de computação mais pessoal](../../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md#less-interface-in-your-face)
+* [Estudo de cast: aprendizados HoloStudio design de interação e interface do usuário](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 * [Aplicativo de exemplo: tabela periódica dos elementos](../unity/periodic-table-of-the-elements.md)
 * [Aplicativo de exemplo: módulo lunar](../unity/lunar-module.md)
 
-## <a name="interactable-objects"></a>Objetos que interagem
+## <a name="interactable-objects"></a>Objetos interagidos
 
-Um botão tem muito tempo uma metáfora usada para disparar um evento no mundo abstrato de 2D. No mundo de realidade misturada tridimensional, não precisamos mais ser confinado para esse mundo de abstração. Qualquer coisa pode ser um objeto que possa ser interagindo que dispara um evento. Um objeto de interação pode ser representado como qualquer coisa de uma xícara de café na mesa até um balão flutuante no ar. Independentemente do formulário, os objetos interajantes devem ser claramente reconhecidos pelo usuário por meio de indicações visuais e de áudio.
+Há muito tempo, um botão é uma metáfora usada para disparar um evento no mundo abstrato 2D. No mundo da realidade misturada tridimensional, não precisamos mais estar restritos a esse mundo de abstração. Qualquer coisa pode ser um objeto Interacionável que dispara um evento. Um objeto interagente pode ser representado como qualquer coisa, desde uma cafeteira na tabela até um balão flutuando no ar. Independentemente do formulário, os objetos interajantes devem ser claramente reconhecíveis pelo usuário por meio de responsabilidades visuais e de áudio.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -586,21 +586,21 @@ Um botão tem muito tempo uma metáfora usada para disparar um evento no mundo a
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  Independentemente do formulário, os objetos que podem interagir são reconhecidos por meio de indicações visuais e de áudio em três Estados: ocioso, direcionado e selecionado. "Vê-lo, digamos que" é claro e consistentemente usado em toda a experiência. Os objetos são dimensionados e distribuídos para permitir o direcionamento livre de erros. | O usuário pode reconhecer o objeto como interagindo por meio de áudio ou comentários visuais e pode direcionar e ativar o objeto. | Não devido a indicações visuais ou de áudio, o usuário não consegue reconhecer um objeto que pode ser interagindo. As interações são propensas a erros devido à escala ou à distância do objeto entre objetos. | 
+|  Independentemente da forma, os objetos interajantes são reconhecíveis por meio de dicas visuais e de áudio em três estados: ocioso, direcionado e selecionado. "Veja isso, diga-o" é claro e consistentemente usado em toda a experiência. Os objetos são dimensionados e distribuídos para permitir o direcionamento sem erros. | O usuário pode reconhecer o objeto como interacionável por meio de comentários visuais ou de áudio e pode direcionar e ativar o objeto. | Dado nenhuma indicação visual ou de áudio, o usuário não pode reconhecer um objeto interajante. As interações são propensas a erros devido à escala de objeto ou à distância entre objetos. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Os objetos que podem interagir são reconhecíveis como ' interagindo '; incluindo botões, menus e conteúdo específico do aplicativo. Como regra prática, deve haver um Visual e uma indicação de áudio ao direcionar objetos que podem interagir.
+* Objetos interagidos são reconhecíveis como 'interagidos'; incluindo botões, menus e conteúdo específico do aplicativo. Como regra geral, deve haver uma indicação visual e de áudio ao direcionar objetos interagidos.
 
 ### <a name="recommendations"></a>Recomendações
 
 * Use comentários visuais e de áudio para interações.
-* Os comentários visuais devem ser diferenciados para cada Estado de entrada (ocioso, direcionado, selecionado)
-* Os objetos que podem ser interagindo devem ser dimensionados e colocados para direcionamento de erro livre.
-* Objetos de interação agrupada (como uma barra de menus ou lista) devem ter o espaçamento adequado para o direcionamento.
-* Os botões e menus que dão suporte ao comando de voz devem fornecer rótulos de texto para a palavra-chave Command ("vê-lo, digamos")
+* Os comentários visuais devem ser diferenciados para cada estado de entrada (ocioso, direcionado, selecionado)
+* Objetos interacionáveis devem ser dimensionados e colocados para direcionamento sem erros.
+* Objetos interagidos agrupados (como uma barra de menus ou lista) devem ter espaçamento adequado para direcionamento.
+* Botões e menus que dão suporte ao comando de voz devem fornecer rótulos de texto para a palavra-chave de comando ("Veja, diga")
 
 ### <a name="resources"></a>Recursos
 
@@ -613,11 +613,11 @@ Um botão tem muito tempo uma metáfora usada para disparar um evento no mundo a
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Kit de ferramentas de realidade misturada-UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
+* [Realidade Misturada Toolkit – UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
 
 ## <a name="room-scanning"></a>Verificação de sala
 
-Os aplicativos que exigem dados de mapeamento espacial dependem do dispositivo para coletar automaticamente esses dados ao longo do tempo e entre as sessões, à medida que o usuário explora seu ambiente com o dispositivo ativo. A integridade e a qualidade desses dados dependem de vários fatores, incluindo a quantidade de explorações que o usuário fez, quanto tempo passou desde a exploração e se os objetos como mobília e portas foram movidos desde que o dispositivo examinou a área. Muitos aplicativos analisarão os dados de mapeamento espacial no início da experiência para avaliar se o usuário deve executar etapas adicionais para melhorar a integridade e a qualidade do mapa espacial. Se o usuário for solicitado a verificar o ambiente, as diretrizes claras devem ser fornecidas durante a experiência de verificação.
+Os aplicativos que exigem dados de mapeamento espacial dependem do dispositivo para coletar automaticamente esses dados ao longo do tempo e entre sessões à medida que o usuário explora seu ambiente com o dispositivo ativo. A conclusão e a qualidade desses dados dependem de vários fatores, incluindo a quantidade de exploração que o usuário fez, quanto tempo passou desde a exploração e se objetos como móveis e portas foram movidos desde que o dispositivo examinou a área. Muitos aplicativos analisarão os dados de mapeamento espacial no início da experiência para avaliar se o usuário deve executar etapas adicionais para melhorar a conclusão e a qualidade do mapa espacial. Se o usuário precisar examinar o ambiente, diretrizes claras deverão ser fornecidas durante a experiência de verificação.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -641,38 +641,38 @@ Os aplicativos que exigem dados de mapeamento espacial dependem do dispositivo p
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  A visualização da malha espacial informa aos usuários que a verificação está em andamento. O usuário sabe claramente o que fazer e quando a verificação é iniciada e interrompida. | A visualização da malha espacial é fornecida, mas o usuário pode não saber claramente o que fazer e nenhuma informação de progresso é fornecida. | Nenhuma visualização da malha. Nenhuma informação de orientação fornecida ao usuário sobre onde procurar ou quando a verificação é iniciada/interrompida. |
+|  A visualização da malha espacial diz aos usuários que a verificação está em andamento. O usuário sabe claramente o que fazer e quando a verificação é iniciada e interrompida. | A visualização da malha espacial é fornecida, mas o usuário pode não saber claramente o que fazer e nenhuma informação de progresso é fornecida. | Nenhuma visualização da malha. Nenhuma informação de diretriz fornecida ao usuário sobre onde procurar ou quando a verificação é iniciada/interrompida. |
 
 ### <a name="how-to-measure"></a>Como medir
 
-* Durante uma verificação de sala necessária, as diretrizes de áudio e visuais são fornecidas, indicando onde procurar e quando iniciar e parar a verificação.
+* Durante uma verificação de sala necessária, as diretrizes visuais e de áudio são fornecidas indicando onde procurar e quando iniciar e parar a verificação.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Indique quanto do volume total nos arredores dos usuários precisa fazer parte da experiência.
-* Comunique-se quando a verificação for iniciada e parada como um indicador de progresso.
+* Indique quanto do volume total nas proximidades dos usuários precisa fazer parte da experiência.
+* Comunique-se quando a verificação for iniciada e parar, como um indicador de progresso.
 * Use uma visualização da malha durante a verificação.
-* Forneça visuais e indicações de áudio para incentivar o usuário a procurar e se movimentar pela sala.
-* Informe ao usuário onde ir para melhorar os dados. Em muitos casos, pode ser melhor informar ao usuário o que eles precisam fazer (por exemplo, examinar o teto, examinar os móveis) para obter a qualidade de digitalização necessária.
+* Forneça dicas visuais e de áudio para incentivar o usuário a procurar e mover-se pela sala.
+* Informe ao usuário onde ir para melhorar os dados. Em muitos casos, pode ser melhor dizer ao usuário o que ele precisa fazer (por exemplo, examinar o limite, olhar atrás de móveis), para obter a qualidade necessária da verificação.
 
 ### <a name="resources"></a>Recursos
 
 #### <a name="documentation"></a>Documentação
 
 * [Visualização de varredura do ambiente](../../design/room-scan-visualization.md)
-* [Estudo de caso: expandindo os recursos de mapeamento espacial do HoloLens](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
-* [Estudo de caso: design de som espacial para HoloTour](../../design/case-study-spatial-sound-design-for-holotour.md)
-* [Estudo de caso: criando uma experiência de imersão em fragmentos](../../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)
+* [Estudo de caso: expandindo as funcionalidades de mapeamento espacial HoloLens](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+* [Estudo de caso: Design de som espacial para HoloTour](../../design/case-study-spatial-sound-design-for-holotour.md)
+* [Estudo de caso: criando uma experiência imersiva em Fragmentos](../../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)
 
 #### <a name="tools-and-tutorials"></a>Ferramentas e tutoriais
 
-* [Kit de ferramentas de realidade misturada-UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
+* [Realidade Misturada Toolkit – UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
 
 ## <a name="directional-indicators"></a>Indicadores direcionais
 
-Em um aplicativo de realidade misturada, o conteúdo pode estar fora do campo de exibição ou obstruído por objetos do mundo real. Um aplicativo bem projetado tornará mais fácil para o usuário encontrar conteúdo não visível. Indicadores direcionais alertam um usuário sobre o conteúdo importante e fornecem orientação para o conteúdo relativo à posição do usuário. As diretrizes para conteúdo não visível podem assumir a forma de emissores de som, setas direcionais ou indicações visuais diretas.
+Em um aplicativo de realidade misturada, o conteúdo pode estar fora do campo de exibição ou ser ocluído por objetos do mundo real. Um aplicativo bem projetado facilitará para o usuário encontrar conteúdo não visível. Indicadores direcionais alertam um usuário para conteúdo importante e fornecem diretrizes para o conteúdo em relação à posição do usuário. As diretrizes para conteúdo não visível podem assumir a forma de emissores de som, setas direcionais ou missões visuais diretas.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -696,18 +696,18 @@ Em um aplicativo de realidade misturada, o conteúdo pode estar fora do campo de
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  As indicações visuais e de áudio orientam diretamente o usuário ao conteúdo relevante fora do campo de exibição. | Uma seta ou algum indicador que aponta o usuário na direção geral do conteúdo. | O conteúdo relevante está fora do campo de exibição e uma orientação de localização ruim ou nenhuma é fornecida ao usuário. | 
+|  As responsabilidades visuais e de áudio orientam diretamente o usuário para conteúdo relevante fora do campo de exibição. | Uma seta ou algum indicador que aponta para o usuário na direção geral do conteúdo. | O conteúdo relevante está fora do campo de exibição e diretrizes de localização ruins ou não são fornecidas ao usuário. | 
 
 ### <a name="how-to-measure"></a>Como medir
 
-* O conteúdo relevante fora do campo de exibição do usuário é detectável por meio de indicações visuais e/ou de áudio.
+* O conteúdo relevante fora do campo de exibição do usuário pode ser descoberto por meio de dicas visuais e/ou de áudio.
 
 ### <a name="recommendations"></a>Recomendações
 
-* Quando o conteúdo relevante está fora do campo de exibição do usuário, use indicadores direcionais e indicações de áudio para orientar o usuário no conteúdo. Em muitos casos, um guia visual direto é preferencial sobre setas direcionais.
-* Indicadores direcionais não devem ser incorporados ao cursor.
+* Quando o conteúdo relevante estiver fora do campo de exibição do usuário, use indicadores direcionais e missões de áudio para orientar o usuário para o conteúdo. Em muitos casos, um guia visual direto é preferencial em vez de setas direcionais.
+* Indicadores direcionais não devem ser integrados ao cursor.
 
 ### <a name="resources"></a>Recursos
 
@@ -715,7 +715,7 @@ Em um aplicativo de realidade misturada, o conteúdo pode estar fora do campo de
 
 ## <a name="data-loading"></a>Carregamento de dados
 
-Um controle de progresso oferece feedback ao usuário que uma operação de execução longa está em andamento. Isso pode significar que o usuário não pode interagir com o aplicativo quando o indicador de progresso está visível e também pode indicar quanto tempo de espera pode ser.
+Um controle de progresso oferece feedback ao usuário que uma operação de execução longa está em andamento. Isso pode significar que o usuário não pode interagir com o aplicativo quando o indicador de progresso está visível e também pode indicar por quanto tempo o tempo de espera pode ser.
 
 ### <a name="device-impact"></a>Impacto do dispositivo
 
@@ -739,9 +739,9 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 
 ### <a name="quality-criteria"></a>Critérios de qualidade
 
-|  Melhor  |  Corresponde |  Falha |
+|  Melhor  |  Encontra |  Falha |
 --- | --- | ---
-|  Indicador visual animado, na forma de uma barra de progresso ou anel, mostrando o progresso durante qualquer carregamento ou processamento de dados. O indicador visual fornece orientação sobre quanto tempo a espera pode ser. | O usuário é informado de que o carregamento de dados está em andamento, mas não há nenhuma indicação de quanto tempo a espera poderia ser. | Nenhum indicador de carregamento ou processo de dados para a tarefa demorando mais do que 5 segundos. |
+|  Indicador visual animado, na forma de uma barra de progresso ou anel, mostrando o progresso durante qualquer carregamento ou processamento de dados. O indicador visual fornece diretrizes sobre quanto tempo a espera pode ser. | O usuário é informado de que o carregamento de dados está em andamento, mas não há nenhuma indicação de quanto tempo a espera pode ser. | Nenhum carregamento de dados ou indicadores de processo para tarefa que demorando mais de 5 segundos. |
 
 ### <a name="how-to-measure"></a>Como medir
 
@@ -749,7 +749,7 @@ Um controle de progresso oferece feedback ao usuário que uma operação de exec
 
 ### <a name="recommendations"></a>Recomendações
 
-* Forneça um Animator de carregamento de dados mostrando o progresso em qualquer situação em que o usuário possa perceber que esse aplicativo está parado ou falhou. Uma regra prática razoável é qualquer atividade de ' carregamento ' que pode levar mais de 5 segundos.
+* Forneça um animador de carregamento de dados mostrando o progresso em qualquer situação em que o usuário possa perceber que esse aplicativo está parado ou que parou. Uma regra razoável é qualquer atividade de 'carregamento' que pode levar mais de 5 segundos.
 
 ### <a name="resources"></a>Recursos
 

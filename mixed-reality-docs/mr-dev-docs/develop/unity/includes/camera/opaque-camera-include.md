@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 76f72ac81b677acabf98444f626b7a6b908c29fb
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 73aba70497323d406b5138eca9c7d2054b8d8b3cea6e82ef67e962a21876c280
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212195"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
 O MRTK manipulará configurações específicas da câmera automaticamente, com base na [configuração no perfil do sistema de câmera.](/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings)
 
-**Namespace:** *Microsoft.MixedReality.Toolkit.CameraSystem*<br>
+**Namespace:** *Microsoft.MixedReality.Toolkit. CameraSystem*<br>
 **Tipo:** *MixedRealityCameraSystem*
 
 Para verificar a opacidade da câmera, o sistema MixedRealityCamera tem [uma `IsOpaque` propriedade](/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque).

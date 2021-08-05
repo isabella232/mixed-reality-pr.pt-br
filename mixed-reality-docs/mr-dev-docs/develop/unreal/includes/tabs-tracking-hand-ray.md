@@ -1,30 +1,30 @@
 ---
-ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fb8b5b509ef83e2a4f9d978dbf0faebbf3e0be1d10d6697f16cfb9366d7a2edb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187183"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
-Para obter os dados para os raios de mão, você deve usar a função obter dados do controlador de movimento da seção anterior. A estrutura retornada contém dois parâmetros que você pode usar para criar uma **posição** de raio e a **rotação** do AIM. Esses parâmetros formam um raio direcionado pelo cotovelo. Você deve levá-los e encontrar um holograma sendo apontado.
+Para obter os dados dos raios de mão, você deve usar a função Obter Dados do Controlador de Movimento da seção anterior. A estrutura retornada contém dois parâmetros que você pode usar para criar um raio de mão – Posição **do alvo** e **Rotação de objetivo.** Esses parâmetros formam um raio direcionado pelo seu rosto. Você deve pegar e encontrar um holograma que está sendo apontado.
 
-Abaixo está um exemplo de como determinar se um raio de lado atinge um widget e como definir um resultado de ocorrência personalizada:
+Veja abaixo um exemplo de como determinar se um raio de mão atinge um Widget e definir um resultado de acerto personalizado:
 
-![Plano gráfico da função obter dados do controlador de movimento](../images/unreal-hand-tracking-img-04.png) 
+![Blueprint da função obter dados do controlador de movimento](../images/unreal-hand-tracking-img-04.png) 
 
 # <a name="425"></a>[4.25](#tab/425)
 
-Para usar raios de mão em plantas, pesquise qualquer uma das ações em **HMD de realidade mista do Windows**:
+Para usar raios de mão em blueprints, pesquise qualquer uma das ações **em Windows Mixed Reality HMD**:
 
-![Raios-mão BP](../images/unreal/hand-rays-bp.png)
+![Raios de mão BP](../images/unreal/hand-rays-bp.png)
 
-Para acessá-los em C++, inclua na `WindowsMixedRealityFunctionLibrary.h` parte superior do seu arquivo de código de chamada.
+Para acessá-los no C++, `WindowsMixedRealityFunctionLibrary.h` inclua na parte superior do arquivo de código de chamada.
 
 ### <a name="enum"></a>Enumeração
 
-Você também tem acesso a casos de entrada em **EHMDInputControllerButtons**, que podem ser usados em plantas:
+Você também tem acesso a casos de entrada **em EHMDInputControllerButtons**, que podem ser usados em Blueprints:
 
 ![Botões do controlador de entrada](../images/unreal/input-controller-buttons.png)
 
@@ -38,14 +38,14 @@ enum class EHMDInputControllerButtons : uint8
 };
 ```
 
-Abaixo está uma análise dos dois casos de enumeração aplicáveis:
+Veja abaixo um detalhamento dos dois casos de enum aplicáveis:
 
-* **Select** -o evento de seleção disparado pelo usuário.
-    * Disparado no HoloLens 2 por Air-TAP, olhar e Commit ou dizendo "Select" com [entrada de voz](../unreal-voice-input.md) habilitada.
-* **Segure** -evento de Segure disparado pelo usuário.
+* **Selecione** – O usuário disparou Selecionar evento.
+    * Disparado no HoloLens 2 por toque de ar, olhar e confirmação ou dizendo "Selecionar" com a entrada [de voz](../unreal-voice-input.md) habilitada.
+* **Entender** – evento De compreensão disparado pelo usuário.
     * Disparado no HoloLens 2 fechando os dedos do usuário em um holograma.
 
-Você pode acessar o status de acompanhamento da malha do seu lado em C++ por meio da `EHMDTrackingStatus` Enumeração mostrada abaixo:
+Você pode acessar o status de acompanhamento da malha manual em C++ por meio `EHMDTrackingStatus` da enum mostrada abaixo:
 
 ```cpp
 enum class EHMDTrackingStatus : uint8
@@ -56,24 +56,24 @@ enum class EHMDTrackingStatus : uint8
 };
 ```
 
-Abaixo está uma análise dos dois casos de enumeração aplicáveis:
+Veja abaixo um detalhamento dos dois casos de enum aplicáveis:
 
-* Não **rastreado** – a mão não está visível
-* **Acompanhado** – a mão é totalmente controlada
+* **NotTracked** – a mão não está visível
+* **Rastreado** – a mão está totalmente controlada
 
 ### <a name="struct"></a>Estrutura
 
-A estrutura PointerPoseInfo pode fornecer informações sobre os seguintes dados de mão:
+O struct PointerPoseInfo pode lhe dar informações sobre os seguintes dados de mão:
 
 * **Origem** – origem da mão
 * **Direção** – direção da mão
-* **Up** – vetor de cima à mão
-* **Orientação** – o quaternion de orientação
-* **Status de rastreamento** – status de acompanhamento atual
+* **Up** – vetor up da mão
+* **Orientação** – quatternion de orientação
+* **Status de acompanhamento** – status de acompanhamento atual
 
-Você pode acessar a estrutura PointerPoseInfo por meio de plantas, conforme mostrado abaixo:
+Você pode acessar o struct PointerPoseInfo por meio de Blueprints, conforme mostrado abaixo:
 
-![Ponteiro de pose de informações BP](../images/unreal/pointer-pose-info-bp.png)
+![Bp de informações de pose de ponteiro](../images/unreal/pointer-pose-info-bp.png)
 
 Ou com C++:
 
@@ -92,55 +92,55 @@ struct FPointerPoseInfo
 
 Todas as funções listadas abaixo podem ser chamadas em cada quadro, o que permite o monitoramento contínuo.
 
-1. **Obter** informações de pose de ponteiro retorna informações completas sobre a direção de raio da mão no quadro atual.
+1. **Obter Informações de Pose do** Ponteiro retorna informações completas sobre a direção do raio de mão no quadro atual.
 
-Gráfico
+Modelo:
 
-![Obter informações de pose de ponteiro](../images/unreal/get-pointer-pose-info.png)
+![Obter informações de pose do ponteiro](../images/unreal/get-pointer-pose-info.png)
 
 C++:
 ```cpp
 static FPointerPoseInfo UWindowsMixedRealityFunctionLibrary::GetPointerPoseInfo(EControllerHand hand);
 ```
 
-2. **É Segure** retorna true se a mão estiver segurando no quadro atual.
+2. **É Compreendido retornará** true se a mão for a mão no quadro atual.
 
-Gráfico
+Modelo:
 
-![BP é compreendida](../images/unreal/is-grasped-bp.png)
+![Está segurando BP](../images/unreal/is-grasped-bp.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityFunctionLibrary::IsGrasped(EControllerHand hand);
 ```
 
-3. **Is Select pressionado** retorna true se o usuário disparasse SELECT no quadro atual.
+3. **Se Selecionar Pressionado retornará** true se o usuário tiver disparado Selecionar no quadro atual.
 
-Gráfico
+Modelo:
 
-![É selecione BP pressionado](../images/unreal/is-select-pressed-bp.png)
+![É selecionar BP pressionado](../images/unreal/is-select-pressed-bp.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityFunctionLibrary::IsSelectPressed(EControllerHand hand);
 ```
 
-4. O **botão é clicado** retorna true se o evento ou botão for disparado no quadro atual.
+4. **O botão Clicado retornará** true se o evento ou o botão for disparado no quadro atual.
 
-Gráfico
+Modelo:
 
-![É um botão clicado em BP](../images/unreal/is-button-clicked-bp.png)
+![Botão é BP clicado](../images/unreal/is-button-clicked-bp.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityFunctionLibrary::IsButtonClicked(EControllerHand hand, EHMDInputControllerButtons button);
 ```
 
-5. **Obter status de controle do controlador** retorna o status de acompanhamento no quadro atual.
+5. **Obter Status de Acompanhamento do Controlador** retorna o status de acompanhamento no quadro atual.
 
-Gráfico
+Modelo:
 
-![Obter o status de controle do controlador BP](../images/unreal/get-controller-tracking-status-bp.png)
+![Obter BP do status de acompanhamento do controlador](../images/unreal/get-controller-tracking-status-bp.png)
 
 C++:
 ```cpp

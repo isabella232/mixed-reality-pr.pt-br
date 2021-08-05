@@ -1,17 +1,17 @@
 ---
 title: Controle deslizante
-description: Saiba como usar o componente de interface do usuário do Controle Deslizante para definir um valor movendo um botão ou uma alavanca em uma faixa usando o Kit de Ferramentas de Realidade Misturada.
+description: Saiba como usar o componente de interface do usuário do Controle Deslizante para definir um valor movendo um botão ou uma alavanca em uma faixa usando o controle de realidade misturada Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realidade Misturada, Controles, interação, interface do usuário, experiência do usuário, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, controle deslizante, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: c1619a90b7df1a34fa1541663a3f521ba5e75662
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realidade Misturada, Controles, interação, interface do usuário, experiência do usuário, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, controle deslizante, MRTK, Realidade Misturada Toolkit
+ms.openlocfilehash: 5d07960566630afac0addd10585d885f33a80b46613c1a9f19374c9afa71bd7e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186906"
 ---
 # <a name="slider"></a>Slider
 
@@ -23,7 +23,7 @@ Um controle deslizante é um componente de interface do usuário usado para defi
 
 ---
 
-## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Controle deslizante no MRTK (Kit de Ferramentas de Realidade Misturada) para Unity
+## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Controle deslizante no MRTK (Mixed Reality Toolkit) para Unity
 
 * [MRTK – Controle deslizante](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
 
@@ -31,7 +31,7 @@ Um controle deslizante é um componente de interface do usuário usado para defi
 
 ---
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Cursores](cursors.md)
 * [Raio de mão](point-and-commit.md)

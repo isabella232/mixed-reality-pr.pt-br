@@ -1,80 +1,80 @@
 ---
 title: Tabela periódica dos elementos
-description: Saiba como dispor uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma coleção de objetos com a tabela periódica do aplicativo de exemplo de elementos.
+description: Saiba como estabelecer uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma coleção object com a Tabela Periódica do aplicativo de exemplo Elements.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, realidade misturada Toolkit, Unity, aplicativos de amostra, aplicativos de exemplo, código-fonte aberto, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 2856d9052f9e1d07b2f796cafeb96fb0cdef63e8
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, Toolkit de Realidade Misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
+ms.openlocfilehash: aab6789939823b8c6e200bb5456118002b848e3c2f166abe50d4788ac8e7430d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211864"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tabela periódica dos elementos
-![Tabela de período do aplicativo de elementos](../images/MRDL_PeriodicTable_HL1.jpg)
+![Tabela de período do aplicativo Elements](../images/MRDL_PeriodicTable_HL1.jpg)
 
 >[!NOTE]
->Este artigo discute um exemplo exploratório que criamos nos laboratórios de [design de realidade misturada](https://github.com/Microsoft/MRDesignLabs_Unity), um lugar onde compartilhamos nossas aprendeções e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e códigos relacionados ao design irão evoluir à medida que fizermos novas descobertas.
+>Este artigo aborda um exemplo exploratório que criamos nos [Laboratórios](https://github.com/Microsoft/MRDesignLabs_Unity)de Design de Realidade Misturada, um local em que compartilhamos nossos aprendizados e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e código relacionados ao design evoluirão à medida que fazemos novas descobertas.
 
 >[!NOTE]
->este aplicativo de exemplo foi criado para HoloLens 1ª gen. veja [a tabela periódica dos elementos 2,0](periodic-table-of-the-elements-2.md) para a versão HoloLens 2.
+>Este aplicativo de exemplo foi projetado para HoloLens 1ª geração. Consulte [Tabela periódica dos Elementos 2.0](periodic-table-of-the-elements-2.md) para HoloLens 2.
 
-[A tabela periódica dos elementos](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. Saiba como dispor uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma **[coleção de objetos](../../design/object-collection.md)**. Aprenda também a criar objetos que respondam a entradas padrão do HoloLens. Você pode usar os componentes deste projeto para criar sua própria experiência de aplicativo de realidade misturada.
+[A Tabela Periódica dos Elementos é](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) um aplicativo de exemplo de código aberto dos Laboratórios de Design de Realidade Misturada da Microsoft. Saiba como estabelecer uma matriz de objetos no espaço 3D com vários tipos de superfície usando uma **[Coleção de objetos](../../design/object-collection.md)**. Saiba também como criar objetos interagidos que respondem a entradas padrão de HoloLens. Você pode usar os componentes desse projeto para criar sua própria experiência de aplicativo de realidade misturada.
 
 
 ## <a name="demo-video"></a>Vídeo de demonstração 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
 
-registrado com HoloLens 2 usando a captura de realidade misturada
+Gravado com HoloLens 2 usando Captura de Realidade Misturada
 
 ## <a name="about-the-app"></a>Sobre o aplicativo
 
-A tabela periódica dos elementos visualiza os elementos químicos e cada uma de suas propriedades em um espaço 3D. ele incorpora as interações básicas de HoloLens como olhar e toque de ar. Os usuários podem aprender sobre os elementos com modelos 3D animados. Eles podem entender visualmente o Shell de um dos elementos do seu núcleo, que é composto de protoneladas e neutrons.
+A Tabela Periódica dos Elementos visualiza os elementos quimicos e cada uma de suas propriedades em um espaço 3D. Ele incorpora as interações básicas de HoloLens como o olhar e o toque de ar. Os usuários podem aprender sobre os elementos com modelos 3D animados. Eles podem entender visualmente o shell de electron de um elemento e seus anões , que é composto de protons e anões.
 
-## <a name="background"></a>Segundo plano
+## <a name="background"></a>Tela de fundo
 
-depois de ter HoloLens pela primeira vez, sabia que queria experimentar um aplicativo de tabela periódico em realidade misturada. Como cada elemento tem muitos pontos de dados que são exibidos com texto, pensei que seria um ótimo assunto para explorar a composição tipográfica em um espaço 3D. Dar aos usuários a chance de visualizar o modelo de sem interspersão do elemento era outra parte interessante deste projeto.
+Depois de experimentar a HoloLens, eu sabia que queria experimentar um aplicativo de tabela periódico na realidade misturada. Como cada elemento tem muitos pontos de dados exibidos com texto, eu acho que seria um ótimo assunto explorar a composição tipográfica em um espaço 3D. Dar aos usuários a oportunidade de visualizar o modelo de electron do elemento era outra parte interessante desse projeto.
 
 ## <a name="design"></a>Design
 
-Para a exibição padrão da tabela periódica, Imaginai caixas tridimensionais que conteriam o modelo de todos os elementos. A superfície de cada caixa seria translúcida para que o usuário pudesse obter uma ideia aproximada do volume do elemento. Com o olhar e o toque do Air, o usuário pode abrir uma exibição detalhada de cada elemento. Para fazer com que a transição entre a exibição de tabela e a exibição de detalhes seja suave e natural, eu o fiz de forma semelhante à interação física de uma abertura de caixa na vida real.
+Para a exibição padrão da tabela periódica, eu vi caixas tridimensionais que contêm o modelo de electron de cada elemento. A superfície de cada caixa seria translúcida para que o usuário pudesse ter uma ideia aproximada do volume do elemento. Com o olhar e o toque de ar, o usuário pode abrir uma exibição detalhada de cada elemento. Para tornar a transição entre a exibição de tabela e a exibição de detalhes suave e natural, eu a torna semelhante à interação física de uma caixa abrindo na vida real.
 
 ![Esboço de design](images/640px-sketch20170406.jpg)<br>
-*Esboços de design*
+*Esboçar esboços*
 
-No modo de exibição de detalhes, eu queria visualizar as informações de cada elemento com o texto renderizado linda em espaço 3D. O modelo de rede 3D animada é exibido na área central e pode ser exibido a partir de diferentes ângulos.
+Na exibição detalhada, eu queria visualizar as informações de cada elemento com texto renderizado perfeitamente no espaço 3D. O modelo de electron 3D animado é exibido na área central e pode ser exibido de diferentes ângulos.
 
 ![Interação](images/640px-periodictable-interaction.jpg)
 
 ![Protótipos](images/640px-periodictable-prototypes.jpg)<br>
 *Protótipos de interação*
 
-O usuário pode alterar o tipo de superfície por ar tocando nos botões na parte inferior da tabela-eles podem alternar entre plano, cilindro, esfera e dispersão.
+O usuário pode alterar o tipo de superfície tocando ar nos botões na parte inferior da tabela– ele pode alternar entre plano, cilindro, esfera e dispersão.
 
 ## <a name="common-controls-and-patterns-used-in-this-app"></a>Controles e padrões comuns usados neste aplicativo
 
-### <a name="interactable-object-button"></a>Objeto interagir (botão)
+### <a name="interactable-object-button"></a>Objeto interajante (botão)
 
-o [objeto de interação](../../design/interactable-object.md) é um objeto, que pode responder a entradas básicas de HoloLens. Ele é fornecido como um pré-fabricado/script, que você pode aplicar facilmente a qualquer objeto. Por exemplo, você pode fazer com que uma xícara de café em sua cena interaja e responda a entradas como olhar, toque de ar, navegação e gestos de manipulação. [Saiba mais](../../design/interactable-object.md)
+[O objeto interajante](../../design/interactable-object.md) é um objeto que pode responder a entradas HoloLens básicas. Ele é fornecido como um pré-bb/script, que você pode aplicar facilmente a qualquer objeto. Por exemplo, você pode tornar uma cafeteira em sua cena interagente e responder a entradas como olhar, toque de ar, navegação e gestos de manipulação. [Saiba mais](../../design/interactable-object.md)
 
 ![objeto nteractable](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Coleção de objetos
 
-A [coleção de objetos](../../design/object-collection.md) é um objeto, que ajuda você a dispor vários objetos em várias formas. Ele dá suporte a plano, cilindro, esfera e dispersão. Você pode configurar propriedades adicionais, como RADIUS, número de linhas e espaçamento. [Saiba mais](../../design/object-collection.md)
+[A coleção de](../../design/object-collection.md) objetos é um objeto , que ajuda você a estabelecer vários objetos em várias formas. Ele dá suporte a plano, cilindro, esfera e dispersão. Você pode configurar propriedades adicionais, como radius, número de linhas e espaçamento. [Saiba mais](../../design/object-collection.md)
 
 ![Coleção de objetos](images/640px-periodictable-collections.jpg)
 
 ## <a name="technical-details"></a>Detalhes técnicos
 
-Você pode encontrar scripts e pré-fabricados para a tabela periódica do aplicativo de elementos nos [laboratórios de design de realidade misturada GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable).
+Você pode encontrar scripts e pré-fabs para a Tabela Periódica do aplicativo Elements nos Laboratórios de Design de [Realidade Misturada GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable).
 
-## <a name="porting-story-for-hololens-2"></a>a história do portador para o HoloLens 2
+## <a name="porting-story-for-hololens-2"></a>História de portação para HoloLens 2
 
-leia a história sobre como a tabela periódica do aplicativo de elementos foi atualizada com interações de instinctual de HoloLens 2.
+Leia a história sobre como a Tabela Periódica do aplicativo Elements foi atualizada com HoloLens interações instintivas do HoloLens 2.
 
 [Tabela periódica dos elementos 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 

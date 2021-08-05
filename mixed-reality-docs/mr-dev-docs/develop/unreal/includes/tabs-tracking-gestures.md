@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6b9223481ed909961dbb88d03e4b55ef68448525
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fa21b1a5c3c89cf3c1c63c7ed8ebbdc3d8547661443853987ee3713e50c50e5c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187181"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -14,18 +14,18 @@ ms.locfileid: "97717414"
 
 Em seguida, você deve adicionar código para assinar os seguintes eventos:
 
-![Plano gráfico de espera de entrada espacial do Windows, toque e gestos de manipulação à esquerda ](../images/unreal/key-events.png)
- ![ captura de tela das opções de gesto do toque de entrada espacial do Windows no painel de detalhes](../images/unreal/key-events2.png)
+![plano gráfico de Windows contenção de entrada espacial, toque e gestos de manipulação à esquerda ](../images/unreal/key-events.png)
+ ![ captura de tela de Windows opções de gesto toque de entrada espacial no painel de detalhes](../images/unreal/key-events2.png)
 
 ### <a name="openxr"></a>OpenXR
 
-No OpenXR, os eventos de gesto são controlados por meio do pipeline de entrada. Usando a interação manual, o dispositivo pode reconhecer automaticamente gestos de tocar e segurar, mas não os outros. Eles são nomeados como OpenXRMsftHandInteraction selecionar e segurar mapeamentos. Você não precisa habilitar a assinatura, deve declarar os eventos em configurações do projeto/mecanismo/entrada, assim como:
+No OpenXR, os eventos de gesto são controlados por meio do pipeline de entrada. Usando a interação manual, o dispositivo pode reconhecer automaticamente gestos de tocar e segurar, mas não os outros. Eles são nomeados como OpenXRMsftHandInteraction selecionar e segurar mapeamentos. você não precisa habilitar a assinatura, você deve declarar os eventos em Project Configurações/Engine/Input, assim:
 
 ![Captura de tela dos mapeamentos de ação OpenXR](../images/unreal-hand-tracking-img-12.png)
 
 # <a name="425"></a>[4.25](#tab/425)
 
-Você pode encontrar a função Blueprint na **entrada espacial de realidade mista do Windows** e a função C++ adicionando o `WindowsMixedRealitySpatialInputFunctionLibrary.h` arquivo de código de chamada.
+você pode encontrar a função Blueprint em em **Windows Mixed Reality entrada espacial** e a função C++ adicionando o `WindowsMixedRealitySpatialInputFunctionLibrary.h` arquivo de código de chamada.
 
 ![Gestos de captura](../images/unreal/capture-gestures.png)
 

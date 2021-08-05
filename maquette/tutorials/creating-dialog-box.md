@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Realidade mista do Windows, maquette, protótipoing, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
-ms.openlocfilehash: 9927f683038af72f2649421a5ea162e140e95656
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, protótipos, realidade misturada, realidade Virtual, VR, sr, comentários, Hub de comentários, bugs
+ms.openlocfilehash: 54277472fd2550c87f15f647a7019775c063db53f5d9df1a7251f5a800453714
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212364"
 ---
 # <a name="creating-a-dialog-box"></a>Criando uma caixa de diálogo 
 

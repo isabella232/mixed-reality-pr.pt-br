@@ -5,17 +5,17 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, iniciador de aplicativos 3D, headset de imersão, cubo ao vivo, headset de realidade misturada, headset de realidade mista do Windows, Headset virtual realismo, UWP, Win32, iluminação, cor
-ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: Windows Mixed Reality, design, iniciador de aplicativos 3d, headsets de imersão, cubos ao vivo, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, UWP, Win32, iluminação, cor
+ms.openlocfilehash: 2d93930d63b251aa91d77c96b4d5250baba54c51de50388f690b3588b1580761
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188466"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>Diretrizes de design do inicializador de aplicativos 3D
 
-Quando você coloca em um fone de ouvido (VR) de realidade mista do Windows, entra na página inicial do Windows Mixed Reality. A página inicial é visualizada como uma casa em uma Cliff cercada por montanhas e água, mas você pode [escolher outros ambientes e até mesmo criar seus próprios](../design/add-custom-home-environments.md). No espaço da Home, um usuário é livre para organizar e organizar os objetos 3D e os aplicativos que eles se preocupam de qualquer forma que desejarem. Um **iniciador de aplicativo 3D** é um objeto "físico" na casa de realidade misturada do usuário que pode selecionar para iniciar um aplicativo.
+quando você coloca em um headset de Windows Mixed Reality de imersão (VR), entra na página inicial do Windows Mixed Reality. A página inicial é visualizada como uma casa em uma Cliff cercada por montanhas e água, mas você pode [escolher outros ambientes e até mesmo criar seus próprios](../design/add-custom-home-environments.md). No espaço da Home, um usuário é livre para organizar e organizar os objetos 3D e os aplicativos que eles se preocupam de qualquer forma que desejarem. Um **iniciador de aplicativo 3D** é um objeto "físico" na casa de realidade misturada do usuário que pode selecionar para iniciar um aplicativo.
 
 ![Exemplo: inicializador de aplicativo 3D de pássaro flutuante](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Exemplo de inicializador de aplicativo 3D de pássaro flutuante (aplicativo fictício)*
@@ -34,7 +34,7 @@ Há três etapas para criar um iniciador de aplicativo 3D:
 
 ### <a name="fantastic-yet-familiar"></a>Fantástico ainda familiar
 
-O ambiente de realidade mista do Windows em que seu inicializador de aplicativo reside faz parte familiar, parte fantástica/Sci-Fi. Os melhores iniciadores seguem as regras deste mundo. Imagine como você pode pegar um objeto familiar e representativo de seu aplicativo, mas dobre algumas das regras da realidade real. A mágica será resultado.
+o ambiente de Windows Mixed Reality no qual o iniciador de aplicativo reside é parte familiar, parte fantástica/sci-fi. Os melhores iniciadores seguem as regras deste mundo. Imagine como você pode pegar um objeto familiar e representativo de seu aplicativo, mas dobre algumas das regras da realidade real. A mágica será resultado.
 
 ### <a name="intuitive"></a>Simples
 
@@ -80,7 +80,7 @@ Seu aplicativo merece mais do que apenas colocar seu logotipo em um plano plano 
     :::column-end:::
 :::row-end:::
 
-## <a name="tips-for-good-3d-models"></a>Dicas para bons modelos 3D
+## <a name="tips-for-good-3d-models"></a>Dicas para bons modelos 3d
 
 * Ao planejar dimensões para seu inicializador de aplicativo, tenha em seguida um cubo de 30 cm. Portanto, uma proporção de tamanho de 1:1:1.
 * Os modelos devem estar abaixo de 10.000 polígonos. [Saiba mais sobre contagens de triângulos e níveis de detalhes (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
@@ -124,7 +124,7 @@ Seu aplicativo merece mais do que apenas colocar seu logotipo em um plano plano 
 
 **Digitar cores que funcionam**
 
-* Branco
+* Branca
 * Preto
 * Cor semisaturada brilhante
 
@@ -144,40 +144,40 @@ As cores de tipo que causam problemas incluem:
 
 ## <a name="lighting"></a>Iluminação
 
-A iluminação para seu inicializador de aplicativos vem do ambiente de casa da Cliff. Certifique-se de testar seu iniciador em vários lugares em toda a casa para que ele fique bom na luz e nas sombras. A boa notícia é que, se você seguiu as outras diretrizes de design deste documento, o iniciador deve estar em bom formato para a maior parte da luz na casa Cliff.
+A iluminação para o launcher do aplicativo vem do ambiente Casa no Penhasco aplicativo. Certifique-se de testar o launcher em vários locais em toda a casa para que ele tenha uma boa aparência na luz e nas sombras. A boa notícia é que, se você seguiu as outras diretrizes de design neste documento, o launcher deve estar em boa forma para a maioria das iluminação no Casa no Penhasco.
 
-Bons lugares para testar como o iniciador analisa as várias luzes no ambiente são o estúdio, a sala de mídia, em qualquer lugar fora e na Patio de fundo (a área concreta com o gramado). Outro bom teste é colocá-lo na metade e na metade da sombra e ver como ele se parece.
+Bons locais para testar a aparência do seu launcher nas várias luzes no ambiente são o Studio, a Sala de Mídia, em qualquer lugar fora e no Back Patio (a área concreta com a casa). Outro bom teste é colocá-lo na metade da luz e meia sombra e ver a aparência dele.
 
-![Verifique se o iniciador parece bom tanto na luz quanto nas sombras.](images/20171013-145523-mixedreality-1200px-1000px.jpg)<br>
-*Verifique se o iniciador parece bom tanto na luz quanto nas sombras*
+![Certifique-se de que o launcher tenha uma boa aparência tanto na luz quanto nas sombras.](images/20171013-145523-mixedreality-1200px-1000px.jpg)<br>
+*Certifique-se de que o launcher tenha uma boa aparência tanto na luz quanto nas sombras*
 
-## <a name="texturing"></a>Texturing
+## <a name="texturing"></a>Texturização
 
-### <a name="authoring-your-textures"></a>Criando suas texturas
+### <a name="authoring-your-textures"></a>Como autor de suas texturas
 
-O formato final do seu iniciador de aplicativo 3D será um arquivo. glb, que é feito usando o pipeline PBR (processamento com base fisicamente). Isso pode ser um processo complicado – agora é um bom momento para empregar um artista técnico, caso ainda não tenha feito isso. Se você for um corajoso DIY, dedicar o tempo para [Pesquisar e aprender a terminologia do PBR](https://wiki.polycount.com/wiki/PBR) e o que está acontecendo nos bastidores antes de começar irá ajudá-lo a evitar erros comuns. 
+O formato final do seu launcher de aplicativo 3D será um arquivo .glb, que é feito usando o pipeline PBR (Renderização Baseada Fisicamente). Esse pode ser um processo complicado – agora é um bom momento para empregar um artista técnico, caso ainda não tenha feito isso. Se você for um diY-er, aproveitar o tempo para pesquisar e aprender a terminologia de [PBR](https://wiki.polycount.com/wiki/PBR) e o que está acontecendo nos fundos antes de começar ajudará a evitar erros comuns. 
 
-![Exemplo: novo aplicativo de observações](images/pbr-freshnote1-640px-500px.png)<br>
-*Observação de novo exemplo de inicializador de aplicativo 3D (aplicativo fictício)*
+![Exemplo: novo aplicativo de observação](images/pbr-freshnote1-640px-500px.png)<br>
+*Exemplo de iniciador de aplicativo 3D da Nova Observação (aplicativo fictício)*
 
-### <a name="recommended-authoring-tool"></a>Ferramenta de criação recomendada
+### <a name="recommended-authoring-tool"></a>Ferramenta de autor recomendada
 
-É recomendável usar a [pincel de substância](https://www.allegorithmic.com/products/substance-painter) by Allegorithmic para criar o arquivo final. Se você não estiver familiarizado com a criação de sombreadores de PBR no pintor da substância, aqui está um [tutorial](https://docs.allegorithmic.com/documentation/display/SPDOC/Tutorials).
+É recomendável [usar o Decodados](https://www.allegorithmic.com/products/substance-painter) por Allegorithmic para a autor do arquivo final. Se você não estiver familiarizado com a adoção de sombreadores PBR em Ressalvação de Cinzas, aqui está um [tutorial.](https://docs.allegorithmic.com/documentation/display/SPDOC/Tutorials)
 
-(Alternativamente [3D-revestimento](https://3dcoat.com/home/), [Quixel Suite 2](https://quixel.se/suite2/)ou [Marmoset Toolbag](https://www.marmoset.co/toolbag/) também funcionaria se você estivesse mais familiarizado com um deles.)
+(Como alternativa, [3D-Seletor,](https://3dcoat.com/home/) [Quixel Suite 2](https://quixel.se/suite2/)ou [Marmoset Toolbag](https://www.marmoset.co/toolbag/) também funcionaria se você estiver mais familiarizado com um deles.)
 
 ### <a name="best-practices"></a>Práticas recomendadas
 
-* Se o objeto iniciador do aplicativo foi criado para PBR, deve ser simples convertê-lo para o ambiente Cliff House.
-* Nosso sombreador está esperando um fluxo de trabalho de metal/áspero – o sombreador do PBR inreal é um fax próximo.
-* Ao exportar suas texturas, mantenha os [tamanhos de textura recomendados](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) em mente.
-* Certifique-se de criar seus objetos para iluminação em tempo real – isso significa:
-  * Evite sombras inclusass – ou sombras pintadas
-  * Evite a iluminação inclusas nas texturas
-  * Use um dos pacotes de criação de material do PBR para obter os mapas corretos gerados para nosso sombreador
+* Se o objeto do launcher do aplicativo foi autor para PBR, deve ser simples convertê-lo para o ambiente Casa no Penhasco aplicativo.
+* Nosso sombreador está esperando um fluxo de trabalho metal/aproximação – o sombreador do Unreal PBR é um facsimile próximo.
+* Ao exportar suas texturas, tenha em mente os [tamanhos de textura recomendados.](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines)
+* Certifique-se de criar seus objetos para iluminação em tempo real— isso significa:
+  * Evitar sombras assadas – ou sombras pintadas
+  * Evitar iluminação assada nas texturas
+  * Use um dos pacotes de autor do material PBR para obter os mapas corretos gerados para nosso sombreador
 
 ## <a name="see-also"></a>Consulte também
 
-* [Crie modelos 3D para uso na página inicial misturada de realidade](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Criar modelos 3D para uso na casa de realidade misturada](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos UWP)](implementing-3d-app-launchers.md)
 * [Implementar inicializadores de aplicativos 3D (aplicativos Win32)](implementing-3d-app-launchers-win32.md)

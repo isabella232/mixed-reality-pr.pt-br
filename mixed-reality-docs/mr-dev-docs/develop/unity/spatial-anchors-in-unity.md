@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/7/2021
 ms.topic: article
-keywords: Unity, âncoras espaciais, repositório de ancoragem, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, ferramentas de bloqueio mundial, hologramas
-ms.openlocfilehash: 4fc982244a766bb34f15b356d608f2aad18f7a88
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+keywords: Unity, âncoras espaciais, repositório de ancoragem, HoloLens, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, ferramentas de bloqueio mundial, hologramas
+ms.openlocfilehash: 34ef74ab968bff04188b1010eb4c863fd73d76ee6b1dd8a0bd89c7d4232a2be9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208826"
 ---
 # <a name="world-locking-and-spatial-anchors-in-unity"></a>Bloqueios mundiais e âncoras espaciais no Unity
 
@@ -23,7 +23,7 @@ Fazer com que seus hologramas permaneçam em vigor, mover-se para você ou, em a
 
 Hoje em dia, ao escrever jogos, aplicativos de visualização de dados ou aplicativos de realidade virtual, a abordagem típica é estabelecer um **sistema de coordenadas do mundo** absoluto que todas as outras coordenadas possam Mapear de forma confiável de volta para o. Nesse ambiente, você sempre pode encontrar uma transformação estável que define uma relação entre quaisquer dois objetos nesse mundo. Se você não moveu esses objetos, suas transformações relativas sempre permanecerão as mesmas. Esse tipo de sistema de coordenadas global é fácil de ser adequado ao renderizar um mundo puramente virtual em que você conhece toda a geometria com antecedência. Atualmente, os aplicativos VR em escala de sala normalmente estabelecem esse tipo de sistema de coordenadas de escala de sala absoluto com sua origem no chão.
 
-Por outro lado, um dispositivo de realidade misturada sem compartilhamento de porta, como o HoloLens, tem uma compreensão dinâmica orientada por sensor do mundo, ajustando continuamente seu conhecimento ao longo do tempo do ambiente do usuário à medida que eles orientam muitos medidores em todo um andar de um edifício. Em uma experiência de escala mundial, se você colocou todos os seus hologramas em um sistema de coordenadas rígidos ingênuas, esses hologramas acabarão se esgotando ao longo do tempo, seja com base no mundo ou em relação uns aos outros.
+por outro lado, um dispositivo de realidade misturada sem compartilhamento de internet, como o HoloLens, tem uma compreensão dinâmica orientada por sensor do mundo, ajustando continuamente seu conhecimento ao longo do tempo do ambiente do usuário à medida que eles orientam muitos medidores em todo um andar de um edifício. Em uma experiência de escala mundial, se você colocou todos os seus hologramas em um sistema de coordenadas rígidos ingênuas, esses hologramas acabarão se esgotando ao longo do tempo, seja com base no mundo ou em relação uns aos outros.
 
 Por exemplo, o headset pode acreditar, no momento, que dois locais do mundo tenham 4 metros de distância e depois refinam essa compreensão, aprendendo que os locais estão na verdade 3,9 metros de distância. Se esses hologramas tiverem sido inicialmente colocados quatro metros de distância em um único sistema de coordenadas rígidos, um deles sempre pareceria de 0,1 metros do mundo real.
 
@@ -35,7 +35,7 @@ As **ferramentas de bloqueio mundial** oferecem o melhor dos dois mundos, estabi
 
 * **Nossa recomendação** é usar as **ferramentas de bloqueio mundial** para todas as suas necessidades de posicionamento de holograma. 
     * As ferramentas de bloqueio Mundial fornecem um sistema de coordenadas estável que minimiza as inconsistências visíveis entre marcadores virtuais e do mundo real. Em outras palavras, o mundo de ti bloqueia toda a cena com um pool compartilhado de âncoras, em vez de bloquear cada grupo de objetos com a própria âncora individual do grupo.
-* **Para o Unity 2019/2020 usando o OpenXR ou o plug-in do Windows XR**, você precisa usar o **ARAnchorManager**
+* **para o Unity 2019/2020 usando OpenXR ou o plug-in Windows XR**, você precisa usar **ARAnchorManager**
 * **Para versões mais antigas do Unity ou** projetos de WSA, você precisa usar o **WorldAnchor**
 
 ## <a name="setting-up-world-locking"></a>Configurando o bloqueio mundial 
@@ -44,7 +44,7 @@ As **ferramentas de bloqueio mundial** oferecem o melhor dos dois mundos, estabi
 
 ## <a name="persistent-world-locking"></a>Bloqueio mundial persistente
 
-Âncoras espaciais salvam hologramas em espaço real entre as sessões do aplicativo. Depois de salvo no repositório de âncora do HoloLens, eles podem ser encontrados e carregados em diferentes sessões e são um fallback ideal quando não há conectividade com a Internet.
+Âncoras espaciais salvam hologramas em espaço real entre as sessões do aplicativo. depois de salvo no repositório de ancoragem do HoloLens, eles podem ser encontrados e carregados em diferentes sessões e são um fallback ideal quando não há conectividade com a internet.
 
 > [!IMPORTANT]
 > Elas são armazenadas no dispositivo, enquanto as Âncoras Espaciais do Azure são armazenadas na nuvem. Se você pretende usar os serviços de nuvem do Azure para armazenar suas âncoras, temos um documento que pode orientar você na integração das [Âncoras Espaciais do Azure](../mixed-reality-cloud-services.md#azure-spatial-anchors). Você pode ter âncoras locais e do Azure no mesmo projeto sem conflitos.

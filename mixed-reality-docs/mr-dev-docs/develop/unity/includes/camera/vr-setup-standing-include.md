@@ -1,58 +1,58 @@
 ---
-ms.openlocfilehash: 61fe8754192c1fbd0634fd9d1e1994327599321b
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 47dfba0fe2b64e3b7e03ae62af3de1e1e24bd70b8b1e7e6b2cb40995428dbda2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212199"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Use a [classe MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) do MRTK para Unity e de definir a Escala de **Destino** como **Sala** ou **Em Espera:**
+Use a classe [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) de MRTK para Unity e defina a **escala de destino** como **sala** ou **posição**:
 
 ![Janela de configurações do MRTK](../../images/mrtk-target-scale.png)
 
-O MRTK deve lidar com a posição do playspace e da câmera automaticamente, mas é bom verificar duas vezes:
+MRTK deve tratar a posição da Playspace e da câmera automaticamente, mas é bom fazer uma verificação dupla:
 
-![Playspace do MRTK](../../images/mrtk-playspace.png)
+![MRTK playspace](../../images/mrtk-playspace.png)
 
-1. No painel **Hierarquia,** expanda **MixedRealityPlayspace** GameObject e encontre o **objeto filho da Câmera** Principal
-2. No painel **Inspetor,** encontre o **componente Transformar** e altere a **Posição** para **(X: 0, Y: 0, Z: 0)**
+1. No painel **hierarquia** , expanda o **MixedRealityPlayspace** gameobject e localize o objeto filho da **câmera principal**
+2. No painel **Inspetor** , localize o componente **transformar** e altere a **posição** para **(X: 0, Y: 0, Z: 0)**
 
 # <a name="xr-sdk"></a>[SDK do XR](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-De definir o modo de origem de acompanhamento [no XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html). Depois de obter o subsistema, chame [TrySetTrackingOriginMode:](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html)
+Defina o modo de origem de rastreamento no [XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html). Depois de obter o subsistema, chame [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html):
 
 ```cs
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Floor);
 ```
 
-E trabalhe com o [XRRig do](https://docs.unity3d.com/Manual/configuring-project-for-xr.html)Unity.
+E trabalhar com o [XRRig](https://docs.unity3d.com/Manual/configuring-project-for-xr.html)do Unity.
 
-![Plataforma XR na hierarquia](../../images/xrsdk-xrrig.png)
+![Dispositivo XR na hierarquia](../../images/xrsdk-xrrig.png)
 
 # <a name="legacy-wsa"></a>[WSA herdado](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. Vá para **a seção Outras Configurações** das **Configurações do Player da Windows Store**
-2. Escolha **Windows Mixed Reality** como o dispositivo, que pode ser listado como **Windows Holographic** em versões mais antigas do Unity
-3. Selecione **Realidade Virtual Com Suporte**
+1. vá para **outras Configurações** seção do **Player do Windows Store Configurações**
+2. escolha **Windows Mixed Reality** como o dispositivo, que pode ser listado como **Windows Holographic** em versões anteriores do Unity
+3. Selecione a **realidade virtual com suporte**
 
-Como o objeto Câmera Principal é marcado automaticamente como a câmera, o Unity acionará toda a movimentação e a tradução.
+Como o objeto da câmera principal é marcado automaticamente como a câmera, o Unity alimenta todo o movimento e a tradução.
 
 >[!NOTE]
->Essas configurações precisam ser aplicadas à Câmera em cada cena do seu aplicativo.
+>Essas configurações precisam ser aplicadas à câmera em cada cena do seu aplicativo.
 >
->Por padrão, quando você cria uma nova cena no Unity, ela conterá um GameObject da Câmera Principal na Hierarquia que inclui o componente Câmera, mas não tem as configurações abaixo aplicadas corretamente.
+>Por padrão, quando você cria uma nova cena no Unity, ela conterá uma câmara de jogo principal na hierarquia que inclui o componente da câmera, mas não tem as configurações abaixo aplicadas corretamente.
 
-**Namespace:** *UnityEngine.XR*<br>
+**Namespace:** *UnityEngine. XR*<br>
 **Tipo:** *XRDevice*
 
-Para uma **experiência de escala permanente** ou de escala **de** espaço, você precisará colocar o conteúdo em relação ao chão. Você se preocupa com o piso do usuário usando o estágio espacial **[,](../../../../design/coordinate-systems.md#spatial-coordinate-systems)** que representa a origem definida no nível do piso do usuário e o limite de sala opcional, configurada durante a primeira operação.
+Para uma experiência **de escala de** colocação ou de escala de **espaço**, você precisará colocar o conteúdo em relação ao andar. Você se deparar com o andar do usuário usando o **[estágio espacial](../../../../design/coordinate-systems.md#spatial-coordinate-systems)**, que representa a origem definida do nível de chão do usuário e o limite de sala opcional, configurado durante a primeira execução.
 
-Para garantir que o Unity está operando com seu sistema de coordenadas mundial no nível do chão, você pode definir e testar se o Unity está usando o tipo de espaço de acompanhamento RoomScale:
+Para garantir que o Unity esteja operando com seu sistema de coordenadas mundiais no nível de piso, você pode definir e testar se o Unity está usando o tipo de espaço de rastreamento RoomScale:
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -65,7 +65,7 @@ else
 }
 ```
 
-* Se SetTrackingSpaceType retornar true, o Unity alterna com êxito seu sistema de coordenadas mundial para acompanhar o quadro [de estágio de referência](../../../../design/coordinate-systems.md#spatial-coordinate-systems).
-* Se SetTrackingSpaceType retornar false, o Unity não poderá alternar para o quadro de estágio de referência, provavelmente porque o usuário não tiver definido um andar em seu ambiente. Embora um valor de retorno falso não seja comum, isso pode acontecer se o estágio estiver definido em uma sala diferente e o dispositivo for movido para a sala atual sem que o usuário configurar um novo estágio.
+* Se SetTrackingSpaceType retornar true, o Unity alternará com êxito seu sistema de coordenadas mundiaI para acompanhar o [quadro de referência de estágio](../../../../design/coordinate-systems.md#spatial-coordinate-systems).
+* Se SetTrackingSpaceType retornar false, o Unity não poderá alternar para o quadro de referência de estágio, provavelmente porque o usuário não configurou um andar em seu ambiente. Embora um valor falso de retorno não seja comum, isso pode acontecer se o estágio estiver configurado em uma sala diferente e o dispositivo for movido para o espaço atual sem que o usuário configure um novo estágio.
 
-Depois que o aplicativo define com êxito o tipo de espaço de acompanhamento RoomScale, o conteúdo colocado no plano y=0 será exibido no chão. A origem em 0, 0, 0 será o local específico no chão em que o usuário se juntou durante a instalação da sala, com -Z representando a direção para frente que ele estava enfrentando durante a instalação.
+Depois que o aplicativo definir o tipo de espaço de acompanhamento RoomScale com êxito, o conteúdo colocado no plano y = 0 aparecerá no chão. A origem em 0, 0, será o local específico no andar em que o usuário se deparava durante a configuração da sala, com-Z representando a direção de encaminhamento que ele estava enfrentando durante a instalação.

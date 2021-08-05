@@ -1,18 +1,18 @@
 ---
-title: Observador de malha de objeto espacial
+title: Observador da malha de objeto espacial
 description: Documentação sobre o observador de malha espacial no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: db0b2f14d0a5d65140223d3fa3f4f5324ef2ba76
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f28f8dcb320332b8ff8942ae0b442c0817d6d0b790347daa419cfc24dc0d60fc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209106"
 ---
-# <a name="spatial-object-mesh-observer"></a>Observador de malha de objeto espacial
+# <a name="spatial-object-mesh-observer"></a>Observador da malha de objeto espacial
 
 Uma maneira conveniente de fornecer dados de malha de ambiente no editor do Unity é usar a [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) classe. O *observador de malha de objeto espacial* é um provedor de dados somente editor para o [sistema de conscientização espacial](spatial-awareness-getting-started.md) que permite a importação de dados de modelo 3D para representar uma malha espacial. um uso comum do *observador de malha de objetos espaciais* é importar dados verificados por meio de um Microsoft HoloLens para testar como uma experiência se adapta a diferentes ambientes de dentro do Unity.
 

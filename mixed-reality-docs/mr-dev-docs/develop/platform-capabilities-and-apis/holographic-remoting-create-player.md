@@ -1,50 +1,50 @@
 ---
 title: Como criar um player personalizado de comunicação remota holográfica
-description: Crie um aplicativo de comunicação remota Hologaphic personalizado para exibir o conteúdo renderizado em um computador remoto para o seu HoloLens 2.
+description: crie um aplicativo de comunicação remota Hologaphic personalizado para exibir o conteúdo renderizado em um computador remoto para seu HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, comunicação remota, Holographic de comunicação remota, NuGet, manifesto de aplicativo, contexto do Player, aplicativo remoto, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 391650025398b4bdd89e30db1df7df5e3d6ab5f2
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, comunicação remota, comunicação remota de Holographic, NuGet, manifesto de aplicativo, contexto do player, aplicativo remoto, headset de realidade misturada, headset de realidade misturada do windows, headset da realidade virtual
+ms.openlocfilehash: b395f94f6c98b20f7c0c188f11a718e6da9394de5df3404e7c703558daf526f2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190159"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Como escrever um aplicativo personalizado do Holographic Remoting Player
 
 >[!IMPORTANT]
->Este documento descreve a criação de um aplicativo de player personalizado para o HoloLens 2. Os players personalizados escritos para o HoloLens 2 não são compatíveis com os aplicativos remotos escritos para o HoloLens 1. Isso implica que ambos os aplicativos devem usar o pacote NuGet versão **2. x**. x.
+>este documento descreve a criação de um aplicativo de player personalizado para o HoloLens 2. os players personalizados escritos para o HoloLens 2 não são compatíveis com os aplicativos remotos gravados para HoloLens 1. isso implica que ambos os aplicativos devem usar NuGet pacote versão **2. x. x**.
 
-Ao criar um aplicativo de Player remoto do Holographic personalizado, você pode criar um aplicativo personalizado capaz de exibir [exibições de imersão](../../design/app-views.md) em um computador remoto no seu HoloLens 2. Todo o código nesta página e projetos de trabalho podem ser encontrados no [repositório GitHub de exemplos de comunicação remota do Holographic](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+ao criar um aplicativo de player remoto do Holographic personalizado, você pode criar um aplicativo personalizado capaz de exibir [exibições de imersão](../../design/app-views.md) em um computador remoto no seu HoloLens 2. Todo o código nesta página e projetos de trabalho podem ser encontrados no [repositório GitHub de exemplos de comunicação remota do Holographic](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Um player de comunicação remota Holographic permite que seu aplicativo exiba conteúdo Holographic [renderizado](rendering.md) em um computador desktop ou um dispositivo UWP como o Xbox One com acesso a mais recursos do sistema. Um aplicativo de player de comunicação remota Holographic transmite dados de entrada para um aplicativo remoto de comunicação remota Holographic e recebe um modo de exibição de imersão como fluxo de áudio e vídeo. A conexão é feita usando Wi-Fi padrão. Para criar um aplicativo de Player, use um pacote NuGet para adicionar a comunicação remota do Holographic ao seu aplicativo UWP. Em seguida, escreva o código para manipular a conexão e exibir uma exibição de imersão. 
+um player de comunicação remota Holographic permite que seu aplicativo exiba o conteúdo Holographic [renderizado](rendering.md) em um computador desktop ou em um dispositivo UWP como o Xbox One com acesso a mais recursos do sistema. Um aplicativo de player de comunicação remota Holographic transmite dados de entrada para um aplicativo remoto de comunicação remota Holographic e recebe um modo de exibição de imersão como fluxo de áudio e vídeo. A conexão é feita usando Wi-Fi padrão. para criar um aplicativo de player, use um pacote NuGet para adicionar a comunicação remota do Holographic ao seu aplicativo UWP. Em seguida, escreva o código para manipular a conexão e exibir uma exibição de imersão. 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Um bom ponto de partida é um aplicativo UWP de trabalho baseado em DirectX que já tem como alvo a API de realidade mista do Windows. Para obter detalhes, consulte [visão geral do desenvolvimento do DirectX](../native/directx-development-overview.md). Se você não tiver um aplicativo existente e quiser começar do zero, o [modelo de projeto do C++ Holographic](../native/creating-a-holographic-directx-project.md) será um bom ponto de partida.
+um bom ponto de partida é um aplicativo UWP de trabalho baseado em DirectX que já tem como alvo a API de Windows Mixed Reality. Para obter detalhes, consulte [visão geral do desenvolvimento do DirectX](../native/directx-development-overview.md). Se você não tiver um aplicativo existente e quiser começar do zero, o [modelo de projeto do C++ Holographic](../native/creating-a-holographic-directx-project.md) será um bom ponto de partida.
 
 >[!IMPORTANT]
 >Qualquer aplicativo usando a comunicação remota do Holographic deve ser criado para usar um [apartamento](/windows/win32/com/multithreaded-apartments)multi-threaded. O uso de um [apartamento de thread único](/windows/win32/com/single-threaded-apartments) é suportado, mas levará a um desempenho abaixo do ideal e possivelmente ocorrendo durante a reprodução. Ao usar C++/WinRT [WinRT:: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) um apartamento multi-threaded é o padrão.
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>Obter o pacote NuGet de comunicação remota do Holographic
+## <a name="get-the-holographic-remoting-nuget-package"></a>obter o pacote de NuGet de comunicação remota do Holographic
 
-As etapas a seguir são necessárias para adicionar o pacote NuGet a um projeto no Visual Studio.
+as etapas a seguir são necessárias para adicionar o pacote de NuGet a um projeto no Visual Studio.
 1. Abra o projeto no Visual Studio.
-2. Clique com o botão direito do mouse no nó do projeto e selecione **gerenciar pacotes NuGet...**
+2. clique com o botão direito do mouse no nó do projeto e selecione **gerenciar pacotes de NuGet...**
 3. No painel que aparece, selecione **procurar** e, em seguida, pesquise "comunicação remota do Holographic".
 4. Selecione **Microsoft. Holographic. Remoting**, certifique-se de selecionar a versão **2. x. x** mais recente e selecione **instalar**.
 5. Se a caixa de diálogo **Visualizar** for exibida, selecione **OK**.
 6. Selecione **aceito quando o** diálogo do contrato de licença for exibido.
 
 >[!IMPORTANT]
-><a name="idl"></a>O ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` dentro do pacote NuGet contém documentação detalhada para a API exposta pela comunicação remota do Holographic.
+><a name="idl"></a>o ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` dentro do pacote de NuGet contém documentação detalhada para a API exposta pela comunicação remota do Holographic.
 
 ## <a name="modify-the-packageappxmanifest-of-the-application"></a>Modificar o Package. appxmanifest do aplicativo
 
-Para tornar o aplicativo ciente do Microsoft.Holographic.AppRemoting.dll adicionado pelo pacote NuGet, as etapas a seguir precisam ser executadas no projeto:
+para tornar o aplicativo ciente do Microsoft.Holographic.AppRemoting.dll adicionado pelo pacote NuGet, as etapas a seguir precisam ser executadas no projeto:
 
 1. No Gerenciador de Soluções clique com o botão direito do mouse no arquivo **Package. appxmanifest** e selecione **abrir com...**
 2. Selecione **Editor de XML (texto)** e selecione **OK**
@@ -92,7 +92,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 ```
 
 >[!WARNING]
->O Holographic Remoting funciona substituindo o tempo de execução do Windows Mixed Reality que faz parte do Windows com um tempo de execução específico de comunicação remota. Isso é feito durante a criação do contexto do Player. Por esse motivo, qualquer chamada em qualquer API de realidade mista do Windows antes de criar o contexto do player pode resultar em um comportamento inesperado. A abordagem recomendada é criar o contexto do Player o mais cedo possível antes da interação com qualquer API de realidade misturada. Nunca misture objetos criados ou recuperados por meio de qualquer API de realidade mista do Windows antes da chamada para ```PlayerContext::Create``` com objetos criados ou recuperados posteriormente.
+>a comunicação remota do Holographic funciona substituindo o tempo de execução de Windows Mixed Reality que faz parte do Windows com um tempo de execução específico de comunicação remota. Isso é feito durante a criação do contexto do Player. por esse motivo, qualquer chamada em qualquer API de Windows Mixed Reality antes de criar o contexto do player pode resultar em um comportamento inesperado. A abordagem recomendada é criar o contexto do Player o mais cedo possível antes da interação com qualquer API de realidade misturada. nunca misture objetos criados ou recuperados por meio de qualquer API de Windows Mixed Reality antes da chamada para ```PlayerContext::Create``` com objetos criados ou recuperados posteriormente.
 
 Em seguida, o HolographicSpace pode ser criado chamando [HolographicSpace. CreateForCoreWindow](/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow).
 
@@ -100,13 +100,13 @@ Em seguida, o HolographicSpace pode ser criado chamando [HolographicSpace. Creat
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
 ```
 
-## <a name="connect-to-the-remote-app"></a>Conectar-se ao aplicativo remoto
+## <a name="connect-to-the-remote-app"></a>Conexão ao aplicativo remoto
 
 Depois que o aplicativo de Player estiver pronto para o processamento de conteúdo, pode ser estabelecida uma conexão com o aplicativo remoto.
 
 A conexão pode ser estabelecida de uma das seguintes maneiras:
-1) O aplicativo de Player em execução no HoloLens 2 se conecta ao aplicativo remoto.
-2) O aplicativo remoto se conecta ao aplicativo de Player em execução no HoloLens 2.
+1) o aplicativo de player em execução no HoloLens 2 se conecta ao aplicativo remoto.
+2) o aplicativo remoto se conecta ao aplicativo de player em execução no HoloLens 2.
 
 Para se conectar do aplicativo Player ao aplicativo remoto, chame o ```Connect``` método no contexto do Player especificando o nome do host e a porta. A porta padrão é **8265**.
 
@@ -224,9 +224,9 @@ A partir da versão [2.1.0](holographic-remoting-version-history.md#v2.1.0) , vo
 
 A ```PlayerContext::BlitRemoteFrameTimeout``` propriedade especifica a quantidade de tempo que um quadro remoto será reutilizado se nenhum quadro remoto for recebido. 
 
-Um caso de uso comum é habilitar o tempo limite de BlitRemoteFrame para exibir uma tela em branco se nenhum novo quadro for recebido por um determinado período de tempo. Quando habilitado, o tipo de retorno do ```BlitRemoteFrame``` método também pode ser usado para alternar para um conteúdo de fallback processado localmente. 
+Um caso de uso comum é habilitar o tempo limite de BlitRemoteFrame para exibir uma tela em branco se nenhum novo quadro for recebido por um determinado período de tempo. Quando habilitado, o tipo de retorno do método também pode ser usado para alternar para ```BlitRemoteFrame``` um conteúdo de fallback renderizado localmente. 
 
-Para habilitar o tempo limite, defina o valor da propriedade como uma duração igual ou maior que 100 ms. Para desabilitar o tempo limite, defina a propriedade como duração zero. Se o tempo limite for habilitado e nenhum quadro remoto for recebido para a duração definida, o BlitRemoteFrame falhará e retornará ```Failed_RemoteFrameTooOld``` até que um novo quadro remoto seja recebido.
+Para habilitar o tempo máximo, de definido o valor da propriedade como uma duração igual ou maior que 100 ms. Para desabilitar o tempoout, de definido a propriedade como duração zero. Se o tempoout estiver habilitado e nenhum quadro remoto for recebido durante a duração definida, BlitRemoteFrame falhará e retornará até que um novo quadro ```Failed_RemoteFrameTooOld``` remoto seja recebido.
 
 ```cpp
 using namespace std::chrono_literals;
@@ -237,24 +237,24 @@ m_playerContext.BlitRemoteFrameTimeout(500ms);
 
 ## <a name="optional-get-statistics-about-the-last-remote-frame"></a>Opcional: obter estatísticas sobre o último quadro remoto
 
-Para diagnosticar problemas de desempenho ou de rede, as estatísticas sobre o último quadro remoto podem ser recuperadas por meio da ```PlayerContext::LastFrameStatistics``` propriedade. As estatísticas são atualizadas durante a chamada para [HolographicFrame::P resentusingcurrentprediction](/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction).
+Para diagnosticar problemas de desempenho ou rede, as estatísticas sobre o último quadro remoto podem ser recuperadas por meio da ```PlayerContext::LastFrameStatistics``` propriedade . As estatísticas são atualizadas durante a chamada para [HolographicFrame::P resentUsingCurrentPrediction.](/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)
 
 ```cpp
 // Get statistics for the last presented frame.
 winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m_playerContext.LastFrameStatistics();
 ```
 
-Para obter mais informações, consulte a ```PlayerFrameStatistics``` documentação no ```Microsoft.Holographic.AppRemoting.idl``` [arquivo](#idl).
+Para obter mais informações, consulte ```PlayerFrameStatistics``` a documentação no ```Microsoft.Holographic.AppRemoting.idl``` [arquivo](#idl).
 
-## <a name="optional-custom-data-channels"></a>Opcional: canais de dados personalizados
+## <a name="optional-custom-data-channels"></a>Opcional: Canais de dados personalizados
 
-Os canais de dados personalizados podem ser usados para enviar dados do usuário pela conexão remota já estabelecida. Consulte [canais de dados personalizados](holographic-remoting-custom-data-channels.md) para obter mais informações.
+Os canais de dados personalizados podem ser usados para enviar dados do usuário pela conexão de comunicação de comunicação remo já estabelecida. Consulte [canais de dados personalizados](holographic-remoting-custom-data-channels.md) para obter mais informações.
 
 ## <a name="see-also"></a>Consulte Também
-* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs de realidade mista do Windows](holographic-remoting-create-remote-wmr.md)
-* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
+* [Escrevendo um aplicativo remoto de remoção holográfica usando APIs Windows Mixed Reality holográficas](holographic-remoting-create-remote-wmr.md)
+* [Escrevendo um aplicativo remoto de remoção holográfica usando APIs OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Canais de dados personalizados de comunicação remota holográfica](holographic-remoting-custom-data-channels.md)
 * [Como estabelecer uma conexão segura com o Holographic Remoting](holographic-remoting-secure-connection.md)
-* [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
+* [Solução de problemas e limitações de remoção holográfica](holographic-remoting-troubleshooting.md)
 * [Termos de licença de software de comunicação remota holográfica](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

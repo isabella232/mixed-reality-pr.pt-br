@@ -1,28 +1,28 @@
 ---
-ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ec1246085989b4b157504e9b8551694d6116e6f08789fa669200e5425ef75cc6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187182"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
-A hierarquia é descrita por `EHandKeypoint` enum:
+A hierarquia é descrita `EHandKeypoint` por enum:
 
-![Imagem de opções do Bluprint keypoint](../images/hand-keypoint-bp.png)
+![Imagem das opções de impressão de ponto de tecla de mão](../images/hand-keypoint-bp.png)
 
-Você pode obter todos esses dados de uma mão do usuário usando a função **obter dados do controlador de movimento** . Essa função retorna uma estrutura **XRMotionControllerData** . Veja abaixo um exemplo de script de Blueprint que analisa a estrutura XRMotionControllerData para obter locais conjuntos em conjunto e desenha um sistema de coordenadas de depuração em cada local de cada conjunto.
+Você pode obter todos esses dados das mãos de um usuário usando a **função Obter Dados do Controlador de** Movimento. Essa função retorna uma **estrutura XRMotionControllerData.** Abaixo está um script de blueprint de exemplo que analisado a estrutura XRMotionControllerData para obter localizações conjuntas de mão e desenha um sistema de coordenadas de depuração no local de cada junção.
 
-![Plano gráfico da função obter dados olhar conectados ao rastreamento de linha por função de canal](../images/unreal-hand-tracking-img-03.png)
+![Blueprint da função get gaze data conectado à função de rastreamento de linha por canal](../images/unreal-hand-tracking-img-03.png)
 
-É importante verificar se a estrutura é válida e se ela é uma mão. Caso contrário, você pode obter um comportamento indefinido no acesso a posições, rotações e matrizes de raios.
+É importante verificar se a estrutura é válida e se ela é uma mão. Caso contrário, você poderá obter um comportamento indefinido no acesso a posições, rotações e matrizes de rádio.
 
 # <a name="425"></a>[4.25](#tab/425)
 
-A `EWMRHandKeypoint` Enumeração descreve a hierarquia do Bone da mão. Você pode encontrar cada ponto de extremidade à mão listado em seus planos gráficos:
+A `EWMRHandKeypoint` enum descreve a hierarquia de hierarquia da mão. Você pode encontrar cada ponto de chave de mão listado em seus Blueprints:
 
-![Mão keypoint BP](../images/hand-keypoint-bp.png)
+![Bp do ponto de chave de mão](../images/hand-keypoint-bp.png)
 
 A enumeração C++ completa está listada abaixo:
 ```cpp
@@ -57,17 +57,17 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-Você pode encontrar os valores numéricos para cada caso de enum na tabela [Windows. percepção. People. HandJointKind](/uwp/api/windows.perception.people.handjointkind) .
+Você pode encontrar os valores numéricos para cada caso de enum no [Windows. Tabela Perception.People.HandJointKind.](/uwp/api/windows.perception.people.handjointkind)
 
-### <a name="supporting-hand-tracking"></a>Acompanhamento de suporte à mão
+### <a name="supporting-hand-tracking"></a>Suporte ao acompanhamento de mão
 
-Você pode usar o rastreamento manual em plantas adicionando **suporte ao rastreamento** à mão **> realidade mista do Windows**:
+Você pode usar o acompanhamento de mão em Blueprints adicionando **Suporte ao acompanhamento de mão** do controle de mão **> Windows Mixed Reality**:
 
-![Controle à mão BP](../images/unreal/hand-tracking-bp.png)
+![BP de acompanhamento de mão](../images/unreal/hand-tracking-bp.png)
 
-Essa função retornará `true` se o controle à mão tiver suporte no dispositivo e `false` se o rastreamento à mão não estiver disponível.
+Essa função retornará se o controle de mão tiver suporte no dispositivo e se o controle de `true` `false` mão não estiver disponível.
 
-![Dá suporte ao controle à mão BP](../images/unreal/supports-hand-tracking-bp.png)
+![Dá suporte à BP de acompanhamento de mão](../images/unreal/supports-hand-tracking-bp.png)
 
 C++:
 
@@ -77,21 +77,21 @@ Inclua `WindowsMixedRealityHandTrackingFunctionLibrary.h`.
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::SupportsHandTracking()
 ```
 
-### <a name="getting-hand-tracking"></a>Obtendo controle à mão
+### <a name="getting-hand-tracking"></a>Obter acompanhamento de mão
 
-Você pode usar **GetHandJointTransform** para retornar dados espaciais da mão. Os dados são atualizados a cada quadro, mas se você estiver dentro de um quadro, os valores retornados serão armazenados em cache. Não é recomendável ter muita lógica nessa função por motivos de desempenho.
+Você pode usar **GetHandJointTransform** para retornar dados espaciais da mão. Os dados atualiza cada quadro, mas se você estiver dentro de um quadro, os valores retornados serão armazenados em cache. Não é recomendável ter uma lógica pesada nessa função por motivos de desempenho.
 
-![Obter transformação conjunta de entrega](../images/unreal/get-hand-joint-transform.png)
+![Obter transformação conjunta de mão](../images/unreal/get-hand-joint-transform.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransform(EControllerHand Hand, EWMRHandKeypoint Keypoint, FTransform& OutTransform, float& OutRadius)
 ```
 
-Aqui está uma análise dos parâmetros de função do GetHandJointTransform:
+Aqui está um detalhamento dos parâmetros de função de GetHandJointTransform:
 
-* A **mão** – pode ser os usuários à esquerda ou à direita.
-* **Ponto de extremidade** – o Bone da mão.
-* **Transformação** – coordenadas e orientação da base do Bone. Você pode solicitar a base do próximo Bone para obter os dados de transformação para o final de um Bone. Um Bone de dica especial dá ao fim do distal.
-* * * RADIUS — raio da base do Bone.
-* * * Valor de retorno — true se o Bone for rastreado neste quadro, false se o Bone não for acompanhado.
+* **Mão** – podem ser os usuários à esquerda ou à direita.
+* **Ponto de** chave – o ponto da mão.
+* **Transformação** – coordenadas e orientação da base do 11. Você pode solicitar a base do próximo agente para obter os dados de transformação para o final de um dia. Um tipo especial fornece o fim de sua vida.
+* **Raio— raio da base do pau.
+* **Valor de Retorno – true se o quadro for rastreado, false se o valor não for rastreado.

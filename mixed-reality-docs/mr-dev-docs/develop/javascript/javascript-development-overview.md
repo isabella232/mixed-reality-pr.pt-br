@@ -5,13 +5,13 @@ author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
-keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, Windows Mixed Reality, Web VR, Web XR, Web Mr, Web ar, 360, 360 vídeo, 360 vídeos, 360 Photo, 360 fotos, 360 conteúdo, imersão Web, imersão-Web, IW, immersiveweb
-ms.openlocfilehash: 311241d9dec6f5d086a45766c040b1b2b9eb4128
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 vídeo, 360 vídeos, 360 photo, 360 fotos, 360 conteúdo, imersão web, imersão-web, IW, immersiveweb
+ms.openlocfilehash: de6314b5651740eca23a9078d4b05e1d92344d1742ea433d7b924cbde4457b8c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210486"
 ---
 # <a name="javascript-development-overview"></a>Visão geral do desenvolvimento em JavaScript
 
@@ -19,7 +19,7 @@ O JavaScript é uma das linguagens de programação mais populares do mundo! É 
 
 ## <a name="mixed-reality-applications-on-the-web"></a>Aplicativos de realidade misturada na Web
 
-Os recursos misturados da realidade estão disponíveis na Web pelo uso de [WebXR](webxr-overview.md). Você pode ver o VR (realidade virtual) e o conteúdo da Reality (AR) em um navegador compatível com WebXR habilitado, sem instalar nenhum software ou plug-ins adicionais. Você pode usar esse mesmo navegador com um dispositivo físico como o HoloLens 2. Confira nossa documentação do [WebXR](webxr-overview.md) para obter mais detalhes.
+Os recursos misturados da realidade estão disponíveis na Web pelo uso de [WebXR](webxr-overview.md). Você pode ver o VR (realidade virtual) e o conteúdo da Reality (AR) em um navegador compatível com WebXR habilitado, sem instalar nenhum software ou plug-ins adicionais. você pode usar esse mesmo navegador com um dispositivo físico como o HoloLens 2. Confira nossa documentação do [WebXR](webxr-overview.md) para obter mais detalhes.
 
 > [!NOTE]
 > O **WebVR** foi preterido e não está disponível nos navegadores atuais, portanto, ele não deve ser usado para nenhum novo desenvolvimento. Você precisará migrar todas as implementações de **WebVR** existentes para o **WebXR**.
@@ -50,7 +50,7 @@ Saiba como começar a usar nossos tutoriais.
 * [Immersiveweb.dev](https://immersiveweb.dev/)
 * [Exemplos de WebXR](https://immersive-web.github.io/webxr-samples/)
 * [Usando Babylon.js para criar experiências de WebXR](https://doc.babylonjs.com/how_to/introduction_to_webxr)
-* [Realidade mista do Windows e o novo Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Windows Mixed Reality e o novo Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [GitHub W3C da Web de imersão](https://github.com/immersive-web)
 * [API WebGL](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [API de gamepad](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) e [extensões de gamepad](https://w3c.github.io/gamepad/extensions.html)

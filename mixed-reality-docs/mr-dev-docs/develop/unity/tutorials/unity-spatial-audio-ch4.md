@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens2, áudio espacial, MRTK, kit de ferramentas de realidade misturada, UWP, Windows 10, HRTF, função de transferência relacionada à cabeça, reverb, Microsoft Spatializer
-ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 2599e2f360afa4518102ab9535608e9d378264ae87f84a36823d460f934d6a05
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213204"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. Habilitando e desabilitando a espacialização em tempo de executar
 
 ## <a name="overview"></a>Visão geral
 
-Neste tutorial, você aprenderá a Habilitar e desabilitar a espacialização em tempo de executar e testá-la no editor do Unity e no HoloLens 2.
+Neste tutorial, você aprenderá a Habilitar e desabilitar a espacialização em tempo de executar e testá-la no editor do Unity e HoloLens 2.
 
 ## <a name="objectives"></a>Objetivos
 
@@ -26,11 +26,11 @@ Neste tutorial, você aprenderá a Habilitar e desabilitar a espacialização em
 
 ## <a name="add-spatialization-control-script"></a>Adicionar script de controle de espacialização
 
- Clique com o botão direito do mouse na janela Projeto e escolha Criar Script C# para criar um novo script C#, insira um nome adequado para o script, por  >   exemplo, _SpatializeOnOff:_
+ Clique com o botão direito do mouse na janela Project e escolha Criar Script C# para criar um script C#, insira um nome adequado para o script, por  >   exemplo, _SpatializeOnOff:_
 
 ![Criar script](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
-Clique duas vezes no script na janela Projeto para abri-lo Visual Studio. Substitua o conteúdo do script padrão pelo seguinte:
+Clique duas vezes no script na janela Project para abri-lo Visual Studio. Substitua o conteúdo do script padrão pelo seguinte:
 
 > [!NOTE]
 > Várias linhas do script são comentadas. Essas linhas não serão comentados no [Próximo Capítulo: Usando o reverb para adicionar distância ao áudio espacial.](unity-spatial-audio-ch5.md)

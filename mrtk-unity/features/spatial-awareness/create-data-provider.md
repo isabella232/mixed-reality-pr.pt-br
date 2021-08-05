@@ -1,16 +1,16 @@
 ---
-title: Criar Provedor de Dados de conscientização espacial
+title: criar Provedor de Dados de conscientização espacial
 description: Descreve como criar provedores de dados personalizados no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 04a0cdbd18f666b6a99c120eb28966234cc8c92d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 05186c418a7b0b7b143abc58be6a6afb64cb69f5a1c90c73ed516d51c2a5d8ea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188840"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>Criando um provedor de dados do sistema de conscientização espacial
 
@@ -26,7 +26,7 @@ Este artigo descreve como criar [provedores de dados personalizados](../../archi
 Os provedores de dados podem ser distribuídos de duas maneiras:
 
 1. Complementos de terceiros
-1. Parte do kit de ferramentas do Microsoft Mixed Reality
+1. Parte da realidade misturada da Microsoft Toolkit
 
 O processo de aprovação para envios de novos provedores de dados para o MRTK variará de acordo com o caso e será comunicado no momento da proposta inicial. As propostas podem ser enviadas criando um novo [problema de tipo de *solicitação de recurso*](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
@@ -39,7 +39,7 @@ Os provedores de dados precisam ter um namespace para atenuar colisões de nomes
 - Nome da empresa que produz o complemento
 - Área do recurso
 
-Por exemplo, um provedor de dados de conscientização espacial criado e enviado pela empresa contoso pode ser *"contoso. MixedReality. Toolkit. SpatialAwareness"*.
+Por exemplo, um provedor de dados de conscientização espacial criado e enviado pela empresa contoso pode ser *"contoso. MixedReality. Toolkit. SpatialAwareness "*.
 
 **Estrutura de pastas**
 
@@ -47,27 +47,27 @@ Por exemplo, um provedor de dados de conscientização espacial criado e enviado
 
 ![Estrutura de pasta de exemplo](../images/spatial-awareness/ExampleProviderFolderStructure.png)
 
-Onde a *pasta ContosoSpatialAwareness* contém a implementação do provedor de dados, a pasta *Editor* contém o inspetor (e qualquer outro código específico do editor do Unity) e a pasta *Perfis* contém um ou mais objetos de script de perfil pré-criados.
+Onde a pasta *ContosoSpatialAwareness* contém a implementação do provedor de dados, a pasta do *Editor* contém o Inspetor (e qualquer outro código específico do editor do Unity) e a pasta *perfis* contém um ou mais objetos programáveis por script predefinidos.
 
-### <a name="mrtk-submission"></a>Envio do MRTK
+### <a name="mrtk-submission"></a>Envio de MRTK
 
 **Namespace**
 
-Se um provedor de dados do sistema de reconhecimento espacial estiver sendo enviado para o repositório do Kit de Ferramentas de Realidade Misturada [,](https://github.com/Microsoft/MixedRealityToolkit-Unity)o **namespace** deverá começar com Microsoft.MixedReality.Toolkit (por ex. *Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver*)
+se um provedor de dados do sistema de conscientização espacial estiver sendo enviado para a [realidade misturada Toolkit repositório](https://github.com/Microsoft/MixedRealityToolkit-Unity), o namespace **deverá** começar com Microsoft. MixedReality. Toolkit (ex: *Microsoft. MixedReality. Toolkit. SpatialObjectMeshObserver*)
 
- e o código deve estar localizado em uma pasta abaixo do MRTK/Provedores (por ex. *MRTK/Providers/ObjectMeshObserver*).
+ e o código deve estar localizado em uma pasta sob MRTK/Providers (por exemplo: *MRTK/Providers/ObjectMeshObserver*).
 
 **Estrutura de pastas**
 
-Todo o código deve estar localizado em uma pasta abaixo do MRTK/Provedores (por ex. MRTK/Providers/ObjectMeshObserver).
+Todo o código deve estar localizado em uma pasta abaixo de MRTK/Providers (por exemplo: MRTK/Providers/ObjectMeshObserver).
 
 ## <a name="define-the-spatial-data-object"></a>Definir o objeto de dados espaciais
 
-A primeira etapa na criação de um provedor de dados de Reconhecimento Espacial é determinar o tipo de dados (por ex. malhas ou planos) que ele fornecerá aos aplicativos.
+A primeira etapa na criação de um provedor de dados de conscientização espacial é determinar o tipo de dados (por exemplo, malhas ou aviões) que ele fornecerá aos aplicativos.
 
-Todos os objetos de dados espaciais devem implementar a [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject) interface .
+Todos os objetos de dados espaciais devem implementar a [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject) interface.
 
-A base do Kit de Ferramentas de Realidade Misturada fornece os seguintes objetos espaciais que podem ser usados ou estendidos em novos provedores de dados.
+a realidade misturada Toolkit foundation fornece os seguintes objetos espaciais que podem ser usados ou estendidos em novos provedores de dados.
 
 - [`BaseSpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
 - [`SpatialAwarenessMeshObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
@@ -75,9 +75,9 @@ A base do Kit de Ferramentas de Realidade Misturada fornece os seguintes objetos
 
 ## <a name="implement-the-data-provider"></a>Implementar o provedor de dados
 
-### <a name="specify-interface-andor-base-class-inheritance"></a>Especificar a herança da interface e/ou da classe base
+### <a name="specify-interface-andor-base-class-inheritance"></a>Especificar a interface e/ou a herança de classe base
 
-Todos os provedores de dados de Reconhecimento Espacial devem implementar a interface , que especifica a funcionalidade mínima [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) exigida pelo sistema de Reconhecimento Espacial. A base do MRTK inclui [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) a classe que fornece uma implementação padrão dessa funcionalidade necessária.
+Todos os provedores de dados de reconhecimento espacial devem implementar a [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface, que especifica a funcionalidade mínima exigida pelo sistema de conscientização espacial. O MRTK Foundation inclui a [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) classe que fornece uma implementação padrão dessa funcionalidade necessária.
 
 ```c#
 public class SpatialObjectMeshObserver :
@@ -88,11 +88,11 @@ public class SpatialObjectMeshObserver :
 ```
 
 > [!NOTE]
-> A interface é usada pela classe para indicar que ela dá suporte à funcionalidade [`IMixedRealityCapabilityCheck`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck) [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) SpatialAwarenessMesh.
+> A [`IMixedRealityCapabilityCheck`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck) interface é usada pela [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) classe para indicar que ela fornece suporte para o recurso SpatialAwarenessMesh.
 
 #### <a name="apply-the-mixedrealitydataprovider-attribute"></a>Aplicar o atributo MixedRealityDataProvider
 
-Uma etapa importante na criação de um provedor de dados de Reconhecimento Espacial é aplicar [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) o atributo à classe . Esta etapa permite definir o perfil padrão e as plataformas para o provedor de dados, quando selecionado no perfil de Reconhecimento Espacial, bem como Nome, caminho da pasta e muito mais.
+Uma etapa fundamental na criação de um provedor de dados de conscientização espacial é aplicar o [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) atributo à classe. Esta etapa permite definir o perfil padrão e as plataformas para o provedor de dados, quando selecionado no perfil de conscientização espacial, bem como nome, caminho da pasta e muito mais.
 
 ```c#
 [MixedRealityDataProvider(
@@ -215,7 +215,7 @@ O desempenho é essencial em aplicativos de realidade misturada. Cada componente
 
 ## <a name="create-the-profile-and-inspector"></a>Criar o perfil e o Inspetor
 
-No kit de ferramentas de realidade misturada, os provedores de dados são configurados usando [perfis](../profiles/profiles.md).
+na realidade misturada Toolkit, os provedores de dados são configurados usando [perfis](../profiles/profiles.md).
 
 ### <a name="define-the-profile"></a>Definir o perfil
 
@@ -241,7 +241,7 @@ public class SpatialObjectMeshObserverProfile : MixedRealitySpatialAwarenessMesh
 }
 ```
 
-O `CreateAssetMenu` atributo pode ser aplicado à classe de perfil para permitir que os clientes criem uma instância de perfil usando o menu **Create**  >  **assets**  >  **Mixed Realm**  >  **Profiles** do kit de ferramentas.
+o `CreateAssetMenu` atributo pode ser aplicado à classe de perfil para permitir que os clientes criem uma instância de perfil usando o menu **create**  >  **assets**  >  **Mixed reality Toolkit**  >  **profiles** .
 
 ### <a name="implement-the-inspector"></a>Implementar o Inspetor
 
@@ -257,33 +257,33 @@ public class SpatialObjectMeshObserverProfileInspector : BaseMixedRealityToolkit
 
 ## <a name="create-assembly-definitions"></a>Criar definição (ões) de assembly
 
-O kit de ferramentas de realidade misturada usa arquivos de definição de assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) para especificar dependências entre componentes, bem como para auxiliar o Unity na redução do tempo de compilação.
+a realidade misturada Toolkit usa arquivos de definição de assembly ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) para especificar dependências entre componentes, bem como para auxiliar o Unity na redução do tempo de compilação.
 
 É recomendável que os arquivos de definição de assembly sejam criados para todos os provedores de dados e seus componentes do editor.
 
 Usando a [estrutura de pastas](#namespace-and-folder-structure) no exemplo anterior, haveria dois arquivos. asmdef para o provedor de dados ContosoSpatialAwareness.
 
-A primeira definição do assembly é para o provedor de dados. Para este exemplo, ele será chamado de ContosoSpatialAwareness e estará localizado na pasta *ContosoSpatialAwareness* do exemplo. Essa definição de assembly deve especificar uma dependência no Microsoft.MixedReality.Toolkit e em todos os outros assemblies dos quais ela depende.
+A primeira definição do assembly é para o provedor de dados. Para este exemplo, ele será chamado de ContosoSpatialAwareness e estará localizado na pasta *ContosoSpatialAwareness* do exemplo. Esta definição de assembly deve especificar uma dependência em Microsoft. MixedReality. Toolkit e quaisquer outros assemblies sobre os quais depende.
 
-A definição de assembly ContosoInputEditor especificará o inspetor de perfil e qualquer código específico do editor. Esse arquivo deve estar localizado na pasta raiz do código do editor. Neste exemplo, o arquivo estará localizado na *pasta ContosoSpatialAwareness\Editor.* Essa definição de assembly conterá uma referência ao assembly ContosoSpatialAwareness, bem como:
+A definição do assembly ContosoInputEditor especificará o Inspetor de perfil e qualquer código específico do editor. Esse arquivo deve estar localizado na pasta raiz do código do editor. Neste exemplo, o arquivo estará localizado na pasta *ContosoSpatialAwareness\Editor* . Essa definição de assembly conterá uma referência ao assembly ContosoSpatialAwareness, bem como:
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Editor.Inspectors
-- Microsoft.MixedReality.Toolkit.Editor.Utilities
+- Microsoft. MixedReality. Toolkit
+- Microsoft. MixedReality. Toolkit. Editor. inspetores
+- Microsoft. MixedReality. Toolkit. Editor. Utilities
 
 ## <a name="register-the-data-provider"></a>Registrar o provedor de dados
 
-Depois de criado, o provedor de dados pode ser registrado com o sistema de Reconhecimento Espacial a ser usado no aplicativo.
+Depois de criado, o provedor de dados pode ser registrado com o sistema de reconhecimento espacial a ser usado no aplicativo.
 
-![Selecionando o observador de malha de objeto espacial](../images/spatial-awareness/SelectObjectObserver.png)
+![Selecionando o observador de malha de objetos espaciais](../images/spatial-awareness/SelectObjectObserver.png)
 
 ## <a name="packaging-and-distribution"></a>Empacotamento e distribuição
 
-Provedores de dados distribuídos como componentes de terceiros têm os detalhes específicos de empacotamento e distribuição deixados à preferência do desenvolvedor. Provavelmente, a solução mais comum será gerar um .unitypackage e distribuir por meio do Asset Store do Unity.
+Os provedores de dados que são distribuídos como componentes de terceiros têm os detalhes específicos de empacotamento e distribuição deixados para a preferência do desenvolvedor. Provavelmente, a solução mais comum será gerar um. unitypackage e distribuir por meio do repositório de ativos do Unity.
 
-Se um provedor de dados for enviado e aceito como parte do pacote do Microsoft Mixed Reality Toolkit, a equipe do Microsoft MRTK o empacota e distribui como parte das ofertas do MRTK.
+se um provedor de dados for enviado e aceito como parte do pacote de Toolkit da realidade misturada da microsoft, a equipe do microsoft MRTK irá empacotá-lo e distribuí-lo como parte das ofertas do MRTK.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sistema de conscientização espacial](spatial-awareness-getting-started.md)
 - [`IMixedRealitySpatialAwarenessObject` Interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)

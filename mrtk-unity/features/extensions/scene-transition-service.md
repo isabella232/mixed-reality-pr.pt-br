@@ -1,18 +1,18 @@
 ---
-title: Serviço de transição de cena
+title: Serviço de transição de cenas
 description: documentação da Transição de Cena no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, SceneTransition,
-ms.openlocfilehash: b645012a055f693fdac794b79e24fd20154fdb65
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a66922f1c9d58018ee856c3054aa71f5213ec690c5f4780b32fd735eb59f2ac7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189228"
 ---
-# <a name="scene-transition-service"></a>Serviço de transição de cena
+# <a name="scene-transition-service"></a>Serviço de transição de cenas
 
 Essa extensão simplifica o negócio de esbotão de uma cena, exibição de um indicador de progresso, carregamento de uma cena e esbotão de volta.
 
@@ -43,8 +43,8 @@ Controla quais câmeras terão um efeito de esmaeamento aplicado a elas. Essa co
 Configuração | Câmeras direcionadas
 --- | --- | ---
 Principal | Aplica o efeito de esmaecer à câmera principal.
-Interface do usuário | Aplica o efeito de esmaecer às câmeras na camada da interface do usuário. (Não afeta a interface do usuário de sobreposição)
-Todos | Aplica-se a câmeras principais e de interface do usuário.
+UI | Aplica o efeito de esmaecer às câmeras na camada da interface do usuário. (Não afeta a interface do usuário de sobreposição)
+Tudo | Aplica-se a câmeras principais e de interface do usuário.
 Personalizado | Aplica-se a um conjunto personalizado de câmeras fornecido por meio de `SetCustomFadeTargetCameras`
 
 ### <a name="fade-out-time--fade-in-time"></a>Esmaeça o tempo/esmaeça no tempo

@@ -1,48 +1,48 @@
 ---
-title: Estudo de caso-lições da cozinha do Lowe
-description: A equipe do HoloLens deseja compartilhar algumas das práticas recomendadas que foram derivadas do projeto HoloLens do Lowe.
+title: Estudo de caso – Lições da cozinha do Lowe
+description: A HoloLens de segurança deseja compartilhar algumas das práticas recomendadas que foram derivadas do projeto de HoloLens Lowe.
 author: brandonbray
 ms.author: kevincol
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade do Windows Mixed, Lowe, HoloLens, cozinha, estudo de caso
-ms.openlocfilehash: a6bd7a09f77fb71dc23dc640525ff250abac8f12
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Lowe, HoloLens, cozinha, estudo de caso
+ms.openlocfilehash: f2428a23e07d62156d38f43dfd5d6ddda20d57340d17908cf326ca9f37d223b9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210386"
 ---
-# <a name="case-study---lessons-from-the-lowes-kitchen"></a>Estudo de caso-lições da cozinha do Lowe
+# <a name="case-study---lessons-from-the-lowes-kitchen"></a>Estudo de caso – Lições da cozinha do Lowe
 
-A equipe do HoloLens deseja compartilhar algumas das práticas recomendadas que foram derivadas do projeto HoloLens do Lowe. Veja a seguir um vídeo do HoloLens projetado do Lowe na palestra Satya de 2016 Ignite.
+A HoloLens de segurança deseja compartilhar algumas das práticas recomendadas que foram derivadas do projeto de HoloLens Lowe. Veja abaixo um vídeo da lista de HoloLens lowe projetada demonstrada na nota de teclas do Ignite de 2016 da Satya.
 <br>
 >[!VIDEO https://www.youtube.com/embed/gC_4JxF0e_k]
 
-## <a name="lowes-hololens-best-practices"></a>Práticas recomendadas de HoloLens do Lowe
+## <a name="lowes-hololens-best-practices"></a>Práticas recomendadas de HoloLens Lowe
 
-Os dois vídeos abrangem as práticas recomendadas que foram derivadas do piloto do HoloLens da Lowe que esteve em duas lojas de Lowe desde abril de 2016. Os principais tópicos são:
+Os dois vídeos abrangem as práticas recomendadas que foram derivadas do piloto de HoloLens Lowe que está em duas lojas do Lowe desde abril de 2016. Os principais tópicos são:
 * Maximizar o desempenho de um dispositivo móvel
-* Criar métodos UX com um quadro Holographic completo (2º palestra)
-* Alinhamento de precisão (2ª palestra)
-* Experiências de Holographic compartilhadas (2ª palestra)
-* Interagindo com clientes (2º palestra)
+* Criar métodos de UX com um quadro holográfico completo (2ª conversa)
+* Alinhamento de precisão (2ª conversa)
+* Experiências holográficas compartilhadas (2ª palestra)
+* Interagindo com clientes (2ª conversa)
 
 ## <a name="video-1"></a>Vídeo 1
 
-**Maximizar o desempenho de um dispositivo móvel** O HoloLens é um dispositivo sem compartilhamento de Internet com todo o processamento em andamento no dispositivo. Isso requer uma plataforma móvel e requer uma mentalidade semelhante à criação de aplicativos móveis. A Microsoft recomenda que seu aplicativo do HoloLens Mantenha o 60FPS para fornecer uma experiência deliciosa para seus usuários. Ter baixas FPS pode resultar em hologramas instáveis.
+**Maximizar o desempenho de um dispositivo** HoloLens dispositivo móvel é um dispositivo não conectado com todo o processamento que ocorre no dispositivo. Isso requer uma plataforma móvel e requer uma mentalidade semelhante à criação de aplicativos móveis. A Microsoft recomenda que seu aplicativo HoloLens mantenha 60FPS para fornecer uma experiência incrível para seus usuários. Ter FPS baixo pode resultar em hologramas instável.
 
-Algumas das coisas mais importantes a serem examinadas ao desenvolver no HoloLens são a otimização de ativos/Decimation, usando sombreadores personalizados (disponíveis gratuitamente no [Kit de ferramentas do hololens](https://github.com/Microsoft/HoloToolkit-Unity)). Outra consideração importante é medir a taxa de quadros desde o início do seu projeto. Dependendo do projeto, a ordem de exibição de seus ativos também pode ser um grande colaborador
+Algumas das coisas mais importantes a se ver ao desenvolver no HoloLens é a otimização/acimação de ativos, usando sombreadores personalizados (disponíveis gratuitamente no [HoloLens Toolkit](https://github.com/Microsoft/HoloToolkit-Unity)). Outra consideração importante é medir a taxa de quadros desde o início do projeto. Dependendo do projeto, a ordem de exibição de seus ativos também pode ser um grande colaborador
 <br>
 >[!VIDEO https://www.youtube.com/embed/o0QIPwgiP9A]
 
 ## <a name="video-2"></a>Vídeo 2
 
-**Criar métodos UX com um quadro Holographic completo** É importante entender o posicionamento de hologramas em um mundo físico. Com o Lowe, falamos sobre diferentes métodos de UX que ajudam os usuários a experimentar os hologramas de perto e ainda ver o ambiente maior de hologramas.
+**Criar métodos de UX com um quadro holográfico completo** É importante entender o posicionamento dos hologramas em um mundo físico. Com o Lowe, falamos sobre diferentes métodos de experiência do usuário que ajudam os usuários a experimentar hologramas de perto enquanto ainda estão vendo o ambiente maior dos hologramas.
 
-**Alinhamento de precisão** Para o cenário do Lowe, era fundamental para a experiência ter o alinhamento da precisão dos hologramas com a cozinha física. Discutimos técnicas ajuda a garantir uma experiência que convença os usuários de que seu ambiente físico mudou.
+**Alinhamento de precisão** Para o cenário do Lowe, foi fundamental para a experiência ter alinhamento de precisão dos hologramas para a cozinha física. Discutimos técnicas que ajudam a garantir uma experiência que desmente os usuários de que seu ambiente físico foi alterado.
 
-**Experiências de Holographic compartilhadas** Os atestados são a principal maneira pela qual a experiência do Lowe é consumida. Uma pessoa pode alterar o balcão e a outra pessoa verá as alterações. Chamamos isso de "experiências compartilhadas".
+**Experiências holográficas compartilhadas** Os casais são a principal maneira como a experiência do Lowe é consumida. Uma pessoa pode alterar a contrapeso e a outra pessoa verá as alterações. Chamamos isso de "experiências compartilhadas".
 
 **Interagindo com clientes** Os designers de Lowe não estão usando um HoloLens, mas precisam ver o que os clientes estão vendo. Mostramos como capturar o que o cliente está vendo em um aplicativo UWP.
 <br>

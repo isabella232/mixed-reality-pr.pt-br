@@ -1,17 +1,17 @@
 ---
 title: Criar conteúdo para exibição holográfica
-description: Saiba mais sobre as diretrizes de design e as práticas recomendadas para a exibição do Holographic em dispositivos HoloLens.
+description: saiba mais sobre as diretrizes de design e as práticas recomendadas para a exibição do holographic em dispositivos HoloLens.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Design de interface do usuário, exibição de Holographic, design de conteúdo, tema escuro, tema claro, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, design, pixels
-ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: design de interface do usuário, exibição de holographic, design de conteúdo, tema escuro, tema claro, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit, design, pixels
+ms.openlocfilehash: 1fab172f6d737b25e95b10a6dded2a5ab805e0086de8d0fae40c5a6a4ef7d805
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212928"
 ---
 # <a name="designing-content-for-holographic-display"></a>Criar conteúdo para exibição holográfica
 
@@ -23,7 +23,7 @@ Ao criar conteúdo para exibições do Holographic, há vários elementos que vo
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Desafios com uma cor brilhante em uma grande superfície 
 
-Com base em nossa pesquisa e teste de experiência de HoloLens, descobrimos que o uso de cores brilhantes em uma grande área da exibição pode causar vários problemas: 
+com base em nossa HoloLens experiência de pesquisa e teste, descobrimos que o uso de cores brilhantes em uma grande área da exibição pode causar vários problemas: 
 
 **Fadiga de olho** 
 
@@ -51,14 +51,14 @@ Usando o esquema de cores escuro, você pode minimizar os olhos fadiga e melhora
 
 **Usar seminegrito ou espessura de fonte em negrito**
 
-O HoloLens permite que sua experiência mostre um lindo texto de alta resolução. No entanto, é recomendável que você evite pesos de fontes finas, como luz ou semileve, porque os traços verticais podem se tremular em tamanho de fonte pequeno. 
+HoloLens permite que sua experiência mostre um excelente texto de alta resolução. No entanto, é recomendável que você evite pesos de fontes finas, como luz ou semileve, porque os traços verticais podem se tremular em tamanho de fonte pequeno. 
 
 ![A espessura da fonte em negrito ou seminegrito (painel superior) melhora a ](images/color_font_examples.jpg)
  *espessura da fonte de negrito ou seminegrito (painel superior) melhora a legibilidade*
 
 **Usar o material de HolographicBackplate do MRTK**
 
-O material HolographicBackplate é aplicado a vários painéis de interface do usuário no Shell do HoloLens. Um de seus recursos é um efeito iridescence que é visível para os usuários à medida que eles alternam sua posição com base no painel. A cor da chapa traseira muda sutilmente em um espectro predefinido, criando um efeito visual envolvente e dinâmico sem interferir na legibilidade do conteúdo. Essa mudança sutil na cor também serve para compensar as irregularidades de cores secundárias. 
+o material de HolographicBackplate é aplicado a vários painéis de interface do usuário no shell de HoloLens. Um de seus recursos é um efeito iridescence que é visível para os usuários à medida que eles alternam sua posição com base no painel. A cor da chapa traseira muda sutilmente em um espectro predefinido, criando um efeito visual envolvente e dinâmico sem interferir na legibilidade do conteúdo. Essa mudança sutil na cor também serve para compensar as irregularidades de cores secundárias. 
 
 
 ## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Desafios com a placa traseira da interface do usuário Transparent ou translúcida 
@@ -99,7 +99,7 @@ Se o seu projeto deve usar objetos transparentes, tente minimizar o número de p
 
 <br/>
 
-## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>Exemplos escuros da interface do usuário em MRTK (Mixed Reality Toolkit) para o Unity
+## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>exemplos escuros da interface do usuário em MRTK (realidade misturada Toolkit) para o Unity
 
 O **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece muitos exemplos de blocos de construção de interface do usuário com base nos esquemas de cores escuros.
 

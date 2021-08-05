@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrada espacial, renderização, Cadeia de troca, quadro de Holographic, loop de atualização, loop de jogo, quadro de referência, locatability, código de exemplo, passo a passos, headset de realidade misturada, headset de realidade do Windows misturada, headset de realidade virtual
-ms.openlocfilehash: 215c3cbacd4c7975d05b3a1b3f3992c9198642f7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, entrada espacial, renderização, cadeia de permuta, quadro holographic, loop de atualização, loop de jogo, quadro de referência, locatability, código de exemplo, passo a passos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
+ms.openlocfilehash: 986ccdc6e81d1ac7c7b401a427da548218a68eb0352a0057bf7d7aba3c1d6d6a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580911"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212164"
 ---
 # <a name="getting-a-holographicspace"></a>Como obter um HolographicSpace
 
@@ -22,9 +22,9 @@ A classe <a href="/uwp/api/windows.graphics.holographic.holographicspace" target
 
 ## <a name="set-up-the-holographic-space"></a>Configurar o espaço Holographic
 
-Criar o objeto Holographic Space é a primeira etapa para tornar seu aplicativo Windows Mixed Reality. Os aplicativos tradicionais do Windows são renderizados para uma cadeia de permuta do Direct3D criada para a janela principal de sua exibição de aplicativo. Essa cadeia de permuta é exibida para um Slate na interface do usuário do amholographic. Para fazer com que seu aplicativo exiba Holographic em vez de um Tablet 2D, crie um espaço Holographic para sua janela principal em vez de uma cadeia de permuta. Apresentar quadros Holographic criados por esse espaço de Holographic coloca seu aplicativo no modo de renderização de tela inteira.
+criar o objeto holographic space é a primeira etapa para fazer seu aplicativo Windows Mixed Reality. os aplicativos Windows tradicionais são renderizados para uma cadeia de permuta de Direct3D criada para a janela principal de sua exibição de aplicativo. Essa cadeia de permuta é exibida para um Slate na interface do usuário do amholographic. Para fazer com que seu aplicativo exiba Holographic em vez de um Tablet 2D, crie um espaço Holographic para sua janela principal em vez de uma cadeia de permuta. Apresentar quadros Holographic criados por esse espaço de Holographic coloca seu aplicativo no modo de renderização de tela inteira.
 
-Para um **aplicativo UWP** [a partir do *modelo de aplicativo Holographic DirectX 11 (universal do Windows)*](creating-a-holographic-directx-project.md), procure esse código no método **SetWindow** em AppView. cpp:
+para um **aplicativo UWP** [a partir do *modelo de aplicativo Holographic DirectX 11 (Universal Windows)*](creating-a-holographic-directx-project.md), procure esse código no método **setwindow** em AppView. cpp:
 
 ```cpp
 m_holographicSpace = HolographicSpace::CreateForCoreWindow(window);
@@ -137,11 +137,11 @@ No momento, estamos concentrados no AppMain e na configuração que ele faz para
 
 O conteúdo do aplicativo deve ser posicionado em um [sistema de coordenadas espaciais](coordinate-systems-in-directx.md) a ser processado no HolographicSpace. O sistema fornece dois quadros principais de referência, que podem ser usados para estabelecer um sistema de coordenadas para seus hologramas.
 
-Há dois tipos de quadros de referência no Windows Holographic: quadros de referência anexados ao dispositivo e quadros de referência que permanecem estacionários à medida que o dispositivo passa pelo ambiente do usuário. O modelo de aplicativo Holographic usa um quadro de referência estacionário por padrão; Essa é uma das maneiras mais simples de renderizar hologramas com bloqueios mundiais.
+há dois tipos de quadros de referência em Windows Holographic: quadros de referência anexados ao dispositivo e quadros de referência que permanecem estacionários à medida que o dispositivo passa pelo ambiente do usuário. O modelo de aplicativo Holographic usa um quadro de referência estacionário por padrão; Essa é uma das maneiras mais simples de renderizar hologramas com bloqueios mundiais.
 
-Quadros de referência estacionários são projetados para estabilizar posições perto do local atual do dispositivo. Isso significa que as coordenadas mais adiante do dispositivo podem descompassor um pouco em relação ao ambiente do usuário, pois o dispositivo aprende mais sobre o espaço em torno dele. Há duas maneiras de criar um quadro estacionário de referência: Adquira o sistema de coordenadas do [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)ou use o <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão. Se você estiver criando um aplicativo de realidade mista do Windows para headsets de imersão, o ponto de partida recomendado será o [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). O estágio espacial também fornece informações sobre os recursos do headset de imersão gastados pelo jogador. Aqui, mostramos como usar o <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão.
+Quadros de referência estacionários são projetados para estabilizar posições perto do local atual do dispositivo. Isso significa que as coordenadas mais adiante do dispositivo podem descompassor um pouco em relação ao ambiente do usuário, pois o dispositivo aprende mais sobre o espaço em torno dele. Há duas maneiras de criar um quadro estacionário de referência: Adquira o sistema de coordenadas do [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)ou use o <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão. se você estiver criando um aplicativo Windows Mixed Reality para headsets de imersão, o ponto de partida recomendado é o [estágio espacial](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). O estágio espacial também fornece informações sobre os recursos do headset de imersão gastados pelo jogador. Aqui, mostramos como usar o <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>padrão.
 
-O localizador espacial representa o dispositivo Windows Mixed Reality e rastreia o movimento do dispositivo e fornece sistemas de coordenadas que podem ser compreendidos em relação à sua localização.
+o localizador espacial representa o dispositivo Windows Mixed Reality e rastreia o movimento do dispositivo e fornece sistemas de coordenadas que podem ser compreendidos em relação à sua localização.
 
 De **AppMain:: OnHolographicDisplayIsAvailableChanged**:
 
@@ -158,7 +158,7 @@ m_stationaryReferenceFrame =
     m_spatialLocator.CreateStationaryFrameOfReferenceAtCurrentLocation();
 ```
 
-Todos os quadros de referência estão alinhados com a gravidade, o que significa que o eixo y aponta "para cima" em relação ao ambiente do usuário. Como o Windows usa sistemas de coordenadas "destros", a direção do eixo – z coincide com a direção "encaminhar" que o dispositivo está enfrentando quando o quadro de referência é criado.
+Todos os quadros de referência estão alinhados com a gravidade, o que significa que o eixo y aponta "para cima" em relação ao ambiente do usuário. como Windows usa sistemas de coordenadas "de mão direita", a direção do eixo – z coincide com a direção "encaminhar" que o dispositivo está enfrentando quando o quadro de referência é criado.
 
 >[!NOTE]
 >Quando seu aplicativo exige o posicionamento preciso de hologramas individuais, use um <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a> para ancorar o holograma individual em uma posição no mundo real. Por exemplo, use uma âncora espacial quando o usuário indicar um ponto para ser um interesse especial. As posições de âncora não são descompassos, mas podem ser ajustadas. Por padrão, quando uma âncora é ajustada, ela facilita sua posição nos próximos vários quadros depois que a correção ocorre. Dependendo do seu aplicativo, quando isso ocorrer, talvez você queira lidar com o ajuste de uma maneira diferente (por exemplo, adiando-o até que o holograma esteja fora da exibição). A propriedade <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystem" target="_blank">RawCoordinateSystem</a> e os eventos <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted" target="_blank">RawCoordinateSystemAdjusted</a> permitem essas personalizações.

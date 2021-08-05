@@ -1,18 +1,18 @@
 ---
-title: Atualização de versões anteriores
+title: Atualizando de versões anteriores
 description: Documentação para migrar da versão inferior do MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a5d1e914fcbc44572e06c1fc3cbaba7ea0363287b9e670a423a4e63b17cb20a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175103"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210606"
 ---
-# <a name="updating-from-earlier-versions"></a>Atualização de versões anteriores
+# <a name="updating-from-earlier-versions"></a>Atualizando de versões anteriores
 
 - [Atualizando para uma nova versão do MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 a 2.4.0](#updating-230-to-240)
@@ -269,7 +269,7 @@ O código do aplicativo pode exigir atualização devido a essa alteração.
 
 **Namespace WindowsMixedRealityUtilities**
 
-O namespace de WindowsMixedRealityUtilities foi alterado de Microsoft.MixedReality. Toolkit. WindowsMixedReality.Input para Microsoft.MixedReality. Toolkit. WindowsMixedReality ([#6863](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6989)).
+O namespace de WindowsMixedRealityUtilities foi alterado de Microsoft. MixedReality. Toolkit. WindowsMixedReality. Input para Microsoft. MixedReality. Toolkit. WindowsMixedReality ([#6863](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6989)).
 
 Atualize #using instruções para resolver erros de compilação.
 
@@ -277,51 +277,51 @@ Atualize #using instruções para resolver erros de compilação.
 
 - [Alterações de API](#api-changes-in-220)
 
-### <a name="api-changes-in-220"></a>Alterações de API na 2.2.0
+### <a name="api-changes-in-220"></a>Alterações de API em 2.2.0
 
-**IMixedRealityBoundarySystem.Contains**
+**IMixedRealityBoundarySystem. Contains**
 
-Esse método anteriormente tinha uma enum experimental específica definida pelo Unity. Agora, ele recebe uma enum definida pelo MRTK que é idêntica à enum do Unity. Essa alteração ajuda a preparar o MRTK para as APIs de limite futuras do Unity.
+Esse método levou anteriormente em uma enumeração experimental específica definida pelo Unity. Agora, ele usa um enum definido pelo MRTK que é idêntico ao enum do Unity. Essa alteração ajuda a preparar o MRTK para as APIs de limite futuras do Unity.
 
 **MixedRealityServiceProfileAttribute**
 
-Para descrever melhor os requisitos para dar suporte a um perfil, o MixedRealityServiceProfileAttribute foi atualizado para adicionar uma coleção opcional de tipos excluídos. Como parte dessa alteração, a propriedade ServiceType foi alterada de Type para Type[] e renomeada para RequiredTypes.
+Para descrever melhor os requisitos de suporte a um perfil, o MixedRealityServiceProfileAttribute foi atualizado para adicionar uma coleção opcional de tipos excluídos. Como parte dessa alteração, a Propriedade ServiceType foi alterada de Type para Type [] e foi renomeada para RequiredTypes.
 
-Uma segunda propriedade, ExcludedTypes, também foi adicionada.
+Uma segunda propriedade, ExcludedTypes também foi adicionada.
 
 ## <a name="updating-200-to-210"></a>Atualizando 2.0.0 para 2.1.0
 
 - [Alterações de API](#api-changes-in-210)
 - [Alterações de perfil](#profile-changes-in-210)
 
-### <a name="api-changes-in-210"></a>Alterações de API na 2.1.0
+### <a name="api-changes-in-210"></a>Alterações de API em 2.1.0
 
 **BaseNearInteractionTouchable**
 
-O `BaseNearInteractionTouchable` foi modificado para marcar o método como `OnValidate` virtual. As classes que se `BaseNearInteractionTouchable` estendem (por ex: `NearInteractionTouchableUnityUI` ) foram atualizadas para refletir essa alteração.
+O `BaseNearInteractionTouchable` foi modificado para marcar o `OnValidate` método como virtual. As classes que estendem `BaseNearInteractionTouchable` (ex: `NearInteractionTouchableUnityUI` ) foram atualizadas para refletir essa alteração.
 
 **ColliderNearInteractionTouchable**
 
-A classe `ColliderNearInteractionTouchable` foi substituída. Atualize as referências de código para usar `BaseNearInteractionTouchable` .
+A classe `ColliderNearInteractionTouchable` foi substituída. Atualize as referências de código a serem usadas `BaseNearInteractionTouchable` .
 
 **IMixedRealityMouseDeviceManager**
 
-**_Adicionado_**
+**_Mais_**
 
-`IMixedRealityMouseDeviceManager` foram adicionadas `CursorSpeed` propriedades `WheelSpeed` e . Essas propriedades permitem que os aplicativos especifiquem um valor multiplicador pelo qual a velocidade do cursor e da roda, respectivamente, será dimensionada.
+`IMixedRealityMouseDeviceManager` foram adicionadas `CursorSpeed` e `WheelSpeed` Propriedades. Essas propriedades permitem que os aplicativos especifiquem um valor multiplicador pelo qual a velocidade do cursor e da roda, respectivamente, será dimensionada.
 
-Essa é uma alteração da última vez e requer que as implementações existentes do gerenciador de dispositivo do mouse sejam modificadas.
+Essa é uma alteração significativa e requer que as implementações existentes do Gerenciador de dispositivos do mouse sejam modificadas.
 
 >[!NOTE]
 >Essa alteração não é compatível com versões anteriores com a versão 2.0.0.
 
 **_Preterido_**
 
-A `MouseInputProfile` propriedade foi marcada como obsoleta e será removida de uma versão futura do Microsoft Mixed Reality Toolkit. É recomendável que o código do aplicativo não use mais essa propriedade.
+A `MouseInputProfile` propriedade foi marcada como obsoleta e será removida de uma versão futura da Toolkit de realidade mista da Microsoft. É recomendável que o código do aplicativo não use mais essa propriedade.
 
 **Interativo**
 
-Os métodos e propriedades a seguir foram preterido e serão removidos de uma versão futura do Microsoft Mixed Reality Toolkit. A recomendação é atualizar o código do aplicativo de acordo com as diretrizes contidas no atributo Obsoleto e exibidas no console.
+Os métodos e as propriedades a seguir foram preteridos e serão removidos de uma versão futura do Toolkit de realidade misturada da Microsoft. A recomendação é atualizar o código do aplicativo de acordo com as diretrizes contidas no atributo obsoleto e exibi-lo no console do.
 
 - `public bool Enabled`
 - `public bool FocusEnabled`
@@ -352,17 +352,17 @@ Os métodos e propriedades a seguir foram preterido e serão removidos de uma ve
 
 **NearInteractionTouchableSurface**
 
-A `NearInteractionTouchableSurface` classe foi adicionada e agora serve como a classe base para e `NearInteractionTouchable` `NearInteractionTouchableUnityUI` .
+A `NearInteractionTouchableSurface` classe foi adicionada e agora serve como a classe base para `NearInteractionTouchable` e `NearInteractionTouchableUnityUI` .
 
-### <a name="profile-changes-in-210"></a>Alterações de perfil na 2.1.0
+### <a name="profile-changes-in-210"></a>Alterações de perfil em 2.1.0
 
-**Perfil de acompanhamento de mão**
+**Perfil de acompanhamento à mão**
 
-A malha manual e as visualizações conjuntas agora têm configurações separadas do editor e do player. O perfil de acompanhamento de mão foi atualizado para permitir a configuração dessas visualizações como; Nothing, Everything, Editor ou Player.
+A malha de mão e as visualizações conjuntas agora têm um editor separado e configurações de Player. O perfil de acompanhamento de mão foi atualizado para permitir a definição dessas visualizações como; Nada, tudo, editor ou Player.
 
 ![Modos de visualização de mão](../release-notes/images/HandTrackingVisualizationModes.png)
 
-Os perfis de acompanhamento de mão personalizados podem precisar ser atualizados para funcionar corretamente com a versão 2.1.0.
+Os perfis de controle de mão personalizada talvez precisem ser atualizados para funcionar corretamente com a versão 2.1.0.
 
 >[!NOTE]
 >Essa alteração não é compatível com versões anteriores com a versão 2.0.0.
@@ -371,7 +371,7 @@ Os perfis de acompanhamento de mão personalizados podem precisar ser atualizado
 
 O sistema de simulação de entrada foi atualizado, o que altera algumas configurações no perfil de simulação de entrada. Algumas alterações não podem ser migradas automaticamente e os usuários podem descobrir que os perfis estão usando valores padrão.
 
-1. Todas as vinculações de botão keyCode e mouse no perfil foram substituídas por um struct genérico, que armazena o tipo de associação (chave ou mouse), bem como o código de associação real (KeyCode ou número do botão do `KeyBinding` mouse, respectivamente). O struct tem seu próprio inspetor, que permite a exibição unificada e oferece uma ferramenta de "associação automática" para definir rapidamente as vinculações de chave pressionando a respectiva chave em vez de selecionar em uma lista suspenso enorme.
+1. Todas as associações de botão do mouse e do código-chave no perfil foram substituídas por uma `KeyBinding` estrutura genérica, que armazena o tipo de associação (chave ou mouse), bem como o código de associação real (código de tecla ou número do botão do mouse, respectivamente). O struct tem seu próprio Inspetor, que permite a exibição unificada e oferece uma ferramenta de "ligação automática" para definir rapidamente as associações de chave pressionando a respectiva chave em vez de selecionar em uma grande lista suspensa.
 
     - FastControlKey
     - ToggleLeftHandKey
@@ -379,41 +379,41 @@ O sistema de simulação de entrada foi atualizado, o que altera algumas configu
     - LeftHandManipulationKey
     - RightHandManipulationKey
 
-1. `MouseLookToggle` foi incluído anteriormente `MouseLookButton` na enum como `InputSimulationMouseButton.Focused` , agora é uma opção separada. Quando habilitada, a câmera continua girando com o mouse depois de soltar o botão, até que a tecla de escape seja pressionada.
-1. `HandDepthMultiplier` O valor padrão foi baixado de 0,1 para 0,03 para acomodar algumas alterações na simulação de entrada. Se a câmera se mover muito rápido ao rolar, tente reduzir esse valor.
-1. As chaves para girar as mãos foram removidas, a rotação da mão agora também é controlada pelo mouse. Manter `HandRotateButton` (Ctrl) junto com a tecla de manipulação esquerda/direita (LShift/Espaço) habilita a rotação da mão.
-1. Um novo eixo "UpDown" foi introduzido na lista de eixos de entrada. Isso controla a movimentação da câmera na vertical e assume como padrão as chaves Q/E, bem como os botões de gatilho do controlador.
+1. `MouseLookToggle` foi anteriormente incluído no `MouseLookButton` enum como `InputSimulationMouseButton.Focused` , agora é uma opção separada. Quando habilitado, a câmera continuará girando com o mouse depois de soltar o botão, até que a tecla escape seja pressionada.
+1. `HandDepthMultiplier` o valor padrão foi reduzido de 0,1 para 0, 3 para acomodar algumas alterações na simulação de entrada. Se a câmera se mover muito rapidamente durante a rolagem, tente reduzir esse valor.
+1. As chaves para as mãos de rotação foram removidas, a rotação de mãos agora é controlada pelo mouse também. Manter `HandRotateButton` (Ctrl) junto com a chave de manipulação esquerda/direita (LShift/Space) habilitará a rotação da mão.
+1. Um novo eixo "upDown" foi introduzido na lista eixo de entrada. Isso controla a movimentação da câmera na vertical e usa como padrão as chaves p/E, bem como os botões de gatilho do controlador.
 
-Para obter mais informações sobre essas alterações, consulte o artigo [serviço de simulação de](../features/input-simulation/input-simulation-service.md) entrada.
+Para obter mais informações sobre essas alterações, consulte o artigo [serviço de simulação de entrada](../features/input-simulation/input-simulation-service.md) .
 
 **Perfil do provedor de dados do mouse**
 
-O perfil do provedor de dados do mouse foi atualizado para expor as novas `CursorSpeed` propriedades `WheelSpeed` e . Os perfis personalizados existentes terão valores padrão fornecidos automaticamente. Quando o perfil for salvo, esses novos valores serão persistentes.
+O perfil do provedor de dados do mouse foi atualizado para expor as novas `CursorSpeed` `WheelSpeed` Propriedades e. Os perfis personalizados existentes terão automaticamente os valores padrão fornecidos. Quando o perfil for salvo, esses novos valores serão persistidos.
 
 **Perfil de mapeamento do controlador**
 
-Alguns eixos e tipos de entrada foram atualizados na versão 2.1.0, especialmente em torno da plataforma OpenVR. Selecione **MixedRealityToolkit -> Utilities -> Atualizar -> de** Mapeamento do Controlador ao atualizar. Isso atualizará todos os Perfis de Mapeamento de Controlador personalizados com os eixos e dados atualizados, deixando suas ações de entrada atribuídas personalizadas intactas.
+Alguns eixos e tipos de entrada foram atualizados no 2.1.0, especialmente em relação à plataforma OpenVR. Certifique-se de selecionar os **utilitários > MixedRealityToolkit-> atualização-> perfis de mapeamento do controlador** ao atualizar. Isso atualizará todos os perfis de mapeamento do controlador personalizado com os dados e eixos atualizados, deixando as ações de entrada atribuídas personalizadas intactas.
 
-## <a name="updating-rc2-to-200"></a>Atualizando RC2 para 2.0.0
+## <a name="updating-rc2-to-200"></a>Atualizando o RC2 para o 2.0.0
 
-Entre as versões RC2 e 2.0.0 do Microsoft Mixed Reality Toolkit, foram feitas alterações que podem afetar os projetos existentes. Este documento descreve essas alterações e como atualizar projetos para a versão 2.0.0.
+entre as versões RC2 e 2.0.0 do Toolkit de realidade misturada da Microsoft, foram feitas alterações que podem afetar os projetos existentes. Este documento descreve essas alterações e como atualizar projetos para a versão 2.0.0.
 
 - [Alterações de API](#api-changes-in-200)
-- [Alterações de nome do assembly](#assembly-name-changes-in-200)
+- [Alterações de nome de assembly](#assembly-name-changes-in-200)
 
-### <a name="api-changes-in-200"></a>Alterações de API na 2.0.0
+### <a name="api-changes-in-200"></a>Alterações de API em 2.0.0
 
-Desde o lançamento do RC2, houve várias alterações na API, incluindo algumas que podem quebrar projetos existentes. As seções a seguir descrevem as alterações que ocorreram entre as versões RC2 e 2.0.0.
+Desde o lançamento do RC2, houve várias alterações de API, incluindo algumas que podem interromper projetos existentes. As seções a seguir descrevem as alterações que ocorreram entre as versões RC2 e 2.0.0.
 
 **MixedRealityToolkit**
 
-As propriedades públicas a seguir no objeto MixedRealityToolkit foram preterida.
+As propriedades públicas a seguir no objeto MixedRealityToolkit foram preteridas.
 
-- `RegisteredMixedRealityServices` não contém mais a coleção de serviços de extensões registradas e provedores de dados.
+- `RegisteredMixedRealityServices` Não contém mais a coleção de serviços de extensões registradas e provedores de dados.
 
-Para acessar os serviços de extensão, use `MixedRealityServiceRegistry.TryGetService<T>` . Para acessar provedores de dados, caste a instância de serviço para [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) e use `GetDataProvider<T>` .
+Para acessar os serviços de extensão, use `MixedRealityServiceRegistry.TryGetService<T>` . Para acessar os provedores de dados, converta a instância de serviço [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) e use `GetDataProvider<T>` .
 
-Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) ou, em vez disso, para as propriedades preteridas a seguir
+Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) ou [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) em vez das seguintes propriedades preteridas
 
 - `ActiveSystems`
 - `InputSystem`
@@ -424,12 +424,12 @@ Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRea
 - `DiagnosticsSystem`
 - `SceneSystem`
 
-**CoreServices**
+**Principaisservices**
 
-A classe é a substituição para os acessadores do sistema [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) estático (por exemplo: BoundarySystem) encontrados no `MixedRealityToolkit` objeto .
+A [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) classe é a substituição para os acessadores de sistema estáticos (ex: BoundarySystem) encontrados no `MixedRealityToolkit` objeto.
 
 >[!IMPORTANT]
->Os acessadores do sistema foram preterido na versão 2.0.0 e serão removidos em uma versão `MixedRealityToolkit` futura do MRTK.
+>Os `MixedRealityToolkit` acessadores do sistema foram preteridos na versão 2.0.0 e serão removidos em uma versão futura do MRTK.
 
 O exemplo de código a seguir ilustra o padrão antigo e o novo.
 
@@ -441,42 +441,42 @@ GameObject playAreaVisualization = MixedRealityToolkit.BoundarySystem?.GetPlayAr
 GameObject playAreaVisualization = CoreServices.BoundarySystem?.GetPlayAreaVisualization();
 ```
 
-O uso da nova classe CoreSystem garantirá que o código do aplicativo não precisará ser atualizado se você alterar o aplicativo para usar um registrador de serviços diferente (por ex. um dos gerenciadores de serviços experimentais).
+Usar a nova classe CoreSystem garantirá que o código do aplicativo não precisará ser atualizado se você alterar o aplicativo para usar um registrador de serviço diferente (por exemplo, um dos gerenciadores de serviços experimentais).
 
 **IMixedRealityRaycastProvider**
 
-Com a adição do IMixedRealityRaycastProvider, o perfil de configuração do sistema de entrada foi alterado. Se você tiver um perfil personalizado, poderá receber os erros na imagem a seguir ao executar seu aplicativo.
+Com a adição do IMixedRealityRaycastProvider, o perfil de configuração do sistema de entrada foi alterado. Se você tiver um perfil personalizado, poderá receber os erros na imagem a seguir ao executar o aplicativo.
 
 ![Selecionando o provedor Raycast 1](../release-notes/images/UnableToRegisterRaycastProvider.png)
 
-Para corrigi-los, adicione uma instância IMixedRealityRaycastProvider ao perfil do sistema de entrada.
+Para corrigi-los, adicione uma instância do IMixedRealityRaycastProvider ao seu perfil do sistema de entrada.
 
 ![Selecionando o provedor Raycast 2](../release-notes/images/SelectRaycastProvider.png)
 
-**Sistema de Eventos**
+**Sistema de eventos**
 
-- Os `IMixedRealityEventSystem` métodos de API antigos e foram `Register` `Unregister` marcados como obsoletos. Eles são preservados para compatibilidade com compatibilidade com vertida.
+- Os `IMixedRealityEventSystem` métodos antigos da API `Register` e foram `Unregister` marcados como obsoletos. Eles são preservados para compatibilidade com versões anteriores.
 - `InputSystemGlobalListener` foi marcado como obsoleto. Sua funcionalidade não foi alterada.
-- `BaseInputHandler` a classe base foi alterada de `InputSystemGlobalListener` para `InputSystemGlobalHandlerListener` . Essa é uma alteração significativa para os descendentes de `BaseInputHandler` .
+- `BaseInputHandler` A classe base foi alterada de `InputSystemGlobalListener` para `InputSystemGlobalHandlerListener` . Essa é uma alteração da quebra para todos os descendentes de `BaseInputHandler` .
 
 **_Motivação por trás da alteração_**
 
-A antiga API do sistema de eventos `Register` e `Unregister` poderia causar vários problemas em tempo de execução, a principal é:
+A API antiga do sistema de `Register` eventos e poderia causar vários problemas no `Unregister` runtime, sendo:
 
-- Se um componente for registrado para eventos globais, ele receberá eventos de entrada globais de *todos os* tipos.
-- Se um dos componentes em um objeto for registrado para eventos de entrada globais, todos os componentes nesse objeto receberão eventos de entrada globais de *todos os* tipos.
-- Se dois componentes no mesmo objeto forem registrados em eventos globais e um for desabilitado em tempo de execução, o segundo interromperá o recebimento de eventos globais.
+- Se um componente se registrar para eventos globais, ele receberá eventos de entrada globais de *todos os* tipos.
+- Se um dos componentes em um objeto se registrar para eventos de entrada globais, todos os componentes nesse objeto receberão eventos de entrada globais de *todos os* tipos.
+- Se dois componentes no mesmo objeto registrarem-se em eventos globais e um estiver desabilitado em runtime, o segundo para de receber eventos globais.
 
 Nova API `RegisterHandler` e `UnregisterHandler` :
 
-- Fornece um controle explícito e granular sobre o qual os eventos de entrada devem ser ouvidos globalmente e que devem ser baseados em foco.
-- Permite que vários componentes no mesmo objeto escutem eventos globais independentemente um do outro.
+- Fornece um controle explícito e granular sobre quais eventos de entrada devem ser ouvido globalmente e quais devem ser baseados em foco.
+- Permite que vários componentes no mesmo objeto escutam eventos globais independentemente uns dos outros.
 
 **_Como migrar_**
 
-- Se você estiver chamando a `Register` / `Unregister` API diretamente antes, substitua essas chamadas por chamadas para `RegisterHandler` / `UnregisterHandler` . Use interfaces de manipulador que você implementar como parâmetros genéricos. Se você implementar várias interfaces e várias delas ouvirem os eventos de entrada globais, chame `RegisterHandler` várias vezes.
-- Se você estiver herdando de `InputSystemGlobalListener` , altere a herança para `InputSystemGlobalHandlerListener` . Implementar `RegisterHandlers` e `UnregisterHandlers` abstrair métodos. Na chamada de implementação `inputSystem.RegisterHandler` ( `inputSystem.UnregisterHandler` ) para registrar em todas as interfaces de manipulador para as quais você deseja escutar eventos globais.
-- Se você estiver herdando de `BaseInputHandler` `RegisterHandlers` métodos Implement e `UnregisterHandlers` Abstract (o mesmo que for `InputSystemGlobalListener` ).
+- Se você já chamou a `Register` / `Unregister` API diretamente antes, substitua essas chamadas por chamadas para `RegisterHandler` / `UnregisterHandler` . Use interfaces de manipulador que você implementa como parâmetros genéricos. Se você implementar várias interfaces e várias delas escutarem eventos de entrada globais, chame `RegisterHandler` várias vezes.
+- Se você tiver herdado de `InputSystemGlobalListener` , altere a herança para `InputSystemGlobalHandlerListener` . Implementar `RegisterHandlers` métodos `UnregisterHandlers` abstratos e . Na chamada de implementação `inputSystem.RegisterHandler` ( ) para registrar em todas as `inputSystem.UnregisterHandler` interfaces de manipulador que você deseja escutar eventos globais.
+- Se você tiver herdado de `BaseInputHandler` , `RegisterHandlers` implemente e `UnregisterHandlers` abstrata métodos (o mesmo que para `InputSystemGlobalListener` ).
 
 **_Exemplos de migração_**
 
@@ -555,19 +555,19 @@ class SampleHandler2 : MonoBehaviour, IMixedRealitySpeechHandler
 }
 ```
 
-**Conscientização espacial**
+**Conscientização Espacial**
 
-As interfaces IMixedRealitySpatialAwarenessSystem e IMixedRealitySpatialAwarenessObserver fizeram várias alterações significativas, conforme descrito abaixo.
+As interfaces IMixedRealitySpatialAwarenessSystem e IMixedRealitySpatialAwarenessObserver foram feitas várias alterações significativas, conforme descrito abaixo.
 
 **_Alterações_**
 
-Os seguintes métodos foram renomeados para descrever melhor seu uso.
+Os métodos a seguir foram renomeados para descrever melhor seu uso.
 
 - `IMixedRealitySpatialAwarenessSystem.CreateSpatialObjectParent` foi renomeado para `IMixedRealitySpatialAwarenessSystem.CreateSpatialAwarenessObservationParent` para esclarecer seu uso.
 
 **_Adições_**
 
-Com base nos comentários dos clientes, o suporte à remoção fácil de dados de reconhecimento espacial observados anteriormente foi adicionado.
+Com base nos comentários dos clientes, foi adicionado suporte para fácil remoção de dados de reconhecimento espacial observados anteriormente.
 
 - `IMixedRealitySpatialAwarenessSystem.ClearObservations()`
 - `IMixedRealitySpatialAwarenessSystem.ClearObservations<T>(string name)`
@@ -575,128 +575,128 @@ Com base nos comentários dos clientes, o suporte à remoção fácil de dados d
 
 **Solucionadores**
 
-Alguns componentes do Solver e a classe SolverHandler Manager foram alterados para corrigir vários bugs e para um uso mais intuitivo.
+Alguns componentes do solucionador e a classe de gerente SolverHandler foram alterados para corrigir vários bugs e para um uso mais intuitivo.
 
 **_SolverHandler_**
 
 - A classe não se estende mais de `ControllerFinder`
-- `TrackedObjectToReference` Propriedade pública preterida e renomeada como `TrackedTargetType`
-- `TrackedObjectType` substitui os valores da & do controlador à esquerda. Em vez disso, use `MotionController` `HandJoint` valores ou e atualize `TrackedHandedness` a nova propriedade para limitar o controle para o controlador esquerdo ou direito
+- `TrackedObjectToReference` propriedade pública preterida e foi renomeada para `TrackedTargetType`
+- `TrackedObjectType` pretere a esquerda & valores do controlador direito. Em vez `MotionController` disso, use `HandJoint` valores ou e `TrackedHandedness` atualize a nova propriedade para limitar o acompanhamento ao controlador esquerdo ou direito
 
-**_Entre_**
+**_InBetween_**
 
-- `TrackedObjectForSecondTransform` Propriedade pública preterida e renomeada como `SecondTrackedObjectType`
-- `AttachSecondTransformToNewTrackedObject()` foi removido. Para atualizar o resolvedor, modifique as propriedades públicas (ou seja, `SecondTrackedObjectType`)
+- `TrackedObjectForSecondTransform` propriedade pública preterida e foi renomeada para `SecondTrackedObjectType`
+- `AttachSecondTransformToNewTrackedObject()` foi removido. Para atualizar o solucionador, modifique as propriedades públicas (ou seja, `SecondTrackedObjectType`)
 
 **_SurfaceMagnetism_**
 
-- `MaxDistance` Propriedade pública preterida e renomeada como `MaxRaycastDistance`
-- `CloseDistance` Propriedade pública preterida e renomeada como `ClosestDistance`
-- O valor padrão de `RaycastDirectionMode` é agora `TrackedTargetForward` qual raycasts na direção da transformação de destino rastreada em frente
-- `OrientationMode` os valores de enumeração `Vertical` e `Full` , foram renomeados para `TrackedTarget` e `SurfaceNormal` respectivamente
-- `KeepOrientationVertical` a propriedade pública foi adicionada para controlar se a orientação do gameobject associado permanece vertical
+- `MaxDistance` propriedade pública preterida e foi renomeada para `MaxRaycastDistance`
+- `CloseDistance` propriedade pública preterida e foi renomeada para `ClosestDistance`
+- O valor padrão para `RaycastDirectionMode` agora `TrackedTargetForward` é qual raycasts na direção da transformação de destino rastreada para frente
+- `OrientationMode` os valores de `Vertical` enum, e `Full` , foram renomeados para `TrackedTarget` e `SurfaceNormal` , respectivamente
+- `KeepOrientationVertical` propriedade pública foi adicionada para controlar se a orientação do GameObject associado permanece vertical
 
 **Botões**
 
-- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) Agora tem `DistanceSpaceMode` a propriedade definida `Local` como padrão. Isso permite que os botões sejam dimensionados enquanto ainda podem ser prensados
+- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) agora tem `DistanceSpaceMode` a propriedade definida como como `Local` padrão. Isso permite que os botões sejam dimensionados enquanto ainda podem ser pressionados
 
 **Esfera de recorte**
 
 A interface ClippingSphere foi alterada para espelhar as APIs encontradas em ClippingBox e ClippingPlane.
 
-A propriedade RADIUS do ClippingSphere agora é implicitamente calculada com base na escala de transformação. Antes que os desenvolvedores precisem especificar o raio do ClippingSphere no Inspetor. Se você quiser alterar o raio, basta atualizar a escala de transformação da transformação como faria normalmente.
+A propriedade Radius de ClippingSphere agora é calculada implicitamente com base na escala de transformação. Antes de os desenvolvedores precisarem especificar o raio do ClippingSphere no inspetor. Se você quiser alterar o raio, basta atualizar a escala de transformação da transformação como faria normalmente.
 
-**NearInteractionTouchable e PokePointer**
+**NearInteractionTouchable ePointer**
 
-- NearInteractionTouchable não lida com o toque da tela da interface do usuário do Unity mais. A classe NearInteractionTouchableUnityUI deve ser usada para a interface do usuário do Unity touchables agora.
-- ColliderNearInteractionTouchable é a nova classe base para touchables com base em colisors, ou seja, cada tocável, exceto NearInteractionTouchableUnityUI.
-- BaseNearInteractionTouchable. DistFront foi movido e renomeado para PokePointer. TouchableDistance essa é a distância e a qual o PokePointer pode interagir com touchables. Anteriormente, cada tocável tinha sua própria distância máxima de interação, mas agora isso é definido no PokePointer, o que permite uma melhor otimização.
-- BaseNearInteractionTouchable. DistBack foi renomeado para PokeThreshold isso torna claro que PokeThreshold é o equivalente a DebounceThreshold. Um toque é ativado quando o PokeThreshold é cruzado e liberado quando DebounceThreshold é cruzado.
+- NearInteractionTouchable não trata mais da tela da interface do usuário do Unity. A classe NearInteractionTouchableUnityUI agora deve ser usada para touchables da interface do usuário do Unity.
+- ColliderNearInteractionTouchable é a nova classe base para touchables com base em colisores, ou seja, todos os tocamáveis, exceto NearInteractionTouchableUnityUI.
+- BaseNearInteractionTouchable.DistFront foi movido e renomeado paraPointer.TouchableDistance Essa é a distância e a qual oPointer pode interagir com touchables. Anteriormente, cada tocável tinha sua própria distância máxima de interação, mas agora isso é definido noPointer, o que permite uma otimização melhor.
+- BaseNearInteractionTouchable.DistBack foi renomeado para WebsiteThreshold. Isso deixa claro que o TheThreshold é o equivalente a DebounceThreshold. Um touchable é ativado quando o TheThreshold é cruzado e liberado quando DebounceThreshold é cruzado.
 
 **ReadOnlyAttribute**
 
-O `Microsoft.MixedReality.Toolkit` namespace foi adicionado a `ReadOnlyAttribute` , `BeginReadOnlyGroupAttribute` , e `EndReadOnlyGroupAttribute` .
+O `Microsoft.MixedReality.Toolkit` namespace foi adicionado a `ReadOnlyAttribute` , `BeginReadOnlyGroupAttribute` e `EndReadOnlyGroupAttribute` .
 
 **PointerClickHandler**
 
 A classe `PointerClickHandler` foi substituída. O `PointerHandler` deve ser usado em vez disso, ele fornece a mesma funcionalidade.
 
-**suporte ao clique HoloLens**
+**HoloLens suporte ao clicker**
 
-os mapeamentos do controlador do HoloLens do clique foram alterados para serem desnecessários [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand) . Para considerar isso, um atualizador automático será executado na primeira vez que você abrir o perfil do ControllerMapping. Abra qualquer perfil personalizado pelo menos uma vez após a atualização para o 2.0.0 para disparar essa etapa de migração única.
+Os HoloLens do controlador do HoloLens foram alterados de um sem tratamento para um [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) sem [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand) tratamento. Para levar em conta isso, um atualizador automático será executado na primeira vez que você abrir o perfil ControllerMapping. Abra todos os perfis personalizados pelo menos uma vez após a atualização para 2.0.0 para disparar essa etapa de migração única.
 
 **InteractableHighlight**
 
-A classe `InteractableHighlight` foi substituída. A `InteractableOnFocus` classe e o `FocusInteractableStates` ativo devem ser usados em seu lugar. para criar um novo `Theme` ativo para o `InteractableOnFocus` , clique com o botão direito do mouse na janela do projeto e selecione *criar*  >  *realidade misturada Toolkit*  >    >  *tema* interagir.
+A classe `InteractableHighlight` foi substituída. A `InteractableOnFocus` classe e o ativo devem ser usados em vez `FocusInteractableStates` disso. Para criar um novo ativo para o , clique com o botão direito do mouse na janela do projeto e selecione Criar `Theme` `InteractableOnFocus` Realidade   >  *Misturada Toolkit*  >  *Tema Interacionável.*  >  
 
 **HandInteractionPanZoom**
 
-`HandInteractionPanZoom` foi movido para o namespace da interface do usuário porque não era um componente de entrada. `HandPanEventData` também foi movido para esse namespace e simplificado para corresponder a outros dados de eventos de interface do usuário.
+`HandInteractionPanZoom` foi movido para o namespace da interface do usuário, pois ele não era um componente de entrada. `HandPanEventData` também foi movido para esse namespace e simplificado para corresponder a outros dados de evento da interface do usuário.
 
-### <a name="assembly-name-changes-in-200"></a>Alterações de nome de assembly em 2.0.0
+### <a name="assembly-name-changes-in-200"></a>Alterações no nome do assembly na 2.0.0
 
-na versão 2.0.0, toda a realidade misturada oficial Toolkit nomes de assembly e seus arquivos de definição de assembly (. asmdef) associados foram atualizados para se ajustarem ao padrão a seguir.
+Na versão 2.0.0, todos os nomes oficiais de assembly do Toolkit mixed Reality e seus arquivos de definição de assembly associado (.asmdef) foram atualizados para se ajustarem ao padrão a seguir.
 
 ```c#
 Microsoft.MixedReality.Toolkit[.<name>]
 ```
 
-Em alguns casos, vários assemblies foram mesclados para criar um Unity melhor de seu conteúdo. Se o seu projeto usa arquivos. asmdef personalizados, eles podem exigir atualização.
+Em alguns casos, vários assemblies foram mesclados para criar uma melhor unidade de seu conteúdo. Se o projeto usar arquivos .asmdef personalizados, eles poderão exigir atualização.
 
-As tabelas a seguir descrevem como os nomes de arquivo RC2. asmdef são mapeados para a versão 2.0.0. Todos os nomes de assembly correspondem ao nome do arquivo. asmdef.
+As tabelas a seguir descrevem como os nomes de arquivo .asmdef RC2 são mapeados para a versão 2.0.0. Todos os nomes de assembly corresponderão ao nome do arquivo .asmdef.
 
 **MixedRealityToolkit**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.asmdef | Microsoft. MixedReality. Toolkit. asmdef |
-| MixedRealityToolkit. Core. BuildAndDeploy. asmdef | Microsoft. MixedReality. Toolkit. Editor. BuildAndDeploy. asmdef |
-| MixedRealityToolkit. Core. Definitions. Utilities. editor. asmdef | Removido, use Microsoft. MixedReality. Toolkit. Editor. Utilities. asmdef |
-| MixedRealityToolkit. Core. Extensions. EditorClassExtensions. asmdef | Microsoft. MixedReality. Toolkit. Editor. ClassExtensions. asmdef
-| MixedRealityToolkit. Core. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. Editor. Inspectors. asmdef |
-| MixedRealityToolkit. Core. Inspectors. testinspectors. asmdef | Microsoft. MixedReality. Toolkit. Editor. userinspectors. asmdef |
-| MixedRealityToolkit. Core. UtilitiesAsync. asmdef | Microsoft. MixedReality. Toolkit. Async. asmdef |
-| MixedRealityToolkit. Core. Utilities. editor. asmdef | Microsoft.MixedReality. Toolkit. Editor.Utilities.asmdef |
-| MixedRealityToolkit.Utilities.Gltf.asmdef | Microsoft.MixedReality. Toolkit. Gltf.asmdef |
-| MixedRealityToolkit.Utilities.Gltf.Importers.asmdef | Microsoft.MixedReality. Toolkit. Gltf.Importers.asmdef |
+| MixedRealityToolkit.asmdef | Microsoft.MixedReality. Toolkit.asmdef |
+| MixedRealityToolkit.Core.BuildAndDeploy.asmdef | Microsoft.MixedReality. Toolkit. Editor.BuildAndDeploy.asmdef |
+| MixedRealityToolkit.Core.Definitions.Utilities.Editor.asmdef | Removido, use Microsoft.MixedReality. Toolkit. Editor.Utilities.asmdef |
+| MixedRealityToolkit.Core.Extensions.EditorClassExtensions.asmdef | Microsoft.MixedReality. Toolkit. Editor.ClassExtensions.asmdef
+| MixedRealityToolkit.Core.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Editor.Inspectors.asmdef |
+| MixedRealityToolkit.Core.Inspectors.ServiceInspectors.asmdef | Microsoft.MixedReality. Toolkit. Editor.ServiceInspectors.asmdef |
+| MixedRealityToolkit.Core.UtilitiesAsync.asmdef | Microsoft.MixedReality. Toolkit. Async.asmdef |
+| MixedRealityToolkit.Core.Utilities.Editor.asmdef | Microsoft. MixedReality. Toolkit. Editor. Utilities. asmdef |
+| MixedRealityToolkit. Utilities. Gltf. asmdef | Microsoft. MixedReality. Toolkit. Gltf.asmdef |
+| MixedRealityToolkit. Utilities. Gltf. conporters. asmdef | Microsoft. MixedReality. Toolkit. Gltf. Importers. asmdef |
 
-**MixedRealityToolkit.Providers**
-
-| RC2 | 2.0.0 |
-| --- | --- |
-| MixedRealityToolkit.Providers.OpenVR.asmdef | Microsoft.MixedReality. Toolkit. Providers.OpenVR.asmdef |
-| MixedRealityToolkit.Providers.WindowsMixedReality.asmdef | Microsoft.MixedReality. Toolkit. Providers.WindowsMixedReality.asmdef |
-| MixedRealityToolkit.Providers.WindowsVoiceInput.asmdef | Microsoft.MixedReality. Toolkit. Providers.WindowsVoiceInput.asmdef |
-
-**MixedRealityToolkit.Services**
+**MixedRealityToolkit. Providers**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.Services.BoundarySystem.asmdef | Microsoft.MixedReality. Toolkit. Services.BoundarySystem.asmdef |
-| MixedRealityToolkit.Services.CameraSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.CameraSystem.asmdef |
-| MixedRealityToolkit.Services.DiagnosticsSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.DiagnosticsSystem.asmdef |
-| MixedRealityToolkit.Services.InputSimulation.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSimulation.asmdef |
-| MixedRealityToolkit.Services.InputSimulation.Editor.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSimulation.Editor.asmdef |
-| MixedRealityToolkit.Services.InputSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSystem.asmdef |
-| MixedRealityToolkit.Services.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSystem.Editor.asmdef |
-| MixedRealityToolkit.Services.SceneSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.SceneSystem.asmdef |
-| MixedRealityToolkit.Services.SpatialAwarenessSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.SpatialAwarenessSystem.asmdef |
-| MixedRealityToolkit.Services.System.asmdef | Microsoft.MixedReality. Toolkit. Services.LtdSystem.asmdef |
+| MixedRealityToolkit. Providers. OpenVR. asmdef | Microsoft. MixedReality. Toolkit. Providers. OpenVR. asmdef |
+| MixedRealityToolkit. Providers. WindowsMixedReality. asmdef | Microsoft. MixedReality. Toolkit. Providers. WindowsMixedReality. asmdef |
+| MixedRealityToolkit. Providers. WindowsVoiceInput. asmdef | Microsoft. MixedReality. Toolkit. Providers. WindowsVoiceInput. asmdef |
 
-**MixedRealityToolkit.SDK**
+**MixedRealityToolkit. Services**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.SDK.asmdef | Microsoft.MixedReality. Toolkit. SDK.asmdef |
-| MixedRealityToolkit.SDK.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Sdk. Inspectors.asmdef |
+| MixedRealityToolkit. Services. BoundarySystem. asmdef | Microsoft. MixedReality. Toolkit. Services. BoundarySystem. asmdef |
+| MixedRealityToolkit. Services. CameraSystem. asmdef | Microsoft. MixedReality. Toolkit. Services. CameraSystem. asmdef |
+| MixedRealityToolkit. Services. DiagnosticsSystem. asmdef | Microsoft. MixedReality. Toolkit. Services. DiagnosticsSystem. asmdef |
+| MixedRealityToolkit. Services. InputSimulation. asmdef | Microsoft. MixedReality. Toolkit. Services. InputSimulation. asmdef |
+| MixedRealityToolkit. Services. InputSimulation. editor. asmdef | Microsoft. MixedReality. Toolkit. Services. InputSimulation. editor. asmdef |
+| MixedRealityToolkit. Services. InputSystem. asmdef | Microsoft. MixedReality. Toolkit. Services. InputSystem. asmdef |
+| MixedRealityToolkit. Services. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. Services. InputSystem. editor. asmdef |
+| MixedRealityToolkit. Services. SceneSystem. asmdef | Microsoft. MixedReality. Toolkit. Services. SceneSystem. asmdef |
+| MixedRealityToolkit. Services. SpatialAwarenessSystem. asmdef | Microsoft. MixedReality. Toolkit. Services. SpatialAwarenessSystem. asmdef |
+| MixedRealityToolkit. Services. TeleportSystem. asmdef | Microsoft. MixedReality. Toolkit. Services. TeleportSystem. asmdef |
 
-**MixedRealityToolkit.Examples**
+**MixedRealityToolkit. SDK**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.Examples.asmdef | Microsoft.MixedReality. Toolkit. Examples.asmdef |
-| MixedRealityToolkit.Examples.Demos.Gltf.asmdef | Microsoft.MixedReality. Toolkit. Demos.Gltf.asmdef |
-| MixedRealityToolkit.Examples.Demos.StandardShader.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Demos.StandardShader.Inspectors.asmdef |
-| MixedRealityToolkit.Examples.Demos.Utilities.InspectorFields.asmdef | Microsoft.MixedReality. Toolkit. Demos.InspectorFields.asmdef |
-| MixedRealityToolkit.Examples.Demos.Utilities.InspectorFields.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Demos.InspectorFields.Inspectors.asmdef |
-| MixedRealityToolkit.Examples.Demos.UX.Interactables.asmdef | Microsoft.MixedReality. Toolkit. Demos.UX.Interactables.asmdef |
+| MixedRealityToolkit. SDK. asmdef | Microsoft. MixedReality. Toolkit. SDK. asmdef |
+| MixedRealityToolkit. SDK. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. SDK. Inspectors. asmdef |
+
+**MixedRealityToolkit. exemplos**
+
+| RC2 | 2.0.0 |
+| --- | --- |
+| MixedRealityToolkit. examples. asmdef | Microsoft. MixedReality. Toolkit. Exemplos. asmdef |
+| MixedRealityToolkit. examples. demos. Gltf. asmdef | Microsoft. MixedReality. Toolkit. Demos. Gltf. asmdef |
+| MixedRealityToolkit. examples. demos. StandardShader. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. Demos. StandardShader. Inspectors. asmdef |
+| MixedRealityToolkit. examples. demos. Utilities. InspectorFields. asmdef | Microsoft. MixedReality. Toolkit. Demos. InspectorFields. asmdef |
+| MixedRealityToolkit. examples. demos. Utilities. InspectorFields. Inspectors. asmdef | Microsoft. MixedReality. Toolkit. Demos. InspectorFields. Inspectors. asmdef |
+| MixedRealityToolkit. examples. demos. UX. Interactables. asmdef | Microsoft. MixedReality. Toolkit. Demos. UX. Interactables. asmdef |
