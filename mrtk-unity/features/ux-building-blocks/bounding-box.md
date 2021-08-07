@@ -1,62 +1,62 @@
 ---
 title: Caixa delimitadora
-description: Visão geral sobre caixa delimitada no MRTK
+description: Visão geral na caixa delimitadora em MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Caixa Delimitada
-ms.openlocfilehash: e8e3587ba871e127590a975b688a70db337daa19
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, caixa delimitadora
+ms.openlocfilehash: fa1ace9d7aaf547ee677accfc4254ce9c64aebdfa6a01f11962812b058bc9ceb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214190"
 ---
 # <a name="bounding-box"></a>Caixa delimitadora
 
 ![Caixa delimitadora](../images/bounding-box/MRTK_BoundingBox_Main.png)
 
 > [!NOTE]
-> A caixa delimitada é preterida e substituída por seu controle de [limites de sucesso.](bounds-control.md) Use [uma das opções de migração para](#migrating-to-bounds-control) atualizar objetos de jogo existentes.
+> A caixa delimitadora foi preterida e substituída por seu [controle de limites](bounds-control.md)de sucessora. Use [uma das opções de migração](#migrating-to-bounds-control) para atualizar os objetos de jogo existentes.
 
-O [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script fornece funcionalidade básica para transformar objetos em realidade misturada. Uma caixa delimitada mostrará um cubo ao redor do holograma para indicar que ele pode ser interagido. As alças nos cantos e bordas do cubo permitem dimensionar ou girar o objeto. A caixa delimitada também reage à entrada do usuário. No HoloLens 2, por exemplo, a caixa delimitada responde à proximidade do dedo, fornecendo comentários visuais para ajudar a perceber a distância do objeto. Todas as interações e visuais podem ser facilmente personalizados.
+O [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script fornece a funcionalidade básica para transformar objetos em realidade misturada. Uma caixa delimitadora mostrará um cubo ao direcionar o holograma para indicar que ele pode ser interagindo. As alças nos cantos e nas bordas do cubo permitem dimensionar ou girar o objeto. A caixa delimitadora também reage à entrada do usuário. no HoloLens 2, por exemplo, a caixa delimitadora responde à proximidade do dedo, fornecendo comentários visuais para ajudar a perceber a distância do objeto. Todas as interações e visuais podem ser facilmente personalizados.
 
-Para obter mais informações, consulte [Caixa delimitada e Barra de](/windows/mixed-reality/app-bar-and-bounding-box) aplicativos no Windows Centro de Desenvolvimento.
+para obter mais informações, consulte [caixa delimitadora e barra de aplicativos](/windows/mixed-reality/app-bar-and-bounding-box) no Centro de Desenvolvimento Windows.
 
 ## <a name="example-scene"></a>Cena de exemplo
 
-Você pode encontrar exemplos de configurações de caixa delimitadores na `BoundingBoxExamples` cena.
+Você pode encontrar exemplos de configurações de caixa delimitadora na `BoundingBoxExamples` cena.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_Examples.png" alt="Bounding Box Examples">
 
-## <a name="how-to-add-and-configure-a-bounding-box-using-unity-inspector"></a>Como adicionar e configurar uma caixa delimitador usando o Inspetor do Unity
+## <a name="how-to-add-and-configure-a-bounding-box-using-unity-inspector"></a>Como adicionar e configurar uma caixa delimitadora usando o Inspetor do Unity
 
-1. Adicionar Colisor de Caixa a um objeto
+1. Adicionar Colisor de caixa a um objeto
 2. Atribuir `BoundingBox` script a um objeto
-3. Configurar opções, como métodos de 'Ativação' (consulte [a seção Propriedades do](#inspector-properties) inspetor abaixo)
-4. (Opcional) Atribuir pré-fabs e materiais para uma HoloLens delimitação de estilo 2 (consulte a [seção Manipular estilos](#handle-styles) abaixo)
+3. Configurar opções, como métodos de ' ativação ' (consulte a seção [Propriedades do Inspetor](#inspector-properties) abaixo)
+4. Adicional atribua pré-fabricados e materiais para uma caixa delimitadora de estilo de HoloLens 2 (consulte a seção de [estilos de identificador](#handle-styles) abaixo)
 
 > [!NOTE]
-> Use *o campo Objeto de* Destino e Substituição de Limites no inspetor para atribuir um objeto e *colisor* específicos no objeto com vários componentes filho.
+> Use o *objeto de destino* e o campo de substituição de *limites* no Inspetor para atribuir um objeto específico e um colisor no objeto com vários componentes filho.
 
-![Caixa delimitada 1](../images/bounding-box/MRTK_BoundingBox_Assign.png)
+![Caixa delimitadora 1](../images/bounding-box/MRTK_BoundingBox_Assign.png)
 
-## <a name="how-to-add-and-configure-a-bounding-box-in-the-code"></a>Como adicionar e configurar uma caixa delimitada no código
+## <a name="how-to-add-and-configure-a-bounding-box-in-the-code"></a>Como adicionar e configurar uma caixa delimitadora no código
 
-1. Insinuar gameObject de cubo
+1. Criar instância de gameobject do cubo
 
     ```c#
     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
     ```
 
-1. Atribuir `BoundingBox` script a um objeto com colisor usando AddComponent<>()
+1. Atribuir `BoundingBox` script a um objeto com o colisor, usando o addComponent<> ()
 
     ```c#
     private BoundingBox bbox;
     bbox = cube.AddComponent<BoundingBox>();
     ```
 
-1. Configurar opções (consulte [a seção Propriedades do](#inspector-properties) inspetor abaixo)
+1. Configurar opções (consulte a seção [Propriedades do Inspetor](#inspector-properties) abaixo)
 
     ```c#
     // Make the scale handles large
@@ -67,10 +67,10 @@ Você pode encontrar exemplos de configurações de caixa delimitadores na `Boun
     bbox.ShowRotationHandleForZ = false;
     ```
 
-1. (Opcional) Atribua pré-fabs e materiais para uma HoloLens delimitação de estilo 2. Isso ainda requer atribuições por meio do inspetor, pois os materiais e os pré-requisitos devem ser carregados dinamicamente.
+1. Adicional atribua pré-fabricados e materiais para uma caixa delimitadora de estilo de HoloLens 2. Isso ainda requer atribuições por meio do Inspetor, pois os materiais e pré-fabricados devem ser carregados dinamicamente.
 
 > [!NOTE]
-> Não é recomendável usar a pasta 'Recursos' do Unity ou o [Sombreador.Find]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) para carregar dinamicamente sombreadores, pois as permutações do sombreador podem estar ausentes em runtime.
+> O uso da pasta ' recursos ' ou do [sombreador]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) do Unity. não é recomendável localizar sombreadores dinamicamente, pois as permutações do sombreador podem estar ausentes no tempo de execução.
 
 ```c#
 bbox.BoxMaterial = [Assign BoundingBox.mat]
@@ -100,9 +100,9 @@ scaleConstraint.ScaleMinimum = 1f;
 scaleConstraint.ScaleMaximum = 2f;
 ```
 
-## <a name="example-add-bounding-box-around-a-game-object"></a>Exemplo: Adicionar caixa delimitada em torno de um objeto de jogo
+## <a name="example-add-bounding-box-around-a-game-object"></a>Exemplo: adicionar uma caixa delimitadora em um objeto de jogo
 
-Para adicionar uma caixa delimitada em torno de um objeto, basta adicionar um `BoundingBox` componente a ele:
+Para adicionar uma caixa delimitadora em um objeto, basta adicionar um `BoundingBox` componente a ela:
 
 ```c#
 private void PutABoxAroundIt(GameObject target)
@@ -111,11 +111,11 @@ private void PutABoxAroundIt(GameObject target)
 }
 ```
 
-## <a name="inspector-properties"></a>Propriedades do inspetor
+## <a name="inspector-properties"></a>Propriedades do Inspetor
 
 ### <a name="target-object"></a>Objeto de destino
 
-Essa propriedade especifica qual objeto será transformado pela manipulação de caixa delimitada. Se nenhum objeto for definido, a caixa delimitada assume como padrão o objeto proprietário.
+Esta propriedade especifica qual objeto será transformado pela manipulação da caixa delimitadora. Se nenhum objeto for definido, a caixa delimitadora definirá como padrão o objeto do proprietário.
 
 ### <a name="bounds-override"></a>Substituição de limites
 
@@ -123,80 +123,80 @@ Define um colisor de caixa do objeto para computação de limites.
 
 ### <a name="activation-behavior"></a>Comportamento de ativação
 
-Há várias opções para ativar a interface da caixa delimitada.
+Há várias opções para ativar a interface da caixa delimitadora.
 
-* *Ativar Ao Iniciar:* a caixa delimitação fica visível depois que a cena é iniciada.
-* *Ativar por proximidade:* a caixa delimitador fica visível quando uma mão articulada está próxima ao objeto.
-* *Ativar por ponteiro:* a caixa delimitada fica visível quando é direcionada por um ponteiro de raio de mão.
-* *Ativar Manualmente:* a caixa delimitada não fica visível automaticamente. Você pode ativá-lo manualmente por meio de um script acessando a propriedade boundingBox.Active.
+* *Ativar ao iniciar*: a caixa delimitadora fica visível quando a cena é iniciada.
+* *Ativar por proximidade*: a caixa delimitadora fica visível quando uma mão articulada está perto do objeto.
+* *Ativar por ponteiro*: a caixa delimitadora torna-se visível quando é direcionada por um ponteiro de raio à mão.
+* *Ativar manualmente*: a caixa delimitadora não se torna visível automaticamente. Você pode ativá-lo manualmente por meio de um script acessando a propriedade boundingBox. Active.
 
-### <a name="scale-minimum"></a>Dimensionar o mínimo
+### <a name="scale-minimum"></a>Mínimo de escala
 
-A escala mínima permitida. Essa propriedade foi preterida e é preferível adicionar um [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) script. Se esse script for adicionado, a escala mínima será retirada dele em vez da caixa delimitada.
+A escala mínima permitida. Essa propriedade é preterida e é preferível adicionar um [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) script. Se esse script for adicionado, a escala mínima será retirada dele, em vez da caixa delimitadora.
 
-### <a name="scale-maximum"></a>Dimensionar o máximo
+### <a name="scale-maximum"></a>Máximo de escala
 
-A escala máxima permitida. Essa propriedade foi preterida e é preferível adicionar um [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) script. Se esse script for adicionado, a escala máxima será retirada dele em vez da caixa delimitada.
+A escala máxima permitida. Essa propriedade é preterida e é preferível adicionar um [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) script. Se esse script for adicionado, a escala máxima será retirada dele, em vez da caixa delimitadora.
 
-### <a name="box-display"></a>Exibição de caixa
+### <a name="box-display"></a>Exibição da caixa
 
-Várias opções de visualização de caixa delimitada.
+Várias opções de visualização de caixa delimitadora.
 
-Se o Eixo Nivelar estiver definido como *Nivelar Automaticamente,* o script não permitirá a manipulação ao longo do eixo com a menor extensão. Isso resulta em uma caixa delimitada 2D, que geralmente é usada para objetos finos.
+Se o eixo achatado for definido como *automático achatado*, o script não permitirá a manipulação ao longo do eixo com a menor extensão. Isso resulta em uma caixa delimitadora de 2D, que geralmente é usada para objetos finos.
 
 ### <a name="handles"></a>Alças
 
-Você pode atribuir o material e o pré-fab para substituir o estilo de alça. Se nenhum handle for atribuído, eles serão exibidos no estilo padrão.
+Você pode atribuir o material e o pré-fabricado para substituir o estilo do identificador. Se nenhum identificador for atribuído, ele será exibido no estilo padrão.
 
 ## <a name="events"></a>Eventos
 
-A caixa delimitada fornece os seguintes eventos. Este exemplo usa esses eventos para reproduzir comentários de áudio.
+A caixa delimitadora fornece os seguintes eventos. Este exemplo usa esses eventos para reproduzir comentários de áudio.
 
-* **Rotação Iniciada:** acionado quando a rotação é iniciada.
-* **Rotação Encerrada:** acionado quando a rotação termina.
-* **Escala iniciada:** é a incêndio quando o dimensionamento é iniciado.
-* **Escala encerrada:** é a incêndio quando o dimensionamento termina.
+* **Rotação iniciada**: acionada quando a rotação é iniciada.
+* **Rotação encerrada**: acionada quando a rotação termina.
+* **Escala iniciada**: acionada quando o dimensionamento é iniciado.
+* **Escala encerrada**: acionada quando o dimensionamento termina.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_Events.png" width="450" alt="Events">
 
-## <a name="handle-styles"></a>Manipular estilos
+## <a name="handle-styles"></a>Estilos de identificador
 
-Por padrão, quando você apenas atribuir o script, ele mostrará o handle do estilo [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) HoloLens 1ª geração. Para usar HoloLens 2 alças de estilo, você precisa atribuir pré-fabs e materiais de alça adequados.
+por padrão, quando você apenas atribui o [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script, ele mostrará o identificador do estilo de HoloLens 1ª gen. para usar os identificadores de estilo HoloLens 2, você precisa atribuir o identificador adequado pré-fabricados e materiais.
 
-![Estilos de alça de caixa delimitação](../images/bounding-box/MRTK_BoundingBox_HandleStyles1.png)
+![Estilos de identificador de caixa delimitadora](../images/bounding-box/MRTK_BoundingBox_HandleStyles1.png)
 
-Abaixo estão os pré-fabs, os materiais e os valores de dimensionamento para os HoloLens de caixa delimitada de estilo 2. Você pode encontrar este exemplo na `BoundingBoxExamples` cena.
+abaixo estão os valores de pré-fabricados, materiais e dimensionamento para os identificadores de caixa delimitadora de HoloLens 2. Você pode encontrar este exemplo na `BoundingBoxExamples` cena.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_HandleStyles2.png" width="450" alt="HandStyles 2">
 
-### <a name="handles-setup-for-hololens-2-style"></a>Alças (instalação para HoloLens estilo 2)
+### <a name="handles-setup-for-hololens-2-style"></a>identificadores (instalação para HoloLens estilo 2)
 
-* **Material do handle:** BoundingBoxHandleWhite.mat
-* **Material de alça ressalvado:** BoundingBoxHandleBlueGrabbed.mat
-* **Pré-fab de alça de escala:** MRTK_BoundingBox_ScaleHandle.prefab
-* **Pré-fab de Slate do Alça de** Escala: MRTK_BoundingBox_ScaleHandle_Slate.prefab
-* **Tamanho do alça de** escala: 0,016 (1,6 cm)
-* **Preenchimento do Colisor de Alça** de Escala: 0,016 (torna o colisor acessível um pouco maior do que o visual de alça)
-* **Pré-fab de alça de** rotação: MRTK_BoundingBox_RotateHandle.prefab
-* **Tamanho do alça de** rotação: 0,016
-* **Preenchimento do Colisor de** Alça de Rotação : 0,016 (torna o colisor acessível um pouco maior do que o visual de alça)
+* **Material de tratamento**: BoundingBoxHandleWhite. passe-partout
+* **Tratar material capturado**: BoundingBoxHandleBlueGrabbed. passe-partout
+* **Identificador de escala pré-fabricado**: MRTK_BoundingBox_ScaleHandle. pré-fabricado
+* **Alça de escala Slate pré-fabricado**: MRTK_BoundingBox_ScaleHandle_Slate. pré-fabricado
+* **Tamanho do identificador de escala**: 0, 16 (1.6 cm)
+* **Enchimento do Colisador da alça de escala**: 0, 16 (torna o colisor de captura ligeiramente maior que o Visual do manipulador)
+* **Identificador de rotação pré-fabricado**: MRTK_BoundingBox_RotateHandle. pré-fabricado
+* **Tamanho da alça de rotação**: 0, 16
+* **Enchimento do Colisador da alça de rotação**: 0, 16 (torna o colisor de captura ligeiramente maior que o Visual do manipulador)
 
-### <a name="proximity-setup-for-hololens-2-style"></a>Proximidade (instalação para HoloLens 2)
+### <a name="proximity-setup-for-hololens-2-style"></a>proximidade (configuração para o estilo HoloLens 2)
 
-Mostrar e ocultar os alças com animação com base na distância até as mãos. Ele tem animação de dimensionamento em duas etapas.
+Mostrar e ocultar os identificadores com animação com base na distância para as mãos. Ele tem uma animação de dimensionamento em duas etapas.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_Proximity.png" alt="Proximity">
 
-* **Efeito de proximidade ativo:** habilitar a ativação de alça baseada em proximidade
-* **Lidar com a proximidade média:** distância para o dimensionamento da primeira etapa
-* **Lidar com proximidade próxima:** distância para o dimensionamento da segunda etapa
-* **Escala distante:** valor de escala padrão do ativo de alça quando as mãos estão fora do intervalo da interação da caixa delimitada (distância definida acima por "Manipular proximidade média". Usar 0 para ocultar o handle por padrão)
-* **Escala média:** valor de escala do ativo de alça quando as mãos estão dentro do intervalo da interação da caixa delimitada (distância definida acima por "Lidar com proximidade próxima". Use 1 para mostrar o tamanho normal)
-* **Escala de Fechamento:** valor de escala do ativo de alça quando as mãos estão dentro do intervalo da interação de captura (distância definida acima por "Lidar com proximidade próxima". Usar 1.x para mostrar um tamanho maior)
+* **Efeito de proximidade ativo**: habilitar a ativação de identificador baseado em proximidade
+* **Lidar com a proximidade média**: distância para o dimensionamento da 1ª etapa
+* **Lidar com proximidades próximas**: distância para o dimensionamento da 2ª etapa
+* **Escala extrema**: o valor de escala padrão do ativo de identificador quando as mãos estão fora do intervalo da interação da caixa delimitadora (distância definida acima por ' tratar a proximidade média '. Use 0 para ocultar o identificador por padrão)
+* **Escala média**: o valor de escala do ativo de identificador quando as mãos estão dentro do intervalo da interação da caixa delimitadora (distância definida acima por ' manipular proximidades '. Use 1 para mostrar o tamanho normal)
+* **Fechar escala**: o valor de escala do ativo de identificador quando as mãos estão dentro do intervalo da interação de captura (distância definida acima por ' manipular proximidades à próxima '. Use 1. x para mostrar um tamanho maior)
 
-## <a name="making-an-object-movable-with-manipulation-handler"></a>Tornar um objeto móvel com o manipulador de manipulação
+## <a name="making-an-object-movable-with-manipulation-handler"></a>Tornando um objeto móvel com o manipulador de manipulação
 
-Uma caixa delimitada pode ser combinada com [`ManipulationHandler.cs`](manipulation-handler.md) para tornar o objeto móvel usando interação distante. O manipulador de manipulação dá suporte a interações de uma e de duas mãos. O [rastreamento manual](../input/hand-tracking.md) pode ser usado para interagir com um objeto de perto.
+Uma caixa delimitadora pode ser combinada com [`ManipulationHandler.cs`](manipulation-handler.md) o para tornar o objeto móvel usando a interação distante. O manipulador de manipulação dá suporte a interações de uma e de duas mãos. O [rastreamento manual](../input/hand-tracking.md) pode ser usado para interagir com um objeto de perto.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_ManipulationHandler.png" width="450" alt="Manipulation Handler">
 

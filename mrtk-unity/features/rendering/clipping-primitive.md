@@ -1,44 +1,44 @@
 ---
 title: Primitivo de recorte
-description: Documentação sobre primitivos de recorte com exemplos em MRTK
+description: Documentação sobre primitivos de recorte com exemplos no MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, primitivo de recorte,
-ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, primitivo de recorte,
+ms.openlocfilehash: 1feecbbd51eb80ff6113e66d053f032acb3005b9c7d1debbd5dfd46da0925798
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214404"
 ---
 # <a name="clipping-primitive"></a>Primitivo de recorte
 
-Os [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) comportamentos permitem o alto desempenho [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane) , [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) e [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) o recorte de forma com a capacidade de especificar qual lado do primitivo deve ser cortado (dentro ou fora) quando usado com sombreadores MRTK.
+Os comportamentos permitem o recorte de forma, , e de desempenho com a capacidade de especificar em qual lado do primitivo se recortar (dentro ou fora) quando usado com sombreadores [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane) do [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) MRTK.
 
-![utensílios de recorte primitivo](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
+![buges de recorte primitivo](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
 
 > [!NOTE]
-> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) Utilize instruções de [clipe/descarte](https://developer.download.nvidia.com/cg/clip.html) dentro de sombreadores e desabilite a capacidade do Unity para renderizadores recortados em lote. Considere essas implicações de desempenho ao utilizar primitivos de recorte.
+> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) utilize [instruções de recortar/descartar](https://developer.download.nvidia.com/cg/clip.html) em sombreadores e desabilitar a capacidade do Unity de renderizar em lotes recortados. Leve essas implicações de desempenho em mente ao utilizar primitivos de recorte.
 
-[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) e [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) pode ser usado para controlar facilmente as propriedades primitivas de recorte. Use esses componentes com os seguintes sombreadores para aproveitar os cenários de recorte.
+[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) e podem ser usados para controlar [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) facilmente as propriedades primitivas de recorte. Use esses componentes com os sombreadores a seguir para aproveitar cenários de recorte.
 
-- *realidade misturada Toolkit/padrão*
-- *realidade misturada Toolkit/TextMeshPro*
-- *realidade misturada Toolkit/Text3DShader*
+- *Realidade Misturada Toolkit/Standard*
+- *Mixed Reality Toolkit/TextMeshPro*
+- *Mixed Reality Toolkit/Text3DShader*
 
 ## <a name="examples"></a>Exemplos
 
-Os bastidores **ClippingExamples** e **MaterialGallery** demonstram o uso dos [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) comportamentos e podem ser encontrados em: MRTK/examples/demos/StandardShader/cenas/
+As **cenas ClippingExamples** e **MaterialGallery** demonstram o uso dos comportamentos e podem ser [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) encontradas em: MRTK/Examples/Demos/StandardShader/Scenes/
 
 ## <a name="advanced-usage"></a>Uso Avançado
 
-Por padrão, apenas um [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) pode recortar um [renderizador](https://docs.unity3d.com/ScriptReference/Renderer.html) por vez. Se seu projeto exigir mais de um [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) para influenciar um [processador](https://docs.unity3d.com/ScriptReference/Renderer.html)  , o código de exemplo a seguir demonstra como conseguir isso.
+Por padrão, apenas [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) um pode cortar um [renderador](https://docs.unity3d.com/ScriptReference/Renderer.html) por vez. Se o projeto exigir mais de um [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) para influenciar um [renderista,](https://docs.unity3d.com/ScriptReference/Renderer.html)  o código de exemplo abaixo demonstrará como fazer isso.
 
 > [!NOTE]
-> Ter vários [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clipes um [renderizador](https://docs.unity3d.com/ScriptReference/Renderer.html) aumentará as instruções do sombreador de pixel e afetará o desempenho. Faça o Profile dessas alterações no seu projeto.
+> Ter vários [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clipes em [um renderdor](https://docs.unity3d.com/ScriptReference/Renderer.html) aumentará as instruções do sombreador de pixel e afetará o desempenho. Faça o perfil dessas alterações em seu projeto.
 
-*Como fazer com que dois [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clipes diferentes sejam renderizados. Por exemplo [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) , a e [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) ao mesmo tempo:*
+*Como ter dois clipes [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) diferentes em uma renderização. Por exemplo, [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) um e ao mesmo [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) tempo:*
 
 ```C#
 // Within MRTK/Core/StandardAssets/Shaders/MixedRealityStandard.shader (or another MRTK shader) change:
@@ -53,9 +53,9 @@ Por padrão, apenas um [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit
 ```
 
 > [!NOTE]
-> A alteração acima incorrerá em tempo de compilação de sombreador adicional.
+> A alteração acima incorre em tempo de compilação adicional do sombreador.
 
-*Como fazer com que dois do mesmo [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clipe sejam renderizados. Por exemplo [`ClippingBoxes`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) , dois ao mesmo tempo:*
+*Como ter dois dos mesmos [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clipes em uma renderização. Por exemplo, [`ClippingBoxes`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) dois ao mesmo tempo:*
 
 ```C#
 // 1) Add the below MonoBehaviour to your project:
@@ -121,8 +121,8 @@ public class SecondClippingBox : ClippingBox
 #endif
 ```
 
-Por fim, adicione um [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) componente e SecondClippingBox à sua cena e especifique o mesmo renderizador para ambas as caixas. O renderizador agora deve ser recortado por ambas as caixas simultaneamente.
+Por fim, adicione um [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) componente e SecondClippingBox à cena e especifique o mesmo renderador para ambas as caixas. O renderador agora deve ser recortado por ambas as caixas simultaneamente.
 
 ## <a name="see-also"></a>Confira também
 
-- [Sombreador padrão MRTK](mrtk-standard-shader.md)
+- [Sombreador Padrão do MRTK](mrtk-standard-shader.md)

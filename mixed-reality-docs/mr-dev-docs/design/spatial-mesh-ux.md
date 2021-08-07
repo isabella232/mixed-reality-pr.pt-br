@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, UX, design de UX, interface do usuário espacial, interação espacial, interface do usuário 3D, UX 3D, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 5bdcba60f38ac67bbf0f394337735f4a2d4ec423
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: realidade misturada, HoloLens, controles de interface do usuário, interação, interface do usuário, ux, Design de ux, interface do usuário espacial, interação espacial, interface do usuário 3d, ux 3d, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: 7fcba586f55e6131235d031327da131aa8ba6c97958e4ac282a8f8d048d37992
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216272"
 ---
 # <a name="spatial-mesh"></a>Malha espacial
 
@@ -24,7 +24,7 @@ Os usuários aprendem como um dispositivo percebe e compreende o ambiente físic
 É importante permitir que o usuário se concentre e interaja com o conteúdo. A visualização contínua da malha espacial em segundo plano pode ser uma distração. É recomendável Visualizar o ambiente com moderação, seja apenas uma vez na inicialização inicial ou quando o usuário mostrar claramente que deseja ver a malha ambiental por direcionamento e espaço de toque. Você pode observar esse comportamento no portal de realidade misturada.
 <br>
 
-## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Visualização de malha espacial no MRTK (Kit de ferramentas de realidade mista) para Unity
+## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>visualização de malha espacial em MRTK (realidade misturada Toolkit) para o Unity
 
 O MRTK fornece vários materiais para a visualização de malha espacial.
 

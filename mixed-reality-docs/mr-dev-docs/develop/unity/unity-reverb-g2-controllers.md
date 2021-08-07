@@ -1,62 +1,62 @@
 ---
-title: Controladores de reverbo do HP G2 no Unity
-description: Saiba como configurar e usar os novos controladores HP reverbs G2 nos aplicativos SteamVR e Windows Mixed Reality Unity.
+title: Controladores do HP Reverb G2 no Unity
+description: Saiba como configurar e usar os novos controladores HP Reverb G2 no SteamVR e Windows Mixed Reality unity.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
-keywords: Unity, reverberação, reverbo G2, HP reverbs G2, realidade mista, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos
-ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+keywords: Unity, Reverb, Reverb G2, HP Reverb G2, realidade misturada, desenvolvimento, controladores de movimento, entrada do usuário, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos
+ms.openlocfilehash: 4e561cb1e46fe487f1b25ed526f0adeafc2de6c525835ffe3b1871d7516b233e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215612"
 ---
-# <a name="hp-reverb-g2-controllers-in-unity"></a>Controladores de reverbo do HP G2 no Unity
+# <a name="hp-reverb-g2-controllers-in-unity"></a>Controladores do HP Reverb G2 no Unity
 
-Os controladores HP Motion são um tipo totalmente novo de controladores de realidade misturada do Windows: toda a mesma tecnologia de controle com um conjunto ligeiramente diferente de entradas disponíveis: 
+Os controladores de movimento HP são um tipo totalmente novo de controladores Windows Mixed Reality: toda a mesma tecnologia de acompanhamento com um conjunto ligeiramente diferente de entradas disponíveis: 
 
-* O touchpad foi substituído por dois botões: A e B para o controlador correto e X e Y para o controlador esquerdo. 
-* Segure agora é um gatilho que publica um fluxo de valores entre 0,0 e 1,0 em vez de um botão com Estados pressionados e não pressionados. 
+* O TouchPad foi substituído por dois botões: A e B para o controlador direito e X e Y para o controlador esquerdo. 
+* Entender agora é um gatilho que publica um fluxo de valores entre 0,0 e 1.0 em vez de um botão com estados Pressionado e Não Pressionado. 
 
-Como as novas entradas não estão acessíveis por meio de APIs existentes do Windows e do Unity, você precisa do pacote **Microsoft. MixedReality. Input** UPM dedicado. 
+Como as novas entradas não são acessíveis por meio de APIs Windows e Unity existentes, você precisa do pacote UPM dedicado **Microsoft.MixedReality.Input.** 
 
 > [!IMPORTANT]
-> **As classes neste pacote não substituem as APIs existentes do Windows e do Unity, mas as complementam.** Recursos normalmente disponíveis para controladores de realidade mista do Windows misto e controladores HP Motion podem ser acessados por meio do mesmo caminho de código usando APIs existentes. Somente as novas entradas exigem o uso do pacote adicional Microsoft. MixedReality. Input. 
+> **As classes neste pacote não substituem as APIs Windows e Unity existentes, mas as complementam.** Recursos normalmente disponíveis para controladores de Windows Mixed Reality clássicos e controladores de movimento HP são acessíveis por meio do mesmo caminho de código usando APIs existentes. Somente as novas entradas exigem o uso do pacote adicional Microsoft.MixedReality.Input. 
 
-## <a name="hp-motion-controller-overview"></a>Visão geral do controlador HP Motion
+## <a name="hp-motion-controller-overview"></a>Visão geral do Hp Motion Controller
 
-*Microsoft. MixedReality. Input. MotionController* representa um controlador de movimento. Cada instância de *MotionController* tem um *XR. WSA. Input. codeaction* -peer, que pode ser correlacionado usando destroly, ID do fornecedor, product ID e Version. 
+*Microsoft.MixedReality.Input.MotionController representa* um controlador de movimento. Cada *instância motionController* tem um *XR. Wsa. Par Input.InteractionSource,* que pode ser correlacionado usando entrega, ID do fornecedor, ID do produto e versão. 
 
-Você pode obter instâncias de MotionController criando um *MotionControllerWatcher* e assinando seus eventos, semelhante ao uso de eventos *interactionmanager* para descobrir novas instâncias de *interação* . Os métodos e as propriedades de MotionController descrevem as entradas com suporte pelo controlador, incluindo seus botões, gatilhos, eixo 2D e Thumbstick. A classe MotionController também expõe métodos para acessar os Estados de entrada por meio da classe *MotionControllerReading* . A classe MotionControllerReading representa um instantâneo do estado do controlador em um determinado momento. 
+Você pode pegar instâncias motionController criando um *MotionControllerWatcher* e assinando seus eventos, semelhante ao uso de eventos *interactionManager* para descobrir novas instâncias *de InteractionSource.* Os métodos e as propriedades do MotionController descrevem as entradas com suporte pelo controlador, incluindo seus botões, gatilhos, eixo 2D e thumbstick. A classe MotionController também expõe métodos para acessar estados de entrada por meio da *classe MotionControllerReading.* A classe MotionControllerReading representa um instantâneo do estado do controlador em um determinado momento. 
 
-## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Instalando o Microsoft. MixedReality. Input com a ferramenta de funcionalidade Mixed Reality
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Instalando Microsoft.MixedReality.Input com a Ferramenta de Recursos de Realidade Misturada
 
-Instale o plug-in Microsoft. MixedReality. Input com o novo aplicativo de ferramenta de recursos da realidade misturada. Siga as [instruções de instalação e uso](welcome-to-mr-feature-tool.md) e selecione o pacote de **entrada de realidade misturada** na categoria do kit de ferramentas da realidade misturada:
+Instale o plug-in Microsoft.MixedReality.Input com o novo aplicativo Ferramenta de Recursos de Realidade Misturada. Siga as [instruções de instalação e uso](welcome-to-mr-feature-tool.md) e selecione o pacote Entrada de **Realidade** Misturada na categoria Toolkit Realidade Misturada:
 
-![Janela de pacotes da ferramenta de recurso de realidade misturada com entrada de realidade mista realçada](images/feature-tool-mrinput.png)
+![Janela de pacotes da Ferramenta de Recursos de Realidade Misturada com entrada de realidade misturada realçada](images/feature-tool-mrinput.png)
 
-## <a name="using-microsoftmixedrealityinput"></a>Usando Microsoft. MixedReality. Input 
+## <a name="using-microsoftmixedrealityinput"></a>Usando Microsoft.MixedReality.Input 
 
 ### <a name="input-values"></a>Valores de entrada
 
 Um MotionController pode expor dois tipos de entradas: 
 
-* Os botões e os Estados de gatilho são expressos por um valor float exclusivo entre 0,0 e 1,0 que indica quanto eles são pressionados.
-    * Um botão só pode retornar 0,0 (quando não pressionado) ou 1,0 (quando pressionado) enquanto um gatilho pode retornar valores contínuos entre 0,0 (totalmente lançado) para 1,0 (totalmente pressionado). 
-* O estado Thumbstick é expresso por um vector2 cujos componentes X e Y estão entre-1,0 e 1,0. 
+* Botões e estados de gatilho são expressos por um valor float exclusivo entre 0,0 e 1,0 que indica quanto eles são pressionados.
+    * Um botão só pode retornar 0,0 (quando não pressionado) ou 1,0 (quando pressionado), enquanto um gatilho pode retornar valores contínuos entre 0,0 (totalmente liberado) para 1,0 (totalmente pressionado). 
+* O estado de thumbstick é expresso por um Vector2 cujos componentes X e Y estão entre -1,0 e 1,0. 
 
-Você pode usar *MotionController. GetPressableInputs ()* para retornar uma lista de entradas que retornam um valor pressionado (botões e gatilhos) ou o método *MotionController. GetXYInputs ()* para retornar uma lista de entradas que retornam um valor de eixo 2. 
+Você pode usar *MotionController.GetPressableInputs()* para retornar uma lista de entradas que retornam um valor pressionado (botões e gatilhos) ou o *método MotionController.GetXYInputs()* para retornar uma lista de entradas que retornam um valor de dois eixos. 
 
-Uma instância de MotionControllerReading representa o estado do controlador em um determinado momento: 
+Uma instância MotionControllerReading representa o estado do controlador em um determinado momento: 
 
-* *Getpressionvalue ()* recupera o estado de um botão ou um gatilho. 
-* *GetXYValue ()* recupera o estado de um Thumbstick. 
+* *GetPressedValue()* recupera o estado de um botão ou gatilho. 
+* *GetXYValue()* recupera o estado de um thumbstick. 
 
-### <a name="creating-a-cache-to-maintain-a-collection-of-motioncontroller-instances-and-their-states"></a>Criando um cache para manter uma coleção de instâncias MotionController e seus Estados 
+### <a name="creating-a-cache-to-maintain-a-collection-of-motioncontroller-instances-and-their-states"></a>Criando um cache para manter uma coleção de instâncias motionController e seus estados 
 
-Comece instanciando um MotionControllerWatcher e Registrando manipuladores para seus eventos *MotionControllerAdded* e *MotionControllerRemoved* para manter um cache de instâncias de MotionController disponíveis. Esse cache deve ser um monobehavior anexado a um gameobject, conforme demonstrado no código a seguir:
+Comece instanciando um MotionControllerWatcher e registrando manipuladores para seus eventos *MotionControllerAdded* e *MotionControllerRemoved* para manter um cache de instâncias do MotionController disponíveis. Esse cache deve ser um MonoBehavior anexado a um GameObject, conforme demonstrado no código a seguir:
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -143,7 +143,7 @@ public class MotionControllerStateCache : MonoBehaviour
 
 ### <a name="reading-new-inputs-by-polling"></a>Lendo novas entradas por sondagem 
 
-Você pode ler o estado atual de cada controlador conhecido por meio de *MotionController. TryGetReadingAtTime* durante o método *Update* da classe monobehavior. Você deseja passar *DateTime. Now* como o parâmetro timestamp para garantir que o estado mais recente do controlador seja lido. 
+Você pode ler o estado atual de cada controlador conhecido por meio de *MotionController.TryGetReadingAtTime* durante o método *Update* da classe MonoBehavior. Você deseja passar *DateTime.Now como* o parâmetro timestamp para garantir que o estado mais recente do controlador seja lido. 
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -187,7 +187,7 @@ public class MotionControllerStateCache : MonoBehaviour
 } 
 ```
 
-Você pode obter o valor de entrada atual dos controladores usando a destro/canhoto do controlador: 
+Você pode pegar o valor de entrada atual dos controladores usando a Entrega do controlador: 
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -240,7 +240,7 @@ public class MotionControllerStateCache : MonoBehaviour
 } 
 ```
 
-Por exemplo, para ler o valor de Segure analógico de uma interação: 
+Por exemplo, para ler o valor de compreensão análoga de uma InteractionSource: 
 
 ```csharp
 /// Read the analog grasp value of all connected interaction sources 
@@ -259,7 +259,7 @@ void Update()
 
 ### <a name="generating-events-from-the-new-inputs"></a>Gerando eventos a partir das novas entradas 
 
-Em vez de sondar o estado de um controlador uma vez por quadro, você tem a opção de lidar com todas as alterações de estado como eventos, o que permite que você manipule até as ações mais rápidas que têm menos de um quadro. Para que essa abordagem funcione, o cache de controladores de movimento precisa processar todos os Estados publicados por um controlador desde o último quadro, o que pode ser feito armazenando o carimbo de data/hora do último MotionControllerReading recuperado de um MotionController e chamando *MotionController. TryGetReadingAfterTime ()*: 
+Em vez de sondar o estado de um controlador uma vez por quadro, você tem a opção de lidar com todas as alterações de estado como eventos, o que permite manipular até mesmo as ações mais rápidas que duram menos que um quadro. Para que essa abordagem funcione, o cache de controladores de movimento precisa processar todos os estados publicados por um controlador desde o último quadro, o que você pode fazer armazenando o timestamp do último MotionControllerReading recuperado de um MotionController e chamando *MotionController.TryGetReadingAfterTime():* 
 
 ```csharp
 private class MotionControllerState 
@@ -346,7 +346,7 @@ private class MotionControllerState
 } 
 ```
 
-Agora que você atualizou as classes internas do cache, a classe monobehavior pode expor dois eventos – pressionado e liberado – e os elevamos a partir do seu método Update (): 
+Agora que você atualizou as classes internas de cache, a classe MonoBehavior pode expor dois eventos – Pressionado e Liberado – e autá-los de seu método Update(): 
 
 ```csharp
 /// <summary> 
@@ -444,7 +444,7 @@ public void Update()
 } 
 ```
 
-A estrutura nos exemplos de código acima torna o registro de eventos muito mais legível: 
+A estrutura nos exemplos de código acima torna o registro de eventos muito mais acessível: 
 
 ```csharp
 public InteractionSourceHandedness handedness; 

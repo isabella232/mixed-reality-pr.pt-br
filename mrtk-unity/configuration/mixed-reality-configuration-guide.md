@@ -1,18 +1,18 @@
 ---
-title: Guia de configuração do perfil MRTK
+title: Guia de configuração do perfil do MRTK
 description: Documentação para configurar o MRTK no Unity.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e18695610b5e07c4f811e7c43bc13607857a9459407f9b16f39d4f7350f354e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214862"
 ---
-# <a name="mrtk-profile-configuration-guide"></a>Guia de configuração do perfil MRTK
+# <a name="mrtk-profile-configuration-guide"></a>Guia de configuração do perfil do MRTK
 
 a realidade misturada Toolkit centralizar a maior parte da configuração necessária para gerenciar o kit de ferramentas o mais possível (exceto para "coisas" de tempo de execução verdadeiras).
 
@@ -192,7 +192,7 @@ Para criar uma nova ação de entrada, basta clicar no botão "adicionar uma nov
 | Restrição de eixo | Tipo de Dados | Descrição | Uso de exemplo |
 | :--- | :--- | :--- | :--- |
 | Nenhum | Sem dados | Usado para uma ação ou evento vazio | Gatilho de evento |
-| Bruto (reservado) | object | Reservado para uso futuro | N/D |
+| Bruto (reservado) | objeto | Reservado para uso futuro | N/D |
 | Digital | bool | Um booliana em dados de tipo de ou para fora | Um botão do controlador |
 | Eixo único | FLOAT | Um único valor de dados de precisão | Uma entrada de intervalo, por exemplo, um gatilho |
 | Eixo duplo | Vector2 | Uma data de tipo float duplo para vários eixos | Um Dpad ou thumbstick |
@@ -346,7 +346,7 @@ Para garantir que uma cena renderiza todos os dados necessários para o buffer d
 
 ### <a name="pre-mrtk-initialization-profile-switch"></a>Opção de perfil de inicialização do MRTK
 
-Isso pode ser feito anexando um monocomportamento (exemplo abaixo), que é executado antes da inicialização do MRTK (ou seja, ativo ()). Observe que o script (ou seja, chamada para `SetProfileBeforeInitialization` ) precisa ser executado antes do `MixedRealityToolkit` script, o que pode ser obtido definindo [as configurações de ordem de execução de script](https://docs.unity3d.com/Manual/class-MonoManager.html).
+Isso pode ser feito anexando um MonoBehaviour (exemplo abaixo) que é executado antes da inicialização do MRTK (ou seja, Awake()). Observe que o script (ou seja, chamada para ) precisa ser executado antes do script, o que pode ser obtido definindo as configurações de Ordem de Execução `SetProfileBeforeInitialization` `MixedRealityToolkit` de [Script](https://docs.unity3d.com/Manual/class-MonoManager.html).
 
 ```csharp
 using Microsoft.MixedReality.Toolkit;
@@ -377,22 +377,22 @@ public class PreInitProfileSwapper : MonoBehaviour
 }
 ```
 
-em vez de "profileToUse", é possível ter algum conjunto arbitrário de perfis que se aplicam a plataformas específicas (por exemplo, um para HoloLens 1, um para VR, um para HoloLens 2, etc.). É possível usar vários outros indicadores (por exemplo https://docs.unity3d.com/ScriptReference/SystemInfo.html , ou se a câmera é opaca/transparente), para descobrir qual perfil deve ser carregado.
+Em vez de "profileToUse", é possível ter algum conjunto arbitrário de perfis que se aplicam a plataformas específicas (por exemplo, um para HoloLens 1, outro para VR, um para o HoloLens 2 etc.). É possível usar vários outros indicadores (por exemplo, ou se a câmera é ou não opaca/transparente) para descobrir qual perfil https://docs.unity3d.com/ScriptReference/SystemInfo.html carregar.
 
 ### <a name="active-profile-switch"></a>Opção de perfil ativo
 
-Isso pode ser feito definindo a `MixedRealityToolkit.Instance.ActiveProfile` propriedade para um novo perfil, substituindo o perfil ativo.
+Isso pode ser feito definindo `MixedRealityToolkit.Instance.ActiveProfile` a propriedade como um novo perfil substituindo o perfil ativo.
 
 ```csharp
 MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
 ```
 
-Observação ao definir `ActiveProfile` durante o tempo de execução, a destruição dos serviços em execução no momento ocorrerá após o último LateUpdate () de todos os serviços, e a instanciação e a inicialização dos serviços associados ao novo perfil ocorrerão antes da primeira atualização () de todos os serviços.
+Observe que, ao definir durante o runtime, a destruição dos serviços em execução no momento ocorrerá após o último LateUpdate() de todos os serviços, e a insta instaência e a inicialização dos serviços associados ao novo perfil ocorrerão antes da primeira Atualização() de todos os `ActiveProfile` serviços.
 
-Uma hesitação de aplicativo perceptível pode ocorrer durante esse processo. Além disso, qualquer script com prioridade mais alta do que o `MixedRealityToolkit` script pode inserir sua atualização antes que o novo perfil seja configurado corretamente. Consulte [configurações de ordem de execução de script](https://docs.unity3d.com/Manual/class-MonoManager.html) para obter mais informações sobre a prioridade do script.
+Um aplicativo perceptível pode ocorrer durante esse processo. Além disso, qualquer script com prioridade mais alta do `MixedRealityToolkit` que o script pode inserir sua Atualização antes que o novo perfil seja configurado corretamente. Confira [Configurações de Ordem de Execução de](https://docs.unity3d.com/Manual/class-MonoManager.html) Script para obter mais informações sobre a prioridade do script.
 
-No processo de alternância de perfil, a câmera de interface do usuário existente permanecerá inalterada, garantindo que os componentes da interface do usuário do Unity que exigem Canvas ainda funcionem após a mudança.
+No processo de alternação de perfil, a câmera da interface do usuário existente permanecerá inalterada, garantindo que os componentes da interface do usuário do Unity que exigem tela ainda funcionem após a opção.
 
 ## <a name="see-also"></a>Confira também
 
-- [Estabilização de holograma](../performance/hologram-stabilization.md)
+- [Estabilização do holograma](../performance/hologram-stabilization.md)

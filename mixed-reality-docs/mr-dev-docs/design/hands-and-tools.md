@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: Realidade misturada, mãos, controladores de movimento, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 1dffdd5f3471993dfdb5e504e4c5b87ec0bfef7d
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: realidade misturada, mãos, controladores de movimento, interação, design, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: 3a54d707260a3e5aebd83a53b62098504c86c9fea7b2ecbb49d3dbd8b72400dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213680"
 ---
 # <a name="hands-and-motion-controllers"></a>Controladores de mãos e de movimento
 
@@ -46,7 +46,7 @@ Alguns cenários específicos podem ser:
     :::column:::
        [![Controladores de movimento](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
        ### <a name="motion-controllersbr"></a>[Controladores de movimentos](motion-controllers.md)<br>
-       Os controladores de movimento estendem os recursos físicos do usuário com interações precisas em um intervalo de distâncias durante o uso de uma ou de ambas as mãos. Esses acessórios de hardware fornecem atalhos para muitas interações usadas com frequência e fornecem comentários tactiles e com rodapé para várias ações. Atualmente, os controladores de movimento só estão disponíveis para cenários de WMR (realidade mista do Windows). 
+       Os controladores de movimento estendem os recursos físicos do usuário com interações precisas em um intervalo de distâncias durante o uso de uma ou de ambas as mãos. Esses acessórios de hardware fornecem atalhos para muitas interações usadas com frequência e fornecem comentários tactiles e com rodapé para várias ações. atualmente, os controladores de movimento só estão disponíveis para cenários de Windows Mixed Reality (WMR). 
     :::column-end:::
 :::row-end:::
 

@@ -1,21 +1,21 @@
 ---
-title: Iniciar gesto
-description: Saiba como usar o gesto de início para chamar o menu iniciar no HoloLens e nos headsets de imersão de realidade mista do Windows.
+title: Gesto de Iniciar
+description: saiba como usar o gesto de início para chamar o Menu iniciar em HoloLens e Windows Mixed Reality headsets de imersão.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Realidade misturada, gestos, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade misturada, flor
-ms.openlocfilehash: d0f3bd81cab945a01a523806ebaf4546752d74c1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: realidade misturada, gestos, interação, design, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit, flor
+ms.openlocfilehash: f3ad9309c7232f20a25060b1d98d7374272ceea00f24be18d7263b8ec7002fb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213720"
 ---
-# <a name="start-gesture"></a>Iniciar gesto
+# <a name="start-gesture"></a>Gesto de Iniciar
 
-O gesto de início é um gesto de mão usado para invocar o menu iniciar. É o equivalente a pressionar a tecla Windows em teclados, o botão Xbox em controladores Xbox ou o botão Windows em controladores de movimento de headsets de imersão. Preste atenção especial aos gestos do sistema reservado em cada dispositivo de realidade misturada para evitar conflitos quando estiver criando interações.
+O gesto de início é um gesto de mão usado para invocar o menu iniciar. é o equivalente a pressionar a tecla Windows em teclados, o botão Xbox em controladores xbox ou o botão Windows em controladores de movimento de headsets de imersão. Preste atenção especial aos gestos do sistema reservado em cada dispositivo de realidade misturada para evitar conflitos quando estiver criando interações.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -54,7 +54,7 @@ O gesto de início é um gesto de mão usado para invocar o menu iniciar. É o e
 
 ## <a name="bloom"></a>Bloom
 
-Projetamos "cair" para abrir o menu iniciar no HoloLens (1º gen), que é um gesto simbólico imitando um Blossom de flor. É distintivo para uma interação com o pé, fácil de usar e rápida de se lembrar. Para usar o gesto, mantenha a mão com seu Palm up e mãos, em seguida, abra sua mão distribuindo os dedos.
+projetamos "cair" para abrir o menu iniciar no HoloLens (1ª gen), que é um gesto simbólico imitando um blossom de flor. É distintivo para uma interação com o pé, fácil de usar e rápida de se lembrar. Para usar o gesto, mantenha a mão com seu Palm up e mãos, em seguida, abra sua mão distribuindo os dedos.
 
 :::row:::
     :::column:::
@@ -71,9 +71,9 @@ Projetamos "cair" para abrir o menu iniciar no HoloLens (1º gen), que é um ges
 
 ---
 
-## <a name="start-gesture"></a>Iniciar gesto
+## <a name="start-gesture"></a>Gesto de Iniciar
 
-No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual, que é mais instinctual para os usuários. Ao mostrar os usuários o botão no pulso, eles podem acessá-lo intuitivamente e pressioná-lo com a outra mão.
+no HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual, que é mais instinctual para os usuários. Ao mostrar os usuários o botão no pulso, eles podem acessá-lo intuitivamente e pressioná-lo com a outra mão.
 
 :::row:::
     :::column:::
@@ -90,15 +90,15 @@ No HoloLens 2, substituímos o gesto de cair com um botão de pulso virtual, que
 
 ---
 
-## <a name="one-handed-start-gesture"></a>Gesto de início de uma mão
+## <a name="one-handed-start-gesture"></a>Gesto de Iniciar de uma mão
 
 > [!IMPORTANT]
-> Para que o gesto de início de uma mão funcione:
+> Para que o gesto de Iniciar de uma mão funcione:
 >
-> 1. Você deve atualizar para a atualização de novembro de 2019 (Build 18363,1039) ou posterior.
-> 1. Seus olhos devem ser calibrados no dispositivo para que o acompanhamento de olho funcione corretamente. Se você não vir pontos de an-órbita em volta do ícone iniciar quando olhar para ele, seus olhos não serão calibrados no dispositivo.
+> 1. Você deve atualizar para a atualização de novembro de 2019 (build 18363.1039) ou posterior.
+> 1. Seus olhos devem ser calibrados no dispositivo para que o rastreamento ocular funcione corretamente. Se você não vir pontos orbitando em torno do ícone Iniciar quando olhar para ele, seus olhos não estarão calibrados no dispositivo.
 
-Você também pode usar o gesto de início com apenas uma mão. Mantenha sua mão em frente com seu Palm e veja o **ícone iniciar** no pulso interno. **Enquanto mantém seu olho no ícone**, aperte seu polegar e indexe o dedo em conjunto.<br>
+Você também pode usar o gesto de início com apenas uma mão. Mantenha sua mão em frente com seu Palm e veja o **ícone iniciar** no pulso interno. **Enquanto mantém o olhar no ícone**, aperte seu polegar e o dedo indicador juntos.<br>
 :::row:::
     :::column:::
         ![Botão do punho pronto](images/wrist-button-ready.png)<br>
