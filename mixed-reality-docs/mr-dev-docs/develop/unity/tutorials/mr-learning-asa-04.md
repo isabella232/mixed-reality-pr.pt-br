@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, sessões, elementos de comentários
 ms.localizationpriority: high
-ms.openlocfilehash: f5f92d8b19da6a449b8630d7f87e0719e438b4ab
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 65a814019909ecacffdd454171075c68497dae1b2123804e07ced1d7e100fdd8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215652"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Exibir comentários das Âncoras Espaciais do Azure
 

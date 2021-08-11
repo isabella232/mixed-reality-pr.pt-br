@@ -7,12 +7,12 @@ ms.date: 06/18/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: c926fbb758d7cfaa2e73b5357cacdab7a5d15e27
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 568d5f25eceed385a1331cd2cf5fe6e3adb6f8228e85d6d2d316749fc2ee431c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187617"
 ---
 # <a name="mixed-reality-openxr-plugin-release-notes"></a>Notas de versão do plug-in OpenXR de Realidade Misturada
 

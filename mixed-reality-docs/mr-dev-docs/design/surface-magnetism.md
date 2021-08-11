@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realidade Misturada, Controles, interação, interface do usuário, experiência do usuário, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, surface reality
-ms.openlocfilehash: 4afed1ff9a1e8a7cb46f4810ac388739bca1b19e
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, surface
+ms.openlocfilehash: c3f1a390d6abe259c9cb825a41f757809c85c9565a1280cf82d8badc262cbf30
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196217"
 ---
 # <a name="surface-magnetism"></a>Magnetismo de superfície
 
@@ -23,7 +23,7 @@ O Surface Surface permite que você coloque objetos holográficos em superfície
 
 ---
 
-## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Surface no MRTK (Kit de Ferramentas de Realidade Misturada) para Unity
+## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Surface no MRTK (Mixed Reality Toolkit) para Unity
 
 **[O MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e cenas de exemplo para a técnica de superfície. Você pode usar a superfície com vários tipos de entradas, como raio de mão, olhar e controladores de movimento.
 

@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Ponteiros, Controladores
-ms.openlocfilehash: b3e4438c1318abbc60606bcbca42854edae28167
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 00bc0641182c566b045f959dfa361e1311b3cd224fc998f154010ad2996679ae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196286"
 ---
 # <a name="controllers-pointers-and-focus"></a>Controladores, ponteiros e foco
 
@@ -20,7 +20,7 @@ Controladores, ponteiros e foco são conceitos de nível superior que se baseam 
 
 Controladores são representações de um controlador físico (6 graus de liberdade, mão articulada etc.). Eles são criados por gerenciadores de dispositivos e são responsáveis por se comunicar com o sistema subjacente correspondente e traduzir esses dados em eventos e dados em forma de MRTK.a
 
-Por exemplo, na plataforma Windows Mixed Reality, o é um controlador responsável por fazer a interfação com as APIs de acompanhamento de mão subjacentes do Windows para obter informações sobre as junções, a pose e outras propriedades da [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) mão. [](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) Ele é responsável por transformar esses dados em eventos relevantes do MRTK (por exemplo, chamando RaisePoseInputChanged ou RaiseHandJointsUpdated) e atualizando seu próprio estado interno para que as consultas para retornem dados [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) corretos.
+Por exemplo, na plataforma Windows Mixed Reality, o é um controlador responsável por fazer a interfação com as APIs de acompanhamento de mão Windows subjacentes para obter informações sobre as junções, a pose e outras propriedades da [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) mão. [](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) Ele é responsável por transformar esses dados em eventos relevantes do MRTK (por exemplo, chamando RaisePoseInputChanged ou RaiseHandJointsUpdated) e atualizando seu próprio estado interno para que as consultas para retornem dados [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) corretos.
 
 Em geral, o ciclo de vida de um controlador envolverá:
 

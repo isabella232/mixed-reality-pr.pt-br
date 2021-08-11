@@ -1,29 +1,29 @@
 ---
 title: Estudo de caso – Projeto de som espacial para HoloTour
-description: Para criar um tour virtual 3D verdadeiramente envolvente para o Microsoft HoloLens, os vídeos panorâmicos e o cenário Holographic são apenas parte da fórmula.
+description: para criar um tour virtual 3d verdadeiramente imersiva para Microsoft HoloLens, os vídeos panorâmicos e o cenário holographic são apenas parte da fórmula.
 author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, HoloLens, HoloTour, som espacial, estudo de caso, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada, áudio
-ms.openlocfilehash: 7f2474ba6edbdd54c31b24d38bb60e170b65b25a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, HoloLens, HoloTour, som espacial, estudo de caso, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, realidade misturada Toolkit, áudio
+ms.openlocfilehash: b398ea7b3ddd85db85018da1852ed0c5ae410f625ff88bdda286e750a517d260
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196433"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>Estudo de caso: design de som espacial para HoloTour
 
-Vídeos panorâmicos e cenários holographics são apenas parte da fórmula para um tour de imersão do Microsoft HoloLens. Este artigo descreve como o som foi usado para fazer você sentir como você realmente está em cada local HoloTour.
+vídeos panorâmicos e cenários holographics são apenas parte da fórmula para um tour de Microsoft HoloLens de imersão. Este artigo descreve como o som foi usado para fazer você sentir como você realmente está em cada local HoloTour.
 
 ## <a name="the-tech"></a>O Tech
 
-As belas imagens e cenas holographics que você vê em HoloTour são apenas uma parte de uma experiência de realidade mista verossímeis. Embora os hologramas apareçam apenas na frente de um usuário, o HoloLens pode entregar um [som espacial](spatial-sound.md) de todas as direções, o que fornece uma experiência de sensor mais completa.
+As belas imagens e cenas holographics que você vê em HoloTour são apenas uma parte de uma experiência de realidade mista verossímeis. embora os hologramas apareçam apenas na frente de um usuário, HoloLens pode fornecer [som espacial](spatial-sound.md) de todas as direções, o que fornece uma experiência de sensor mais completa.
 
 O som espacial fornece indicações para indicar uma direção que o usuário deve ativar ou para permitir que o usuário saiba que há mais hologramas para ver dentro de seu espaço. Também podemos anexar um som diretamente a um holograma e atualizar continuamente a direção e a distância que o holograma é do usuário. Essa técnica faz parecer que o som é proveniente diretamente desse objeto.
 
-Para o HoloTour, queríamos aproveitar os recursos de som espaciais do HoloLens, portanto, criamos um ambiente de 360 graus que é sincronizado com o vídeo para revelar os destaques da Sonic de locais específicos.
+para o HoloTour, queríamos aproveitar os recursos de som espaciais de HoloLens, portanto, criamos um ambiente de 360 graus que é sincronizado com o vídeo para revelar os destaques da sonic de locais específicos.
 
 ## <a name="behind-the-scenes"></a>Nos bastidores
 
@@ -58,16 +58,16 @@ Em uma abordagem diferente, às vezes executamos loops estéreo de Ambience com 
 
 ## <a name="tips-and-tricks"></a>Dicas e truques
 
-Há outras maneiras de destacar a direcionalidade e melhorar o imersão para fazer uso completo dos recursos de som espacial do HoloLens. Fornecemos uma lista aqui. Escute esses efeitos na próxima vez que tentar HoloTour.
+Há outras maneiras de destacar a direcionalidade e melhorar o imersão para fazer uso completo dos recursos de som espaciais de HoloLens. Fornecemos uma lista aqui. Escute esses efeitos na próxima vez que tentar HoloTour.
 * **Procurar destinos:** Esses sons são disparados quando você examina um objeto ou uma área específica do quadro Holographic. Por exemplo, procure o café do lado da rua no Piazza Navona de Roma para disparar sutilmente sons de Busy-restaurante.
 * **Visão local:** Embora a jornada HoloTour contenha determinados "batidas", onde o guia do Tour, auxiliado por holograma, explora um tópico em detalhes. Por exemplo, à medida que a fachada do Pantheon é resolvida para revelar o Oculus, o áudio do reverberating que foi colocado como um emissor 3D de dentro do Pantheon incentiva o usuário a explorar o interior.
 * **Direcionalidade aprimorada:** Em muitos bastidores, colocamos sons de várias maneiras de adicionar à direcionalidade. Na cena Pantheon, por exemplo, o som do Fountain foi colocado como um emissor separado próximo o suficiente para que o usuário pudesse ter uma noção de "Sonic da Parallax" à medida que eles se encaminharem pelo espaço de jogo. Na cena Salinas de Maras do Peru, os sons de pequenos fluxos individuais foram colocados como emissores separados para criar um ambiente ambiente mais imersiva, ao redor do usuário com os sons autênticos desse local.
 * **Emissor de spline:** Esses emissores se movem no espaço 3D com base na posição visual do objeto ao qual estão anexados. Um exemplo é o treinamento no Machu Picchu, no qual usamos um emissor de spline para dar uma noção distinta de direcionalidade e movimento.
 * **Música e SFX:** Determinados aspectos de HoloTour que representam uma abordagem mais estilizada ou Cinematic usam efeitos de música e som para reforçar o impacto emocional. Por exemplo, a batalha de Gladiator no final do Tour de Roma usa efeitos especiais como whooshes e os Stingers para reforçar o efeito dos rótulos que aparecem nos bastidores.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Som espacial](spatial-sound.md)
 * [Projeto de som espacial](spatial-sound-design.md)
 * [Som espacial no Unity](../develop/unity/spatial-sound-in-unity.md)
-* [Vídeo: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
+* [vídeo: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, HTK,
-ms.openlocfilehash: b54445dc5ca7a6c01c968929e243a1fc4ca2d107
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: d6a8170ff9b0a9c1c3ba1461a3e297ffd2f89979864de2fbac056f22dcbb8e2f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197406"
 ---
 # <a name="upgrading-from-holotoolkit"></a>Atualizando do HoloToolkit
 
@@ -110,46 +110,46 @@ Sistemas de entrada relacionados:
 
 |       Métodos                      | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Instalação                     | Adicione o pré-fab SpatialUnderstanding à cena. | Ainda não implementado. |
-| Configuração             | Configure a instância da cena no inspetor. | Ainda não implementado. |
+| Instalação                     | Adicione SpatialUnderstanding pré-fabricado à cena. | Ainda não implementado. |
+| Configuração             | Configure a instância de cena no Inspetor. | Ainda não implementado. |
 
 ## <a name="boundary"></a>Limite
 
 |         Métodos                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Instalação                     | Adicione o `BoundaryManager` script à cena. | Habilita o Sistema de Limites no Perfil de Configuração. |
-| Configuração             | Configure a instância da cena no inspetor. | De configurar as configurações no perfil visualização de limite. |
+| Instalação                     | Adicione o `BoundaryManager` script à cena. | Habilite o sistema de limites no perfil de configuração. |
+| Configuração             | Configure a instância de cena no Inspetor. | Defina as configurações no perfil de visualização de limite. |
 
 ## <a name="sharing"></a>Compartilhamento
 
 |             Métodos               | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Instalação                     | Serviço de compartilhamento: adicione o pré-fab de compartilhamento à cena. UNet: use o exemplo SharingWithUNET. | Em andamento |
-| Configuração             | Configure as instâncias de cena no inspetor. | Em andamento |
+| Instalação                     | Compartilhamento de serviço: Adicionar pré-fabricado de compartilhamento à cena. UNet: Use o exemplo SharingWithUNET. | Em andamento |
+| Configuração             | Configure as instâncias de cena no Inspetor. | Em andamento |
 
 ## <a name="ux"></a>UX
 
 |         Métodos                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Botão                     | [Objetos interagidos](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Botão](../features/ux-building-blocks/Button.md) |
-| Interativo                     | [Objetos interagidos](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interativo](../features/ux-building-blocks/Interactable.md) |
-| Caixa delimitadora             | [Caixa delimitada](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Caixa delimitada](../features/ux-building-blocks/bounding-box.md) |
-| Barra de aplicativos             | [Barra de Aplicativos](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Barra de Aplicativos](../features/ux-building-blocks/app-bar.md) |
-| Manipulação de uma mão (Grb e Movimentação)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulador de manipulação](../features/ux-building-blocks/manipulation-handler.md) |
-| Manipulação de duas mãos (segurar/mover/girar/escalar)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulador de manipulação](../features/ux-building-blocks/manipulation-handler.md) |
-| Keyboard             | [Pré-fab de teclado]() | [Teclado do sistema](../features/ux-building-blocks/system-keyboard.md) |
+| Botão                     | [Objetos que interagem](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Botão](../features/ux-building-blocks/Button.md) |
+| Interativo                     | [Objetos que interagem](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interativo](../features/ux-building-blocks/Interactable.md) |
+| Caixa delimitadora             | [Caixa delimitadora](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Caixa delimitadora](../features/ux-building-blocks/bounding-box.md) |
+| Barra de aplicativos             | [Barra de aplicativos](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Barra de aplicativos](../features/ux-building-blocks/app-bar.md) |
+| Manipulação de uma mão (GRB e mover)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulador de manipulação](../features/ux-building-blocks/manipulation-handler.md) |
+| Manipulação de duas mãos (pegar/mover/girar/dimensionar)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulador de manipulação](../features/ux-building-blocks/manipulation-handler.md) |
+| Keyboard             | [Pré-fabricado de teclado]() | [Teclado do sistema](../features/ux-building-blocks/system-keyboard.md) |
 | Dica de ferramenta             | [Dica de ferramenta](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) | [Dica de ferramenta](../features/ux-building-blocks/tooltip.md) |
 | Coleção de objetos             | [Coleção de objetos](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) | [Coleção de objetos](../features/ux-building-blocks/object-collection.md) |
 | Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/README_SolverSystem.md) | [Solver](../features/ux-building-blocks/solvers/solver.md) |
 
 ## <a name="utilities"></a>Utilitários
 
-Alguns utilitários foram reconciliados como duplicatas com o sistema Solucionador. Arquivar um problema se algum dos scripts necessários estiver ausente.
+Alguns utilitários foram reconciliados como duplicatas com o sistema de solução de problemas. Registre um problema se algum dos scripts necessários estiver ausente.
 
 | HTK 2017 |  MRTK v2  |
 |----------|-----------|
-| Outdoor | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
-| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) ou [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solucionador](../features/ux-building-blocks/solvers/Solver.md) |
-| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize)[Solucionador](../features/ux-building-blocks/solvers/solver.md) |
+| Mensagem | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
+| Que | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) ou [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [resolvedor](../features/ux-building-blocks/solvers/Solver.md) |
+| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize)[Resolvedor](../features/ux-building-blocks/solvers/solver.md) |
 | FpsDisplay | [Sistema de diagnóstico](../features/diagnostics/diagnostics-system-getting-started.md) (no perfil de configuração) |
-| NearFade | Sombreador Standard integrado à [Realidade Misturada Toolkit Standard](../features/rendering/mrtk-standard-shader.md) |
+| NearFade | entrada interna a [realidade misturada Toolkit sombreador padrão](../features/rendering/mrtk-standard-shader.md) |

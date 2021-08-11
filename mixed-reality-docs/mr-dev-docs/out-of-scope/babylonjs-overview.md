@@ -1,17 +1,17 @@
 ---
 title: Visão geral do BabylonJS
-description: Desenvolvimento de realidade misturada com BabylonJS
+description: Desenvolvimento de realidade misturada com o BabylonJS
 author: yonet
 ms.author: ayyonet
 ms.date: 4/12/2020
 ms.topic: article
-keywords: WebVR, WebXR, WinMR, WebAR, Web VR, Web XR, Web Mr, Web ar, 360, 360 vídeo, 360 vídeos, 360 Photo, 360 fotos, 360 Content, imersiva Web, immersiveweb, IW
-ms.openlocfilehash: 0a25f50bbec0f1a98266459a57920e8bee201e76
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, web mr, web ar, 360, 360 vídeo, 360 vídeos, 360 fotos, 360 fotos, 360 conteúdo, Web imersiva, immersiveweb, IW
+ms.openlocfilehash: 93529ac361ffba564fcb08f91ed5c8ed1757dfbc52f805a0e6ab0199145d7c7f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207854"
 ---
 # <a name="babylonjs-overview"></a>Visão geral do BabylonJS
 

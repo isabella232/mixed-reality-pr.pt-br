@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, reconhecimento de fala, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 39eaa8a17d4616dc9c044f9bff7522dde41cffb7
-ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
+ms.openlocfilehash: a12163dda0a6bf961c6c34ebc35b6e00f491d6ca59c08dfba7c5126e797d089a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113656633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214575"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrar e usar a transcrição e o reconhecimento de fala
 

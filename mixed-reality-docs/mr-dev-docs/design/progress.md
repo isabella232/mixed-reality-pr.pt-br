@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, controles, interface do usuário, experiência do usuário, indicador de progresso, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, design, controles, interface do usuário, experiência do usuário, indicador de progresso, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Realidade Misturada Toolkit
+ms.openlocfilehash: 8d397f627b55409d640ac6925a72d6bf169e207c27cb2a90bcee990c7a8d7683
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207864"
 ---
 # <a name="progress-indicator"></a>Indicador de progresso
 
@@ -34,11 +34,11 @@ Um controle de progresso fornece comentários de que uma operação de execuçã
         ### <a name="progress-barbr"></a>Barra de progresso<br>
         Uma barra Progresso mostra o percentual concluído de uma tarefa. Ele deve ser usado durante uma operação cuja duração é conhecida (determinada), mas seu progresso não deve bloquear a interação do usuário com o aplicativo.<br>
         <br>
-        *Imagem: exemplo de barra de progresso no HoloLens*
+        *Imagem: exemplo de barra de progresso HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Exemplo de barra de progresso no HoloLens](images/640px-progressbar.jpg)<br>
+       ![Exemplo de barra de progresso HoloLens](images/640px-progressbar.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -51,11 +51,11 @@ Um controle de progresso fornece comentários de que uma operação de execuçã
         ### <a name="progress-ringbr"></a>Anel de progresso<br>
         Um anel Progress só tem um estado indeterminado e deve ser usado quando a interação do usuário é bloqueada até que a operação seja concluída.<br>
         <br>
-        *Imagem: exemplo de anel de progresso no HoloLens*
+        *Imagem: exemplo de anel de progresso HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Exemplo de anel de progresso no dispositivo HoloLens](images/640px-progressring.jpg)<br>
+       ![Exemplo de anel de progresso HoloLens dispositivo](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -68,7 +68,7 @@ Um controle de progresso fornece comentários de que uma operação de execuçã
         ### <a name="progress-with-a-custom-objectbr"></a>Progresso com um objeto personalizado<br>
         Você pode adicionar à personalidade e à identidade da marca do aplicativo personalização do controle Progresso com seus próprios objetos 2D/3D personalizados.<br>
         <br>
-        *Imagem: Progresso com exemplo de malha personalizada no HoloLens*
+        *Imagem: progresso com o exemplo de malha personalizada HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -83,13 +83,13 @@ Um controle de progresso fornece comentários de que uma operação de execuçã
 ## <a name="best-practices"></a>Práticas recomendadas
 
 * Adoce [](billboarding-and-tag-along.md) fortemente a marcação ou a marcação à exibição de Progresso, pois o usuário pode facilmente mover a cabeça para o espaço vazio e perder o contexto. Seu aplicativo pode parecer que ele teve um problema se o usuário não conseguir ver nada. A marcação e a marcação são criadas no pré-fab Progresso.
-* É sempre bom fornecer informações de status sobre o que está acontecendo com o usuário. O prefab Progresso fornece vários estilos visuais, incluindo o progresso do tipo de anel padrão do Windows para fornecer status. Você também pode usar uma malha personalizada com uma animação se quiser que o estilo do seu progresso se alinhe à marca do aplicativo.
+* É sempre bom fornecer informações de status sobre o que está acontecendo com o usuário. O prefab Progresso fornece vários estilos visuais, incluindo o Windows de tipo de anel padrão para fornecer status. Você também pode usar uma malha personalizada com uma animação se quiser que o estilo do seu progresso se alinhe à marca do aplicativo.
 
 <br>
 
 ---
 
-## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicador de progresso no MRTK (Kit de Ferramentas de Realidade Misturada) para Unity
+## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicador de progresso no MRTK (Mixed Reality Toolkit) para Unity
 
 * [MRTK – Pré-requisitos do indicador de progresso](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
 * [MRTK – Serviço de transição de cena](/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)

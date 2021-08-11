@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, padrões de aplicativo, design, HoloLens, verificação de sala, mapeamento espacial, malha, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual, HoloLens
-ms.openlocfilehash: 87312a5d5361ac0e8c24a622cf69fe3e9b147ff5
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: Windows Mixed Reality, padrões de aplicativo, design, HoloLens, verificação de sala, mapeamento espacial, malha, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens
+ms.openlocfilehash: 0ebfbd9a1f07ffd0671d36dcc63dbd5303a2cdbceb906839be9736f43de76937
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207824"
 ---
 # <a name="room-scan-visualization"></a>Visualização de varredura do ambiente
 
@@ -19,14 +19,14 @@ Os aplicativos que exigem mapeamento espacial dependem do dispositivo para colet
 
 Para garantir dados de mapeamento espacial úteis, os desenvolvedores de aplicativos têm várias opções:
 * Conte com o que já pode ter sido coletado. Esses dados podem estar incompletos inicialmente.
-* Peça ao usuário para usar o gesto de cair para chegar à página inicial do Windows Mixed Reality e, em seguida, explorar a área que desejam usar para a experiência. Eles podem usar o Air-TAP para confirmar se toda a área necessária é conhecida pelo dispositivo.
+* peça ao usuário para usar o gesto de cair para chegar ao Windows Mixed Reality home e, em seguida, explorar a área que desejam usar para a experiência. Eles podem usar o Air-TAP para confirmar se toda a área necessária é conhecida pelo dispositivo.
 * Crie uma experiência de exploração personalizada em seu próprio aplicativo.
 
-Em todos esses casos, os dados reais coletados durante a exploração são armazenados pelo sistema e o aplicativo não precisa fazer isso. Se você quiser ver a visualização da verificação de sala em ação, Confira nossa demonstração de vídeo **de conscientização espacial a** seguir:
+Em todos esses casos, os dados reais coletados durante a exploração são armazenados pelo sistema e o aplicativo não precisa fazer isso. se você quiser ver a visualização da verificação de sala em ação, confira nossa demonstração de vídeo **de conscientização Hologramas espacial** abaixo:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*Este vídeo foi tirado do aplicativo "criando hologramas" do HoloLens 2. Baixe e aproveite a experiência completa [aqui](https://aka.ms/dhapp).*
+*Este vídeo foi retirado do aplicativo "Projetando hologramas" do HoloLens 2. Baixe e aproveite a experiência completa [aqui](https://aka.ms/dhapp).*
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -54,28 +54,28 @@ Os aplicativos podem analisar os dados de mapeamento espacial no início da expe
 * Quanto do volume total nos arredores dos usuários precisa fazer parte da experiência
 * Onde o usuário deve ir para melhorar os dados
 
-Os usuários não sabem o que torna uma verificação "boa". Eles precisam ser mostrados ou informado sobre o que procurar se eles são solicitados a avaliar uma verificação – flatness, distance from actual walls e assim por diante. O desenvolvedor deve implementar um loop de comentários que inclui a atualização dos dados de mapeamento espacial durante a fase de verificação ou exploração.
+Os usuários não sabem o que faz uma verificação "boa". Eles precisam ser mostrados ou disseram o que procurar se forem solicitados a avaliar uma verificação – Flatness, distância de paredes reais e assim por diante. O desenvolvedor deve implementar um loop de comentários que inclua a atualização dos dados de mapeamento espacial durante a fase de verificação ou exploração.
 
-Em muitos casos, é melhor dizer ao usuário o que ele precisa fazer para obter a qualidade de verificação necessária. Por exemplo, veja o limite, procure por trás de móveis e assim por diante.
+Em muitos casos, é melhor informar ao usuário o que eles precisam fazer para obter a qualidade de verificação necessária. Por exemplo, examine o teto, procure atrás de mobília e assim por diante.
 
-## <a name="cached-versus-continuous-spatial-mapping"></a>Mapeamento espacial em cache versus contínuo
+## <a name="cached-versus-continuous-spatial-mapping"></a>Mapeamento espacial em cache versus contínua
 
-Os dados de mapeamento espacial são os aplicativos de fonte de dados de peso mais pesados que podem ser consumidos. Para evitar problemas de desempenho, como quadros descartados ou gagueja, o consumo desses dados deve ser feito com cuidado.
+Os dados de mapeamento espacial são os aplicativos de fonte de dados de peso mais intenso que podem ser consumidos. Para evitar problemas de desempenho como quadros descartados ou excedentes, o consumo desses dados deve ser feito com cuidado.
 
 A verificação ativa durante uma experiência pode ser benéfica e prejudicial, portanto, você precisará decidir qual método usar com base na experiência.
 
 ### <a name="cached-spatial-mapping"></a>Mapeamento espacial armazenado em cache
 
-Se houver dados de mapeamento espacial armazenados em cache, o aplicativo normalmente tirará um instantâneo dos dados de mapeamento espacial e usará esse instantâneo durante a experiência.
+Se houver dados de mapeamento espacial em cache, o aplicativo normalmente capturará um instantâneo dos dados de mapeamento espacial e usará esse instantâneo durante a experiência.
 
 **Benefícios**
-* Redução da sobrecarga no sistema enquanto a experiência está em execução, levando a ganhos de desempenho de energia, calor e cpu drásticas.
-* Uma implementação mais simples da experiência principal, pois ela não é interrompida por alterações nos dados espaciais.
-* Um único custo único em qualquer pós-processamento dos dados espaciais para física, gráficos e outras finalidades.
+* Redução da sobrecarga no sistema, enquanto a experiência está em execução levando a um aumento considerável de energia, térmico e ganhos de desempenho de CPU.
+* Uma implementação mais simples da experiência principal, uma vez que ela não é interrompida por alterações nos dados espaciais.
+* Um único custo individual em qualquer processamento posterior de dados espaciais para física, gráficos e outras finalidades.
 
-**Inconvenientes**
-* A movimentação de objetos ou pessoas do mundo real não é refletida pelos dados armazenados em cache. por exemplo, o aplicativo pode considerar uma porta aberta quando ele está fechado agora.
-* Potencialmente mais memória do aplicativo para manter a versão armazenada em cache dos dados.
+**Desvantagens**
+* A movimentação de objetos do mundo real ou de pessoas não é refletida pelos dados armazenados em cache. por exemplo, o aplicativo pode considerar uma porta aberta quando é fechado agora.
+* Possivelmente mais memória de aplicativo para manter a versão em cache dos dados.
 
 Um bom caso para esse método é um ambiente controlado ou um jogo de topo de tabela.
 

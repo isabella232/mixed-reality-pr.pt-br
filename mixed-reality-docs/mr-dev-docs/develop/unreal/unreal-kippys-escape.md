@@ -8,12 +8,12 @@ ms.topic: article
 keywords: inreal, inreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, implantar em dispositivo, PC, documentação, headset de realidade misturada, headset de realidade mista do windows, headset da realidade virtual
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 96799de948cf9e1cbca89b7e781f3f830fbc005810680d1164d04acb757b1a09
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208164"
 ---
 # <a name="the-making-of-kippys-escape"></a>A criação do escape do Kippy
 ![Imagem do herói de escape do Kippy](images/KippysEscape_1920.jpg)

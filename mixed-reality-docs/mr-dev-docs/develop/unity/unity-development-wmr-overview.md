@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realidade misturada, desenvolvimento, introdução, novo projeto, portabilidade, funcionalidade, câmera, simulação, emulação, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é realidade virtual, o que é realidade aumentada, MRTK, kit de ferramentas de realidade misturada, entrada de voz, câmera localizável, emulador, Azure, tutoriais
-ms.openlocfilehash: 074f42fd077d888523c2cf0a7da5bcafcfadb0f0
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 74ac1825d8b94ba65075ef96244759ec0c8dcf1891556e0a1f36f100b9615221
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211684"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Desenvolvimento do Unity para VR e Windows Mixed Reality
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, reconhecimento espacial
 ms.localizationpriority: high
-ms.openlocfilehash: dc30997bbb43b29bf2495aa98be392af6885f6b8
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: d33df00ff1ee84ca4fb7acb0ada93e66315507edb9a858bae2b04399d8565041
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112907002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193335"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Como configurar os perfis do MRTK
 

@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b7e04a03f01beb1438f6f723c3938d05a60c9131
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4d8afb841fa9f45befe01c0e5ea6f9128c0b5baa6171d1dab2f8daa8bd99cd0d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98581161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195828"
 ---
 # <a name="1-overview-and-objectives"></a>1. Visão geral e objetivos
 

@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, Foco, direcionamento de foco, interação, design, mãos perto, HoloLens, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, MRTK, Kit de Ferramentas de Realidade Misturada, botão, colisores, caixa delimitadora, 2D, gestos instintivos
-ms.openlocfilehash: 7a689f887bfd358b0d6e0826d41ef409bf887042
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 30b7a3c343ff044595beb6dfe2b62b1c70ff5a2ff3f6dd51563018ceee2fb995
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192562"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipulação direta com as mãos
 

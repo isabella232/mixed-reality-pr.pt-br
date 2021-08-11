@@ -1,27 +1,27 @@
 ---
-title: Sistema teleport
-description: Visão geral sobre como habilitar e desabilitar o sistema teleport no MRTK
+title: Sistema de teletransporte
+description: Visão geral sobre como habilenciar e desabilitar o sistema Dev no MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sistema Teleport,
-ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, sistema Dev.
+ms.openlocfilehash: c46438ed30880029760b5155efb3e3cd1d571c81a03bfbf764b2010e2e232c53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197036"
 ---
 # <a name="teleport-system"></a>Sistema de teletransporte
 
-O sistema teleport é um subsistema do MRTK que lida com o transporte do usuário quando o aplicativo está usando uma exibição opaca. para experiências de AR (como HoloLens), o sistema de teleportação não está ativo. Para experiências de HMD de imersão (OpenVR, WMR), o sistema teleport pode ser habilitado.
+O sistema de teletransporte é um subsistema do MRTK que trata o usuário quando o aplicativo está usando uma exibição opaca. Para experiências de RA (como HoloLens), o sistema de transporte não está ativo. Para experiências de HMD imersivas (OpenVR, WMR), o sistema de teletransporte pode ser habilitado.
 
 ## <a name="enabling-and-disabling"></a>Habilitando e desabilitando
 
-O sistema teleport pode ser habilitado ou desabilitado alternando a caixa de seleção em seu perfil.
-Isso pode ser feito selecionando o objeto MixedRealityToolkit na cena, clicando em "teleport" e, em seguida, alternando a caixa de seleção "habilitar o sistema de teleport".
+O sistema de teletransporte pode ser habilitado ou desabilitado ativando a caixa de seleção em seu perfil.
+Isso pode ser feito selecionando o objeto MixedRealityToolkit na cena, clicando em "Transportar" e, em seguida, ativando a caixa de seleção "Habilitar Sistema DeTransportar".
 
-Isso também pode ser feito em tempo de execução:
+Isso também pode ser feito em runtime:
 
 ```c#
 void DisableTeleportSystem()
@@ -37,14 +37,14 @@ void EnableTeleportSystem()
 
 ## <a name="events"></a>Eventos
 
-O sistema teleport expõe eventos por meio da [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) interface para fornecer sinais quando as ações de teleport começam, terminam ou são canceladas.
+O sistema de teletransporte expõe eventos por meio da interface para fornecer sinais sobre quando as ações [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) de teletransporte começam, terminam ou são canceladas.
 Consulte a documentação da API vinculada para obter mais detalhes sobre a mecânica dos eventos e sua carga associada.
 
 ## <a name="usage"></a>Uso
 
-### <a name="how-to-register-for-teleportation-events"></a>Como registrar-se para eventos de teleportação
+### <a name="how-to-register-for-teleportation-events"></a>Como se registrar para eventos de teletransporte
 
-O código a seguir mostra como criar um monocomportamento que irá escutar eventos de teleportação. Esse código pressupõe que o sistema teleport está habilitado.
+O código a seguir mostra como criar um MonoBehaviour que escutará eventos de teletransportação. Esse código pressuporta que o sistema de transporte está habilitado.
 
 ```c#
 using Microsoft.MixedReality.Toolkit;
@@ -89,8 +89,8 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
 }
 ```
 
-## <a name="teleporting-on-mrtk"></a>Teleportamento em MRTK
+## <a name="teleporting-on-mrtk"></a>Teletransporte no MRTK
 
-Para teleport com um controlador em dispositivos MR com configurações padrão, use o Thumbstick. Para teleportr com as mãos articuladas, faça um gesto com seu Palm voltado para cima com o índice e o polegar para cima, concluindo o teleport ao enrolar o dedo do índice. Para teleport com a simulação de entrada, consulte nossa [documentação](../input-simulation/input-simulation-service.md)atualizada do serviço de simulação de entrada.
+Para usar um controlador em dispositivos MR com configurações padrão, use o thumbstick. Para fazer um gesto com as mãos articuladas, faça um gesto com a mão voltada para cima com o índice e o polegar para fora, concluindo o anel ondulando o dedo indicador. Para fazer a simulação de entrada, confira nossa documentação atualizada [do Serviço de Simulação de Entrada](../input-simulation/input-simulation-service.md).
 
-  ![Gesto de teleport](../images/teleport/handteleport.gif)
+  ![Gesto de Teletransporte](../images/teleport/handteleport.gif)

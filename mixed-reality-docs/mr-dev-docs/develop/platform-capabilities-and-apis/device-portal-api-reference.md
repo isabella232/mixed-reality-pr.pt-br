@@ -1,161 +1,161 @@
 ---
 title: Referência de API do portal de dispositivos
-description: Mantenha-se atualizado sobre a API do portal do dispositivo Windows para o desenvolvimento de HoloLens.
+description: Mantenha-se atualizado sobre a API Windows Portal de Dispositivos para HoloLens desenvolvimento.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, portal de dispositivos Windows, API, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, Windows Portal de Dispositivos, API, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
+ms.openlocfilehash: 6b41c569917150c303da933a75d354f574fb579ba676dac281e9cde2bfc59818
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207834"
 ---
 # <a name="device-portal-api-reference"></a>Referência de API do portal de dispositivos
 
-Tudo no [portal de dispositivos do Windows](using-the-windows-device-portal.md) é criado sobre as APIs REST que você pode usar para acessar os dados e controlar seu dispositivo de forma programática.
+Tudo no [Windows Portal de Dispositivos](using-the-windows-device-portal.md) é criado com base nas APIs REST que você pode usar para acessar os dados e controlar seu dispositivo programaticamente.
 
-## <a name="app-deloyment"></a>Implantação do aplicativo
+## <a name="app-deloyment"></a>Desalocar o aplicativo
 
-**/API/app/PackageManager/Package (excluir)**
+**/api/app/packagemanager/package (DELETE)**
 
 Desinstala um aplicativo
 
 Parâmetros
-* Package: nome de arquivo do pacote a ser desinstalado.
+* package : nome do arquivo do pacote a ser desinstalado.
 
-**/API/app/PackageManager/Package (POST)**
+**/api/app/packagemanager/package (POST)**
 
 Instala um aplicativo
 
 Parâmetros
-* Package: nome do arquivo do pacote a ser instalado.
+* package : nome do arquivo do pacote a ser instalado.
 
 Carga útil
-* corpo http de conformidade de várias partes
+* corpo http em conformidade com várias partes
 
-**/API/app/PackageManager/Packages (GET)**
+**/api/app/packagemanager/packages (GET)**
 
 Recupera a lista de aplicativos instalados no sistema, com detalhes
 
 Retornar dados
 * Lista de pacotes instalados com detalhes
 
-**/API/app/PackageManager/State (GET)**
+**/api/app/packagemanager/state (GET)**
 
 Obtém o status da instalação do aplicativo em andamento
 
 ## <a name="dump-collection"></a>Coleta de despejo
 
-**/API/Debug/dump/UserMode/crashcontrol (excluir)**
+**/api/debug/dump/usermode/crashcontrol (DELETE)**
 
-Desabilita a coleta de despejo de memória para um aplicativo Sideload
-
-Parâmetros
-* packageFullname: nome do pacote
-
-**/API/Debug/dump/UserMode/crashcontrol (GET)**
-
-Obtém as configurações para coleta de despejo de memória de aplicativos Sideload
+Desabilita a coleta de despejo de falha para um aplicativo com sideload
 
 Parâmetros
 * packageFullname: nome do pacote
 
-**/API/Debug/dump/UserMode/crashcontrol (POST)**
+**/api/debug/dump/usermode/crashcontrol (GET)**
 
-Habilita e define as configurações de controle de despejo para um aplicativo Sideload
+Obtém configurações para coleta de despejo de falha de aplicativos com sideload
 
 Parâmetros
 * packageFullname: nome do pacote
 
-**/API/Debug/dump/UserMode/crashdump (excluir)**
+**/api/debug/dump/usermode/crashcontrol (POST)**
 
-Exclui um despejo de memória para um aplicativo Sideload
+Habilita e define as configurações de controle de despejo para um aplicativo com sideload
+
+Parâmetros
+* packageFullname: nome do pacote
+
+**/api/debug/dump/usermode/crashdump (DELETE)**
+
+Exclui um despejo de falha para um aplicativo com sideload
 
 Parâmetros
 * packageFullname: nome do pacote
 * fileName: nome do arquivo de despejo
 
-**/API/Debug/dump/UserMode/crashdump (GET)**
+**/api/debug/dump/usermode/crashdump (GET)**
 
-Recupera um despejo de memória para um aplicativo Sideload
+Recupera um despejo de falha para um aplicativo com sideload
 
 Parâmetros
 * packageFullname: nome do pacote
 * fileName: nome do arquivo de despejo
 
 Retornar dados
-* Arquivo de despejo. Inspecione com o WinDbg ou o Visual Studio
+* Arquivo de despejo. Inspecionar com WinDbg ou Visual Studio
 
-**/API/Debug/dump/UserMode/dumps (GET)**
+**/api/debug/dump/usermode/dumps (GET)**
 
-Retorna a lista de todos os despejos de memória para aplicativos Sideload
+Retorna a lista de todos os despejos de falha para aplicativos com sideload
 
 Retornar dados
-* Lista de despejos de memória por aplicativo carregado por lado
+* Lista de despejos de falha por aplicativo carregado lado a lado
 
 ## <a name="etw"></a>ETW
 
-**/API/ETW/Providers (GET)**
+**/api/etw/providers (GET)**
 
 Enumera provedores registrados
 
 Retornar dados
 * Lista de provedores, nome amigável e GUID
 
-**/API/ETW/Session/Realtime (obter/WebSocket)**
+**/api/etw/session/realtime (GET/WebSocket)**
 
-Cria uma sessão de ETW em tempo real; gerenciado em um WebSocket.
+Cria uma sessão ETW em tempo real; gerenciado em um websocket.
 
 Retornar dados
 * Eventos ETW dos provedores habilitados
 
 ## <a name="holographic-os"></a>Sistema operacional holográfico
 
-**/API/Holographic/os/ETW/customproviders (GET)**
+**/api/holographic/os/etw/customproviders (GET)**
 
-Retorna uma lista de provedores de ETW específicos do HoloLens que não estão registrados no sistema
+Retorna uma lista de HoloLens ETW específicos que não estão registrados com o sistema
 
-**/API/Holographic/os/Services (GET)**
+**/api/holographic/os/services (GET)**
 
-Retorna os Estados de todos os serviços em execução.
+Retorna os estados de todos os serviços em execução.
 
-**/API/Holographic/os/Settings/IPD (GET)**
+**/api/holographic/os/settings/ipd (GET)**
 
-Obtém o IPD armazenado (distância interpupillary) em milímetros
+Obtém o IPD armazenado (distância interpupária) em milímetros
 
-**/API/Holographic/os/Settings/IPD (POST)**
+**/api/holographic/os/settings/ipd (POST)**
 
 Define o IPD
 
 Parâmetros
-* IPD: novo valor de IPD a ser definido em milímetros
+* ipd: novo valor ipD a ser definido em milímetros
 
-**/API/Holographic/os/webmanagement/Settings/HTTPS (GET)**
+**/api/holographic/os/webmanagement/settings/https (GET)**
 
 Obter requisitos de HTTPS para o Device Portal
 
-**/API/Holographic/os/webmanagement/Settings/HTTPS (POST)**
+**/api/holographic/os/webmanagement/settings/https (POST)**
 
-Define os requisitos de HTTPS para o portal do dispositivo
-
-Parâmetros
-* obrigatório: Sim, não ou padrão
-
-## <a name="holographic-perception"></a>Percepção de Holographic
-
-**/API/Holographic/Perception/Client (obter/WebSocket)**
-
-Aceita atualizações do WebSocket e executa um cliente de percepção que envia atualizações a 30 fps.
+Define os requisitos de HTTPS para o Portal de Dispositivos
 
 Parâmetros
-* clientmode: "ativo" força o modo de controle visual quando ele não pode ser estabelecido passivamente
+* obrigatório: sim, não ou padrão
 
-## <a name="holographic-thermal"></a>Holographic térmico
+## <a name="holographic-perception"></a>Percepção holográfica
 
-**/API/Holographic/Thermal/Stage (GET)**
+**/api/holographic/perception/client (GET/WebSocket)**
+
+Aceita atualizações do websocket e executa um cliente de percepção que envia atualizações a 30 fps.
+
+Parâmetros
+* clientmode: "active" força o modo de acompanhamento visual quando ele não pode ser estabelecido passivamente
+
+## <a name="holographic-thermal"></a>Holographic Thermal
+
+**/api/holographic/thermal/stage (GET)**
 
 Obter o estágio térmico do dispositivo (0 normal, 1 quente, 2 crítico)
 
@@ -163,22 +163,22 @@ Obter o estágio térmico do dispositivo (0 normal, 1 quente, 2 crítico)
 
 **/api/holographic/mapmanager/mapFiles (GET)**
 
-Obtém a lista dos arquivos de mapa disponíveis (. MapX).
+Obtém a lista dos arquivos de mapa disponíveis (.mapx).
 
 **/api/holographic/mapmanager/anchorFiles (GET)**
 
-Obtém a lista de arquivos de âncora disponíveis (. ancx).
+Obtém a lista de arquivos de âncora disponíveis (.ancx).
 
 **/api/holographic/mapmanager/srdbFiles (GET)**
 
-Obtém a lista de arquivos de banco de dados de reconstrução espacial disponíveis (. SRDB).
+Obtém a lista de arquivos de banco de dados de reconstrução espacial disponíveis (.srdb).
 
-**/API/Holographic/mapmanager/getanchors (GET)**
+**/api/holographic/mapmanager/getanchors (GET)**
 
 Obtém a lista de âncoras persistentes para o usuário atual. 
 
-### <a name="downloaduploaddelete-files"></a>Baixar/carregar/excluir arquivos
-**/API/Holographic/mapmanager/download (GET)**
+### <a name="downloaduploaddelete-files"></a>Baixar/Upload/excluir arquivos
+**/api/holographic/mapmanager/download (GET)**
 
 Baixa um mapa, âncora ou arquivo de banco de dados de reconstrução espacial. O arquivo deve ter sido carregado ou exportado anteriormente.
 
@@ -353,17 +353,17 @@ Define as configurações padrão de captura de realidade misturada.  Algumas de
 
 **/API/Holographic/MRC/status (GET)**
 
-Obtém o estado da captura de realidade misturada no portal do dispositivo Windows.
+obtém o estado da captura da realidade misturada dentro do Windows Portal do dispositivo.
 
-**_Resposta_* _
+***Resposta***
 
-A resposta contém uma propriedade JSON que indica se o portal do dispositivo Windows está gravando vídeo ou não.
+a resposta contém uma propriedade JSON que indica se Windows Portal do dispositivo está gravando vídeo ou não.
 
 ``` javascript
 {"IsRecording" : boolean}
 ```
 
-_ */API/Holographic/MRC/Thumbnail (Get)**
+**/API/Holographic/MRC/Thumbnail (GET)**
 
 Obtém a imagem em miniatura do arquivo especificado.
 
@@ -380,7 +380,7 @@ Parâmetros
 * MIC: capturar microfone: true ou false (o padrão é false)
 * loopback: capturar o áudio do aplicativo: true ou false (o padrão é false)
 * RenderFromCamera: (somente HoloLens 2) render da perspectiva da câmera de foto/vídeo: true ou false (o padrão é true)
-* Vstab: (somente HoloLens 2) habilitar estabilização de vídeo: true ou false (o padrão é true)
+* vstab: (somente HoloLens 2) habilitar estabilização de vídeo: true ou false (o padrão é true)
 * vstabbuffer: (somente HoloLens 2) latência de buffer de estabilização de vídeo: 0 a 30 quadros (o padrão é 15 quadros)
 
 **/API/Holographic/MRC/Video/Control/Stop (POST)**
@@ -392,7 +392,7 @@ Interrompe a gravação atual da realidade misturada
 > [!CAUTION]
 > Devido ao isolamento de auto-retorno, você não pode se conectar ao streaming de realidade misturada de dentro de um aplicativo em um dispositivo.
 
-O HoloLens dá suporte à visualização dinâmica de realidade misturada por meio do download em partes de um MP4 fragmentado.
+o HoloLens dá suporte à visualização dinâmica de realidade misturada por meio do download em partes de um mp4 fragmentado.
 
 Fluxos de realidade misturada compartilham o mesmo conjunto de parâmetros para controlar o que é capturado:
 * holo: capturar hologramas: verdadeiro ou falso
@@ -403,7 +403,7 @@ Fluxos de realidade misturada compartilham o mesmo conjunto de parâmetros para 
 Se nenhum deles for especificado: os hologramas, a câmera de foto/vídeo e o áudio do aplicativo serão capturados<br>
 Se houver algum especificado: os parâmetros não especificados serão padronizados como false
 
-Parâmetros opcionais (somente HoloLens 2)
+parâmetros opcionais (somente HoloLens 2)
 * RenderFromCamera: Render da perspectiva da câmera de foto/vídeo: true ou false (o padrão é true)
 * Vstab: habilitar estabilização de vídeo: true ou false (o padrão é false)
 * vstabbuffer: latência de buffer de estabilização de vídeo: 0 a 30 quadros (o padrão é 15 quadros)
@@ -487,7 +487,7 @@ Parâmetros
 
 **/API/Holographic/Simulation/playback/File (POST)**
 
-Carregar uma gravação.
+Upload uma gravação.
 
 **/API/Holographic/Simulation/playback/Files (GET)**
 
@@ -557,145 +557,145 @@ Parâmetros
 * Hands: Defina como 1 para gravar dados de mão.
 * spatialMapping: Defina como 1 para registrar o mapeamento espacial.
 * ambiente: Defina como 1 para gravar dados do ambiente.
-* Nome: o nome da gravação.
-* singleSpatialMappingFrame: Defina como 1 para gravar apenas um único quadro de mapeamento espacial.
+* name : nome da gravação.
+* singleSpatialMappingFrame: definido como 1 para registrar apenas um único quadro de mapeamento espacial.
 
-**/API/Holographic/Simulation/Recording/status (GET)**
+**/api/holographic/simulation/recording/status (GET)**
 
-Obter estado de gravação.
+Obter o estado de gravação.
 
-**/API/Holographic/Simulation/Recording/Stop (GET)**
+**/api/holographic/simulation/recording/stop (GET)**
 
-Parar a gravação atual. A gravação será retornada como um arquivo.
+Pare a gravação atual. A gravação será retornada como um arquivo.
 
 ## <a name="performance-data"></a>Dados de desempenho
 
-**/API/ResourceManager/Processes (GET)**
+**/api/resourcemanager/processes (GET)**
 
 Retorna a lista de processos em execução com detalhes
 
 Retornar dados
 * JSON com lista de processos e detalhes para cada processo
 
-**/API/ResourceManager/systemperf (GET)**
+**/api/resourcemanager/systemperf (GET)**
 
-Retorna estatísticas de desempenho do sistema (leitura/gravação de e/s, estatísticas de memória etc.)
+Retorna estatísticas de perf do sistema (E/S de leitura/gravação, estatísticas de memória etc.
 
 Retornar dados
-* JSON com informações do sistema: CPU, GPU, memória, rede, e/s
+* JSON com informações do sistema: CPU, GPU, Memória, Rede, E/S
 
 ## <a name="power"></a>Energia
 
-**/API/Power/Battery (GET)**
+**/api/power/battery (GET)**
 
-Obtém o estado da bateria atual
+Obtém o estado atual da bateria
 
-**/API/Power/State (GET)**
+**/api/power/state (GET)**
 
 Verifica se o sistema está em um estado de baixa energia
 
 ## <a name="remote-control"></a>Controle remoto
 
-**/API/Control/Restart (POST)**
+**/api/control/restart (POST)**
 
 Reinicia o dispositivo de destino
 
-**/API/Control/Shutdown (POST)**
+**/api/control/shutdown (POST)**
 
 Desliga o dispositivo de destino
 
 ## <a name="task-manager"></a>Gerenciador de Tarefas
 
-**/API/taskmanager/app (excluir)**
+**/api/taskmanager/app (DELETE)**
 
-Para um aplicativo moderno
+Interrompe um aplicativo moderno
 
 Parâmetros
-* pacote: nome completo do pacote do aplicativo, codificado hex64
-* forcestop: forçar a interrupção de todos os processos (= Sim)
+* package : nome completo do pacote do aplicativo, codificado em hex64
+* forcestop: forçar a parada de todos os processos (=sim)
 
-**/API/taskmanager/app (POST)**
+**/api/taskmanager/app (POST)**
 
 Inicia um aplicativo moderno
 
 Parâmetros
-* AppID: PRAID do aplicativo a ser iniciado, hex64 codificado
-* pacote: nome completo do pacote do aplicativo, codificado hex64
+* appid: PRAID do aplicativo para iniciar, codificado em hex64
+* package : nome completo do pacote do aplicativo, codificado em hex64
 
 ## <a name="wifi-management"></a>Gerenciamento de WiFi
 
-**/API/WiFi/interfaces (GET)**
+**/api/wifi/interfaces (GET)**
 
 Enumera interfaces de rede sem fio
 
 Retornar dados
-* Lista de interfaces sem fio com detalhes (GUID, descrição, etc.)
+* Lista de interfaces sem fio com detalhes (GUID, descrição etc.)
 
-**/API/WiFi/Network (excluir)**
+**/api/wifi/network (DELETE)**
 
 Exclui um perfil associado a uma rede em uma interface especificada
 
 Parâmetros
-* interface: GUID de interface de rede
-* Perfil: nome do perfil
+* interface : guid de interface de rede
+* profile : nome do perfil
 
-**/API/WiFi/Networks (GET)**
+**/api/wifi/networks (GET)**
 
-Enumera redes sem fio na interface de rede especificada
+Enumera redes sem fio no interface de rede especificado
 
 Parâmetros
-* interface: GUID de interface de rede
+* interface : guid de interface de rede
 
 Retornar dados
-* Lista de redes sem fio encontradas na interface de rede com detalhes
+* Lista de redes sem fio encontradas no interface de rede com detalhes
 
-**/API/WiFi/Network (POST)**
+**/api/wifi/network (POST)**
 
-Conecta ou desconecta-se a uma rede na interface especificada
+Conecta ou desconecta a uma rede na interface especificada
 
 Parâmetros
-* interface: GUID de interface de rede
-* SSID: SSID, hex64 codificado, para se conectar ao
+* interface : guid de interface de rede
+* ssid : ssid, hex64 codificado, para se conectar a
 * op: conectar ou desconectar
-* CreateProfile: Sim ou não
-* chave: chave compartilhada, hex64 codificada
+* createprofile : sim ou não
+* chave : chave compartilhada, codificada hex64
 
-## <a name="windows-performance-recorder"></a>Gravador de desempenho do Windows
+## <a name="windows-performance-recorder"></a>Windows Gravador de desempenho
 
-**/API/WPR/customtrace (POST)**
+**/api/wpr/customtrace (POST)**
 
 Carrega um perfil WPR e inicia o rastreamento usando o perfil carregado.
 
 Carga útil
-* corpo http de conformidade de várias partes
+* corpo http em conformidade com várias partes
 
 Retornar dados
 * Retorna o status da sessão WPR.
 
-**/API/WPR/status (GET)**
+**/api/wpr/status (GET)**
 
 Recupera o status da sessão WPR
 
 Retornar dados
 * Status da sessão WPR.
 
-**/API/WPR/Trace (GET)**
+**/api/wpr/trace (GET)**
 
-Interrompe uma sessão de rastreamento de WPR (desempenho)
+Interrompe uma sessão de rastreamento WPR (desempenho)
 
 Retornar dados
 * Retorna o arquivo ETL de rastreamento
 
-**/API/WPR/Trace (POST)**
+**/api/wpr/trace (POST)**
 
-Inicia uma sessão de rastreamento WPR (desempenho)
+Inicia sessões de rastreamento wpr (desempenho)
 
 Parâmetros
-* Perfil: nome do perfil. Os perfis disponíveis são armazenados em perfprofiles/profiles.jsem
+* profile : nome do perfil. Os perfis disponíveis são armazenados em perfprofiles/profiles.json
 
 Retornar dados
-* Em Iniciar, retorna o status da sessão WPR.
+* Ao iniciar, retorna o status da sessão WPR.
 
 ## <a name="see-also"></a>Confira também
 * [Como usar o Portal de Dispositivos do Windows](using-the-windows-device-portal.md)
-* [Referência da API principal do portal do dispositivo (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)
+* [Portal de Dispositivos UWP (referência de API principal)](/windows/uwp/debug-test-perf/device-portal-api-core)
