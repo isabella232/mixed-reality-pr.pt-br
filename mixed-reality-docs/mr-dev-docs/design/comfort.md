@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realidade Misturada, design, conforto, HoloLens 2, HoloLens (1ª geração), headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, locomoção
-ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 87cf45628a530da65d9feb29556afb7c4a8ee1d3f13385cbf521d2621ac0c2ae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226418"
 ---
 # <a name="comfort"></a>Conforto
 
@@ -166,7 +166,7 @@ Para evitar o cansaço visual e cervical, o conteúdo deve ser projetado de modo
 * **Evite** ângulos de foco superiores a 60 graus abaixo do horizonte (movimento vertical)
 * **Evite** rotações de pescoço superiores a 45 graus fora do centro (movimento horizontal)
 
-O ângulo de foco ideal (repouso) é considerado entre 10-20 graus abaixo do horizonte, pois a cabeça tende a se inclinar ligeiramente para baixo, especialmente durante as atividades.
+Consideramos que o ângulo de foco ideal (repouso) está entre 10 e 20 graus abaixo do horizonte, pois a cabeça tende a se inclinar um pouco para baixo, principalmente durante as atividades.
 
 ## <a name="arm-positions"></a>Posições do braço
 

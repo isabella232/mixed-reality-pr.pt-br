@@ -1,17 +1,17 @@
 ---
 title: Entrada olhar em não real
-description: Saiba como configurar e usar a entrada olhar com acompanhamento de olho e orientação de cabeçalho para aplicativos do HoloLens em modo inreal.
+description: saiba como configurar e usar a entrada olhar com acompanhamento de olho e orientação de cabeçalho para aplicativos de HoloLens em modo inreal.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Realidade mista do Windows, hologramas, HoloLens 2, controle de olho, entrada de olhar, exibição montada de cabeçalho, mecanismo inreal, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, hologramas, HoloLens 2, controle de olho, entrada de olhar, tela de partida montada, mecanismo inreal, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual
+ms.openlocfilehash: e423086e293629e3dfadb49b52a376c0b93f5e465328b93f47c2f1e3e0790b63
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98579983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200656"
 ---
 # <a name="gaze-input"></a>Entrada olhar
 
@@ -19,14 +19,14 @@ A entrada olhar em aplicativos de realidade misturada é como descobrir o que os
 
 ## <a name="enabling-eye-tracking"></a>Habilitando o acompanhamento de olho
 
-- Em **configurações do projeto > HoloLens**, habilite o recurso de **entrada olhar** :
+- em **Project Configurações > HoloLens**, habilite o recurso de **entrada olhar** :
 
-![Captura de tela de recursos de configuração do projeto de HoloLens com entrada olhar realçada](images/unreal-gaze-img-01.png)
+![captura de tela de HoloLens recursos de configuração do projeto com a entrada olhar realçada](images/unreal-gaze-img-01.png)
 
 - Criar um novo ator e adicioná-lo à sua cena
 
 > [!NOTE]
-> O controle de olhos do HoloLens em tempo inreal tem apenas um único olhar Ray para ambos os olhos. O acompanhamento de estereoscópico, que requer dois raios, não tem suporte.
+> HoloLens controle de olho em inreal só tem um único olhar ray para ambos os olhos. O acompanhamento de estereoscópico, que requer dois raios, não tem suporte.
 
 ## <a name="using-eye-tracking"></a>Como usar o acompanhamento ocular
 
@@ -35,7 +35,7 @@ Primeiro, verifique se seu dispositivo dá suporte ao controle de olho com a fun
 ![Plano gráfico da função conectada de acompanhamento de olho](images/unreal-gaze-img-02.png)
 
 > [!NOTE]
-> O ponto fixação da e o valor de confiança não estão disponíveis no HoloLens.
+> O ponto fixação da e o valor de confiança não estão disponíveis em HoloLens.
 
 Use a origem e a direção do olhar em um rastreamento de linha para descobrir exatamente onde os usuários estão olhando.  O valor de olhar é um vetor, começando na origem de olhar e terminando na origem mais a direção de olhar multiplicada pela distância de rastreamento de linha:
 
@@ -52,7 +52,7 @@ Você também pode usar a rotação da exibição montada de cabeçalho (HMD) pa
 
 ## <a name="using-c"></a>Usando C++
 
-- No arquivo **Build.cs** do jogo, adicione **EyeTracker** à lista **PublicDependencyModuleNames** :
+- No arquivo **Build. cs** do seu jogo, adicione **EyeTracker** à lista **PublicDependencyModuleNames** :
 
 ```cpp
 PublicDependencyModuleNames.AddRange(
@@ -66,7 +66,7 @@ PublicDependencyModuleNames.AddRange(
 ```
 
 - Em **arquivo/nova classe c++**, crie um novo ator de C++ chamado **EyeTracker**
-    - Uma solução do Visual Studio abrirá a nova classe EyeTracker. Compile e execute para abrir o jogo não real com o novo ator EyeTracker.  Pesquise "EyeTracker" na janela **posicionar atores** e arraste e solte a classe na janela do jogo para adicioná-la ao projeto:
+    - uma solução de Visual Studio abrirá a nova classe EyeTracker. Compile e execute para abrir o jogo não real com o novo ator EyeTracker.  Pesquise "EyeTracker" na janela **posicionar atores** e arraste e solte a classe na janela do jogo para adicioná-la ao projeto:
 
 ![Captura de tela de um ator com a janela local do ator aberta](images/unreal-gaze-img-06.png)
 

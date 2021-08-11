@@ -1,19 +1,19 @@
 ---
-title: Sobre o maquette
+title: Sobre o Maquette
 description: Introdução ao maquette e a seus recursos.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Realidade mista do Windows, maquette, protótipoing, realidade misturada, realidade virtual, VR, Sr, comentários, Hub de comentários, bugs
-ms.openlocfilehash: fbc2aee7472a26e508937fa1dedfdac08fadfa10
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, protótipos, realidade misturada, realidade Virtual, VR, sr, comentários, Hub de comentários, bugs
+ms.openlocfilehash: 81c09bf22ea531a76156c9264e127593b6302ad5d0bcb248de9518bfb647717b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197880"
 ---
-# <a name="about-maquette"></a>Sobre o maquette
+# <a name="about-maquette"></a>Sobre o Maquette
 
 <!-- TODO(Harrison): Need consolidated logo with text -->
 ![Introdução do logotipo ](../images/MaquetteIcon.png) MaquetteScript

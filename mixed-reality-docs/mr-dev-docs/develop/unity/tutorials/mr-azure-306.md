@@ -1,43 +1,43 @@
 ---
-title: HoloLens (1º gen) e Azure 306-vídeo de streaming
-description: Conclua este curso para aprender a implementar os serviços de mídia do Azure em um aplicativo de realidade misturada.
+title: HoloLens (1ª geração) e Azure 306 – Vídeo de streaming
+description: conclua este curso para aprender a implementar Serviços de Mídia do Azure em um aplicativo de realidade misturada.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, realidade mista, Academia, Unity, tutorial, API, serviços de mídia, vídeo de streaming, 360, imersão, VR, Windows 10, Visual Studio
-ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, realidade mista, academia, unity, tutorial, api, serviços de mídia, vídeo de streaming, 360, imersão, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 3f3567c140c3162258475c28c2ef149039e3c40ed418ed2801ac8c40dda00a8f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224074"
 ---
-# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (1º gen) e Azure 306: vídeo de streaming
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (1º gen) e Azure 306: vídeo de Streaming
 
 <br>
 
 >[!NOTE]
->Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. Haverá uma nova série de tutoriais que serão publicados no futuro, que demonstrarão como desenvolver para o HoloLens 2.  Esse aviso será atualizado com um link para esses tutoriais quando eles forem postados.
+>Os tutoriais do Mixed Reality Academy foram projetados com o HoloLens (1ª geração) e os headsets imersivos de realidade misturada em mente.  Dessa forma, achamos que é importante continuar disponibilizando esses tutoriais para os desenvolvedores que ainda buscam obter diretrizes para o desenvolvimento visando esses dispositivos.  Esses tutoriais **_não_** serão atualizados com os conjuntos de ferramentas mais recentes nem com as interações usadas para o HoloLens 2.  Eles serão mantidos para continuar funcionando nos dispositivos compatíveis. haverá uma nova série de tutoriais que serão publicados no futuro, que demonstrarão como desenvolver para o HoloLens 2.  Esse aviso será atualizado com um link para esses tutoriais quando eles forem postados.
 
 <br> 
 
 ![produto final – início do ](images/AzureLabs-Lab6-00.png)
  ![ produto final-início](images/AzureLabs-Lab6-01.png)
 
-Neste curso, você aprenderá como conectar seus serviços de mídia do Azure a uma experiência do Windows Mixed Reality VR para permitir a reprodução de vídeo de streaming de 360 graus em headsets de imersão. 
+neste curso, você aprenderá como conectar seu Serviços de Mídia do Azure a uma experiência Windows Mixed Reality VR para permitir a reprodução de vídeo de streaming 360 em headsets de imersão. 
 
-Os **serviços de mídia do Azure** são uma coleção de serviços que fornece serviços de streaming de vídeo de qualidade de difusão para alcançar públicos maiores nos dispositivos móveis mais populares de hoje. Para obter mais informações, visite a [página dos serviços de mídia do Azure](https://azure.microsoft.com/services/media-services).
+**Serviços de Mídia do Azure** são uma coleção de serviços que fornece serviços de streaming de vídeo de qualidade de difusão para alcançar públicos maiores nos dispositivos móveis mais populares de hoje. para obter mais informações, visite a [página Serviços de Mídia do Azure](https://azure.microsoft.com/services/media-services).
 
 Após concluir este curso, você terá um aplicativo de headset de imersão de realidade misturada, que poderá fazer o seguinte:
 
-1. Recuperar um vídeo de 360 graus de um **armazenamento do Azure** por meio do **serviço de mídia do Azure**.
+1. recuperar um vídeo de 360 graus de uma **Armazenamento do azure**, por meio do **serviço de mídia do azure**.
 
 2. Exiba o vídeo de 360 graus recuperado em uma cena do Unity.
 
 3. Navegue entre duas cenas, com dois vídeos diferentes.
 
-Em seu aplicativo, cabe a você como você integrará os resultados com seu design. Este curso foi projetado para ensinar a você como integrar um serviço do Azure com seu projeto do Unity. É seu trabalho usar o conhecimento obtido deste curso para aprimorar seu aplicativo de realidade misturada.
+Em seu aplicativo, cabe a você como você integrará os resultados com seu design. Este curso foi projetado para ensinar a você como integrar um serviço do Azure com o Project do Unity. É seu trabalho usar o conhecimento obtido deste curso para aprimorar seu aplicativo de realidade misturada.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
@@ -56,12 +56,12 @@ Em seu aplicativo, cabe a você como você integrará os resultados com seu desi
 
 Recomendamos o seguinte hardware e software para este curso:
 
-- Um PC de desenvolvimento, [compatível com o Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) para desenvolvimento de headsets de imersão (VR)
-- [Atualização dos criadores de outono do Windows 10 (ou posterior) com o modo de desenvolvedor habilitado](../../install-the-tools.md#installation-checklist)
-- [O SDK do Windows 10 mais recente](../../install-the-tools.md#installation-checklist)
+- um PC de desenvolvimento, [compatível com Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) para o desenvolvimento de headsets de imersão (VR)
+- [Windows 10 Fall Creators Update (ou posterior) com o modo de desenvolvedor habilitado](../../install-the-tools.md#installation-checklist)
+- [o SDK de Windows 10 mais recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Um [fone de ouvido (VR) de realidade mista do Windows](../../../discover/immersive-headset-hardware-details.md)
+- um [headset de Windows Mixed Reality de imersão (VR)](../../../discover/immersive-headset-hardware-details.md)
 - Acesso à Internet para a instalação do Azure e recuperação de dados
 - Vídeos de 2 360 graus no formato MP4 (você pode encontrar alguns vídeos isentos de royalties nesta [página de download](https://www.mettle.com/360vr-master-series-free-360-downloads-page))
 
@@ -71,24 +71,24 @@ Recomendamos o seguinte hardware e software para este curso:
 2.  Configure e teste seu headset de imersão de realidade misturada.
 
     > [!NOTE]
-    > Você **não** precisará de controladores de animação para este curso. Se você precisar de suporte para configurar o headset de imersão, clique em [link sobre como configurar a realidade mista do Windows](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
+    > Você **não** precisará de controladores de animação para este curso. Se você precisar de suporte para configurar o headset de imersão, clique em [link sobre como configurar Windows Mixed Reality](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
 
-## <a name="chapter-1---the-azure-portal-creating-the-azure-storage-account"></a>Capítulo 1-o portal do Azure: criando a conta de armazenamento do Azure
+## <a name="chapter-1---the-azure-portal-creating-the-azure-storage-account"></a>capítulo 1-o Portal do azure: criando a conta de Armazenamento do azure
 
-Para usar o **serviço de armazenamento do Azure**, você precisará criar e configurar uma **conta de armazenamento** no portal do Azure.
+para usar o **serviço de Armazenamento do Azure**, será necessário criar e configurar uma **conta de Armazenamento** no portal do Azure.
 
 1.  Faça logon no [portal do Azure](https://portal.azure.com).
 
     > [!NOTE]
     > Se você ainda não tiver uma conta do Azure, será necessário criar uma. Se você estiver seguindo este tutorial em uma situação de sala de aula ou laboratório, peça ao instrutor ou a uma das proctors para obter ajuda para configurar sua nova conta.
 
-2.  Depois de fazer logon, clique em **contas de armazenamento** no menu à esquerda.
+2.  depois de fazer logon, clique em **Armazenamento contas** no menu à esquerda.
 
-    ![Configuração da conta de armazenamento do Azure](images/AzureLabs-Lab6-02.png)
+    ![configuração da conta do Armazenamento do Azure](images/AzureLabs-Lab6-02.png)
 
-3.  Na guia **contas de armazenamento** , clique em **Adicionar**.
+3.  na guia **contas Armazenamento** , clique em **adicionar**.
 
-    ![Configuração da conta de armazenamento do Azure](images/AzureLabs-Lab6-03.png)
+    ![configuração da conta do Armazenamento do Azure](images/AzureLabs-Lab6-03.png)
 
 4.  Na guia **criar conta de armazenamento** :
 
@@ -96,7 +96,7 @@ Para usar o **serviço de armazenamento do Azure**, você precisará criar e con
 
     2.  Para **modelo de implantação,** selecione **Gerenciador de recursos**.
 
-    3.  Para **tipo de conta**, selecione **armazenamento (uso geral v1)**.
+    3.  para **tipo de conta**, selecione **Armazenamento (uso geral v1)**.
 
     4.  Para **desempenho**, selecione **standard *.**
 
@@ -112,13 +112,13 @@ Para usar o **serviço de armazenamento do Azure**, você precisará criar e con
 
 5.  Você precisará confirmar que entendeu os termos e condições aplicados a este serviço.
 
-    ![Configuração da conta de armazenamento do Azure](images/AzureLabs-Lab6-04.png)
+    ![configuração da conta do Armazenamento do Azure](images/AzureLabs-Lab6-04.png)
 
 6.  Depois de clicar em **criar**, você precisará aguardar até que o serviço seja criado, isso pode levar um minuto.
 
 7.  Uma notificação será exibida no portal assim que a instância do serviço for criada.
 
-    ![Configuração da conta de armazenamento do Azure](images/AzureLabs-Lab6-05.png)
+    ![configuração da conta do Armazenamento do Azure](images/AzureLabs-Lab6-05.png)
 
 8.  Neste ponto, você não precisa seguir o recurso, simplesmente vá para o próximo capítulo.
 
@@ -146,7 +146,7 @@ Para usar o serviço de mídia do Azure, você precisará configurar uma instân
 
     4.  Determine o **local** do seu grupo de recursos (se você estiver criando um novo grupo de recursos). O local ideal seria na região em que o aplicativo seria executado. Alguns ativos do Azure só estão disponíveis em determinadas regiões.
 
-    5.  Para a seção **conta de armazenamento** , clique na seção **selecionar...** e clique na conta de **armazenamento** que você criou no último capítulo.
+    5.  para a seção **conta de Armazenamento** , clique na seção **selecionar...** e, em seguida, clique na conta de **Armazenamento** que você criou no último capítulo.
 
     6.  Você também precisará confirmar que entendeu os termos e condições aplicados a esse serviço.
 
@@ -164,181 +164,181 @@ Para usar o serviço de mídia do Azure, você precisará configurar uma instân
 
     ![O portal do Azure](images/AzureLabs-Lab6-10.png)
 
-7.  Clique no botão **ir para recurso** na notificação para explorar sua nova instância de serviço.
+7.  Clique no **botão Ir para o** recurso na notificação para explorar sua nova instância de serviço.
 
-8.  Na página novo serviço de mídia, no painel à esquerda, clique no link **ativos** , que está sobre a metade para baixo.
+8.  Na nova página Serviço de Mídia, no painel à esquerda, clique no **link** Ativos, que está quase na metade.
 
-9.  Na página seguinte, no canto superior esquerdo da página, clique em **carregar**.
+9.  Na próxima página, no canto superior esquerdo da página, clique em **Upload**.
 
     ![O portal do Azure](images/AzureLabs-Lab6-11.png)
 
-10. Clique no ícone de **pasta** para procurar os arquivos e selecione o primeiro vídeo 360 que você deseja transmitir. 
+10. Clique no **ícone Pasta** para procurar seus arquivos e selecione o primeiro Vídeo 360 que você gostaria de transmitir. 
     
     > Você pode seguir este [link para baixar um vídeo de exemplo](https://vimeo.com/214401712).
 
     ![O portal do Azure](images/AzureLabs-Lab6-12.png)
 
 > [!WARNING]
-> Nomes de arquivo longos podem causar um problema com o codificador: para garantir que os vídeos não tenham problemas, considere reduzir o tamanho dos nomes de arquivos de vídeo.
+> Nomes de arquivo longos podem causar um problema com o codificador: portanto, para garantir que os vídeos não tenham problemas, considere reduzir o tamanho dos nomes de arquivo de vídeo.
 
-11. A barra de progresso ficará verde quando o vídeo terminar de ser carregado.
+11. A barra de progresso ficará verde quando o vídeo terminar de carregar.
 
     ![O portal do Azure](images/AzureLabs-Lab6-13.png)
 
-12. Clique no texto acima (**yourservicename-assets**) para retornar à página **ativos** .
+12. Clique no texto acima (**yourservicename - Assets**) para retornar à **página Ativos.**
 
 13. Você observará que o vídeo foi carregado com êxito. Clique nele.
 
     ![O portal do Azure](images/AzureLabs-Lab6-14.png)
 
-14. A página para a qual você será redirecionado mostrará informações detalhadas sobre o vídeo. Para poder usar seu vídeo, você precisa codificá-lo clicando no botão **codificar** na parte superior esquerda da página.
+14. A página para a que você será redirecionado mostrará informações detalhadas sobre o vídeo. Para poder usar o vídeo, você precisa codiá-lo clicando no botão Codificar no canto superior esquerdo da página. 
 
     ![O portal do Azure](images/AzureLabs-Lab6-15.png)
 
-15. Um novo painel será exibido à direita, onde você poderá definir as opções de codificação para o arquivo. Defina as propriedades a seguir (algumas já estarão definidas por padrão):
+15. Um novo painel será exibido à direita, no qual você poderá definir opções de codificação para o arquivo. Deverão ser definidas as seguintes propriedades (algumas já estarão definidas por padrão):
 
-    1.  **Nome do codificador de mídia *Media Encoder Standard***
+    1.  **Nome do codificador de *mídia Media Encoder Standard***
 
-    2.  **Codificação de *taxa de bits múltipla adaptável com conteúdo* predefinido**
+    2.  **Codificação de conteúdo *predefinido Adaptável Com múltiplas taxas de bits MP4***
 
-    3.  **Nome *do trabalho Media Encoder Standard processamento de Video1.mp4***
+    3.  **Nome do *trabalho Media Encoder Standard processamento de Video1.mp4***
 
-    4.  **Nome do ativo *de mídia de saídaVideo1.mp4--Media Encoder Standard codificado***
+    4.  **Nome do ativo de *mídia deVideo1.mp4 -- Media Encoder Standard codificado***
 
         ![O portal do Azure](images/AzureLabs-Lab6-16.png)
 
 16. Selecione o botão **Criar**.
 
-17. Você notará uma barra com o **trabalho de codificação adicionado**, clicará nessa barra e um painel será exibido com o andamento da codificação exibido nela.
+17. Você observará uma barra com **o** trabalho de Codificação adicionado, clique nessa barra e um painel será exibido com o progresso da codificação exibido nele.
 
     ![O portal do Azure](images/AzureLabs-Lab6-17.png)
 
     ![O portal do Azure](images/AzureLabs-Lab6-18.png)
 
-18. Aguarde a conclusão do trabalho. Quando terminar, fique à vontade para fechar o painel com o ' X ' na parte superior direita desse painel.
+18. Aguarde até que o trabalho seja concluído. Quando terminar, sinta-se à vontade para fechar o painel com o 'X' no canto superior direito desse painel.
 
     ![O portal do Azure](images/AzureLabs-Lab6-19.png)
 
     ![O portal do Azure](images/AzureLabs-Lab6-20.png)
 
     > [!IMPORTANT]
-    > O tempo que isso leva, depende do tamanho do arquivo do seu vídeo. Esse processo pode levar muito tempo.
+    > O tempo necessário depende do tamanho do arquivo do vídeo. Esse processo pode levar algum tempo.
 
-19. Agora que a versão codificada do vídeo foi criada, você pode publicá-la para torná-la acessível. Para fazer isso, clique nos **ativos** do link azul para voltar para a página ativos.
+19. Agora que a versão codificada do vídeo foi criada, você pode publicá-la para torná-la acessível. Para fazer isso, clique no link azul **Ativos** para voltar para a página de ativos.
 
     ![O portal do Azure](images/AzureLabs-Lab6-21.png)
 
-20. Você verá seu vídeo junto com outro, que é do **tipo de ativo _MP4 com múltiplas taxas de bits_**.
+20. Você verá o vídeo junto com outro, que é do Tipo de Ativo MP4 com taxa de **_bits multi bits._**
 
     ![O portal do Azure](images/AzureLabs-Lab6-22.png)
 
     > [!NOTE] 
-    > Você pode notar que o novo ativo, junto com o vídeo inicial, é *desconhecido* e tem ' 0 ' bytes para seu **tamanho**, basta atualizar sua janela para que ele seja atualizado.
+    > Você pode observar que o novo ativo, juntamente com seu vídeo inicial, é Desconhecido e tem "0" bytes para seu **Tamanho,** basta atualizar sua janela para que ele seja atualizado.
 
 21. Clique nesse novo ativo.
 
     ![O portal do Azure](images/AzureLabs-Lab6-23.png)
 
-22. Você verá um painel semelhante ao que você usou antes, apenas esse é um ativo diferente. Clique no botão **publicar** localizado na parte superior central da página.
+22. Você verá um painel semelhante ao que você usou antes, apenas este é um ativo diferente. Clique no **botão** Publicar localizado na parte superior central da página.
 
     ![O portal do Azure](images/AzureLabs-Lab6-24.png)
 
-23. Você será solicitado a definir um **localizador**, que é o ponto de entrada, para arquivos/s em seus ativos. Para seu cenário, defina as seguintes propriedades:
+23. Você será solicitado a definir um **Localizador**, que é o ponto de entrada, como arquivo/s em seus Ativos. Para seu cenário, de acordo com as seguintes propriedades:
 
-    1.  Tipo de localizador   >  **Progressivo**.
+    1.  **Tipo de localizador**  >  **Progressivo.**
 
-    2.  A **Data** e a **hora** serão definidas para você, da data atual, para uma hora no futuro (100 anos, nesse caso). Deixe como está ou altere-o para o naipe.
+    2.  A **data** e **a hora** serão definidas para você, da data atual, para uma hora no futuro (100 anos nesse caso). Deixe como está ou altere-o para se adequar.
 
     > [!NOTE]
-    > Para obter mais informações sobre localizadores e o que você pode escolher, visite a [documentação dos serviços de mídia do Azure](/azure/media-services/media-services-concepts).
+    > Para obter mais informações sobre Localizadores e o que você pode escolher, visite a [documentação Serviços de Mídia do Azure .](/azure/media-services/media-services-concepts)
 
-24. Na parte inferior do painel, clique no botão **Adicionar** .
+24. Na parte inferior desse painel, clique no **botão** Adicionar.
 
     ![O portal do Azure](images/AzureLabs-Lab6-25.png)
 
-25. Seu vídeo agora está publicado e pode ser transmitido usando seu ponto de extremidade. Além disso, a página é uma seção de **arquivos** . É aí que as diferentes versões codificadas do seu vídeo serão. Selecione a resolução mais alta possível (na imagem abaixo dele é o arquivo 1920x960) e, em seguida, um painel à direita será exibido. Lá, você encontrará uma **URL de download**. Copie esse **ponto de extremidade** , pois você o usará posteriormente em seu código.
+25. Seu vídeo agora é publicado e pode ser transmitido usando seu ponto de extremidade. Mais abaixo, a página é uma **seção Arquivos.** É aqui que estarão as diferentes versões codificadas do vídeo. Selecione a resolução mais alta possível (na imagem abaixo está o arquivo 1920x960) e, em seguida, um painel à direita será exibido. Lá, você encontrará uma **URL de Download**. Copie esse **Ponto de** Extremidade, pois você o usará posteriormente em seu código.
 
     ![O portal do Azure](images/AzureLabs-Lab6-26.png)    
 
     ![O portal do Azure](images/AzureLabs-Lab6-27.png)
 
     > [!NOTE] 
-    > Você também pode pressionar o botão **reproduzir** para reproduzir seu vídeo e testá-lo.
+    > Você também pode pressionar o **botão** Reproduzir para reproduzir o vídeo e testá-lo.
 
-26. Agora você precisa carregar o segundo vídeo que será usado neste laboratório. Siga as etapas acima, repetindo o mesmo processo para o segundo vídeo. Certifique-se de copiar o segundo **ponto de extremidade** também. Use o link a seguir [para baixar um segundo vídeo](https://vimeo.com/214402865).
+26. Agora você precisa carregar o segundo vídeo que usará neste Laboratório. Siga as etapas acima, repetindo o mesmo processo para o segundo vídeo. Certifique-se de copiar o **segundo ponto de extremidade** também. Use o [link a seguir para baixar um segundo vídeo](https://vimeo.com/214402865).
 
-27. Depois que os dois vídeos tiverem sido publicados, você estará pronto para ir para o próximo capítulo.
+27. Depois que os dois vídeos foram publicados, você estará pronto para passar para o próximo Capítulo.
 
-## <a name="chapter-3---setting-up-the-unity-project"></a>Capítulo 3-Configurando o projeto do Unity
+## <a name="chapter-3---setting-up-the-unity-project"></a>Capítulo 3 – Configurando o Project
 
-A seguir está uma configuração típica para o desenvolvimento com a realidade misturada e, como tal, é um bom modelo para outros projetos.
+A seguir está uma configuração típica para o desenvolvimento com a Realidade Misturada e, como tal, é um bom modelo para outros projetos.
 
-1.  Abra o **Unity** e clique em **novo**. 
+1.  Abra **o Unity** e clique em **Novo.** 
 
     ![O portal do Azure](images/AzureLabs-Lab6-28.png)
 
-2.  Agora, você precisará fornecer um nome de projeto de Unity, inserir **Mr \_ 360VideoStreaming.**. Verifique se o tipo de projeto está definido como **3D**. Defina o local como algum lugar apropriado para você (Lembre-se de que, mais próximo de diretórios raiz é melhor). Em seguida, clique em **criar projeto**.
+2.  Agora você precisará fornecer um nome de Project Unity, insira **MR \_ 360VideoStreaming.**. Certifique-se de que o tipo de projeto está definido **como 3D.** De definir o Local como em algum lugar apropriado para você (lembre-se de que mais próximo dos diretórios raiz é melhor). Em seguida, clique **em Criar projeto**.
 
     ![O portal do Azure](images/AzureLabs-Lab6-29.png)
 
-3.  Com o Unity Open, vale a pena verificar se o **Editor de script** padrão está definido como **Visual Studio.** Vá para **_Editar_ *preferências*** e, em seguida, na janela novo, navegue até **Ferramentas externas**. Altere o **Editor de script externo** para o **Visual Studio 2017**. Feche a janela **preferências** .
+3.  Com o Unity aberto, vale a pena verificar se o **Editor de Script** padrão está definido como **Visual Studio.** Vá para **_Editar_ *Preferências*** e, em seguida, na nova janela, navegue até **Ferramentas Externas.** Altere **Editor de Script** Externo para Visual Studio **2017.** Feche a **janela Preferências.**
 
     ![O portal do Azure](images/AzureLabs-Lab6-30.png)
 
-4.  Em seguida, vá para ***arquivo* *configurações de compilação*** e alterne a plataforma para **plataforma universal do Windows**, clicando no botão **alternar plataforma** .
+4.  Em seguida, vá para Criar ***arquivo Configurações*** e alternar a plataforma para **Plataforma Universal** Windows , clicando no botão **Alternar Plataforma.**
 
-5.  Verifique também se:
+5.  Além disso, certifique-se de que:
 
-    1. O **dispositivo de destino** está definido como **qualquer dispositivo.**
+    1. **O Dispositivo de** Destino é definido **como Qualquer Dispositivo.**
     
-    2.  O **tipo de compilação** está definido como **D3D.**
+    2.  **O tipo de** build é definido como **D3D.**
 
-    3.  O **SDK** está definido para o **mais recente instalado.**
+    3.  **O SDK** está definido como **Mais recente instalado.**
 
-    4.  A **versão do Visual Studio** está definida como **mais recente instalada.**
+    4.  **Visual Studio versão é** definida como **Mais recente instalada.**
 
-    5.  **Compilar e executar** é definido como **computador local.**
+    5.  **Build e Executar** são definidos como **Computador Local.**
 
-    6.  Não se preocupe com a configuração de **cenas** no momento, pois você as configurará posteriormente.
+    6.  Não se preocupe com a configuração **de Cenas** agora, pois você as configurará mais tarde.
 
     7.  As configurações restantes devem ser deixadas como padrão por enquanto.
 
-        ![Configurando o projeto do Unity](images/AzureLabs-Lab6-31.png)
+        ![Configurando o Project](images/AzureLabs-Lab6-31.png)
 
-6.  Na janela **configurações de compilação** , clique no botão **configurações do Player** , isso abrirá o painel relacionado no espaço onde o **Inspetor** está localizado. 
+6.  Na janela **Criar Configurações,** clique no botão **Player Configurações,** isso abrirá o painel relacionado no espaço em que o **Inspetor** está localizado. 
 
-7. Nesse painel, algumas configurações precisam ser verificadas:
+7. Neste painel, algumas configurações precisam ser verificadas:
 
-    1.  Na guia **outras configurações** :
+    1.  Na guia **Outros Configurações:**
 
-        1.  A **versão de tempo de execução** de **script** deve ser **estável** (.net 3,5 equivalente).
+        1.  **A versão do** **Runtime de** Script deve ser **estável** (equivalente ao .NET 3.5).
 
-        2. O **back-end de script** deve ser **.net.**
+        2. **Back-end de script** deve ser **.NET.**
 
-        3. O **nível de compatibilidade da API** deve ser **.NET 4,6.**
+        3. **O Nível de Compatibilidade da API** deve **ser .NET 4.6.**
 
-            ![Configurando o projeto do Unity](images/AzureLabs-Lab6-32.png)
+            ![Configurando o Project](images/AzureLabs-Lab6-32.png)
 
-    2.  Mais adiante no painel, em **configurações de XR** (encontradas abaixo de **configurações de publicação**), **suporte à realidade virtual** em escala, verifique se o **SDK do Windows Mixed Reality** foi adicionado.
+    2.  Mais abaixo no painel, no **XR Configurações** (encontrado abaixo de **Publicar Configurações**), marque Realidade **Virtual** Com Suporte , certifique-se de que o **SDK** Windows Mixed Reality seja adicionado.
 
-        ![Configurando o projeto do Unity](images/AzureLabs-Lab6-33.png)
+        ![Configurando o Project](images/AzureLabs-Lab6-33.png)
 
-    3.  Na guia **configurações de publicação** , em **recursos**, marque:
+    3.  na guia **publicação Configurações** , em **recursos**, marque:
 
         - **InternetClient**
 
-            ![Configurando o projeto do Unity](images/AzureLabs-Lab6-34.png)
+            ![Configurando o Project do Unity](images/AzureLabs-Lab6-34.png)
 
-8.  Depois de fazer essas alterações, feche a janela **configurações de compilação** .
+8.  depois de fazer essas alterações, feche a janela **Build Configurações** .
 
-9.  Salve seu projeto **arquivo* * salvar projeto * *.
+9.  salve seu Project **arquivo* * salvar Project * *.
 
 
 
 ## <a name="chapter-4---importing-the-insideoutsphere-unity-package"></a>Capítulo 4-importando o pacote do InsideOutSphere Unity
 
 > [!IMPORTANT]
-> Se você quiser ignorar o componente *de configuração do Unity* deste curso e continuar diretamente no código, fique à vontade para baixar esse [. unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage), importe-o para seu projeto como um [**pacote personalizado**](https://docs.unity3d.com/Manual/AssetPackages.html)e, em seguida, continue no **capítulo 5**. Você ainda precisará criar um projeto do Unity.
+> Se você quiser ignorar o componente *de configuração do Unity* deste curso e continuar diretamente no código, fique à vontade para baixar esse [. unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage), importe-o para seu projeto como um [**pacote personalizado**](https://docs.unity3d.com/Manual/AssetPackages.html)e, em seguida, continue no **capítulo 5**. Você ainda precisará criar um Project do Unity.
 
 Para este curso, você precisará baixar um pacote de ativos de Unity chamado [**InsideOutSphere. unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/InsideOutSphere.unitypackage).
 
@@ -430,7 +430,7 @@ A classe **VideoController** hospeda os dois pontos de extremidade de vídeo que
 
 Para criar esta classe:
 
-1.  Clique com o botão direito do mouse na **pasta ativo**, localizada no painel **projeto** , e clique em **criar > pasta**. Nomeie a pasta **scripts**.
+1.  clique com o botão direito do mouse na **pasta ativo**, localizada no painel de **Project** e clique em **criar > pasta**. Nomeie a pasta **scripts**.
 
     ![Criar a classe VideoController](images/AzureLabs-Lab6-43.png)
 
@@ -442,7 +442,7 @@ Para criar esta classe:
 
     ![Criar a classe VideoController](images/AzureLabs-Lab6-45.png)
 
-4.  Clique duas vezes no novo script **VideoController** para abri-lo com o **Visual Studio 2017.**
+4.  clique duas vezes no novo script **VideoController** para abri-lo com **Visual Studio 2017.**
 
     ![Criar a classe VideoController](images/AzureLabs-Lab6-46.png)
 
@@ -608,7 +608,7 @@ Para criar esta classe:
     > [!TIP] 
     > O método **ChangeScene ()** usa um recurso C útil \# chamado *operador condicional*. Isso permite que as condições sejam verificadas e, em seguida, os valores retornados com base no resultado da verificação, tudo dentro de uma única instrução. Siga este [link para saber mais sobre o operador condicional](/dotnet/csharp/language-reference/operators/conditional-operator).
 
-11. Salve suas alterações no Visual Studio antes de retornar ao Unity.
+11. salve as alterações em Visual Studio antes de retornar ao Unity.
 
 12. De volta ao editor do Unity, clique e arraste a classe **VideoController** [de] {. Underline} a pasta **scripts** para o objeto da **câmera principal** no painel **hierarquia** .
 
@@ -619,25 +619,25 @@ Para criar esta classe:
     ![Criar a classe VideoController ](images/AzureLabs-Lab6-47.png)
      ![ criar a classe VideoController](images/AzureLabs-Lab6-48.png)
 
-## <a name="chapter-6---create-the-gaze-class"></a>Capítulo 6-criar a classe olhar
+## <a name="chapter-6---create-the-gaze-class"></a>Capítulo 6 – Criar a classe Gaze
 
-Essa classe é responsável por criar um **Raycast** que será projetado para a frente da **câmera principal**, para detectar qual objeto o usuário está olhando. Nesse caso, o **Raycast** precisará identificar se o usuário está olhando para o objeto **GazeButton** na cena e disparar um comportamento.
+Essa classe é responsável por criar um **Raycast** que será projetado para frente da Câmera Principal **para** detectar qual objeto o usuário está olhando. Nesse caso, o **Raycast** precisará identificar se o usuário está olhando para o objeto **GazeButton** na cena e disparar um comportamento.
 
-Para criar esta classe:
+Para criar esta Classe:
 
-1.  Vá para a pasta **scripts** que você criou anteriormente.
+1.  Vá para a **pasta Scripts** criada anteriormente.
 
-2.  Clique com o botão direito do mouse no painel **projeto** , **criar* * C \# script * *. Nomeie o script **olhar**.
+2.  Clique com o botão direito do **mouse no painel Project,** **Criar* \# *Script C**. Nomeia o script **como Gaze.**
 
-3.  Clique duas vezes no novo script ***olhar** _ para abri-lo com _ *Visual Studio 2017.**
+3.  Clique duas vezes no novo script ***Gaze** _ para abri-lo com _ *Visual Studio 2017.**
 
-4.  Verifique se o namespace a seguir está na parte superior do script e remova todos os outros:
+4.  Verifique se o namespace a seguir está na parte superior do script e remova qualquer outro:
 
     ```csharp
     using UnityEngine;
     ```
 
-5.  Em seguida, adicione as seguintes variáveis dentro da classe **olhar** :
+5.  Em seguida, adicione as seguintes variáveis dentro da **classe Gaze:**
 
     ```csharp
         /// <summary> 
@@ -667,7 +667,7 @@ Para criar esta classe:
         public bool Hit { get; private set; }
     ```
 
-6.  Agora, o código para os métodos **ativo ()** e **Iniciar ()** precisa ser adicionado.
+6.  O código **para os métodos Awake()** e **Start()** agora precisa ser adicionado.
 
     ```csharp
         private void Awake()
@@ -682,7 +682,7 @@ Para criar esta classe:
         }
     ```
 
-7.  Adicione o código a seguir no método **Update ()** para projetar um Raycast e detectar o destino atingido:
+7.  Adicione o seguinte código ao método **Update()** para projetar um Raycast e detectar o acerto de destino:
 
     ```csharp
         void Update()
@@ -731,149 +731,149 @@ Para criar esta classe:
 
 8.  Salve suas alterações no Visual Studio antes de retornar ao Unity.
 
-9.  Clique e arraste a classe **olhar** da pasta scripts para o objeto de câmera principal no painel **hierarquia** .
+9.  Clique e arraste **a classe Gaze** da pasta Scripts para o objeto Câmera Principal no Painel **de** Hierarquia.
 
-## <a name="chapter-7---setup-the-two-unity-scenes"></a>Capítulo 7-configurar as duas cenas de Unity
+## <a name="chapter-7---setup-the-two-unity-scenes"></a>Capítulo 7 – Configurar as duas cenas do Unity
 
-A finalidade deste capítulo é configurar as duas cenas, cada uma hospedando um vídeo para transmitir. Você duplicará a cena que já criou, para que não seja necessário configurá-la novamente, embora você editará a nova cena, para que o objeto *GazeButton* esteja em um local diferente e tenha uma aparência diferente. Isso é para mostrar como alterar entre cenas.
+A finalidade deste Capítulo é configurar as duas cenas, cada uma hospedando um vídeo para transmitir. Você duplica a cena que já criou, de modo que não precise defini-la novamente, embora edite a nova cena, de modo que o objeto *GazeButton* está em um local diferente e tenha uma aparência diferente. Isso é para mostrar como alterar entre cenas.
 
-1.  Faça isso indo para **arquivo > salvar cena como...**. Uma janela salvar será exibida. Clique no botão **nova pasta** .
+1.  Faça isso indo para **Arquivo > Salvar Cena como...**. Uma janela salvar será exibida. Clique no **botão Nova** pasta.
 
-    ![Capítulo 7-configurar as duas cenas de Unity](images/AzureLabs-Lab6-49.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-49.png)
 
-2.  Nomeie a pasta como **cenas**.
+2.  Nomeia a pasta **Cenas**.
 
-3.  A janela **salvar cena** ainda estará aberta. Abra sua pasta de **cenas** recém-criada.
+3.  A **janela Salvar Cena** ainda estará aberta. Abra a pasta **Cenas recém-criada.**
 
-4.  No campo **nome do arquivo:** texto, digite **VideoScene1** e pressione **salvar**.
+4.  No campo **Nome do arquivo:** texto, digite **VideoScene1** e pressione **Salvar**.
 
-5.  De volta ao Unity, abra a pasta **cenas** e clique com o botão esquerdo do mouse no arquivo **VideoScene1** . Use o teclado e pressione **Ctrl + D** para duplicar essa cena
+5.  De volta ao Unity, abra a **pasta Cenas** e clique com o botão esquerdo do mouse no **arquivo VideoScene1.** Use o teclado e pressione **Ctrl + D** para duplicar essa cena
 
     > [!TIP]
-    > O comando **duplicado** também pode ser executado navegando para **Editar > duplicado**.
+    > O **comando Duplicar** também pode ser executado navegando até **Editar > Duplicado.**
 
-6.  O Unity incrementará automaticamente o número de nomes de cena, mas o verificará de qualquer forma, para garantir que ele corresponda ao código inserido anteriormente.
+6.  O Unity incrementará automaticamente o número de nomes de cena, mas verificará mesmo assim, para garantir que ele corresponde ao código inserido anteriormente.
 
     >  Você deve ter **VideoScene1** e **VideoScene2**.
 
-7.  Com seus dois bastidores, vá para **arquivo > configurações de Build**. Com a janela **configurações de compilação** aberta, arraste suas cenas para a seção **cenas na compilação** .
+7.  Com suas duas cenas, vá para **Arquivo > Build Configurações**. Com a **janela Criar Configurações** aberta, arraste suas cenas para a seção Cenas no **Build.**
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-50.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-50.png)
 
     > [!TIP] 
-    > Você pode selecionar os dois bastidores da sua pasta de **cenas** pressionando o botão **Ctrl** e, em seguida, clicando em cada uma das cenas e, por fim, arrastando ambos.
+    > Você pode selecionar ambas as cenas da pasta **Cenas** mantendo o botão **Ctrl** pressionado e clicando com o botão esquerdo em cada cena e, por fim, arrastar ambas.
 
-8.  Feche a janela **configurações de Build** e clique duas vezes em **VideoScene2**.
+8.  Feche a **janela Configurações** build e clique duas vezes **em VideoScene2**.
 
-9.  Com a segunda cena aberta, clique no objeto filho **GazeButton** do **InsideOutSphere** e defina sua transformação da seguinte maneira:
+9.  Com a segunda cena aberta, clique no objeto filho **GazeButton** de **InsideOutSphere** e de definido sua Transformação da seguinte maneira:
 
-    |            |    TRANSFORMAÇÃO-POSIÇÃO   |           |
+    |            |    TRANSFORM – POSITION   |           |
     | :---------:| :-----------------------: | :--------:|
-    |   **X** 0  |         **Y** 1,3         | **Z** 3,6 |
+    |   **X** 0  |         **Y** 1.3         | **Z** 3.6 |
 
-    |            |    TRANSFORMAÇÃO-ROTAÇÃO   |           |
+    |            |    TRANSFORMAÇÃO – ROTAÇÃO   |           |
     | :---------:| :-----------------------: | :--------:|
     |   **X** 0  |          **Y** 0          |  **Z** 0  |
 
-    |            |     TRANSFORMAR EM ESCALA     |           |
+    |            |     TRANSFORMAÇÃO – ESCALA     |           |
     | :---------:| :-----------------------: | :--------:|
     |  **X** 1   |          **Y** 1          |  **Z** 1  |
 
-10. Com o filho **GazeButton** ainda selecionado, examine o **Inspetor** e o filtro de **malha**. Clique no pequeno destino ao lado do campo de referência de **malha** :
+10. Com o **filho GazeButton** ainda selecionado, veja o **Inspetor** e o Filtro **de Malha**. Clique no pequeno destino ao lado do **campo Referência de** Malha:
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-51.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-51.png)
 
-11. Uma janela pop-up **selecionar malha** será exibida. Clique duas vezes na malha do **cubo** na lista de **ativos**.
+11. Uma **janela pop-up** Selecionar Malha será exibida. Clique duas vezes **na malha** Cubo na lista de **Ativos**.
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-52.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-52.png)
 
-12. O **filtro de malha** será atualizado e agora será um **cubo**. Agora, clique no ícone de **engrenagem** ao lado de **Colisor de esfera** e clique em **remover componente** para excluir o colisor desse objeto.
+12. O **Filtro de Malha** será atualizado e agora será um **Cubo**. Agora, clique no ícone **engrenagem** ao lado de **Colisor de Esfera** e clique em **Remover** Componente para excluir o colisor deste objeto.
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-53.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-53.png)
 
-13. Com o **GazeButton** ainda selecionado, clique no botão **Adicionar componente** na parte inferior do **Inspetor**. No campo de pesquisa, digite **Box** e o **colisor do box** será uma opção – clique nele para adicionar um **Colisor de caixa** ao seu objeto **GazeButton** .
+13. Com o **GazeButton** ainda selecionado, clique **no botão** Adicionar Componente na parte inferior do **Inspetor.** No campo de pesquisa, a caixa **de** tipo e o **Colisor** de Caixa serão uma opção – clique nessa opção para adicionar um **Colisor** de Caixa ao objeto **GazeButton.**
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-54.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-54.png)
 
-14. O **GazeButton** agora é parcialmente atualizado, para parecer diferente, no entanto, agora você criará um novo **material**, para que ele pareça completamente diferente e seja mais fácil de reconhecer como um objeto diferente do objeto na primeira cena.
+14. O **GazeButton** agora está parcialmente atualizado, para parecer diferente, no entanto, agora você criará um **novo Material**, para que ele pareça completamente diferente e seja mais fácil de reconhecer como um objeto diferente do objeto na primeira cena.
 
-15. Navegue até a pasta **materiais** , no **painel Projeto**. Duplique o material **ButtonMaterial** (pressione **Ctrl**  +  **D** no teclado ou clique com o botão esquerdo do mouse no **material** e, em seguida, na opção de menu **Editar** arquivo, selecione **duplicar**).
+15. Navegue até **a pasta** Materiais, dentro do painel **Project .** Duplique **o Material buttonMaterial** (pressione **Ctrl** D no teclado ou clique com o botão esquerdo do mouse no Material e, na opção de menu Editar  +   arquivo, selecione **Duplicar**).  
 
-    ![Capítulo 7 – configurar os dois bastidores do Unity ](images/AzureLabs-Lab6-55.png)
-     ![ capítulo 7 – configurar as duas cenas do Unity](images/AzureLabs-Lab6-56.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity ](images/AzureLabs-Lab6-55.png)
+     ![ Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-56.png)
 
-16. Selecione o novo material de **ButtonMaterial** (aqui chamado **ButtonMaterial 1**) e, dentro do **Inspetor**, clique na janela de cores **albedo** . Um pop-up será exibido, no qual você pode selecionar outra cor (escolha o que desejar) e, em seguida, feche o pop-up. O material será sua própria instância e diferente do original.
+16. Selecione o novo **Material ButtonMaterial** (aqui chamado **ButtonMaterial 1**) e, dentro do **Inspetor,** clique na **janela Cor de Albedo.** Um pop-up será exibido, em que você pode selecionar outra cor (escolha o que quiser) e, em seguida, feche o pop-up. O Material será sua própria instância e diferente do original.
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-57.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-57.png)
 
-17. Arraste o novo **material** para o filho do **GazeButton** , para agora atualizar completamente sua aparência, de modo que seja facilmente distinguivel do primeiro botão de cenas.
+17. Arraste o **novo Material** para o filho **GazeButton** para atualizar completamente sua aparência, de modo que ele seja facilmente distinguível do botão das primeiras cenas.
 
-    ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-58.png)
+    ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-58.png)
 
-18. Neste ponto, você pode testar o projeto no editor antes de criar o projeto UWP.
+18. Neste ponto, você pode testar o projeto no Editor antes de criar o projeto UWP.
 
-    -  Pressione o botão **reproduzir** no **Editor** e desgaste do headset.
+    -  Pressione o **botão Reproduzir** no **Editor e** use o headset.
 
-        ![Capítulo 7 – configurar as duas cenas de Unity](images/AzureLabs-Lab6-59.png)
+        ![Capítulo 7 – Configurar as duas cenas do Unity](images/AzureLabs-Lab6-59.png)
 
-19. Examine os dois objetos **GazeButton** para alternar entre o primeiro e o segundo vídeo.
+19. Veja os dois objetos **GazeButton** para alternar entre o primeiro e o segundo vídeo.
 
-## <a name="chapter-8---build-the-uwp-solution"></a>Capítulo 8-compilar a solução UWP
+## <a name="chapter-8---build-the-uwp-solution"></a>Capítulo 8 – Criar a solução UWP
 
-Depois de garantir que o editor não tem erros, você estará pronto para compilar.
+Depois de garantir que o editor não tenha erros, você estará pronto para Criar.
 
-Para compilar:
+Para criar:
 
-1.  Salve a cena atual clicando em **arquivo > salvar**.
+1.  Salve a cena atual clicando em Arquivo **> Salvar**.
 
-2.  Marque a caixa chamado **\# projetos do Unity C** (isso é importante porque ele permitirá que você edite as classes após a conclusão da compilação).
+2.  Marque a caixa chamada **Projetos C \# do Unity** (isso é importante porque permitirá que você edite as classes após a conclusão do build).
 
-3.  Vá para **arquivo > configurações de compilação**, clique em **Compilar**.
+3.  Vá para **Arquivo > Build Configurações**, clique em **Build**.
 
-4.  Você será solicitado a selecionar a pasta na qual deseja criar a solução.
+4.  Você será solicitado a selecionar a pasta na qual deseja criar a Solução.
 
-5.  Crie uma pasta **Builds** e dentro dessa pasta crie outra pasta com um nome apropriado de sua escolha.
+5.  Crie uma **pasta BUILDS** e, dentro dessa pasta, crie outra pasta com um nome apropriado de sua escolha.
 
-6.  Clique na nova pasta e, em seguida, clique em **Selecionar pasta**, para escolher essa pasta, para iniciar a compilação nesse local.
+6.  Clique em sua nova pasta **e,** em seguida, clique em Selecionar Pasta , portanto, para escolher essa pasta, para iniciar o build nesse local.
 
-    ![Capítulo 8--criar a solução UWP ](images/AzureLabs-Lab6-60.png)
-     ![ capítulo 8--criar a solução UWP](images/AzureLabs-Lab6-61.png)
+    ![Capítulo 8 – Criar a solução UWP ](images/AzureLabs-Lab6-60.png)
+     ![ Capítulo 8 – Criar a solução UWP](images/AzureLabs-Lab6-61.png)
 
-7.  Depois que o Unity terminar a compilação (pode levar algum tempo), ele abrirá uma janela do **Explorador de arquivos** no local de sua compilação.
+7.  Depois que o Unity terminar de criar (pode levar algum **tempo),** ele abrirá uma Explorador de Arquivos no local do build.
 
-## <a name="chapter-9---deploy-on-local-machine"></a>Capítulo 9 – implantar no computador local
+## <a name="chapter-9---deploy-on-local-machine"></a>Capítulo 9 – Implantar no computador local
 
-Depois que a compilação for concluída, uma janela **Explorador de arquivos** será exibida no local da sua compilação. Abra a pasta que você nomeou e criou e clique duas vezes no arquivo da solução (. sln) dentro dessa pasta para abrir sua solução com o Visual Studio 2017.
+Depois que o build tiver sido concluído, **Explorador de Arquivos** janela de Explorador de Arquivos será exibida no local do build. Abra a Pasta que você nomeou e criou e clique duas vezes no arquivo de solução (.sln) dentro dessa pasta para abrir sua solução com Visual Studio 2017.
 
-A única coisa que resta fazer é implantar seu aplicativo em seu computador (ou *computador local*).
+A única coisa que resta fazer é implantar seu aplicativo no computador (ou *computador local).*
 
-Para implantar no computador local:
+Para implantar no Computador Local:
 
-1.  No **Visual Studio 2017**, abra o arquivo de solução que acabou de ser criado.
+1.  No **Visual Studio 2017,** abra o arquivo de solução que acabou de ser criado.
 
-2.  Na **plataforma da solução**, selecione **x86, computador local**.
+2.  Na Plataforma **de Solução**, selecione **x86, Computador Local.**
 
-3.  Na **configuração da solução** , selecione **depurar**.
+3.  Na **Configuração da Solução,** selecione **Depurar**.
 
-    ![Capítulo 9 – implantar no computador local](images/AzureLabs-Lab6-62.png)
+    ![Capítulo 9 – Implantar no computador local](images/AzureLabs-Lab6-62.png)
 
-4.  Agora, você precisará restaurar todos os pacotes para sua solução. Clique com o botão direito do mouse em sua **solução** e clique em **restaurar pacotes NuGet para solução...**
+4.  Agora você precisará restaurar todos os pacotes para sua solução. Clique com o botão direito do mouse em **sua Solução** e clique em Restaurar NuGet Pacotes **para Solução...**
 
     > [!NOTE] 
-    > Isso é feito porque os pacotes que o Unity criou precisam ser destinados para trabalhar com suas referências de computadores locais.
+    > Isso é feito porque os pacotes que o Unity criou precisam ser direcionados para trabalhar com suas referências de máquinas locais.
 
-5.  Vá para o **menu Compilar** e clique em **implantar solução** para Sideload o aplicativo em seu computador. O Visual Studio primeiro compilará e, em seguida, implantará seu aplicativo.
+5.  Vá para **o menu Criar** e clique em Implantar **Solução** para fazer sideload do aplicativo em seu computador. Visual Studio primeiro criará e implantará seu aplicativo.
 
-6.  Seu aplicativo agora deve aparecer na lista de aplicativos instalados, pronto para ser iniciado.
+6.  Seu aplicativo agora deve aparecer na lista de aplicativos instalados, prontos para serem lançados.
 
-    ![Capítulo 9 – implantar no computador local](images/AzureLabs-Lab6-63.png)
+    ![Capítulo 9 – Implantar no computador local](images/AzureLabs-Lab6-63.png)
 
-Ao executar o aplicativo de realidade misturada, você estará dentro do modelo de **InsideOutSphere** que você usou em seu aplicativo. Essa esfera será onde o vídeo será transmitido, fornecendo uma exibição de 360 graus do vídeo de entrada (que foi cofilme para esse tipo de perspectiva). Não se surpreenda se o vídeo levar alguns segundos para ser carregado, seu aplicativo estará sujeito à velocidade da Internet disponível, uma vez que o vídeo precisa ser buscado e então baixado, portanto, para transmitir em seu aplicativo.
-Quando estiver pronto, altere as cenas e abra o segundo vídeo, por nuvens na esfera vermelha! Em seguida, fique à vontade para voltar, usando o cubo azul na segunda cena!
+Ao executar o aplicativo de Realidade Misturada, você estará dentro do **modelo InsideOutSphere** que você usou em seu aplicativo. Essa esfera será onde o vídeo será transmitido, fornecendo uma exibição de 360 graus, do vídeo de entrada (que foi gravado para esse tipo de perspectiva). Não se estranhe se o vídeo levar alguns segundos para ser carregado, seu aplicativo está sujeito à velocidade da Internet disponível, pois o vídeo precisa ser buscado e baixado, portanto, para transmitir para seu aplicativo.
+Quando estiver pronto, altere as cenas e abra seu segundo vídeo, olhando para a esfera vermelha! Em seguida, sinta-se à vontade para voltar, usando o cubo azul na segunda cena!
 
-## <a name="your-finished-azure-media-service-application"></a>Seu aplicativo de serviço de mídia do Azure concluído
+## <a name="your-finished-azure-media-service-application"></a>Seu aplicativo do Serviço de Mídia do Azure concluído
  
-Parabéns, você criou um aplicativo de realidade misturada que aproveita o serviço de mídia do Azure para transmitir vídeos 360.
+Parabéns, você criou um aplicativo de realidade misturada que aproveita o Serviço de Mídia do Azure para transmitir 360 vídeos.
 
 ![resultado do laboratório](images/AzureLabs-Lab6-00.png)
 
@@ -883,8 +883,8 @@ Parabéns, você criou um aplicativo de realidade misturada que aproveita o serv
 
 **Exercício 1**
 
-É totalmente possível usar apenas uma única cena para alterar vídeos dentro deste tutorial. Experimente seu aplicativo e torne-o em uma única cena! Talvez até mesmo Adicione outro vídeo à combinação.
+É totalmente possível usar apenas uma única cena para alterar vídeos neste tutorial. Experimente seu aplicativo e faça isso em uma única cena! Talvez até mesmo adicione outro vídeo à combinação.
 
 **Exercício 2**
 
-Experimente com o Azure e o Unity e tente implementar a capacidade para o aplicativo selecionar automaticamente um vídeo com um tamanho de arquivo diferente, dependendo da força de uma conexão com a Internet.
+Experimente o Azure e o Unity e tente implementar a capacidade do aplicativo de selecionar automaticamente um vídeo com um tamanho de arquivo diferente, dependendo da força de uma conexão com a Internet.

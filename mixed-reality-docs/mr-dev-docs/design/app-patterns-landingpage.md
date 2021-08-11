@@ -1,39 +1,39 @@
 ---
-title: Elementos de UX da realidade misturada
+title: Elementos de UX de realidade misturada
 description: Saiba como projetar seus aplicativos para dispositivos de realidade misturada com elementos fundamentais, controles comuns e comportamentos.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: Design de UX, UX de realidade misturada, UX, padrões de aplicativo, controles, estilo, HoloLens, interação, interação espacial, interface do usuário espacial, elementos de UX, comportamentos, blocos de construção, tipografia, cor, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Design de experiência do usuário, UX de Realidade Misturada, UX, padrões de aplicativo, controles, estilo, HoloLens, interação, interação espacial, interface do usuário espacial, elementos de experiência do usuário, comportamentos, blocos de construção, tipografia, cor, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Realidade Misturada Toolkit
+ms.openlocfilehash: d6f5193c7863f44f6f8b55f874f5f4339396b6c7d1dcef8ae9f8839cb2b8c26e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225838"
 ---
 # <a name="ux-elements-overview"></a>Visão geral dos elementos de UX
 
 ## <a name="foundational-elements"></a>Elementos fundamentais
 
-Saiba mais sobre os elementos fundamentais que você precisa para criar uma boa experiência de realidade misturada.
+Saiba mais sobre os elementos fundamentais de que você precisa para criar uma ótima experiência de realidade misturada.
 
 :::row:::
     :::column:::
-       Cor, luz [ ![ e](images/640px-fragments.png)](color-light-and-materials.md) **[materiais de](color-light-and-materials.md) cor, luz e material**
+       [ ![ Cor, luz e materiais](images/640px-fragments.png)](color-light-and-materials.md) **[Cor, luz e materiais](color-light-and-materials.md)**
     :::column-end:::
     :::column:::
-       Escala de [ ![ escala](images/volvo-cars-microsoft-hololens-experience01-640px.png)](scale.md) **[](scale.md)**
+       [ ![ Escala de](images/volvo-cars-microsoft-hololens-experience01-640px.png)](scale.md) **[escala](scale.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       Tipografia de [ ![ tipografia](images/typography-cover.png)](typography.md) **[](typography.md)**
+       [ ![ Tipografia de](images/typography-cover.png)](typography.md) **[tipografia](typography.md)**
     :::column-end:::
     :::column:::
-       Som de [ ![ som](images/spatialaudio.png)](spatial-sound-design.md) **[](spatial-sound-design.md)**
+       [ ![ Som do](images/spatialaudio.png)](spatial-sound-design.md) **[som](spatial-sound-design.md)**
     :::column-end:::
 :::row-end:::
 
@@ -45,85 +45,85 @@ Saiba mais sobre interações espaciais comuns usadas com frequência e blocos d
 
 :::row:::
     :::column:::
-       Cursor do [ ![ cursor](images/UX_Hero_Cursor.jpg)](cursors.md) **[](cursors.md)**
+       [ ![ Cursor](images/UX_Hero_Cursor.jpg)](cursors.md) **[cursor](cursors.md)**
     :::column-end:::
     :::column:::
-       [ ![ Lado do raio](images/UX_Hero_HandRay.jpg)](point-and-commit.md) **[](point-and-commit.md) de raio**
+       [ ![ Raio de mão](images/UX_Hero_HandRay.jpg)](point-and-commit.md) **[](point-and-commit.md)**
     :::column-end:::
     :::column:::
-       Botão de [ ![ botão](images/UX_Hero_Button.jpg)](button.md) **[](button.md)**
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-       Caixa delimitadora de [ ![ caixa delimitada](images/UX_Hero_BoundingBox.jpg)](app-bar-and-bounding-box.md) **[](app-bar-and-bounding-box.md)**
-    :::column-end:::
-    :::column:::
-       Objeto de interação do [ ![ objeto que interage](images/UX_Hero_Interactable.jpg)](interactable-object.md) **[](interactable-object.md)**
-    :::column-end:::
-    :::column:::
-       Manipulação de [ ![ manipulação](images/UX_Hero_Manipulation.jpg)](direct-manipulation.md) **[](direct-manipulation.md)**
+       [![Botão](images/UX_Hero_Button.jpg)](button.md) **[Botão](button.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       Menu do [ ![ menu à mão](images/UX_Hero_HandMenu.jpg)](hand-menu.md) **[](hand-menu.md)**
+       [ ![ Caixa delimitante](images/UX_Hero_BoundingBox.jpg)](app-bar-and-bounding-box.md) **[Caixa delimitada](app-bar-and-bounding-box.md)**
     :::column-end:::
     :::column:::
-       [ ![ Near menu](images/UX_Hero_NearMenu.jpg)](near-menu.md) **[próximo ao menu](near-menu.md)**
+       [ ![ Objeto interajante](images/UX_Hero_Interactable.jpg)](interactable-object.md) **[Objeto interajante](interactable-object.md)**
     :::column-end:::
     :::column:::
-       Coleção de objetos da [ ![ coleção de objetos](images/UX_Hero_ObjectCollection.jpg)](object-collection.md) **[](object-collection.md)**
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-       Entrada de voz de [ ![ entrada de voz](images/UX_Hero_VoiceCommand.jpg)](voice-input.md) **[](voice-input.md)**
-    :::column-end:::
-    :::column:::
-       Teclado do [ ![ teclado](images/UX_Hero_Keyboard.jpg)](keyboard.md) **[](keyboard.md)**
-    :::column-end:::
-    :::column:::
-       [ ![](images/UX_Hero_Tooltip.jpg)](tooltip.md) **[Dica de ferramenta](tooltip.md) ToolTip**
+       [ ![ Manipulação](images/UX_Hero_Manipulation.jpg)](direct-manipulation.md) **[](direct-manipulation.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       Ardósia- [ ![ ardósia](images/UX_Hero_Slate.jpg)](slate.md) **[](slate.md)**
+       [ ![ Menu manual Menu](images/UX_Hero_HandMenu.jpg)](hand-menu.md) **[manual](hand-menu.md)**
     :::column-end:::
     :::column:::
-       [ ![](images/UX_Hero_Slider.jpg)](slider.md) **[Controle deslizante](slider.md) deslizante**
+       [ ![ Menu próximo Menu](images/UX_Hero_NearMenu.jpg)](near-menu.md) **[próximo](near-menu.md)**
     :::column-end:::
     :::column:::
-        Sombreador de [ ![ sombreador](images/UX_Hero_StandardShader.jpg)](shader.md) **[](shader.md)**
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-       Caixa de diálogo de [ ![ diálogo](images/MRTK_UX_Dialog.jpg)](dialog-ui.md) **[](dialog-ui.md)**
-    :::column-end:::
-    :::column:::
-       [ ![ Mão](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[](hand-coach.md) à direita do**
-    :::column-end:::
-    :::column:::
-       Malha espacial da [ ![ malha espacial](images/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md) **[](spatial-mesh-ux.md)**
+       [ ![ Coleção de objetos](images/UX_Hero_ObjectCollection.jpg)](object-collection.md) Coleção de **[objetos](object-collection.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        [ ![ Etiquetas de mural e marcação – ao longo](images/MRTK_TagAlong.gif)](billboarding-and-tag-along.md) do **[mural e da marca](billboarding-and-tag-along.md)**
+       [ ![ Entrada de voz](images/UX_Hero_VoiceCommand.jpg)](voice-input.md) Entrada de **[voz](voice-input.md)**
     :::column-end:::
     :::column:::
-       Indicador de progresso do [ ![ indicador de progresso](images/MRTK_ProgressIndicator.gif)](progress.md) **[](progress.md)**
+       [ ![ Teclado](images/UX_Hero_Keyboard.jpg)](keyboard.md) **[teclado](keyboard.md)**
     :::column-end:::
     :::column:::
-       Superfície [ ![ Magnetism](images/MRTK_SurfaceMagnetism.gif)](surface-magnetism.md) **[Surface Magnetism](surface-magnetism.md)**
+       [![Dica de ferramenta](images/UX_Hero_Tooltip.jpg)](tooltip.md) **[Dica de ferramenta](tooltip.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Ardósia](images/UX_Hero_Slate.jpg)](slate.md) **[Ardósia](slate.md)**
+    :::column-end:::
+    :::column:::
+       [![Controle deslizante](images/UX_Hero_Slider.jpg)](slider.md) **[Controle deslizante](slider.md)**
+    :::column-end:::
+    :::column:::
+        [ ![ Sombreador](images/UX_Hero_StandardShader.jpg)](shader.md) **[](shader.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Caixa de diálogo](images/MRTK_UX_Dialog.jpg)](dialog-ui.md) **[Caixa de diálogo](dialog-ui.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ Técnico de mão](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) Técnico de **[mão](hand-coach.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ Malha espacial da malha](images/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md) **[espacial](spatial-mesh-ux.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [ ![ Marcação e marcação ao longo da](images/MRTK_TagAlong.gif)](billboarding-and-tag-along.md) **[minguação e do tag-along](billboarding-and-tag-along.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ Indicador de progresso Indicador](images/MRTK_ProgressIndicator.gif)](progress.md) de **[progresso](progress.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ Surface surface surface](images/MRTK_SurfaceMagnetism.gif)](surface-magnetism.md) **[surface](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::
 

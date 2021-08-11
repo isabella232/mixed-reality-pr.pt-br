@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gerenciador do galaxy, estudo de caso, projeto, exemplo, MRTK, realidade misturada Toolkit, Unity, aplicativos de exemplo, aplicativos de amostra, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual
-ms.openlocfilehash: c1294a197878ecf0c6672b028284ad51eaef6955
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: e24336ffafd389f60835e80dbb665063bec2904afc121cfcae0f2c9d2b70dd2f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225668"
 ---
 # <a name="galaxy-explorer"></a>Gerenciador do Galaxy
 ![Gerenciador do Galaxy](../images/HTK_GalaxyExplorer.jpg)

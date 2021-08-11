@@ -1,21 +1,21 @@
 ---
-title: Pesquisa
+title: Espera
 description: Interação de duração
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 05/20/2021
-keywords: Pesquisa, Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK
+keywords: pesquisa, Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 18e69f001c8989234d1b75fb713796f079cacbdf
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 8ac63ee723cdd524ee7abbad7fd2658b446156adbd5ddee06ae1795edb3b68d1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226890"
 ---
-# <a name="dwell"></a>Pesquisa
+# <a name="dwell"></a>Espera
 
-![Herói de pesquisa](../images/dwell/MRTK_UX_Dwell.png)
+![Destaque do recurso de espera](../images/dwell/MRTK_UX_Dwell.png)
 
 O Head-olhar e a pesquisa são ótimos em cenários nos quais as mãos de uma pessoa estão ocupadas com outras tarefas. O recurso também é útil quando a voz não é 100% confiável ou está disponível devido a restrições de ambiente ou sociais.
 Os exemplos de pesquisa de MRTK demonstram tipos diferentes de componentes de interface do usuário com tempo de resposta configurável e comentários visuais.
@@ -38,7 +38,7 @@ Os perfis de duração são usados pelo **manipulador de duração** para config
 
 ## <a name="prefabs"></a>Pré-fabricados
 
-Esses pré-fabricados são variantes do pré-fabricados de botão pressionável de estilo do HoloLens 2 que têm componentes adicionais para dar suporte a interações de duração de pesquisa.
+esses pré-fabricados são variantes do pré-fabricados de botão pressionável de estilo HoloLens 2 que têm componentes adicionais para dar suporte a interações de duração.
 
 - **PressableButtonHoloLens2_Dwell. pré-fabricado**
 - **PressableButtonHoloLens2_32x96_Dwell. pré-fabricado**

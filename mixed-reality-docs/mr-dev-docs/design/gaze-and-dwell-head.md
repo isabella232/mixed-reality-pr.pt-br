@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: Realidade misturada, olhar, pesquisa, interação, design, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista, UX, diretrizes, exibição de lista
-ms.openlocfilehash: e70536b7247153979b8650ba1f5bcbe1a7cd08af
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: realidade misturada, olhar, pesquisa, interação, design, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit, ux, diretrizes, exibição de lista
+ms.openlocfilehash: e069b0815f69848b7632cb7b1b85d85f328441b7156ae22ffe097fedc3ed6fc1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582205"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223606"
 ---
 # <a name="head-gaze-and-dwell"></a>Focar com a cabeça e esperar
 
@@ -19,7 +19,7 @@ Quando as mãos estão ocupadas com ferramentas e peças, os gestos podem ser en
 
 ## <a name="scenarios"></a>Cenários
 
-O Head-olhar e a pesquisa são ótimos em cenários nos quais as mãos de uma pessoa estão ocupadas com outras tarefas. O recurso também é útil quando a voz não é 100% confiável ou está disponível devido a restrições de ambiente ou sociais. Um bom exemplo é uma pessoa que usa o HoloLens para sobrepor informações de referência ao realizar reparos no motor de um carro. Suas mãos estão ocupadas com ferramentas ou para apoiar o corpo conforme acessa o compartimento do motor. O ambiente da garagem é barulhento, com estrondos e zumbidos constantes de ferramentas, o que dificulta os comandos de voz. O Head-olhar e a pesquisa permitem que a pessoa que usa o HoloLens Navegue com confiança no material de referência sem interromper o fluxo de trabalho. 
+O Head-olhar e a pesquisa são ótimos em cenários nos quais as mãos de uma pessoa estão ocupadas com outras tarefas. O recurso também é útil quando a voz não é 100% confiável ou está disponível devido a restrições de ambiente ou sociais. Um bom exemplo é uma pessoa que usa o HoloLens para sobrepor informações de referência ao realizar reparos no motor de um carro. Suas mãos estão ocupadas com ferramentas ou para apoiar o corpo conforme acessa o compartimento do motor. O ambiente da garagem é barulhento, com estrondos e zumbidos constantes de ferramentas, o que dificulta os comandos de voz. o Head-olhar e a pesquisa permitem que a pessoa que usa o HoloLens navegue com confiança no material de referência sem interromper o fluxo de trabalho. 
 
 ## <a name="device-support"></a>Suporte a dispositivos
 

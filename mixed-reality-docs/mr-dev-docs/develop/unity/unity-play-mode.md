@@ -1,19 +1,19 @@
 ---
-title: Visualize seu trabalho com a comunicação remota do Holographic
+title: Visualizar seu trabalho com a comunicação remota holográfica
 description: Use a comunicação remota do Holographic no modo de reprodução para visualizar as alterações do aplicativo em um dispositivo sem implantar um aplicativo.
 author: keveleigh
 ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: Unity, comunicação remota, holographic de comunicação remota, holographic de comunicação remota, HoloLens, headset de realidade mista, headset de realidade mista do windows, headset de realidade virtual, modo de reprodução de unity
-ms.openlocfilehash: 0c71791c80a5e84ee48241baa756064a800e5a41
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: cd9dca9d1ddf17b78e8c317fa3a58093c9b5837de379510148c6e645b31120ca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226228"
 ---
-# <a name="preview-your-work-with-holographic-remoting"></a>Visualize seu trabalho com a comunicação remota do Holographic
+# <a name="preview-your-work-with-holographic-remoting"></a>Visualizar seu trabalho com a comunicação remota holográfica
 
 você pode usar a comunicação remota do Holographic para transmitir conteúdo do Holographic para seu HoloLens 2 em tempo real. Essa é uma ótima maneira de depurar rapidamente seu aplicativo sem criar e implantar um projeto completo. 
 

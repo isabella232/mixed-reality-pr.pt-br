@@ -1,18 +1,18 @@
 ---
-title: Criando um provedor de dados do sistema de entrada
+title: Criar um provedor de dados do sistema de entrada
 description: documentação para criar o sistema de entrada e o provedor de dados no MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 0b6012871a4d4988fdb70336a3c33455f479bcac
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 391aa477bb09fa2dec2b3bcb26bad813c715ee03eeb0dc03dcbc9048ae318295
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223980"
 ---
-# <a name="creating-an-input-system-data-provider"></a>Criando um provedor de dados do sistema de entrada
+# <a name="creating-an-input-system-data-provider"></a>Criar um provedor de dados do sistema de entrada
 
 O sistema de entrada de Toolkit Mixed Reality é um sistema extensível para habilenciar o suporte ao dispositivo de entrada. Para adicionar suporte para uma nova plataforma de hardware, um provedor de dados de entrada personalizado pode ser necessário.
 

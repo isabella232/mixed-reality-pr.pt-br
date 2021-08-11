@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, funcionalidades de multiusuários, Photon, MRTK, kit de ferramentas de realidade misturada, UWP, âncoras espaciais do Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 28776e106b96d1265e435d60e7008b1d88c01060
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: eba8cbe8fefe3cad5f24e2075f73c11765f09e146dcbc3c16aabff58163fc5b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200967"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurar o Photon Unity Networking
 

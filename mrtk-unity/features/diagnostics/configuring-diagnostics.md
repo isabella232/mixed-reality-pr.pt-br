@@ -1,18 +1,18 @@
 ---
-title: Configurando o sistema de diagnóstico
+title: Configuração do sistema de diagnóstico
 description: Documentação para configurar o diagnóstico no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: d81b441cd9bcd40846eb94320f6f7de1bbd2f0a8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 521ef71abd1ddf920863530a2a423c1080a135e5a404a26f1611fc14f92c2796
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198228"
 ---
-# <a name="configuring-the-diagnostics-system"></a>Configurando o sistema de diagnóstico
+# <a name="configuring-the-diagnostics-system"></a>Configuração do sistema de diagnóstico
 
 ## <a name="general-settings"></a>Configurações gerais
 

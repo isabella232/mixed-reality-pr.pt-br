@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: nenhum
-ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4e08f015000fe214438879cd6433248d444f3d659b6338505495bebb76309a67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199511"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Título (seja o mais específico possível, use os termos humanos) 
 
@@ -64,7 +64,7 @@ Convenções editoriais:
 *   Use o senso comum.
 *   Não tente ser engraçado.
 *   Escreva usando a grafia e as convenções en-US (Estados Unidos Inglês).
-*   **Usar maiúsculas e minúsculas para títulos, títulos de seção e... Bem, tudo.** Nas frases, as únicas palavras que devem ser colocadas em maiúsculas são os substantivos próprios (assim como você aprendeu na escola da gramática). Nomes de marca (por exemplo, Microsoft HoloLens) são nomes próprios. Nomes de recursos (por exemplo, mapeamento espacial) não são substantivos próprios, a menos que sejam marcadas.
+*   **Usar maiúsculas e minúsculas para títulos, títulos de seção e... Bem, tudo.** Nas frases, as únicas palavras que devem ser colocadas em maiúsculas são os substantivos próprios (assim como você aprendeu na escola da gramática). os nomes de marca (por exemplo, Microsoft HoloLens) são nomes próprios. Nomes de recursos (por exemplo, mapeamento espacial) não são substantivos próprios, a menos que sejam marcadas.
 *   Não escreva links do formulário "para obter mais informações, acesse [aqui](../contributing.md)". Em vez disso, coloque os links de forma [contextual](../contributing.md) sem direcionar o leitor para ir para outro lugar.
 *   Esta documentação é a fonte de verdade. As informações devem ser precisas e atuais.
 

@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 7d3e158bc7e4b0125f264aa9abc8f369a6e825562266891b0528066d8b8b9b71
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198103"
 ---
 # <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>notas de versão do Microsoft Mixed reality Toolkit 2,5
 
@@ -224,7 +224,7 @@ O MRTK agora vem com um [sistema de simulação elástica](../features/experimen
 Atualmente, os seguintes componentes do MRTK que dão suporte ao [Gerenciador de elásticos](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) podem aproveitar a funcionalidade de elásticos:
 
 - [Controle de limites](../features/ux-building-blocks/bounds-control.md#elastics-experimental)
-- [Manipulador de objeto](../features/ux-building-blocks/object-manipulator.md#elastics-experimental)
+- [Manipulador de objetos](../features/ux-building-blocks/object-manipulator.md#elastics-experimental)
 
 <img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%" alt="Expanding an elastic menu">
 <img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%" alt="Grabbing an elastic coffee cup">

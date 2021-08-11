@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, design, introdução, orientação, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, UX, recursos
-ms.openlocfilehash: f731ad91d48cdb50ad12b6a9cc250b6561eebaff
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, design, introdução, diretrizes, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, ux, recursos
+ms.openlocfilehash: 0bd70e08d55f8d556ff3a612dbbc979dc895cebbfc9950f18d8d474ff347407b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198622"
 ---
 # <a name="about-this-design-guidance"></a>Sobre a diretriz deste projeto
 
@@ -19,11 +19,11 @@ ms.locfileid: "97847692"
 
 **Olá, e bem-vindo às suas diretrizes de design para realidade misturada.**
 
-Estas diretrizes são escritas por Microsoft designers, desenvolvedores, gerentes de programa e pesquisadores. O trabalho de nossos gravadores abrange dispositivos Holographic, incluindo o HoloLens, dispositivos de imersão, andAcer e fones de ouvido do HP Windows Mixed Reality. É recomendável pensar neste artigo como um conjunto de tópicos para o design montado no Windows Head.
+Estas diretrizes são escritas por Microsoft designers, desenvolvedores, gerentes de programa e pesquisadores. o trabalho de nossos gravadores abrange dispositivos holographic, incluindo HoloLens, dispositivos de imersão, andAcer e HP Windows Mixed Reality headsets. é recomendável pensar neste artigo como um conjunto de tópicos para Windows design montado no cabeçalho.
 
 Estamos inserindo uma nova era imensamente empolgante de computação junto com você. As inovações em exibições montadas no rosto, som espacial, sensores, conscientização ambiental, entrada e gráficos 3D levam e desafiam-nos a definir novos tipos de experiências. A nova fronteira é drasticamente mais pessoal, intuitiva, envolvente e contextual.
 
-Sempre que possível, ofereceremos diretrizes de design acionáveis com o código relacionado no GitHub. Dito isso, como estamos aprendendo bem junto com você, nem sempre podemos oferecer orientação específica e acionável aqui. Parte do que compartilharemos será o espírito de "lições que aprendemos" e "evitará reduzir esse caminho".
+Sempre que possível, ofereceremos diretrizes de design acionáveis com código relacionado em GitHub. Dito isso, como estamos aprendendo bem junto com você, nem sempre podemos oferecer orientação específica e acionável aqui. Parte do que compartilharemos será o espírito de "lições que aprendemos" e "evitará reduzir esse caminho".
 
 E sabemos, muitas inovações serão geradas pela comunidade de design maior. Então, esperamos ouvir você, aprender com você e trabalhar junto com você. Faremos o melhor para compartilhar nossas ideias, mesmo que elas sejam exploratórios e antigas. Nosso objetivo é ajudar os desenvolvedores e designers com seus pensamento de design, práticas recomendadas e os controles de software livre, padrões e aplicativos de exemplo relacionados que você pode usar diretamente em seu próprio trabalho.
 
@@ -59,7 +59,7 @@ Embora seja importante se concentrar em problemas específicos do cliente, tamb�
 
 ![Conheça os criadores onde eles estão](images/500px-creators.jpg) <br>
 
-Esperamos que muitos públicos descubram essas diretrizes para serem úteis. Você tem diferentes habilidades (iniciando, intermediário, avançado), use ferramentas diferentes (Unity, DirectX, C++, C#, outros), que estão familiarizados com várias plataformas (Windows, iOS, Android), provenientes de diferentes planos de fundo (móveis, empresariais, jogos) e estão trabalhando em equipes de tamanho diferente (solo, pequena, média, grande). Portanto, essas diretrizes podem ser exibidas com perspectivas e necessidades diferentes. Sempre que possível, tentaremos manter essa diversidade em mente e tornar nossas diretrizes o mais relevantes possível para o máximo possível de pessoas. Sabemos que muitos de vocês já estão no GitHub. Portanto, Vincularemos diretamente a repositórios e fóruns do GitHub para que você se encontre onde você já está. 
+Esperamos que muitos públicos descubram essas diretrizes para serem úteis. você tem diferentes habilidades (iniciando, intermediário, avançado), use ferramentas diferentes (Unity, DirectX, C++, C#, outros), que estão familiarizados com várias plataformas (Windows, iOS, Android), provenientes de diferentes planos de fundo (móveis, empresariais, jogos) e estão trabalhando em equipes de tamanho diferente (solo, pequena, média, grande). Portanto, essas diretrizes podem ser exibidas com perspectivas e necessidades diferentes. Sempre que possível, tentaremos manter essa diversidade em mente e tornar nossas diretrizes o mais relevantes possível para o máximo possível de pessoas. Sabemos que muitos de vocês já estão em GitHub. portanto, vincularemos diretamente a GitHub repositórios e fóruns para que você se encontre onde você já está. 
 
 ### <a name="share-as-much-as-possible-from-experimental-to-explicit"></a>Compartilhe o máximo possível, de experimental a explícito
 
@@ -71,7 +71,7 @@ Um dos desafios de oferecer diretrizes de design nesse novo 3D medido é que nem
 
 ![O equilíbrio certo entre design global e local](images/500px-fluentdesign.jpg) <br>
 
-Ofereceremos dois níveis de diretrizes de design: global e local. Nossas diretrizes de design ' globais ' estão incluídas no [sistema de design fluente](https://fluent.microsoft.com). Detalhes fluentes de como achamos sobre conceitos básicos como luz, profundidade, movimento, material e escala em todo o design da Microsoft – nossos dispositivos, produtos, ferramentas e serviços. Dito isso, existem diferenças significativas específicas do dispositivo em um sistema maior. Portanto, nossas diretrizes de design "local" para os monitores montados na cabeça descrevem a criação de dispositivos Holographic e imersiva que geralmente têm diferentes métodos de entrada e saída, além de diferentes necessidades de usuários e cenários. As diretrizes de design local abordam os tópicos exclusivos do HMDs. Por exemplo: ambientes e objetos 3D; ambientes compartilhados; o uso de sensores, controle de olho e mapeamento espacial; e as oportunidades de áudio espacial. Ao longo de nossas diretrizes, você provavelmente verá que nós nos referimos a esses aspectos globais e locais. Espero que isso o ajudará a aumentar seu trabalho em uma base maior de design, aproveitando as diferenças de design entre dispositivos específicos.
+Ofereceremos dois níveis de diretrizes de design: global e local. nossas diretrizes de design ' globais ' estão incluídas na [Sistema Fluent Design](https://fluent.microsoft.com). Fluent detalhes de como achamos sobre conceitos básicos como luz, profundidade, movimento, material e escala em todo o design da Microsoft – nossos dispositivos, produtos, ferramentas e serviços. Dito isso, existem diferenças significativas específicas do dispositivo em um sistema maior. Portanto, nossas diretrizes de design "local" para os monitores montados na cabeça descrevem a criação de dispositivos Holographic e imersiva que geralmente têm diferentes métodos de entrada e saída, além de diferentes necessidades de usuários e cenários. As diretrizes de design local abordam os tópicos exclusivos do HMDs. Por exemplo: ambientes e objetos 3D; ambientes compartilhados; o uso de sensores, controle de olho e mapeamento espacial; e as oportunidades de áudio espacial. Ao longo de nossas diretrizes, você provavelmente verá que nós nos referimos a esses aspectos globais e locais. Espero que isso o ajudará a aumentar seu trabalho em uma base maior de design, aproveitando as diferenças de design entre dispositivos específicos.
 
 ### <a name="have-a-discussion"></a>Ter uma discussão
 
@@ -81,4 +81,4 @@ O mais importante é que queremos nos envolver com você, a comunidade de design
 
 ## <a name="dive-in"></a>Aprofunde-se
 
-Esperamos que este artigo introdutório forneça algum contexto significativo à medida que você explorar nossas diretrizes de design. Aprofunde-se e informe seus pensamentos nos fóruns do GitHub que você encontrará vinculados em nossos artigos ou no design da Microsoft no [Twitter](https://twitter.com/MicrosoftDesign) e no [Facebook](https://www.facebook.com/microsoftdesign/). Vamos projetar o futuro juntos!
+Esperamos que este artigo introdutório forneça algum contexto significativo à medida que você explorar nossas diretrizes de design. aprofunde-se e informe suas ideias nos fóruns de GitHub que você encontrará vinculados em nossos artigos ou no Design da Microsoft no [Twitter](https://twitter.com/MicrosoftDesign) e no [Facebook](https://www.facebook.com/microsoftdesign/). Vamos projetar o futuro juntos!

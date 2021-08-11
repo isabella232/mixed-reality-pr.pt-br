@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, solucionadores, coleção de objetos de grade
 ms.localizationpriority: high
-ms.openlocfilehash: d5d10893ba8274139c6e09b8cd426d58a0b3a0cb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b21f2833067c3496febcf5bdd1cfffe491597e9083845b18e9c220c75d3e7cee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227927"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Como posicionar objetos na cena
 

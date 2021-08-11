@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, MRTK, kit de ferramentas de realidade misturada, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 7124650a59271b48b763719063411765b5457768
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: cab10789bc7ab86a4090a0db46e5445b728c7c8ad2dd904cba530e81f1bab18e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201112"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Como inicializar o seu projeto e implantar o primeiro aplicativo
 

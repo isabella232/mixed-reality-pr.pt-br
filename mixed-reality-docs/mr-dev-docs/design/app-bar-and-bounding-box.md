@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Realidade mista do Windows, barra de aplicativos, caixa delimitadora, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, kit de ferramentas da realidade mista
-ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Windows Mixed Reality, barra de aplicativos, caixa delimitadora, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: d7cacdcffeb552595e4ffd5ea5d1a734efb0451e03c5b6d5d39e5ea8caf3bd94
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198692"
 ---
 # <a name="bounding-box-and-app-bar"></a>Caixa delimitadora e barra de aplicativos
 ![O limite é a interface padrão para a manipulação de objetos em realidade misturada.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,7 +19,7 @@ ms.locfileid: "112110091"
 
 ## <a name="what-is-the-bounding-box"></a>O que é a caixa delimitadora?
 
-O limite é a interface padrão para a manipulação de objetos em realidade misturada. Esse recurso fornece ao usuário uma indicação visual de que o objeto está ajustável no momento. No HoloLens 2, a caixa delimitadora funciona com a manipulação direta e responde à proximidade finger's do usuário. Ele mostra os comentários visuais para ajudar o usuário a perceber a distância do objeto.
+O limite é a interface padrão para a manipulação de objetos em realidade misturada. Esse recurso fornece ao usuário uma indicação visual de que o objeto está ajustável no momento. no HoloLens 2, a caixa delimitadora funciona com a manipulação direta e responde à proximidade finger's do usuário. Ele mostra os comentários visuais para ajudar o usuário a perceber a distância do objeto.
 
 :::row:::
     :::column:::
@@ -30,7 +30,7 @@ O limite é a interface padrão para a manipulação de objetos em realidade mis
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Ponto de exibição do HoloLens para dimensionar um objeto por meio da caixa delimitadora](images/HoloLens2_BoundingBox.gif)<br>
+       ![HoloLens ponto de vista de dimensionamento de um objeto por meio da caixa delimitadora](images/HoloLens2_BoundingBox.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -45,7 +45,7 @@ O limite é a interface padrão para a manipulação de objetos em realidade mis
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Ponto de exibição do HoloLens para girar um objeto por meio da caixa delimitadora](images/HoloLens2_BoundingBox_Rotate.gif)<br>
+       ![HoloLens ponto de vista de girar um objeto por meio da caixa delimitadora](images/HoloLens2_BoundingBox_Rotate.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -53,8 +53,8 @@ O limite é a interface padrão para a manipulação de objetos em realidade mis
 
 :::row:::
     :::column:::
-        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Comentário visual sobre a proximidade no HoloLens 2<br>
-        No HoloLens 2, há uma indicação visual extra, que pode ajudar a percepção de profundidade do usuário. Um anel próximo a ele é exibido e escala verticalmente conforme o alcance fica mais próximo do objeto. O anel, eventualmente, convergi em um ponto quando o estado pressionado é atingido. Essa unificação Visual ajuda o usuário a entender a distância deles do objeto.<br>
+        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>comentário Visual sobre proximidade na HoloLens 2<br>
+        no HoloLens 2, há uma indicação visual extra, que pode ajudar a percepção de profundidade do usuário. Um anel próximo a ele é exibido e escala verticalmente conforme o alcance fica mais próximo do objeto. O anel, eventualmente, convergi em um ponto quando o estado pressionado é atingido. Essa unificação Visual ajuda o usuário a entender a distância deles do objeto.<br>
         <br>
         *Loop de vídeo: exemplo de comentários visuais com base na proximidade a uma caixa delimitadora*
     :::column-end:::
@@ -66,7 +66,7 @@ O limite é a interface padrão para a manipulação de objetos em realidade mis
 
 <br>
 
-**Para o desenvolvimento de aplicativos do Unity, consulte [a caixa delimitadora no kit de ferramentas da realidade misturada-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
+**para o desenvolvimento de aplicativos do Unity, consulte [a caixa delimitadora na realidade misturada Toolkit-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 
@@ -92,7 +92,7 @@ A barra de aplicativos é um menu de nível de objeto, que contém uma série de
 <br>
 
 
-## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Caixa delimitadora no MRTK (Kit de ferramentas de realidade misturada) para Unity
+## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>caixa delimitadora em MRTK (realidade misturada Toolkit) para o Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornece scripts e pré-fabricados para a caixa delimitadora e a barra de aplicativos. Você pode adicionar uma caixa delimitadora atribuindo o script BoundingBox. cs em qualquer objeto.
 
 * [MRTK-caixa delimitadora](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)

@@ -1,24 +1,24 @@
 ---
 title: Projete seus próprios ambientes de imersão
-description: Saiba como criar ambientes de início de realidade mista do Windows.
+description: saiba como criar Windows Mixed Reality ambientes domésticos por conta própria.
 author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, Home, ambientes personalizados, lugares, Cliff House, skyloft, usuário, criar, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade mista
-ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+keywords: Windows Mixed Reality, realidade mista, realidade Virtual, VR, sr, Home, ambientes personalizados, lugares, cliff house, skyloft, usuário, criar, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade Virtual, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: c0f006d3e05cb0892a0a9b2014a4d46a0668f628cf369e38c63c83756148d778
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198592"
 ---
 # <a name="design-your-own-immersive-environments"></a>Projete seus próprios ambientes de imersão
 
 >[!NOTE]
 >Esse é um recurso experimental. Experimente e divirta-se com ele, mas não se surpreenda se tudo não funcionar tão bem quanto o esperado. Estamos avaliando a viabilidade desse recurso e interesse em usá-lo, portanto, conte-nos sobre sua experiência (e quaisquer bugs que você encontrar) nos [fóruns de desenvolvedores](https://forums.hololens.com/categories/custom-home-environments).
 
-A partir da [atualização do Windows 10 de abril de 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), habilitamos um recurso experimental que permite adicionar ambientes personalizados ao seletor de locais (no menu Iniciar) para usar como a [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). O Windows Mixed Reality tem dois ambientes padrão, Cliff House e Skyloft, que você pode escolher como sua casa. A criação de ambientes personalizados permite expandir a lista com suas próprias criações. Estamos disponibilizando esse recurso em um estado inicial para avaliar os juros de criadores e desenvolvedores. Veja que tipos de mundos você cria e entende como você trabalha com diferentes ferramentas de criação.
+a partir do [Windows 10 atualização de abril de 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), habilitamos um recurso experimental que permite que você adicione ambientes personalizados ao seletor de locais (no menu Iniciar) para usar como a [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality tem dois ambientes padrão, Cliff House e Skyloft, você pode escolher como sua casa. A criação de ambientes personalizados permite expandir a lista com suas próprias criações. Estamos disponibilizando esse recurso em um estado inicial para avaliar os juros de criadores e desenvolvedores. Veja que tipos de mundos você cria e entende como você trabalha com diferentes ferramentas de criação.
 
 Ao usar um ambiente personalizado, você observará que o teleportamento, a interação com os aplicativos e o posicionamento de hologramas funciona exatamente como no Cliff House e Skyloft. Você pode navegar na Web em um cenário de fantasia ou preencher uma cidade fractais com hologramas-as possibilidades são infinitas!
 
@@ -53,12 +53,12 @@ Criamos um ambiente de exemplo que mostra algumas das possibilidades criativas d
 2. Execute o arquivo de **Fantasy_Island.exe** que você baixou.
 
     > [!NOTE]
-    > Ao tentar executar um arquivo. exe baixado da Web (como este), você pode encontrar um pop-up "protegido pelo Windows". Para executar Fantasy_Island.exe a partir desse pop-up, selecione **mais informações** e, em seguida, **executar mesmo assim**. Essa configuração de segurança destina-se a protegê-lo de baixar arquivos que talvez você não queira confiar, portanto, escolha apenas essa opção ao confiar na origem do arquivo.
+    > ao tentar executar um arquivo de .exe baixado da web (como este), você pode encontrar um pop-up "Windows protegido do seu PC". Para executar Fantasy_Island.exe a partir desse pop-up, selecione **mais informações** e, em seguida, **executar mesmo assim**. Essa configuração de segurança destina-se a protegê-lo de baixar arquivos que talvez você não queira confiar, portanto, escolha apenas essa opção ao confiar na origem do arquivo.
 
 3. Abra o **Explorador de arquivos** e navegue até a pasta ambientes colando o seguinte local de arquivo na barra de endereços: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` .
 4. Copie o ambiente de exemplo que você baixou para essa pasta.
 5. Reinicie o **portal de realidade misturada** para atualizar a lista de ambientes no seletor de locais.
-6. Coloque seu headset. Quando estiver em casa, abra o **menu iniciar** usando o botão do Windows seu controlador.
+6. Coloque seu headset. quando você estiver em casa, abra o **menu Iniciar** usando o botão Windows seu controlador.
 7. Selecione o ícone **locais** acima da lista de aplicativos fixados para escolher um ambiente doméstico.
 8. Você encontrará o ambiente da ilha de fantasia que baixou na lista de locais. Selecione **ilha de fantasia** para entrar no seu novo ambiente doméstico personalizado!
 
@@ -78,7 +78,7 @@ Ao modelar seu ambiente, mantenha as seguintes recomendações em mente para que
 
 ### <a name="exporting-your-environment"></a>Exportando seu ambiente
 
-A realidade mista do Windows depende do glTF binário (. glb) como o formato de entrega de ativos para ambientes. glTF é um padrão aberto isento de royalties para entrega de ativos 3D mantido pelo grupo Khronos. O suporte da Microsoft para o formato em aplicativos e experiências do Windows crescerá conforme o glTF evolui como um padrão da indústria para conteúdo 3D interoperável.
+Windows Mixed Reality se baseia em glTF binário (. glb) como o formato de entrega de ativos para ambientes. glTF é um padrão aberto isento de royalties para entrega de ativos 3D mantido pelo grupo Khronos. o suporte da Microsoft para o formato entre Windows aplicativos e experiências crescerá conforme a glTF evolui como um padrão da indústria para conteúdo 3d interoperável.
 
 A primeira etapa na exportação de ativos a serem usados como ambientes domésticos personalizados é gerar um modelo glTF 2,0. O grupo de trabalho glTF mantém uma [lista de exportadores e conversores com suporte](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) para criar um modelo glTF 2,0. Para começar, use um dos programas listados nesta página para criar e exportar um modelo do glTF 2,0 ou Converta um modelo existente usando um dos conversores com suporte.
 
@@ -90,13 +90,13 @@ Todos os ambientes devem ser < 256 MB. Ambientes maiores que 256 MBS não serão
 
 ### <a name="optimizing-your-environment"></a>Otimizando seu ambiente
 
-O Windows Mixed Reality dá suporte a muitas otimizações opcionais que podem reduzir significativamente os tempos de carregamento do ambiente. Preste atenção especial com ambientes que têm muitas texturas, pois às vezes eles atingirão o tempo limite durante o carregamento. Em geral, recomendamos esta etapa para todos os ativos, no entanto, ambientes menores com poucas ou mais texturas de resolução nem sempre exigirão isso. 
+o Windows Mixed Reality dá suporte a muitas otimizações opcionais que podem reduzir significativamente os tempos de carregamento do ambiente. Preste atenção especial com ambientes que têm muitas texturas, pois às vezes eles atingirão o tempo limite durante o carregamento. Em geral, recomendamos esta etapa para todos os ativos, no entanto, ambientes menores com poucas ou mais texturas de resolução nem sempre exigirão isso. 
 
-Para facilitar esse processo, criamos o conversor de [ativos do Windows Mixed Reality (disponível no GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases) para fazer suas otimizações. Essa ferramenta usa um conjunto de utilitários disponíveis no Microsoft glTF Toolkit para otimizar qualquer padrão 2,0 glTF ou. glb executando um empacotamento de textura extra, compactação e resolução vertical. 
+para facilitar esse processo, criamos o conversor de [ativo de Windows Mixed Reality (disponível em GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases) para fazer suas otimizações. Essa ferramenta usa um conjunto de utilitários disponíveis no Microsoft glTF Toolkit para otimizar qualquer padrão 2,0 glTF ou. glb executando um empacotamento de textura extra, compactação e resolução vertical. 
 
 Atualmente, o conversor dá suporte a vários sinalizadores para ajustar o comportamento exato das otimizações. Recomendamos a execução com os seguintes sinalizadores para obter os melhores resultados:
 
-Sinalizador|Valor (es) recomendado (s)|Descrição
+Sinalizador|Valor (es) recomendado (s)|Description
 ---|---|---
 -Max-Texture-size|1024 ou 2048| Ajuste o valor para melhorar a qualidade das texturas, o padrão é 512x512. Um valor maior afetará significativamente o tamanho do arquivo do ambiente para manter o limite de 256 MB em mente
 -min-versão|1803|Há suporte para ambientes personalizados apenas em versões do Windows >= 1803. Esse sinalizador removerá texturas de versões mais antigas e reduzirá o tamanho do arquivo do ativo final
@@ -131,7 +131,7 @@ No momento, não é possível alterar o ambiente padrão. Sempre que reiniciar o
 
 ### <a name="i-spawn-into-a-blank-space"></a>Eu faço uma geração em um espaço em branco
 
-A realidade mista do Windows [não dá suporte a ambientes que excedem 256 MB](#environment-limits). Quando um ambiente excede esse limite, você vai para a caixa céu vazia sem modelo.
+Windows Mixed Reality [não dá suporte a ambientes que excedem 256 mb](#environment-limits). Quando um ambiente excede esse limite, você vai para a caixa céu vazia sem modelo.
 
 ### <a name="it-takes-a-long-time-to-load-my-environment"></a>Leva muito tempo para carregar meu ambiente
 
@@ -139,7 +139,7 @@ Você pode adicionar otimizações opcionais ao seu ambiente para que ele seja c
 
 ### <a name="the-scale-of-my-environment-is-incorrect"></a>A escala do meu ambiente está incorreta
 
-A realidade mista do Windows traduz as unidades de glTF para 1 medidor ao carregar ambientes. Se seu ambiente carregar uma escala inesperada, verifique novamente seu exportador para garantir que você esteja modelando em uma escala de 1 metro. 
+Windows Mixed Reality converte unidades de glTF para 1 medidor ao carregar ambientes. Se seu ambiente carregar uma escala inesperada, verifique novamente seu exportador para garantir que você esteja modelando em uma escala de 1 metro. 
 
 ### <a name="the-spawn-location-in-my-environment-is-incorrect"></a>O local de geração no meu ambiente está incorreto
 
@@ -150,4 +150,4 @@ O local de geração padrão está localizado em 0, 0, 0 no ambiente. No momento
 Quando você cria seu ambiente personalizado, ele usará uma simulação de renderização acústica que não corresponde ao espaço físico que você criou. O som pode vir de direções erradas e pode parecer muffled. 
 
 ## <a name="see-also"></a>Confira também
-* [Conversor de ativos da realidade mista do Windows (no GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
+* [Windows Mixed Reality Conversor de ativos (em GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)

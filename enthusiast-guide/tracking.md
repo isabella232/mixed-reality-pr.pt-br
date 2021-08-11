@@ -1,58 +1,58 @@
 ---
-title: Acompanhamento de perguntas frequentes
-description: Acompanhamento da solução de problemas de realidade mista do Windows que vai além da nossa documentação de suporte de consumidor padrão.
+title: Perguntas frequentes sobre acompanhamento
+description: Acompanhamento Windows Mixed Reality solução de problemas que vão além da nossa documentação de suporte ao consumidor padrão.
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, solução de problemas, erros, ajuda, suporte, rastreamento
-ms.openlocfilehash: 2634b95cf876a5b540710f80d3dd7f9d48b3bad9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, Solução de Problemas, Erros, Ajuda, Suporte, Acompanhamento
+ms.openlocfilehash: fe5462a53de7b196db37edbbf0e56199a17c4c99b54ea1e7d9edf72e0845c9e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199472"
 ---
-# <a name="tracking-faqs"></a>Acompanhamento de perguntas frequentes
+# <a name="tracking-faqs"></a>Perguntas frequentes sobre acompanhamento
 
-## <a name="my-headset-has-stopped-tracking"></a>Meu Headset parou o acompanhamento
+## <a name="my-headset-has-stopped-tracking"></a>Meu headset parou de rastrear
 
-Verifique se as luzes estão acesas e se não há nada obstruindo as câmeras de rastreamento internas na frente do headset. Se o rastreamento for perdido, pode levar alguns segundos para retomar. Reiniciar o portal de realidade mista do Windows está o acompanhamento não é reiniciado.
+Certifique-se de que as luzes estão ligadas e se não há nada impedindo as câmeras de acompanhamento de dentro para fora na frente do headset. Se o acompanhamento for perdido, poderá levar alguns segundos para ser retomado. Reiniciar o Windows Mixed Reality portal está acompanhando não é reiniciado.
 
-## <a name="i-can-look-around-but-i-cant-translate-im-stuck-in-3dof"></a>Posso examinar, mas não posso traduzir (estou preso por 3DOF)
+## <a name="i-can-look-around-but-i-cant-translate-im-stuck-in-3dof"></a>Posso dar uma olhada, mas não consigo traduzir (estou preso no 3DOF)
 
-Isso significa que o sistema de controle não pode gerar pose ou o aplicativo foi interrompido usando novos dados de pose a serem renderizados. Para corrigir o problema:
+Isso significa que o sistema de acompanhamento não pode gerar pose ou o aplicativo parou de usar novos dados de pose para renderizar. Para corrigir o problema:
 
-* Verifique se a sala tem luz suficiente.
-* Verifique se a sala tem detalhes suficientes para acompanhar.
-* Desconecte o dispositivo, feche a realidade mista do Windows e conecte o dispositivo novamente.
-* Se a mensagem persistir, contate o atendimento [ao cliente](https://support.microsoft.com/)
+* Certifique-se de que a sala tenha luz suficiente.
+* Certifique-se de que a sala tenha detalhes suficientes para acompanhar.
+* Desconectar o dispositivo, Windows Mixed Reality e conectar o dispositivo novamente.
+* Se a mensagem persistir, entre em contato com o [atendimento ao cliente](https://support.microsoft.com/)
 
-## <a name="the-view-in-the-hmd-is-frozen"></a>A exibição no HMD é congelada
+## <a name="the-view-in-the-hmd-is-frozen"></a>A exibição no HMD está congelada
 
 Isso geralmente significa que o aplicativo ou um componente de nível de sistema falhou. Tente:
 
 1. Pressione o botão "página inicial" para sair do aplicativo.
-2. Desconecte o dispositivo, feche o MRP e conecte o dispositivo novamente.
+2. Desconectar o dispositivo, fechar o MRP e conectar o dispositivo novamente.
 3. Reinicie o computador.
 
-## <a name="the-world-briefly-froze-and-tilted-or-flipped-upside-down-before-returning-to-normal"></a>O mundo brevemente froze e se inverteu de cabeça para baixo antes de retornar ao normal
+## <a name="the-world-briefly-froze-and-tilted-or-flipped-upside-down-before-returning-to-normal"></a>O mundo rapidamente se inclina e inclina ou invertida de cabeça para baixo antes de retornar ao normal
 
-Isso pode ser causado por um aplicativo ou componente no nível do sistema que está atingindo um erro fatal ou uma falta temporária de memória ou recursos de CPU. Para verificar:
+Isso pode ser causado por um aplicativo ou componente no nível do sistema atingindo um erro fatal ou uma falta temporária de memória ou recursos de CPU. Para verificar:
 
-1. Abra o Gerenciador de tarefas e verifique se pelo menos 20% da CPU está livre, 400 MB de memória está disponível e a e/s de disco deve estar abaixo de 80%.
-2. Vá para **Visualizador de Eventos > logs do Windows > aplicativo** para procurar quaisquer erros em vez da hora do congelamento. Procure qualquer coisa que se refira a sensores do HoloLens, realidade misturada ou o aplicativo que você estava executando em todo esse tempo. Esses logs podem explicar o que causou a falha.
-3. Reinicie o PC se o problema persistir.
+1. Abra Gerenciador de Tarefas e verifique se pelo menos 20% da CPU está livre, se há 400 MB de memória disponível e a E/S de disco deve estar abaixo de 80%.
+2. Vá para **Visualizador de Eventos > Windows Logs > Aplicativo** para procurar erros de perto do momento do congelamento. Procure qualquer coisa que se refere HoloLens sensores, Realidade Misturada ou o aplicativo que você estava executando nesse momento. Esses logs podem explicar o que causou a falha.
+3. Reinicie o COMPUTADOR se o problema persistir.
 
-## <a name="the-world-flipped-upside-down-momentarily-and-returned-to-normal"></a>O mundo se inverteu de cabeça momentaneamente e retornou ao normal
+## <a name="the-world-flipped-upside-down-momentarily-and-returned-to-normal"></a>O mundo invertia a cabeça para baixo momentaneamente e retornou ao normal
 
-Isso geralmente é causado por erros na obtenção de dados de sensor do headset para informar os algoritmos de controle. Se isso ocorrer com frequência:
+Normalmente, isso é causado por erros na obtenção de dados do sensor do headset para informar os algoritmos de rastreamento. Se isso acontecer com frequência:
 
-1. Conecte o headset em uma porta USB 3,0 diferente.
-2. Conecte o headset diretamente no PC, em vez de em um hub USB 3,0.
-3. Se o problema persistir, entre em contato com o atendimento [ao cliente](https://support.microsoft.com/).
+1. Conecte o headset a uma porta USB 3.0 diferente.
+2. Conecte o headset diretamente ao computador em vez de em um hub USB 3.0.
+3. Se o problema persistir, entre em contato com o [atendimento ao cliente.](https://support.microsoft.com/)
 
-## <a name="the-world-is-tilted-but-i-can-navigate-and-walk-around-in-windows-mixed-reality"></a>O mundo está inclinado, mas posso navegar e percorrer na realidade mista do Windows
+## <a name="the-world-is-tilted-but-i-can-navigate-and-walk-around-in-windows-mixed-reality"></a>O mundo está inclinado, mas posso navegar e percorrer Windows Mixed Reality
 
-Se os erros de dados do sensor forem registrados nos dados do ambiente em seu computador, isso poderá fazer com que a realidade mista do Windows pareça inclinada, às vezes permanentemente. Para corrigir isso:
+Se os erros de dados do sensor são registrados nos dados de ambiente em seu computador, isso pode fazer com que Windows Mixed Reality apareçam inclinadas, às vezes permanentemente. Para corrigir isso:
 
-1. Desconecte o headset, feche a realidade mista do Windows e conecte o headset novamente.
+1. Desconectar o headset, fechar Windows Mixed Reality e conectar o headset novamente.
 2. Reinicie o computador.
-3. Apague os dados do seu ambiente.
+3. Limpe os dados do ambiente.

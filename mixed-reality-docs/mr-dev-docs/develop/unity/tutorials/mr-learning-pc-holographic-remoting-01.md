@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, comunicação remota holográfica do PC, dicas de ferramenta, acompanhamento do olho
 ms.localizationpriority: high
-ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 3a8c409d06861d99a217dcf4e670a9aa543b441c352ea68bc738779a3f779046
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225469"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introdução à Comunicação Remota Holográfica para PC
 

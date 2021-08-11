@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, realidade misturada, unity, tutorial, hololens, hololens 2, armazenamento de blobs do azure, armazenamento de tabelas do azure, âncoras espaciais do azure, azure bot framework, serviços de nuvem do azure, visão personalizada do azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 3c52384b118a72b1c2f2dfaa2205e4f890e2e5a7
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: 84eb1555d0020eebe9de440fcdbdd58ac17875ab417a209ea083664ab17fbfd8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226938"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Serviços de Nuvem do Azure para HoloLens 2
 

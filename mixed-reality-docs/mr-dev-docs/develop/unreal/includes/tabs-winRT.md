@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: cc29a6e9d358ba35d1e1ddd336b9df88ba68739b
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 555360092a65b80a1298eb779736b29360f8c6e13bd1834994f316043843b47a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98689704"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198359"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
 ## <a name="the-standard-winrt-apis"></a>As APIs do WinRT padrão
 
-A maneira mais comum e fácil de usar o WinRT é chamar métodos de WinSDK. Para fazer isso, abra o arquivo YourModule.Build.cs e adicione as seguintes linhas:
+A maneira mais comum e fácil de usar o WinRT é chamar métodos de WinSDK. Para fazer isso, abra o arquivo YourModule. Build. cs e adicione as seguintes linhas:
 
 ```csharp
 if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
@@ -49,16 +49,16 @@ Em seguida, você precisa adicionar os seguintes cabeçalhos do WinRT:
 #endif
 ```
 
-O código do WinRT só pode ser compilado nas plataformas Win64 e HoloLens, portanto, a instrução If impede que as bibliotecas do WinRT sejam incluídas em outras plataformas. unknwn. h foi adicionado para ter a interface IUnknown. 
+o código do WinRT só pode ser compilado nas plataformas Win64 e HoloLens, portanto, a instrução if impede que as bibliotecas do WinRT sejam incluídas em outras plataformas. unknwn. h foi adicionado para ter a interface IUnknown. 
 
 
-## <a name="winrt-from-a-nuget-package"></a>WinRT de um pacote NuGet
+## <a name="winrt-from-a-nuget-package"></a>WinRT de um pacote de NuGet
 
-É um pouco mais complicado se você precisar adicionar um pacote NuGet com suporte a WinRT. Nesse caso, o Visual Studio pode executar praticamente todo o trabalho para você, mas o sistema de compilação não real não pode. Felizmente, isso não é muito difícil. Veja abaixo um exemplo de como você faria para baixar o pacote Microsoft. MixedReality. QR. Você pode substituí-lo por outro, apenas certifique-se de que você não perca o arquivo winmd e copie a dll correta. 
+é um pouco mais complicado se você precisar adicionar um pacote de NuGet com suporte a WinRT. nesse caso, Visual Studio pode praticamente todo trabalho para você, mas o sistema de compilação não real não pode. Felizmente, isso não é muito difícil. Veja abaixo um exemplo de como você faria para baixar o pacote Microsoft. MixedReality. QR. Você pode substituí-lo por outro, apenas certifique-se de que você não perca o arquivo winmd e copie a dll correta. 
 
-SDK do Windows DLLs da seção anterior são manipuladas pelo sistema operacional. As DLLs do NuGet devem ser gerenciadas pelo código em seu módulo. É recomendável adicionar o código para baixá-los, copiar para a pasta de binários e carregar na memória do processo na inicialização do módulo.
+Windows As DLLs do SDK da seção anterior são manipuladas pelo sistema operacional. as dlls do NuGet devem ser gerenciadas pelo código em seu módulo. É recomendável adicionar o código para baixá-los, copiar para a pasta de binários e carregar na memória do processo na inicialização do módulo.
 
-Na primeira etapa, você deve adicionar um packages.config ( https://docs.microsoft.com/nuget/reference/packages-config) na pasta raiz do seu módulo. Lá, você deve adicionar todos os pacotes que deseja baixar, incluindo todas as suas dependências. Aqui, adicionei o Microsoft. MixedReality. QR como uma carga primária e dois outros como dependências a ele. O formato desse arquivo é o mesmo que no Visual Studio:
+Na primeira etapa, você deve adicionar um packages.config ( https://docs.microsoft.com/nuget/reference/packages-config) na pasta raiz do seu módulo. Lá, você deve adicionar todos os pacotes que deseja baixar, incluindo todas as suas dependências. Aqui, adicionei o Microsoft. MixedReality. QR como uma carga primária e dois outros como dependências a ele. O formato desse arquivo é o mesmo Visual Studio:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,9 +69,9 @@ Na primeira etapa, você deve adicionar um packages.config ( https://docs.micros
 </packages>
 ```
 
-Agora você pode baixar o NuGet, os pacotes necessários ou consultar a [documentação](/nuget/consume-packages/install-use-packages-nuget-cli)do NuGet.
+agora você pode baixar o NuGet, os pacotes necessários ou consultar a [documentação](/nuget/consume-packages/install-use-packages-nuget-cli)do NuGet.
 
-Abra YourModule.Build.cs e adicione o seguinte código:
+Abra YourModule. Build. cs e adicione o seguinte código:
 
 ```csharp
 // WinRT with Nuget support
@@ -231,7 +231,7 @@ private void SafeCopy(string source, string destination)
 }
 ```
 
-As DLLs do NuGet precisam ser carregadas manualmente na memória do processo Win32; é recomendável adicionar o carregamento manual ao método de inicialização do seu módulo:
+NuGet DLLs precisam carregar em sua memória de processo Win32 manualmente; é recomendável adicionar o carregamento manual ao método de inicialização do seu módulo:
 
 ```cpp
 void StartupModule() override
@@ -259,20 +259,20 @@ Inreal não compila nativamente o código WinRT na versão 4,25, portanto, é o 
 
 ## <a name="objectives"></a>Objetivos
 
-- Criar uma DLL universal do Windows que abre um FileSaveDialogue
+- criar uma DLL de Windows Universal que abre um FileSaveDialogue
 - Vincular essa DLL a um projeto de jogo não real
-- Salvar um arquivo no HoloLens de um projeto não real usando a nova DLL
+- salvar um arquivo no HoloLens de um projeto não real usando a nova DLL
 
 ## <a name="getting-started"></a>Introdução
 
 1. Verifique se você tem todas as [ferramentas necessárias](../tutorials/unreal-uxt-ch1.md) instaladas
 2. [Criar um novo projeto inreal](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) e nomeá-lo **Consumewinrt**
-3. Habilitar os [plug-ins necessários](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) para o desenvolvimento do HoloLens
+3. habilitar os [plugins necessários](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) para o desenvolvimento de HoloLens
 4. [Configuração para implantação](../tutorials/unreal-uxt-ch6.md) em um dispositivo ou emulador
 
 ## <a name="creating-a-winrt-dll"></a>Criando uma DLL do WinRT 
 
-1. Abra um novo projeto do Visual Studio e crie um projeto **dll (universal do Windows)** no mesmo diretório que o arquivo **uproject** do jogo inreal. 
+1. abra um novo projeto Visual Studio e crie um projeto **DLL (Universal Windows)** no mesmo diretório que o arquivo **uproject** do jogo inreal. 
 
 ![Criando uma DLL](../images/unreal-winrt-img-01.png)
 
@@ -293,7 +293,7 @@ Inreal não compila nativamente o código WinRT na versão 4,25, portanto, é o 
 
 ![Atualizando Propriedades do projeto](../images/unreal-winrt-img-03.png)
 
-Seu projeto está pronto para atualizar a origem da DLL com o código do WinRT que abre uma caixa de diálogo de arquivo e salva um arquivo no disco do HoloLens.  
+seu projeto está pronto para atualizar a origem da DLL com o código do WinRT que abre uma caixa de diálogo de arquivo e salva um arquivo no disco HoloLens.  
 
 ## <a name="adding-the-dll-code"></a>Adicionando o código DLL
 
@@ -422,12 +422,12 @@ Vincular e usar uma DLL em um Unreal requer um projeto C++. Se você estiver usa
 > [!NOTE]
 > Agora, uma solução foi criada no mesmo diretório que o arquivo uproject, juntamente com um novo script de compilação chamado source/ConsumeWinRT/ConsumeWinRT. Build. cs.
 
-2. Abra a solução, procure a pasta **Games/ConsumeWinRT/origem/ConsumeWinRT** e abra **ConsumeWinRT.Build.cs**:
+2. Abra a solução, procure a pasta **Games/ConsumeWinRT/origem/ConsumeWinRT** e abra **ConsumeWinRT. Build. cs**:
 
-![Abrindo o arquivo ConsumeWinRT.build.cs](../images/unreal-winrt-img-05.png)
+![Abrindo o arquivo ConsumeWinRT. Build. cs](../images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>Vinculando a DLL
-1. Em **ConsumeWinRT.Build.cs**, adicione uma propriedade para localizar o caminho de inclusão para a dll (o diretório que contém HoloLensWinrtDLL. h). A DLL está em um diretório filho para o caminho de inclusão, portanto, essa propriedade será usada como a dir raiz binária:
+1. Em **ConsumeWinRT. Build. cs**, adicione uma propriedade para localizar o caminho de inclusão da dll (o diretório que contém HoloLensWinrtDLL. h). A DLL está em um diretório filho para o caminho de inclusão, portanto, essa propriedade será usada como a dir raiz binária:
 
 ```cs
 using System.IO;
@@ -533,10 +533,10 @@ void AWinrtActor::OpenFileDialogue()
 
 ![Configurando nós no nível Blueprint](../images/unreal-winrt-img-08.png)
 
-4. [Empacote este jogo para o HoloLens](../tutorials/unreal-uxt-ch6.md), implante-o e execute-o.  
+4. [empacote este jogo para HoloLens](../tutorials/unreal-uxt-ch6.md), implante-o e execute-o.  
 
-Quando as chamadas inreais OpenFileDialogue, uma caixa de diálogo de arquivo é aberta no HoloLens solicitando um nome de arquivo. txt.  Depois que o arquivo for salvo, vá para a guia **Explorador de arquivos** no portal do dispositivo para ver o conteúdo "Olá WinRT". 
+quando as chamadas inreais OpenFileDialogue, uma caixa de diálogo de arquivo é aberta na HoloLens solicitando um nome de arquivo de .txt.  Depois que o arquivo for salvo, vá para a guia **Explorador de arquivos** no portal do dispositivo para ver o conteúdo "Olá WinRT". 
 
 ## <a name="summary"></a>Resumo 
 
-Incentivamos você a usar este tutorial como um ponto de partida para consumir o código do WinRT em um estado inreal quando precisar salvar arquivos no disco do HoloLens usando a mesma caixa de diálogo de arquivo que o Windows.  O mesmo processo se aplica à exportação de funções adicionais do cabeçalho HoloLensWinrtDLL e usado em um não real.  Preste atenção especial ao código de DLL que aguarda no código de WinRT assíncrono em um thread MTA de segundo plano, que evita o deadlock do thread de jogo inreal.
+incentivamos você a usar este tutorial como um ponto de partida para consumir o código do WinRT em um estado inreal quando precisar salvar arquivos no disco de HoloLens usando a mesma caixa de diálogo de arquivo que Windows.  O mesmo processo se aplica à exportação de funções adicionais do cabeçalho HoloLensWinrtDLL e usado em um não real.  Preste atenção especial ao código de DLL que aguarda no código de WinRT assíncrono em um thread MTA de segundo plano, que evita o deadlock do thread de jogo inreal.

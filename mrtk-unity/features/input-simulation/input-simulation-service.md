@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 66b79c14bbd0ea8c188aba684b9bd1034de31bf9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f329cceded5e510d3d4fc1a1c13b5a504f1f3669ad408b733267595e77dd15a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227562"
 ---
 # <a name="input-simulation-service"></a>Serviço de simulação de entrada
 
 ![Simulação de entrada do MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 
-Com a simulação de entrada do MRTK, você pode testar vários tipos de interações no editor do Unity sem criar e implantar em um dispositivo. Isso permite iterar rapidamente suas ideias no processo de design e desenvolvimento. Use combinações de teclado e mouse para controlar entradas simuladas.
+Com a simulação de entrada do MRTK, você pode testar vários tipos de interações no editor do Unity sem compilar e implantar em um dispositivo. Isso permite que você itere rapidamente suas ideias no processo de design e desenvolvimento. Use combinações de teclado e mouse para controlar as entradas simuladas.
 
 O Serviço de Simulação de Entrada emula o comportamento de dispositivos e plataformas que podem não estar disponíveis no editor do Unity. Os exemplos incluem:
 
@@ -33,10 +33,10 @@ O Serviço de Simulação de Entrada emula o comportamento de dispositivos e pla
 
 A simulação de entrada é habilitada por padrão nos perfis que são fornecidas com o MRTK. Você pode simplesmente clicar **no botão Reproduzir** para executar a cena com suporte à simulação de entrada.
 
-* Pressione **as teclas W, A, S, D, Q, E** para mover a câmera.
-* Mantenha o **botão direito do mouse** pressionado e mova o mouse para dar uma olhada.
-* Para abrir as mãos simuladas, pressione Barra **de espaço (mão direita)** ou **Tecla shift esquerda (mão esquerda)**
-* Para manter as mãos simuladas na exibição, pressione **a tecla T** ou **Y**
+* Pressione as teclas **W, A, S, D, Q, E** para mover a câmera.
+* Mantenha o **Botão direito do mouse** pressionado e mova o mouse para examinar.
+* Para exibir as mãos simuladas, pressione **Barra de espaço (à direita)** ou **tecla SHIFT esquerda**
+* Para manter as mãos simuladas no modo de exibição, pressione as teclas **T** ou **Y**
 * Para girar as mãos simuladas, pressione e mantenha pressionada a **tecla Ctrl e** mova o mouse
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]

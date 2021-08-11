@@ -1,28 +1,28 @@
 ---
 title: Barra de aplicativos
-description: Visão geral sobre a barra de aplicativos no MRTK
+description: Visão geral sobre a Barra de Aplicativos no MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, barra de aplicativos,
-ms.openlocfilehash: 3c8633d91b2c26f8bdc774a98b2cb48ffb276720
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Barra de aplicativos,
+ms.openlocfilehash: 1ecb43d25a4353ff4c3bd8350efaab877900a5b979cd42d2c8d1cb91ce32ae0c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198258"
 ---
 # <a name="app-bar"></a>Barra de aplicativos
 
 ![Barra de aplicativos](../images/app-bar/MRTK_AppBar_Main.png)
 
-A barra de aplicativos é um componente de interface do usuário que é usado junto com o script de [controle de limites](bounds-control.md) . Ele adiciona controles de botão a um objeto com a intenção de manipulá-lo. Usando o botão ' ajustar ', a interface de controle de limites para um objeto pode ser desativada. O botão "remover" deve remover o objeto da cena.
+A barra de aplicativos é um componente de interface do usuário usado junto com o script [de controle de](bounds-control.md) limites. Ele adiciona controles de botão a um objeto com a intenção de manipulá-lo. Usando o botão 'Ajustar', a interface de controle de limites para um objeto pode ser desativada/ativada. O botão "Remover" deve remover o objeto da cena.
 
 ## <a name="how-to-use-app-bar"></a>Como usar a barra de aplicativos
 
-Arraste e solte `AppBar` (assets/MRTK/SDK/Features/UX/pré-fabricados/AppBar/AppBar. pré-fabricado) na hierarquia de cena. No painel de Inspetor do componente, atribua qualquer objeto com um controle de limites como a *caixa delimitadora de destino* para adicionar a barra de aplicativo a ele.
+Arraste e solte `AppBar` (Assets/MRTK/SDK/Features/UX/Prefabs/AppBar/AppBar.prefab) na hierarquia de cena. No painel inspetor do componente, atribua qualquer objeto com um controle de limites como a Caixa Delimitador de *Destino* para adicionar a barra de aplicativos a ele.
 
-**Importante:** A opção de ativação de controle de limites para o objeto de destino deve ser ' Ativar manualmente '.
+**Importante:** A opção de ativação de controle de limites para o objeto de destino deve ser "Ativar Manualmente".
 
 <img src="../images/app-bar/MRTK_AppBar_Setup1.png" width="450" alt="Setup 1">
 

@@ -1,26 +1,26 @@
 ---
 title: Estado de entrada
-description: Documentação sobre estados de entrada no MRTK
+description: Documentação sobre Estados de entrada no MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, InputState,
-ms.openlocfilehash: 4c1bd115c63e25decf73c082546e75b0f276a7ef
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, inputstate,
+ms.openlocfilehash: 7d5e008ae3e43d227b90a563dd74e65a89527bd7ddf1720e26577042ce0d545f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228356"
 ---
 # <a name="accessing-input-state-in-mrtk"></a>Acessando o estado de entrada no MRTK
 
-É possível consultar diretamente o estado de todas as entradas no MRTK iterando sobre os controladores anexados às fontes de entrada. O MRTK também fornece métodos de conveniência para acessar a posição e a rotação dos olhos, mãos, cabeça e controlador de movimento.
+É possível consultar diretamente o estado de todas as entradas em MRTK Iterando sobre os controladores anexados às fontes de entrada. O MRTK também fornece métodos de conveniência para acessar a posição e a rotação dos olhos, das mãos, da cabeça e do controlador de movimento.
 
-Consulte a cena InputDataExample para ver um exemplo de consulta de entrada por meio da iteração em controladores e usando a [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) classe .
+Consulte a cena InputDataExample para obter um exemplo de como consultar a entrada por meio da iteração sobre controladores e usando a [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) classe.
 
-## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>Exemplo: Posição de acesso, rotação de cabeça, mãos, olhos no MRTK
+## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>Exemplo: posição de acesso, rotação de cabeça, mãos, olhos em MRTK
 
-A classe do MRTK fornece métodos de conveniência para acessar o raio de mão, o raio da cabeça, o raio do olhar e os [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) raios do controlador de movimento.
+[`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils)A classe de MRTK fornece métodos de conveniência para acessar o conjunto de raio, Head Ray, olho olhar Ray e raios do controlador de movimento.
 
 ```c#
 // Get the head ray
@@ -38,7 +38,7 @@ else
 }
 ```
 
-## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a>Exemplo: Posição de acesso, rotação de todos os controladores 6DOF ativos na cena
+## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a>Exemplo: posição de acesso, rotação de todos os controladores 6DOF ativas na cena
 
 ```c#
 foreach(var controller in CoreServices.InputSystem.DetectedControllers)

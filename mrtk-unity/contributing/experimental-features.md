@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 9b7ef7564e0e4f84ba70c034b1bcc33a29498432620a002c8509de518dde479c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228377"
 ---
 # <a name="experimental-features"></a>Recursos experimentais
 
@@ -98,7 +98,7 @@ A maioria das pessoas usa componentes de experiência do usuário principais, co
 
 O uso do componente não deve quebrar botões, ManipulationHandler, BoundingBox ou interaja.
 
-Por exemplo, nesta [PR ScrollableObjectCollection](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001), a adição de um ScrollableObjectCollection fez com que as pessoas não fosse capazes de usar os pré-fabs de botão do HoloLens. Embora isso não tenha sido causado por um bug na PR (mas, em vez disso, expôs um bug existente), ele impediu que a PR fosse verificada.
+Por exemplo, nesta [PR ScrollableObjectCollection](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001), adicionar um ScrollableObjectCollection fez com que as pessoas não fosse capazes de usar os pré-HoloLens botão de HoloLens. Embora isso não tenha sido causado por um bug na PR (mas, em vez disso, expôs um bug existente), ele impediu que a PR fosse verificada.
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Forneça uma cena de exemplo que demonstra como usar o recurso
 
