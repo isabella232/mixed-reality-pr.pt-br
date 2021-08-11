@@ -1,38 +1,38 @@
 ---
 title: Âncoras espaciais compartilhadas no DirectX
-description: Saiba como sincronizar dois dispositivos HoloLens compartilhando âncoras espaciais locais e do Azure em aplicativos DirectX.
+description: saiba como sincronizar dois dispositivos HoloLens compartilhando âncoras espaciais locais e do Azure em aplicativos do DirectX.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: HoloLens, sincronizar, âncora espacial, transferência, vários participantes, exibição, cenário, passo a passos, código de exemplo, Azure, âncoras espaciais do Azure, ASA
-ms.openlocfilehash: cf823809d1f6b9bf4bc44a6aa1e8f0e16fd76a16
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, sincronizar, âncora espacial, transferência, vários participantes, exibição, cenário, passo a passos, código de exemplo, azure, âncoras espaciais do azure, ASA
+ms.openlocfilehash: df78d9e2477fe377d61d2f2c13fc35e0a25b0b2cc37eeb883a69d2041fe42f9b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193540"
 ---
 # <a name="shared-experiences-in-directx"></a>Experiências compartilhadas no DirectX
 
 > [!NOTE]
 > Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](../native/openxr-getting-started.md)**.
 
-Uma experiência compartilhada é aquela em que vários usuários têm seu próprio dispositivo HoloLens, iOS ou Android, exibem coletivamente e interagem com o mesmo holograma. O holograma é posicionado em um ponto fixo no espaço usando o compartilhamento de âncora espacial.
+uma experiência compartilhada é aquela em que vários usuários com seu próprio dispositivo HoloLens, iOS ou Android, exibem coletivamente e interagem com o mesmo holograma. O holograma é posicionado em um ponto fixo no espaço usando o compartilhamento de âncora espacial.
 
 ## <a name="azure-spatial-anchors"></a>Âncoras Espaciais do Azure
 
-Você pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar âncoras espaciais duráveis com suporte de nuvem, que seu aplicativo pode localizar em vários dispositivos HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
+você pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar âncoras espaciais duráveis com suporte de nuvem, que seu aplicativo pode localizar em vários dispositivos HoloLens, iOS e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
 
-Você também pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para a persistência de holograma assíncrona em dispositivos de HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
+você também pode usar <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para persistência de holograma assíncrona em dispositivos HoloLens, iOS e Android.  Ao compartilhar uma âncora espacial de nuvem durável, vários dispositivos podem observar o mesmo holograma persistente ao longo do tempo, mesmo que esses dispositivos não estejam presentes juntos ao mesmo tempo.
 
-Para começar a criar experiências compartilhadas em seu aplicativo de HoloLens, experimente o início rápido de 5 minutos <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">do Azure espaciais do hololens</a>.
+para começar a criar experiências compartilhadas em seu aplicativo HoloLens, experimente as <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">âncoras espaciais do Azure de 5 minutos HoloLens início rápido</a>.
 
-Quando estiver em execução com as âncoras espaciais do Azure, você poderá <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">criar e localizar âncoras no HoloLens</a>.  Os passo a passos também estão disponíveis para <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android e Ios</a> , permitindo que você compartilhe as mesmas âncoras em todos os dispositivos.
+Quando estiver em execução com as âncoras espaciais do Azure, você poderá <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">criar e localizar âncoras em HoloLens</a>.  Os passo a passos também estão disponíveis para <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android e Ios</a> , permitindo que você compartilhe as mesmas âncoras em todos os dispositivos.
 
 ## <a name="local-anchor-transfers"></a>Transferências de âncora local
 
-Em situações em que você não pode usar âncoras espaciais do Azure, as [transferências de âncora local](../../out-of-scope/local-anchor-transfers-in-directx.md) permitem que um dispositivo de hololens exporte uma âncora a ser importada por um segundo dispositivo hololens.  Essa abordagem fornece uma recall de ancoragem menos robusta do que as âncoras espaciais do Azure, e os dispositivos iOS e Android não são compatíveis com essa abordagem.
+em situações em que você não pode usar âncoras espaciais do Azure, as [transferências de âncora local](../../out-of-scope/local-anchor-transfers-in-directx.md) permitem que um dispositivo de HoloLens exporte uma âncora a ser importada por um segundo dispositivo de HoloLens.  Essa abordagem fornece uma recall de ancoragem menos robusta do que as âncoras espaciais do Azure, e os dispositivos iOS e Android não são compatíveis com essa abordagem.
 
 ## <a name="see-also"></a>Confira também
 

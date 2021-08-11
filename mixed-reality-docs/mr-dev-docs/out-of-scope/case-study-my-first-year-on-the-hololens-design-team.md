@@ -1,21 +1,21 @@
 ---
-title: Estudo de caso – meu primeiro ano na equipe de design do HoloLens
-description: Minha jornada de um Flatland 2D para o mundo 3D começou quando ingressei na equipe de design do HoloLens em janeiro de 2016.
+title: estudo de caso – meu primeiro ano na equipe de design de HoloLens
+description: minha jornada de um flatland 2d para o mundo 3d começou quando ingressei na equipe de design de HoloLens em janeiro de 2016.
 author: designnomad
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, HoloLens, design, editorial, pessoal
-ms.openlocfilehash: 3c6444094663498ef4b253df6ed8dd7e82cc8319
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HoloLens, design, editorial, pessoal
+ms.openlocfilehash: 2defa24b8e53b28f90a8eb613afcbae7d1b9b1f2d12caaf885e405593df01ffe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192852"
 ---
-# <a name="case-study---my-first-year-on-the-hololens-design-team"></a>Estudo de caso – meu primeiro ano na equipe de design do HoloLens
+# <a name="case-study---my-first-year-on-the-hololens-design-team"></a>estudo de caso – meu primeiro ano na equipe de design de HoloLens
 
-Minha jornada de um Flatland 2D para o mundo 3D começou quando ingressei na equipe de design do HoloLens em janeiro de 2016. Antes de ingressar na equipe, eu tinha muito pouca experiência no design 3D. Era como o chinês provérbio sobre uma jornada de milhares de milhas que começa com uma única etapa, exceto no meu caso, a primeira etapa era um salto!
+minha jornada de um flatland 2d para o mundo 3d começou quando ingressei na equipe de design de HoloLens em janeiro de 2016. Antes de ingressar na equipe, eu tinha muito pouca experiência no design 3D. Era como o chinês provérbio sobre uma jornada de milhares de milhas que começa com uma única etapa, exceto no meu caso, a primeira etapa era um salto!
 
 ![Levando o salto de 2D para 3D](../develop/platform-capabilities-and-apis/images/2D_to_3D-800px.gif)<br>
 *Levando o salto de 2D para 3D*
@@ -27,7 +27,7 @@ Durante o ano passado, eu escolhi habilidades e conhecimento o mais rápido poss
 
 ## <a name="good-bye-frame-hello-spatial--diegetic-ui"></a>Quadro de boa-adeus. Saudação da interface espacial/diegetic
 
-Sempre que projetei cartazes, revistas, sites ou telas de aplicativos, um quadro definido (geralmente um retângulo) era uma constante para cada problema. A menos que você esteja lendo esta postagem em um HoloLens ou outro dispositivo VR, você está *olhando para isso* na tela externa por meio de 2D protegida com segurança dentro de um quadro. O conteúdo é externo a você. No entanto, o headset da realidade misturada *elimina o quadro* , portanto, você está dentro do espaço de conteúdo, examinando e percorrendo o conteúdo de dentro para fora.
+Sempre que projetei cartazes, revistas, sites ou telas de aplicativos, um quadro definido (geralmente um retângulo) era uma constante para cada problema. a menos que você esteja lendo esta postagem em um HoloLens ou outro dispositivo VR, você está *olhando para isso* na tela de fora até 2d protegida com segurança em um quadro. O conteúdo é externo a você. No entanto, o headset da realidade misturada *elimina o quadro*, portanto, você está dentro do espaço de conteúdo, examinando e percorrendo o conteúdo de dentro para fora.
 
 Entendi isso conceitualmente, mas no início eu fiz o erro de simplesmente transferir o raciocínio 2D para o espaço 3D. Isso obviamente não funcionou bem porque o espaço 3D tem suas próprias propriedades exclusivas, como uma alteração de exibição (com base no movimento do cabeçalho do usuário) e um [requisito diferente para o conforto do usuário](https://www.youtube.com/watch?v=-606oZKLa_s/) (com base nas propriedades dos dispositivos e nos seres humanos que os utilizam). Por exemplo, em um espaço de design de interface do usuário 2D, bloquear elementos da interface do usuário no canto de uma tela é um padrão muito comum, mas essa interface do usuário do estilo HUD (exibição de rumo) não se sente natural em experiências com o Sr/VR; Ele impede o imersão do usuário no espaço e faz discomfort do usuário. É como ter uma partícula de poeira incômodo nos óculos dos quais você está curioso de se livrar. Ao longo do tempo, aprendi que parece mais natural posicionar o conteúdo em espaço 3D e adicionar comportamento de corpo bloqueado que faz com que o conteúdo acompanhe o usuário em uma distância fixa relativa.
 
@@ -41,7 +41,7 @@ Entendi isso conceitualmente, mas no início eu fiz o erro de simplesmente trans
 
 ### <a name="fragments-an-example-of-great-diegetic-ui"></a>Fragmentos: um exemplo de grande interface do usuário do Diegetic
 
-[Fragmentos](https://www.microsoft.com/p/fragments/9nblggh5ggm8), um thriller de crime de primeira pessoa desenvolvido pelo [Asobo Studio](https://www.asobostudio.com/) para o HoloLens demonstra uma excelente interface do usuário Diegetic. Neste jogo, o usuário se torna um caractere principal, uma detecção que tenta resolver um mistério. As pistas dinâmicas para resolver esse mistério são espalhadas na sala física do usuário e geralmente são os horários inseridos dentro de um objeto fictício, e não os existentes por conta própria. Essa interface do usuário do diegetic tende a ser menos detectável do que a interface do usuário bloqueada pelo corpo, portanto, a equipe do Asobo usava com muita atenção muitos indícios, incluindo a direção dos caracteres virtuais ' olhar, som, luz e guias (por exemplo, seta apontando o local da pista) para obter a atenção do usuário.
+[fragmentos](https://www.microsoft.com/p/fragments/9nblggh5ggm8), um thriller de crime de primeira pessoa desenvolvido pelo [Asobo Studio](https://www.asobostudio.com/) para HoloLens demonstra uma excelente interface do usuário Diegetic. Neste jogo, o usuário se torna um caractere principal, uma detecção que tenta resolver um mistério. As pistas dinâmicas para resolver esse mistério são espalhadas na sala física do usuário e geralmente são os horários inseridos dentro de um objeto fictício, e não os existentes por conta própria. Essa interface do usuário do diegetic tende a ser menos detectável do que a interface do usuário bloqueada pelo corpo, portanto, a equipe do Asobo usava com muita atenção muitos indícios, incluindo a direção dos caracteres virtuais ' olhar, som, luz e guias (por exemplo, seta apontando o local da pista) para obter a atenção do usuário.
 
 ![Fragmentos-exemplos da interface do usuário do Diegetic](../develop/platform-capabilities-and-apis/images/fragments-game-example-1.jpg)<br>
 *Fragmentos-exemplos da interface do usuário do Diegetic*
@@ -56,7 +56,7 @@ Esqueumorfismo, uma interface digital que imita a forma dos objetos do mundo rea
 
 ### <a name="job-simulator-an-example-of-skeuomorphic-vr-design"></a>Simulador de trabalho: um exemplo de design skeuomorphic VR
 
-O [simulador de trabalho](https://jobsimulatorgame.com/), um jogo estranho desenvolvido pelo [Owlchemy Labs](https://owlchemylabs.com/) , é um dos exemplos mais populares para o design do skeuomorphic VR. Nesse jogo, os jogadores são transportados para o futuro, onde os robôs substituem seres humanos e seres humanos visitam um museu para experimentar o que parece executar tarefas de comuns em um dos quatro trabalhos diferentes: mecânico automático, gourmet chefe, administrador da loja ou operador do Office.
+O [simulador de trabalho](https://jobsimulatorgame.com/), um jogo estranho desenvolvido pelo [Owlchemy Labs](https://owlchemylabs.com/) , é um dos exemplos mais populares para o design do skeuomorphic VR. nesse jogo, os jogadores são transportados para o futuro, onde os robôs substituem seres humanos e seres humanos visitam um museu para experimentar o que parece executar tarefas de comuns em um dos quatro trabalhos diferentes: mecânico automático, Gourmet chefe, administrador da loja ou Office Worker.
 
 O benefício do Esqueumorfismo é claro. Os ambientes e os objetos conhecidos desse jogo ajudam os novos usuários de VR a se sentir mais confortáveis e apresentarem espaço virtual. Ele também faz com que eles se sintam no controle associando conhecimento e comportamentos familiares a objetos e suas reações físicas correspondentes. Por exemplo, para bebida uma xícara de café, as pessoas simplesmente precisam ir para a máquina de café, pressionar um botão, pegar a alça da xícara e inclinar a sua boca como faria no mundo real.
 
@@ -101,24 +101,24 @@ Esses são apenas um exemplo de dispositivos de entrada disponíveis no mercado 
 
 ## <a name="sketch-the-scene-and-test-in-the-headset"></a>Esboço da cena e do teste no headset
 
-Quando trabalhei em 2D, eu esbocei principalmente o conteúdo. No entanto, no espaço de realidade misturada que não era suficiente. Eu tinha que esboçar toda a cena para imaginar melhor as relações entre o usuário e os objetos virtuais. Para ajudar meu pensamento espacial, comecei a esboçar cenas no [cinema 4D](https://www.maxon.net/en/products/cinema-4d/overview/) e, às vezes, criamos ativos simples para a criação de protótipos no [Maya](https://www.autodesk.com/products/maya/overview/). Nunca usei nenhum programa antes de participar da equipe do HoloLens e ainda sou um jogador, mas trabalhar com esses programas 3D me ajudou a se sentir confortável com a nova terminologia, como o [Shader](https://en.wikipedia.org/wiki/Shader) e o [IK (cinemática inversa)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/).
+Quando trabalhei em 2D, eu esbocei principalmente o conteúdo. No entanto, no espaço de realidade misturada que não era suficiente. Eu tinha que esboçar toda a cena para imaginar melhor as relações entre o usuário e os objetos virtuais. Para ajudar meu pensamento espacial, comecei a esboçar cenas no [cinema 4D](https://www.maxon.net/en/products/cinema-4d/overview/) e, às vezes, criamos ativos simples para a criação de protótipos no [Maya](https://www.autodesk.com/products/maya/overview/). nunca usei nenhum programa antes de participar da equipe de HoloLens e ainda jogador, mas trabalhar com esses programas 3d me ajudou a me familiarizar com a nova terminologia, como o [sombreador](https://en.wikipedia.org/wiki/Shader) e o [IK (cinemática inversa)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/).
 
 **"Não importa quão bem esboço a cena em 3D, a experiência real em Headset quase nunca foi a mesma coisa que o esboço. É por isso que é importante testar a cena nos headsets de destino. "— Hae Jin Lee**
 
-Para o protótipo do HoloLens, experimentei todos os tutoriais em [tutoriais de realidade misturados](../develop/unity/tutorials.md) para começar. Em seguida, comecei a brincar com o [HoloToolkit. Unity](https://github.com/Microsoft/HoloToolkit-Unity/) que a Microsoft fornece aos desenvolvedores para acelerar o desenvolvimento de aplicativos Holographic. Quando fui preso por algo, publiquei minha pergunta sobre o [HoloLens question & Fórum de resposta](https://forums.hololens.com/categories/questions-and-answers/).
+para HoloLens a protótipos, experimentei todos os tutoriais em [tutoriais de realidade misturados](../develop/unity/tutorials.md) para começar. Em seguida, comecei a brincar com o [HoloToolkit. Unity](https://github.com/Microsoft/HoloToolkit-Unity/) que a Microsoft fornece aos desenvolvedores para acelerar o desenvolvimento de aplicativos Holographic. quando fiquei preso por algo, publiquei minha pergunta para [HoloLens pergunta & fórum de resposta](https://forums.hololens.com/categories/questions-and-answers/).
 
-Depois de adquirir a compreensão básica do protótipo do HoloLens, eu queria capacitar outros não-codificadores para que eles tenham um protótipo próprio. Eu fiz um tutorial em vídeo que ensina como desenvolver um Projectile simples usando o HoloLens. Expliquei brevemente os conceitos básicos, portanto, mesmo que você tenha zero experiência no desenvolvimento do HoloLens, você deve ser capaz de acompanhar.
+depois de adquirir a compreensão básica de HoloLens o protótipoing, eu queria capacitar outros não-codificadores para o protótipo por conta própria. Eu fiz um tutorial em vídeo que ensina como desenvolver um Projectile simples usando HoloLens. expliquei brevemente os conceitos básicos, portanto, mesmo que você tenha zero experiência no desenvolvimento de HoloLens, você deve ser capaz de acompanhar.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/58612RT2CT8]
 *Eu fiz este tutorial simples para não programadores como eu mesmo.*
 
-Para o criação de protótipos VR, eu fiz cursos na [escola de desenvolvimento VR](https://learn.vrdev.school/) e também fiz [a criação de conteúdo 3D para a realidade virtual](https://www.lynda.com/Unreal-Engine-tutorials/3D-Content-Creation-Virtual-Reality/482055-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aVirtual+Reality+%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2/) em Lynda.com. A escola de desenvolvimento VR me proporcionou um conhecimento mais aprofundado na codificação e o curso Laura me ofereceu uma boa introdução à criação de ativos para VR.
+Para a criação de protótipos de VR, fiz cursos na [Vr Dev School](https://learn.vrdev.school/) e também fiz a Criação de Conteúdo [3D](https://www.lynda.com/Unreal-Engine-tutorials/3D-Content-Creation-Virtual-Reality/482055-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aVirtual+Reality+%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2/) para Realidade Virtual no Lynda.com. A escola de dev de VR me forneceu um conhecimento mais aprofundado sobre codificação e o curso Lynda me proporcionou uma breve introdução à criação de ativos para VR.
 
-## <a name="take-the-leap"></a>Pegue o salto
+## <a name="take-the-leap"></a>Dê um salto
 
-Há um ano, eu achei que tudo isso era um pouco difícil. Agora, posso dizer que era 100% do esforço. O Sr/VR ainda é muito jovem e há tantas possibilidades interessantes aguardando para serem percebidas. Sinto inspirado e sorte ser capaz de jogar uma pequena parte na criação do futuro. Espero que você se junte à jornada no espaço 3D!
+Há um ano, eu acho que tudo isso foi um pouco difícil. Agora posso dizer que valeu 100% do esforço. O MR/VR ainda é uma mídia muito nova e há muitas possibilidades interessantes aguardando para serem realizadas. Me sinto inspirado e feliz por poder desempenhar um papel pequeno na criação do futuro. Espero que você me acompanhe no percurso para o espaço 3D!
 
 ## <a name="about-the-author"></a>Sobre o autor
 

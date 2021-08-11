@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, realidade misturada, MRTK, realidade misturada Toolkit, realidade aumentada, realidade virtual, headsets de realidade misturada, aprendizado, tutorial, introdução, holographic comunicação remota, área de trabalho
-ms.openlocfilehash: 51244a94fb7e54f2eee41d9d1b7f65b0ba373138
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 0b18bf4a187190da3ef9d17fd87f2c42feaa271210345330887ce618b49a0442
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192161"
 ---
 # <a name="holographic-remoting-in-unity"></a>Comunicação remota do Holographic no Unity
 
@@ -19,7 +19,7 @@ ms.locfileid: "114757381"
 > Windows O suporte a comunicação remota do aplicativo autônomo foi adicionado na versão do pacote 0.1.3.
 > A partir da versão 0.1.3, esse recurso não oferece suporte a compilações UWP.
 
-[Conheça os fundamentos da comunicação remota do Holographic.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+[Conheça os conceitos básicos da comunicação remota do Holographic.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 você pode usar a comunicação remota do Holographic para transmitir conteúdo do Holographic para seu HoloLens 2 em tempo real. Essa é uma ótima maneira de depurar rapidamente seu aplicativo sem criar e implantar um projeto completo. 
 

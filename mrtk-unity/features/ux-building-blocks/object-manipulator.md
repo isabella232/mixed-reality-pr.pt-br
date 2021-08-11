@@ -1,20 +1,20 @@
 ---
-title: Manipulador de objeto
+title: Manipulador de objetos
 description: Como usar o objeto manipulador no MRTK
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, manipulação de objetos,
-ms.openlocfilehash: f9b644c1447d6776389e227bfe49c27f82a3cf31
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4c43a35e164d3e66e662afc927d28f84463e1586250e9847a2d88c219ba27f23
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191592"
 ---
-# <a name="object-manipulator"></a>Manipulador de objeto
+# <a name="object-manipulator"></a>Manipulador de objetos
 
-![Manipulador de objeto](../images/manipulation-handler/MRTK_Manipulation_Main.png)
+![Manipulador de objetos](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 
 O *Objectmanipuletor* é o novo componente para o comportamento de manipulação, encontrado anteriormente em *ManipulationHandler*. O objeto manipulador faz uma série de aprimoramentos e simplificações. Esse componente é uma substituição para o manipulador de manipulação, que será preterido.
 
@@ -137,31 +137,31 @@ Quantidade de suavização a ser aplicada à rotação. A suavização de 0 sign
 
 #### <a name="scale-lerp-time"></a>Tempo de Lerp de escala
 
-Quantidade de suavização a ser aplicada à escala. A suavização de 0 significa sem suavização. Valor máximo significa nenhuma alteração no valor.
+Quantidade de suavização a ser aplicada à escala. Suavização de 0 significa nenhuma suavização. Valor máximo significa nenhuma alteração no valor.
 
 ### <a name="manipulation-events"></a>Eventos de manipulação
 
 O manipulador de manipulação fornece os seguintes eventos:
 
-- *OnManipulationStarted*: acionado quando a manipulação é iniciada.
-- *OnManipulationEnded*: é acionado quando a manipulação termina.
-- *OnHoverStarted*: é acionado quando uma mão/controlador focaliza o manipulável, próximo ou longe.
-- *OnHoverEnded*: é acionado quando uma mão/controlador não passa o mouse sobre manipulável, próximo ou longe.
+- *OnManipulationStarted:* acionado quando a manipulação é iniciada.
+- *OnManipulationEnded:* é a incêndio quando a manipulação termina.
+- *OnHoverStarted:* é a incêndio quando uma mão/controlador passar o mouse no manipulador, próximo ou distante.
+- *OnHoverEnded:* é a incêndio quando uma mão/controlador destoca o manipulador, próximo ou distante.
 
-A ordem de acionamento do evento para manipulação é:
+A ordem de a incêndio do evento para manipulação é:
 
 *OnHoverStarted*  ->  *OnManipulationStarted*  ->  *OnManipulationEnded*  ->  *OnHoverEnded*
 
-Se não houver nenhuma manipulação, você ainda receberá eventos em foco com a seguinte ordem de incêndio:
+Se não houver manipulação, você ainda obterá eventos de foco com a seguinte ordem de incêndio:
 
 *OnHoverStarted*  ->  *OnHoverEnded*
 
 ## <a name="physics-and-collisions"></a>Física e colisões
 
-O comportamento da física pode ser habilitado adicionando um componente rigidbody ao mesmo objeto que um objeto manipulador. Isso não apenas permite a configuração do [comportamento de versão](#release-behavior) acima, além de habilitar colisões. Sem um componente rigidbody, as colisões não se comportam corretamente durante a manipulação:
+O comportamento da física pode ser habilitado adicionando um componente rigidbody ao mesmo objeto que um manipulador de objetos. Isso não apenas habilita a configuração [do comportamento de versão](#release-behavior) acima, mas também permite colisões. Sem um componente rigidbody, as colisões não se comportam corretamente durante a manipulação:
 
-- As colisões entre um objeto manipulado e um colisor estático (ou seja, um objeto com um colisor, mas sem rigidbody) não funcionam, o objeto manipulado passa diretamente pelo colisor estático não afetado.
-- Colisões entre um objeto manipulado e um rigidbody (ou seja, um objeto com um colisor e um rigidbody) faz com que o rigidbody tenha uma resposta de colisão, mas a resposta é um salto e não natural. Também não há nenhuma resposta de colisão no objeto manipulado.
+- Colisões entre um objeto manipulado e um colisor estático (ou seja, um objeto com um colisor, mas nenhum corpo rígido) não funcionam, o objeto manipulado passa diretamente pelo colisor estático não afetado.
+- Colisões entre um objeto manipulado e um rigidbody (ou seja, um objeto com um colisor e um rigidbody) faz com que o rigidbody tenha uma resposta de colisão, mas a resposta é rápida e meso. Também não há resposta de colisão no objeto manipulado.
 
 Quando um rigidbody é adicionado, as colisões devem funcionar corretamente.
 
@@ -173,9 +173,9 @@ Quando um rigidbody é adicionado, as colisões devem funcionar corretamente.
 
 <img src="../images/object-manipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500" alt="Rigid Body">
 
-## <a name="elastics-experimental"></a>Elásticos (experimental)
+## <a name="elastics-experimental"></a>Elástico (experimental)
 
-Os elásticos podem ser usados ao manipular objetos por meio de manipulador de objeto. Observe que o [sistema elásticos](../experimental/elastic-system.md) ainda está em estado experimental. Para habilitar os elásticos, vincule um componente do Gerenciador de elásticos existente ou crie e vincule um novo Gerenciador de elásticos por meio do `Add Elastics Manager` botão.
+Os elásticos podem ser usados ao manipular objetos por meio do manipulador de objetos. Observe que o [sistema elástico ainda](../experimental/elastic-system.md) está em estado experimental. Para habilitar o elástico, vincule um componente existente do Elastics Manager ou crie e vincule um novo gerenciador de elásticos por meio do `Add Elastics Manager` botão.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
@@ -184,4 +184,4 @@ Os elásticos podem ser usados ao manipular objetos por meio de manipulador de o
 - [Controle de limites](bounds-control.md)
 - [Gerenciador de restrição](constraint-manager.md)
 - [Janela de migração](../tools/migration-window.md)
-- [Sistema elásticos (experimental)](../experimental/elastic-system.md)
+- [Sistema elástico (Experimental)](../experimental/elastic-system.md)

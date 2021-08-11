@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, Toolkit de Realidade Misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
-ms.openlocfilehash: a4259148926ec20bca53a23074a6d1ea285f0aa2
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: a2bf33c12a817b6c823b572c51e7a5efd815ba2f4bbd0663bd076d33ef1f5dee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114756994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196156"
 ---
 # <a name="surfaces"></a>Surfaces
 

@@ -1,17 +1,17 @@
 ---
 title: Slate
-description: Aprenda sobre slates, um controle de estilo de janela fina para exibir conteúdo 2D usando o kit de ferramentas de realidade misturada.
+description: Aprenda sobre slates, um controle de estilo de janela fina para exibir conteúdo 2D usando a realidade misturada Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realidade misturada, controles, interação, interface do usuário, UX, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, Slate, MRTK, kit de ferramentas da realidade misturada
-ms.openlocfilehash: 2988419e44b21f6655a71d726dabd5091569f7ac
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: realidade misturada, controles, interação, interface do usuário, ux, headset de realidade misturada, headset da realidade mista do windows, headset da realidade virtual, HoloLens, Slate, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: 57a1e39528bb758b948f44ebea114798458591713b90e7b3db4bf0188969961f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193520"
 ---
 # <a name="slate"></a>Slate
 
@@ -23,7 +23,7 @@ Um Slate é um controle de estilo de janela fina para exibir conteúdo 2D, como 
 
 ---
 
-## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Tablet em MRTK (Kit de ferramentas de realidade misturada) para Unity
+## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>tablet em MRTK (realidade misturada Toolkit) para o Unity
 
 * [MRTK-Slate](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 

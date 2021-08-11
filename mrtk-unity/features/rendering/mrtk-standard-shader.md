@@ -4,113 +4,113 @@ description: Documentação do MRTKStandardShader
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Sombreador de Material
-ms.openlocfilehash: 0a92388bc9be7c11967501709031f559f17f8966
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, sombreador de Material
+ms.openlocfilehash: e740c1cb662f88f7ce925482de9ed758d5f18ee152363a663aa678056ba2825f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191096"
 ---
 # <a name="mrtk-standard-shader"></a>Sombreador padrão do MRTK
 
 ![Exemplos de sombreador padrão](../images/mrtk-standard-shader/MRTK_StandardShader.jpg)
 
-O sistema de sombreamento Padrão do MRTK utiliza um único sombreador flexível que pode obter visuais semelhantes ao Sombreador Padrão do Unity, implementar princípios [Sistema Fluent Design](https://www.microsoft.com/design/fluent/) e permanecer com desempenho em dispositivos de realidade misturada.
+o sistema de sombreamento padrão MRTK utiliza um único sombreador flexível que pode obter visuais semelhantes ao sombreador padrão do Unity, implementar [Sistema Fluent Design](https://www.microsoft.com/design/fluent/) princípios e manter o desempenho em dispositivos de realidade misturada.
 
 ## <a name="example-scenes"></a>Cenas de exemplo
 
-Você pode encontrar os exemplos de material do sombreador na **cena MaterialGallery** em `MRTK/Examples/Demos/StandardShader/Scenes/` . Todos os materiais nesta cena estão usando o sombreador MRTK/Standard.
+Você pode encontrar os exemplos de material do sombreador na cena **MaterialGallery** em `MRTK/Examples/Demos/StandardShader/Scenes/` . Todos os materiais nesta cena estão usando o sombreador MRTK/Standard.
 
-![Galeria de Materiais](../images/mrtk-standard-shader/MRTK_MaterialGallery.jpg)
+![Galeria de materiais](../images/mrtk-standard-shader/MRTK_MaterialGallery.jpg)
 
 Você pode encontrar uma cena de comparação para comparar e testar o sombreador MRTK/Standard em relação ao exemplo de sombreador Unity/Standard na cena **StandardMaterialComparison** em `MRTK/Examples/Demos/StandardShader/Scenes/` .
 
-![Comparação de material](../images/mrtk-standard-shader/MRTK_StandardMaterialComparison.gif)
+![Comparação de materiais](../images/mrtk-standard-shader/MRTK_StandardMaterialComparison.gif)
 
 ## <a name="architecture"></a>Arquitetura
 
-O sistema de sombreamento MRTK/Standard é um "sombreador uber" que usa o recurso de variante do programa de sombreador do [Unity](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) para gerar automaticamente o código de sombreador ideal com base nas propriedades do material. Quando um usuário seleciona propriedades de material no inspetor de material, ele só incorre em custo de desempenho para recursos habilitados.
+O sistema de sombreamento MRTK/Standard é um "sombreador Uber" que usa o [recurso variante do programa de sombreador do Unity](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) para gerar automaticamente o código de sombreador ideal com base nas propriedades do material. Quando um usuário seleciona propriedades de material no Inspetor de material, ele só incorre em custo de desempenho para os recursos que eles habilitaram.
 
 ## <a name="material-inspector"></a>Inspetor de material
 
-Existe um inspetor de material personalizado para o sombreador MRTK/Standard chamado [`MixedRealityStandardShaderGUI.cs`](xref:Microsoft.MixedReality.Toolkit.Editor.MixedRealityStandardShaderGUI) . O inspetor habilita/desabilita automaticamente os recursos do sombreador, com base na seleção do usuário e nos auxiliares na configuração do estado de renderização. Para obter mais informações sobre cada **recurso, passe o mouse sobre cada propriedade no Editor do Unity para obter uma dica de ferramenta.**
+Existe um inspetor de material personalizado para o sombreador MRTK/padrão chamado [`MixedRealityStandardShaderGUI.cs`](xref:Microsoft.MixedReality.Toolkit.Editor.MixedRealityStandardShaderGUI) . O Inspetor Habilita/desabilita automaticamente os recursos do sombreador, com base na seleção do usuário e nos auxílios na configuração do estado de renderização. Para obter mais informações sobre cada recurso **, passe o mouse sobre cada propriedade no editor do Unity para obter uma dica de ferramenta.**
 
-![Inspetor de Material](../images/mrtk-standard-shader/MRTK_MaterialInspector.jpg)
+![Inspetor de material](../images/mrtk-standard-shader/MRTK_MaterialInspector.jpg)
 
-A primeira parte do inspetor controla o estado de renderização do material. *O Modo de* Renderização determina quando e como um material será renderizado. O objetivo do sombreador MRTK/Standard é espelhar os modos de renderização [encontrados no sombreador Unity/Standard.](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) O sombreador MRTK/Standard também inclui um *modo* de renderização aditivo e modo *de* renderização personalizado para controle de usuário completo.
+A primeira parte do Inspetor controla o estado de renderização do material. O *modo de renderização* determina quando e como um material será renderizado. O objetivo do sombreador MRTK/Standard é espelhar os [modos de renderização encontrados no sombreador do Unity/Standard](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). O sombreador MRTK/Standard também inclui um modo de renderização *aditivo* e modo de renderização *personalizado* para controle de usuário completo.
 
-| Modo de renderização |         Descrição                                                       |
+| Modo de renderização |         Description                                                       |
 |----------------|---------------------------------------------------------------------------|
-| Opaco         | (Padrão) Adequado para objetos sólidos normais sem áreas transparentes.    |
-| Recorte         | Permite a criação de efeitos transparentes que têm bordas duras entre as áreas opacas e transparentes. Nesse modo, não há áreas semi transparentes, a textura é 100% opaca ou invisível. Isso é útil ao usar a transparência para criar a forma de materiais, como reação. |
-| Esmaecimento           | Permite que os valores de transparência esmaeçam totalmente um objeto, incluindo quaisquer realças especular ou reflexões que ele possa ter. Esse modo será útil se você quiser animar um objeto esbotão dentro ou fora. Ele não é adequado para renderizar materiais transparentes realistas, como vidro ou vidro transparente, pois as reflexões e realces também serão esbotados. |
-| Transparente    | Adequado para renderizar materiais transparentes realistas, como vidro ou vidro transparente. Nesse modo, o material em si assumirá valores de transparência (com base no canal alfa da textura e no alfa da cor da tonalidade). No entanto, as reflexões e realçamentos de iluminação permanecerão visíveis em total clareza, como é o caso com materiais transparentes reais. |
-| Aditiva       | Habilita um modo de combinação aditiva, que soma a cor de pixel anterior com a cor de pixel atual. Esse é o modo de transparência preferencial para evitar problemas de classificação de transparência.     |
+| Opaco         | Os Adequado para objetos sólidos normais sem áreas transparentes.    |
+| Pico         | Permite a criação de efeitos transparentes que têm bordas rígidas entre as áreas opacas e transparentes. Nesse modo, não há áreas transparentes, a textura é de 100% opaca ou invisível. Isso é útil ao usar a transparência para criar a forma de materiais, como vegetação. |
+| Esmaecimento           | Permite que os valores de transparência desapareçam completamente um objeto, incluindo quaisquer realces especulares ou reflexos que possam ter. Esse modo será útil se você quiser animar um objeto de esmaecimento ou saída. Não é adequado para renderizar materiais transparentes realistas, como plástico claro ou vidro, pois os reflexões e os destaques também ficarão desbotados. |
+| Transparente    | Adequado para renderizar materiais transparentes realistas, como plástico claro ou vidro. Nesse modo, o material por si só assumirá os valores de transparência (com base no canal alfa da textura e no alfa da cor da tonalidade). No entanto, os realces de reflexo e iluminação permanecerão visíveis com clareza total, como é o caso com materiais transparentes reais. |
+| Aditiva       | Habilita um modo de mesclagem aditivo, que soma a cor do pixel anterior com a cor atual do pixel. Esse é o modo de transparência preferencial para evitar problemas de classificação de transparência.     |
 | Personalizado         | Permite que todos os aspectos do modo de renderização sejam controlados manualmente. Somente para uso avançado.   |
 
 ![Renderizando modos](../images/mrtk-standard-shader/MRTK_RenderingModes.jpg)
 
-| Modo de Ressução |             Descrição                                                                                                                                                                       |
+| Modo de seleção |             Description                                                                                                                                                                       |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Desativado       | Desabilita a ressarção facial. O descarte só deve ser definido como Off quando uma malha de dois lados é necessária.                                                                                        |
-| Front     | Habilita o corte de face frontal.                                                                                                                                                        |
-| Voltar      | (Padrão) Habilita [a ressarção facial.](https://en.wikipedia.org/wiki/Back-face_culling) A reavaliação facial deve ser habilitada com a maior frequência possível para melhorar o desempenho da renderização. |
+| Desativado       | Desabilita a remoção de face. A remoção só deve ser definida como OFF quando uma malha de dois lados é necessária.                                                                                        |
+| Front     | Habilita a remoção de face frontal.                                                                                                                                                        |
+| Voltar      | Os Permite a [remoção de face de fundo](https://en.wikipedia.org/wiki/Back-face_culling). A remoção de face de fundo deve ser habilitada sempre que possível para melhorar o desempenho de renderização. |
 
 ## <a name="performance"></a>Desempenho
 
-Uma das principais vantagens de usar o sombreador padrão do MRTK em relação ao sombreador padrão do Unity é o desempenho. O Sombreador Padrão do MRTK é extensível para utilizar apenas os recursos habilitados. No entanto, o sombreador Padrão do MRTK também foi escrito para fornecer resultados comparáveis e descompilado como o sombreador Padrão do Unity, mas a um custo muito menor. Uma maneira simples de comparar o desempenho do sombreador é por meio do número de operações que precisam ser executadas na GPU. É claro que a magnitude dos cálculos pode flutuar por recursos habilitados e outras configurações de renderização. Mas, em geral, o sombreador padrão do MRTK executa significativamente menos computação do que o sombreador Padrão do Unity.
+Uma das principais vantagens de usar o sombreador Standard MRTK sobre o sombreador padrão do Unity é o desempenho. O sombreador padrão MRTK é extensível para utilizar apenas os recursos habilitados. No entanto, o sombreador padrão MRTK também foi escrito para fornecer resultados estética comparáveis como o sombreador padrão do Unity, mas com um custo muito menor. Uma maneira simples de comparar o desempenho do sombreador é por meio do número de operações que precisam ser executadas na GPU. É claro que a magnitude dos cálculos pode flutuar por recursos habilitados e outras configurações de renderização. Mas, em geral, o sombreador padrão do MRTK executa significativamente menos cálculos do que o sombreador padrão do Unity.
 
-Exemplo de estatísticas do sombreador Padrão do Unity
+Exemplo de estatísticas do sombreador padrão do Unity
 
-![Estatísticas do Sombreador Padrão do Unity](../images/performance/UnityStandardShader-Stats.PNG)
+![Estatísticas do sombreador padrão do Unity](../images/performance/UnityStandardShader-Stats.PNG)
 
-Exemplo de estatísticas do sombreador padrão do MRTK
+Exemplo de estatísticas de sombreador padrão MRTK
 
 ![Estatísticas do sombreador padrão do MRTK](../images/performance/MRTKStandardShader-Stats.PNG)
 
 > [!NOTE]
-> Esses resultados podem ser gerados selecionando e exibindo um [ativo](https://docs.unity3d.com/Manual/class-Shader.html) de sombreador no inspetor do Unity e clicando no *botão Compilar e mostrar* código.
+> Esses resultados podem ser gerados selecionando e exibindo um [ativo de sombreador](https://docs.unity3d.com/Manual/class-Shader.html) no Inspetor do Unity e, em seguida, clicando no botão *Compilar e mostrar código* .
 
 ## <a name="lighting"></a>Iluminação
 
-O MRTK/Standard usa uma aproximação simples para iluminação. Como esse sombreador não calcula a correção física e a economia de energia, ele renderiza de forma rápida e eficiente. Blinn-Phong é a técnica de iluminação primária que é mesclada com a iluminação baseada em imagens e Fresnel para iluminação baseada fisicamente aproximada. O sombreador dá suporte às seguintes técnicas de iluminação:
+O MRTK/Standard usa uma aproximação simples para iluminação. Como esse sombreador não calcula a exatidão física e a conservação de energia, ele é renderizado de maneira rápida e eficiente. Blinn-Phong é a técnica de iluminação primária que é combinada com Fresnel e iluminação baseada em imagem para iluminação com base em um aproximado. O sombreador dá suporte às seguintes técnicas de iluminação:
 
 ### <a name="directional-light"></a>Luz direcional
 
-O sombreador respeitará a direção, a cor e a intensidade da primeira Luz Direcional do Unity na cena (se habilitada). As luzes de ponto dinâmico, as luzes spot ou qualquer outra luz do Unity não serão consideradas na iluminação em tempo real.
+O sombreador respeitará a direção, a cor e a intensidade da primeira luz direcional do Unity na cena (se habilitado). Luzes de ponto dinâmico, luzes spot ou qualquer outra luz de Unity não serão consideradas em iluminação em tempo real.
 
-### <a name="spherical-harmonics"></a>Harmônicos esféricos
+### <a name="spherical-harmonics"></a>Harmônicas esféricas
 
-O sombreador usará investigações de luz para aproximar as luzes na cena usando [a Máscaras Esféricas,](https://docs.unity3d.com/Manual/LightProbes-TechnicalInformation.html)se habilitada. Cálculos de harmônicos esféricos são executados por vértice para reduzir o custo de cálculo.
+O sombreador usará investigações leves para luzes aproximadas na cena usando [harmônicas esféricas](https://docs.unity3d.com/Manual/LightProbes-TechnicalInformation.html), se habilitado. Os cálculos de harmônicas esféricas são executados por vértice para reduzir o custo de cálculo.
 
 ### <a name="lightmapping"></a>Lightmapping
 
-Para iluminação estática, o sombreador respeitará os lightmaps construídos pelo sistema [lightmapping do Unity.](https://docs.unity3d.com/Manual/Lightmapping.html) Basta marcar o renderador como estático (ou lightmap estático) para usar lightmaps.
+Para iluminação estática, o sombreador respeitará o lightmaps criado pelo [sistema Lightmapping](https://docs.unity3d.com/Manual/Lightmapping.html)do Unity. Basta marcar o renderizador como estático (ou lightmap estático) para usar lightmaps.
 
 ### <a name="hover-light"></a>Luz de foco
 
-* Consulte [Luz de foco](hover-light.md)
+* Confira [luz de foco](hover-light.md)
 
 ### <a name="proximity-light"></a>Luz de proximidade
 
-* Consulte [Luz de proximidade](proximity-light.md)
+* Confira [luz de proximidade](proximity-light.md)
 
-## <a name="lightweight-scriptable-render-pipeline-support"></a>Suporte ao pipeline de renderização leve com script
+## <a name="lightweight-scriptable-render-pipeline-support"></a>Suporte ao pipeline de processamento com scripts leves
 
-O MRTK contém um caminho de atualização para permitir que os desenvolvedores utilizem o LWRP (Lightweight Scriptable Render Pipeline) do Unity com sombreadores do MRTK. Testado no pacote Unity 2019.1.1f1 e Lightweight RP 5.7.2. ou instruções sobre como começar a trabalhar com o LWRP, consulte [esta página](https://docs.unity3d.com/Packages/com.unity.render-pipelines.lightweight@5.10/manual/getting-started-with-lwrp.html).
+O MRTK contém um caminho de atualização para permitir que os desenvolvedores utilizem o LWRP (Lightweight scripting render Pipeline) leve do Unity com os sombreadores MRTK. Testado no Unity 2019.1.1 F1 e no pacote 5.7.2 leve do RP. ou instruções sobre como começar a usar o LWRP, consulte [esta página](https://docs.unity3d.com/Packages/com.unity.render-pipelines.lightweight@5.10/manual/getting-started-with-lwrp.html).
 
-Para executar a atualização do MRTK, selecione: Utilitários de Toolkit **-> ->** Atualizar o Sombreador Padrão do MRTK para Pipeline de Renderização Leve
+para executar a atualização do MRTK, selecione: **realidade mista Toolkit-> Utilities-> atualizar o sombreador padrão do MRTK para o Pipeline de renderização leve**
 
-![Atualização de lwrp](../images/mrtk-standard-shader/MRTK_LWRPUpgrade.jpg)
+![atualização do lwrp](../images/mrtk-standard-shader/MRTK_LWRPUpgrade.jpg)
 
-Depois que a atualização ocorrer, o sombreador MRTK/Standard será alterado e qualquer material de magenta (erro de sombreador) deverá ser corrigido. Para verificar se a atualização ocorreu com êxito, verifique o console para: **Ativos Atualizados/MixedRealityToolkit/StandardAssets/Shaders/MixedRealityStandard.shader** para uso com o Pipeline de Renderização Leve.
+Após a atualização, o sombreador MRTK/Standard será alterado e os materiais magenta (erro de sombreador) deverão ser corrigidos. Para verificar se a atualização ocorreu com êxito, verifique o console para: **ativos atualizados/MixedRealityToolkit/StandardAssets/shaders/MixedRealityStandard. Shader para uso com o pipeline de processamento leve.**
 
-## <a name="ugui-support"></a>Suporte à UGUI
+## <a name="ugui-support"></a>Suporte do UGUI
 
-O sistema de sombreamento do MRTK Standard funciona com o sistema de interface do usuário [integrado do](https://docs.unity3d.com/Manual/UISystem.html)Unity. Em componentes de interface do usuário do Unity, unity_ObjectToWorld matriz de dados não é a matriz de transformação da transformação local em que o componente Gráfico reside, mas a de sua Tela pai. Muitos efeitos de sombreador MRTK/Standard exigem que a escala de objeto seja conhecida. Para resolver esse problema, o armazenará informações de dimensionamento em atributos [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) de canal UV durante a construção da malha da interface do usuário.
+O sistema de sombreamento padrão do MRTK funciona com o [sistema de interface do usuário](https://docs.unity3d.com/Manual/UISystem.html)interno do Unity. Nos componentes da interface do usuário do Unity, a matriz de unity_ObjectToWorld não é a matriz de transformação da transformação local na qual o componente gráfico reside, mas a de sua tela pai. Muitos efeitos de sombreador MRTK/padrão exigem que a escala do objeto seja conhecida. Para resolver esse problema, o [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) armazenará informações de dimensionamento em atributos de canal UV durante a construção da malha da interface do usuário.
 
-Observe que, ao usar um componente imagem do Unity, é recomendável especificar "Nenhum (Sprite)" para a Imagem de Origem para impedir que a interface do usuário do Unity gere vértices extras.
+Observe que, ao usar um componente de imagem do Unity, é recomendável especificar "nenhum (Sprite)" para a imagem de origem para impedir que a interface do usuário do Unity gere vértices extras.
 
 Uma Tela dentro do MRTK solicitará a adição de um [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) quando for necessário:
 

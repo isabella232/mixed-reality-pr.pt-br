@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, EyeTracking, EyeGaze,
-ms.openlocfilehash: ef50a55d52a5dad9f424c8af8139565e02542b6c
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 9a62bdba0bc4bb2985e6c2ffc4e8e66a8f867681a5e51c9e5f235b29f3baaf50
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144023"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193188"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>Acessando dados de acompanhamento ocular em seu script do Unity
 
@@ -37,24 +37,24 @@ Confira nosso exemplo [de notificação de calibragem](eye-tracking-is-user-cali
 - **GazeOrigin:** origem do raio do olhar.
 Observe que isso retornará a *origem do* olhar de cabeça se 'IsEyeGazeValid' for false.
 
-- **GazeDirection**: direção do olhar Ray.
-Isso retornará a direção da olhar de *cabeçalho* se ' IsEyeGazeValid ' for false.
+- **GazeDirection:** direção do raio do olhar.
+Isso retornará a *direção do* olhar para a cabeça se 'IsEyeGazeValid' for false.
 
-- **HitInfo**, **HitPosition**, **HitNormal**, etc.: informações sobre o gazed no momento no destino.
-Novamente, se `IsEyeGazeValid` for false, isso será baseado no olhar da *cabeça* do usuário.
+- **HitInfo,** **HitPosition,** **HitNormal,** etc.: informações sobre o que está atualmente voltado para o destino.
+Novamente, se for false, isso será baseado no olhar da cabeça `IsEyeGazeValid` *do* usuário.
 
-## <a name="examples-for-using-coreservicesinputsystemeyegazeprovider"></a>Exemplos de uso de CoreServices. InputSystem. EyeGazeProvider
+## <a name="examples-for-using-coreservicesinputsystemeyegazeprovider"></a>Exemplos para usar CoreServices.InputSystem.EyeGazeProvider
 
-Aqui está um exemplo do [FollowEyeGaze. cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze):
+Aqui está um exemplo de [FollowEyeGaze.cs:](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze)
 
-- Obtenha o ponto de um holograma que o usuário está vendo:
+- Obter o ponto de um holograma que o usuário está vendo:
 
 ```c#
 // Show the object at the hit position of the user's eye gaze ray with the target.
 gameObject.transform.position = CoreServices.InputSystem.EyeGazeProvider.HitPosition;
 ```
 
-- Mostrando um ativo visual a uma distância fixa de onde o usuário está atualmente procurando:
+- Mostrando um ativo visual a uma distância fixa da qual o usuário está procurando no momento:
 
 ```c#
 // If no target is hit, show the object at a default distance along the gaze ray.
@@ -65,7 +65,7 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 
 ## <a name="see-also"></a>Confira também
 
-- [Visão geral do acompanhamento de olho do MRTK](eye-tracking-main.md)
-- [Configuração de acompanhamento de olho do MRTK](eye-tracking-basic-setup.md)
-- [Calibragem de controle ocular MRTK](eye-tracking-is-user-calibrated.md)
-- [Documentação de acompanhamento de olho do HoloLens 2](/windows/mixed-reality/eye-tracking)
+- [Visão geral do acompanhamento ocular do MRTK](eye-tracking-main.md)
+- [Configuração do Acompanhamento Ocular do MRTK](eye-tracking-basic-setup.md)
+- [Calibragem de acompanhamento ocular do MRTK](eye-tracking-is-user-calibrated.md)
+- [HoloLens documentação de acompanhamento ocular do HoloLens 2](/windows/mixed-reality/eye-tracking)

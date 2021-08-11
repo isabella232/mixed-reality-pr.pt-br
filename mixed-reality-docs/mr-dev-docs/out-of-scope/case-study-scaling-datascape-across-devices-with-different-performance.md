@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Headset de imersão, otimização de desempenho, VR, estudo de caso
-ms.openlocfilehash: 37a40a67dbe41ba9a53fccaff1dee76d56f7b178
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d1c54f5fbe6843f9bf61af20b611c6aeb22b0704c209bfdb555fe57b95805cf9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675923"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195738"
 ---
 # <a name="case-study---scaling-datascape-across-devices-with-different-performance"></a>Estudo de caso-dimensionamento de Datascape em dispositivos com desempenho diferente
 
-O Datascape é um aplicativo de realidade mista do Windows desenvolvido internamente na Microsoft, no qual nos concentramos na exibição de dados meteorológicos sobre os dados do terreno. O aplicativo explora os usuários de insights exclusivos que aproveitam a descoberta de dados em realidade misturada ao redor do usuário com a visualização de dados do Holographic.
+o Datascape é um aplicativo Windows Mixed Reality desenvolvido internamente na Microsoft, no qual nos concentramos na exibição de dados meteorológicos sobre os dados do terreno. O aplicativo explora os usuários de insights exclusivos que aproveitam a descoberta de dados em realidade misturada ao redor do usuário com a visualização de dados do Holographic.
 
-Para o Datascape, queríamos ter como alvo uma variedade de plataformas com diferentes recursos de hardware, desde o Microsoft HoloLens até o Windows Mixed realness headsets e de PCs de baixo consumo até os computadores mais recentes com GPU de ponta. O principal desafio era renderizar nossa cena em uma questão visualmente atraente em dispositivos com recursos gráficos muito diferentes durante a execução em uma taxa de quadros alta.
+para o Datascape, queríamos ter como alvo uma variedade de plataformas com diferentes recursos de hardware, desde Microsoft HoloLens até Windows Mixed Reality headsets de imersão e de pcs com menor capacidade para os computadores mais recentes com GPU de ponta. O principal desafio era renderizar nossa cena em uma questão visualmente atraente em dispositivos com recursos gráficos muito diferentes durante a execução em uma taxa de quadros alta.
 
 Esse estudo de caso examinará o processo e as técnicas usadas para criar alguns de nossos sistemas mais intensivos de GPU, descrevendo os problemas encontrados e como superou-los.
 
@@ -29,11 +29,11 @@ A geometria sólida pode ser renderizada de frente para trás durante a gravaç�
 
 A geometria transparente precisa ser classificada de volta para a frente e se baseia na mesclagem da saída do sombreador de pixel com o pixel atual na tela. Isso pode resultar em cada pixel na tela que está sendo desenhada várias vezes por quadro, chamado de sobreempate.
 
-Para os computadores HoloLens e mainstream, a tela só pode ser preenchida algumas vezes, tornando o processo transparente de processamento.
+para os computadores HoloLens e mainstream, a tela só pode ser preenchida alguns momentos, tornando a renderização transparente problemática.
 
 ## <a name="introduction-to-datascape-scene-components"></a>Introdução aos componentes de cena do Datascape
 
-Tínhamos três componentes principais para nossa cena; **a interface do usuário, o mapa** e **o clima** . Sabíamos no início que nossos efeitos meteorológicos exigiriam todo o tempo de GPU que poderia obter, então criamos de forma intencional a interface do usuário e o terreno de uma maneira que reduza qualquer sobreempate.
+Tínhamos três componentes principais para nossa cena; **a interface do usuário, o mapa** e **o clima**. Sabíamos no início que nossos efeitos meteorológicos exigiriam todo o tempo de GPU que poderia obter, então criamos de forma intencional a interface do usuário e o terreno de uma maneira que reduza qualquer sobreempate.
 
 Retrabalhamos a interface do usuário várias vezes para minimizar a quantidade de sobreempates que ela produziria. Nós erramosmos o lado da geometria mais complexa em vez de sobrecarregar arte transparente sobre as outras para componentes como botões brilhantes e visões gerais de mapa.
 
@@ -102,7 +102,7 @@ Apresentamos um pequeno padrão de ruído para obter mais detalhes sobre os dado
 
 ![Nuvens de geometria](images/datascape-geometry-clouds-700px.jpg)
 
-Como as nuvens são uma geometria sólida, elas podem ser renderizadas antes que o terreno oculte os pixels de mapa caros abaixo para melhorar ainda mais a taxa de quadros. Essa solução foi executada bem em todas as placas gráficas de min-spec a placas gráficas de ponta, bem como no HoloLens, devido à abordagem de renderização de geometria sólida.
+Como as nuvens são uma geometria sólida, elas podem ser renderizadas antes que o terreno oculte os pixels de mapa caros abaixo para melhorar ainda mais a taxa de quadros. essa solução foi executada bem em todas as placas gráficas de min-spec a placas gráficas de ponta, bem como em HoloLens, devido à abordagem de renderização de geometria sólida.
 
 ## <a name="solid-particle-clouds"></a>Nuvens de partículas sólidas
 
@@ -275,38 +275,38 @@ Há técnicas para classificar o buffer de push, mas a quantidade limitada de ac
 
 ## <a name="adaptive-rendering"></a>Renderização adaptável
 
-Para garantir uma taxa de quadros constante em um aplicativo com condições de renderização diferentes, como uma nuvem versus uma exibição clara, introduzimos a renderização adaptável em nosso aplicativo.
+Para garantir uma taxa de quadros estável em um aplicativo com condições de renderização variáveis, como uma exibição clara e em nuvem, introduzimos a renderização adaptável ao nosso aplicativo.
 
-A primeira etapa da renderização adaptável é medir a GPU. Fizemos isso inserindo código personalizado no buffer de comando da GPU no início e no final de um quadro renderizado, capturando o horário da tela de olho à esquerda e à direita.
+A primeira etapa da renderização adaptável é medir a GPU. Fizemos isso inserindo código personalizado no buffer de comando da GPU no início e no final de um quadro renderizado, capturando a hora da tela esquerda e direita.
 
-Medindo o tempo gasto renderizando e comparando-o à nossa taxa de atualização desejada, temos uma noção de como devemos descartar os quadros.
+Medindo o tempo gasto na renderização e comparando-o à nossa taxa de atualização desejada, temos uma ideia de quão próximos estávamos de soltar quadros.
 
-Ao fechar os quadros, adaptamos nossa renderização para torná-lo mais rápido. Uma maneira simples de adaptar-se é alterar o tamanho do visor da tela, exigindo menos pixels para ser renderizado.
+Quando estamos perto de soltar quadros, adaptamos nossa renderização para torná-la mais rápida. Uma maneira simples de adaptar é alterar o tamanho do viewport da tela, exigindo menos pixels para ser renderizado.
 
-Usando *UnityEngine. XR. XRSettings. renderViewportScale* , o sistema reduz o visor de destino e alonga automaticamente o resultado de volta para o ajuste à tela. Uma pequena alteração na escala é mal perceptível na geometria mundial, e um fator de escala de 0,7 requer metade da quantidade de pixels a serem renderizados.
+Usando *UnityEngine.XR.XRSettings.renderViewportScale,* o sistema reduz o viewport direcionado e alonga automaticamente o resultado para caber na tela. Uma pequena alteração na escala raramente é perceptível na geometria mundial e um fator de escala de 0,7 requer metade da quantidade de pixels a ser renderizada.
 
 ![70% de escala, metade dos pixels](images/datascape-scaling-700px.jpg)
 
-Quando detectamos que estamos prestes a descartar os quadros, reduzimos a escala por um número fixo e o aumentamos quando estamos executando rápido o suficiente novamente.
+Quando detectamos que estamos prestes a soltar quadros, reduzimos a escala em um número fixo e aumentamos novamente quando estamos executando rapidamente o suficiente novamente.
 
-Embora decidimos qual técnica de nuvem usar com base nos recursos gráficos do hardware na inicialização, é possível baseá-la nos dados da medição da GPU para impedir que o sistema permaneça em baixa resolução por um longo tempo, mas isso é algo que não temos tempo para explorar no Datascape.
+Embora decidimos qual técnica de nuvem usar com base em recursos gráficos do hardware na inicialização, é possível baseá-la nos dados da medida de GPU para impedir que o sistema fique em baixa resolução por um longo tempo, mas isso é algo que não tínhamos tempo para explorar no Datascape.
 
 ## <a name="final-thoughts"></a>Considerações finais
 
-O direcionamento a uma variedade de hardware é desafiador e requer algum planejamento.
+Direcionar a uma variedade de hardwares é um desafio e requer algum planejamento.
 
-Recomendamos que você comece a direcionar computadores com menor capacidade para se familiarizar com o espaço do problema e desenvolver uma solução de backup que será executada em todos os seus computadores. Projete sua solução com a taxa de preenchimento em mente, pois os pixels serão seus recursos mais preciosos. Direcionar a geometria sólida sobre transparência.
+Recomendamos que você comece a direcionar os máquinas de baixa potência para se familiarizar com o espaço do problema e desenvolver uma solução de backup que será executado em todos os seus máquinas. Projete sua solução com a taxa de preenchimento em mente, pois os pixels serão o recurso mais valioso. Direcionamento de geometria sólida sobre transparência.
 
-Com uma solução de backup, você pode iniciar a disposição em camadas em mais complexidade para máquinas de alto nível ou talvez apenas aprimorar a resolução da solução de backup.
+Com uma solução de backup, você pode iniciar a camada em mais complexidade para máquinas de alto nível ou talvez apenas aprimorar a resolução de sua solução de backup.
 
-Design para cenários de pior caso e talvez considere o uso de processamento adaptável para situações pesadas.
+Projete cenários de pior caso e talvez considere usar a renderização adaptável para situações pesadas.
 
 ## <a name="about-the-authors"></a>Sobre os autores
 
 <table style="border:0">
 <tr>
 <td style="border:0" width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
-<td style="border:0"><b>Robert Ferrese</b><br>Engenheiro de software @Microsoft</td>
+<td style="border:0"><b>Robert Ltdese</b><br>Engenheiro de software @Microsoft</td>
 </tr>
 <tr>
 <td style="border:0" width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
@@ -315,8 +315,8 @@ Design para cenários de pior caso e talvez considere o uso de processamento ada
 </table>
 
 
-## <a name="see-also"></a>Consulte também
-* [Entendendo o desempenho da realidade misturada](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
-* [Recomendações de desempenho para o Unity](../develop/unity/performance-recommendations-for-unity.md)
+## <a name="see-also"></a>Confira também
+* [Noções básicas sobre o desempenho da realidade misturada](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Desempenho Recomendações para Unity](../develop/unity/performance-recommendations-for-unity.md)
 
  

@@ -1,21 +1,21 @@
 ---
 title: Transferências de âncora local no DirectX
-description: Saiba como sincronizar dois dispositivos HoloLens Transferindo, exportando e serializando âncoras espaciais.
+description: saiba como sincronizar dois dispositivos HoloLens transferindo, exportando e serializando âncoras espaciais.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloLens, sincronizar, âncora espacial, transferência, vários participantes, exibição, cenário, passo a passos, código de exemplo, transferência, transferência de âncora local, exportação de âncora, importação de âncora
-ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, sincronizar, âncora espacial, transferência, vários participantes, exibição, cenário, passo a passos, código de exemplo, transferência, transferência de âncora local, exportação de ancoragem, importação de âncora
+ms.openlocfilehash: df00e323267aa398ba45cfd7a7234c04ce8eca85f2ff3be9b6c9ddee67264085
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195648"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Transferências de âncora local no DirectX
 
-Em situações em que você não pode usar <a href="/azure/spatial-anchors" target="_blank">âncoras espaciais do Azure</a>, as transferências de âncora local permitem que um dispositivo de hololens exporte uma âncora a ser importada por um segundo dispositivo hololens.
+em situações em que você não pode usar <a href="/azure/spatial-anchors" target="_blank">âncoras espaciais do Azure</a>, as transferências de âncora local permitem que um dispositivo de HoloLens exporte uma âncora a ser importada por um segundo dispositivo de HoloLens.
 
 >[!NOTE]
 >As transferências de âncora local fornecem uma recall de ancoragem menos robusta do que as <a href="/azure/spatial-anchors" target="_blank">âncoras espaciais do Azure</a>, e os dispositivos IOS e Android não são compatíveis com essa abordagem.
@@ -25,9 +25,9 @@ Em situações em que você não pode usar <a href="/azure/spatial-anchors" targ
 
 ## <a name="transferring-spatial-anchors"></a>Transferindo âncoras espaciais
 
-Você pode transferir âncoras espaciais entre dispositivos de realidade mista do Windows usando o [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Essa API permite que você agrupe uma âncora com todos os dados de sensor de suporte necessários para encontrar esse local exato no mundo e, em seguida, importe esse pacote em outro dispositivo. Depois que o aplicativo no segundo dispositivo tiver importado essa âncora, cada aplicativo poderá renderizar hologramas usando o sistema de coordenadas da âncora espacial compartilhada, que será exibido no mesmo local do mundo real.
+você pode transferir âncoras espaciais entre Windows Mixed Reality dispositivos usando o [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Essa API permite que você agrupe uma âncora com todos os dados de sensor de suporte necessários para encontrar esse local exato no mundo e, em seguida, importe esse pacote em outro dispositivo. Depois que o aplicativo no segundo dispositivo tiver importado essa âncora, cada aplicativo poderá renderizar hologramas usando o sistema de coordenadas da âncora espacial compartilhada, que será exibido no mesmo local do mundo real.
 
-Observe que as âncoras espaciais não podem ser transferidas entre diferentes tipos de dispositivo, por exemplo, uma âncora espacial de HoloLens não pode ser localizável usando um headset de imersão.  As âncoras transferidas também não são compatíveis com dispositivos iOS ou Android.
+observe que as âncoras espaciais não podem ser transferidas entre diferentes tipos de dispositivo, por exemplo, uma âncora espacial HoloLens não pode ser localizável usando um headset de imersão.  As âncoras transferidas também não são compatíveis com dispositivos iOS ou Android.
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurar seu aplicativo para usar o recurso spatialPerception
 
@@ -288,13 +288,13 @@ Como a exportação de um único SpatialAnchor, o BLOB contém uma representaç�
 
 ![Várias âncoras exportadas usando uma única chamada TryExportAnchorsAsync](images/multipleanchors.png) ![Várias âncoras exportadas usando uma chamada TryExportAnchorsAsync separada para cada âncora](images/separateanchors.png)
 
-## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>Exemplo: enviar dados de âncora usando um Windows:: Networking:: StreamSocket
+## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>exemplo: enviar dados de âncora usando um Windows:: networking:: StreamSocket
 
 Aqui, fornecemos um exemplo de como usar dados de âncora exportados enviando-os por uma rede TCP. Isso é de HolographicSpatialAnchorTransferSample.
 
 A classe StreamSocket do WinRT usa a biblioteca de tarefas PPL. No caso de erros de rede, o erro é retornado para a próxima tarefa na cadeia usando uma exceção que é relançada. A exceção contém um HRESULT que indica o status do erro.
 
-### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>Use um Windows:: Networking:: StreamSocketListener com TCP para enviar dados de âncora exportados
+### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>usar um Windows:: networking:: StreamSocketListener com TCP para enviar dados de âncora exportados
 
 Crie uma instância de servidor que escuta uma conexão.
 
@@ -460,7 +460,7 @@ void SampleAnchorTcpServer::HandleException(Exception^ exception)
 }
 ```
 
-### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>Use um Windows:: Networking:: StreamSocket com TCP para receber dados de âncora exportados
+### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>Use um Windows:: networking:: StreamSocket com TCP para receber dados de âncora exportados
 
 Primeiro, precisamos se conectar ao servidor. Este exemplo de código mostra como criar e configurar um StreamSocket e criar um DataReader que você pode usar para adquirir dados de rede usando a conexão de soquete.
 
@@ -672,7 +672,7 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-Pronto! Agora, você deve ter informações suficientes para tentar localizar as âncoras recebidas pela rede. Novamente, observe que o cliente deve ter dados de controle visual suficientes para o espaço localizar a âncora com êxito; Se não funcionar imediatamente, tente percorrer um tempo. Se ainda não funcionar, faça com que o servidor envie mais âncoras e use as comunicações de rede para concordar em uma que funcione para o cliente. Você pode experimentar isso baixando o HolographicSpatialAnchorTransferSample, configurando seus IPs de cliente e de servidor e implantando-os em dispositivos HoloLens de cliente e servidor.
+É isso! Agora, você deve ter informações suficientes para tentar localizar as âncoras recebidas pela rede. Novamente, observe que o cliente deve ter dados de controle visual suficientes para o espaço localizar a âncora com êxito; Se não funcionar imediatamente, tente percorrer um tempo. Se ainda não funcionar, faça com que o servidor envie mais âncoras e use as comunicações de rede para concordar em uma que funcione para o cliente. você pode experimentar isso baixando o HolographicSpatialAnchorTransferSample, configurando seus IPs de cliente e servidor e implantando-os em dispositivos de HoloLens de cliente e servidor.
 
 ## <a name="see-also"></a>Confira também
 * [Biblioteca de padrões paralelos (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)

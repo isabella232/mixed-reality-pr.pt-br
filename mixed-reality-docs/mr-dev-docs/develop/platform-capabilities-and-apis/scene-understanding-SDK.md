@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Compreensão de cena, mapeamento espacial, Windows Mixed Reality, Unity
-ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: 1b93f3137e1ac1309ee56e974a0fa33608114f16dfb65a13e369490f45d6beb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449725"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193630"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Visão geral do SDK de compreensão de cena
 
@@ -25,7 +25,7 @@ O SDK SceneUnderstanding pode ser baixado por meio da [Ferramenta de Recursos de
 
 Para a versão 0.5.2022-rc e posterior, o Scene Understanding dá suporte a projeções de linguagem para C# e C++, permitindo que aplicativos desenvolvam aplicativos para plataformas Win32 ou UWP. A partir desta versão, o SceneUnderstanding dá suporte ao unity no editor, que é usado exclusivamente para se comunicar com o HoloLens2. 
 
-SceneUnderstanding requer SDK do Windows versão 18362 ou superior. 
+SceneUnderstanding requer Windows SDK versão 18362 ou superior. 
 
 ## <a name="conceptual-overview"></a>Visão geral conceitual
 
@@ -113,9 +113,9 @@ SceneObjects pode ter qualquer um dos seguintes:
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>Descrição</th>
+<th>SceneObjectKind</th> <th>Description</th>
 </tr>
-<tr><td>Segundo plano</td><td>O SceneObject é conhecido por não <b>ser</b> um dos outros tipos reconhecidos de objeto de cena. Essa classe não deve ser confundida com Desconhecido, em que Background é conhecido por não ser parede/piso/forro etc.... embora desconhecido ainda não seja categorizado.</b></td></tr>
+<tr><td>Tela de fundo</td><td>O SceneObject é conhecido por não <b>ser</b> um dos outros tipos reconhecidos de objeto de cena. Essa classe não deve ser confundida com Desconhecido, em que Background é conhecido por não ser parede/piso/forro etc.... embora desconhecido ainda não seja categorizado.</b></td></tr>
 <tr><td>Parede</td><td>Uma parede física. Supõe-se que as paredes sejam estruturas ambientais removíveis.</td></tr>
 <tr><td>Piso</td><td>Os pisos são qualquer superfície na qual se pode andar. Observação: os pisos não são pisos. Observe também que os pisos assumem qualquer superfície walkable e, portanto, não há suposição explícita de um piso singular. Estruturas de vários níveis, rampas etc.... deve todos classificar como andar.</td></tr>
 <tr><td>Ceiling</td><td>A superfície superior de uma sala.</td></tr>
@@ -133,7 +133,7 @@ Um SceneMesh é um SceneComponent que aproxima a geometria de objetos geométric
 
 Espera-se que todas as malhas produzidas pelo Entendimento de Cena retornem malhas em um Right-Handed de coordenadas usando a ordem de vento no sentido horário. 
 
-Observação: os builds do sistema operacional anteriores a .191105 podem ter um bug conhecido em que as malhas "World" estavam retornando em uma ordem de Counter-Clockwise que foi corrigida posteriormente.
+Observação: builds do sistema operacional anteriores ao .191105 podem ter um bug conhecido em que as malhas "World" estavam retornando em uma ordem Counter-Clockwise sinuoso, que foi corrigida posteriormente.
 
 ### <a name="scenequad"></a>SceneQuad
 
@@ -264,7 +264,7 @@ Observe que é o SceneObject que tem a transformação relativa à origem da cen
 
 O Entendimento de Cena fez uma tentativa deliberada de alinhar-se com representações de cena 3D tradicionais ao lidar com as transformação. Portanto, cada cena é limitada a um único sistema de coordenadas, assim como as representações ambientais 3D mais comuns. Cada SceneObjects fornece sua localização em relação a esse sistema de coordenadas. Se seu aplicativo estiver lidando com Cenas que estendem o limite do que uma única origem fornece, ele poderá ancorar SceneObjects a SpatialAnchors ou gerar várias cenas e mesclá-las, mas, para simplificar, pressupomos que as cenas de water watereger existam em sua própria origem localizada por um NodeId definido por Scene.OriginSpatialGraphNodeId.
 
-O código do Unity a seguir, por exemplo, mostra como usar o Windows Perception e as APIs do Unity para alinhar sistemas de coordenadas juntos. Consulte [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) para obter detalhes sobre as APIs do Windows Perception e objetos nativos de Realidade Misturada no [Unity](/windows/mixed-reality/unity-xrdevice-advanced) para obter detalhes sobre como obter um SpatialCoordinateSystem que corresponde à origem do mundo do Unity.
+O código do Unity a seguir, por exemplo, mostra como usar Windows Perception e APIs do Unity para alinhar sistemas de coordenadas juntos. Consulte [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) para obter detalhes sobre as APIs de Percepção do Windows e objetos nativos de Realidade Misturada no [Unity](/windows/mixed-reality/unity-xrdevice-advanced) para obter detalhes sobre como obter um SpatialCoordinateSystem que corresponde à origem do mundo do Unity.
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

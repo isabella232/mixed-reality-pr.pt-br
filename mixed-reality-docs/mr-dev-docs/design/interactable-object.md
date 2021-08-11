@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Realidade Misturada, Controles, interação, versões de interface do usuário, experiência do usuário, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, áudio
-ms.openlocfilehash: b25c25a6dd48bcc85a556787099734d147d18df2
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Realidade Misturada, Controles, interação, versões de interface do usuário, experiência do usuário, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, HoloLens, MRTK, Toolkit realidade misturada, áudio
+ms.openlocfilehash: 9ce682de7e400eba6ffbaccbca34065a1f09966f842cffd6853f3a064f146904
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190690"
 ---
 # <a name="interactable-object"></a>Objeto interativo
 
@@ -64,7 +64,7 @@ Para qualquer objeto que o usuário possa interagir com o olhar, o raio de mão 
 
 ---
 
-Você pode usar técnicas como realçamento ou dimensionamento para fornecer dicas visuais para o estado de entrada do usuário. Na realidade misturada, você pode encontrar exemplos de visualização de diferentes estados de entrada no menu Iniciar e com botões de barra de aplicativos. 
+Você pode usar técnicas como realçamento ou dimensionamento para fornecer dicas visuais para o estado de entrada do usuário. Na realidade misturada, você pode encontrar exemplos de visualização de diferentes estados de entrada no menu Iniciar e com botões da barra de aplicativos. 
 
 Veja a aparência desses estados em um **botão holográfico:**
 
@@ -89,7 +89,7 @@ Veja a aparência desses estados em um **botão holográfico:**
 
 ### <a name="near-interactions-direct"></a>Interações próximas (diretas) 
 
-O HoloLens 2 dá suporte à entrada de acompanhamento de mão articulada, que permite interagir com objetos. Sem comentários acráticos e percepção de profundidade perfeita, pode ser difícil dizer o quão distante sua mão está de um objeto ou se você está tocando nele. É importante fornecer dicas visuais suficientes para comunicar o estado do objeto, em particular o estado de suas mãos com base nesse objeto.
+HoloLens 2 dá suporte à entrada de acompanhamento de mão articulada, que permite interagir com objetos. Sem comentários acráticos e percepção de profundidade perfeita, pode ser difícil dizer o quão distante sua mão está de um objeto ou se você está tocando nele. É importante fornecer dicas visuais suficientes para comunicar o estado do objeto, em particular o estado de suas mãos com base nesse objeto.
 
 Use comentários visuais para comunicar os seguintes estados:
 * **Padrão (Observação)**: estado ocioso padrão do objeto.
@@ -157,7 +157,7 @@ Um [botão no HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building
     :::column-end:::
     :::column:::
         ![Pressione](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
-        **Imprensa**<br>
+        **Pressione**<br>
         Mova a placa frontal.
     :::column-end:::
 :::row-end:::
@@ -168,7 +168,7 @@ Um [botão no HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building
 
 :::row:::
     :::column:::
-        ### <a name="the-ring-visual-cue-on-hololens-2br"></a>A indicação visual "anel" no HoloLens 2<br>
+        ### <a name="the-ring-visual-cue-on-hololens-2br"></a>A indicação visual "anel" HoloLens 2<br>
         No HoloLens 2, há uma indicação visual extra, que pode ajudar a percepção de profundidade do usuário. Um anel próximo à ponta do dedo aparece e é escalado para baixo à medida que a ponta do dedo se aproxima do objeto. O anel eventualmente convergirá para um ponto quando o estado pressionado for atingido. Essa governança visual ajuda o usuário a entender a distância do objeto.<br>
         <br>
         *Loop de vídeo: exemplo de comentários visuais com base na proximidade de uma caixa delimitada*
@@ -256,7 +256,7 @@ Ao criar botões para interação direta, recomendamos um tamanho mínimo maior 
 
 ---
 
-## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objeto de interação no MRTK (Kit de ferramentas de realidade misturada) para Unity
+## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>objeto de interação em MRTK (realidade misturada Toolkit) para o Unity
 
 No **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, você pode usar o script de forma a [**interagir**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) para fazer com que os objetos respondam a vários tipos de Estados de interação de entrada. Ele dá suporte a vários tipos de temas que permitem definir estados visuais controlando Propriedades de objeto, como cor, tamanho, material e sombreador.
 

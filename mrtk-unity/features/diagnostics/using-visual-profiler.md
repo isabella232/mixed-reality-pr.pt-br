@@ -1,18 +1,18 @@
 ---
-title: Usando o profiler visual
+title: Usando o criador de perfil visual
 description: documentação para usar o Visual Profiler no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5db2094b5d7354e02a9e2f06c50e4d564ea7d8d259ce31ad5a11f49a71e27839
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190917"
 ---
-# <a name="using-the-visual-profiler"></a>Usando o profiler visual
+# <a name="using-the-visual-profiler"></a>Usando o criador de perfil visual
 
 O VisualProfiler fornece uma exibição fácil de usar no aplicativo do desempenho de um aplicativo de realidade misturada. O profiler tem suporte em todas as plataformas de Toolkit realidade misturada, incluindo:
 
@@ -35,7 +35,7 @@ A interface do Visual Profiler inclui os seguintes componentes:
 - [Taxa de quadros](#frame-rate)
 - [Tempo do quadro](#frame-time)
 - [Estrutura Graph](#frame-graph)
-- [Utilização de Memória](#memory-utilization)
+- [Utilização de memória](#memory-utilization)
 
 ### <a name="frame-rate"></a>Taxa de quadros
 

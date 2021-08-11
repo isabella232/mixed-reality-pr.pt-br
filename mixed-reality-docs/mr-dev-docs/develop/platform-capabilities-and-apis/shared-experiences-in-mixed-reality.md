@@ -1,27 +1,27 @@
 ---
 title: Experiências compartilhadas em realidade misturada
-description: Os aplicativos Holographic podem compartilhar âncoras espaciais de um HoloLens para outro, permitindo que os usuários processem um holograma no mesmo local do mundo real, em vários dispositivos.
+description: os aplicativos Holographic podem compartilhar âncoras espaciais de um HoloLens para outro, permitindo que os usuários processem um holograma no mesmo lugar do mundo real, em vários dispositivos.
 author: thetuvix
 ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: experiência compartilhada, realidade misturada, holograma, âncora espacial, vários usuários, vários
-ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe738d07e57bd2f62cab8036a09ca6ab31d6544bdd9b6dacc8dde3445fa58214
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193570"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Experiências compartilhadas em realidade misturada
 
-Os hologramas não precisam permanecer privados a apenas um usuário. Os aplicativos Holographic podem compartilhar [âncoras espaciais](../../design/spatial-anchors.md) de um dispositivo HoloLens, Ios ou Android para outro, permitindo que os usuários processem um holograma no mesmo local do mundo real em vários dispositivos.
+Hologramas não precisam permanecer particulares a apenas um usuário. os aplicativos Holographic podem compartilhar [âncoras espaciais](../../design/spatial-anchors.md) de um dispositivo HoloLens, iOS ou Android para outro, permitindo que os usuários processem um holograma no mesmo local do mundo real em vários dispositivos.
 
 ## <a name="six-questions-to-define-shared-scenarios"></a>Seis perguntas para definir cenários compartilhados
 
 Antes de começar a projetar para experiências compartilhadas, é importante definir os cenários de destino. Esses cenários ajudam a esclarecer o que você está criando e estabelecem um vocabulário comum para ajudar a comparar e contrastar os recursos necessários em sua experiência. Compreender o problema principal, e os diferentes caminhos para soluções, é a chave para descobrir oportunidades inerentes a esse novo meio.
 
-Por meio de protótipos internos e explorações de nossos órgãos de parceiros de HoloLens, criamos seis perguntas para ajudá-lo a definir cenários compartilhados. Essas perguntas formam uma estrutura, não deve ser exaustiva, para ajudar a filtrar os atributos importantes dos seus cenários.
+por meio de protótipos internos e explorações de nossos HoloLens agências de parceiros, criamos seis perguntas para ajudá-lo a definir cenários compartilhados. Essas perguntas formam uma estrutura, não deve ser exaustiva, para ajudar a filtrar os atributos importantes dos seus cenários.
 
 ### <a name="1-how-are-they-sharing"></a>1. como eles estão compartilhando?
 
@@ -108,9 +108,9 @@ Hoje em dia, é provável que você veja experiências compartilhadas entre dois
 
 As respostas às perguntas acima podem ser combinadas para entender melhor seu cenário compartilhado, crystallizingndo os desafios à medida que você expandir a experiência. Para a equipe da Microsoft, isso ajudou a estabelecer um mapa de estrada para melhorar as experiências que usamos hoje, compreendendo a nuance desses problemas complexos e como aproveitar as experiências compartilhadas na realidade misturada.
 
-Por exemplo, considere um dos cenários do Skype do lançamento do HoloLens: um usuário trabalhou por meio de [como corrigir uma mudança de luz](https://www.youtube.com/watch?v=iBfzs3G8BEA) com a ajuda de um especialista localizado remotamente.
+por exemplo, considere um dos cenários de Skype da inicialização HoloLens: um usuário trabalhou [como corrigir uma mudança de luz](https://www.youtube.com/watch?v=iBfzs3G8BEA) com a ajuda de um especialista localizado remotamente.
 
-![Corrigindo uma mudança de luz com assistência por meio do Skype para o HoloLens](images/fix-a-broken-switch-with-hololens-640px.jpg)
+![corrigindo uma mudança de luz com assistência por meio de Skype para HoloLens](images/fix-a-broken-switch-with-hololens-640px.jpg)
 
 *Um especialista fornece diretrizes de **1:1** de seu computador desktop **2D** para um usuário de um dispositivo **3D, de realidade mista** . A **diretriz** é **síncrona** e os ambientes físicos são **diferentes**.*
 
@@ -141,11 +141,11 @@ Para compartilhar âncoras, use as [âncoras espaciais do Azure](/azure/spatial-
 
 * Primeiro, o usuário coloca o holograma.
 * O aplicativo cria uma [âncora espacial](../../design/spatial-anchors.md), para fixar esse holograma precisamente no mundo.
-* As âncoras podem ser compartilhadas para dispositivos de HoloLens, iOS e Android por meio de [âncoras espaciais do Azure](/azure/spatial-anchors/).
+* as âncoras podem ser compartilhadas em dispositivos HoloLens, iOS e Android por meio de [âncoras espaciais do Azure](/azure/spatial-anchors/).
 
 Com uma âncora espacial compartilhada, o aplicativo em cada dispositivo agora tem um [sistema de coordenadas comum](../../design/coordinate-systems.md) no qual eles podem inserir conteúdo. Agora o aplicativo pode garantir a posição e a orientação do holograma no mesmo local.
 
-Em dispositivos HoloLens, você também pode compartilhar âncoras offline de um dispositivo para outro.  Use os links abaixo para decidir o que é melhor para seu aplicativo.
+em dispositivos HoloLens, você também pode compartilhar âncoras offline de um dispositivo para outro.  Use os links abaixo para decidir o que é melhor para seu aplicativo.
 
 ## <a name="evaluating-tech-options"></a>Avaliando opções de tecnologia
 
@@ -157,16 +157,16 @@ Aproveite as [âncoras espaciais do Azure](/azure/spatial-anchors/) em seu aplic
 
 ## <a name="share-first-person-perspective"></a>Compartilhar perspectiva da primeira pessoa
 
-Aproveite o suporte ao Miracast interno, para usuários locais quando você tem um receptor de Miracast com suporte, como um PC ou TV, nenhum código de aplicativo adicional é necessário.
+aproveite o suporte interno a Miracast, para usuários locais quando há um receptor de Miracast com suporte, como um PC ou TV, nenhum código de aplicativo adicional é necessário.
 
-Aproveite o [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) em seu aplicativo, para usuários remotos ou quando você tiver dispositivos não Miracast que gostaria de compartilhar.  A habilitação de uma conexão WebRTC permite fluxos de áudio/vídeo 1:1 entre usuários, com um canal de dados para mensagens entre dispositivos também.  A implementação da realidade misturada otimiza para o HoloLens, fornecendo um fluxo de vídeo de captura de realidade misturada da exibição do usuário do HoloLens para outras pessoas.  Se você quiser escalar verticalmente o streaming de vídeo para vários clientes remotos, um [provedor de serviços de MCU](https://webrtcglossary.com/mcu/) (unidade de conferência do MultiPoint) normalmente será usado, como [SignalWire](https://signalwire.com/).  Uma implantação de SignalWire de um clique no Azure está disponível por meio do [FreeSwitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
+aproveite o [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) em seu aplicativo, para usuários remotos ou quando há dispositivos não Miracast que você gostaria de compartilhar.  A habilitação de uma conexão WebRTC permite fluxos de áudio/vídeo 1:1 entre usuários, com um canal de dados para mensagens entre dispositivos também.  a implementação da realidade misturada é otimizada para HoloLens, fornecendo um fluxo de vídeo de captura de realidade misturada da exibição do usuário de HoloLens para outras pessoas.  Se você quiser escalar verticalmente o streaming de vídeo para vários clientes remotos, um [provedor de serviços de MCU](https://webrtcglossary.com/mcu/) (unidade de conferência do MultiPoint) normalmente será usado, como [SignalWire](https://signalwire.com/).  Uma implantação de SignalWire de um clique no Azure está disponível por meio do [FreeSwitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
 
 > [!NOTE]
 > Observe que o SignalWire é um serviço pago e não é de propriedade/afiliado à Microsoft.
 
 ## <a name="presenter-spectator-applications-and-demos"></a>Presenter-Spectator aplicativos e demonstrações
 
-Aproveite o [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) para trazer a [funcionalidade do Spectator View](spectator-view.md) para seu aplicativo.  Habilite outros dispositivos (HL, Android, iOS e câmeras de vídeo) para ver o que o HoloLens vê de uma perspectiva diferente no mesmo local e receber atualizações de interações do usuário de HoloLens host interagindo com os hologramas.  Assista, tire fotos e grave vídeo sobre o que o host faz com os hologramas no aplicativo de sua própria perspectiva espacial com o Spectator Companion do mesmo aplicativo.
+Aproveite o [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) para trazer a [funcionalidade do Spectator View](spectator-view.md) para seu aplicativo.  habilite outros dispositivos (HL, Android, iOS e câmeras de vídeo) para ver o que a HoloLens vê de uma perspectiva diferente no mesmo local e receber atualizações de interações do host HoloLens usuário interagindo com os hologramas.  Assista, tire fotos e grave vídeo sobre o que o host faz com os hologramas no aplicativo de sua própria perspectiva espacial com o Spectator Companion do mesmo aplicativo.
 
 **Observação:** As imagens são obtidas por meio de captura de tela em dispositivos iOS/Android.
 
@@ -181,7 +181,7 @@ Comece com nosso [tutorial de aprendizado de vários usuários](../unity/tutoria
 
 As interfaces e os recursos do componente ajudarão a fornecer consistência comum e suporte robusto em vários cenários e tecnologias subjacentes.  Até lá, escolha o melhor caminho que se alinhe ao cenário que você está tentando atingir em seu aplicativo.
 
-Cenário diferente ou desejo de usar um Tech/Service diferente? Forneça comentários como problemas do GitHub no repositório correspondente, na parte inferior desta página ou entre em contato com a [margem de atraso do HoloDevelopers](https://holodevelopers.slack.com/).
+Cenário diferente ou desejo de usar um Tech/Service diferente? forneça comentários como GitHub problemas no repositório correspondente, na parte inferior desta página, ou alcance a [margem de atraso HoloDevelopers](https://holodevelopers.slack.com/).
 
 ## <a name="see-also"></a>Veja também
 
