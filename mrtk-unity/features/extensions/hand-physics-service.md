@@ -1,18 +1,18 @@
 ---
-title: Mão do serviço de física
+title: Serviço de física da mão
 description: documentação para usar o serviço de extensão de física manual no MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f54f8dabddba03bc279a090bf1c62b25656e64109b3b5671a4ed50d070445f14
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221722"
 ---
-# <a name="hand-physics-service"></a>Mão do serviço de física
+# <a name="hand-physics-service"></a>Serviço de física da mão
 
 ![Serviço de extensão de física manual](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 

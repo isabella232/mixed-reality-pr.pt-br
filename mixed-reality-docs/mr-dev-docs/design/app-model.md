@@ -1,24 +1,24 @@
 ---
 title: Modelo de aplicativo
-description: O Windows Mixed Reality usa o modelo de aplicativo fornecido pelo Plataforma Universal do Windows, um modelo e um ambiente para aplicativos modernos do Windows.
+description: Windows Mixed Reality usa o modelo de aplicativo fornecido pelo Plataforma Universal do Windows, um modelo e um ambiente para aplicativos Windows modernos.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP, modelo de aplicativo, ciclo de vida, suspensão, retomada, bloco, exibições, contratos, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, HoloLens, MRTK, kit de ferramentas de realidade misturada
-ms.openlocfilehash: 941c0f3f81596e8465157121462b4150cefd8ac2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: UWP, modelo de aplicativo, ciclo de vida, suspensão, retomada, bloco, exibições, contratos, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, HoloLens, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: 5f15f0a2516a21cd6432e7f09df7950f8d832acc77ac77056f5bf1382500024e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583209"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221876"
 ---
 # <a name="app-model"></a>Modelo de aplicativo
 
-O Windows Mixed Reality usa o modelo de aplicativo fornecido pelo [plataforma universal do Windows](/windows/uwp/get-started/) (UWP), que é um modelo e ambiente para aplicativos modernos do Windows. O modelo de aplicativo UWP define como os aplicativos são instalados com segurança, atualizados, com controle de versão e removidos completamente. Ele também governa o ciclo de vida do aplicativo-como os aplicativos são executados, suspensos e interrompidos e como eles podem preservar o estado. Por fim, o modelo de aplicativo abrange a integração e a interação com o sistema operacional, arquivos e outros aplicativos.
+Windows Mixed Reality usa o modelo de aplicativo fornecido pelo [Plataforma Universal do Windows](/windows/uwp/get-started/) (UWP), que é um modelo e um ambiente para aplicativos Windows modernos. O modelo de aplicativo UWP define como os aplicativos são instalados com segurança, atualizados, com controle de versão e removidos completamente. Ele também governa o ciclo de vida do aplicativo-como os aplicativos são executados, suspensos e interrompidos e como eles podem preservar o estado. Por fim, o modelo de aplicativo abrange a integração e a interação com o sistema operacional, arquivos e outros aplicativos.
 
-![aplicativos 2D organizados no Windows Mixed Reality Home em uma área de café](images/20160112-055908-hololens-500px.jpg)<br>
-*Aplicativos com uma exibição 2D organizada na página inicial do Windows Mixed Reality*
+![aplicativos 2d organizados no Windows Mixed Reality página inicial em uma área de café](images/20160112-055908-hololens-500px.jpg)<br>
+*aplicativos com uma exibição 2d organizada no Windows Mixed Reality página inicial*
 
 ## <a name="app-lifecycle"></a>Ciclo de vida do app
 
@@ -26,12 +26,12 @@ O ciclo de vida de um aplicativo de realidade misturada envolve conceitos de apl
 
 ### <a name="placement-is-launch"></a>O posicionamento é iniciado
 
-Cada aplicativo é iniciado em realidade misturada colocando um bloco de aplicativo (apenas um [bloco secundário do Windows](/uwp/api/Windows.UI.StartScreen.SecondaryTile)) na [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). Esses blocos de aplicativo, no posicionamento, começarão a executar o aplicativo. Esses blocos de aplicativo persistem e permanecem em seu local posicionado, agindo como iniciadores para sempre que você quiser voltar ao aplicativo.
+cada aplicativo é iniciado em realidade misturada colocando um bloco do aplicativo (apenas um [bloco Windows secundário](/uwp/api/Windows.UI.StartScreen.SecondaryTile)) na [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md). Esses blocos de aplicativo, no posicionamento, começarão a executar o aplicativo. Esses blocos de aplicativo persistem e permanecem em seu local posicionado, agindo como iniciadores para sempre que você quiser voltar ao aplicativo.
 
 ![O posicionamento coloca um bloco secundário no mundo](images/slide1-600px.png)<br>
 *O posicionamento coloca um bloco secundário no mundo*
 
-Assim que o posicionamento for concluído (a menos que o posicionamento seja iniciado por um [aplicativo para](app-model.md#protocols) inicialização do aplicativo), o aplicativo começará a ser iniciado. A realidade mista do Windows pode executar um número limitado de aplicativos ao mesmo tempo. Assim que você posicionar e iniciar um aplicativo, outros aplicativos ativos poderão ser suspensos. Os aplicativos suspensos deixam uma captura de tela do último estado do aplicativo em seu bloco de aplicativo onde quer que você o colocou. Para obter mais informações sobre como lidar com currículo e outros eventos de ciclo de vida, consulte [ciclo de vida do aplicativo UWP do Windows 10](/windows/uwp/launch-resume/app-lifecycle).
+Assim que o posicionamento for concluído (a menos que o posicionamento seja iniciado por um [aplicativo para](app-model.md#protocols) inicialização do aplicativo), o aplicativo começará a ser iniciado. Windows Mixed Reality pode executar um número limitado de aplicativos ao mesmo tempo. Assim que você posicionar e iniciar um aplicativo, outros aplicativos ativos poderão ser suspensos. Os aplicativos suspensos deixam uma captura de tela do último estado do aplicativo em seu bloco de aplicativo onde quer que você o colocou. para obter mais informações sobre como lidar com o currículo e outros eventos do ciclo de vida, consulte [Windows 10 ciclo de vida do aplicativo UWP](/windows/uwp/launch-resume/app-lifecycle).
 
 ![Depois de colocar um bloco, o aplicativo inicia a execução ](images/slide2-500px.png) ![ do diagrama de estado para o aplicativo em execução, suspenso ou não em execução](images/ic576232-500px.png)<br>
 *Esquerda: depois de colocar um bloco, o aplicativo começa a ser executado. Direita: diagrama de estado para o aplicativo em execução, suspenso ou não em execução.*
@@ -42,26 +42,26 @@ Quando você remove um bloco do aplicativo colocado do mundo, os processos subja
 
 ### <a name="app-suspensiontermination"></a>Suspensão/encerramento do aplicativo
 
-Na [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md), o usuário pode criar vários pontos de entrada para um aplicativo iniciando seu aplicativo no menu iniciar e colocando o bloco do aplicativo no mundo. Cada bloco de aplicativo se comporta como um ponto de entrada diferente e tem uma instância de bloco separada no sistema. Uma consulta para [SecondaryTile. FindAllAsync](/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) resultará em um **SecondaryTile** para cada instância do aplicativo.
+na [página inicial do Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md), o usuário pode criar vários pontos de entrada para um aplicativo iniciando o aplicativo na menu Iniciar e colocando o bloco do aplicativo no mundo. Cada bloco de aplicativo se comporta como um ponto de entrada diferente e tem uma instância de bloco separada no sistema. Uma consulta para [SecondaryTile. FindAllAsync](/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) resultará em um **SecondaryTile** para cada instância do aplicativo.
 
 Quando um aplicativo UWP é suspenso, uma captura de tela é tirada do estado atual.
 
 ![Capturas de tela são mostradas para aplicativos suspensos](images/slide9-800px.png)<br>
 *Capturas de tela são mostradas para aplicativos suspensos*
 
-Uma diferença importante de outros shells do Windows 10 é como o aplicativo é informado de uma ativação de instância de aplicativo por meio dos eventos [CoreApplication. retomar](/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_Resuming) e [CoreWindow. Activated](/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Activated) .
+uma diferença importante de outros shells Windows 10 é como o aplicativo é informado de uma ativação de instância de aplicativo por meio dos eventos [CoreApplication. retomar](/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_Resuming) e [CoreWindow. Activated](/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Activated) .
 
 |  Cenário |  Continuando  |  Ativado | 
 |----------|----------|----------|
-|  Iniciar nova instância do aplicativo no menu iniciar  |   |  **Ativado** com uma nova [tileid](/uwp/api/windows.ui.startscreen.secondarytile#Windows_UI_StartScreen_SecondaryTile_TileId) | 
-|  Iniciar a segunda instância do aplicativo no menu iniciar  |   |  **Ativado** com uma nova **tileid** | 
+|  iniciar nova instância do aplicativo no menu Iniciar  |   |  **Ativado** com uma nova [tileid](/uwp/api/windows.ui.startscreen.secondarytile#Windows_UI_StartScreen_SecondaryTile_TileId) | 
+|  iniciar a segunda instância do aplicativo no menu Iniciar  |   |  **Ativado** com uma nova **tileid** | 
 |  Selecione a instância do aplicativo que não está ativa no momento  |   |  **Ativado** com o **tileid** associado à instância | 
 |  Selecione um aplicativo diferente e, em seguida, selecione a instância ativa anteriormente  |  **Retomando** o gerado  |  | 
 |  Selecione um aplicativo diferente e, em seguida, selecione a instância que estava inativa anteriormente  |  **Retomando** o gerado  |  Em seguida, **ativado** com o **tileid** associado à instância | 
 
 ### <a name="extended-execution"></a>Execução estendida
 
-Às vezes, seu aplicativo precisa continuar a trabalhar em segundo plano ou tocar áudio. [As tarefas em segundo plano](/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) estão disponíveis no HoloLens.
+Às vezes, seu aplicativo precisa continuar a trabalhar em segundo plano ou tocar áudio. [As tarefas em segundo plano](/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) estão disponíveis em HoloLens.
 
 ![Os aplicativos podem ser executados em segundo plano](images/slide10-800px.png)<br>
 *Os aplicativos podem ser executados em segundo plano*
@@ -70,7 +70,7 @@ Uma diferença importante de outros shells do Windows 10 é como o aplicativo é
 
 Quando o aplicativo é ativado, você pode escolher o tipo de exibição que deseja exibir. Para o **CoreApplication** de um aplicativo, sempre há uma [exibição de aplicativo](/uwp/api/Windows.UI.ViewManagement.ApplicationView) primário e qualquer número de exibições de aplicativo adicionais que você gostaria de criar. Na área de trabalho, você pode considerar uma exibição de aplicativo como uma janela. Nossos modelos de aplicativos de realidade misturada criam um projeto do Unity em que a exibição do aplicativo primário é [imersiva](app-views.md). 
 
-Seu aplicativo pode criar uma exibição de aplicativo 2D extra usando tecnologia como XAML, para usar recursos do Windows 10, como compra no aplicativo. Se seu aplicativo for iniciado como um aplicativo UWP para outros dispositivos Windows 10, seu modo de exibição principal será 2D. No entanto, você pode "se acender" em realidade misturada adicionando outra exibição de aplicativo que seja de imersão para mostrar uma experiência volumetrically. Imagine criar um aplicativo de visualizador de fotos em XAML em que o botão de apresentação de slides mudou para uma exibição de aplicativo imersiva que visitou fotos do aplicativo em todo o mundo e superfícies.
+seu aplicativo pode criar uma exibição de aplicativo 2d extra usando tecnologia como XAML, para usar Windows 10 recursos como compra no aplicativo. se seu aplicativo for iniciado como um aplicativo UWP para outros dispositivos Windows 10, sua exibição primária será 2d. No entanto, você pode "se acender" em realidade misturada adicionando outra exibição de aplicativo que seja de imersão para mostrar uma experiência volumetrically. Imagine criar um aplicativo de visualizador de fotos em XAML em que o botão de apresentação de slides mudou para uma exibição de aplicativo imersiva que visitou fotos do aplicativo no mundo todo e as superfícies.
 
 ![O aplicativo em execução pode ter uma exibição 2D ou uma exibição imersiva](images/slide3-800px.png)<br>
 *O aplicativo em execução pode ter uma exibição 2D ou uma exibição imersiva*
@@ -86,7 +86,7 @@ Um aplicativo que começa com uma exibição 2D no monitor da área de trabalho 
 ![Os aplicativos em execução na exibição imersiva são os únicos visíveis](images/slide4-800px.png)<br>
 *Um aplicativo em execução em uma exibição imersiva é o único visível*
 
-### <a name="2d-view-in-the-windows-mixed-reality-home"></a>exibição 2D na página inicial do Windows Mixed Reality
+### <a name="2d-view-in-the-windows-mixed-reality-home"></a>exibição 2d no Windows Mixed Reality página inicial
 
 Qualquer coisa que não seja uma exibição imersiva é renderizada como uma exibição 2D em seu mundo.
 
@@ -97,7 +97,7 @@ Um aplicativo pode ter exibições 2D no monitor da área de trabalho e no heads
 
 ### <a name="placement-of-additional-app-tiles"></a>Posicionamento de blocos de aplicativo adicionais
 
-Você pode colocar tantos aplicativos com uma exibição 2D em seu mundo quanto desejar com as [APIs de bloco secundárias](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles). Esses blocos "fixados" aparecerão como telas de abertura que os usuários devem posicionar e, posteriormente, poderão usar para iniciar seu aplicativo. Atualmente, a realidade mista do Windows não dá suporte à renderização de qualquer conteúdo de bloco 2D como blocos dinâmicos.
+Você pode colocar tantos aplicativos com uma exibição 2D em seu mundo quanto desejar com as [APIs de bloco secundárias](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles). Esses blocos "fixados" aparecerão como telas de abertura que os usuários devem posicionar e, posteriormente, poderão usar para iniciar seu aplicativo. no momento, o Windows Mixed Reality não dá suporte à renderização de qualquer conteúdo de bloco 2d como blocos dinâmicos.
 
 ![Os aplicativos podem ter vários posicionamentos usando blocos secundários](images/slide6-800px.png)<br>
 *Os aplicativos podem ter vários posicionamentos usando blocos secundários*
@@ -116,7 +116,7 @@ Use [CoreApplication. CreateNewView](/uwp/api/Windows.ApplicationModel.Core.Core
 >* Você precisará **SwitchAsync** de volta ao modo de exibição XAML se precisar iniciar um teclado virtual ou desejar ativar outro aplicativo.
 
 ![Os aplicativos podem alternar entre exibições 2D e exibições ](images/slide7-600px.png) ![ de imersão quando um aplicativo entra em uma exibição imersiva, o mundo misto e outros aplicativos desaparecem](images/slide8-600px.png)<br>
-*À esquerda: os aplicativos podem alternar entre exibição 2D e exibição de imersão. Certo: quando um aplicativo entra em uma exibição de imersão, o Windows Mixed Reality Home e outros aplicativos desaparecem.*
+*À esquerda: os aplicativos podem alternar entre exibição 2D e exibição de imersão. certo: quando um aplicativo entra em uma exibição de imersão, a Windows Mixed Reality página inicial e outros aplicativos desaparecem.*
 
 #### <a name="switching-from-the-immersive-view-back-to-a-keyboard-xaml-view"></a>Alternando da exibição de imersão de volta para um modo de exibição de XAML do teclado
 
@@ -136,20 +136,20 @@ exibições de aplicativo 2D sempre aparecem em um Slate virtual fixo. Isso faz 
 
 ## <a name="app-tiles"></a>Blocos de aplicativo
 
-O menu iniciar usa o bloco pequeno padrão e o bloco médio para Pins e a lista **todos os aplicativos** em realidade misturada. 
+o menu Iniciar usa o bloco pequeno padrão e o bloco médio para pins e a lista **todos os aplicativos** em realidade misturada. 
 
-![O menu Iniciar para a realidade mista do Windows](images/start-500px.png)<br>
-*O menu Iniciar para a realidade mista do Windows*
+![o menu Iniciar para Windows Mixed Reality](images/start-500px.png)<br>
+*o menu Iniciar para Windows Mixed Reality*
 
 ## <a name="app-to-app-interactions"></a>Interações entre aplicativos
 
-Ao criar aplicativos, você tem acesso ao aplicativo avançado para mecanismos de comunicação de aplicativo disponíveis no Windows 10. Muitas das novas APIs de protocolo e registros de arquivo funcionam perfeitamente no HoloLens para habilitar a inicialização e a comunicação do aplicativo. 
+Ao criar aplicativos, você tem acesso ao aplicativo avançado para mecanismos de comunicação de aplicativo disponíveis em Windows 10. muitas das novas APIs de protocolo e registros de arquivo funcionam perfeitamente no HoloLens para habilitar a inicialização e a comunicação do aplicativo. 
 
 Para headsets de área de trabalho, o aplicativo associado a uma determinada extensão de arquivo ou protocolo pode ser um aplicativo Win32 que só pode aparecer no monitor da área de trabalho ou no Tablet desktop.
 
 ### <a name="protocols"></a>Protocolos
 
-O HoloLens dá suporte ao aplicativo para iniciar por meio do [Windows.System. APIs do iniciador](/uwp/api/Windows.System.Launcher).
+HoloLens dá suporte ao aplicativo para iniciar o aplicativo por meio do [Windows.System. APIs do iniciador](/uwp/api/Windows.System.Launcher).
 
 Há algumas coisas a serem consideradas ao iniciar outro aplicativo:
 
@@ -157,26 +157,26 @@ Há algumas coisas a serem consideradas ao iniciar outro aplicativo:
 
 * Ao fazer uma inicialização modal, como por meio de [LaunchUriForResultsAsync](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_), o aplicativo modal é colocado na parte superior da janela.
 
-* A realidade mista do Windows não pode sobrepor aplicativos sobre exibições exclusivas. Para mostrar o aplicativo iniciado, o Windows leva o usuário de volta ao mundo para exibir o aplicativo.
+* Windows Mixed Reality não pode sobrepor aplicativos sobre exibições exclusivas. para mostrar o aplicativo iniciado, Windows leva o usuário de volta ao mundo para exibir o aplicativo.
 
 ### <a name="file-pickers"></a>Seletores de arquivos
 
-O HoloLens dá suporte a contratos [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) e [FileSavePicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker) . No entanto, nenhum aplicativo vem pré-instalado que atende aos contratos de seletor de arquivo. Esses aplicativos – OneDrive, por exemplo, podem ser instalados por meio do Microsoft Store.
+HoloLens dá suporte a contratos [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) e [FileSavePicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker) . No entanto, nenhum aplicativo vem pré-instalado que atende aos contratos de seletor de arquivo. esses aplicativos – OneDrive, por exemplo, podem ser instalados a partir do Microsoft Store.
 
 Se você tiver mais de um aplicativo de seletor de arquivos instalado, não verá nenhuma interface do usuário de desambiguação para escolher qual aplicativo será iniciado. Em vez disso, o primeiro seletor de arquivo instalado será escolhido. Ao salvar um arquivo, o nome de arquivo é gerado, o que inclui o carimbo de data/hora. Isso não pode ser alterado pelo usuário.
 
 Por padrão, as seguintes extensões têm suporte localmente:
 
-|  Aplicativo  |  Extensões do | 
+|  Aplicativo  |  Extensões | 
 |----------|----------|
 |  Fotos  |  BMP, GIF, jpg, png, AVI, MOV, MP4, WMV | 
 |  Microsoft Edge  |  htm, HTML, PDF, SVG, XML | 
 
-### <a name="app-contracts-and-windows-mixed-reality-extensions"></a>Contratos de aplicativo e extensões de realidade mista do Windows
+### <a name="app-contracts-and-windows-mixed-reality-extensions"></a>contratos de aplicativo e extensões de Windows Mixed Reality
 
-Os contratos de aplicativo e os pontos de extensão permitem que você registre seu aplicativo para aproveitar os recursos mais aprofundados do sistema operacional, como o tratamento de uma extensão de arquivo ou o uso de tarefas em segundo plano. Esta é uma lista dos contratos e pontos de extensão com suporte e sem suporte no HoloLens.
+Os contratos de aplicativo e os pontos de extensão permitem que você registre seu aplicativo para aproveitar os recursos mais aprofundados do sistema operacional, como o tratamento de uma extensão de arquivo ou o uso de tarefas em segundo plano. Esta é uma lista dos contratos e pontos de extensão com e sem suporte no HoloLens.
 
-|  Contrato ou extensão  |  Compatível? | 
+|  Contrato ou extensão  |  Com suporte? | 
 |----------|----------|
 | [Provedor de imagens de conta (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#account_picture_provider) | Sem suporte | 
 | [Alarme](/previous-versions/windows/apps/hh464906(v=win.10)#alarm) | Sem suporte | 
@@ -184,30 +184,30 @@ Os contratos de aplicativo e os pontos de extensão permitem que você registre 
 | [Provedor de compromissos](/previous-versions/windows/apps/hh464906(v=win.10)#appointmnets_provider) | Sem suporte | 
 | [Reprodução automática (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#autoplay) | Sem suporte | 
 | [Tarefas em segundo plano (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#background_tasts) | Com suporte parcial (nem todos os gatilhos funcionam) | 
-| [Atualizar tarefa (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#update_task) | Com suporte | 
-| [Contrato de atualizador de arquivo em cache](/previous-versions/windows/apps/hh464906(v=win.10)#cached_file_updater) | Com suporte | 
+| [Atualizar tarefa (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#update_task) | Suportado | 
+| [Contrato de atualizador de arquivo em cache](/previous-versions/windows/apps/hh464906(v=win.10)#cached_file_updater) | Suportado | 
 | [Configurações da câmera (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#camera_settings) | Sem suporte | 
 | [Protocolo de discagem](/previous-versions/windows/apps/hh464906(v=win.10)#dial_protocol) | Sem suporte | 
-| [Ativação de arquivo (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#file_activation) | Com suporte | 
-| [Contrato do seletor de abertura de arquivo](/previous-versions/windows/apps/hh464906(v=win.10)#file_open_picker_contract) | Com suporte | 
-| [Contrato do seletor de salvamento de arquivo](/previous-versions/windows/apps/hh464906(v=win.10)#file_save_picker_contract) | Com suporte | 
+| [Ativação de arquivo (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#file_activation) | Suportado | 
+| [Contrato do seletor de abertura de arquivo](/previous-versions/windows/apps/hh464906(v=win.10)#file_open_picker_contract) | Suportado | 
+| [Contrato do seletor de salvamento de arquivo](/previous-versions/windows/apps/hh464906(v=win.10)#file_save_picker_contract) | Suportado | 
 | [Chamada de tela de bloqueio](/previous-versions/windows/apps/hh464906(v=win.10)#lock_screen_call) | Sem suporte | 
 | [Reprodução de mídia](/previous-versions/windows/apps/hh464906(v=win.10)#media_playback) | Sem suporte | 
 | [Participar do contrato](/previous-versions/windows/apps/hh464906(v=win.10)#playto_contract) | Sem suporte | 
 | [Tarefa de configuração pré-instalada](/previous-versions/windows/apps/hh464906(v=win.10)#preinstalled_config_task) | Sem suporte | 
-| [Imprimir fluxo de trabalho 3D](/previous-versions/windows/apps/hh464906(v=win.10)#print_3d_workflow) | Com suporte | 
+| [Imprimir fluxo de trabalho 3D](/previous-versions/windows/apps/hh464906(v=win.10)#print_3d_workflow) | Suportado | 
 | [Configurações de tarefa de impressão (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#print_task_settings) | Sem suporte | 
-| [Ativação de URI (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#protocol_activation) | Com suporte | 
+| [Ativação de URI (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#protocol_activation) | Suportado | 
 | [Inicialização restrita](/previous-versions/windows/apps/hh464906(v=win.10)#restricted_launch) | Sem suporte | 
 | [Pesquisar contrato](/previous-versions/windows/apps/hh464906(v=win.10)#search_contract) | Sem suporte | 
-| [Contrato de configurações](/previous-versions/windows/apps/hh464906(v=win.10)#settings_contract) | Sem suporte | 
+| [contrato de Configurações](/previous-versions/windows/apps/hh464906(v=win.10)#settings_contract) | Sem suporte | 
 | [Compartilhar contrato](/previous-versions/windows/apps/hh464906(v=win.10)#share_contract) | Sem suporte | 
-| [SSL/certificados (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#ssl_certificates) | Com suporte | 
-| [Provedor de conta da Web](/previous-versions/windows/apps/hh464906(v=win.10)#web_account_provider) | Com suporte | 
+| [SSL/certificados (extensão)](/previous-versions/windows/apps/hh464906(v=win.10)#ssl_certificates) | Suportado | 
+| [Provedor de conta da Web](/previous-versions/windows/apps/hh464906(v=win.10)#web_account_provider) | Suportado | 
 
 ## <a name="app-file-storage"></a>Armazenamento de arquivos do aplicativo
 
-Todo o armazenamento é por meio do [namespace Windows. Storage](/uwp/api/Windows.Storage). O HoloLens não dá suporte à sincronização/roaming de armazenamento de aplicativos. Para obter mais informações, confira a documentação abaixo:
+todo o armazenamento é por meio do [namespace Windows. Armazenamento](/uwp/api/Windows.Storage). HoloLens não dá suporte à sincronização/roaming de armazenamento de aplicativos. Para obter mais informações, confira a documentação abaixo:
 
 * [Arquivos, pastas e bibliotecas](/windows/uwp/files/index)
 * [Armazene e recupere configurações e outros dados de aplicativo](/windows/uwp/design/app-settings/store-and-retrieve-app-data)
@@ -218,7 +218,7 @@ Consulte [KnownFolders](/uwp/api/Windows.Storage.KnownFolders) para obter os det
 
 <table>
 <tr>
-<th> Propriedade</th><th> Com suporte no HoloLens</th><th> Com suporte em headsets de imersão</th><th> Descrição</th>
+<th> Propriedade</th><th> Com suporte no HoloLens</th><th> Com suporte em headsets de imersão</th><th> Description</th>
 </tr><tr>
 <td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_AppCaptures">AppCaptures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Obtém a pasta capturas de aplicativo.</td>
 </tr><tr>
@@ -250,11 +250,11 @@ Consulte [KnownFolders](/uwp/api/Windows.Storage.KnownFolders) para obter os det
 
 ## <a name="app-package"></a>Pacote do Aplicativo
 
-Com o Windows 10, você não visa mais um sistema operacional, mas sim [direcionar seu aplicativo para uma ou mais famílias de dispositivos](/windows/uwp/get-started/universal-application-platform-guide#device-families). Uma família de dispositivos identifica as APIs, as características do sistema e os comportamentos esperados entre dispositivos na família de dispositivos. Ele também determina o conjunto de dispositivos nos quais seu aplicativo pode ser instalado do [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
+com o Windows 10, você não visa mais um sistema operacional, mas sim [direcionar seu aplicativo para uma ou mais famílias de dispositivos](/windows/uwp/get-started/universal-application-platform-guide#device-families). Uma família de dispositivos identifica as APIs, as características do sistema e os comportamentos esperados entre dispositivos na família de dispositivos. Ele também determina o conjunto de dispositivos nos quais seu aplicativo pode ser instalado do [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
 
-* Para direcionar os headsets da área de trabalho e o HoloLens, direcione seu aplicativo para as **janelas. Família de dispositivos universais** .
-* Para direcionar apenas headsets de área de trabalho, direcione seu aplicativo para a família de dispositivos **Windows. desktop** .
-* Para direcionar apenas o HoloLens, direcione seu aplicativo para a família de dispositivos **Windows. Holographic** .
+* para direcionar os headsets de área de trabalho e HoloLens, direcione seu aplicativo para a **Windows. Família de dispositivos universais** .
+* Para direcionar apenas headsets de área de trabalho, direcione seu aplicativo para a **Windows.** Família de dispositivos de desktop.
+* para direcionar apenas HoloLens, direcione seu aplicativo para a **Windows.** Família de dispositivos Holographic.
 
 ## <a name="see-also"></a>Confira também
 

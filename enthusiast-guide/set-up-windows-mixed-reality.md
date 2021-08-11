@@ -1,132 +1,132 @@
 ---
 title: Configurar o Windows Mixed Reality
-description: Como configurar seus controladores de movimento, fala e áudio do Windows Mixed Reality e definir o limite da sala para um espaço de reprodução seguro.
+description: Como configurar seus controladores Windows Mixed Reality de movimento, fala e áudio e definir o limite da sala para um espaço de reprodução seguro.
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, Sr, introdução, instalação, controlador de movimento, controlador, fala, áudio, encaixado, posição, limites, drivers gráficos, Microsoft Edge, Chromium
-ms.openlocfilehash: a08982112fea4d1b67b690233ae387b76afc2f90
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, get started, setup, motion controller, controller, speech, audio, seated, standing, boundary, graphics drivers, Microsoft Edge, chromium
+ms.openlocfilehash: 436818ee662f9beb1c445ea5b22c5d168bb4142a7b49a116a4f5fa138e3a5595
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221032"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurar o Windows Mixed Reality
 
 ## <a name="get-ready"></a>Prepare-se
 
-Para executar a realidade mista do Windows, você precisará de:
+Para executar Windows Mixed Reality, você precisará de:
 
-* Um headset de imersão de realidade mista compatível. [Saiba mais](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
-* Um [PC pronto para a realidade mista do Windows](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) com as portas corretas para o headset
-* [Controladores](controllers-in-wmr.md)de movimento, um controlador Xbox ou um mouse e um teclado
-* Fones de ouvido com um MIC (se o headset não os tiver interno)
+* Um headset imersivo de realidade misturada compatível. [Saiba mais](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* Um [Windows Mixed Reality pronto para uso](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) com as portas corretas para o headset
+* Controladores [de movimento](controllers-in-wmr.md), um controlador Xbox ou um mouse e teclado
+* Fones de ouvido com um microfone (se o headset não os tiver integrado)
 * Um espaço grande e aberto
 
 ## <a name="get-set"></a>Obter conjunto
 
-Prepare seu espaço (incluindo o espaço de sobrecarga). Verifique se não há obstáculos, riscos ou itens frágeis na área que você usará. Não configure na parte superior de uma escada ou em um ventilador de teto extra-baixo. Remova qualquer breakables ou obstáculos da área e certifique-se de que todos os usuários do headset leiam e compreendam as diretrizes de segurança.
+Prepare seu espaço (incluindo o espaço de sobrecarga). Certifique-se de que não haja obstáculos, riscos ou itens frágeis na área que você vai usar. Não configurar na parte superior de um ventilador ou sob um ventilador de teto baixo extra. Remova quaisquer obstáculos ou quebradores da área e certifique-se de que todos os usuários do headset leiam e compreendam as diretrizes de segurança.
 
-Quando o seu espaço estiver pronto, conecte seu headset, mas não o coloque no momento — primeiro, precisaremos fazer alguma configuração em seu PC. Executaremos uma verificação de PC, baixaremos alguns softwares, conectaremos seus controladores e criaremos um [limite](boundary-questions.md) para ajudá-lo a evitar obstáculos.
+Quando o espaço estiver pronto, conecte o headset, mas não coloque-o ainda– primeiro, precisamos fazer alguma configuração em seu computador. Executaremos uma verificação de pc, baixaremos algum software, conectaremos seus controladores e criaremos um limite para ajudá-lo [a](boundary-questions.md) evitar obstáculos.
 
-Em seguida, vem a parte divertida — Coloque em seu headset e insira o mundo misto. A Cortana estará aguardando para você realizar um tour. Divirta-se!
+Em seguida, vem a parte divertida– coloque o headset e entre no mundo misto. Cortana estará esperando para fazer um tour. Divirta-se!
 
 ## <a name="go"></a>Vá!
 
-Quando o seu espaço estiver pronto, conecte seu headset, mas não o coloque no momento — primeiro, precisaremos fazer alguma configuração em seu PC. Executaremos uma verificação de PC, baixaremos alguns softwares, conectaremos seus controladores e criaremos um [limite](boundary-questions.md) para ajudá-lo a evitar obstáculos.
+Quando o espaço estiver pronto, conecte o headset, mas não coloque-o ainda– primeiro, precisamos fazer alguma configuração em seu computador. Executaremos uma verificação de pc, baixaremos algum software, conectaremos seus controladores e criaremos um limite para ajudá-lo [a](boundary-questions.md) evitar obstáculos.
 
-Em seguida, vem a parte divertida — Coloque em seu headset e insira o mundo misto. A Cortana estará aguardando para você realizar um tour. Divirta-se!
+Em seguida, vem a parte divertida– coloque o headset e entre no mundo misto. Cortana estará esperando para fazer um tour. Divirta-se!
 
-## <a name="get-familiar-with-your-motion-controllers"></a>Familiarize-se com seus controladores de movimento
+## <a name="get-familiar-with-your-motion-controllers"></a>Familiarizar-se com seus controladores de movimento
 
-Se o seu headset tiver um rádio interno, os controladores que acompanham o headset serão emparelhados com ele na fábrica. Quando você liga pela primeira vez seus novos controladores e headsets, eles já estarão emparelhados.
+Se o headset tiver um rádio interno, os controladores que vêm com o headset serão emparelhados com ele na fábrica. Quando você ativar os novos controladores e o headset pela primeira vez, eles já estarão emparelhados.
 
-Se você tiver um headset sem um rádio interno, precisará configurar seus controladores de movimento emparelhando-os com o seu PC. A maioria dos headsets fabricados depois de 2018 tem rádio interno.
+Se você tiver um headset sem um rádio interno, será preciso configurar os controladores de movimento emparelhando-os com o computador. A maioria dos headsets fabricados após 2018 tem rádio integrado.
 
-Você não precisa emparelhar seus controladores se estiver planejando apenas usar um gamepad ou teclado ou mouse do Xbox.  Se você planeja usar controladores, deve emparelhar-os.
+Você não precisará emparelhar seus controladores se estiver planejando usar apenas um gamepad ou teclado e mouse do Xbox.  Se você planeja usar controladores, deve emparelhá-los.
 
-**Observação**: os controladores de movimento do Windows Mixed Reality requerem o Bluetooth 4,0. Se seu computador não tiver um Bluetooth interno, você precisará conectar um adaptador USB Bluetooth que dá suporte a Bluetooth 4,0 para habilitar seus controladores de movimento. Você não precisa de um adaptador Bluetooth para usar o rádio interno em seu headset.
+**Observação:** Windows Mixed Reality controladores de movimento exigem Bluetooth 4.0. Se o computador não tiver um Bluetooth interno, você precisará conectar um adaptador usb Bluetooth que dá suporte ao Bluetooth 4.0 para habilitar os controladores de movimento. Você não precisa de um adaptador Bluetooth para usar o rádio integrado em seu headset.
 
-![Familiarize-se com seus controladores de movimento](images/get_to_know_controllers.png)
+![Familiarizar-se com seus controladores de movimento](images/get_to_know_controllers.png)
 
-Se você precisar emparelhar seus controladores de movimento, leia o artigo [controladores no Windows Mixed Reality](controllers-in-wmr.md) .
+Se você precisar emparelhar seus controladores de movimento, revise [os controladores Windows Mixed Reality](controllers-in-wmr.md) artigo.
 
-## <a name="set-up-your-room-boundary"></a>Configurar o limite de sala
+## <a name="set-up-your-room-boundary"></a>Configurar o limite da sala
 
-Escolha uma escala de sala ou experiência de escala de escrivaninha:
+Escolha uma experiência de escala de sala ou de mesa:
 
-**Opção 1: me configurar para todas as experiências (também conhecida como escala de espaço)** permitirá que você percorra a sala e seja a experiência de realidade misturada mais imersiva. É recomendável que você apague pelo menos cinco pés x sete pés (1,5 metros x 2 metros) de espaço para realidade misturada.
+**Opção 1: Configurar-me** para todas as experiências (também conhecidas como escala de sala) permitirá que você ande pela sala e seja a experiência de realidade misturada mais imersiva. Recomendamos limpar pelo menos cinco pés x sete pés (1,5 m x 2 metros) de espaço para realidade misturada.
 
-**Opção 2: me configurar para a experiência encaixada e em pé (também conhecida como escala de escrivaninha)** funcionará em sua mesa. É uma boa opção se o seu espaço não for grande. Isso também significa que você usará o headset sem um limite. Você precisará permanecer em um só lugar, pois não terá nenhum limite para ajudá-lo a evitar obstáculos físicos. Alguns aplicativos e jogos não são projetados para serem uma experiência de limite, portanto, eles podem não funcionar conforme o esperado.
+**Opção 2: Configurar-me** para a experiência de mesa e em posição (também conhecida como escala de mesa) funcionará em sua mesa. É uma boa opção se o espaço não for grande. Isso também significa que você estará usando seu headset sem um limite. Você precisará permanecer em um só lugar, pois não terá limites para ajudá-lo a evitar obstáculos físicos. Alguns aplicativos e jogos não são projetados para serem uma experiência de limite, portanto, eles podem não funcionar conforme o esperado.
 
-![Escolher uma instalação](images/1050px-chooseasetup.png)
+![Escolher uma configuração](images/1050px-chooseasetup.png)
 
-### <a name="if-you-choose-set-me-up-for-all-experiences"></a>Se você escolher "configurar para todas as experiências"
+### <a name="if-you-choose-set-me-up-for-all-experiences"></a>Se você escolher "Configurar-me para todas as experiências"
 
-Em breve, sua sala se tornará um mundo virtual em que você pode percorrer e interagir! Fique e libere espaço em seu espaço para executar realidade misturada. É recomendável que você apague pelo menos cinco pés x sete pés ou 1,5 metros x 2 metros de espaço para realidade misturada.
+Em breve, seu quarto se tornará um mundo virtual em que você poderá dar uma volta e interagir! Fique de pé e limpe algum espaço em sua sala para executar a realidade misturada. Recomendamos limpar pelo menos cinco pés x sete pés ou 1,5 metros x 2 metros de espaço para realidade misturada.
 
-![Verifique se seu espaço está claro](images/1050px-createaboundary.png)
+![Certifique-se de que seu espaço está limpo](images/1050px-createaboundary.png)
 
-Verifique se seu espaço está claro.
+Certifique-se de que seu espaço está limpo.
 
-![Centralize seu headset](images/1050px-createaboundary-2.png)
+![Central de seu headset](images/1050px-createaboundary-2.png)
 
-Centralize seu headset.
+Centralmente o headset.
 
 ![Rastrear seu limite](images/1050px-createaboundary-3.png)
 
-Rastreie seu limite.
+Rastreia seu limite.
 
-![Mantenha-se apontado para o PC](images/1050px-createaboundary-4.png)
+![Mantenha-se apontado para o COMPUTADOR](images/1050px-createaboundary-4.png)
 
-Mantenha seu headset apontado para o seu PC.
+Mantenha o headset apontado para o computador.
 
 ![Aqui está seu limite](images/1050px-createaboundary-5.png)
 
 Aqui está seu limite.
 
-### <a name="if-you-choose-set-me-up-for-seated-and-standing"></a>Se você escolher "Set me up for encaixada e em pé"
+### <a name="if-you-choose-set-me-up-for-seated-and-standing"></a>Se você escolher "Configurar-me para estar e em pé"
 
-Não há etapas adicionais necessárias se você escolher essa opção.
+Não serão necessárias etapas adicionais se você escolher essa opção.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Qual é o tamanho máximo do limite?
 
-O tamanho máximo de limite com suporte na realidade mista do Windows é um raio 18x18ft (5.7 x 5.7 m) ou 13 pés (4 m) do centro. O tamanho do limite depende do ponto de ancoragem e da distância do ponto de ancoragem que você pode mover antes de arriscar a estabilidade do limite.  A realidade mista do Windows foi criada em uma abstração de estágio, o estágio sendo o espaço que você movimenta. Esse estágio depende de uma única âncora, que quase todos os aplicativos também presumem – é como Naopak e Oculus funcionam também com seu único sistema de coordenadas.  Isso é importante porque com o acompanhamento interno, à medida que você se afasta de um ponto de ancoragem, o controle do headset é confiável para manter o limite estável.  Onde o limite destina-se a evitar obstáculos físicos, ele se torna mais um problema do centro que você vai.  Dois fatores entraram na decisão sobre o tamanho máximo do limite. A distância máxima na qual o Windows Mixed Reality headsets pode fornecer a melhor experiência em escala de sala com um limite e o comprimento do cabo do headset, que para a maioria dos headsets de realidade misturada do Windows são 10 pés (3 m).
+O tamanho máximo de limite com suporte no Windows Mixed Reality é um raio de 18x18ft (5,7x5,7 m) ou 13 pés (4 m) do centro. O tamanho do limite depende do ponto de âncora e da distância do ponto de âncora que você pode mover antes de correr o risco de a estabilidade do limite.  Windows Mixed Reality é criado em uma abstração de estágio, sendo o estágio em que você se move. Esse estágio depende de uma única âncora, que quase todos os aplicativos também supõem – é assim que a Vive e o Oculus também funcionam com seu sistema de coordenadas única.  Isso é importante porque, com o acompanhamento interno, à medida que você se move para longe de um ponto de âncora, o acompanhamento do headset é confiável para manter o limite estável.  Onde o limite se destina a ajudar a evitar obstáculos físicos, ele se torna mais um problema, mais distante do centro que você vai.  Dois fatores entraram na decisão sobre o tamanho máximo do limite. A distância máxima na qual Windows Mixed Reality headsets podem fornecer a melhor experiência de escala de sala com um limite e o comprimento do cabo do headset, que para a maioria dos headsets Windows Mixed Reality tem 10 pés (3 m).
 
-## <a name="set-up-speech"></a>Configurar a fala
+## <a name="set-up-speech"></a>Configurar fala
 
-Você pode habilitar comandos da Cortana em realidade misturada, o que permite usar comandos de fala para teleport e abrir aplicativos. Você aprenderá mais sobre essas ações no capítulo [Aprenda a realidade misturada](learn-mixed-reality.md) .
+Você pode habilitar Cortana em realidade misturada, o que permite usar comandos de fala para fazer a operação e abrir aplicativos. Você aprenderá mais sobre essas ações no [Aprender Realidade Misturada](learn-mixed-reality.md) capítulo.
 
-![A realidade misturada é melhor com a fala](images/1050px-betterwithspeech.png)
+![A realidade misturada é melhor com fala](images/1050px-betterwithspeech.png)
 
 ## <a name="set-up-your-audio-headset"></a>Configurar o headset de áudio
 
-A menos que você tenha comprado um Odyssey do Samsung HMD com fones de ouvido AKG integrados e matriz dupla de microfone, você precisa obter um headset de áudio com microfone e fones de ouvido e conectá-lo à tomada de áudio de 3,5-mm de headset. A tomada de áudio de 3,5-mm para o headset está localizada na parte inferior do visor do headset ou no final de um cabo de áudio curto anexado ao visor do headset, dependendo do modelo do headset.
+A menos que você tenha comprado um Samsung HMD Headsety com fones de ouvido AKG integrados e uma matriz de microfone duplo, você precisará obter um headset de áudio com microfone e fones de ouvido e conecte-o à tomada de áudio de 3,5 mm do headset. A tomada de áudio de 3,5 mm para o headset está localizada na parte inferior do visor do headset ou no final de um cabo de áudio curto anexado ao visor do headset, dependendo do modelo de headset.
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Ajustando as configurações de exibição do headset
 
-A realidade mista do Windows escolhe automaticamente as configurações de exibição que equilibram a qualidade e o desempenho, com base na configuração de hardware do seu PC. Para ajustar essas configurações, vá para **configurações > realidade misturada > tela de headset**.
+Windows Mixed Reality escolhe automaticamente as configurações de exibição que equilibram a qualidade e o desempenho, com base na configuração de hardware do computador. Para ajustar essas configurações, vá para a **Configurações > Realidade Misturada > Headset.**
 
 ### <a name="visuals"></a>Visuais
 
-Essa configuração controla a qualidade visual da sua página inicial de realidade misturada. O padrão é "Automatic".
+Essa configuração controla a qualidade visual do Mixed reality home. O padrão é "Automático".
 
 ### <a name="resolution"></a>Resolução
 
 A resolução nativa do headset é mostrada aqui.
 
-Se você conectar um headset com exibições de resolução mais alta ao seu PC, por exemplo, headsets com 4320x2160 exibe, você verá uma configuração para ajustar a resolução de exibição de realidade misturada.
+Se você conectar um headset com resolução superior é exibido no computador, por exemplo, headsets com 4320x2160 são exibidos, você verá uma configuração para ajustar a resolução de exibição de Realidade misturada.
 
-* Essa configuração fornece a opção para a pilha de composição da realidade misturada do Windows para renderizar nativamente (por exemplo, em 4320x2160) ou para que a pilha de composição seja renderizada em uma resolução mais baixa e upscale (por exemplo, render em 2880x1440 e upscale para 4320x2160).
-* A configuração padrão é renderizar nativamente (por exemplo, a opção **4320 x 2160 (melhor qualidade** ) para fornecer a melhor qualidade visual possível do headset.
-* Use a opção **redimensionamento automático (melhor desempenho)** se:
-    * Seu PC não atende aos requisitos mínimos de hardware de gráficos para o headset com monitores de resolução mais alta
+* Essa configuração fornece a opção para que Windows Mixed Reality pilha de composição do Windows Mixed Reality renderizar na verdade (por exemplo, em 4320x2160) ou para que a pilha de composição seja renderização em uma resolução mais baixa e no upscale (por exemplo, renderizar em 2880x1440 e até 4320x2160).
+* A configuração padrão é renderizar na verdade (por exemplo, a **opção 4320 x 2160 (melhor qualidade)** para fornecer a melhor qualidade visual possível do headset.
+* Use a **opção Decalçamento automático (melhor desempenho)** se:
+    * Seu computador não atendem aos requisitos mínimos de hardware de gráficos para seu headset com exibições de resolução mais alta
     * Você está vendo problemas de desempenho de gráficos
 
 Essa configuração está disponível no Windows 10, versão 1903 ou mais recente.
 
 ### <a name="calibration"></a>Calibragem
 
-Essa configuração é para ajustar a calibragem de IPD para headsets com suporte a IPD de software.
+Essa configuração é ajustar a calibragem de IPD para headsets com suporte a IPD de software.
 
 ### <a name="experience-options"></a>Opções de experiência
 
@@ -141,41 +141,41 @@ Essa configuração avançada substitui a experiência de taxa de atualização 
 
 ### <a name="input-switching"></a>Alternância de entrada
 
-Essa configuração controla o comportamento da realidade mista do Windows em resposta ao sensor de presença do headset:
+essa configuração controla o comportamento de Windows Mixed Reality em resposta ao sensor de presença do headset:
 
-* **Alternar automaticamente usando o sensor de presença de headset** (padrão): o Windows direcionará automaticamente a entrada (teclado, mouse...) para a realidade mista do Windows sempre que você estiver gastando o headset. Você pode substituir isso a qualquer momento com o Win + Y.
-* **Alternar manualmente usando a tecla de logotipo do Windows + Y**: o Windows não usará o sensor de presença do headset para detectar quando você estiver utilizando o headset. Você precisará usar o Win + Y para mudar sua entrada entre a área de trabalho do seu PC e a realidade mista do Windows.
+* **alternar automaticamente usando o sensor de presença do headset** (padrão): Windows irá direcionar automaticamente a entrada (teclado, mouse...) para Windows Mixed Reality sempre que você estiver gastando o headset. Você pode substituir isso a qualquer momento com o Win + Y.
+* **alternar manualmente usando a tecla de logotipo Windows + Y**: Windows não usará o sensor de presença de headset para detectar quando você estiver utilizando o headset. Você precisará usar o Win + Y para mudar sua entrada entre a área de trabalho do seu PC e Windows Mixed Reality.
 
-Essa configuração está disponível no Windows 10, versão 1903 ou mais recente.
+essa configuração está disponível em Windows 10, versão 1903 ou mais recente.
 
 ## <a name="installing-microsoft-edge"></a>Instalando o Microsoft Edge 
 
-Para usar o novo Microsoft Edge baseado em Chromium no Windows Mixed Reality Home, atualize para o Windows 10 versão 1903 ou posterior para obter suporte nativo de aplicativos Win32 (como o novo Microsoft Edge) no Windows Mixed Reality Home. Verifique Windows Update ou [Instale manualmente a versão mais recente do Windows 10](https://www.microsoft.com/software-download/windows10).
+para usar o novo Microsoft Edge baseado em Chromium no Windows Mixed Reality home, atualize para Windows 10 versão 1903 ou posterior para obter suporte nativo de aplicativos Win32 (como o novo Microsoft Edge) no Windows Mixed Reality home. verifique Windows Update ou [instale manualmente a versão mais recente do Windows 10](https://www.microsoft.com/software-download/windows10).
 
 >[!IMPORTANT]
->O novo Microsoft Edge é iniciado com suporte para WebXR, o novo padrão para a criação de experiências de imersão da Web para headsets de VR. Você não poderá mais reproduzir experiências de WebVR no Microsoft Edge se instalar o novo Microsoft Edge.
+>o novo Microsoft Edge é iniciado com suporte para WebXR, o novo padrão para a criação de experiências de imersão da web para headsets de VR. você não poderá mais reproduzir experiências do WebVR no Microsoft Edge se instalar o novo Microsoft Edge.
 
-### <a name="issues-with-the-new-microsoft-edge-in-windows-mixed-reality"></a>Problemas com o novo Microsoft Edge no Windows Mixed Reality
+### <a name="issues-with-the-new-microsoft-edge-in-windows-mixed-reality"></a>problemas com o novo Microsoft Edge no Windows Mixed Reality
 
-**Problemas conhecidos resolvidos pela atualização cumulativa 2020-01 para o Windows 10 versão 1903 (ou posterior)**
+**problemas conhecidos resolvidos pela atualização cumulativa 2020-01 para Windows 10 versão 1903 (ou posterior)**
 
-- Iniciar qualquer aplicativo Win32, incluindo o novo Microsoft Edge, faz com que a tela do headset congele brevemente.
-- O bloco Microsoft Edge desaparece do menu Iniciar do Windows Mixed Reality (você pode encontrá-lo na pasta "aplicativos clássicos").
-- As janelas do Microsoft Edge anterior ainda são colocadas em todo o início da realidade misturada, mas não podem ser usadas. A tentativa de ativar essas janelas inicia a borda no aplicativo da área de trabalho.
+- iniciar qualquer aplicativo Win32, incluindo o novo Microsoft Edge, faz com que a tela do headset congele brevemente.
+- o bloco Microsoft Edge desaparece da menu Iniciar de Windows Mixed Reality (você pode encontrá-lo na pasta "aplicativos clássicos").
+- os Windows dos Microsoft Edge anteriores ainda são colocados em todo o início da realidade misturada, mas não podem ser usados. A tentativa de ativar essas janelas inicia a borda no aplicativo da área de trabalho.
 - A seleção de um hiperlink na página inicial da realidade misturada inicia um navegador da Web na área de trabalho em vez da casa mistura de realidade.
 - O aplicativo de demonstração do WebVR está presente na casa da realidade misturada, apesar de WebVR não ter mais suporte.
 - Aprimoramentos gerais na inicialização e visuais do teclado.
 
 **Problemas conhecidos adicionais**
 
-- Os sites abertos no Windows Mixed Realm serão perdidos quando o portal da realidade misturada for fechado, embora as janelas do Microsoft Edge permaneçam onde foram colocadas na casa misturada da realidade.
-- O áudio do Microsoft Edge Windows não está espacial.
-- Corrigido na extensão do visualizador 360 versão 2.3.8: abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão "expandir" ao lado de "extensões".
-- Durante as sessões de realidade mista do Windows, os monitores virtuais serão exibidos como monitores físicos genéricos em **configurações > sistema > exibição**.
+- os sites abertos no Windows Mixed Reality serão perdidos quando o Portal da realidade misturada for fechado, embora o Microsoft Edge Windows permaneça onde eles foram colocados na casa misturada da realidade.
+- o áudio do Microsoft Edge windows não está espacial.
+- corrigido na extensão do visualizador 360 versão 2.3.8: abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão "expandir" ao lado de "extensões".
+- durante Windows Mixed Reality sessões, os monitores virtuais serão exibidos como monitores físicos genéricos em **Configurações > sistema > exibição**.
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>Iniciando realidade misturada após a primeira vez
 
-Entrar na realidade misturada uma segunda vez é tão fácil quanto colocar o fone de ouvido de volta enquanto está conectado ao seu PC. Você também pode iniciar o aplicativo do portal da realidade misturada manualmente abrindo-o no menu iniciar. A entrada e o áudio serão roteados automaticamente para o headset quando você o colocar, ou você poderá dispará-lo manualmente pressionando o **Windows + Y** no teclado.
+Entrar na realidade misturada uma segunda vez é tão fácil quanto colocar o fone de ouvido de volta enquanto está conectado ao seu PC. você também pode iniciar o aplicativo do Portal da realidade misturada manualmente abrindo-o na menu Iniciar. a entrada e o áudio serão roteados automaticamente para o headset quando você o colocar, ou você poderá dispará-lo manualmente pressionando **Windows + s** no teclado.
 
 ## <a name="see-also"></a>Confira também
 

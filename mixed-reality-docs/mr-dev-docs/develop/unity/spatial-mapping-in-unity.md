@@ -1,100 +1,100 @@
 ---
 title: Mapeamento espacial no Unity
-description: Saiba como usar e gerenciar a renderização e a união com a geometria do mundo real ao seu redor em aplicativos de realidade misturada do Unity.
+description: Saiba como usar e gerenciar a renderização e a colisão com a geometria do mundo real em aplicativos do Unity Mixed Reality.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, mapeamento espacial, renderador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, MRTK, Kit de Ferramentas de Realidade Misturada
-ms.openlocfilehash: fa571a13ce192b29b2a35033b55061f3ffb707da
-ms.sourcegitcommit: ec80ef1e496bf0b17a161735535517e87ffdd364
+keywords: Unity, mapeamento espacial, renderizador, colisor, malha, verificação, componente, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual, MRTK, realidade misturada Toolkit
+ms.openlocfilehash: 4c8d0598898b4717a624562340918f968bd26f1fcde72258907e4fce73bd8489
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110351774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223084"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapeamento espacial no Unity
 
-[O mapeamento](../../design/spatial-mapping.md) espacial permite recuperar malhas de triângulo que representam as superfícies no mundo em torno de um dispositivo HoloLens. Você pode usar dados de superfície para posicionamento, oclusão e análise de sala para dar aos seus projetos do Unity uma experiência extra de imersão.
+o [mapeamento espacial](../../design/spatial-mapping.md) permite que você recupere malhas de triângulo que representam as superfícies do mundo em um dispositivo HoloLens. Você pode usar dados de superfície para posicionamento, oclusão e análise de sala para dar a seus projetos de Unity um dose extra de imersão.
 
-O Unity inclui suporte completo para mapeamento espacial, que é exposto aos desenvolvedores das seguintes maneiras:
+O Unity inclui suporte completo para o mapeamento espacial, que é exposto aos desenvolvedores das seguintes maneiras:
 
-1. Componentes de mapeamento espacial disponíveis no MixedRealityToolkit, que fornecem um caminho conveniente e rápido para começar a usar o mapeamento espacial
+1. Componentes de mapeamento espacial disponíveis no MixedRealityToolkit, que fornecem um caminho conveniente e rápido para introdução ao mapeamento espacial
 2. APIs de mapeamento espacial de nível inferior, que fornecem controle total e permitem uma personalização mais sofisticada específica do aplicativo
 
-Para usar o mapeamento espacial em seu aplicativo, a funcionalidade spatialPerception precisa ser definida em seu AppxManifest.
+Para usar o mapeamento espacial em seu aplicativo, o recurso spatialPerception precisa ser definido em seu AppxManifest.
 
 ## <a name="device-support"></a>Suporte a dispositivos
 
-| Recurso | [HoloLens (primeira geração)](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [Headsets imersivos](../../discover/immersive-headset-hardware-details.md) |
+| Recurso | [HoloLens (primeira gen)](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [Headsets imersivos](../../discover/immersive-headset-hardware-details.md) |
 | ---- | ---- | ---- | ---- |
 | mapeamento espacial | ✔️ | ✔️ | ❌ |
 
-## <a name="setting-the-spatialperception-capability"></a>Definindo a funcionalidade SpatialPerception
+## <a name="setting-the-spatialperception-capability"></a>Configurando o recurso SpatialPerception
 
-Para que um aplicativo consuma dados de mapeamento espacial, a funcionalidade SpatialPerception deve ser habilitada.
+Para que um aplicativo consuma dados de mapeamento espacial, o recurso SpatialPerception deve ser habilitado.
 
-Como habilitar a funcionalidade SpatialPerception:
+Como habilitar o recurso SpatialPerception:
 
-1. No Editor do Unity, abra o **painel "Configurações** do Player" (Editar > Configurações do Projeto > Player)
-2. Selecione na **guia "Windows Store"**
-3. Expanda **"Configurações de Publicação"** e verifique a **funcionalidade "SpatialPerception"** na **lista "Funcionalidades"**
+1. no Editor do Unity, abra o painel **"Player Configurações"** (editar > Project Configurações > Player)
+2. selecione na guia **"repositório de Windows"**
+3. expanda **"Publishing Configurações"** e verifique o recurso **"SpatialPerception"** na lista **"Capabilities"**
 
 > [!NOTE]
-> Se você já tiver exportado seu projeto do Unity para uma solução Visual Studio, precisará exportar para uma nova pasta ou definir manualmente essa funcionalidade no [AppxManifest](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)no Visual Studio .
+> se você já tiver exportado seu projeto do Unity para uma solução Visual Studio, será necessário exportar para uma nova pasta ou [definir manualmente esse recurso no AppxManifest no Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 O mapeamento espacial também requer um MaxVersionTested de pelo menos 10.0.10586.0:
 
-1. No Visual Studio, clique com o botão direito do mouse **em Package.appxmanifest** no Gerenciador de Soluções e selecione **Exibir Código**
-2. Encontre a linha que especifica **TargetDeviceFamily** e altere **MaxVersionTested="10.0.10240.0"** para **MaxVersionTested="10.0.10586.0"**
-3. **Salve** o Package.appxmanifest.
+1. em Visual Studio, clique com o botão direito do mouse em **Package. appxmanifest** na Gerenciador de Soluções e selecione **exibir código**
+2. Localize a linha especificando **TargetDeviceFamily** e altere **MaxVersionTested = "10.0.10240.0"** para **MaxVersionTested = "10.0.10586.0"**
+3. **Salve** o Package. appxmanifest.
 
-## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Como começar a trabalhar com os componentes de mapeamento espacial internos do Unity
+## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Introdução aos componentes de mapeamento espacial interno do Unity
 
-O Unity oferece dois componentes para adicionar facilmente o mapeamento espacial ao seu aplicativo, o **Renderador** de Mapeamento Espacial e **o Colisor de Mapeamento Espacial.**
+O Unity oferece dois componentes para adicionar facilmente o mapeamento espacial ao seu aplicativo, o **renderizador de mapeamento espacial** e o **Colisor de mapeamento espacial**.
 
-### <a name="spatial-mapping-renderer"></a>Renderdor de Mapeamento Espacial
+### <a name="spatial-mapping-renderer"></a>Renderizador de mapeamento espacial
 
-O Renderador de Mapeamento Espacial permite a visualização da malha de mapeamento espacial.
+O renderizador de mapeamento espacial permite a visualização da malha de mapeamento espacial.
 
-![Renderdor de Mapeamento Espacial no Unity](images/spatialmappingrenderer.png)
+![Renderizador de mapeamento espacial no Unity](images/spatialmappingrenderer.png)
 
 ### <a name="spatial-mapping-collider"></a>Colisor de mapeamento espacial
 
-O Colisor de Mapeamento Espacial permite a interação de conteúdo holográfico (ou caractere), como física, com a malha de mapeamento espacial.
+O colisor de mapeamento espacial permite a interação de conteúdo Holographic (ou caractere), como a física, com a malha de mapeamento espacial.
 
 ![Colisor de mapeamento espacial no Unity](images/spatialmappingcollider.png)
 
 ### <a name="using-the-built-in-spatial-mapping-components"></a>Usando os componentes internos de mapeamento espacial
 
-Você pode adicionar ambos os componentes ao seu aplicativo se quiser visualizar e interagir com superfícies físicas.
+Você pode adicionar ambos os componentes ao seu aplicativo se desejar visualizar e interagir com superfícies físicas.
 
-Para usar esses dois componentes em seu aplicativo Unity:
+Para usar esses dois componentes em seu aplicativo do Unity:
 
-1. Selecione um GameObject no centro da área na qual você gostaria de detectar malhas de superfície espacial.
-2. Na janela Inspetor, Adicione **Colisor**  >  **de Mapeamento Espacial XR** do Componente  >  **ou** **Renderador de Mapeamento Espacial**.
+1. Selecione um gameobject no centro da área na qual você gostaria de detectar malhas de superfície espacial.
+2. Na janela Inspetor, **adicione** o processador de  >    >  **mapeamento espacial** do componente XR ou o **renderizador de mapeamento espacial**.
 
-Você pode encontrar mais detalhes sobre como usar esses componentes no <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">site de documentação do Unity</a>.
+Você pode encontrar mais detalhes sobre como usar esses componentes no site de <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">documentação do Unity</a>.
 
-### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Ir além dos componentes internos de mapeamento espacial
+### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Indo além dos componentes internos de mapeamento espacial
 
-Esses componentes facilitam a começar a trabalhar com o Mapeamento Espacial.  Quando você quiser ir além, há dois caminhos principais a serem explorados:
+Esses componentes o tornam fácil de arrastar e soltar para começar a usar o mapeamento espacial.  Quando quiser ir além, há dois caminhos principais a serem explorados:
 
 * Para fazer seu próprio processamento de malha de nível inferior, consulte a seção abaixo sobre a API de script de mapeamento espacial de baixo nível.
-* Para fazer uma análise de malha de nível superior, consulte a seção abaixo sobre a biblioteca SpatialUnderstanding no <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit.</a>
+* Para fazer uma análise de malha de nível superior, consulte a seção abaixo sobre a biblioteca SpatialUnderstanding em <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
-## <a name="using-the-low-level-unity-spatial-mapping-api"></a>Usando a API de Mapeamento Espacial do Unity de baixo nível
+## <a name="using-the-low-level-unity-spatial-mapping-api"></a>Usando a API de mapeamento espacial do Unity de nível baixo
 
-Se você precisar de mais controle do que os componentes renderista de mapeamento espacial e colisor de mapeamento espacial oferecem, use as APIs de mapeamento espacial de baixo nível.
+Se você precisar de mais controle do que o renderizador de mapeamento espacial e a oferta de componentes do colisor de mapeamento espacial, use as APIs de mapeamento espacial de nível baixo.
 
-**Namespace:** *UnityEngine.XR.WSA*<br>
-**Tipos:** *SurfaceObserver,* *SurfaceChange,* *SurfaceData,* *SurfaceId*
+**Namespace:** *UnityEngine. XR. WSA*<br>
+**Tipos**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *surfaceid*
 
-Descrevemos o fluxo sugerido para um aplicativo que usa as APIs de mapeamento espacial nas seções abaixo.
+Descrevemos o fluxo sugerido para um aplicativo que usa as APIs de mapeamento espacial nas seções a seguir.
 
-### <a name="set-up-the-surfaceobservers"></a>Configurar o(s) SurfaceObserver(s)
+### <a name="set-up-the-surfaceobservers"></a>Configurar SurfaceObserver (s)
 
-Insinue um objeto SurfaceObserver para cada região de espaço definida pelo aplicativo para a qual você precisa de dados de mapeamento espacial.
+Crie uma instância de um objeto SurfaceObserver para cada região de espaço definida pelo aplicativo para a qual você precisa de dados de mapeamento espacial.
 
 ```cs
 SurfaceObserver surfaceObserver;
@@ -105,7 +105,7 @@ private void Start()
 }
 ```
 
-Especifique a região do espaço para a qual cada objeto SurfaceObserver fornecerá dados chamando SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox ou SetVolumeAsFrustum. Você pode redefinir a região do espaço no futuro simplesmente chamando um desses métodos novamente.
+Especifique a região de espaço para a qual cada objeto SurfaceObserver fornecerá dados chamando SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox ou SetVolumeAsFrustum. Você pode redefinir a região do espaço no futuro simplesmente chamando um desses métodos novamente.
 
 ```cs
 private void Start()
@@ -114,7 +114,7 @@ private void Start()
 }
 ```
 
-Ao chamar SurfaceObserver.Update(), você deve fornecer um manipulador para cada superfície espacial na região de espaço do SurfaceObserver para a que o sistema de mapeamento espacial tenha novas informações. O manipulador recebe, para uma superfície espacial:
+Ao chamar SurfaceObserver. Update (), você deve fornecer um manipulador para cada superfície espacial na região de espaço do SurfaceObserver para a qual o sistema de mapeamento espacial tem novas informações. O manipulador recebe, para uma superfície espacial:
 
 ```cs
 private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
@@ -123,12 +123,12 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 }
 ```
 
-### <a name="handling-surface-changes"></a>Manipulando alterações na superfície
+### <a name="handling-surface-changes"></a>Lidando com alterações de superfície
 
-Há vários casos principais para lidar – adicionados e atualizados, que podem usar o mesmo caminho de código e removidos.
+Há vários casos principais para manipular-adicionados e atualizados, que podem usar o mesmo caminho de código e removidos.
 
-* Nos casos adicionados e atualizados, adicionamos ou obteremos o GameObject que representa essa malha do dicionário, criaremos um struct SurfaceData com os componentes necessários e, em seguida, chamaremos RequestMeshDataAsync para preencher o GameObject com os dados e a posição da malha na cena.
-* No caso removido, removemos o GameObject que representa essa malha do dicionário e a destrói.
+* Nos casos adicionados e atualizados, adicionamos ou obtemos o gameobject que representa essa malha do dicionário, criamos uma estrutura SurfaceData com os componentes necessários e chamamos RequestMeshDataAsync para preencher o gameobject com os dados de malha e a posição na cena.
+* No caso removido, removemos o gameobject que representa a malha do dicionário e o destruimos.
 
 ```cs
 System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects =
@@ -180,11 +180,11 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### <a name="handling-data-ready"></a>Manipulando dados prontos
 
-O manipulador OnDataReady recebe um objeto SurfaceData. Os objetos WorldAnchor, MeshFilter e (opcionalmente) MeshCollider que ele contém refletem o estado mais recente da superfície espacial associada. Opcionalmente, analise e/ou [processe](../../design/spatial-mapping.md#mesh-processing) os dados da malha acessando o membro da Malha do objeto MeshFilter. Renderizar a superfície espacial com a malha mais recente e (opcionalmente) usá-la para colisões físicas e raycasts. É importante confirmar se o conteúdo do SurfaceData não é nulo.
+O manipulador OnDataReady recebe um objeto SurfaceData. Os objetos WorldAnchor, MeshFilter e (opcionalmente) MeshCollider que ele contém refletem o estado mais recente da superfície espacial associada. Opcionalmente, analise e/ou [processe](../../design/spatial-mapping.md#mesh-processing) os dados de malha acessando o membro de malha do objeto MeshFilter. Renderize a superfície espacial com a malha mais recente e (opcionalmente) Use-a para colisões de física e raycasts. É importante confirmar que o conteúdo de SurfaceData não é nulo.
 
-### <a name="start-processing-on-updates"></a>Iniciar o processamento em atualizações
+### <a name="start-processing-on-updates"></a>Iniciar processamento em atualizações
 
-SurfaceObserver.Update() deve ser chamado em um atraso, não em todos os quadros.
+SurfaceObserver. Update () deve ser chamado em um atraso, e não em todos os quadros.
 
 ```cs
 void Start ()
@@ -203,28 +203,28 @@ IEnumerator UpdateLoop()
 }
 ```
 
-## <a name="higher-level-mesh-analysis-spatial-understanding"></a>Análise de malha de nível superior: Compreensão espacial
+## <a name="higher-level-mesh-analysis-spatial-understanding"></a>Análise de malha de nível superior: compreensão espacial
 
 > [!CAUTION]
-> O Entendimento Espacial foi preterido em favor do Entendimento [de Cena.](../../design/scene-understanding.md)
+> A compreensão espacial foi preterida em favor da [compreensão da cena](../../design/scene-understanding.md).
 
-O <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit é</a> uma coleção de código utilitário para desenvolvimento holográfico criado nas APIs holográficas do Unity.
+O <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> é uma coleção de código do utilitário para o desenvolvimento do Holographic criado nas APIs Holographic do Unity.
 
 ### <a name="spatial-understanding"></a>Compreensão espacial
 
-Ao colocar hologramas no mundo físico, geralmente é desejável ir além da malha e dos planos de superfície do mapeamento espacial. Quando o posicionamento é feito proceduralmente, um nível mais alto de compreensão ambiental é desejável. Isso geralmente requer a tomada de decisões sobre o que é piso, teto e paredes. Você também tem a capacidade de otimizar em relação a um conjunto de restrições de posicionamento para determinar os melhores locais físicos para objetos holográficos.
+Ao colocar os hologramas no mundo físico, muitas vezes é desejável ir além dos planos de malha e superfície do mapeamento espacial. Quando o posicionamento é feito de procedimento, um nível mais alto de compreensão ambiental é desejável. Isso geralmente requer tomar decisões sobre o que é andar, teto e paredes. Você também tem a capacidade de otimizar em relação a um conjunto de restrições de posicionamento para determinar a melhor localização física para objetos Holographic.
 
-Durante o desenvolvimento de Conker e Fragmentos, a Asobo Estúdios encarou esse problema ao desenvolver um solucionador de sala. Cada um desses jogos tinha necessidades específicas do jogo, mas compartilhavam a tecnologia de compreensão espacial principal. A biblioteca HoloToolkit.SpatialUnderstanding encapsula essa tecnologia, permitindo que você encontre rapidamente espaços vazios nas paredes, coloque objetos no limite, identifique colocado para que o caractere fique e uma infinidade de outras consultas de compreensão espacial.
+Durante o desenvolvimento de jovens conkers e fragmentos, Asobo estúdios enfrentou esse problema ao desenvolver um solucionador de sala. Cada um desses jogos teve necessidades específicas do jogo, mas eles compartilharam a tecnologia de compreensão espacial principal. A biblioteca HoloToolkit. SpatialUnderstanding encapsula essa tecnologia, permitindo que você encontre rapidamente espaços vazios nas paredes, coloque os objetos no teto, identifique-os com relação ao caractere a ser colocado e uma infinidade de outras consultas de compreensão espacial.
 
-Todo o código-fonte está incluído, permitindo que você personalize-o de acordo com suas necessidades e compartilhe suas melhorias com a comunidade. O código do solucionador C++ foi envolvido em uma dll UWP e exposto ao Unity com uma queda no pré-fab contido no MixedRealityToolkit.
+Todo o código-fonte está incluído, permitindo personalizá-lo às suas necessidades e compartilhar suas melhorias com a Comunidade. O código para o resolvedor de C++ foi encapsulado em uma DLL UWP e exposto ao Unity com uma queda no pré-fabricado contido no MixedRealityToolkit.
 
 ### <a name="understanding-modules"></a>Noções básicas sobre módulos
 
-Há três interfaces principais expostas pelo módulo: topologia para consultas espaciais e de superfície simples, forma para detecção de objeto e o solucionador de posicionamento de objeto para posicionamento baseado em restrição de conjuntos de objetos. Veja a descrição das duas maneiras abaixo. Além das três interfaces de módulo primário, uma interface de transmissão de raios pode ser usada para recuperar tipos de superfície marcados e uma malha personalizada do playspace watergged pode ser copiada.
+Há três interfaces primárias expostas pelo módulo: topologia para consultas espaciais e de superfície simples, forma de detecção de objeto e o resolvedor de posicionamento de objetos para o posicionamento baseado em restrição de conjuntos de objetos. Veja a descrição das duas maneiras abaixo. Além das três interfaces de módulo principais, uma interface de conversão Ray pode ser usada para recuperar tipos de superfície marcada e uma malha Watertight Playspace personalizada pode ser copiada.
 
-### <a name="ray-casting"></a>Ray Casting
+### <a name="ray-casting"></a>Conversão de Ray
 
-Após a conclusão da verificação da sala, os rótulos são gerados internamente para superfícies como piso, teto e paredes. A função recebe um raio e retorna se o raio colide com uma superfície conhecida e, nesse caso, informações sobre essa superfície na `PlayspaceRaycast` forma de um `RaycastResult` .
+Após a conclusão da verificação de sala, os rótulos são gerados internamente para superfícies como o piso, o teto e as paredes. A `PlayspaceRaycast` função usa um raio e retorna se o raio colide com uma superfície conhecida e, nesse caso, informações sobre essa superfície na forma de um `RaycastResult` .
 
 ```cpp
 struct RaycastResult
@@ -252,9 +252,9 @@ struct RaycastResult
 };
 ```
 
-Internamente, o raycast é calculado em relação à representação de voxel computada de 8 cm do playspace. Cada voxel contém um conjunto de elementos de superfície com dados de topologia processados (também conhecidos como surfels). Os surfels contidos na célula de voxel interseccionar são comparados e a melhor combinação usada para procurar as informações de topologia. Esses dados de topologia contêm a rotulagem retornada na forma da enum "SurfaceTypes", bem como a área de superfície da superfície interseccionar.
+Internamente, o Raycast é calculado em relação à representação de VOXEL cúbico de 8 cm computada do Playspace. Cada voxel contém um conjunto de elementos Surface com dados de topologia processados (também conhecido como surfels). As surfels contidas na célula VOXEL interseccionada são comparadas e a melhor correspondência usada para pesquisar as informações de topologia. Esses dados de topologia contêm o rótulo retornado na forma da enumeração "SurfaceTypes", bem como a área de superfície da superfície interseccionada.
 
-No exemplo do Unity, o cursor lança um raio para cada quadro. Primeiro, em relação aos colisores do Unity. Segundo, em relação à representação mundial do módulo de compreensão. E, por fim, novamente os elementos da interface do usuário. Nesse aplicativo, a interface do usuário obtém prioridade, em seguida, o resultado de compreensão e, por fim, os colisores do Unity. O SurfaceType é relatado como texto ao lado do cursor.
+No exemplo de Unity, o cursor converte um raio cada quadro. Primeiro, em relação aos conflitantes da Unity. Em segundo lugar, em relação à representação Mundial do módulo de compreensão. E, finalmente, os elementos da interface do usuário. Neste aplicativo, a interface do usuário obtém prioridade, em seguida o resultado da compreensão e, por fim, os coliders do Unity. O SurfaceType é relatado como texto ao lado do cursor.
 
 ![O tipo de superfície é rotulado ao lado do cursor](images/su-raycastresults-300px.jpg)<br>
 *O tipo de superfície é rotulado ao lado do cursor*
@@ -423,7 +423,7 @@ Ao resolver o local de posicionamento de vários objetos necessários para um ce
 
 ### <a name="room-scanning-process"></a>Processo de verificação de sala
 
-Embora a solução de mapeamento espacial fornecida pelo HoloLens seja projetada para ser genérica o suficiente para atender às necessidades de toda a gama de espaços com problemas, o módulo de compreensão espacial foi criado para dar suporte às necessidades de dois jogos específicos. Sua solução é estruturada em torno de um processo específico e um conjunto de suposições, resumidos abaixo.
+Embora a solução de mapeamento espacial fornecida pelo HoloLens seja projetada para ser genérica o suficiente para atender às necessidades de toda a gama de espaços de problema, o módulo de compreensão espacial foi criado para dar suporte às necessidades de dois jogos específicos. Sua solução é estruturada em torno de um processo específico e um conjunto de suposições, resumidos abaixo.
 
 ```txt
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
@@ -473,9 +473,9 @@ A dll de compreensão armazena internamente o playspace como uma grade de cubos 
 * Verifique se você definiu a [funcionalidade SpatialPerception](#setting-the-spatialperception-capability)
 * Quando o acompanhamento é perdido, o próximo evento OnSurfaceChanged removerá todas as malhas.
 
-## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapeamento espacial no Kit de Ferramentas de Realidade Misturada
+## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapeamento espacial em áreas de realidade misturada Toolkit
 
-Para obter mais informações sobre como usar o Mapeamento Espacial com o Kit de Ferramentas de Realidade Misturada, consulte a seção de reconhecimento [espacial](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) dos documentos do MRTK.
+Para obter mais informações sobre como usar o mapeamento espacial com Toolkit realidade misturada, consulte a seção de reconhecimento [espacial](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) dos documentos do MRTK.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 
@@ -498,4 +498,4 @@ Você sempre pode voltar para os [pontos de verificação de desenvolvimento do 
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>
 * <a href="https://docs.unity3d.com/ScriptReference/MeshFilter.html" target="_blank">UnityEngine.MeshFilter</a>
 * <a href="https://docs.unity3d.com/ScriptReference/MeshCollider.html" target="_blank">UnityEngine.MeshCollider</a>
-* <a href="https://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank">UnityEngine.Bounds</a>
+* <a href="https://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank">UnityEngine. Bounds</a>

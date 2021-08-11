@@ -1,35 +1,35 @@
 ---
 title: Botões
-description: Visão geral sobre botões no MRTK
+description: Visão geral sobre os botões em MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Botões do MRTK
-ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, botões de MRTK
+ms.openlocfilehash: 7d1c141981ec402d85e1e2004739e9ab9f0ebe9da5361e4e3100b43a2b5b4129
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228860"
 ---
 # <a name="buttons"></a>Botões
 
-![Botão Principal](../images/button/MRTK_Button_Main.png)
+![Botão principal](../images/button/MRTK_Button_Main.png)
 
-Um botão dá ao usuário uma forma de acionar uma ação imediata. É um dos componentes mais fundamentais na realidade misturada. O MRTK fornece vários tipos de pré-requisitos de botão.
+Um botão dá ao usuário uma forma de acionar uma ação imediata. É um dos componentes mais fundamentais da realidade misturada. O MRTK fornece vários tipos de pré-fabricados de botão.
 
-## <a name="button-prefabs-in-mrtk"></a>Pré-requisitos de botão no MRTK
+## <a name="button-prefabs-in-mrtk"></a>Botão pré-fabricados em MRTK
 
-Exemplos dos pré-requisitos de botão na ``MRTK/SDK/Features/UX/Interactable/Prefabs`` pasta
+Exemplos do botão pré-fabricados na ``MRTK/SDK/Features/UX/Interactable/Prefabs`` pasta
 
-### <a name="unity-ui-imagegraphic-based-buttons"></a>Botões baseados em imagem/gráfico da interface do usuário do Unity
+### <a name="unity-ui-imagegraphic-based-buttons"></a>Imagem da interface do usuário do Unity/botões baseados em gráficos
 
 * `UnityUIInteractableButton.prefab`
 * `PressableButtonUnityUI.prefab`
 * `PressableButtonUnityUICircular.prefab`
 * `PressableButtonHoloLens2UnityUI.prefab`
 
-### <a name="collider-based-buttons"></a>Botões baseados em colisor
+### <a name="collider-based-buttons"></a>Botões baseados em Colisor
 
 :::row:::
     :::column:::
@@ -44,13 +44,13 @@ Exemplos dos pré-requisitos de botão na ``MRTK/SDK/Features/UX/Interactable/Pr
 :::row-end:::
 :::row:::
     :::column::: 
-    HoloLens de estilo shell do HoloLens 2 com o backplate que dá suporte a vários comentários visuais, como luz de borda, luz de proximidade e placa frontal compactada
+    botão de estilo de shell de HoloLens 2 com placa de frente que dá suporte a vários comentários visuais, como luz de borda, luz de proximidade e placa frontal compactada
     :::column-end:::
     :::column:::
-    HoloLens botão de estilo shell do 2 sem o backplate
+    botão de estilo de shell do HoloLens 2 sem placa traseira
     :::column-end:::
     :::column:::
-    HoloLens de estilo shell 2 com forma circular
+    botão estilo de shell de HoloLens 2 com forma circular
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,13 +66,13 @@ Exemplos dos pré-requisitos de botão na ``MRTK/SDK/Features/UX/Interactable/Pr
 :::row-end:::
 :::row:::
     :::column::: 
-    Largura HoloLens botão de estilo shell 2 32x96mm
+    botão de estilo de shell de larga HoloLens 2 32x96mm
     :::column-end:::
     :::column:::
-    Barra de HoloLens 2 horizontal com o backplate compartilhado
+    barra de botões Horizontal HoloLens 2 com placa traseira compartilhada
     :::column-end:::
     :::column:::
-    Barra de HoloLens 2 vertical com o backplate compartilhado
+    barra de botões Vertical HoloLens 2 com placa traseira compartilhada
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -88,13 +88,13 @@ Exemplos dos pré-requisitos de botão na ``MRTK/SDK/Features/UX/Interactable/Pr
 :::row-end:::
 :::row:::
     :::column:::     
-    HoloLens caixa de seleção estilo shell 2 32x32mm
+    caixa de seleção estilo de shell do HoloLens 2 32x32mm
     :::column-end:::
     :::column:::
-    HoloLens com opção de estilo shell 2 32x32mm 
+    opção de estilo de shell do HoloLens 2 32x32mm 
     :::column-end:::
     :::column:::
-    HoloLens rádio de estilo shell 2 32x32mm
+    32x32mm de rádio em estilo de shell 2 do HoloLens
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,21 +110,21 @@ Exemplos dos pré-requisitos de botão na ``MRTK/SDK/Features/UX/Interactable/Pr
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens caixa de seleção de estilo shell 2 32x96mm
+    caixa de seleção estilo de shell do HoloLens 2 32x96mm
     :::column-end:::
     :::column:::
-    HoloLens com opção de estilo shell 2 32x96mm
+    opção de estilo de shell do HoloLens 2 32x96mm
     :::column-end:::
     :::column:::
-    HoloLens rádio de estilo shell 2 32x96mm
+    32x96mm de rádio em estilo de shell 2 do HoloLens
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::  
-    ![Radial ](../images/button/MRTK_Button_Radial.png) **radial**
+    ![](../images/button/MRTK_Button_Radial.png) **Radial** radial
     :::column-end:::
     :::column:::
-    ![Caixa ](../images/button/MRTK_Button_Checkbox.png)  de seleção
+    ![Caixa de seleção CheckBox ](../images/button/MRTK_Button_Checkbox.png) 
     :::column-end:::
     :::column:::
     ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
@@ -149,74 +149,74 @@ Exemplos dos pré-requisitos de botão na ``MRTK/SDK/Features/UX/Interactable/Pr
     ![PressableRoundButton ](../images/button/MRTK_Button_Round.png) **PressableRoundButton** 
     :::column-end:::
     :::column:::
-    ![Botão Base do ](../images/button/MRTK_Button_Base.png) **Botão**
+    ![Botão base do botão ](../images/button/MRTK_Button_Base.png) 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens botão de estilo de shell da 1ª geração
+    botão de estilo de shell da 1ª gen HoloLens
     :::column-end:::
     :::column:::
-    Botão de push de forma arredondada
+    Botão de ação de forma arredondada
     :::column-end:::
     :::column:::
-    Botão Básico
+    Botão básico
     :::column-end:::
 :::row-end:::
 
-O `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) baseia-se no conceito Interativo para fornecer controles de interface do usuário fáceis para botões ou outros tipos de superfícies interativas. [](interactable.md) O botão de linha de base dá suporte a todos os métodos de entrada disponíveis, incluindo entrada de mão articulada para as interações próximas, bem como o olhar + toque de ar para as interações distantes. Você também pode usar o comando de voz para disparar o botão.
+O `Button` (assets/MRTK/SDK/Features/UX/interagible/pré-fabricados/Button. pré-fabricado) baseia-se no conceito [interagindo](interactable.md) para fornecer controles de interface do usuário fáceis para botões ou outros tipos de superfícies interativas. O botão linha de base dá suporte a todos os métodos de entrada disponíveis, incluindo a entrada de mão articulada para as interações de near, bem como olhar + Air-TAP para as interações distantes. Você também pode usar o comando de voz para disparar o botão.
 
-`PressableButtonHoloLens2`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) é o botão de estilo de shell do HoloLens 2 que dá suporte ao movimento preciso do botão para a entrada de acompanhamento de mão direta. Ele combina `Interactable` script com `PressableButton` script.
+`PressableButtonHoloLens2`(assets/MRTK/SDK/Features/UX/interajaable/pré-fabricados/PressableButtonHoloLens2. pré-fabricado) é HoloLens botão de estilo de shell 2 que dá suporte à movimentação precisa do botão para a entrada de rastreamento direto. Ele combina `Interactable` script com `PressableButton` script.
 
-Por HoloLens 2, é recomendável usar botões com um backplate opaco. Botões transparentes não são recomendados devido a esses problemas de usabilidade e estabilidade:
+para HoloLens 2, é recomendável usar botões com uma chapa traseira opaca. Botões transparentes não são recomendados devido a esses problemas de usabilidade e estabilidade:
 
-* Ícone e texto são difíceis de ler com o ambiente físico
+* O ícone e o texto são difíceis de ler com o ambiente físico
 * É difícil entender quando o evento é disparado
-* Hologramas que são exibidos por meio de um plano transparente pode ser instável com a estabilização de LSR de profundidade HoloLens 2
+* Hologramas que são exibidos por meio de um plano transparente podem ser instáveis com estabilização LSR de profundidade HoloLens 2
 
-![Botão com o botão pressionado](../images/button/MRTK_Button_UsePlated.png)
+![Botão folheado](../images/button/MRTK_Button_UsePlated.png)
 
-## <a name="how-to-use-pressable-buttons"></a>Como usar botões pressionáveis
+## <a name="how-to-use-pressable-buttons"></a>Como usar botões prensais
 
 ### <a name="unity-ui-based-buttons"></a>Botões baseados na interface do usuário do Unity
 
-Crie uma Tela em sua cena (GameObject -> interface do usuário -> Canvas). No painel Inspetor da tela:
+Crie uma tela em sua cena (gameobject-> interface do usuário > tela). No painel do inspetor para sua tela:
 
-* Clique em "Converter em Tela do MRTK"
+* Clique em "converter para tela do MRTK"
 * Clique em "Adicionar NearInteractionTouchableUnityUI"
-* Definir a escala X, Y e Z do componente Rect Transform como 0,001
+* Defina a escala X, Y e Z do componente de transformação Rect como 0, 1
 
-Em seguida, arraste `PressableButtonUnityUI` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonUnityUI.prefab), `PressableButtonUnityUICircular` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonUnityUICircular.prefab) ou `PressableButtonHoloLens2UnityUI` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2UnityUI.prefab) na tela.
+Em seguida, arraste `PressableButtonUnityUI` (assets/MRTK/SDK/Features/UX/interagir/pré-fabricados/PressableButtonUnityUI. pré-fabricado), `PressableButtonUnityUICircular` (assets/MRTK/SDK/Features/UX/interajable/pré-fabricados/PressableButtonUnityUICircular. pré-fabricado) ou `PressableButtonHoloLens2UnityUI` (assets/MRTK/SDK/Features/UX/interajable/pré-fabricados/PressableButtonHoloLens2UnityUI. pré-fabricado) na tela.
 
-### <a name="collider-based-buttons"></a>Botões baseados em colisor
+### <a name="collider-based-buttons"></a>Botões baseados em Colisor
 
-Basta arrastar `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) ou `PressableButtonHoloLens2Unplated` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2Unplated.prefab) para a cena. Esses pré-fabs de botão já estão configurados para ter comentários audiovisual para os vários tipos de entradas, incluindo entrada e olhar de mão articulados.
+Basta arrastar `PressableButtonHoloLens2` (assets/MRTK/SDK/Features/UX/interajaable/pré-fabricados/PressableButtonHoloLens2. pré-fabricado) ou `PressableButtonHoloLens2Unplated` (assets/MRTK/SDK/Features/UX/interajable/pré-fabricados/PressableButtonHoloLens2Unplated. pré-fabricado) para a cena. Essas pré-fabricados de botão já estão configuradas para ter comentários visuais de áudio para os vários tipos de entradas, incluindo entrada de mão articulada e olhar.
 
-Os eventos expostos no próprio pré-fab, bem como o componente Interacionável, podem ser usados para disparar ações adicionais. [](interactable.md) Os botões pressionáveis na cena [HandInteractionExample](../example-scenes/hand-interaction-examples.md) usam o evento *OnClick* do Interactable para disparar uma alteração na cor de um cubo. Esse evento é disparado para diferentes tipos de métodos de entrada, como gaze, toque de ar, raio de mão, bem como pressiona o botão físico por meio do script de botão pressionável.
+Os eventos expostos no próprio pré-fabricado, bem como o componente que pode [interagir](interactable.md) , podem ser usados para disparar ações adicionais. Os botões pressionáveis na [cena HandInteractionExample](../example-scenes/hand-interaction-examples.md) usam o evento *onclick* de interagir para disparar uma alteração na cor de um cubo. Esse evento é disparado para diferentes tipos de métodos de entrada, como olhar, toque de ar, mão-raio, bem como pressionamentos de botão físico por meio do script de botão prensado.
 
 <img src="../images/button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to Use Interactable">
 
-Você pode configurar quando o botão pressionável disparar o *evento OnClick* por meio `PhysicalPressEventRouter` do no botão. Por exemplo, você pode definir *OnClick* para ativá-lo quando o botão for pressionado pela primeira vez, em vez de ser pressionado e liberado, definindo *Interactable On* Click to *Event On Press*.
+Você pode configurar quando o botão pressionável aciona o evento *onclick* por meio do `PhysicalPressEventRouter` no botão. Por exemplo, você pode definir *onclick* para acionar quando o botão é pressionado pela primeira vez, em oposição a ser pressionado e liberado, definindo interagir com o *evento* de *clique* para ao pressionar.
 
 <img src="../images/button/MRTK_Button_HowTo_Events.png" width="450" alt="How to use events">
 
-Para aproveitar informações específicas de estado de entrada da mão articulada, você pode usar eventos de botões pressionáveis – *Início* do Toque, *Toque Final,* Botão *Pressionado,* *Botão Liberado.* No entanto, esses eventos não serão ativas em resposta a entradas de toque no ar, raio de mão ou olho. **Para dar suporte a interações próximas e distantes, é recomendável usar o evento *OnClick* do Interactable.**
+Para aproveitar informações de estado de entrada articuladas específicas, você pode usar eventos de botões que podem ser prensados – *início do toque*, *fim do toque*, *botão pressionado*, *botão liberado*. No entanto, esses eventos não serão disparados em resposta às entradas do toque, do lado do ar ou do raio. **Para dar suporte a interações próximas e distantes, é recomendável usar o evento *onclick* de interagir.**
 
 <img src="../images/button/MRTK_Button_HowTo_PressableButton.png" width="450"  alt="How to use Pressable Buttons">
 
 ## <a name="interaction-states"></a>Estados de interação
 
-No estado ocioso, a placa frontal do botão não está visível. À medida que um dedo se aproxima ou um cursor da entrada de olhar tem como alvo a superfície, a borda vermelha da placa frontal se torna visível. Há realçamento adicional da posição do dedo na superfície da placa frontal. Quando pressionado com um dedo, a placa frontal se move com a ponta do dedo. Quando a ponta do dedo toca a superfície da placa frontal, ela mostra um efeito de pulso sutil para dar comentários visuais sobre o ponto de toque.
+No estado ocioso, a placa frontal do botão não é visível. Como as abordagens de um dedo ou um cursor da entrada olhar tem como alvo a superfície, a borda brilhante da placa frontal torna-se visível. Há um realce adicional da posição de alcance na superfície da placa frontal. Quando enviado por push com um dedo, a placa frontal se move com a ponta. Quando o ponto atinge a superfície da placa frontal, ele mostra um efeito de pulso sutil para dar comentários visuais sobre o toque.
 
-No HoloLens de estilo shell 2, há muitas dicas visuais e recursos para aumentar a confiança do usuário na interação.
+no botão estilo de shell HoloLens 2, há muitas indicações visuais e capacidades para aumentar a confiança do usuário na interação.
 
-|  ![Luz de proximidade](../images/button/ux_button_affordance_proximitylight.jpg) | ![Realçando o foco](../images/button/ux_button_affordance_focushighlight.jpg)  | ![Compactando a cadeia](../images/button/ux_button_affordance_compression.jpg) | ![Pulso no gatilho](../images/button/ux_button_affordance_pulse.jpg) |
+|  ![Luz de proximidade](../images/button/ux_button_affordance_proximitylight.jpg) | ![Realce de foco](../images/button/ux_button_affordance_focushighlight.jpg)  | ![Compactando o compartimento](../images/button/ux_button_affordance_compression.jpg) | ![Pulso no gatilho](../images/button/ux_button_affordance_pulse.jpg) |
 |:--- | :--- | :--- | :--- |
-| Luz de proximidade | Realçando o foco | Compactando a cadeia | Pulso no gatilho |
+| Luz de proximidade | Realce de foco | Compactando o compartimento | Pulso no gatilho |
 
-O efeito de pulso sutil é disparado pelo botão pressionável, que procura por *ProximityLight* que estão no ponteiro que está interagindo no momento. Se alguma luz de proximidade for encontrada, o método será chamado, o que animará automaticamente os parâmetros do sombreador `ProximityLight.Pulse` para exibir um pulso.
+O efeito de pulso sutil é disparado pelo botão pressionável, que procura *ProximityLight (s)* que residem no ponteiro que está interagindo atualmente. Se alguma luz de proximidade for encontrada, o `ProximityLight.Pulse` método será chamado, que anima automaticamente os parâmetros do sombreador para exibir um pulso.
 
-## <a name="inspector-properties"></a>Propriedades do inspetor
+## <a name="inspector-properties"></a>Propriedades do Inspetor
 
 ![Estrutura do botão](../images/button/MRTK_Button_Structure.png)
 

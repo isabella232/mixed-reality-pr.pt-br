@@ -5,17 +5,17 @@ author: mavitazk
 ms.author: jemccull
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, seres humanos, Avatar, captura de realidade misturada, vídeo volumétricos
-ms.openlocfilehash: 1a14759a6292a0fcc1e6fd36f518fff537c67dca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, seres humanos, avatar, captura de realidade misturada, vídeo volumétricos
+ms.openlocfilehash: db21b6b02ce76403c2c59e37384c1c1602d8a63e003a8b5b6601c5daf7b9c2a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91675932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228506"
 ---
 # <a name="case-study---representing-humans-in-mixed-reality"></a>Estudo de caso – representando seres humanos em realidade misturada
 
-James Turrell projeta com leve. A depuração em seu trabalho Desfoca uma noção de profundidade e foco. As paredes parecem tanto fechadas quanto infinitas, o brilho dá uma maneira de sombras. Percepções desconhecidas projetadas balanceando cuidadosamente a cor e a difusão da luz. [Turrell descreve esses Sensations](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) como *"sensação com seus olhos"* , uma maneira de estender uma compreensão de realidade. Os mundos fantásticos, como aqueles Turrells, são ferramentas poderosas para explorar nossos sentidos, não diferentemente dos ambientes de imersão de realidade misturada hoje em dia.
+James Turrell projeta com leve. A depuração em seu trabalho Desfoca uma noção de profundidade e foco. As paredes parecem tanto fechadas quanto infinitas, o brilho dá uma maneira de sombras. Percepções desconhecidas projetadas balanceando cuidadosamente a cor e a difusão da luz. [Turrell descreve esses Sensations](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) como *"sensação com seus olhos"*, uma maneira de estender uma compreensão de realidade. Os mundos fantásticos, como aqueles Turrells, são ferramentas poderosas para explorar nossos sentidos, não diferentemente dos ambientes de imersão de realidade misturada hoje em dia.
 
 ![Wide out-James Turrell (1998)](../develop/platform-capabilities-and-apis/images/wide-out-james-turrell.jpg)
 
@@ -51,7 +51,7 @@ Os seres humanos são fundamentais para narração – no sentido mais literal: 
 
 ![Mindshow em VR](../develop/platform-capabilities-and-apis/images/mindshow-in-vr-640px.jpg)
 
-Os avatars em experiências de imersão permitem um novo tipo de Embodiment no narração. Os aplicativos mais recentes estão repensando o conceito de Propriedade do corpo virtual e configurando um salto de geração ao eliminar a distância entre as pessoas. Empresas como [Mindshow](https://mindshow.com/) estão desenvolvendo ferramentas criativas que aproveitam os avatars, permitindo que os usuários adotem totalmente novas pessoas e caracteres. Outros estão explorando [métodos de expressão artística](https://en.wikipedia.org/wiki/Uncanny_valley), uma oportunidade criativa potencialmente ilimitada para explorar a natureza (e a necessidade) de atributos como os humanos. Hoje, essa ausência de realm ajuda a evitar o vale indefinido [do semelhança humano](https://en.wikipedia.org/wiki/Uncanny_valley) , juntamente com um host de problemas técnicos para desenvolvedores diários. Por esses motivos (e mais), é muito provável que os avatars não realísticos se tornem o padrão para o futuro próximo. E ainda, embora o realm seja um enorme desafio para a realidade misturada, *há cenários importantes que exigem a representação autêntica de humanos em espaço 3D* .
+Os avatars em experiências de imersão permitem um novo tipo de Embodiment no narração. Os aplicativos mais recentes estão repensando o conceito de Propriedade do corpo virtual e configurando um salto de geração ao eliminar a distância entre as pessoas. Empresas como [Mindshow](https://mindshow.com/) estão desenvolvendo ferramentas criativas que aproveitam os avatars, permitindo que os usuários adotem totalmente novas pessoas e caracteres. Outros estão explorando [métodos de expressão artística](https://en.wikipedia.org/wiki/Uncanny_valley), uma oportunidade criativa potencialmente ilimitada para explorar a natureza (e a necessidade) de atributos como os humanos. Hoje, essa ausência de realm ajuda a evitar o vale indefinido [do semelhança humano](https://en.wikipedia.org/wiki/Uncanny_valley) , juntamente com um host de problemas técnicos para desenvolvedores diários. Por esses motivos (e mais), é muito provável que os avatars não realísticos se tornem o padrão para o futuro próximo. E ainda, embora o realm seja um enorme desafio para a realidade misturada, *há cenários importantes que exigem a representação autêntica de humanos em espaço 3D*.
 
 Na Microsoft, uma pequena equipe surgiu da Microsoft Research passou os últimos anos desenvolvendo um método para a captura de seres humanos por meio de um vídeo volumétricos. O processo hoje é semelhante à produção de vídeo: em vez de aplicar a movimentação a um ativo sculpted, é uma gravação completa e 3D. O desempenho e a imagem são capturados em tempo real — não é o trabalho de um artista, é uma representação autêntica. E, embora a tecnologia esteja apenas começando a se expandir em aplicativos comerciais, as implicações do vídeo volumétricos são essenciais para a [visão da Microsoft de computação pessoal](https://www.youtube.com/watch?v=tcyj-_IEWt8).
 
@@ -69,7 +69,7 @@ O [Holoportation](https://www.microsoft.com/research/project/holoportation-3/) �
 
 ![Futuro da conversa](../develop/platform-capabilities-and-apis/images/girl-with-dress.jpg)
 
-Desde a disposição em camadas, um novo nível de imersão em aplicativos diários como o Skype, para remodelar radicalmente o conceito de reuniões digitais e viagens de negócios — o vídeo volumétricos abre cenários exclusivos: um especialista treina praticamente médicos em um continente distante ou em amigos digitais nos sofás e nas cadeiras de sua sala de vida. A adição de representações humanas autênticas a experiências mistas de realidade remodelará radicalmente o conceito de reuniões digitais e viagens de negócios.
+desde a disposição em camadas, um novo nível de imersão para os aplicativos diários, como Skype, para remodelar radicalmente o conceito de reuniões digitais e viagens de negócios — o vídeo volumétricos abre cenários exclusivos: um especialista treina praticamente os médicos em um continente distante ou amigos digitais nos sofás e cadeiras de sua sala de vida. A adição de representações humanas autênticas a experiências mistas de realidade remodelará radicalmente o conceito de reuniões digitais e viagens de negócios.
 
 Assim como a arte abstrata de James Turrell e o realismo crítico do ia Weiwei oferecem seus próprios desafios técnicos exclusivos, portanto, os métodos para representar seres humanos como avatars criandos e capturas realísticas. Uma não pode ser ignorada à luz da outra e explorar o potencial de cada uma nos ajudará a entender a interação humana nesse novo espaço.
 

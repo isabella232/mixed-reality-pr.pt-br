@@ -1,124 +1,124 @@
 ---
-title: Configurando os observadores de malha para o dispositivo
-description: Como configurar o observador de malha espacial pronta no MRTK
+title: Configuração dos observadores de malha para o dispositivo
+description: Como configurar o Observador de Malha Espacial in-box no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: aba49e88d4fc555a88fe42e4b09858f1d2453ddc
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 00a3b9afe1970239f52b1ead4f87f930c5826ba75522b99a52cf368249c9fd83
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281931"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228436"
 ---
-# <a name="configuring-mesh-observers-for-device"></a>Configurando os observadores de malha para o dispositivo
+# <a name="configuring-mesh-observers-for-device"></a>Configuração dos observadores de malha para o dispositivo
 
-este guia explicará como configurar o observador de malha espacial pronta no MRTK, que dá suporte à plataforma de Windows Mixed Reality (ou seja, HoloLens). a implementação padrão fornecida pela realidade misturada Toolkit é a classe [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) . Muitas das propriedades neste artigo se aplicam a outras [implementações personalizadas do observador](create-data-provider.md).
+Este guia orientará a configuração do Observador de Malha Espacial in-box no MRTK, que dá suporte à plataforma Windows Mixed Reality (ou seja, HoloLens). A implementação padrão fornecida pela Toolkit Mixed Reality é a [classe WindowsMixedRealitySpatialMeshObserver.](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) Muitas das propriedades neste artigo se aplicam a outras [implementações personalizadas do Observador](create-data-provider.md).
 
 ## <a name="profile-settings"></a>Configurações de perfil
 
-Os dois itens a seguir devem ser definidos primeiro ao configurar um perfil de observador de malha espacial para o [sistema de conscientização espacial](spatial-awareness-getting-started.md).
+Os dois itens a seguir devem ser definidos primeiro ao configurar um perfil de Observador de Malha Espacial para o [sistema de Reconhecimento Espacial](spatial-awareness-getting-started.md).
 
-1. A implementação do tipo de observador concreto
-1. lista de plataforma (s) com suporte para executar este observador
+1. A implementação de tipo de observador concreto
+1. lista de plataformas com suporte para executar este observador
 
 > [!NOTE]
-> Todos os observadores devem estender a interface [IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) .
+> Todos os observadores devem estender a interface [IMixedRealitySpatialAwarenessObserver.](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
 
-![observador de malha geral Configurações tipos de plataforma](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
+![Tipos de plataforma de Configurações Observador de Malha](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
 
 ### <a name="general-settings"></a>Configurações gerais
 
-![observador de malha geral Configurações configurações de Genral](../images/spatial-awareness/MeshObserverGeneralSettings.png)
+![Configurações gerais do Configurações Genral do Observador de Malha](../images/spatial-awareness/MeshObserverGeneralSettings.png)
 
 **Comportamento de inicialização**
 
-O comportamento de inicialização especifica se o observador começará a ser executado quando a primeira instância for criada. As duas opções são:
+O comportamento de inicialização especifica se o observador começará a ser executado quando for instautado pela primeira vez. As duas opções são:
 
-* *Início automático* -o valor padrão no qual o observador iniciará a operação após a inicialização
-* *Início manual* -o observador aguardará para ser direcionado para o início
+* *Início Automático* – o valor padrão pelo qual o observador iniciará a operação após a inicialização
+* *Início Manual* – o Observador aguardará para ser direcionado para iniciar
 
-Se estiver usando o *início manual, será* necessário [retomá-los e suspendê-los em tempo de execução por meio de código](usage-guide.md#starting-and-stopping-mesh-observation).
+Se estiver usando *o Início Manual*, será necessário [retomá-los e suspendê-los em runtime por meio do código](usage-guide.md#starting-and-stopping-mesh-observation).
 
 **Intervalo de atualização**
 
-O tempo, em segundos, entre as solicitações para a plataforma para atualizar dados de malha espacial. Os valores típicos se enquadram no intervalo de 0,1 a 5,0 segundos.
+O tempo, em segundos, entre solicitações para a plataforma para atualizar dados de malha espacial. Os valores típicos se enquadram no intervalo de 0,1 e 5,0 segundos.
 
-**É observador estacionário**
+**É Observador Estacionário**
 
-Indica se o observador deve ou não ser estacionário ou movido e atualizado com o usuário. Se for true, a *forma de observador* com volume definido por *extensões de observação* permanecerá na origem na inicialização. Se for false, o espaço do observador seguirá o cabeçalho do usuário como a origem da forma.
+Indica se o observador deve ou não permanecer estacionário ou mover e atualizar com o usuário. Se true, a *Forma do Observador com* o volume definido por Extensão de *Observação* permanecerá na origem na inicialização. Se false, o espaço Observador seguirá a cabeça do usuário como a origem da forma.
 
-Não haverá dados de malha calculados para qualquer área física fora do espaço do observador, conforme definido por essas propriedades: *é observador estacionário*, * forma do observador * * e *extensões de observação*.
+Não haverá dados de malha calculados para qualquer área física fora do espaço Observador, conforme definido por estas propriedades: *Observador* Estacionário , *Forma do Observador** e Extensão *de Observação*.
 
-**Forma do observador**
+**Forma do Observador**
 
-A forma do observador define o tipo de volume que o observador de malha usará ao observar as malhas. As opções com suporte são:
+A forma do observador define o tipo de volume que o observador de malha usará ao observar malhas. As opções com suporte são:
 
-* *Cubo alinhado ao eixo* – forma retangular que permanece alinhada com os eixos do sistema mundial de coordenadas, conforme determinado na inicialização do aplicativo.
-* *Cubo alinhado ao usuário* – forma retangular que gira para alinhar com o sistema de coordenadas local dos usuários.
-* *Esfera* -um volume esférico com um centro na origem do espaço mundial. O valor X da propriedade de *extensões de observação* será usado como o raio da esfera.
+* *Cubo alinhado ao eixo* – forma retangular que permanece alinhada com os eixos do sistema de coordenadas mundial, conforme determinado na inicialização do aplicativo.
+* *Cubo Alinhado pelo Usuário* – forma retangular que gira para alinhar com o sistema de coordenadas local dos usuários.
+* *Sphere* – um volume esférico com um centro na origem do espaço do mundo. O valor X da propriedade *Deções de* Observação será usado como o raio da esfera.
 
-**Extensões de observação**
+**Extensão de observação**
 
-As extensões de observação definem a distância do ponto de observação que as malhas serão observadas.
+As extensão de observação definem a distância do ponto de observação que as malhas serão observadas.
 
 ### <a name="physics-settings"></a>Configurações de física
 
-![Configurações física do observador de malha](../images/spatial-awareness/MeshObserverPhysicsSettings.png)
+![Mesh Observer Physics Configurações](../images/spatial-awareness/MeshObserverPhysicsSettings.png)
 
 **Camada física**
 
-A camada física na qual os objetos de malha espacial serão colocados para interagir com os sistemas física e RayCast do Unity.
+A camada física na qual os objetos de malha espacial serão colocados para interagir com os sistemas de Física do Unity e RayCast.
 
 > [!NOTE]
-> a realidade misturada Toolkit reserva a *camada 31* por padrão para uso por observadores de conscientização espacial.
+> O banco de Toolkit reserva *a camada 31* por padrão para uso por observadores de Reconhecimento Espacial.
 
-**Recalcular Normals**
+**Recalcular normais**
 
-Especifica se o observador de malha recalculará os Normals da malha após a observação. Essa configuração está disponível para garantir que os aplicativos recebam malhas que contêm dados normais válidos em plataformas que não as retornam com malhas.
+Especifica se o observador de malha recalculará ou não os normais da malha após a observação. Essa configuração está disponível para garantir que os aplicativos recebam malhas que contêm dados normais válidos em plataformas que não as retornam com malhas.
 
 ### <a name="level-of-detail-settings"></a>Nível de configurações de detalhes
 
-![nível de detalhe do observador de malha Configurações](../images/spatial-awareness/MeshObserverLevelOfDetailSettings.png)
+![Nível de detalhes do observador de malha Configurações](../images/spatial-awareness/MeshObserverLevelOfDetailSettings.png)
 
-**Nível de detalhe**
+**Nível de detalhes**
 
-Especifica o nível de detalhe (LOD) dos dados de malha espacial. Os valores definidos no momento são grande, bem e personalizados.
+Especifica o nível de detalhes (LOD) dos dados da malha espacial. Os valores atualmente definidos são Coarse, Fine e Custom.
 
-* Em *grande* lugar, um impacto menor no desempenho do aplicativo e é uma excelente opção para a localização de navegação/plano.
+* *Alta* - coloca um impacto menor no desempenho do aplicativo e é uma excelente opção para a navegação/a descoberta de plano.
 
-* A configuração com balanceamento *médio* geralmente é útil para experiências que verificam continuamente o ambiente em busca de recursos grandes, andares e paredes, bem como detalhes de oclusão.
+* *Média* – a configuração equilibrada geralmente é útil para experiências que digitalizaram continuamente o ambiente em busca de recursos grandes, pisos e paredes, bem como detalhes de oclusão.
 
-* *Normalmente,* isso é exatamente um impacto maior no desempenho do aplicativo e é uma ótima opção para as malhas de oclusão.
+* *Fine* – geralmente causa um impacto mais alto no desempenho do aplicativo e é uma ótima opção para malhas de oclusão.
 
-* *Personalizado* – exige que o aplicativo especifique a propriedade de *medidor de triângulos/cúbico* e permite que os aplicativos ajustem a precisão versus o impacto no desempenho do observador de malha espacial.
+* *Personalizado* – exige que o aplicativo especifique a propriedade *Triângulos/Medidor* Cúbica e permita que os aplicativos ajustem a precisão versus o impacto no desempenho do observador de malha espacial.
 
 > [!NOTE]
-> Não há garantia de que todos os valores de *medidor de triângulos/cúbicos* sejam respeitados por todas as plataformas. A experimentação e a criação de perfil são altamente recomendadas ao usar um LOD personalizado.
+> Não há garantia de que todos os *valores de Triângulos/Medidor Cúbica* sejam considerados por todas as plataformas. A experimentação e a criação de perfil são altamente recomendadas ao usar um LOD personalizado.
 
-**Triângulos por medidor cúbico**
+**Triângulos por medidor cúbica**
 
-Válido ao usar a configuração *personalizada* para o **nível de propriedade de detalhe** e especifica a densidade de triângulo para a malha espacial.
+Válido ao usar a *configuração* Personalizada para a propriedade **Nível** de Detalhe e especifica a densidade do triângulo para a malha espacial.
 
 ### <a name="display-settings"></a>Configurações de vídeo
 
-![Configurações de exibição de observador de malha](../images/spatial-awareness/MeshObserverDisplaySettings.png)
+![Exibição do Observador de Malha Configurações](../images/spatial-awareness/MeshObserverDisplaySettings.png)
 
-**Opção de exibição**
+**Opção De exibição**
 
-Especifica como as malhas espaciais devem ser exibidas pelo observador. Os valores com suporte são:
+Especifica como malhas espaciais devem ser exibidas pelo observador. Os valores com suporte são:
 
-* *Nenhum* -o observador não renderizará a malha
-* *Visível* -os dados de malha ficarão visíveis usando o *material visível*
-* *Oclusão* -os dados de malha serão occlude itens em cena usando o *material de oclusão*
+* *Nenhum* – o Observador não renderizará a malha
+* *Visível* – os dados da malha estarão visíveis usando *o Material Visível*
+* *Oclusão –* os dados da malha serão itens de occluir na cena usando *o Material de Oclusão*
 
-![Selecione a implementação do sistema de conscientização espacial](../images/spatial-awareness/MRTK_SpatialAwareness_DisplayOptions.jpg)
+![Selecione a implementação do sistema de reconhecimento espacial](../images/spatial-awareness/MRTK_SpatialAwareness_DisplayOptions.jpg)
 
-Os observadores espaciais podem ser [retomados/suspensos em tempo de execução por meio de código.](usage-guide.md#starting-and-stopping-mesh-observation)
+Observadores Espaciais podem [ser retomados/suspensos em runtime por meio de código.](usage-guide.md#starting-and-stopping-mesh-observation)
 
 > [!WARNING]
-> A configuração da *opção de exibição* para *nenhum* **não interrompe a** execução do observador. Se você quiser interromper todos os observadores, os aplicativos precisarão suspender todos os observadores por meio de [`CoreServices.SpatialAwareness.SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers)
+> Definir *Opção de Exibição* *como Nenhum* **NÃO impede** que o observador seja executado. Se você quiser interromper todos os observadores, os aplicativos precisarão suspender todos os observadores por meio de [`CoreServices.SpatialAwareness.SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers)
 
 **Material visível**
 
@@ -126,12 +126,12 @@ Indica o material a ser usado ao visualizar a malha espacial.
 
 **Material de oclusão**
 
-Indica o material a ser usado para fazer com que a malha espacial occlude hologramas.
+Indica o material a ser usado para fazer com que a malha espacial oclua hologramas.
 
 ## <a name="see-also"></a>Confira também
 
-* [Sistema de conscientização espacial](spatial-awareness-getting-started.md)
+* [Sistema de Reconhecimento Espacial](spatial-awareness-getting-started.md)
 * [Configurando o sistema de reconhecimento espacial por meio de código](usage-guide.md)
-* [Documentação da API do IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
-* [Documentação da API do IMixedRealitySpatialAwarenessMeshObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
-* [Documentação da API do BaseSpatialObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
+* [Documentação da API IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
+* [Documentação da API IMixedRealitySpatialAwarenessMeshObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
+* [Documentação da API BaseSpatialObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)

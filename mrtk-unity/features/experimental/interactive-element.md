@@ -1,38 +1,38 @@
 ---
 title: Elemento interativo
-description: Documentação de MRTK interativaelement
+description: Documentação do INTERACTIVEElement MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, elemento interativo, interagir
-ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Elemento Interativo, Interativo
+ms.openlocfilehash: 6d8f36c4780844e991eb32943645402503fab8340c6843dbb607f1c11033d912
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220298"
 ---
-# <a name="interactive-element-experimental"></a>Elemento interativo [experimental]
+# <a name="interactive-element-experimental"></a>Elemento Interativo [Experimental]
 
-Um ponto de entrada centralizado simplificado para o sistema de entrada MRTK. Contém métodos de gerenciamento de estado, gerenciamento de eventos e a lógica de configuração de estado para os Estados de interação principal.
+Um ponto de entrada centralizado simplificado para o sistema de entrada do MRTK. Contém métodos de gerenciamento de estado, gerenciamento de eventos e a lógica de configuração de estado para estados de interação principais.
 
-O elemento interativo é um recurso experimental com suporte no Unity 2019,3 e como ele utiliza uma funcionalidade nova para o Unity 2019,3: [serializar referência](https://docs.unity3d.com/ScriptReference/SerializeReference.html).
+O Elemento Interativo é um recurso experimental com suporte no Unity 2019.3 e para cima, pois utiliza uma funcionalidade nova para o Unity 2019.3: [Serializar](https://docs.unity3d.com/ScriptReference/SerializeReference.html)Referência .
 
-### <a name="interactive-element-inspector"></a>Inspetor de elemento interativo
+### <a name="interactive-element-inspector"></a>Inspetor de Elemento Interativo
 
-Durante o modo de reprodução, o Inspetor de elemento interativo fornece comentários visuais que indicam se o estado atual está ativo ou não. Se um estado estiver ativo, ele será realçado com uma cor ciano.  Se o estado não estiver ativo, a cor não será alterada. Os números ao lado dos Estados no Inspetor são os valores de estado, se o estado estiver ativo, o valor será 1, se o estado não estiver ativo, o valor será 0.
+Durante o modo de reprodução, o inspetor do Elemento Interativo fornece comentários visuais que indicam se o estado atual está ativo ou não. Se um estado estiver ativo, ele será realçado com uma cor ciano.  Se o estado não estiver ativo, a cor não será alterada. Os números ao lado dos estados no inspetor são os valores de estado. Se o estado estiver ativo, o valor será 1, se o estado não estiver ativo, o valor será 0.
 
-![Elemento interativo com interação de mão virtual](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+![Elemento Interativo com interação de mão virtual](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
 ## <a name="core-states"></a>Estados principais
 
-O elemento interativo contém Estados principais e dá suporte à adição de [Estados personalizados](#custom-states).  Um estado de núcleo é aquele que já tem a lógica de configuração de estado definida em `BaseInteractiveElement` . A seguir está uma lista de Estados básicos controlados por entrada atuais: 
+O Elemento Interativo contém estados principais e dá suporte à adição de [estados personalizados.](#custom-states)  Um estado principal é aquele que já tem a lógica de configuração de estado definida em `BaseInteractiveElement` . Veja a seguir uma lista dos estados principais atuais orientados por entrada: 
 
 ### <a name="current-core-states"></a>Estados principais atuais
 
 - [Padrão](#default-state) 
 
-Estados principais de interação próxima e longe:
+Estados principais de interação próxima e distante:
 - [Foco](#focus-state) 
 
 Estados principais de interação próxima:
@@ -81,18 +81,18 @@ interactiveElement.AddNewState(CoreInteractionState.SelectFar.ToString());
 
 Os estados no Elemento Interativo são do tipo `InteractionState` .  Um `InteractionState` contém as seguintes propriedades:
 
-- **Nome**: o nome do estado.
-- **Valor**: o valor de estado.  Se o estado for on, o valor do estado será 1. Se o estado for off, o valor de estado será 0.
-- **Ativo**: se o estado está ativo no momento. O valor da propriedade ativa é true quando o estado for on, false se o estado for off. 
-- **Tipo de interação**: o tipo de interação de um estado é o tipo de interação de que um estado é destinado. 
-  - `None`: Não oferece suporte a qualquer forma de interação de entrada.
-  - `Near`: Suporte a interação próxima. A entrada é considerada próxima à interação quando uma mão articulada tem contato direto com outro objeto de jogo, ou seja, a posição da mão articulada está perto da posição do objeto de jogo no espaço de mundo.
-  - `Far`: Suporte de interação distante. A entrada é considerada longe da interação quando o contato direto com o objeto de jogo não é necessário. Por exemplo, a entrada por meio do controlador Ray ou olhar é considerada uma entrada de interação distante.
-  - `NearAndFar`: Abrange o suporte à interação próxima e a extrema. 
-  - `Other`: Suporte à interação independente de ponteiro.
-- **Configuração de evento**: a configuração de evento para um estado é o ponto de entrada do perfil de eventos serializados. 
+- **Nome:** o nome do estado.
+- **Valor**: o valor do estado.  Se o estado estiver, o valor de estado será 1. Se o estado estiver desligado, o valor do estado será 0.
+- **Ativo:** se o estado está ativo ou não no momento. O valor da propriedade Active será true quando o estado estiver ativado, false se o estado estiver desligado. 
+- **Tipo de** Interação: o Tipo de Interação de um estado é o tipo de interação para o qual um estado se destina. 
+  - `None`: não dá suporte a nenhuma forma de interação de entrada.
+  - `Near`: suporte à interação próxima. A entrada é considerada quase interação quando uma mão articulada tem contato direto com outro objeto de jogo, ou seja, a posição que a mão articulada está próxima da posição do objeto do jogo no espaço do mundo.
+  - `Far`: suporte à interação distante. A entrada é considerada interação distante quando o contato direto com o objeto do jogo não é necessário. Por exemplo, a entrada por meio do raio do controlador ou do olhar é considerada entrada de interação distante.
+  - `NearAndFar`: abrange o suporte à interação próxima e distante. 
+  - `Other`: suporte à interação independente de ponteiro.
+- **Configuração de** Evento: a configuração de evento para um estado é o ponto de entrada do perfil de eventos serializados. 
 
-Todas essas propriedades são definidas internamente no `State Manager` elemento interativo contido. Para a modificação de Estados, use os seguintes métodos auxiliares:
+Todas essas propriedades são definidas internamente no `State Manager` contido no Elemento Interativo. Para modificação de estados, use os seguintes métodos auxiliares:
 
 **Métodos auxiliares de configuração de estado**
 
@@ -119,7 +119,7 @@ interactiveElement.AddNewState("StateName");
 interactiveElement.RemoveState("StateName");
 ```
 
-Obter a configuração de evento de um estado é específica para o próprio estado. Cada estado principal tem um tipo de configuração de evento específico que é descrito abaixo nas seções que descrevem cada estado principal.
+Obter a configuração de evento de um estado é específico para o próprio estado. Cada estado principal tem um tipo de configuração de evento específico que é descrito abaixo nas seções que descrevem cada estado principal.
 
 Aqui está um exemplo generalizado de como obter a configuração de evento de um estado:
 
@@ -182,19 +182,19 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 #### <a name="focus-near-vs-focus-far-behavior"></a>Foco próximo versus comportamento distante do foco 
 
-![Concentre-se perto e longe da interação com a mão virtual](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
+![Foco próximo e distante com interação com a mão virtual](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
 
 ### <a name="focus-near-state"></a>Foco próximo ao estado
 
-O foco próximo do estado é definido quando um evento de foco é gerado e o ponteiro principal é o ponteiro de adseção, uma indicação de interação próxima. 
+O estado Foco Próximo é definido quando um evento de foco é gerado e o ponteiro primário é o ponteiro Desfoque, uma indicação de interação próxima. 
 
-**Focalizar comportamento** 
- ![ de estado próximo Foco próximo ao estado com interação virtual](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
+**Comportamento de foco próximo do estado** 
+ ![ Foco próximo ao estado com interação com a mão virtual](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
 
-**Foco próximo ao inspetor** 
- ![ de estado Foco próximo ao componente no Inspetor](../images/interactive-element/InEditor/FocusNearStateInspector.png)
+**Foco próximo ao Inspetor de Estado** 
+ ![ Foco próximo do componente no Inspetor](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
-#### <a name="getting-focusnear-state-events&quot;></a>Obtendo eventos de estado FocusNear
+#### <a name="getting-focusnear-state-events&quot;></a>Obter eventos de estado FocusNear
 
 Tipo de configuração de evento para o estado FocusNear: `FocusEvents`
 
@@ -212,17 +212,17 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 });
 ```
 
-### <a name="focus-far-state"></a>Estado distante do foco
+### <a name="focus-far-state"></a>Estado de foco distante
 
-O estado de foco é definido quando o ponteiro principal não é o ponteiro de enfrente.  Por exemplo, o ponteiro de raio do controlador padrão e o ponteiro GGV (olhar, gesto, voz) são considerados ponteiros de interação distantes.
+O estado Foco Distante é definido quando o ponteiro primário não é o ponteiro Pointer.  Por exemplo, o ponteiro de raio do controlador padrão e o ponteiro GGV (Gaze, Gesto, Voz) são considerados ponteiros de interação distantes.
 
-Comportamento do estado **distante do foco** 
- ![ Estado de foco muito com interação virtual](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
+**Comportamento do estado de foco distante** 
+ ![ Estado de foco distante com interação de mão virtual](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
 
-Inspetor de estado **distante do foco** 
- ![ Componente de foco no Inspetor](../images/interactive-element/InEditor/FocusFarStateInspector.png)
+**Inspetor de Estado de Foco Distante** 
+ ![ Componente de foco distante no Inspetor](../images/interactive-element/InEditor/FocusFarStateInspector.png)
 
-#### <a name="getting-focus-far-state-events&quot;></a>Obtendo eventos de estado distante do foco
+#### <a name="getting-focus-far-state-events&quot;></a>Obter eventos de estado distante de foco
 
 Tipo de configuração de evento para o estado FocusFar: `FocusEvents`
 
@@ -242,7 +242,7 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 ### <a name="touch-state"></a>Estado de toque
 
-O estado de toque é um estado de interação próxima que é definido quando uma mão articulada toca o objeto diretamente.  Um toque direto significa que o dedo do índice da mão articulada está muito próximo da posição mundial do objeto. Por padrão, um `NearInteractionTouchableVolume` componente é anexado ao objeto se o estado de toque for adicionado à lista de estado.  A presença de um  `NearInteractionTouchableVolume` `NearInteractionTouchable` componente ou é necessária para detectar eventos de toque.  A diferença entre `NearInteractionTouchableVolume` e `NearInteractionTouchable` é que o `NearInteractionTouchableVolume` detecta um toque com base no colisor do objeto e `NearInteractionTouchable` detecta o toque em uma área definida de um plano.
+O estado de Toque é um estado de interação próxima que é definido quando uma mão articulada toca o objeto diretamente.  Um toque direto significa que o dedo indicador da mão articulada está muito próximo à posição do mundo do objeto. Por padrão, um `NearInteractionTouchableVolume` componente será anexado ao objeto se o estado Touch for adicionado à lista de estado.  A presença de um  `NearInteractionTouchableVolume` componente ou é necessária para detectar eventos `NearInteractionTouchable` touch.  A diferença entre e é que detecta um toque com base no colisor do objeto e detecta o toque dentro de uma área `NearInteractionTouchableVolume` `NearInteractionTouchable` definida de um `NearInteractionTouchableVolume` `NearInteractionTouchable` plano.
 
 **Comportamento do estado de toque** 
  ![ Estado de toque com interação de mão virtual](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
@@ -321,17 +321,17 @@ O estado Clicado é disparado por um clique de interação distante (Selecione o
 **Comportamento de estado clicado** 
  ![ Estado clicado com interações de mão virtual](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)
 
-Inspetor de estado **clicado** 
+**Inspetor de Estado Clicado** 
  ![ Clique no componente de estado no Inspetor](../images/interactive-element/InEditor/ClickedStateInspector.png)
 
-**Exemplo de estado pressionado próximo e longe**  
-O estado clicado pode ser disparado por meio de pontos de entrada adicionais usando o `interactiveElement.TriggerClickedState()` método.  Por exemplo, se um usuário quiser um toque próximo à interação para disparar um clique em um objeto também, ele adicionará o `TriggerClickedState()` método como um ouvinte no estado de toque.   
+**Exemplo de estado próximo e muito clicado**  
+O estado clicado pode ser disparado por meio de pontos de entrada adicionais usando o `interactiveElement.TriggerClickedState()` método .  Por exemplo, se um usuário quiser um toque de interação próxima para disparar um clique em um objeto também, ele adicionará o método como um ouvinte no estado `TriggerClickedState()` de toque.   
 
-![Estado próximo e distante com interações virtuais](../images/interactive-element/InEditor/Gifs/NearFarClickedState.gif)
+![Estado próximo e distante com interações de mão virtual](../images/interactive-element/InEditor/Gifs/NearFarClickedState.gif)
 
-#### <a name="getting-clicked-state-events&quot;></a>Obtendo eventos de estado clicados
+#### <a name="getting-clicked-state-events&quot;></a>Recebendo eventos de estado clicados
 
-Tipo de configuração de evento para o estado clicado: `ClickedEvents`
+Tipo de configuração de evento para o Estado Clicado: `ClickedEvents`
 
 ```c#
 ClickedEvents clickedEvent = interactiveElement.GetStateEvents<ClickedEvents>(&quot;Clicked");
@@ -342,24 +342,24 @@ clickedEvent.OnClicked.AddListener(() =>
 });
 ```
 
-### <a name="toggle-on-and-toggle-off-state"></a>Ativar/desativar o estado
+### <a name="toggle-on-and-toggle-off-state"></a>Alternar o estado De desligar e Desligar
 
-Os Estados ativar/desativar e desligar são um par e ambos precisam estar presentes para o comportamento de alternância.  Por padrão, os Estados de alternância e desativação são disparados por um clique de interação extrema (selecione estado distante).  Por padrão, o estado de desativação está ativo no início, o que significa que a alternância será inicializada como desativado.  Se um usuário desejar que o estado de alternância esteja ativo no início, em seguida, no estado ativar/desativar definido `IsSelectedOnStart` como true.
+Os estados De alternância e Desligar são um par e ambos precisam estar presentes para o comportamento de alternância.  Por padrão, os estados Ativar/Ativar e Ativar/Desligar são disparados por meio de um clique de interação distante (selecione o estado Distante).  Por padrão, o estado Desativar está ativo na inicialização, o que significa que a alternância será inicializada como off.  Se um usuário quiser que o estado Alternar Ativado seja ativo no início, no estado Alternar Ativado definido `IsSelectedOnStart` como true.
 
-**Alternar e desativar o comportamento** 
- ![ do estado Ativar e desativar com interações virtuais](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
+**Comportamento de estado de alternância e de alternância** 
+ ![ Alternar e desligar com interações de mão virtual](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
 
-**Alternar e desativar o Inspetor** 
- ![ de estado Ativar/desativar componente no Inspetor](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)
+Inspetor de Estado de **Alternância e Desligar** 
+ ![ Alternar componente no Inspetor](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)
 
-**Exemplo de Estados de alternância Near e far**  
-Semelhante ao estado clicado, alternar configuração de estado pode ter vários pontos de entrada usando o `interactiveElement.SetToggleStates()` método. Por exemplo, se um usuário quiser tocar como um ponto de entrada adicional para definir os Estados de alternância, ele adicionará o `SetToggleStates()` método a um dos eventos no estado de toque. 
+**Exemplo de estados de alternância próximos e distantes**  
+Semelhante ao estado Clicado, a configuração de estado de alternância pode ter vários pontos de entrada usando o `interactiveElement.SetToggleStates()` método . Por exemplo, se um usuário quiser toque como um ponto de entrada adicional para definir os estados de alternância, ele adicionará o método a um dos eventos no `SetToggleStates()` estado Toque. 
 
-![Alternância próxima e longe com interações virtuais](../images/interactive-element/InEditor/Gifs/NearFarToggleStates.gif)
+![Alternância próxima e distante com interações de mão virtual](../images/interactive-element/InEditor/Gifs/NearFarToggleStates.gif)
 
-#### <a name="getting-toggle-on-and-toggle-off-state-events&quot;></a>Guia de alternância e desativação de eventos de estado
+#### <a name="getting-toggle-on-and-toggle-off-state-events&quot;></a>Como alternar e alternar eventos de estado
 
-Tipo de configuração de evento para o estado de alternância: `ToggleOnEvents`  
+Tipo de configuração de evento para o estado ToggleOn: `ToggleOnEvents`  
 Tipo de configuração de evento para o estado ToggleOff: `ToggleOffEvents`
 
 ```c#
@@ -419,14 +419,14 @@ O estado palavra-chave de fala escuta as palavras-chave definidas no Perfil de F
 
     ![Validação e registro de palavra-chave](../images/interactive-element/InEditor/SpeechKeywordAddKeywordBlank.png) 
 
-1. Insira a nova palavra-chave que acabou de ser registrada no perfil de fala
+1. Insira a nova palavra-chave que acabou de ser registrada no Perfil de Fala
 
-    ![Inserindo nova palavra-chave de fala](../images/interactive-element/InEditor/SpeechKeywordEnterKeyword.png) 
+    ![Inserindo uma nova palavra-chave de fala](../images/interactive-element/InEditor/SpeechKeywordEnterKeyword.png) 
 
 
-Para testar o estado da palavra-chave Speech no editor, pressione o código de tecla que foi definido na etapa 6 (F5) para simular o evento reconhecido da palavra-chave de fala.
+Para testar o estado palavra-chave de fala no editor, pressione KeyCode definido na etapa 6 (F5) para simular o evento reconhecido da palavra-chave de fala.
 
-#### <a name="getting-speech-keyword-state-events&quot;></a>Obtendo eventos de estado de palavra-chave de fala
+#### <a name="getting-speech-keyword-state-events&quot;></a>Obter eventos de estado de palavra-chave de fala
 
 Tipo de configuração de evento para o estado SpeechKeyword: `SpeechKeywordEvents`
 
@@ -451,21 +451,21 @@ keywordEvent.OnKeywordRecognized.AddListener(() =>
 
 ### <a name="how-to-create-a-custom-state-via-inspector"></a>Como criar um estado personalizado por meio do Inspetor 
 
-O estado personalizado criado via inspector será inicializado com a configuração de evento de estado padrão. A configuração de evento padrão para um estado personalizado é do tipo `StateEvents` e contém os eventos Onstatee e OnStateOff.
+O estado personalizado criado por meio do inspetor será inicializado com a configuração de evento de estado padrão. A configuração de evento padrão para um estado personalizado é do tipo `StateEvents` e contém os eventos OnStateOn e OnStateOff.
 
-1. Navegue até **criar estado personalizado** no Inspetor para elemento interativo.
+1. Navegue **até Criar Estado Personalizado** no inspetor do Elemento Interativo.
     
     ![Criando um estado personalizado](../images/interactive-element/InEditor/InteractiveElementCreateCustomState.png)
 
-1. Insira o nome do novo estado. Esse nome deve ser exclusivo e não pode ser o mesmo que os Estados principais existentes. 
+1. Insira o nome do novo estado. Esse nome deve ser exclusivo e não pode ser o mesmo que os estados principais existentes. 
     
     ![Inserindo o nome de um novo estado personalizado](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateName.png)
 
-1. Selecione **definir nome do estado** para adicionar à lista de estado.
+1. Selecione **Definir Nome do Estado** para adicionar à lista de estados.
     
-    ![Adicionar estado personalizado à lista de estado](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateNameSet.png)
+    ![Adicionar estado personalizado à lista de estados](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateNameSet.png)
 
-   Esse estado personalizado é inicializado com a `StateEvents` configuração de evento padrão que contém os `OnStateOn` `OnStateOff` eventos e. Para criar uma configuração de evento personalizado para um novo estado, consulte: [criando um estado personalizado com uma configuração de evento personalizado](#creating-a-custom-state-with-a-custom-event-configuration).
+   Esse estado personalizado é inicializado com a configuração `StateEvents` de evento padrão que contém os eventos e `OnStateOn` `OnStateOff` . Para criar uma configuração de evento personalizada para um novo estado, consulte: [Criando um estado personalizado com uma configuração de evento personalizado.](#creating-a-custom-state-with-a-custom-event-configuration)
     
     ![Novo estado mostrado no componente de elemento interativo](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
 
@@ -489,50 +489,50 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 
 ### <a name="creating-a-custom-state-with-a-custom-event-configuration"></a>Criando um estado personalizado com uma configuração de evento personalizado 
 
-Os arquivos de exemplo para um estado personalizado chamado **Keyboard** estão localizados aqui: MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
+Arquivos de exemplo para um estado personalizado chamado **Teclado** estão localizados aqui: MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
 
-As etapas a seguir percorrem um exemplo existente de criação de uma configuração de evento de estado personalizado e arquivos de receptor.
+As etapas a seguir explicam um exemplo existente de criação de uma configuração de evento de estado personalizado e arquivos receptores.
 
-1. Considere um nome de estado.  Esse nome deve ser exclusivo e não pode ser o mesmo que os Estados principais existentes. Para os fins deste exemplo, o nome do estado será **teclado**.
+1. Pense em um nome de estado.  Esse nome deve ser exclusivo e não pode ser o mesmo que os estados principais existentes. Para os fins deste exemplo, o nome do estado será **Teclado**.
 
-1. Crie dois arquivos. cs chamados nome do estado + "receptor" e nome do estado + "eventos". A nomenclatura desses arquivos é levada em consideração internamente e deve seguir o nome do estado + Convenção do evento/receptor. 
+1. Crie dois arquivos .cs chamados state name + "Receiver" e state name + "Events". A nomeação desses arquivos é levada em consideração internamente e deve seguir o nome do estado + Convenção de Evento/Receptor. 
 
     ![Scripts de estado do teclado](../images/interactive-element/InEditor/KeyboardStateFiles.png)
 
-1. Consulte os arquivos KeyboardEvents. cs e KeyboardReceiver. cs para obter mais detalhes sobre o conteúdo do arquivo. Novas classes de configuração de evento devem herdar de `BaseInteractionEventConfiguration` e novas classes de receptor de eventos devem herdar de `BaseEventReceiver` .  Os exemplos na configuração de estado do estado do teclado estão localizados no `CustomStateSettingExample.cs` arquivo. 
+1. Consulte os arquivos KeyboardEvents.cs e KeyboardReceiver.cs para obter mais detalhes sobre o conteúdo do arquivo. Novas classes de configuração de evento devem herdar `BaseInteractionEventConfiguration` de e novas classes de receptor de evento devem herdar de `BaseEventReceiver` .  Exemplos de configuração de estado para o estado Teclado estão localizados no `CustomStateSettingExample.cs` arquivo. 
 
-1. Adicione o estado ao elemento interativo usando o nome do estado, o nome do estado será reconhecido se existirem arquivos de configuração de evento e receptor de evento.  As propriedades no arquivo de configuração de evento personalizado devem aparecer no Inspetor.
+1. Adicione o estado ao Elemento Interativo usando o nome do estado, o nome do estado será reconhecido se existirem arquivos de configuração de evento e receptor de evento.  As propriedades no arquivo de configuração de evento personalizado devem aparecer no inspetor.
 
-    ![Adicionando estado personalizado ao elemento interativo ](../images/interactive-element/InEditor/AddKeyboardState.png) ![ estado personalizado reconhecido no elemento interativo](../images/interactive-element/InEditor/SetKeyboardStateName.png)
+    ![Adicionando estado personalizado ao elemento interativo ](../images/interactive-element/InEditor/AddKeyboardState.png) ![ Estado personalizado reconhecido no elemento interativo](../images/interactive-element/InEditor/SetKeyboardStateName.png)
 
 
-1. Para obter mais exemplos de configuração de evento e de arquivos receptor de eventos, consulte os arquivos nestes caminhos:    
+1. Para obter mais exemplos de configuração de evento e arquivos de receptor de eventos, consulte os arquivos nestes caminhos:    
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventConfigurations
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventReceivers
 
 ## <a name="example-scene"></a>Cena de exemplo 
 
-A cena de exemplo para elemento interativo + Visualizador de estado está localizada aqui: MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity
+A cena de exemplo do Elemento Interativo + Visualizador de Estado está localizada aqui: MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity
 
-![Cena de exemplo com elemento interativo e visualizador de estado](../images/interactive-element/InEditor/ExampleScene.png)
+![Cena de exemplo com Elemento Interativo e Visualizador de Estado](../images/interactive-element/InEditor/ExampleScene.png)
 
-### <a name="compressable-button"></a>Botão compactável
+### <a name="compressable-button"></a>Botão compactado
 
-A cena de exemplo contém pré-fabricados nomeado `CompressableButton` e `CompressableButtonToggle` , esses pré-fabricados espelham o comportamento dos `PressableButtonHoloLens2` botões, que são construídos usando o elemento interativo e o Visualizador de estado. No `CompressableButton` momento, o componente é uma combinação de `PressableButton`  +  `PressableButtonHoloLens2` com `BaseInteractiveElement` como uma classe base. 
+A cena de exemplo contém pré-fabs chamados e , esses pré-fabs espelham o comportamento dos botões, que são construídos usando o Elemento Interativo e `CompressableButton` `CompressableButtonToggle` o `PressableButtonHoloLens2` Visualizador de Estado. Atualmente, `CompressableButton` o componente é uma combinação de com como uma classe `PressableButton`  +  `PressableButtonHoloLens2` `BaseInteractiveElement` base. 
 
-## <a name="state-visualizer-experimental"></a>Visualizador de estado [experimental]
+## <a name="state-visualizer-experimental"></a>Visualizador de Estado [Experimental]
 
-O componente Visualizador de estado adiciona animações a um objeto com base nos Estados definidos em um componente de elemento interativo vinculado. Esse componente cria ativos de animação, coloca-os na pasta MixedRealityToolkit. Generated e habilita a configuração de quadro-chave de animação simplificada por meio da adição de propriedades animáveis a um objeto de jogo de destino. Para habilitar transições de animação entre Estados, um ativo do controlador Animator é criado e uma máquina de estado padrão é gerada com parâmetros associados e quaisquer transições de estado.  A máquina de estado pode ser exibida na janela Animator do Unity.
+O componente Visualizador de Estado adiciona animações a um objeto com base nos estados definidos em um componente do Elemento Interativo vinculado. Esse componente cria ativos de animação, coloca-os na pasta MixedRealityToolkit.Generated e habilita a configuração de keyframe de animação simplificada por meio da adição de propriedades Animatable a um objeto de jogo de destino. Para habilitar transições de animação entre estados, um ativo do Controlador de Animator é criado e um computador de estado padrão é gerado com parâmetros associados e quaisquer transições de estado.  O computador de estado pode ser exibido na janela Animator do Unity.
 
-### <a name="state-visualizer-and-unity-animation-system"></a>Visualizador de estado e sistema de animação Unity
+### <a name="state-visualizer-and-unity-animation-system"></a>Visualizador de Estado e Sistema de Animação do Unity
 
-O Visualizador de estado atualmente utiliza o sistema de animação do Unity. 
+Atualmente, o Visualizador de Estado aproveita o Sistema de Animação do Unity. 
 
-Quando o botão **gerar novos clipes de animação** no Visualizador de estado é pressionado, novos ativos de clipe de animação são gerados com base nos nomes de estado no elemento interativo e são colocados na pasta MixedRealityToolkit. Generated. A propriedade clipe de animação em cada contêiner de estado é definida como o clipe de animação associado.
+Quando  o botão Gerar Novos Clipes de Animação no Visualizador de Estado é pressionado, novos ativos de clipe de animação são gerados com base nos nomes de estado no Elemento Interativo e são colocados na pasta MixedRealityToolkit.Generated. A propriedade Clipe de Animação em cada contêiner de estado é definida como o clipe de animação associado.
 
-![Clipes de animação no componente do Visualizador de estado](../images/interactive-element/StateVisualizer/AnimationClips.png)
+![Clipes de animação no componente visualizador de estado](../images/interactive-element/StateVisualizer/AnimationClips.png)
 
-Um [computador de estado Animator](https://docs.unity3d.com/Manual/AnimationOverview.html) também é gerado para gerenciar transições suaves entre clipes de animação.  Por padrão, a máquina de estado utiliza o [estado any](https://docs.unity3d.com/Manual/class-State.html) para permitir transições entre qualquer estado no elemento interativo. 
+Um [Computador de Estado animador também](https://docs.unity3d.com/Manual/AnimationOverview.html) é gerado para gerenciar transições suaves entre clipes de animação.  Por padrão, o computador de estado utiliza Qualquer [Estado](https://docs.unity3d.com/Manual/class-State.html) para permitir transições entre qualquer estado no Elemento Interativo. 
 
 [Os visualizadores de estado](https://docs.unity3d.com/Manual/AnimationParameters.html) disparados no animador também são gerados para cada estado, os parâmetros de gatilho são usados no Visualizador de Estado para disparar uma animação.
 
@@ -572,64 +572,64 @@ O Visualizador de Estado deve ser adicionado a um objeto por meio do Inspetor e 
 
 1. Escolher uma cor 
 
-    ![Escolhendo uma cor do visualisador no disco de cores](../images/interactive-element/StateVisualizer/SetBlueColor.png)
+    ![Escolhendo uma cor do visualizador na roda de cores](../images/interactive-element/StateVisualizer/SetBlueColor.png)
 
-1. Pressione reproduzir e observe a alteração de cor de transição
+1. Pressione Reproduzir e observe a alteração de cor de transição
 
-    ![Exemplo de alteração de cor de transição com interação de mão virtual](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+    ![Exemplo de alteração de cor de transição com interação com a mão virtual](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
-## <a name="animatable-properties"></a>Propriedades animáveis
+## <a name="animatable-properties"></a>Propriedades animaíveis
 
-A principal finalidade das propriedades animáveis é simplificar a configuração de quadro-chave do clipe de animação.  Se um usuário estiver familiarizado com o sistema de animação do Unity e preferir definir diretamente os quadros-chave nos clipes de animação gerados, eles poderão simplesmente não adicionar propriedades animáveis a um objeto de destino e abrir o clipe na janela de animação do Unity (animação de > de animação do Windows >). 
+A principal finalidade das Propriedades Animatable é simplificar a configuração de keyframe do clipe de animação.  Se um usuário estiver familiarizado com o Sistema de Animação do Unity e preferir definir diretamente os keyframes nos clipes de animação gerados, ele simplesmente não poderá adicionar propriedades Animatable a um objeto de destino e abrir o clipe na janela Animação do Unity (animação Windows > animação >). 
 
-Se estiver usando as propriedades animáveis para animação, o tipo de curva será definido como EaseInOut.
+Se estiver usando as propriedades Animatable para animação, o tipo de curva será definido como EaseInOut.
 
-**Propriedades animáveis atuais:**
+**Propriedades animaíveis atuais:**
 - [Deslocamento de escala](#scale-offset)
-- [Deslocamento da posição](#position-offset)
+- [Deslocamento de posição](#position-offset)
 - [Cor](#color)
 - [Cor do sombreador](#shader-color)
-- [Sombreador float](#shader-float)
+- [Float do sombreador](#shader-float)
 - [Vetor de sombreador](#shader-vector)
 
 ### <a name="scale-offset"></a>Deslocamento de escala
 
-A propriedade animada de deslocamento de escala usa a escala atual do objeto e adiciona o deslocamento definido.
+A propriedade Animatable de Deslocamento de Escala pega a escala atual do objeto e adiciona o deslocamento definido.
 
 ![Deslocamento de escala com interação de mão virtual](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
 
-### <a name="position-offset"></a>Deslocamento da posição
+### <a name="position-offset"></a>Deslocamento de posição
 
-A propriedade de deslocamento animada da posição usa a posição atual do objeto e adiciona o deslocamento definido.
+A propriedade Animatable deslocamento de posição assume a posição atual do objeto e adiciona o deslocamento definido.
 
 ![Deslocamento de posição com interação de mão virtual](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
 
 ### <a name="color"></a>Color
 
-A propriedade de cor animável representa a cor principal de um material se o material tiver uma propriedade de cor principal. Essa propriedade anima a `material._Color` propriedade.
+A propriedade Color Animatable representará a cor principal de um material se o material tiver uma propriedade de cor principal. Essa propriedade anima a `material._Color` propriedade .
 
-![Alteração de cor do foco com interação de mão virtual](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+![Alteração de cor de foco com interação com a mão virtual](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### <a name="shader-color"></a>Cor do sombreador
 
-A propriedade animada de cor do sombreador refere-se a uma propriedade shader do tipo Color. Um nome de propriedade é necessário para todas as propriedades de sombreador. O GIF abaixo demonstra a animação de uma propriedade de cor do sombreador chamada Fill_Color que não é a cor do material principal.  Observe os valores de alteração no Inspetor de material.
+A propriedade Animatable de Cor do Sombreador refere-se a uma propriedade de sombreador da cor do tipo. Um nome de propriedade é necessário para todas as propriedades do sombreador. O gif abaixo demonstra a animação de uma propriedade de cor do sombreador chamada Fill_Color que não é a cor principal do material.  Observe os valores de alteração no inspetor de material.
 
-![Cor de sombreamento com interação de mão virtual](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
+![Sombrear cor com interação com a mão virtual](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
 
-### <a name="shader-float"></a>Sombreador float
+### <a name="shader-float"></a>Float do sombreador
 
-A propriedade animada do sombreador float se refere a uma propriedade shader do tipo float. Um nome de propriedade é necessário para todas as propriedades de sombreador. No gif abaixo, observe os valores de alteração no Inspetor de material para a propriedade metálica. 
+A propriedade Animatable Float do Sombreador refere-se a uma propriedade de sombreador do tipo float. Um nome de propriedade é necessário para todas as propriedades do sombreador. No gif abaixo, observe os valores de alteração no inspetor de material para a propriedade Demão. 
 
-![Sombreador float com interação de mão virtual](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
+![Flutuação do sombreador com interação com a mão virtual](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
 
 ### <a name="shader-vector"></a>Vetor de sombreador
 
-A propriedade animá vector Shader se refere a uma propriedade shader do tipo Vector4. Um nome de propriedade é necessário para todas as propriedades de sombreador. No gif abaixo, observe os valores de alteração no Inspetor de material para a propriedade de colocação em disposição (principal Tex_ST). 
+A propriedade Animatable vector do sombreador refere-se a uma propriedade de sombreador do tipo Vector4. Um nome de propriedade é necessário para todas as propriedades do sombreador. No gif abaixo, observe os valores de alteração no inspetor de material para a propriedade Til (Tex_ST) . 
 
 ![Vetor de sombreador com interação de mão virtual](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
 
 
-### <a name="how-to-find-animatable-shader-property-names"></a>Como localizar nomes de propriedades de sombreador animáveis
+### <a name="how-to-find-animatable-shader-property-names"></a>Como encontrar nomes de propriedade do sombreador animatable
 
 1. Navegue até a > animação > janela
 1. Verifique se o objeto com o Visualizador de Estado está selecionado na hierarquia

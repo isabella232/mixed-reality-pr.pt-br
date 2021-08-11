@@ -1,20 +1,20 @@
 ---
-title: Rolagem da coleção de objetos
+title: Coleção de objetos com rolagem
 description: Tipos de menu de visão geral MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, objeto de rolagem
-ms.openlocfilehash: a724b9fb4a0f72910e16353a6c76b9e31005a76e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a97ea9919cf484cf5240dde027f38baca37ba9570588bca032bee9c116aed873
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221732"
 ---
-# <a name="scrolling-object-collection"></a>Rolagem da coleção de objetos
+# <a name="scrolling-object-collection"></a>Coleção de objetos com rolagem
 
-![Rolagem da coleção de objetos](../images/scrolling-collection/ScrollingCollection_Main.jpg)
+![Coleção de objetos com rolagem](../images/scrolling-collection/ScrollingCollection_Main.jpg)
 
 A coleção de objetos de rolagem MRTK é um componente de UX que permite a rolagem do conteúdo 3D por meio de uma área de exibição independente. A movimentação de rolagem pode ser disparada pela interação de entrada próxima ou distante e pela paginação discreta. Ele dá suporte a objetos interativos e não interativos.
 
@@ -73,7 +73,7 @@ Observe como os objetos de conteúdo pertencentes à área visível de rolagem a
 
 ### <a name="testing-the-scrolling-object-collection-in-the-editor"></a>Testando a coleção de objetos de rolagem no editor
 
-1. Pressione reproduzir e segurar a barra de espaço para mostrar uma medida de simulação de entrada.
+1. Pressione executar e segure a barra de espaço para mostrar uma mão de simulação de entrada.
 1. Mova a mão até que o colisador de rolagem ou qualquer conteúdo interativo de rolagem esteja em foco e dispare a movimentação de rolagem clicando e arrastando para cima e para baixo com o mouse esquerdo.
 
 ## <a name="controlling-the-scrolling-object-from-code"></a>Controlando o objeto de rolagem do código
@@ -97,17 +97,17 @@ public class ScrollablePagination : MonoBehaviour
 
 ## <a name="scrolling-object-collection-properties"></a>Propriedades da coleção de objetos de rolagem
 
-| Geral          | Descrição                                   |
+| Geral          | Description                                   |
 | :--------------- | :-------------------------------------------- |
 | Direção da rolagem | A direção na qual o conteúdo deve rolar. |
 
-| Paginação     | Descrição                                                                                               |
+| Paginação     | Description                                                                                               |
 | :------------- | :-------------------------------------------------------------------------------------------------------- |
 | Células por camada | Número de células em uma linha na exibição de rolagem para cima ou no número de células em uma coluna na exibição de rolagem esquerda-direita. |
 | Camadas por página | Número de camadas visíveis na área de rolagem.                                                            |
 | Célula da página      | Dimensões da célula de paginação.                                                                        |
 
-| Configurações avançadas           | Descrição                                                                                                                                                                |
+| Configurações avançadas           | Description                                                                                                                                                                |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Modo de edição de máscara              | Edite modos para definir os limites de mascaramento da caixa de recorte. ' Auto ' usa automaticamente valores de paginação. ' Manual ' habilita a manipulação direta do objeto de caixa de recorte. |
 | Modo de edição do colisor          | Edite modos para definir os limites de conflito de interação da rolagem. ' Auto ' usa automaticamente valores de paginação. ' Manual ' habilita a manipulação direta do colisor.     |
@@ -119,38 +119,38 @@ public class ScrollablePagination : MonoBehaviour
 | Distância do toque frontal        | Distância, em metros, para posicionar um plano XY local usado para verificar se uma interação de toque começou na frente da exibição de rolagem.                                           |
 | Limite de liberação           | Retire o valor, em metros, dos limites de rolagem necessários para a transição do toque envolvido para o lançamento.                                                                |
 
-| Velocidade            | Descrição                                                                                                 |
+| Velocidade            | Description                                                                                                 |
 | ------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Tipo de velocidade    | O tipo desejado de queda de velocidade para o Rolador.                                                      |
 | Multiplicador Velocity | Quantidade de velocidade (extra) a ser aplicada ao Rolador.                                                       |
 | Redução de velocidade     | Quantidade de queda aplicada à velocidade.                                                                  |
 | Multiplicador de retorno   | Multiplicador para adicionar mais retorno à rolagem de uma lista ao usar queda por quadro ou queda por item. |
 
-| Opções de depuração         | Descrição                                                                                                 |
+| Opções de depuração         | Description                                                                                                 |
 | --------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Máscara habilitada          | Modo de visibilidade do conteúdo de rolagem. O valor padrão irá mascarar todos os objetos fora da área de rolagem visível. |
-| Mostrar planos de limite | Se for true, o editor renderizará os planos de limite de liberação de toque em volta dos limites de rolagem.            |
-| Depurar paginação      | Use esta seção para depurar a paginação de rolagem durante o tempo de execução.                                             |
+| Máscara habilitada          | Modo de visibilidade do conteúdo de rolagem. O valor padrão mascara todos os objetos fora da área exibivel de rolagem. |
+| Mostrar planos de limite | Se true, o editor renderizará os planos de limite de liberação de toque em torno dos limites de rolagem.            |
+| Depurar paginação      | Use esta seção para depurar a paginação de rolagem durante o runtime.                                             |
 
 | Eventos              | DESCRIÇÃO                                                                                                                   |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Ao clicar em            | Disparado quando o colisador de fundo da rolagem ou qualquer um de seus conteúdos interativos recebe um clique.                             |
-| No toque iniciado    | Disparado quando o colisador de fundo da rolagem ou qualquer um de seus conteúdos interativos recebe um toque próximo à interação.            |
-| No toque encerrado      | Disparado quando uma interação de toque ativo é encerrada quando o ponteiro de interação próxima cruza um plano de limite de liberação. |
-| Na dinâmica iniciada | Disparado quando o contêiner de rolagem começa a ser movido por interação, queda de velocidade ou paginação.                            |
-| No impulso encerrado   | Disparado quando o contêiner de rolagem para de ser movido por interação, queda de velocidade ou paginação.                             |
+| Ao clicar            | Disparado quando o colisor de tela de fundo de rolagem ou qualquer um de seu conteúdo interativo recebe um clique.                             |
+| Ao toque iniciado    | Disparado quando o colisor de tela de fundo de rolagem ou qualquer um de seu conteúdo interativo recebe um toque de interação próxima.            |
+| Toque encerrado      | Disparado quando uma interação de toque ativa é encerrada quando o ponteiro de interação próxima cruza um plano de limite de liberação. |
+| No momento em que foi iniciado | Disparado quando o contêiner de rolagem começa a se mover por interação, falloff de velocidade ou paginação.                            |
+| No momento em que o tempo foi encerrado   | Disparado quando o contêiner de rolagem para de se mover por interação, queda de velocidade ou paginação.                             |
 
 ## <a name="scrolling-example-scene"></a>Cena de exemplo de rolagem
 
-A cena de exemplo **ScrollingObjectCollection. Unity** consiste em três exemplos roláveis, cada um com uma configuração de queda de velocidade diferente. A cena de exemplo contém paredes para mostrar o comportamento de posicionamento da superfície que está desabilitado por padrão na hierarquia. A cena de exemplo pode ser encontrada na ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` pasta.
+A cena de exemplo **ScrollingObjectCollection.unity** consiste em três exemplos roláveis, cada um com uma configuração de falloff de velocidade diferente. A cena de exemplo contém paredes para mostrar o comportamento do posicionamento da superfície desabilitado por padrão na hierarquia. A cena de exemplo pode ser encontrada na ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` pasta .
 
-![Cena de exemplo de coleção de objetos de rolagem](../images/scrolling-collection/ScrollingObjectCollection_ExampleScene.png)
+![Cena de exemplo da coleção de objetos de rolagem](../images/scrolling-collection/ScrollingObjectCollection_ExampleScene.png)
 
-## <a name="scrolling-example-prefabs"></a>Exemplo de rolagem pré-fabricados
+## <a name="scrolling-example-prefabs"></a>Pré-requisitos de exemplo de rolagem
 
-Para sua conveniência, dois pré-fabricados de coleta de objetos de rolagem estão disponíveis para uso. O exemplo de pré-fabricados pode ser encontrado na ``MRTK/Examples/Demos/ScrollingObjectCollection/Prefabs`` pasta.
+Para sua conveniência, dois pré-requisitos de coleção de objetos de rolagem estão disponíveis para uso. Os pré-requisitos de exemplo podem ser encontrados na ``MRTK/Examples/Demos/ScrollingObjectCollection/Prefabs`` pasta .
 
-![Rolando a coleção de objetos pré-fabricados](../images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
+![Pré-requisitos da coleção de objetos de rolagem](../images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
 
 ## <a name="see-also"></a>Confira também
 

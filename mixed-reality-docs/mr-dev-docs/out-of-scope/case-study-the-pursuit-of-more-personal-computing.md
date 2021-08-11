@@ -5,24 +5,24 @@ author: danielescudero
 ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realidade mista do Windows, HoloLens, estudo de caso, visão, cenários
-ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality, HoloLens, estudo de caso, visão, cenários
+ms.openlocfilehash: 0e365be307781d652474ab3a1d15e6b66eb38f1a61a1175f44cdb7a01705ca61
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340674"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223348"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>Estudo de caso – a busca de mais computação pessoal
 
 As oportunidades de amanhã são descobertas ao criar produtos hoje. As soluções que esses produtos fornecem revelam o que é necessário para avançar no futuro. Com a realidade misturada, isso é especialmente verdadeiro: o insight significativo vem da introdução ao trabalho real — dispositivos reais, clientes reais, problemas reais.
 
-Na Microsoft, eu sou parte da equipe de design que ajuda os parceiros empresariais a criarem experiências para seus negócios usando a realidade mista do Windows. No ano passado, nossa equipe se concentrou no HoloLens e na compreensão de como o principal dispositivo Holographic da Microsoft pode fornecer valor aos clientes hoje. Trabalhando em conjunto com designers e desenvolvedores dessas empresas, nossa equipe se concentra em descobrir soluções que seriam tecnicamente inviáveis, financeiramente impraticável ou impossíveis sem o HoloLens.
+Na Microsoft, eu sou parte da equipe de design que ajuda os parceiros empresariais a criar experiências para seus negócios usando Windows Mixed Reality. no ano passado, nossa equipe se concentrou em HoloLens e entender como o principal dispositivo holographic da Microsoft pode fornecer valor aos clientes hoje. Trabalhando em conjunto com designers e desenvolvedores dessas empresas, nossa equipe se concentra em descobrir soluções que seriam tecnicamente inviáveis, impraticável financeiramente ou impossíveis sem HoloLens.
 
 ![Universidade de reserva oeste do caso](images/case-western-reserve-university.jpg)<br>
 *HoloAnatomy da Universidade de reserva oeste do caso*
 
-A criação dessas soluções ajuda as equipes internas da Microsoft a se preparar para a próxima geração de computação. Aprender como indivíduos e empresas interagem com tecnologias básicas, como realidade misturada, voz e ia, ajuda a Microsoft a criar dispositivos, plataformas e ferramentas melhores para desenvolvedores. Se você for um designer ou um desenvolvedor explorando esse espaço, entender o que nossas equipes estão aprendendo com parceiros hoje é essencial para se preparar para as oportunidades de realidade misturada do amanhã.
+A criação dessas soluções ajuda as equipes internas da Microsoft a se preparar para a próxima geração de computação. Learning como indivíduos e empresas interagem com tecnologias básicas como realidade misturada, voz e ia, ajuda a Microsoft a criar melhores dispositivos, plataformas e ferramentas para desenvolvedores. Se você for um designer ou um desenvolvedor explorando esse espaço, entender o que nossas equipes estão aprendendo com parceiros hoje é essencial para se preparar para as oportunidades de realidade misturada do amanhã.
 
 ## <a name="microsofts-ambition-for-mixed-reality"></a>Ambição da Microsoft para realidade misturada
 
@@ -46,10 +46,10 @@ A tecnologia fundamental da visão da câmera por trás dos hologramas atua como
 A computação é geralmente uma coisa tangível. Captando nossos dispositivos para dizer a eles quem estamos e o que queremos. Distorcer nosso pensamento e alinhar o que dizemos para corresponder ao que acreditamos que o computador precisa ouvir.
 
 A promessa de realidade misturada, especialmente no mundo real com experiências Holographic, é diminuir a carga da interação com a tecnologia. Reduzir a carga cognitiva à medida que os usuários navegam pelas camadas de abstração inerentes à computação hoje em dia. Como criamos experiências que não só aproveitam a compreensão contextual, mas facilitam o desenho de informações e ações? Duas tecnologias que contribuem também estão tentando resolver esse problema:
-* A **voz** , em termos de fala e conversa, está permitindo que os usuários se comuniquem com computadores por meio de meios mais naturais, respondendo a bots por meio de texto ou emitindo comandos para o hardware de conversação.
+* A **voz**, em termos de fala e conversa, está permitindo que os usuários se comuniquem com computadores por meio de meios mais naturais, respondendo a bots por meio de texto ou emitindo comandos para o hardware de conversação.
 * O **ia** está capacitando experiências que extraem informações de conjuntos de valores cada vez mais complexos. Embora o ia seja um enorme tópico, o progresso recente forneceu a base para os dispositivos que dependem da visão computacional, de assistentes digitais mais naturais e de ações recomendadas aos usuários.
 
-A realidade mista fornece um meio para combinar essas tecnologias em uma única experiência de usuário. A voz se torna um método eficiente e natural para a entrada ao desgastar um headset Holographic. O ia age como uma codificação crítica para contextualizer as enormes quantidades de informações que conectam os mundos físicos e digitais. É por isso que Sataya Nadella se refere ao HoloLens como "computador final", é um dispositivo de culminação para três tecnologias principais. Uma plataforma para capacitar os seres humanos a interagir com mais facilidade com a crescente complexidade de dispositivos e serviços.
+A realidade mista fornece um meio para combinar essas tecnologias em uma única experiência de usuário. A voz se torna um método eficiente e natural para a entrada ao desgastar um headset Holographic. O ia age como uma codificação crítica para contextualizer as enormes quantidades de informações que conectam os mundos físicos e digitais. é por isso que Sataya Nadella se refere a HoloLens como "computador final", é um dispositivo de culminação para três tecnologias principais. Uma plataforma para capacitar os seres humanos a interagir com mais facilidade com a crescente complexidade de dispositivos e serviços.
 
 ### <a name="less-interface-in-your-face"></a>Menos interface em seu rosto
 
@@ -72,19 +72,19 @@ Neste mundo de experiências contextuais, a mobilidade do usuário é fundamenta
 > *"Reunir o universo digital e o mundo físico desbloqueará o potencial humano... permitir que todas as pessoas e organizações do planeta obtenham mais. "*<br>
 > — Satya Nadella
 
-A realidade mista do Windows é um esforço para criar uma plataforma para um ecossistema de dispositivos, permitindo que os desenvolvedores criem experiências de imersão, acessíveis e compatíveis para o maior público possível. O futuro não será limitado a um único fabricante, deixe sozinho um único dispositivo. Headsets, dispositivos móveis, PCs, acessórios... todas essas coisas físicas devem interoperar (bem como elementos digitais como grafos e serviços) por meio de uma plataforma subjacente para oferecer com êxito a promessa de realidade misturada.
+Windows Mixed Reality é um esforço para criar uma plataforma para um ecossistema de dispositivos, permitindo que os desenvolvedores criem experiências de imersão, acessíveis e compatíveis para o maior público possível. O futuro não será limitado a um único fabricante, deixe sozinho um único dispositivo. Headsets, dispositivos móveis, PCs, acessórios... todas essas coisas físicas devem interoperar (bem como elementos digitais como grafos e serviços) por meio de uma plataforma subjacente para oferecer com êxito a promessa de realidade misturada.
 
 ## <a name="designing-for-tomorrows-experiences-today"></a>Criando hoje mesmo as experiências do amanhã
 
 ![Criando hoje mesmo as experiências do amanhã](images/designing-for-tomorrows-experiences-today-450px.jpg) 
 <br>
-Cada uma das principais tecnologias por trás dessa nova classe de experiências é permitir que designers e desenvolvedores criem experiências atraentes e bem sucedidas hoje. Ao reduzir a abstração, podemos interagir mais diretamente com o mundo digital, permitindo que possamos projetar de maneiras que aumentem e aumentem as capacidades humanas. A tecnologia de voz (por meio de bots e assistentes digitais como Cortana) é permitir que os usuários realizem conversações e cenários cada vez mais complexos, enquanto a tecnologia ia (por meio de ferramentas como serviços cognitivas da Microsoft) está fazendo com que as empresas reconsiderem como os usuários irão interagir com tudo, desde mídia social até gerenciamento de cadeia de fornecedores
+Cada uma das principais tecnologias por trás dessa nova classe de experiências é permitir que designers e desenvolvedores criem experiências atraentes e bem sucedidas hoje. Ao reduzir a abstração, podemos interagir mais diretamente com o mundo digital, permitindo que possamos projetar de maneiras que aumentem e aumentem as capacidades humanas. a tecnologia de voz (por meio de bots e assistentes digitais como Cortana) é permitir que os usuários realizem conversações e cenários cada vez mais complexos, enquanto a tecnologia ia (por meio de ferramentas como serviços cognitivas da Microsoft) está fazendo com que as empresas reconsiderem como os usuários irão interagir com tudo, desde mídia social até o gerenciamento da cadeia de fornecedores
 
 Esses tipos de interações dependerão de uma nova classe de ferramentas de design e do suporte fundamental da plataforma. A criação dessas ferramentas e a criação dessa plataforma para dispositivos e serviços depende da compreensão de como as experiências de amanhã resolverão problemas reais e tangíveis. Identificamos cinco áreas de oportunidade em que nossos parceiros empresariais forneceram soluções valiosas e onde acreditamos que o investimento nos ajudará a se preparar para essa nova classe de computação. 
 
 ## <a name="areas-of-opportunity"></a>Áreas de oportunidade
 
-O ano passado de parcerias de desenvolvedores tem áreas de oportunidade descobertos que repercussãom com os clientes e criam soluções empresariais bem-sucedidas. De cientistas e técnicos a designers e clientes, cinco áreas de oportunidade surgiram onde os parceiros da Microsoft têm valor agregado com realidade misturada. Essas áreas já estão fornecendo uma visão maciça das necessidades futuras de plataformas, como a realidade mista do Windows, e podem ajudá-lo a entender como essas novas experiências afetarão as maneiras como aprendemos, colaboram, comunicam e criam.
+O ano passado de parcerias de desenvolvedores tem áreas de oportunidade descobertos que repercussãom com os clientes e criam soluções empresariais bem-sucedidas. De cientistas e técnicos a designers e clientes, cinco áreas de oportunidade surgiram onde os parceiros da Microsoft têm valor agregado com realidade misturada. essas áreas já estão fornecendo uma visão maciça das necessidades futuras de plataformas como Windows Mixed Reality e podem ajudá-lo a entender como essas novas experiências terão impacto sobre as maneiras como aprendemos, colaboram, comunicam e criam.
 
 ### <a name="1-creation-and-design"></a>1. criação e design
 
@@ -106,7 +106,7 @@ Da maior quantidade de especialização em andares de fábrica até os avanços 
 
 >[!VIDEO https://www.youtube.com/embed/8OWhGiyR4Ns]
 
-O fabricante do elevador [ThyssenKrupp](https://www.youtube.com/watch?v=8OWhGiyR4Ns) criou uma experiência para técnicos de serviço de elevador, permitindo que eles visualizem e identifiquem problemas de preparação para um trabalho. Com uma equipe abrangendo técnicos de 24.000, dispositivos como o HoloLens permitem que esses técnicos tenham acesso remoto e sem intervenção a informações técnicas e especializadas.
+O fabricante do elevador [ThyssenKrupp](https://www.youtube.com/watch?v=8OWhGiyR4Ns) criou uma experiência para técnicos de serviço de elevador, permitindo que eles visualizem e identifiquem problemas de preparação para um trabalho. com uma equipe abrangendo técnicos de 24.000, dispositivos como HoloLens permitem que esses técnicos tenham acesso remoto e sem intervenção a informações técnicas e especializadas.
 
 O ThyssenKrupp realça um conceito poderoso aqui que informações críticas e contextualmente relevantes podem ser entregues rapidamente aos usuários. À medida que olhamos para uma nova classe de experiências, a divisão de grandes quantidades de informações possíveis para o conteúdo que é relevante para o usuário será fundamental.
 
@@ -132,7 +132,7 @@ As interações entre duas pessoas (se ambos os participantes estão em disposit
 
 O fabricante de tecnologia comercial [Trimble](https://www.youtube.com/watch?v=kXVW4sUsh3A) desenvolveu uma solução para profissionais da indústria de arquitetura e construção para colaborar e examinar o trabalho durante o desenvolvimento da compilação. Os profissionais podem se aprofundarr remotamente em um projeto para discutir o progresso ou estar no local e nos planos de revisão que eles buscariam (em sua forma final) no ambiente em relação a eles.
 
-As experiências compartilhadas são uma grande área de investimento para a Microsoft, com aplicativos como o Skype explorando novas maneiras de representar seres humanos no espaço digital. As equipes estão explorando gravações de vídeo volumétricos, avatars e recriações do espaço físico de um participante.
+as experiências compartilhadas são uma área importante de investimento para a Microsoft, com aplicativos como Skype explorando novas maneiras de representar seres humanos no espaço digital. Teams estão explorando gravações de vídeo volumétricos, avatars e recriações do espaço físico de um participante.
 
 ### <a name="5-entertainment-and-engagement"></a>5. entretenimento e envolvimento
 
@@ -152,7 +152,7 @@ O entretenimento é de muitas maneiras ao enviar os limites de realidade mistura
 
 ## <a name="next-discovery-checkpoint"></a>Próximo ponto de verificação de descoberta
 
-Se você estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você está no meio da exploração dos fundamentos da realidade misturada. A partir daqui, você pode prosseguir para o próximo tópico básico: 
+Se estiver seguindo a [jornada de descoberta](../discover/get-started-with-mr.md) que apresentamos, você estará no meio da exploração dos fundamentos da Realidade Misturada. Desse ponto, você poderá prosseguir para o próximo tópico básico: 
 
 > [!div class="nextstepaction"]
 > [Imersivo, ergonômico, instintivo e livre](https://www.microsoft.com//hololens/hardware)

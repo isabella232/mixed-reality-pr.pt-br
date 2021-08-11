@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, Leap Motion,
-ms.openlocfilehash: 3ddf039f8409022d8aa2e425c46cd4d47ede16a0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e675521a3a688bc0f9f8afdf1bdc01e583d0b47808d0aaff8b2eff263fce35bb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222884"
 ---
 # <a name="using-leap-motion"></a>Como usar o Leap Motion
 
@@ -201,4 +201,4 @@ A cena de exemplo está contida no **Microsoft.MixedReality.Toolkit. Pacote de**
 ## <a name="see-also"></a>Confira também
 
 - [Provedores de entrada](../features/input/input-providers.md)
-- [Acompanhamento de mão](../features/input/hand-tracking.md)
+- [Acompanhamento da Mão](../features/input/hand-tracking.md)

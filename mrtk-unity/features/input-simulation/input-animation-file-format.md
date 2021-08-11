@@ -1,18 +1,18 @@
 ---
-title: Formato de arquivo de animação de entrada
+title: Formato do arquivo de animação de entrada
 description: Documentação sobre a especificação de formato de arquivo binário de animação de entrada no MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf77d976c9c894e6cf455a3a6b0e0c538912af2a9e8f8e2c7e847ba6e4657140
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222758"
 ---
-# <a name="input-animation-file-format"></a>Formato de arquivo de animação de entrada
+# <a name="input-animation-file-format"></a>Formato do arquivo de animação de entrada
 
 ## <a name="overall-structure"></a>Estrutura geral
 
@@ -149,43 +149,43 @@ Um quadro-chave float armazena valores tangentes e de peso junto com o tempo e o
 
 ### <a name="boolean-curve"></a>Curva booliana
 
-As curvas boolianas são sequências simples de valores on/off. Em cada quadro-chave, o valor da curva é invertido imediatamente.
+As curvas boolianas são sequências simples de valores de ativas/desligados. Em cada keyframe, o valor da curva muda imediatamente.
 
 | Seção | Tipo |
 |---------|------|
-| Modo de pré-encapsulamento | Int32, [modo de encapsulamento](#wrap-mode) |
-| Modo pós-encapsulamento | Int32, [modo de encapsulamento](#wrap-mode) |
-| Número de quadros-chave | Int32 |
-| Quadros chave | [Quadro-chave booliano](#boolean-keyframe) |
+| Modo de pré-quebra | Int32, modo [de quebra](#wrap-mode) |
+| Modo pós-quebra | Int32, modo [de quebra](#wrap-mode) |
+| Número de keyframes | Int32 |
+| Quadros chave | [Keyframe booliana](#boolean-keyframe) |
 
-### <a name="boolean-keyframe"></a>Quadro-chave booliano
+### <a name="boolean-keyframe"></a>Keyframe booliana
 
-Um quadro chave booliano armazena apenas uma hora e um valor.
+Um keyframe booliana armazena apenas uma hora e um valor.
 
 | Seção | Tipo |
 |---------|------|
 | Hora | Float32 |
 | Valor | Float32 |
 
-### <a name="wrap-mode"></a>Modo de encapsulamento
+### <a name="wrap-mode"></a>Modo de wrap
 
-A semântica dos modos pré e pós-encapsulamento segue a definição de [WrapMode do Unity](https://docs.unity3d.com/ScriptReference/WrapMode.html) . Eles são uma combinação dos seguintes bits:
+A semântica dos modos Pré e Pós-Wrap segue a [definição wrapMode do Unity.](https://docs.unity3d.com/ScriptReference/WrapMode.html) Eles são uma combinação dos seguintes bits:
 
 | Valor | Significado |
 |-------|---------|
-| 0 | Padrão: lê o modo de repetição padrão definido como superior. |
-| 1 | Uma vez: quando o tempo atingir o final do clipe de animação, o clipe interromperá automaticamente a reprodução e a hora será redefinida para o início do clipe. |
-| 2 | Loop: quando o tempo atingir o final do clipe de animação, o tempo continuará no início. |
-| 4 | PingPong: quando o tempo atingir o final do clipe de animação, a hora executará ping de pingue-back entre o início e o fim. |
-| 8 | ClampForever: reproduz a animação. Quando atingir o final, ele continuará jogando o último quadro e nunca interromperá a reprodução. |
+| 0 | Padrão: lê a configuração mais alta do modo de repetição padrão. |
+| 1 | Uma vez: quando o tempo atingir o fim do clipe de animação, o clipe será automaticamente parado e a hora será redefinida para o início do clipe. |
+| 2 | Loop: quando o tempo atingir o fim do clipe de animação, o tempo continuará no início. |
+| 4 | PingPong: quando o tempo atingir o fim do clipe de animação, o tempo fará ping entre o início e o fim. |
+| 8 | ClampForever: reproduz a animação. Quando chegar ao final, ele continuará a tocar o último quadro e nunca mais interromperá a reprodução. |
 
 ### <a name="weighted-mode"></a>Modo ponderado
 
-A semântica do modo ponderado segue a definição de [WeightedMode do Unity](https://docs.unity3d.com/ScriptReference/WeightedMode.html) .
+A semântica do modo Ponderado segue a [definição weightedMode do Unity.](https://docs.unity3d.com/ScriptReference/WeightedMode.html)
 
 | Valor | Significado |
 |-------|---------|
-| 0 | Nenhum: exclua tanto o peso quanto o peso ao calcular os segmentos de curva. |
-| 1 | Em: incluir inpeso ao calcular o segmento de curva anterior. |
-| 2 | Saída: inclua o peso ao calcular o próximo segmento de curva. |
-| 3 | Ambos: incluem inpeso e inpeso ao calcular os segmentos de curva. |
+| 0 | Nenhum: exclua inWeight ou outWeight ao calcular segmentos de curva. |
+| 1 | Em: inclua inWeight ao calcular o segmento de curva anterior. |
+| 2 | Out: inclua outWeight ao calcular o próximo segmento de curva. |
+| 3 | Ambos: inclua inWeight e outWeight ao calcular segmentos de curva. |

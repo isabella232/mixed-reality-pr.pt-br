@@ -1,113 +1,113 @@
 ---
 title: Autores
-description: Lista de autores de MRTK
+description: Lista de autores do MRTK
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, C#, colaboradores, Community
-ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, C#, Colaboradores, Community
+ms.openlocfilehash: b80b61549d4780dcbc2dace411beba2d268caf94fc38939bbce39eadffc8077c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228716"
 ---
 # <a name="authors"></a>Autores
 
-a realidade misturada da Microsoft Toolkit é um projeto colaborativo que contém contribuições de indivíduos em todo o mundo. Nossos sinceros agradecimentos a todos os que têm e continuam a contribuir.
+O Microsoft Mixed Reality Toolkit é um projeto colaborativo que contém contribuições de indivíduos em todo o mundo. Agradecemos a todos que têm e continuamos a contribuir.
 
 - achaperon
-- Mitchell do Adam (AdamMitchell-MS)
-- Addison Linville (radicalad)
+- Adam Ltda (AdamMitchell-ms)
+- Euclidn Linville (radicalad)
 - ADP-JoNeff
 - afarchy
-- Contra raios (AgainstLightning)
-- alandergrouse (alandergrouse)
-- Alex algoritmo Floyd (elbuhofantasma)
+- Against Lightning (AgainstLightning)
+- aiagrouse (aiagrouse)
+- Alex Ltda (elbuiaantasma)
 - Andrew Hall (ryzngard)
-- Anton Zachesov (googlan)
+- Anthon Ltdesov (googlan)
 - Anuraag Puri (anuraag016)
-- artsouflMS
-- Ben Godard (genbod)
-- Bernadette Thalhammer (thalbern)
-- Bertrand Oustrière (BertrandOustriere)
-- Blake bruto (blgrossMS)
-- Brandon Furtwangler (brandf)
-- Bryan Truong (bhtruong93)
+- floaflMS
+- BenArd (genbod)
+- Ette Thalhal (thalbern)
+- Matt Oustriérre (MattOustriere)
+- Gross (blgrossMS)
+- Brandon Furtilaler (brandf)
+- Brian Truong (ongotruong93)
 - C. M. Barth (chrisfromwork)
-- Cameron (Cameron-Micka)
-- cartwrightluke
-- Casey Crabb (PTC-ccrabb)
+- Dra (Dra-Draa)
+- queluke
+- Bug Ltdb (ptc-bugabb)
 - CDiaz-MS
 - cefoot
-- cellarmation
+- ation
 - cihankurt98
 - CoPrez
-- Cristiano Carvalheiro (ccarvalheiro)
-- Daniel Hofmann (danielhofmann-MS)
-- David Evans (phosphoer)
-- David Johnson (djohnsomsft)
-- David Kline (davidkline-MS)
+- Bondo Carvalício (ccarvalício)
+- Daniel Hansmann (danieliamann-ms)
+- David Evans (ltdasphoer)
+- David Johnson (dçõesomsft)
+- David Kline (davidkline-ms)
 - deibich
-- deibu
-- Derek (derekfreed)
-- Dino Fejzagić (FejZa)
-- Dirk Songür (DirkSonguer)
-- DominicAglialoro
-- Eric Carter (Ecnassianer)
+- odabu
+- Silva (freed)
+- Dino Fejzagihz (FejZa)
+- Garcia Songür (Ltdson ltda)
+- DominicIaloro
+- Eric Alberto (Ecnassianer)
 - Eric Fiscus (MRW-Eric)
-- Eric ' Brien (ericob)
-- Eric Provencher (Provencher)
-- etiennemargraff (meulta)
-- Eusebiu Marcu (Eusebiu)
-- Evan Tice (in2dair)
-- Finn Sinclair (Zee2)
-- Florian Jasche (FlorianJa)
+- Eric O'Ltd (ericob)
+- Eric Provencher (provencher)
+- etiamargraff (meulta)
+- Eusebiu Marcu (eusebiu)
+- Delegado Tice (in2dair)
+- Grace Grace (Zee2)
+- Paulo Jasche (— ).
 - Forrest Trepte (ForrestTrepte)
-- Francesco Clasadonte (klasaf)
+- Clasadonte (klasaf)
 - gauravb4
-- George Johnston (gejohnst)
-- gilbdev (gilbdev)
-- Carência Lee (grayclee)
-- Graham encobrir (grbury)
-- Harrison Ferrone (hferrone)
-- Harrison Yu (harrisonyu)
+- Frank John ltda (gestonest)
+- ibbdev (semprebdev)
+- Grace Lee (grayclee)
+- Dra. M. (grberry)
+- Harrison Ironne (hferron)
+- Yu Yu (yuyu)
 - hybridherbst
-- Hyung-Il Kim (hyungilkim)
-- Jack Yang (jackyangzzh)
-- Jared Bienz [MSFT] (jbienzms)
+- Içog-il Kim (gilkim)
+- Jack Yang (jackzzh)
+- Jj Bienz [MSFT] (jbienzms)
 - Jarod (Jarodshow)
-- Jerome Humbert (djee-MS)
-- Jesse Vander (FreakTheMighty)
-- João (johnppella)
-- Jon Palmer (JonathanPalmerGD)
-- Jonathan Dana (Nakda)
-- Jonathan Palmer (JPalmerDev)
-- Joost van Schaik (LocalJoost)
-- Josh Wittner (jwittner)
-- julesra
+- Charles Norbert (djee-ms)
+- James Ltda (TheMighty)
+- John (johnppella)
+- Jon Ltda (JonPalmergD)
+- JonA (Nakda)
+- Jonathan Ltda (JPalmerDev)
+- Joost van Ltdik (LocalJoost)
+- Jj Ltdner (jwittner)
+- itra
 - Julia Schwarz (julenka)
-- julianloehr-kg
-- JungJik Lee (fnwinter)
+- cqloehr-kg
+- GtJik Lee (fnwinter)
 - Ken Jakubzak (KenJakubzak)
-- Kent1 (Kent1LG)
-- Kevin Kennedy (KevinKennedy)
-- Kevin Semple (polar-Kev)
+- Jonathan1 (Ltd1LG)
+- Kevin Ash (KevinKennedy)
+- Kevin Semple (polar-kev)
 - kircher1
-- kiyasu (holohiko)
+- ki holograma (holo holo holograma)
 - Kjakubzak (Kjakubzak)
-- Kurtis (keveleigh)
+- Cobis (keve australiana)
 - LaneMax
-- Lars Simkins (Railboy)
-- Luis Valverde (luval-Microsoft)
-- Luis Valverde (Luis-Valverde-MS)
-- Lukas Tönne (lukastoenneMS)
+- Lars Simkins (Railkins)
+- Luis Valve ltda (sempre microsoft)
+- Luis Valve ltda (luis-valvehei-ms)
+- Suécs Tönne (ltdstoenneMS)
 - Maciej Borowik (macborow)
-- Malcolm Tyrrell (MalcolmTyrrell)
-- Marek Stój (marek-stoj)
-- Marcar Finch (rápido-lento-ainda)
-- Matteo Valoriani (mvaloriani)
-- Matthew Johnson (matthejo)
+- º Tyrrel (LtdTyrrel)
+- Mhei Stój (mij-stoj)
+- Mark Ltda (fast-slow-still)
+- Matteo Valoriani (mvaloriori)
+- Mateus Johnson (matthejo)
 - Max Wang-MS
 - mbeagley-MS
 - michael (insominx)

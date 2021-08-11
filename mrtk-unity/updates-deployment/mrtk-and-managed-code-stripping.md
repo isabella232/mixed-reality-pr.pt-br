@@ -1,27 +1,27 @@
 ---
 title: MRTK e remoção de código gerenciado
-description: Remoção de código no MRTK e no Unity
+description: S strip de código no MRTK e no Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 8b8e0f4488a6e955e599084c0b59d8c80f553a78
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4348adf1d9cb2e7fc74cf5258e3272baaac96a5fc34565873cf35ae93225bdbe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221866"
 ---
 # <a name="mrtk-and-managed-code-stripping"></a>MRTK e remoção de código gerenciado
 
-Ao usar o back-end de script IL2CPP do Unity (opcional no Unity 2018,4, necessário no 2019 e mais recente), ocorre a [remoção de código gerenciado](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) .
-O vinculador da Unity executa esse processo para reduzir o tamanho binário, bem como para diminuir os tempos de compilação.
+Ao usar o back-end de script IL2CPP do Unity (opcional no Unity 2018.4, necessário em 2019 e mais [recentes),](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) ocorre a remoção de código gerenciado.
+O linker do Unity executa esse processo para reduzir o tamanho binário, bem como diminuir os tempos de build.
 
-a realidade misturada Toolkit usa um arquivo, `link.xml` , para influenciar como o vinculador do Unity processa os assemblies MRTK. Esse arquivo, descrito em Full na [documentação do Unity](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), fornece ao vinculador instruções sobre como preservar o código quando seu uso não pode ser inferido (por exemplo: usado por meio de reflexão).
+A Toolkit realidade misturada usa um arquivo, , para influenciar como o vinculador do `link.xml` Unity processa assemblies do MRTK. Esse arquivo, descrito na documentação completa do [Unity,](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)fornece ao associador instruções sobre como preservar o código quando seu uso não pode ser inferido (por exemplo, usado por meio de reflexão).
 
-Como uma plataforma flexível e personalizável, o MRTK cria o `link.xml` arquivo na `Assets/MixedRealityToolkit.Generated` importação, caso ele não exista. Arquivos de link.xml preexistentes não são substituídos. É recomendável que `link.xml` e `link.xml.meta` seja adicionado ao controle de versão. Os desenvolvedores devem se sentir livres para personalizar `Assets/MixedRealityToolkit.Generated/link.xml` o para atender às necessidades do projeto.
+Como uma plataforma flexível e personalizável, o MRTK cria o arquivo em na importação, se for `link.xml` considerado que ele não `Assets/MixedRealityToolkit.Generated` existe. Arquivos de link.xml existentes não são substituídos. É recomendável que `link.xml` e `link.xml.meta` sejam adicionados ao controle de versão. Os desenvolvedores devem se sentir à `Assets/MixedRealityToolkit.Generated/link.xml` vontade para personalizar para atender às necessidades do projeto.
 
-Por padrão, o arquivo de link.xml criado pelo MRTK preserva todo o conjunto de módulos (assemblies) mostrados nos dados a seguir.
+Por padrão, link.xml arquivo criado pelo MRTK preserva a totalidade dos assemblies mostrados nos dados a seguir.
 
 ``` xml
 <linker> 
@@ -61,9 +61,9 @@ Por padrão, o arquivo de link.xml criado pelo MRTK preserva todo o conjunto de 
 </linker>
 ```
 
-Para obter mais informações sobre o formato de arquivo link.xml, consulte a documentação do Unity.
+Para obter mais informações sobre o link.xml arquivo, consulte a documentação do Unity.
 
 ## <a name="see-also"></a>Confira também
 
-- [Unity: remoção de código gerenciado](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
+- [Unity: s strip de código gerenciado](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
 - [Unity: vincular arquivo XML](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)

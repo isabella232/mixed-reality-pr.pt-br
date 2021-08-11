@@ -1,34 +1,34 @@
 ---
 title: Renderização de volume
-description: Saiba como renderizar com eficiência imagens volumétricos com opacidade e cor no Windows Mixed Reality.
+description: Saiba como renderizar com eficiência imagens volumosas com opacidade e cor em Windows Mixed Reality.
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
-keywords: imagem volumétricos, renderização de volume, desempenho, realidade misturada
-ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: imagem volumetric, renderização de volume, desempenho, realidade misturada
+ms.openlocfilehash: 3843f0f4e49a0564b41d834231630d281aa9e874df8d35c4feaa4fe5bba0ed68
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220922"
 ---
 # <a name="volume-rendering"></a>Renderização de volume
 
-Para MRI médico ou volumes de engenharia, confira [renderização de volume na Wikipédia](https://en.wikipedia.org/wiki/Volume_rendering). Essas "imagens volumétricoss" contêm informações avançadas com opacidade e cor em todo o volume que não podem ser facilmente expressas como superfícies como [malhas poligonal](https://en.wikipedia.org/wiki/Polygon_mesh).
+Para volumes médicos de MRI ou engenharia, consulte [Renderização de volume na Wikipédia.](https://en.wikipedia.org/wiki/Volume_rendering) Essas "imagens volumosas" contêm informações rich com opacidade e cor em todo o volume que não podem ser expressas facilmente como superfícies como [malhas poligonais](https://en.wikipedia.org/wiki/Polygon_mesh).
 
 Principais soluções para melhorar o desempenho
-1. MÁ: abordagem ingênua: mostrar volume inteiro, geralmente é executado muito lentamente
-2. BOM: plano de corte: mostra apenas uma única fatia do volume
-3. BOA: recortando o subvolume: mostrar apenas algumas camadas do volume
-4. BOM: Reduza a resolução da renderização de volume (consulte ' renderização de cena de resolução mista ')
+1. BAD: Abordagem naïve: mostrar volume inteiro, geralmente é executado muito lentamente
+2. BOM: Plano de Corte: mostrar apenas uma única fatia do volume
+3. BOM: Reduzindo o sub volume: mostrar apenas algumas camadas do volume
+4. BOM: reduza a resolução da renderização de volume (consulte 'Renderização de cena de resolução misturada')
 
-Há apenas uma determinada quantidade de informações que podem ser transferidas do aplicativo para a tela em qualquer quadro específico, que é a largura de banda de memória total. Além disso, qualquer processamento (ou ' sombreamento ') necessário para transformar os dados para apresentação requer tempo. As principais considerações ao fazer a renderização de volume são:
-* Screen-Width * Screen-Height * Screen-Count * volume-camadas-em-pixel = total-volume-amostras por quadro
-* 1028 * 720 * 2 * 256 = 378961920 (100%) (volume de resolução completa: muitos exemplos)
-* 1028 * 720 * 2 * 1 = 1480320 (0,3% de completo) (fatia fina: 1 amostra por pixel, é executado sem problemas)
-* 1028 * 720 * 2 * 10 = 14803200 (3,9% de completo) (fatia do subvolume: 10 amostras por pixel, é executada razoavelmente suavemente, parece 3D)
-* 200 * 200 * 2 * 256 = 20480000 (5% de completo) (volume de resolução inferior: menos pixels, volume completo, parece 3D, mas um pouco borrado)
+Há apenas uma determinada quantidade de informações que podem ser transferidas do aplicativo para a tela em qualquer quadro específico, que é a largura de banda total de memória. Além disso, qualquer processamento (ou 'sombreamento') necessário para transformar esses dados para apresentação requer tempo. As principais considerações ao fazer a renderização de volume são:
+* Screen-Width * Screen-Height * Screen-Count * Volume-Layers-On-That-Pixel = Total-Volume-Samples-Per-Frame
+* 1028 * 720 * 2 * 256 = 378961920 (100%) (volume de res completo: muitos exemplos)
+* 1028 * 720 * 2 * 1 = 1480320 (0,3% de total) (fatia fina: 1 amostra por pixel, é executado sem problemas)
+* 1028 * 720 * 2 * 10 = 14803200 (3,9% de total) (fatia de subvolume: 10 amostras por pixel, é executado sem problemas, parece 3d)
+* 200 * 200 * 2 * 256 = 20480000 (5% de volume res inferior: menos pixels, volume completo, parece 3d, mas um pouco desfocado)
 
 ## <a name="representing-3d-textures"></a>Representando texturas 3D
 
@@ -87,7 +87,7 @@ float3 _VolBufferSize;
 
 ## <a name="shading-and-gradients"></a>Sombreamento e gradientes
 
-Como sombrear um volume, como MRI, para visualização útil. O método principal é ter uma ' janela de intensidade ' (um mínimo e um máximo) que você deseja ver as intensidades dentro e simplesmente dimensionar esse espaço para ver a intensidade de preto e branco. Um ' Ramp de cores ' pode ser aplicado aos valores dentro desse intervalo e armazenado como uma textura, de modo que partes diferentes do espectro de intensidade possam ser sombreadas em cores diferentes:
+Como sombrear um volume, como a MRI, para visualização útil. O método principal é ter uma "janela de intensidade" (um mínimo e um máximo) em que você deseja ver as intenções e simplesmente dimensionar para esse espaço para ver a intensidade preta e branca. Uma 'rampa de cores' pode então ser aplicada aos valores dentro desse intervalo e armazenada como uma textura, para que diferentes partes do espectro de intensidade possam ser sombreadas em cores diferentes:
 
 ```
 float4 ShadeVol( float intensity ) {
@@ -98,16 +98,16 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-Em muitos de nossos aplicativos, armazenamos em nosso volume um valor de intensidade bruta e um "índice de segmentação" (para segmentar partes diferentes, como Skin e Bone; esses segmentos são criados por especialistas em ferramentas dedicadas). Isso pode ser combinado com a abordagem acima para colocar uma cor diferente ou até mesmo uma rampa de cores diferente para cada índice de segmento:
+Em muitos de nossos aplicativos, armazenamos em nosso volume um valor de intensidade bruto e um 'índice de segmentação' (para segmentar partes diferentes, como capa e cúlsia; esses segmentos são criados por especialistas em ferramentas dedicadas). Isso pode ser combinado com a abordagem acima para colocar uma cor diferente ou até mesmo uma rampa de cores diferente para cada índice de segmento:
 
 ```
 // Change color to match segment index (fade each segment towards black):
  color.rgb = SegmentColors[ segment_index ] * color.a; // brighter alpha gives brighter color
 ```
 
-## <a name="volume-slicing-in-a-shader"></a>Divisão de volume em um sombreador
+## <a name="volume-slicing-in-a-shader"></a>Fatia de volume em um sombreador
 
-Uma ótima primeira etapa é criar um "plano de divisão" que possa passar pelo volume, "dividindo-o" e como os valores de verificação em cada ponto. Isso pressupõe que há um cubo ' VolumeSpace ', que representa onde o volume está no espaço de mundo, que pode ser usado como uma referência para colocar os pontos:
+Uma primeira etapa excelente é criar um "plano de fatiamento" que pode passar pelo volume, 'fatiando-o' e como os valores de verificação em cada ponto. Isso pressupo que há um cubo 'VolumeSpace', que representa onde o volume está no espaço do mundo, que pode ser usado como uma referência para colocar os pontos:
 
 ```
 // In the vertex shader:
@@ -122,7 +122,7 @@ Uma ótima primeira etapa é criar um "plano de divisão" que possa passar pelo 
 
 ## <a name="volume-tracing-in-shaders"></a>Rastreamento de volume em sombreadores
 
-Como usar a GPU para realizar o rastreamento de subvolume (percorre algumas voxels de fundo e camadas nos dados de volta para frente):
+Como usar a GPU para fazer o rastreamento de subvolume (percorre alguns voxels de profundidade e, em seguida, camadas nos dados de volta para frente):
 
 ```
 float4 AlphaBlend(float4 dst, float4 src) {
@@ -164,9 +164,9 @@ float4 AlphaBlend(float4 dst, float4 src) {
  float4 color = volTraceSubVolume( volSpace, cameraInVolSpace );
 ```
 
-## <a name="whole-volume-rendering"></a>Renderização de volume inteira
+## <a name="whole-volume-rendering"></a>Renderização de volume inteiro
 
-Modificando o código do subvolume acima, obtemos:
+Modificando o código de subvolume acima, podemos obter:
 
 ```
 float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
@@ -177,15 +177,15 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
    int numLoops = min( distanceInVoxels, maxSamples ); // put a min on the voxels to sample
 ```
 
-## <a name="mixed-resolution-scene-rendering"></a>Renderização de cena de resolução mista
+## <a name="mixed-resolution-scene-rendering"></a>Renderização de cena de resolução misturada
 
-Como renderizar uma parte da cena com uma baixa resolução e colocá-la de volta em vigor:
+Como renderizar uma parte da cena com uma resolução baixa e colocá-la novamente no lugar:
 1. Configurar duas câmeras fora da tela, uma para seguir cada olho que atualiza cada quadro
-2. Configurar dois destinos de renderização de baixa resolução (ou seja, 200 x 200 cada) em que as câmeras são renderizadas
-3. Configurar um quad que se move para a frente do usuário
+2. Configurar dois destinos de renderização de baixa resolução (ou seja, 200 x 200 cada) em que as câmeras são renderizações
+3. Configurar um quádruplo que se move na frente do usuário
 
 Cada quadro:
-1. Desenhe os destinos de renderização para cada olho em baixa resolução (dados de volume, sombreadores caros e assim por diante)
-2. Desenhe a cena normalmente como resolução completa (malhas, interface do usuário e assim por diante)
-3. Desenhe um quad na frente do usuário, por meio da cena, e projeto os renderizadores de baixa res para isso
+1. Desenhar os destinos de renderização para cada olho em baixa resolução (dados de volume, sombreadores caros e assim por diante)
+2. Desenhar a cena normalmente como resolução completa (malhas, interface do usuário e assim por diante)
+3. Desenhar um quádruplo na frente do usuário, sobre a cena e projetar que o low-res renderiza nesse
 4. Resultado: combinação visual de elementos de resolução completa com dados de volume de baixa resolução, mas de alta densidade

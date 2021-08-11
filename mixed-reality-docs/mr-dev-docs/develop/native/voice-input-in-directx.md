@@ -1,41 +1,41 @@
 ---
 title: Entrada de voz no DirectX
-description: Explica como implementar comandos de voz e um pequeno reconhecimento de frases e frases em um aplicativo DirectX para a realidade mista do Windows.
+description: Explica como implementar comandos de voz e reconhecimento de frases pequenas e frases em um aplicativo DirectX para Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Walkthrough, comando de voz, frase, reconhecimento, fala, DirectX, plataforma, Cortana, realidade do Windows Mixed
-ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: passo a passo, comando de voz, frase, reconhecimento, fala, directx, plataforma, cortana, windows mixed reality
+ms.openlocfilehash: e30d5c2101bed4b613111b6131a3e94d654c3ff5b1e913f4d8e275ffc1a2776a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221836"
 ---
 # <a name="voice-input-in-directx"></a>Entrada de voz no DirectX
 
 > [!NOTE]
-> Este artigo está relacionado às APIs nativas do WinRT herdadas.  Para novos projetos de aplicativos nativos, é recomendável usar a **[API OpenXR](openxr-getting-started.md)**.
+> Este artigo está relacionado às APIs nativas do WinRT herddas.  Para novos projetos de aplicativo nativo, é recomendável usar a **[API openXR](openxr-getting-started.md)**.
 
-Este artigo explica como implementar [comandos de voz](../../design/voice-input.md) , além de reconhecimento de frase e frases pequenas em um aplicativo do DirectX para a realidade mista do Windows.
+Este artigo explica como implementar comandos de [voz](../../design/voice-input.md) mais reconhecimento de frases pequenas e frases em um aplicativo DirectX para Windows Mixed Reality.
 
 >[!NOTE]
->Os trechos de código neste artigo usam C++/CX em vez de C++/WinRT em conformidade com C + +17, que é usado no [modelo de projeto C++ Holographic](creating-a-holographic-directx-project.md).  Os conceitos são equivalentes a um projeto/WinRT do C++, mas você precisa converter o código.
+>Os snippets de código neste artigo usam C++/CX em vez de C++17 em conformidade com C++/WinRT, que é usado no modelo de projeto [holográfico C++.](creating-a-holographic-directx-project.md)  Os conceitos são equivalentes para um projeto C++/WinRT, mas você precisa traduzir o código.
 
 ## <a name="use-speechrecognizer-for-continuous-speech-recognition"></a>Usar SpeechRecognizer para reconhecimento de fala contínuo
 
-Esta seção descreve como usar o reconhecimento de fala contínuo para habilitar comandos de voz em seu aplicativo. O passo a passo usa o código do exemplo [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) . Quando o exemplo estiver em execução, fale o nome de um dos comandos de cor registrados para alterar a cor do cubo girando.
+Esta seção descreve como usar o reconhecimento de fala contínuo para habilitar comandos de voz em seu aplicativo. Este passo a passo usa o código do [exemplo HolographicVoiceInput.](https://go.microsoft.com/fwlink/p/?LinkId=844964) Quando o exemplo estiver em execução, fale o nome de um dos comandos de cor registrados para alterar a cor do cubo giratório.
 
-Primeiro, crie uma nova instância do *Windows:: Media:: SpeechRecognition:: SpeechRecognizer* .
+Primeiro, crie uma nova *instância Windows::Media::SpeechRecognition::SpeechRecognizer.*
 
-De *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:
+De *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState:*
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-Crie uma lista de comandos de fala para o reconhecedor a ser escutado. Aqui, construímos um conjunto de comandos para alterar a cor de um holograma. Para sua conveniência, também criamos os dados que usaremos para os comandos mais tarde.
+Crie uma lista de comandos de fala para o reconhecedor escutar. Aqui, construiremos um conjunto de comandos para alterar a cor de um holograma. Para sua conveniência, também criamos os dados que vamos usar para os comandos posteriormente.
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -60,14 +60,14 @@ m_speechCommandList = ref new Platform::Collections::Vector<String^>();
    m_speechCommandData.push_back(float4(1.f, 0.f, 1.f, 1.f));
 ```
 
-Você pode usar palavras fonéticas que podem não estar em um dicionário para especificar comandos.
+Você pode usar palavras phoneéticas que podem não estar em um dicionário para especificar comandos.
 
 ```
 m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Para carregar a lista de comandos na lista de restrições do reconhecedor de fala, use um objeto [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) .
+Para carregar a lista de comandos na lista de restrições para o reconhecedor de fala, use um objeto [SpeechRecognitionListConstraint.](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint)
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Assine o evento [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) no [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)do reconhecedor de fala. Esse evento notifica seu aplicativo quando um de seus comandos for reconhecido.
+Assine o [evento ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) no [SpeechContinuousRecognitionSession do reconhecedor de fala.](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) Esse evento notifica seu aplicativo quando um de seus comandos foi reconhecido.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-O manipulador de eventos *OnResultGenerated* recebe dados de evento em uma instância [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) . Se a confiança for maior que o limite definido, seu aplicativo deverá observar que o evento ocorreu. Salve os dados do evento para que você possa usá-los em um loop de atualização posterior.
+O *manipulador de eventos OnResultGenerated* recebe dados de evento em uma instância [speechContinuousRecognitionResultGeneratedEventArgs.](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) Se a confiança for maior que o limite definido, seu aplicativo deverá observar que o evento ocorreu. Salve os dados do evento para que você possa usá-los em um loop de atualização posterior.
 
-De *HolographicVoiceInputSampleMain. cpp*:
+De *HolographicVoiceInputSampleMain.cpp:*
 
 ```
 // Change the cube color, if we get a valid result.
@@ -110,9 +110,9 @@ De *HolographicVoiceInputSampleMain. cpp*:
    }
 ```
 
-Em nosso código de exemplo, alteramos a cor do cubo de holograma girando de acordo com o comando do usuário.
+Em nosso código de exemplo, alteramos a cor do cubo de holograma giratório de acordo com o comando do usuário.
 
-De *HolographicVoiceInputSampleMain:: Update*:
+De *HolographicVoiceInputSampleMain::Update:*
 
 ```
 // Check for new speech input since the last frame.
@@ -135,17 +135,17 @@ De *HolographicVoiceInputSampleMain:: Update*:
    }
 ```
 
-## <a name="use-one-shot-recognition"></a>Usar o reconhecimento "One-shot"
+## <a name="use-one-shot-recognition"></a>Usar o reconhecimento "one-shot"
 
-Você pode configurar um reconhecedor de fala para escutar frases ou frases que o usuário fala. Nesse caso, aplicamos um *SpeechRecognitionTopicConstraint* que informa ao reconhecedor de fala o tipo de entrada a ser esperado. Aqui está um fluxo de trabalho de aplicativo para este cenário:
+Você pode configurar um reconhecedor de fala para escutar frases ou frases que o usuário fala. Nesse caso, aplicamos um *SpeechRecognitionTopicConstraint* que informa ao reconhecedor de fala que tipo de entrada esperar. Aqui está um fluxo de trabalho do aplicativo para este cenário:
 1. Seu aplicativo cria o SpeechRecognizer, fornece prompts de interface do usuário e começa a escutar um comando falado.
 2. O usuário fala uma frase ou frase.
-3. O reconhecimento da fala do usuário ocorre e um resultado é retornado para o aplicativo. Neste ponto, seu aplicativo deve fornecer um prompt de interface do usuário para indicar que o reconhecimento ocorreu.
-4. Dependendo do nível de confiança que você deseja responder e do nível de confiança do resultado do reconhecimento de fala, seu aplicativo poderá processar o resultado e responder conforme apropriado.
+3. O reconhecimento da fala do usuário ocorre e um resultado é retornado ao aplicativo. Neste ponto, seu aplicativo deve fornecer um prompt de interface do usuário para indicar que o reconhecimento ocorreu.
+4. Dependendo do nível de confiança que você deseja responder e do nível de confiança do resultado do reconhecimento de fala, seu aplicativo pode processar o resultado e responder conforme apropriado.
 
-Esta seção descreve como criar um SpeechRecognizer, compilar a restrição e ouvir a entrada de fala.
+Esta seção descreve como criar um SpeechRecognizer, compilar a restrição e escutar a entrada de fala.
 
-O código a seguir compila a restrição de tópico, que nesse caso é otimizada para pesquisa na Web.
+O código a seguir compila a restrição de tópico, que, nesse caso, é otimizada para pesquisa na Web.
 
 ```
 auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, L"webSearch");
@@ -156,7 +156,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-Se a compilação for realizada com sucesso, podemos continuar com o reconhecimento de fala.
+Se a compilação for bem-sucedida, podemos continuar com o reconhecimento de fala.
 
 ```
 try
@@ -171,7 +171,7 @@ try
                {
 ```
 
-O resultado é retornado para o aplicativo. Se estivermos confiantes o suficiente no resultado, podemos processar o comando. Este exemplo de código processa resultados com pelo menos confiança média.
+O resultado é retornado ao aplicativo. Se temos confiança suficiente no resultado, podemos processar o comando. Este exemplo de código processa os resultados com pelo menos confiança média.
 
 ```
 try
@@ -212,7 +212,7 @@ try
                    }
 ```
 
-Sempre que usar o reconhecimento de fala, observe as exceções que podem indicar que o usuário desativou o microfone nas configurações de privacidade do sistema. Isso pode ocorrer durante a inicialização ou o reconhecimento.
+Sempre que você usar o reconhecimento de fala, observe as exceções que podem indicar que o usuário tenha desligado o microfone nas configurações de privacidade do sistema. Isso pode acontecer durante a inicialização ou o reconhecimento.
 
 ```
 catch (Exception^ exception)
@@ -256,7 +256,7 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> Há vários [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) predefinidos que você pode usar para otimizar o reconhecimento de fala.
+> Há vários [SpeechRecognitionScenarios predefinidos](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) que você pode usar para otimizar o reconhecimento de fala.
 
 * Para otimizar o ditado, use o cenário de ditado.<br/>
    ```
@@ -273,7 +273,7 @@ catch (Exception^ exception)
    speechRecognizer->Constraints->Append(webSearchConstraint);
    ```
 
-* Use a restrição formulário para preencher formulários. Nesse caso, é melhor aplicar sua própria gramática otimizada para preencher o formulário.
+* Use a restrição de formulário para preencher formulários. Nesse caso, é melhor aplicar sua própria gramática otimizada para preencher o formulário.
 
    ```
    // Add a form constraint to the recognizer.
@@ -282,13 +282,13 @@ catch (Exception^ exception)
    ```
 * Você pode fornecer sua própria gramática no formato SRGS.
 
-## <a name="use-continuous-recognition"></a>Usar reconhecimento contínuo
+## <a name="use-continuous-recognition"></a>Usar o reconhecimento contínuo
 
-Para o cenário de ditado contínuo, consulte o [exemplo de código de fala do UWP do Windows 10](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
+Para o cenário de ditado contínuo, consulte o exemplo Windows 10 código de fala [UWP.](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)
 
 ## <a name="handle-quality-degradation"></a>Lidar com a degradação da qualidade
 
-Às vezes, as condições ambientais interferem no reconhecimento de fala. Por exemplo, a sala pode estar muito ruidosa ou o usuário pode falar muito alto. Sempre que possível, a API de reconhecimento de fala fornece informações sobre as condições que causaram a degradação da qualidade. Essas informações são enviadas por push para seu aplicativo por meio de um evento do WinRT. O exemplo a seguir mostra como assinar esse evento.
+Às vezes, as condições ambientais interferem no reconhecimento de fala. Por exemplo, a sala pode ser muito barulhenta ou o usuário pode falar muito alto. Sempre que possível, a API de reconhecimento de fala fornece informações sobre as condições que causaram a degradação da qualidade. Essas informações são pressionadas para seu aplicativo por meio de um evento WinRT. O exemplo a seguir mostra como assinar esse evento.
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -297,7 +297,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-Em nosso exemplo de código, escrevemos as informações de condições no console de depuração. Um aplicativo pode querer fornecer comentários ao usuário por meio da interface do usuário, síntese de fala e outro método. Ou talvez seja necessário se comportar de maneira diferente quando a fala é interrompida por uma redução temporária na qualidade.
+Em nosso exemplo de código, escrevemos as informações de condições no console de depuração. Um aplicativo pode querer fornecer comentários ao usuário por meio da interface do usuário, da síntese de fala e de outro método. Ou talvez seja necessário se comportar de maneira diferente quando a fala é interrompida por uma redução temporária na qualidade.
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -336,7 +336,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-Se você não estiver usando classes de referência para criar seu aplicativo DirectX, deverá cancelar a assinatura do evento antes de liberar ou recriar seu reconhecedor de fala. O HolographicSpeechPromptSample tem uma rotina para parar o reconhecimento e cancelar a assinatura de eventos.
+Se você não estiver usando classes ref para criar seu aplicativo DirectX, deverá cancelar a assinatura do evento antes de liberar ou recriar o reconhecedor de fala. O HolographicSpeechPromptSample tem uma rotina para interromper o reconhecimento e cancelar a assinatura de eventos.
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -365,9 +365,9 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 ## <a name="use-speech-synthesis-to-provide-audible-prompts"></a>Usar a síntese de fala para fornecer prompts audíveis
 
-Os exemplos de fala do Holographic usam a síntese de fala para fornecer instruções audíveis ao usuário. Esta seção mostra como criar um exemplo de voz sintetizada e reproduzi-lo novamente por meio das APIs de áudio do HRTF.
+Os exemplos de fala holográfica usam a síntese de fala para fornecer instruções audíveis ao usuário. Esta seção mostra como criar um exemplo de voz sintetizada e, em seguida, reproduzi-lo por meio das APIs de áudio HRTF.
 
-É recomendável fornecer seus próprios prompts de fala ao solicitar entrada de frase. Os prompts também podem ajudar a indicar quando os comandos de fala podem ser falados para um cenário de reconhecimento contínuo. O exemplo a seguir demonstra como usar um sintetizador de fala para fazer isso. Você também pode usar um clipe de voz previamente gravado, uma interface do usuário visual ou outro indicador do que dizer, por exemplo, em cenários em que o prompt não é dinâmico.
+É recomendável fornecer seus próprios prompts de fala ao solicitar a entrada de frase. Os prompts também podem ajudar a indicar quando comandos de fala podem ser falados para um cenário de reconhecimento contínuo. O exemplo a seguir demonstra como usar um sintetizador de fala para fazer isso. Você também pode usar um clipe de voz pré-gravado, uma interface do usuário visual ou outro indicador do que dizer, por exemplo, em cenários em que o prompt não é dinâmico.
 
 Primeiro, crie o objeto SpeechSynthesizer.
 
@@ -392,7 +392,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-A síntese de fala é enviada como um fluxo de bytes. Podemos usar esse fluxo de bytes para inicializar uma voz XAudio2. Para nossos exemplos de código Holographic, vamos reproduzi-lo como um efeito de áudio HRTF.
+A síntese de fala é enviada como um fluxo de byte. Podemos usar esse fluxo de byte para inicializar uma voz XAudio2. Para nossos exemplos de código holográfico, reproduzimos como um efeito de áudio HRTF.
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
@@ -414,7 +414,7 @@ Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStream
        }
 ```
 
-Assim como com o reconhecimento de fala, a síntese de fala gera uma exceção se algo der errado.
+Assim como acontece com o reconhecimento de fala, a síntese de fala lançará uma exceção se algo der errado.
 
 ```
 catch (Exception^ exception)

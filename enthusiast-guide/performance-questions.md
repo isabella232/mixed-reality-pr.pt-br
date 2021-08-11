@@ -1,53 +1,53 @@
 ---
 title: Perguntas frequentes sobre o desempenho
-description: Desempenho do Windows Mixed Realm insolução de problemas que vão além da nossa documentação de suporte do consumidor padrão.
+description: Solução Windows Mixed Reality solução de problemas de desempenho que vai além da nossa documentação de suporte ao consumidor padrão.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Realidade mista do Windows, realidade misturada, realidade virtual, VR, MR, solução de problemas, erros, ajuda, suporte, desempenho
+keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, Solução de Problemas, Erros, Ajuda, Suporte, Desempenho
 appliesto:
 - Windows 10
-ms.openlocfilehash: dea2e81d53bfbb16a8803fc3f7c4e011741dfce6
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 6754923a07d4c75c6f0f44aad07c5d3c55c28ae4673900531d8a4af663d9e7c2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219412"
 ---
 # <a name="performance-faqs"></a>Perguntas frequentes sobre o desempenho
 
-## <a name="is-my-windows-mixed-reality-headset-rendering-at-60-hz-or-90-hz-framerate"></a>Minha renderização de fone de ouvido do Windows Mixed Reality a 60 Hz ou 90-Hz taxa de quadros
+## <a name="is-my-windows-mixed-reality-headset-rendering-at-60-hz-or-90-hz-framerate"></a>É a renderização Windows Mixed Reality headset com taxa de quadros de 60 Hz ou 90 Hz
 
-Se você tiver uma GPU discreta com portas HDMI 2,0 e uma CPU com quatro ou mais núcleos físicos, deverá obter 90 Hz. Para confirmar, verifique a guia **desempenho do portal do dispositivo >** .
+Se você tiver uma GPU discreta com portas HDMI 2.0 e uma CPU com quatro ou mais núcleos físicos, deverá obter 90 Hz. Para confirmar, verifique a **guia Portal de Dispositivos > Desempenho.**
 
-Observação: se sua GPU tiver apenas uma saída HDMI 1,4, você poderá usar um DisplayPort para [adaptador HDMI 2,0](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) como solução alternativa.
+Observação: se sua GPU tiver apenas uma saída HDMI 1.4, você poderá usar um adaptador DisplayPort para [HDMI 2.0](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) como uma solução alternativa.
 
-Observação: as configurações de qualidade visual em "exibição do headset" afetam apenas a renderização da experiência inicial do Windows Mixed Reality.
+Observação: as configurações de qualidade visual na "Exibição do headset" afetam apenas a renderização da Windows Mixed Reality home.
 
-## <a name="my-pc-is-running-slowly"></a>Meu PC está sendo executado lentamente
+## <a name="my-pc-is-running-slowly"></a>Meu computador está sendo executado lentamente
 
-O sistema pode estar lento por vários motivos, geralmente com duração de apenas alguns segundos. Se você tiver esse problema por longos períodos de tempo:
+O sistema pode ser lento por vários motivos, geralmente durando apenas alguns segundos. Se você tiver esse problema por longos períodos de tempo:
 
 1. Feche todos os aplicativos não utilizados na área de trabalho.
-2. Verifique se o seu laptop está conectado a uma fonte de alimentação.
-3. Verifique se o PC não está aquecendo.
-4. Reduza a qualidade visual na sua página inicial do Windows Mixed Reality.
-5. Verifique se você tem os [drivers gráficos](other-questions.md#my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors) mais recentes para seu computador.
+2. Verifique se o laptop está conectado a uma fonte de alimentação.
+3. Certifique-se de que o computador não está se preparando.
+4. Reduza a qualidade do visual em sua Windows Mixed Reality página.
+5. Verifique se você tem os drivers [gráficos mais recentes](other-questions.md#my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors) para seu computador.
 
-## <a name="my-pc-is-warming-up-as-i-run-the-mixed-reality-experiences-how-do-i-keep-it-cool"></a>Meu PC está se aquecendo enquanto eu executo as experiências de realidade misturada. Como fazer mantê-lo interessante
+## <a name="my-pc-is-warming-up-as-i-run-the-mixed-reality-experiences-how-do-i-keep-it-cool"></a>Meu computador está se preparando à medida que eu executar as experiências de Realidade Misturada. Como fazer mantê-lo frio
 
-1. Verifique se a bateria é cobrada e se a fonte de alimentação está conectada.
-2. Verifique se os ventiladores do PC não estão bloqueados.
-3. Use o PC em um ambiente relativamente interessante.
-4. Verifique se não há fontes de calor (por exemplo, as aberturas do sol ou do calor) apontadas para o PC.
+1. Verifique se a bateria está carregada e se a fonte de alimentação está conectada.
+2. Certifique-se de que os ventiladores de pc não estão bloqueados.
+3. Use o COMPUTADOR em um ambiente relativamente es legal.
+4. Certifique-se de que não haja fontes de calor (por exemplo, o sol ou os ventiladores de calor) apontados para o computador.
 
-## <a name="my-visuals-are-choppy-load-slowly-or-dont-look-good"></a>Meus elementos visuais estão instável, carregam lentamente ou não parecem bons
+## <a name="my-visuals-are-choppy-load-slowly-or-dont-look-good"></a>Meus visuais são lentos, carregados lentamente ou não parecem bons
 
-* Verifique se o headset está conectado à placa gráfica correta no seu computador. Alguns PCs têm placas gráficas integradas e discretas. O cartão discreto geralmente oferecerá o melhor desempenho. [Saiba mais sobre hardware de PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
-* Feche os aplicativos não utilizados na sua área de trabalho.
-* Verifique se o fone de ouvido se ajusta perfeitamente (Mova-o para baixo e para cima, ou para a esquerda e para a direita, para ajustar).
-* Ajuste as configurações visuais do headset em **configurações > realidade misturada > tela de headset**. Quando "qualidade visual" é definido como "automático", a experiência de realidade mista para seu PC será escolhida automaticamente. Para obter mais detalhes sobre o Visual, defina "qualidade visual" como "alta". Se os visuais estiverem ruins, selecione uma configuração mais baixa.
-* Ajuste o botão de calibragem de Headset para garantir que as lentes sejam definidas com a distância correta entre o Pupils (chamado de IPD). Se você não conhece seu IPD, um optometrist pode medir para você ou usar um site projetado para medir o IPD. Se o headset não tiver um botão de calibragem, selecione **configurações > realidade misturada > tela de headset** e ajuste o "controle de calibragem".
-* Se você estiver usando um USB-C ou um DisplayPort para adaptador HDMI, tente um diferente. Consulte [adaptadores recomendados.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
-* Desconecte os monitores adicionais que podem estar conectados à placa gráfica do seu PC.
-* Experimente alguns aplicativos diferentes de realidade misturada da Windows Store – alguns podem funcionar melhor com a configuração do computador.
+* Certifique-se de que o headset esteja conectado à placa gráfica correta no computador. Alguns PCs têm cartões gráficos integrados e discretos. O cartão discreto geralmente fornecerá o melhor desempenho. [Saiba mais sobre o hardware do pc.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+* Feche aplicativos não utilizados na área de trabalho.
+* Certifique-se de que o headset se ajuste perfeitamente (mova-o para baixo e para cima ou para a esquerda e para a direita, para ajustar).
+* Ajuste as configurações visuais do headset Configurações > realidade misturada **> headset.** Quando "Qualidade visual" for definida como "Automática", a experiência de realidade misturada para seu computador será escolhida automaticamente. Para obter mais detalhes visuais, de definir "Qualidade visual" como "Alta". Se os visuais não são muito ativas, selecione uma configuração inferior.
+* Ajuste o botão de calibragem do headset para certificar-se de que as lentes estão definidas para a distância correta entre suas crianças (chamadas de IPD). Se você não conhece seu IPD, um optomethei pode medê-lo para você ou usar um site projetado para medir o IPD. Se o headset não tiver um botão de calibragem, selecione Configurações > realidade **misturada** > headset e ajuste o "Controle de calibragem".
+* Se você estiver usando um adaptador USB-C ou DisplayPort para HDMI, tente um diferente. Consulte [adaptadores recomendados.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* Desconecte todos os monitores extras que possam estar conectados à placa gráfica do computador.
+* Experimente alguns aplicativos de realidade misturada diferentes da Windows Store– alguns podem funcionar melhor com a configuração do computador.

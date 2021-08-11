@@ -1,28 +1,28 @@
 ---
 title: Solução de problemas e limitações de comunicação remota do Holographic
-description: Encontre recursos de solução de problemas e instruções para o recurso de comunicação remota do Holographic em dispositivos do HoloLens 2.
+description: encontre recursos de solução de problemas e instruções para o recurso de comunicação remota do Holographic em dispositivos HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Realidade mista do Windows, hologramas, comunicação remota Holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, solução de problemas, ajuda, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual
-ms.openlocfilehash: 429ca7364d82e1713af059aa3c6da01852283120
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, hologramas, comunicação remota holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, solução de problemas, ajuda, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223566"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Solução de problemas de comunicação remota do Holographic
 
 > [!IMPORTANT]
-> Estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
+> estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
 
 ## <a name="spectre-mitigated-libraries-not-found"></a>Bibliotecas atenuadas do Spectre não encontradas.
 
 Os aplicativos de exemplo de comunicação remota Holographic têm/Qspectre (mitigação de Spectre) habilitada na configuração de versão.
 
-Se você receber a *vccorlib. lib, o erro fatal não poderá ser aberto* , verifique se a carga de trabalho do Visual Studio inclui as [bibliotecas atenuadas do Spectre](/cpp/build/reference/qspectre)
+se você receber a *vccorlib. lib, o erro fatal não poderá ser aberto* , certifique-se de que sua carga de trabalho de Visual Studio inclui as [bibliotecas atenuadas do Spectre](/cpp/build/reference/qspectre)
 
 ## <a name="speech"></a>Fala
 
@@ -30,11 +30,11 @@ O player de comunicação remota Holographic dá suporte a uma sobreposição de
 
 ## <a name="h265-video-codec-not-available"></a>Codec de vídeo H265 não disponível
 
-Instale as [extensões de vídeo do HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) ao usar o codec de vídeo do H265 em seu aplicativo remoto. Se você encontrar problemas em que o codec está instalado, mas não pode ser usado, consulte o guia de [solução de problemas](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
+instale o [Extensões de Vídeo HEVC](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) ao usar o codec de vídeo H265 em seu aplicativo remoto. Se você encontrar problemas em que o codec está instalado, mas não pode ser usado, consulte o guia de [solução de problemas](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) .
 
 ## <a name="limitations"></a>Limitações
 
-Atualmente, **não** há suporte para as seguintes APIs ao usar a comunicação remota do Holographic para o HoloLens 2 e gerará um ```ERROR_NOT_SUPPORTED``` erro, a menos que indicado de outra forma:
+atualmente, **não** há suporte para as seguintes APIs ao usar a comunicação remota Holographic para o HoloLens 2 e gerará um ```ERROR_NOT_SUPPORTED``` erro, a menos que indicado de outra forma:
 
 [Windows.Graphics.Holographic](/uwp/api/windows.graphics.holographic)
 
@@ -105,7 +105,7 @@ Atualmente, **não** há suporte para as seguintes APIs ao usar a comunicação 
 
 ## <a name="see-also"></a>Consulte Também
 * [Histórico de versões de comunicação remota do Holographic](holographic-remoting-version-history.md)
-* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs de realidade mista do Windows](holographic-remoting-create-remote-wmr.md)
+* [escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs de Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Termos de licença de software de comunicação remota holográfica](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

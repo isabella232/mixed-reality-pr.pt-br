@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portal de Dispositivos do Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: edcd1796598b558f42232bf54ae3d40d3c509bb9515d8dcbe7f3cf9f2b7dfd62
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112919807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221452"
 ---
 # <a name="using-the-windows-device-portal"></a>Usar o Portal de Dispositivos do Windows
 
@@ -27,6 +27,8 @@ ms.locfileid: "112919807"
 O Portal de Dispositivos do Windows para HoloLens permite que você configure e gerencie seu dispositivo remotamente por Wi-Fi ou USB. O Device Portal é um servidor Web no HoloLens ao qual você pode se conectar usando um navegador da Web em seu computador. O Portal de Dispositivos inclui muitas ferramentas que ajudarão você a gerenciar seu HoloLens e a depurar e otimizar seus aplicativos.
 
 Essa documentação trata especificamente do Portal de Dispositivos do Windows para HoloLens. Para usar o Portal de Dispositivos do Windows para desktop (inclusive para Windows Mixed Reality), confira [Visão geral do Portal de Dispositivos do Windows](/windows/uwp/debug-test-perf/device-portal)
+
+> [OBSERVAÇÃO] Não recomendamos usar o portal de dispositivos para dispositivos HoloLens que estão sendo implantados em sua organização.
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Configurar o HoloLens para usar o Portal de Dispositivos do Windows
 
@@ -175,6 +177,8 @@ Depois que a instalação for concluída, volte para a página **Todos os aplica
 ![Página inicial do Portal de Dispositivos do Windows no Microsoft HoloLens](images/using-windows-portal-img-04.png)<br>
 *Página inicial do Portal de Dispositivos do Windows no Microsoft HoloLens*
 
+> [OBSERVAÇÃO] As configurações definidas no portal de dispositivos se aplicam a todo o dispositivo e serão mantidas durante as reinicializações. Recomendamos usar o portal de dispositivos somente durante o desenvolvimento, não em dispositivos implantados.
+
 A sessão do Device Portal é iniciada na home page. Acesse outras páginas a partir da barra de navegação no lado esquerdo da página inicial.
 
 A barra de ferramentas na parte superior da página fornece acesso a recursos e status normalmente usados.
@@ -241,6 +245,8 @@ Para importar mapas e âncoras, selecione **Carregar um arquivo de mapa** e **Ca
 
 ![Página Captura de Realidade Misturada no Portal de Dispositivos do Windows no Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Página Captura de Realidade Misturada no Portal de Dispositivos do Windows no Microsoft HoloLens*
+
+> [IMPORTANTE] As configurações definidas no portal de dispositivos se aplicam a todo o dispositivo e serão mantidas durante as reinicializações. As configurações modificadas no portal de dispositivos serão aplicadas a capturas e aplicativos de realidade misturada. Como essas configurações são persistentes, recomendamos usar o portal de dispositivos somente durante o desenvolvimento, não em dispositivos implantados.
 
 Use a página Mixed Reality Capture para salvar fluxos de mídia do HoloLens.
 * **Configurações de Captura**: controle os fluxos de mídia capturados verificando as seguintes configurações:
