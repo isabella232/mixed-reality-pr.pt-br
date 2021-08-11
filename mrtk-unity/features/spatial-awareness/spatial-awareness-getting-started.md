@@ -1,18 +1,18 @@
 ---
-title: Início da conscientização espacial
+title: Introdução à conscientização espacial
 description: descreve o Reconhecimento espacial no MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 46bb78bc4e2574fd4da14f19edf52624b7b301c2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bbe5b923ea7da965424e7fac98adca180c6f91d0c9b4c4ca7a0477e301c362f9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204308"
 ---
-# <a name="spatial-awareness-getting-started"></a>Início da conscientização espacial
+# <a name="spatial-awareness-getting-started"></a>Introdução à conscientização espacial
 
 ![Conscientização espacial](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 

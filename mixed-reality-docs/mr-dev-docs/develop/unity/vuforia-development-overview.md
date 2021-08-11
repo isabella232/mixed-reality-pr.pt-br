@@ -1,104 +1,104 @@
 ---
 title: Como usar o Vuforia com o Unity
-description: Use Vuforia para criar aplicativos Windows Mixed Reality no Unity.
+description: Use o Vuforia para criar Windows Mixed Reality aplicativos no Unity.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, marcadores, coordenadas, quadro de referência, acompanhamento, headset de realidade misturada, headset da realidade mista do windows, headset da realidade virtual, unity, HoloLens, controle de dispositivo, modo de desempenho, Portal do desenvolvedor do Vuforia
-ms.openlocfilehash: 1a21f4bb441a1ab0706b5916feaac0d691486626
-ms.sourcegitcommit: 7160843723ccd6567490e2f4222219603f184d76
+keywords: Vuforia, marcadores, coordenadas, quadro de referência, acompanhamento, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, unity, HoloLens, acompanhamento de dispositivo, modo de desempenho, Vuforia Portal do Desenvolvedor
+ms.openlocfilehash: dd5153b5e4986ebf1ecc2c133f3d431de08ce5b923cc7d2327d9cbda4f4df61c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216412"
 ---
-# <a name="using-vuforia-engine-with-unity"></a>Usando o mecanismo do Vuforia com o Unity
+# <a name="using-vuforia-engine-with-unity"></a>Usando o Mecanismo vuforia com o Unity
 
-o Vuforia Engine traz um recurso importante para HoloLens – o poder de conectar experiências de AR a imagens e objetos específicos no ambiente. Você pode usar essa capacidade para sobrepor instruções passo a passo guiadas sobre máquinas para a empresa industrial ou adicionar recursos e experiências digitais a um produto ou jogo físico.
+O Mecanismo Vuforia traz uma funcionalidade importante para HoloLens – o poder de conectar experiências de RA a imagens e objetos específicos no ambiente. Você pode usar essa funcionalidade para sobrepor instruções passo a passo guiadas sobre o computador para a empresa industrial ou adicionar recursos digitais e experiências a um produto físico ou jogo.
 
-O Vuforia Engine oferece uma ampla gama de recursos e destinos para tornar o processo de desenvolvimento de AR mais flexível. Um dos nossos mais novos recursos, Vuforia Model targets, é um recurso importante para usos comerciais e industriais. Os destinos de modelo permitem que os aplicativos reconheçam objetos físicos, como computadores, automóveis ou brinquedos, e os acompanham com base em um modelo CAD ou 3D digital. Para usos industriais, esse recurso pode fornecer operadores de assembly e técnicos de serviço com instruções de trabalho AR e diretrizes de procedimento na fábrica ou fora do campo.
+O Mecanismo Vuforia oferece uma ampla variedade de recursos e destinos para tornar seu processo de desenvolvimento de RA mais flexível. Um dos nossos recursos mais novos, o Vuforia Model Targets, é uma funcionalidade fundamental para usos comerciais e industriais. Os Destinos de Modelo permitem que os aplicativos reconheçam objetos físicos como máquinas, automóveis ou brinquedos e os rastreiam com base em um modelo CAD ou digital 3D. Para usos industriais, esse recurso pode fornecer aos funcionários de assembly e técnicos de serviço instruções de trabalho de RA e diretrizes de procedimento enquanto estão na fábrica ou fora do campo.
 
-Os aplicativos do mecanismo Vuforia existentes criados para telefones e tablets podem ser facilmente configurados no Unity para serem executados em HoloLens. você pode até mesmo usar o Vuforia Engine para levar seu novo aplicativo HoloLens para tablets Windows 10, como o Surface Pro e Surface Book.
+Os aplicativos do Mecanismo vuforia existentes que foram construídos para telefones e tablets podem ser facilmente configurados no Unity para serem executados HoloLens. Você pode até mesmo usar o Mecanismo vuforia para levar seu novo aplicativo HoloLens para tablets Windows 10 como o Surface Pro e Surface Book.
 
 
 ## <a name="get-the-tools"></a>Obter as ferramentas
 
-[instale as versões recomendadas](../install-the-tools.md) do Visual Studio e do unity e, em seguida, configure o unity para usar Visual Studio e o IDE e o compilador preferenciais. 
+[Instale as versões recomendadas](../install-the-tools.md) do Visual Studio Unity e, em seguida, configure o Unity para usar Visual Studio e o IDE e compilador preferenciais. 
 
-ao instalar o Unity, certifique-se de instalar o "back-end de script do Windows Store IL2CPP".
+Ao instalar o Unity, certifique-se de instalar o back-Windows de script IL2CPP do Windows Store".
 
-Adicione o pacote do mecanismo Vuforia conforme descrito [aqui.](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/vuforia-engine-package-hosting-for-unity.html)
+Adicione o pacote mecanismo Vuforia conforme descrito [aqui.](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/vuforia-engine-package-hosting-for-unity.html).
 
-## <a name="getting-started-with-vuforia-engine"></a>Introdução ao mecanismo do Vuforia
+## <a name="getting-started-with-vuforia-engine"></a>Como começar a trabalhar com o Mecanismo vuforia
 
-o melhor ponto de partida para aprender sobre o Vuforia engine e o HoloLens é o [mecanismo Vuforia HoloLens amostra](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (disponível no repositório de ativos do Unity). o exemplo fornece um projeto de HoloLens completo, incluindo cenas pré-configuradas que podem ser implantadas em um HoloLens.
+O melhor ponto de partida para aprender sobre o Mecanismo vuforia e HoloLens é o exemplo de HoloLens [Mecanismo vuforia](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (disponível no Unity Asset Store). O exemplo fornece um projeto HoloLens completo, incluindo cenas pré-configuradas que podem ser implantadas em um HoloLens.
 
-as cenas mostram como usar destinos de imagem Vuforia para reconhecer uma imagem e aumentá-la com conteúdo digital em uma experiência de HoloLens. o mecanismo Vuforia HoloLens exemplo também inclui uma cena que mostra o uso de destinos de modelo e VuMarks em HoloLens. você pode facilmente substituir seu próprio conteúdo nos bastidores para experimentar a criação de HoloLens aplicativos que usam o mecanismo Vuforia.
+As cenas mostram como usar Destinos de Imagem vuforia para reconhecer uma imagem e au incrementá-la com conteúdo digital em uma HoloLens experiência. O exemplo de HoloLens Mecanismo vuforia também inclui uma cena mostrando o uso de Destinos de Modelo e VuMarks no HoloLens. Você pode facilmente substituir seu próprio conteúdo nas cenas para experimentar a criação de aplicativos HoloLens que usam o Mecanismo Vuforia.
 
 
 
 ## <a name="configuring-a-vuforia-app-for-hololens"></a>Configurando um aplicativo Vuforia para HoloLens
 
-desenvolver um aplicativo de mecanismo Vuforia para HoloLens é fundamentalmente o mesmo que desenvolver aplicativos de mecanismo Vuforia para outros dispositivos. Em seguida, você pode aplicar as configurações de compilação e as configurações descritas na seção abaixo. isso é tudo o que é necessário para permitir que o mecanismo de Vuforia funcione com o mapeamento espacial HoloLens e sistemas de controle posicional.
+Desenvolver um aplicativo mecanismo Vuforia para HoloLens é fundamentalmente o mesmo que desenvolver aplicativos do Mecanismo Vuforia para outros dispositivos. Em seguida, você pode aplicar as configurações e as configurações de build descritas na seção abaixo. Isso é tudo o que é necessário para permitir que o Mecanismo vuforia funcione com o HoloLens de mapeamento espacial e sistemas de acompanhamento posicionais.
 
-## <a name="build-and-run-the-vuforia-engine-sample-for-hololens"></a>Compilar e executar o exemplo do mecanismo Vuforia para HoloLens
-1.  baixe o [exemplo do mecanismo Vuforia para HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) do repositório de ativos do Unity
-2.  Aplicar as [opções recomendadas do mecanismo Unity para energia e desempenho](performance-recommendations-for-unity.md)
-3.  Adicione os bastidores de exemplo em **cenas** no **Build.**
-4.  em **build Configurações**, mude a plataforma de Build para **UWP** clicando no botão **adicionar cenas abertas** .
+## <a name="build-and-run-the-vuforia-engine-sample-for-hololens"></a>Criar e executar o exemplo de mecanismo Vuforia para HoloLens
+1.  Baixe o [exemplo de mecanismo Vuforia para HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) do Asset Store do Unity
+2.  Aplicar as [opções recomendadas do mecanismo do Unity para energia e desempenho](performance-recommendations-for-unity.md)
+3.  Adicione as cenas de exemplo a **Cenas** no **Build.**
+4.  Em **Build Configurações**, mude a plataforma de build para **uWP** clicando no botão Adicionar Cenas **Abertas.**
 ![imagem](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.  selecione o botão **Configurações do Player** .  
-   * selecione o ícone **UWP** e expanda a seção **XR Configurações** .
-   * Verifique se a **realidade virtual com suporte** está habilitada.    
-   * Em **SDKs de realidade virtual** , verifique se:
-     * A **realidade mista da janela** está incluída na lista e o compartilhamento de **profundidade do buffer** habilitado está ativado. 
-     * O **formato de profundidade** é definido como **profundidade de 16 bits.** 
-   * Certifique-se de que o **modo de renderização estéreo** esteja definido como **única instância de passagem.**
-6.  expanda a seção **Configurações de publicação** .
-   * Em **recursos** , verifique se **cliente de Internet, webcam, microfone** e **SpatialPerception** estão selecionados.
-   * **Observação: SpatialPerception** só deverá ser selecionado se você pretender usar a API de observador de superfície.
-   * Em **famílias de dispositivos com suporte**, verifique se **Holographic** está selecionado. 
-7.  Expanda a seção **resolução e apresentação** .
-   * Desabilite **executar em segundo plano** para que o mecanismo do Vuforia Pause quando o aplicativo for colocado em segundo plano e possa acessar a câmera novamente quando o aplicativo for retomado. 
-   * Na lista suspensa **orientação padrão** , verifique se a caixa **paisagem à esquerda** está selecionada.
-8.  retorne para a janela **build Configurações** e selecione **compilar** para gerar um projeto de Visual Studio.
-9.  crie o executável de Visual Studio e instale-o em seu HoloLens.
+5.  Selecione o **botão Configurações** Player.  
+   * Selecione o **ícone UWP** e expanda a **seção Configurações XR.**
+   * Verifique se **a Realidade Virtual Com Suporte** está habilitada.    
+   * Em **SDKs de Realidade Virtual,** verifique se:
+     * **O Window Mixed Reality** está incluído na lista e habilitar **o compartilhamento de buffer** de profundidade está habilitado. 
+     * O **Formato de Profundidade** é definido como profundidade de **16 bits.** 
+   * Verifique se o Modo **de Renderização** Estéreo está definido **como Instância de Passagem Única.**
+6.  Expanda **a seção Configurações** publicação.
+   * Em **Funcionalidades,** verifique se **Cliente da Internet, WebCam, Microfone** e **SpatialPerception** estão selecionados.
+   * **OBSERVAÇÃO: SpatialPerception** só deverá ser selecionado se você pretende usar a API do Surface Observer.
+   * Em **Famílias de Dispositivos Com** Suporte , verifique se **Holographic** está selecionado. 
+7.  Expanda a **seção Resolução e** Apresentação.
+   * Desabilite **Executar em Segundo** Plano para que o Mecanismo Vuforia pause quando o aplicativo for colocado em segundo plano e possa acessar a câmera novamente quando o aplicativo for retomado. 
+   * No menu **suspenso Orientação** Padrão, verifique se **Paisagem Esquerda** está selecionada.
+8.  Retorne à janela **Criar Configurações** e selecione **Criar** para gerar um Visual Studio projeto.
+9.  Crie o executável do Visual Studio e instale-o em seu HoloLens.
 
-## <a name="the-vuforia-developer-portal"></a>O portal do desenvolvedor do Vuforia
+## <a name="the-vuforia-developer-portal"></a>O vuforia Portal do Desenvolvedor
 
-os desenvolvedores que desejam criar suas próprias experiências de AR com o Vuforia Engine e HoloLens devem se inscrever em nosso Portal do desenvolvedor Vuforia em [developer.vuforia.com](https://developer.vuforia.com/). No portal, os desenvolvedores têm acesso aos [fóruns do mecanismo Vuforia](https://developer.vuforia.com/forum) , onde podem ingressar em discussões da Comunidade, uma [biblioteca](https://library.vuforia.com/) com documentação detalhada sobre todos os recursos do mecanismo do Vuforia e o Gerenciador de [destino do Vuforia](https://developer.vuforia.com/target-manager) , onde os usuários podem criar seus próprios destinos personalizados. Os desenvolvedores também podem se inscrever para uma licença de desenvolvedor gratuita usando o [Gerenciador de licenças do Vuforia](https://developer.vuforia.com/license-manager).
+Os desenvolvedores que buscam criar suas próprias experiências de RA com o Mecanismo vuforia e HoloLens devem se inscrever em nosso vuforia Portal do Desenvolvedor no [developer.vuforia.com](https://developer.vuforia.com/). No portal, os desenvolvedores têm acesso aos Fóruns do [Mecanismo vuforia](https://developer.vuforia.com/forum) em que podem participar de discussões da comunidade, uma biblioteca com documentação detalhada sobre todos os Recursos do Mecanismo vuforia e o Gerenciador de Destino [](https://library.vuforia.com/) [Vuforia](https://developer.vuforia.com/target-manager) em que os usuários podem criar seus próprios Destinos personalizados. Os desenvolvedores também podem se inscrever para uma Licença de Desenvolvedor gratuita usando [o Gerenciador de Licenças vuforia.](https://developer.vuforia.com/license-manager)
 
-## <a name="device-tracking-with-vuforia"></a>Rastreamento de dispositivo com Vuforia
+## <a name="device-tracking-with-vuforia"></a>Acompanhamento de dispositivo com Vuforia
 
-O [rastreamento de dispositivo](https://library.vuforia.com/features/environments/device-tracker-overview.html) mantém o rastreamento mesmo quando um destino não está mais na exibição. Ele é habilitado automaticamente para todos os destinos quando o controlador de dispositivo posicional está habilitado. para aplicativos HoloLens, o controlador de dispositivo posicional é iniciado automaticamente no Unity.
+[O Acompanhamento de](https://library.vuforia.com/features/environments/device-tracker-overview.html) Dispositivos mantém o acompanhamento mesmo quando um destino não está mais em exibição. Ele é habilitado automaticamente para todos os destinos quando o Rastreador de Dispositivo Posicional está habilitado. Para HoloLens aplicativos, o Rastreador de Dispositivo Posicional é iniciado automaticamente no Unity.
 
-o mecanismo de Vuforia combina automaticamente as poses do rastreamento de câmera e o rastreamento espacial de HoloLens para fornecer destino estável representa independentemente de o destino ser visto pela câmera ou não.
+O Mecanismo Vuforia combina automaticamente as poses do acompanhamento da câmera e o acompanhamento espacial do HoloLens para fornecer poses de destino estáveis, independentemente de o destino ser visto pela câmera ou não.
 
-Como o processo é manipulado automaticamente, ele não requer nenhuma programação pelo desenvolvedor.
+Como o processo é tratado automaticamente, ele não exige nenhuma programação pelo desenvolvedor.
 
 
 **Veja a seguir uma descrição de alto nível do processo:**
-1. O controlador de destino do Vuforia reconhece o destino
-2. O rastreamento de destino é inicializado
-3. A posição e a rotação do destino são analisadas para fornecer uma estimativa de pose robusta para o HoloLens
-4. o mecanismo Vuforia transforma a pose do destino no espaço de coordenadas do mapeamento espacial HoloLens
-5. HoloLens assumirá o controle se o destino não estiver mais na exibição. Sempre que você olhar novamente o destino, o Vuforia continuará a rastrear as imagens e os objetos com precisão.
+1. O rastreador de destino do Vuforia reconhece o destino
+2. O acompanhamento de destino é inicializado
+3. A posição e a rotação do destino são analisadas para fornecer uma estimativa de pose robusta para a HoloLens
+4. O Mecanismo Vuforia transforma a pose do destino no espaço de coordenadas HoloLens mapeamento espacial
+5. HoloLens assumirá o controle se o destino não estiver mais em exibição. Sempre que você olhar novamente para o destino, Vuforia continuará acompanhando as imagens e objetos com precisão.
 
-Os destinos que são detectados, mas que não estão mais na exibição, são relatados como EXTENDED_TRACKED. Nesses casos, o script DefaultTrackableEventHandler usado em todos os destinos continua a renderizar o conteúdo de aumento. O desenvolvedor pode controlar esse comportamento implementando um script de manipulador de eventos rastreável personalizado.
+Destinos detectados, mas que não estão mais em exibição, são relatados como EXTENDED_TRACKED. Nesses casos, o script DefaultTrackableEventHandler usado em todos os destinos continua renderizar o conteúdo de aumento. O desenvolvedor pode controlar esse comportamento implementando um script de manipulador de eventos rastreável personalizado.
 
-## <a name="performance-mode-with-vuforia-engine"></a>Modo de desempenho com mecanismo Vuforia 
+## <a name="performance-mode-with-vuforia-engine"></a>Modo de desempenho com o mecanismo Vuforia 
 
-é possível que o mecanismo de Vuforia gerencie o desempenho no HoloLens para estender as experiências de AR e reduzir a carga de trabalho na CPU. O mecanismo Vuforia oferece três modos que podem ser selecionados: padrão, para otimizar a velocidade e para otimizar a qualidade. 
+É possível por meio do Mecanismo Vuforia gerenciar o desempenho no HoloLens até a extensão de experiências de RA e reduzir a carga de trabalho na CPU. O Mecanismo Vuforia oferece três modos que podem ser selecionados: padrão, para otimizar a velocidade e para otimizar a qualidade. 
 
-*   MODE_OPTIMIZE_SPEED permite minimizar a carga de trabalho no dispositivo HoloLens e é ótimo para estender as experiências de AR. Recomendamos situações em que o aplicativo esteja acompanhando objetos/destinos estáticos.
+*   MODE_OPTIMIZE_SPEED permite minimizar a carga de trabalho no dispositivo HoloLens e é ótimo para estender as experiências de RA. É recomendável para situações em que o aplicativo está acompanhando objetos/destinos estáticos.
 *   MODE_DEFAULT é o modo normal, que pode ser usado na maioria dos cenários.
-*   MODE_OPTIMIZE_QUALITY é melhor para controlar destinos móveis ou destinos de modelo que você espera que sejam coletados.
+*   MODE_OPTIMIZE_QUALITY é melhor para acompanhar destinos móveis ou destinos de modelo que você espera que sejam escolhidos.
 
 **Definindo o modo**
 
-Para alterar o modo de desempenho no Unity, navegue até configuração do Vuforia (Ctrl + Shift + V/Cmd + Shift + V) que está localizado como um componente no ARCamera gameobject. 
-*   Selecione o menu suspenso para o modo de dispositivo de câmera e selecione uma das três opções.
+Para alterar o modo de desempenho no Unity, navegue até Configuração de Vuforia (Ctrl+Shift+V/Cmd+Shift+V) que está localizado como um componente no ARCamera GameObject. 
+*   Selecione o menu suspenso do Modo de Dispositivo da Câmera e selecione uma das três opções.
 
 
 ## <a name="see-also"></a>Veja também
@@ -107,8 +107,8 @@ Para alterar o modo de desempenho no Unity, navegue até configuração do Vufor
 * [Mapeamento espacial](../../design/spatial-mapping.md)
 * [Câmera no Unity](camera-in-unity.md)
 * [Como exportar e criar uma solução do Visual Studio do Unity](exporting-and-building-a-unity-visual-studio-solution.md)
-* [documentação do Vuforia: Introdução com o mecanismo Vuforia para desenvolvimento de Windows 10](https://library.vuforia.com/articles/Training/Getting-Started-with-Vuforia-for-Windows-10-Development.html)
-* [Documentação do Vuforia: Introdução com o mecanismo Vuforia no Unity](https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html)
-* [documentação do Vuforia: trabalhando com o exemplo de HoloLens no Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity.html)
-* [Documentação do Vuforia: rastreamento de dispositivo em Vuforia](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Documentação do Vuforia: taxa de quadros e otimização de desempenho](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Documentação do Vuforia: Ponto de Partida com o Mecanismo vuforia para Windows 10 desenvolvimento](https://library.vuforia.com/articles/Training/Getting-Started-with-Vuforia-for-Windows-10-Development.html)
+* [Documentação do Vuforia: Ponto de Partida com o Mecanismo Vuforia no Unity](https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html)
+* [Documentação do Vuforia: trabalhando com o exemplo HoloLens no Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity.html)
+* [Documentação do Vuforia: Acompanhamento de dispositivos no Vuforia](https://library.vuforia.com/features/environments/device-tracker-overview.html)
+* [Documentação do Vuforia: Taxa de quadros e otimização de desempenho](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)

@@ -7,12 +7,12 @@ ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: atualizado, ferramentas, introdução, noções básicas, unity, visual studio, kit de ferramentas, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, instalação, Windows, HoloLens, emulador, unreal, openxr
-ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
-ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
+ms.openlocfilehash: fef1edd9e7257985a30739794f4b40164345254e3e76cfa740b3fe9699de79f2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "107731988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203691"
 ---
 # <a name="discovering-and-acquiring-features"></a>Como descobrir e adquirir recursos
 

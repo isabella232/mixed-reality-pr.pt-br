@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 01/14/2021
 ms.topic: article
 keywords: kit de ferramentas de realidade misturada, MRTK, exemplos, HoloLens, HoloLens 2, sombreadores, dicas de ferramenta, interação à mão, recorte, caixas delimitadas, botões, menus à mão, slate, controle deslizante
-ms.openlocfilehash: c748b0cc87e1f25ee3de62ef4f5c056f82db74ad
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 724d9b2c4886d6a6f7de74c4393809f8075ca15e584336b89d339cb8c0bcd610
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203277"
 ---
 # <a name="try-out-the-mrtk-examples-hub"></a>Experimente o Hub de exemplos do MRTK
 

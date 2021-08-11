@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: dcbeceb4cbe6b87cd6458afa789f9e09abaf7f3d
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: ce1f02bd2846cadc4e970fef738fb4b46bc3a09f10742b820a0998491c590c80
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204162"
 ---
 # <a name="all-platforms"></a>[Todas as plataformas](#tab/all)
 
@@ -18,7 +18,7 @@ O perfil de interação e os mapeamentos do controlador estão no plug-in do con
 
 ### <a name="configuring-startup-and-hmdpluginpriority"></a>Configurando inicialização e HMDPluginPriority
 
-A entrada em inreal usando SteamVR tem algumas diferenças.  Ao configurar o projeto, primeiro verifique se ele está usando o novo sistema de entrada do SteamVR adicionando **VR. SteamVR. EnableVRInput = 1** para a seção de **inicialização** em **Engine/config/ConsoleVariables.ini** .  Esse ini é encontrado no diretório de instalação do mecanismo, não no diretório do projeto.
+A entrada em inreal usando SteamVR tem algumas diferenças.  Ao configurar o projeto, primeiro verifique se ele está usando o novo sistema de entrada do SteamVR adicionando **VR. SteamVR. EnableVRInput = 1** para a seção de **inicialização** em **Engine/config/ConsoleVariables.ini**.  Esse ini é encontrado no diretório de instalação do mecanismo, não no diretório do projeto.
 
 ![Atualizando a configuração de inicialização](../images/reverb-g2-img-07.png)
 

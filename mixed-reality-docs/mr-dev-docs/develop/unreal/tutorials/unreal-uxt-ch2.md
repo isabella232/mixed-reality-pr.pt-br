@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, tutorial, introdução, mrtk, uxt, Ferramentas de UX, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
-ms.openlocfilehash: f7cf43e8f1c040660b6a2688e234a271bc071b00
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: e4fd7f69b3febec3997b13d7cb92579e9018e86cb3805b9a94dc76190affb34d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203858"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Inicializar o projeto e seu primeiro aplicativo
 

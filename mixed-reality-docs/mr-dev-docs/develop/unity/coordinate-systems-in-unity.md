@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema de coordenadas, sistema de coordenadas espaciais, somente orientação, escala assentada, escala em posição, espaço em escala, escala mundial, 360 graus, encaixada, posicionada, sala, mundo, escala, posição, orientação, Unity, âncora, âncora espacial, ancoragem mundial, trancada mundial, bloqueio mundial, fone de ouvido, bloqueio de corpo, perda de controle, locatability, limites, recentralizar, realidade misturada, headset do Windows, headset de realidade virtual
-ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 3372b9bd259202145fd658e225a36d2125f4a86d01eb90bc765b65918540db8b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203578"
 ---
 # <a name="coordinate-systems-in-unity"></a>Sistemas de coordenadas no Unity
 
-O Windows Mixed Reality dá suporte a aplicativos em uma ampla variedade de escalas de experiência, desde aplicativos de dimensionamento e de orientação e escalados até aplicativos em escala de sala. No HoloLens, você pode ir além e criar aplicativos de escala mundial que permitem que os usuários passem além de 5 metros, explorando um andar inteiro de um edifício e além disso.
+o Windows Mixed Reality dá suporte a aplicativos em uma ampla variedade de escalas de experiência, desde aplicativos de escala única e de dimensionamento até aplicativos em escala de sala. em HoloLens, você pode ir além e criar aplicativos de escala mundial que permitem que os usuários passem além de 5 metros, explorando um andar inteiro de um edifício e além disso.
 
 Sua primeira etapa na criação de uma experiência de realidade mista no Unity é entender [os sistemas de coordenadas e escolher a escala de experiência que](../../design/coordinate-systems.md) seu aplicativo terá como destino.
 
@@ -90,7 +90,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **Namespace:** *UnityEngine. XR. WSA*<br>
 **Tipo:** *WorldAnchor*
 
-Para experiências reais em grande **escala** sobre o HoloLens que permitem aos usuários percorrer mais de 5 metros, você precisará de novas técnicas além das usadas para experiências em escala de sala. Uma técnica importante que você usará é criar uma [âncora espacial](../../design/coordinate-systems.md#spatial-anchors) para bloquear um cluster de hologramas precisamente no mundo físico, não importa o quanto o usuário está em roaming e, em seguida, [encontrar esses hologramas novamente em sessões posteriores](../../design/coordinate-systems.md#spatial-anchor-persistence).
+para experiências reais em **escala mundial** em HoloLens que permitem que os usuários perfrentem mais de 5 metros, você precisará de novas técnicas além das usadas para experiências em escala de sala. Uma técnica importante que você usará é criar uma [âncora espacial](../../design/coordinate-systems.md#spatial-anchors) para bloquear um cluster de hologramas precisamente no mundo físico, não importa o quanto o usuário está em roaming e, em seguida, [encontrar esses hologramas novamente em sessões posteriores](../../design/coordinate-systems.md#spatial-anchor-persistence).
 
 No Unity, você cria uma âncora espacial adicionando o componente **WorldAnchor** Unity a um gameobject.
 
@@ -163,7 +163,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>Compartilhando âncoras entre dispositivos
 
-Use <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem durável a partir de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos HoloLens, Ios e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
+Use <a href="/azure/spatial-anchors/overview" target="_blank">âncoras espaciais do Azure</a> para criar uma âncora de nuvem durável a partir de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos HoloLens, iOS e Android.  Ao compartilhar uma âncora espacial comum em vários dispositivos, cada usuário pode ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.  Isso permite experiências compartilhadas em tempo real.
 
 Para começar a criar experiências compartilhadas no Unity, experimente os guias de início rápido dos separadores <a href="/azure/spatial-anchors/unity-overview" target="_blank">espaciais do Azure</a>de 5 minutos.
 

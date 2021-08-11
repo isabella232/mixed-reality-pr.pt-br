@@ -1,25 +1,25 @@
 ---
-title: Emulador de HoloLens avançado e simulador de realidade misturada
-description: Instruções detalhadas para usar o teclado, o mouse e o controlador Xbox para simular a entrada para o emulador do HoloLens e o simulador de realidade mista do Windows.
+title: Emulator de HoloLens avançado e simulador de realidade misturada
+description: instruções detalhadas para usar o teclado, o mouse e o controlador Xbox para simular a entrada para o HoloLens Emulator e o Windows Mixed Reality simulator.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
-keywords: HoloLens, emulador, simulação, realidade mista do Windows, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: HoloLens, Emulator, simulação, Windows Mixed Reality, headset de realidade mista, headset de realidade mista do Windows, headset da realidade virtual
+ms.openlocfilehash: a4e66b2738d5f89949b14fd6f901e2b30dc38cd9e02072f640345d374b9eb9fe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217122"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Entrada avançada do Emulador do HoloLens e do Simulador de Realidade Misturada
 
-A maioria dos usuários do emulador só precisará usar os controles de entrada básicos para o [emulador do HoloLens](using-the-hololens-emulator.md#basic-emulator-input) ou o [simulador de realidade mista do Windows](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). Os detalhes a seguir são para usuários avançados que encontraram uma necessidade de simular tipos de entrada mais complexos.
+a maioria dos usuários do emulador só precisará usar os controles de entrada básicos para o [HoloLens Emulator](using-the-hololens-emulator.md#basic-emulator-input) ou o [simulador de Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). Os detalhes a seguir são para usuários avançados que encontraram uma necessidade de simular tipos de entrada mais complexos.
 
 ## <a name="concepts"></a>Conceitos
 
-Para começar a controlar a entrada virtual para o emulador do HoloLens e o simulador de realidade do Windows Mixed, você deve primeiro entender alguns conceitos.
+para começar a controlar a entrada virtual para o HoloLens Emulator e o simulador de Windows Mixed Reality, você deve primeiro entender alguns conceitos.
 
 O movimento se refere ao controle e à alteração da posição e da orientação de algo na cena. Para um objeto controlável direcionado, o movimento é controlado com rotação e conversão (movimento) em três eixos.
 * **Guinada**: virada para a esquerda ou para a direita.
@@ -31,16 +31,16 @@ O movimento se refere ao controle e à alteração da posição e da orientaçã
 
 As entradas do controlador de gesto e movimento são mapeadas de acordo com os dispositivos físicos:
 * **Ação**: simula a ação de pressionar o dedo indicador para o polegar ou extrair o botão de ação em um controlador. Por exemplo, a entrada da ação pode ser usada para simular o gesto de toque de ar, para rolar pelo conteúdo e para pressionar e manter pressionado.
-* **[](../../design/system-gesture.md#bloom)/Estado gesto ou Home**: o gesto de cair/sistema do HoloLens ou o botão página inicial de um controlador é usado para retornar ao shell e disparar ações do sistema.
+* **[](../../design/system-gesture.md#bloom)/estadoe o gesto ou a página inicial**: o gesto de HoloLens/cair do sistema ou o botão página inicial de um controlador é usado para retornar ao shell e disparar ações do sistema.
 
-As mãos têm uma representação rica no HoloLens 2.  Além de ser acompanhado/não acompanhado e utilizável para gestos de condução, as mãos agora têm um modelo de esqueleto articulado que se ajusta a eles e expostos ao desenvolvedor.  O modelo de esqueleto tem 26 pontos rastreados em cada mão.  
+as mãos têm uma representação rica no HoloLens 2.  Além de ser acompanhado/não acompanhado e utilizável para gestos de condução, as mãos agora têm um modelo de esqueleto articulado que se ajusta a eles e expostos ao desenvolvedor.  O modelo de esqueleto tem 26 pontos rastreados em cada mão.  
 * **Conjunto**: uma das 20 posições rastreadas para um determinado controle acompanhado com um ponto associado no espaço 3D.
 * **Pose**: uma coleção completa de todas as junções em uma mão controlada, 26 junções em todos. 
 
 Atualmente, não expõemos o controle direto de posições conjuntas individuais por meio do emulador, mas você pode defini-las por meio da API de simulação. Temos um conjunto de representações úteis que o emulador permite que você alterne entre.
 
 Você também pode controlar o estado da entrada simulada do sensor:
-* **Redefinir**: retorna todos os sensores simulados para seus valores padrão.  A partir do emulador do HoloLens 2, uma redefinição pode ser definida como escopo para uma ou ambas as mãos. Envolva as mãos desejadas usando as chaves (s) modificadores ou botão (s) (Alt e/ou direita, ou o amortecedor esquerdo e/ou direito no gamepad).
+* **Redefinir**: retorna todos os sensores simulados para seus valores padrão.  a partir da Emulator HoloLens 2, uma redefinição pode ser definida como escopo para uma ou ambas as mãos. Envolva as mãos desejadas usando as chaves (s) modificadores ou botão (s) (Alt e/ou direita, ou o amortecedor esquerdo e/ou direito no gamepad).
 * **Acompanhamento**: percorre os modos de controle posicional, incluindo:
   * **Padrão**: o sistema operacional escolhe o melhor modo de controle com base nas solicitações feitas do sistema.
    * **Orientação**: força o controle somente de orientação, independentemente das solicitações do sistema.
@@ -50,7 +50,7 @@ Você também pode controlar o estado da entrada simulada do sensor:
 
 A tabela a seguir mostra como cada tipo de entrada é mapeada para o teclado, o mouse e o controlador Xbox. Cada tipo tem um mapeamento diferente, dependendo do modo de controle de entrada. Você pode encontrar mais informações sobre modos de controle de entrada mais adiante neste documento.
 
-| Entrada |  Teclado |  Mouse |  Controlador Xbox | 
+| Entrada |  Keyboard |  Mouse |  Controlador Xbox | 
 |----------|----------|----------|----------|
 |  Yaw |  Setas à esquerda/direita |  Arrastar para a esquerda/direita |  Direita Thumbstick esquerda/direita | 
 |  Densidade |  Setas para cima/para baixo |  Arrastar para cima/para baixo |  Thumbstick direita/para baixo | 
@@ -59,7 +59,7 @@ A tabela a seguir mostra como cada tipo de entrada é mapeada para o teclado, o 
 |  Y |  Page up/Page Down |  |  DPad para cima/para baixo | 
 |  Z |  W/S |  |  Esquerda Thumbstick para cima/para baixo | 
 |  Ação |  Inserir ou espaço |  Botão direito |  Um botão ou um gatilho | 
-|  Flor/sistema |  F2 ou tecla do Windows |  |  Botão B | 
+|  Flor/sistema |  tecla F2 ou Windows |  |  Botão B | 
 |  Botão de alça do controlador/mão |  G  |  |  | 
 |  Botão de menu do controlador |  M  |  |  | 
 |  Touch Touch do controlador |  U  |  |  | 
@@ -79,28 +79,28 @@ Observação: os botões do controlador podem ser direcionados a um único lado/
 
 ## <a name="targeting"></a>Configurando destinos 
 
-Alguns dos conceitos de entrada acima têm por conta própria.  A ação, a flor/sistema, a redefinição e o acompanhamento são conceitos completos, não são necessários e não são afetados por nenhum modificador adicional para direcionamento.  Os conceitos restantes podem ser aplicados a um de vários destinos. Apresentamos maneiras de especificar a qual destino pretendido seu comando deve ser aplicado.  Em todos os casos, é possível especificar por meio da interface do usuário ou por meio de pressionamentos de teclado, que objeto deve ser direcionado.  Em alguns casos, também é possível especificar com o controlador Xbox diretamente. 
+Alguns dos conceitos de entrada acima estão por conta própria.  Action, Bloom/System, Reset e Tracking são conceitos completos, não precisam e não são afetados por nenhum modificador adicional para direcionamento.  Os conceitos restantes podem ser aplicados a um dos vários destinos. Apresentamos maneiras de especificar a qual destino pretendido seu comando deve ser aplicado.  Em todos os casos, é possível especificar por meio da interface do usuário ou por meio de pressionamentos de teclado, qual objeto direcionar.  Em alguns casos, também é possível especificar com o controlador xbox diretamente. 
 
 A tabela a seguir descreve as opções de direcionamento e a maneira de ativar cada uma delas.
 
-| Objeto | Modificador de teclado | Modificador de controlador | Modificador de IU do emulador |
+| Objeto | Modificador de teclado | Modificador do controlador | Emulator Modificador de interface do usuário |
 |----------|----------|----------|----------|
 | Corpo | (padrão) | (padrão) | (padrão) |
 | Head | Manter H | (Não disponível) | (Não disponível) |
-| À esquerda/controlador | Pressionar o botão Alt esquerdo | Botão manter à esquerda | Left-Hand pino | 
-| À direita/controlador | Manter botão Alt direito | Botão manter à direita | Right-Hand pino |
-| Mal | Reter Y | (Não disponível) | Pino de olhos |
+| Mão esquerda/controlador | Mantenha o botão Alt esquerdo pressionado | Botão Manter o Mento Esquerdo | Left-Hand pushpin | 
+| Lado direito/controlador | Mantenha o botão Alt pressionado para a direita | Botão Manter o Mento Direito | Right-Hand pushpin |
+| Olhos | Manter Y | (Não disponível) | Pushpin de olhos |
   
-A tabela a seguir mostra como cada modificador de destino mapeia cada um dos conceitos de entrada de movimento principal
+A tabela a seguir mostra como cada modificador de destino mapeia cada um dos principais conceitos de entrada de movimento
 
-| Entrada | Padrão (corpo) |  Mão/controlador (Mantenha Alt, pressione o botão de controle do gamepad ou alterne o pino da interface do usuário) |  Cabeça (Hold H)  |  Olhos (manter Y ou alternar o pino da interface do usuário) |
+| Entrada | Padrão (Corpo) |  Controle/mão (mantenha a tecla Alt pressionada, mantenha o botão de responsabilidade do gamepad pressionado ou o botão de alternância da interface do usuário) |  Head (Hold H)  |  Olhos (mantenha Y ou alterne o alfinete da interface do usuário) |
 |----------|----------|----------|----------|----------|
-|  Yaw |  Girar corpo para a esquerda/direita |  Mover para a esquerda/direita |  Transformar cabeçalho à esquerda/direita | Olhar de olho parece esquerda/direita |
-|  Densidade |  Girar para cima/para baixo |  Mover para cima/para baixo |  Girar para cima/para baixo | Olho olhar pesquisa | 
-|  Roll |  Rolar cabeçalho para a esquerda/direita |  |  Rolar cabeçalho para a esquerda/direita | (Nenhuma ação) |
-|  X |  Corpo do slide à esquerda/direita |  Mover mão/controlador para a esquerda/direita |  Transformar cabeçalho à esquerda/direita | (Nenhuma ação) |
-|  Y |  Mover corpo para cima/para baixo |  Mover mão/controlador para cima/para baixo |  Girar para cima/para baixo | (Nenhuma ação) |
-|  Z |  Mover corpo para frente/para trás |  Mover mão/avançar/voltar do controlador |  Girar para cima/para baixo | (Nenhuma ação) |
+|  Yaw |  Girar o corpo para a esquerda/direita |  Mover a mão para a esquerda/para a direita |  Girar a cabeça para a esquerda/direita | O olhar se parece com a esquerda/direita |
+|  Densidade |  Ativar/desativar a cabeça |  Mover a mão para cima/para baixo |  Girar a cabeça para cima/para baixo | O olhar fica para cima/para baixo | 
+|  Roll |  Rolar a cabeça para a esquerda/direita |  |  Rolar a cabeça para a esquerda/direita | (Nenhuma ação) |
+|  X |  Corpo do slide para a esquerda/direita |  Mover a mão/controlador para a esquerda/direita |  Girar a cabeça para a esquerda/direita | (Sem ação) |
+|  Y |  Mover o corpo para cima/para baixo |  Mover a mão/controlador para cima/para baixo |  Ativar/desativar a cabeça | (Sem ação) |
+|  Z |  Mover o corpo para frente/para trás |  Mover a mão/controlador para frente/para trás |  Ativar/desativar a cabeça | (Sem ação) |
  
  
 ## <a name="controlling-an-app"></a>Controlando um aplicativo
@@ -109,58 +109,58 @@ O seguinte conjunto de controles é sugerido para uso do dia a dia:
 
 |  Operação |  Teclado e mouse |  Controller | 
 |----------|----------|----------|
-|  Corpo X |  A/D |  Esquerda Thumbstick esquerda/direita | 
-|  Corpo Y |  Page up/Page Down |  DPad para cima/para baixo | 
-|  Corpo Z |  W/S |  Esquerda Thumbstick para cima/para baixo | 
-|  Guinada do corpo |  Arrastar mouse para a esquerda/direita |  Direita Thumbstick esquerda/direita | 
-|  Desvio de cabeça |  H + arrastar mouse para a esquerda/direita |  H (no teclado) + direita Thumbstick esquerda/direita | 
-|  Inclinação do cabeçalho |  Arrastar o mouse para cima/para baixo |  Thumbstick direita/para baixo | 
-|  Rolo de cabeçalho |  P/E |  DPad esquerda/direita | 
-|  Mão/controlador X |  ALT + A/D |  Tiracolo + esquerda Thumbstick esquerda/direita | 
-|  Mão/controlador Y |  Alt + Page up/Page Down |  Tiracolo + DPad para cima/para baixo | 
-|  Mão/controlador Z |  ALT + W/S |  Tiracolo + esquerdo Thumbstick para cima/para baixo | 
-|  Desvio da mão/controlador |  Alt + arrastar mouse para a esquerda/direita |  Tiracolo + direita Thumbstick esquerda/direita | 
-|  Densidade da mão/controlador |  Alt + arrastar mouse para cima/para baixo |  Tiracolo + direita Thumbstick para cima/para baixo | 
-|  Distribuição à mão/controlador |  ALT + Q/E |  Tiracolo + DPad à esquerda/direita | 
+|  Corpo X |  A/D |  Left thumbstick left/right | 
+|  Corpo Y |  Page up/página para baixo |  DPad para cima/para baixo | 
+|  Corpo Z |  W/S |  Thumbstick esquerdo para cima/para baixo | 
+|  Yaw de corpo |  Arraste o mouse para a esquerda/direita |  Thumbstick direito para a esquerda/direita | 
+|  Yaw de cabeça |  H + arrastar o mouse para a esquerda/direita |  H (no Teclado) + thumbstick direito para a esquerda/direita | 
+|  Tom de cabeça |  Arrastar o mouse para cima/para baixo |  Miniatura direita para cima/para baixo | 
+|  Rolagem de cabeça |  P/E |  DPad para a esquerda/direita | 
+|  Mão/Controlador X |  Alt + A/D |  Soquete + a esquerda/direita do thumbstick esquerdo | 
+|  Mão/Controlador Y |  Alt + Page up/página para baixo |  Altura + DPad para cima/para baixo | 
+|  Mão/Controlador Z |  Alt + W/S |  1000000011111111111111111 | 
+|  Yaw de mão/controlador |  Alt + arrastar o mouse para a esquerda/direita |  Soquete + thumbstick direito esquerdo/direito | 
+|  Tom de mão/controlador |  Alt + arrastar o mouse para cima/para baixo |  Responsabilidade + miniatura direita para cima/para baixo | 
+|  Roll de mão/controlador |  Alt + P/E |  Lateral + DPad à esquerda/direita | 
 |  Ação |  Botão direito do mouse |  Gatilho | 
-|  Flor/sistema/página inicial |  F2 ou tecla do Windows |  Botão B | 
+|  Bloom/System/Home |  F2 ou Windows chave |  Botão B | 
 |  Redefinir |  Escape |  botão Iniciar | 
 |  Acompanhamento |  T |  Botão X | 
-|  Rolagem |  Alt + botão direito do mouse + arrastar o mouse para cima/para baixo |  Tiracolo + gatilho + Thumbstick direita/inativo | 
-|  Mover/girar mais rápido | Tecla SHIFT esquerda ou direita | Pressione e segure a Thumbstick correta |
-|  Mover/girar lentamente | Tecla CTRL esquerda ou direita | Pressionar e manter o Thumbstick esquerdo |
+|  Rolagem |  Alt + botão direito do mouse + arrastar o mouse para cima/para baixo |  Altura + gatilho + thumbstick direito para cima/para baixo | 
+|  Mover/girar mais rapidamente | Tecla Shift para a esquerda ou direita | Pressione e segure o thumbstick direito |
+|  Mover/girar lentamente | Tecla Ctrl esquerda ou direita | Pressione e segure o thumbstick esquerdo |
 
 ## <a name="using-a-windows-mixed-reality-immersive-headset-and-motion-controllers-with-the-hololens-2-emulator"></a>Usando controladores de movimentos e o headset imersivo do Windows Mixed Reality com o Emulador do HoloLens 2
 
-Ao usar um headset de imersão de realidade mista do Windows com o emulador do HoloLens 2, a movimentação e a rotação são mapeadas automaticamente para movimento e rotação do headset.  A posição e a orientação do controlador de movimento são mapeadas automaticamente para a posição e orientação da mão no emulador.  A tabela a seguir lista as ações adicionais disponíveis ao usar um controlador de movimento.
+Ao usar um headset Windows Mixed Reality imersivo com o HoloLens 2 Emulator, a movimentação e a rotação são mapeadas automaticamente para movimentação e rotação do headset.  A posição e a orientação do controlador de movimento são mapeadas automaticamente para a posição e a orientação da mão no emulador.  A tabela a seguir lista as ações adicionais disponíveis ao usar um controlador de movimento.
 
 > [!NOTE]
-> Ao usar um headset, os controles teclado padrão, mouse e gamepad são ignorados automaticamente.
+> Ao usar um headset, os controles de teclado padrão, mouse e gamepad são ignorados automaticamente.
 
 |  Operação |  Ação |  Observações | 
 |----------|----------|----------|
-|  Corpo X |  Thumbstick esquerda/direita |   | 
-|  Corpo Z |  Avançar/voltar Thumbstick |   | 
-|  Corpo Y |  /Down de página de teclado para cima | Verifique se o Windows Mixed Reality tem foco.  Pressione Win + Y se o foco estiver na área de trabalho do Windows para retornar o foco para a realidade mista do Windows. |
-|  Olhos olhar para a esquerda/direita |  DPad esquerda/direita | |
-|  Olhar para cima/para baixo | DPad para cima/para baixo | |
+|  Corpo X |  Thumbstick Left/Right |   | 
+|  Corpo Z |  Thumbstick Forward/Back |   | 
+|  Corpo Y |  Página de teclado para cima/para baixo | Verifique se Windows Mixed Reality tem foco.  Pressione Win+Y se o foco estiver no Windows Desktop para retornar o foco Windows Mixed Reality. |
+|  Os olhos parecem para a esquerda/direita |  DPad Left/Right | |
+|  Olhos para cima/para baixo | DPad para cima/para baixo | |
 |  Toque | Gatilho | |
-|  Pinçar/entender | Botão de fixação | |
+|  Pinçar/segurar | Botão de segurar | |
 |  Gesto do sistema | Botão Menu | |
-|  Redefinir posição | Thumbstick clique em | |
+|  Redefinir posição | Clique em thumbstick | |
 
-## <a name="perception-simulation-control-panel-keyboard-shortcuts"></a>Atalhos de teclado do painel de controle da simulação de percepção
+## <a name="perception-simulation-control-panel-keyboard-shortcuts"></a>Simulação de percepção Painel de Controle atalhos de teclado
 
-Você pode acessar o painel de controle de simulação de percepção e habilitar ou desabilitar dispositivos de entrada do PC com os seguintes atalhos de teclado.
+Você pode acessar o painel Controle de Simulação de Percepção e habilitar ou desabilitar dispositivos de entrada do computador com os atalhos de teclado a seguir.
 
 | Operação | Atalho | Descrição/observações |
 |-----------|----------|-------------|
-| Alternar ' usar teclado para simulação ' | F4 | Quando desativado, a entrada do teclado vai para o aplicativo do HoloLens ou do Windows Mixed Reality. |
-| Alternar ' usar o mouse para simulação ' | F5 | Quando desativado, a entrada do mouse vai para o ambiente de realidade misturada (apenas para a realidade mista do Windows) |
-| Alternar ' usar o gamepad para simulação ' | F6 | Quando desativado, a entrada de gamepad é ignorada por simulação |
+| Alternar 'Usar teclado para simulação' | F4 | Quando desligada, a entrada do teclado vai para o HoloLens ou Windows Mixed Reality aplicativo. |
+| Alternar 'Usar o mouse para simulação' | F5 | Quando desligado, a entrada do mouse vai para o ambiente de Realidade Misturada (Windows Mixed Reality somente) |
+| Alternar 'Usar gamepad para simulação' | F6 | Quando desligada, a entrada do gamepad é ignorada por simulação |
 | Mostrar ou ocultar o painel de controle | F7 | |
 | Definir o foco do teclado para o painel de controle | F8 | Se o painel não estiver visível no momento, ele será mostrado primeiro. |
-| Encaixar ou desencaixar o painel de/para o emulador ou a janela do portal da realidade misturada | F9 | Se a janela for fechada quando desencaixada, ela será encaixada e ocultada. |
+| Encaixar ou desencaixar o painel de/para o emulador ou Portal de Realidade Misturada janela | F9 | Se a janela for fechada quando desencaixada, ela será encaixada e oculta. |
 
 ## <a name="see-also"></a>Veja também
 * [Instalar as ferramentas](../install-the-tools.md)

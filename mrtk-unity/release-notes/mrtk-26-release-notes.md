@@ -1,160 +1,160 @@
 ---
-title: Notas de versão do MRTK 2,6
-description: Notas de versão do MRTK versão 2,6
+title: Notas de versão do MRTK 2.6
+description: Notas sobre a versão do MRTK versão 2.6
 author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: c172e5d071bba22626e9c35b2b4318f1ff779335
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK,
+ms.openlocfilehash: 452f0f352443620dea70b1680859bab4e2b3a0818de5f130accdb84c2798cfe0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206682"
 ---
-# <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Notas de versão do Microsoft Mixed Reality Toolkit 2,6
+# <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Notas de versão do Microsoft Mixed Reality Toolkit 2.6
 
 > [!IMPORTANT]
-> Há um problema de compilador conhecido que afeta os aplicativos criados para o Microsoft HoloLens 2 usando o ARM64. Esse problema é corrigido com a atualização do Visual Studio 2019 para a versão 16,8 ou posterior. Se não for possível atualizar o Visual Studio, importe o `com.microsoft.mixedreality.toolkit.tools` pacote para aplicar uma solução alternativa.
+> Há um problema conhecido do compilador que afeta os aplicativos compilados para Microsoft HoloLens 2 usando ARM64. Esse problema é corrigido pela atualização do Visual Studio 2019 para a versão 16.8 ou posterior. Se você não conseguir atualizar Visual Studio, importe o `com.microsoft.mixedreality.toolkit.tools` pacote para aplicar uma solução alternativa.
 
-## <a name="whats-new-in-262"></a>O que há de novo no 2.6.2
+## <a name="whats-new-in-262"></a>Novidades na versão 2.6.2
 
 ### <a name="corrects-parenting-of-the-spatial-mesh"></a>Corrige o pai da malha espacial
 
-Corrige o [problema](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9819) em que as malhas espaciais não estavam sendo corretamente localizadas depois que o objeto Playspace da realidade misturada foi movido (ex: por meio de um teleport).
+Corrige o [problema em](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9819) que malhas espaciais não estavam sendo localizadas corretamente depois que o objeto do Playspace de Realidade Misturada foi movido (por ex.: por meio de um teletransporte).
 
-## <a name="whats-new-in-261"></a>O que há de novo no 2.6.1
+## <a name="whats-new-in-261"></a>Novidades na versão 2.6.1
 
-### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>Corrige OpenXR não em execução no HoloLens 2/UWP
+### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>Corrige a não execução do OpenXR no HoloLens 2/UWP
 
-Corrige uma regressão que impediu o suporte de OpenXR da MRTK de ser executado no UWP.
+Corrige uma regressão que impedia a execução do suporte openXR do MRTK na UWP.
 
-### <a name="fixes-leap-motion-objectmanipulator-not-rotating"></a>Corrige o objectmanipulador de movimento LEAP não girando
+### <a name="fixes-leap-motion-objectmanipulator-not-rotating"></a>Corrige o ObjectManipulator de Movimento Bissexo que não está girando
 
-Corrige uma regressão em que a rotação de uma mão de movimento LEAP não foi levada em conta pelo script objectmanipuletor.
+Corrige uma regressão em que a rotação de uma mão do Leap Motion não foi levada em conta pelo script ObjectManipulator.
 
 ### <a name="sample-scene-updates"></a>Atualizações de cena de exemplo
 
-Atualiza a cena de exemplo de compreensão da cena para refletir corretamente o estado de envio do plug-in do Unity. Também atualiza o exemplo para que não tenha mais uma dependência da cena de amostra de conscientização espacial que está sendo importada. Antes de atualizar para o 2.6.1, você deve excluir as amostras de reconhecimento espacial e compreensão de cena importadas se elas estiverem presentes no seu projeto para evitar possíveis conflitos. Se você não tiver removido esses exemplos e vir conflitos relacionados a eles no console do, remova os dois exemplos (ou a `Assets/Samples/Mixed Reality Toolkit Examples` pasta) e tente importar novamente.
+Atualiza a cena de exemplo de compreensão da cena para refletir corretamente o estado enviado do plug-in do Unity. Também atualiza o exemplo para não ter mais uma dependência da cena de exemplo de reconhecimento espacial que está sendo importada. Antes de atualizar para a 2.6.1, exclua os exemplos de reconhecimento espacial e compreensão de cena importados se eles estão presentes em seu projeto para evitar possíveis conflitos. Se você não removeu esses exemplos e vê conflitos relacionados a eles no console, remova os dois exemplos (ou a pasta) e tente importar `Assets/Samples/Mixed Reality Toolkit Examples` novamente.
 
-Atualiza a cena de exemplo de caixa de diálogo para descrever corretamente os cenários de caixa de diálogo atuais.
+Atualiza a cena de exemplo da caixa de diálogo para descrever corretamente os cenários de diálogo atuais.
 
-## <a name="whats-new-in-260"></a>O que há de novo no 2.6.0
+## <a name="whats-new-in-260"></a>Novidades na versão 2.6.0
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
 ### <a name="add-support-for-openxr"></a>Adicionar suporte para OpenXR
 
-Foi adicionado o suporte inicial para o pacote de visualização do OpenXR da Unity e o pacote OpenXR da realidade misturada da Microsoft. Consulte [a página Introdução ao MRTK/XRSDK, a](../configuration/getting-started-with-mrtk-and-xrsdk.md) [postagem do fórum do Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)ou a [documentação da Microsoft](/windows/mixed-reality/develop/unity/openxr-getting-started) para obter mais informações.
+O suporte inicial para o pacote de versão prévia do OpenXR do Unity e o pacote OpenXR de Realidade Misturada da Microsoft foi adicionado. Consulte a página de início do [MRTK/XRSDK,](../configuration/getting-started-with-mrtk-and-xrsdk.md)a postagem do fórum do [Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)ou a documentação [da Microsoft](/windows/mixed-reality/develop/unity/openxr-getting-started) para obter mais informações.
 
 > [!IMPORTANT]
-> O OpenXR no Unity só tem suporte no Unity 2020,2 e superior.
+> O OpenXR no Unity só tem suporte no Unity 2020.2 e superior.
 >
-> Atualmente, ele também dá suporte apenas a compilações de x64 e ARM64.
+> Atualmente, ele também dá suporte apenas a builds x64 e ARM64.
 
-### <a name="asset-swap-utility"></a>Utilitário de permuta de ativos
+### <a name="asset-swap-utility"></a>Utilitário de troca de ativos
 
-Troque vários ativos em uma cena do Unity com o novo [Utilitário de permuta de ativos](../features/tools/asset-swap-utility.md).
+Altere vários ativos em uma cena do Unity com o novo utilitário [Asset Swap](../features/tools/asset-swap-utility.md).
 
-### <a name="hp-motion-controllers-now-supported-with-mrtk"></a>Os controladores HP Motion agora têm suporte com o MRTK
+### <a name="hp-motion-controllers-now-supported-with-mrtk"></a>Controladores de movimento HP agora são suportados com o MRTK
 
-Controladores para o HP reverb G2 agora funcionam nativamente com MRTK.
+Os controladores para o HP Reverb G2 agora funcionam de forma nativa com o MRTK.
 
-### <a name="experimental-interactive-element--state-visualizer"></a>Elemento interativo experimental + Visualizador de estado
+### <a name="experimental-interactive-element--state-visualizer"></a>Elemento interativo experimental + visualizador de estado
 
-O elemento interativo é um ponto de entrada centralizado simplificado para o sistema de entrada MRTK. Ele contém métodos de gerenciamento de estado, gerenciamento de eventos e a lógica de configuração de estado para os Estados de interação principal. Para obter mais informações, consulte [documentação de elemento interativo](../features/experimental/interactive-element.md).
+O Elemento Interativo é um ponto de entrada centralizado simplificado para o sistema de entrada do MRTK. Ele contém métodos de gerenciamento de estado, gerenciamento de eventos e a lógica de configuração de estado para estados de interação principais. Para obter mais informações, consulte [Documentação do elemento interativo](../features/experimental/interactive-element.md).
 
 ![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
-O Visualizador de estado é um componente de animação que depende do elemento interativo. Esse componente cria clipes de animação, define quadros-chave e gera um computador de estado Animator. Para obter mais informações, consulte [documentação do State Visualizer](../features/experimental/interactive-element.md#state-visualizer-experimental)
+O Visualizador de Estado é um componente de animação que depende do Elemento Interativo. Esse componente cria Clipes de Animação, define os keyframes e gera um Computador de Estado animador. Para obter mais informações, consulte [Documentação do Visualizador de Estado](../features/experimental/interactive-element.md#state-visualizer-experimental)
 
 ![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
-### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>A teleportação com o gesto teleport agora tem suporte em todas as plataformas
+### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>Agora há suporte para o gesto de teletransporte em todas as plataformas
 
-Agora, os usuários podem usar o gesto de teleport para se mover em todo o espaço de reprodução em todas as plataformas. Para teleport com um controlador em dispositivos MR com configurações padrão, use o Thumbstick. Para teleportr com as mãos articuladas, faça um gesto com seu Palm voltado para cima com o índice e o polegar para cima, concluindo o teleport ao enrolar o dedo do índice. Para teleport com a simulação de entrada, consulte nossa [documentação](../features/input-simulation/input-simulation-service.md)atualizada do serviço de simulação de entrada.
+Os usuários agora podem usar o gesto de teletransporte para mover seu espaço de reprodução em todas as plataformas. Para usar um controlador em dispositivos MR com configurações padrão, use o thumbstick. Para fazer um gesto com as mãos articuladas, faça um gesto com a mão voltada para cima com o índice e o polegar para fora, concluindo o anel ondulando o dedo indicador. Para fazer a simulação de entrada, confira nossa documentação atualizada [do Serviço de Simulação de Entrada](../features/input-simulation/input-simulation-service.md).
 
-![Gesto de teleport](../features/images/teleport/handteleport.gif)
+![Gesto de Teletransporte](../features/images/teleport/handteleport.gif)
 
-### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>Compreensão da cena agora disponível no MRTK como um observador de reconhecimento espacial experimental
+### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>O Reconhecimento de Cena agora está disponível no MRTK como um observador experimental de reconhecimento espacial
 
-O suporte experimental do [entendimento da cena](/windows/mixed-reality/scene-understanding) foi introduzido no MRTK 2,6. Os usuários podem incorporar os recursos de compreensão da cena do HoloLens 2 como um observador de conscientização espacial em projetos baseados em MRTK. Leia a [documentação de compreensão da cena](../features/spatial-awareness/scene-understanding.md) para obter mais informações.
+O suporte experimental do [Entendimento de Cena](/windows/mixed-reality/scene-understanding) é introduzido no MRTK 2.6. Os usuários podem incorporar as funcionalidades de reconhecimento de cena do HoloLens 2 como um observador de reconhecimento espacial em projetos baseados no MRTK. Leia a [documentação do Scene Understanding para](../features/spatial-awareness/scene-understanding.md) obter mais informações.
 
 > [!IMPORTANT]
-> Só há suporte para a compreensão da cena no HoloLens 2 e no Unity 2019,4 e superior.
+> O Entendimento de Cena só tem suporte HoloLens 2 e Unity 2019.4 e superior.
 >
-> Este recurso requer o pacote de compreensão da cena, que agora está disponível por meio da [ferramenta de recursos de realidade misturada](https://aka.ms/MRFeatureTool).
-> Ao usar a ferramenta de funcionalidade Mixed Reality ou importar de outra forma via UPM, importe o exemplo de demos-SpatialAwareness antes de importar o exemplo experimental-SceneUnderstanding devido a um problema de dependência. Consulte [este problema do GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) para obter mais informações.
+> Esse recurso requer o pacote De compreensão de cena, que agora está disponível por meio da Ferramenta [de Recursos de Realidade Misturada](https://aka.ms/MRFeatureTool).
+> Ao usar a Ferramenta de Recursos de Realidade Misturada ou importar por meio de UPM, importe o exemplo Demonstrações – SpatialAwareness antes de importar o exemplo Experimental - SceneUnderstanding devido a um problema de dependência. Confira este [GitHub para](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) obter mais informações.
 
-![Compreensão da cena](images/SceneUnderstanding.gif)
+![Noções básicas sobre a cena](images/SceneUnderstanding.gif)
 
-### <a name="runtime-profile-switching-support"></a>Suporte à alternância de perfil de tempo de execução
+### <a name="runtime-profile-switching-support"></a>Suporte à alternação de perfil de runtime
 
-O MRTK agora permite a troca de perfil antes da inicialização da instância MRTK (ou seja, a opção de perfil de inicialização MRTK) e, depois que um perfil está em uso ativo (ou seja, a opção de perfil ativo). A opção anterior pode ser usada para habilitar componentes selecionados com base nos recursos do hardware, enquanto o último pode ser usado para modificar a experiência, pois o usuário insere um subitem do aplicativo. Leia a [documentação sobre a alternância de perfil](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) para obter mais informações e exemplos de código.
+O MRTK agora permite a alternação de perfil antes da inicialização da instância do MRTK (ou seja, opção de perfil de inicialização pré-MRTK) e depois que um perfil está em uso ativo (ou seja, opção de perfil ativo). A opção anterior pode ser usada para habilitar a seleção de componentes com base nas funcionalidades do hardware, enquanto a última pode ser usada para modificar a experiência à medida que o usuário inser em uma subparte do aplicativo. Leia a [documentação sobre a alternação de perfil](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) para obter mais informações e exemplos de código.
 
-### <a name="directional-indicator-and-follow-solvers-graduated-from-experimental"></a>Indicador direcional e siga os resolvedores graduados de experimental
+### <a name="directional-indicator-and-follow-solvers-graduated-from-experimental"></a>Indicador direcional e solucionadores de acompanhamento com base em experimentais
 
-Dois novos resolvedores estão prontos para uso com o MRTK principal.
+Dois novos solucionadores estão prontos para uso com o MRTK de linha principal.
 
-![Resolvedor de indicador direcional](images/DirectionalIndicatorExampleScene.gif)
+![Solucionador de Indicador Direcional](images/DirectionalIndicatorExampleScene.gif)
 
-### <a name="hand-coach-graduated-from-experimental"></a>O direito de mão graduado de experimental
+### <a name="hand-coach-graduated-from-experimental"></a>Hand Coach formado em experimentais
 
-Agora, o recurso de a mão está pronto para uso com o MRTK principal.
+O recurso Hand Coach agora está pronto para uso com o MRTK de linha principal.
 
-![Exemplo de direito do](/windows/mixed-reality/design/images/handcoach/airtap.gif)
+![Exemplo de técnico de mão](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
-### <a name="dialog-controls-graduated-from-experimental"></a>Controles de caixa de diálogo graduados de experimental
+### <a name="dialog-controls-graduated-from-experimental"></a>Controles de caixa de diálogo formados por experimentais
 
-Os controles da caixa de diálogo agora estão prontos para uso com o MRTK principal.
+Os controles de caixa de diálogo agora estão prontos para uso com o MRTK de linha principal.
 
-![Controles de diálogo](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+![Controles de caixa de diálogo](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
-### <a name="pulse-shader-graduated-from-experimental"></a>Sombreador de pulso graduado de experimental
+### <a name="pulse-shader-graduated-from-experimental"></a>Sombreador de pulso com base em experimental
 
-Os scripts do Pulse Shader graduaram de forma experimental. Para obter mais informações, consulte: [documentação do sombreador de pulso](../features/rendering/pulse-shader.md)
+Os scripts do sombreador Pulse se desdoram de experimentais. Para obter mais informações, consulte: [Documentação do sombreador de pulso](../features/rendering/pulse-shader.md)
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 
-### <a name="input-recording-service-improvements"></a>Aprimoramentos do serviço de registro de entrada
+### <a name="input-recording-service-improvements"></a>Melhorias no Serviço de Gravação de Entrada
 
-`InputRecordingService` e `InputPlaybackService` agora pode gravar e reproduzir a entrada olhar de olho. A gravação foi otimizada para garantir uma taxa de quadros consistente durante o período de gravação, enquanto o tamanho do arquivo de gravação e o tempo de salvamento também são reduzidos em cerca de 50%. O salvamento e o carregamento de arquivos de gravação agora podem ser executados de forma assíncrona. Observe que o formato de arquivo da gravação foi alterado nesta versão do MRTK, consulte [aqui](../features/input-simulation/input-animation-file-format.md) para obter mais informações sobre as novas especificações da versão 1,1.
+`InputRecordingService` e `InputPlaybackService` agora podem registrar e reproduzir a entrada de olhar para trás. A gravação foi otimizada para garantir uma taxa de quadros consistente durante o período de gravação, enquanto o tamanho do arquivo de gravação e o tempo de economia também são reduzidos em cerca de 50%. Salvar e carregar arquivos de gravação agora pode ser executado de forma assíncrona. Observe que o formato de arquivo da gravação foi [](../features/input-simulation/input-animation-file-format.md) alterado nesta versão do MRTK. Consulte aqui para obter mais informações sobre as novas especificações da versão 1.1.
 
 ### <a name="reading-mode"></a>Modo de leitura
 
-Adicionado suporte para o [modo de leitura](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) no HoloLens 2. O modo de leitura reduz o campo de exibição do sistema, mas elimina um dimensionamento da saída do Unity. Um pixel renderizado pelo Unity corresponderá a um pixel projetado no HoloLens 2. Os autores de aplicativos devem fazer testes com várias pessoas para ter certeza de que essa é uma desvantagem que desejam em seu aplicativo.
+Adicionado suporte para [o modo de](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) leitura HoloLens 2. O modo de leitura reduz o campo de exibição do sistema, mas elimina um dimensionamento da saída do Unity. Um pixel renderizado pelo Unity corresponderá a um pixel projetado HoloLens 2. Os autores de aplicativos devem fazer testes com vários indivíduos para ter certeza de que essa é uma recompensa que eles querem em seu aplicativo.
 
-![Modo de leitura de realidade mista do Windows](images/WMRReadingMode.gif)
+![Windows Mixed Reality modo de leitura](images/WMRReadingMode.gif)
 
-### <a name="support-for-3d-app-launchers-on-uwp"></a>Suporte para iniciadores de aplicativos 3D no UWP
+### <a name="support-for-3d-app-launchers-on-uwp"></a>Suporte para iniciadores de aplicativo 3D na UWP
 
-Adiciona a capacidade de definir um [iniciador de aplicativo 3D](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) para UWP. Essa configuração é exposta tanto na janela de compilação do MRTK quanto nas configurações do projeto MRTK, em configurações de compilação. Ele é gravado automaticamente no projeto durante a compilação no Unity.
+Adiciona a capacidade de definir um [launcher de aplicativo 3D](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) para UWP. Essa configuração é exposta na Janela de Build do MRTK e no Project Configurações MRTK, em Build Configurações. Ele é gravado automaticamente no projeto durante o build no Unity.
 
 ![Configurações de build](images/ProjectBuildSettings.png)
 
 ## <a name="breaking-changes"></a>Alterações de quebra
 
-### <a name="certain-fields-of-imported-gltf-objects-are-now-capitalized"></a>Determinados campos dos objetos GLTF importados agora estão em letras maiúsculas
+### <a name="certain-fields-of-imported-gltf-objects-are-now-capitalized"></a>Determinados campos de objetos GLTF importados agora estão em maiúsculas
 
-Devido a problemas relacionados à desserialização, alguns campos dos objetos GLTF importados agora começam com letras maiúsculas. Os campos afetados são (em seus novos nomes):,,,,,, `ComponentType` `Path` ,, `Interpolation` `Target` `Type` `Mode` `MagFilter` `MinFilter` `WrapS` , `WrapT` .
+Devido a problemas relacionados à desseerlização, alguns campos de objetos GLTF importados agora estão começando com letras maiúsculas. Os campos afetados são (em seus novos nomes): `ComponentType` , , , , , , , , , `Path` , `Interpolation` , `Target` `Type` `Mode` `MagFilter` `MinFilter` `WrapS` `WrapT` .
 
-### <a name="input-animation-binary-file-has-an-updated-version-11-format"></a>O arquivo binário da animação de entrada tem um formato atualizado de versão 1,1
+### <a name="input-animation-binary-file-has-an-updated-version-11-format"></a>O arquivo binário de animação de entrada tem um formato atualizado da versão 1.1
 
-O arquivo binário de animação de entrada, usado por `InputRecordingService` e `InputPlaybackService` , agora tem um formato de arquivo atualizado para habilitar as otimizações feitas nesses dois serviços. Consulte [aqui](../features/input-simulation/input-animation-file-format.md) para obter mais informações sobre as novas especificações da versão 1,1.
+O arquivo binário de animação de entrada, usado por e , agora tem um formato de arquivo atualizado para habilitar as `InputRecordingService` `InputPlaybackService` otimizações feitas nesses dois serviços. Consulte aqui [para](../features/input-simulation/input-animation-file-format.md) obter mais informações sobre as novas especificações da versão 1.1.
 
-### <a name="msbuild-for-unity-support"></a>Suporte do MSBuild para Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild suporte ao Unity
 
-O suporte para MSBuild para Unity foi removido da versão 2.5.2, para se alinhar com a [nova orientação de pacote do Unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/).
+O suporte para MSBuild para Unity foi removido a partir da versão 2.5.2, para alinhar-se com as novas diretrizes de [pacote do Unity.](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)
 
 ## <a name="known-issues"></a>Problemas conhecidos
 
 ### <a name="openxr"></a>OpenXR
 
-Atualmente, há um problema conhecido com Holographic de comunicação remota e OpenXR, em que as junções de mão não estão disponíveis de forma consistente.
+Atualmente, há um problema conhecido com o Holographic Remoting e o OpenXR, em que as junções de mão não estão consistentemente disponíveis.
 Além disso, as cenas de exemplo de acompanhamento ocular não são compatíveis no momento, embora o acompanhamento ocular _funcione._
 
-### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Alguns recursos do Sombreador Standard do Kit de Ferramentas de Realidade Misturada exigem o pacote Foundation
+### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Alguns recursos do Sombreador Padrão Toolkit Realidade Misturada exigem o pacote Foundation
 
 Quando importados por meio do Gerenciador de Pacotes Unity, os scripts de utilitários do Sombreador Padrão do MRTK (por ex. HoverLight.cs) não são co-localizados com o sombreador no pacote Ativos Padrão. Para acessar essa funcionalidade, os aplicativos exigirão que o pacote Foundation seja importado.
 
@@ -173,7 +173,7 @@ Um aviso "Nenhum espacializador foi especificado" será exibido se um espacializ
 Para resolver, verifique se:
 
 - **Janela**  >  **Gerenciador de Pacotes** tem um ou mais pacotes XR instalados
-- **Kit de Ferramentas de Realidade Misturada**  >  **Utilitários**  >  **Configurar o Projeto do Unity** e fazer uma seleção para o **Espacializador de Áudio**
+- **Realidade Misturada Toolkit**  >  **Utilitários**  >  **Configurar o Unity Project** e fazer uma seleção para o **Espacializador de Áudio**
 
   ![Selecione Espacializador de Áudio](images/SpatializerSelection.png)
 

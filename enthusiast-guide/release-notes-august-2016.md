@@ -1,80 +1,80 @@
 ---
 title: Notas sobre a versão – agosto de 2016
-description: Mantenha-se atualizado sobre as notas de versão do HoloLens para a versão de aniversário do Windows 10 para o outono de 2016.
+description: Mantenha-se atualizado sobre as notas HoloLens de lançamento do Windows 10 de Aniversário para o Fall 2016.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, notas de versão, sistema operacional, plataforma, recursos, pacote comercial
-ms.openlocfilehash: c70da10043cfbcfa88105635f2467c8feaadbedf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2cb6153877b27ce0e1260696447bd4c5c851c6f00a20a7889b855c5646e8871f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202448"
 ---
 # <a name="release-notes---august-2016"></a>Notas sobre a versão – agosto de 2016
 
-A equipe do HoloLens está ouvindo comentários de desenvolvedores no programa Windows Insider para priorizar nosso trabalho. Continue a [enviar comentários](/windows/mixed-reality/give-us-feedback) por meio do hub de comentários, dos [fóruns de desenvolvedores](https://forums.hololens.com) e do [Twitter via @HoloLens ](https://twitter.com/hololens). À medida que o Windows 10 adota a atualização de aniversário, a equipe do HoloLens tem o prazer de oferecer melhor melhoria para a experiência de Holographic. Nesta atualização, nos concentramos em correções principais, melhorias e introdução de recursos solicitados por empresas e disponíveis no pacote comercial do Microsoft HoloLens.
+A HoloLens está escutando comentários dos desenvolvedores no Windows Programa Insider priorizar nosso trabalho. Continue nos [dando comentários por](/windows/mixed-reality/give-us-feedback) meio do Hub de Comentários, dos fóruns do [desenvolvedor](https://forums.hololens.com) e do Twitter por [meio do @HoloLens ](https://twitter.com/hololens). À medida Windows 10 a Atualização de Aniversário, a equipe HoloLens tem o prazer de melhorar ainda mais a experiência holográfica. Nesta atualização, nos concentramos em correções principais, melhorias e introdução de recursos solicitados por empresas e disponíveis no Microsoft HoloLens Commercial Suite.
 
-**Versão mais recente:** Atualização do Windows Holographic de agosto de 2016 (**10.0.14393.0**, versão de aniversário do Windows 10)
+**Versão mais recente:** Windows atualização de agosto de 2016 do Holographic (**10.0.14393.0**, Windows 10 de aniversário)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-Para [atualizar para a versão atual](/windows/mixed-reality/updating-hololens), abra o aplicativo *configurações* , acesse *Atualizar & segurança* e, em seguida, selecione o botão *verificar atualizações* .
+Para [atualizar para a versão atual,](/windows/mixed-reality/updating-hololens)abra o aplicativo *Configurações,* acesse Atualizar & *Segurança* e, em seguida, selecione o botão Verificar se *há atualizações.*
 
 ## <a name="new-features"></a>Novos recursos
 
-**Anexar à depuração de processo** O HoloLens agora dá suporte à depuração de anexação de processo. Você pode usar o Visual Studio 2015 atualização 3 para se conectar a um aplicativo em execução em um HoloLens e [começar a depurá-lo](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app). Isso funciona sem a necessidade de implantar a partir de um projeto do Visual Studio.
+**Anexar para processar a depuração** HoloLens agora dá suporte à depuração anexar ao processo. Você pode usar Visual Studio Atualização 3 de 2015 para se conectar a um aplicativo em execução em um HoloLens e começar a [depurá-lo.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app) Isso funciona sem a necessidade de implantar de um Visual Studio projeto.
 
-**Emulador do HoloLens atualizado** Também lançamos uma versão atualizada do emulador do HoloLens.
+**Atualização HoloLens Emulator** Também lançamos uma versão atualizada do HoloLens Emulator.
 
-**Suporte a gamepad** Agora você pode emparelhar e usar o Bluetooth gamepads com o HoloLens! Os S recursos de Bluetooth do Xbox Wireless recentemente lançados e podem ser usados para reproduzir seus jogos e aplicativos favoritos habilitados para Gamepad. Uma [atualização do controlador](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) deve ser aplicada antes que você possa conectar os S do controlador sem fio do Xbox com o HoloLens. Os S do controlador sem fio do Xbox são compatíveis com as APIs [XInput](/windows/win32/xinput/xinput-game-controller-apis-portal) e [Windows. Gaming. Input](/uwp/api/Windows.Gaming.Input) . Você pode acessar mais modelos de controladores Bluetooth por meio da API [Windows. Gaming. Input](/uwp/api/Windows.Gaming.Input) .
+**Suporte ao Gamepad** Agora você pode emparelhar e usar Bluetooth gamepads com HoloLens! Os recursos do Xbox Wireless Controller S recém-lançados Bluetooth recursos e podem ser usados para reproduzir seus jogos e aplicativos favoritos habilitados para gamepad. Uma [atualização do controlador](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) deve ser aplicada antes que você possa conectar o Controlador Sem Fio do Xbox S ao HoloLens. O controlador sem fio do Xbox S é suportado pelo [XInput e](/windows/win32/xinput/xinput-game-controller-apis-portal) [Windows. APIs Gaming.Input.](/uwp/api/Windows.Gaming.Input) Você pode acessar mais Bluetooth de controladores por meio do [Windows. API Gaming.Input.](/uwp/api/Windows.Gaming.Input)
 
 ## <a name="improvements-and-fixes"></a>Aperfeiçoamentos e correções
 
-Estamos sincronizados com o restante da atualização de aniversário do Windows 10, assim, além das correções específicas do HoloLens, você também está recebendo todas as impedições do Windows Update para aumentar a confiabilidade e o desempenho da plataforma. Seus comentários são altamente valorizados e priorizados para correções na versão.
+Estamos em sincronia com o restante da atualização de aniversário do Windows 10, portanto, além das correções específicas do HoloLens, você também está recebendo todos os detalhes da atualização do Windows para aumentar a confiabilidade e o desempenho da plataforma. Seus comentários são altamente valiosos e priorizados para correções na versão.
 
 Melhoramos as seguintes experiências:
-* experiências de logon.
-* ingresso nos locais de trabalho.
+* experiências de logoff.
+* workplaces join.
 * eficiência de energia para transições de estado de energia do dispositivo.
-* estabilidade com capturas de realidade misturada.
-* confiabilidade para conectividade Bluetooth
+* estabilidade com Capturas de Realidade Misturada.
+* confiabilidade para Bluetooth conectividade
 * persistência de holograma no cenário de vários aplicativos.
 
 Corrigimos os seguintes problemas:
-* Falha ao conectar o depurador de elementos gráficos e os profileres do Visual Studio.
-* as fotos & documentos não aparecem no explorador de arquivos no portal do dispositivo.
-* a barra de aplicativos pode piscar quando o cursor é colocado acima dele enquanto estiver no modo de ajuste.
-* Quando estiver no modo de ajuste, o cursor de ponto olhar ocular será alterado para o cursor de quatro setas um pouco mais devagar.
-* "Ei Cortana Play Music" não inicia o Groove.
-* após a atualização anterior, dizer "Go Home" não exibe o painel Pins corretamente.
+* O Visual Studio perfil e o depurador de gráficos falham ao se conectar.
+* fotos & documentos não aparecem no explorador de arquivos no portal do dispositivo.
+* a Barra de Aplicativos pode piscar quando o cursor é colocado acima dele enquanto está no modo Ajuste.
+* Quando estiver no modo Ajuste, o cursor do ponto de olhar será altere para o cursor de seta 4 um pouco mais lentamente.
+* "Hey Cortana reproduzir música" não inicia Groove.
+* após a atualização anterior, dizer "Ir para Casa" não exibe o painel de pinos corretamente.
 
-## <a name="introducing-microsoft-hololens-commercial-suite"></a>Apresentando o pacote comercial do Microsoft HoloLens
+## <a name="introducing-microsoft-hololens-commercial-suite"></a>Introdução Microsoft HoloLens Commercial Suite
 
-O pacote comercial do Microsoft HoloLens está pronto para a implantação empresarial. Adicionamos vários [recursos comerciais](/windows/mixed-reality/commercial-features) altamente solicitados de nossos parceiros de negócios iniciais.
+O Microsoft HoloLens Commercial Suite está pronto para implantação corporativa. Adicionamos vários recursos comerciais altamente [solicitados de](/windows/mixed-reality/commercial-features) nossos primeiros parceiros de negócios.
 
-Entre em contato com seu Gerenciador de conta Microsoft local para comprar o pacote comercial do Microsoft HoloLens.
+Entre em contato com o conta Microsoft local para comprar o Microsoft HoloLens Commercial Suite.
 
 ### <a name="key-commercial-features"></a>Principais recursos comerciais 
 
-* **Modo de quiosque.** Com o modo de quiosque do HoloLens, você pode limitar quais aplicativos executar para habilitar experiências de demonstração ou demonstrações.<br>
-  ![Com o modo de quiosque, o HoloLens é iniciado diretamente no aplicativo de sua escolha.](images/201608-kioskmode-400px.png)
-* **MDM (gerenciamento de dispositivo móvel) para o HoloLens.** O departamento de ti pode gerenciar vários dispositivos HoloLens simultaneamente usando soluções como Microsoft Intune. Você pode gerenciar configurações, selecionar aplicativos para instalar e definir configurações de segurança adaptadas para a necessidade da sua organização.<br>
-  ![O gerenciamento de dispositivos móveis no HoloLens fornece gerenciamento de dispositivos de nível empresarial em vários dispositivos.](images/201608-enterprisemanagement-400px.png)
-* **Windows Update para negócios.** Atualizações controladas do sistema operacional para dispositivos e suporte para o Branch de manutenção em longo prazo.
-* **Segurança de dados.** A criptografia de dados do BitLocker é habilitada no HoloLens para fornecer o mesmo nível de proteção de segurança que qualquer outro dispositivo Windows.
-* **Acesso corporativo.** Qualquer pessoa em sua organização pode se conectar remotamente à rede corporativa por meio da rede virtual privada em um HoloLens. O HoloLens também pode acessar Wi-Fi redes que exigem credenciais.
-* **Microsoft Store para negócios.** Seu departamento de ti também pode configurar um repositório privado corporativo, contendo somente os aplicativos da sua empresa para seu uso específico de HoloLens. Distribua com segurança seu software corporativo para o grupo selecionado de usuários corporativos.
+* **Modo de quiosque.** Com HoloLens de quiosque, você pode limitar quais aplicativos executar para habilitar experiências de demonstração ou demonstração.<br>
+  ![Com o modo de quiosque, HoloLens é lançado diretamente no aplicativo de sua escolha.](images/201608-kioskmode-400px.png)
+* **MDM (Gerenciamento de Dispositivo Móvel) para HoloLens.** Seu departamento de TI pode gerenciar vários HoloLens simultaneamente usando soluções como Microsoft Intune. Você pode gerenciar configurações, selecionar aplicativos para instalar e definir configurações de segurança personalizadas de acordo com a necessidade da sua organização.<br>
+  ![Os Gerenciamento de Dispositivos dispositivos móveis HoloLens o gerenciamento de dispositivos de nível empresarial em vários dispositivos.](images/201608-enterprisemanagement-400px.png)
+* **Windows Update para Empresas.** Atualizações controladas do sistema operacional para dispositivos e suporte para o branch de manutenção de longo prazo.
+* **Segurança de dados.** A criptografia de dados do BitLocker está habilitada no HoloLens para fornecer o mesmo nível de proteção de segurança que qualquer outro dispositivo Windows.
+* **Acesso corporativo.** Qualquer pessoa em sua organização pode se conectar remotamente à rede corporativa por meio da rede virtual privada em um HoloLens. O HoloLens também pode acessar redes Wi-Fi que exigem credenciais.
+* **Microsoft Store para Empresas.** Seu departamento de IT também pode configurar um armazenamento privado corporativo, contendo apenas os aplicativos da sua empresa para seu uso HoloLens específico. Distribua os softwares corporativos com segurança ao grupo selecionado de usuários corporativos.
 
-### <a name="development-edition-vs-commercial-suite"></a>Edição de desenvolvimento versus pacote comercial
+### <a name="development-edition-vs-commercial-suite"></a>Development Edition vs. Commercial Suite
 
 <table>
 <tr>
-<th>Recursos</th><th>Development Edition</th><th>Pacote comercial</th>
+<th>Recursos</th><th>Development Edition</th><th>Pacote Comercial</th>
 </tr><tr>
-<td>Criptografia de dispositivo (BitLocker)</td><td></td><td style="text-align: center;">✔️</td>
+<td>Criptografia do Dispositivo (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>VPN (Rede Privada Virtual)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -86,25 +86,25 @@ Entre em contato com seu Gerenciador de conta Microsoft local para comprar o pac
 </tr><tr>
 <td>Capacidade de bloquear o cancelamento de registro</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Acesso Wi-Fi corporativo baseado em certificado</td><td></td><td style="text-align: center;">✔️</td>
+<td>Acesso corporativo baseado em certificado Wi-Fi certificado</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Microsoft Store (consumidor)</td><td style="text-align: center;">Consumidor</td><td style="text-align: center;">Filtrando por meio do MDM</td>
+<td>Microsoft Store (Consumidor)</td><td style="text-align: center;">Consumidor</td><td style="text-align: center;">Filtragem por meio do MDM</td>
 </tr><tr>
-<td><a href="/microsoft-store/working-with-line-of-business-apps">Portal de loja comercial</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/microsoft-store/working-with-line-of-business-apps">Portal Comercial da Store</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Segurança e identidade</th>
 </tr><tr>
-<td>Fazer logon com Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Fazer logo Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Fazer logon com a conta da Microsoft (MSA)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Fazer logoff com a MSA (Conta da Microsoft)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Credenciais da próxima geração com o PIN Unlock</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Credenciais da Próxima Geração com desbloqueio de PIN</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">Inicialização segura</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Manutenção e suporte</th>
 </tr><tr>
-<td>Atualizações automáticas do sistema à medida que elas chegam</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Atualizações automáticas do sistema ao chegarem</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>

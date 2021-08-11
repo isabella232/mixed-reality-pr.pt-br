@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, realidade misturada, MRTK, realidade misturada Toolkit, realidade aumentada, realidade virtual, headsets de realidade misturada, learn, tutorial, introdução, remota holográfica, área de trabalho, versão prévia
-ms.openlocfilehash: 6eb3b9e9fe8811ab4666ef1beda0e48668bedbe6
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 1b20590429b7df209e805ed8e94de5a6010bdbb609edc10fc5854cd4df86f64c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217112"
 ---
 # <a name="holographic-remoting-overview"></a>Visão geral de remoção holográfica
 

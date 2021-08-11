@@ -5,18 +5,18 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, Remoting, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, canais de dados
-ms.openlocfilehash: ed9da4a21c2fe9b25ae29e9b2044d82438b19559
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, comunicação remota, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do windows, headset da realidade virtual, canais de dados
+ms.openlocfilehash: 09fea161f9042d7afc59c16d3b5e8a6c69892e84b1de5e9ab4a4808733b4f171
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217082"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canais de dados personalizados de comunicação remota holográfica
 
 >[!NOTE]
->Estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
+>estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
 
 Use canais de dados personalizados para enviar dados personalizados por meio de uma conexão remota estabelecida.
 
@@ -114,7 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Consulte Também
-* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando as APIs de realidade mista do Windows](holographic-remoting-create-remote-wmr.md)
+* [escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs de Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)

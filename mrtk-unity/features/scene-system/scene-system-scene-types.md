@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade misturada, desenvolvimento, MRTK,
-ms.openlocfilehash: 06bfd1dbad3986044f099510c2de4d36cda50fc0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: be34110c693c749535f6bfcd0411ecbd0bafc3bb48ab2392b3635c2e86a4dfb1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203300"
 ---
 # <a name="scene-types"></a>Tipos de cena
 
@@ -42,22 +42,22 @@ As configurações de iluminação do Unity – luz ambiente, skyboxes etc. – 
 
 ![Configurações de iluminação do sistema de cena](../images/scene-system/MRTK_SceneSystemLightingSettings.PNG)
 
-O sistema de cena usa cenas de iluminação para garantir que essas configurações permaneçam consistentes, independentemente de quais cenas são carregadas ou ativas, tanto no modo de edição quanto no modo de reprodução.
+O Sistema de Cena usa cenas de iluminação para garantir que essas configurações permaneçam consistentes, independentemente de quais cenas estão carregadas ou ativas, tanto no modo de edição quanto no modo de reprodução.
 
-Para habilitar esse recurso, faça check- `Use Lighting Scene` in do seu perfil e preencha a `Lighting Scenes` matriz.
+Para habilitar esse recurso, `Use Lighting Scene` verifique seu perfil e preencha a `Lighting Scenes` matriz.
 
-### <a name="cached-lighting-settings"></a>Configurações de iluminação em cache
+### <a name="cached-lighting-settings"></a>Configurações de iluminação armazenadas em cache
 
-Seu perfil armazena cópias em cache das configurações de iluminação mantidas em suas cenas de iluminação. Se essas configurações forem alteradas nos bastidores de iluminação, você precisará atualizar seu cache para garantir que a iluminação apareça como esperado no modo de reprodução. Seu perfil exibirá um aviso quando suspeitar de que as configurações armazenadas em cache estão desatualizadas. Clicar em `Update Cached Lighting Settings` carregará cada uma de suas cenas de iluminação, extrairá suas configurações e, em seguida, as armazenará em seu perfil.
+Seu perfil armazena cópias armazenadas em cache das configurações de iluminação mantidas em suas cenas de iluminação. Se essas configurações mudarem em suas cenas de iluminação, você precisará atualizar o cache para garantir que a iluminação apareça conforme o esperado no modo de reprodução. Seu perfil exibirá um aviso quando ele suspeita que suas configurações armazenadas em cache estão desa datadas. Clicar `Update Cached Lighting Settings` carregará cada uma das cenas de iluminação, extrairá suas configurações e as armazenará em seu perfil.
 
-![Configurações de iluminação em cache do sistema de cena](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
+![Configurações de iluminação armazenadas em cache do sistema de cena](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
 
 ### <a name="editor-behavior"></a>Comportamento do editor
 
-Um benefício de usar cenas de iluminação é saber que o conteúdo está aceso corretamente durante a edição. Para esse fim, o serviço de cena manterá uma cena de iluminação carregada em todos os momentos e copiará as configurações de iluminação dessa cena para a cena ativa atual.\*
+Um benefício do uso de cenas de iluminação é saber que seu conteúdo é acessado corretamente durante a edição. Para esse fim, o Serviço de Cena manterá uma cena de iluminação carregada o tempo todo e copiará as configurações de iluminação dessa cena para a cena ativa atual.\*
 
-Você pode alterar qual cena de iluminação é carregada abrindo o [Inspetor de serviço](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) do sistema de cena. No modo de edição, você pode fazer a transição instantânea entre os bastidores de iluminação. No modo de reprodução, você pode visualizar as transições.
+Você pode alterar qual cena de iluminação é carregada abrindo o inspetor de serviço do Sistema [de Cena.](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) No modo de edição, você pode fazer a transição instantânea entre cenas de iluminação. No modo de reprodução, você pode visualizar transições.
 
 ![Inspetor do sistema de cena](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)
 
-\**Observação: normalmente, a cena ativa determina as configurações de iluminação no editor. No entanto, optamos por não usar esse recurso para impor as configurações de iluminação, pois a cena ativa também é onde os objetos recém-criados são colocados por padrão, e cenas de iluminação só são permitidas para conter componentes de iluminação. Em vez disso, as configurações da cena de iluminação atual são automaticamente copiadas para as configurações da cena ativa. Tenha em mente que isso fará com que as configurações de iluminação de sua cena de conteúdo sejam sobrescritas.*
+\**Observação: normalmente, a cena ativa determina suas configurações de iluminação no editor. No entanto, optemos por não usar esse recurso para impor configurações de iluminação, pois a cena ativa também é onde objetos recém-criados são colocados por padrão e as cenas de iluminação só têm permissão para conter componentes de iluminação. Em vez disso, as configurações da cena de iluminação atual são copiadas automaticamente para as configurações da cena ativa. Lembre-se de que isso fará com que as configurações de iluminação da cena de conteúdo se sobressumente escritas.*

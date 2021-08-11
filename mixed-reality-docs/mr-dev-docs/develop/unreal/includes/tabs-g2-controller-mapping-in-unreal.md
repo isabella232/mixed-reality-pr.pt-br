@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 85792491eb4c349eea3dac4ae227c6736d7a90c2
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 4dde9dcb34553e1ad39d9c732f32f9d0ef174eaf2a6b6fbe7b59b8fdc9facf8d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204159"
 ---
 # <a name="all-platforms"></a>[Todas as plataformas](#tab/all)
 
@@ -18,7 +18,7 @@ Os mesmos mapeamentos de ação e de eixo nas configurações do projeto de entr
 
 ![Criando um peão](../images/reverb-g2-img-12.png)
 
-3. Na solução do Visual Studio do projeto, localize a nova classe peão e configure-a para entrada.
+3. na solução de Visual Studio do projeto, encontre a nova classe peão e configure-a para entrada.
 * Primeiro, no construtor, defina AutoPossessPlayer para o primeiro jogador para rotear a entrada para o peão.
 
 ```cpp
@@ -67,7 +67,7 @@ private:
     void LeftGripAxis(float AxisValue);
 ```
 
-4. Compile do Visual Studio para iniciar o editor com o novo peão. Arraste e solte o peão do navegador de conteúdo para o jogo e o peão agora executará os retornos de chamada quando a entrada for pressionada.
+4. Compile de Visual Studio para iniciar o editor com o novo peão. Arraste e solte o peão do navegador de conteúdo para o jogo e o peão agora executará os retornos de chamada quando a entrada for pressionada.
 
 # <a name="steamvr"></a>[SteamVR](#tab/steamvr)
 
@@ -75,7 +75,7 @@ Ao usar eventos de eixo de Thumbstick, o nome do evento de eixo deve terminar em
 
 ![Usando eventos Thumbstick](../images/reverb-g2-img-09.png)
 
-Por fim, registre as ações no jogo com SteamVR usando os botões **regenerar ação manifest** e **regenerar associações de controlador** nas configurações do projeto > entrada VR.
+por fim, registre as ações no jogo com o SteamVR usando os botões **regenerar ação Manifest** e **regenerar associações do controlador** em Project Configurações entrada VR > de fluxo.
 
 ![Registrando ações nas configurações do projeto](../images/reverb-g2-img-10.png)
 

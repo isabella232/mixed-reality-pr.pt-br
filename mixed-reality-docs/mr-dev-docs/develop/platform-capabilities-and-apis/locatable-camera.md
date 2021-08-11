@@ -1,94 +1,94 @@
 ---
 title: Câmera localizável
-description: Informações gerais sobre a câmera frontal do HoloLens, como ela funciona e os perfis e as resoluções disponíveis para os desenvolvedores.
+description: Informações gerais sobre o HoloLens câmera frontal, como ela funciona e os perfis e resoluções disponíveis para desenvolvedores.
 author: cdedmonds
 ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
-keywords: câmera, hololens, câmera colorida, frente, hololens 2, CV, pesquisa Visual computacional, fiducial, marcadores, código QR, QR, foto, vídeo
-ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: camera, hololens, color camera, front-facing, hololens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video
+ms.openlocfilehash: 33faa4107c6b44041958f422329d8967958a666606a474949184628abcd12544
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217092"
 ---
 # <a name="locatable-camera"></a>Câmera localizável
 
-O HoloLens inclui uma câmera voltada para o mundo montada na frente do dispositivo, o que permite que os aplicativos vejam o que o usuário vê. Os desenvolvedores têm acesso e controle da câmera, assim como fariam para câmeras coloridas em smartphones, portáteis ou desktops. As mesmas APIs universal do Windows Media [Capture](/uwp/api/Windows.Media.Capture.MediaCapture) e do Windows Media Foundation que funcionam em dispositivos móveis e de área de trabalho no HoloLens. O Unity [encapsulava essas APIs do Windows](../unity/locatable-camera-in-unity.md) para abstrair os recursos de uso da câmera no HoloLens. As tarefas de recursos incluem a criação de fotos e vídeos regulares (com ou sem hologramas) e a localização da posição da câmera em e a perspectiva da cena.
+HoloLens inclui uma câmera voltada para o mundo montada na frente do dispositivo, o que permite que os aplicativos vejam o que o usuário vê. Os desenvolvedores têm acesso e controle da câmera, assim como faria para câmeras coloridas em smartphones, portáteis ou áreas de trabalho. A mesma captura de mídia universal do Windows [e](/uwp/api/Windows.Media.Capture.MediaCapture) APIs do Windows Media Foundation que funcionam em dispositivos móveis e desktop funcionam em HoloLens. O Unity [empacotou essas APIs do Windows](../unity/locatable-camera-in-unity.md) para abstrair os recursos de uso da câmera HoloLens. As tarefas de recurso incluem tirar fotos e vídeos regulares (com ou sem hologramas) e localizar a posição e a perspectiva da câmera na cena.
 
-## <a name="device-camera-information"></a>Informações sobre a câmera do dispositivo
+## <a name="device-camera-information"></a>Informações da câmera do dispositivo
 
 ### <a name="hololens-first-generation"></a>HoloLens (primeira geração)
 
-* Câmera de foco de foto/vídeo (VP) fixa com equilíbrio automático de branco, exposição automática e pipeline de processamento de imagem completo.
-* O LED de privacidade branco enfrentado pelo mundo se acenderá sempre que a câmera estiver ativa
-* A câmera dá suporte aos seguintes modos (todos os modos são 16:9 taxa de proporção) a 30, 24, 20, 15 e 5 fps:
+* Corrigida a câmera de foto/vídeo (PV) de foco com o balanceamento automático de branco, a exposição automática e o pipeline de processamento de imagem completo.
+* O LED de privacidade branco voltado para o mundo será a luz sempre que a câmera estiver ativa
+* A câmera dá suporte aos seguintes modos (todos os modos têm proporção de 16:9) a 30, 24, 20, 15 e 5 fps:
 
-  |  Vídeo  |  Versão Prévia  |  Também  |  Campo de exibição horizontal (H-FOV) |  Uso sugerido | 
+  |  Vídeo  |  Versão Prévia  |  Ainda  |  Campo de exibição horizontal (H-FOV) |  Uso sugerido | 
   |----------|----------|----------|----------|----------|
-  |  1280x720 |  1280x720 |  1280x720 |  45 graus  |  (modo padrão com estabilização de vídeo) | 
-  |  N/D |  N/D |  2048x1152 |  67 graus |  Imagem da resolução mais alta ainda | 
-  |  1408x792 |  1408x792 |  1408x792 |  48 graus |  Resolução de sobrevarredura (preenchimento) antes da estabilização de vídeo | 
-  |  1344x756 |  1344x756 |  1344x756 |  67 graus |  Modo de vídeo FOV grande com overscan | 
-  |  896x504 |  896x504 |  896x504 |  48 graus |  Modo de baixa energia/baixa resolução para tarefas de processamento de imagens | 
+  |  1280 x 720 |  1280 x 720 |  1280 x 720 |  45 deg  |  (modo padrão com estabilização de vídeo) | 
+  |  N/D |  N/D |  2048x1152 |  67 deg |  Imagem ainda de resolução mais alta | 
+  |  1408x792 |  1408x792 |  1408x792 |  48 deg |  Resolução overscan (preenchimento) antes da estabilização do vídeo | 
+  |  1344x756 |  1344x756 |  1344x756 |  67 deg |  Modo de vídeo FOV grande com varredura em excesso | 
+  |  896x504 |  896x504 |  896x504 |  48 deg |  Modo de baixa potência/baixa resolução para tarefas de processamento de imagem | 
 
 ### <a name="hololens-2"></a>HoloLens 2
 
-* Câmera de foto/vídeo (PV) de foco automático com balanceamento de branco automático, exposição automática e pipeline de processamento de imagem completo.
-* O LED de privacidade branco enfrentado pelo mundo se acenderá sempre que a câmera estiver ativa.
-* O HoloLens 2 dá suporte a perfis de câmera diferentes. Saiba como [descobrir e selecionar recursos de câmera](/windows/uwp/audio-video-camera/camera-profiles).
-* A câmera dá suporte aos seguintes perfis e resoluções (todos os modos de vídeo são taxa de proporção de 16:9):
+* Câmera PV (foto/vídeo de foco automático) com balanceamento automático de branco, exposição automática e pipeline de processamento de imagem completo.
+* O LED de privacidade branco voltado para o mundo será a luz sempre que a câmera estiver ativa.
+* HoloLens 2 dá suporte a perfis de câmera diferentes. Saiba como descobrir [e selecionar recursos de câmera.](/windows/uwp/audio-video-camera/camera-profiles)
+* A câmera dá suporte aos seguintes perfis e resoluções (todos os modos de vídeo têm proporção de 16:9):
   
-  | Perfil                                         | Vídeo     | Versão Prévia   | Também     | Taxas de quadros | Campo de exibição horizontal (H-FOV) | Uso sugerido                             |
+  | Perfil                                         | Vídeo     | Versão Prévia   | Ainda     | Taxas de quadros | Campo de exibição horizontal (H-FOV) | Uso sugerido                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | Herdado, 0 BalancedVideoAndPhoto, 100             | 2272x1278 | 2272x1278 |           | 15,30       | 64,69                            | Gravação de vídeo de alta qualidade                |
-  | Herdado, 0 BalancedVideoAndPhoto, 100             | 896x504   | 896x504   |           | 15,30       | 64,69                            | Fluxo de visualização para captura de foto de alta qualidade |
-  | Herdado, 0 BalancedVideoAndPhoto, 100             |           |           | 3904x2196 |             | 64,69                            | Captura de fotos de alta qualidade                  |
-  | BalancedVideoAndPhoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15,30       | 64,69                            | Cenários de duração longa                     |
-  | BalancedVideoAndPhoto, 120                       | 1504x846  | 1504x846  |           | 15,30       | 64,69                            | Cenários de duração longa                     |
-  | Videoconferência, 100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15, 30, 60    | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100                           | 1504x846  | 1504x846  |           | 5, 15, 30, 60  | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 1920 x 1080 | 1920 x 1080 | 1920 x 1080 | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 1280x720  | 1280x720  | 1280x720  | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 1128x636  |           |           | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 960 x 540   |           |           | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 760x428   |           |           | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 640 x 360   |           |           | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 500x282   |           |           | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
-  | Videoconferência, 100 BalancedVideoAndPhoto, 120 | 424x240   |           |           | 15, 30       | 64,69                            | Videoconferência, cenários de longa duração |
+  | Legacy,0 BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | Gravação de vídeo de alta qualidade                |
+  | Legacy,0 BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | Fluxo de visualização para captura de fotos de alta qualidade |
+  | Legacy,0 BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | Captura de fotos de alta qualidade                  |
+  | BalancedVideoAndPhoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15.30       | 64.69                            | Cenários de duração longa                     |
+  | BalancedVideoAndPhoto, 120                       | 1504x846  | 1504x846  |           | 15.30       | 64.69                            | Cenários de duração longa                     |
+  | VideoConferencing,100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15,30,60    | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferência,100                           | 1504x846  | 1504x846  |           | 5,15,30,60  | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1920x1080 | 1920x1080 | 1920x1080 | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1280 x 720  | 1280 x 720  | 1280 x 720  | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1128x636  |           |           | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 960 x 540   |           |           | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 760x428   |           |           | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 640 x 360   |           |           | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 500 x 282   |           |           | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Videoconferência, cenários de longa duração |
 
 > [!NOTE]
-> Os clientes podem aproveitar a [captura de realidade misturada](/hololens/holographic-photos-and-videos) para tirar vídeos ou fotos de seu aplicativo, o que inclui hologramas e estabilização de vídeo.
+> Os clientes podem aproveitar [a captura de realidade](/hololens/holographic-photos-and-videos) misturada para tirar vídeos ou fotos do seu aplicativo, que incluem hologramas e estabilização de vídeo.
 >
->Como desenvolvedor, há considerações que você deve levar em conta ao criar seu aplicativo se quiser que ele pareça o mais bom possível quando um cliente capturar o conteúdo. Você também pode habilitar (e personalizar) a captura de realidade misturada diretamente no seu aplicativo. Saiba mais em uma [captura de realidade mista para desenvolvedores](mixed-reality-capture-for-developers.md).
+>Como desenvolvedor, há considerações que você deve levar em conta ao criar seu aplicativo se quiser que ele pareça o melhor possível quando um cliente captura conteúdo. Você também pode habilitar (e personalizar) a captura de realidade misturada diretamente em seu aplicativo. Saiba mais em Captura [de realidade misturada para desenvolvedores](mixed-reality-capture-for-developers.md).
 
 ## <a name="locating-the-device-camera-in-the-world"></a>Localizando a câmera do dispositivo no mundo
 
-Quando o HoloLens usa fotos e vídeos, os quadros capturados incluem o local da câmera no mundo e o modelo de lente da câmera. Isso permite que os aplicativos dediquem a posição da câmera no mundo real para cenários de geração de imagens aumentados. Os desenvolvedores podem lançar de forma criativa seus próprios cenários usando seu processamento de imagem favorito ou bibliotecas personalizadas da pesquisa Visual computacional.
+Quando HoloLens tira fotos e vídeos, os quadros capturados incluem a localização da câmera no mundo e o modelo de lente da câmera. Isso permite que os aplicativos lógicos sobre a posição da câmera no mundo real para cenários de imagens aumentadas. Os desenvolvedores podem lançar seus próprios cenários de forma criativo usando seu processamento de imagem favorito ou bibliotecas de visão computacional personalizadas.
 
-A "câmera" em outro lugar na documentação do HoloLens pode se referir à "câmera do jogo virtual" (o frustum ao qual o aplicativo é renderizado). A menos que seja indicado de outra forma, "câmera" nesta página refere-se à câmera de cores RGB do mundo real.
+"Câmera" em outro lugar HoloLens documentação pode se referir à "câmera do jogo virtual" (a que o aplicativo renderiza). A menos que seja anotado de outra forma, a "câmera" nesta página refere-se à câmera de cores RGB do mundo real.
 
 ### <a name="using-unity"></a>Usando o Unity
 
-Para ir do ' CameraIntrinsics ' e ' CameraCoordinateSystem ' para seu sistema/coordenado do mundo, siga as instruções no artigo da [câmera localizável no Unity](../unity/locatable-camera-in-unity.md) .  O CameraToWorldMatrix é fornecido automaticamente pela classe PhotoCaptureFrame e, portanto, você não precisa se preocupar com as transformações CameraCoordinateSystem discutidas abaixo.
+Para ir dos 'CameraIntrinsics' e 'CameraCoordinateSystem' para o sistema de coordenadas do aplicativo/mundo, siga as instruções no artigo Câmera locacionável no [Unity.](../unity/locatable-camera-in-unity.md)  CameraToWorldMatrix é fornecido automaticamente pela classe PhotoCaptureFrame e, portanto, você não precisa se preocupar com as transformação CameraCoordinateSystem discutidas abaixo.
 
 ### <a name="using-mediaframereference"></a>Usando MediaFrameReference
 
-Essas instruções se aplicam se you'r usando a classe [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) para ler quadros de imagem da câmera.
+Essas instruções se aplicam se você estiver usando a [classe MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) para ler quadros de imagem da câmera.
 
-Cada quadro de imagem (seja foto ou vídeo) inclui um [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) com raiz na câmera no momento da captura, que pode ser acessado usando a propriedade [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) de seu [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Cada quadro contém uma descrição do modelo de lente da câmera, que pode ser encontrado na propriedade [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Juntas, essas transformações definem para cada pixel um raio em um espaço 3D que representa o caminho usado pelo fótons que produziu o pixel. Esses raios podem estar relacionados a outro conteúdo no aplicativo por meio da obtenção da transformação do sistema de coordenadas do quadro para outro sistema de coordenadas (por exemplo, de um [quadro estacionário de referência](../../design/coordinate-systems.md#stationary-frame-of-reference)). 
+Cada quadro de imagem (seja foto ou vídeo) inclui um [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) com raiz na câmera no momento da captura, que pode ser acessado usando a propriedade [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) de [seu MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Cada quadro contém uma descrição do modelo de lente da câmera, que pode ser encontrada na propriedade [CameraIntrinsics.](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) Juntas, essas transformação definem para cada pixel um raio no espaço 3D que representa o caminho feito pelos fótons que produziram o pixel. Esses raios podem estar relacionados [a](../../design/coordinate-systems.md#stationary-frame-of-reference)outro conteúdo no aplicativo obtendo a transformação do sistema de coordenadas do quadro para algum outro sistema de coordenadas (por exemplo, de um quadro de referência estacionário). 
 
 Cada quadro de imagem fornece o seguinte:
-* Dados de pixel (em formato RGB/NV12/JPEG/etc.)
-* Um [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) do local da captura
-* Uma classe [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) que contém o modo de lente da câmera
+* Dados de pixel (no formato RGB/NV12/JPEG/etc.)
+* Um [SpatialCoordinateSystem do](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) local da captura
+* Uma [classe CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) que contém o modo de lente da câmera
 
-O [exemplo HolographicFaceTracking](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) mostra a maneira bastante simples de consultar a transformação entre o sistema de coordenadas da câmera e seus próprios sistemas de coordenadas do aplicativo.
+O [exemplo HolographicFaceTracking](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) mostra a maneira bastante simples de consultar a transformação entre o sistema de coordenadas da câmera e seus próprios sistemas de coordenadas de aplicativo.
 
 ### <a name="using-media-foundation"></a>Usando Media Foundation
 
-Se você estiver usando Media Foundation diretamente para ler quadros de imagem da câmera, poderá usar o [atributo MFSampleExtension_CameraExtrinsics](/windows/win32/medfound/mfsampleextension-cameraextrinsics) de cada quadro e [MFSampleExtension_PinholeCameraIntrinsics atributo](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) para localizar quadros de câmera relativos aos outros sistemas de coordenadas do seu aplicativo, conforme mostrado neste código de exemplo:
+Se você estiver usando o Media Foundation diretamente para ler quadros de imagem da câmera, poderá usar o atributo [MFSampleExtension_CameraExtrinsics](/windows/win32/medfound/mfsampleextension-cameraextrinsics) e o atributo MFSampleExtension_PinholeCameraIntrinsics de cada quadro para localizar quadros da câmera em relação [aos](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) outros sistemas de coordenadas do aplicativo, conforme mostrado neste código de exemplo:
 
 ```cpp
 #include <winrt/windows.perception.spatial.preview.h>
@@ -173,44 +173,44 @@ private:
 
 ### <a name="distortion-error"></a>Erro de distorção
 
-No HoloLens, os fluxos de vídeo e de imagem ainda não são distorcidos no pipeline de processamento de imagens do sistema antes que os quadros sejam disponibilizados para o aplicativo (o fluxo de visualização contém os quadros originais distorcidos). Como somente os CameraIntrinsics são disponibilizados, os aplicativos devem assumir que os quadros de imagem representam uma câmera pinhole perfeita.
+No HoloLens, os fluxos de vídeo e de imagem ainda são não distorcidos no pipeline de processamento de imagem do sistema antes que os quadros sejam disponibilizados para o aplicativo (o fluxo de visualização contém os quadros distorcidos originais). Como apenas a CameraIntrinsics é disponibilizada, os aplicativos devem assumir que os quadros de imagem representam uma câmera de pino perfeita.
 
-No HoloLens (primeira geração), a função de distorção no processador de imagem ainda pode deixar um erro de até 10 pixels ao usar o CameraIntrinsics nos metadados do quadro. Em muitos casos de uso, esse erro não vai ser importante, mas se você estiver alinhando hologramas a pôsteres/marcadores do mundo real, por exemplo, e notar um deslocamento de <de 10 px (aproximadamente 11 mm para hologramas posicionados 2 metros de distância), esse erro de distorção poderá ser a causa. 
+No HoloLens (primeira geração), a função undistortion no processador de imagem ainda pode deixar um erro de até 10 pixels ao usar a CameraIntrinsics nos metadados do quadro. Em muitos casos de uso, esse erro não importa, mas se você estiver alinhando hologramas a cartazes/marcadores do mundo real, por exemplo, e você observar um deslocamento de 10 px do <(aproximadamente 11 mm para hologramas posicionados a 2 metros de distância), esse erro de distorção poderá ser a causa. 
 
-## <a name="locatable-camera-usage-scenarios"></a>Cenários de uso de câmera localizável
+## <a name="locatable-camera-usage-scenarios"></a>Cenários de uso de câmeras localizados
 
-### <a name="show-a-photo-or-video-in-the-world-where-it-was-captured"></a>Mostrar uma foto ou um vídeo no mundo onde ele foi capturado
+### <a name="show-a-photo-or-video-in-the-world-where-it-was-captured"></a>Mostrar uma foto ou vídeo no mundo em que ela foi capturada
 
-Os quadros de câmera do dispositivo vêm com uma transformação "câmera para o mundo", que pode ser usada para mostrar exatamente onde o dispositivo estava quando a imagem foi tirada. Por exemplo, você pode posicionar um pequeno ícone de Holographic nesse local (CameraToWorld. MultiplyPoint (Vector3. zero)) e até mesmo desenhar uma pequena seta na direção em que a câmera esteve voltada (CameraToWorld. MultiplyVector (Vector3. Forward)).
+Os quadros da Câmera do Dispositivo vêm com uma transformação "Câmera para o Mundo", que pode ser usada para mostrar exatamente onde o dispositivo estava quando a imagem foi tirada. Por exemplo, você pode posicionar um pequeno ícone holográfico nesse local (CameraToWorld.MultiplyPoint(Vector3.zero)) e até mesmo desenhar uma pequena seta na direção em que a câmera estava voltada (CameraToWorld.MultiplyVector(Vector3.forward)).
 
-### <a name="tag--pattern--poster--object-tracking"></a>Rastreamento de marca/padrão/pôster/objeto
+### <a name="tag--pattern--poster--object-tracking"></a>Marcação/padrão/cartaz/acompanhamento de objeto
 
-Muitos aplicativos de realidade misturada usam uma imagem reconhecível ou um padrão Visual para criar um ponto de controle no espaço. Isso é usado para renderizar objetos relativos a esse ponto ou criar um local conhecido. Alguns usos do HoloLens incluem localizar um objeto do mundo real marcado com fiducials (por exemplo, um monitor de TV com um código QR), colocar hologramas sobre fiducials e emparelhar visualmente com dispositivos não HoloLens, como tablets que foram configurados para se comunicar com o HoloLens via Wi-Fi.
+Muitos aplicativos de realidade misturada usam uma imagem reconhecível ou um padrão visual para criar um ponto rastreável no espaço. Em seguida, isso é usado para renderizar objetos relativos a esse ponto ou criar um local conhecido. Alguns usos para HoloLens incluem localizar um objeto do mundo real marcado com fiduciais (por exemplo, um monitor de TV com um código QR), colocar hologramas sobre fiduciais e emparelhar visualmente com dispositivos não HoloLens, como tablets que foram definidos para se comunicar com HoloLens via Wi-Fi.
 
-Você precisará de algumas coisas para reconhecer um padrão Visual e colocar um objeto no espaço do mundo dos aplicativos:
-1. Um kit de ferramentas de reconhecimento de padrões de imagem, como código QR, marcas AR, localizador de rosto, rastreadores de círculo, OCR, etc.
-2. Coletar quadros de imagem em tempo de execução e passá-los para a camada de reconhecimento
-3. Desprojetar seus locais de imagem de volta nas posições mundiais ou em raios mundiais prováveis. 
-4. Posicione seus modelos virtuais nesses locais mundiais
+Você precisará de algumas coisas para reconhecer um padrão visual e colocar um objeto no espaço do mundo dos aplicativos:
+1. Um kit de ferramentas de reconhecimento de padrão de imagem, como código QR, marcas AR, localizador de face, rastreadores de círculo, OCR etc.
+2. Coletar quadros de imagem em runtime e passá-los para a camada de reconhecimento
+3. Desprojete seus locais de imagem de volta para posições do mundo ou provavelmente raios do mundo. 
+4. Posicionar seus modelos virtuais nesses locais do mundo
 
-Alguns links de processamento de imagens importantes:
+Alguns links importantes de processamento de imagem:
 * [OpenCV](https://opencv.org/)
 * [Marcas QR](https://en.wikipedia.org/wiki/QR_code)
 * [FaceSDK](https://research.microsoft.com/projects/facesdk/)
 * [Microsoft Translator](https://www.microsoft.com/translator/business)
 
-Manter uma taxa de quadros de aplicativo interativo é fundamental, especialmente ao lidar com algoritmos de reconhecimento de imagem de longa execução. Por esse motivo, normalmente usamos o seguinte padrão:
-1. Thread principal: gerencia o objeto Camera
-2. Thread principal: solicitações de novos quadros (Async)
-3. Thread principal: passe novos quadros para o thread de acompanhamento
-4. Thread de acompanhamento: processa a imagem para coletar pontos-chave
-5. Thread principal: move o modelo virtual para corresponder aos pontos-chave encontrados
-6. Thread principal: repetir da etapa 2
+Manter uma taxa de quadros de aplicativo interativo é essencial, especialmente ao lidar com algoritmos de reconhecimento de imagem de execução longa. Por esse motivo, normalmente usamos o seguinte padrão:
+1. Thread Principal: gerencia o objeto da câmera
+2. Thread Principal: solicita novos quadros (assíncrono)
+3. Thread Principal: passar novos quadros para o thread de acompanhamento
+4. Thread de Acompanhamento: processa a imagem para coletar pontos-chave
+5. Thread Principal: move o modelo virtual para corresponder aos pontos-chave encontrados
+6. Thread Principal: repita da etapa 2
 
-Alguns sistemas de marcadores de imagem fornecem apenas um único local de pixel (outros fornecem a transformação completa, caso em que esta seção não será necessária), que é igual a um raio de locais possíveis. Para chegar a um único local 3D, podemos aproveitar vários raios e encontrar o resultado final por sua interseção aproximada. Para fazer isso, você precisará:
-1. Obter um loop indo coletando várias imagens de câmera
-2. Encontre os pontos de recursos associados e seus raios mundiais
-3. Quando você tem um dicionário de recursos, cada um com vários raios mundiais, você pode usar o seguinte código para resolver a interseção desses raios:
+Alguns sistemas de marcador de imagem fornecem apenas um único local de pixel (outros fornecem a transformação completa, caso em que essa seção não será necessária), o que equivale a um raio de possíveis locais. Para chegar a um único local 3d, podemos aproveitar vários raios e localizar o resultado final por sua interseção aproximada. Para fazer isso, você precisará:
+1. Obter um loop que vai coletar várias imagens de câmera
+2. Encontrar os pontos de recurso associados e seus raios de mundo
+3. Quando você tiver um dicionário de recursos, cada um com vários raios do mundo, poderá usar o código a seguir para resolver a interseção desses raios:
 
 ```
 public static Vector3 ClosestPointBetweenRays(
@@ -230,11 +230,11 @@ public static Vector3 ClosestPointBetweenRays(
  }
 ```
 
-Considerando dois ou mais locais de marca rastreados, você pode posicionar uma cena modelada para se ajustar ao cenário atual do usuário. Se você não puder assumir a gravidade, precisará de três locais de marca. Em muitos casos, usamos um esquema de cores em que os pontos brancos representam locais de marcas rastreadas em tempo real, e as bolsas azuis representam locais de marca modelados. Isso permite que o usuário avalie visualmente a qualidade do alinhamento. Supomos a seguinte configuração em todos os nossos aplicativos:
-* Dois ou mais locais de marca modelados
-* Um ' espaço de calibragem ', que na cena é o pai das marcas
+Considerando dois ou mais locais de marcação rastreados, você pode posicionar uma cena modelada para se ajustar ao cenário atual do usuário. Se você não puder assumir a gravidade, precisará de três locais de marca. Em muitos casos, usamos um esquema de cores em que as esferas brancas representam locais de marca rastreados em tempo real e as esferas azuis representam locais de marca modelados. Isso permite que o usuário mede visualmente a qualidade do alinhamento. Pressupomos a seguinte configuração em todos os nossos aplicativos:
+* Dois ou mais locais de marcação modelados
+* Um 'espaço de calibragem', que na cena é o pai das marcas
 * Identificador de recurso da câmera
-* Comportamento, que move o espaço de calibragem para alinhar as marcas modeladas com as marcas em tempo real (temos o cuidado de mover o espaço pai, não os marcadores modelados, porque outra conexão é posicionada em relação a eles).
+* Comportamento, que move o espaço de calibragem para alinhar as marcas modeladas com as marcas em tempo real (temos cuidado para mover o espaço pai, não os marcadores modelados em si, porque outras se conectam são posições relativas a eles).
 
 ```
 // In the two tags case:
@@ -249,17 +249,17 @@ Considerando dois ou mais locais de marca rastreados, você pode posicionar uma 
  trans.position += realTags[0].EstimatedWorldPos - modelledTags[0].transform.position;
 ```
 
-### <a name="track-or-identify-tagged-stationary-or-moving-real-world-objectsfaces-using-leds-or-other-recognizer-libraries"></a>Acompanhe ou identifique os objetos/faces do mundo marcado ou movendo os controles/rostos reais usando LEDs ou outras bibliotecas do reconhecedor
+### <a name="track-or-identify-tagged-stationary-or-moving-real-world-objectsfaces-using-leds-or-other-recognizer-libraries"></a>Rastrear ou identificar objetos/faces do mundo real marcados ou móveis usando LEDs ou outras bibliotecas de reconhecedor
 
 Exemplos:
-* Robôs industriais com LEDs (ou códigos QR para movimentação mais lenta de objetos)
+* Robô industriais com LEDs (ou códigos QR para objetos de movimentação mais lentos)
 * Identificar e reconhecer objetos na sala
-* Identifique e reconheça pessoas na sala, por exemplo, colocando cartões de contato Holographic em rostos
+* Identificar e reconhecer pessoas na sala, por exemplo, colocando cartões de contato holográficos sobre rostos
 
 ## <a name="see-also"></a>Confira também
-* [Exemplo de câmera localizável](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
+* [Exemplo de câmera localizador](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Câmera localizável no Unity](../unity/locatable-camera-in-unity.md)
 * [Captura de realidade mista](/hololens/holographic-photos-and-videos)
 * [Captura de realidade misturada para desenvolvedores](mixed-reality-capture-for-developers.md)
 * [Introdução à captura de mídia](/windows/uwp/audio-video-camera/)
-* [Exemplo de acompanhamento facial do Holographic](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
+* [Exemplo de acompanhamento facial holográfico](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

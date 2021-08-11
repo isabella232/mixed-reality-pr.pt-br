@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, Unity
-ms.openlocfilehash: 50a0f40723c05e96f79eefab933942044afb22f1
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: c2ee07ee061eb66aef58e28b2d893f6902775e77d4aa2f77039fd422fa01d6aa
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219000"
 ---
 # <a name="mrtk-configuration-dialog"></a>Caixa de diálogo de configuração do MRTK
 

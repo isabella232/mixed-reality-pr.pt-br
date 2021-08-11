@@ -7,12 +7,12 @@ ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Acompanhamento do Olhar, Realidade Misturada, Entrada, Foco do Olhar, Direcionamento de Foco, HoloLens 2, Seleção baseada no Olhar, Permanência, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, HoloLens, MRTK, Kit de Ferramentas de Realidade Misturada, design
-ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: dfe74ee1fe304cc63bb0c547d01ebadeb0469b171caa806671887817c17f92ef
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98007706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201824"
 ---
 # <a name="eye-gaze-and-dwell"></a>Focar com o olhar e esperar
 

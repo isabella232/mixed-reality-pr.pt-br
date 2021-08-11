@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, unity
-ms.openlocfilehash: d2904b9ea4771286b7091a8d5b7c599fcbd1244a
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 72f17ec9fc74143a2ae6cc51e1ffed0c73d13ef04ef5c4004537be70d1daaaca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202695"
 ---
 # <a name="setting-up-your-xr-configuration"></a>Definindo sua configuração do XR
 

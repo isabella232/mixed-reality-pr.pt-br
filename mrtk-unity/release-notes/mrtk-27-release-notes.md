@@ -7,12 +7,12 @@ ms.date: 06/16/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, XRSDK, XR Herdado, Leap Motion, Ultraleap, OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 8f6c68c067df735761dd9c162c71fd85f1f3e132
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 921cdb4d9643e55841bc7c979066c276f5fd80998ad97d19332c528cebe05c37
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203468"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Notas sobre a versão do Kit de Ferramentas de Realidade Misturada 2.7 da Microsoft
 
