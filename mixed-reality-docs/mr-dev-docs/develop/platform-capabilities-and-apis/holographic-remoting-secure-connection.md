@@ -1,22 +1,22 @@
 ---
-title: Habilitando a segurança de conexão para a Holographic Remoting
+title: Habilitando a segurança de conexão para o Holographic Remoting
 description: Esta página explica como configurar o Holographic Remoting para usar conexões criptografadas e autenticadas entre o player e aplicativos remotos.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, segurança, autenticação, servidor para cliente
-ms.openlocfilehash: fa23994ff4ab49d313fe24a67974bf4d90454e511658e0663c61d7b129b10f9e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6ac5284bdf9e5984fcf091b6502fb62a494e4fe8
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223576"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184642"
 ---
-# <a name="enabling-connection-security-for-holographic-remoting"></a>Habilitando a segurança de conexão para a Holographic Remoting
+# <a name="enabling-connection-security-for-holographic-remoting-c"></a>Habilitando a segurança de conexão para o Holographic Remoting (C++)
 
 >[!IMPORTANT]
->Essas diretrizes são específicas da Holographic Remoting no HoloLens 2.
+>Essas diretrizes são específicas para a Holographic Remoting no HoloLens 2.
 
 Esta página fornece uma visão geral da segurança de rede para Comunicação Comunicação Remográfica Holográfica. Você encontrará informações sobre
 
@@ -39,7 +39,7 @@ A segurança no Holographic Remoting, quando configurada corretamente para seu c
 * **Integridade:** o player e o remoto podem detectar alterações em trânsito em sua comunicação
 
 >[!IMPORTANT]
->Para poder usar recursos de segurança, você precisará implementar um [player](holographic-remoting-create-player.md) personalizado e um aplicativo remoto personalizado usando apIs [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) [ou OpenXR.](holographic-remoting-create-remote-openxr.md)
+>Para poder usar recursos de segurança, você [](holographic-remoting-create-player.md) precisará implementar um player personalizado e um aplicativo remoto personalizado usando apIs [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) [ou OpenXR.](holographic-remoting-create-remote-openxr.md)
 
 >[!NOTE]
 > A partir da [versão 2.4.0,](holographic-remoting-version-history.md#v2.4.0) aplicativos remotos usando a [API openXR](../native/openxr.md) podem ser criados. Uma visão geral sobre como estabelecer uma conexão segura em um ambiente OpenXR pode ser encontrada [abaixo.](#secure-connection-using-the-openxr-api)
@@ -48,7 +48,7 @@ A segurança no Holographic Remoting, quando configurada corretamente para seu c
 
 Quando você habilita a segurança na Comunicação Remográfica Holográfica, a biblioteca de comunicação remotária habilita automaticamente as verificações de criptografia e integridade de todos os dados trocados pela rede.
 
-No entanto, garantir a autenticação adequada requer algum trabalho extra. O que você precisa fazer exatamente depende do seu caso de uso e o restante desta seção é descobrir as etapas necessárias.
+No entanto, garantir a autenticação adequada requer algum trabalho extra. O que exatamente você precisa fazer depende do seu caso de uso e o restante desta seção é descobrir as etapas necessárias.
 
 >[!IMPORTANT]
 > Este artigo só pode fornecer diretrizes gerais. Se você não tiver certeza, considere consultar um especialista em segurança que possa lhe dar diretrizes específicas para seu caso de uso.
@@ -97,7 +97,7 @@ Um segredo compartilhado não será suficiente para cobrir esse caso de uso. Em 
 * O cliente envia esse token para o servidor por meio da Holographic Remoting
 * O servidor valida o token do cliente em relação ao provedor de identidade
 
-Um exemplo de um provedor de identidade é o [plataforma de identidade da Microsoft](/azure/active-directory/develop/).
+Um exemplo de um provedor de identidade é [o plataforma de identidade da Microsoft](/azure/active-directory/develop/).
 
 Como no caso de uso anterior, certifique-se de que esses tokens não sejam enviados por canais inseguros ou expostos de outra forma.
 
@@ -135,63 +135,64 @@ Os provedores de certificado fornecem ao aplicativo de servidor o certificado a 
 
 ### <a name="implementing-an-authentication-validator"></a>Implementando um validador de autenticação
 
-Os validadores de autenticação recebem o token de autenticação enviado pelo cliente e respondem com o resultado da validação.
+Validadores de autenticação recebem o token de autenticação enviado pelo cliente e respondem com o resultado da validação.
 
 Implemente `IAuthenticationReceiver` a interface da seguinte forma:
 
 * `GetRealm()` deve retornar o nome do realm de autenticação (um realm HTTP usado durante o handshake de conexão de conexão de remoção).
-* `ValidateToken()` deve validar o token de autenticação do cliente e `ValidationCompleted()` chamar no objeto de retorno de chamada com o resultado da validação.
+* `ValidateToken()` deve validar o token de autenticação do cliente e chamar `ValidationCompleted()` o objeto de retorno de chamada com o resultado da validação.
 
 ### <a name="implementing-an-authentication-provider"></a>Implementando um provedor de autenticação
 
 Os provedores de autenticação geram ou recuperam o token de autenticação a ser enviado ao servidor.
 
-Implemente `IAuthenticationProvider` a interface da seguinte forma:
+Implemente a `IAuthenticationProvider` interface da seguinte maneira:
 
-* `GetToken()` deve gerar ou recuperar o token de autenticação a ser enviado. Quando o token estiver pronto, chame `TokenReceived()` o método no objeto de retorno de chamada.
+* `GetToken()` deve gerar ou recuperar o token de autenticação a ser enviado. Quando o token estiver pronto, chame o `TokenReceived()` método no objeto de retorno de chamada.
 
 ### <a name="implementing-a-certificate-validator"></a>Implementando um validador de certificado
 
-Validadores de certificado recebem a cadeia de certificados enviada pelo servidor e determinam se o servidor pode ser confiável.
+Os validadores de certificado recebem a cadeia de certificados enviada pelo servidor e determinam se o servidor pode ser confiável.
 
-Para validar certificados, você pode usar a lógica de validação do sistema subjacente. Essa validação do sistema pode dar suporte à sua própria lógica de validação ou substituí-la completamente. Se você não passar seu próprio validador de certificado ao solicitar uma conexão segura, a validação do sistema será usada automaticamente.
+Para validar certificados, você pode usar a lógica de validação do sistema subjacente. Essa validação de sistema pode dar suporte a sua própria lógica de validação ou substituí-la completamente. Se você não passar seu próprio validador de certificado ao solicitar uma conexão segura, a validação do sistema será usada automaticamente.
 
-No Windows, a validação do sistema verificará se:
+no Windows, a validação do sistema verificará se há:
 
 * Integridade da cadeia de certificados: os certificados formam uma cadeia consistente que termina em um certificado raiz confiável
-* Validade do certificado: o certificado do servidor está dentro de seu período de validade e é emitido para autenticação de servidor
+* Validade do certificado: o certificado do servidor está dentro de seu período de validade e é emitido para autenticação do servidor
 * Revogação: o certificado não foi revogado
-* Corresponder ao nome: o nome do host do servidor corresponde a um dos nomes de host para o qual o certificado foi emitido
+* Correspondência de nome: o nome de host do servidor corresponde a um dos nomes de host para os quais o certificado foi emitido
 
-Implemente `ICertificateValidator` a interface da seguinte forma:
+Implemente a `ICertificateValidator` interface da seguinte maneira:
 
- * `PerformSystemValidation()` deverá retornar `true` se uma validação do sistema, conforme descrito acima, deve ser executada. Nesse caso, o resultado da validação do sistema é passado como uma entrada para o `ValidateCertificate()` método .
-* `ValidateCertificate()` deve validar a cadeia de certificados e, `CertificateValidated()` em seguida, chamar no retorno de chamada passado com o resultado final da validação. Esse método aceita a cadeia de certificados, o nome do servidor com o quais a conexão está sendo estabelecida e se uma verificação de revogação deve ser forçada. Se a cadeia de certificados contiver vários certificados, o primeiro será o certificado de assunto.
+ * `PerformSystemValidation()` deve retornar `true` se uma validação do sistema, conforme descrito acima, deve ser executada. Nesse caso, o resultado da validação do sistema é passado como uma entrada para o `ValidateCertificate()` método.
+* `ValidateCertificate()` deve validar a cadeia de certificados e, em seguida, chamar `CertificateValidated()` o retorno de chamada passado com o resultado de validação final. Esse método aceita a cadeia de certificados, o nome do servidor com o qual a conexão está sendo estabelecida e se uma verificação de revogação deve ser forçada. Se a cadeia de certificados contiver vários certificados, o primeiro será o certificado do assunto.
 
 >[!NOTE]
->Se o caso de uso exigir uma forma diferente de validação (consulte o caso de uso do certificado #1 acima), ignore totalmente a validação do sistema. Em vez disso, use qualquer API ou biblioteca que possa manipular certificados X.509 codificados em DER para decodificar a cadeia de certificados e executar as verificações necessárias para seu caso de uso.
+>Se o caso de uso exigir uma forma diferente de validação (consulte o caso de uso de certificado #1 acima), ignore a validação do sistema inteiramente. Em vez disso, use qualquer API ou biblioteca que possa manipular certificados X. 509 codificados em DER para decodificar a cadeia de certificados e executar as verificações necessárias para seu caso de uso.
 
-## <a name="secure-connection-using-the-openxr-api"></a>Proteger a conexão usando a API do OpenXR
+## <a name="secure-connection-using-the-openxr-api"></a>Conexão segura usando a API OpenXR
 
-Ao usar a [API do OpenXR,](../native/openxr.md) toda a API relacionada à conexão segura está disponível como parte da extensão `XR_MSFT_holographic_remoting` openXR.
+Ao usar a API [OpenXR](../native/openxr.md) , toda a API relacionada à conexão segura está disponível como parte da `XR_MSFT_holographic_remoting` extensão OpenXR.
 
 >[!IMPORTANT]
->Para saber mais sobre a API de extensão do [](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) OpenXR de Remoção Holográfica, confira a especificação que pode ser encontrada no repositório [github de exemplos de Remo holográfica.](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)
+>Para saber mais sobre a API de extensão de OpenXR de comunicação remota Holographic, confira a [especificação](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) que pode ser encontrada no [repositório GitHub de exemplos de comunicação remota Holographic](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Os principais elementos para conexão segura usando a `XR_MSFT_holographic_remoting` extensão OpenXR são os retornos de chamada a seguir.
+Os principais elementos para conexão segura usando a `XR_MSFT_holographic_remoting` extensão OpenXR são os seguintes retornos de chamada.
 - `xrRemotingRequestAuthenticationTokenCallbackMSFT`, gera ou recupera o token de autenticação a ser enviado.
 - `xrRemotingValidateServerCertificateCallbackMSFT`, valida a cadeia de certificados.
 - `xrRemotingValidateAuthenticationTokenCallbackMSFT`, valida o token de autenticação do cliente.
-- `xrRemotingRequestServerCertificateCallbackMSFT`, fornecer o aplicativo de servidor com o certificado a ser usado.
+- `xrRemotingRequestServerCertificateCallbackMSFT`, forneça o aplicativo de servidor com o certificado a ser usado.
 
-Esses retornos de chamada podem ser fornecidos para o runtime do OpenXR de remoção por meio `xrRemotingSetSecureConnectionClientCallbacksMSFT` de e `xrRemotingSetSecureConnectionServerCallbacksMSFT` . Além disso, a conexão segura precisa ser habilitada por meio do parâmetro secureConnection na estrutura ou na `XrRemotingConnectInfoMSFT` estrutura, dependendo de você `XrRemotingListenInfoMSFT` estar usando `xrRemotingConnectMSFT` ou `xrRemotingListenMSFT` .
+Esses retornos de chamada podem ser fornecidos para o tempo de execução do OpenXR remoto via `xrRemotingSetSecureConnectionClientCallbacksMSFT` e `xrRemotingSetSecureConnectionServerCallbacksMSFT` . Além disso, a conexão segura precisa ser habilitada por meio do parâmetro secureConnection na `XrRemotingConnectInfoMSFT` estrutura ou da `XrRemotingListenInfoMSFT` estrutura, dependendo se você estiver usando o `xrRemotingConnectMSFT` ou o `xrRemotingListenMSFT` .
 
-Essa API é semelhante à API baseada em IDL descrita em [Implementando a segurança de remoção holográfica.](#implementing-holographic-remoting-security) No entanto, em vez de implementar interfaces, você deve fornecer implementações de retorno de chamada. Você pode encontrar um exemplo detalhado no aplicativo [de exemplo OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Essa API é semelhante à API baseada em IDL descrita em [implementando a segurança de comunicação remota do Holographic](#implementing-holographic-remoting-security). No entanto, em vez de implementar interfaces, você deve fornecer implementações de retorno de chamada. Você pode encontrar um exemplo detalhado no [aplicativo de exemplo OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="see-also"></a>Consulte Também
-* [Escrevendo um aplicativo remoto de remoção holográfica usando APIs Windows Mixed Reality holográficas](holographic-remoting-create-remote-wmr.md)
-* [Escrevendo um aplicativo remoto de remoção holográfica usando APIs OpenXR](holographic-remoting-create-remote-openxr.md)
+* [Visão geral da comunicação remota do Holographic](holographic-remoting-overview.md)
+* [escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs de Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
+* [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
-* [Solução de problemas e limitações de remoção holográfica](holographic-remoting-troubleshooting.md)
+* [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
 * [Termos de licença de software de comunicação remota holográfica](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

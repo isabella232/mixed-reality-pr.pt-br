@@ -6,14 +6,14 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicação remota, comunicação remota Holographic, headset de realidade misturada, headset de realidade mista do windows, headset da realidade virtual, canais de dados
-ms.openlocfilehash: 09fea161f9042d7afc59c16d3b5e8a6c69892e84b1de5e9ab4a4808733b4f171
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1adda10aa7792eaeab0ac32cb37d73dcfd2b58e6
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217082"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184707"
 ---
-# <a name="custom-holographic-remoting-data-channels"></a>Canais de dados personalizados de comunicação remota holográfica
+# <a name="custom-holographic-remoting-data-channels-c"></a>Canais de dados de comunicação remota Holographic personalizados (C++)
 
 >[!NOTE]
 >estas diretrizes são específicas para a comunicação remota do Holographic no HoloLens 2.
@@ -114,6 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Consulte Também
+* [Visão geral da comunicação remota do Holographic](holographic-remoting-overview.md)
 * [escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs de Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)

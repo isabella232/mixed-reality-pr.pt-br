@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, design, designer, arquivo de design, design de UX, HoloLens, MRTK, Realidade Misturada Toolkit
-ms.openlocfilehash: e72dfece3252a35a8da2b1dc72a1476bbf174b36bf01b731b4f0be5af21f2a33
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+ms.openlocfilehash: e911f7b2c1675a8113592d13c01abc3b71238733
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905642"
 ---
 # <a name="mrtk-figma-toolkit"></a>Kit de ferramentas do MRTK Figma
 
@@ -60,7 +60,7 @@ Usando **a guia** Ativos, você pode procurar esses componentes e arrastar para 
 
 ## <a name="examples"></a>Exemplos
 
-Figma Toolkit pode ser útil para esboçar a interface do usuário do menu. 
+Figma Toolkit pode ser útil para desenhar a interface do usuário do menu. 
 
 ![Exemplo de Toolkit Figma – Interface do usuário do menu 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 

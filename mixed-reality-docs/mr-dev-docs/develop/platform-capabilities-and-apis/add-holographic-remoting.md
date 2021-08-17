@@ -1,55 +1,55 @@
 ---
-title: Adicionar a remoção holográfica
-description: Saiba como instalar, configurar e usar a Comunicação Remográfica Holográfica para renderizar hologramas em um HoloLens dispositivo pela rede.
+title: Adicionar comunicação remota do Holographic
+description: saiba como instalar, configurar e usar a comunicação remota do Holographic para renderizar hologramas em um dispositivo HoloLens pela rede.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Windows Mixed Reality, hologramas, comunicação remota holográfica, renderização remota, renderização de rede, HoloLens, hologramas remotos, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
-ms.openlocfilehash: ecfc49477e202b08303160e54ce986577a9d79eb387dc1edb1bc33c63644615f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: Windows Mixed Reality, hologramas, comunicação remota holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, headset de realidade misturada, headset de realidade misturada do Windows, headset da realidade virtual
+ms.openlocfilehash: 3f9d3d23d18f680ce1001310e4ce49089edaae6a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115198852"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184617"
 ---
-# <a name="add-holographic-remoting-hololens-first-gen"></a>Adicionar a remoção holográfica (HoloLens (primeira geração))
+# <a name="add-holographic-remoting-hololens-first-gen"></a>adicionar comunicação remota Holographic (HoloLens (primeira gen))
 
 >[!IMPORTANT]
-> Este documento descreve a criação de um aplicativo host para HoloLens 1. O aplicativo host **para HoloLens (1ª geração)** deve usar NuGet versão do pacote **1.x.x**. Isso implica que os aplicativos host escritos para HoloLens 1 não são compatíveis com HoloLens 2 e vice-versa.
+> este documento descreve a criação de um aplicativo host para o HoloLens 1. o aplicativo Host para **HoloLens (1ª gen)** deve usar NuGet pacote versão **1.** x. isso significa que os aplicativos host escritos para HoloLens 1 não são compatíveis com HoloLens 2 e vice-versa.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-HoloLens desenvolvedores que usam a Holographic Remoting precisarão atualizar seus aplicativos para torná-los compatíveis com HoloLens 2. Isso requer uma nova versão do pacote de NuGet Holographic Remoting. Certifique-se de usar a versão 2.0.0.0 ou superior do pacote do holographic remoting NuGet ao se conectar ao Holographic Remoting Player no HoloLens 2 ou a conexão falhará.
+HoloLens os desenvolvedores que usam a comunicação remota do Holographic precisarão atualizar seus aplicativos para torná-los compatíveis com o HoloLens 2. isso requer uma nova versão do pacote de NuGet de comunicação remota do Holographic. certifique-se de usar a versão 2.0.0.0 ou superior do pacote de NuGet de comunicação remota do Holographic ao se conectar ao Player de comunicação remota do Holographic no HoloLens 2 ou a conexão falhará.
 
 >[!NOTE]
-> Diretrizes específicas HoloLens 2 podem ser encontradas [aqui.](holographic-remoting-create-remote-wmr.md)
+> orientações específicas para HoloLens 2 podem ser encontradas [aqui](holographic-remoting-create-remote-wmr.md).
 
 
-## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Adicionar a remota holográfica ao aplicativo UWP ou área de trabalho
+## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Adicionar a comunicação remota do Holographic ao seu aplicativo da área de trabalho ou UWP
 
-Esta página descreve como adicionar o Holographic Remoting a um aplicativo UWP ou desktop.
+Esta página descreve como adicionar o Holographic Remoting a um aplicativo desktop ou UWP.
 
-A remota holográfica permite que seu aplicativo seja destinado a um HoloLens com conteúdo holográfico hospedado em um computador desktop ou em um dispositivo UWP, como o Xbox One. Você também tem acesso a mais recursos do sistema, possibilitando a integração de exibições [imersivas remotas](../../design/app-views.md) ao software de computador desktop existente. Um aplicativo host de remoção recebe um fluxo de dados de entrada de um HoloLens, renderiza o conteúdo em uma exibição imersiva virtual e transmite quadros de conteúdo de volta para HoloLens. A conexão é feita usando o Wi-Fi padrão. Para usar a remotaização, use um pacote NuGet para adicionar a remotação holográfica à área de trabalho ou ao aplicativo UWP e, em seguida, escreva código para lidar com a conexão e renderizar uma exibição imersiva. As bibliotecas auxiliares são incluídas no exemplo de código que simplifica a tarefa de lidar com a conexão do dispositivo.
+o Holographic remoting permite que seu aplicativo direcione um HoloLens com conteúdo Holographic hospedado em um computador desktop ou em um dispositivo UWP, como o Xbox One. Você também tem acesso a mais recursos do sistema, possibilitando a integração de [exibições de imersão](../../design/app-views.md) remotas ao software de PC desktop existente. um aplicativo host de comunicação remota recebe um fluxo de dados de entrada de um HoloLens, renderiza o conteúdo em uma exibição de imersão virtual e transmite quadros de conteúdo de volta para HoloLens. A conexão é feita usando Wi-Fi padrão. para usar a comunicação remota, use um pacote NuGet para adicionar a comunicação remota do holographic ao seu aplicativo da área de trabalho ou UWP e, em seguida, escreva o código para lidar com a conexão e renderize uma exibição imersiva. As bibliotecas auxiliares são incluídas no exemplo de código que simplificam a tarefa de lidar com a conexão do dispositivo.
 
-Uma conexão de remoting típica terá até 50 ms de latência. O aplicativo player pode relatar a latência em tempo real.
+Uma conexão de comunicação remota típica terá um mínimo de 50 ms de latência. O aplicativo de player pode relatar a latência em tempo real.
 
 >[!NOTE]
->Atualmente, os snippets de código neste artigo demonstram o uso do C++/CX em vez do C++17 compatível com C++/WinRT, conforme usado no modelo de projeto [holográfico C++.](../native/creating-a-holographic-directx-project.md)  Os conceitos são equivalentes para um projeto C++/WinRT, embora você precise traduzir o código.
+>Os trechos de código neste artigo demonstram atualmente o uso de C++/CX em vez de c++/WinRT compatível com C + +17, conforme usado no [modelo de projeto do C++ Holographic](../native/creating-a-holographic-directx-project.md).  Os conceitos são equivalentes a um projeto/WinRT do C++, embora você precise converter o código.
 
-### <a name="get-the-remoting-nuget-packages"></a>Obter os pacotes de NuGet remoções
+### <a name="get-the-remoting-nuget-packages"></a>obter os pacotes de NuGet de comunicação remota
 
-Siga estas etapas para obter o pacote NuGet para a remoção holográfica e adicionar uma referência de seu projeto:
-1. Acesse seu projeto em Visual Studio.
-2. Clique com o botão direito do mouse no nó do projeto e **selecione Gerenciar NuGet Pacotes...**
-3. No painel exibido, **seleccione** Procurar e pesquise "Holographic Remoting".
-4. Selecione **Microsoft.Holographic.Remoting** e selecione **Instalar**.
-5. Se a **caixa de** diálogo Visualização for exibida, selecione **OK.**
-6. Selecione **Aceito quando a** caixa de diálogo do contrato de licença for exibida.
+siga estas etapas para obter o pacote de NuGet para a comunicação remota do holographic e adicione uma referência do seu projeto:
+1. Vá para seu projeto no Visual Studio.
+2. clique com o botão direito do mouse no nó do projeto e selecione **gerenciar pacotes de NuGet...**
+3. No painel que aparece, selecct **procurar** e, em seguida, pesquise "Holographic Remoting".
+4. Selecione **Microsoft. Holographic. Remoting** e selecct **install**.
+5. Se a caixa de diálogo **Visualizar** for exibida, selecione **OK**.
+6. Selecione **aceito quando o** diálogo do contrato de licença for exibido.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>Criar o HolographicStreamerHelpers
 
-Primeiro, precisamos adicionar uma instância de HolographicStreamerHelpers à classe que manipulará a remoção.
+Primeiro, precisamos adicionar uma instância de HolographicStreamerHelpers à classe que manipulará a comunicação remota.
 
 ```cpp
 #include <HolographicStreamerHelpers.h>
@@ -58,7 +58,7 @@ Primeiro, precisamos adicionar uma instância de HolographicStreamerHelpers à c
        Microsoft::Holographic::HolographicStreamerHelpers^ m_streamerHelpers;
 ```
 
-Você também precisará acompanhar o estado da conexão. Se você quiser renderizar a versão prévia, precisará ter uma textura para a cópia. Você também precisa de algumas coisas como um bloqueio de estado de conexão, alguma maneira de armazenar o endereço IP de HoloLens e assim por diante.
+Você também precisará acompanhar o estado da conexão. Se você quiser renderizar a visualização, precisará ter uma textura para copiá-la para. você também precisa de algumas coisas como um bloqueio de estado de conexão, alguma maneira de armazenar o endereço IP de HoloLens e assim por diante.
 
 ```cpp
 private:
@@ -75,9 +75,9 @@ private:
        Microsoft::WRL::ComPtr<ID3D11Texture2D>             m_spTexture;
 ```
 
-### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>Inicialize HolographicStreamerHelpers e conecte-se ao HoloLens
+### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>Inicialize o HolographicStreamerHelpers e conecte-se a HoloLens
 
-Para se conectar a um HoloLens, crie uma instância de HolographicStreamerHelpers e conecte-se ao endereço IP de destino. Você precisará definir o tamanho do quadro de vídeo para corresponder à largura e à altura HoloLens exibição, pois a biblioteca de remoção holográfica espera que as resoluções do codificador e do decodificador corresponderem exatamente.
+para se conectar a um dispositivo HoloLens, crie uma instância do HolographicStreamerHelpers e conecte-se ao endereço IP de destino. você precisará definir o tamanho do quadro de vídeo para corresponder ao HoloLens largura e altura da exibição, pois a biblioteca de comunicação remota Holographic espera que as resoluções do codificador e do decodificador coincidam exatamente.
 
 ```cpp
 m_streamerHelpers = ref new HolographicStreamerHelpers();
@@ -98,9 +98,9 @@ m_streamerHelpers = ref new HolographicStreamerHelpers();
        }
 ```
 
-A conexão do dispositivo é assíncrona. Seu aplicativo precisa fornecer manipuladores de eventos para conectar, desconectar e enquadrar eventos de envio.
+A conexão do dispositivo é assíncrona. Seu aplicativo precisa fornecer manipuladores de eventos para eventos de conexão, desconexão e quadros de envio.
 
-O evento OnConnected pode atualizar a interface do usuário, iniciar a renderização e assim por diante. Em nosso exemplo de código da área de trabalho, atualizamos o título da janela com uma mensagem "conectada".
+O evento onconnected pode atualizar a interface do usuário, iniciar a renderização e assim por diante. Em nosso exemplo de código de área de trabalho, atualizamos o título da janela com uma mensagem "conectada".
 
 ```cpp
 m_streamerHelpers->OnConnected += ref new ConnectedEvent(
@@ -110,7 +110,7 @@ m_streamerHelpers->OnConnected += ref new ConnectedEvent(
            });
 ```
 
-O evento OnDisconnected pode lidar com a reconexão, as atualizações da interface do usuário e assim por diante. Neste exemplo, nos reconectamos se houver uma falha transitória.
+O evento ondisconnectd pode lidar com a reconexão, as atualizações da interface do usuário e assim por diante. Neste exemplo, reconectamos se houver uma falha transitória.
 
 ```cpp
 Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_streamerHelpers);
@@ -150,7 +150,7 @@ Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_strea
            });
 ```
 
-Quando o componente de remoting está pronto para enviar um quadro, seu aplicativo tem a oportunidade de fazer uma cópia dele no SendFrameEvent. Aqui, copiamos o quadro para uma cadeia de permuta para que possamos exibi-lo em uma janela de visualização.
+Quando o componente de comunicação remota está pronto para enviar um quadro, seu aplicativo recebe uma oportunidade de fazer uma cópia dele no SendFrameEvent. Aqui, copiamos o quadro em uma cadeia de permuta para que possamos exibi-lo em uma janela de visualização.
 
 ```cpp
 m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
@@ -178,17 +178,17 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
            });
 ```
 
-### <a name="render-holographic-content"></a>Renderizar conteúdo holográfico
+### <a name="render-holographic-content"></a>Renderizar conteúdo Holographic
 
-Para renderizar conteúdo usando a remotaização, você configura um IFrameworkView virtual em sua área de trabalho ou aplicativo UWP e processa quadros holográficos da remota. Todas as Windows APIs holográficas são usadas da mesma maneira por essa exibição, mas ela é configurada de forma ligeiramente diferente.
+Para renderizar o conteúdo usando comunicação remota, você configura um IFrameworkView virtual em seu aplicativo de área de trabalho ou UWP e processa os quadros Holographic da comunicação remota. todas as APIs Holographic do Windows são usadas da mesma forma por essa exibição, mas elas são configuradas de forma ligeiramente diferente.
 
-Em vez de criar você mesmo, o espaço holográfico e os componentes de fala vêm da classe HolographicRemotingHelpers:
+Em vez de criá-los por conta própria, os componentes de espaço e fala do Holographic vêm de sua classe HolographicRemotingHelpers:
 
 ```cpp
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
-Em vez de usar um loop de atualização em um método Run, você fornece atualizações de escala do loop principal do aplicativo UWP ou da área de trabalho. Isso permite que sua área de trabalho ou aplicativo UWP permaneça no controle do processamento de mensagens.
+Em vez de usar um loop de atualização em um método Run, você fornece atualizações em escala do loop principal de seu aplicativo de desktop ou UWP. Isso permite que seu aplicativo da área de trabalho ou UWP permaneça no controle do processamento de mensagens.
 
 ```cpp
 void DesktopWindow::Tick()
@@ -200,7 +200,7 @@ void DesktopWindow::Tick()
    }
 ```
 
-O método Tick() da exibição de aplicativo holográfico conclui uma iteração do loop update, draw, present.
+O método Tick () da exibição do aplicativo Holographic conclui uma iteração do loop Update, Draw e Present.
 
 ```cpp
 void AppView::Tick()
@@ -220,11 +220,11 @@ void AppView::Tick()
    }
 ```
 
-O loop de atualização, renderização e atualização da exibição de aplicativo holográfico é exatamente o mesmo que é quando executado no HoloLens , exceto pelo fato de que você tem acesso a uma quantidade muito maior de recursos do sistema em seu computador desktop. Você pode renderizar muito mais triângulos, ter mais passagens de desenho, fazer mais física e usar processos x64 para carregar conteúdo que exige mais de 2 GB de RAM.
+os loops de atualização, processamento e exibição do holographic app view são exatamente os mesmos que quando são executados em HoloLens-exceto que você tem acesso a uma quantidade muito maior de recursos do sistema em seu PC desktop. Você pode renderizar muitos triângulos, ter mais passagens de desenho, realizar mais física e usar processos x64 para carregar o conteúdo que exige mais de 2 GB de RAM.
 
 ### <a name="disconnect-and-end-the-remote-session"></a>Desconectar e encerrar a sessão remota
 
-Para desconectar – por exemplo, quando o usuário clica em um botão de interface do usuário para desconectar – chame Disconnect() no HolographicStreamerHelpers e, em seguida, libere o objeto.
+Para desconectar-por exemplo, quando o usuário clica em um botão da interface do usuário para desconectar-chamada Disconnect () no HolographicStreamerHelpers e, em seguida, libera o objeto.
 
 ```cpp
 void DesktopWindow::DisconnectFromRemoteDevice()
@@ -242,13 +242,13 @@ void DesktopWindow::DisconnectFromRemoteDevice()
    }
 ```
 
-## <a name="get-the-remoting-player"></a>Obter o player de remoção
+## <a name="get-the-remoting-player"></a>Obter o reprodutor de comunicação remota
 
-O Windows player de remoção holográfico é oferecido na Windows de aplicativos como um ponto de extremidade para a conexão de aplicativos host de remoção. Para obter o Windows de remoção holográfica, visite a Windows de aplicativos do seu HoloLens, pesquise Por Remoting e baixe o aplicativo. O player de remoção inclui um recurso para exibir estatísticas na tela, o que pode ser útil ao depurar aplicativos host de transmissão.
+o player de comunicação remota do Windows Holographic é oferecido na loja de aplicativos do Windows como um ponto de extremidade para que os aplicativos de host remotos se conectem. para obter o Windows player de comunicação remota do Holographic, visite a loja de aplicativos do Windows de seu HoloLens, procure comunicação remota e baixe o aplicativo. O player de comunicação remota inclui um recurso para exibir estatísticas na tela, o que pode ser útil ao depurar aplicativos de host de comunicação remota.
 
-## <a name="notes-and-resources"></a>Observações e recursos
+## <a name="notes-and-resources"></a>Notas e recursos
 
-A exibição de aplicativo holográfico precisará de uma maneira de fornecer ao aplicativo o dispositivo Direct3D, que deve ser usado para inicializar o espaço holográfico. Seu aplicativo deve usar esse dispositivo Direct3D para copiar e exibir o quadro de visualização.
+A exibição do aplicativo Holographic precisará de uma maneira de fornecer seu aplicativo com o dispositivo Direct3D, que deve ser usado para inicializar o espaço do Holographic. Seu aplicativo deve usar este dispositivo Direct3D para copiar e exibir o quadro de visualização.
 
 ```cpp
 internal:
@@ -258,6 +258,14 @@ internal:
        }
 ```
 
-**Exemplo de código:** Um exemplo [de](https://github.com/Microsoft/HoloLensCompanionKit) código de Comunicação Remota Holográfica completo está disponível, que inclui uma exibição de aplicativo holográfico compatível com projetos de host de comunicação remota e comunicação remota para a área de trabalho Win32, UWP DirectX e UWP com XAML. 
+**Exemplo de código:** Um [exemplo de código remoto Holographic](https://github.com/Microsoft/HoloLensCompanionKit) completo está disponível, que inclui uma exibição de aplicativo Holographic compatível com projetos de host remoto e de comunicação remota para desktop Win32, UWP DirectX e UWP com XAML. 
 
-**Observação de depuração:** A biblioteca de remoção holográfica pode lançar exceções de primeira chance. Essas exceções podem ser visíveis nas sessões de depuração, dependendo das configurações Visual Studio de exceção que estão ativas no momento. Essas exceções são capturadas internamente pela biblioteca de Comunicação Remográfica Holográfica e podem ser ignoradas.
+**Observação de depuração:** A biblioteca de comunicação remota do Holographic pode gerar exceções de primeira chance. essas exceções podem ser visíveis em sessões de depuração, dependendo das Visual Studio configurações de exceção que estão ativas no momento. Essas exceções são detectadas internamente pela biblioteca de comunicação remota do Holographic e podem ser ignoradas.
+
+## <a name="see-also"></a>Consulte Também
+* [Visão geral da comunicação remota do Holographic](holographic-remoting-overview.md)
+* [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
+* [Como estabelecer uma conexão segura com o Holographic Remoting](holographic-remoting-secure-connection.md)
+* [Solução de problemas e limitações de comunicação remota do Holographic](holographic-remoting-troubleshooting.md)
+* [Termos de licença de software de comunicação remota holográfica](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

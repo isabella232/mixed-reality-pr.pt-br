@@ -1,24 +1,24 @@
 ---
 title: Escrevendo um aplicativo remoto de remota remota holográfico (OpenXR)
-description: Saiba como transmitir conteúdo remoto renderizado em um computador remoto para HoloLens 2 com aplicativos holográficos de remota com OpenXR.
+description: Saiba como transmitir o conteúdo remoto renderizado em um computador remoto para HoloLens 2 com aplicativos holográficos de remota com OpenXR.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, NuGet
-ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3fd210db1b179cbceff057e25bf451be0e7ca843
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115212064"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184587"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Escrevendo um aplicativo remoto de remoção holográfica usando a API openXR
 
 >[!IMPORTANT]
->Este documento descreve a criação de um aplicativo remoto para headsets HoloLens 2 e Windows Mixed Reality usando a [API openXR](../native/openxr.md). Os aplicativos **remotos HoloLens (1ª geração)** devem usar NuGet versão **1.x.x do pacote.** Isso implica que aplicativos remotos escritos para HoloLens 2 não são compatíveis com HoloLens 1 e vice-versa. A documentação HoloLens 1 pode ser encontrada [aqui.](add-holographic-remoting.md)
+>Este documento descreve a criação de um aplicativo remoto para headsets HoloLens 2 e Windows Mixed Reality usando a [API openXR](../native/openxr.md). Aplicativos **remotos para HoloLens (1ª geração)** devem usar NuGet versão **1.x.x do pacote.** Isso implica que aplicativos remotos escritos para HoloLens 2 não são compatíveis com HoloLens 1 e vice-versa. A documentação HoloLens 1 pode ser encontrada [aqui.](add-holographic-remoting.md)
 
-Os aplicativos de remotação holográfica podem transmitir conteúdo renderizado remotamente para HoloLens 2 e Windows Mixed Reality headsets imersivos. Você também pode acessar mais recursos do sistema e integrar exibições [imersivas remotas](../../design/app-views.md) ao software de computador desktop existente. Um aplicativo remoto recebe um fluxo de dados de entrada do HoloLens 2, renderiza o conteúdo em uma exibição imersiva virtual e transmite quadros de conteúdo de volta para HoloLens 2. A conexão é feita usando o Wi-Fi padrão. A remota holográfica é adicionada a um aplicativo UWP ou área de trabalho por meio de um NuGet pacote. É necessário um código adicional que trata a conexão e renderiza em uma exibição imersiva. Uma conexão de remoting típica terá até 50 ms de latência. O aplicativo player pode relatar a latência em tempo real.
+Os aplicativos de remotação holográfica podem transmitir conteúdo renderizado remotamente para HoloLens 2 e Windows Mixed Reality headsets imersivos. Você também pode acessar mais recursos do sistema e integrar exibições [imersivas remotas](../../design/app-views.md) ao software de computador desktop existente. Um aplicativo remoto recebe um fluxo de dados de entrada do HoloLens 2, renderiza o conteúdo em uma exibição imersiva virtual e transmite quadros de conteúdo de volta para HoloLens 2. A conexão é feita usando o Wi-Fi padrão. A remota holográfica é adicionada a um aplicativo UWP ou área de trabalho por meio de um NuGet de dados. É necessário um código adicional que trata a conexão e renderiza em uma exibição imersiva. Uma conexão de remoting típica terá até 50 ms de latência. O aplicativo player pode relatar a latência em tempo real.
 
 Todo o código nesta página e projetos de trabalho podem ser encontrados no repositório [GitHub](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)de exemplos de Remo holográfica .
 
@@ -27,7 +27,7 @@ Todo o código nesta página e projetos de trabalho podem ser encontrados no rep
 Um bom ponto de partida é um aplicativo UWP ou Área de Trabalho baseado em OpenXR em funcionamento. Para obter [detalhes, consulte Getting started with OpenXR](../native/openxr-getting-started.md).
 
 >[!IMPORTANT]
->Qualquer aplicativo que use a Holographic Remoting deve ser autor para usar um [apartment multi-threaded.](/windows/win32/com/multithreaded-apartments) Há suporte para o uso de um apartment de [thread](/windows/win32/com/single-threaded-apartments) único, mas levará ao desempenho abaixo do ideal e possivelmente à gagueja durante a reprodução. Ao usar C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) um apartment multi-threaded é o padrão.
+>Qualquer aplicativo que use a Holographic Remoting deve ser autor para usar um [apartment multi-threaded.](/windows/win32/com/multithreaded-apartments) Há suporte para o uso de um apartment [de thread](/windows/win32/com/single-threaded-apartments) único, mas levará ao desempenho abaixo do ideal e possivelmente à gagueja durante a reprodução. Ao usar C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) um apartment multi-threaded é o padrão.
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Obter o pacote de NuGet de NuGet Holographic
 
@@ -41,11 +41,11 @@ As etapas a seguir são necessárias para adicionar o pacote NuGet a um projeto 
 7. Repita as etapas de 3 a 6 para os seguintes pacotes NuGet: OpenXR.Headers, OpenXR.Loader
 
 >[!NOTE]
->A **versão 1.x.x** do pacote NuGet ainda está disponível para desenvolvedores que querem direcionar HoloLens 1. Para obter [detalhes, consulte Adicionar a remoção holográfica (HoloLens (1ª geração))](add-holographic-remoting.md).
+>A **versão 1.x.x** do pacote NuGet ainda está disponível para desenvolvedores que querem direcionar HoloLens 1. Para obter [detalhes, consulte Adicionar a HoloLens holográfica (1ª geração))](add-holographic-remoting.md).
 
 ## <a name="select-the-holographic-remoting-openxr-runtime"></a>Selecione o runtime do OpenXR de Remoção Holográfica
 
-A primeira etapa que você precisa fazer em seu aplicativo remoto é selecionar o runtime do OpenXR de Remota holográfica, que faz parte do pacote de NuGet Microsoft.Holographic.Remoting.OpenXr. Você pode fazer isso definindo a variável de ambiente como o caminho do ```XR_RUNTIME_JSON``` RemotingXR.jsno arquivo em seu aplicativo. Essa variável de ambiente é usada pelo carregador OpenXR para não usar o runtime do OpenXR padrão do sistema, mas redirecionar para o runtime do OpenXR de remoção holográfica. Ao usar o pacote NuGet Microsoft.Holographic.Remoting.OpenXr, o arquivo RemotingXR.json é copiado automaticamente durante a compilação para a pasta de saída, a seleção de runtime do OpenXR normalmente é a seguinte.
+A primeira etapa que você precisa fazer em seu aplicativo remoto é selecionar o runtime do OpenXR de Remoção Holográfica, que faz parte do pacote de NuGet Microsoft.Holographic.Remoting.OpenXr. Você pode fazer isso definindo a variável de ambiente como o caminho ```XR_RUNTIME_JSON``` do arquivo RemotingXR.jsno seu aplicativo. Essa variável de ambiente é usada pelo carregador OpenXR para não usar o runtime do OpenXR padrão do sistema, mas redirecionar para o runtime do OpenXR de remoção holográfica. Ao usar o pacote NuGet Microsoft.Holographic.Remoting.OpenXr, o arquivo RemotingXR.json é copiado automaticamente durante a compilação para a pasta de saída, a seleção de runtime do OpenXR normalmente é a seguinte.
 
 ```cpp
 bool EnableRemotingXR() {
@@ -71,7 +71,7 @@ bool EnableRemotingXR() {
 A primeira etapa que um aplicativo OpenXR típico deve fazer é selecionar extensões OpenXR e criar um XrInstance. A especificação do núcleo do OpenXR não fornece nenhuma API específica de remoção. Por esse motivo, a Holographic Remoting introduz sua própria extensão OpenXR chamada ```XR_MSFT_holographic_remoting``` . Verifique se, ao chamar xrCreateInstance, ```XR_MSFT_HOLOGRAPHIC_REMOTING_EXTENSION_NAME``` o está incluído no XrInstanceCreateInfo.
 
 >[!TIP]
->Por padrão, o conteúdo renderizado do seu aplicativo é transmitido somente para o player de Remoção Holográfica em execução em um HoloLens 2 ou em um Windows Mixed Reality headsets. Para também exibir o conteúdo renderizado no computador remoto, por meio de uma cadeia de troca de uma janela, por exemplo, o Holographic Remoting fornece uma segunda extensão OpenXR chamada ```XR_MSFT_holographic_remoting_frame_mirroring``` . Certifique-se de também habilitar essa ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` extensão usando caso você queira usar essa funcionalidade.
+>Por padrão, o conteúdo renderizado do seu aplicativo é transmitido somente para o player de Remoção Holográfica em execução em um HoloLens 2 ou em um Windows Mixed Reality headsets. Para exibir também o conteúdo renderizado no computador remoto, por meio de uma cadeia de troca de uma janela, por exemplo, o Holographic Remoting fornece uma segunda extensão OpenXR chamada ```XR_MSFT_holographic_remoting_frame_mirroring``` . Certifique-se de também habilitar essa ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` extensão usando caso você queira usar essa funcionalidade.
 
 >[!IMPORTANT]
 >Para saber mais sobre a API de extensão do [](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) OpenXR de Remoção Holográfica, confira a especificação que pode ser encontrada no repositório [github de exemplos de Remo holográfica.](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)
@@ -206,6 +206,7 @@ O exemplo acima usa uma textura de cadeia de permuta DX11 e apresenta a janela i
 Se o aplicativo remoto estiver usando DX12, use XrRemotingFrameMirrorImageD3D12MSFT em vez de XrRemotingFrameMirrorImageD3D11MSFT.
 
 ## <a name="see-also"></a>Consulte Também
+* [Visão geral de remoção holográfica](holographic-remoting-overview.md)
 * [Como escrever um aplicativo personalizado do Holographic Remoting Player](holographic-remoting-create-player.md)
 * [Como estabelecer uma conexão segura com o Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Solução de problemas e limitações de remoção holográfica](holographic-remoting-troubleshooting.md)

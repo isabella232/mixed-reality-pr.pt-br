@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hologramas, comunicação remota holographic, renderização remota, renderização de rede, HoloLens, hologramas remotos, solução de problemas, ajuda, headset de realidade misturada, headset de realidade mista do Windows, headset da realidade virtual
-ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: d49f73f4cbe205e71cb2f76ab02769ddad5f3ed2
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223566"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184607"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Solução de problemas de comunicação remota do Holographic
 
@@ -104,6 +104,7 @@ atualmente, **não** há suporte para as seguintes APIs ao usar a comunicação 
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
 ## <a name="see-also"></a>Consulte Também
+* [Visão geral da comunicação remota do Holographic](holographic-remoting-overview.md)
 * [Histórico de versões de comunicação remota do Holographic](holographic-remoting-version-history.md)
 * [escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs de Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)
 * [Escrevendo um aplicativo remoto de comunicação remota do Holographic usando APIs do OpenXR](holographic-remoting-create-remote-openxr.md)

@@ -1,42 +1,42 @@
 ---
-title: Tabela periódica dos elementos 2.0 para HoloLens 2
-description: Tabela periódica dos elementos é um aplicativo de exemplo atualizado para HoloLens entrada de acompanhamento de mão e acompanhamento ocular totalmente articulado do 2.
+title: tabela periódica dos elementos 2,0 para HoloLens 2
+description: a tabela periódica dos elementos é um aplicativo de exemplo atualizado para o controle de mão totalmente articulado de HoloLens 2 e a entrada de controle de olho.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
-keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, Realidade Misturada Toolkit, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, OpenXR, Open XR, Unity
-ms.openlocfilehash: ccfd443bb103f6ac051de84d3a321f3ffd5be2f5bafdc6479e9f67a03771d386
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+keywords: Windows Mixed Reality, design, aplicativo de exemplo, controles, MRTK, realidade misturada Toolkit, Unity, aplicativos de amostra, aplicativos de exemplo, software livre, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade mista do Windows, headset de realidade virtual, OpenXR, open XR, Unity
+ms.openlocfilehash: 1c9879872e80ebef3ea51cf3aa7dd4d349327cdf
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905695"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>Tabela periódica dos elementos 2.0
-![Tabela de período do aplicativo Elements](../images/MRDL_PeriodicTable.jpg)
+![Tabela de período do aplicativo de elementos](../images/MRDL_PeriodicTable.jpg)
 
 >[!NOTE]
->Este artigo aborda um exemplo exploratório que criamos nos [Laboratórios](https://github.com/Microsoft/MRDesignLabs_Unity)de Design de Realidade Misturada, um local em que compartilhamos nossos aprendizados e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e código relacionados ao design evoluirão à medida que fazemos novas descobertas.
+>Este artigo discute um exemplo exploratório que criamos nos laboratórios de [design de realidade misturada](https://github.com/Microsoft/MRDesignLabs_Unity), um lugar onde compartilhamos nossas aprendeções e sugestões para o desenvolvimento de aplicativos de realidade misturada. Nossos artigos e códigos relacionados ao design irão evoluir à medida que fizermos novas descobertas.
 
-[A Tabela Periódica dos Elementos é](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) um aplicativo de exemplo de código aberto dos Laboratórios de Design de Realidade Misturada da Microsoft. O aplicativo foi originalmente projetado para HoloLens headset imersivo e de primeira geração em 2015 para demonstrar como criar uma experiência de ponta a ponta usando os blocos de construção do MRTK. Para aproveitar totalmente o novo acompanhamento de mão articulado e a entrada de acompanhamento ocular HoloLens 2, o aplicativo foi atualizado usando o MRTK v2. 
+[A tabela periódica dos elementos](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) é um aplicativo de exemplo de código-fonte aberto dos laboratórios de design de realidade misturada da Microsoft. o aplicativo foi originalmente projetado para HoloLens 1º de volta e o headset de imersão de 2015 para demonstrar como criar uma experiência de ponta a ponta usando os blocos de construção do MRTK. para aproveitar totalmente o novo controle de mão articulado e entrada de acompanhamento de olho no HoloLens 2, o aplicativo foi atualizado usando o MRTK v2. 
 
 ## <a name="demo-video"></a>Vídeo de demonstração 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
 
-Gravado com HoloLens 2 usando Captura de Realidade Misturada
+registrado com HoloLens 2 usando a captura de realidade misturada
 
 ## <a name="download-the-app-package-from-github"></a>Baixe o pacote do aplicativo do GitHub
-Confira a página <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**Versão**</a>no GitHub.
+Faça check-out da página de <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**lançamento**</a>em github.
 
-## <a name="upgrading-the-project-for-hololens-2-with-mrtk"></a>Atualizando o projeto para o HoloLens 2 com o MRTK
-Você pode encontrar HoloLens de portação 2 do artigo: Trazendo a tabela periódica do aplicativo Elements para HoloLens 2 com o <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **MRTK v2 (2019)**</a>
+## <a name="upgrading-the-project-for-hololens-2-with-mrtk"></a>atualizando o projeto para o HoloLens 2 com MRTK
+você pode encontrar a história de porta HoloLens 2 do artigo: <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **colocando a tabela periódica do aplicativo de elementos em HoloLens 2 com MRTK v2 (2019)**</a>
 
 ## <a name="openxr"></a>OpenXR 
-Leia uma história sobre como atualizar o projeto tabela periódica para o pipeline do Unity 2020 + OpenXR: Atualizando o <a href="https://dongyoonpark.medium.com/updating-mrtk-mixed-reality-project-to-openxr-unity-2020-periodic-table-of-the-elements-4cf55b0479a4" target="_blank"> **mrtk mixed reality Project para OpenXR+Unity 2020: Tabela periódica dos elementos para HoloLens 2 (2021)**</a>
+leia uma história sobre como atualizar o projeto de tabela periódica para o pipeline do Unity 2020 + OpenXR: <a href="https://dongyoonpark.medium.com/updating-mrtk-mixed-reality-project-to-openxr-unity-2020-periodic-table-of-the-elements-4cf55b0479a4" target="_blank"> **atualizando a realidade mista do MRTK Project para OpenXR + Unity 2020: tabela periódica dos elementos para HoloLens 2 (2021)**</a>
 
-## <a name="design-story"></a>História de design 
-Confira a história de design na Tabela Periódica do aplicativo Elementos: Tabela [ **Periódica dos Elementos 1.0**](periodic-table-of-the-elements.md)
+## <a name="design-story"></a>História do design 
+Confira a história de design na tabela periódica do aplicativo de elementos: [ **tabela periódica dos elementos 1,0**](periodic-table-of-the-elements.md)
 
 ## <a name="about-the-author"></a>Sobre o autor
 

@@ -1,17 +1,17 @@
 ---
 title: Arquivo do emulador do HoloLens
-description: Mantenha-se atualizado na lista arquivada de builds lançados para os Microsoft HoloLens(1ª geração) e HoloLens 2 Emuladores.
+description: Mantenha-se atualizado sobre a lista arquivada de builds lançados para o Microsoft HoloLens(1ª geração) e HoloLens 2 Emuladores.
 author: hamalawi
 ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versões, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual, arquivo morto
-ms.openlocfilehash: ca5338a0104c5551d96cb7ea4d7dfef3e38432c14dc75ee41a32874e71f1fb01
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f8c76ef8f7228f0fe4602c6df40754b3ba50c2d8
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905679"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 Emulator arquivos
 
@@ -19,9 +19,11 @@ HoloLens Emulator (primeira geração) e HoloLens 2 Emulator builds são instala
 
 |  Build |  Data de lançamento |  Observações |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.20348.1014](https://go.microsoft.com/fwlink/?linkid=2169418) | 10 de agosto de 2021 | Windows Holographic, versão 21H1 Atualização de agosto de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.19041.1161](https://go.microsoft.com/fwlink/?linkid=2169166) | 10 de agosto de 2021 | Windows Holographic, versão 20H2 Atualização de agosto de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator build 10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | 13 de julho de 2021 | Windows Holographic, versão 21H1 Atualização de julho de 2021. <br> Ao usar o HoloLens 2 Emulator em um computador com adaptadores gráficos integrados e discretos, o emulador poderá, na maioria dos casos, habilitar a aceleração de elementos gráficos de hardware, embora possa usar o adaptador integrado menos poderoso. Anteriormente, a aceleração de hardware não podia ser habilitada, geralmente relatando uma falha gráfica com o Código 43. Em alguns casos, o emulador não inicializaria com êxito, mas agora será. <br> Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator build 10.0.19041.1157](https://go.microsoft.com/fwlink/?linkid=2167735) | 13 de julho de 2021 | Windows Holographic, versão 20H2 Atualização de julho de 2021.  <br> Ao usar o HoloLens 2 Emulator em um computador com adaptadores gráficos integrados e discretos, o emulador poderá, na maioria dos casos, habilitar a aceleração de elementos gráficos de hardware, embora possa usar o adaptador integrado menos poderoso. Anteriormente, a aceleração de hardware não podia ser habilitada, geralmente relatando uma falha gráfica com o Código 43. Em alguns casos, o emulador não inicializaria com êxito, mas agora será. <br> Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
-|  [HoloLens 2 Emulator build 10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 8 de junho de 2021 | Windows Holographic, versão 21H1 atualização de junho de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 8 de junho de 2021 | Windows Holographic, versão 21H1 Atualização de junho de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1154](https://go.microsoft.com/fwlink/?linkid=2165269) | 8 de junho de 2021 | Windows Holographic, versão 20H2 Atualização de junho de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.20346.1002](https://go.microsoft.com/fwlink/?linkid=2162581) | 11 de maio de 2021 | Windows Holographic, versão 21H1 Atualização de maio de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1146](https://go.microsoft.com/fwlink/?linkid=2162751) | 11 de maio de 2021 | Windows Holographic, versão 20H2 Atualização de maio de 2021.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
@@ -38,8 +40,8 @@ HoloLens Emulator (primeira geração) e HoloLens 2 Emulator builds são instala
 |  [HoloLens 2 Emulator build 10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 10 de novembro de 2020 | Windows Holographic, versão 1903 Atualização de novembro de 2020.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1124](https://go.microsoft.com/fwlink/?linkid=2145829) | 13 de outubro de 2020 | Windows Holographic, versão 2004 atualização de outubro de 2020.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2145828) | 13 de outubro de 2020 | Windows Holographic, versão 1903 atualização de outubro de 2020.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
-|  [HoloLens 2 Emulator build 10.0.19041.1117](https://go.microsoft.com/fwlink/?linkid=2141987) | 07 de setembro de 2020 | Windows Holographic, versão 2004 Atualização de setembro de 2020.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
-|  [HoloLens 2 Emulator build 10.0.18362.1079](https://go.microsoft.com/fwlink/?linkid=2141985) | 07 de setembro de 2020 | Windows Holographic, versão 1903 Atualização de setembro de 2020.  Para ver as HoloLens 2, confirahttps://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator criar 10.0.19041.1117](https://go.microsoft.com/fwlink/?linkid=2141987) | 07 de setembro de 2020 | Windows Holographic, versão 2004 de setembro 2020 atualização.  para ver as notas de versão gerais do HoloLens 2, consultehttps://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator criar 10.0.18362.1079](https://go.microsoft.com/fwlink/?linkid=2141985) | 07 de setembro de 2020 | Windows Holographic, versão 1903 de setembro 2020 atualização.  para ver as notas de versão gerais do HoloLens 2, consultehttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator criar 10.0.19041.1113](https://go.microsoft.com/fwlink/?linkid=2138219) | 11 de agosto de 2020 | Windows Holographic, versão 2004 agosto 2020 atualização.  para ver as notas de versão gerais do HoloLens 2, consultehttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator criar 10.0.18362.1074](https://go.microsoft.com/fwlink/?linkid=2138317) | 11 de agosto de 2020 | Windows Holographic, versão 1903 agosto 2020 atualização.  para ver as notas de versão gerais do HoloLens 2, consultehttps://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator criar 10.0.19041.1109](https://go.microsoft.com/fwlink/?linkid=2135188) | 14 de julho de 2020 | Windows Holographic, versão 2004 de julho 2020 atualização.  para ver as notas de versão gerais do HoloLens 2, consultehttps://docs.microsoft.com/hololens/hololens-release-notes |
@@ -75,4 +77,4 @@ HoloLens Emulator (primeira geração) e HoloLens 2 Emulator builds são instala
 
 * [Instalar as ferramentas](../../develop/install-the-tools.md)
 * [Usando o emulador do HoloLens](using-the-hololens-emulator.md)
-* [Entrada avançada HoloLens emulador e simulador de realidade misturada](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
+* [entrada do emulador de HoloLens avançado e do simulador de realidade misturada](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realidade misturada, desenvolvimento, MRTK, XRSDK, XR SDK
-ms.openlocfilehash: 1560188d1a69f0083940a37da8c378691ee75a9d569c2c5088e0e3f614a44858
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 681352ff854598ab34bd9521b46ae9f4e6f42f02
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115188212"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905755"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Introdução ao SDK do MRTK e do XR
 
@@ -18,7 +18,7 @@ O XR SDK é o [novo pipeline XR do Unity no Unity 2019,3 e posterior](https://bl
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-para começar com a realidade misturada Toolkit, siga [as etapas fornecidas](../install-the-tools.md#importing-the-mixed-reality-toolkit) para adicionar o MRTK a um projeto.
+para começar com a realidade misturada Toolkit, siga [as etapas fornecidas](/windows/mixed-reality/develop/install-the-tools#importing-the-mixed-reality-toolkit) para adicionar o MRTK a um projeto.
 
 ## <a name="configuring-unity-for-the-xr-sdk-pipeline"></a>Configurando o Unity para o pipeline do SDK do XR
 
@@ -197,7 +197,7 @@ como
 
 se você estiver usando perfis de mapeamento de controlador personalizado, abra um deles e execute o item de menu Toolkit da realidade misturada-> utilitários-> Update-> controller mappings para garantir que os novos tipos de controlador SDK do XR sejam definidos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Introdução ao desenvolvimento do AR no Unity](https://docs.unity3d.com/Manual/AROverview.html)
 * [Introdução ao desenvolvimento VR no Unity](https://docs.unity3d.com/Manual/VROverview.html)
