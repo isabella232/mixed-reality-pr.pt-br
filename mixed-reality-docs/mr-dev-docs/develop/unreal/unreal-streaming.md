@@ -2,22 +2,24 @@
 title: Streaming no Unreal
 description: Saiba como transmitir seus aplicativos Unreal para o HoloLens 2, incluindo opções de linha de comando e limitações de streaming.
 author: sw5813
-ms.author: suwu
-ms.date: 12/7/2020
+ms.author: v-vtieto
+ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturada, streaming, PC, comunicação remota do aplicativo holográfico, player de comunicação remota holográfica, documentação, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 4b3be99f699c7c1d40d3ea98aacecde6f60e4d2db759448f84c820a43d89bb0a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218848"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184629"
 ---
 # <a name="streaming-in-unreal"></a>Streaming no Unreal
+
+Às vezes, "streaming" é chamado de "comunicação remota holográfica". Para saber mais, confira [Visão geral de comunicação remota holográfica](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 O streaming de um computador para o HoloLens fornece duas vantagens principais: 
 * Ele permite que o aplicativo de realidade misturada aproveite a capacidade computacional dos seus computadores. 
