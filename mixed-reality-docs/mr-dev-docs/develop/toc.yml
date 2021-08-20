@@ -220,7 +220,7 @@
           href: unity/spatial-sound-in-unity.md
     - name: Recursos avançados
       items:
-        - name: Câmera de foto/vídeo no Unity
+        - name: Câmera de foto e vídeo
           href: unity/locatable-camera-in-unity.md
         - name: Ponto de foco
           href: unity/focus-point-in-unity.md
@@ -234,6 +234,8 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Interoperabilidade nativa da Realidade Misturada no Unity
           href: unity/unity-xrdevice-advanced.md
+        - name: Usar recursos do PC para ligar o aplicativo
+          href: unity/use-pc-resources.md
         - name: Como usar o Vuforia
           href: unity/vuforia-development-overview.md
     - name: VR imersiva
@@ -266,8 +268,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Configurações recomendadas do Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Visualizar seu trabalho com a comunicação remota holográfica
-          href: unity/holographic-remoting-in-unity.md
+        - name: Visualizar e depurar seu aplicativo com a comunicação remota holográfica
+          href: unity/preview-and-debug-your-app.md
     - name: Soluções do Visual Studio
       items:
         - name: Como exportar e criar uma solução do Visual Studio do Unity
@@ -452,21 +454,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Comunicação remota holográfica
       items:
-        - name: Visão geral
+        - name: Visão geral da Comunicação remota holográfica
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: Player de comunicação remota holográfica
+        - name: O player de Comunicação remota holográfica
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Como criar um aplicativo remoto de comunicação remota holográfica
+        - name: Como escrever um aplicativo remoto de Comunicação remota holográfica (C++)
           items:
             - name: API do HolographicSpace
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: API do OpenXR
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Como escrever um aplicativo personalizado do Holographic Remoting Player
+        - name: Como escrever um aplicativo player de Comunicação remota holográfica personalizado (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Canais de dados personalizados de comunicação remota holográfica
+        - name: Canais de dados personalizados de Comunicação remota holográfica (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Conexão segura com a comunicação remota holográfica
+        - name: Conexão segura com a Comunicação remota holográfica (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Solução de problemas e limitações
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
