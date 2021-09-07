@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/7/2021
 ms.topic: article
 keywords: Unity, âncoras espaciais, repositório de ancoragem, HoloLens, headset de realidade misturada, headset de realidade mista do windows, headset de realidade virtual, ferramentas de bloqueio mundial, hologramas
-ms.openlocfilehash: 34ef74ab968bff04188b1010eb4c863fd73d76ee6b1dd8a0bd89c7d4232a2be9
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1de3571d0ad43308acad459021f2c2e9a1a6e1e7
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208826"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244308"
 ---
 # <a name="world-locking-and-spatial-anchors-in-unity"></a>Bloqueios mundiais e âncoras espaciais no Unity
 
@@ -33,12 +33,13 @@ As **ferramentas de bloqueio mundial** oferecem o melhor dos dois mundos, estabi
 
 ## <a name="choosing-your-world-locking-approach"></a>Escolhendo sua abordagem de bloqueio mundial
 
-* **Nossa recomendação** é usar as **ferramentas de bloqueio mundial** para todas as suas necessidades de posicionamento de holograma. 
+* Recomendamos que você use **ferramentas de bloqueio mundial** para todas as suas necessidades de posicionamento de holograma.
     * As ferramentas de bloqueio Mundial fornecem um sistema de coordenadas estável que minimiza as inconsistências visíveis entre marcadores virtuais e do mundo real. Em outras palavras, o mundo de ti bloqueia toda a cena com um pool compartilhado de âncoras, em vez de bloquear cada grupo de objetos com a própria âncora individual do grupo.
+    * As ferramentas de bloqueio mundial manipulam automaticamente toda a criação e o gerenciamento de âncoras espaciais internamente. Você não precisa interagir com **ARAnchorManager** ou **WorldAnchor** para manter seus hologramas protegidos pelo mundo.
 * **para o Unity 2019/2020 usando OpenXR ou o plug-in Windows XR**, você precisa usar **ARAnchorManager**
 * **Para versões mais antigas do Unity ou** projetos de WSA, você precisa usar o **WorldAnchor**
 
-## <a name="setting-up-world-locking"></a>Configurando o bloqueio mundial 
+## <a name="setting-up-world-locking"></a>Configurando o bloqueio mundial
 
 [!INCLUDE[](includes/world-locking/world-locking-setup.md)]
 
@@ -51,11 +52,9 @@ As **ferramentas de bloqueio mundial** oferecem o melhor dos dois mundos, estabi
 
 [!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-## <a name="sharing-coordinate-spaces"></a>Compartilhando espaços de coordenadas 
+## <a name="sharing-coordinate-spaces"></a>Compartilhando espaços de coordenadas
 
 Se você quiser compartilhar um espaço de coordenadas do mundo bloqueado, Confira nossa [documentação abrangente de experiência compartilhada](shared-experiences-in-unity.md).
-
-Observe que as âncoras espaciais do Azure ainda não têm suporte diretamente nas ferramentas de bloqueio mundial e, portanto, experiências compartilhadas exigirão que você crie manualmente âncoras espaciais.
 
 ## <a name="next-development-checkpoint"></a>Próximo ponto de verificação de desenvolvimento
 

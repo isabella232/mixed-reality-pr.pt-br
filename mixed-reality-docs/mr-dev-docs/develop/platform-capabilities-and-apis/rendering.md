@@ -6,14 +6,14 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: renderização, holograma
-ms.openlocfilehash: d01a5911ad8b479197bd38e8ed7825feef1f69dc51d2c2dc2f8e500e93880955
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 5bd06b9ca521e489a8944a1813b735a0fe1d60a5
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193662"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244229"
 ---
-# <a name="rendering"></a>Renderização
+# <a name="holographic-rendering"></a>Renderização de Holographic
 
 A renderização de Holographic permite que seu aplicativo desenhe um holograma em um local preciso no mundo todo, seja precisamente colocado no mundo físico ou em um realm que você criou. [Hologramas](../../discover/hologram.md) são objetos compostos de som e luz. A renderização permite que seu aplicativo adicione a luz.
 

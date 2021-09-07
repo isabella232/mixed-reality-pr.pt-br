@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 047a77259d78ba8ea68002a5142080971900e305
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208828"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244311"
 ---
 # <a name="world-locking-tools-recommended"></a>[Ferramentas de bloqueio Mundial (recomendado)](#tab/wlt)
 
@@ -17,7 +17,7 @@ Recomendamos instalar as ferramentas de bloqueio mundial usando a nova ferrament
 
 ### <a name="automated-setup"></a>Configuração automatizada
 
-quando seu projeto estiver pronto, execute o utilitário configurar cena de **realidade misturada Toolkit > utilitários > World lock Tools**:
+Quando seu projeto estiver pronto, execute o utilitário configurar cena de **realidade misturada > World Lock Tools**:
 
 ![editor Unity com realidade misturada Toolkit menu selecionado](../../images/world-locking-configuration-img-01.jpeg)
 

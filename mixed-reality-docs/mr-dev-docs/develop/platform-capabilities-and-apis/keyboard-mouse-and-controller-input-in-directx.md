@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, teclado, mouse, controlador de jogo, xbox controller, HoloLens, desktop, passo a passos, código de exemplo
-ms.openlocfilehash: 2e83fa0a14a24eb98001c7dc88af062202a2ef9a5eee7cd53e9702dbe4eedc8e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e7ae65e660fe0348205fabc1c292328912fb1cdc
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115192020"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244170"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Teclado, mouse e entrada do controlador no DirectX
 
@@ -21,7 +21,7 @@ ms.locfileid: "115192020"
 teclados, mouses e controladores de jogos podem ser formas úteis de entrada para dispositivos Windows Mixed Reality. Bluetooth teclados e mouses têm suporte no HoloLens, para uso com a depuração do aplicativo ou como uma forma alternativa de entrada. o Windows Mixed Reality também dá suporte a headsets de imersão conectados a PCs – onde os mouses, teclados e controladores de jogos têm sido historicamente a norma.
 
 para usar a entrada de teclado no HoloLens, emparelhe um Bluetooth teclado para seu dispositivo ou use a entrada virtual por meio do Portal do dispositivo Windows. para usar a entrada de teclado ao utilizar um Windows Mixed Reality headset de imersão, atribua o foco de entrada à realidade mista, colocando no dispositivo ou usando a combinação de teclado Windows chave + Y. tenha em mente que os aplicativos destinados a HoloLens devem fornecer funcionalidade sem esses dispositivos conectados.
-
+<!--Unity Note: the paragraph below explains that the article provides C++ code snippets. -->
 >[!NOTE]
 >Os trechos de código neste artigo demonstram atualmente o uso de C++/CX em vez de c++/WinRT compatível com C + +17, conforme usado no [modelo de projeto do C++ Holographic](../native/creating-a-holographic-directx-project.md).  Os conceitos são equivalentes a um projeto/WinRT do C++, embora você precise converter o código.
 

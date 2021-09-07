@@ -1,22 +1,24 @@
 ---
-ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2ab12da2da926d906a5ae57868f152ecc2b13d90
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208827"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244262"
 ---
 # <a name="world-locking-tools-recommended"></a>[World Locking Tools (recomendado)](#tab/wlt)
 
-Por padrão, as Ferramentas de Bloqueio Mundial restaurarão o sistema de coordenadas do Unity em relação ao mundo físico entre as sessões. Isso significa que, para que um holograma apareça no mesmo lugar no mundo físico depois de sair e executar novamente o aplicativo, o holograma só precisa ter a mesma Pose novamente.
+Por padrão, as Ferramentas de Bloqueio Mundial restaurarão o sistema de coordenadas do Unity em relação ao mundo físico em sessões em dispositivos que suportam persistência de âncoras espaciais locais. Para que um holograma apareça no mesmo lugar no mundo físico depois de sair e executar novamente o aplicativo, o holograma só precisa ter a mesma pose novamente.
 
 ![Componente de contexto de bloqueio mundial no inspetor do Unity](../../images/world-locking-tools-img-02.png)
 
 Se o aplicativo precisar de um  controle mais fino, o **Auto-Save** e o Carregamento Automático poderão ser desabilitados no inspetor e a persistência gerenciada de um script, conforme descrito na seção persistência da [documentação](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
 
+Atualmente, a persistência de âncora local só tem suporte na HoloLens de dispositivos. No entanto, no Android e no iOS, bem como no HoloLens, a persistência de espaços de coordenadas entre sessões, bem como o compartilhamento de espaços de coordenadas entre dispositivos, tem suporte por meio de uma integração com âncoras espaciais do Azure. Há uma grande quantidade de [informações adicionais e exemplos](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html) de uso das Ferramentas de Bloqueio Mundial em tandem com as Âncoras Espaciais do Azure.
+
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
-Uma API adicional chamada **XRAnchorStore** permite que as âncoras sejam persistentes entre as sessões. O XRAnchorStore é uma representação das âncoras salvas em um dispositivo. As âncoras podem ser persistentes de **ARAnchors** na cena do Unity, carregadas do armazenamento em novos **ARAnchors** ou excluídas do armazenamento.
+Uma API adicional chamada **XRAnchorStore** permite que as âncoras sejam persistentes entre as sessões. O XRAnchorStore é uma representação das âncoras salvas em um dispositivo. As âncoras podem ser persistentes de **ARAnchors** na cena do Unity, carregadas do armazenamento em **novos ARAnchors** ou excluídas do armazenamento.
 
 > [!NOTE]
 > Essas âncoras devem ser salvas e carregadas no mesmo dispositivo. O armazenamento de âncora entre dispositivos terá suporte por meio das Âncoras Espaciais do Azure em uma versão futura.
@@ -68,7 +70,7 @@ Para carregar o XRAnchorStore com **Unity 2020 e OpenXR,** use o método de exte
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
-Para carregar o XRAnchorStore com **o Unity 2019/2020** e o Plug-in XR do Windows , use o método de extensão no XRReferencePointSubsystem (Unity 2019) ou XRAnchorSubsystem (Unity 2020), o subsistema de um ARReferencePointManager/ARAnchorManager:
+Para carregar o XRAnchorStore com **o Unity 2019/2020** e o plug-in XR do Windows , use o método de extensão no XRReferencePointSubsystem (Unity 2019) ou XRAnchorSubsystem (Unity 2020), o subsistema de um ARReferencePointManager/ARAnchorManager:
 
 ```cs
 // Unity 2019 + Windows XR Plugin
@@ -99,7 +101,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Para ver um exemplo completo de âncoras persistentes/não persistentes, confira o script GameObject e AnchorsSample.cs de Exemplo de Âncoras -> AnchorsSample.cs na Cena de exemplo do plug-in OpenXR de Realidade [Misturada:](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)
+Para ver um exemplo completo de âncoras persistentes/não persistentes, confira o script GameObject e AnchorsSample.cs de exemplo de Âncoras -> AnchorsSample.cs na Cena de exemplo do plug-in OpenXR de Realidade [Misturada:](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)
 
 ![Captura de tela do painel de hierarquia aberto no Editor do Unity com o exemplo de âncoras realçada](../../images/openxr-features-img-04.png)
 
@@ -107,7 +109,7 @@ Para ver um exemplo completo de âncoras persistentes/não persistentes, confira
 
 # <a name="worldanchor"></a>[WorldAnchor](#tab/worldanchor)
 
-O **WorldAnchorStore** é a chave para criar experiências holográficas em que os hologramas permanecem em posições específicas do mundo real entre instâncias do aplicativo. Os usuários podem fixar hologramas individuais sempre que quiserem e encontrá-los posteriormente no mesmo local em vários usos de seu aplicativo.
+O **WorldAnchorStore é** a chave para criar experiências holográficas em que os hologramas permanecem em posições específicas do mundo real entre instâncias do aplicativo. Os usuários podem fixar hologramas individuais sempre que quiserem e encontrá-los posteriormente no mesmo local em vários usos de seu aplicativo.
 
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Classe:** *WorldAnchorStore*
@@ -195,6 +197,6 @@ for (int index = 0; index < ids.Length; index++)
 
 Você pode usar âncoras espaciais do <a href="/azure/spatial-anchors/overview" target="_blank">Azure</a> para criar uma âncora de nuvem durável de um WorldAnchor local, que seu aplicativo pode localizar em vários dispositivos HoloLens, iOS e Android, mesmo que esses dispositivos não estão presentes juntos ao mesmo tempo.  Como as âncoras de nuvem são persistentes, vários dispositivos ao longo do tempo podem ver o conteúdo renderizado em relação a essa âncora no mesmo local físico.
 
-Para começar a criar experiências compartilhadas no Unity, experimente os <a href="/azure/spatial-anchors/unity-overview" target="_blank">inícios rápidos</a>do Unity das Âncoras Espaciais do Azure de 5 minutos.
+Para começar a criar experiências compartilhadas no Unity, experimente os inícios rápidos do Unity das Âncoras Espaciais do <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure de</a>5 minutos.
 
 Quando estiver em execução com as Âncoras Espaciais do Azure, você poderá criar e <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">localizar âncoras no Unity.</a>
