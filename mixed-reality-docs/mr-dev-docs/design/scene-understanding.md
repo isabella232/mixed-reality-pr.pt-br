@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: compreensão da cena, mapeamento espacial, Windows Mixed Reality, Unity, headset de realidade misturada, headset da realidade mista do Windows, headset da realidade virtual, HoloLens, oclusão, SDK
-ms.openlocfilehash: 4dd5a2c96478e50b2e9eda35be22c15c1db07f88cfc4d25d753c4860a1283f55
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6d950fca4211aef659b1f957ca5e7135ac9764ac
+ms.sourcegitcommit: 6b8ccb881fbbdaa5119841eac528e29d7b49bd04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115213450"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "123557313"
 ---
 # <a name="scene-understanding"></a>Reconhecimento de cena
 
@@ -33,7 +33,7 @@ Este documento destina-se a fornecer uma visão geral do cenário e esclarecer a
 
 Este artigo só serve para apresentar a cena que entende o tempo de execução e os conceitos. Se você estiver procurando documentação sobre como desenvolver com a compreensão da cena, talvez esteja interessado nos seguintes artigos:
 
-[Visão geral do SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+[Visão geral do SDK de compreensão da cena](../develop/unity/scene-understanding-SDK.md)
 
 você pode baixar o aplicativo de exemplo de compreensão da cena no site de exemplo GitHub:
 
@@ -45,7 +45,7 @@ Se você não tiver um dispositivo e desejar acessar cenas de exemplo para exper
 
 ### <a name="sdk"></a>.
 
-Se você estiver procurando detalhes específicos sobre o desenvolvimento com a compreensão da cena, consulte a documentação [visão geral do SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) .
+Se você estiver procurando detalhes específicos sobre o desenvolvimento com a compreensão da cena, consulte a documentação [visão geral do SDK de compreensão da cena](../develop/unity/scene-understanding-SDK.md) .
 
 ### <a name="sample"></a>Amostra
 
@@ -101,7 +101,7 @@ A compreensão da cena fornece novas construções projetadas para simplificar o
 <br>
 
 
-Se seu aplicativo pretende colocar hologramas 2D ou 3D em estruturas rígidas de seu ambiente, a simplicidade e a conveniência do SceneQuads para posicionamento é preferível a computar essas informações da malha de [mapeamento espacial](spatial-mapping.md) . Para obter mais informações sobre este tópico, consulte a [referência do SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+Se seu aplicativo pretende colocar hologramas 2D ou 3D em estruturas rígidas de seu ambiente, a simplicidade e a conveniência do SceneQuads para posicionamento é preferível a computar essas informações da malha de [mapeamento espacial](spatial-mapping.md) . Para obter mais informações sobre este tópico, consulte a [referência do SDK de compreensão da cena](../develop/unity/scene-understanding-SDK.md)
 
 **Observação** Para o código de posicionamento herdado que depende da malha de mapeamento espacial, a malha de mapeamento espacial pode ser computada junto com SceneQuads definindo a configuração EnableWorldMesh. Se a API de compreensão da cena não atender aos requisitos de latência do seu aplicativo, recomendamos que você continue a usar a [API de mapeamento espacial](spatial-mapping.md#placement).
 
@@ -129,5 +129,5 @@ Além disso, o número total de superfícies retornado pelo mapeamento espacial 
 
 ### <a name="see-also"></a>Consulte Também
 
-* [SDK de compreensão da cena](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [SDK de compreensão da cena](../develop/unity/scene-understanding-SDK.md)
 * [Mapeamento espacial](spatial-mapping.md)
