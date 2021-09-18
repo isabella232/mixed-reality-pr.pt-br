@@ -1,62 +1,68 @@
 ---
 title: Usando o WebXR com Windows Mixed Reality
-description: aprenda as noções básicas de como usar e desenvolver para aplicativos WebXR executados em headsets de imersão Windows Mixed Reality.
+description: Conheça as noções básicas de como usar e desenvolver para aplicativos WebXR em execução Windows Mixed Reality headsets imersivos.
 author: yonet
-ms.author: ayyonet
-ms.date: 04/10/2020
+ms.author: v-vtieto
+ms.date: 09/16/2021
 ms.topic: article
-keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 vídeo, 360 vídeos, 360 photo, 360 fotos, 360 content, imersão web, immersiveweb, IW
-ms.openlocfilehash: e670135cb00db26082b73f8465390a686de6a3e946bbffa561f9df90085970f8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 vídeo, 360 vídeos, 360 fotos, 360 fotos, 360 conteúdo, web imersiva, immersiveweb, IW
+ms.openlocfilehash: f99637c79d1147d940bb6a72d68969c99a2482ec
+ms.sourcegitcommit: 645608f33d2d02625484c29586f42d21c442aaa9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216262"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127932519"
 ---
-# <a name="webxr-overview"></a>Visão geral do WebXR
+# <a name="javascript-development-with-webxr"></a>Desenvolvimento de JavaScript com WebXR
 
-## <a name="javascript-development"></a>Desenvolvimento de JavaScript
+O JavaScript é uma das linguagens de programação mais populares do mundo! Ele é simples, leve e amplamente usado na Web. Aproveite o poder de suas habilidades do JavaScript e da Web para criar experiências mais envolvente de Realidade Misturada.
 
-O JavaScript é uma das linguagens de programação mais populares do mundo! É simples, leve e amplamente usado na Web. Aproveite o poder de seu JavaScript e suas habilidades na Web para criar experiências de realidade misturadas mais atraentes.
+## <a name="mixed-reality-applications-on-the-web"></a>Aplicativos de Realidade Misturada na Web
 
-## <a name="mixed-reality-applications-on-the-web"></a>Aplicativos de realidade misturada na Web
+Os recursos de Realidade Misturada estão disponíveis na Web com o uso do [WebXR.](webxr-overview.md) Você pode ver o conteúdo de VR (realidade virtual) e AR (realidade aumentada) em um navegador compatível habilitado para WebXR sem instalar nenhum software ou plug-in adicional. Você pode usar esse mesmo navegador com um dispositivo físico como o HoloLens 2.
 
-Os recursos misturados da realidade estão disponíveis na Web pelo uso de [WebXR](webxr-overview.md). Você pode ver o VR (realidade virtual) e o conteúdo da Reality (AR) em um navegador compatível com WebXR habilitado, sem instalar nenhum software ou plug-ins adicionais. você pode usar esse mesmo navegador com um dispositivo físico como o HoloLens 2.
-
-A [**API do dispositivo WebXR**](https://www.w3.org/TR/webxr/) é para acessar os dispositivos **VR (realidade virtual)** e **ar (realidade aumentada)** , incluindo **sensores** e **exibições montadas no cabeçalho** na **Web**. a API do dispositivo WebXR está disponível no momento no Microsoft Edge, e o Chrome versão 79 e versões posteriores dão suporte a WebXR como padrão. Você pode verificar o status de suporte do navegador mais recente para WebXR em [caniuse.com](https://caniuse.com/#search=webxr).
+A [**API de Dispositivo WebXR**](https://www.w3.org/TR/webxr/) é para acessar dispositivos de VR  **(realidade virtual)** e **AR (realidade** aumentada), incluindo sensores e exibições **montadas** com a cabeça na **Web.** Atualmente, a API do dispositivo WebXR está disponível no Microsoft Edge e Chrome versão 79 e versões posteriores dá suporte ao WebXR como padrão. Você pode verificar o status de suporte mais recente do navegador para WebXR [em caniuse.com](https://caniuse.com/#search=webxr).
 
 > [!NOTE]
-> O **WebVR** foi preterido e não está disponível nos navegadores atuais, portanto, ele não deve ser usado para nenhum novo desenvolvimento. Você precisará migrar todas as implementações de **WebVR** existentes para o **WebXR**.
+> **O WebVR** foi preterido e não está disponível em navegadores atuais, portanto, ele não deve ser usado para nenhum novo desenvolvimento. Você precisará migrar todas as implementações **webVR** existentes para o **WebXR.**
 
-### <a name="viewing-webxr"></a>Exibindo WebXR
+### <a name="viewing-webxr"></a>Exibindo o WebXR
 
-você pode exibir WebXR experinces em [Windows Mixed Reality e a nova realidade do Microsoft Edge e do](../../whats-new/new-microsoft-edge.md) [Firefox](https://mixedreality.mozilla.org/firefox-reality/).
-Para testar se o navegador dá suporte a WebXR, você pode navegar até [exemplos de WebXR](https://immersive-web.github.io/webxr-samples/) no navegador
+Você pode exibir as experiência do WebXR [Windows Mixed Reality as](../../whats-new/new-microsoft-edge.md) novas Microsoft Edge [e Firefox Reality.](https://mixedreality.mozilla.org/firefox-reality/)
+Para testar se o navegador dá suporte ao WebXR, você pode navegar até [Exemplos do WebXR](https://immersive-web.github.io/webxr-samples/) em seu navegador
 
-## <a name="what-can-i-use-to-develop-immersive-web-experiences"></a>O que posso usar para desenvolver experiências de imersão na Web?
+## <a name="what-can-i-use-to-develop-immersive-web-experiences"></a>O que posso usar para desenvolver experiências imersivas na Web?
 
-A lista a seguir mostra as estruturas e APIs do JavaScript para a criação de experiências de imersão que atualmente dominam o mercado e são amplamente aceitas e adotadas por desenvolvedores JavaScript de realidade misturada:
+A lista a seguir mostra as apIs e estruturas JavaScript para criar experiências imersivas que atualmente dominam o mercado e são amplamente aceitas e adotadas por desenvolvedores javaScript de Realidade Misturada:
 
 |  |  |
 | --- | --- |
-|[**Babylon.js**](https://doc.babylonjs.com/)<br/><br/> O Babylon é um mecanismo 3D de JavaScript que facilita o desenvolvimento de conteúdo 3D e de aplicativos de imersão. Antes de começar a usar aplicativos de imersão, é recomendável aprender os conceitos básicos do desenvolvimento de Babylon.js.<br/><br/>-Saiba como criar aplicativos 3D com babylon.js [introdução](https://doc.babylonjs.com/start).<br/>-Brincar com exemplos 3D e seu código-fonte usando babylon.js [playground](https://doc.babylonjs.com/examples/)<br/>-Aprofunde-se no [WebXR](https://doc.babylonjs.com/divingDeeper/webXR)<br/>-Saiba como começar com nossos tutoriais [criar seu primeiro aplicativo "Olá, mundo!"](tutorials/babylonjs-webxr-helloworld/introduction-01.md)|![Logotipo do BabylonJS](images/babylon.js.example.png) |
-|[**Um quadro**](https://aframe.io/) <br/><br/>Um quadro é uma estrutura de JavaScript declarativa para começar com a realidade virtual na Web. Confira a [documentação de um quadro](https://aframe.io/docs/1.2.0/introduction/) para saber mais. |![Um quadro](images/a-frame.example.png)  |
-|[**Three.js**](https://threejs.org) <br/><br/>Three.js é uma biblioteca 3D popular para a criação de experiências de imersão. Saiba mais sobre [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) na página de documentação e explorando [exemplos](https://threejs.org/examples/#webgl_animation_cloth). |![Three.js](images/three.js.example.png)  |
-|[**WebGL**](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)  <br/><br/>Você pode acessar as APIs do dispositivo WebXR diretamente usando APIs do WebGL. WebGL (Web Graphics Library) é uma API de JavaScript para renderizar gráficos interativos 3D e 2D de alto desempenho em qualquer navegador da Web compatível sem o uso de plug-ins. |![WebGL](images/webgl.example.png)  |
+|[**Babylon.js**](https://doc.babylonjs.com/)<br/><br/> O Apple é um mecanismo 3D javaScript que facilita o desenvolvimento de conteúdo 3D e aplicativos imersivos. Antes de começar a usar aplicativos imersivos, recomendamos aprender os conceitos básicos do Babylon.js desenvolvimento.<br/><br/>– Saiba como criar aplicativos 3D com o babylon.js [De início.](https://doc.babylonjs.com/start)<br/>- Reproduzir com exemplos 3D e seu código-fonte usando babylon.js [Playground](https://doc.babylonjs.com/examples/)<br/>- Aprofunde-se [no WebXR](https://doc.babylonjs.com/divingDeeper/webXR)<br/>– Saiba como começar a usar nossos tutoriais Criar seu primeiro aplicativo ["Olá, Mundo!"](tutorials/babylonjs-webxr-helloworld/introduction-01.md)|![Logotipo do AppleJS](images/babylon.js.example.png) |
+|[**Quadro A**](https://aframe.io/) <br/><br/>Um quadro é uma estrutura declarativa do JavaScript para começar a trabalhar com a Realidade Virtual na Web. Confira a [documentação do A-Frame](https://aframe.io/docs/1.2.0/introduction/) para saber mais. |![Quadro A](images/a-frame.example.png)  |
+|[**Three.js**](https://threejs.org) <br/><br/>Three.js é uma biblioteca 3D popular para criar experiências imersivas. Saiba mais sobre [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) na página de documentação e explorando [exemplos](https://threejs.org/examples/#webgl_animation_cloth). |![Three.js](images/three.js.example.png)  |
+|[**WebGL**](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)  <br/><br/>Você pode acessar as APIs de dispositivo WebXR diretamente usando APIs WebGL. WebGL (Web Graphics Library) é uma API JavaScript para renderizar gráficos 3D e 2D interativos de alto desempenho em qualquer navegador da Web compatível sem o uso de plug-ins. |![WebGL](images/webgl.example.png)  |
 
 ## <a name="see-also"></a>Consulte Também
 
 * [Visão geral do WebXR](webxr-overview.md)
-* [Especificação de API do dispositivo WebXR](https://immersive-web.github.io/webxr/)
-* [Documentação da API do dispositivo WebXR](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
-* [Exemplos de WebXR](https://immersive-web.github.io/webxr-samples/)
+* [Especificação da API de Dispositivo WebXR](https://immersive-web.github.io/webxr/)
+* [Documentação da API de Dispositivo WebXR](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
+* [Exemplos do WebXR](https://immersive-web.github.io/webxr-samples/)
 * [Immersiveweb.dev](https://immersiveweb.dev/)
-* [Usando Babylon.js para criar experiências de WebXR](https://doc.babylonjs.com/how_to/introduction_to_webxr)
-* [API WebGL](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
-* [API de gamepad](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) e [extensões de gamepad](https://w3c.github.io/gamepad/extensions.html)
+* [Usando Babylon.js para criar experiências webXR](https://doc.babylonjs.com/how_to/introduction_to_webxr)
+* [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
+* [Api do Gamepad](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) e [Extensões do Gamepad](https://w3c.github.io/gamepad/extensions.html)
 * [Windows Mixed Reality e o novo Microsoft Edge](../../whats-new/new-microsoft-edge.md)
-* [Manipulando o contexto perdido no WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
-* [Pointerlock](https://www.w3.org/TR/pointerlock/)
+* [Manipulando contexto perdido no WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
+* [Ponteiro de ponteiro](https://www.w3.org/TR/pointerlock/)
 * [glTF](https://www.khronos.org/gltf)
-* [Grupo de comunidades da Web de imersão](https://www.w3.org/community/immersive-web/)
-* [GitHub W3C da Web de imersão](https://github.com/immersive-web)
+* [Grupo de comunidade da Web imersivo](https://www.w3.org/community/immersive-web/)
+* [Github web imersivo W3C](https://github.com/immersive-web)
+
+## <a name="next-steps--tutorials"></a>Próximas etapas – Tutoriais
+
+> [!div class="nextstepaction"]
+> [Crie seu primeiro aplicativo WebXR usando Babylon.js](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [!div class="nextstepaction"]
+
+> [Criar um novo no WebXR usando Babylon.js](tutorials/babylonjs-webxr-piano/introduction-01.md)
