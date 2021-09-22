@@ -7,14 +7,19 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Modo de exibição Espectador, iPhone, iOS, iPad, OpenCV, câmera, ARKit, HoloLens, realidade misturada, MixedRealityToolkit, demonstração, gravar
-ms.openlocfilehash: 23f5dce85bdcd15e8950f5682814dec042bc604d7e983b17a5528949e51e844a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f30c745154056cda6b5ccf052efbbd0bb7f094ea
+ms.sourcegitcommit: 5d13ff165f4d08a3b028935fb39539a45a30f7e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190494"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779457"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Modo de exibição Espectador para o HoloLens e o HoloLens 2
+
+> [!WARNING]
+> A Microsoft vai preterir o exemplo Modo de exibição Espectador devido a incompatibilidades com a versão do pacote do SDK de Âncoras Espaciais do Azure em que o exemplo se baseia. Além disso, o exemplo poderá deixar de funcionar devido a outras alterações no ambiente do Unity à medida que os clientes mudarem para builds do LTS 2019 com suporte.
+>
+> Embora a Microsoft não esteja investindo recursos para resolver os problemas acima, existe a possibilidade de remover a funcionalidade de Âncoras Espaciais do Azure do exemplo e usar tecnologias como códigos QR para o alinhamento.   Se membros da comunidade enviarem PRs para resolver esses problemas, vamos revisá-los e aceitá-los por enquanto.
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
