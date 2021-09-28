@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicação remota, realidade misturada, desenvolvimento, introdução, recursos, novo projeto, emulador, documentação, guias, recursos, hologramas, desenvolvimento de jogos, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, OpenXR
-ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 90dfb113008e6f8b1162c068ebfc967ed74fd6b4
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115203413"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184662"
 ---
 # <a name="unreal-development-overview"></a>Visão geral do desenvolvimento com o Unreal
 
@@ -110,11 +110,9 @@ O desenvolvimento para realidade misturada vem com pontos de verificação de de
 | Acesso à câmera | 4.23 | ✔️ |
 | Códigos QR | 4.23 | ✔️ |
 | Áudio espacial | 4.23 | ✔️ |
-| Compatibilidade com tela Espectador para streaming | 4.24 |
 | LSR Planar por streaming | 4.24 |
 | [Aplicativos de exemplo](../features-and-samples.md) | 4.24 | ✔️ |
 | Exibição múltipla em dispositivos móveis: Desempenho alcança 60 quadros/s | 4.25 | ✔️ |
-| Renderização de 3ª câmera | 4.25 | ✔️ |
 | Streaming de um aplicativo da área de trabalho empacotado | 4.25.1 | ✔️ |
 | Âncoras Espaciais do Azure para HoloLens 2 | 4.25 | ✔️ |
 | Suporte a Ferramentas de Experiência de Usuário de Realidade Misturada | 4.25 | ✔️ |
