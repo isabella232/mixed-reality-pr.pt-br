@@ -2,16 +2,16 @@
 title: Windows Mixed Reality e o novo Microsoft Edge
 description: saiba mais sobre os novos Microsoft Edge para realidade misturada, incluindo o que esperar, atualizações a serem verificadas e problemas conhecidos.
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/04/2020
+ms.author: v-vtieto
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Edge, novo, imersão Web, Microsoft Edge, navegador, VR, 360, 360 vídeo, 360 Viewer, webxr, webvr
-ms.openlocfilehash: 51efc5c4d3afb4d46ba7722867514f740a9f60a4280652fdbd665134f83af23d
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: ca849f63d2a755639bedba68c47e419528006a6d
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218818"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148640"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>o novo Microsoft Edge para Windows Mixed Reality
 
@@ -81,7 +81,8 @@ os monitores virtuais agora serão alocados quando você tentar iniciar um aplic
 
 ### <a name="other-known-issues"></a>Outros problemas conhecidos
 
--   os sites abertos no Windows Mixed Reality serão perdidos quando o Portal da realidade misturada for fechado. o Microsoft Edge windows permanecerá em suas posições posicionadas na casa mistura de realidade.
-- As experiências de WebXR, incluindo a extensão do visualizador 360, podem não ser iniciadas corretamente em PCs com uma configuração de GPU híbrida. Você pode contornar esse problema habilitando um recurso de visualização no novo Microsoft Edge. Navegue até `edge://flags` , pesquise "várias GPU" e habilite o sinalizador chamado **WEBXR multi GPU support**.
 -   o áudio do Microsoft Edge windows não está espacial.
--   **corrigido na extensão do visualizador 360 versão 2.3.8**: abrir um vídeo 360 do YouTube no Windows Mixed Reality pode resultar na distorção do vídeo no headset. Reiniciar a borda deve atualizar invisivelmente a extensão do visualizador 360 para resolver esse problema. Você pode confirmar qual versão da extensão você tem digitando `edge://system/` na barra de endereços e selecionando o botão **expandir** ao lado de "extensões".
+
+## <a name="see-also"></a>Consulte Também
+
+* [Visão geral do WebXR](../develop/javascript/webxr-overview.md)

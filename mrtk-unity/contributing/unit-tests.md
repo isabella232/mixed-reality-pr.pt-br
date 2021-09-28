@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realidade Misturada, desenvolvimento, MRTK, UnitTest,
-ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 85c8a330d9af5b0d91c2b1b838ead7d10d97f981
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216252"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148641"
 ---
 # <a name="writing-and-running-tests"></a>Escrevendo e executando testes
 
@@ -41,13 +41,13 @@ Os testes também podem ser executados por um script [do PowerShell](/powershell
 Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018.4 (por exemplo, Unity 2018.4.26f1)
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018.4, saída de resultados para C:\playmode_test_out
+Execute os testes no projeto localizado em H:\mrtk.dev, com o Unity 2018.4, resultados de saída para C:\playmode_test_out
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
 Também é possível executar os testes de playmode várias vezes por meio do `run_repeat_tests.ps1` script. Todos os parâmetros usados no `run_playmode_tests.ps1` podem ser usados.
@@ -126,7 +126,7 @@ Novos testes de modo de reprodução podem [herdar BasePlayModeTests](xref:Micro
 Para criar um novo teste de modo de reprodução:
 
 * Navegue até Ativos > mrtk > testes > PlayModeTests
-* Clique com o botão direito do mouse em Criar > teste > script de teste do C#
+* Clique com o botão direito do mouse em Criar > teste > script de teste C#
 * Substitua o modelo padrão pelo esqueleto abaixo
 
 ```c#
@@ -221,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="edit-mode-tests"></a>Editar testes de modo
 
-Os testes de modo de edição são executados no modo de edição do Unity e podem ser adicionados na pasta  >    >  **EditModeTests** de Testes do MRTK no Toolkit misto.
+Os testes de modo de edição são executados no modo de edição do Unity e podem ser adicionados na pasta  >    >  **EditModeTests** de Testes do MRTK no Toolkit mixed reality.
 Para criar um novo teste, o seguinte modelo pode ser usado:
 
 ```c#
@@ -314,4 +314,4 @@ TestUtilities.InitializePlayspace();
 TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
-Consulte os documentos de API do e para obter mais métodos dessas classes util à medida que elas são estendidas regularmente enquanto novos testes são [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) adicionados ao MRTK.
+Consulte os documentos de API do e para obter mais métodos dessas classes util, pois elas são estendidas regularmente enquanto novos testes são [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) adicionados ao MRTK.
