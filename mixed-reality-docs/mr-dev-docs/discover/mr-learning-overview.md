@@ -2,17 +2,17 @@
 title: Visão geral do módulo de Realidade Misturada do Learn
 description: Fique atualizado com todos os módulos de Realidade Misturada disponível hospedados na plataforma Microsoft Learn.
 author: hferrone
-ms.author: jemccull
-ms.date: 11/30/2020
+ms.author: v-vtieto
+ms.date: 9/27/2021
 ms.topic: article
 keywords: realidade misturada, unity, tutorial, hololens, learn, headset de realidade misturada, headset do windows mixed reality, headset de realidade virtual, o que é a realidade virtual, o que é a realidade aumentada, MRTK, kit de ferramentas de realidade misturada, tradução de linguagem, Azure, serviços cognitivos do Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 595aad668e2ff2a1a91fc801981be1d004bc012f
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115204392"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148674"
 ---
 # <a name="mixed-reality-learn-overview"></a>Visão geral da Realidade Misturada no Learn
 
@@ -23,7 +23,7 @@ Quanto mais ferramentas você tem quando desenvolve para a Realidade Misturada, 
 Nossos módulos do Learn ajudam você se tornar proficiente no desenvolvimento de Realidade Misturada, oferecendo uma estrutura baseada em módulo para você começar a usar as principais ferramentas, como o Kit de Ferramentas de Realidade Misturada, o Unity e os serviços de Realidade Misturada do Azure. Conhecer o Olá, Mundo nunca foi tão fácil, já que criamos os Objetivos de Aprendizado e Pré-requisitos e ajustamos o tempo para as expectativas de conclusão, tudo isso em uma interface. 
 
 > [!div class="nextstepaction"]
-> [Introdução ao nosso roteiro de aprendizagem de Realidade Misturada](/learn/browse/?terms=mixed+reality)
+> [Navegar pelos módulos de Realidade Misturada do Learn](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Módulos gerais
 

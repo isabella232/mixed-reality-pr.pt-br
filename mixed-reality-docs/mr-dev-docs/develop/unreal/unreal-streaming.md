@@ -10,19 +10,19 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realidade misturad
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
-ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
+ms.openlocfilehash: 091f0876c37756fad47d2d78520adbd526aab24d
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122184629"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184612"
 ---
 # <a name="streaming-in-unreal"></a>Streaming no Unreal
 
 Às vezes, "streaming" é chamado de "comunicação remota holográfica". Para saber mais, confira [Visão geral de comunicação remota holográfica](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 O streaming de um computador para o HoloLens fornece duas vantagens principais: 
-* Ele permite que o aplicativo de realidade misturada aproveite a capacidade computacional dos seus computadores. 
+* Ele permite que o aplicativo de realidade misturada aproveite a capacidade computacional dos computadores. 
 * Ele ajuda a acelerar o tempo de iteração do desenvolvimento. 
 
 Para começar, baixe o [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) no seu dispositivo HoloLens. O Holographic Remoting Player permite o streaming direto do seu aplicativo para o player de comunicação remota no HoloLens por meio das seguintes fontes:
@@ -93,6 +93,9 @@ No Unreal 4.25.1 em diante, você pode transmitir seu aplicativo para um disposi
 
 > [!NOTE]
 > O nome do aplicativo nas configurações do projeto deverá ser usado automaticamente para criar o pacote do Windows. Se ele for diferente por algum motivo, use o nome do executável do Windows no prompt de comando.
+
+> [!NOTE]
+> Se o acompanhamento ocular não estiver funcionando ao transmitir de um executável empacotado, desabilite os outros plug-ins com rastreadores oculares com suporte para PC (exemplo: Magic Leap) ou execute o aplicativo na linha de comando com o argumento de acompanhamento ocular relevante (confira [opções de linha de comando](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
 
 Pressione ENTER e veja seu aplicativo começar a ser transmitido.
 
