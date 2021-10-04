@@ -1,124 +1,103 @@
 ---
-title: Visão geral do software e histórico de versões
-description: uma visão geral dos principais componentes de software para Windows Mixed Reality, headsets de imersão e seu histórico de versões.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+title: Visão geral do software e histórico de lançamento
+description: Uma visão geral dos principais componentes de software para Windows Mixed Reality, headsets imersivos e seu histórico de lançamento.
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
-keywords: Windows Mixed Reality, realidade mista, realidade Virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
+keywords: Windows Mixed Reality, Realidade Misturada, Realidade Virtual, VR, MR, componentes de software, histórico de lançamento, notas de versão, histórico de versão
 appliesto:
-- Windows 10
-ms.openlocfilehash: 51c13326d2ad8aebe164e64d0bfc380923a91d1be02cea840cec4addd062533f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: e20b2075e45620a7533dbb2d369d00e73b98f9c7
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115219722"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436623"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Visão geral do software de Realidade Misturada e histórico de versões
 
-## <a name="introduction-to-mixed-reality-software"></a>Introdução ao software de realidade misturada
+## <a name="introduction-to-mixed-reality-software"></a>Introdução ao software de Realidade Misturada
 
-Windows Mixed Reality consiste nos principais componentes de software a seguir:
+Windows Mixed Reality consiste nos seguintes principais componentes de software:
 
-1. **Portal de realidade misturada**, que fornece a principal experiência de Windows Mixed Reality
-    * no Windows 10 versões 1709 e 1803, o Portal de realidade misturada é um componente fundamental do sistema operacional Windows 10 atualizado por meio de Windows Update.
-    * no Windows 10 versão 1809 e mais recente, o Portal de realidade misturada é atualizado por meio do aplicativo Microsoft Store.
-2. O **pacote de recursos sob demanda da realidade misturada** (fod), baixado automaticamente e instalado durante a primeira execução do portal de realidade misturada. Mais informações sobre o pacote FOD podem ser encontradas [aqui](/windows/application-management/manage-windows-mixed-reality)
-3. o **driver do controlador de headset e de movimento da realidade mista**, também conhecido como driver de sensores de HoloLens, é o principal pacote de driver que permite que Windows Mixed Reality headsets trabalhem com Windows Mixed Reality. isso é baixado e instalado automaticamente por meio de Windows Update na primeira vez que o headset da realidade misturada está conectado e é atualizado regularmente por meio de Windows Update
-4. Os drivers de modelo do controlador de movimento da realidade misturada * contêm os modelos 3D dos controladores de movimento da realidade misturada e necessários para experiências de realidade misturada de terceiros. isso é baixado e instalado automaticamente por meio do Windows Update na primeira vez que os controladores de movimento da realidade misturada são emparelhados em seu PC e são atualizados por meio de Windows Update
-5. **Windows 10, a versão 1709 (a atualização do criador de outono) ou mais recente** contém OS principais componentes e tecnologias do sistema operacional que habilitam Windows Mixed Reality
+1. **Portal de Realidade Misturada**, que fornece a experiência Windows Mixed Reality principal
+    * Nas Windows 10 1709 e 1803, o Portal de Realidade Misturada é um componente fundamental do sistema operacional Windows 10 atualizado por meio da Windows Update.
+    * No Windows 10 versão 1809 e mais recente, o Portal de Realidade Misturada é atualizado por meio do Microsoft Store aplicativo.
+    * Na Windows 11 versão 21H2.
+2. O **FOD (pacote** de recursos sob demanda) da Realidade Misturada, baixado e instalado automaticamente durante a primeira Portal de Realidade Misturada da primeira vez. Mais informações sobre o pacote FOD podem ser encontradas [aqui](/windows/application-management/manage-windows-mixed-reality)
+3. O driver do **controlador** de movimento e headset de Realidade Misturada, também conhecido como driver HoloLens Sensors, é o pacote de driver principal que permite que Windows Mixed Reality headsets funcionem com Windows Mixed Reality. Isso é baixado e instalado automaticamente por meio do Windows Atualizar na primeira vez que o headset de Realidade Misturada é conectado e é atualizado regularmente por meio do Windows Update
+4. Os drivers de modelo do controlador de movimento **Realidade Misturada contêm os modelos 3D dos controladores de movimento de Realidade Misturada e necessários para experiências de Realidade Misturada de terceiros. Isso é baixado e instalado automaticamente por meio do Windows Atualizar na primeira vez que os controladores de movimento de Realidade Misturada são emparelhados com o computador e são atualizados por meio de Windows Update
+5. **Windows 10, a versão 1709 (a** Atualização do Fall Creator) ou mais recente contém os principais componentes e tecnologias do sistema operacional que permitem Windows Mixed Reality
 
-o uso de Windows Mixed Reality no SteamVR requer o seguinte software:
+Usar Windows Mixed Reality no SteamVR requer o seguinte software:
 
-6. **SteamVR**, desenvolvido e mantido pela válvula Corporation que habilita aplicativos de realidade virtual e jogos em fluxo. Encontre mais informações [aqui](https://go.microsoft.com/fwlink/?linkid=862788)
-7. o **Windows Mixed Reality para** o componente SteamVR, que une SteamVR com Windows Mixed Reality. mais informações sobre esse componente podem ser encontradas [na página Windows Mixed Reality para SteamVR](http://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)
+6. **O SteamVR**, desenvolvido e mantido pela Valve Corporation que permite aplicativos e jogos de realidade virtual no Steam. Encontre mais informações [aqui](https://go.microsoft.com/fwlink/?linkid=862788)
+7. O **Windows Mixed Reality para o componente SteamVR,** que faz a ponte do SteamVR com Windows Mixed Reality. Mais informações sobre esse componente podem ser [encontradas na página Windows Mixed Reality para SteamVR](http://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)
 
-gerenciando seu Windows Mixed Reality headset:
+Gerenciando seu Windows Mixed Reality headset:
 
-8. o **aplicativo do Device Companion**, desenvolvido e mantido por cada um dos fabricantes de headset, fornece uma rápida introdução ao seu Windows Mixed Reality headset. em fones de ouvido com recurso interno de Bluetooth, o aplicativo do Device Companion permite restaurar controladores de movimento para seus Bluetooth de fábrica. Alguns headsets (como o Samsung Odyssey e o Samsung Odyssey +) também usam o aplicativo do Device Companion para fornecer atualizações de firmware de headset do fabricante do headset. esse aplicativo é baixado automaticamente na primeira vez que o headset é conectado e pode ser encontrado no Menu iniciar Windows.
+8. O **Aplicativo De Dispositivos** Desempanhado, desenvolvido e mantido por cada um dos fabricantes de headset, fornece uma rápida introdução ao headset Windows Mixed Reality dispositivo. Em headsets com capacidade de Bluetooth interno, o aplicativo Device Companion permite restaurar controladores de movimento para seu emparelhamento de Bluetooth fábrica. Alguns headsets (como SamsungSeyy e Samsung Headsety+) também usam o Dispositivo Companion App para fornecer atualizações de firmware de headset do fabricante do headset. Esse aplicativo é baixado automaticamente na primeira vez que o headset é conectado e pode ser encontrado no menu Windows Iniciar.
 
-## <a name="windows-10-release-notes---may-2020"></a>notas de versão do Windows 10 – maio de 2020
+## <a name="windows-11-release-notes---october-2021"></a>Windows 11 notas de versão – outubro de 2021
 
-o **Windows 10 v2004 (atualização 2020 de maio)** inclui novos recursos para fones de ouvido Windows Mixed Reality (VR), como a capacidade de iniciar aplicativos Win32 na página inicial misturada de realidade. HoloLens (1º gen) está em manutenção a longo prazo (LTS), com atualizações de serviço a serem liberadas mensalmente.
+### <a name="infinite-expanse"></a>Expansão infinita
 
-atualizando para a versão mais recente do PC para fones de ouvido de Windows Mixed Reality imersiva (VR), abra **Configurações > atualizar & segurança** e selecione **verificar se há atualizações**. em um computador Windows 10, você também pode instalar manualmente o **Windows 10 pode 2020 atualização** usando a [ferramenta de criação de mídia Windows](https://www.microsoft.com/software-download/windows10).
+<img src="images\infinite-expanse-win11.png" alt="The Infinite Explanse environment">
 
-**versão mais recente do Desktop**: Windows 10 v2004 (10.0.19041.264)
+<br>
 
-### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>atualizações para Windows Mixed Reality headsets de imersão
+* Novo ambiente de home virtual para Windows Mixed Reality dispositivos que apresentam uma redução significativa no escopo e no tamanho, simplificados até o estágio singular, em vez daHouse mais rica em recursos. 
+* Criada com o desempenho em mente, a Expansão Infinita foi projetada para atender às solicitações de clientes de longa duração para um ambiente de casa virtual com menos uso de recursos que permite aos clientes obter o melhor desempenho de seus jogos e experiências. 
+* Esse novo ambiente de home virtual pode ser encontrado no Painel **de Pinos** **no** menu Locais. 
 
-#### <a name="introducing-the-new-microsoft-edge"></a>Apresentando o novo Microsoft Edge
+### <a name="steamvr-boot-with-mixed-reality-portal-launch"></a>Inicialização do SteamVR com Portal de Realidade Misturada inicialização
 
-como [anunciado anteriormente](/windows/mixed-reality/new-microsoft-edge), fizemos atualizações para dar melhor suporte ao uso do novo navegador Microsoft Edge em Windows Mixed Reality. o novo Microsoft Edge adota o Chromium projeto de software livre para criar melhor compatibilidade com a web para clientes e menos fragmentação da web para todos os desenvolvedores da web. Ele também dá suporte a WebXR, o novo padrão para a criação de experiências da Web de imersão para headsets de VR, no lugar de WebVR.
-
-#### <a name="improved-settings-for-wmr"></a>Configurações aprimoradas para WMR
-
-Graças aos seus comentários, adicionamos e esclarecemos as configurações na página de exibição do headset:
-
-* A **qualidade visual da minha página inicial** altera essas configurações afeta apenas o ambiente doméstico da realidade misturada (Cliff House e Skyloft):
-
-* **Ajuste o nível de detalhes e a qualidade dos efeitos na página inicial da realidade misturada** . isso altera parte da renderização que o utiliza em casa. Em particular, a qualidade visual de materiais diferentes (madeira, concreta e assim por diante) será dimensionada à medida que você alterar essa configuração de baixo para alto.
-
-* **Alterar a resolução da janela do aplicativo** -por padrão, a maioria das janelas 2D iniciadas na página inicial é iniciada com uma resolução de 720-p. Embora seja possível redimensioná-las manualmente & verticalmente, você também pode optar por fazer com que todas elas sejam iniciadas em 1080p em vez disso. Anteriormente, essa opção estava disponível como a opção muito alta (beta) em qualidade visual. Nós o dividimos adequadamente como uma configuração separada agora.
-
-* **Opções de experiência** – essas opções ajustam a experiência de realidade misturada para reduzir a carga em sistemas em que o hardware pode se esforçar para acompanhar uma leitura irrestrita de 90 fps. você pode habilitar ou desabilitar explicitamente essas configurações adicionais ou escolher deixar Windows decidir e permitir que nossa heurística continue decidindo quando ativar e desativar.
-
-* **Resolução** – se você tiver um headset de alta resolução como o HP, oferecemos suporte para executá-lo em sua resolução nativa ou em uma resolução reduzida por motivos de desempenho. Headsets anteriores, como o Samsung Odyssey e o Odyssey +, dão suporte apenas a uma única resolução, de modo que não é possível alterar essa configuração nesses headsets.
-
-* **taxa de quadros** -agora você pode definir manualmente a taxa de quadros da exibição do headset ou continuar a permitir que Windows use sua heurística para determinar se 60 hz ou 90 hz é mais apropriado.
-
-* **Calibragem** -como antes, você pode ajustar seu IPD (distância interpupillary) se houver suporte para o headset.
-
-* **Alternância de entrada** -Alterne o comportamento de alternância de foco de entrada (Win + Y) para ser automático (com base nos comentários do sensor de presença) ou manual.
-
-#### <a name="new-cortana-app"></a>novo aplicativo Cortana
-
-esta atualização para Windows inclui a versão mais recente do aplicativo Cortana, que atualmente é somente em inglês dos eua e não dá mais suporte a determinados comandos específicos de realidade misturada, como "tirar uma foto" e "fazer um vídeo". você pode usar o novo Cortana para iniciar aplicativos e ele também dá suporte a novos comandos com foco em produtividade, como "a minha próxima reunião?". ou "enviar um email para o <name> que estou executando atrasado".
+* Nova configuração disponível para iniciar automaticamente o SteamVR quando o WMR for lançado, permitindo que você ignore o espaço de residência do WMR e pule diretamente para o SteamVR.
+   * Essa nova configuração pode ser encontrada no aplicativo **Configurações** em Realidade Misturada > Inicialização e Área de Trabalho > **Inicialização Automática.**
     
-#### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>Atualizações adicionais disponíveis em 19041,546 (lançadas em outubro de 2020)
+### <a name="new-startup-experience-settings"></a>Novas configurações de experiência de inicialização
 
-esta atualização de serviço mensal da área de trabalho inclui as seguintes alterações para dispositivos Windows Mixed Reality: 
-* reduz distorções e aberrations em HMD (exibições montadas Windows Mixed Reality). 
-* adiciona suporte para futuros controladores HP Windows Mixed Reality motion. 
-* altera o comportamento da configuração de taxa de atualização de 90 Hz no Windows Mixed Reality para não voltar mais automaticamente para 60 Hz em determinados casos, quando 90 Hz não puder ser alcançado. 
-
-#### <a name="help-us-improve"></a>Ajude-nos a melhorar!
-
-Estamos continuamente procurando melhorar a compatibilidade.  se você achar que seu aplicativo Win32 clássico favorito não está se comportando corretamente enquanto estiver em Windows Mixed Reality, envie comentários por meio de nosso [Hub de comentários](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
+* Novas configurações disponíveis para definir melhor sua experiência de inicialização ideal aumentando o nível de controle sobre quando Portal de Realidade Misturada inicializa.
+* Agora você pode controlar se o Portal de Realidade Misturada inicia quando um dispositivo está conectado ou quando o sensor de presença é ativado, bem como controlar como o aplicativo da Área de Trabalho virtual é aberto.
+* Essas novas configurações podem ser encontradas no aplicativo **Configurações** em Realidade **Misturada > Inicialização e Área de Trabalho**
+    * Alterne para iniciar o MRP no plug-in HMD.
+    * Alterne para iniciar o MRP quando a presença for detectada.
+    * Alterne o aplicativo Abrir Área de Trabalho no foco do aplicativo da área de trabalho.
 
 ### <a name="prior-release-notes"></a>Notas de versão anteriores
 
-* [Notas de versão – maio de 2019](release-notes-may-2019.md)
+* [Notas sobre a versão – maio de 2020](release-notes-may-2020.md)
+* [Notas sobre a versão – maio de 2019](release-notes-may-2019.md)
 * [Notas sobre a versão – outubro de 2018](release-notes-october-2018.md)
-* [Notas de versão – abril de 2018](release-notes-april-2018.md)
+* [Notas sobre a versão – abril de 2018](release-notes-april-2018.md)
 * [Notas sobre a versão – outubro de 2017](release-notes-october-2017.md)
 * [Notas sobre a versão – agosto de 2016](release-notes-august-2016.md)
 * [Notas sobre a versão – maio de 2016](release-notes-may-2016.md)
 * [Notas sobre a versão – março de 2016](release-notes-march-2016.md)
 
-## <a name="mixed-reality-headset-and-motion-controller-driver-release-history"></a>Histórico de lançamento do driver do controlador de movimento e do headset da realidade misturada ###
+## <a name="mixed-reality-headset-and-motion-controller-driver-release-history"></a>Histórico de lançamento do driver do controlador de movimento e headset de Realidade Misturada ###
 
-esse driver é baixado e instalado automaticamente por meio de Windows Update, mas links de download são fornecidos embutidos:
+Esse driver é baixado e instalado automaticamente por meio do Windows Update, mas os links de download são fornecidos em linha:
 
 #### <a name="windows-10-version-2004-may-2020-update"></a>Windows 10, versão 2004 (atualização de maio de 2020) ####
 
    | Versão          | Data de lançamento          | Principais alterações                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23 de março de 2021  | compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Atualize a ordem de enrolamento da malha da área oculta para que o HP reverbo G2 seja consistente com outros headsets.</li><li>Aprimoramentos de qualidade de visuais para os fones de ouvido do HP reverbs G2.</li><li>Windows Mixed Reality aperfeiçoamentos de confiabilidade e plataforma de headset.</li>|
-   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10 de dezembro de 2020  | compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Novo firmware do controlador para o controlador HP para resolver um problema em que alguns controladores têm gatilhos que não funcionam.</li>|
-   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8 de outubro de 2020  | compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Suporte oficial para o HP reverberate G2, HP Omnicept e o novo controlador HP.</li><li>Correções de exibição secundárias para HP reverbera e Samsung Odyssey + headsets. (Requer a [compilação do sistema operacional 19041,546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) ou superior ou o Builds do [sistema operacional 18362,1110 e 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) ou superior).</li><li>Melhorias na transição de estado de energia do computador da suspensão para reduzir os erros do SWW 1-4.</li><li>Windows Mixed Reality as correções secundárias e melhorias de confiabilidade da plataforma headset.|
-   | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7 de maio de 2020      | compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Windows Mixed Reality as correções secundárias e melhorias de confiabilidade da plataforma headset.</li></ul>  |
+   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23 de março de 2021  | Compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Atualize a ordem de venda da malha de área oculta para que o HP Reverb G2 seja consistente com outros headsets.</li><li>Melhorias de qualidade de visuais para os headsets HP Reverb G2.</li><li>Windows Mixed Reality plataforma de headset e melhorias de confiabilidade.</li>|
+   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10 de dezembro de 2020  | Compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Novo firmware do controlador para o controlador HP resolver um problema em que alguns controladores têm gatilhos que não estão funcionando.</li>|
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8 de outubro de 2020  | Compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Suporte oficial para o HP Reverb G2, HP Omnicept e o novo controlador hp.</li><li>Correções secundárias de exibição para headsets HP Reverb e SamsungSeyy+. (Requer o build do sistema operacional [19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) ou superior ou builds do sistema operacional [18362.1110 e 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) ou superior).</li><li>Melhorias na transição do estado de energia do computador do sleep para reduzir erros de SWW 1 a 4.</li><li>Windows Mixed Reality pequenas correções e melhorias de confiabilidade da plataforma de headset.|
+   | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7 de maio de 2020      | Compatível com Windows 10, versão 1903 e mais recente.<br/><ul><li>Windows Mixed Reality pequenas correções e melhorias de confiabilidade da plataforma de headset.</li></ul>  |
 
 #### <a name="windows-10-version-1903-may-2019-update"></a>Windows 10, versão 1903 (atualização de maio de 2019) ####
 
    | Versão          | Data de lançamento          | Principais alterações                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.18362.1162](https://www.microsoft.com/en-us/download/details.aspx?id=100421)  | 14 de outubro de 2019      | compatível com Windows 10, versão 1809 e mais recente.<br/><ul><li>Windows Mixed Reality as correções secundárias da plataforma headset.</li></ul>  | 
-   | [10.0.18362.1062](https://www.microsoft.com/en-us/download/details.aspx?id=58492)  | 24 de junho de 2019      | compatível com Windows 10, versão 1809 e mais recente.<br/><ul><li>Windows Mixed Reality a plataforma headset e aprimoramentos de confiabilidade em computadores de suspensão e transições de estado de energia.</li></ul>  | 
-   | [10.0.18362.1024](https://www.microsoft.com/en-us/download/details.aspx?id=58225)  | 1º de maio de 2019      | compatível com Windows 10, versão 1809 e mais recente.<br/><ul><li>contém atualização de firmware para 2017 Acer, Asus, Dell, Fujitsu, HP, Lenovo e Medion Windows Mixed Reality headsets. Essa atualização de firmware melhora a compatibilidade e a confiabilidade da exibição de fone de ouvido com determinados adaptadores gráficos ou drivers gráficos.</li><li>melhorias de confiabilidade e plataforma do Windows Mixed Reality headset</li></ul>  | 
+   | [10.0.18362.1162](https://www.microsoft.com/en-us/download/details.aspx?id=100421)  | 14 de outubro de 2019      | Compatível com Windows 10, versão 1809 e mais novos.<br/><ul><li>Windows Mixed Reality pequenas correções da plataforma de headset.</li></ul>  | 
+   | [10.0.18362.1062](https://www.microsoft.com/en-us/download/details.aspx?id=58492)  | 24 de junho de 2019      | Compatível com Windows 10, versão 1809 e mais novos.<br/><ul><li>Windows Mixed Reality plataforma de headset e melhorias de confiabilidade em relação a computadores em espera e transições de estado de energia.</li></ul>  | 
+   | [10.0.18362.1024](https://www.microsoft.com/en-us/download/details.aspx?id=58225)  | 1º de maio de 2019      | Compatível com Windows 10, versão 1809 e mais novos.<br/><ul><li>Contém a atualização de firmware para headsets Acer, Asus, Dell, Fu firmware, HP, Lenovo e Medion 2017 Windows Mixed Reality headsets. Essa atualização de firmware melhora a compatibilidade e a confiabilidade da exibição do headset com determinados adaptadores gráficos ou drivers gráficos.</li><li>Windows Mixed Reality plataforma de headset e melhorias de confiabilidade</li></ul>  | 
 
-#### <a name="windows-10-version-1803-april-2018-update-and-version-1809-october-2018-update"></a>Windows 10, versão 1803 (atualização de abril de 2018) e versão 1809 (atualização de outubro de 2018) ####
+#### <a name="windows-10-version-1803-april-2018-update-and-version-1809-october-2018-update"></a>Windows 10, versão 1803 (Atualização de abril de 2018) e versão 1809 (atualização de outubro de 2018) ####
 
    | Versão          | Data de lançamento          | Principais alterações                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
@@ -178,7 +157,7 @@ no Windows 10, versão 1809 e mais recente, o [Portal de realidade misturada](ht
    | 2000.19101.1211.0  | 11 de novembro de 2019     | <ul><li>Resolve um problema que impede a alternância de visuais de limite de sala.</li><li>Resolve um problema que impede que você centralize um headset durante a configuração de limite de sala.</li></ul>  | 
    | 2000.19081.1301.0  | 23 de setembro de 2019    | <ul><li>Aborda um problema em que os headsets com problemas de hardware foram mostrados como uma mensagem de erro incorreta. Os usuários que receberam um código de erro 1-4 em versões anteriores podem agora receber um código de erro mais específico para o estado do dispositivo.</li></ul>  |
    | 2000.19071.1302.0  | 13 de agosto de 2019     | <ul><li>Suporte para aplicativos que usam o [OpenXR](/windows/mixed-reality/openxr) em dispositivos com a atualização de maio de 2019.</li></ul>  | 
-   | 2000.19061.1011.0  | 16 de julho de 2019         | <ul><li>Suporte para opções de configuração JSON para personalizar o comportamento do aplicativo. Leia mais em https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup .</li></ul>  | 
+   | 2000.19061.1011.0  | 16 de julho de 2019         | <ul><li>Suporte para opções de configuração JSON para personalizar o comportamento do aplicativo. Leia mais na [instalação do entretenimento baseado no local com o Windows Mixed Reality](/windows/mixed-reality/location-based-experiences#setup).</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>Histórico de versões do SteamVR ###
 
