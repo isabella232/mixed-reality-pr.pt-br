@@ -5,13 +5,13 @@ author: qianw211
 ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
-keywords: conceitos básicos de qualidade, estudo de caso, projeto, exemplo, MRTK, Toolkit de Realidade Misturada, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
-ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: conceitos básicos de qualidade, estudo de caso, projeto, exemplo, MRTK, Realidade Misturada Toolkit, Unity, aplicativos de exemplo, aplicativos de exemplo, open-source, Microsoft Store, HoloLens, headset de realidade misturada, headset de realidade misturada do Windows, headset de realidade virtual
+ms.openlocfilehash: 69c6a55b95937c0c6af4920f6ffe0929eebe76ee
+ms.sourcegitcommit: 82f7db75d8ecc7ac89c76b0db504126cbcb8f16d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211934"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129647524"
 ---
 # <a name="quality-fundamentals"></a>Conceitos básicos de qualidade
 
@@ -44,7 +44,7 @@ Para obter mais informações, [consulte superfícies em um espaço em HoloLens]
 
 ### <a name="lighting"></a>Iluminação
 
-HoloLens desempenho pode ser afetado negativamente por condições de luz muito baixas ou muito brilhante.  Os sensores de rastreamento na HoloLens precisam de cerca de 500 a 1.000 de luz para operar de maneira ideal. Você pode usar um dispositivo móvel ou um aplicativo móvel para medir a quantidade de luz em seu espaço.
+HoloLens desempenho pode ser afetado negativamente por condições de luz muito baixas ou muito brilhante.  Os sensores de rastreamento na HoloLens precisam de cerca de 500 a 1.000 pessoas de luz para operar de maneira ideal. Você pode usar um dispositivo móvel ou um aplicativo móvel para medir a quantidade de luz em seu espaço.
 
 Para obter mais informações, consulte [iluminação](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) em [HoloLens de ambiente.](/hololens/hololens-environment-considerations)
 
@@ -60,7 +60,7 @@ Nesta parte do aplicativo, exploraremos os seguintes cenários de usuário:
 > * Compartilhar uma Âncora Espacial entre vários colaboradores usando um código QR.
 > * Posicionamento de âncora para objetos muito grandes em um espaço.
 
-Para obter mais informações, consulte [Âncoras espaciais](/windows/mixed-reality/design/spatial-anchors) na [documentação da Realidade Misturada.](/windows/mixed-reality/design/spatial-anchors)
+Para obter mais informações, consulte [Âncoras espaciais](../../design/spatial-anchors.md) na [documentação da Realidade Misturada.](../../design/spatial-anchors.md)
 
 ## <a name="stability-and-fidelity"></a>Estabilidade e fidelidade
 
@@ -80,7 +80,7 @@ Para fornecer a melhor experiência de holograma possível, os desenvolvedores d
 
 ![Otimização da contagem de triângulos](images\qf-triangle-count-optimization.png)
 
-Para obter mais informações, consulte [Taxa de quadros](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#frame-rate) no artigo de estabilidade do [holograma.](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability)
+Para obter mais informações, consulte [Taxa de quadros](../platform-capabilities-and-apis/hologram-stability.md#frame-rate) no artigo de estabilidade do [holograma.](../platform-capabilities-and-apis/hologram-stability.md)
 
 ### <a name="late-stage-reprojection-lsr"></a>LSR (reprodução de estágio tardio)
 
@@ -88,7 +88,7 @@ A reprojeção é usada para estabilizar hologramas à medida que os usuários s
 
 ![Experimente as diferentes opções de reprojeto para experimentar a diferença.](images\qf-lsr-modes.jpg)
 
-Para obter informações detalhadas, consulte [reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) no artigo [de estabilidade do holograma.](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability)
+Para obter informações detalhadas, consulte [reprojection](../platform-capabilities-and-apis/hologram-stability.md#reprojection) no artigo [de estabilidade do holograma.](../platform-capabilities-and-apis/hologram-stability.md)
 
 ### <a name="z-fighting"></a>Z-fighting
 
@@ -96,7 +96,7 @@ O Z-fighting ocorre quando o aplicativo de realidade misturada não consegue dis
 
 ![Experimente o z-fighting com posicionamentos de objeto.](images\qf-z-fighting.jpg)
 
-Para obter informações detalhadas sobre o z-fighting, confira [habilitar](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) o compartilhamento de buffer de profundidade no [artigo configurações recomendadas para o Unity.](/windows/mixed-reality/develop/unity/recommended-settings-for-unity)
+Para obter informações detalhadas sobre o z-fighting, confira [habilitar](./recommended-settings-for-unity.md#enable-depth-buffer-sharing) o compartilhamento de buffer de profundidade no [artigo configurações recomendadas para o Unity.](./recommended-settings-for-unity.md)
 
 ### <a name="anti-aliasing"></a>Suavização
 
@@ -120,7 +120,7 @@ Selecione o número e a complexidade dos modelos de bicicleta para experimentar 
 
 ![Escolha opções de contagem de triângulos diferentes para ver os efeitos na taxa de quadros.](images\qf-3d-asset-visible-triangles.jpg)
 
-Para obter mais informações, consulte [processo de criação de ativos](/windows/mixed-reality/design/asset-creation-process).
+Para obter mais informações, consulte [processo de criação de ativos](../../design/asset-creation-process.md).
 
 ### <a name="shader-passes"></a>Passagens do sombreador
 
@@ -136,7 +136,7 @@ As chamadas de desenho são chamadas com uso intensivo de recursos para a placa 
 
 ![As chamadas de desenho devem ser otimizadas para melhorar o desempenho.](images\qf-3d-asset-draw-calls.jpg)
 
-Confira Recomendações de desempenho [da CPU para GPU.](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations)
+Confira Recomendações de desempenho [da CPU para GPU.](./performance-recommendations-for-unity.md#cpu-to-gpu-performance-recommendations)
 
 ### <a name="finale"></a>Final
 
